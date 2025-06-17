@@ -1,49 +1,77 @@
-# Roadmap
+# Roadmap for Project Zomboid MCP Server
 
-This document outlines potential future directions and enhancements for the MCP Server Prototype. These are ideas for improvement and are not yet committed development tasks.
+This roadmap is derived from the project's PRD and outlines the planned development phases and features for the Project Zomboid MCP (Model Context Protocol) Server.
 
-## Short to Medium Term
+## Overall Vision
+To transform Project Zomboid mod development by providing intelligent script validation, generation, and contextual assistance through AI-enhanced tooling, primarily leveraging the Model Context Protocol.
+
+## Technical Stack Highlights (from PRD)
+*   **Core Language:** Python 3.11+
+*   **MCP Server Framework:** FastAPI
+*   **Database:** SQLite (with FTS5 for search)
+*   **Parser:** Custom Recursive Descent Parser (already developed in prototype)
+*   **Key Dependencies:** Official `mcp` Python SDK, `pydantic`
+
+## Development Phases
+
+### Phase 1: Foundation (Current Focus: Completing Remaining Items)
+
+*   **Data Extraction Pipeline (Partially Complete):**
+    *   ✅ Script parser for items, recipes, vehicles, etc. (Implemented)
+    *   ✅ Property extractor with basic type handling. (Implemented)
+    *   ✅ In-memory data models and repository. (Implemented)
+    *   **Next:** Implement SQLite database schema and populate with parsed vanilla game data.
+    *   **Next:** Enhance reference collection (sounds, sprites, items) during parsing.
+    *   **Next:** Refine handling of script syntax variations (e.g., `=` vs `:`) if further per-type strictness is needed.
+*   **Basic Validation Engine:**
+    *   **Next:** Develop line-by-line syntax validation for different script types.
+    *   **Next:** Implement property name verification against known valid properties per script type.
+    *   **Next:** Add value type and range checking.
+    *   **Next:** Implement basic error reporting with line numbers for validation failures.
+
+### Phase 2: Core MCP Tools & Server Implementation
+
+*   **MCP Server Backend:**
+    *   **Next:** Set up FastAPI application structure.
+    *   **Next:** Integrate the official `mcp` Python SDK.
+    *   **Next:** Design and implement MCP resources to expose game data (e.g., `vanilla_database`, `property_reference`).
+*   **`validate_script` Tool:**
+    *   Expose the Validation Engine's capabilities through an MCP tool.
+    *   Input: Script content, script type.
+    *   Output: Validation results with specific error locations.
+*   **`generate_script` Tool:**
+    *   Develop a template engine for generating script files.
+    *   Input: Script type, base template, custom properties.
+    *   Output: Formatted script with module wrapper.
+*   **`search_vanilla` Tool & Advanced Search:**
+    *   Implement SQLite FTS5 for full-text search on the vanilla data.
+    *   Develop property-based filtering and similarity matching.
+    *   Expose search capabilities via an MCP tool.
+*   **Additional MCP Resources:**
+    *   `property_reference`: Expose valid properties per script type.
+    *   `modding_templates`: Provide pre-built script templates.
+
+### Phase 3: Advanced Features
+
+*   **Contextual Intelligence:**
+    *   Property suggestions based on item type.
+    *   Common pattern recognition in scripts.
+    *   Compatibility warnings (e.g., for different game versions).
+*   **Mod Project Management Tools (via MCP):**
+    *   `analyze_mod`: File structure validation, cross-file reference tracking for a given mod directory.
+    *   Dependency management insights.
+    *   Build 42+ compatibility checking assistance.
+*   **`best_practices` MCP Resource:**
+    *   Expose modding guidelines and common patterns as a searchable resource.
+
+### Phase 4: Polish, Integration & Testing
 
 *   **Formal Testing Suite:**
-    *   Implement a comprehensive suite of unit and integration tests using a framework like `pytest` or `unittest`.
-    *   This will improve code reliability and make refactoring safer.
-
-*   **Advanced Data Queries:**
-    *   Extend `GameDataRepository` with more sophisticated query methods:
-        *   Find items by tags or other specific properties.
-        *   Filter recipes by required skills, ingredients, or tools.
-        *   Search for vehicles based on performance characteristics or parts.
-
-*   **Script Schema Validation:**
-    *   Implement a system for validating the structure and data types of parsed script files against a defined schema.
-    *   This would help catch errors in script files more proactively.
-
-*   **Enhanced CLI Features:**
-    *   Add more interactive elements or more complex query options to the CLI.
-    *   Support for outputting data in different formats (e.g., JSON, CSV).
-
-## Medium to Long Term
-
-*   **Web API Interface:**
-    *   Develop a web API (e.g., using Flask or FastAPI) to expose the game data.
-    *   This would allow other applications (e.g., game clients, web-based tools) to consume the data programmatically over HTTP.
-
-*   **Performance Enhancements:**
-    *   Profile the application with very large sets of script files.
-    *   Optimize parsing, data storage, and querying for better performance and memory usage if bottlenecks are identified.
-
-*   **Plugin System / Extensibility:**
-    *   Design a plugin system to allow for:
-        *   Support for new or custom script types without modifying the core parser.
-        *   Custom data transformation or validation rules.
-
-*   **Documentation Generation from Scripts:**
-    *   Create tools that can parse the game scripts and automatically generate human-readable documentation (e.g., item lists, recipe books) in formats like HTML or Markdown.
-
-*   **Configuration Management:**
-    *   Allow for more flexible configuration of the server (e.g., script paths, logging levels, feature flags) through a configuration file.
-
-## Community and Contributions
-
-*   Establish contribution guidelines if the project were to be open-sourced.
-*   Set up issue tracking and a process for community feedback.
+    *   Develop comprehensive unit and integration tests (e.g., using `pytest`).
+*   **Performance Optimization:**
+    *   Profile and optimize server performance, especially database queries and parsing for large mods.
+*   **Documentation:**
+    *   Finalize user and developer documentation.
+    *   Create examples and tutorials.
+*   **Claude Desktop Integration:**
+    *   Work towards seamless integration with Claude Desktop and other MCP clients.
