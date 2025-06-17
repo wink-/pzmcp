@@ -1,29 +1,45 @@
-# MCP Server Prototype
+# Project Zomboid MCP Server Prototype
 
 ## Overview
 
-The MCP (Master Control Program) Server Prototype is a Python-based application designed to parse, manage, and provide access to game data defined in text-based script files. These script files typically define game entities such as items, recipes, vehicles, and more, using a custom C-like or JSON-like syntax.
+The Project Zomboid MCP (Model Context Protocol) Server Prototype is a Python-based application aimed at transforming Project Zomboid mod development. It achieves this by providing intelligent script validation, generation, and contextual assistance, primarily designed to be leveraged by AI-enhanced tooling and direct modder use.
 
-The primary goal of this prototype is to establish a robust foundation for reading and interpreting these script files, making the data available for use by other game components or tools.
+This server parses and manages game data from Project Zomboid's script files (defining items, recipes, vehicles, etc.), making this data accessible and queryable. The long-term vision is to expose this information via the Model Context Protocol, enabling powerful integrations with AI assistants like Claude and other development tools.
 
-## Components
+## Core Goals (from PRD)
 
-The server is comprised of several key Python modules:
+*   **Reduce Syntax Errors**: Validate scripts in real-time.
+*   **Accelerate Development**: Generate script templates.
+*   **Enhance Discovery**: Make vanilla game data searchable.
+*   **Improve AI Assistance**: Provide accurate, context-aware modding help.
 
-*   **`script_parser.py`**: Contains the lexer and parser responsible for reading the raw script files and converting them into a structured dictionary format. It handles syntax, comments, and various data structures within the scripts.
-*   **`data_models.py`**: Defines Python classes (e.g., `Item`, `Recipe`, `Vehicle`) that represent the game entities. These models use type hints and provide a clear, object-oriented way to work with the data.
-*   **`data_transformer.py`**: Bridges the gap between the parser's dictionary output and the data models. It transforms the raw parsed data into instances of the defined data model classes.
-*   **`data_repository.py`**: Acts as a central store for all loaded game data. It orchestrates the file reading, parsing, and transformation process. It then provides an API to query the loaded data (e.g., fetch an item by its name, list all available recipes).
-*   **`mcp_server_cli.py`**: A command-line interface (CLI) that allows users to interact with the loaded game data. It uses the `GameDataRepository` to fetch and display information.
+## Current Components
 
-## CLI Usage
+The prototype currently includes the following foundational Python modules:
 
-The primary way to interact with the MCP Server Prototype is through `mcp_server_cli.py`.
+*   **`script_parser.py`**: Lexer and parser for Project Zomboid script files, converting them into a structured dictionary format.
+*   **`data_models.py`**: Python classes representing game entities (Items, Recipes, Vehicles, etc.).
+*   **`data_transformer.py`**: Converts the parser's output into instances of the data models.
+*   **`data_repository.py`**: Loads, manages, and provides query access to all parsed game data from a specified Project Zomboid script directory.
+*   **`mcp_server_cli.py`**: A basic command-line interface (CLI) for direct interaction with the `GameDataRepository` to inspect loaded data.
 
-**Basic Syntax:**
+## Planned MCP Tools & Server Functionality
+
+While the current CLI allows for data inspection, the full vision includes developing a server (likely using FastAPI and the official `mcp` Python SDK) that will expose capabilities such as:
+
+*   **`validate_script`**: For real-time syntax and reference checking.
+*   **`generate_script`**: For creating new script files from templates.
+*   **`search_vanilla`**: For in-depth searching of vanilla game data.
+*   And other tools as outlined in the project's PRD.
+
+## Basic CLI Usage (Current)
+
+The CLI provides direct access to the data parsed by the current system.
+
+**Syntax:**
 
 ```bash
-python mcp_server_cli.py <path_to_script_directory> <command> [command_arguments]
+python mcp_server_cli.py <path_to_pz_script_directory> <command> [command_arguments]
 ```
 
 **Examples:**
@@ -38,33 +54,19 @@ python mcp_server_cli.py <path_to_script_directory> <command> [command_arguments
     python mcp_server_cli.py ./media/scripts getitem Base.Apple
     ```
 
-*   List all loaded recipes:
-    ```bash
-    python mcp_server_cli.py ./media/scripts listrecipes
-    ```
-
-*   Get details for a specific recipe:
-    ```bash
-    python mcp_server_cli.py ./media/scripts getrecipe MyRecipeName
-    ```
-
 ## Script File Format
 
-The script files generally use a C-like or JSON-like syntax. They consist of blocks defining modules, items, recipes, vehicles, etc., with properties specified as key-value pairs.
+Project Zomboid script files generally use a C-like or JSON-like syntax, defining modules, items, recipes, etc., with properties specified as key-value pairs. The parser is designed to handle this format.
 
-Example snippet:
-
+Example:
 ```
-module MyModule
+module Base
 {
-    item MyItem
+    item Apple
     {
-        DisplayName = "My Awesome Item",
-        Type = Normal,
-        Weight = 1.0,
-        Icon = MyItemIcon
+        Type = Food,
+        DisplayName = Apple,
+        Weight = 0.1
     }
 }
 ```
-
-The parser is designed to be relatively flexible with this format.
