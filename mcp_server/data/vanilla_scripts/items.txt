@@ -1,0 +1,23 @@
+module Base {
+    item Screwdriver {
+        Type = Normal,
+        DisplayName = Screwdriver,
+        Icon = Screwdriver,
+        Weight = 0.2,
+    }
+    item Hammer {
+        Type = Normal,
+        DisplayName = Hammer,
+        Icon = Hammer,
+        Weight = 0.5,
+    }
+}
+module FoodItems {
+    item Apple {
+        Type = Food,
+        DisplayName = Apple,
+        Icon = Apple,
+        Weight = 0.1,
+        HungerChange = -10,
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "template_type": "recipe",
+    "description": "A basic crafting recipe.",
+    "script_format": [
+        "module {module_name} {{",
+        "    recipe \"{recipe_name}\" {{",
+        "{input_items_formatted}",
+        "        ",
+        "        Result:{result_item}={result_quantity},",
+        "        Time:{time},",
+        "        Category:{category},",
+        "        // Add other recipe properties here",
+        "        // Example: SkillRequired:{skill_required}",
+        "        // Example: NearItem:{near_item}",
+        "    }}",
+        "}}"
+    ]
+}

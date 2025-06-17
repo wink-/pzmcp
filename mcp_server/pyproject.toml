@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "mcp-server"
+version = "0.1.0"
+description = "Project Zomboid MCP Server"
+authors = ["Your Name <you@example.com>"] # Replace with actual author info if available
+readme = "README.md" # Assuming a README will be added later
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.100.0" # Use recent stable versions
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+pydantic = "^2.0.0"
+sqlalchemy = "^2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,15 @@
+{
+    "template_type": "item",
+    "description": "A basic Normal item.",
+    "script_format": [
+        "module {module_name} {{",
+        "    item {item_name} {{",
+        "        Type = {item_type},",
+        "        DisplayName = {display_name},",
+        "        Icon = {icon},",
+        "        Weight = {weight},",
+        "        // Add other custom properties here",
+        "    }}",
+        "}}"
+    ]
+}

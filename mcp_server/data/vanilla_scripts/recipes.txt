@@ -1,0 +1,20 @@
+module Base {
+    recipe "Make Plank" {
+        Log,
+        keep Saw,
+
+        Result:Plank=2,
+        Time:100,
+        Category:Carpentry,
+    }
+}
+module Cooking {
+    recipe "Cook Bread" {
+        Dough,
+
+        Result:Bread=1,
+        Time:60,
+        NearItem:Campfire,
+        Category:Cooking,
+    }
+}
