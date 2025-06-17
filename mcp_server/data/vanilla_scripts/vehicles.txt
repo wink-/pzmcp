@@ -1,0 +1,19 @@
+module Base {
+    vehicle SmallCar {
+        mechanicType = 1,
+        mass = 1200,
+        maxSpeed = 100,
+
+        model {
+            file = Vehicles_SmallCar,
+            scale = 2.0,
+        }
+        skin {
+            texture = Vehicles/SmallCar_Red,
+        }
+        part Engine {
+            category = engine,
+            itemType = Base.SmallEngine,
+        }
+    }
+}
