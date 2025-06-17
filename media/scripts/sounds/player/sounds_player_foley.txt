@@ -1,0 +1,2227 @@
+module Base
+{
+	sound HumanFootstepsCombined
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Footsteps,
+		}
+	}
+
+/******************************************************************************/
+
+	sound HeartBeat
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Heartbeat,
+		}
+	}
+
+/******************************************************************************/
+
+	sound ClimbThroughWindow
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Climb/Window,
+		}
+	}
+
+/******************************************************************************/
+
+	sound ClimbOverFenceLow
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Climb/FenceLow,
+		}
+	}
+
+	sound ClimbOverFenceHighStart
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Climb/FenceHigh/Start,
+		}
+	}
+
+	sound ClimbOverFenceHighStruggle
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Climb/FenceHigh/Struggle,
+		}
+	}
+
+	sound ClimbOverFenceHighSuccess
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Climb/FenceHigh/Success,
+		}
+	}
+	
+	sound ClimbOverFenceHighFail
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Climb/FenceHigh/Fail,
+		}
+	}
+
+/******************************************************************************/
+
+	sound TripOverObstacle
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Trip,
+		}
+	}
+
+/******************************************************************************/
+
+	sound FallHeavy
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Fall/Heavy,
+		}
+	}
+
+	sound FallLight
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Fall/Light,
+		}
+	}
+
+	sound LandHeavy
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Land/Heavy,
+		}
+	}
+
+	sound LandHeavyFromFall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Land/HeavyFromFall,
+		}
+	}
+
+	sound LandDeathFromFall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Land/DeathFromFall,
+		}
+	}
+
+	sound LandLight
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Land/Light,
+		}
+	}
+
+/******************************************************************************/
+
+	sound Smoke
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Smoke,
+		}
+	}
+
+/******************************************************************************/
+
+	sound CleanBloodVehicle
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/CleanBlood/Vehicle,
+		}
+	}
+
+	sound CleanBloodBleach
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/CleanBlood/Bleach,
+		}
+	}
+
+	sound CleanBloodScrub
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/CleanBlood/Scrub,
+		}
+	}
+
+/******************************************************************************/
+
+	sound OpenBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Bag/Open,
+		}
+	}
+
+	sound CloseBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Bag/Close,
+		}
+	}
+
+	sound DropBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Bag/Drop,
+		}
+	}
+
+	sound PutItemInBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Bag/StoreItem,
+		}
+	}
+
+/******************************************************************************/
+
+
+	sound OpenPouch
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Pouch/Open,
+		}
+	}
+
+	sound OpenSmallWoodenBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SmallWoodenBox/Open,
+		}
+	}
+
+	sound CloseSmallWoodenBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SmallWoodenBox/Close,
+		}
+	}
+
+	sound StoreItemSmallWoodenBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SmallWoodenBox/StoreItem,
+		}
+	}
+
+
+	sound OpenSmallMetalBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SmallMetalBox/Open,
+		}
+	}
+
+	sound CloseSmallMetalBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SmallMetalBox/Close,
+		}
+	}
+
+	sound StoreItemSmallMetalBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SmallMetalBox/StoreItem,
+		}
+	}
+
+
+	sound OpenMediumPlasticBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/MediumPlasticBox/Open,
+		}
+	}
+
+	sound CloseMediumPlasticBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/MediumPlasticBox/Close,
+		}
+	}
+
+	sound StoreItemMediumPlasticBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/MediumPlasticBox/StoreItem,
+		}
+	}
+
+
+	sound OpenWickerBasket
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/WickerBasket/Open,
+		}
+	}
+
+	sound CloseWickerBasket
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/WickerBasket/Close,
+		}
+	}
+
+	sound StoreItemWickerBasket
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/WickerBasket/StoreItem,
+		}
+	}
+
+
+	sound OpenPaperBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PaperBag/Open,
+		}
+	}
+
+	sound ClosePaperBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PaperBag/Close,
+		}
+	}
+
+	sound StoreItemPaperBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PaperBag/StoreItem,
+		}
+	}
+
+
+	sound OpenPlasticBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PlasticBag/Open,
+		}
+	}
+
+	sound ClosePlasticBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PlasticBag/Close,
+		}
+	}
+
+	sound StoreItemPlasticBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PlasticBag/StoreItem,
+		}
+	}
+
+
+	sound OpenInstrumentCaseSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/InstrumentCaseSmall/Open,
+		}
+	}
+
+	sound CloseInstrumentCaseSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/InstrumentCaseSmall/Close,
+		}
+	}
+
+	sound StoreItemInstrumentCaseSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/InstrumentCaseSmall/StoreItem,
+		}
+	}
+
+
+	sound OpenInstrumentCaseLarge
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/InstrumentCaseLarge/Open,
+		}
+	}
+
+	sound CloseInstrumentCaseLarge
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/InstrumentCaseLarge/Close,
+		}
+	}
+
+	sound StoreItemInstrumentCaseLarge
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/InstrumentCaseLarge/StoreItem,
+		}
+	}
+
+
+	sound OpenProtectiveCaseSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProtectiveCaseSmall/Open,
+		}
+	}
+
+	sound CloseProtectiveCaseSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProtectiveCaseSmall/Close,
+		}
+	}
+
+	sound StoreItemProtectiveCaseSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProtectiveCaseSmall/StoreItem,
+		}
+	}
+
+
+	sound OpenProtectiveCaseMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProtectiveCaseMedium/Open,
+		}
+	}
+
+	sound CloseProtectiveCaseMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProtectiveCaseMedium/Close,
+		}
+	}
+
+	sound StoreItemProtectiveCaseMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProtectiveCaseMedium/StoreItem,
+		}
+	}
+
+
+	sound OpenProtectiveCaseLarge
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProtectiveCaseLarge/Open,
+		}
+	}
+
+	sound CloseProtectiveCaseLarge
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProtectiveCaseLarge/Close,
+		}
+	}
+
+	sound StoreItemProtectiveCaseLarge
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProtectiveCaseLarge/StoreItem,
+		}
+	}
+
+
+	sound OpenHollowBook
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/HollowBook/Open,
+		}
+	}
+
+	sound CloseHollowBook
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/HollowBook/Close,
+		}
+	}
+
+	sound StoreItemHollowBook
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/HollowBook/StoreItem,
+		}
+	}
+
+
+	sound OpenCargoVest
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/CargoVest/Open,
+		}
+	}
+
+	sound CloseCargoVest
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/CargoVest/Close,
+		}
+	}
+
+	sound StoreItemCargoVest
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/CargoVest/StoreItem,
+		}
+	}
+
+
+	sound OpenLeatherBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/LeatherBag/Open,
+		}
+	}
+
+	sound CloseLeatherBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/LeatherBag/Close,
+		}
+	}
+
+	sound StoreItemLeatherBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/LeatherBag/StoreItem,
+		}
+	}
+
+
+	sound OpenMetalToolbox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/MetalToolbox/Open,
+		}
+	}
+
+	sound CloseMetalToolbox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/MetalToolbox/Close,
+		}
+	}
+
+	sound StoreItemMetalToolbox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/MetalToolbox/StoreItem,
+		}
+	}
+
+
+	sound OpenFabricPouch
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/FabricPouch/Open,
+		}
+	}
+
+	sound CloseFabricPouch
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/FabricPouch/Close,
+		}
+	}
+
+	sound StoreItemFabricPouch
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/FabricPouch/StoreItem,
+		}
+	}
+
+
+	sound OpenSack
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Sack/Open,
+		}
+	}
+
+	sound CloseSack
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Sack/Close,
+		}
+	}
+
+	sound StoreItemSack
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Sack/StoreItem,
+		}
+	}
+
+
+	sound OpenBriefcase
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Briefcase/Open,
+		}
+	}
+
+	sound CloseBriefcase
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Briefcase/Close,
+		}
+	}
+
+	sound StoreItemBriefcase
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Briefcase/StoreItem,
+		}
+	}
+
+	sound OpenChineseTakeoutBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ChineseTakeoutBox/Open,
+		}
+	}
+
+	sound CloseChineseTakeoutBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ChineseTakeoutBox/Close,
+		}
+	}
+
+	sound StoreItemChineseTakeoutBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ChineseTakeoutBox/StoreItem,
+		}
+	}
+
+	sound OpenCookieJar
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/CookieJar/Open,
+		}
+	}
+
+	sound CloseCookieJar
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/CookieJar/Close,
+		}
+	}
+
+	sound StoreItemCookieJar
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/CookieJar/StoreItem,
+		}
+	}
+
+	sound OpenFirstAidMilitary
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/FirstAidMilitary/Open,
+		}
+	}
+
+	sound CloseFirstAidMilitary
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/FirstAidMilitary/Close,
+		}
+	}
+
+	sound StoreItemFirstAidMilitary
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/FirstAidMilitary/StoreItem,
+		}
+	}
+
+	sound OpenHalloweenBucket
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/HalloweenBucket/Open,
+		}
+	}
+
+	sound CloseHalloweenBucket
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/HalloweenBucket/Close,
+		}
+	}
+
+	sound StoreItemHalloweenBucket
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/HalloweenBucket/StoreItem,
+		}
+	}
+
+	sound OpenHatBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/HatBox/Open,
+		}
+	}
+
+	sound CloseHatBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/HatBox/Close,
+		}
+	}
+
+	sound StoreItemHatBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/HatBox/StoreItem,
+		}
+	}
+
+	sound OpenHumidor
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Humidor/Open,
+		}
+	}
+
+	sound CloseHumidor
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Humidor/Close,
+		}
+	}
+
+	sound StoreItemHumidor
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Humidor/StoreItem,
+		}
+	}
+
+	sound OpenMakeupCase
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/MakeupCase/Open,
+		}
+	}
+
+	sound CloseMakeupCase
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/MakeupCase/Close,
+		}
+	}
+
+	sound StoreItemMakeupCase
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/MakeupCase/StoreItem,
+		}
+	}
+
+	sound OpenPencilCase
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PencilCase/Open,
+		}
+	}
+
+	sound ClosePencilCase
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PencilCase/Close,
+		}
+	}
+
+	sound StoreItemPencilCase
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PencilCase/StoreItem,
+		}
+	}
+
+	sound OpenShoeBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ShoeBox/Open,
+		}
+	}
+
+	sound CloseShoeBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ShoeBox/Close,
+		}
+	}
+
+	sound StoreItemShoeBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ShoeBox/StoreItem,
+		}
+	}
+
+	sound OpenStyrofoamTakeoutBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/StyrofoamTakeoutBox/Open,
+		}
+	}
+
+	sound CloseStyrofoamTakeoutBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/StyrofoamTakeoutBox/Close,
+		}
+	}
+
+	sound StoreItemStyrofoamTakeoutBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/StyrofoamTakeoutBox/StoreItem,
+		}
+	}
+
+	sound OpenToolRollFabric
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ToolRollFabric/Open,
+		}
+	}
+
+	sound CloseToolRollFabric
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ToolRollFabric/Close,
+		}
+	}
+
+	sound StoreItemToolRollFabric
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ToolRollFabric/StoreItem,
+		}
+	}
+
+	sound OpenToolRollLeather
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ToolRollLeather/Open,
+		}
+	}
+
+	sound CloseToolRollLeather
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ToolRollLeather/Close,
+		}
+	}
+
+	sound StoreItemToolRollLeather
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ToolRollLeather/StoreItem,
+		}
+	}
+
+	sound OpenBiohazardContainer
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/BiohazardContainer/Open,
+		}
+	}
+
+	sound CloseBiohazardContainer
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/BiohazardContainer/Close,
+		}
+	}
+
+	sound StoreItemBiohazardContainer
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/BiohazardContainer/StoreItem,
+		}
+	}
+
+	sound OpenAmmunitionBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/AmmunitionBox/Open,
+		}
+	}
+
+	sound CloseAmmunitionBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/AmmunitionBox/Close,
+		}
+	}
+
+	sound StoreItemAmmunitionBox
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/AmmunitionBox/StoreItem,
+		}
+	}
+
+	sound OpenCooler
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Cooler/Open,
+		}
+	}
+
+	sound CloseCooler
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Cooler/Close,
+		}
+	}
+
+	sound StoreItemCooler
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Cooler/StoreItem,
+		}
+	}
+
+	sound OpenBulkyContainer
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/BulkyContainer/Open,
+		}
+	}
+
+	sound CloseBulkyContainer
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/BulkyContainer/Close,
+		}
+	}
+
+	sound StoreItemBulkyContainer
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/BulkyContainer/StoreItem,
+		}
+	}
+
+	sound OpenBulkyProtectiveContainer
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/BulkyProtectiveContainer/Open,
+		}
+	}
+
+	sound CloseBulkyProtectiveContainer
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/BulkyProtectiveContainer/Close,
+		}
+	}
+
+	sound StoreItemBulkyProtectiveContainer
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/BulkyProtectiveContainer/StoreItem,
+		}
+	}
+
+	sound OpenClothGunCase
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ClothGunCase/Open,
+		}
+	}
+
+	sound CloseClothGunCase
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ClothGunCase/Close,
+		}
+	}
+
+	sound StoreItemClothGunCase
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ClothGunCase/StoreItem,
+		}
+	}
+
+	sound OpenCookieJarTeddy
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/CookieJarTeddy/Open,
+		}
+	}
+
+	sound CloseCookieJarTeddy
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/CookieJarTeddy/Close,
+		}
+	}
+
+	sound StoreItemCookieJarTeddy
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/CookieJarTeddy/StoreItem,
+		}
+	}
+
+	sound OpenFirstAidKitMilitary
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/FirstAidKitMilitary/Open,
+		}
+	}
+
+	sound CloseFirstAidKitMilitary
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/FirstAidKitMilitary/Close,
+		}
+	}
+
+	sound StoreItemFirstAidKitMilitary
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/FirstAidKitMilitary/StoreItem,
+		}
+	}
+
+	sound OpenFirstAidKitCamping
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/FirstAidKitCamping/Open,
+		}
+	}
+
+	sound CloseFirstAidKitCamping
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/FirstAidKitCamping/Close,
+		}
+	}
+
+	sound StoreItemFirstAidKitCamping
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/FirstAidKitCamping/StoreItem,
+		}
+	}
+
+	sound OpenHideFannyPack
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/HideFannyPack/Open,
+		}
+	}
+
+	sound CloseHideFannyPack
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/HideFannyPack/Close,
+		}
+	}
+
+	sound StoreItemHideFannyPack
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/HideFannyPack/StoreItem,
+		}
+	}
+
+	sound OpenHydrationPack
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/HydrationPack/Open,
+		}
+	}
+
+	sound CloseHydrationPack
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/HydrationPack/Close,
+		}
+	}
+
+	sound StoreItemHydrationPack
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/HydrationPack/StoreItem,
+		}
+	}
+
+	sound OpenParcelSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ParcelSmall/Open,
+		}
+	}
+
+	sound CloseParcelSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ParcelSmall/Close,
+		}
+	}
+
+	sound StoreItemParcelSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ParcelSmall/StoreItem,
+		}
+	}
+
+	sound OpenParcelMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ParcelMedium/Open,
+		}
+	}
+
+	sound CloseParcelMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ParcelMedium/Close,
+		}
+	}
+
+	sound StoreItemParcelMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ParcelMedium/StoreItem,
+		}
+	}
+
+	sound OpenParcelLarge
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ParcelLarge/Open,
+		}
+	}
+
+	sound CloseParcelLarge
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ParcelLarge/Close,
+		}
+	}
+
+	sound StoreItemParcelLarge
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ParcelLarge/StoreItem,
+		}
+	}
+
+	sound OpenSatchelMail
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SatchelMail/Open,
+		}
+	}
+
+	sound CloseSatchelMail
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SatchelMail/Close,
+		}
+	}
+
+	sound StoreItemSatchelMail
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SatchelMail/StoreItem,
+		}
+	}
+
+	sound OpenSatchel
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Satchel/Open,
+		}
+	}
+
+	sound CloseSatchel
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Satchel/Close,
+		}
+	}
+
+	sound StoreItemSatchel
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Satchel/StoreItem,
+		}
+	}
+
+	sound OpenSatchelMedical
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SatchelMedical/Open,
+		}
+	}
+
+	sound CloseSatchelMedical
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SatchelMedical/Close,
+		}
+	}
+
+	sound StoreItemSatchelMedical
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SatchelMedical/StoreItem,
+		}
+	}
+
+	sound OpenSatchelFishing
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SatchelFishing/Open,
+		}
+	}
+
+	sound CloseSatchelFishing
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SatchelFishing/Close,
+		}
+	}
+
+	sound StoreItemSatchelFishing
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SatchelFishing/StoreItem,
+		}
+	}
+
+	sound OpenSheetSlingBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SheetSlingBag/Open,
+		}
+	}
+
+	sound CloseSheetSlingBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SheetSlingBag/Close,
+		}
+	}
+
+	sound StoreItemSheetSlingBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SheetSlingBag/StoreItem,
+		}
+	}
+
+	sound OpenSatchelMilitary
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SatchelMilitary/Open,
+		}
+	}
+
+	sound CloseSatchelMilitary
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SatchelMilitary/Close,
+		}
+	}
+
+	sound StoreItemSatchelMilitary
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/SatchelMilitary/StoreItem,
+		}
+	}
+
+	sound OpenToteBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ToteBag/Open,
+		}
+	}
+
+	sound CloseToteBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ToteBag/Close,
+		}
+	}
+
+	sound StoreItemToteBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ToteBag/StoreItem,
+		}
+	}
+
+	sound OpenSuitcase
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Suitcase/Open,
+		}
+	}
+
+	sound CloseSuitcase
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Suitcase/Close,
+		}
+	}
+
+	sound StoreItemSuitcase
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Suitcase/StoreItem,
+		}
+	}
+
+	sound OpenWallet
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Wallet/Open,
+		}
+	}
+
+	sound CloseWallet
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Wallet/Close,
+		}
+	}
+
+	sound StoreItemWallet
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/Wallet/StoreItem,
+		}
+	}
+
+	sound OpenBulletsBandolier
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/BulletsBandolier/Open,
+		}
+	}
+
+	sound CloseBulletsBandolier
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/BulletsBandolier/Close,
+		}
+	}
+
+	sound StoreItemBulletsBandolier
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/BulletsBandolier/StoreItem,
+		}
+	}
+
+	sound OpenShellsBandolier
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ShellsBandolier/Open,
+		}
+	}
+
+	sound CloseShellsBandolier
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ShellsBandolier/Close,
+		}
+	}
+
+	sound StoreItemShellsBandolier
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ShellsBandolier/StoreItem,
+		}
+	}
+
+	sound OpenProduceBoxSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProduceBoxSmall/Open,
+		}
+	}
+
+	sound CloseProduceBoxSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProduceBoxSmall/Close,
+		}
+	}
+
+	sound StoreItemProduceBoxSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProduceBoxSmall/StoreItem,
+		}
+	}
+
+	sound OpenProduceBoxMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProduceBoxMedium/Open,
+		}
+	}
+
+	sound CloseProduceBoxMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProduceBoxMedium/Close,
+		}
+	}
+
+	sound StoreItemProduceBoxMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProduceBoxMedium/StoreItem,
+		}
+	}
+
+	sound OpenProduceBoxLarge
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProduceBoxLarge/Open,
+		}
+	}
+
+	sound CloseProduceBoxLarge
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProduceBoxLarge/Close,
+		}
+	}
+
+	sound StoreItemProduceBoxLarge
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ProduceBoxLarge/StoreItem,
+		}
+	}
+
+	sound StoreItemPlayerInventory
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PlayerInventory/StoreItem,
+		}
+	}
+
+	/******************************************************************************/
+
+	sound VehicleChangeSeat
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Vehicle/ChangeSeat,
+		}
+	}
+
+	sound VehicleGoToSleep
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Vehicle/GoToSleep,
+		}
+	}
+
+	sound EquipAliceBelt
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Baggage/Equip/AliceBelt,
+		}
+	}
+
+	sound EquipBackpackLarge
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Baggage/Equip/BackpackLarge,
+		}
+	}
+
+	sound EquipDuffleBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Baggage/Equip/DuffleBag,
+		}
+	}
+
+	sound EquipFannyPack
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Baggage/Equip/FannyPack,
+		}
+	}
+
+	sound EquipSatchel
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Baggage/Equip/Satchel,
+		}
+	}
+
+	sound EquipSheetSling
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Baggage/Equip/SheetSling,
+		}
+	}
+
+	sound EquipBackpackSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Baggage/Equip/BackpackSmall,
+		}
+	}
+
+	sound EquipLeatherBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Baggage/Equip/LeatherBag,
+		}
+	}
+
+	sound EquipClothGunCase
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Baggage/Equip/ClothGunCase,
+		}
+	}
+
+	sound RummageInInventory
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/RummageInInventory,
+		}
+	}
+
+	sound OpenPresentSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PresentSmall/Open,
+		}
+	}
+
+	sound ClosePresentSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PresentSmall/Close,
+		}
+	}
+
+	sound StoreItemPresentSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PresentSmall/StoreItem,
+		}
+	}
+
+	sound OpenPresentMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PresentMedium/Open,
+		}
+	}
+
+	sound ClosePresentMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PresentMedium/Close,
+		}
+	}
+
+	sound StoreItemPresentMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PresentMedium/StoreItem,
+		}
+	}
+
+	sound OpenPresentLarge
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PresentLarge/Open,
+		}
+	}
+
+	sound ClosePresentLarge
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PresentLarge/Close,
+		}
+	}
+
+	sound StoreItemPresentLarge
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PresentLarge/StoreItem,
+		}
+	}
+
+	sound OpenPhotoAlbum
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PhotoAlbum/Open,
+		}
+	}
+
+	sound ClosePhotoAlbum
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PhotoAlbum/Close,
+		}
+	}
+
+	sound StoreItemPhotoAlbum
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/PhotoAlbum/StoreItem,
+		}
+	}
+
+	sound OpenKeyRing
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/KeyRing/Open,
+		}
+	}
+
+	sound CloseKeyRing
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/KeyRing/Close,
+		}
+	}
+
+	sound StoreItemKeyRing
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/KeyRing/StoreItem,
+		}
+	}
+
+	sound OpenShoulderHolster
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ShoulderHolster/Open,
+		}
+	}
+
+	sound CloseShoulderHolster
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ShoulderHolster/Close,
+		}
+	}
+
+	sound StoreItemShoulderHolster
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Containers/ShoulderHolster/StoreItem,
+		}
+	}
+
+	sound SitDownFabric
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Rest/SitDown/Fabric,
+		}
+	}
+
+	sound StandUpFabric
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Rest/StandUp/Fabric,
+		}
+	}
+
+	sound SitDownLeather
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Rest/SitDown/Leather,
+		}
+	}
+
+	sound StandUpLeather
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Rest/StandUp/Leather,
+		}
+	}
+
+	sound SitDownPlastic
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Rest/SitDown/Plastic,
+		}
+	}
+
+	sound StandUpPlastic
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Rest/StandUp/Plastic,
+		}
+	}
+
+	sound SitDownWooden
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Rest/SitDown/Wooden,
+		}
+	}
+
+	sound StandUpWooden
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Rest/StandUp/Wooden,
+		}
+	}
+
+	sound SitDownMetal
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Rest/SitDown/Metal,
+		}
+	}
+
+	sound StandUpMetal
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Rest/StandUp/Metal,
+		}
+	}
+
+	sound SitDownCastorChair
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Rest/SitDown/CastorChair,
+		}
+	}
+
+	sound StandUpCastorChair
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Rest/StandUp/CastorChair,
+		}
+	}
+
+	sound SurfaceSitDown
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Rest/SitDown/SurfaceSitDown,
+		}
+	}
+
+	sound SurfaceStandUp
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Rest/StandUp/SurfaceStandUp,
+		}
+	}
+}

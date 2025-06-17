@@ -1,0 +1,1260 @@
+module Base
+{
+	/******* CANNED FOOD  *******/
+
+	item WaterRationCan
+	{
+		DisplayName = Water Ration Can,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+        	Icon	=	CannedWater,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		StaticModel = WaterRationCan,
+		WorldStaticModel = WaterRationCan,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item WaterRationCan_Box
+	{
+		DisplayName = Box of Water Ration Cans,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	CannedWater_Box,
+		WorldStaticModel = Parcel_Medium_Ration,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
+    /* dummy item for the crafting interface, does not work as a food item, do not spawn in */
+    item WaterRationCan_Open
+    {
+        DisplayCategory = Hidden,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	= Can of Water,
+        Icon	=	CannedWater_Open,
+		StaticModel = WaterRationCan_Open,
+		WorldStaticModel = WaterRationCan_Open,
+		Tooltip = DUMMY ITEM - DOES NOT WORK - DO NOT USE - DO NOT SPAWN IN,
+    }
+
+	item MysteryCan
+	{
+		DisplayName = Unlabelled Can of Food,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+        Icon	=	CannedUnlabeled,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		StaticModel = MysteryCan,
+		WorldStaticModel = MysteryCan,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item MysteryCan_Box
+	{
+		DisplayName = Box of Unlabelled Cans of Food,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
+    /* dummy item for the crafting interface, does not work as a food item, do not spawn in */
+    item MysteryCan_Open
+    {
+        DisplayCategory = Hidden,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	= Opened Unlabelled Can of Food,
+        Icon	=	CannedUnlabeled_Open,
+		StaticModel = MysteryCan_Open,
+		WorldStaticModel = MysteryCan_Open,
+		Tooltip = DUMMY ITEM - DOES NOT WORK - DO NOT USE - DO NOT SPAWN IN,
+    }
+
+	item DentedCan
+	{
+		DisplayName = Dented Unlabelled Can of Food,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+        Icon	=	CannedUnlabeled_Gross,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		StaticModel = DentedCan,
+		WorldStaticModel = DentedCan,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item DentedCan_Box
+	{
+		DisplayName = Box of Dented Unlabelled Cans of Food,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
+    /* dummy item for the crafting interface, does not work as a food item, do not spawn in */
+    item DentedCan_Open
+    {
+        DisplayCategory = Hidden,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	= Opened Dented Unlabelled Can of Food,
+        Icon	=	CannedUnlabeled_Gross_Open,
+		StaticModel = DentedCan_Open,
+		WorldStaticModel = DentedCan_Open,
+		Tooltip = DUMMY ITEM - DOES NOT WORK - DO NOT USE - DO NOT SPAWN IN,
+    }
+
+	item CannedBolognese
+	{
+		DisplayName = Canned Spaghetti Bolognese,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedBolognese,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 540,
+		Carbohydrates = 68,
+		Lipids = 22,
+		Proteins = 18,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedBolognese,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item CannedBolognese_Box
+	{
+		DisplayName = Box of Canned Spaghetti Bolognese,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
+	item CannedBologneseOpen
+	{
+		DisplayName = Opened Canned Spaghetti Bolognese,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedBologneseOpen,
+		CannedFood = TRUE,
+		EatType = candrink,
+		EvolvedRecipe = Burger:12;Stew:24;Stir fry:24;Rice:24;Pasta:24;Omelette:12,
+		/*EvolvedRecipeName = Canned Bolognese,*/
+		EvolvedRecipeName = Bolognese,
+		FoodType = Meat,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -24,
+		Calories = 540,
+		Carbohydrates = 68,
+		Lipids = 22,
+		Proteins = 18,
+		StaticModel = CanOpenBolognese,
+		WorldStaticModel = CanOpenBolognese,
+		Tags = HasMetal;HideUncooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		CookingSound = BoilingFood,
+		GoodHot = true,
+		CustomEatSound = EatingMushy,
+	}
+
+	item CannedCarrots2
+	{
+		DisplayName = Canned Carrots,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedCarrots,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 10.5,
+		Carbohydrates = 28,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedCarrots,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item CannedCarrots_Box
+	{
+		DisplayName = Box of Canned Carrots,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
+	item CannedCarrotsOpen
+	{
+		DisplayName = Opened Canned Carrots,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedCarrotsOpen,
+		CannedFood = TRUE,
+		EatType = candrink,
+		EvolvedRecipe = Omelette:6;Soup:12;Stew:12;Pie:12;Stir fry:12;Sandwich:6;Salad:6;Rice:12;Pasta:12,
+		/*EvolvedRecipeName = Canned Carrots,*/
+		EvolvedRecipeName = Carrot,
+		FoodType = Vegetables,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -12,
+		ThirstChange = -4,
+		Calories = 10.5,
+		Carbohydrates = 28,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = CanOpen,
+		WorldStaticModel = CanOpenCarrots,
+		Tags = HasMetal;HideUncooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		CookingSound = BoilingFood,
+		GoodHot = true,
+		CustomEatSound = EatingMushy,
+	}
+
+	item CannedChili
+	{
+		DisplayName = Canned Chili,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedChili,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 260,
+		Carbohydrates = 33,
+		Lipids = 7,
+		Proteins = 16,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedChilli,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item CannedChili_Box
+	{
+		DisplayName = Box of Canned Chili,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
+	item CannedChiliOpen
+	{
+		DisplayName = Opened Canned Chili,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedChiliOpen,
+		CannedFood = TRUE,
+		EatType = candrink,
+		EvolvedRecipe = Stew:16;Stir fry:16;Rice:16;Taco:8;Burrito:8;Omelette:8;Burger:8;Hotdog:8;Sandwich:8;Pasta:8,
+		/*EvolvedRecipeName = Canned Chili,*/
+		EvolvedRecipeName = Chili,
+		FoodType = Meat,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -16,
+		Calories = 260,
+		Carbohydrates = 33,
+		Lipids = 7,
+		Proteins = 16,
+		StaticModel = CanOpenChilli,
+		WorldStaticModel = CanOpenChilli,
+		Tags = HasMetal;HideUncooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		CookingSound = FryingFood,
+		GoodHot = true,
+		CustomEatSound = EatingMushy,
+	}
+
+	item CannedCornedBeef
+	{
+		DisplayName = Canned Corned Beef,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedCornedBeef,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 720,
+		Carbohydrates = 0,
+		Lipids = 48,
+		Proteins = 78,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedCornerBeef,
+		Tags = HasMetal,
+	}
+
+	item CannedCornedBeef_Box
+	{
+		DisplayName = Box of Canned Corned Beef,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
+	item CannedCornedBeefOpen
+	{
+		DisplayName = Opened Canned Corned Beef,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedCornedBeefOpen,
+		CannedFood = TRUE,
+		EatType = candrink,
+		EvolvedRecipe = Pizza:12;Burger:12;Omelette:8;Stew:12;Stir fry:12;Sandwich:8;Salad:12;Pasta:12;Rice:12,
+		EvolvedRecipeName = Corned Beef,
+		FoodType = Beef,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -24,
+		Calories = 720,
+		Carbohydrates = 0,
+		Lipids = 48,
+		Proteins = 78,
+		StaticModel = CanOpenCornerBeef,
+		WorldStaticModel = CanOpenCornerBeef,
+		Tags = HasMetal;HideUncooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		CookingSound = FryingFood,
+		GoodHot = true,
+		CustomEatSound = EatingMushy,
+	}
+
+	item CannedCorn
+	{
+		DisplayName = Canned Corn,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedCorn,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 315,
+		Carbohydrates = 70,
+		Lipids = 1.75,
+		Proteins = 7,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedCorn,
+		Tags = HasMetal;HideUncooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item CannedCorn_Box
+	{
+		DisplayName = Box of Canned Corn,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item CannedCornOpen
+	{
+		DisplayName = Opened Canned Corn,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedCornOpen,
+		CannedFood = TRUE,
+		EatType = candrink,
+		EvolvedRecipe = Soup:16;Stew:16;Stir fry:16;Burger:8;Hotdog:8;Salad:16;Rice:16;Pasta:16;Omelette:8;Taco:8;Burrito:8;AddBaitToChum:10,
+		/*EvolvedRecipeName = Canned Corn,*/
+		EvolvedRecipeName = Corn,
+		FoodType = Vegetables,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -16,
+		ThirstChange = -4,
+		Calories = 315,
+		Carbohydrates = 70,
+		Lipids = 1.75,
+		Proteins = 7,
+		FishingLure = true,
+		StaticModel = CanOpenCorn,
+		WorldStaticModel = CanOpenCorn,
+		Tags = HasMetal;HideUncooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		CookingSound = BoilingFood,
+		GoodHot = true,
+		CustomEatSound = EatingMushy,
+	}
+
+	item CannedFruitCocktail
+	{
+		DisplayName = Canned Fruit Cocktail,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedFruitCocktail,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 250,
+		Carbohydrates = 0,
+		Lipids = 24,
+		Proteins = 10,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedFruitCocktail_Ground,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item CannedFruitCocktail_Box
+	{
+		DisplayName = Box of Canned Fruit Cocktail,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item CannedFruitCocktailOpen
+	{
+		DisplayName = Opened Canned Fruit Cocktail,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedFruitCocktailOpen,
+		CannedFood = TRUE,
+		EatType = candrink,
+		EvolvedRecipe = Cake:15;FruitSalad:15;Pancakes:15;Muffin:15;ConeIcecream:5;PieSweet:15;Oatmeal:5,
+		EvolvedRecipeName = Fruit,
+		FoodType = Fruits,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 5,
+		DaysTotallyRotten = 7,
+		HungerChange = -15,
+		UnhappyChange = -10,
+		Calories = 250,
+		Carbohydrates = 0,
+		Lipids = 24,
+		Proteins = 10,
+		StaticModel = CanOpenFruitCocktail_Ground,
+		WorldStaticModel = CanOpenFruitCocktail_Ground,
+		Tags = HasMetal,
+	}
+
+	item CannedMilk
+	{
+		DisplayName = Canned Evaporated Milk,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedCondensedMilk,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		Calories = 472,
+		Carbohydrates = 23.6,
+		Lipids = 23.6,
+		Proteins = 23.6,
+		StaticModel = CanClosedMilk,
+		WorldStaticModel = CanClosedMilk,
+		Tags =HasMetal,
+		CannedFood = TRUE,
+	}
+
+	item CannedMilk_Box
+	{
+		DisplayName = Box of Canned Evaporated Milk,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
+    /* note that although canned milk dehydrating you might be a game mechanic in a popular extraction shooter game so that you can fulfil a Jaeger task, in real-life testing it does not */
+    /* if you are looking for the easter egg regarding that game, it is not located here */
+	item CannedMilkOpen
+	{
+		DisplayName = Opened Canned Evaporated Milk,
+		DisplayCategory = Food,
+		EatType = glugFood,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedCondensedMilk_Open,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = FruitSalad:2;Pancakes:2;HotDrink:2;Oatmeal:2;PieSweet:5;Cake:5,
+		FoodType = Milk,
+		Packaged = TRUE,
+		DaysFresh = 4,
+		DaysTotallyRotten = 7,
+		HungerChange = -10,
+		ThirstChange = -10,
+		Calories = 472,
+		Carbohydrates = 23.6,
+		Lipids = 23.6,
+		Proteins = 23.6,
+		CustomContextMenu = Drink,
+		StaticModel = CanOpenMilk,
+		WorldStaticModel = CanOpenMilk,
+		CustomEatSound = DrinkingFromCan,
+		Tags = Milk;HasMetal,
+		CannedFood = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		EvolvedRecipeName = Evaporated Milk,
+	}
+
+	item CannedMushroomSoup
+	{
+		DisplayName = Canned Mushroom Soup,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedMushroomSoup,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 160,
+		Carbohydrates = 19,
+		Lipids = 8,
+		Proteins = 3,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedMushroom,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item CannedMushroomSoup_Box
+	{
+		DisplayName = Box of Canned Mushroom Soup,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
+	item CannedMushroomSoupOpen
+	{
+		DisplayName = Opened Canned Mushroom Soup,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedMushroomSoupOpen,
+		CannedFood = TRUE,
+		EatType = candrink,
+		EvolvedRecipe = Omelette:5;Soup:10;Stew:10;Stir fry:10;Burger:5;Salad:10;Rice:10;Pasta:10,
+		EvolvedRecipeName = Mushroom,
+		FoodType = Mushroom,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -10,
+		ThirstChange = -4,
+		Calories = 160,
+		Carbohydrates = 19,
+		Lipids = 8,
+		Proteins = 3,
+		StaticModel = CanOpenMushroom,
+		WorldStaticModel = CanOpenMushroom,
+		Tags = HasMetal;HideUncooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		CookingSound = BoilingFood,
+		GoodHot = true,
+		CustomEatSound = EatingMushy,
+	}
+
+	item CannedPeaches
+	{
+		DisplayName = Canned Peaches,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedPeaches,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 250,
+		Carbohydrates = 0,
+		Lipids = 24,
+		Proteins = 10,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedPeaches_Ground,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item CannedPeaches_Box
+	{
+		DisplayName = Box of CannedPeaches,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item CannedPeachesOpen
+	{
+		DisplayName = Opened Canned Peaches,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedPeachesOpen,
+		CannedFood = TRUE,
+		EatType = candrink,
+		EvolvedRecipe = Cake:15;FruitSalad:15;Pancakes:15;Muffin:15;PieSweet:15;Oatmeal:5,
+		EvolvedRecipeName = Peach,
+		FoodType = Fruits,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 5,
+		DaysTotallyRotten = 7,
+		HungerChange = -15,
+		UnhappyChange = -10,
+		Calories = 250,
+		Carbohydrates = 0,
+		Lipids = 24,
+		Proteins = 10,
+		StaticModel = CanOpenPeaches_Ground,
+		WorldStaticModel = CanOpenPeaches_Ground,
+		Tags = HasMetal,
+		CustomEatSound = EatingMushy,
+	}
+
+	item CannedPeas
+	{
+		DisplayName = Canned Peas,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedPeas,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 280,
+		Carbohydrates = 52.5,
+		Lipids = 0,
+		Proteins = 14,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedPeas,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item CannedPeas_Box
+	{
+		DisplayName = Box of Canned Peas,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item CannedPeasOpen
+	{
+		DisplayName = Opened Canned Peas,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedPeasOpen,
+		CannedFood = TRUE,
+		EatType = candrink,
+		EvolvedRecipe = Omelette:8;Soup:16;Stew:16;Stir fry:16;Rice:16,
+		/*EvolvedRecipeName = Canned Peas,*/
+		EvolvedRecipeName = Pea,
+		FoodType = Vegetables,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -16,
+		ThirstChange = -3,
+		Calories = 280,
+		Carbohydrates = 52.5,
+		Lipids = 0,
+		Proteins = 14,
+		StaticModel = CanOpenPeas,
+		WorldStaticModel = CanOpenPeas,
+		Tags = HasMetal;HideUncooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		CookingSound = BoilingFood,
+		GoodHot = true,
+		CustomEatSound = EatingMushy,
+	}
+
+	item CannedPineapple
+	{
+		DisplayName = Canned Pineapple,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedPineapple,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 250,
+		Carbohydrates = 0,
+		Lipids = 24,
+		Proteins = 10,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedPineapple_Ground,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item CannedPineapple_Box
+	{
+		DisplayName = Box of Canned Pineapple,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        	Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item CannedPineappleOpen
+	{
+		DisplayName = Opened Canned Pineapple,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedPineappleOpen,
+		CannedFood = TRUE,
+		EatType = candrink,
+		EvolvedRecipe = Pizza:15;Cake:15;FruitSalad:15;Pancakes:5;Muffin:15;ConeIcecream:5;PieSweet:15;Oatmeal:5,
+		EvolvedRecipeName = Pineapple,
+		FoodType = Fruits,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 5,
+		DaysTotallyRotten = 7,
+		HungerChange = -15,
+		UnhappyChange = -10,
+		Calories = 250,
+		Carbohydrates = 0,
+		Lipids = 24,
+		Proteins = 10,
+		StaticModel = CanOpenPineapple_Ground,
+		WorldStaticModel = CanOpenPineapple_Ground,
+		Tags = HasMetal,
+		CustomEatSound = EatingMushy,
+	}
+
+	item CannedPotato2
+	{
+		DisplayName = Canned Potato,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedPotato,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 175,
+		Carbohydrates = 35,
+		Lipids = 0,
+		Proteins = 2.5,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedPotatoes,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item CannedPotato_Box
+	{
+		DisplayName = Box of Canned Potato,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item CannedPotatoOpen
+	{
+		DisplayName = Opened Canned Potato,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedPotatoOpen,
+		CannedFood = TRUE,
+		EatType = candrink,
+		EvolvedRecipe = Omelette:9;Soup:18;Stew:18;Pie:18;Stir fry:18;Salad:9,
+		/*EvolvedRecipeName = Canned Potato,*/
+		EvolvedRecipeName = Potato,
+		FoodType = Vegetables,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -18,
+		ThirstChange = -7,
+		Calories = 175,
+		Carbohydrates = 35,
+		Lipids = 0,
+		Proteins = 2.5,
+		StaticModel = CanOpenPotatoes,
+		WorldStaticModel = CanOpenPotatoes,
+		Tags = HasMetal;HideUncooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		CookingSound = BoilingFood,
+		GoodHot = true,		
+		CustomEatSound = EatingMushy,
+	}
+
+	item CannedSardines
+	{
+		DisplayName = Canned Sardines,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = CannedSardines,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 150,
+		Carbohydrates = 0,
+		Lipids = 11,
+		Proteins = 14,
+		StaticModel = CanClosed,
+		WorldStaticModel = CannedSardines_Ground,
+		Tags = HasMetal,
+	}
+
+	item CannedSardines_Box
+	{
+		DisplayName = Box of Canned Sardines,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 1.5,
+        Icon	=	Parcel_Small_Food,
+		WorldStaticModel = Parcel_Food_Small,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item CannedSardinesOpen
+	{
+		DisplayName = Opened Canned Sardines,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = CannedSardinesOpen,
+		CannedFood = TRUE,
+		EatType = candrink,
+		EvolvedRecipe = Pizza:14;Stew:14;Stir fry:14;Rice:14;Sandwich:7;Omelette:7;Toast:7,
+		/*EvolvedRecipeName = Canned Sardines,*/
+		EvolvedRecipeName = Sardine,
+		FoodType = Fish,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -14,
+		Calories = 150,
+		Carbohydrates = 0,
+		Lipids = 11,
+		Proteins = 14,
+		StaticModel = CannedSardines_Open_Ground,
+		WorldStaticModel = CannedSardines_Open_Ground,
+		Tags = HasMetal;HideUncooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		CookingSound = FryingFood,
+		GoodHot = true,
+		CustomEatSound = EatingMushy,
+	}
+
+	item CannedTomato2
+	{
+		DisplayName = Canned Tomato,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedTomato,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 90,
+		Carbohydrates = 18,
+		Lipids = 0,
+		Proteins = 3,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedTomatoes,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item CannedTomato_Box
+	{
+		DisplayName = Box of Canned Tomato,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item CannedTomatoOpen
+	{
+		DisplayName = Opened Canned Tomato,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedTomatoOpen,
+		CannedFood = TRUE,
+		EatType = candrink,
+		EvolvedRecipe = Pizza:12;Omelette:12;Soup:12;Stew:12;Pie:12;Stir fry:12;Sandwich:6;Burger:6;Salad:6;Rice:12;Pasta:12,
+		EvolvedRecipeName = Tomato,
+		FoodType = Vegetables,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -12,
+		ThirstChange = -8,
+		Calories = 90,
+		Carbohydrates = 18,
+		Lipids = 0,
+		Proteins = 3,
+		StaticModel = CanOpenTomatoes,
+		WorldStaticModel = CanOpenTomatoes,
+		Tags = HasMetal;HideUncooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		CookingSound = FryingFood,
+		GoodHot = true,
+		CustomEatSound = EatingMushy,
+	}
+
+	item Dogfood
+	{
+		DisplayName = Canned Dog Food,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = Dogfood,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 498,
+		Carbohydrates = 77.56,
+		Lipids = 12.58,
+		Proteins = 16.04,
+		WorldStaticModel = CanClosedDogFood,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item Dogfood_Box
+	{
+		DisplayName = Box of Canned Dog Food,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
+	item DogfoodOpen
+	{
+		DisplayName = Opened Canned Dog Food,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = DogfoodOpen,
+		FoodType = DogFood,
+		CannedFood = TRUE,
+		EatType = candrink,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 5,
+		DaysTotallyRotten = 7,
+		HungerChange = -30,
+		UnhappyChange = 50,
+		Calories = 498,
+		Carbohydrates = 77.56,
+		Lipids = 12.58,
+		Proteins = 16.04,
+		FishingLure = true,
+		StaticModel = CanOpenDogFood,
+		WorldStaticModel = CanOpenDogFood,
+		EvolvedRecipeName = Dog Food,
+		EvolvedRecipe = Burger:10|Cooked;Burrito:10|Cooked;Sandwich:10|Cooked;Stew:15;Taco:5|Cooked;AddBaitToChum:30,
+		Tags = HasMetal;HideUncooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		CookingSound = FryingFood,
+		CustomEatSound = EatingMushy,
+	}
+
+	item TinnedBeans
+	{
+		DisplayName = Canned Beans,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = Beans,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 170,
+		Carbohydrates = 33,
+		Lipids = 1,
+		Proteins = 7,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosed,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item TinnedBeans_Box
+	{
+		DisplayName = Box of Canned Beans,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item OpenBeans
+	{
+		DisplayName = Opened Canned Beans,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = BeansOpen,
+		EvolvedRecipe = Omelette:8;Soup:24;Stew:24;Rice:24;Sandwich:8;Toast:8;Salad:8,
+		EvolvedRecipeName = Bean,
+		FoodType = Bean,
+		CannedFood = TRUE,
+		EatType = candrink,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -24,
+		UnhappyChange = 10,
+		Calories = 170,
+		Carbohydrates = 33,
+		Lipids = 1,
+		Proteins = 7,
+		StaticModel = CanOpen,
+		WorldStaticModel = CanOpen,
+		Tags = HasMetal;HideUncooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		RemoveUnhappinessWhenCooked = true,
+		CookingSound = BoilingFood,
+		CustomEatSound = EatingMushy,
+	}
+
+	item TinnedSoup
+	{
+		DisplayName = Canned Vegetable Soup,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = Soup,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 125,
+		Carbohydrates = 20,
+		Lipids = 2.5,
+		Proteins = 7.5,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedSoup,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item TinnedSoup_Box
+	{
+		DisplayName = Box of Canned Vegetable Soup,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item TinnedSoupOpen
+	{
+		DisplayName = Opened Canned Vegetable Soup,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = SoupOpen,
+		CannedFood = TRUE,
+		EatType = candrink,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		EvolvedRecipe = Soup:25;Stew:25,
+		EvolvedRecipeName = Vegetable,
+		FoodType = Vegetables,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -25,
+		ThirstChange = -4,
+		Calories = 125,
+		Carbohydrates = 20,
+		Lipids = 2.5,
+		Proteins = 7.5,
+		StaticModel = CanOpenSoup,
+		WorldStaticModel = CanOpenSoup,
+		Tags = HasMetal;HideUncooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		CookingSound = BoilingFood,
+		GoodHot = true,
+		CustomEatSound = EatingSoup,
+	}
+
+	item TunaTin
+	{
+		DisplayName = Canned Tuna,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = Tuna,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 370,
+		Carbohydrates = 0,
+		Lipids = 34,
+		Proteins = 15,
+		StaticModel = CanClosed,
+		WorldStaticModel = TinnedTuna_Ground,
+		Tags = HasMetal,
+	}
+
+	item TunaTin_Box
+	{
+		DisplayName = Box of Canned Tuna,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 1.5,
+        Icon	=	Parcel_Small_Food,
+		WorldStaticModel = Parcel_Food_Small,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item TunaTinOpen
+	{
+		DisplayName = Opened Canned Tuna,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = TunaOpen,
+		CannedFood = TRUE,
+		EatType = candrink,
+		EvolvedRecipe = Omelette:9;Stew:18;Stir fry:18;Rice:18;Sandwich:9;Taco:9;Burrito:18,
+		EvolvedRecipeName = Tuna,
+		FoodType = Fish,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		HungerChange = -18,
+		Calories = 370,
+		Carbohydrates = 0,
+		Lipids = 34,
+		Proteins = 15,
+		StaticModel = TinnedTuna_Open_Ground,
+		WorldStaticModel = TinnedTuna_Open_Ground,
+		Tags = HasMetal,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		CookingSound = FryingFood,
+		GoodHot = true,
+		CustomEatSound = EatingMushy,
+	}
+}

@@ -1,0 +1,45 @@
+module Base
+{
+    entity Chopping_Block
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Chopping_Block,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = AnySurfaceCraft;ChoppingBlock,
+        }
+
+
+        component SpriteConfig
+        {
+            face single
+            {
+                layer
+                {
+                    row = crafted_02_85,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = BuildLowNoTool,
+            time          = 50,
+            SkillRequired = Woodwork:1,
+            xpAward       = Woodwork:10,
+            category      = Outdoors,
+            ToolTip       = Tooltip_craft_choppingBlockDesc,
+
+            inputs
+            {
+                item 1 [Base.Log],
+                item 1 tags[CrudeSaw;Saw] mode:keep flags[MayDegradeLight],
+            }
+        }
+    }
+}

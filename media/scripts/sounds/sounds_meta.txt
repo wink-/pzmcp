@@ -1,0 +1,111 @@
+module Base
+{
+	sound Helicopter
+	{
+		category = Meta,
+		clip
+		{
+			event = Meta/Helicopter,
+		}
+	}
+
+	sound MetaAssaultRifle1
+	{
+		category = Meta,
+		clip
+		{
+			event = Meta/AssaultRifle,
+		}
+	}
+
+	sound MetaPistol1
+	{
+		category = Meta,
+		clip
+		{
+			event = Meta/Pistol,
+		}
+	}
+
+	sound MetaPistol2
+	{
+		category = Meta,
+		clip
+		{
+			event = Meta/Pistol,
+		}
+	}
+
+	sound MetaPistol3
+	{
+		category = Meta,
+		clip
+		{
+			event = Meta/Pistol,
+		}
+	}
+
+	sound MetaShotgun1
+	{
+		category = Meta,
+		clip
+		{
+			event = Meta/Shotgun,
+		}
+	}
+
+	sound MetaDogBark
+	{
+		category = Meta,
+		clip
+		{
+			event = Meta/Dog,
+		}
+	}
+
+	sound MetaScream
+	{
+		category = Meta,
+		clip
+		{
+			event = Meta/Scream,
+		}
+	}
+
+	sound MetaOwl
+	{
+		category = Meta,
+		clip
+		{
+			event = Meta/Owl,
+		}
+	}
+
+	sound MetaWolfHowl
+	{
+		category = Meta,
+		clip
+		{
+			event = Meta/Wolf,
+		}
+	}
+
+	sound ChatDrawCard
+	{
+		category = Meta,
+		clip
+		{
+			event = Meta/DrawCard,
+		}
+	}
+
+	sound ChatRollDice
+	{
+		category = Meta,
+		clip
+		{
+			event = Meta/RollDice,
+		}
+	}
+}
+

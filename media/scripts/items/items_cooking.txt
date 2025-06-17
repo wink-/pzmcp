@@ -1,0 +1,713 @@
+module Base
+{
+
+    item Chopsticks
+    {
+        DisplayCategory = Cooking,
+        Type				= Normal,
+        DisplayName			= Chopsticks,
+        Icon				= Chopsticks,
+        Weight				= 0.2,
+        WorldStaticModel = Chopsticks_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+    }
+	/******* COOKING - BOWLS/PLATES *******/
+	
+	item Bowl
+	{
+		DisplayName = Empty Bowl,
+        DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Bowl,
+		IconFluidMask = Bowl_Mask,
+		PourType = bowl,
+		Tooltip = Tooltip_item_RainFromGround,
+		StaticModel = Bowl,
+		WorldStaticModel = BowlGround,
+		FillFromDispenserSound = GetWaterFromDispenserCeramic,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapCeramic,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Bowl;DontInheritConditon,
+		
+
+        component FluidContainer
+        {
+            ContainerName   = Bowl,
+            RainFactor	= 0.5,
+            capacity        = 0.3,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+	}
+	
+	item Plate
+	{
+		DisplayName = Plate,
+        DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 1,
+		Icon = Plate,
+		WorldStaticModel = Plate_Ground,
+		Tags = DontInheritConditon,
+	}
+
+	/* alternate plate types removed to streamline some food stuff*/
+	
+	/******* COOKING - CUPS/GLASSES/MUGS *******/
+	
+	item GlassTumbler
+	{
+		DisplayName = Tumbler,
+		DisplayCategory = WaterContainer,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = GlassTumbler,
+		IconFluidMask = GlassTumbler_Mask,
+		Tooltip = Tooltip_item_RainFromGround,
+		StaticModel = GlassTumbler_Ground,
+		WorldStaticModel = GlassTumbler_Ground,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = CoffeeMaker,
+		
+
+        component FluidContainer
+        {
+			ContainerName   = Glass,
+			RainFactor	= 0.5,
+			capacity        = 0.2,
+			CustomDrinkSound = DrinkingFromMug,
+		}
+	}
+
+	item GlassWine
+	{
+		DisplayName = Wine Glass,
+		DisplayCategory = WaterContainer,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = GlassWine,
+		IconFluidMask = GlassWine_Mask,
+		Tooltip = Tooltip_item_RainFromGround,
+		StaticModel = GlassWine_Ground,
+		WorldStaticModel = GlassWine_Ground,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass,
+        ResearchableRecipes = CarveGoblets;Forge_Goblets,
+
+        component FluidContainer
+        {
+            ContainerName   = Glass,
+            RainFactor	= 0.5,
+            capacity        = 0.2,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+	}
+	
+	item Mugl
+	{
+		DisplayName = Empty Mug,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		PourType = Mug,
+		Weight = 0.2,
+		IconsForTexture = Mugl;MugRed;MugWhite;MugBlue;MugYellow,
+		IconFluidMask = Mug_Mask,
+		StaticModel = Mug,
+		WorldStaticModelsByIndex = Mug;MugRed;MugWhite;MugBlue;MugYellow,
+		FillFromDispenserSound = GetWaterFromDispenserCeramic,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapCeramic,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = CookableMicrowave;CoffeeMaker,
+
+        component FluidContainer
+        {
+            ContainerName   = Mug,
+            RainFactor = 0.2,
+            capacity        = 0.2,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+	}
+
+	item MugWhite
+	{
+		DisplayName = Empty Mug,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		PourType = Mug,
+		Weight = 0.2,
+		Icon = MugWhite,
+		IconFluidMask = Mug_Mask,
+		Tooltip = Tooltip_item_RainFromGround,
+		StaticModel = MugWhite,
+		WorldStaticModel = MugWhite,
+		FillFromDispenserSound = GetWaterFromDispenserCeramic,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapCeramic,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = CookableMicrowave;CoffeeMaker,
+
+        	component FluidContainer
+        	{
+                ContainerName   = Mug,
+                RainFactor = 0.2,
+                capacity        = 0.2,
+                CustomDrinkSound = DrinkingFromMug,
+        	}
+	}
+	
+	item MugSpiffo
+	{
+		DisplayName = Empty Spiffo Mug,
+		DisplayCategory = Memento,
+		Type = Normal,
+		PourType = Mug,
+		Weight = 0.2,
+		Icon = MugSpiffo,
+		IconFluidMask = Mug_Mask,
+		StaticModel = MugSpiffo,
+		WorldStaticModel = MugSpiffo,
+		FillFromDispenserSound = GetWaterFromDispenserCeramic,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapCeramic,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = CookableMicrowave;IgnoreZombieDensity;CoffeeMaker;IsMemento,
+
+        component FluidContainer
+        {
+            ContainerName   = Mug,
+            RainFactor = 0.2,
+            capacity        = 0.2,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+	}
+
+    item Teacup
+    {
+        Type				= Normal,
+        DisplayCategory = Cooking,
+        DisplayName			= Teacup,
+        Icon				= Teacup,
+        Weight				= 0.2,
+        StaticModel = Teacup_Ground,
+        WorldStaticModel = Teacup_Ground,
+		FillFromDispenserSound = GetWaterFromDispenserCeramic,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapCeramic,
+		FillFromToiletSound = GetWaterFromToilet,
+        Tags = CookableMicrowave,
+
+        component FluidContainer
+        {
+            ContainerName   = Teacup,
+            RainFactor	= 1.0,
+            capacity        = 0.1,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+    }
+	
+	/******* COOKING - POTS/PANS/TRAYS *******/
+	
+	item BakingPan
+	{
+		DisplayName = Baking Pan,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 1,
+		Icon = BakingPan,
+		MetalValue = 60,
+		WorldStaticModel = BakingPan,
+	}
+	
+	item BakingTray
+	{
+		DisplayName = Baking Tray,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 1,
+		Icon = BakingTray,
+		MetalValue = 60,
+		WorldStaticModel = BakingTray,
+	}
+	
+	item MuffinTray
+	{
+		DisplayName = Muffin Tray,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 1,
+		Icon = Muffintray,
+		MetalValue = 60,
+		WorldStaticModel = MuffinTray,
+	}
+	
+	item Pot
+	{
+		DisplayName = Empty Cooking Pot,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 1,
+		Icon = Pot,
+		EatType = Pot,
+		PourType = Pot,
+		MetalValue = 40,
+		StaticModel = CookingPot,
+		WorldStaticModel = CookingPotGround,
+		FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapMetalMedium,
+		FillFromToiletSound = GetWaterFromToilet,
+		IsCookable = true,
+		Tags = Cookable;HasMetal;SmeltableSteelMedium,
+
+        ResearchableRecipes = Forge_Cooking_Pot,
+
+        component FluidContainer
+        {
+            ContainerName   = Pot,
+            RainFactor	= 0.8,
+            capacity        = 1.5,
+            CustomDrinkSound = DrinkingFromMug,
+		}
+	}
+	
+	item RoastingPan
+	{
+		DisplayName = Roasting Pan,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 1.3,
+		EatType = Pot,
+		Icon = Roastingpan,
+		IconFluidMask = Roastingpan_Mask,
+		MetalValue = 60,
+		StaticModel = RoastingPan,
+		WorldStaticModel = RoastingPan,
+		FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapMetalMedium,
+		FillFromToiletSound = GetWaterFromToilet,
+		IsCookable = true,
+		Tags = Cookable;HasMetal;SmeltableSteelMedium,
+
+        component FluidContainer
+        {
+			ContainerName   = Pan,
+			RainFactor	= 1.0,
+			capacity        = 0.5,
+			CustomDrinkSound = DrinkingFromMug,
+		}
+	}
+	
+	/******* COOKING - MISC. *******/
+
+    item CheeseCloth
+    {
+        DisplayCategory = Material,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=   Cheese Cloth,
+        Icon	=	Cheesecloth,
+        WorldStaticModel = CheeseCloth_Ground,
+    }
+
+/* todo turbo_note: temporary commented due to scriptloading changes */
+/* todo blair: changed them from being food/spices to normal so they just work; them being cocktail ingredients is bad long term for food/liquids IMO but we can revist for food/cooking rework */
+
+    item CocktailUmbrella
+    {
+        DisplayCategory = Cooking,
+        Weight	=	0.1,
+        DisplayName	=   Cocktail Umbrella,
+		IconsForTexture = CocktailUmbrella1;CocktailUmbrella2;CocktailUmbrella3,
+	    WorldStaticModelsByIndex = CocktailUmbrella1;CocktailUmbrella2;CocktailUmbrella3,
+        Type	=	Normal,
+		/*
+        Type	=	Food,
+		FoodType = Garnish,
+		CantBeFrozen = TRUE,
+		Spice = TRUE,
+		CantEat = TRUE,
+		EvolvedRecipe = HotDrink:0,
+		EvolvedRecipeName = a Cocktail Umbrella,*/
+    }
+	
+	item Corkscrew
+	{
+		DisplayName = Corkscrew,
+        DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = Corkscrew,
+		MetalValue = 5,
+		StaticModel = Corkscrew,
+		WorldStaticModel = Corkscrew,
+		Tags = Corkscrew,
+	}
+	
+	item CuttingBoardPlastic
+	{
+		DisplayName = Cutting Board,
+        DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 1,
+		Icon = CuttingBoard_Plastic,
+		WorldStaticModel = CuttingBoard_Plastic_Ground,
+		Tags = IsFireFuel,
+	}
+	
+	item CuttingBoardWooden
+	{
+		DisplayName = Cutting Board,
+        DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 1,
+		Icon = CuttingBoard_Wood,
+		WorldStaticModel = CuttingBoard_Wood_Ground,
+		Tags = IsFireFuel,
+	}
+	
+	item GrillBrush
+	{
+		DisplayName = Grill Brush,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = GrillBrush,
+		MetalValue = 20,
+		WorldStaticModel = GrillBrush_Ground,
+		Tags = CleanStains,
+	}
+	
+	item Kettle
+	{
+		DisplayName = Empty Kettle,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		PourType = Kettle,
+		Weight = 1,
+		Icon = Kettle,
+		MetalValue = 30,
+		StaticModel = Kettle,
+		WorldStaticModel = KettleGround,
+		FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapMetalMedium,
+		FillFromToiletSound = GetWaterFromToilet,
+		IsCookable = true,
+		Tags = Cookable;CoffeeMaker;HasMetal;SmeltableIronSmall,
+        ResearchableRecipes = MakeKettleMaul;Forge_Kettle,
+
+        component FluidContainer
+        {
+			ContainerName   = Kettle,
+			capacity        = 1.5,
+		}
+
+	}
+
+	item Kettle_Copper
+	{
+		DisplayName = Empty Copper Kettle,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		PourType = Kettle,
+		Weight = 1,
+		Icon = CopperKettle,
+		MetalValue = 30,
+		StaticModel = Kettle_Copper,
+		WorldStaticModel = Kettle_Copper,
+		FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapMetalMedium,
+		FillFromToiletSound = GetWaterFromToilet,
+		IsCookable = true,
+		Tags = Cookable;CoffeeMaker;HasMetal;ScrapLargeCopper,
+
+        component FluidContainer
+        {
+			ContainerName   = Kettle_Copper,
+			capacity        = 1.5,
+		}
+
+	}
+	
+	item KitchenTongs
+	{
+		DisplayName = Kitchen Tongs,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.6,
+		Icon = Tongs,
+		StaticModel = KitchenTongs,
+		WorldStaticModel = KitchenTongs,
+		Tags = CrudeTongs;HasMetal;BreakOnSmithing,
+		ConditionMax = 1,
+		ConditionLowerChanceOneIn = 1,
+		ToolTip = Tooltip_item_BreakOnSmithing,
+	}
+	
+	item MortarPestle
+	{
+		DisplayName = Mortar and Pestle,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = MortarPestle,
+		StaticModel = Mortar,
+		WorldStaticModel = Mortar_Ground,
+		Tags = MortarPestle,
+	}
+	
+	item OvenMitt
+	{
+		DisplayName = Oven Mitt,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = OvenMitt,
+		WorldStaticModel = OvenMitt_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item PlasticTray
+	{
+		DisplayName = Plastic Tray,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 1,
+		Icon = PlasticTray,
+		WorldStaticModel = PlasticTray_Ground,
+		Tags = IsFireFuel,
+	}
+	
+	item Spatula
+	{
+		DisplayName = Spatula,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.6,
+		Icon = Spatula,
+		WorldStaticModel = Spatula_Ground,
+		Tags = MixingUtensil,
+	}
+
+/* todo turbo_note: temporary commented due to scriptloading changes */
+/* todo blair: changed them from being food/spices to normal so they just work; them being cocktail ingredients is bad long term for food/liquids IMO but we can revist for food/cooking rework */
+
+    item Straw2
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        DisplayName	=   Straw,
+        Icon	=	Straw,
+        WorldStaticModel = Straw_Ground,
+        Type	=	Normal,
+        /*
+        Type	=	Food,
+        FoodType = Garnish,
+		CantBeFrozen = TRUE,
+		Spice = TRUE,
+		CantEat = TRUE,
+		EvolvedRecipe = HotDrink:0,
+		EvolvedRecipeName = a Straw,*/
+    }
+	
+	item Timer
+	{
+		DisplayName = Timer,
+        DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Timer,
+		MetalValue = 7,
+		WorldStaticModel = Timer,
+	}
+	
+	item TinOpener
+	{
+		DisplayName = Can Opener,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.6,
+		Icon = CanOpener,
+		MetalValue = 3,
+		StaticModel = CanOpener,
+		WorldStaticModel = CanOpenerGround,
+		Tags = CanOpener;SmeltableIronSmall,
+	}
+
+	item BastingBrush
+	{
+		DisplayName = Basting Brush,
+        DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.3,
+		Icon	=	BastingBrush,
+		WorldStaticModel = BastingBrush,
+	}
+
+	item Whisk
+	{
+		DisplayName = Whisk,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.6,
+		Icon = Whisk,
+		MetalValue = 20,
+		WorldStaticModel = Whisk,
+		Tags = MixingUtensil,
+	}
+
+	item Ladle
+	{
+		DisplayName = Ladle,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.6,
+		Icon = Ladle,
+		MetalValue = 20,
+		WorldStaticModel = Ladle,
+	}
+
+	item CheeseGrater
+	{
+		DisplayName = Cheese Grater,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 1,
+		Icon = CheeseGrater,
+		MetalValue = 20,
+		WorldStaticModel = CheeseGrater,
+		Tags = HasMetal;Grater;SmeltableIronSmall,
+	}
+
+	item Strainer
+	{
+		DisplayName = Strainer,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 1,
+		Icon = Strainer,
+		MetalValue = 20,
+		WorldStaticModel = Strainer,
+		Tags = SmeltableIronSmall,
+	}
+
+	item SkewersWooden
+	{
+		DisplayName = Wooden Skewers,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = SkewersWooden,
+		WorldStaticModel = SkewersWooden,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item PizzaCutter
+	{
+		DisplayName = Pizza Cutter,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = PizzaCutter,
+		MetalValue = 20,
+		WorldStaticModel = PizzaCutter,
+		Tags = PizzaCutter;SmeltableIronSmall,
+	}
+
+	item BottleOpener
+	{
+		DisplayName = Bottle Opener,
+        DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = BottleOpener,
+		WorldStaticModel = BottleOpener,
+		Tags = BottleOpener,
+	}
+
+	item BottleOpener_Keychain
+	{
+		DisplayName = Key Ring Bottle Opener,
+	    DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.05,
+		Icon = BottleOpener_Keychain,
+		WorldStaticModel = BottleOpener_Keychain,
+		Tags = BottleOpener;HasMetal;FitsKeyRing,
+	}
+
+	item PlasticFork
+	{
+		DisplayName = Plastic Fork,
+	    DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Fork_Plastic,
+		StaticModel = PlasticFork,
+		WorldStaticModel = PlasticFork,
+		Tags = Fork;MixingUtensil,
+        ResearchableRecipes = CarveWoodenFork;MakeBoneFork,
+	}
+
+	item PlasticKnife
+	{
+		DisplayName = Plastic Knife,
+	    DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Knife_Plastic,
+		StaticModel = PlasticKnife,
+		WorldStaticModel = PlasticKnife,
+		Tags = DullKnife,
+	}
+
+	item PlasticSpoon
+	{
+		DisplayName = Plastic Spoon,
+	    DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Spoon_Plastic,
+		StaticModel = PlasticSpoon,
+		WorldStaticModel = PlasticSpoon,
+		Tags = Spoon;MixingUtensil,
+	}
+
+	item WoodenFork
+	{
+		DisplayName = Wooden Fork,
+	    DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Fork_Wood,
+		StaticModel = WoodenFork,
+		WorldStaticModel = WoodenFork,
+		Tags = Fork;MixingUtensil;IsFireFuel;IsFireTinder,
+        ConditionMax	=	1,
+        ResearchableRecipes = Forge_Forks;MakeBoneFork,
+	}
+
+	item WoodenSpoon
+	{
+		DisplayName =Wooden Spoon,
+	    DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Spoon_Wood,
+		StaticModel = WoodenSpoon,
+		WorldStaticModel = WoodenSpoon,
+		Tags = Spoon;MixingUtensil;IsFireFuel;IsFireTinder,
+        ConditionMax	=	1,
+        ResearchableRecipes = Forge_Spoons;CarveWoodenFork;MakeBoneFork;CarveWoodenSpade,
+	}
+}

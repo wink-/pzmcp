@@ -1,0 +1,56 @@
+/******************************************/
+/** RJ: PLEASE DONT TOUCH WITHOUT ASKING **/
+/******************************************/
+
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_ButcherHook
+        {
+            LuaWindowClass      = ISEntityTabWindow,
+            DisplayName         = Butcher Hook,
+            Icon                = Build_ButcherHook,
+        }
+    }
+
+    entity ButcherHook
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_ButcherHook,
+            uiEnabled       = true,
+        }
+
+        component SpriteConfig
+        {
+		    isThumpable = false,
+			OnCreate = BuildRecipeCode.butcheringHook.OnCreate,
+
+            face W
+            {
+                layer
+                {
+                    row = crafted_04_120,
+                }
+            }
+        }
+		
+		component CraftRecipe
+        {
+		    timedAction   = BuildWoodenStructureMedium,
+            time          = 200,
+            category      = Farming,
+            SkillRequired = Woodwork:3,
+            xpAward       = Woodwork:30,
+            ToolTip       = Tooltip_craft_butcherHookDesc,
+            inputs
+            {
+		        item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+		        item 2 [Base.Nails],
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+module Base
+{
+	item Mov_CabinetMedical
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Medicine Cabinet,
+		WorldObjectSprite = fixtures_bathroom_01_28,
+	}
+	
+	item Mov_DegreeDoctor
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Doctor Degree Certificate,
+		WorldObjectSprite = location_community_medical_01_14,
+	}
+	
+	item Mov_DegreeSurgeon
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Surgeon Degree Certificate,
+		WorldObjectSprite = location_community_medical_01_31,
+	}
+	
+	item Mov_FirstAidCabinet
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = First Aid Cabinet,
+		WorldObjectSprite = location_community_medical_01_88,
+	}
+	
+	item Mov_Microscope
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Microscope,
+		WorldObjectSprite = location_community_medical_01_136,
+	}
+	
+	item Mov_MobileBloodbag
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Mobile Bloodbag,
+		WorldObjectSprite = location_community_medical_01_25,
+	}
+	
+	item Mov_MobileCounter
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Mobile Tool Counter,
+		WorldObjectSprite = location_community_medical_01_49,
+	}
+	
+	item Mov_ScaleMedical
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Weighing Scale,
+		WorldObjectSprite = location_community_medical_01_9,
+	}
+}

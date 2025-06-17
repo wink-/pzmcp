@@ -1,0 +1,21 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISWidgetComponentHeader
+        {
+            background          = true,
+            backgroundColor     = C_BgCompHeader,
+            borderColor         = C_Border,
+            enableIcon          = true,
+            padding             = 3,
+            margin              = 5,
+            textureBackground   = media/ui/Panel_TitleBar.png,
+        }
+
+        ISWidgetComponentHeader S_WidgetComponentHeader_Std
+        {
+            enableIcon          = true,
+        }
+    }
+}

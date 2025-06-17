@@ -1,0 +1,1265 @@
+module Base
+{
+	/******* LITERATURE - MAGAZINES *******/
+	/*NOTE: as we don't  consume literature items when reading them, we don't need to declare ReplaceOnUse*/
+
+    item ArmorMag1
+    {
+        DisplayName = Outfit Apocalypse (Spiked and Tire Armor),
+        DisplayCategory = SkillBook,
+        Type = Literature,
+        Weight = 0.5,
+        Icon = Magazine_War2,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes = MakeTireArmor;SpikePadding;SewLeatherCodpiece;SewLeatherGorget,
+        StaticModel = Magazine,
+        WorldStaticModel = ArmorMag1,
+        Tags = Magazine,
+    }
+
+    item ArmorMag2
+    {
+        DisplayName = Early Indigenous Armor - An In-depth Study (Bone and Wood Armor),
+        DisplayCategory = SkillBook,
+        Type = Literature,
+        Weight = 0.5,
+        Icon = Magazine_EarlyArmour,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes = MakeBoneArmor;MakeWoodArmor,
+        StaticModel = Magazine,
+        WorldStaticModel = ArmorMag2,
+        Tags = Magazine,
+    }
+
+    item ArmorMag3
+    {
+        DisplayName = Secrets of the Outback Outlaws (Simple Metal Armor),
+        DisplayCategory = SkillBook,
+        Type = Literature,
+        Weight = 0.5,
+        Icon = Magazine_OutbackArmour,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes = MakeScrapMetalHelmet;MakeScrapMetalBodyArmor;MakeScrapMetalShoulderArmor;MakeScrapMetalThighArmor,
+        StaticModel = Magazine,
+        WorldStaticModel = ArmorMag3,
+        Tags = Magazine,
+    }
+
+	item ArmorMag4
+	{
+		DisplayName = European Armor in the Late Medieval Era (Armor),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon =  Magazine_EarlyArmour3,
+		BoredomChange = -20,
+        StressChange = -15,
+		/*TeachedRecipes = MakeCoatOfPlates,*/
+		TeachedRecipes = Assemble_Shoulder_Armor;Assemble_Articulated_Thigh_Armor;Forge_Codpiece;Forge_Gorget;Assemble_FullMetal_Forearm_Armor;Assemble_Articulated_Shin_Armor;Forge_Armored_Gloves;Forge_Metal_Helmet;Forge_CoatOfPlates;Forge_Buckle,
+		StaticModel = Magazine,
+		WorldStaticModel = ArmorMag4,
+        Tags = Magazine,
+	}
+
+	item ArmorMag5
+	{
+		DisplayName = Armor in the Iron Age (Armor),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_EarlyArmour2,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = Assemble_Forearm_Armor;Forge_Body_Armor;Assemble_Simple_Shoulder_Armor;Assemble_Thigh_Armor;Assemble_Shin_Armor;Assemble_Forearm_Armor;Forge_Metal_Mask;Forge_Buckle,
+		StaticModel = Magazine,
+		WorldStaticModel = ArmorMag5,
+        Tags = Magazine,
+	}
+
+	item ArmorMag6
+	{
+		DisplayName = Strange Histories: Siberian Bear Hunting,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_StrangeHistory,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = SpikePadding;SpikeArmorWelding;ForgeSpearHead;ForgeLongSpearHead,
+		StaticModel = Magazine,
+		WorldStaticModel = ArmorMag6,
+        Tags = Magazine,
+	}
+
+	item ArmorMag7
+	{
+		DisplayName = FBI Incident Report: San Fernando Bank Robbery,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = PaperReport1,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeBulletproofLimbArmor,
+		StaticModel = ArmorMag7,
+		WorldStaticModel = ArmorMag7,
+        Tags = Magazine,
+	}
+	
+	item CookingMag1
+	{
+		DisplayName = Cookbook (Cakes and Pies),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineFood,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeCakeBatter;MakePieDough,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineCook1Ground,
+		Tags = Magazine,
+	}
+	
+	item CookingMag2
+	{
+		DisplayName = Cookbook (Bread and Biscuits),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineFood2,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeBreadDough;MakeBaguetteDough;MakeBiscuits,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineCook2Ground,
+		Tags = Magazine,
+	}
+
+	item CookingMag3
+	{
+		DisplayName = Cookbook (Pizza),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+        Weight	=	0.5,
+		Icon = MagazineFood3,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakePizza,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineCook3Ground,
+		Tags = Magazine,
+	}
+
+	item CookingMag4
+	{
+		DisplayName = Cookbook (Cookies),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+        Weight	=	0.5,
+		Icon = MagazineFood4,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeChocolateCookieDough;MakeChocolateChipCookieDough;MakeOatmealCookieDough;MakeSugarCookieDough;MakeShortbreadCookieDough,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineCook4Ground,
+		Tags = Magazine,
+	}
+
+	item CookingMag5
+	{
+		DisplayName = Cookbook (Sushi),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+        Weight	=	0.5,
+		Icon = MagazineFood5,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeSushi;MakeMaki;MakeOnigiri,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineCook4Ground,
+		Tags = Magazine,
+	}
+
+	item CookingMag6
+	{
+		DisplayName = Cookbook (Miscellaneous),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+        Weight	=	0.5,
+		Icon = MagazineFood6,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeFriedShrimp;MakeFriedOnionRings;MakeCabbageRolls;MakeGuacamole,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineCook6Ground,
+		Tags = Magazine,
+	}
+	
+	item ElectronicsMag1
+	{
+		DisplayName = Electronics Manual (Remote Triggers),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineElectronics01,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeRemoteControllerV1;MakeRemoteControllerV2;MakeRemoteControllerV3;MakeRemoteTrigger;AddCraftedTriggerToBomb,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec1Ground,
+		Tags = Magazine,
+		
+	}
+	
+	item ElectronicsMag2
+	{
+		DisplayName = Electronics Manual (Timers),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineElectronics03,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeTimer;AddTimerToBomb,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec2Ground,
+		Tags = Magazine,
+		
+	}
+	
+	item ElectronicsMag3
+	{
+		DisplayName = Electronics Manual (Motion Sensors),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineElectronics04,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = AddMotionSensorV1ToBomb;AddMotionSensorV2ToBomb;AddMotionSensorV3ToBomb,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec3Ground,
+		Tags = Magazine,
+	}
+	
+	item ElectronicsMag4
+	{
+		DisplayName = How to Use Generators,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineElectronics02,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = Generator,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec4Ground,
+		Tags = Magazine,
+	}
+
+	item ElectronicsMag5
+	{
+		DisplayName = Sparky's Electrics Guide (Improvised Lights),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_Electric,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeImprovisedFlashlight;MakeImprovisedLantern,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineElec5Ground,
+		Tags = Magazine,
+	}
+	
+	item EngineerMagazine1
+	{
+		DisplayName = Real Spy Secrets (Noise Makers and Firecrackers),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_Spy2,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeNoiseMaker;MakeFirecracker,
+		StaticModel = Magazine,
+		/*WorldStaticModel = MagazineEngi1Ground,*/
+		WorldStaticModel = TrickMag2,
+		Tags = Magazine,
+	}
+	
+	item EngineerMagazine2
+	{
+		DisplayName = The Cheapskate's John Spiral: Chemical Warfare (Smoke Bombs and Gas Masks),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_Underground3,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeSmokeBomb;MakeCraftedGasMaskFilter;MakeImprovisedGasMask;RechargeFilters,
+		StaticModel = Magazine,
+		WorldStaticModel = EngineerMagazine2,
+		Tags = Magazine,
+	}
+
+	item EngineerMagazine3
+	{
+		DisplayName = Magazine: The Cheapskate's John Spiral - Homemade Explosives,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_Underground6,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeAerosolBomb;MakeFlameBomb;MakePipeBomb,
+		StaticModel = Magazine,
+		WorldStaticModel = EngineerMagazine3,
+		Tags = Magazine,
+	}
+
+	item FarmingMag1
+	{
+		DisplayName = Farming Handbook (Mildew Cure),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+        Icon	=	Magazine_Farming7,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeMildewCure,
+		StaticModel = Magazine,
+        WorldStaticModel = MagazineFarming7,
+		Tags = Magazine,
+	}
+
+    item FarmingMag2
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	= Farming Handbook (Flies and Aphid Cure),
+        Icon	=	Magazine_Farming8,
+        BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes  =   MakeFliesCurefromCigarettes;MakeFliesCurefromLooseTobacco;MakeFliesCurefromChewingTobacco;MakeAphidsCure,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineFarming8,
+		Tags = Magazine,
+    }
+
+    item FarmingMag3
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Farming Handbook (Flower Growing Seasons),
+        Icon	=	Magazine_Gardening1,
+        BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes  =   Chamomile Growing Season;Marigold Growing Season;Sunflower Growing Season;Rose Growing Season;Poppy Growing Season;Lavender Growing Season,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineFlowers,
+		Tags = Magazine,
+    }
+
+    item FarmingMag4
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Farming Handbook (Scarecrows and Barbed Wire),
+        Icon	=	Magazine_Farming9,
+        BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes  =   MakeScarecrow;MakeBarbedWire,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineFarming9,
+		Tags = Magazine,
+
+    }
+
+    item FarmingMag5
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Farming Handbook (Jarring),
+        Icon	=	MagazineFarming5,
+        BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes  =   MakeJar,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineFarming5,
+		Tags = Magazine,
+    }
+
+    item FarmingMag6
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Farming Handbook (Large-Scale Crop Growing Seasons),
+        Icon	=	MagazineFarming1,
+        BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes  =   Barley Growing Season;Corn Growing Season;Flax Growing Season;Rye Growing Season;Soybean Growing Season;Sugar Beet Growing Season;Tobacco Growing Season;Wheat Growing Season,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineFarming1,
+		Tags = Magazine,
+    }
+
+    item FarmingMag7
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Farming Handbook (Garden Produce Growing Seasons),
+        Icon	=	Magazine_Farming6,
+        BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes  =   Bell Pepper Growing Season;Broccoli Growing Season;Cabbage Growing Season;Carrot Growing Season;Cauliflower Growing Season;Cucumber Growing Season;Garlic Growing Season;Green Pea Growing Season;Habanero Growing Season;Jalapeno Growing Season;Kale Growing Season;Leek Growing Season;Lettuce Growing Season;Onion Growing Season;Potato Growing Season;Pumpkin Growing Season;Radish Growing Season;Spinach Growing Season;Strawberry Growing Season;Sweet Potato Growing Season;Tomato Growing Season;Turnip Growing Season;Watermelon Growing Season;Zucchini Growing Season,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineFarming6,
+		Tags = Magazine,
+    }
+
+    item FarmingMag8
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Farming Handbook (Herb Growing Seasons),
+        Icon	=	Magazine_Farming10,
+        BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes  =   Basil Growing Season;Chives Growing Season;Cilantro Growing Season;Lemongrass Growing Season;Mint Growing Season;Oregano Growing Season;Parsley Growing Season;Sage Growing Season;Rosemary Growing Season;Thyme Growing Season;Hops Growing Season,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineFarming10,
+		Tags = Magazine,
+    }
+
+    item FarmingMag9
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine: Herbal Remedy Growing,
+        Icon	=	Magazine_Herbal1,
+        BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = Black Sage Growing Season;Broadleaf Plantain Growing Season;Comfrey Growing Season;Common Mallow Growing Season;Wild Garlic Growing Season,
+		StaticModel = Magazine,
+        WorldStaticModel = MagazineFarmingHerbalRemedy,
+		Tags = Magazine,
+    }
+	
+	item FishingMag1
+	{
+		DisplayName = Fisherman's Handbook (Rod Fishing),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineFish,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeFishingRod;FixFishingRod;MakeChum,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineFish1Ground,
+		Tags = Magazine,
+	}
+	
+	item FishingMag2
+	{
+		DisplayName = Fisherman's Handbook (Net Fishing),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineFish2,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeFishingNet;GetWireBack,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineFish2Ground,
+		Tags = Magazine,
+	}
+
+    item GlassmakingMag1
+    {
+        DisplayName = Glassmaking Magazine 1,
+        DisplayCategory = SkillBook,
+        Type = Literature,
+        Weight = 0.5,
+        Icon = Magazine_Glass1,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes = MakeWineGlass;MakeLanternGlass,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGlass1Ground,
+        Tags = Magazine,
+    }
+
+    item GlassmakingMag2
+    {
+        DisplayName = Glassmaking Magazine 2,
+        DisplayCategory = SkillBook,
+        Type = Literature,
+        Weight = 0.5,
+        Icon = Magazine_Glass2,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes = MakeDrinkingGlass;MakeGlassPanel,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGlass2Ground,
+        Tags = Magazine,
+    }
+
+    item GlassmakingMag3
+    {
+        DisplayName = Glassmaking Magazine 3,
+        DisplayCategory = SkillBook,
+        Type = Literature,
+        Weight = 0.5,
+        Icon = Magazine_Glass3,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes = MakeGlassBottle;MakeGlassJar,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGlass3Ground,
+        Tags = Magazine,
+    }
+
+    item HempMag1
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Legalize It! (Hemp Growing Season),
+        Icon	=	Magazine_Hemp1,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes  =   Hemp Growing Season,
+        StaticModel = Magazine,
+        WorldStaticModel = HempMag1,
+        Tags = Magazine,
+    }
+	
+	item HerbalistMag
+	{
+		DisplayName = Wilderness Survival,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_Survival1,
+		BoredomChange = -20,
+        StressChange = -15,
+		/*TeachedRecipes = Herbalist;MakeStoneBlade;FireHardenSpear;MakeCrudeWhetstone;MakePlantainPoultice;MakeComfreyPoultice;MakeWildGarlicPoultice;Black Sage Growing Season;Broadleaf Plantain Growing Season;Comfrey Growing Season;Common Mallow Growing Season;Wild Garlic Growing Season;BindSpear,*/
+		TeachedRecipes = Herbalist;MakeStoneBlade;FireHardenSpear;MakeCrudeWhetstone;MakePlantainPoultice;MakeComfreyPoultice;MakeWildGarlicPoultice;BindSpear,
+		StaticModel = Magazine,
+		WorldStaticModel = SurvivalMag1,
+		Tags = Magazine,
+	}
+	
+	item HuntingMag1
+	{
+		DisplayName = Hunting Handbook (Snares),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineHunting,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeSnareTrap,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineHunter1Ground,
+		Tags = Magazine,
+	}
+	
+	item HuntingMag2
+	{
+		DisplayName = Hunting Handbook (Crate and Stick Traps),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineHunting2,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeWoodenBoxTrap;MakeStickTrap,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineHunter2Ground,
+		Tags = Magazine,
+	}
+	
+	item HuntingMag3
+	{
+		DisplayName = Hunting Handbook (Box and Cage Traps),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineHunting3,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeTrapBox;MakeCageTrap,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineHunter3Ground,
+		Tags = Magazine,
+	}
+
+	item HuntingMag4
+	{
+		DisplayName = Magazine: Get Stuffed,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_Taxidermy1,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeStagHeadTrophy,
+		StaticModel = Magazine,
+		WorldStaticModel = HuntingMag4,
+		Tags = Magazine,
+	}
+
+    item KeyMag1
+    {
+        DisplayName = The Cheapskate's John Spiral: Escaping Captivity,
+        DisplayCategory = SkillBook,
+        Type = Literature,
+        Weight = 0.5,
+        Icon = Magazine_Underground4,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes = CopyBuildingKey;MakeScrewdriver,
+        StaticModel = Magazine,
+        WorldStaticModel = KeyMag1,
+        Tags = Magazine,
+    }
+
+    item KnittingMag1
+    {
+        DisplayName = Knitting Magazine 1,
+        DisplayCategory = SkillBook,
+        Type = Literature,
+        Weight = 0.5,
+        Icon = Magazine_Knitting1,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes = KnitScarf;KnitLegwarmers;KnitSweaterVest;KnitSocks;KnitDoily,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineKnit1Ground,
+        Tags = Magazine,
+    }
+
+    item KnittingMag2
+    {
+        DisplayName = Knitting Magazine 2,
+        DisplayCategory = SkillBook,
+        Type = Literature,
+        Weight = 0.5,
+        Icon = Magazine_Knitting2,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes = KnitWoolyHat;KnitBalaclavaFace;KnitBalaclavaFull;KnitBeany,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineKnit2Ground,
+        Tags = Magazine,
+    }
+
+	item MechanicMag1
+	{
+		DisplayName = Laines Auto Manual - Standard Models,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineMechanic1,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = Basic Mechanics,
+		Tooltip = Tooltip_item_MechanicMag1,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineMec1Ground,
+		Tags = Magazine,
+	}
+	
+	item MechanicMag2
+	{
+		DisplayName = Laines Auto Manual - Commercial Models,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineMechanic2,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = Intermediate Mechanics,
+		Tooltip = Tooltip_item_MechanicMag2,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineMec2Ground,
+		Tags = Magazine,
+	}
+	
+	item MechanicMag3
+	{
+		DisplayName = Laines Auto Manual - Performance Models,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineMechanic3,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = Advanced Mechanics,
+		Tooltip = Tooltip_item_MechanicMag3,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineMec3Ground,
+		Tags = Magazine,
+	}
+	
+	item MetalworkMag1
+	{
+		DisplayName = Metalwork Schematics (Walls and Roofs),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineWelding1,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MetalWallLvl1;MetalWallLvl2;MetalFloorLvl1;MetalWindowFrameLvl1;MetalWindowFrameLvl2;MetalWallFrame;MetalDoorFrameLvl1;MetalDoorFrameLvl2;Metal_Stairs,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineMetal1Ground,
+		Tags = Magazine,
+	}
+	
+	item MetalworkMag2
+	{
+		DisplayName = Metalwork Schematics (Containers),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineWelding2,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = Metal_Counter_Lvl1;Metal_Counter_Lvl2;Metal_CounterCorner_Lvl1;Metal_CounterCorner_Lvl2;Metal_Crate_Lvl1;Metal_Crate_Lvl2;Metal_LockerBig_Lvl1;Metal_LockerBig_Lvl2;Metal_LockerSmall_Lvl1;Metal_LockerSmall_Lvl2;Metal_Shelves_Lvl1;Metal_Shelves_Lvl2,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineMetal2Ground,
+		Tags = Magazine,
+	}
+	
+	item MetalworkMag3
+	{
+		DisplayName = Metalwork Schematics (Fences),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineWelding3,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MetalPoleFenceGate;MetalWireFenceGate;MetalWireFenceGateSmall;DoubleFenceGate;DoubleWireGate;MetalBigWireFence;MetalBigMetalFence;MetalPoleFenceGateSmall;MetalSmallPoleFence;MetalFenceLvl1;MetalSmallWireFence,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineMetal3Ground,
+		Tags = Magazine,
+	}
+	
+	item MetalworkMag4
+	{
+		DisplayName = Metalwork Schematics (Metal Sheets),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineWelding3,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeMetalSheet;MakeSmallMetalSheet,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineMetal4Ground,
+		Tags = Magazine,
+	}
+
+	item PrimitiveToolMag1
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName = Tool Use of Early Man (Bone and Stone Tools),
+        Icon	=	Magazine_EarlyToolmaking,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes  =   MakeLargeStoneAxeHead;MakeStoneBlade;MakeStoneMaulHead;BindSpear;MakeStoneBladeScythe;SharpenBone;CarveFleshingTool;RemakeLongStoneBlade,
+        StaticModel = Magazine,
+        WorldStaticModel = ToolMag1,
+        Tags = Magazine,
+    }
+
+	item PrimitiveToolMag2
+	{
+		DisplayName = Cultures of Prehistory,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_Prehistory1,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeBoneFishingHook;MakeStoneAwl;MakeStoneChisel;MakeStoneDrill;MakeCrudeWhetstone;MakeStoneBladeSaw;CarveWhistle,
+		StaticModel = Magazine,
+		WorldStaticModel = CraftMag1,
+	}
+
+	item PrimitiveToolMag3
+	{
+		DisplayName = Magazine: Pioneering Carvers,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_Carving,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = CarveKnittingNeedles;CarveWoodenFork;MakeBoneFork;CarveWoodenSpade;CarveGoblets;CarveBucket,
+		StaticModel = Magazine,
+		WorldStaticModel = CraftMag2,
+	}
+
+	item TailoringMag1
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName = Magazine: Ancient Tailoring,
+        Icon	=	Magazine_NeolithicClothes,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes  =   MakeBoneAwl;MakeBoneSewingNeedle;SewHideHoodie;SewHideRobe;SewHidePants;WeaveTwineShoes,
+        StaticModel = Magazine,
+        WorldStaticModel = TailoringMag1,
+        Tags = Magazine,
+    }
+
+	item TailoringMag2
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName = Magazine: Punk Fashion - From Trash to Thrash,
+        Icon	=	Magazine_PunkFashion,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes  =   MakeGarbageBagTankTop;MakeGarbageBagDress,
+        StaticModel = Magazine,
+        WorldStaticModel = TailoringMag2,
+        Tags = Magazine,
+    }
+
+	item TailoringMag3
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName = Magazine: Medieval Peasant Clothing,
+        Icon	=	Magazine_MedievalPeasantClothes,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes  =   SewHideBoots;SewHideCoat;SewHideHat;SewHideJacket,
+        StaticModel = Magazine,
+        WorldStaticModel = TailoringMag3,
+        Tags = Magazine,
+    }
+
+	item TailoringMag4
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName = Magazine: Leather Crafts,
+        Icon	=	Magazine_Leather1,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes  =   SewHideWallet;SewBelt;SewLeatherToolRoll;SewSandals;SewLeatherGloves,
+        StaticModel = Magazine,
+        WorldStaticModel = TailoringMag4,
+        Tags = Magazine,
+    }
+
+	item TailoringMag5
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName = Magazine: Cowboy Living,
+        Icon	=	Magazine_Cowboy1,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes  =   SewHolster;SewHolsterDouble;MakeWesternBoots;SewFurredHideCoat;SewFurredHideJacket;SewLeatherPants;SewSheepskinVest,
+        StaticModel = Magazine,
+        WorldStaticModel = TailoringMag5,
+        Tags = Magazine,
+    }
+
+	item TailoringMag6
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName = Magazine: Real Gladiators,
+        Icon	=	Magazine_Gladiatorpng,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes  =   SewLeatherVambrace;SewLeatherCodpiece;SewLeatherGorget;SewElbowPads;SewKneePads,
+        StaticModel = Magazine,
+        WorldStaticModel = TailoringMag6,
+        Tags = Magazine,
+    }
+
+	item TailoringMag7
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName = Magazine: Fun in the Woods!,
+        Icon	=	Magazine_Outdoors2,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes  =   AssembleSmallFramepack;AssembleLargeFramepack;SewClothSatchel;SewCrudeLeatherBackpack,
+        StaticModel = Magazine,
+        WorldStaticModel = TailoringMag7,
+        Tags = Magazine,
+    }
+
+	item TailoringMag8
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName = Magazine: Outdoor Gear Done Right,
+        Icon	=	Magazine_Outdoors1,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes  =   SewLeatherGaiter;SewLeatherWaterBag;SewHideSleepingBag;SewBandolier;SewHideFannyBag,
+        StaticModel = Magazine,
+        WorldStaticModel = TailoringMag8,
+        Tags = Magazine,
+    }
+
+	item TailoringMag9
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName = Magazine: Alpine Explorers,
+        Icon	=	Magazine_Alpine1,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes  =   MakeAdvancedFramepackFrame;MakeAdvancedLargeFramepackFrame;AssembleAdvancedFramepack;AssembleAdvancedLargeFramepack;SewSheepskinPants,
+        StaticModel = Magazine,
+        WorldStaticModel = TailoringMag9,
+        Tags = Magazine,
+    }
+
+	item TailoringMag10
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName = Magazine: Homespun,
+        Icon	=	Magazine_Homestead1,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes  =   SewDressKnees;SewDressLong;SewShirt;SewSkirtKnees;SewSkirtLong;SewLongjohns;SewLongjohnsBottom;SewShirt;SewShirtSleeveless;SewTrousers,
+        StaticModel = Magazine,
+        WorldStaticModel = TailoringMag10,
+        Tags = Magazine,
+    }
+
+	item TrickMag1
+	{
+		DisplayName = Real Spy Secrets (Hollow Books),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_Spy1,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeHollowBook,
+		StaticModel = Magazine,
+		WorldStaticModel = TrickMag1,
+		Tags = Magazine,
+	}
+
+	item TrickMag2
+	{
+		DisplayName = Magazine: The Cheapskate's John Spiral - Forging New Identities,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_Underground5,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeBlankID,
+		StaticModel = Magazine,
+		WorldStaticModel = Magazine_ForgingIdentities,
+		Tags = Magazine,
+	}
+
+    item WeaponMag1
+    {
+        DisplayName = The First Weapons (Bone Weapons),
+        DisplayCategory = SkillBook,
+        Type = Literature,
+        Weight = 0.5,
+        Icon = Magazine_War3,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes = MakeBoneHatchetHead;MakeJawboneAxe;MakeJawboneClub;MakeBoneClub;SharpenBone;SharpenLongBone;SharpenJawbone;BoneSpikeWeapon,
+        StaticModel = Magazine,
+        WorldStaticModel = WeaponMag1,
+        Tags = Magazine,
+    }
+
+    item WeaponMag2
+    {
+        DisplayName = No Man's Land (Can-Reinforced Weapons),
+        DisplayCategory = SkillBook,
+        Type = Literature,
+        Weight = 0.5,
+        Icon = Magazine_War1,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes = CanReinforceWeapon;MakeCraftedGasMaskFilter;RechargeFilters,
+        StaticModel = Magazine,
+        WorldStaticModel = WeaponMag2,
+        Tags = Magazine,
+    }
+
+    item WeaponMag3
+    {
+        DisplayName = The Cheapskate's John Spiral: Prison Defense (Shivs and Magazine Armor),
+        DisplayCategory = SkillBook,
+        Type = Literature,
+        Weight = 0.5,
+        Icon = Magazine_Underground1,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes = MakeShiv;MakeGlassShiv;MakeToothbrushShiv;MakeMagazineArmor;MakeImprovisedLighter,
+        StaticModel = Magazine,
+        WorldStaticModel = WeaponMag3,
+        Tags = Magazine,
+    }
+
+    item WeaponMag4
+    {
+        DisplayName = Bloody Japanese Wrestling Deathmatch! (Barbed-Wire Weapons),
+        DisplayCategory = SkillBook,
+        Type = Literature,
+        Weight = 0.5,
+        Icon = Magazine_Wrestling1,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes = BarbedWireWeapon,
+        StaticModel = Magazine,
+        WorldStaticModel = WeaponMag4,
+        Tags = Magazine,
+    }
+
+    item WeaponMag5
+    {
+        DisplayName = The Cheapskate's John Spiral: A History of Street Violence (Improvised Weapons),
+        DisplayCategory = SkillBook,
+        Type = Literature,
+        Weight = 0.5,
+        Icon = Magazine_Underground2,
+        BoredomChange = -20,
+        StressChange = -15,
+        TeachedRecipes = MakeRakeHeadWeapon;MakeSawbladeWeapon;SheetMetalWeapon;MakeSawPlank;MakeBucketMaul;MakeKettleMaul;MakeBrakeWeapon,
+        StaticModel = Magazine,
+        WorldStaticModel = WeaponMag5,
+        Tags = Magazine,
+    }
+
+	item WeaponMag6
+	{
+		DisplayName = A History of Peasant Revolts (Improvised Weapons),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_History_PeasantRevolt,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = MakeGardenForkHeadWeapon;MakeSpadeHeadCudgel;MakeRailspikeWeapon;MakeSawPlank,
+		StaticModel = Magazine,
+		WorldStaticModel = WeaponMag6,
+        Tags = Magazine,
+	}
+
+	item WeaponMag7
+	{
+		DisplayName = Magazine: The Louisville Bruiser,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_Baseball,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = CarveBat,
+		StaticModel = Magazine,
+		WorldStaticModel = WeaponMag7,
+        Tags = Magazine,
+	}
+
+	/******* CLIPPINGS & SCHEMATICS *******/
+
+    item ArmorSchematic
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Schematic,
+        Icon	=	Paperwork_Graph_Crumpled,
+        ReadType = photo,
+        StaticModel = Schematic,
+        WorldStaticModel = Schematic,
+        Tags = NewspaperRead;Picturebook,
+        OnCreate = SpecialLootSpawns.OnCreateArmorSchematic,
+    }
+
+    item BSToolsSchematic
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Tools Schematic,
+        Icon	=	Paperwork_Graph_Crumpled,
+        ReadType = photo,
+        StaticModel = Schematic,
+        WorldStaticModel = Schematic,
+        Tags = NewspaperRead;Picturebook,
+        OnCreate = SpecialLootSpawns.OnCreateBSToolsSchematic,
+    }
+
+    item CookwareSchematic
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Cookware Schematic,
+        Icon	=	Paperwork_Graph_Crumpled,
+        ReadType = photo,
+        StaticModel = Schematic,
+        WorldStaticModel = Schematic,
+        Tags = NewspaperRead;Picturebook,
+        OnCreate = SpecialLootSpawns.OnCreateCookwareSchematic,
+    }
+
+    item ExplosiveSchematic
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Schematic,
+        Icon	=	Paperwork_Graph_Crumpled,
+        ReadType = photo,
+        StaticModel = Schematic,
+        WorldStaticModel = Schematic,
+        Tags = NewspaperRead;Picturebook,
+        OnCreate = SpecialLootSpawns.OnCreateExplosivesSchematic,
+    }
+
+    item MeleeWeaponSchematic
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Weapon Schematic,
+        Icon	=	Paperwork_Graph_Crumpled,
+        ReadType = photo,
+        StaticModel = Schematic,
+        WorldStaticModel = Schematic,
+        Tags = NewspaperRead;Picturebook,
+        OnCreate = SpecialLootSpawns.OnCreateMeleeWeaponSchematic,
+    }
+
+    item SurvivalSchematic
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Survival Schematic,
+        Icon	=	Paperwork_Graph_Crumpled,
+        ReadType = photo,
+        StaticModel = Schematic,
+        WorldStaticModel = Schematic,
+        Tags = NewspaperRead;Picturebook,
+        OnCreate = SpecialLootSpawns.OnCreateSurvivalSchematic,
+    }
+
+    item RecipeClipping
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Recipe,
+        Icon	=	RecipeClipping,
+		ReadType = photo,
+        StaticModel = RecipeClipping,
+        WorldStaticModel = RecipeClipping,
+        Tags = NewspaperRead,
+		OnCreate = SpecialLootSpawns.OnCreateRecipeClipping,
+    }
+
+    item SewingPattern
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.3,
+        Type	=	Literature,
+        DisplayName	=	Sewing Pattern,
+        Icon	=	Magazine_Sewing1,
+		ReadType = photo,
+        StaticModel = SewingPattern,
+        WorldStaticModel = SewingPattern,
+        Tags = NewspaperRead,
+		OnCreate = SpecialLootSpawns.OnCreateSewingPattern,
+    }
+
+    /*
+    item ElectronicSchematic
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Schematic,
+        Icon	=	Paperwork_Graph_Crumpled,
+        ReadType = photo,
+        StaticModel = Schematic,
+        WorldStaticModel = Schematic,
+        Tags = NewspaperRead;Picturebook,
+        /*OnCreate = SpecialLootSpawns.OnCreateElectronicSchematic,*/
+    }
+
+    item MedicalSchematic
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Schematic,
+        Icon	=	Paperwork_Graph_Crumpled,
+        ReadType = photo,
+        StaticModel = Schematic,
+        WorldStaticModel = Schematic,
+        Tags = NewspaperRead;Picturebook,
+        /*OnCreate = SpecialLootSpawns.OnCreateMedicalSchematic,*/
+    }
+
+    item MetalweldingSchematic
+    {
+        DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Schematic,
+        Icon	=	Paperwork_Graph_Crumpled,
+        ReadType = photo,
+        StaticModel = Schematic,
+        WorldStaticModel = Schematic,
+        Tags = NewspaperRead;Picturebook,
+        /*OnCreate = SpecialLootSpawns.OnCreateMetalweldingSchematic,*/
+    }
+    */
+}

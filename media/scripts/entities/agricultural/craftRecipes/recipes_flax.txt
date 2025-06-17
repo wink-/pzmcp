@@ -1,0 +1,38 @@
+module Base
+{
+    /* need to involve the use of a heckle comb eventually */
+    craftRecipe RippleFlax
+     {
+        time        = 100,
+	    timedAction = Making,
+		Tags = Rippling,
+        category = Farming,
+         inputs
+         {
+            item 1 [Base.FlaxDried] mode:destroy flags[Prop2],
+         }
+         outputs
+         {
+             item 1 Base.FlaxRippled,
+             item 1 Base.FlaxSeed,
+         }
+     }
+
+    craftRecipe HeckleFlax
+     {
+        time        = 100,
+	    timedAction = Making,
+		Tags = Heckling,
+        category = Farming,
+         inputs
+         {
+            item 1 [Base.FlaxScutched] mode:destroy flags[Prop2],
+         }
+         outputs
+         {
+             item 1 Base.FlaxHeckled,
+             item 1 Base.FlaxTow,
+         }
+     }
+
+}

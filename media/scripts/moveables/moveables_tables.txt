@@ -1,0 +1,112 @@
+module Base
+{
+	item Mov_BlackLowModernTable
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Black Low Modern Table,
+		WorldObjectSprite = furniture_tables_low_01_19,
+	}
+	
+	item Mov_BrownLowTable
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Brown Low Table,
+		WorldObjectSprite = furniture_tables_low_01_13,
+	}
+	
+	item Mov_FancyLowTable
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Fancy Low Table,
+		WorldObjectSprite = furniture_tables_low_01_3,
+	}
+	
+	item Mov_FancyTable
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Fancy Table,
+		WorldObjectSprite = furniture_tables_high_01_15,
+	}
+	
+	item Mov_FancyDarkTable
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Fancy Dark Table,
+		WorldObjectSprite = furniture_tables_high_01_16,
+	}
+	
+	item Mov_LightRoundTable
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Light Round Table,
+		WorldObjectSprite = furniture_tables_high_01_7,
+	}
+	
+	item Mov_LongTable
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Long Table,
+		WorldObjectSprite = furniture_tables_high_01_4,
+	}
+	
+	item Mov_OakRoundTable
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Oak Round Table,
+		WorldObjectSprite = furniture_tables_high_01_6,
+	}
+	
+	item Mov_PlasticLowTable
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Low Plastic Table,
+		WorldObjectSprite = furniture_tables_low_01_20,
+	}
+	
+	item Mov_RoundTable
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Round Table,
+		WorldObjectSprite = furniture_tables_high_01_14,
+	}
+	
+	item Mov_SmallTable
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Small Cinnamon Table with Drawer,
+		WorldObjectSprite = furniture_storage_01_52,
+	}
+}

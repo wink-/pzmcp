@@ -1,0 +1,65 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_MetalDoorFrameLvl1
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Metal Door Frame (Poor),
+			Icon		= Build_DoorframeMetal,
+		}
+	}
+
+    entity MetalDoorFrameLvl1
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_MetalDoorFrameLvl1,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			skillBaseHealth = 300,
+			isThumpable     = false,
+			
+			OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+			
+            face W
+            {
+                layer
+                {
+                    row = constructedobjects_01_74,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = constructedobjects_01_75,
+                }
+            }
+			
+			corner = walls_exterior_wooden_01_27,
+        }
+		
+		component CraftRecipe
+        {
+            OnAddToMenu   = metalWallLvl1Test,
+			timedAction   = BuildWallMetal,
+            time          = 200,
+            needToBeLearn = true,
+            category      = Welding,
+			SkillRequired = MetalWelding:3,
+			xpAward       = MetalWelding:30,
+			ToolTip       = Tooltip_craft_doorFrameMetalDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.MetalBar],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

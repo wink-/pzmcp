@@ -1,0 +1,108 @@
+/******************************************/
+/** RJ: PLEASE DONT TOUCH WITHOUT ASKING **/
+/******************************************/
+
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_ChickenHutch
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Chicken Coop 1,
+            Icon                = Build_Coop,
+        }
+    }
+
+    entity ChickenHutch
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_ChickenHutch,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+
+            OnCreate = BuildRecipeCode.chickenHutch.OnCreate,
+
+            face W
+            {
+                layer
+                {
+                    row = location_farm_accesories_01_41 location_farm_accesories_01_43,
+                    row = location_farm_accesories_01_50 location_farm_accesories_01_42,
+                }
+            }
+        }
+		
+		component CraftRecipe
+        {
+		    timedAction   = BuildWallHammer,
+            time          = 200,
+            category      = Farming,
+            SkillRequired = Woodwork:3,
+            xpAward       = Woodwork:30,
+            ToolTip       = Tooltip_craft_chickenHutchDesc,
+            inputs
+            {
+		        item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 5 [Base.Plank],
+		        item 5 [Base.Nails],
+            }
+        }
+    }
+
+    xuiSkin default
+    {
+        entity ES_ChickenHutch2
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Chicken Coop 2,
+            Icon                = Build_Coop2,
+        }
+    }
+
+    entity ChickenHutch2
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_ChickenHutch2,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+
+            OnCreate = BuildRecipeCode.chickenHutch.OnCreate,
+
+            face W
+            {
+                layer
+                {
+                    row = location_farm_accesories_01_57 location_farm_accesories_01_59,
+                    row = location_farm_accesories_01_66 location_farm_accesories_01_58,
+                }
+            }
+        }
+
+		component CraftRecipe
+        {
+		    timedAction   = BuildWallHammer,
+            time          = 200,
+            category      = Farming,
+            SkillRequired = Woodwork:3,
+            xpAward       = Woodwork:30,
+            ToolTip       = Tooltip_craft_chickenHutchDesc,
+            inputs
+            {
+		        item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 5 [Base.Plank],
+		        item 5 [Base.Nails],
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+/* FOR RACKETS, SEE ITEMS_WEAPONS_1HANDED*/
+/* FOR STICKS, SEE ITEMS_WEAPONS_2HANDED */
+
+module Base
+{
+	/******* SPORTS - BALLS *******/
+	
+	item Baseball
+	{
+		DisplayName = Baseball,
+		DisplayCategory = Sports,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Baseball,
+		WorldStaticModel = BaseBall,
+	}
+	
+	item Basketball
+	{
+		DisplayName = Basketball,
+		DisplayCategory = Sports,
+		Type = Normal,
+		Weight = 1,
+		Icon = Basketball,
+		WorldStaticModel = BasketBall,
+	}
+	
+	item Football
+	{
+		DisplayName = Football,
+		DisplayCategory = Sports,
+		Type = Normal,
+		Weight = 1,
+		Icon = Football,
+		WorldStaticModel = Football,
+	}
+	
+	item GolfBall
+	{
+		DisplayName = Golf Ball,
+		DisplayCategory = Sports,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = GolfBall,
+		WorldStaticModel = GolfBall,
+	}
+	
+	item PoolBall
+	{
+		DisplayName = Pool Ball,
+		DisplayCategory = Sports,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = Poolball,
+		WorldStaticModel = PoolBall,
+	}
+	
+	item SoccerBall
+	{
+		DisplayName = Soccer Ball,
+		DisplayCategory = Sports,
+		Type = Normal,
+		Weight = 1,
+		Icon = SoccerBall,
+		WorldStaticModel = SoccerBall,
+	}
+	
+	item TennisBall
+	{
+		DisplayName = Tennis Ball,
+		DisplayCategory = Sports,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = TennisBall,
+		WorldStaticModel = TennisBall,
+	}
+	
+	/******* SPORTS - MISC *******/
+	
+	item Dart
+	{
+		DisplayName = Dart,
+		DisplayCategory = Sports,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Dart,
+		MetalValue = 3,
+		WorldStaticModel = Dart,
+	}
+
+	item Birdie
+	{
+		DisplayName = Badminton Birdie,
+		DisplayCategory = Sports,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Birdie,
+		WorldStaticModel = Birdie,
+	}
+
+	item GolfTee
+	{
+		DisplayName = Golf Tee,
+		DisplayCategory = Sports,
+		Type = Normal,
+		Weight = 0.05,
+		Icon = GolfTee,
+		WorldStaticModel = GolfTee,
+	}
+}
+
+/* FOR RACKETS, SEE ITEMS_WEAPONS_1HANDED*/
+/* FOR STICKS, SEE ITEMS_WEAPONS_2HANDED */

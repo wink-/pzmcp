@@ -1,0 +1,61 @@
+module Base
+{
+	soundTimeline Object/Fridge/Running
+	{
+		ElectricityOn = 3500,
+	}
+
+	sound FridgeHumA
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Fridge/FridgeA/Running,
+		}
+	}
+
+	sound FridgeHumB
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Fridge/FridgeB/Running,
+		}
+	}
+
+	sound FridgeHumC
+	{	
+		category = Object,
+		clip
+		{
+			event = Object/Fridge/FridgeC/Running,
+		}
+	}
+
+	sound FridgeHumD
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Fridge/FridgeD/Running,
+		}
+	}
+
+	sound FridgeHumE
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Fridge/FridgeE/Running,
+		}
+	}
+
+	sound FridgeHumF
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Fridge/FridgeF/Running,
+		}
+	}
+}

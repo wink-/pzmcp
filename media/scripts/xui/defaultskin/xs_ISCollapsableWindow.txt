@@ -1,0 +1,32 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISCollapsableWindow
+        {
+            background          = true,
+            backgroundColor     = C_BgWindow,
+            borderColor         = C_Border,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+            moveWithMouse       = false,
+            widgetTextureColor  = C_TextureWhite,
+            titlebarbkg         = media/ui/Panel_TitleBar.png,
+            statusbarbkg        = media/ui/Panel_StatusBar.png,
+            resizeimage         = media/ui/ResizeIcon.png,
+            invbasic            = media/ui/Icon_InventoryBasic.png,
+            closeButtonTexture  = media/ui/Dialog_Titlebar_CloseIcon.png,
+            collapseButtonTexture = media/ui/Panel_Icon_Collapse.png,
+            pinButtonTexture    = media/ui/Panel_Icon_Pin.png,
+            infoBtn             = media/ui/Panel_info_button.png,
+            pin                 = true,
+            title               = nil,
+            resizable           = true,
+            drawFrame           = true,
+            clearStentil        = true,
+            titleFont           = UIFont.Small,
+        }
+    }
+}

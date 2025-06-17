@@ -1,0 +1,34 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISSliderPanel
+        {
+            background              = false,
+            backgroundColor         = C_BlackNoAlpha,
+            borderColor             = C_Border,
+            anchorLeft              = true,
+            anchorRight             = false,
+            anchorTop               = true,
+            anchorBottom            = false,
+            texBtnLeft              = media/ui/ArrowLeft.png,
+            texBtnRight             = media/ui/ArrowRight.png,
+            currentValue            = 50,
+            minValue                = 0,
+            maxValue                = 100,
+            stepValue               = 1,
+            shiftValue              = 10,
+            doButtons               = true,
+            buttonColor             = C_BorderLight,
+            buttonMouseOverColor    = C_UiDefault,
+            sliderColor             = C_BorderLight,
+            sliderMouseOverColor    = C_UiDefault,
+            sliderBorderColor       = C_UiDefault,
+            sliderBarColor          = C_Grid,
+            sliderBarBorderColor    = C_Border,
+            dragInside              = false,
+            doToolTip               = true,
+            toolTipText             = UI_Radio_IncreaseStepSize,
+        }
+    }
+}

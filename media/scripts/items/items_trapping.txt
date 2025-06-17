@@ -1,0 +1,67 @@
+module Base
+{
+	
+	
+	item TrapBox
+	{
+		DisplayName = Box Trap,
+		DisplayCategory = Trapping,
+		Type = Normal,
+		Weight = 5,
+		Icon = TrapBox,
+		Trap = TRUE,
+	}
+	
+	item TrapCage
+	{
+		DisplayName = Cage Trap,
+		DisplayCategory = Trapping,
+		Type = Normal,
+		Weight = 5,
+		Icon = TrapCage,
+		MetalValue = 10,
+		Trap = TRUE,
+	}
+	
+	item TrapCrate
+	{
+		DisplayName = Crate Trap,
+		DisplayCategory = Trapping,
+		Type = Normal,
+		Weight = 5,
+		Icon = TrapCrate,
+		Trap = TRUE,
+	}
+	
+	item TrapMouse
+	{
+		DisplayName = Mouse Trap,
+		DisplayCategory = Trapping,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Mousetrap,
+		MetalValue = 2,
+		Trap = TRUE,
+	}
+	
+    item TrapSnare
+    {
+        DisplayCategory = Trapping,
+        Weight	=	0.5,
+        Type	=	Normal,
+        DisplayName	=	Snare Trap,
+        Icon	=	TrapSnare,
+        Trap    =   true,
+    }
+	
+	item TrapStick
+	{
+		DisplayName = Stick Trap,
+		DisplayCategory = Trapping,
+		Type = Normal,
+		Weight = 1,
+		Icon = TrapStick,
+		Trap = TRUE,
+	}
+	
+}

@@ -1,0 +1,92 @@
+module Base
+{
+	/******* SURVIVAL - ITEMS *******/
+	
+	item Candle
+	{
+		DisplayName = Candle,
+		DisplayCategory = LightSource,
+		Type = Drainable,
+		Weight = 0.2,
+		Icon = Candle,
+		UseDelta = 0.003,
+		cantBeConsolided = TRUE,
+		StaticModel = Candle,
+		WorldStaticModel = CandleGround,
+		UseWhileEquipped = FALSE,
+	}
+
+	item CandleBox
+	{
+		DisplayName = Box of Candles,
+		DisplayCategory = LightSource,
+		Type = Normal,
+		Weight = 1,
+		Icon = Parcel_ExtraSmall_Food,
+		WorldStaticModel = Parcel_Food_ExtraSmall,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item CandleLit
+	{
+		DisplayName = Lit Candle,
+		DisplayCategory = LightSource,
+		Type = Drainable,
+		Weight = 0.2,
+		Icon = CandleLit,
+		ActivatedItem = TRUE,
+		LightDistance = 5,
+		LightStrength = 1.2,
+		TorchCone = FALSE,
+		UseDelta = 0.003,
+		UseWhileUnequipped = TRUE,
+		cantBeConsolided = TRUE,
+		StaticModel = Candle,
+		WorldStaticModel = CandleGround,
+		Tags = StartFire,
+	}
+	
+	item Rope
+	{
+		DisplayName = Rope,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = Rope2,
+		SurvivalGear = TRUE,
+		WorldStaticModel = Rope_Looped,
+		Tags = Rope,
+	}
+
+	item RopeStack
+	{
+		DisplayName = Stack of Rope,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 8,
+		Icon = RopeBundle,
+		WorldStaticModel = RopeStack,
+	}
+	
+	item Tarp
+	{
+		DisplayName = Tarp,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = TentMaterial,
+		WorldStaticModel = Tarp,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item TarpPiece
+	{
+		DisplayName = Tarp Piece,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Tarp_Ragged,
+		WorldStaticModel = TarpPiece,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+}

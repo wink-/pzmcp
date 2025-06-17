@@ -1,0 +1,15 @@
+module Base
+{
+    xuiSkin electric_common
+    {
+        imports
+        {
+            default,
+        }
+
+        ISButton S_Button_Craft
+        {
+            title               = "Start",
+        }
+    }
+}

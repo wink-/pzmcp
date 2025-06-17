@@ -1,0 +1,65 @@
+module Base
+{
+	sound LockDoor
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Door/Lock,
+		}
+	}
+
+	sound UnlockDoor
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Door/Unlock,
+		}
+	}
+
+	sound BreakDoor
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Door/Break,
+		}
+	}
+
+	sound DoorIsBlocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Door/IsBlocked,
+		}
+	}
+
+	sound DoorIsLocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Door/IsLocked,
+		}
+	}
+
+	sound DoorAmbiance
+	{
+		category = Object,
+		clip
+		{
+			event = World/Ambient/Door,
+		}
+	}
+
+	sound WoodDoorCreaks
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodDoor/Creak,
+		}
+	}
+}

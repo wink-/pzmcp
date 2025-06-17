@@ -1,0 +1,74 @@
+module Base
+{
+    sound AnimalVoiceFawnIdle
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Fawn/Voice/Idle,
+        }
+    }
+
+    sound AnimalVoiceFawnDeath
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Fawn/Voice/Death,
+        }
+    }
+
+    sound AnimalVoiceFawnStressed
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Fawn/Voice/Stressed,
+        }
+    }
+
+    sound AnimalVoiceFawnPain
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Fawn/Voice/Pain,
+        }
+    }
+
+    sound AnimalFootstepsFawnWalkFront
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Fawn/Footsteps/Walk/Front,
+        }
+    }
+
+    sound AnimalFootstepsFawnWalkBack
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Fawn/Footsteps/Walk/Back,
+        }
+    }
+
+    sound AnimalFootstepsFawnRun
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Fawn/Footsteps/Run,
+        }
+    }
+
+    sound AnimalFoleyFawnBodyfall
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Fawn/Foley/Bodyfall,
+        }
+    }
+} 

@@ -1,0 +1,168 @@
+module Base
+{
+	craftRecipe LightCandle
+	{
+        timedAction = Making,
+		Time = 30,
+		OnCreate = LightCandle_OnCreate,
+		ToolTip = Tooltip_Recipe_EquipCandleHand,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+		/* CanWalk = true, */
+		inputs
+		{
+			item 1 [Base.Candle] mode:destroy flags[InheritUses;ItemCount],
+			item 1 tags[StartFire],
+		}
+		outputs
+		{
+			item 1 Base.CandleLit,
+		}
+	}
+
+	craftRecipe ExtinguishCandle
+	{
+        timedAction = Making,
+		Time = 5,
+		OnCreate = ExtinguishCandle_OnCreate,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+		/* CanWalk = true, */
+		inputs
+		{
+			item 1 [Base.CandleLit] mode:destroy flags[InheritUses;ItemCount],
+		}
+		outputs
+		{
+			item 1 Base.Candle,
+		}
+	}
+
+	craftRecipe RemovePropaneBottle
+	{
+        timedAction = Making,
+		Time = 30,
+		OnCreate = Recipe.OnCreate.Propane_RefillRemoval,
+		OnTest = Recipe.OnTest.Propane_RefillRemoval,
+		AllowBatchCraft = False,
+		/* CanWalk = true, */
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.Lantern_Propane] mode:keep flags[AllowFavorite;InheritFavorite;ItemCount],
+		}
+		outputs
+		{
+			item 1 Base.Propane_Refill,
+		}
+	}
+
+	craftRecipe InsertPropaneBottleIntoLantern
+	{
+        timedAction = Making,
+		Time = 30,
+		OnCreate = Recipe.OnCreate.Propane_RefillInsert,
+		OnTest = Recipe.OnTest.Propane_RefillInsert,
+		/* CanWalk = true, */
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.Lantern_Propane] flags[AllowFavorite;InheritFavorite;ItemCount] mode:destroy,
+			item 1 [Base.Propane_Refill] flags[ItemCount],
+		}
+		outputs
+		{
+			item 1 Base.Lantern_Propane,
+		}
+	}
+
+	craftRecipe LightHurricaneLantern
+	{
+        timedAction = Making,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.LightHurricaneLantern,
+		/* CanWalk = true, */
+		ToolTip = Tooltip_Recipe_EquipLanternHand,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.Lantern_Hurricane;Base.Lantern_Hurricane_Copper;Base.Lantern_Hurricane_Forged;Base.Lantern_Hurricane_Gold;Base.Lantern_Hurricane_Silver] mode:destroy flags[NotEmpty;AllowFavorite;InheritFavorite;ItemCount] mappers[LampMapper],
+			item 1 tags[StartFire],
+		}
+		outputs
+		{
+            item 1 mapper:LampMapper,
+		}
+        itemMapper LampMapper
+        {
+            Base.Lantern_HurricaneLit = Base.Lantern_Hurricane,
+            Base.Lantern_Hurricane_CopperLit = Base.Lantern_Hurricane_Copper,
+            Base.Lantern_Hurricane_ForgedLit = Base.Lantern_Hurricane_Forged,
+            Base.Lantern_Hurricane_GoldLit = Base.Lantern_Hurricane_Gold,
+            Base.Lantern_Hurricane_SilverLit = Base.Lantern_Hurricane_Silver,
+
+            default = Base.Lantern_HurricaneLit,
+        }
+	}
+
+	craftRecipe ExtinguishHurricaneLantern
+	{
+        timedAction = Making,
+		Time = 10,
+		OnCreate = Recipe.OnCreate.ExtinguishHurricaneLantern,
+		/* CanWalk = true, */
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.Lantern_HurricaneLit;Base.Lantern_Hurricane_CopperLit;Base.Lantern_Hurricane_ForgedLit;Base.Lantern_Hurricane_GoldLit;Base.Lantern_Hurricane_SilverLit] mode:destroy flags[InheritUses;AllowFavorite;InheritFavorite;ItemCount] mappers[LampMapper],
+		}
+		outputs
+		{
+            item 1 mapper:LampMapper,
+		}
+        itemMapper LampMapper
+        {
+            Base.Lantern_Hurricane = Base.Lantern_HurricaneLit,
+            Base.Lantern_Hurricane_Copper = Base.Lantern_Hurricane_CopperLit,
+            Base.Lantern_Hurricane_Forged = Base.Lantern_Hurricane_ForgedLit,
+            Base.Lantern_Hurricane_Gold = Base.Lantern_Hurricane_GoldLit,
+            Base.Lantern_Hurricane_Silver = Base.Lantern_Hurricane_SilverLit,
+
+            default = Base.Lantern_Hurricane,
+        }
+	}
+
+	craftRecipe RefillHurricaneLantern
+	{
+        timedAction = Making,
+		Time = 50,
+		OnCreate = Recipe.OnCreate.RefillHurricaneLantern,
+		/* OnTest = Recipe.OnTest.RefillHurricaneLantern, */
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.Lantern_Hurricane;Base.Lantern_Hurricane_Copper;Base.Lantern_Hurricane_Forged;Base.Lantern_Hurricane_Gold;Base.Lantern_Hurricane_Silver] mode:destroy flags[NotFull;AllowFavorite;InheritFavorite;ItemCount] mappers[LampMapper],
+			item 1 [*],
+			-fluid 1.0 [Petrol],
+		}
+		outputs
+		{
+            item 1 mapper:LampMapper,
+		}
+        itemMapper LampMapper
+        {
+            Base.Lantern_Hurricane = Base.Lantern_Hurricane,
+            Base.Lantern_Hurricane_Copper = Base.Lantern_Hurricane_Copper,
+            Base.Lantern_Hurricane_Forged = Base.Lantern_Hurricane_Forged,
+            Base.Lantern_Hurricane_Gold = Base.Lantern_Hurricane_Gold,
+            Base.Lantern_Hurricane_Silver = Base.Lantern_Hurricane_Silver,
+
+            default = Base.Lantern_Hurricane,
+        }
+	}
+}

@@ -1,0 +1,38 @@
+module Base
+{
+	sound WashClothing
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Hygiene/WashClothing,
+		}
+	}
+
+	sound WashYourself
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Hygiene/WashYourself,
+		}
+	}
+
+	sound HairCutScissors
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Hygiene/HairCut/Scissors,
+		}
+	}
+
+	sound ShaveRazor
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Hygiene/Shave/Razor,
+		}
+	}
+}

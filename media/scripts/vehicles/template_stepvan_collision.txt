@@ -1,0 +1,28 @@
+module Base
+{
+    template vehicle StepVanCollision
+    {
+        useChassisPhysicsCollision = false,
+
+		physics box
+		{
+			offset = 0.0000 0.1813 0.0061,
+			extents = 0.9121 0.3516 2.2418,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = 0.0000 0.4005 0.8571,
+			extents = 0.9121 0.1758 0.5165,
+			rotate = 27.0000 0.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = 0.0000 0.6484 -0.1660,
+			extents = 0.9121 0.5824 1.9011,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }
+}

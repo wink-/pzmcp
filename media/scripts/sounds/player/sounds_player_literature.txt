@@ -1,0 +1,58 @@
+module Base
+{
+	sound OpenBook
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Literature/Book/Open,
+		}
+	}
+
+	sound CloseBook
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Literature/Book/Close,
+		}
+	}
+
+	sound PageFlipBook
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Literature/Book/PageFlip,
+		}
+	}
+	
+/******************************************************************************/
+
+	sound OpenMagazine
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Literature/Magazine/Open,
+		}
+	}
+
+	sound CloseMagazine
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Literature/Magazine/Close,
+		}
+	}
+
+	sound PageFlipMagazine
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Literature/Magazine/PageFlip,
+		}
+	}
+}

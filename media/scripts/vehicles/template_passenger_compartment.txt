@@ -1,0 +1,15 @@
+module Base
+{
+	template vehicle PassengerCompartment
+	{
+		part PassengerCompartment
+		{
+			category = nodisplay,
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+	}
+}
+

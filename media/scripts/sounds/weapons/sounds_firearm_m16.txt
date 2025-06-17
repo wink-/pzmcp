@@ -1,0 +1,156 @@
+module Base
+{
+	sound M16Shoot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
+		{
+			event = Weapon/Firearm/M16/Shoot,
+		}
+	}
+
+	sound M16ShootFullAuto
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M16/Shoot_FullAuto,
+		}
+	}
+
+	sound M16InsertAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M16/InsertAmmo,
+		}
+	}
+
+	sound M16EjectAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M16/EjectAmmo,
+		}
+	}
+
+	sound M16InsertAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M16/InsertAmmoStart,
+		}
+	}
+
+	sound M16InsertAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M16/InsertAmmoStop,
+		}
+	}
+
+	sound M16EjectAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M16/EjectAmmoStart,
+		}
+	}
+
+	sound M16EjectAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M16/EjectAmmoStop,
+		}
+	}
+
+	sound M16Rack
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M16/Rack,
+		}
+	}
+
+	sound M16Jam
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M16/Jam,
+		}
+	}
+    
+	sound M16BringToBear
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M16/BringToBear,
+		}
+	}
+    
+	sound M16AimRelease
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M16/AimRelease,
+		}
+	}
+
+	sound M16Equip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M16/Equip,
+		}
+	}
+        
+	sound M16UnEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M16/UnEquip,
+		}
+	}
+            
+	sound M16Break
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M16/Break,
+		}
+	}
+
+	sound M16Drop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M16/Drop,
+		}
+	}
+
+	sound M16CartridgeFall
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M16/CartridgeFall,
+		}
+	}
+}

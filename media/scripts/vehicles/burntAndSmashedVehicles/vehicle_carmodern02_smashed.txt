@@ -1,0 +1,155 @@
+module Base
+{
+	model Vehicles_ModernCar02SmashedRear
+	{
+		mesh = vehicles/Vehicles_ModernCar02SMASH_Rear,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle ModernCar02SmashedRear
+	{
+		template! = ModernCar02,
+
+		model
+		{
+			file = Vehicles_ModernCar02SmashedRear,
+			scale = 1.8200,
+			offset = 0.0000 0.2692 0.0000,
+		}
+
+		extents = 0.8901 0.6374 2.3407,
+		physicsChassisShape = 0.8901 0.6374 2.3407,
+		centerOfMassOffset = 0.0000 0.3077 0.0000,
+		shadowExtents = 0.8901 2.3407,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.1813,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.1978,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+	model Vehicles_ModernCar02SmashedRight
+	{
+		mesh = vehicles/Vehicles_ModernCar02SMASH_Right,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle ModernCar02SmashedRight
+	{
+		template! = ModernCar02,
+
+		model
+		{
+			file = Vehicles_ModernCar02SmashedRight,
+			scale = 1.8200,
+			offset = 0.0000 0.2692 0.0000,
+		}
+
+		extents = 0.8901 0.6374 2.3407,
+		physicsChassisShape = 0.8901 0.6374 2.3407,
+		centerOfMassOffset = 0.0000 0.3077 0.0000,
+		shadowExtents = 0.8901 2.3407,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.1813,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.1978,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+	model Vehicles_ModernCar02SmashedLeft
+	{
+		mesh = vehicles/Vehicles_ModernCar02SMASH_Left,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle ModernCar02SmashedLeft
+	{
+		template! = ModernCar02,
+
+		model
+		{
+			file = Vehicles_ModernCar02SmashedLeft,
+			scale = 1.8200,
+			offset = 0.0000 0.2692 0.0000,
+		}
+
+		extents = 0.8901 0.6374 2.3407,
+		physicsChassisShape = 0.8901 0.6374 2.3407,
+		centerOfMassOffset = 0.0000 0.3077 0.0000,
+		shadowExtents = 0.8901 2.3407,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.1813,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.1978,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+	model Vehicles_ModernCar02SmashedFront
+	{
+		mesh = vehicles/Vehicles_ModernCar02SMASH_Front,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle ModernCar02SmashedFront
+	{
+		template! = ModernCar02,
+
+		model
+		{
+			file = Vehicles_ModernCar02SmashedFront,
+			scale = 1.8200,
+			offset = 0.0000 0.2692 0.0000,
+		}
+
+		extents = 0.8901 0.6374 2.3407,
+		physicsChassisShape = 0.8901 0.6374 2.3407,
+		centerOfMassOffset = 0.0000 0.3077 0.0000,
+		shadowExtents = 0.8901 2.3407,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.1813,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.1978,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}

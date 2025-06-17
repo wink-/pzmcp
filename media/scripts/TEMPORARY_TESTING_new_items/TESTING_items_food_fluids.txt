@@ -1,0 +1,115 @@
+module Base
+{
+
+	item Milk_Personalsized
+	{
+		DisplayName = Milk - Personal-sized,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = Milk_Personalsized,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCarton,
+	    StaticModel = Milk_Personalsized,
+		WorldStaticModel = Milk_Personalsized,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = Carton,
+            	capacity        = 0.25,
+		        CustomDrinkSound = DrinkingFromCarton,
+
+            	Fluids
+                {
+                    fluid           = CowMilk:1.0,
+                }
+        	}
+	}
+
+	item MilkChocolate_Personalsized
+	{
+		DisplayName = Chocolate Milk - Personal-sized,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = MilkChocolate_Personalsized,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCarton,
+	    StaticModel = MilkChocolate_Personalsized,
+		WorldStaticModel = MilkChocolate_Personalsized,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = SmallCarton,
+            	capacity        = 0.25,
+		        CustomDrinkSound = DrinkingFromCarton,
+
+            	Fluids
+                {
+                    fluid           = MilkChocolate:1.0,
+                }
+        	}
+	}
+
+	item WineBox
+	{
+		DisplayName = Boxed Red Wine,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = WineBox,
+		CustomEatSound = DrinkingFromCarton,
+		StaticModel = WineBox,
+		WorldStaticModel = WineBox,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = SmallCarton,
+                capacity        = 1.0,
+                CustomDrinkSound = DrinkingFromCarton,
+
+            	Fluids
+                {
+                    fluid           = Wine:1.0,
+                }
+        	}
+	}
+
+	item Bitters
+	{
+		DisplayName = Bitters (Placeholder),
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 1,
+		Icon = Bitters,
+		/*StaticModel = Bitters,*/
+		/*WorldStaticModel = Bitters_Ground,*/
+	}
+
+    item TestCanPopCommon
+    {
+        DisplayCategory     = Material,
+        Weight	          = 0.1,
+        Type	          = Normal,
+        DisplayName	    = Can of Cola,
+        IconsForTexture     = Pop;Pop2;Pop3,
+        StaticModelsByIndex = PopCanDiet;PopCanRed;PopCanFizz,
+        WorldStaticModelsByIndex = PopCanDiet;PopCanRed;PopCanFizz,
+        OnCreate	= SpecialLootSpawns.OnCreatePopCan,
+
+        component FluidContainer
+        {
+		ContainerName   = Can,
+		PickRandomFluid	= true,
+		capacity        = 0.3,
+		CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            Fluids
+            {
+                fluid           = Cola:1.0,
+                fluid           = ColaDiet:1.0,
+                fluid           = GingerAle:1.0,
+            }
+        }
+    }
+}

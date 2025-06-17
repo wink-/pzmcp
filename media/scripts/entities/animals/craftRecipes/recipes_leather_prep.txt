@@ -1,0 +1,240 @@
+/******************************************/
+/** RJ: PLEASE DONT TOUCH WITHOUT ASKING **/
+/******************************************/
+
+module Base
+{
+    craftRecipe CutUpLeather_Large
+    {
+        time            = 300,
+        tags            = AnySurfaceCraft,
+        timedAction = Making,
+        category =      Farming,
+        inputs
+        {
+            item 1 tags[LeatherCrudeTannedLarge;LeatherFurTannedLarge],
+            item 1 tags[SharpKnife;Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+        }
+        outputs
+        {
+            item 25 Base.LeatherStrips,
+        }
+    }
+
+    craftRecipe CutUpLeather_Medium
+    {
+        time            = 300,
+        tags            = AnySurfaceCraft,
+        timedAction = Making,
+        category =      Farming,
+        inputs
+        {
+            item 1 tags[LeatherCrudeTannedMedium;LeatherFurTannedMedium],
+            item 1 tags[SharpKnife;Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+        }
+        outputs
+        {
+            item 15 Base.LeatherStrips,
+        }
+    }
+
+    craftRecipe CutUpLeather_Small
+    {
+        time            = 300,
+        tags            = AnySurfaceCraft,
+        timedAction = Making,
+        category =      Farming,
+        inputs
+        {
+            item 1 tags[LeatherCrudeTannedSmall;LeatherFurTannedSmall],
+            item 1 tags[SharpKnife;Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+        }
+        outputs
+        {
+            item 8 Base.LeatherStrips,
+        }
+    }
+
+    craftRecipe DryLargeLeather
+    {
+        time        = 100,
+        tags = DryLeatherLarge,
+        category =      Farming,
+        inputs
+        {
+            item 1 tags[LeatherCrudeWetLarge;LeatherFurWetLarge] mappers[DryLeatherLarge],
+        }
+        outputs
+        {
+            item 1 mapper:DryLeatherLarge,
+        }
+        itemMapper DryLeatherLarge
+        {
+            Base.Leather_Crude_Large_Tan = Base.Leather_Crude_Large_Tan_Wet,
+            Base.CowLeather_Angus_Fur_Tan = Base.CowLeather_Angus_Fur_Tan_Wet,
+            Base.CowLeather_Holstein_Fur_Tan = Base.CowLeather_Holstein_Fur_Tan_Wet,
+            Base.CowLeather_Simmental_Fur_Tan = Base.CowLeather_Simmental_Fur_Tan_Wet,
+        }
+    }
+
+    craftRecipe DryMediumLeather
+    {
+        time        = 100,
+        tags = DryLeatherMedium,
+        category =      Farming,
+        inputs
+        {
+            item 1 tags[LeatherCrudeWetMedium;LeatherFurWetMedium] mappers[DryLeatherMedium],
+        }
+        outputs
+        {
+            item 1 mapper:DryLeatherMedium,
+        }
+        itemMapper DryLeatherMedium
+        {
+            Base.Leather_Crude_Medium_Tan = Base.Leather_Crude_Medium_Tan_Wet,
+            Base.SheepLeather_Fur_Tan = Base.SheepLeather_Fur_Tan_Wet,
+            Base.PigLeather_Landrace_Fur_Tan = Base.PigLeather_Landrace_Fur_Tan_Wet,
+            Base.PigLeather_Black_Fur_Tan = Base.PigLeather_Black_Fur_Tan_Wet,
+            Base.DeerLeather_Fur_Tan = Base.DeerLeather_Fur_Tan_Wet,
+        }
+    }
+
+    craftRecipe DrySmallLeather
+    {
+        time        = 100,
+        tags = DryLeatherSmall,
+        category =      Farming,
+        inputs
+        {
+            item 1 tags[LeatherCrudeWetSmall;LeatherFurWetSmall] mappers[DryLeatherSmall],
+        }
+        outputs
+        {
+            item 1 mapper:DryLeatherSmall,
+        }
+        itemMapper DryLeatherSmall
+        {
+            Base.Leather_Crude_Small_Tan = Base.Leather_Crude_Small_Tan_Wet,
+            Base.CalfLeather_Angus_Fur_Tan = Base.CalfLeather_Angus_Fur_Tan_Wet,
+            Base.CalfLeather_Holstein_Fur_Tan = Base.CalfLeather_Holstein_Fur_Tan_Wet,
+            Base.CalfLeather_Simmental_Fur_Tan = Base.CalfLeather_Simmental_Fur_Tan_Wet,
+			Base.FawnLeather_Fur_Tan = Base.FawnLeather_Fur_Tan_Wet,
+            Base.LambLeather_Fur_Tan = Base.LambLeather_Fur_Tan_Wet,
+            Base.PigletLeather_Landrace_Fur_Tan = Base.PigletLeather_Landrace_Fur_Tan_Wet,
+            Base.PigletLeather_Black_Fur_Tan = Base.PigletLeather_Black_Fur_Tan_Wet,
+            Base.RabbitLeather_Fur_Tan = Base.RabbitLeather_Fur_Tan_Wet,
+            Base.RaccoonLeather_Grey_Fur_Tan = Base.RaccoonLeather_Grey_Fur_Tan_Wet,
+        }
+    }
+
+    craftRecipe TanLeather
+    {
+        time        = 100,
+        tags = TanLeather,
+		timedAction = TanLeatherBarrel,
+		category =      Farming,
+        inputs
+        {
+            item 1 tags[LeatherCrudeLarge;LeatherFurLarge;LeatherCrudeMedium;LeatherFurMedium;LeatherCrudeSmall;LeatherFurSmall] mappers[TanLeatherMapper],
+            item 1 tags[BrainTan],
+        }
+        outputs
+        {
+            item 1 mapper:TanLeatherMapper,
+            item 1 Bowl,
+        }
+        itemMapper TanLeatherMapper
+        {
+            Base.Leather_Crude_Large_Tan_Wet = Base.Leather_Crude_Large,
+            Base.Leather_Crude_Medium_Tan_Wet = Base.Leather_Crude_Medium,
+            Base.Leather_Crude_Small_Tan_Wet = Base.Leather_Crude_Small,
+            Base.CowLeather_Angus_Fur_Tan_Wet = Base.CowLeather_Angus_Fur,
+            Base.CowLeather_Holstein_Fur_Tan_Wet = Base.CowLeather_Holstein_Fur,
+            Base.CowLeather_Simmental_Fur_Tan_Wet = Base.CowLeather_Simmental_Fur,
+            Base.CalfLeather_Angus_Fur_Tan_Wet = Base.CalfLeather_Angus_Fur,
+            Base.CalfLeather_Holstein_Fur_Tan_Wet = Base.CalfLeather_Holstein_Fur,
+            Base.CalfLeather_Simmental_Fur_Tan_Wet = Base.CalfLeather_Simmental_Fur,
+            Base.SheepLeather_Fur_Tan_Wet = Base.SheepLeather_Fur,
+            Base.LambLeather_Fur_Tan_Wet = Base.LambLeather_Fur,
+            Base.PigLeather_Landrace_Fur_Tan_Wet = Base.PigLeather_Landrace_Fur,
+            Base.PigLeather_Black_Fur_Tan_Wet = Base.PigLeather_Black_Fur,
+            Base.PigletLeather_Landrace_Fur_Tan_Wet = Base.PigletLeather_Landrace_Fur,
+            Base.PigletLeather_Black_Fur_Tan_Wet = Base.PigletLeather_Black_Fur,
+            Base.DeerLeather_Fur_Tan_Wet = Base.DeerLeather_Fur,
+            Base.FawnLeather_Fur_Tan_Wet = Base.FawnLeather_Fur,
+            Base.RabbitLeather_Fur_Tan_Wet = Base.RabbitLeather_Fur,
+            Base.RaccoonLeather_Grey_Fur_Tan_Wet = Base.RaccoonLeather_Grey_Fur,
+        }
+    }
+
+    craftRecipe RemoveFlesh
+    {
+        time        = 100,
+        tags = RemoveFlesh,
+        category =      Farming,
+        inputs
+        {
+            item 1 tags[LeatherFullLarge;LeatherFullMedium;LeatherFullSmall] mappers[RemoveFleshMapper],
+            item 1 tags[FleshingTool] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 mapper:RemoveFleshMapper,
+        }
+        itemMapper RemoveFleshMapper
+        {
+            Base.CowLeather_Angus_Fur = Base.CowLeather_Angus_Full,
+            Base.CowLeather_Holstein_Fur = Base.CowLeather_Holstein_Full,
+            Base.CowLeather_Simmental_Fur = Base.CowLeather_Simmental_Full,
+            Base.CalfLeather_Angus_Fur = Base.CalfLeather_Angus_Full,
+            Base.CalfLeather_Holstein_Fur = Base.CalfLeather_Holstein_Full,
+            Base.CalfLeather_Simmental_Fur = Base.CalfLeather_Simmental_Full,
+            Base.SheepLeather_Fur = Base.SheepLeather_Full,
+            Base.LambLeather_Fur = Base.LambLeather_Full,
+            Base.PigLeather_Landrace_Fur = Base.PigLeather_Landrace_Full,
+            Base.PigLeather_Black_Fur = Base.PigLeather_Black_Full,
+            Base.PigletLeather_Landrace_Fur = Base.PigletLeather_Landrace_Full,
+            Base.PigletLeather_Black_Fur = Base.PigletLeather_Black_Full,
+            Base.DeerLeather_Fur = Base.DeerLeather_Full,
+            Base.FawnLeather_Fur = Base.FawnLeather_Full,
+            Base.RabbitLeather_Fur = Base.RabbitLeather_Full,
+            Base.RaccoonLeather_Grey_Fur = Base.RaccoonLeather_Grey_Full,
+        }
+    }
+
+    craftRecipe Remove Fur
+    {
+        time        = 100,
+        tags = RemoveFur,
+        category =      Farming,
+        inputs
+        {
+            item 1 tags[LeatherFurLarge;LeatherFurMedium;LeatherFurSmall] mappers[RemoveFurMapper],
+            item 1 tags[FleshingTool] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 mapper:RemoveFurMapper,
+        }
+        itemMapper RemoveFurMapper
+        {
+            Base.Leather_Crude_Large = Base.CowLeather_Angus_Fur,
+            Base.Leather_Crude_Large = Base.CowLeather_Holstein_Fur,
+            Base.Leather_Crude_Large = Base.CowLeather_Simmental_Fur,
+            Base.Leather_Crude_Medium = Base.CalfLeather_Angus_Fur,
+            Base.Leather_Crude_Medium = Base.CalfLeather_Holstein_Fur,
+            Base.Leather_Crude_Medium = Base.CalfLeather_Simmental_Fur,
+            Base.Leather_Crude_Medium = Base.SheepLeather_Fur,
+            Base.Leather_Crude_Medium = Base.PigLeather_Landrace_Fur,
+            Base.Leather_Crude_Medium = Base.PigLeather_Black_Fur,
+            Base.Leather_Crude_Medium = Base.DeerLeather_Fur,
+            Base.Leather_Crude_Small = Base.LambLeather_Fur,
+            Base.Leather_Crude_Small = Base.PigletLeather_Landrace_Fur,
+            Base.Leather_Crude_Small = Base.PigletLeather_Black_Fur,
+            Base.Leather_Crude_Small = Base.FawnLeather_Fur,
+            Base.Leather_Crude_Small = Base.RabbitLeather_Fur,
+            Base.Leather_Crude_Small = Base.RaccoonLeather_Grey_Fur,
+        }
+    }
+}

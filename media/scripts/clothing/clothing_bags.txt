@@ -1,0 +1,5425 @@
+
+module Base
+{
+	item Bag_GolfBag
+	{
+		DisplayName = Golf Bag,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1.2,
+		IconsForTexture = GolfBag_Blue;GolfBag_Green;GolfBag_Red;GolfBag_Purple,
+		AttachmentReplacement = Bag,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		Capacity = 18,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_GolfBag,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_GolfBag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_GolfBag_LHand holdingbagleft,
+		RunSpeedModifier = 0.95,
+		WeightReduction = 65,
+		WorldStaticModel = GolfBag_Ground,
+        Tags = HasMetal,
+	}
+
+	item Bag_GolfBag_Melee
+	{
+		DisplayName = Golf Bag,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1.2,
+		IconsForTexture = GolfBag_Blue;GolfBag_Green;GolfBag_Red;GolfBag_Purple,
+		AttachmentReplacement = Bag,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		Capacity = 18,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_GolfBag_Melee,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_GolfBag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_GolfBag_LHand holdingbagleft,
+		RunSpeedModifier = 0.95,
+		WeightReduction = 65,
+		WorldStaticModel = GolfBag_Ground,
+        Tags = BagsFillException;HasMetal,
+	}
+	
+	item Bag_Schoolbag
+	{
+		/*DisplayName = School Bag,*/
+		DisplayName = Small Backpack,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		IconsForTexture = Backpack_Black;Backpack_Blue;Backpack_Primary;Backpack_Teal,
+		AttachmentReplacement = Bag,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		Capacity = 15,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_SchoolBag,
+		EquipSound = EquipBackpackSmall,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_Schoolbag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Schoolbag_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		SoundParameter = EquippedBaggageContainer SchoolBag,
+		WeightReduction = 70,
+		WorldStaticModel = SchoolBag_Ground,
+        Tags = IsFireFuel;IsFireTinder,
+        ResearchableRecipes = SewCrudeLeatherBackpack,
+	}
+
+	item Bag_Schoolbag_Kids
+	{
+		/*DisplayName = School Bag,*/
+		DisplayName = Small Backpack,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		IconsForTexture = Backpack_Blue;Backpack_Spiffo;Backpack_Camo;Backpack_Pink;Backpack_Primary;Backpack_Teal,
+		AttachmentReplacement = Bag,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		Capacity = 15,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_SchoolBag_Kids,
+		EquipSound = EquipBackpackSmall,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_Schoolbag_Kids_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Schoolbag_Kids_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		SoundParameter = EquippedBaggageContainer SchoolBag,
+		WeightReduction = 70,
+		WorldStaticModel = SchoolBag_Ground,
+        Tags = IsFireFuel;IsFireTinder,
+        ResearchableRecipes = SewCrudeLeatherBackpack,
+	}
+	
+	item Bag_NormalHikingBag
+	{
+		/*DisplayName = Hiking Bag,*/
+		DisplayName = Hiking Backpack,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1.2,
+		IconsForTexture = Hiking_Blue;Hiking_Green;Hiking_Red;Hiking_Green,
+		AttachmentReplacement = Bag,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		Capacity = 20,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_HikingBag,
+		EquipSound = EquipBackpackLarge,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_HikingBag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_HikingBag_LHand holdingbagleft,
+		RunSpeedModifier = 0.96,
+		SoundParameter = EquippedBaggageContainer HikingBag,
+		WeightReduction = 75,
+		WorldStaticModel = HikingBag_Ground,
+	    AttachmentsProvided = BedrollBottom,
+        Tags = IsFireFuel;IsFireTinder,
+        ResearchableRecipes = SewCrudeLeatherBackpack,
+	}
+	
+	item Bag_BigHikingBag
+	{
+		/* DisplayName = Big Hiking Bag,*/
+		DisplayName = Big Hiking Backpack,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1.5,
+		IconsForTexture = BigHiking_Blue;BigHiking_Green;BigHiking_Red,
+		AttachmentReplacement = Bag,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		Capacity = 22,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_BigHikingBag,
+		EquipSound = EquipBackpackLarge,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_BigHikingBag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_BigHikingBag_LHand holdingbagleft,
+		RunSpeedModifier = 0.95,
+		SoundParameter = EquippedBaggageContainer HikingBag,
+		WeightReduction = 80,
+		WorldStaticModel = BigHikingBag_Ground,
+		AttachmentsProvided = BedrollBottomBig,
+        Tags = IsFireFuel;IsFireTinder,
+        ResearchableRecipes = SewCrudeLeatherBackpack,
+	}
+	
+	item Bag_SurvivorBag
+	{
+		/*DisplayName = Large Backpack,*/
+		DisplayName = Military Backpack,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 2,
+		/*Icon = AliceBag,*/
+		IconsForTexture = AliceBag;AliceBag_Camo;AliceBag_SandCamo,
+		AttachmentReplacement = Bag,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		/*Capacity = 27,*/
+		Capacity = 28,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_SurvivorBag,
+		EquipSound = EquipBackpackLarge,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_SurvivorBag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_SurvivorBag_LHand holdingbagleft,
+		RunSpeedModifier = 0.94,
+		WeightReduction = 85,
+		WorldStaticModel = ALICE_Pack_Ground,
+		AttachmentsProvided = BedrollBottomALICE,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder,
+        ResearchableRecipes = SewCrudeLeatherBackpack,
+	}
+	
+	item Bag_ALICEpack
+	{
+		/*DisplayName = Large Backpack,*/
+		DisplayName = Military Backpack,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 2,
+		Icon = AliceBag,
+		AttachmentReplacement = Bag,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		/*Capacity = 27,*/
+		Capacity = 28,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_ALICEpack,
+		EquipSound = EquipBackpackLarge,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_ALICEpack_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ALICEpack_LHand holdingbagleft,
+		RunSpeedModifier = 0.94,
+		WeightReduction = 85,
+		WorldStaticModel = ALICE_Pack_Ground,
+		AttachmentsProvided = BedrollBottomALICE,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder,
+        ResearchableRecipes = SewCrudeLeatherBackpack,
+	}
+	
+	item Bag_ALICEpack_Army
+	{
+		DisplayName = Military Backpack,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 2,
+		Icon = AliceBag_Camo,
+		AttachmentReplacement = Bag,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 28,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_ALICEpack_Army,
+		EquipSound = EquipBackpackLarge,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
+		RunSpeedModifier = 0.94,
+		/*WeightReduction = 87,*/
+		WeightReduction = 85,
+		WorldStaticModel = ALICE_Pack_Ground,
+		AttachmentsProvided = BedrollBottomALICE,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder,
+        ResearchableRecipes = SewCrudeLeatherBackpack,
+	}
+	
+	item Bag_WeaponBag
+	{
+		DisplayName = Duffel Bag,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = Duffelbag,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 18,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_WeaponBag,
+		EquipSound = EquipDuffleBag,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_DuffelBag_RHandTINT holdingbagright,
+		ReplaceInSecondHand = Bag_DuffelBag_LHandTINT holdingbagleft,
+		RunSpeedModifier = 0.95,
+		WeightReduction = 65,
+		WorldStaticModel = DuffelBag_Ground,
+		Tags = BagsFillException;IsFireFuel;IsFireTinder,
+	}
+	
+	item Bag_InmateEscapedBag
+	{
+		DisplayName = Duffel Bag,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = Duffelbag,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 18,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_InmateEscapedBag,
+		EquipSound = EquipDuffleBag,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_DuffelBag_RHandTINT holdingbagright,
+		ReplaceInSecondHand = Bag_DuffelBag_LHandTINT holdingbagleft,
+		RunSpeedModifier = 0.95,
+		WeightReduction = 65,
+		WorldStaticModel = DuffelBag_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Bag_MoneyBag
+	{
+		DisplayName = Duffel Bag,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = DuffelBagWhite,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 18,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_MoneyBag,
+		EquipSound = EquipDuffleBag,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_DuffelBag_RHandTINT holdingbagright,
+		ReplaceInSecondHand = Bag_DuffelBag_LHandTINT holdingbagleft,
+		RunSpeedModifier = 0.95,
+		WeightReduction = 65,
+		WorldStaticModel = DuffelBag_Ground,
+		Tags = IsFireFuel;IsFireTinder;NeverEmpty,
+	}
+	
+	item Bag_WorkerBag
+	{
+		DisplayName = Duffel Bag,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = Duffelbag,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 18,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_WorkerBag,
+		EquipSound = EquipDuffleBag,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_DuffelBag_RHandTINT holdingbagright,
+		ReplaceInSecondHand = Bag_DuffelBag_LHandTINT holdingbagleft,
+		RunSpeedModifier = 0.95,
+		WeightReduction = 65,
+		WorldStaticModel = DuffelBag_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Bag_DuffelBag
+	{
+		DisplayName = Duffel Bag,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		/*Icon = Duffelbag,*/
+		IconsForTexture = Duffelbag;DuffelBag_Green;DuffelBag_Grey;DuffelBagBlue;DuffelBagRed;Duffelbag_Sport;Duffelbag_Sport2,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 18,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_DuffelBag,
+		EquipSound = EquipDuffleBag,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_DuffelBag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_DuffelBag_LHand holdingbagleft,
+		RunSpeedModifier = 0.95,
+		SoundParameter = EquippedBaggageContainer DuffleBag,
+		WeightReduction = 65,
+		WorldStaticModel = DuffelBag_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Bag_BreakdownBag
+	{
+		DisplayName = Duffel Bag,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		/*Icon = Duffelbag,*/
+		IconsForTexture = Duffelbag;DuffelBag_Green;DuffelBag_Grey;DuffelBagBlue;DuffelBagRed;Duffelbag_Sport;Duffelbag_Sport2,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 18,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_BreakdownBag,
+		EquipSound = EquipDuffleBag,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_DuffelBag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_DuffelBag_LHand holdingbagleft,
+		RunSpeedModifier = 0.95,
+		SoundParameter = EquippedBaggageContainer DuffleBag,
+		WeightReduction = 65,
+		WorldStaticModel = DuffelBag_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Bag_DuffelBagTINT
+	{
+		DisplayName = Duffel Bag,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = DuffelBagWhite,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 18,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_DuffelBagTINT,
+		EquipSound = EquipDuffleBag,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_DuffelBag_RHandTINT holdingbagright,
+		ReplaceInSecondHand = Bag_DuffelBag_LHandTINT holdingbagleft,
+		RunSpeedModifier = 0.95,
+		SoundParameter = EquippedBaggageContainer DuffleBag,
+		WeightReduction = 65,
+		WorldStaticModel = DuffelBag_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Plasticbag
+	{
+		DisplayName = Plastic Bag,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.1,
+		Icon = Plasticbag,
+		Capacity = 8,
+		CloseSound = ClosePlasticBag,
+		OpenSound = OpenPlasticBag,
+		PutInSound = StoreItemPlasticBag,
+		ReplaceInPrimaryHand = Bag_Plasticbag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Plasticbag_LHand holdingbagleft,
+		SoundParameter = EquippedBaggageContainer PlasticBag,
+		WeightReduction = 50,
+		WorldStaticModel = PlasticBag_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	item Plasticbag_Clothing
+	{
+		DisplayName = Plastic Bag,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.1,
+		Icon = Plasticbag,
+		Capacity = 8,
+		CloseSound = ClosePlasticBag,
+		OpenSound = OpenPlasticBag,
+		PutInSound = StoreItemPlasticBag,
+		ReplaceInPrimaryHand = Bag_Plasticbag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Plasticbag_LHand holdingbagleft,
+		SoundParameter = EquippedBaggageContainer PlasticBag,
+		WeightReduction = 50,
+		WorldStaticModel = PlasticBag_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	item Garbagebag
+	{
+		DisplayName = Garbage Bag,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.1,
+		Icon = Garbagebag,
+		Capacity = 20,
+        CloseSound = ClosePlasticBag,
+        OpenSound = OpenPlasticBag,
+        PutInSound = StoreItemPlasticBag,
+		ReplaceInPrimaryHand = Bag_Garbagebag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Garbagebag_LHand holdingbagleft,
+		SoundParameter = EquippedBaggageContainer GarbageBag,
+		WeightReduction = 50,
+		WorldStaticModel = GarbageBag_Ground,
+		Tags = GarbageBag;IsFireFuel;IsFireTinder,
+	}
+
+	item Garbagebag_box
+	{
+		DisplayName = Box of Garbage Bags,
+		DisplayCategory = Container,
+		Type = Drainable,
+        UseDelta	=	0.05,
+		Weight = 1,
+		Icon = Garbagebag_box,
+		WorldStaticModel = Garbagebag_box,
+		UseWhileEquipped = FALSE,
+	}
+	
+	item Tote
+	{
+		DisplayName = Tote Bag,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = Tote,
+		Capacity = 6,
+		CloseSound = CloseToteBag,
+		OpenSound = OpenToteBag,
+		PutInSound = StoreItemToteBag,
+		ReplaceInPrimaryHand = Bag_Tote_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Tote_LHand holdingbagleft,
+		SoundParameter = EquippedBaggageContainer ToteBag,
+		WeightReduction = 50,
+		WorldStaticModel = TotesBag_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+		MaxItemSize = 2.0,
+	}
+
+	item Tote_Clothing
+	{
+		DisplayName = Tote Bag,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = Tote,
+		Capacity = 6,
+		CloseSound = CloseToteBag,
+		OpenSound = OpenToteBag,
+		PutInSound = StoreItemToteBag,
+		ReplaceInPrimaryHand = Bag_Tote_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Tote_LHand holdingbagleft,
+		SoundParameter = EquippedBaggageContainer ToteBag,
+		WeightReduction = 50,
+		WorldStaticModel = TotesBag_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+		MaxItemSize = 2.0,
+	}
+	
+	item Purse
+	{
+		DisplayName = Purse,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = Purse,
+		Capacity = 6,
+		EquipSound = EquipLeatherBag,
+		CloseSound = CloseLeatherBag,
+		OpenSound = OpenLeatherBag,
+		PutInSound = StoreItemLeatherBag,
+		ReplaceInPrimaryHand = Bag_Purse_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Purse_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 55,
+		WorldStaticModel = Purse_Ground,
+		MaxItemSize = 2.0,
+	}
+	
+	item EmptySandbag
+	{
+		DisplayName = Sack,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = SandbagEmpty,
+		Capacity = 15,
+		CloseSound = CloseSack,
+		ConditionMax = 1,
+		OpenSound = OpenSack,
+		PutInSound = StoreItemSack,
+		ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		/*Tooltip = Tooltip_item_empty_sack_container,*/
+		WeightReduction = 50,
+		WorldStaticModel = SandBag_Ground,
+		Tags = HoldDirt;HoldCompost;IsFireFuel;IsFireTinder;BurlapBag,
+	}
+
+	item Bag_DeadRats
+	{
+		DisplayName = Sack,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = SandbagEmpty,
+		Capacity = 15,
+		CloseSound = CloseSack,
+		ConditionMax = 1,
+		OpenSound = OpenSack,
+		PutInSound = StoreItemSack,
+		ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		/*Tooltip = Tooltip_item_empty_sack_container,*/
+		WeightReduction = 50,
+		WorldStaticModel = SandBag_Ground,
+		Tags = HoldDirt;HoldCompost;IsFireFuel;IsFireTinder;BurlapBag,
+	}
+
+	item Bag_DeadMice
+	{
+		DisplayName = Sack,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = SandbagEmpty,
+		Capacity = 15,
+		CloseSound = CloseSack,
+		ConditionMax = 1,
+		OpenSound = OpenSack,
+		PutInSound = StoreItemSack,
+		ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		/*Tooltip = Tooltip_item_empty_sack_container,*/
+		WeightReduction = 50,
+		WorldStaticModel = SandBag_Ground,
+		Tags = HoldDirt;HoldCompost;IsFireFuel;IsFireTinder;BurlapBag,
+	}
+
+	item Bag_DeadRoaches
+	{
+		DisplayName = Sack,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = SandbagEmpty,
+		Capacity = 15,
+		CloseSound = CloseSack,
+		ConditionMax = 1,
+		OpenSound = OpenSack,
+		PutInSound = StoreItemSack,
+		ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		/*Tooltip = Tooltip_item_empty_sack_container,*/
+		WeightReduction = 50,
+		WorldStaticModel = SandBag_Ground,
+		Tags = HoldDirt;HoldCompost;IsFireFuel;IsFireTinder;BurlapBag,
+	}
+
+	item Bag_TreasureBag
+	{
+		DisplayName = Sack,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = SandbagEmpty,
+		Capacity = 15,
+		CloseSound = CloseSack,
+		ConditionMax = 1,
+		OpenSound = OpenSack,
+		PutInSound = StoreItemSack,
+		ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		/*Tooltip = Tooltip_item_empty_sack_container,*/
+		WeightReduction = 50,
+		WorldStaticModel = SandBag_Ground,
+		Tags = HoldDirt;HoldCompost;IsFireFuel;IsFireTinder;BurlapBag,
+	}
+	
+	item Suitcase
+	{
+		DisplayName = Suitcase,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 3,
+		/*Icon = Suitcase,*/
+		IconsForTexture = Suitcase2;Suitcase_Old;Suitcase_Travel,
+		ClothingItem = Bag_Suitcase,
+		Capacity = 16,
+		CloseSound = CloseSuitcase,
+		OpenSound = OpenSuitcase,
+		PutInSound = StoreItemSuitcase,
+		ReplaceInPrimaryHand = Bag_Suitcase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Suitcase_LHand holdingbagleft,
+		RunSpeedModifier = 0.98,
+		WeightReduction = 50,
+		WorldStaticModel = Suitcase_Ground,
+	}
+	
+	item Handbag
+	{
+		DisplayName = Handbag,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = Purseblack,
+		Capacity = 6,
+		CloseSound = CloseLeatherBag,
+		EquipSound = EquipLeatherBag,
+		OpenSound = OpenLeatherBag,
+		PutInSound = StoreItemLeatherBag,
+		ReplaceInPrimaryHand = Bag_Handbag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Handbag_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = Handbag_Ground,
+		MaxItemSize = 2.0,
+	}
+	
+	item Toolbox
+	{
+		DisplayName = Toolbox,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 2,
+		Icon = Toolbox,
+		Capacity = 8,
+		CloseSound = CloseMetalToolbox,
+		OpenSound = OpenMetalToolbox,
+		PutInSound = StoreItemMetalToolbox,
+		ReplaceInPrimaryHand = Bag_Toolbox_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Toolbox_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 50,
+		WorldStaticModel = ToolBox_Ground,
+		Tags = HasMetal,
+		MaxItemSize = 2.0,
+	}
+
+	item Toolbox_Farming
+	{
+		DisplayName = Toolbox,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 2,
+		Icon = Toolbox,
+		Capacity = 8,
+		CloseSound = CloseMetalToolbox,
+		OpenSound = OpenMetalToolbox,
+		PutInSound = StoreItemMetalToolbox,
+		ReplaceInPrimaryHand = Bag_Toolbox_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Toolbox_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 50,
+		WorldStaticModel = ToolBox_Ground,
+		Tags = HasMetal,
+		MaxItemSize = 2.0,
+	}
+
+	item Toolbox_Wooden
+	{
+		DisplayName = Wooden Toolbox,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ToolBox_Old,
+		Capacity = 6,
+		CloseSound = CloseSmallWoodenBox,
+		OpenSound = OpenSmallWoodenBox,
+		PutInSound = StoreItemSmallWoodenBox,
+		ReplaceInPrimaryHand = Bag_Toolbox_Wooden_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Toolbox_Wooden_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 50,
+		WorldStaticModel = Toolbox_Wooden,
+		Tags = IsFireFuel,
+		MaxItemSize = 2.0,
+	}
+	
+	item FirstAidKit
+	{
+		DisplayName = First Aid Kit,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = FirstAid,
+		Capacity = 4,
+		CloseSound = CloseSmallMetalBox,
+		Medical = TRUE,
+		MetalValue = 15,
+		OpenSound = OpenSmallMetalBox,
+		PutInSound = StoreItemSmallMetalBox,
+		ReplaceInPrimaryHand = Bag_FirstAidKit_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_FirstAidKit_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = LunchBoxMedic_Ground,
+		MaxItemSize = 1,
+        Tags = NeverEmpty;BagsFillException;HasMetal,
+	}
+	
+	item Lunchbox
+	{
+		DisplayName = Lunchbox,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = Lunchbox01,
+		Capacity = 4,
+		CloseSound = CloseSmallMetalBox,
+		MetalValue = 15,
+		OpenSound = OpenSmallMetalBox,
+		PutInSound = StoreItemSmallMetalBox,
+		ReplaceInPrimaryHand = Bag_Lunchbox_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Lunchbox_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = LunchBox_Ground,
+		MaxItemSize = 1,
+	}
+	
+	item Lunchbox2
+	{
+		DisplayName = Lunchbox,
+		DisplayCategory = Memento,
+		Type = Container,
+		Weight = 1,
+		Icon = Lunchbox02,
+		Capacity = 4,
+		CloseSound = CloseSmallMetalBox,
+		MetalValue = 15,
+		OpenSound = OpenSmallMetalBox,
+		PutInSound = StoreItemSmallMetalBox,
+		ReplaceInPrimaryHand = Bag_Lunchbox2_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Lunchbox2_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = LunchBox2_Ground,
+		MaxItemSize = 1,
+		Tags = IsMemento;IgnoreZombieDensity,
+	}
+	
+	item Flightcase
+	{
+		DisplayName = Flight Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		/*Icon = GuitarCase02,*/
+        IconsForTexture = GuitarCase02;TrumpetCase_Stickered,
+		Capacity = 7,
+		CloseSound = CloseInstrumentCaseLarge,
+		OpenSound = OpenInstrumentCaseLarge,
+		PutInSound = StoreItemInstrumentCaseLarge,
+		ReplaceInPrimaryHand = Bag_FlightCase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_FlightCase_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 50,
+		WorldStaticModel = GuitarCase_Ground,
+		ClothingItem = Bag_FlightCase_RHand,
+	}
+	
+	item Guitarcase
+	{
+		DisplayName = Guitar Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		/*Icon = GuitarCase01,*/
+        IconsForTexture = GuitarCase;GuitarCase_Stickered,
+		Capacity = 5,
+		CloseSound = CloseInstrumentCaseLarge,
+		OpenSound = OpenInstrumentCaseLarge,
+		PutInSound = StoreItemInstrumentCaseLarge,
+		ReplaceInPrimaryHand = Bag_GuitarCase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_GuitarCase_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 50,
+		WorldStaticModel = ClassicGuitarCase_Ground,
+		ClothingItem = Bag_GuitarCase_RHand,
+	}
+	
+	item Bag_FannyPackFront
+	{
+		DisplayName = Fanny Pack - Front,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 0.2,
+		/*Icon = FannyPack,		*/
+		IconsForTexture = FannyPack;Fannypack_Sport;Fannypack_Sport2,
+		BodyLocation = FannyPackFront,
+		CanBeEquipped = FannyPackFront,
+		Capacity = 1,
+		CloseSound = CloseLeatherBag,
+		ClothingItem = Bag_FannyPackFront,
+		ClothingItemExtra = Bag_FannyPackBack,
+		ClothingItemExtraOption = FannyPack_WearBack,
+		EquipSound = EquipFannyPack,
+		OpenSound = OpenLeatherBag,
+		PutInSound = StoreItemLeatherBag,
+		RunSpeedModifier = 0.98,
+		WeightReduction = 85,
+		ClothingExtraSubmenu = FannyPack_WearFront,
+		WorldStaticModel = FannyPack_Ground,
+		Tags = IsFireTinder;IsFireFuel,
+        ResearchableRecipes = SewHideFannyBag,
+	}
+	
+	item Bag_FannyPackBack
+	{
+		DisplayName = Fanny Pack - Back,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 0.2,
+		/*Icon = FannyPack,		*/
+		IconsForTexture = FannyPack;Fannypack_Sport;Fannypack_Sport2,
+		BodyLocation = FannyPackBack,
+		CanBeEquipped = FannyPackBack,
+		Capacity = 1,
+		CloseSound = CloseLeatherBag,
+		ClothingItem = Bag_FannyPackBack,
+		ClothingItemExtra = Bag_FannyPackFront,
+		ClothingItemExtraOption = FannyPack_WearFront,
+		EquipSound = EquipFannyPack,
+		OpenSound = OpenLeatherBag,
+		PutInSound = StoreItemLeatherBag,
+		RunSpeedModifier = 0.98,
+		WeightReduction = 85,
+		ClothingExtraSubmenu = FannyPack_WearBack,
+		WorldStaticModel = FannyPack_Ground,
+		Tags = IsFireTinder;IsFireFuel,
+        ResearchableRecipes = SewHideFannyBag,
+	}
+	
+	item Briefcase
+	{
+		DisplayName = Briefcase,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1.5,
+		/*Icon = Briefcase,*/
+		IconsForTexture = Briefcase;Briefcase_Metal,
+		ClothingItem = Bag_Briefcase,
+		Capacity = 8,
+		CloseSound = CloseBriefcase,
+		MetalValue = 15,
+		OpenSound = OpenBriefcase,
+		PutInSound = StoreItemBriefcase,
+		ReplaceInPrimaryHand = Bag_Briefcase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Briefcase_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 50,
+		WorldStaticModel = Briefcase_Ground,
+		MaxItemSize = 2.0,
+	}
+	
+	item Bag_Satchel
+	{
+		DisplayName = Satchel,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		IconsForTexture = Satchel_Leather;Satchel_Green;Satchel_Khaki,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		Capacity = 12,
+		CloseSound = CloseSatchel,
+		ClothingItem = Bag_Satchel,
+		EquipSound = EquipSatchel,
+		OpenSound = OpenSatchel,
+		PutInSound = StoreItemSatchel,
+		ReplaceInPrimaryHand = Bag_Satchel_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Satchel_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 65,
+		WorldStaticModel = Satchel_Ground,
+		Tags = IsFireTinder;IsFireFuel,
+	}
+	
+	item Cooler
+	{
+		DisplayName = Cooler,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1.5,
+		Icon = Cooler,
+		Capacity = 12,
+		CloseSound = CloseCooler,
+		MetalValue = 15,
+		OpenSound = OpenCooler,
+		PutInSound = StoreItemCooler,
+		ReplaceInPrimaryHand = Bag_Cooler_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Cooler_LHand holdingbagleft,
+		RunSpeedModifier = 0.9,
+		WeightReduction = 50,
+		WorldStaticModel = Cooler_Ground,
+	}
+	
+	item PistolCase1
+	{
+		DisplayName = Handgun Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = PistolCase,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		MetalValue = 15,
+		ReplaceInPrimaryHand = Bag_PistolCase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_PistolCase_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = GunCase_Ground,
+		Tags = NeverEmpty;FirearmLoot,
+	}
+	
+	item PistolCase2
+	{
+		DisplayName = Handgun Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = PistolCase,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		MetalValue = 15,
+		ReplaceInPrimaryHand = Bag_PistolCase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_PistolCase_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = GunCase_Ground,
+		Tags = NeverEmpty;FirearmLoot,
+	}
+	
+	item PistolCase3
+	{
+		DisplayName = Handgun Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = PistolCase,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		MetalValue = 15,
+		ReplaceInPrimaryHand = Bag_PistolCase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_PistolCase_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = GunCase_Ground,
+		Tags = NeverEmpty;FirearmLoot,
+	}
+	
+	item RevolverCase1
+	{
+		DisplayName = Handgun Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = PistolCase,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		MetalValue = 15,
+		ReplaceInPrimaryHand = Bag_PistolCase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_PistolCase_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = GunCase_Ground,
+		Tags = NeverEmpty;FirearmLoot,
+	}
+	
+	item RevolverCase2
+	{
+		DisplayName = Handgun Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = PistolCase,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		MetalValue = 15,
+		ReplaceInPrimaryHand = Bag_PistolCase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_PistolCase_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = GunCase_Ground,
+		Tags = NeverEmpty;FirearmLoot,
+	}
+	
+	item RevolverCase3
+	{
+		DisplayName = Handgun Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = PistolCase,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		MetalValue = 15,
+		ReplaceInPrimaryHand = Bag_PistolCase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_PistolCase_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = GunCase_Ground,
+		Tags = NeverEmpty;FirearmLoot,
+	}
+
+	item Bag_RifleCaseCloth
+	{
+		/*DisplayName = Cloth Rifle Case,*/
+		DisplayName = Cloth Gun Case,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		/*Icon = Duffelbag,*/
+		IconsForTexture = RifleCase_SoftGreen;RifleCase_SoftCamo,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 7,
+		CloseSound = CloseClothGunCase,
+		ClothingItem = Bag_RifleCaseCloth,
+		EquipSound = EquipClothGunCase,
+		OpenSound = OpenClothGunCase,
+		PutInSound = StoreItemClothGunCase,
+		ReplaceInPrimaryHand = Bag_RifleCaseCloth_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_RifleCaseCloth_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 65,
+		WorldStaticModel = RifleCaseCloth_Ground,
+		Tags = BagsFillException;IsFireTinder;IsFireFuel;FirearmLoot,
+	}
+
+	item Bag_RifleCaseCloth2
+	{
+		/*DisplayName = Cloth Rifle Case,*/
+		DisplayName = Cloth Gun Case,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		/*Icon = Duffelbag,*/
+		IconsForTexture = RifleCase_SoftGreen;RifleCase_SoftCamo,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 7,
+		CloseSound = CloseClothGunCase,
+		ClothingItem = Bag_RifleCaseCloth2,
+		EquipSound = EquipClothGunCase,
+		OpenSound = OpenClothGunCase,
+		PutInSound = StoreItemClothGunCase,
+		ReplaceInPrimaryHand = Bag_RifleCaseCloth_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_RifleCaseCloth_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 65,
+		WorldStaticModel = RifleCaseCloth_Ground,
+		Tags = BagsFillException;IsFireTinder;IsFireFuel;FirearmLoot,
+	}
+
+	item Bag_ShotgunCaseCloth
+	{
+		/*DisplayName = Cloth Rifle Case,*/
+		DisplayName = Cloth Gun Case,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		/*Icon = Duffelbag,*/
+		IconsForTexture = RifleCase_SoftGreen;RifleCase_SoftCamo,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 7,
+		CloseSound = CloseClothGunCase,
+		ClothingItem = Bag_ShotgunCaseCloth,
+		EquipSound = EquipClothGunCase,
+		OpenSound = OpenClothGunCase,
+		PutInSound = StoreItemClothGunCase,
+		ReplaceInPrimaryHand = Bag_RifleCaseCloth_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_RifleCaseCloth_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 65,
+		WorldStaticModel = RifleCaseCloth_Ground,
+		Tags = BagsFillException;IsFireTinder;IsFireFuel;FirearmLoot,
+	}
+
+	item Bag_ShotgunCaseCloth2
+	{
+		/*DisplayName = Cloth Rifle Case,*/
+		DisplayName = Cloth Gun Case,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		/*Icon = Duffelbag,*/
+		IconsForTexture = RifleCase_SoftGreen;RifleCase_SoftCamo,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 7,
+		CloseSound = CloseClothGunCase,
+		ClothingItem = Bag_ShotgunCaseCloth2,
+		EquipSound = EquipClothGunCase,
+		OpenSound = OpenClothGunCase,
+		PutInSound = StoreItemClothGunCase,
+		ReplaceInPrimaryHand = Bag_RifleCaseCloth_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_RifleCaseCloth_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 65,
+		WorldStaticModel = RifleCaseCloth_Ground,
+		Tags = BagsFillException;IsFireTinder;IsFireFuel;FirearmLoot,
+	}
+	
+	item Bag_RifleCaseClothCamo
+	{
+		/*DisplayName = Camouflaged Cloth Rifle Case,*/
+		DisplayName = Cloth Gun Case,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		/*Icon = Duffelbag,*/
+		Icon = RifleCase_SoftCamo,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 7,
+		CloseSound = CloseClothGunCase,
+		ClothingItem = Bag_RifleCaseCloth_Camo,
+		EquipSound = EquipClothGunCase,
+		OpenSound = OpenClothGunCase,
+		PutInSound = StoreItemClothGunCase,
+		ReplaceInPrimaryHand = Bag_RifleCaseCloth_RHand_Camo holdingbagright,
+		ReplaceInSecondHand = Bag_RifleCaseCloth_LHand_Camo holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 65,
+		WorldStaticModel = RifleCaseCloth_Ground,
+		Tags = BagsFillException;IsFireTinder;IsFireFuel;FirearmLoot,
+	}
+
+	item Bag_RifleCase
+	{
+		/*DisplayName = Rifle Case,*/
+		DisplayName = Gun Case,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+        IconsForTexture = RifleCase_HardBlack;RifleCase_HardGreen;RifleCase_HardBlack_Stickered;RifleCase_HardGreen_Camo_Stickered;RifleCase_HardGreen_Stickered;RifleCase_HardBlack_Gun,
+		CanHaveHoles = FALSE,
+		Capacity = 7,
+		CloseSound = CloseProtectiveCaseLarge,
+		ClothingItem = Bag_RifleCase_RHand,
+		OpenSound = OpenProtectiveCaseLarge,
+		PutInSound = StoreItemProtectiveCaseLarge,
+		ReplaceInPrimaryHand = Bag_RifleCase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_RifleCase_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 50,
+		WorldStaticModel = RifleCase_Ground,
+		Tags = FirearmLoot,
+	}
+
+	item Bag_RifleCase_Police
+	{
+		/*DisplayName = Rifle Case,*/
+		DisplayName = Gun Case,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+        Icon = RifleCase_HardBlack,
+		CanHaveHoles = FALSE,
+		Capacity = 7,
+		CloseSound = CloseProtectiveCaseLarge,
+		ClothingItem = Bag_RifleCase_RHand,
+		OpenSound = OpenProtectiveCaseLarge,
+		PutInSound = StoreItemProtectiveCaseLarge,
+		ReplaceInPrimaryHand = Bag_RifleCase_Police_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_RifleCase_Police_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 50,
+		WorldStaticModel = RifleCase_Ground,
+		Tags = FirearmLoot,
+	}
+
+	item Bag_RifleCase_Police2
+	{
+		/*DisplayName = Rifle Case,*/
+		DisplayName = Gun Case,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+        Icon = RifleCase_HardBlack,
+		CanHaveHoles = FALSE,
+		Capacity = 7,
+		CloseSound = CloseProtectiveCaseLarge,
+		ClothingItem = Bag_RifleCase_RHand,
+		OpenSound = OpenProtectiveCaseLarge,
+		PutInSound = StoreItemProtectiveCaseLarge,
+		ReplaceInPrimaryHand = Bag_RifleCase_Police_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_RifleCase_Police_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 50,
+		WorldStaticModel = RifleCase_Ground,
+		Tags = FirearmLoot,
+	}
+
+	item Bag_RifleCase_Police3
+	{
+		/*DisplayName = Rifle Case,*/
+		DisplayName = Gun Case,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+        Icon = RifleCase_HardBlack,
+		CanHaveHoles = FALSE,
+		Capacity = 7,
+		CloseSound = CloseProtectiveCaseLarge,
+		ClothingItem = Bag_RifleCase_RHand,
+		OpenSound = OpenProtectiveCaseLarge,
+		PutInSound = StoreItemProtectiveCaseLarge,
+		ReplaceInPrimaryHand = Bag_RifleCase_Police_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_RifleCase_Police_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 50,
+		WorldStaticModel = RifleCase_Ground,
+		Tags = FirearmLoot,
+	}
+
+	item Bag_ShotgunCase_Police
+	{
+		/*DisplayName = Rifle Case,*/
+		DisplayName = Gun Case,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+        Icon = RifleCase_HardBlack,
+		CanHaveHoles = FALSE,
+		Capacity = 7,
+		CloseSound = CloseProtectiveCaseLarge,
+		ClothingItem = Bag_RifleCase_RHand,
+		OpenSound = OpenProtectiveCaseLarge,
+		PutInSound = StoreItemProtectiveCaseLarge,
+		ReplaceInPrimaryHand = Bag_RifleCase_Police_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_RifleCase_Police_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 50,
+		WorldStaticModel = RifleCase_Ground,
+		Tags = FirearmLoot,
+	}
+	
+	item Bag_RifleCaseGreen
+	{
+		/*DisplayName = Military Rifle Case,*/
+		DisplayName = Gun Case - Military,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+        IconsForTexture = RifleCase_HardGreen;RifleCase_HardGreen_Camo;RifleCase_HardGreen_Military,
+		CanHaveHoles = FALSE,
+		Capacity = 7,
+		CloseSound = CloseProtectiveCaseLarge,
+		ClothingItem = Bag_RifleCase_RHandGreen,
+		OpenSound = OpenProtectiveCaseLarge,
+		PutInSound = StoreItemProtectiveCaseLarge,
+		ReplaceInPrimaryHand = Bag_RifleCase_RHandGreen holdingbagright,
+		ReplaceInSecondHand = Bag_RifleCase_LHandGreen holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 50,
+		WorldStaticModel = RifleCase_Ground,
+		Tags = FirearmLoot,
+	}
+
+	item Bag_RifleCaseGreen2
+	{
+		/*DisplayName = Military Rifle Case,*/
+		DisplayName = Gun Case - Military,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+        IconsForTexture = RifleCase_HardGreen;RifleCase_HardGreen_Camo;RifleCase_HardGreen_Military,
+		CanHaveHoles = FALSE,
+		Capacity = 7,
+		CloseSound = CloseProtectiveCaseLarge,
+		ClothingItem = Bag_RifleCase_RHandGreen,
+		OpenSound = OpenProtectiveCaseLarge,
+		PutInSound = StoreItemProtectiveCaseLarge,
+		ReplaceInPrimaryHand = Bag_RifleCase_RHandGreen holdingbagright,
+		ReplaceInSecondHand = Bag_RifleCase_LHandGreen holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 50,
+		WorldStaticModel = RifleCase_Ground,
+		Tags = FirearmLoot,
+	}
+
+	item Bag_ShotgunCaseGreen
+	{
+		/*DisplayName = Military Rifle Case,*/
+		DisplayName = Gun Case - Military,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+        IconsForTexture = RifleCase_HardGreen;RifleCase_HardGreen_Camo;RifleCase_HardGreen_Military,
+		CanHaveHoles = FALSE,
+		Capacity = 7,
+		CloseSound = CloseProtectiveCaseLarge,
+		ClothingItem = Bag_RifleCase_RHandGreen,
+		OpenSound = OpenProtectiveCaseLarge,
+		PutInSound = StoreItemProtectiveCaseLarge,
+		ReplaceInPrimaryHand = Bag_RifleCase_RHandGreen holdingbagright,
+		ReplaceInSecondHand = Bag_RifleCase_LHandGreen holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 50,
+		WorldStaticModel = RifleCase_Ground,
+		Tags = FirearmLoot,
+	}
+
+	item Bag_FluteCase
+	{
+		DisplayName = Flute Case,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+        IconsForTexture = FluteCase;FluteCase_Stickered,
+		CanHaveHoles = FALSE,
+		Capacity = 1,
+		CloseSound = CloseInstrumentCaseSmall,
+		OpenSound = OpenInstrumentCaseSmall,
+		PutInSound = StoreItemInstrumentCaseSmall,
+		ReplaceInPrimaryHand = Bag_FluteCase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_FluteCase_LHand holdingbagleft,
+		RunSpeedModifier = 0.95,
+		WeightReduction = 50,
+		WorldStaticModel = FluteCase_Ground,
+		ClothingItem = Bag_FluteCase_RHand,
+	}
+
+	item Bag_ViolinCase
+	{
+		DisplayName = Violin Case,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+        IconsForTexture = GuitarCase;GuitarCase_Stickered,
+		CanHaveHoles = FALSE,
+		Capacity = 1,
+		CloseSound = CloseInstrumentCaseSmall,
+		OpenSound = OpenInstrumentCaseSmall,
+		PutInSound = StoreItemInstrumentCaseSmall,
+		ReplaceInPrimaryHand = Bag_ViolinCase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ViolinCase_LHand holdingbagleft,
+		RunSpeedModifier = 0.95,
+		WeightReduction = 50,
+		WorldStaticModel = ViolinCase_Ground,
+		ClothingItem = Bag_ViolinCase_RHand,
+	}
+
+	item Bag_TrumpetCase
+	{
+		DisplayName = Trumpet Case,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+        IconsForTexture = TrumpetCase;TrumpetCase_Stickered,
+		CanHaveHoles = FALSE,
+		Capacity = 1,
+		CloseSound = CloseInstrumentCaseSmall,
+		OpenSound = OpenInstrumentCaseSmall,
+		PutInSound = StoreItemInstrumentCaseSmall,
+		ReplaceInPrimaryHand = Bag_TrumpetCase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_TrumpetCase_LHand holdingbagleft,
+		RunSpeedModifier = 0.95,
+		WeightReduction = 50,
+		WorldStaticModel = TrumpetCase_Ground,
+		ClothingItem = Bag_TrumpetCase_RHand,
+	}
+
+	item Bag_SaxophoneCase
+	{
+		DisplayName = Saxophone Case,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+        IconsForTexture = SaxCase;SaxCase_Stickered,
+		CanHaveHoles = FALSE,
+		Capacity = 3,
+		CloseSound = CloseInstrumentCaseSmall,
+		OpenSound = OpenInstrumentCaseSmall,
+		PutInSound = StoreItemInstrumentCaseSmall,
+		ReplaceInPrimaryHand = Bag_SaxophoneCase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_SaxophoneCase_LHand holdingbagleft,
+		RunSpeedModifier = 0.95,
+		WeightReduction = 50,
+		WorldStaticModel = SaxophoneCase_Ground,
+		ClothingItem = Bag_SaxophoneCase_RHand,
+	}
+
+	item Bag_JanitorToolbox
+	{
+		DisplayName = Toolbox,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 2,
+		Icon = Toolbox,
+		Capacity = 8,
+		CloseSound = CloseMetalToolbox,
+		OpenSound = OpenMetalToolbox,
+		PutInSound = StoreItemMetalToolbox,
+		ReplaceInPrimaryHand = Bag_Toolbox_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Toolbox_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ToolBox_Ground,
+		Tags = HasMetal,
+		MaxItemSize = 2.0,
+	}
+
+	item Toolbox_Mechanic
+	{
+		DisplayName = Toolbox,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 2,
+		Icon = Toolbox,
+		Capacity = 8,
+		CloseSound = CloseMetalToolbox,
+		OpenSound = OpenMetalToolbox,
+		PutInSound = StoreItemMetalToolbox,
+		ReplaceInPrimaryHand = Bag_Toolbox_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Toolbox_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ToolBox_Ground,
+		Tags = HasMetal,
+		MaxItemSize = 2.0,
+	}
+	
+	item Bag_ShotgunBag
+	{
+		DisplayName = Duffel Bag,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		/*Icon = Duffelbag,*/
+		IconsForTexture = Duffelbag;DuffelBag_Green;DuffelBag_Grey;DuffelBagBlue;DuffelBagRed;Duffelbag_Sport;Duffelbag_Sport2,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 18,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_ShotgunBag,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_DuffelBag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_DuffelBag_LHand holdingbagleft,
+		RunSpeedModifier = 0.95,
+		WeightReduction = 65,
+		WorldStaticModel = DuffelBag_Ground,
+		Tags = NeverEmpty;IsFireTinder;IsFireFuel,
+	}
+	
+	item Bag_ShotgunSawnoffBag
+	{
+		DisplayName = Duffel Bag,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		/*Icon = Duffelbag,*/
+		IconsForTexture = Duffelbag;DuffelBag_Green;DuffelBag_Grey;DuffelBagBlue;DuffelBagRed;Duffelbag_Sport;Duffelbag_Sport2,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 18,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_ShotgunSawnoffBag,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_DuffelBag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_DuffelBag_LHand holdingbagleft,
+		RunSpeedModifier = 0.95,
+		WeightReduction = 65,
+		WorldStaticModel = DuffelBag_Ground,
+		Tags = NeverEmpty;IsFireTinder;IsFireFuel,
+	}
+	
+	item Bag_ShotgunDblBag
+	{
+		DisplayName = Duffel Bag,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		/*Icon = Duffelbag,*/
+		IconsForTexture = Duffelbag;DuffelBag_Green;DuffelBag_Grey;DuffelBagBlue;DuffelBagRed;Duffelbag_Sport;Duffelbag_Sport2,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 18,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_ShotgunDblBag,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_DuffelBag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_DuffelBag_LHand holdingbagleft,
+		RunSpeedModifier = 0.95,
+		WeightReduction = 65,
+		WorldStaticModel = DuffelBag_Ground,
+		Tags = NeverEmpty;IsFireTinder;IsFireFuel,
+	}
+	
+	item Bag_ShotgunDblSawnoffBag
+	{
+		DisplayName = Duffel Bag,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		/*Icon = Duffelbag,*/
+		IconsForTexture = Duffelbag;DuffelBag_Green;DuffelBag_Grey;DuffelBagBlue;DuffelBagRed;Duffelbag_Sport;Duffelbag_Sport2,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 18,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_ShotgunDblSawnoffBag,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_DuffelBag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_DuffelBag_LHand holdingbagleft,
+		RunSpeedModifier = 0.95,
+		WeightReduction = 65,
+		WorldStaticModel = DuffelBag_Ground,
+		Tags = NeverEmpty;IsFireTinder;IsFireFuel,
+	}
+	
+	item Bag_BowlingBallBag
+	{
+		DisplayName = Bowling Ball Bag,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		IconsForTexture = BowlingBagBlack;BowlingBagBlue;BowlingBagPurple;BowlingBagRed,
+		Capacity = 6,
+		CloseSound = CloseLeatherBag,
+		ClothingItem = Bag_BowlingBallBag,
+		EquipSound = EquipLeatherBag,
+		OpenSound = OpenLeatherBag,
+		PutInSound = StoreItemLeatherBag,
+		ReplaceInPrimaryHand = Bag_BowlingBallBag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_BowlingBallBag_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = BowlingBallBag_Ground,
+	}
+
+	item Bag_ALICE_BeltSus
+	{
+		/*DisplayName = Camouflage ALICE Belt and Suspenders,*/
+		DisplayName = ALICE Belt and Suspenders,
+		DisplayCategory = Bag,
+		Type = Container,
+		IconsForTexture = WebbingCamo;Webbing,
+		BodyLocation = Webbing,
+		CanBeEquipped = Webbing,
+		Capacity = 6,
+		CloseSound = CloseCargoVest,
+		EquipSound = EquipAliceBelt,
+		OpenSound = OpenCargoVest,
+		PutInSound = StoreItemCargoVest,
+		RunSpeedModifier = 0.96,
+		WeightReduction = 80,
+		ClothingItem = Bag_ALICE_BeltSus,
+		WorldStaticModel = ALICE_BeltSus_Ground,
+		AttachmentsProvided = SmallBeltLeft;SmallBeltRight;WebbingRight;WebbingLeft,
+		Tags = ReloadFastMagazines;IgnoreZombieDensity;HasMetal;IsFireFuel,
+		Tooltip = Tooltip_Webbing,
+		MaxItemSize = 1.3,
+		CombatSpeedModifier = 0.98,
+	}
+
+	item Bag_ALICE_BeltSus_Camo
+	{
+		/*DisplayName = Camouflage ALICE Belt and Suspenders,*/
+		DisplayName = ALICE Belt and Suspenders,
+		DisplayCategory = Bag,
+		Type = Container,
+		Icon = WebbingCamo,
+		BodyLocation = Webbing,
+		CanBeEquipped = Webbing,
+		Capacity = 6,
+		CloseSound = CloseCargoVest,
+		EquipSound = EquipAliceBelt,
+		OpenSound = OpenCargoVest,
+		PutInSound = StoreItemCargoVest,
+		RunSpeedModifier = 0.96,
+		WeightReduction = 80,
+		ClothingItem = Bag_ALICE_BeltSus_Camo,
+		WorldStaticModel = ALICE_BeltSus_Ground,
+		AttachmentsProvided = SmallBeltLeft;SmallBeltRight;WebbingRight;WebbingLeft,
+		Tags = ReloadFastMagazines;IgnoreZombieDensity;HasMetal;IsFireFuel,
+		Tooltip = Tooltip_Webbing,
+		MaxItemSize = 1.3,
+		CombatSpeedModifier = 0.98,
+	}
+
+	item Bag_ALICE_BeltSus_Green
+	{
+		/*DisplayName = Green ALICE Belt and Suspenders,*/
+		DisplayName = ALICE Belt and Suspenders,
+		DisplayCategory = Bag,
+		Type = Container,
+		Icon = Webbing,
+		BodyLocation = Webbing,
+		CanBeEquipped = Webbing,
+		Capacity = 6,
+		CloseSound = CloseCargoVest,
+		EquipSound = EquipAliceBelt,
+		OpenSound = OpenCargoVest,
+		PutInSound = StoreItemCargoVest,
+		RunSpeedModifier = 0.96,
+		WeightReduction = 80,
+		ClothingItem = Bag_ALICE_BeltSus_Green,
+		WorldStaticModel = ALICE_BeltSus_Ground,
+		AttachmentsProvided = SmallBeltLeft;SmallBeltRight;WebbingRight;WebbingLeft,
+		Tags = ReloadFastMagazines;IgnoreZombieDensity;HasMetal;IsFireFuel,
+		Tooltip = Tooltip_Webbing,
+		MaxItemSize = 1.3,
+		CombatSpeedModifier = 0.98,
+	}
+
+    item Bag_BurglarBag
+    {
+        DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Duffel Bag,
+        ClothingItem = Bag_BurglarBag,
+        CanBeEquipped = Back,
+        WeightReduction	=	65,
+        Weight	=	1,
+        Capacity	=	18,
+        Icon	=	Duffelbag,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        RunSpeedModifier = 0.95,
+        CanHaveHoles = false,
+        ReplaceInSecondHand = Bag_DuffelBag_LHandTINT holdingbagleft,
+        ReplaceInPrimaryHand = Bag_DuffelBag_RHandTINT holdingbagright,
+        WorldStaticModel = DuffelBag_Ground,
+        Tags = NeverEmpty;DuffelBag;IsFireFuel;IsFireTinder,
+    }
+
+    item Bag_SatchelPhoto
+    {
+        DisplayCategory = Bag,
+        WeightReduction	=	65,
+        Weight	=	1,
+        Type	=	Container,
+        Capacity	=	12,
+        DisplayName	=	Satchel,
+        IconsForTexture = Satchel_Leather;Satchel_Green;Satchel_Khaki,
+        CanBeEquipped = Back,
+        CloseSound = CloseSatchel,
+        EquipSound = EquipSatchel,
+        OpenSound = OpenSatchel,
+        PutInSound = StoreItemSatchel,
+        ClothingItem = Bag_Satchel,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.99,
+        ReplaceInSecondHand = Bag_Satchel_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Satchel_RHand holdingbagright,
+        WorldStaticModel = Satchel_Ground,
+        Tags = IsFireFuel;IsFireTinder,
+    }
+
+	item Bag_TrashBag
+    {
+        DisplayCategory = Container,
+        WeightReduction	=	50,
+        Weight	=	0.1,
+        Type	=	Container,
+        Capacity	=	20,
+        DisplayName	=	Garbage Bag,
+        Icon	=	Garbagebag,
+        ReplaceInSecondHand = Bag_Garbagebag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Garbagebag_RHand holdingbagright,
+        WorldStaticModel = GarbageBag_Ground,
+        SoundParameter = EquippedBaggageContainer GarbageBag,
+        Tags = GarbageBag;NeverEmpty;IsFireFuel;IsFireTinder,
+    }
+
+    item Cooler_Beer
+    {
+        DisplayCategory = Container,
+        WeightReduction	=	50,
+        Weight	=	1.5,
+        Type	=	Container,
+        Capacity	=	12,
+        DisplayName	=	Cooler,
+        Icon	=	Cooler,
+        CloseSound = CloseCooler,
+        MetalValue = 15,
+        OpenSound = OpenCooler,
+        PutInSound = StoreItemCooler,
+        RunSpeedModifier = 0.9,
+        ReplaceInSecondHand = Bag_Cooler_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Cooler_RHand holdingbagright,
+        WorldStaticModel = Cooler_Ground,
+        Tags = NeverEmpty,
+    }
+
+    item Cooler_Meat
+    {
+        DisplayCategory = Container,
+        WeightReduction	=	50,
+        Weight	=	1.5,
+        Type	=	Container,
+        Capacity	=	12,
+        DisplayName	=	Cooler,
+        Icon	=	Cooler,
+        CloseSound = CloseCooler,
+        MetalValue = 15,
+        OpenSound = OpenCooler,
+        PutInSound = StoreItemCooler,
+        RunSpeedModifier = 0.9,
+        ReplaceInSecondHand = Bag_Cooler_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Cooler_RHand holdingbagright,
+        WorldStaticModel = Cooler_Ground,
+        Tags = NeverEmpty,
+    }
+
+    item Cooler_Soda
+    {
+        DisplayCategory = Container,
+        WeightReduction	=	50,
+        Weight	=	1.5,
+        Type	=	Container,
+        Capacity	=	12,
+        DisplayName	=	Cooler,
+        Icon	=	Cooler,
+        CloseSound = CloseCooler,
+        MetalValue = 15,
+        OpenSound = OpenCooler,
+        PutInSound = StoreItemCooler,
+        RunSpeedModifier = 0.9,
+        ReplaceInSecondHand = Bag_Cooler_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Cooler_RHand holdingbagright,
+        WorldStaticModel = Cooler_Ground,
+        Tags = NeverEmpty,
+    }
+
+    item Plasticbag_Bags
+    {
+        DisplayCategory = Container,
+        WeightReduction	=	50,
+        Weight	=	0.1,
+        Type	=	Container,
+        Capacity	=	8,
+        DisplayName	=	Plastic Bag,
+        Icon	=	Plasticbag,
+        CloseSound = ClosePlasticBag,
+        OpenSound = OpenPlasticBag,
+        PutInSound = StoreItemPlasticBag,
+        ReplaceInSecondHand = Bag_Plasticbag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Plasticbag_RHand holdingbagright,
+        WorldStaticModel = PlasticBag_Ground,
+        SoundParameter = EquippedBaggageContainer PlasticBag,
+        Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+    }
+
+	item Tote_Bags
+	{
+	    DisplayCategory = Container,
+		WeightReduction	=	50,
+		Weight	=	0.5,
+		Type	=	Container,
+		Capacity	=	6,
+		DisplayName	=	Tote Bag,
+		Icon	=	Tote,
+        OpenSound   =   OpenToteBag,
+        CloseSound   =   CloseToteBag,
+        PutInSound   =   StoreItemToteBag,
+		ReplaceInSecondHand = Bag_Tote_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Tote_RHand holdingbagright,
+        WorldStaticModel = TotesBag_Ground,
+        SoundParameter = EquippedBaggageContainer ToteBag,
+        Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+		MaxItemSize = 2.0,
+	}
+
+	item Bag_Dancer
+	{
+	    DisplayCategory = Container,
+		WeightReduction	=	50,
+		Weight	=	0.5,
+		Type	=	Container,
+		Capacity	=	6,
+		DisplayName	=	Tote Bag,
+		Icon	=	Tote,
+        OpenSound = OpenToteBag,
+        CloseSound = CloseToteBag,
+        PutInSound = StoreItemToteBag,
+		ReplaceInSecondHand = Bag_Tote_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Tote_RHand holdingbagright,
+        WorldStaticModel = TotesBag_Ground,
+        SoundParameter = EquippedBaggageContainer ToteBag,
+        Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+		MaxItemSize = 2.0,
+	}
+
+	item Briefcase_Money
+    {
+        DisplayCategory = Container,
+        WeightReduction = 50,
+        Weight	=	1.5,
+        Type	=	Container,
+        Capacity	=	8,
+        DisplayName	=	Briefcase,
+		/*Icon = Briefcase,*/
+		IconsForTexture = Briefcase;Briefcase_Metal,
+		ClothingItem = Bag_Briefcase,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        RunSpeedModifier = 0.97,
+		MetalValue = 15,
+		CloseSound = CloseBriefcase,
+		OpenSound = OpenBriefcase,
+		PutInSound = StoreItemBriefcase,
+        ReplaceInSecondHand = Bag_Briefcase_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Briefcase_RHand holdingbagright,
+        WorldStaticModel = Briefcase_Ground,
+        Tags = NeverEmpty,
+		MaxItemSize = 2.0,
+    }
+
+    item Toolbox_Fishing
+	{
+	    DisplayCategory = Container,
+        WeightReduction = 50,
+		Weight	=	2,
+		Type	=	Container,
+		Capacity	=	8,
+		DisplayName	=	Toolbox,
+		Icon	=	Toolbox,
+		RunSpeedModifier = 0.97,
+		CloseSound = CloseMetalToolbox,
+		OpenSound = OpenMetalToolbox,
+		PutInSound = StoreItemMetalToolbox,
+		ReplaceInSecondHand = Bag_Toolbox_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Toolbox_RHand holdingbagright,
+        WorldStaticModel = ToolBox_Ground,
+		Tags = HasMetal,
+		MaxItemSize = 2.0,
+	}
+
+    item Toolbox_Gardening
+	{
+	    DisplayCategory = Container,
+		WeightReduction	=	50,
+		Weight	=	2,
+		Type	=	Container,
+		Capacity	=	8,
+		DisplayName	=	Toolbox,
+		Icon	=	Toolbox,
+		RunSpeedModifier = 0.97,
+		CloseSound = CloseMetalToolbox,
+		OpenSound = OpenMetalToolbox,
+		PutInSound = StoreItemMetalToolbox,
+		ReplaceInSecondHand = Bag_Toolbox_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Toolbox_RHand holdingbagright,
+        WorldStaticModel = ToolBox_Ground,
+		Tags = HasMetal,
+		MaxItemSize = 2.0,
+	}
+
+
+	item FirstAidKit_New
+	{
+		DisplayName = First Aid Kit,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = FirstAid,
+		Capacity = 4,
+		CloseSound = CloseSmallMetalBox,
+		Medical = TRUE,
+		MetalValue = 15,
+		OpenSound = OpenSmallMetalBox,
+		PutInSound = StoreItemSmallMetalBox,
+		ReplaceInPrimaryHand = Bag_FirstAidKit_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_FirstAidKit_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = LunchBoxMedic_Ground,
+		OnCreate = SpecialLootSpawns.FirstAidKit_New,
+		MaxItemSize = 1,
+        Tags = BagsFillException;HasMetal;AlwaysHasStuff,
+	}
+
+
+	item FirstAidKit_NewPro
+	{
+		DisplayName = First Aid Kit,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = FirstAid,
+		Capacity = 4,
+		CloseSound = CloseSmallMetalBox,
+		Medical = TRUE,
+		MetalValue = 15,
+		OpenSound = OpenSmallMetalBox,
+		PutInSound = StoreItemSmallMetalBox,
+		ReplaceInPrimaryHand = Bag_FirstAidKit_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_FirstAidKit_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = LunchBoxMedic_Ground,
+		OnCreate = SpecialLootSpawns.FirstAidKit_NewPro,
+		MaxItemSize = 1,
+        Tags = BagsFillException;HasMetal;AlwaysHasStuff,
+	}
+
+	item Bag_ProtectiveCase
+	{
+		DisplayName = Protective Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_MediumBlack,
+		Capacity = 7,
+		CloseSound = CloseProtectiveCaseMedium,
+		OpenSound = OpenProtectiveCaseMedium,
+		PutInSound = StoreItemProtectiveCaseMedium,
+		ReplaceInPrimaryHand = Bag_ProtectiveCase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCase_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCase_Ground,
+		ClothingItem = Bag_ProtectiveCase_RHand,
+	}
+
+	item Bag_ProtectiveCase_Survivalist
+	{
+		DisplayName = Protective Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_MediumBlack,
+		Capacity = 7,
+		CloseSound = CloseProtectiveCaseMedium,
+		OpenSound = OpenProtectiveCaseMedium,
+		PutInSound = StoreItemProtectiveCaseMedium,
+		ReplaceInPrimaryHand = Bag_ProtectiveCase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCase_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCase_Ground,
+		ClothingItem = Bag_ProtectiveCase_RHand,
+	}
+
+	item Bag_ProtectiveCase_Tools
+	{
+		DisplayName = Protective Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_MediumBlack,
+		Capacity = 7,
+		CloseSound = CloseProtectiveCaseMedium,
+		OpenSound = OpenProtectiveCaseMedium,
+		PutInSound = StoreItemProtectiveCaseMedium,
+		ReplaceInPrimaryHand = Bag_ProtectiveCase_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCase_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCase_Ground,
+		ClothingItem = Bag_ProtectiveCase_RHand,
+	}
+
+	item Bag_ProtectiveCaseMilitary
+	{
+		/*DisplayName = Military Protective Case,*/
+		DisplayName = Protective Case - Military,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_MediumGreen,
+		Capacity = 7,
+		CloseSound = CloseProtectiveCaseMedium,
+		OpenSound = OpenProtectiveCaseMedium,
+		PutInSound = StoreItemProtectiveCaseMedium,
+		ReplaceInPrimaryHand = Bag_ProtectiveCase_RHand_Green holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCase_LHand_Green holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCase_Ground,
+		ClothingItem = Bag_ProtectiveCase_RHand_Green,
+	}
+
+	item Bag_ProtectiveCaseMilitary_Medical
+	{
+		/*DisplayName = Military Protective Case,*/
+		DisplayName = Protective Case - Military,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_MediumGreen,
+		Capacity = 7,
+		CloseSound = CloseProtectiveCaseMedium,
+		OpenSound = OpenProtectiveCaseMedium,
+		PutInSound = StoreItemProtectiveCaseMedium,
+		ReplaceInPrimaryHand = Bag_ProtectiveCase_RHand_Green holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCase_LHand_Green holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCase_Ground,
+		ClothingItem = Bag_ProtectiveCase_RHand_Green,
+	}
+
+	item Bag_ProtectiveCaseMilitary_Tools
+	{
+		/*DisplayName = Military Protective Case,*/
+		DisplayName = Protective Case - Military,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_MediumGreen,
+		Capacity = 7,
+		CloseSound = CloseProtectiveCaseMedium,
+		OpenSound = OpenProtectiveCaseMedium,
+		PutInSound = StoreItemProtectiveCaseMedium,
+		ReplaceInPrimaryHand = Bag_ProtectiveCase_RHand_Green holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCase_LHand_Green holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCase_Ground,
+		ClothingItem = Bag_ProtectiveCase_RHand_Green,
+	}
+
+
+	item Bag_ProtectiveCaseSmall
+	{
+		DisplayName = Small Protective Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallBlack,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand,
+	}
+
+	item Bag_ProtectiveCaseSmall_Armorer
+	{
+		DisplayName = Small Protective Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallBlack,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand,
+		Tags = FirearmLoot,
+	}
+
+	item Bag_ProtectiveCaseSmall_Electronics
+	{
+		DisplayName = Small Protective Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallBlack,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand,
+	}
+
+	item Bag_ProtectiveCaseSmall_Survivalist
+	{
+		DisplayName = Small Protective Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallBlack,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand,
+	}
+
+
+	item Bag_ProtectiveCaseSmall_WalkieTalkie
+	{
+		DisplayName = Small Protective Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallBlack,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand,
+	}
+
+
+	item Bag_ProtectiveCaseSmall_WalkieTalkiePolice
+	{
+		DisplayName = Small Protective Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallBlack,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand,
+	}
+
+	item Bag_ProtectiveCaseSmall_FirstAid
+	{
+		DisplayName = Small Protective Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallBlack,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand,
+	}
+
+	item Bag_ProtectiveCaseSmall_Pistol1
+	{
+		DisplayName = Small Protective Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallBlack,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand,
+		Tags = NeverEmpty;FirearmLoot,
+	}
+
+	item Bag_ProtectiveCaseSmall_Pistol2
+	{
+		DisplayName = Small Protective Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallBlack,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand,
+		Tags = NeverEmpty;FirearmLoot,
+	}
+
+	item Bag_ProtectiveCaseSmall_Pistol3
+	{
+		DisplayName = Small Protective Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallBlack,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand,
+		Tags = NeverEmpty;FirearmLoot,
+	}
+
+	item Bag_ProtectiveCaseSmall_Revolver1
+	{
+		DisplayName = Small Protective Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallBlack,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand,
+		Tags = NeverEmpty;FirearmLoot,
+	}
+
+	item Bag_ProtectiveCaseSmall_Revolver2
+	{
+		DisplayName = Small Protective Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallBlack,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand,
+		Tags = NeverEmpty;FirearmLoot,
+	}
+
+	item Bag_ProtectiveCaseSmall_Revolver3
+	{
+		DisplayName = Small Protective Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallBlack,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand,
+		Tags = NeverEmpty;FirearmLoot,
+	}
+
+	item Bag_ProtectiveCaseSmallMilitary
+	{
+		/*DisplayName = Small Military Protective Case,*/
+		DisplayName = Small Protective Case - Military,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallGreen,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand_Green holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand_Green holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand_Green,
+	}
+
+	item Bag_ProtectiveCaseSmallMilitary_WalkieTalkie
+	{
+		/*DisplayName = Small Military Protective Case,*/
+		DisplayName = Small Protective Case - Military,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallGreen,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand_Green holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand_Green holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand_Green,
+	}
+
+	item Bag_ProtectiveCaseSmallMilitary_FirstAid
+	{
+		/*DisplayName = Small Military Protective Case,*/
+		DisplayName = Small Protective Case - Military,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallGreen,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand_Green holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand_Green holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand_Green,
+	}
+
+	item Bag_ProtectiveCaseSmallMilitary_Pistol1
+	{
+		/*DisplayName = Small Military Protective Case,*/
+		DisplayName = Small Protective Case - Military,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallGreen,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand_Green holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand_Green holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand_Green,
+		Tags = NeverEmpty;FirearmLoot,
+	}
+
+	item Bag_ProtectiveCaseBulky
+	{
+		DisplayName = Bulky Protective Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeBlack,
+		Capacity = 16,
+		CloseSound = CloseBulkyProtectiveContainer,
+		OpenSound = OpenBulkyProtectiveContainer,
+		PutInSound = StoreItemBulkyProtectiveContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand,
+	}
+
+	item Bag_ProtectiveCaseBulky_SCBA
+	{
+		DisplayName = Bulky Protective Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeBlack,
+		Capacity = 16,
+		CloseSound = CloseBulkyProtectiveContainer,
+		OpenSound = OpenBulkyProtectiveContainer,
+		PutInSound = StoreItemBulkyProtectiveContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand,
+	}
+
+	item Bag_ProtectiveCaseBulky_Audio
+	{
+		DisplayName = Bulky Protective Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeBlack,
+		Capacity = 16,
+		CloseSound = CloseBulkyProtectiveContainer,
+		OpenSound = OpenBulkyProtectiveContainer,
+		PutInSound = StoreItemBulkyProtectiveContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand,
+	}
+
+	item Bag_ProtectiveCaseBulky_HAMRadio1
+	{
+		DisplayName = Bulky Protective Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeBlack,
+		Capacity = 16,
+		CloseSound = CloseBulkyProtectiveContainer,
+		OpenSound = OpenBulkyProtectiveContainer,
+		PutInSound = StoreItemBulkyProtectiveContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand,
+	}
+
+    /*default is mixed*/
+	item Bag_ProtectiveCaseBulkyAmmo
+	{
+		DisplayName = Bulky Ammo Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeGreen_Military,
+		Capacity = 16,
+		CloseSound = CloseBulkyProtectiveContainer,
+		OpenSound = OpenBulkyProtectiveContainer,
+		PutInSound = StoreItemBulkyProtectiveContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand_Ammo holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand_Ammo holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		Tags = AmmoCase,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand_Ammo,
+	}
+
+	item Bag_ProtectiveCaseBulkyAmmo_556
+	{
+		DisplayName = Bulky Ammo Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeGreen_Military,
+		Capacity = 16,
+		CloseSound = CloseBulkyProtectiveContainer,
+		OpenSound = OpenBulkyProtectiveContainer,
+		PutInSound = StoreItemBulkyProtectiveContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand_Ammo holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand_Ammo holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		Tags = AmmoCase,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand_Ammo,
+	}
+
+	item Bag_ProtectiveCaseBulkyAmmo_223
+	{
+		DisplayName = Bulky Ammo Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeGreen_Military,
+		Capacity = 16,
+		CloseSound = CloseBulkyProtectiveContainer,
+		OpenSound = OpenBulkyProtectiveContainer,
+		PutInSound = StoreItemBulkyProtectiveContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand_Ammo holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand_Ammo holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		Tags = AmmoCase,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand_Ammo,
+	}
+
+	item Bag_ProtectiveCaseBulkyAmmo_308
+	{
+		DisplayName = Bulky Ammo Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeGreen_Military,
+		Capacity = 16,
+		CloseSound = CloseBulkyProtectiveContainer,
+		OpenSound = OpenBulkyProtectiveContainer,
+		PutInSound = StoreItemBulkyProtectiveContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand_Ammo holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand_Ammo holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		Tags = AmmoCase,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand_Ammo,
+	}
+
+	item Bag_ProtectiveCaseBulkyAmmo_ShotgunShells
+	{
+		DisplayName = Bulky Ammo Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeGreen_Military,
+		Capacity = 16,
+		CloseSound = CloseBulkyProtectiveContainer,
+		OpenSound = OpenBulkyProtectiveContainer,
+		PutInSound = StoreItemBulkyProtectiveContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand_Ammo holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand_Ammo holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		Tags = AmmoCase,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand_Ammo,
+	}
+
+	item Bag_ProtectiveCaseBulkyAmmo_9mm
+	{
+		DisplayName = Bulky Ammo Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeGreen_Military,
+		Capacity = 16,
+		CloseSound = CloseBulkyProtectiveContainer,
+		OpenSound = OpenBulkyProtectiveContainer,
+		PutInSound = StoreItemBulkyProtectiveContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand_Ammo holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand_Ammo holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		Tags = AmmoCase,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand_Ammo,
+	}
+
+	item Bag_ProtectiveCaseBulkyAmmo_38
+	{
+		DisplayName = Bulky Ammo Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeGreen_Military,
+		Capacity = 16,
+		CloseSound = CloseBulkyProtectiveContainer,
+		OpenSound = OpenBulkyProtectiveContainer,
+		PutInSound = StoreItemBulkyProtectiveContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand_Ammo holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand_Ammo holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		Tags = AmmoCase,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand_Ammo,
+	}
+
+	item Bag_ProtectiveCaseBulkyAmmo_44
+	{
+		DisplayName = Bulky Ammo Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeGreen_Military,
+		Capacity = 16,
+		CloseSound = CloseBulkyProtectiveContainer,
+		OpenSound = OpenBulkyProtectiveContainer,
+		PutInSound = StoreItemBulkyProtectiveContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand_Ammo holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand_Ammo holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		Tags = AmmoCase,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand_Ammo,
+	}
+
+	item Bag_ProtectiveCaseBulkyAmmo_45
+	{
+		DisplayName = Bulky Ammo Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeGreen_Military,
+		Capacity = 16,
+		CloseSound = CloseBulkyProtectiveContainer,
+		OpenSound = OpenBulkyProtectiveContainer,
+		PutInSound = StoreItemBulkyProtectiveContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand_Ammo holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand_Ammo holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		Tags = AmmoCase,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand_Ammo,
+	}
+
+	item Bag_ProtectiveCaseBulkyAmmo_Hunting
+	{
+		DisplayName = Bulky Ammo Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeGreen_Military,
+		Capacity = 16,
+		CloseSound = CloseBulkyProtectiveContainer,
+		OpenSound = OpenBulkyProtectiveContainer,
+		PutInSound = StoreItemBulkyProtectiveContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand_Ammo holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand_Ammo holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		Tags = AmmoCase,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand_Ammo,
+	}
+
+	item Bag_ProtectiveCaseBulkyMilitary
+	{
+		/*DisplayName = Bulky Military Container,*/
+		DisplayName = Bulky Military Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeGreen,
+		Capacity = 16,
+		CloseSound = CloseBulkyProtectiveContainer,
+		OpenSound = OpenBulkyProtectiveContainer,
+		PutInSound = StoreItemBulkyProtectiveContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand_Green holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand_Green holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand_Green,
+	}
+
+	item Bag_ProtectiveCaseBulky_Survivalist
+	{
+		/*DisplayName = Bulky Military Container,*/
+		DisplayName = Bulky Military Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeGreen,
+		Capacity = 16,
+		CloseSound = CloseBulkyProtectiveContainer,
+		OpenSound = OpenBulkyProtectiveContainer,
+		PutInSound = StoreItemBulkyProtectiveContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand_Green holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand_Green holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand_Green,
+	}
+
+	item Bag_ProtectiveCaseBulkyMilitary_HAMRadio2
+	{
+		/*DisplayName = Bulky Military Container,*/
+		DisplayName = Bulky Container - Military,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeGreen,
+		Capacity = 16,
+		CloseSound = CloseBulkyProtectiveContainer,
+		OpenSound = OpenBulkyProtectiveContainer,
+		PutInSound = StoreItemBulkyProtectiveContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand_Green holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand_Green holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand_Green,
+	}
+
+	item Bag_ProtectiveCaseBulkyHazard
+	{
+		DisplayName = Biohazard Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_LargeHazardous,
+		Capacity = 16,
+		CloseSound = CloseBiohazardContainer,
+		OpenSound = OpenBiohazardContainer,
+		PutInSound = StoreItemBiohazardContainer,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseBulky_RHand_Hazard holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseBulky_LHand_Hazard holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseBulky_Ground,
+		ClothingItem = Bag_ProtectiveCaseBulky_RHand_Hazard,
+	}
+
+	item Bag_Police
+	{
+		DisplayName = Police Duffel Bag,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = DuffelbagPolice,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 18,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_Police,
+		EquipSound = EquipDuffleBag,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_DuffelBag_RHandPolice holdingbagright,
+		ReplaceInSecondHand = Bag_DuffelBag_LHandPolice holdingbagleft,
+		RunSpeedModifier = 0.95,
+		SoundParameter = EquippedBaggageContainer DuffleBag,
+		WeightReduction = 65,
+		WorldStaticModel = DuffelBag_Ground,
+		Tags = IgnoreZombieDensity;DuffelBag;NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+
+	item Bag_Sheriff
+	{
+		DisplayName = Sheriff Duffel Bag,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = DuffelbagSheriff,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 18,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_DuffelBagSheriff,
+		EquipSound = EquipDuffleBag,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_DuffelBag_RHandSheriff holdingbagright,
+		ReplaceInSecondHand = Bag_DuffelBag_LHandSheriff holdingbagleft,
+		RunSpeedModifier = 0.95,
+		SoundParameter = EquippedBaggageContainer DuffleBag,
+		WeightReduction = 65,
+		WorldStaticModel = DuffelBag_Ground,
+		Tags = IgnoreZombieDensity;DuffelBag;NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+
+	item Bag_SWAT
+	{
+		DisplayName = SWAT Duffel Bag,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = DuffelbagSWAT,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 18,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_DuffelBagSWAT,
+		EquipSound = EquipDuffleBag,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_DuffelBag_RHandSWAT holdingbagright,
+		ReplaceInSecondHand = Bag_DuffelBag_LHandSWAT holdingbagleft,
+		RunSpeedModifier = 0.95,
+		SoundParameter = EquippedBaggageContainer DuffleBag,
+		WeightReduction = 65,
+		WorldStaticModel = DuffelBag_Ground,
+		Tags = BagsFillException;IgnoreZombieDensity;DuffelBag;NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+
+	item Tacklebox
+	{
+		DisplayName = Tacklebox,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1.5,
+		IconsForTexture = Tacklebox1;Tacklebox2;Tacklebox3,
+		ClothingItem = Bag_Tacklebox,
+		Capacity = 6,
+		CloseSound = CloseMediumPlasticBox,
+		OpenSound = OpenMediumPlasticBox,
+		PutInSound = StoreItemMediumPlasticBox,
+		ReplaceInPrimaryHand = Bag_Tacklebox_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Tacklebox_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WeightReduction = 50,
+		WorldStaticModel = Tacklebox_Ground,
+		MaxItemSize = 1.0,
+		Tags = IsFireFuel,
+	}
+
+	item Bag_FishingBasket
+	{
+		DisplayName = Fishing Basket,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1.5,
+		Icon = FishingBasket,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 6,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_FishingBasket,
+		OpenSound = OpenWickerBasket,
+		PutInSound = StoreItemWickerBasket,
+		ReplaceInPrimaryHand = Bag_FishingBasket_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_FishingBasket_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = FishingBasket_Ground,
+		Tags = BagsFillException;IsFireFuel;IsFireTinder,
+	}
+
+
+	item Bag_GardenBasket
+	{
+		DisplayName = Basket,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1.5,
+		Icon = GardenBasket,
+		Capacity = 6,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_GardenBasket_RHand,
+		OpenSound = OpenWickerBasket,
+		PutInSound = StoreItemWickerBasket,
+		ReplaceInPrimaryHand = Bag_GardenBasket_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_GardenBasket_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = GardenBasket_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Bag_PicnicBasket
+	{
+		DisplayName = Picnic Basket,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1.5,
+		Icon = PicnicBasket,
+		Capacity = 6,
+		CloseSound = CloseWickerBasket,
+		ClothingItem = Bag_PicnicBasket_RHand,
+		OpenSound = OpenWickerBasket,
+		PutInSound = StoreItemWickerBasket,
+		ReplaceInPrimaryHand = Bag_PicnicBasket_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_PicnicBasket_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = PicnicBasket_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Bag_BirthdayBasket
+	{
+		DisplayName = Basket,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1.5,
+		Icon = GardenBasket,
+		Capacity = 6,
+		ClothingItem = Bag_GardenBasket_RHand,
+		CloseSound = CloseWickerBasket,
+		OpenSound = OpenWickerBasket,
+		PutInSound = StoreItemWickerBasket,
+		ReplaceInPrimaryHand = Bag_GardenBasket_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_GardenBasket_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = GardenBasket_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Bag_Schoolbag_Patches
+	{
+		DisplayName = Small Backpack with Music Patches,
+		DisplayCategory = Memento,
+		Type = Container,
+		Weight = 1,
+		IconsForTexture = Backpack_Blue_Decals;Backpack_Camo_Decals,
+		AttachmentReplacement = Bag,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		Capacity = 15,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_SchoolBag_Patches,
+		EquipSound = EquipBackpackSmall,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_Schoolbag_Patches_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Schoolbag_Patches_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		SoundParameter = EquippedBaggageContainer SchoolBag,
+		WeightReduction = 70,
+		WorldStaticModel = SchoolBag_Ground,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+        ResearchableRecipes = SewCrudeLeatherBackpack,
+	}
+
+	item Bag_Schoolbag_Travel
+	{
+		DisplayName = Small Backpack with Travel Patches,
+		DisplayCategory = Memento,
+		Type = Container,
+		Weight = 1,
+		IconsForTexture = Backpack_Travel,
+		AttachmentReplacement = Bag,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		Capacity = 15,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_SchoolBag_Travel,
+		EquipSound = EquipBackpackSmall,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_Schoolbag_Travel_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Schoolbag_Travel_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		SoundParameter = EquippedBaggageContainer SchoolBag,
+		WeightReduction = 70,
+		WorldStaticModel = SchoolBag_Ground,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+        ResearchableRecipes = SewCrudeLeatherBackpack,
+	}
+
+	item Bag_BigHikingBag_Travel
+	{
+		DisplayName = Big Hiking Backpack with Travel Patches,
+		DisplayCategory = Memento,
+		Type = Container,
+		Weight = 1.5,
+		IconsForTexture = BigHiking_Blue;BigHiking_Green;BigHiking_Red,
+		AttachmentReplacement = Bag,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		Capacity = 22,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_BigHikingBag_Travel,
+		EquipSound = EquipBackpackLarge,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_BigHikingBag_Travel_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_BigHikingBag_Travel_LHand holdingbagleft,
+		RunSpeedModifier = 0.95,
+		SoundParameter = EquippedBaggageContainer HikingBag,
+		WeightReduction = 80,
+		WorldStaticModel = BigHikingBag_Ground,
+		AttachmentsProvided = BedrollBottomBig,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+        ResearchableRecipes = SewCrudeLeatherBackpack,
+	}
+
+	item Bag_HikingBag_Travel
+	{
+		DisplayName = Hiking Backpack with Travel Patches,
+		DisplayCategory = Memento,
+		Type = Container,
+		Weight = 1.2,
+		IconsForTexture = Hiking_Blue;Hiking_Green;Hiking_Red,
+		AttachmentReplacement = Bag,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		Capacity = 20,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_HikingBag_Travel,
+		EquipSound = EquipBackpackLarge,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_HikingBag_Travel_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_HikingBag_Travel_LHand holdingbagleft,
+		RunSpeedModifier = 0.96,
+		SoundParameter = EquippedBaggageContainer HikingBag,
+		WeightReduction = 75,
+		WorldStaticModel = HikingBag_Ground,
+		AttachmentsProvided = BedrollBottom,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+        ResearchableRecipes = SewCrudeLeatherBackpack,
+	}
+
+	item Bag_Satchel_Fishing
+	{
+		DisplayName = Satchel with Fishhooks,
+		DisplayCategory = Memento,
+		Type = Container,
+		Weight = 1,
+		Icon = Satchel_Fishing,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		Capacity = 12,
+		CloseSound = CloseSatchelFishing,
+		ClothingItem = Bag_Satchel_Fishing,
+		EquipSound = EquipSatchel,
+		OpenSound = OpenSatchelFishing,
+		PutInSound = StoreItemSatchelFishing,
+		ReplaceInPrimaryHand = Bag_Satchel_Fishing_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Satchel_Fishing_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 65,
+		WorldStaticModel = Satchel_Fishing_Ground,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+	}
+
+	item Bag_Satchel_Medical
+	{
+		DisplayName = Satchel - Medical,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = Satchel_Medical,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		Capacity = 12,
+		CloseSound = CloseSatchelMedical,
+		ClothingItem = Bag_Satchel_Medical,
+		EquipSound = EquipSatchel,
+		OpenSound = OpenSatchelMedical,
+		PutInSound = StoreItemSatchelMedical,
+		ReplaceInPrimaryHand = Bag_Satchel_Medical_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Satchel_Medical_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 65,
+		WorldStaticModel = Satchel_Medical_Ground,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder,
+	}
+
+	item Bag_Satchel_Military
+	{
+		DisplayName = Satchel - Military,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = Satchel_Military,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		Capacity = 12,
+		CloseSound = CloseSatchelMilitary,
+		ClothingItem = Bag_Satchel_Military,
+		EquipSound = EquipSatchel,
+		OpenSound = OpenSatchelMilitary,
+		PutInSound = StoreItemSatchelMilitary,
+		ReplaceInPrimaryHand = Bag_Satchel_Military_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Satchel_Military_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 65,
+		WorldStaticModel = Satchel_Military_Ground,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder,
+	}
+
+	item Bag_Schoolbag_Medical
+	{
+		/*DisplayName = School Bag,*/
+		DisplayName = Small Backpack,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		IconsForTexture = Backpack_MedicalBlue;Backpack_MedicalRed,
+		AttachmentReplacement = Bag,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		Capacity = 12,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_SchoolBag_Medical,
+		EquipSound = EquipBackpackSmall,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_Schoolbag_Medical_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Schoolbag_Medical_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		SoundParameter = EquippedBaggageContainer SchoolBag,
+		WeightReduction = 70,
+		WorldStaticModel = SchoolBag_Ground,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder,
+        ResearchableRecipes = SewCrudeLeatherBackpack,
+	}
+
+	item Bag_Gunny
+	{
+		DisplayName = Gunny Sack,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = Sack_Burlap,
+		Capacity = 20,
+		CloseSound = CloseLeatherBag,
+		OpenSound = OpenLeatherBag,
+		PutInSound = StoreItemLeatherBag,
+		ReplaceInPrimaryHand = Bag_Gunny_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Gunny_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = Bag_Gunny_Ground,
+		Tags = IsFireFuel;IsFireTinder;LargeSack,
+	}
+
+	item Bag_Laundry
+	{
+		DisplayName = Laundry Bag,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = Sack_Laundry,
+		Capacity = 20,
+		CloseSound = CloseLeatherBag,
+		OpenSound = OpenLeatherBag,
+		PutInSound = StoreItemLeatherBag,
+		ReplaceInPrimaryHand = Bag_Laundry_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Laundry_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = Bag_Laundry_Ground,
+		Tags = IsFireFuel;IsFireTinder;LargeSack,
+	}
+
+    item Bag_LaundryLinen
+    {
+        DisplayName = Laundry Bag,
+        DisplayCategory = Container,
+        Type = Container,
+		Weight = 0.5,
+        Icon = Sack_Laundry,
+        Capacity = 20,
+		CloseSound = CloseLeatherBag,
+		OpenSound = OpenLeatherBag,
+		PutInSound = StoreItemLeatherBag,
+        ReplaceInPrimaryHand = Bag_Laundry_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_Laundry_LHand holdingbagleft,
+        RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+        WorldStaticModel = Bag_Laundry_Ground,
+		Tags = IsFireFuel;IsFireTinder;LargeSack,
+    }
+
+    item Bag_LaundryHospital
+    {
+        DisplayName = Laundry Bag,
+        DisplayCategory = Container,
+        Type = Container,
+		Weight = 0.5,
+        Icon = Sack_Laundry,
+        Capacity = 20,
+		CloseSound = CloseLeatherBag,
+		OpenSound = OpenLeatherBag,
+		PutInSound = StoreItemLeatherBag,
+        ReplaceInPrimaryHand = Bag_Laundry_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_Laundry_LHand holdingbagleft,
+        RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+        WorldStaticModel = Bag_Laundry_Ground,
+		Tags = IsFireFuel;IsFireTinder;LargeSack,
+    }
+
+	item Bag_Mail
+	{
+		DisplayName = Mail Bag,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = Sack_Mail,
+		Capacity = 20,
+		CloseSound = CloseLeatherBag,
+		OpenSound = OpenLeatherBag,
+		PutInSound = StoreItemLeatherBag,
+		ReplaceInPrimaryHand = Bag_Mail_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Mail_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = Bag_Mail_Ground,
+		Tags = IsFireFuel;IsFireTinder;LargeSack,
+	}
+
+	item Bag_Satchel_Mail
+	{
+		DisplayName = Mail Satchel,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = Satchel_Mail,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		Capacity = 12,
+		CloseSound = CloseSatchelMail,
+		ClothingItem = Bag_Satchel_Mail,
+		EquipSound = EquipSatchel,
+		OpenSound = OpenSatchelMail,
+		PutInSound = StoreItemSatchelMail,
+		ReplaceInPrimaryHand = Bag_Satchel_Mail_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Satchel_Mail_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 65,
+		WorldStaticModel = Satchel_Mail_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Bag_Satchel_Leather
+	{
+		DisplayName = Leather Satchel,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = Satchel_Leather,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		Capacity = 13,
+		CloseSound = CloseLeatherBag,
+		ClothingItem = Bag_Satchel_Leather,
+		EquipSound = EquipSatchel,
+		OpenSound = OpenLeatherBag,
+		PutInSound = StoreItemLeatherBag,
+		ReplaceInPrimaryHand = Bag_Satchel_Leather_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Satchel_Leather_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 65,
+		WorldStaticModel = Satchel_Leather_Ground,
+	}
+
+    /* default ones are assumed to hold 5.56mm ammo*/
+	item Bag_AmmoBox
+	{
+		DisplayName = Ammunition Box,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = AmmoCase,
+		Capacity = 6,
+		CloseSound = CloseAmmunitionBox,
+		ClothingItem = Bag_AmmoBox_RHand,
+		OpenSound = OpenAmmunitionBox,
+		PutInSound = StoreItemAmmunitionBox,
+        ReplaceInPrimaryHand = Bag_AmmoBox_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_AmmoBox_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = AmmoBox_Ground,
+		Tags = AmmoCase,
+	}
+
+	item Bag_AmmoBox_223
+	{
+		DisplayName = Ammunition Box,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = AmmoCase,
+		Capacity = 6,
+		CloseSound = CloseAmmunitionBox,
+		ClothingItem = Bag_AmmoBox_RHand,
+		OpenSound = OpenAmmunitionBox,
+		PutInSound = StoreItemAmmunitionBox,
+        ReplaceInPrimaryHand = Bag_AmmoBox_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_AmmoBox_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = AmmoBox_Ground,
+		Tags = AmmoCase,
+	}
+
+	item Bag_AmmoBox_308
+	{
+		DisplayName = Ammunition Box,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = AmmoCase,
+		Capacity = 6,
+		CloseSound = CloseAmmunitionBox,
+		ClothingItem = Bag_AmmoBox_RHand,
+		OpenSound = OpenAmmunitionBox,
+		PutInSound = StoreItemAmmunitionBox,
+        ReplaceInPrimaryHand = Bag_AmmoBox_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_AmmoBox_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = AmmoBox_Ground,
+		Tags = AmmoCase,
+	}
+
+	item Bag_AmmoBox_ShotgunShells
+	{
+		DisplayName = Ammunition Box,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = AmmoCase,
+		Capacity = 6,
+		CloseSound = CloseAmmunitionBox,
+		ClothingItem = Bag_AmmoBox_RHand,
+		OpenSound = OpenAmmunitionBox,
+		PutInSound = StoreItemAmmunitionBox,
+        ReplaceInPrimaryHand = Bag_AmmoBox_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_AmmoBox_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = AmmoBox_Ground,
+		Tags = AmmoCase,
+	}
+
+	item Bag_AmmoBox_9mm
+	{
+		DisplayName = Ammunition Box,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = AmmoCase,
+		Capacity = 6,
+		CloseSound = CloseAmmunitionBox,
+		ClothingItem = Bag_AmmoBox_RHand,
+		OpenSound = OpenAmmunitionBox,
+		PutInSound = StoreItemAmmunitionBox,
+        ReplaceInPrimaryHand = Bag_AmmoBox_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_AmmoBox_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = AmmoBox_Ground,
+		Tags = AmmoCase,
+	}
+
+	item Bag_AmmoBox_38
+	{
+		DisplayName = Ammunition Box,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = AmmoCase,
+		Capacity = 6,
+		CloseSound = CloseAmmunitionBox,
+		ClothingItem = Bag_AmmoBox_RHand,
+		OpenSound = OpenAmmunitionBox,
+		PutInSound = StoreItemAmmunitionBox,
+        ReplaceInPrimaryHand = Bag_AmmoBox_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_AmmoBox_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = AmmoBox_Ground,
+		Tags = AmmoCase,
+	}
+
+	item Bag_AmmoBox_44
+	{
+		DisplayName = Ammunition Box,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = AmmoCase,
+		Capacity = 6,
+		CloseSound = CloseAmmunitionBox,
+		ClothingItem = Bag_AmmoBox_RHand,
+		OpenSound = OpenAmmunitionBox,
+		PutInSound = StoreItemAmmunitionBox,
+        ReplaceInPrimaryHand = Bag_AmmoBox_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_AmmoBox_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = AmmoBox_Ground,
+		Tags = AmmoCase,
+	}
+
+	item Bag_AmmoBox_45
+	{
+		DisplayName = Ammunition Box,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = AmmoCase,
+		Capacity = 6,
+		CloseSound = CloseAmmunitionBox,
+		ClothingItem = Bag_AmmoBox_RHand,
+		OpenSound = OpenAmmunitionBox,
+		PutInSound = StoreItemAmmunitionBox,
+        ReplaceInPrimaryHand = Bag_AmmoBox_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_AmmoBox_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = AmmoBox_Ground,
+		Tags = AmmoCase,
+	}
+
+	item Bag_AmmoBox_Mixed
+	{
+		DisplayName = Ammunition Box,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = AmmoCase,
+		Capacity = 6,
+		CloseSound = CloseAmmunitionBox,
+		ClothingItem = Bag_AmmoBox_RHand,
+		OpenSound = OpenAmmunitionBox,
+		PutInSound = StoreItemAmmunitionBox,
+        ReplaceInPrimaryHand = Bag_AmmoBox_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_AmmoBox_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = AmmoBox_Ground,
+		Tags = AmmoCase,
+	}
+
+	item Bag_AmmoBox_Hunting
+	{
+		DisplayName = Ammunition Box,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 1,
+		Icon = AmmoCase,
+		Capacity = 6,
+		CloseSound = CloseAmmunitionBox,
+		ClothingItem = Bag_AmmoBox_RHand,
+		OpenSound = OpenAmmunitionBox,
+		PutInSound = StoreItemAmmunitionBox,
+        ReplaceInPrimaryHand = Bag_AmmoBox_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_AmmoBox_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 50,
+		WorldStaticModel = AmmoBox_Ground,
+		Tags = AmmoCase,
+	}
+
+    item Bag_BaseballBag
+    {
+        DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Duffel Bag,
+        ClothingItem = Bag_BaseballBag,
+        CanBeEquipped = Back,
+        WeightReduction	=	65,
+        Weight	=	1,
+        Capacity	=	18,
+        IconsForTexture = Duffelbag_Sport;Duffelbag_Sport2,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        RunSpeedModifier = 0.95,
+        CanHaveHoles = false,
+        ReplaceInSecondHand = Bag_BaseballBag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_BaseballBag_RHand holdingbagright,
+        WorldStaticModel = DuffelBag_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+    }
+
+    item Bag_TennisBag
+    {
+        DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Duffel Bag,
+        ClothingItem = Bag_TennisBag,
+        CanBeEquipped = Back,
+        WeightReduction	=	65,
+        Weight	=	1,
+        Capacity	=	18,
+        IconsForTexture = Duffelbag_Sport;Duffelbag_Sport2,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        RunSpeedModifier = 0.95,
+        CanHaveHoles = false,
+        ReplaceInSecondHand = Bag_BaseballBag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_BaseballBag_RHand holdingbagright,
+        WorldStaticModel = DuffelBag_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+    }
+
+     item Bag_FoodCanned
+    {
+        DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Duffel Bag,
+        ClothingItem = Bag_FoodCanned,
+        CanBeEquipped = Back,
+        WeightReduction	=	65,
+        Weight	=	1,
+        Capacity	=	18,
+        Icon	=	Duffelbag,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        RunSpeedModifier = 0.95,
+        CanHaveHoles = false,
+        ReplaceInSecondHand = Bag_DuffelBag_LHandTINT holdingbagleft,
+        ReplaceInPrimaryHand = Bag_DuffelBag_RHandTINT holdingbagright,
+        WorldStaticModel = DuffelBag_Ground,
+        Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+    }
+    item Bag_FoodSnacks
+    {
+        DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Duffel Bag,
+        ClothingItem = Bag_FoodSnacks,
+        CanBeEquipped = Back,
+        WeightReduction	=	65,
+        Weight	=	1,
+        Capacity	=	18,
+        Icon	=	Duffelbag,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        RunSpeedModifier = 0.95,
+        CanHaveHoles = false,
+        ReplaceInSecondHand = Bag_DuffelBag_LHandTINT holdingbagleft,
+        ReplaceInPrimaryHand = Bag_DuffelBag_RHandTINT holdingbagright,
+        WorldStaticModel = DuffelBag_Ground,
+        Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+    }
+    item Bag_MedicalBag
+    {
+        DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Trauma Bag,
+        ClothingItem = Bag_MedicalBag,
+        CanBeEquipped = Back,
+        WeightReduction	=	65,
+        Weight	=	1,
+        Capacity	=	18,
+        Icon	=	DuffelbagMedical,
+        OpenSound   =   OpenLeatherBag,
+        CloseSound   =   CloseLeatherBag,
+        PutInSound   =   StoreItemLeatherBag,
+        RunSpeedModifier = 0.95,
+        CanHaveHoles = false,
+        ReplaceInSecondHand = Bag_DuffelBag_LHandMedical holdingbagleft,
+        ReplaceInPrimaryHand = Bag_DuffelBag_RHandMedical holdingbagright,
+        WorldStaticModel = DuffelBag_Ground,
+       /*ColorRed = 159,
+        ColorGreen = 38,
+        ColorBlue = 38,*/
+        Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder,
+    }
+    item Bag_Military
+    {
+        DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Duffel Bag,
+        ClothingItem = Bag_Military,
+        CanBeEquipped = Back,
+        WeightReduction	=	65,
+        Weight	=	1,
+        Capacity	=	18,
+        Icon	=	DuffelbagMilitary,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        RunSpeedModifier = 0.95,
+        CanHaveHoles = false,
+        ReplaceInSecondHand = Bag_DuffelBag_LHandMilitary holdingbagleft,
+        ReplaceInPrimaryHand = Bag_DuffelBag_RHandMilitary holdingbagright,
+        WorldStaticModel = DuffelBag_Ground,
+        Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder,
+    }
+    item Bag_ToolBag
+    {
+        DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Duffel Bag,
+        ClothingItem = Bag_ToolBag,
+        CanBeEquipped = Back,
+        WeightReduction	=	65,
+        Weight	=	1,
+        Capacity	=	18,
+        Icon	=	Duffelbag,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        RunSpeedModifier = 0.95,
+        CanHaveHoles = false,
+        ReplaceInSecondHand = Bag_DuffelBag_LHandTINT holdingbagleft,
+        ReplaceInPrimaryHand = Bag_DuffelBag_RHandTINT holdingbagright,
+        WorldStaticModel = DuffelBag_Ground,
+        Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;NeverEmpty,
+    }
+    item GroceryBag1
+    {
+        DisplayCategory = Container,
+        WeightReduction = 50,
+        Weight	=	0.1,
+        Type	=	Container,
+        Capacity	=	8,
+        CloseSound = ClosePlasticBag,
+        DisplayName	=	Plastic Bag,
+        Icon	=	Plasticbag,
+        OpenSound = OpenPlasticBag,
+        PutInSound = StoreItemPlasticBag,
+        ReplaceInSecondHand = Bag_Plasticbag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Plasticbag_RHand holdingbagright,
+        WorldStaticModel = PlasticBag_Ground,
+        Tags = NeverEmpty,
+        WeightReduction = 50,
+        Tags = IsFireFuel;IsFireTinder,
+    }
+    item GroceryBag2
+    {
+        DisplayCategory = Container,
+        WeightReduction = 50,
+        Weight	=	0.1,
+        Type	=	Container,
+        Capacity	=	8,
+        CloseSound = ClosePlasticBag,
+        DisplayName	=	Plastic Bag,
+        Icon	=	Plasticbag,
+        OpenSound = OpenPlasticBag,
+        PutInSound = StoreItemPlasticBag,
+        ReplaceInSecondHand = Bag_Plasticbag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Plasticbag_RHand holdingbagright,
+        WorldStaticModel = PlasticBag_Ground,
+        Tags = NeverEmpty,
+        WeightReduction = 50,
+        Tags = IsFireFuel;IsFireTinder,
+    }
+    item GroceryBag3
+    {
+        DisplayCategory = Container,
+        WeightReduction = 50,
+        Weight	=	0.1,
+        Type	=	Container,
+        Capacity	=	8,
+        CloseSound = ClosePlasticBag,
+        DisplayName	=	Plastic Bag,
+        Icon	=	Plasticbag,
+        OpenSound = OpenPlasticBag,
+        PutInSound = StoreItemPlasticBag,
+        ReplaceInSecondHand = Bag_Plasticbag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Plasticbag_RHand holdingbagright,
+        WorldStaticModel = PlasticBag_Ground,
+        Tags = NeverEmpty,
+        WeightReduction = 50,
+        Tags = IsFireFuel;IsFireTinder,
+    }
+    item GroceryBag4
+    {
+        DisplayCategory = Container,
+        WeightReduction = 50,
+        Weight	=	0.1,
+        Type	=	Container,
+        Capacity	=	8,
+        CloseSound = ClosePlasticBag,
+        DisplayName	=	Plastic Bag,
+        Icon	=	Plasticbag,
+        OpenSound = OpenPlasticBag,
+        PutInSound = StoreItemPlasticBag,
+        ReplaceInSecondHand = Bag_Plasticbag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Plasticbag_RHand holdingbagright,
+        WorldStaticModel = PlasticBag_Ground,
+        Tags = NeverEmpty,
+        Tags = IsFireFuel;IsFireTinder,
+    }
+    item GroceryBag5
+    {
+        DisplayCategory = Container,
+        WeightReduction = 50,
+        Weight	=	0.1,
+        Type	=	Container,
+        Capacity	=	8,
+        CloseSound = ClosePlasticBag,
+        DisplayName	=	Plastic Bag,
+        Icon	=	Plasticbag,
+        OpenSound = OpenPlasticBag,
+        PutInSound = StoreItemPlasticBag,
+        ReplaceInSecondHand = Bag_Plasticbag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Plasticbag_RHand holdingbagright,
+        WorldStaticModel = PlasticBag_Ground,
+        Tags = NeverEmpty,
+        Tags = IsFireFuel;IsFireTinder,
+    }
+
+    item GroceryBagGourmet
+    {
+        DisplayCategory = Container,
+        WeightReduction = 50,
+        Weight  =   0.1,
+        Type    =   Container,
+        Capacity    =   8,
+        CloseSound = ClosePlasticBag,
+        DisplayName =   Plastic Bag,
+        Icon    =   Plasticbag,
+        OpenSound = OpenPlasticBag,
+        PutInSound = StoreItemPlasticBag,
+        ReplaceInSecondHand = Bag_Plasticbag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Plasticbag_RHand holdingbagright,
+        WorldStaticModel = PlasticBag_Ground,
+        Tags = NeverEmpty,
+        Tags = IsFireFuel;IsFireTinder,
+    }
+    item RifleCase1
+    {
+        DisplayCategory = Container,
+        WeightReduction = 50,
+        Weight	=	1,
+        Type	=	Container,
+        Capacity	=	7,
+        DisplayName	=	Gun Case,
+        IconsForTexture = RifleCase_HardBlack;RifleCase_HardGreen;RifleCase_HardBlack_Stickered;RifleCase_HardGreen_Camo_Stickered;RifleCase_HardGreen_Stickered;RifleCase_HardBlack_Gun,
+        RunSpeedModifier = 0.97,
+        OpenSound   =   OpenProtectiveCaseLarge,
+        CloseSound   =   CloseProtectiveCaseLarge,
+        PutInSound   =   StoreItemProtectiveCaseLarge,
+        ReplaceInPrimaryHand = Bag_RifleCase_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_RifleCase_LHand holdingbagleft,
+        WorldStaticModel = RifleCase_Ground,
+        Tags = FirearmLoot,
+        ClothingItem = Bag_RifleCase_RHand,
+    }
+    item RifleCase2
+    {
+        DisplayCategory = Container,
+        WeightReduction = 50,
+        Weight	=	1,
+        Type	=	Container,
+        Capacity	=	7,
+        DisplayName	=	Gun Case,
+        IconsForTexture = RifleCase_HardBlack;RifleCase_HardGreen;RifleCase_HardBlack_Stickered;RifleCase_HardGreen_Camo_Stickered;RifleCase_HardGreen_Stickered;RifleCase_HardBlack_Gun,
+        RunSpeedModifier = 0.97,
+        OpenSound   =   OpenProtectiveCaseLarge,
+        CloseSound   =   CloseProtectiveCaseLarge,
+        PutInSound   =   StoreItemProtectiveCaseLarge,
+        ReplaceInPrimaryHand = Bag_RifleCase_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_RifleCase_LHand holdingbagleft,
+        WorldStaticModel = RifleCase_Ground,
+        Tags = FirearmLoot,
+        ClothingItem = Bag_RifleCase_RHand,
+    }
+    item RifleCase3
+    {
+        DisplayCategory = Container,
+        WeightReduction = 50,
+        Weight	=	1,
+        Type	=	Container,
+        Capacity	=	7,
+        DisplayName	=	Gun Case,
+        IconsForTexture = RifleCase_HardBlack;RifleCase_HardGreen;RifleCase_HardBlack_Stickered;RifleCase_HardGreen_Camo_Stickered;RifleCase_HardGreen_Stickered;RifleCase_HardBlack_Gun,
+        RunSpeedModifier = 0.97,
+        OpenSound   =   OpenProtectiveCaseLarge,
+        CloseSound   =   CloseProtectiveCaseLarge,
+        PutInSound   =   StoreItemProtectiveCaseLarge,
+        ReplaceInPrimaryHand = Bag_RifleCase_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_RifleCase_LHand holdingbagleft,
+        WorldStaticModel = RifleCase_Ground,
+        Tags = FirearmLoot,
+        ClothingItem = Bag_RifleCase_RHand,
+    }
+    item RifleCase4
+    {
+        DisplayCategory = Container,
+        WeightReduction = 50,
+        Weight	=	1,
+        Type	=	Container,
+        Capacity	=	7,
+        DisplayName	=	Gun Case,
+        IconsForTexture = RifleCase_HardBlack;RifleCase_HardGreen;RifleCase_HardBlack_Stickered;RifleCase_HardGreen_Camo_Stickered;RifleCase_HardGreen_Stickered;RifleCase_HardBlack_Gun,
+        RunSpeedModifier = 0.97,
+        OpenSound   =   OpenProtectiveCaseLarge,
+        CloseSound   =   CloseProtectiveCaseLarge,
+        PutInSound   =   StoreItemProtectiveCaseLarge,
+        ReplaceInPrimaryHand = Bag_RifleCase_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_RifleCase_LHand holdingbagleft,
+        WorldStaticModel = RifleCase_Ground,
+        Tags = FirearmLoot,
+        ClothingItem = Bag_RifleCase_RHand,
+    }
+    item ShotgunCase1
+    {
+        DisplayCategory = Container,
+        WeightReduction = 50,
+        Weight	=	1,
+        Type	=	Container,
+        Capacity	=	7,
+        DisplayName	=	Gun Case,
+        IconsForTexture = RifleCase_HardBlack;RifleCase_HardGreen;RifleCase_HardBlack_Stickered;RifleCase_HardGreen_Camo_Stickered;RifleCase_HardGreen_Stickered;RifleCase_HardBlack_Gun,
+        RunSpeedModifier = 0.97,
+        OpenSound   =   OpenProtectiveCaseLarge,
+        CloseSound   =   CloseProtectiveCaseLarge,
+        PutInSound   =   StoreItemProtectiveCaseLarge,
+        ReplaceInPrimaryHand = Bag_RifleCase_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_RifleCase_LHand holdingbagleft,
+        WorldStaticModel = RifleCase_Ground,
+        Tags = FirearmLoot,
+        ClothingItem = Bag_RifleCase_RHand,
+    }
+    item ShotgunCase2
+    {
+        DisplayCategory = Container,
+        WeightReduction = 50,
+        Weight	=	1,
+        Type	=	Container,
+        Capacity	=	7,
+        DisplayName	=	Gun Case,
+        IconsForTexture = RifleCase_HardBlack;RifleCase_HardGreen;RifleCase_HardBlack_Stickered;RifleCase_HardGreen_Camo_Stickered;RifleCase_HardGreen_Stickered;RifleCase_HardBlack_Gun,
+        RunSpeedModifier = 0.97,
+        OpenSound   =   OpenProtectiveCaseLarge,
+        CloseSound   =   CloseProtectiveCaseLarge,
+        PutInSound   =   StoreItemProtectiveCaseLarge,
+        ReplaceInPrimaryHand = Bag_RifleCase_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_RifleCase_LHand holdingbagleft,
+        WorldStaticModel = RifleCase_Ground,
+		Tags = FirearmLoot,
+        ClothingItem = Bag_RifleCase_RHand,
+    }
+
+    item Bag_DoctorBag
+    {
+        DisplayCategory = Memento,
+        WeightReduction = 50,
+        Weight	=	1,
+        Type	=	Container,
+        Capacity	=	8,
+        DisplayName	=	Doctor Bag,
+        ClothingItem = Bag_DoctorBag,
+        Icon = DoctorBag,
+        OpenSound   =   OpenLeatherBag,
+        CloseSound   =   CloseLeatherBag,
+        PutInSound   =   StoreItemLeatherBag,
+        ReplaceInSecondHand = Bag_DoctorBag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_DoctorBag_RHand holdingbagright,
+        WorldStaticModel = DoctorBag_Ground,
+        Tags = IgnoreZombieDensity;IsMemento,
+    }
+
+	item Parcel_ExtraSmall
+	{
+		DisplayName = Parcel - Extra Small,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+        Icon	=	Parcel2,
+		Capacity = 1,
+		CloseSound = CloseParcelSmall,
+		OpenSound = OpenParcelSmall,
+		PutInSound = StoreItemParcelSmall,
+		WorldStaticModel = Parcel3,
+		OnCreate = SpecialLootSpawns.OnCreateSealedParcel,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+	item Parcel_Small
+	{
+		DisplayName = Parcel - Small,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+        Icon	=	Parcel4,
+		Capacity = 2,
+		CloseSound = CloseParcelMedium,
+		OpenSound = OpenParcelMedium,
+		PutInSound = StoreItemParcelMedium,
+		WorldStaticModel = Parcel5,
+		OnCreate = SpecialLootSpawns.OnCreateSealedParcel,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+	item Parcel_Medium
+	{
+		DisplayName = Parcel - Medium,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+        Icon	=	Parcel5,
+		Capacity = 5,
+		CloseSound = CloseParcelMedium,
+		OpenSound = OpenParcelMedium,
+		PutInSound = StoreItemParcelMedium,
+		WorldStaticModel = Parcel4,
+		OnCreate = SpecialLootSpawns.OnCreateSealedParcel,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+	item Parcel_Large
+	{
+		DisplayName = Parcel - Large,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+        Icon	=	Parcel3,
+		Capacity = 10,
+		CloseSound = CloseParcelLarge,
+		OpenSound = OpenParcelLarge,
+		PutInSound = StoreItemParcelLarge,
+		WorldStaticModel = Parcel2,
+		OnCreate = SpecialLootSpawns.OnCreateSealedParcel,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+	item Parcel_ExtraLarge
+	{
+		DisplayName = Parcel - Extra Large,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+        Icon	=	Parcel1,
+		Capacity = 20,
+		CloseSound = CloseParcelLarge,
+		OpenSound = OpenParcelLarge,
+		PutInSound = StoreItemParcelLarge,
+		WorldStaticModel = Parcel1,
+		OnCreate = SpecialLootSpawns.OnCreateSealedParcel,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+
+
+	item Present_ExtraSmall
+	{
+		DisplayName = Present - Extra Small,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+        Icon	=	Present3,
+		Capacity = 1,
+		CloseSound = ClosePresentSmall,
+		OpenSound = OpenPresentSmall,
+		PutInSound = StoreItemPresentSmall,
+		WorldStaticModel = Present3,
+		OnCreate = SpecialLootSpawns.OnCreateSealedParcel,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+	item Present_Small
+	{
+		DisplayName = Present - Small,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+        Icon	=	Present5,
+		Capacity = 2,
+		CloseSound = ClosePresentMedium,
+		OpenSound = OpenPresentMedium,
+		PutInSound = StoreItemPresentMedium,
+		WorldStaticModel = Present5,
+		OnCreate = SpecialLootSpawns.OnCreateSealedParcel,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+	item Present_Medium
+	{
+		DisplayName = Present - Medium,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+        Icon	=	Present4,
+		Capacity = 5,
+		CloseSound = ClosePresentMedium,
+		OpenSound = OpenPresentMedium,
+		PutInSound = StoreItemPresentMedium,
+		WorldStaticModel = Present4,
+		OnCreate = SpecialLootSpawns.OnCreateSealedParcel,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+	item Present_Large
+	{
+		DisplayName = Present - Large,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+        Icon	=	Present2,
+		Capacity = 10,
+		CloseSound = ClosePresentLarge,
+		OpenSound = OpenPresentLarge,
+		PutInSound = StoreItemPresentLarge,
+		WorldStaticModel = Present2,
+		OnCreate = SpecialLootSpawns.OnCreateSealedParcel,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+
+	item Present_ExtraLarge
+	{
+		DisplayName = Present - Extra Large,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+        Icon	=	Present1,
+		Capacity = 20,
+		CloseSound = ClosePresentLarge,
+		OpenSound = OpenPresentLarge,
+		PutInSound = StoreItemPresentLarge,
+		WorldStaticModel = Present1,
+		OnCreate = SpecialLootSpawns.OnCreateSealedParcel,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+
+	item HollowBook
+	{
+		DisplayName = Book,
+		DisplayCategory = Literature,
+		Type = Container,
+		Weight = 1,
+		Icon = Book,
+		Capacity = 2,
+		CloseSound = CloseHollowBook,
+		OnCreate = SpecialLootSpawns.OnCreateClassicBook,
+		OpenSound = OpenHollowBook,
+		PutInSound = StoreItemHollowBook,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		Tags = BagsFillException;IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsHollowBook,
+		Tooltip = Tooltip_HollowBook,
+		MaxItemSize = 1.6,
+	}
+
+	item HollowFancyBook
+	{
+		DisplayName = Leatherbound Book,
+		DisplayCategory = Literature,
+		Type = Container,
+		Weight = 1,
+        Icon = Book_OldFancy,
+		Capacity = 2,
+		CloseSound = CloseHollowBook,
+		OnCreate = SpecialLootSpawns.OnCreateClassicBook,
+		OpenSound = OpenHollowBook,
+		PutInSound = StoreItemHollowBook,
+        StaticModel = BookFancyClosed,
+		WorldStaticModel = BookFancyClosed,
+		Tags = BagsFillException;IgnoreZombieDensity;IsFireFuel;IsFireTinder;FancyBook,
+		Tooltip = Tooltip_HollowBook,
+		MaxItemSize = 1.6,
+	}
+
+	item HollowBook_Handgun
+	{
+		DisplayName = Book,
+		DisplayCategory = Literature,
+		Type = Container,
+		Weight = 1,
+		Icon = Book,
+		Capacity = 2,
+		CloseSound = CloseHollowBook,
+		OnCreate = SpecialLootSpawns.OnCreateClassicBook,
+		OpenSound = OpenHollowBook,
+		PutInSound = StoreItemHollowBook,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		Tags = BagsFillException;IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsHollowBook,
+		Tooltip = Tooltip_HollowBook,
+		MaxItemSize = 1.6,
+	}
+
+	item HollowBook_Kids
+	{
+		DisplayName = Book,
+		DisplayCategory = Literature,
+		Type = Container,
+		Weight = 1,
+		Icon = Book,
+		Capacity = 2,
+		CloseSound = CloseHollowBook,
+		OnCreate = SpecialLootSpawns.OnCreateClassicBook,
+		OpenSound = OpenHollowBook,
+		PutInSound = StoreItemHollowBook,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		Tags = BagsFillException;IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsHollowBook,
+		Tooltip = Tooltip_HollowBook,
+		MaxItemSize = 1.6,
+	}
+
+	item HollowBook_Prison
+	{
+		DisplayName = Book,
+		DisplayCategory = Literature,
+		Type = Container,
+		Weight = 1,
+		Icon = Book,
+		Capacity = 2,
+		CloseSound = CloseHollowBook,
+		OnCreate = SpecialLootSpawns.OnCreateClassicBook,
+		OpenSound = OpenHollowBook,
+		PutInSound = StoreItemHollowBook,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		Tags = BagsFillException;IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsHollowBook,
+		Tooltip = Tooltip_HollowBook,
+		MaxItemSize = 1.6,
+	}
+
+	item HollowBook_Valuables
+	{
+		DisplayName = Book,
+		DisplayCategory = Literature,
+		Type = Container,
+		Weight = 1,
+		Icon = Book,
+		Capacity = 2,
+		CloseSound = CloseHollowBook,
+		OnCreate = SpecialLootSpawns.OnCreateClassicBook,
+		OpenSound = OpenHollowBook,
+		PutInSound = StoreItemHollowBook,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		Tags = BagsFillException;IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsHollowBook,
+		Tooltip = Tooltip_HollowBook,
+		MaxItemSize = 1.6,
+	}
+
+	item HollowBook_Whiskey
+	{
+		DisplayName = Book,
+		DisplayCategory = Literature,
+		Type = Container,
+		Weight = 1,
+		Icon = Book,
+		Capacity = 2,
+		CloseSound = CloseHollowBook,
+		OnCreate = SpecialLootSpawns.OnCreateClassicBook,
+		OpenSound = OpenHollowBook,
+		PutInSound = StoreItemHollowBook,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		Tags = BagsFillException;IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsHollowBook,
+		Tooltip = Tooltip_HollowBook,
+		MaxItemSize = 1.6,
+	}
+
+	item Wallet
+	{
+		DisplayName = Wallet,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.2,
+		IconsForTexture = Wallet_01;Wallet_02;Wallet_03;Wallet_04,
+	    WorldStaticModelsByIndex	= Wallet;Wallet2;Wallet3;Wallet4,
+		Capacity = 1,
+		CloseSound = CloseWallet,
+		OpenSound = OpenWallet,
+		PutInSound = StoreItemWallet,
+        AcceptItemFunction = AcceptItemFunction.Wallet,
+        Tags = BagsFillException,
+		MaxItemSize = 0.2,
+        ResearchableRecipes = SewHideWallet,
+	}
+
+	item Wallet_Female
+	{
+		DisplayName = Wallet,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.2,
+		IconsForTexture = Wallet_01;Wallet_02;Wallet_03;Wallet_04,
+	    WorldStaticModelsByIndex	= Wallet;Wallet2;Wallet3;Wallet4,
+		Capacity = 1,
+		CloseSound = CloseWallet,
+		OpenSound = OpenWallet,
+		PutInSound = StoreItemWallet,
+        AcceptItemFunction = AcceptItemFunction.Wallet,
+        Tags = BagsFillException,
+		MaxItemSize = 0.2,
+        ResearchableRecipes = SewHideWallet,
+	}
+
+	item Wallet_Male
+	{
+		DisplayName = Wallet,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.2,
+		IconsForTexture = Wallet_01;Wallet_03;Wallet_04,
+	    WorldStaticModelsByIndex	= Wallet;Wallet3;Wallet4,
+		Capacity = 1,
+		CloseSound = CloseWallet,
+		OpenSound = OpenWallet,
+		PutInSound = StoreItemWallet,
+        AcceptItemFunction = AcceptItemFunction.Wallet,
+        Tags = BagsFillException,
+		MaxItemSize = 0.2,
+        ResearchableRecipes = SewHideWallet,
+	}
+
+	/* reduced the capacities of these bags as being able to fit an M16 inside of a sewing kit or paper lunch bag is undesireable */
+
+	item Lunchbag
+	{
+		DisplayName = Lunchbag,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.1,
+		Icon = Paperbag,
+		Capacity = 2,
+		CloseSound = ClosePaperBag,
+		OpenSound = OpenPaperBag,
+		PutInSound = StoreItemPaperBag,
+		WeightReduction = 50,
+		WorldStaticModel = Paperbag_Ground,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+
+	item PaperBag
+	{
+		DisplayName = Paper Bag,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.1,
+		Icon = Paperbag,
+		Capacity = 2,
+		CloseSound = ClosePaperBag,
+		OpenSound = OpenPaperBag,
+		PutInSound = StoreItemPaperBag,
+		WeightReduction = 50,
+		WorldStaticModel = Paperbag_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Paperbag_Jays
+	{
+		DisplayName = Paper Bag - Jays,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.1,
+		Icon = Paperbag_Jays,
+		Capacity = 2,
+		CloseSound = ClosePaperBag,
+		OpenSound = OpenPaperBag,
+		PutInSound = StoreItemPaperBag,
+		WeightReduction = 50,
+		WorldStaticModel = PaperbagJays_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Paperbag_Spiffos
+	{
+		DisplayName = Paper Bag - Spiffos,
+		DisplayCategory = Memento,
+		Type = Container,
+		Weight = 0.1,
+		Icon = Paperbag_Spiffos,
+		Capacity = 2,
+		CloseSound = ClosePaperBag,
+		OpenSound = OpenPaperBag,
+		PutInSound = StoreItemPaperBag,
+		WeightReduction = 50,
+		WorldStaticModel = PaperbagSpiffo_Ground,
+		Tags = IsFireFuel;IsFireTinder;IsMemento,
+	}
+
+	item SeedBag
+	{
+		DisplayName = Pouch,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.1,
+		Icon = DrawstringBag,
+		Capacity = 1,
+		CloseSound = CloseFabricPouch,
+		OpenSound = OpenFabricPouch,
+		PutInSound = StoreItemFabricPouch,
+		SurvivalGear = TRUE,
+		WeightReduction = 50,
+		WorldStaticModel = SeedBag,
+	}
+
+	item SeedBag_Farming
+	{
+		DisplayName = Pouch,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.1,
+		Icon = DrawstringBag,
+		Capacity = 1,
+		CloseSound = CloseFabricPouch,
+		OpenSound = OpenFabricPouch,
+		PutInSound = StoreItemFabricPouch,
+		SurvivalGear = TRUE,
+		WeightReduction = 50,
+		WorldStaticModel = SeedBag,
+	}
+
+	item SewingKit
+	{
+		DisplayName = Sewing Kit,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = SewingBox,
+		Capacity = 2,
+		CloseSound = CloseSmallWoodenBox,
+		OpenSound = OpenSmallWoodenBox,
+		PutInSound = StoreItemSmallWoodenBox,
+		SurvivalGear = TRUE,
+		WeightReduction = 50,
+		WorldStaticModel = SewingBox,
+        Tags = NeverEmpty;BagsFillException;HasMetal,
+		MaxItemSize = 0.3,
+	}
+
+	item KeyRing
+	{
+		DisplayName = Key Ring,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.05,
+		Icon = KeyRing,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_Ground,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException,
+	}
+
+	item KeyRing_CarDealer
+    {
+        DisplayCategory = Container,
+		Weight = 0.05,
+        Type	=	Container,
+        DisplayName	=	Key Ring,
+        Icon	=	KeyRing,
+        Capacity	=	1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+        MetalValue = 5,
+        WorldStaticModel = KeyRing_Ground,
+		Tags = KeyRing;HasMetal;NeverEmpty;BagsFillException,
+    }
+
+	item KeyRing_Bass
+	{
+		DisplayName = Key Ring - Bass,
+        DisplayCategory = Memento,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_Bass,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_Bass,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item KeyRing_BlueFox
+	{
+		DisplayName = Key Ring - Blue Fox,
+        DisplayCategory = Fox,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_BlueFox,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_BlueFox,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item KeyRing_Bug
+	{
+		DisplayName = Key Ring - Bug,
+        DisplayCategory = Bug,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_Bug,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_Bug,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item KeyRing_Clover
+	{
+		DisplayName = Key Ring - Four-Leaf Clover,
+        DisplayCategory = Memento,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_Clover,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_Clover,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item KeyRing_EagleFlag
+	{
+		DisplayName = Key Ring - American Eagle,
+        DisplayCategory = Memento,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_EagleFlag,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_EagleFlag,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item KeyRing_EightBall
+	{
+		DisplayName = Key Ring - Eight Ball,
+        DisplayCategory = Memento,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_EightBall,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_EightBall,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item KeyRing_Hotdog
+	{
+		DisplayName = Key Ring - Hotdog,
+        DisplayCategory = Memento,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_Hotdog,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_Hotdog,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item KeyRing_Kitty
+	{
+		DisplayName = Key Ring - Kitty,
+        DisplayCategory = Memento,
+		Type = Container,
+		Weight = 0.05,
+		IconsForTexture = Keychain_Kitty1;Keychain_Kitty2;Keychain_Kitty3;Keychain_Kitty4,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+	    WorldStaticModelsByIndex	= Keychain_Kitty1;Keychain_Kitty2;Keychain_Kitty3;Keychain_Kitty4,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item KeyRing_Large
+	{
+		DisplayName = Key Ring - Large,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.05,
+		Icon = KeyRing_Large,
+		Capacity = 2,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_Large,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity,
+	}
+
+	item KeyRing_Nolans
+	{
+		DisplayName = Key Ring - Nolan's Used Cars,
+        DisplayCategory = Memento,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_Nolans,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_Nolans,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item KeyRing_Panther
+	{
+		DisplayName = Key Ring - Panther,
+        DisplayCategory = Memento,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_Panther,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_Panther,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item KeyRing_PineTree
+	{
+		DisplayName = Key Ring - Pine Tree,
+        DisplayCategory = Memento,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_PineTree,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_PineTree,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item KeyRing_PrayingHands
+	{
+		DisplayName = Key Ring - Praying Hands,
+        DisplayCategory = Memento,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_PrayingHands,
+		Capacity = 1,
+		WeightReduction = 85,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_PrayingHands,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item KeyRing_RabbitFoot
+    {
+        DisplayCategory = Bunny,
+		Weight = 0.1,
+        Type	=	Container,
+        DisplayName	=	Key Ring - Rabbit Foot,
+        Icon	=	RabbitFoot,
+        Capacity	=	1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+        MetalValue = 5,
+		WorldStaticModel = KeyRing_RabbitFoot,
+		Tags = KeyRing;HasMetal;IgnoreZombieDensity;BagsFillException;IsMemento,
+    }
+
+	item KeyRing_RainbowStar
+	{
+		DisplayName = Key Ring - Rainbow Star,
+        DisplayCategory = Memento,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_RainbowStar,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_RainbowStar,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item KeyRing_RubberDuck
+	{
+		DisplayName = Key Ring - Rubber Duck,
+        DisplayCategory = Duck,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_RubberDuck,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_RubberDuck,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+		Tooltip = Tooltip_item_Duck,
+	}
+
+	item KeyRing_SecurityPass
+	{
+		DisplayName = Security Pass Key Ring,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_FinneganID,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_SecurityPass,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;ApplyOwnerName,
+	}
+
+	item KeyRing_Sexy
+	{
+		DisplayName = Key Ring - Sexy,
+        DisplayCategory = Memento,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_SexyLady,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_Sexy,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item KeyRing_Spiffos
+	{
+		DisplayName = Key Ring - Spiffos,
+        DisplayCategory = Memento,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_SpiffoLogo,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_Spiffos,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item KeyRing_StinkyFace
+	{
+		DisplayName = Key Ring - Stinky Face,
+        DisplayCategory = Memento,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_Smell,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_StinkyFace,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item KeyRing_WestMaple
+	{
+		DisplayName = Key Ring - West Maple Country Club,
+        DisplayCategory = Memento,
+		Type = Container,
+		Weight = 0.05,
+		Icon = Keychain_WestMaple,
+		Capacity = 1,
+		WeightReduction = 85,
+		CloseSound = CloseKeyRing,
+		OpenSound = OpenKeyRing,
+		PutInSound = StoreItemKeyRing,
+		MetalValue = 5,
+		/*OnlyAcceptCategory = Key,*/
+        AcceptItemFunction = AcceptItemFunction.KeyRing,
+		WorldStaticModel = KeyRing_WestMaple,
+		Tags = KeyRing;NeverEmpty;MoreWhenNoZombies;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item WheatSack
+	{
+		DisplayName = Sack,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = SandbagEmpty,
+		Capacity = 15,
+		CloseSound = CloseSack,
+		ConditionMax = 1,
+		OpenSound = OpenSack,
+		PutInSound = StoreItemSack,
+		ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		/*Tooltip = Tooltip_item_empty_sack_container,*/
+		WeightReduction = 50,
+		WorldStaticModel = SandBag_Ground,
+		Tags = HoldDirt;HoldCompost;NeverEmpty;BurlapBag,
+	}
+
+	item WheatSeedSack
+	{
+		DisplayName = Sack,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = SandbagEmpty,
+		Capacity = 15,
+		CloseSound = CloseSack,
+		ConditionMax = 1,
+		OpenSound = OpenSack,
+		PutInSound = StoreItemSack,
+		ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
+		RunSpeedModifier = 0.99,
+		/*Tooltip = Tooltip_item_empty_sack_container,*/
+		WeightReduction = 50,
+		WorldStaticModel = SandBag_Ground,
+		Tags = HoldDirt;HoldCompost;NeverEmpty;IsFireFuel;IsFireTinder;BurlapBag,
+	}
+
+	item GemBag
+	{
+		DisplayName = Pouch,
+	    DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.1,
+		Icon = GemBag,
+		Capacity = 1,
+		CloseSound = CloseFabricPouch,
+		OpenSound = OpenFabricPouch,
+		PutInSound = StoreItemFabricPouch,
+		WeightReduction = 50,
+		WorldStaticModel = GemBag,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder;BagsFillException;IgnoreZombieDensity,
+	}
+
+	/*Note: changed the capacity of this to 1*/
+	item DiceBag
+	{
+		DisplayName = Pouch,
+	    DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.1,
+        IconsForTexture = GemBag;DrawstringBag,
+		Capacity = 1,
+		CloseSound = CloseFabricPouch,
+		OpenSound = OpenFabricPouch,
+		PutInSound = StoreItemFabricPouch,
+		ClothingItem = Bag_DiceBag,
+		WeightReduction = 30,
+		WorldStaticModel = DiceBag,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder;BagsFillException;IgnoreZombieDensity,
+	}
+
+	item TakeoutBox_Styrofoam
+	{
+		DisplayName = Styrofoam Takeout Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.3,
+		Icon = TakeoutBox_Styrofoam,
+		Capacity = 2,
+		CloseSound = CloseStyrofoamTakeoutBox,
+		OpenSound = OpenStyrofoamTakeoutBox,
+		PutInSound = StoreItemStyrofoamTakeoutBox,
+		WeightReduction = 50,
+		WorldStaticModel = TakeoutBox_Styrofoam,
+		Tags = IsFireFuel;IsFireTinder;BagsFillException,
+	}
+
+	item TakeoutBox_Chinese
+	{
+		DisplayName = Chinese Takeout Container,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.3,
+		Icon = TakeoutBox_Classic,
+		Capacity = 2,
+		CloseSound = CloseChineseTakeoutBox,
+		OpenSound = OpenChineseTakeoutBox,
+		PutInSound = StoreItemChineseTakeoutBox,
+		WeightReduction = 50,
+		WorldStaticModel = TakeoutBox_Chinese,
+		Tags = IsFireFuel;IsFireTinder;BagsFillException,
+		ReplaceInPrimaryHand = Bag_TakeoutBox_Chinese_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_TakeoutBox_Chinese_LHand holdingbagleft,
+	}
+
+	item PencilCase
+	{
+		DisplayName = Pencil Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.3,
+		IconsForTexture = PencilCase_Blue;PencilCase_Grey;PencilCase_Orange,
+		Capacity = 1,
+		CloseSound = ClosePencilCase,
+		OpenSound = OpenPencilCase,
+		PutInSound = StoreItemPencilCase,
+		ClothingItem = Bag_PencilCase,
+		WeightReduction = 50,
+        WorldStaticModel =  PencilCase,
+        Tags = NeverEmpty;BagsFillException,
+	}
+
+	item PencilCase_Gaming
+	{
+		DisplayName = Pencil Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.3,
+		IconsForTexture = PencilCase_Blue;PencilCase_Grey;PencilCase_Orange,
+		Capacity = 1,
+		CloseSound = CloseBag,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ClothingItem = Bag_PencilCase,
+		WeightReduction = 50,
+        WorldStaticModel =  PencilCase,
+        Tags = NeverEmpty;BagsFillException,
+	}
+
+	item Humidor
+	{
+		DisplayName = Humidor,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = CigarBox_Fancy,
+		Capacity = 2,
+		CloseSound = CloseHumidor,
+		OpenSound = OpenHumidor,
+		PutInSound = StoreItemHumidor,
+		WeightReduction = 50,
+		WorldStaticModel = Humidor,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder;BagsFillException;IgnoreZombieDensity,
+	}
+
+	item CigarBox
+	{
+		DisplayName = Cigar Box,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = CigarBox_Plain,
+		Capacity = 2,
+		CloseSound = CloseSmallWoodenBox,
+		OpenSound = OpenSmallWoodenBox,
+		PutInSound = StoreItemSmallWoodenBox,
+		WeightReduction = 50,
+		WorldStaticModel = CigarBox,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder;BagsFillException;IgnoreZombieDensity,
+	}
+
+	item CigarBox_Gaming
+	{
+		DisplayName = Cigar Box,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = CigarBox_Plain,
+		Capacity = 2,
+		CloseSound = CloseSmallWoodenBox,
+		OpenSound = OpenSmallWoodenBox,
+		PutInSound = StoreItemSmallWoodenBox,
+		WeightReduction = 50,
+		WorldStaticModel = CigarBox,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder;BagsFillException;IgnoreZombieDensity,
+	}
+
+	item CigarBox_Keepsakes
+	{
+		DisplayName = Cigar Box,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = CigarBox_Plain,
+		Capacity = 2,
+		CloseSound = CloseSmallWoodenBox,
+		OpenSound = OpenSmallWoodenBox,
+		PutInSound = StoreItemSmallWoodenBox,
+		WeightReduction = 50,
+		WorldStaticModel = CigarBox,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder;BagsFillException;IgnoreZombieDensity,
+	}
+
+	item CigarBox_Kids
+	{
+		DisplayName = Cigar Box,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = CigarBox_Plain,
+		Capacity = 2,
+		CloseSound = CloseSmallWoodenBox,
+		OpenSound = OpenSmallWoodenBox,
+		PutInSound = StoreItemSmallWoodenBox,
+		WeightReduction = 50,
+		WorldStaticModel = CigarBox,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder;BagsFillException;IgnoreZombieDensity,
+	}
+
+	item CookieJar
+	{
+		DisplayName = Cookie Jar,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = CookieJar,
+		Capacity = 2,
+		CloseSound = CloseCookieJar,
+		OpenSound = OpenCookieJar,
+		PutInSound = StoreItemCookieJar,
+		WeightReduction = 50,
+		WorldStaticModel = CookieJar,
+		Tags = NeverEmpty;BagsFillException;IgnoreZombieDensity,
+	}
+
+	item CookieJar_Bear
+	{
+		DisplayName = Cookie Jar - Teddy Bear,
+	    DisplayCategory = Bear,
+		Type = Container,
+		Weight = 1,
+		Icon = CookieJar_TeddyBear,
+		Capacity = 2,
+		CloseSound = CloseCookieJarTeddy,
+		OpenSound = OpenCookieJarTeddy,
+		PutInSound = StoreItemCookieJarTeddy,
+		WeightReduction = 50,
+		WorldStaticModel = CookieJar_Bear,
+		Tags = NeverEmpty;BagsFillException;IgnoreZombieDensity;IsMemento,
+	}
+
+	item JewelleryBox
+	{
+		DisplayName = Jewellery Box,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = JewelryBox_Plain,
+		Capacity = 2,
+		CloseSound = CloseSmallWoodenBox,
+		OpenSound = OpenSmallWoodenBox,
+		PutInSound = StoreItemSmallWoodenBox,
+		WeightReduction = 50,
+		WorldStaticModel = JewelleryBox,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder;BagsFillException;IgnoreZombieDensity,
+		MaxItemSize = 0.3,
+	}
+
+	item JewelleryBox_Fancy
+	{
+		DisplayName = Jewellery Box,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = JewelryBox_Fancy,
+		Capacity = 2,
+		CloseSound = CloseSmallWoodenBox,
+		OpenSound = OpenSmallWoodenBox,
+		PutInSound = StoreItemSmallWoodenBox,
+		WeightReduction = 50,
+		WorldStaticModel = JewelleryBox_Fancy,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder;BagsFillException;IgnoreZombieDensity,
+		MaxItemSize = 0.3,
+	}
+
+	item FirstAidKit_Camping
+	{
+		DisplayName = First Aid Kit - Camping,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.3,
+		Icon = FirstAid_Camping,
+		Capacity = 2,
+		CloseSound = CloseFirstAidKitCamping,
+		OpenSound = OpenFirstAidKitCamping,
+		PutInSound = StoreItemFirstAidKitCamping,
+		WeightReduction = 50,
+		WorldStaticModel = FirstAidKit_Camping,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder;BagsFillException;IgnoreZombieDensity,
+		MaxItemSize = 0.3,
+	}
+
+	item FirstAidKit_Camping_New
+	{
+		DisplayName = First Aid Kit - Camping,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.3,
+		Icon = FirstAid_Camping,
+		Capacity = 2,
+		CloseSound = CloseFirstAidKitCamping,
+		OpenSound = OpenFirstAidKitCamping,
+		PutInSound = StoreItemFirstAidKitCamping,
+		WeightReduction = 50,
+		WorldStaticModel = FirstAidKit_Camping,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder;BagsFillException;IgnoreZombieDensity,
+		MaxItemSize = 0.3,
+		OnCreate = SpecialLootSpawns.FirstAidKit_New;AlwaysHasStuff,
+	}
+
+	item FirstAidKit_Military
+	{
+		DisplayName = First Aid Kit - Military,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.3,
+		Icon = FirstAid_Military,
+		Capacity = 2,
+		CloseSound = CloseFirstAidKitMilitary,
+		OpenSound = OpenFirstAidKitMilitary,
+		PutInSound = StoreItemFirstAidKitMilitary,
+		WeightReduction = 50,
+		WorldStaticModel = FirstAidKit_Military,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder;BagsFillException;IgnoreZombieDensity,
+		MaxItemSize = 0.3,
+	}
+
+	item HalloweenCandyBucket
+	{
+		DisplayName = Halloween Candy Bucket,
+	    DisplayCategory = Memento,
+		Type = Container,
+		Weight = 0.5,
+		Icon = Jackolantern_Pail,
+		Capacity = 2,
+		CloseSound = CloseHalloweenBucket,
+		OpenSound = OpenHalloweenBucket,
+		PutInSound = StoreItemHalloweenBucket,
+		WeightReduction = 50,
+		WorldStaticModel = HalloweenCandyBucket,
+		Tags = IsFireFuel;IsFireTinder;BagsFillException;IgnoreZombieDensity;IsMemento,
+		ReplaceInPrimaryHand = Bag_HalloweenCandyBucket_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_HalloweenCandyBucket_LHand holdingbagleft,
+	}
+
+	item MakeupCase_Professional
+	{
+		DisplayName = Makeup Case - Professional,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = MakeupCase_Professional,
+		Capacity = 4,
+		CloseSound = CloseMakeupCase,
+		OpenSound = OpenMakeupCase,
+		PutInSound = StoreItemMakeupCase,
+		WeightReduction = 50,
+		WorldStaticModel = MakeupCase_Professional,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder;BagsFillException;IgnoreZombieDensity,
+		MaxItemSize = 0.3,
+		ReplaceInPrimaryHand = Bag_MakeupCase_Professional_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_MakeupCase_Professional_LHand holdingbagleft,
+	}
+
+	item Cashbox
+	{
+		DisplayName = Cashbox,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = CashBox,
+		Capacity = 2,
+		CloseSound = CloseSmallMetalBox,
+		OpenSound = OpenSmallMetalBox,
+		PutInSound = StoreItemSmallMetalBox,
+		WeightReduction = 50,
+		WorldStaticModel = Cashbox,
+		Tags = NeverEmpty;BagsFillException;IgnoreZombieDensity,
+		MaxItemSize = 1,
+		ReplaceInPrimaryHand = Bag_Cashbox_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Cashbox_LHand holdingbagleft,
+	}
+
+	item ToolRoll_Leather
+	{
+		DisplayName = Tool Roll - Leather,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = ToolRoll_Leather,
+		Capacity = 4,
+		CloseSound = CloseToolRollLeather,
+		OpenSound = OpenToolRollLeather,
+		PutInSound = StoreItemToolRollLeather,
+		WeightReduction = 50,
+		WorldStaticModel = ToolRoll_Leather,
+		Tags = NeverEmpty;BagsFillException;IgnoreZombieDensity,
+		MaxItemSize = 1,
+        ResearchableRecipes = SewLeatherToolRoll,
+	}
+
+	item ToolRoll_Fabric
+	{
+		DisplayName = Tool Roll - Fabric,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = ToolRoll_Chef,
+		Capacity = 4,
+		CloseSound = CloseToolRollFabric,
+		OpenSound = OpenToolRollFabric,
+		PutInSound = StoreItemToolRollFabric,
+		WeightReduction = 50,
+		WorldStaticModel = ToolRoll_Fabric,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder;BagsFillException;IgnoreZombieDensity,
+		MaxItemSize = 1,
+        ResearchableRecipes = SewLeatherToolRoll,
+	}
+
+	item Hatbox
+	{
+		DisplayName = Hatbox,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = HatBox,
+		Capacity = 1,
+		CloseSound = CloseHatBox,
+		OpenSound = OpenHatBox,
+		PutInSound = StoreItemHatBox,
+		WeightReduction = 50,
+		WorldStaticModel = Hatbox,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder;BagsFillException;IgnoreZombieDensity,
+		ReplaceInPrimaryHand = Bag_Hatbox_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Hatbox_LHand holdingbagleft,
+	}
+
+	item Shoebox
+	{
+		DisplayName = Shoebox,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = Shoebox,
+		Capacity = 1,
+		CloseSound = CloseShoeBox,
+		OpenSound = OpenShoeBox,
+		PutInSound = StoreItemShoeBox,
+		WeightReduction = 50,
+		WorldStaticModel = Shoebox,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder;BagsFillException,
+	}
+
+	item PhotoAlbum
+	{
+		DisplayName = Photo Album,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = PhotoAlbum,
+		Capacity = 5,
+		CloseSound = ClosePhotoAlbum,
+		OpenSound = OpenPhotoAlbum,
+		PutInSound = StoreItemPhotoAlbum,
+		WorldStaticModel = PhotoAlbum,
+        AcceptItemFunction = AcceptItemFunction.Wallet,
+        Tags = BagsFillException;IsFireFuel;IsFireTinder;IsMemento,
+		MaxItemSize = 0.2,
+	}
+
+	item PhotoAlbum_Old
+	{
+		DisplayName = Photo Album,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 0.5,
+		Icon = PhotoAlbum,
+		Capacity = 5,
+		CloseSound = ClosePhotoAlbum,
+		OpenSound = OpenPhotoAlbum,
+		PutInSound = StoreItemPhotoAlbum,
+		WorldStaticModel = PhotoAlbum,
+        AcceptItemFunction = AcceptItemFunction.Wallet,
+        Tags = BagsFillException;IsFireFuel;IsFireTinder;IsMemento,
+		MaxItemSize = 0.2,
+	}
+
+	item ProduceBox_ExtraSmall
+	{
+		DisplayName = Produce Box - Extra Small,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+        Icon	=	Parcel_Small_Fruit,
+		Capacity = 1,
+		CloseSound = CloseProduceBoxSmall,
+		OpenSound = OpenProduceBoxSmall,
+		PutInSound = StoreItemProduceBoxSmall,
+		WorldStaticModel = ProduceBox_ExtraSmall,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+
+	item ProduceBox_Small
+	{
+		DisplayName = Produce Box - Small,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+        Icon	=	Parcel_Small_Fruit,
+		Capacity = 2,
+		CloseSound = CloseProduceBoxMedium,
+		OpenSound = OpenProduceBoxMedium,
+		PutInSound = StoreItemProduceBoxMedium,
+		WorldStaticModel = ProduceBox_Small,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+
+	item ProduceBox_Medium
+	{
+		DisplayName = Produce Box - Medium,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+        Icon	=	Parcel_Medium_Fruit,
+		Capacity = 5,
+		CloseSound = CloseProduceBoxMedium,
+		OpenSound = OpenProduceBoxMedium,
+		PutInSound = StoreItemProduceBoxMedium,
+		WorldStaticModel = ProduceBox_Medium,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+
+	item ProduceBox_Large
+	{
+		DisplayName = Produce Box - Large,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+        Icon	=	Parcel_Large_Fruit,
+		Capacity = 10,
+		CloseSound = CloseProduceBoxLarge,
+		OpenSound = OpenProduceBoxLarge,
+		PutInSound = StoreItemProduceBoxLarge,
+		WorldStaticModel = ProduceBox_Large,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+
+	item ProduceBox_ExtraLarge
+	{
+		DisplayName = Produce Box - Extra Large,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+        Icon	=	Parcel_ExtraLarge_Fruit,
+		Capacity = 20,
+		CloseSound = CloseProduceBoxLarge,
+		OpenSound = OpenProduceBoxLarge,
+		PutInSound = StoreItemProduceBoxLarge,
+		WorldStaticModel = ProduceBox_ExtraLarge,
+		Tags = NeverEmpty;IsFireFuel;IsFireTinder,
+	}
+
+    item Cooler_Seafood
+    {
+        DisplayCategory = Container,
+        WeightReduction	=	50,
+        Weight	=	1.5,
+        Type	=	Container,
+        Capacity	=	12,
+        DisplayName	=	Cooler,
+        Icon	=	Cooler,
+        MetalValue = 15,
+        RunSpeedModifier = 0.9,
+        ReplaceInSecondHand = Bag_Cooler_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Cooler_RHand holdingbagright,
+        WorldStaticModel = Cooler_Ground,
+        Tags = NeverEmpty,
+    }
+
+	item Bag_ALICEpack_DesertCamo
+	{
+		DisplayName = Military Backpack,
+		DisplayCategory = Bag,
+		Type = Container,
+		Weight = 2,
+		Icon = AliceBag_SandCamo,
+		AttachmentReplacement = Bag,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		CanHaveHoles = FALSE,
+		Capacity = 28,
+		CloseSound = CloseBag,
+		ClothingItem = Bag_ALICEpack_DesertCamo,
+		EquipSound = EquipBackpackLarge,
+		OpenSound = OpenBag,
+		PutInSound = PutItemInBag,
+		ReplaceInPrimaryHand = Bag_ALICEpack_DesertCamo_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ALICEpack_DesertCamo_LHand holdingbagleft,
+		RunSpeedModifier = 0.94,
+		/*WeightReduction = 87,*/
+		WeightReduction = 85,
+		WorldStaticModel = ALICE_Pack_Ground,
+		AttachmentsProvided = BedrollBottomALICE,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder,
+        ResearchableRecipes = SewCrudeLeatherBackpack,
+	}
+
+	item Bag_ChestRig
+	{
+		DisplayName = Chest Rig,
+		DisplayCategory = Bag,
+		Type = Container,
+		Icon = ChestRig,
+		BodyLocation = Webbing,
+		CanBeEquipped = Webbing,
+		Capacity = 5,
+		CloseSound = CloseCargoVest,
+		OpenSound = OpenCargoVest,
+		PutInSound = StoreItemCargoVest,
+		RunSpeedModifier = 0.99,
+		WeightReduction = 85,
+		ClothingItem = Bag_ChestRig,
+		WorldStaticModel = ChestRig_Ground,
+		Tags = ReloadFastMagazines;IgnoreZombieDensity;IsFireFuel;IsFireTinder,
+		Tooltip = Tooltip_Webbing,
+		MaxItemSize = 1.3,
+		CombatSpeedModifier = 0.99,
+		ResearchableRecipes = MakeTarpChestRig,
+	}
+
+	item Bag_ProtectiveCaseSmall_KeyCutting
+	{
+		DisplayName = Small Protective Case,
+		DisplayCategory = Container,
+		Type = Container,
+		Weight = 1,
+		Icon = ProtectiveCase_SmallBlack,
+		Capacity = 4,
+		CloseSound = CloseProtectiveCaseSmall,
+		OpenSound = OpenProtectiveCaseSmall,
+		PutInSound = StoreItemProtectiveCaseSmall,
+		ReplaceInPrimaryHand = Bag_ProtectiveCaseSmall_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ProtectiveCaseSmall_LHand holdingbagleft,
+		WeightReduction = 50,
+		WorldStaticModel = ProtectiveCaseSmall_Ground,
+		ClothingItem = Bag_ProtectiveCaseSmall_RHand,
+		Tags = IgnoreZombieDensity;FirearmLoot,
+	}
+}

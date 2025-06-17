@@ -1,0 +1,513 @@
+module Base
+{
+	/******* CONSTRUCTION - BAGS *******/
+	
+	item ConcretePowder
+	{
+		DisplayName = Bag of Concrete Powder,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = Concrete_Powder,
+		WorldStaticModel = BagofConcretePowder,
+	}
+
+	item Claybag
+	{
+		DisplayName = Sack of Clay,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 2,
+		Icon = Sandbag,
+		ConditionMax = 1,
+		ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
+		ReplaceOnDeplete = EmptySandbag,
+		Tooltip = Tooltip_item_empty_sack_container,
+		UseDelta = 0.125,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = DirtBag_Ground,
+	}
+	
+	item Dirtbag
+	{
+		DisplayName = Sack of Dirt,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 2,
+		Icon = Sandbag,
+		ConditionMax = 1,
+		ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
+		ReplaceOnDeplete = EmptySandbag,
+		Tooltip = Tooltip_item_empty_sack_container,
+		UseDelta = 0.25,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = DirtBag_Ground,
+	}
+	
+	item Gravelbag
+	{
+		DisplayName = Sack of Gravel,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 2,
+		Icon = Gravelbag,
+		ConditionMax = 1,
+		ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
+		ReplaceOnDeplete = EmptySandbag,
+		Tooltip = Tooltip_item_empty_sack_container,
+		UseDelta = 0.25,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = GravelBag,
+	}
+	
+	item PlasterPowder
+	{
+		DisplayName = Bag of Plaster Powder,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = Plaster_Powder,
+		SurvivalGear = TRUE,
+		Tooltip = Tooltip_PlasterPowder,
+		WorldStaticModel = BagOfPlasterPowder,
+	}
+	
+	item Sandbag
+	{
+		DisplayName = Sack of Sand,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 2,
+		Icon = Sandbag,
+		ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
+		ReplaceOnDeplete = EmptySandbag,
+		Tooltip = Tooltip_item_empty_sack_container,
+		UseDelta = 0.25,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = SandBag,
+	}
+	
+	/******* CONSTRUCTION - BUCKETS *******/
+	
+	item BucketClayCement
+	{
+		DisplayName = Bucket of Clay Cement,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 10,
+		Icon = MetalBucket_Concrete,
+		PourType = Bucket,
+		ReplaceOnDeplete = Bucket,
+		UseDelta = 0.25,
+		UseWhileEquipped = FALSE,
+		StaticModel = BucketFullConcrete_Ground,
+		WorldStaticModel = BucketFullConcrete_Ground,
+		Tags = HasMetal;Concrete,
+        ResearchableRecipes = MakeBucketMaul;MakeKettleMaul,
+	}
+
+	item BucketConcreteFull
+	{
+		DisplayName = Bucket of Concrete,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 10,
+		Icon = MetalBucket_Concrete,
+		PourType = Bucket,
+		ReplaceOnDeplete = Bucket,
+		UseDelta = 0.25,
+		UseWhileEquipped = FALSE,
+		StaticModel = BucketFullConcrete_Ground,
+		WorldStaticModel = BucketFullConcrete_Ground,
+		Tags = HasMetal;Concrete,
+        ResearchableRecipes = MakeBucketMaul;MakeKettleMaul,
+	}
+
+	item BucketCarvedClayCement
+	{
+		DisplayName = Carved Bucket of Clay Cement,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 10,
+        Icon    = Bucket_Crude,
+		PourType = Bucket,
+		ReplaceOnDeplete = BucketCarved,
+		UseDelta = 0.25,
+		UseWhileEquipped = FALSE,
+		StaticModel = BucketCarvedConcrete_Hand,
+		WorldStaticModel = BucketCarvedConcrete,
+		Tags = Concrete,
+        ResearchableRecipes = MakeBucketMaul;MakeKettleMaul,
+	}
+
+	item BucketCarvedConcreteFull
+	{
+		DisplayName = Carved Bucket of Concrete,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 10,
+        Icon    = Bucket_Crude,
+		PourType = Bucket,
+		ReplaceOnDeplete = BucketCarved,
+		UseDelta = 0.25,
+		UseWhileEquipped = FALSE,
+		StaticModel = BucketCarvedConcrete_Hand,
+		WorldStaticModel = BucketCarvedConcrete,
+		Tags = Concrete,
+        ResearchableRecipes = MakeBucketMaul;MakeKettleMaul,
+	}
+	
+	item BucketPlasterFull
+	{
+		DisplayName = Bucket of Plaster,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 10,
+		Icon = MetalBucket_Plaster,
+		PourType = Bucket,
+		ReplaceOnDeplete = Bucket,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		StaticModel = BucketFullPlaster_Ground,
+		WorldStaticModel = BucketFullPlaster_Ground,
+	}
+	
+	/******* CONSTRUCTION - COMPONENTS *******/
+	
+	item Doorknob
+	{
+		DisplayName = Doorknob,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = DoorKnob,
+		MetalValue = 10,
+		WorldStaticModel = DoorKnob,
+	}
+
+	item Drawer
+	{
+		DisplayName = Drawer,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 3,
+		Icon = Drawer,
+		WorldStaticModel = Drawer,
+	}
+	
+	item Hinge
+	{
+		DisplayName = Door Hinge,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Doorhinge,
+		MetalValue = 10,
+		WorldStaticModel = DoorHinge,
+	}
+	
+	item Pipe
+	{
+		DisplayName = Plastic Pipe,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 1,
+		Icon = Pipe,
+		WorldStaticModel = PlasticPipe,
+	}
+	
+	/******* CONSTRUCTION - REPAIR *******/
+	
+	item DuctTape
+	{
+		DisplayName = Duct Tape,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 0.5,
+		Icon = DuctTape,
+		ConsolidateOption = ContextMenu_Merge,
+		SurvivalGear = TRUE,
+		Tooltip = Tooltip_FixItems,
+		UseDelta = 0.25,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = DuctTape,
+		Tags = Tape;InferiorBinding;SimpleWeaponBinding,
+	}
+
+	item DuctTapeBox
+	{
+		DisplayName = Box of Duct Tape,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item Epoxy
+	{
+		DisplayName = Epoxy,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 0.5,
+		Icon = EpoxyApplicator,
+		SurvivalGear = TRUE,
+		UseDelta = 0.2,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = Epoxy,
+		Tags = Epoxy,
+		Tooltip =   Tooltip_item_Epoxy,
+	}
+
+	item FiberglassTape
+	{
+		DisplayName = Fiberglass Tape,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 0.8,
+		Icon = FibreglassTape,
+		ConsolidateOption = ContextMenu_Merge,
+		SurvivalGear = TRUE,
+		Tooltip = Tooltip_FixItems,
+		UseDelta = 0.25,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = FiberglassTape,
+		Tags = FiberglassTape,
+	    Tooltip = Tooltip_item_FiberglassTape,
+	}
+	
+	item Glue
+	{
+		DisplayName = Glue,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 0.5,
+		Icon = Glue,
+		SurvivalGear = TRUE,
+		Tooltip = Tooltip_FixItems,
+		UseDelta = 0.2,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = Glue,
+		Tags = Glue,
+	}
+	
+	/******* CONSTRUCTION - WIRE *******/
+	
+	item BarbedWire
+	{
+		DisplayName = Barbed Wire,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = BarbedWire,
+		MetalValue = 20,
+		WorldStaticModel = BarbedWire,
+        ResearchableRecipes = BarbedWireWeapon,
+	}
+
+	item BarbedWireStack
+	{
+		DisplayName = Stack of Barbed Wire,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 10,
+		Icon = BarbedWireBundle,
+		MetalValue = 200,
+		WorldStaticModel = BarbedWireStack,
+        ResearchableRecipes = BarbedWireWeapon;MakeBarbedWire,
+	}
+	
+	item Wire
+	{
+		DisplayName = Wire,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 1,
+		Icon = Wire,
+		ConsolidateOption = ContextMenu_Merge,
+		MetalValue = 20,
+		SurvivalGear = TRUE,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = Wire,
+		Tags = Wire,
+	}
+
+	item WireStack
+	{
+		DisplayName = Stack of Wire,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 10,
+		Icon = WireBundle,
+		MetalValue = 200,
+		WorldStaticModel = WireStack,
+	}
+
+    item PlasterTrowel
+	{
+	    DisplayCategory = Tool,
+		Type = Normal,
+        Weight	=	1,
+        DisplayName	=	Plastering Trowel,
+        Icon = PlasterTrowel,
+        Tags = HasMetal;PlasterTrowel,
+		WorldStaticModel = PlasterTrowel,
+        ResearchableRecipes = Forge_Masons_Trowel,
+	}
+
+
+    item WallpaperPastePowder
+	{
+		DisplayName = Bag of Wallpaper Paste Powder,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = WallpaperPastePowder,
+		SurvivalGear = TRUE,
+		Tooltip = Tooltip_PlasterPowder,
+		WorldStaticModel = WallpaperPastePowder,
+	}
+
+	item BucketWallpaperPaste
+	{
+	    DisplayCategory = Material,
+		Weight	=	10,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		UseDelta	=	0.1,
+		DisplayName	=	Bucket of Wallpaper Paste,
+		ReplaceOnDeplete	=	Bucket,
+		Icon	=	MetalBucket_Plaster,
+		StaticModel = Bucket,
+		WorldStaticModel = BucketFullPlaster_Ground,
+		Tags = WallpaperPaste,
+	}
+
+	item Wallpaper_BeigeStripe
+	{
+        DisplayCategory = Material,
+		Type	=	Drainable,
+        DisplayName = Wallpaper - Beige Stripe,
+        Icon = Wallpaper_BeigeStripe,
+        Weight = 10,
+		WorldStaticModel = Wallpaper_BeigeStripe,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		Tags = Wallpaper,
+		Tooltip = Tooltip_item_Wallpaper,
+    }
+	item Wallpaper_BlackFloral
+	{
+        DisplayCategory = Material,
+		Type	=	Drainable,
+        DisplayName = Wallpaper - Black Floral,
+        Icon = Wallpaper_BlackFloral,
+        Weight = 10,
+		WorldStaticModel = Wallpaper_BlackFloral,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		Tags = Wallpaper,
+		Tooltip = Tooltip_item_Wallpaper,
+    }
+	item Wallpaper_BlueStripe
+	{
+        DisplayCategory = Material,
+		Type	=	Drainable,
+        DisplayName = Wallpaper - Blue Stripe,
+        Icon = Wallpaper_BlueStripe,
+        Weight = 10,
+		WorldStaticModel = Wallpaper_BlueStripe,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		Tags = Wallpaper,
+		Tooltip = Tooltip_item_Wallpaper,
+    }
+	item Wallpaper_GreenDiamond
+	{
+        DisplayCategory = Material,
+		Type	=	Drainable,
+        DisplayName = Wallpaper - Green Diamond,
+        Icon = Wallpaper_GreenDiamond,
+        Weight = 10,
+		WorldStaticModel = Wallpaper_GreenDiamond,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		Tags = Wallpaper,
+		Tooltip = Tooltip_item_Wallpaper,
+    }
+	item Wallpaper_GreenFloral
+	{
+        DisplayCategory = Material,
+        Type = Drainable,
+        DisplayName = Wallpaper - Green Floral,
+        Icon = Wallpaper_GreenFloral,
+        Weight = 10,
+		WorldStaticModel = Wallpaper_GreenFloral,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		Tags = Wallpaper,
+		Tooltip = Tooltip_item_Wallpaper,
+    }
+	item Wallpaper_PinkChevron
+	{
+        DisplayCategory = Material,
+        Type = Drainable,
+        DisplayName = Wallpaper - Pink Chevron,
+        Icon = Wallpaper_PinkChevron,
+        Weight = 10,
+		WorldStaticModel = Wallpaper_PinkChevron,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		Tags = Wallpaper,
+		Tooltip = Tooltip_item_Wallpaper,
+    }
+	item Wallpaper_PinkFloral
+	{
+        DisplayCategory = Material,
+        Type = Drainable,
+        DisplayName = Wallpaper - Pink Floral,
+        Icon = Wallpaper_PinkFloral,
+        Weight = 10,
+		WorldStaticModel = Wallpaper_PinkFloral,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		Tags = Wallpaper,
+		Tooltip = Tooltip_item_Wallpaper,
+    }
+
+	item MeasuringTape
+	{
+		DisplayName = Measuring Tape,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = MeasuringTape,
+		WorldStaticModel = MeasuringTape,
+	}
+
+	item NutsBolts
+	{
+		DisplayName = Nuts and Bolts,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = NutsBolts,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = NutsAndBolts,
+	}
+}

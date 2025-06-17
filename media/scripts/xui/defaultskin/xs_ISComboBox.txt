@@ -1,0 +1,30 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISComboBox
+        {
+            background          = true,
+            backgroundColor     = C_Black,
+            borderColor         = C_BorderLight,
+            backgroundColorMouseOver = C_BgMouseOver,
+            textColor           = C_TextPointNine,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+            moveWithMouse       = false,
+            font                = UIFont.Small,
+            tooltip             = nil,
+            image               = media/ui/ArrowDown.png,
+            editable            = false,
+        }
+
+        ISComboBox S_ComboBox_RecipeSelect
+        {
+            tooltip             = nil,
+            width               = 150,
+            isAutoFillX         = false,
+        }
+    }
+}

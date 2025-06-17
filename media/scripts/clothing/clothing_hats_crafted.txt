@@ -1,0 +1,171 @@
+module Base
+{
+
+	item Hat_LeatherStripTied
+	{
+		DisplayName = Leather Strip Headband,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Headband_Leather,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_LeatherStripTied,
+		Insulation = 0.10,
+		Tags = noRope,
+	}
+
+	item Hat_RagBandana
+	{
+		DisplayName = Rag Bandana - Head,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Bandanna_Rag,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_RagBandana,
+		ClothingItemExtra = Hat_RagBandanaTied;Hat_RagBandanaMask,
+		ClothingItemExtraOption = TieBandana;TieBandanaFace,
+		Insulation = 0.10,
+		FabricType = Cotton,
+        Tags = noRope;FitsWallet,
+	}
+
+	item Hat_RagBandanaMask
+	{
+		DisplayName = Rag Bandana - Face,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Bandanna_Rag,
+		BloodLocation = Head,
+		BodyLocation = Mask,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_RagBandanaMask,
+		ClothingItemExtra = Hat_RagBandana;Hat_RagBandanaTied,
+		ClothingItemExtraOption = UntieBandana;TieBandana,
+		Insulation = 0.10,
+		ScratchDefense = 5,
+		CorpseSicknessDefense = 25,
+		FabricType = Cotton,
+		Tags = noRope;IsLowerDisguise;FitsWallet,
+	}
+
+	item Hat_RagBandanaTied
+	{
+		DisplayName = Rag Bandana - Tied,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = RamboBandanna_Rag,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_RagBandanaTied,
+		ClothingItemExtra = Hat_RagBandana;Hat_RagBandanaMask,
+		ClothingItemExtraOption = UntieBandana;TieBandanaFace,
+		Insulation = 0.10,
+		FabricType = Cotton,
+		Tags = noRope,
+	}
+
+	item Hat_HideHat
+	{
+		DisplayName = Hat - Hide,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Icon = Sunhat_Hide,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		ClothingItem = Hat_HideHat,
+		Insulation = 0.1,
+		WindResistance = 0.1,
+	}
+
+	item Hat_TarpHat
+	{
+		DisplayName = Hat - Tarp,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Icon = Sunhat_Tarp,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		ClothingItem = Hat_TarpHat,
+		Insulation = 0.1,
+		WaterResistance = 1.0,
+		WindResistance = 0.1,
+	}
+
+	item Hat_Cowboy_CowHide
+	{
+		DisplayName = Hat - Cowboy,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		IconsForTexture = HatCowboyBlack;CowboyHat_HideCowHolstein;CowboyHat_HideCowSimmental,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 50,
+		ClothingItem = Hat_Cowboy_CowHide,
+		Insulation = 0.3,
+		WindResistance = 0.2,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_Cowboy_Angus
+	{
+		DisplayName = Hat - Cowboy,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Icon = HatCowboyBlack,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 50,
+		ClothingItem = Hat_Cowboy_Angus,
+		Insulation = 0.3,
+		WindResistance = 0.2,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_Cowboy_Holstein
+	{
+		DisplayName = Hat - Cowboy,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Icon = CowboyHat_HideCowHolstein,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 50,
+		ClothingItem = Hat_Cowboy_Holstein,
+		Insulation = 0.3,
+		WindResistance = 0.2,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_Cowboy_Simmental
+	{
+		DisplayName = Hat - Cowboy,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Icon = CowboyHat_HideCowSimmental,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 50,
+		ClothingItem = Hat_Cowboy_Simmental,
+		Insulation = 0.3,
+		WindResistance = 0.2,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+}

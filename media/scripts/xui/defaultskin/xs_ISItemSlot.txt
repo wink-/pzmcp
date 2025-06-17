@@ -1,0 +1,76 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISItemSlot
+        {
+            drawBackground      = true,
+            drawBorder          = true,
+            drawInnerBorder     = true,
+            backgroundColor     = C_BgSlot,
+            backgroundEmpty     = C_BgSlot,
+            backgroundHover     = C_BgSlotBgHover,
+            borderColor         = C_Border,
+            borderValid         = C_ValidGreen,
+            borderInvalid       = C_InvalidRed,
+            borderLockedColor   = C_BorderLocked,
+            drawBorderLocked    = true,
+            actionAddColor      = C_ValidGreen,
+            actionRemoveColor   = C_InvalidRed,
+            renderItemCount     = true,
+            countColor          = C_Text,
+            width               = 44,
+            height              = 44,
+            storeItem           = true,
+            hideItem            = false,
+            doBackDropTex       = false,
+            backDropTex         = nil,
+            backDropTexCol      = C_White,
+            doToolTip           = true,
+            toolTipText         = nil,
+            mouseEnabled        = true,
+            locked              = true,
+            toolTipTextItem     = nil,
+            toolTipTextLocked   = nil,
+            bBlinkBorder        = false,
+        }
+
+        ISItemSlot S_ItemSlot_Def
+        {
+            locked              = false,
+        }
+
+        ISItemSlot S_ItemSlot_Input
+        {
+            /*borderColor         = C_Input,*/
+            locked              = false,
+        }
+
+        ISItemSlot S_ItemSlot_InputAux
+        {
+            /*borderColor         = C_InputAux,*/
+            locked              = true,
+            drawBorderLocked    = false,
+        }
+
+        ISItemSlot S_ItemSlot_Output
+        {
+            /*borderColor         = C_Output,*/
+            locked              = false,
+        }
+
+        ISItemSlot S_ItemSlot_OutputAux
+        {
+            /*borderColor         = C_OutputAux,*/
+            locked              = true,
+            drawBorderLocked    = false,
+        }
+
+        ISItemSlot S_ItemSlot_Locked
+        {
+            locked              = true,
+            borderLockedColor   = C_BorderLocked,
+            drawBorderLocked    = true,
+        }
+    }
+}

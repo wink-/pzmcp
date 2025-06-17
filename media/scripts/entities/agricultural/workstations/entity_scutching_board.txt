@@ -1,0 +1,66 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_ScutchingBoard
+        {
+            LuaWindowClass      = ISEntityTabWindow,
+            DisplayName         = Scutching Board,
+            Icon                = Build_ScutchingBoard,
+        }
+    }
+
+    entity ScutchingBoard
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_ScutchingBoard,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+           Recipes         = Scutching,
+        }
+
+        component SpriteConfig
+        {
+		    isThumpable = false,
+            face S
+            {
+                layer
+                {
+                    row = crafted_04_57,
+                }
+            }
+
+           face E
+            {
+                layer
+                {
+                    row = crafted_04_56,
+                }
+            }            
+        }
+
+        component CraftRecipe
+        {
+            timedAction   = BuildWoodenStructureMedium,
+            time          = 50,
+            tags          = Outdoors,
+            category      = Farming,
+		    SkillRequired = Woodwork:2,
+		    xpAward       = Woodwork:20,
+            ToolTip       = Tooltip_craft_scutchingBoardDesc,
+            inputs
+            {
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[Saw;CrudeSaw] mode:keep flags[MayDegradeLight],
+                item 2 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+
+}

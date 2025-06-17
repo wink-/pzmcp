@@ -1,0 +1,74 @@
+module Base
+{
+    sound AnimalVoiceDoeIdle
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Doe/Voice/Idle,
+        }
+    }
+
+    sound AnimalVoiceDoeDeath
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Doe/Voice/Death,
+        }
+    }
+
+    sound AnimalVoiceDoeStressed
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Doe/Voice/Stressed,
+        }
+    }
+
+    sound AnimalVoiceDoePain
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Doe/Voice/Pain,
+        }
+    }
+
+    sound AnimalFootstepsDoeWalkFront
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Doe/Footsteps/Walk/Front,
+        }
+    }
+
+    sound AnimalFootstepsDoeWalkBack
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Doe/Footsteps/Walk/Back,
+        }
+    }
+
+    sound AnimalFootstepsDoeRun
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Doe/Footsteps/Run,
+        }
+    }
+
+    sound AnimalFoleyDoeBodyfall
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Doe/Foley/Bodyfall,
+        }
+    }
+} 

@@ -1,0 +1,32 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISEnergyBar
+        {
+            background          = true,
+            backgroundColor     = C_Black,
+            borderColor         = C_Border,
+            progressColor       = C_White,
+            isVertical          = false,
+            padding             = 2,
+            doRenderTexture     = true,
+            /*
+            horizontalTexture   = media/ui/Entity/bar_efficiency_horz.png,
+            verticalTexture     = media/ui/Entity/bar_efficiency_vert.png,
+            */
+        }
+
+        ISEnergyBar S_EnergyBar_Vertical
+        {
+            isVertical          = true,
+            width               = 20,
+        }
+
+        ISEnergyBar S_EnergyBar_Horizontal
+        {
+            isVertical          = false,
+            height              = 20,
+        }
+    }
+}

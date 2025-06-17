@@ -1,0 +1,20 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISTestComponentPanel
+        {
+            enableHeader        = true,
+            background          = false,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            minimumWidth        = 0,
+            minimumHeight       = 0,
+        }
+
+        ISTestComponentPanel S_TestComponentPanel_NoHeader
+        {
+            enableHeader        = false,
+        }
+    }
+}

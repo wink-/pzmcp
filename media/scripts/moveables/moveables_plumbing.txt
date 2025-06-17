@@ -1,0 +1,142 @@
+module Base
+{
+	item Mov_BlueComboWasherDryer
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Blue Combo Washer/Dryer,
+		WorldObjectSprite = appliances_laundry_01_0,
+	}
+	
+	item Mov_ChemicalToilet
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Chemical Toilet,
+		WorldObjectSprite = fixtures_bathroom_02_4,
+	}
+	
+	item Mov_ChromeSink
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Chrome Sink,
+		WorldObjectSprite = fixtures_sinks_01_9,
+	}
+	
+	item Mov_DarkIndustrialSink
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Dark Industrial Sink,
+		WorldObjectSprite = fixtures_sinks_01_16,
+	}
+	
+	item Mov_FancyHangingSink
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Fancy Hanging Sink,
+		WorldObjectSprite = fixtures_sinks_01_24,
+	}
+	
+	item Mov_FancyToilet
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Fancy Toilet,
+		WorldObjectSprite = fixtures_bathroom_01_0,
+	}
+	
+	item Mov_IndustrialDishwasher
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Wash-O-Matic Industrial,
+		WorldObjectSprite = fixtures_sinks_01_65,
+	}
+	
+	item Mov_IndustrialSink
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Industrial Sink,
+		WorldObjectSprite = fixtures_sinks_01_5,
+	}
+	
+	item Mov_LargeIndustrialSink
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Large Industrial Sink,
+		WorldObjectSprite = fixtures_sinks_01_33,
+	}
+	
+	item Mov_LowToilet
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Low Toilet,
+		WorldObjectSprite = fixtures_bathroom_01_4,
+	}
+	
+	item Mov_Urinal
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Hanging Toilet,
+		WorldObjectSprite = fixtures_bathroom_01_8,
+	}
+	
+	item Mov_WallShower
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Wall Shower,
+		WorldObjectSprite = fixtures_bathroom_01_30,
+	}
+	
+	item Mov_WhiteSink
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = White Standing Sink,
+		WorldObjectSprite = fixtures_sinks_01_12,
+	}
+	
+	item Mov_WhiteHangingSink
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = White Hanging Sink,
+		WorldObjectSprite = fixtures_sinks_01_14,
+	}
+}

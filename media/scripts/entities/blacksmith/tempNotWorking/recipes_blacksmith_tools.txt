@@ -1,0 +1,705 @@
+module Base
+{
+	/* NOTES: FIX_FLAGS */
+	craftRecipe ReplaceHacksawBlade
+	{
+		Time = 100,
+		OnCreate = Recipe.OnCreate.ChangeSawblade,
+		OnTest = Recipe.OnTest.OnlyBrokenSaw,
+		Tags = InHandCraft,
+        timedAction = Making,
+        category = Repair,
+		inputs
+		{
+			item 1 [Base.Saw] flags[AllowDestroyedItem],
+			item 1 [Base.HacksawBlade] flags[AllowDestroyedItem],
+		}
+		outputs
+		{
+			item 1 Base.Saw,
+		}
+	}
+
+	/* NOTES: FIX_FLAGS */
+	craftRecipe ReplaceSmallSawBlade
+	{
+		Time = 100,
+		OnCreate = Recipe.OnCreate.ChangeSawblade,
+		OnTest = Recipe.OnTest.OnlyBrokenSaw,
+		Tags = InHandCraft,
+        timedAction = Making,
+        category = Repair,
+		inputs
+		{
+			item 1 [Base.SmallSaw] flags[AllowDestroyedItem],
+			item 1 [Base.SmallSawblade] flags[AllowDestroyedItem],
+		}
+		outputs
+		{
+			item 1 Base.SmallSaw,
+		}
+	}
+
+    /* Tier I */
+
+    craftRecipe Forge_Bucket
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:3,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:5,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SheetMetal],
+            item 1 tags[SmithingHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            item 1 [Base.Wire],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.BucketEmpty,
+        }
+    }
+
+    craftRecipe Forge_Fireplace_Poker
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:6,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 tags[BarStock],
+            item 1 tags[SmithingHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.FireplacePoker,
+        }
+    }
+
+    craftRecipe Forge_Masons_Chisel
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:20,
+        AutoLearnAll = Blacksmith:6,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 tags[BarStockHalf],
+            item 1 tags[SmithingHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 1 tags[Whetstone] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.MasonsChisel,
+        }
+    }
+
+    craftRecipe Forge_Masons_Trowel
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:20,
+        AutoLearnAll = Blacksmith:6,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 tags[BarStockQuarter;Chunk],
+            item 1 tags[SmithingHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[CrudeTongs;MetalworkingPliers;Tongs] mode:keep flags[MayDegradeLight],
+            item 1 [Base.SmallHandle],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.MasonsTrowel,
+        }
+    }
+
+    craftRecipe Forge_Gardening_Trowel
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:20,
+        AutoLearnAll = Blacksmith:6,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 tags[BarStockQuarter;Chunk],
+            item 1 tags[SmithingHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[MayDegradeLight],
+            item 1 [Base.SmallHandle],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.HandShovel,
+        }
+    }
+
+    /* add a recipe for making them out of wire as well */
+    craftRecipe Forge_Nails
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:3,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:10,
+        AutoLearnAll = Blacksmith:5,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 tags[MetalPiece],
+            item 1 tags[SmithingHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[MayDegradeLight],
+            item 1 tags[HeadingTool] mode:keep,
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 10 Base.Nails,
+        }
+    }
+
+    craftRecipe Forge_Heading_Tool
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:3,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:10,
+        AutoLearnAll = Blacksmith:5,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 tags[BarStockQuarter],
+            item 1 tags[SmithingHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPunch;SmallPunch] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.HeadingTool,
+        }
+    }
+
+    craftRecipe Forge_Sheep_Shears
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:15,
+        AutoLearnAll = Blacksmith:6,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 tags[BarStockQuarter],
+            item 1 tags[SmithingHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[MayDegradeLight],
+            item 1 tags[Whetstone] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SheepShearsForged,
+        }
+    }
+
+    craftRecipe Forge_Tongs
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:20,
+        AutoLearnAll = Blacksmith:6,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 tags[BarStockQuarter],
+            item 1 tags[BarStockQuarter],
+            item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[CrudeTongs;MetalworkingPliers;Tongs] mode:keep flags[MayDegradeLight],
+            item 1 tags[CrudeChisel;MetalworkingChisel;MetalworkingPunch;SmallPunch] mode:keep,
+            item 1 tags[HeadingTool] mode:keep,
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.Tongs,
+        }
+    }
+
+     /* Tier II */
+
+    craftRecipe Forge_Scissors
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:15,
+        AutoLearnAll = Blacksmith:6,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 tags[BarStockQuarter],
+            item 1 tags[SmithingHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[Tongs;MetalworkingPliers] mode:keep flags[MayDegradeLight],
+            item 1 tags[Whetstone] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.ScissorsForged,
+        }
+    }
+
+    craftRecipe Forge_Draw_Plate
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:3,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:10,
+        AutoLearnAll = Blacksmith:5,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelBarQuarter],
+            item 1 tags[SmithingHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[MayDegradeLight],
+            item 1 tags[SmallPunch] mode:keep,
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.HeadingTool,
+        }
+    }
+
+    craftRecipe Forge_Metalworking_Chisel
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:6,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelBarHalf],
+            item 1 tags[SmithingHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 1 tags[Whetstone] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.MetalworkingChisel,
+        }
+    }
+
+    craftRecipe Forge_Metalworking_Punch
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:6,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelBarHalf],
+            item 1 tags[BallPeenHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 1 tags[Whetstone;File] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.MetalworkingPunch,
+        }
+    }
+
+    craftRecipe Forge_Metalworking_Pliers
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:6,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelBarQuarter],
+            item 1 tags[BallPeenHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPunch;SmallPunch] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.MetalworkingPliers,
+        }
+    }
+
+    craftRecipe Forge_Saw
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:7,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:9,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelBarQuarter],
+            item 1 tags[BallPeenHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPliers] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            item 1 tags[File] mode:keep flags[MayDegradeLight],
+            item 1 [Base.Handle],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.CrudeSaw,
+        }
+    }
+
+    craftRecipe Forge_Corkscrew
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:6,
+        needTobeLearn = true,
+        AutoLearnAll = Blacksmith:8,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 0 tags[Wire],
+            item 1 tags[BallPeenHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPliers] mode:keep flags[MayDegradeLight],
+            item 1 tags[Whetstone] mode:keep flags[MayDegradeLight],
+            item 1 [Base.SmallHandle],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.Corkscrew,
+        }
+    }
+
+    craftRecipe Forge_Needle
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:6,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:10,
+        AutoLearnAll = Blacksmith:6;Tailoring:5,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 0.25 tags[Wire],
+            item 1 tags[BallPeenHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPliers] mode:keep flags[MayDegradeLight],
+            item 1 tags[Whetstone] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.Needle_Forged,
+        }
+    }
+
+    /* Tier III */
+
+    craftRecipe Forge_Fine_Scissors
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:8,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:15,
+        AutoLearnAll = Blacksmith:10,
+        tags = AdvancedForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelBarQuarter],
+            item 1 tags[BallPeenHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPliers] mode:keep flags[MayDegradeLight],
+            item 1 tags[Whetstone] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPunch;SmallPunch] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.Scissors,
+        }
+    }
+
+    craftRecipe Forge_Tweezers
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:15,
+        AutoLearnAll = Blacksmith:6,
+        tags = AdvancedForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelPiece],
+            item 1 tags[BallPeenHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPliers] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.Tweezers_Forged,
+        }
+    }
+
+    craftRecipe Forge_Forceps
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:15,
+        AutoLearnAll = Blacksmith:6,
+        tags = AdvancedForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelPiece],
+            item 1 tags[BallPeenHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPliers] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPunch;SmallPunch] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.Forceps_Forged,
+        }
+    }
+
+    craftRecipe Forge_Crowbar
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:9,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:10,
+        tags = AdvancedForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelBar],
+            item 1 tags[BallPeenHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.CrowbarForged,
+        }
+    }
+
+    craftRecipe Forge_Straight_Razor
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:9,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:10,
+        tags = AdvancedForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelPiece],
+            item 1 tags[BallPeenHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPliers] mode:keep flags[MayDegradeLight],
+            item 1 tags[Whetstone] mode:keep flags[MayDegradeLight],
+            item 1 [Base.SmallHandle],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.StraightRazor,
+        }
+    }
+
+    craftRecipe Forge_Fishing_Hooks
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:6,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:6;Fishing:1,
+        tags = AdvancedForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 0 tags[Wire],
+            item 1 tags[BallPeenHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPliers] mode:keep flags[MayDegradeLight],
+            item 1 tags[Whetstone] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 4 Base.FishingHook_Forged,
+        }
+    }
+
+    craftRecipe Forge_Hinge
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:5,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:15,
+        AutoLearnAll = Blacksmith:7,
+        tags = AdvancedForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelBarQuarter],
+            item 1 tags[BallPeenHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPliers] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPunch;SmallPunch] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+            {
+            item 1 Base.Hinge,
+        }
+    }
+
+    craftRecipe Forge_Door_Knob
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:9,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:10,
+        tags = AdvancedForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelBarQuarter],
+            item 1 tags[BallPeenHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPliers] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            item 1 tags[SmallPunch] mode:keep,
+            item 1 tags[SmallFiles] mode:keep,
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.Doorknob,
+        }
+    }
+}

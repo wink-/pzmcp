@@ -1,0 +1,79 @@
+module Base
+{
+	template vehicle SoundsVan
+	{
+		sound
+		{
+			alarmLoop = VehicleAlarmA VehicleAlarmB VehicleAlarmC VehicleAlarmD VehicleAlarmE,
+			engine = VehicleEngineVan,
+			engineStart = VehicleEngineVan,
+			engineTurnOff = VehicleEngineVan,
+			horn = VehicleHornVan,
+			ignitionFail = VehicleIgnitionFailVan,
+		}
+
+		part Door*
+		{
+			anim Open
+			{
+				sound = VehicleDoorOpenVan,
+			}
+			
+			anim Close
+			{
+				sound = VehicleDoorCloseVan,
+			}
+
+			anim Lock
+			{
+				sound = LockVehicleDoorVan,
+			}
+			
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorVan,
+			}
+
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedVan,
+			}
+		}
+
+		part DoorRear*
+		{
+			anim Open
+			{
+				sound = VehicleTrunkOpenVan,
+			}
+
+			anim Close
+			{
+				sound = VehicleTrunkCloseVan,
+			}
+
+			anim Lock
+			{
+				sound = VehicleTrunkLockVan,
+			}
+
+			anim Lock
+			{
+				sound = VehicleTrunkUnlockVan,
+			}
+		}
+
+		part EngineDoor*
+		{
+			anim Open
+			{
+				sound = VehicleHoodOpenVan,
+			}
+
+			anim Close
+			{
+				sound = VehicleHoodCloseVan,
+			}
+		}
+	}
+}

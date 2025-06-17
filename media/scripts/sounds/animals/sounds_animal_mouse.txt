@@ -1,0 +1,56 @@
+module Base
+{
+	sound AnimalVoiceMouseIdle
+	{
+		category = Animals,
+		clip
+		{
+			event = Animals/Mouse/Voice/Idle,
+		}
+	}
+
+	sound AnimalVoiceMouseStressed
+	{
+		category = Animals,
+		clip
+		{
+			event = Animal/Mouse/Voice/Stressed,
+		}
+	}
+
+	sound AnimalVoiceMousePain
+	{
+		category = Animals,
+		clip
+		{
+			event = Animal/Mouse/Voice/Pain,
+		}
+	}
+
+	sound AnimalVoiceMouseDeath
+	{
+		category = Animals,
+		clip
+		{
+			event = Animal/Mouse/Voice/Death,
+		}
+	}
+
+	 sound AnimalFootstepsMouseRun
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Mouse/Footsteps/Run,
+        }
+	}
+
+	 sound AnimalFootstepsMouseWalk
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Mouse/Footsteps/Walk,
+        }
+	}
+}

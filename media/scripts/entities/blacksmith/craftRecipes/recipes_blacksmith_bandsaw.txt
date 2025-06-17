@@ -1,0 +1,159 @@
+module Base
+{
+    craftRecipe CutUpTireWithBandsaw
+    {
+        time        = 200,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        inputs
+        {
+            item 1 tags[WholeTire] flags[AllowDestroyedItem],
+        }
+        outputs
+        {
+            item 4 Base.TirePiece,
+        }
+    }
+    craftRecipe CutCircularSawbladeWithBandsaw
+    {
+        time        = 50,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        inputs
+        {
+            item 1 [Base.CircularSawblade] flags[AllowDestroyedItem],
+        }
+        outputs
+        {
+            item 2 Base.CircularSawblade_Half,
+        }
+    }
+    craftRecipe CutUpIronBandWithBandsaw
+    {
+        time        = 50,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        inputs
+        {
+            item 1 [Base.IronBand] flags[AllowDestroyedItem],
+        }
+        outputs
+        {
+            item 4 Base.IronBandSmall,
+        }
+    }
+
+/*
+    craftRecipe Cut_Iron_Blocks
+    {
+        time        = 50,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.IronIngot],
+        }
+        outputs
+        {
+            item 3 Base.IronBlock,
+        }
+    }*/
+
+    craftRecipe Cut_Iron_Chunks
+    {
+        time        = 50,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.IronBlock],
+        }
+        outputs
+        {
+            item 4 Base.IronChunk,
+        }
+    }
+
+    craftRecipe Cut_Iron_Bar_Halves
+    {
+        time        = 200,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.IronBar] flags[AllowDestroyedItem] mappers[barMap],
+           /* item 1 [Base.IronBar;Base.IronRod] flags[AllowDestroyedItem] mappers[barMap],*/
+        }
+        outputs
+        {
+			item 2 mapper:barMap,
+        }
+		itemMapper barMap
+		{
+			Base.IronBarHalf = Base.IronBar,
+			/*Base.IronRodHalf = Base.IronRod,*/
+
+			default = Base.IronBarHalf,
+		}
+    }
+
+    craftRecipe Cut_Iron_Bar_Quarters
+    {
+        time        = 200,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+           /* item 1 [Base.IronBarHalf;Base.IronRodHalf] flags[AllowDestroyedItem] mappers[barMap],*/
+            item 1 [Base.IronBarHalf] flags[AllowDestroyedItem] mappers[barMap],
+        }
+        outputs
+        {
+			item 2 mapper:barMap,
+        }
+		itemMapper barMap
+		{
+			Base.IronBarQuarter = Base.IronBarHalf,
+			/*Base.IronRodQuarter = Base.IronRodHalf,*/
+
+			default = Base.IronBarQuarter,
+		}
+    }
+
+    craftRecipe Cut_Steel_Sheet_Into_Small_Sheets
+    {
+        time        = 50,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.SheetMetal],
+        }
+        outputs
+        {
+            item 4 Base.SmallSheetMetal,
+        }
+    }
+
+    /*craftRecipe Cut_Railroad_Track
+    {
+        time        = 100,
+        SkillRequired = MetalWelding:4,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.RailroadTrack],
+        }
+        outputs
+        {
+            item 3 Base.RailroadTrackPiece,
+        }
+    }*/
+}

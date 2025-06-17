@@ -1,0 +1,440 @@
+module Base
+{
+    sound VoiceMale
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male,
+        } 
+    }
+
+    sound VoiceMaleMeleeStab
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Melee/Stab,
+        } 
+    }
+
+    sound VoiceMaleMeleeStabOnGround
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Melee/StabOnGround,
+        } 
+    }
+
+    sound VoiceMaleMeleeAttackHeavy
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Melee/Attack/Heavy,
+        } 
+    }
+
+    sound VoiceMaleMeleeAttack
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Melee/Attack/Default,
+        } 
+    }
+
+    sound VoiceMaleMeleeShove
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Melee/Attack/Default,
+        } 
+    }
+
+    sound VoiceMaleMeleeStomp
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Melee/Attack/Default,
+        } 
+    }
+
+/******************************************************************************/
+
+    sound VoiceMalePainFromBite
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Pain/FromBite,
+        } 
+    }
+
+     sound VoiceMalePainFromScratch
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Pain/FromScratch,
+        } 
+    }
+
+     sound VoiceMalePainFromLacerate
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Pain/FromLacerate,
+        } 
+    }
+
+    sound VoiceMalePainFromGlassCut
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Pain/FromGlassCut,
+        } 
+    }
+
+    sound VoiceMalePainFromFallHigh
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Pain/FromFallHigh,
+        } 
+    }
+
+    sound VoiceMalePainFromFallLow
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Pain/FromFallLow,
+        } 
+    }
+
+    sound VoiceMalePainFromHitBlunt
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Pain/FromHitBlunt,
+        } 
+    }
+
+    sound VoiceMalePainFromRunIntoWall
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Pain/FromRunIntoWall,
+        } 
+    }
+
+/******************************************************************************/
+
+    sound VoiceMaleShoutHey
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Shout/Hey,
+        } 
+    }
+
+/******************************************************************************/
+
+    sound VoiceMaleSneezeLight
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Sneeze/Light,
+        } 
+    }
+    
+    sound VoiceMaleSneezeHeavy
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Sneeze/Heavy,
+        } 
+    }
+    
+/******************************************************************************/
+
+    sound VoiceMaleJumpLow
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Jump/Low,
+        } 
+    }
+    
+    sound VoiceMaleJumpHigh
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Jump/High,
+        } 
+    }
+    
+/******************************************************************************/
+
+    sound VoiceMaleDeathAlone
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Death/Alone,
+        } 
+    }
+    
+    sound VoiceMaleDeathEaten
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Death/Eaten,
+        } 
+    }
+    
+/******************************************************************************/
+
+    sound VoiceMaleWhisperHey
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Whisper/Hey,
+        } 
+    }
+    
+    sound VoiceMaleWhisperPsst
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Whisper/Psst,
+        } 
+    }
+    
+/******************************************************************************/
+
+    sound VoiceMaleClimbWindow
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Climb/Window,
+        } 
+    }
+
+/******************************************************************************/
+
+    sound VoiceMaleCough
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Cough,
+        } 
+    }
+
+    sound VoiceMaleMuffledCough
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/MuffledCough,
+        } 
+    }
+
+    sound VoiceMaleSleep
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Sleep,
+        } 
+    }
+
+    sound VoiceMaleVomit
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Vomit,
+        } 
+    }
+
+    sound VoiceMaleSleep
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Sleep,
+        } 
+    }
+
+    sound VoiceMaleApplyBandage
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/ApplyBandage,
+        } 
+    }
+
+/******************************************************************************/
+
+    sound VoiceMaleSighBored
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Sigh/Bored,
+        }
+    } 
+
+    sound VoiceMaleSighReliefed
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Sigh/Reliefed,
+        }
+    } 
+
+    sound VoiceMaleSighSad
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Sigh/Sad,
+        }
+    } 
+
+/******************************************************************************/
+
+    sound VoiceMaleLureTsk
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Lure/Tsk,
+        }
+    }
+
+    sound VoiceMaleLureCmon
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Lure/Cmon,
+        }
+    }
+
+/******************************************************************************/
+
+    sound VoiceMaleDeathFall
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/DeathFall,
+        }
+    }
+
+/******************************************************************************/
+
+    sound VoiceMaleDrunkHic
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Drunk/Hic,
+        }
+    }
+
+/******************************************************************************/
+
+    sound VoiceMaleExercise
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Exercise,
+        }
+    }
+
+/******************************************************************************/
+
+    sound VoiceMaleFreezeShiver
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/FreezeShiver,
+        }
+    }
+
+/******************************************************************************/
+
+    sound VoiceMaleSmoke
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Smoke,
+        }
+    }
+
+    sound VoiceMalePainMoodle
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Moodles/SeverePain,
+        }
+    }
+
+/******************************************************************************/
+
+    sound VoiceMaleCorpseDragging
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Corpse/Dragging,
+        }
+    }
+
+    sound VoiceMaleCorpseHighEffort
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Corpse/HighEffort,
+        }
+    }
+
+    sound VoiceMaleCorpseLowEffort
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Male/Corpse/LowEffort,
+        }
+    }
+
+}

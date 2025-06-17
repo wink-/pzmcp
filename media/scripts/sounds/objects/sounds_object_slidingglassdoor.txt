@@ -1,0 +1,65 @@
+module Base
+{
+	sound SlidingGlassDoorBlocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/SlidingGlassDoor/IsBlocked,
+		}
+	}
+
+	sound SlidingGlassDoorBreak
+	{
+		category = Object,
+		clip
+		{
+			event = Object/SlidingGlassDoor/Break,
+		}
+	}
+
+	sound SlidingGlassDoorClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/SlidingGlassDoor/Close,
+		}
+	}
+
+	sound SlidingGlassDoorLock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/SlidingGlassDoor/Lock,
+		}
+	}
+
+	sound SlidingGlassDoorLocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/SlidingGlassDoor/IsLocked,
+		}
+	}
+
+	sound SlidingGlassDoorOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/SlidingGlassDoor/Open,
+		}
+	}
+
+	sound SlidingGlassDoorUnlock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/SlidingGlassDoor/Unlock,
+		}
+	}
+}

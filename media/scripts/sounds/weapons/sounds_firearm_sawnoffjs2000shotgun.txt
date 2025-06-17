@@ -1,0 +1,138 @@
+module Base
+{
+	sound SawnOffJS2000ShotgunShoot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffJS2000Shotgun/Shoot,
+		}
+	}
+
+	sound SawnOffJS2000ShotgunInsertAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffJS2000Shotgun/InsertAmmo,
+		}
+	}
+
+	sound SawnOffJS2000ShotgunInsertAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffJS2000Shotgun/InsertAmmoStart,
+		}
+	}
+
+	sound SawnOffJS2000ShotgunInsertAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffJS2000Shotgun/InsertAmmoStop,
+		}
+	}
+
+	sound SawnOffJS2000ShotgunEjectAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffJS2000Shotgun/EjectAmmoStart,
+		}
+	}
+
+	sound SawnOffJS2000ShotgunEjectAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffJS2000Shotgun/EjectAmmoStop,
+		}
+	}
+
+	sound SawnOffJS2000ShotgunRack
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffJS2000Shotgun/Rack,
+		}
+	}
+
+	sound SawnOffJS2000ShotgunJam
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffJS2000Shotgun/Jam,
+		}
+	}
+    
+	sound SawnOffJS2000ShotgunBringToBear
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffJS2000Shotgun/BringToBear,
+		}
+	}
+    
+	sound SawnOffJS2000ShotgunAimRelease
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffJS2000Shotgun/AimRelease,
+		}
+	}
+
+	sound SawnOffJS2000ShotgunEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffJS2000Shotgun/Equip,
+		}
+	}
+        
+	sound SawnOffJS2000ShotgunUnEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffJS2000Shotgun/UnEquip,
+		}
+	}
+            
+	sound SawnOffJS2000ShotgunBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffJS2000Shotgun/Break,
+		}
+	}
+
+	sound SawnOffJS2000ShotgunDrop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffJS2000Shotgun/Drop,
+		}
+	}
+
+	sound SawnOffJS2000ShotgunCartridgeFall
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffJS2000Shotgun/CartridgeFall,
+		}
+	}
+}

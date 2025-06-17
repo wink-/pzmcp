@@ -1,0 +1,615 @@
+/* FOR SCISSORS, SEE ITEMS_WEAPONS_STAB */
+
+module Base
+{
+	/******* TAILORING - ITEMS *******/
+	
+	item BathTowel
+	{
+		DisplayName = Bath Towel,
+		DisplayCategory = Household,
+		Type = Drainable,
+		Weight = 0.3,
+		Icon = Bathtowel,
+		ReplaceOnDeplete = BathTowelWet,
+		Tooltip = Tooltip_Bathtowel,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		StaticModel = BathTowel_Hand,
+		WorldStaticModel = BathTowel,
+		Tags = CleanStains;SpawnFullUnlessLaundry,
+	}
+	
+	item BathTowelWet
+	{
+		DisplayName = Bath Towel (Wet),
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Bathtowel,
+		ItemWhenDry = Base.BathTowel,
+		Wet = TRUE,
+		WetCooldown = 10000,
+		WorldStaticModel = BathTowel,
+	}
+
+	item Buckle
+	{
+		DisplayName = Buckle,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = BeltBuckle_Forged,
+		WorldStaticModel = Buckle,
+        ResearchableRecipes = Forge_Buckle;SewBelt,
+	}
+	
+	item Button
+	{
+		DisplayName = Button,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Button,
+		WorldStaticModel = Button,
+		Tags = Button,
+	}
+	
+	item DishCloth
+	{
+		DisplayName = Dish Towel,
+		DisplayCategory = Household,
+		Type = Drainable,
+		Weight = 0.3,
+		Icon = Dishtowel,
+		ReplaceOnDeplete = DishClothWet,
+		Tooltip = Tooltip_Bathtowel,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		StaticModel = DishCloth_Hand,
+		WorldStaticModel = DishTowel,
+		Tags = CleanStains,
+	}
+	
+	item DishClothWet
+	{
+		DisplayName = Dish Towel (Wet),
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Dishtowel,
+		ItemWhenDry = Base.DishCloth,
+		Wet = TRUE,
+		WetCooldown = 8000,
+		WorldStaticModel = DishTowelWet,
+		Tags = SpawnFullUnlessLaundry,
+	}
+	
+    item FabricRoll_Cotton
+    {
+        DisplayCategory = Material,
+        Weight	=	10.0,
+        Type	= Drainable,
+        UseDelta = 0.05,
+        DisplayName	=   Cotton Fabric Roll,
+        Icon	=	FabricRoll_Cotton_White,
+        WorldStaticModel = FabricRoll_White,
+        OnCreate = SpecialLootSpawns.OnCreateColorFromDefinition,
+        UseWhileEquipped = FALSE,
+    }
+
+    item FabricRoll_DenimBlack
+    {
+        DisplayCategory = Material,
+        Weight	=	10.0,
+        Type	= Drainable,
+        UseDelta = 0.05,
+        DisplayName	=   Black Denim Fabric Roll,
+        Icon	=	FabricRoll_Denim_Black,
+        WorldStaticModel = FabricRoll_Black,
+        UseWhileEquipped = FALSE,
+    }
+
+    item FabricRoll_DenimBlue
+    {
+        DisplayCategory = Material,
+        Weight	=	10.0,
+        Type	= Drainable,
+        UseDelta = 0.05,
+        DisplayName	=   Blue Denim Fabric Roll,
+        Icon	=	FabricRoll_Denim_Blue,
+        WorldStaticModel = FabricRoll_Blue,
+        UseWhileEquipped = FALSE,
+    }
+
+    item FabricRoll_DenimDarkBlue
+    {
+        DisplayCategory = Material,
+        Weight	=	10.0,
+        Type	= Drainable,
+        UseDelta = 0.05,
+        DisplayName	=   Dark Blue Denim Fabric Roll,
+        Icon	=	FabricRoll_Denim_DarkBlue,
+        WorldStaticModel = FabricRoll_DarkBlue,
+        UseWhileEquipped = FALSE,
+    }
+
+    item IndustrialDye
+    {
+        DisplayCategory = Material,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=   Industrial Dye,
+        Icon	=	IndustrialDye,
+        IconFluidMask = IndustrialDye_Mask,
+        WorldStaticModel = IndustrialDye,
+
+        component FluidContainer
+        {
+            ContainerName   = Bottle,
+            capacity        = 2.0,
+            PickRandomFluid = true,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            Fluids
+            {
+                fluid           = Dye:1.0:1.0:0.0:0.0,
+                fluid           = Dye:1.0:0.0:1.0:0.0,
+                fluid           = Dye:1.0:0.0:0.0:1.0,
+                fluid           = Dye:1.0:1.0:0.0:1.0,
+                fluid           = Dye:1.0:1.0:1.0:0.0,
+                fluid           = Dye:1.0:0.0:1.0:1.0,
+            }
+        }
+    }
+
+	item Pillow
+	{
+		DisplayName = Pillow,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = Pillow,
+		StaticModel = Pillow,
+		WorldStaticModel = Pillow_Ground,
+		Tags = Pillow;IsFireFuel;IsFireTinder;NormalPillow,
+        FireFuelRatio = 0.25,
+	}
+
+	item Pillow_Crafted
+	{
+		DisplayName = Pillow,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = Pillow_Crafted,
+		StaticModel = Pillow_Crafted,
+		WorldStaticModel = Pillow_Crafted,
+		Tags = Pillow;IsFireFuel;IsFireTinder;NormalPillow,
+        FireFuelRatio = 0.25,
+	}
+
+	item Pillow_Happyface
+	{
+		DisplayName = Pillow - Happy-Face,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 1,
+		Icon = Pillow_Happyface,
+		StaticModel = Pillow_Happyface,
+		WorldStaticModel = Pillow_Happyface,
+		Tags = Pillow;IsFireFuel;IsFireTinder;IgnoreZombieDensity;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+
+	item Pillow_Heart
+	{
+		DisplayName = Pillow - Heart,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 1,
+		IconsForTexture = Pillow_HeartPink;Pillow_HeartRed,
+		StaticModelsByIndex = Pillow_HeartPink;Pillow_HeartRed,
+		WorldStaticModelsByIndex = Pillow_HeartPink;Pillow_HeartRed,
+		Tags = Pillow;IsFireFuel;IsFireTinder;IgnoreZombieDensity;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+
+	item Pillow_Star
+	{
+		DisplayName = Pillow - Star,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 1,
+		IconsForTexture = Pillow_StarBlue;Pillow_StarGreen;Pillow_StarYellow,
+		StaticModelsByIndex = Pillow_StarBlue;Pillow_StarGreen;Pillow_StarYellow,
+		WorldStaticModelsByIndex = Pillow_StarBlue;Pillow_StarGreen;Pillow_StarYellow,
+		Tags = Pillow;IsFireFuel;IsFireTinder;IgnoreZombieDensity;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+	
+	item Sheet
+	{
+		DisplayName = Sheet,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = Sheet,
+		Tooltip = Tooltip_Sheet,
+		WorldStaticModel = Sheet,
+		Tags = IsFireFuel;IsFireTinder;Sheet,
+        	FireFuelRatio = 0.25,
+	}
+	
+	item SheetRope
+	{
+		DisplayName = Sheet Rope,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = SheetRope,
+		Tooltip = Tooltip_SheetRope,
+		WorldStaticModel = SheetRope,
+		Tags = Rope;IsFireFuel;IsFireTinder,
+        FireFuelRatio = 0.25,
+	}
+
+	item SheetRopeBundle
+	{
+		DisplayName = Sheet Rope Bundle,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 8,
+		Icon = SheetropeBundle,
+		WorldStaticModel = SheetRopeBundle,
+		Tags = IsFireFuel,
+        FireFuelRatio = 0.25,
+	}
+	
+	/******* TAILORING - STRIPS *******/
+	
+	item DenimStrips
+	{
+		DisplayName = Denim Strips,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = DenimStrips,
+		AlwaysWelcomeGift = TRUE,
+		BandagePower = 2,
+		CanBandage = TRUE,
+		FabricType = Denim,
+		ReplaceOnUse = DenimStripsDirty,
+		Tooltip = Tooltip_RippedSheets,
+		WorldStaticModel = DenimStrips,
+		Tags = Binding;IsFireFuel;IsFireTinder;NoPour;SimpleWeaponBinding,
+        FireFuelRatio = 0.25,
+	}
+
+	item DenimStripsBundle
+	{
+		DisplayName = Denim Strips Bundle,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = DenimStripsBundle,
+		WorldStaticModel = DenimStripsBundle,
+	}
+	
+	item DenimStripsDirty
+	{
+		DisplayName = Denim Strips (Dirty),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = DenimStrips,
+		AlwaysWelcomeGift = TRUE,
+		BandagePower = 0.5,
+		CanBandage = TRUE,
+		WorldStaticModel = DenimStripsDirty,
+		Tags = Binding;IsFireFuel;IsFireTinder;NoPour;CanBeWashed,
+        FireFuelRatio = 0.25,
+		ItemAfterCleaning = Base.DenimStrips,
+	}
+
+	item DenimStripsDirtyBundle
+	{
+		DisplayName = Denim Strips Bundle (Dirty),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = DenimStripsBundle_Dirty,
+		WorldStaticModel = DenimStripsDirtyBundle,
+	}
+	
+	item LeatherStrips
+	{
+		DisplayName = Leather Strips,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = LeatherStrips,
+		AlwaysWelcomeGift = TRUE,
+		BandagePower = 2,
+		CanBandage = TRUE,
+		FabricType = Leather,
+		ReplaceOnUse = LeatherStripsDirty,
+		Tooltip = Tooltip_RippedSheets,
+		WorldStaticModel = LeatherStrips,
+		Tags = Binding;NoPour;SimpleWeaponBinding,
+        ResearchableRecipes = SewBelt,
+	}
+
+	item LeatherStripsBundle
+	{
+		DisplayName = Leather Strips Bundle,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = LeatherStripsBundle,
+		WorldStaticModel = LeatherStripsBundle,
+	}
+	
+	item LeatherStripsDirty
+	{
+		DisplayName = Leather Strips (Dirty),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = LeatherStrips,
+		AlwaysWelcomeGift = TRUE,
+		BandagePower = 0.5,
+		CanBandage = TRUE,
+		WorldStaticModel = LeatherStripsDirty,
+		Tags = Binding;NoPour;CanBeWashed,
+		ItemAfterCleaning = Base.LeatherStrips,
+        ResearchableRecipes = SewBelt,
+	}
+
+	item LeatherStripsDirtyBundle
+	{
+		DisplayName = Leather Strips Bundle (Dirty),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = LeatherStripsBundle_Dirty,
+		WorldStaticModel = LeatherStripsDirtyBundle,
+	}
+	
+	item RippedSheets
+	{
+		DisplayName = Rag,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Rag,
+		AlwaysWelcomeGift = TRUE,
+		BandagePower = 2,
+		CanBandage = TRUE,
+		FabricType = Cotton,
+		ReplaceOnUse = RippedSheetsDirty,
+		Tooltip = Tooltip_RippedSheets,
+		WorldStaticModel = RippedSheets,
+		Tags = Binding;FitsWallet;IsFireFuel;IsFireTinder;NoPour;SimpleWeaponBinding,
+		FireFuelRatio = 0.25,
+	}
+
+	item RippedSheetsBundle
+	{
+		DisplayName = Rag Bundle,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = ClothStripsBundle,
+		WorldStaticModel = RippedSheetsBundle,
+	}
+	
+	item RippedSheetsDirty
+	{
+		DisplayName = Rag (Dirty),
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = RagDirty,
+		AlwaysWelcomeGift = TRUE,
+		BandagePower = 0.5,
+		CanBandage = TRUE,
+		WorldStaticModel = RippedSheetsDirty,
+		Tags = Binding;FitsWallet;IsFireFuel;IsFireTinder;NoPour;CanBeWashed,
+        FireFuelRatio = 0.25,
+		ItemAfterCleaning = Base.RippedSheets,
+	}
+
+	item RippedSheetsDirtyBundle
+	{
+		DisplayName = Rag Bundle (Dirty),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = ClothStripsBundle_Dirty,
+		WorldStaticModel = RippedSheetsDirtyBundle,
+	}
+
+	item RippedSheetsSterilizedBundle
+    {
+    	DisplayName = Rag Bundle (Sterilized),
+    	DisplayCategory = Material,
+    	Type = Normal,
+    	Weight = 1,
+		Icon = ClothStripsBundle,
+		WorldStaticModel = RippedSheetsBundle,
+    }
+
+    item BurlapPiece
+    {
+		DisplayName = Burlap Piece,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Burlap,
+		WorldStaticModel = BurlapPiece,
+		Tags = SimpleWeaponBinding,
+    }
+	
+	/******* TAILORING - TOOLS *******/
+	
+	item KnittingNeedles
+	{
+		DisplayName = Knitting Needles,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = KnittingNeedles,
+		MetalValue = 13,
+		WorldStaticModel = KnittingNeedles,
+		Tags = KnittingNeedles,
+        ResearchableRecipes = CarveKnittingNeedles,
+	}
+
+	item KnittingNeedles_Bone
+	{
+		DisplayName = Knitting Needles - Bone,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = KnittingNeedles_Bone,
+		MetalValue = 13,
+		WorldStaticModel = KnittingNeedles_Bone,
+		Tags = KnittingNeedles,
+        ResearchableRecipes = CarveKnittingNeedles;MakeBoneSewingNeedle,
+	}
+
+	item KnittingNeedles_Wood
+	{
+		DisplayName = Knitting Needles - Wood,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = KnittingNeedles_Wood,
+		MetalValue = 13,
+		WorldStaticModel = KnittingNeedles_Wood,
+		Tags = KnittingNeedles;IsFireFuel;IsFireTinder,
+        ResearchableRecipes = CarveKnittingNeedles;MakeBoneSewingNeedle,
+	}
+	
+	item Needle
+	{
+		DisplayName = Needle,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = Needle,
+		MetalValue = 2,
+		SurvivalGear = TRUE,
+		WorldStaticModel = Needle,
+		Tags = SewingNeedle;FitsWallet,
+        ConditionLowerChanceOneIn = 10,
+        ResearchableRecipes = MakeBoneSewingNeedle;Forge_Needle,
+	}
+
+	item Needle_Bone
+	{
+		DisplayName = Bone Needle,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = SewingNeedle_Bone,
+		SurvivalGear = TRUE,
+		WorldStaticModel = Needle_Bone,
+		Tags = SewingNeedle;FitsWallet,
+        ConditionLowerChanceOneIn = 5,
+        ResearchableRecipes = Forge_Needle;CarveKnittingNeedles,
+	}
+
+	item Needle_Brass
+	{
+		DisplayName = Brass Needle,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = SewingNeedle_Brass,
+		MetalValue = 2,
+		WorldStaticModel = Needle_Brass,
+		Tags = SewingNeedle;FitsWallet,
+        ConditionLowerChanceOneIn = 8,
+        ResearchableRecipes = MakeBoneSewingNeedle;Forge_Needle,
+	}
+
+	item Needle_Forged
+	{
+		DisplayName = Needle,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = SewingNeedle_Iron,
+		MetalValue = 2,
+		WorldStaticModel = Needle_Forged,
+		Tags = SewingNeedle;FitsWallet,
+        ConditionLowerChanceOneIn = 10,
+        ResearchableRecipes = MakeBoneSewingNeedle,
+	}
+	
+	item Thread
+	{
+		DisplayName = Thread,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 0.1,
+		Icon = Thread,
+		IconColorMask = Thread_Mask,
+		ConsolidateOption = ContextMenu_Merge,
+		SurvivalGear = TRUE,
+		UseDelta = 0.05,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = Thread,
+		OnCreate = SpecialLootSpawns.OnCreateRandomColor,
+		Tags = Thread,
+	}
+
+	item Thread_Aramid
+	{
+		DisplayName = Aramid Thread,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 0.2,
+		Icon = AramidThread,
+		ConsolidateOption = ContextMenu_Merge,
+		SurvivalGear = TRUE,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = Thread_Aramid,
+		Tags = Thread;HeavyThread,
+	}
+
+	item Thread_Sinew
+	{
+		DisplayName = Sinew Thread,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 0.2,
+		Icon = SinewThread,
+		ConsolidateOption = ContextMenu_Merge,
+		SurvivalGear = TRUE,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = Thread_Sinew,
+		Tags = Thread;HeavyThread,
+	}
+	
+	item Yarn
+	{
+		DisplayName = Yarn,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Yarn_Generic,
+		WorldStaticModel = Yarn,
+		OnCreate = SpecialLootSpawns.OnCreateColorFromDefinition,
+		Tags = CanBeDyed;IsFireFuel;IsFireTinder,
+        FireFuelRatio = 0.25,
+	}
+}
+
+/* FOR SCISSORS, SEE ITEMS_WEAPONS_STAB */

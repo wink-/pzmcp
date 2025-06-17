@@ -1,0 +1,92 @@
+module Base
+{
+	item Mov_Birdbath
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Bird Bath,
+		WorldObjectSprite = vegetation_ornamental_01_50,
+	}
+	
+	item Mov_Doghouse
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Dog House,
+		WorldObjectSprite = location_farm_accesories_01_9,
+	}
+	
+	item Mov_GardenGnome
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = David the Gnome,
+		WorldObjectSprite = vegetation_ornamental_01_48,
+	}
+	
+	item Mov_GraveArched
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Arched Gravestone,
+		WorldObjectSprite = location_community_cemetary_01_2,
+	}
+	
+	item Mov_GraveRound
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Round Gravestone,
+		WorldObjectSprite = location_community_cemetary_01_0,
+	}
+	
+	item Mov_GraveSquare
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Square Gravestone,
+		WorldObjectSprite = location_community_cemetary_01_4,
+	}
+	
+	item Mov_GraveWorn
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Battered Gravestone,
+		WorldObjectSprite = location_community_cemetary_01_8,
+	}
+	
+	item Mov_PinkFlamingo
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Imitation Flamingo,
+		WorldObjectSprite = vegetation_ornamental_01_25,
+	}
+	
+	item Mov_PinkFlamingo2
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Pecking Imitation Flamingo,
+		WorldObjectSprite = vegetation_ornamental_01_41,
+	}
+}

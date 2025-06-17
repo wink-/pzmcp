@@ -1,0 +1,221 @@
+/* FOR FISHING RODS, SEE ITEMS_WEAPONS_2HANDED */
+
+module Base
+{
+	/******* FISHING - ITEMS *******/
+	
+	item BrokenFishingNet
+	{
+		DisplayName = Fishing Net Trap (Broken),
+		DisplayCategory = Fishing,
+		Type = Normal,
+		Weight = 1,
+		Icon = FishTrapBroken,
+		WorldStaticModel = BrokenFishingNet,
+	}
+	
+	item FishingLine
+	{
+		DisplayName = Fishing Line,
+		DisplayCategory = Fishing,
+		Type = Drainable,
+		Weight = 0.3,
+		Icon = FishingLine,
+		ConsolidateOption = ContextMenu_Merge,
+		SurvivalGear = TRUE,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = FishingLine,
+		Tags = FishingLine,
+	}
+	
+	item FishingNet
+	{
+		DisplayName = Fishing Net Trap,
+		DisplayCategory = Fishing,
+		Type = Normal,
+		Weight = 1,
+		Icon = FishTrap,
+		SurvivalGear = TRUE,
+		WorldStaticModel = FishingNet,
+		Tags = FishingNet,
+	}
+	
+	item JigLure
+    {
+        DisplayName = Jig Lure,
+		DisplayCategory = Fishing,
+        Type = Normal,
+        Weight = 0.1,
+		Icon = jiglure1,
+        SurvivalGear = TRUE,
+        FishingLure = true,
+        WorldStaticModel = JigLure,
+		Tooltip = Tooltip_FishingTackle,
+    }
+
+    item MinnowLure
+    {
+        DisplayName = Minnow Lure,
+		DisplayCategory = Fishing,
+        Type = Normal,
+        Weight = 0.1,
+        Icon = FishingTackle,
+        SurvivalGear = TRUE,
+        FishingLure = true,
+        WorldStaticModel = FishingTackle,
+		Tooltip = Tooltip_FishingTackle,
+    }
+
+	item Bobber
+	{
+		Weight = 0.1,
+		Type = Normal,
+		DisplayName = Bobber,
+        DisplayCategory = Fishing,
+		Icon = bobber,
+		Tooltip = Bobber,
+		StaticModel = BobberModel,
+		WorldStaticModel = BobberModel,
+	}
+
+	item FISH_DEV_ITEM
+    {
+   		DisplayName = FISH DEV ITEM (NOT SPAWN),
+   		DisplayCategory = Fishing,
+   		Type = Weapon,
+   		Weight = 0.01,
+   		Icon = FishBass,
+   		AttachmentType = Shovel,
+   		BaseSpeed = 1.3,
+   		BreakSound = FishingRodBreak,
+   		Categories = Improvised;Blunt,
+   		ConditionLowerChanceOneIn = 1,
+   		ConditionMax = 3,
+   		CritDmgMultiplier = 2,
+   		CriticalChance = 5,
+   		DoorDamage = 1,
+   		DoorHitSound = FishingRodHit,
+   		HitFloorSound = FishingRodHit,
+   		HitSound = FishingRodHit,
+   		IdleAnim = Idle_Weapon2,
+   		KnockBackOnNoDeath = FALSE,
+   		KnockdownMod = 0,
+   		MaxDamage = 0.3,
+   		MaxHitCount = 2,
+   		MaxRange = 1.55,
+   		MinAngle = 0.8,
+   		MinDamage = 0.2,
+   		MinRange = 0.61,
+   		MinimumSwingTime = 2,
+   		PushBackMod = 0.3,
+   		RunAnim = Run_Weapon2,
+   		SplatBloodOnNoDeath = FALSE,
+   		SplatNumber = 1,
+   		SubCategory = Swinging,
+   		SurvivalGear = TRUE,
+   		SwingAmountBeforeImpact = 0.02,
+   		SwingAnim = Bat,
+   		SwingSound = FishingRodSwing,
+   		SwingTime = 2,
+   		TreeDamage = 0,
+   		TwoHandWeapon = TRUE,
+   		WeaponSprite = Bass_Hand_Big
+   	}
+
+	item FishingTrash
+    {
+        DisplayCategory = Fishing,
+        Type = Normal,
+        DisplayName = Fishing Trash,
+        Icon = Seaweed,
+        Weight = 0.5,
+        WorldStaticModel = FishingTrash,
+        StaticModel = FishingTrash
+    }
+
+    item Chum
+    {
+		DisplayName = Chum,
+		DisplayCategory = Fishing,
+		Type = Food,
+		Weight = 0.5,
+		Icon = chumball,
+		UnhappyChange = 20,
+        DangerousUncooked = TRUE,
+		IsCookable = false,
+        HungerChange = 0,
+        OnCreate = Fishing.onCreateChum,
+		StaticModel = Chum,
+		WorldStaticModel = Chum,
+		Tooltip = Tooltip_Chum,
+    }
+
+   item PremiumFishingLine
+    {
+        DisplayCategory = Fishing,
+        Type	            =	        Drainable,
+        UseDelta	        =	        0.3,
+        UseWhileEquipped	=           FALSE,
+        DisplayName			=		    Premium Fishing Line,
+        Icon				=			FishingLinePremium,
+        Weight				=			0.1,
+        SurvivalGear = TRUE,
+        Tags = FishingLine,
+        ConsolidateOption = ContextMenu_Merge,
+        WorldStaticModel = FishingLinePremium,
+    }
+
+    item FishingHook
+    {
+        DisplayCategory = Fishing,
+        Type				=			Normal,
+        DisplayName			=		    Fishing Hook,
+        Icon				=			FishHook,
+        Weight				=			0.05,
+        MetalValue = 1,
+        Tags = FishingHook;FitsWallet,
+        WorldStaticModel = FishingHook,
+        ResearchableRecipes = MakeBoneFishingHook;Forge_Fishing_Hooks,
+    }
+
+    item FishingHookBox
+    {
+        DisplayCategory = Fishing,
+        Weight	=	0.3,
+        Type	=	Normal,
+        DisplayName	= Box of Fishing Hooks,
+        Icon	=	FishHookBox,
+        MetalValue = 20,
+        SurvivalGear = TRUE,
+        WorldStaticModel = BoxOfFishingHooks,
+    }
+
+    item FishingHook_Bone
+    {
+        DisplayCategory = Fishing,
+        Type				=			Normal,
+        DisplayName			=		    Bone Fishing Hook,
+        Icon				=			FishingHook_Bone,
+        Weight				=			0.05,
+        MetalValue = 1,
+        Tags = FishingHook;FitsWallet,
+        WorldStaticModel = FishingHook_Bone,
+        ResearchableRecipes = Forge_Fishing_Hooks;MakeBoneSewingNeedle,
+    }
+
+    item FishingHook_Forged
+    {
+        DisplayCategory = Fishing,
+        Type				=			Normal,
+        DisplayName			=		    Forged Fishing Hook,
+        Icon				=			FishingHook_Forged,
+        Weight				=			0.05,
+        MetalValue = 1,
+        Tags = FishingHook;FitsWallet,
+        WorldStaticModel = FishingHook_Forged,
+        ResearchableRecipes = MakeBoneFishingHook,
+    }
+}
+
+/* FOR FISHING RODS, SEE ITEMS_WEAPONS_2HANDED */

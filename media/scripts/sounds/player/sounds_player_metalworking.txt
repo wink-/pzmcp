@@ -1,0 +1,11 @@
+module Base
+{
+	sound BlowTorch
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/MetalWorking/Welding,
+		}
+	}
+}

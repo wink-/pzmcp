@@ -1,0 +1,64 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_BrickDoorFrameLvl2
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Brick Door Frame (Good),
+			Icon		= Build_DoorframeBrick,
+		}
+	}
+
+    entity BrickDoorFrameLvl2
+    {
+        component UiConfig
+                {
+                    xuiSkin         = default,
+                    entityStyle     = ES_BrickDoorFrameLvl2,
+                    uiEnabled       = false,
+                }
+
+        component SpriteConfig
+        {
+			skillBaseHealth = 300,
+			isThumpable     = false,
+			
+			OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+			
+            face W
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_14,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_exterior_house_01_15,
+                }
+            }
+			
+			corner = walls_exterior_house_01_7,
+        }
+		
+		component CraftRecipe
+        {
+            OnAddToMenu   = brickWallLvl2Test,
+            timedAction   = BuildWallHammer,
+            time          = 200,
+            category      = Masonry,
+            SkillRequired = Masonry:5,
+            xpAward       = Masonry:50,
+            ToolTip       = Tooltip_craft_doorFrameDesc,
+            inputs
+            {
+                item 1 tags[MasonsTrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[Concrete] flags[DontRecordInput],
+                item 4 [Base.ClayBrick],
+            }
+        }
+    }
+}

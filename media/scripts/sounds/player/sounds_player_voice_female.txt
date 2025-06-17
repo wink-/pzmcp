@@ -1,0 +1,441 @@
+module Base
+{
+
+    sound VoiceFemale
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female,
+        } 
+    }
+
+    sound VoiceFemaleMeleeStab
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Melee/Stab,
+        } 
+    }
+
+    sound VoiceFemaleMeleeStabOnGround
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Melee/StabOnGround,
+        } 
+    }
+
+    sound VoiceFemaleMeleeAttackHeavy
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Melee/Attack/Heavy,
+        } 
+    }
+
+    sound VoiceFemaleMeleeAttack
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Melee/Attack/Default,
+        } 
+    }
+
+    sound VoiceFemaleMeleeShove
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Melee/Attack/Default,
+        } 
+    }
+
+    sound VoiceFemaleMeleeStomp
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Melee/Attack/Default,
+        } 
+    }
+
+/******************************************************************************/
+
+    sound VoiceFemalePainFromBite
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Pain/FromBite,
+        } 
+    }
+
+    sound VoiceFemalePainFromGlassCut
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Pain/FromGlassCut,
+        } 
+    }
+
+    sound VoiceFemalePainFromFallLow
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Pain/FromFallLow,
+        } 
+    }
+
+    sound VoiceFemalePainFromFallHigh
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Pain/FromFallHigh,
+        } 
+    }
+
+    sound VoiceFemalePainFromHitBlunt
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Pain/FromHitBlunt,
+        } 
+    }
+
+    sound VoiceFemalePainFromRunIntoWall
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Pain/FromRunIntoWall,
+        } 
+    }
+
+/******************************************************************************/
+
+    sound VoiceFemaleShoutHey
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Shout/Hey,
+        } 
+    }
+
+/******************************************************************************/
+
+    sound VoiceFemaleSneezeLight
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Sneeze/Light,
+        } 
+    }
+    
+    sound VoiceFemaleSneezeHeavy
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Sneeze/Heavy,
+        } 
+    }
+    
+/******************************************************************************/
+
+    sound VoiceFemaleJumpLow
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Jump/Low,
+        } 
+    }
+    
+    sound VoiceFemaleJumpHigh
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Jump/High,
+        } 
+    }
+    
+/******************************************************************************/
+
+    sound VoiceFemaleDeathAlone
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Death/Alone,
+        } 
+    }
+    
+    sound VoiceFemaleDeathEaten
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Death/Eaten,
+        } 
+    }
+    
+/******************************************************************************/
+
+    sound VoiceFemaleWhisperHey
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Whisper/Hey,
+        } 
+    }
+    
+    sound VoiceFemaleWhisperPsst
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Whisper/Psst,
+        } 
+    }
+    
+/******************************************************************************/
+
+    sound VoiceFemaleClimbWindow
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Climb/Window,
+        } 
+    }
+
+/******************************************************************************/
+
+    sound VoiceFemaleCough
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Cough,
+        } 
+    }
+
+    sound VoiceFemaleMuffledCough
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/MuffledCough,
+        } 
+    }
+
+    sound VoiceFemaleSleep
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Sleep,
+        } 
+    }
+
+    sound VoiceFemaleVomit
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Vomit,
+        } 
+    }
+
+    sound VoiceFemaleSleep
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Sleep,
+        } 
+    }
+
+    sound VoiceFemaleApplyBandage
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/ApplyBandage,
+        } 
+    }
+
+/******************************************************************************/
+
+    sound VoiceFemaleSighBored
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Sigh/Bored,
+        }
+    } 
+
+    sound VoiceFemaleSighReliefed
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Sigh/Reliefed,
+        }
+    } 
+
+    sound VoiceFemaleSighSad
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Sigh/Sad,
+        }
+    } 
+
+     sound VoiceFemalePainFromScratch
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Pain/FromScratch,
+        } 
+    }
+
+     sound VoiceFemalePainFromLacerate
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Pain/FromLacerate,
+        } 
+    }
+
+/******************************************************************************/
+
+    sound VoiceFemaleLureTsk
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Lure/Tsk,
+        }
+    }
+
+    sound VoiceFemaleLureCmon
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Lure/Cmon,
+        }
+    }
+
+/******************************************************************************/
+
+    sound VoiceFemaleDeathFall
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/DeathFall,
+        }
+    }
+
+/******************************************************************************/
+
+    sound VoiceFemaleDrunkHic
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Drunk/Hic,
+        }
+    }
+
+/******************************************************************************/
+
+    sound VoiceFemaleExercise
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Exercise,
+        }
+    }
+
+/******************************************************************************/
+
+    sound VoiceFemaleFreezeShiver
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/FreezeShiver,
+        }
+    }
+
+/******************************************************************************/
+
+    sound VoiceFemaleSmoke
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Smoke,
+        }
+    }
+
+    sound VoiceFemalePainMoodle
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Moodles/SeverePain,
+        }
+    }
+
+/******************************************************************************/
+
+    sound VoiceFemaleCorpseDragging
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Corpse/Dragging,
+        }
+    }
+
+    sound VoiceFemaleCorpseHighEffort
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Corpse/HighEffort,
+        }
+    }
+
+    sound VoiceFemaleCorpseLowEffort
+    {
+        category = Player,
+        clip
+        {
+            event = Character/Voice/Female/Corpse/LowEffort,
+        }
+    }
+
+}

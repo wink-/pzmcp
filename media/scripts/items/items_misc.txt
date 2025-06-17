@@ -1,0 +1,895 @@
+module Base
+{
+	/******* MISC. ITEMS *******/
+	
+	item AlarmClock2
+	{
+		DisplayName = Alarm Clock,
+		DisplayCategory = Household,
+		Type = AlarmClock,
+		Weight = 1,
+		Icon = AlarmClock,
+		AlarmSound = AlarmClockRingingLoop,
+		MetalValue = 25,
+		SoundRadius = 15,
+		WorldStaticModel = AlarmClock,
+	}
+	
+	item Aluminum
+	{
+		DisplayName = Aluminum Foil,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Aluminum,
+		MetalValue = 5,
+		WorldStaticModel = Aluminum,
+		/* this shouldn't be smeltable to produce iron */
+		Tags = HasMetal;Aluminum,
+        ResearchableRecipes = MakeImprovisedLighter,
+	}
+
+	item AluminumFragments
+	{
+		DisplayName = Aluminum Fragments,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = MetalBits,
+		MetalValue = 5,
+		WorldStaticModel = MetalPieces,
+		Tags = HasMetal;Aluminum,
+	}
+
+	item Badge
+	{
+		DisplayName = Badge,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.2,
+		IconsForTexture = Police_Lanyard;Police_Badge,
+		StaticModelsByIndex = Badge1;Badge2,
+		WorldStaticModelsByIndex = Badge1;Badge2,
+		Tags = HasMetal;ApplyOwnerName;FitsWallet,
+		OnCreate = SpecialLootSpawns.OnCreateIDcard,
+	}
+	
+	item Bell
+	{
+		DisplayName = Bell,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Bell,
+		MetalValue = 50,
+		Tags = SmeltableIronSmall,
+		WorldStaticModel = Bell,
+	}
+	
+	item Cork
+	{
+		DisplayName = Cork,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Cork,
+		WorldStaticModel = Cork,
+	}
+	
+	item CorpseFemale
+	{
+		DisplayName = Corpse,
+		DisplayCategory = Corpse,
+		Type = Normal,
+		Weight = 20.0,
+		Icon = DeadPerson_FemaleZombie,
+		RequiresEquippedBothHands = TRUE,
+		Tags = HeavyItem,
+		DropSound = CorpseDrop,
+		PlaceOneSound = CorpseDrop,
+		UnequipSound = CorpseDrop,
+	}
+	
+	item CorpseMale
+	{
+		DisplayName = Corpse,
+		DisplayCategory = Corpse,
+		Type = Normal,
+		Weight = 20.0,
+		Icon = DeadPerson_MaleZombie,
+		RequiresEquippedBothHands = TRUE,
+		Tags = HeavyItem,
+		DropSound = CorpseDrop,
+		PlaceOneSound = CorpseDrop,
+		UnequipSound = CorpseDrop,
+	}
+	
+	item CreditCard
+	{
+		DisplayName = Credit Card,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = CreditCard,
+		WorldStaticModel = CreditCard,
+		Tags = FitsWallet;ApplyOwnerName,
+		OnCreate = SpecialLootSpawns.OnCreateIDcard,
+	}
+
+	item CreditCard_Stolen
+	{
+		DisplayName = Credit Card,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = CreditCard,
+		WorldStaticModel = CreditCard,
+		Tags = FitsWallet,
+		OnCreate = SpecialLootSpawns.OnCreateIDcard,
+	}
+
+	item Doily
+	{
+		DisplayName = Doily,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Doily,
+		WorldStaticModel = Doily,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Extinguisher
+	{
+		DisplayName = Extinguisher,
+		DisplayCategory = Household,
+		Type = Drainable,
+		Weight = 2,
+		Icon = Extinguisher,
+		MetalValue = 25,
+		Tooltip = Tooltip_Extinguisher,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		WorldStaticModel = Extinguisher,
+		Tags = SmeltableIronSmall,
+	}
+	
+	item Frame
+	{
+		DisplayName = Frame,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 1,
+		Icon = Frame,
+		WorldStaticModel = Frame,
+	}
+
+	item GasmaskFilter
+	{
+		DisplayName = Gas Mask Filter,
+		DisplayCategory = Accessory,
+		Type = Drainable,
+		Weight = 0.3,
+		Icon = GasmaskFilter,
+		UseDelta = 0.01,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		WorldStaticModel = GasmaskFilter,
+		Tags = GasmaskFilter;HasMetal,
+		KeepOnDeplete = TRUE,
+		ResearchableRecipes = MakeCraftedGasMaskFilter;RechargeFilters;MakeImprovisedGasMask,
+	}
+
+	item GasmaskFilterCrafted
+	{
+		DisplayName = Gas Mask Filter - Crafted,
+		DisplayCategory = Accessory,
+		Type = Drainable,
+		Weight = 0.3,
+		Icon = GasmaskFilterHomemade,
+		UseDelta = 0.02,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		WorldStaticModel = GasmaskFilterHomemade,
+		Tags = GasmaskFilter;HasMetal,
+		KeepOnDeplete = TRUE,
+		ResearchableRecipes = RechargeFilters;MakeImprovisedGasMask,
+	}
+	
+	item GunPowder
+	{
+		DisplayName = Gunpowder,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 0.5,
+		Icon = GunpowderJar,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		WeightEmpty = 0.01,
+		WorldStaticModel = GunpowderJar,
+	}
+
+	item LanternGlass
+	{
+		DisplayName = Lantern Glass,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = Glass_HurricanLantern,
+		WorldStaticModel = LanternGlass,
+	}
+	
+	item Money
+	{
+		DisplayName = Money,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = Money,
+		WorldStaticModel = Money,
+		Tags = IsFireFuel;IsFireTinder;FitsWallet,
+		FireFuelRatio = 0.25,
+	}
+
+	item MoneyBundle
+	{
+		DisplayName = Money Bundle,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Money_Stack,
+		WorldStaticModel = MoneyBundle,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder,
+		FireFuelRatio = 0.25,
+	}
+
+	item Oxygen_Tank
+	{
+		DisplayName = Oxygen Tank,
+		DisplayCategory = Accessory,
+		Type = Drainable,
+		Weight = 5.0,
+		WeightEmpty = 5.0,
+		Icon = OxygenTank,
+		UseDelta = 0.0625,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		KeepOnDeplete = TRUE,
+		WorldStaticModel = Oxygen_Tank_Ground,
+		Tags = HasMetal;OxygenTank;SmeltableIronSmall,
+	}
+
+    item PotScrubberFrog
+	{
+        DisplayCategory = Frog,
+        Weight	=	0.5,
+        Type	=	Normal,
+        DisplayName	=   Ceramic Pot Scrubber Frog,
+		Icon = ScrubberFrog,
+        WorldStaticModel = PotScrubberFrog,
+        Tags = IsMemento,
+    }
+
+	item RatPoison
+	{
+		DisplayName = Rat Poison,
+		DisplayCategory = Household,
+		Type = Drainable,
+        UseDelta	=	0.1,
+		Weight = 1,
+		Icon = RatPoison,
+		StaticModel = RatPoisonBox,
+		WorldStaticModel = RatPoisonBox,
+		Tags = Consumable;ShowPoison,
+		OnEat = OnEat_RatPoison,
+		CustomContextMenu = Eat,
+		EatType = eatBox,
+	}
+
+	item RespiratorFilters
+	{
+		DisplayName = Respirator Filters,
+		DisplayCategory = Accessory,
+		Type = Drainable,
+		Weight = 0.3,
+		Icon = AirFilters,
+		UseDelta = 0.02,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		WorldStaticModel = RespiratorFilters,
+		Tags = RespiratorFilter,
+		KeepOnDeplete = TRUE,
+	}
+
+	item RespiratorFiltersRecharged
+	{
+		DisplayName = Respirator Filters - Recharged,
+		DisplayCategory = Accessory,
+		Type = Drainable,
+		Weight = 0.3,
+		Icon = AirFilters_Tape,
+		UseDelta = 0.04,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		WorldStaticModel = RespiratorFilters_Taped,
+		Tags = RespiratorFilter,
+		KeepOnDeplete = TRUE,
+	}
+	
+	item Sparklers
+	{
+		DisplayName = Box of Sparklers,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Sparklers,
+		WorldStaticModel = BoxOfSparklers,
+	}
+
+	item Specimen_Beetles
+	{
+		DisplayName = Specimen Case - Beetles,
+		DisplayCategory = Bug,
+		Type = Normal,
+		Weight = 1,
+		Icon = Collection_Insects2,
+		WorldStaticModel = Specimen_Beetles,
+		Tags = IgnoreZombieDensity;IsMemento;HasMetal,
+	}
+
+	item Specimen_Brain
+	{
+		DisplayName = Specimen Jar - Brain,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 1,
+		Icon = SpecimanJar_Full4,
+		WorldStaticModel = Specimen_Brain,
+		Tags = IgnoreZombieDensity;IsMemento;HasMetal,
+	}
+
+	item Specimen_Butterflies
+	{
+		DisplayName = Specimen Case - Butterflies,
+		DisplayCategory = Bug,
+		Type = Normal,
+		Weight = 1,
+		Icon = Collection_Insects1,
+		WorldStaticModel = Specimen_Butterflies,
+		Tags = IgnoreZombieDensity;IsMemento;HasMetal,
+	}
+
+	item Specimen_Centipedes
+	{
+		DisplayName = Specimen Jar - Centipedes,
+		DisplayCategory = Bug,
+		Type = Normal,
+		Weight = 1,
+		Icon = SpecimanJar_Full2,
+		WorldStaticModel = Specimen_Centipedes,
+		Tags = IgnoreZombieDensity;IsMemento;HasMetal,
+	}
+
+	item Specimen_FetalCalf
+	{
+		DisplayName = Specimen Jar - Fetal Calf,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 1,
+		Icon = SpecimanJar_Full7,
+		WorldStaticModel = Specimen_FetalCalf,
+		Tags = IgnoreZombieDensity;IsMemento;HasMetal,
+	}
+
+	item Specimen_FetalLamb
+	{
+		DisplayName = Specimen Jar - Fetal Lamb,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 1,
+		Icon = SpecimanJar_Full6,
+		WorldStaticModel = Specimen_FetalLamb,
+		Tags = IgnoreZombieDensity;IsMemento;HasMetal,
+	}
+
+	item Specimen_FetalPiglet
+	{
+		DisplayName = Specimen Jar - Fetal Piglet,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 1,
+		Icon = SpecimanJar_Full5,
+		WorldStaticModel = Specimen_FetalPiglet,
+		Tags = IgnoreZombieDensity;IsMemento;HasMetal,
+	}
+
+	item Specimen_Insects
+	{
+		DisplayName = Specimen Case - Insects,
+		DisplayCategory = Bug,
+		Type = Normal,
+		Weight = 1,
+		Icon = Collection_Insects3,
+		WorldStaticModel = Specimen_Insects,
+		Tags = IgnoreZombieDensity;IsMemento;HasMetal,
+	}
+
+	item Specimen_Minerals
+	{
+		DisplayName = Specimen Case - Minerals,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 1,
+		Icon = Collection_Minerals,
+		WorldStaticModel = Specimen_Minerals,
+		Tags = IgnoreZombieDensity;IsMemento;HasMetal,
+	}
+
+	item Specimen_MonkeyHead
+	{
+		DisplayName = Specimen Jar - Monkey Head,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 1,
+		Icon = SpecimanJar_Full3,
+		WorldStaticModel = Specimen_MonkeyHead,
+		Tags = IgnoreZombieDensity;IsMemento;HasMetal,
+	}
+
+	item Specimen_Octopus
+	{
+		DisplayName = Specimen Jar - Octopus,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 1,
+		Icon = SpecimanJar_Full1,
+		WorldStaticModel = Specimen_Octopus,
+		Tags = IgnoreZombieDensity;IsMemento;HasMetal,
+	}
+
+	item Specimen_Tapeworm
+	{
+		DisplayName = Specimen Jar - Tapeworm,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 1,
+		Icon = SpecimanJar_Full8,
+		WorldStaticModel = Specimen_Tapeworm,
+		Tags = IgnoreZombieDensity;IsMemento;HasMetal,
+	}
+
+	item Stairs
+	{
+	    DisplayCategory = Hidden,
+		Weight	=	35,
+		Type	=	Normal,
+		DisplayName	=	Stairs Piece,
+		Icon	=	Stairs,
+	}
+
+	item SuspiciousPackage
+	{
+		DisplayName = Suspicious Package,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 1,
+		Icon = MysteriousBrick,
+		WorldStaticModel = SuspiciousPackage,
+		Tags = IgnoreZombieDensity;IsMemento,
+	}
+	
+	item ToiletPaper
+	{
+		DisplayName = Toilet Paper,
+		DisplayCategory = Junk,
+		Type = Drainable,
+		Weight = 0.5,
+		Icon = ToiletPaper,
+		ConsolidateOption = ContextMenu_Merge,
+		Tooltip = Tooltip_tissue_tooltip,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = ToiletPaper,
+		Tags = MuffleSneeze;IsFireFuel;IsFireTinder,
+		FireFuelRatio = 0.25,
+	}
+	
+	item Toothbrush
+	{
+		DisplayName = Toothbrush,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = Toothbrush,
+		WorldStaticModel = Toothbrush,
+        ResearchableRecipes = MakeToothbrushShiv,
+	}
+
+	item Toothpaste
+	{
+		DisplayName = Toothpaste,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Toothpaste,
+		WorldStaticModel = Toothpaste,
+	}
+	
+	item UmbrellaBlack
+	{
+		DisplayName = Umbrella,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 1.5,
+		Icon = UmbrellaBlack,
+		EquippedNoSprint = TRUE,
+		MetalValue = 9,
+		ProtectFromRainWhenEquipped = TRUE,
+		primaryAnimMask = HoldingUmbrellaRight,
+		secondaryAnimMask = HoldingUmbrellaLeft,
+		StaticModel = UmbrellaBlack,
+		WorldStaticModel = UmbrellaBlack_Ground,
+	}
+	
+	item UmbrellaBlue
+	{
+		DisplayName = Umbrella,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 1.5,
+		Icon = UmbrellaBlue,
+		EquippedNoSprint = TRUE,
+		MetalValue = 9,
+		ProtectFromRainWhenEquipped = TRUE,
+		primaryAnimMask = HoldingUmbrellaRight,
+		secondaryAnimMask = HoldingUmbrellaLeft,
+		StaticModel = UmbrellaBlue,
+		WorldStaticModel = UmbrellaBlue_Ground,
+	}
+	
+	item UmbrellaRed
+	{
+		DisplayName = Umbrella,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 1.5,
+		Icon = UmbrellaRed,
+		EquippedNoSprint = TRUE,
+		MetalValue = 9,
+		ProtectFromRainWhenEquipped = TRUE,
+		primaryAnimMask = HoldingUmbrellaRight,
+		secondaryAnimMask = HoldingUmbrellaLeft,
+		StaticModel = UmbrellaRed,
+		WorldStaticModel = UmbrellaRed_Ground,
+	}
+
+	item UmbrellaTINTED
+	{
+		DisplayName = Umbrella,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 1.5,
+		Icon = UmbrellaWhite,
+		IconColorMask = Umbrella_Mask,
+		EquippedNoSprint = TRUE,
+		MetalValue = 9,
+		ProtectFromRainWhenEquipped = TRUE,
+		primaryAnimMask = HoldingUmbrellaRight,
+		secondaryAnimMask = HoldingUmbrellaLeft,
+		StaticModel = UmbrellaWhite,
+		WorldStaticModel = UmbrellaWhite_Ground,
+		OnCreate = SpecialLootSpawns.OnCreateRandomColor,
+	}
+	
+	item UmbrellaWhite
+	{
+		DisplayName = Umbrella,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 1.5,
+		Icon = UmbrellaWhite,
+		EquippedNoSprint = TRUE,
+		MetalValue = 9,
+		ProtectFromRainWhenEquipped = TRUE,
+		primaryAnimMask = HoldingUmbrellaRight,
+		secondaryAnimMask = HoldingUmbrellaLeft,
+		StaticModel = UmbrellaWhite,
+		WorldStaticModel = UmbrellaWhite_Ground,
+	}
+
+    item WaterDrop
+    {
+        DisplayCategory = Hidden,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	= Water Drop,
+        Icon	=	WaterDrop_Grey,
+    }
+
+    item Hominid_Skull
+    {
+        DisplayCategory = Memento,
+        Weight = 0.8,
+        Type = Normal,
+        DisplayName = Hominid Skull Fossil,
+        Icon = Skull_Hominid_Whole,
+        WorldStaticModel = Hominid_Skull,
+        Tags = IgnoreZombieDensity,
+    }
+
+    item Hominid_Skull_Partial
+    {
+        DisplayCategory = Memento,
+        Weight = 0.8,
+        Type = Normal,
+        DisplayName = Partial Hominid Skull Fossil,
+        Icon = Skull_Hominid_Damaged,
+        WorldStaticModel = Hominid_Skull_Partial,
+        Tags = IgnoreZombieDensity,
+    }
+
+    item Hominid_Skull_Fragment
+    {
+        DisplayCategory = Memento,
+        Weight = 0.2,
+        Type = Normal,
+        DisplayName = Hominid Skull Fossil Fragment,
+        Icon = Skull_Hominid_Fragment,
+        WorldStaticModel = Hominid_Skull_Fragment,
+        Tags = IgnoreZombieDensity,
+    }
+
+    item BoneBead_Large
+	{
+        DisplayCategory = Material,
+	    Weight = 0.3,
+	    Type = Normal,
+	    DisplayName = Large Bone Bead,
+	    Icon	=	Bone_Segment,
+	    StaticModel = BoneBead_Large,
+	    WorldStaticModel = BoneBead_Large,
+		Tags = Button,
+	}
+
+	item SnowGlobe
+	{
+		DisplayName = SnowGlobe,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = SnowGlobe,
+		WorldStaticModel = SnowGlobe,
+	    Tags = IsMemento,
+		OnCreate = SpecialLootSpawns.OnCreateSnowGlobe,
+	}
+
+	item TarotCardDeck
+	{
+		DisplayName = Tarot Cards,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = TarotCards,
+		WorldStaticModel = TarotCardDeck,
+		Tags = IsFireFuel;IsFireTinder;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+
+	item OujaBoard
+	{
+		DisplayName = Ouja Board,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 1,
+		Icon = OuijaBoard,
+		WorldStaticModel = OujaBoard,
+		Tags = IsFireFuel;IsFireTinder;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+
+	item Crystal
+	{
+		DisplayName = Crystal,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Crystal,
+		IconsForTexture = Crystal;Amethyst_Raw,
+		WorldStaticModelsByIndex =  Crystal;Amethyst_Crystal,
+		Tags = IsMemento,
+	}
+
+	item Crystal_Large
+	{
+		DisplayName = Large Crystal,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 5,
+		Icon = Crystal,
+		IconsForTexture = Amethyst_Raw,
+		WorldStaticModelsByIndex =  Amethyst_Crystal_Large,
+		Tags = IsMemento,
+	}
+
+	item Calipers
+	{
+		DisplayName = Calipers,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = Calipers,
+		WorldStaticModel = Calipers,
+		Tags = HasMetal,
+	}
+
+    /* the mispelling is deliberate, and an inside joke */
+	item Clitter
+	{
+		DisplayName = Glitter,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.2,
+	    WorldStaticModelsByIndex = Glitter;Glitter_Blue;Glitter_Green;Glitter_Red,
+		IconsForTexture = Sparkles_Rainbow;Sparkles_Blue;Sparkles_Green;Sparkles_Red,
+	}
+
+	item GuitarPick
+	{
+		DisplayName = Guitar Pick,
+		DisplayCategory = Instrument,
+		Type = Normal,
+		Weight = 0.1,
+	    WorldStaticModel= GuitarPick,
+		Icon = GuitarPick,
+		OnCreate = SpecialLootSpawns.OnCreateRandomColor,
+		Tags = FitsWallet,
+	}
+
+	item TuningFork
+	{
+		DisplayName = Tuning Fork,
+		DisplayCategory = Instrument,
+		Type = Normal,
+		Weight = 0.2,
+	    WorldStaticModel= TuningFork,
+		Icon = TuningFork,
+		Tags = HasMetal,
+	}
+
+	item Thimble
+	{
+		DisplayName = Thimble,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.1,
+	    WorldStaticModel= Thimble,
+		Icon = Thimble,
+		Tags = HasMetal;Thimble,
+	}
+
+	item CorrectionFluid
+	{
+		DisplayName = Correction Fluid,
+		DisplayCategory = Household,
+		Type = Drainable,
+		Weight = 0.2,
+	    StaticModel= CorrectionFluid,
+	    WorldStaticModel= CorrectionFluid,
+		Icon = Whiteout,
+		CustomContextMenu = Sniff,
+		OnEat = OnEat_CorrectionFluid,
+		Tags = Consumable,
+		UseDelta = 0.1,
+		EatType = sniff,
+	}
+
+	item LighterBBQ
+	{
+		DisplayName = Lighter - BBQ,
+		DisplayCategory = FireSource,
+		Type = Drainable,
+		Weight = 0.3,
+		Icon = BBQLighter,
+		ActivatedItem = TRUE,
+		cantBeConsolided = TRUE,
+		LightDistance = 5,
+		LightStrength = 0.6,
+		ticksPerEquipUse = 110,
+		TorchCone = FALSE,
+		UseWhileEquipped = TRUE,
+		StaticModel = LighterBBQ,
+		WeightEmpty = 0.1,
+		WorldStaticModel = LighterBBQ,
+		Tags = HasMetal;Lighter;StartFire;LessFull,
+		UseDelta = 0.015125,
+		SurvivalGear = TRUE,
+	}
+
+	item HairIron
+	{
+		DisplayName = Hair Iron,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 1,
+		Icon = FlatIron,
+		MetalValue = 8,
+		WorldStaticModel = HairIron,
+		Tags = HasMetal;MiscElectronic,
+	}
+
+    item ParkingTicket
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Parking Ticket,
+		Icon = ParkingTicket,
+        WorldStaticModel = ParkingTicket,
+		Tags = ApplyOwnerName;Uninteresting,
+    }
+
+    item SpeedingTicket
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Speeding Ticket,
+		Icon = SpeedingTicket,
+        WorldStaticModel = SpeedingTicket,
+		Tags = ApplyOwnerName;Uninteresting,
+    }
+
+	item ToiletBrush
+	{
+		DisplayName = Toilet Brush,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 0.6,
+		Icon = Flax_ToiletBrush,
+		StaticModel = ToiletBrush,
+		WorldStaticModel = ToiletBrushInHolder,
+		Tags = CleanStains;ToiletBrush,
+	}
+
+	item GoldCoin
+	{
+		DisplayName = Gold Coin,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.05,
+		Icon = Coin_Gold,
+		WorldStaticModel = GoldCoin,
+		Tags = HasMetal;FitsWallet;SmallestGoldScrap,
+	}
+
+	item SilverCoin
+	{
+		DisplayName = Silver Coin,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.05,
+		Icon = Coin_Silver,
+		WorldStaticModel = SilverCoin,
+		Tags = HasMetal;FitsWallet;SmallestSilverScrap,
+	}
+
+	item Book_Prop
+	{
+		DisplayName = Prop Book,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 1,
+		Icon = Book,
+		WorldStaticModel = BookClosedGround,
+	}
+
+	item BookFancy_Prop
+	{
+		DisplayName = Prop Leatherbound Book,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 1,
+        Icon	=	Book_OldFancy,
+		WorldStaticModel = BookFancyClosed,
+	}
+}

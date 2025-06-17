@@ -1,0 +1,161 @@
+/*module Base
+{
+    entity Metalwork_Lathe
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Metalwork_Lathe,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = MetalworkLathe,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = industry_03_3 industry_03_4 industry_03_5,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = industry_03_2,
+                    row = industry_03_1,
+                    row = industry_03_0,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = industry_03_8 industry_03_9 industry_03_10,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = industry_03_13,
+                    row = industry_03_12,
+                    row = industry_03_11,
+                }
+            }
+        }
+    }
+    entity Metalwork_Lathe2
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Metalwork_Lathe,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = MetalworkLathe,
+        }
+
+        /*
+        component Resources
+        {
+        }
+
+        component CraftLogic
+        {
+            CraftProcessor
+            {
+                Recipes             = Recipes_Metalworkbench,
+                StartMode           = Manual,
+                AllowShaped         = false,
+                isPlayerAction      = true,
+                manualRecipeSelect  = true,
+
+                resources Input
+                {
+                    item
+                    {
+                        Capacity    = 5,
+                    }
+                    item
+                    {
+                        Capacity    = 1,
+                    }
+                    item
+                    {
+                        Capacity    = 1,
+                    }
+                    item
+                    {
+                        Capacity    = 1,
+                    }
+                    item
+                    {
+                        Capacity    = 1,
+                    }
+                    item
+                    {
+                        Capacity    = 1,
+                    }
+                }
+                resources Output
+                {
+                    item
+                    {
+                        Capacity    = 10,
+                    }
+                    item
+                    {
+                        Capacity    = 10,
+                    }
+                }
+            }
+        }
+        */
+
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = industry_03_35 industry_03_36 industry_03_37,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = industry_03_34,
+                    row = industry_03_33,
+                    row = industry_03_32,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = industry_03_40 industry_03_41 industry_03_42,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = industry_03_45,
+                    row = industry_03_44,
+                    row = industry_03_43,
+                }
+            }
+        }
+    }
+}*/

@@ -1,0 +1,38 @@
+module Base
+{
+	sound BirdInMetalTrap
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalTrap/TrappedBird,
+		}
+	}
+
+	sound BirdInWoodTrap
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodTrap/TrappedBird,
+		}
+	}
+
+	sound AnimalInMetalTrap
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalTrap/TrappedAnimal,
+		}
+	}
+
+	sound AnimalInWoodTrap
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodTrap/TrappedAnimal,
+		}
+	}
+}

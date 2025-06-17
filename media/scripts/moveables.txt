@@ -1,0 +1,23 @@
+module Moveables
+{
+
+	imports
+	{
+		Base
+	}
+
+	item Moveable
+	{
+	    DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Moveable,
+  
+	}
+
+/**********************************************************************/
+/****************************** RECIPES *******************************/
+/**********************************************************************/
+
+}

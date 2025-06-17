@@ -1,0 +1,164 @@
+module Base
+{
+	sound UIActivateButton
+	{
+		category = UI,
+		clip
+		{
+			event = UI/Click,
+		}
+	}
+
+	sound UIActivateTab
+	{
+		category = UI,
+		clip
+		{
+			event = UI/Click,
+		}
+	}
+
+	sound UIActivateMainMenuItem
+	{
+		category = UI,
+		clip
+		{
+			event = UI/Click,
+		}
+	}
+
+	sound UIActivatePlayButton
+	{
+		category = UI,
+		clip
+		{
+			event = UI/ClickPlay,
+		}
+	}
+
+	sound UIClickToStart
+	{
+		category = UI,
+		clip
+		{
+			event = UI/ClickToStart,
+		}
+	}
+
+	sound UIHighlightMainMenuItem
+	{
+		category = UI,
+		clip
+		{
+			event = UI/Highlight,
+		}
+	}
+
+	sound UISelectListItem
+	{
+		category = UI,
+		clip
+		{
+			event = UI/Click,
+		}
+	}
+
+	sound UIToggleComboBox
+	{
+		category = UI,
+		clip
+		{
+			event = UI/Click,
+		}
+	}
+
+	sound UIToggleTickBox
+	{
+		category = UI,
+		clip
+		{
+			event = UI/Click,
+		}
+	}
+
+	sound UIPauseMenuEnter
+	{
+		category = UI,
+		clip
+		{
+			event = UI/PauseMenu/Enter,
+		}
+	}
+
+	sound UIPauseMenuExit
+	{
+		category = UI,
+		clip
+		{
+			event = UI/PauseMenu/Exit,
+		}
+	}
+
+	sound UIObjectMenuEnter
+	{
+		category = UI,
+		clip
+		{
+			event = UI/ObjectMenu/Enter,
+		}	
+	}
+
+	sound UIObjectMenuObjectPickup
+	{
+		category = UI,
+		clip
+		{
+			event = UI/ObjectMenu/ObjectPickUp,
+		}	
+	}
+
+	sound UIObjectMenuObjectPlace
+	{
+		category = UI,
+		clip
+		{
+			event = UI/ObjectMenu/ObjectPlace,
+		}	
+	}
+
+	sound UIObjectMenuObjectRotate
+	{
+		category = UI,
+		clip
+		{
+			event = UI/ObjectMenu/ObjectRotate,
+		}	
+	}
+
+	sound UIObjectMenuObjectRotateOutline
+	{
+		category = UI,
+		clip
+		{
+			event = UI/ObjectMenu/ObjectRotateOutline,
+		}	
+	}
+
+	sound UIVehicleMenuOpen
+	{
+		category = UI,
+		clip
+		{
+			event = UI/VehicleMenu/Open,
+		}
+	}
+
+	sound UIVehicleMenuClose
+	{
+		category = UI,
+		clip
+		{
+			event = UI/VehicleMenu/Close,
+		}
+	}
+}

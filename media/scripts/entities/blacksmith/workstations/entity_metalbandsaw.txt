@@ -1,0 +1,59 @@
+module Base
+{
+    xuiSkin default
+    {
+    	entity ES_MetalBandsaw
+    	{
+        	LuaWindowClass      = ISEntityWindow,
+        	DisplayName         = Metal Bandsaw,
+        	Icon                = Item_Hacksaw,
+    	}
+    }
+
+    entity MetalBandsaw
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_MetalBandsaw,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = MetalBandsaw,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = industry_02_265,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = industry_02_264,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = industry_02_267,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = industry_02_266,
+                }
+            }
+        }
+    }
+}

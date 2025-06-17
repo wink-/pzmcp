@@ -1,0 +1,117 @@
+module Base
+{
+	item PanFriedVegetablesForged
+	{
+		DisplayName = Stir Fry,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1,
+		EatType = plate,
+		Icon = FryingPan_Forged_Stirfry,
+		CookingSound = FryingFood,
+        ConditionMax = 10,
+		ReplaceOnUse = PanForged,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		Calories = 516,
+		Carbohydrates = 36,
+		Lipids = 41.5,
+		Proteins = 4.8,
+		StaticModel = PanFriedVegetablesForged,
+		WorldStaticModel = PanFriedVegetablesForged,
+		Tags = HasMetal,
+		HungerChange = -10,
+	}
+
+    item BarricadeCube_Folded
+    {
+		DisplayName = Barricade Cube (Folded),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 20,
+		Icon = HESCOBastion_Folded,
+		WorldStaticModel = BarricadeCube_Folded,
+
+    }
+
+    item Awl
+    {
+		DisplayName = Awl,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Awl_Leather,
+		WorldStaticModel = Awl_Leather,
+        Tags = Awl;HasMetal,
+        ConditionLowerChanceOneIn = 10,
+        ResearchableRecipes = MakeBoneAwl;MakeStoneAwl,
+    }
+
+    item Awl_Bone
+    {
+		DisplayName = Awl - Bone,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = Awl_Bone,
+		WorldStaticModel = Awl_Bone,
+        Tags = Awl;Crude;IgnoreZombieDensity,
+        ConditionLowerChanceOneIn = 5,
+        ResearchableRecipes = MakeStoneAwl,
+    }
+
+    item Awl_Stone
+    {
+		DisplayName = Awl - Stone,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = Awl_Stone,
+		WorldStaticModel = Awl_Stone,
+        Tags = Awl;Crude;IgnoreZombieDensity,
+        ConditionLowerChanceOneIn = 8,
+        ResearchableRecipes = MakeBoneAwl,
+    }
+
+	item HandAxeHead
+	{
+		DisplayName = Hatchet Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = AxeHead_Forged,
+		Tags = HasMetal;Sharpenable;SmeltableSteelSmall,
+		StaticModel = HandAxeHeadForged,
+		WorldStaticModel = HandAxeHeadForged,
+		ConditionMax = 10,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Old_Axe_Head,
+	}
+
+	item MaceHead
+	{
+		DisplayName = Mace Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = MaceHead_Forged,
+		Tags = HasMetal;SmeltableIronMedium,
+		WorldStaticModel = MaceHead,
+		ConditionMax = 30,
+		ResearchableRecipes = MakeSpikedClub;MakeSpikedBaseballBat;MakeSpikedCudgel,
+	}
+
+	item StoneMaceHead
+	{
+		DisplayName = Stone Mace Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = Mace_Head,
+		WorldStaticModel = StoneMaceHead,
+		ConditionMax = 20,
+		ResearchableRecipes = ForgeMaceHead,
+	}
+
+}

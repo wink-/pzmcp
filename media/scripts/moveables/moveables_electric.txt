@@ -1,0 +1,222 @@
+module Base
+{
+	item Mov_AirConditioner
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Air Conditioner,
+		WorldObjectSprite = industry_01_4,
+	}
+	
+	item Mov_ArcadeMachine1
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Dr. Oids Arcade Machine,
+		WorldObjectSprite = recreational_01_16,
+	}
+	
+	item Mov_ArcadeMachine2
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Kaboom! Arcade Machine,
+		WorldObjectSprite = recreational_01_20,
+	}
+	
+	item Mov_BlackCashRegister
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Black Cash Register,
+		WorldObjectSprite = location_shop_accessories_01_21,
+	}
+	
+	item Mov_CashRegister
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Cash Register,
+		WorldObjectSprite = location_shop_accessories_01_1,
+	}
+	
+	item Mov_DesktopComputer
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Desktop Computer,
+		WorldObjectSprite = appliances_com_01_72,
+	}
+	
+	item Mov_Jukebox
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Oldies Jukebox,
+		WorldObjectSprite = recreational_01_1,
+	}
+	
+	item Mov_Microphone
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Standing Microphone,
+		WorldObjectSprite = appliances_com_01_70,
+	}
+	
+	item Mov_PayPhones
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Pay Phones,
+		WorldObjectSprite = walls_decoration_01_39,
+	}
+	
+	item Mov_PinballMachine
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = PAWS Pinball Machine,
+		WorldObjectSprite = recreational_01_25,
+	}
+	
+	item Mov_Projector
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Cinema Projector,
+		WorldObjectSprite = appliances_com_01_85,
+	}
+	
+	item Mov_SatelliteDish
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Satellite Dish,
+		WorldObjectSprite = appliances_com_01_20,
+	}
+	
+	item Mov_SecurityWallMonitors
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Security Wall Monitors,
+		WorldObjectSprite = security_01_4,
+	}
+	
+	item Mov_SecurityTerminal
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Security Terminal,
+		WorldObjectSprite = security_01_0,
+	}
+	
+	item Mov_SecurityTerminal2
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = CeroSec Terminal,
+		WorldObjectSprite = appliances_com_01_52,
+	}
+	
+	item Mov_TVCamera
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Imekagi HK533P,
+		WorldObjectSprite = appliances_com_01_44,
+	}
+
+	item Mov_BeigeRotaryPhone
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Beige Rotary Phone,
+		WorldObjectSprite = location_business_office_generic_02_0,
+	}
+
+	item Mov_BlackRotaryPhone
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Black Rotary Phone,
+		WorldObjectSprite = location_business_office_generic_02_4,
+	}
+
+	item Mov_RedRotaryPhone
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Red Rotary Phone,
+		WorldObjectSprite = location_business_office_generic_02_8,
+	}
+
+	item Mov_WhiteRotaryPhone
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = White Rotary Phone,
+		WorldObjectSprite = location_business_office_generic_02_12,
+	}
+
+	item Mov_WhiteModernPhone
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = White Modern Phone,
+		WorldObjectSprite = location_business_office_generic_02_16,
+	}
+
+	item Mov_BlackModernPhone
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Black Modern Phone,
+		WorldObjectSprite = location_business_office_generic_02_20,
+	}
+}

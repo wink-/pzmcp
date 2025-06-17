@@ -1,0 +1,342 @@
+module Base
+{
+
+	item String
+	{
+	    DisplayCategory = Material,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	String,
+		Icon	=	String,
+		WorldStaticModel = String,
+	    Tooltip = Tooltip_item_String,
+	}
+
+	/******* JUNK - CONTAINERS *******/
+	
+
+	item BeerCanEmpty
+	{
+		DisplayName = Empty Beer Can,
+		DisplayCategory = WaterContainer,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = BeerCan,
+		CustomContextMenu = Drink,
+		EatType = popcan,
+		StaticModel = BeerCan,
+		WorldStaticModel = BeerCan_Ground,
+		FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapMetalMedium,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Cookable;HasMetal;EmptyCan,
+		MetalValue = 10,
+		WorldStaticModel = BeerCanEmptyWorld,
+
+       	component FluidContainer
+       	{
+			ContainerName   = CanBeer,
+			capacity        = 0.3,
+			CustomDrinkSound = DrinkingFromCan,
+		}
+
+		component Durability
+		{
+            Material = Metal_Light,
+            MaxHitPoints = 1.0,
+		}
+	}
+
+	item BeerEmpty
+	{
+		DisplayName = Empty Bottle,
+		DisplayCategory = WaterContainer,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = BeerBottle,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		StaticModel = BeerBottle,
+		WorldStaticModel = BeerBottle,
+		Tags = Glass;GlassBottle,
+
+       	component FluidContainer
+       	{
+			ContainerName   = Bottle,
+			capacity        = 1.0,
+			CustomDrinkSound = DrinkingFromBottleGlass,
+		}
+
+		component Durability
+		{
+            Material = Glass_Light,
+            MaxHitPoints = 1.0,
+		}
+	}
+
+	item PlasticCup
+	{
+		DisplayName = Plastic Cup,
+		DisplayCategory = WaterContainer,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = PlasticCup,
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapPlasticMedium,
+		Tooltip = Tooltip_item_OnlyPurifyMicrowave,
+		StaticModel = PlasticCup_Ground,
+		WorldStaticModel = PlasticCup_Ground,
+
+        	component FluidContainer
+        	{
+            		ContainerName   = CupPlastic,
+			RainFactor	= 0.5,
+            		capacity        = 0.2,
+			CustomDrinkSound = DrinkingFromBottlePlastic,
+        	}
+	}
+
+    item MayonnaiseEmpty
+	{
+	    	DisplayCategory = WaterContainer,
+		Type		=		Normal,
+		DisplayName	=		Empty Bottle,
+		Icon		=		TZ_MayonnaiseEmpty,
+		Weight		=		0.1,
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapPlasticMedium,
+		StaticModel = MayoJar,
+		WorldStaticModel = MayoJarEmpty_Ground,
+		Tooltip = Tooltip_item_OnlyPurifyMicrowave,
+
+        	component FluidContainer
+        	{
+            		ContainerName   = Bottle,
+            		capacity        = 0.2,
+			CustomDrinkSound = DrinkingFromBottlePlastic,
+        	}
+	}
+	
+    item RemouladeEmpty
+	{
+	    DisplayCategory = WaterContainer,
+		Type				=		Normal,
+		DisplayName			=		Empty Bottle,
+		Icon				=		TZ_RemouladeEmpty,
+		Weight				=		0.1,
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapPlasticMedium,
+		StaticModel = RemouladeJar,
+		WorldStaticModel = RemouladeEmpty_Ground,
+
+        	component FluidContainer
+        	{
+            		ContainerName   = Bottle,
+            		capacity        = 2.0,
+			CustomDrinkSound = DrinkingFromBottlePlastic,
+        	}
+	}
+	
+	/******* JUNK - MISC. *******/
+	
+	item FountainCup
+	{
+		DisplayName = Fountain Cup,
+		DisplayCategory = WaterContainer,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = FountainCup,
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapPlasticMedium,
+		Tooltip = Tooltip_item_RainFromGroundOnlyPurifyMicrowaveFountainCup,
+		WorldStaticModel = FountainCup_Ground,
+
+        	component FluidContainer
+        	{
+			ContainerName   = CupFountain,
+			RainFactor	= 0.5,
+			capacity        = 0.3,
+			CustomDrinkSound = DrinkingFromMug,
+		}
+	}
+	
+	item PaperNapkins2
+	{
+		DisplayName = Paper Napkins,
+		DisplayCategory = Junk,
+		Type = Drainable,
+		Weight = 0.1,
+		Icon = PaperNapkins,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = PaperNapkins_Ground,
+		Tags = MuffleSneeze;FitsWallet;IsFireFuel;IsFireTinder,
+		FireFuelRatio = 0.25,
+		cantBeConsolided = TRUE,
+    	UseDelta = 1,
+	}
+	
+	item PopEmpty
+	{
+		DisplayName = Empty Pop Can,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = PopEmpty,
+		MetalValue = 10,
+		EatType = popcan,
+		StaticModel = PopCanDiet,
+		WorldStaticModel = PopCanDietWorld,
+		FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapMetalMedium,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Cookable;HasMetal;EmptyCan,
+
+        component FluidContainer
+        	{
+			ContainerName   = CanPop,
+			capacity        = 0.3,
+			CustomDrinkSound = DrinkingFromCan,
+		}
+	}
+	
+	item Pop2Empty
+	{
+		DisplayName = Empty Pop Can,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = PopEmpty,
+		MetalValue = 10,
+		EatType = popcan,
+		StaticModel = PopCanRed,
+		WorldStaticModel = PopCanRedWorld,
+		FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapMetalMedium,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Cookable;HasMetal;EmptyCan,
+
+        	component FluidContainer
+        	{
+			ContainerName   = CanPop,
+			capacity        = 0.3,
+			CustomDrinkSound = DrinkingFromCan,
+		}
+	}
+	
+	item Pop3Empty
+	{
+		DisplayName = Empty Pop Can,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = PopEmpty,
+		MetalValue = 10,
+		EatType = popcan,
+		StaticModel = PopCanFizz,
+		WorldStaticModel = PopCanFizzWorld,
+		FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapMetalMedium,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Cookable;HasMetal;EmptyCan,
+        component FluidContainer
+        	{
+			ContainerName   = CanPop,
+			capacity        = 0.3,
+			CustomDrinkSound = DrinkingFromCan,
+		}
+	}
+	
+	item TinCanEmpty
+	{
+		DisplayName = Empty Tin Can,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = TinCanEmpty,
+		IconFluidMask = TinCan_Mask,
+		MetalValue = 20,
+		StaticModel = CanOpen,
+		WorldStaticModel = TinCanEmpty,
+		FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapMetalMedium,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Cookable;HasMetal;TinCan;EmptyCan,
+        ResearchableRecipes = CanReinforceWeapon,
+        component FluidContainer
+        	{
+			ContainerName   = CanTin,
+			RainFactor	= 0.5,
+			capacity        = 0.3,
+			CustomDrinkSound = DrinkingFromCan,
+		}
+	}
+
+	item WaterRationCanEmpty
+	{
+		DisplayName = Empty Tin Can,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = CannedWater_Open,
+		/*IconFluidMask = TinCan_Mask,*/
+		MetalValue = 20,
+		StaticModel = WaterRationCan_Open,
+		WorldStaticModel = WaterRationCan_Open,
+		FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapMetalMedium,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Cookable;HasMetal;TinCan;EmptyCan,
+
+        component FluidContainer
+        	{
+			ContainerName   = CanTin,
+			RainFactor	= 0.5,
+			capacity        = 0.3,
+			CustomDrinkSound = DrinkingFromCan,
+		}
+	}
+	
+	item UnusableMetal
+	{
+		DisplayName = Sheet Metal Scrap,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 1,
+		Icon = UnsableMetal,
+		WorldStaticModel = UnusableMetal,
+        ResearchableRecipes = SheetMetalWeapon;MakeShiv,
+	}
+	
+	item UnusableWood
+	{
+		DisplayName = Scrap Wood,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 1,
+		Icon = UnsableWood,
+		WorldStaticModel = UnusableWood,
+		Tags = IsFireFuel;MakeWoodCharcoalSmall,
+	}
+
+	item Splinters
+	{
+		DisplayName = WoodSplinters,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = WoodSplinters,
+		WorldStaticModel = Splinters,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+}

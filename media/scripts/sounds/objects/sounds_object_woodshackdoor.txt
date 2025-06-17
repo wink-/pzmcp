@@ -1,0 +1,74 @@
+module Base
+{
+	sound WoodShackDoorBlocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodShackDoor/IsBlocked,
+		}
+	}
+
+	sound WoodShackDoorBreak
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodShackDoor/Break,
+		}
+	}
+
+	sound WoodShackDoorClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodShackDoor/Close,
+		}
+	}
+
+	sound WoodShackDoorCreak
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodShackDoor/Creak,
+		}
+	}
+
+	sound WoodShackDoorLock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodShackDoor/Lock,
+		}
+	}
+
+	sound WoodShackDoorLocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodShackDoor/IsLocked,
+		}
+	}
+
+	sound WoodShackDoorOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodShackDoor/Open,
+		}
+	}
+
+	sound WoodShackDoorUnlock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodShackDoor/Unlock,
+		}
+	}
+}

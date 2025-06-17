@@ -1,0 +1,1316 @@
+module Base
+{
+	/******* DRINKS - ALCOHOL *******/
+	
+	item BeerBottle
+	{
+		DisplayName = Beer Bottle,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.4,
+		Icon = BeerBottle,
+		EatType = Bourbon,
+		StaticModel = BeerBottle,
+		WorldStaticModel = BeerBottle,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        component FluidContainer
+        {
+            ContainerName = BottleBeer,
+            capacity = 0.3,
+    		Opened	= false,
+	    	CustomDrinkSound = DrinkingFromBottleGlass,
+        	Fluids
+       		{
+               	fluid = Beer:1.0,
+           	}
+       	}
+
+		component Durability
+		{
+            Material = Glass_Light,
+            MaxHitPoints = 1.0,
+		}
+	}
+	
+	item BeerCan
+	{
+		DisplayName = Beer Can,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = BeerCan,
+		EatType = popcan,
+		Packaged = TRUE,
+		StaticModel = BeerCan,
+		WorldStaticModel = BeerCan_Ground,
+		FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapMetalMedium,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = LowAlcohol;HasMetal;EmptyCan;SealedBeverageCan,
+		EatTime = 160,
+
+       	component FluidContainer
+       	{
+           	ContainerName = CanBeer,
+    		Opened = false,
+           	capacity = 0.3,
+		    CustomDrinkSound = DrinkingFromCan,
+            Fluids
+            {
+                fluid = Beer:1.0,
+            }
+       	}
+
+		component Durability
+		{
+            Material = Metal_Light,
+            MaxHitPoints = 1.0,
+		}
+	}
+
+	item BeerImported
+	{
+		DisplayName = Imported Beer,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.4,
+		Icon = BeerImported,
+		Packaged = TRUE,
+		StaticModel = BeerBottleImported,
+		WorldStaticModel = BeerBottle,
+		Tooltip = Tooltip_item_BottleOpener,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+       	component FluidContainer
+       	{
+           	ContainerName = BottleBeer,
+           	capacity = 0.3,
+		    Opened	= false,
+		    CustomDrinkSound = DrinkingFromBottleGlass,
+            Fluids
+            {
+                fluid = Beer:1.0,
+            }
+        }
+
+		component Durability
+		{
+            Material = Glass_Light,
+            MaxHitPoints = 1.0,
+		}
+	}
+	
+	item Brandy
+	{
+		DisplayName = Brandy,
+		DisplayCategory = Food,
+		EatType = bourbon,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Brandy,
+		IconFluidMask = Brandy_Mask,
+		StaticModel = BrandyBottle,
+		WorldStaticModel = BrandyBottle,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Brandy:1.0,
+            		}
+        	}
+	}
+
+	item Champagne
+	{
+		DisplayName = Champagne,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 1,
+		Icon = Champagne,
+		Packaged = TRUE,
+		StaticModel = Champagne,
+		WorldStaticModel = Champagne,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+		Opened	= false,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Champagne:1.0,
+            		}
+        	}
+	}
+
+	item Cider
+	{
+		DisplayName = Cider,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 1,
+		Icon = Cider,
+		IconFluidMask = Cider_Mask,
+		StaticModel = CiderBottle,
+		WorldStaticModel = CiderBottle,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Cider:1.0,
+            		}
+        	}
+	}
+	
+	item CoffeeLiquer
+	{
+		DisplayName = Coffee Liquer,
+		DisplayCategory = Food,
+		EatType = bourbon,
+		Type = Normal,
+		Weight = 1,
+		Icon = CoffeeLiquer,
+		IconFluidMask = CoffeeLiquer_Mask,
+		StaticModel = CoffeeLiquerBottle,
+		WorldStaticModel = CoffeeLiquerBottle,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = CoffeeLiqueur:1.0,
+            		}
+        	}
+	}
+	
+	item Curacao
+	{
+		DisplayName = Curacao,
+		DisplayCategory = Food,
+		EatType = bourbon,
+		Type = Normal,
+		Weight = 1,
+		Icon = Curacao,
+		IconFluidMask = Curacao_Mask,
+		StaticModel = CuracaoBottle,
+		WorldStaticModel = CuracaoBottle,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Curacao:1.0,
+            		}
+        	}
+	}
+	
+	item Gin
+	{
+		DisplayName = Gin,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 1,
+		Icon = Gin,
+		IconFluidMask = Gin_Mask,
+		StaticModel = GinBottle,
+		WorldStaticModel = GinBottle,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Gin:1.0,
+            		}
+        	}
+	}
+	
+	item Grenadine
+	{
+		DisplayName = Grenadine,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 1,
+		Icon = Grenadine,
+		IconFluidMask = Grenadine_Mask,
+		StaticModel = GrenadineBottle,
+		WorldStaticModel = GrenadineBottle,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Grenadine:1.0,
+            		}
+        	}
+	}
+	
+	item Port
+	{
+		DisplayName = Port,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 1,
+		Icon = Port,
+		IconFluidMask = Port_Mask,
+		StaticModel = PortBottle,
+		WorldStaticModel = PortBottle,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Port:1.0,
+            		}
+        	}
+	}
+	
+	item Rum
+	{
+		DisplayName = Rum,
+		DisplayCategory = Food,
+		EatType = bourbon,
+		Type = Normal,
+		Weight = 1,
+		Icon = Rum,
+		IconFluidMask = Rum_Mask,
+		StaticModel = RumBottle,
+		WorldStaticModel = RumBottle,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Rum:1.0,
+            		}
+        	}
+	}
+	
+	item Scotch
+	{
+		DisplayName = Scotch,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 1,
+		Icon = Scotch,
+		IconFluidMask = Scotch_Mask,
+		StaticModel = ScotchBottle,
+		WorldStaticModel = ScotchBottle,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Scotch:1.0,
+            		}
+        	}
+	}
+	
+	item Sherry
+	{
+		DisplayName = Sherry,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 1,
+		Icon = Sherry,
+		IconFluidMask = Sherry_Mask,
+		StaticModel = SherryBottle,
+		WorldStaticModel = SherryBottle,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Sherry:1.0,
+            		}
+        	}
+	}
+	
+	item Tequila
+	{
+		DisplayName = Tequila,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 1,
+		Icon = Tequila,
+		IconFluidMask = Tequila_Mask,
+		StaticModel = TequilaBottle,
+		WorldStaticModel = TequilaBottle,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Tequila:1.0,
+            		}
+        	}
+	}
+	
+	item Vermouth
+	{
+		DisplayName = Vermouth,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 1,
+		Icon = Vermouth,
+		IconFluidMask = Vermouth_Mask,
+		StaticModel = VermouthBottle,
+		WorldStaticModel = VermouthBottle,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Vermouth:1.0,
+            		}
+        	}
+	}
+	
+	item Vodka
+	{
+		DisplayName = Vodka,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 1,
+		Icon = Vodka,
+		IconFluidMask = Vodka_Mask,
+		StaticModel = VodkaBottle,
+		WorldStaticModel = VodkaBottle,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Vodka:1.0,
+            		}
+        	}
+	}
+
+
+	item Whiskey
+	{
+		DisplayName = Bottle of Whiskey,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.7,
+		Icon = Whiskey,
+		EatType = bourbon,
+		IconFluidMask = Whiskey_Mask,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		StaticModel = WhiskeyBottle,
+		WorldStaticModel = WhiskeyBottleGround,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Whiskey:1.0,
+            		}
+        	}
+	}
+	
+	item Wine
+	{
+		DisplayName = Bottle of White Wine,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Wine,
+		IconFluidMask = Wine_Mask,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		StaticModel = WhiteWineBottle,
+		WorldStaticModel = WineWhiteGround,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+		Opened	= false,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Wine:1.0:0.65:0.8:0.65,
+            		}
+        	}
+	}
+	
+	item Wine2
+	{
+		DisplayName = Bottle of Red Wine,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Wine2,
+		IconFluidMask = Wine_Mask,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		StaticModel = RedWineBottle,
+		WorldStaticModel = WineRedGround,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+                ContainerName   = BottleGlass,
+                Opened	= false,
+                capacity        = 1.0,
+                CustomDrinkSound = DrinkingFromBottleGlass,
+
+                Fluids
+                {
+                    fluid           = Wine:1.0,
+                }
+        	}
+	}
+	
+	item WineOpen
+	{
+		DisplayName = Open White Wine,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Wine,
+		IconFluidMask = Wine_Mask,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		StaticModel = WhiteWineBottle,
+		WorldStaticModel = WineWhiteGround,
+		Tags = Glass;GlassBottle,
+		/*Tags = HideFresh,*/
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+            	capacity        = 1.0,
+		InitialPercentMin = 0.05,
+		InitialPercentMax = 0.85,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Wine:1.0:PaleGreen,
+            		}
+        	}
+	}
+	
+	item Wine2Open
+	{
+		DisplayName = Open Red Wine,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Wine2,
+		IconFluidMask = Wine_Mask,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		StaticModel = RedWineBottle,
+		WorldStaticModel = WineRedGround,
+		Tags = Glass;GlassBottle,
+		/*Tags = HideFresh,*/
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+            	capacity        = 1.0,
+		InitialPercentMin = 0.05,
+		InitialPercentMax = 0.85,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Wine:1.0,
+            		}
+        	}
+	}
+
+	item WineAged
+	{
+		DisplayName = Bottle of Fine Red Wine,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 1,
+		Icon = WineAged,
+		StaticModel = RedWineBottle,
+		WorldStaticModel = WineRedGround,
+		Tooltip = Tooltip_item_Corkscrew,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+		Opened	= false,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Wine:1.0,
+            		}
+        	}
+	}
+
+	item WineScrewtop
+	{
+		DisplayName = Cheap Red Wine,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 1,
+		Icon = WineScrewtop,
+		Packaged = TRUE,
+		StaticModel = WineScrewtop,
+		WorldStaticModel = WineScrewtop,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = BottleGlass,
+            	capacity        = 1.0,
+		CustomDrinkSound = DrinkingFromBottleGlass,
+
+            	Fluids
+            		{
+                	fluid           = Wine:1.0,
+            		}
+        	}
+	}
+
+	/******* BOXES AND PACKS *******/
+
+	item BeerPack
+	{
+		DisplayName = Pack of Beer Bottles,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 1.8,
+		Icon = SixPack_Bottles,
+		WorldStaticModel = BeerBottleSixpack,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item BeerCanPack
+	{
+		DisplayName = Pack of Beer Cans,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 1.8,
+		Icon = SixPack_Cans,
+		WorldStaticModel = BeerCanSixpack,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
+	item WineWhite_Boxed
+	{
+		DisplayName = Box of White Wine,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 6.5,
+        Icon	=	Parcel_Large_Liquor,
+		WorldStaticModel = Parcel_Liquor_Large,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
+	item WineRed_Boxed
+	{
+		DisplayName = Box of Red Wine,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 6.5,
+        Icon	=	Parcel_Large_Liquor,
+		WorldStaticModel = Parcel_Liquor_Large,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	/******* DRINKS - NON-ALCOHOLIC *******/
+	
+	item CannedFruitBeverage
+	{
+		DisplayName = Canned Fruit Beverage,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedJuice,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 250,
+		Carbohydrates = 0,
+		Lipids = 24,
+		Proteins = 10,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedFruitBeverage_Ground,
+		Tags = HasMetal,
+		Tooltip = Tooltip_item_CanOpener,
+	}
+
+	item CannedFruitBeverage_Box
+	{
+		DisplayName = Box of Canned Fruit Beverage,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 4,
+        	Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item CannedFruitBeverageOpen
+	{
+		DisplayName = Opened Canned Fruit Beverage,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = CannedJuice_Open,
+		CannedFood = TRUE,
+		EatType = candrink,
+		EvolvedRecipe = Cake:15;FruitSalad:15;Pancakes:15;Muffin:15,
+		FoodType = Juice,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 5,
+		DaysTotallyRotten = 7,
+		HungerChange = -15,
+		UnhappyChange = -10,
+		ThirstChange = -85,
+		Calories = 250,
+		Carbohydrates = 0,
+		Lipids = 24,
+		Proteins = 10,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		StaticModel = CanOpenFruitBeverage_Ground,
+		WorldStaticModel = CanOpenFruitBeverage_Ground,
+		EvolvedRecipeName = Fruit,
+		Tags = HasMetal,
+	}
+	
+	item JuiceBox
+	{
+		DisplayName = Juice Box,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = JuiceBox,
+		EatType = popcan,
+		CustomContextMenu = Drink,
+		StaticModel = JuiceBox_Grape,
+		WorldStaticModel = JuiceBox_Grape,
+		EatTime = 160,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = Carton,
+            	capacity        = 0.2,
+		CustomDrinkSound = DrinkingFromCarton,
+
+            	Fluids
+            		{
+                	fluid           = JuiceGrape:1.0,
+            		}
+        	}
+	}
+
+	item JuiceBoxApple
+	{
+		DisplayName = Juice Box,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = JuiceBox_Apple,
+		EatType = popcan,
+		CustomContextMenu = Drink,
+		StaticModel = JuiceBox_Apple,
+		WorldStaticModel = JuiceBox_Apple,
+		EatTime = 160,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = Carton,
+            	capacity        = 0.2,
+		CustomDrinkSound = DrinkingFromCarton,
+
+            	Fluids
+            		{
+                	fluid           = JuiceApple:1.0,
+            		}
+        	}
+	}
+
+	item JuiceBoxFruitpunch
+	{
+		DisplayName = Juice Box,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = JuiceBox_FruitPunch,
+		EatType = popcan,
+		CustomContextMenu = Drink,
+		StaticModel = JuiceBox_FruitPunch,
+		WorldStaticModel = JuiceBox_FruitPunch,
+		EatTime = 160,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = Carton,
+            	capacity        = 0.2,
+		CustomDrinkSound = DrinkingFromCarton,
+
+            	Fluids
+            		{
+                	fluid           = JuiceFruitpunch:1.0,
+            		}
+        	}
+	}
+
+	item JuiceBoxOrange
+	{
+		DisplayName = Juice Box,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = JuiceBox_Orange,
+		EatType = popcan,
+		CustomContextMenu = Drink,
+		StaticModel = JuiceBox_Orange,
+		WorldStaticModel = JuiceBox_Orange,
+		EatTime = 160,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = Carton,
+            	capacity        = 0.2,
+		CustomDrinkSound = DrinkingFromCarton,
+
+            	Fluids
+            		{
+                	fluid           = JuiceOrange:1.0,
+            		}
+        	}
+	}
+	
+	item JuiceCranberry
+	{
+        DisplayName = Bottle,
+        DisplayCategory = Food,
+        Type = Normal,
+        Weight = 0.1,
+        Icon     = CranberryJuice,
+        IconFluidMask       = CranberryJuice_Mask,
+        Packaged = TRUE,
+        CustomContextMenu = Drink,
+        EatType = Bourbon,
+        StaticModel = JuiceBottle_Cranberry,
+        WorldStaticModel = JuiceBottle_Cranberry,
+
+        component FluidContainer
+        {
+            ContainerName   = Bottle,
+            capacity        = 1.0,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            Fluids
+            {
+                fluid           = JuiceCranberry:1.0,
+            }
+        }
+	}
+
+	item JuiceFruitpunch
+	{
+        DisplayName = Bottle,
+        DisplayCategory = Food,
+        Type = Normal,
+        Weight = 0.1,
+        Icon     = JuiceFruitpunch,
+        IconFluidMask       = JuiceFruitpunch_Mask,
+        Packaged = TRUE,
+        CustomContextMenu = Drink,
+        EatType = Bourbon,
+        StaticModel = JuiceBottle_FruitPunch,
+        WorldStaticModel = JuiceBottle_FruitPunch,
+
+        component FluidContainer
+        {
+            ContainerName   = Bottle,
+            capacity        = 1.0,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            Fluids
+            {
+                fluid           = JuiceFruitpunch:1.0,
+            }
+        }
+	}
+
+	item JuiceGrape
+	{
+        DisplayName = Bottle,
+        DisplayCategory = Food,
+        Type = Normal,
+        Weight = 0.1,
+        Icon     = JuiceGrape,
+        IconFluidMask       = JuiceGrape_Mask,
+        Packaged = TRUE,
+        CustomContextMenu = Drink,
+        EatType = Bourbon,
+        StaticModel = JuiceBottle_GrapeJuice,
+        WorldStaticModel = JuiceBottle_GrapeJuice,
+
+        component FluidContainer
+        {
+            ContainerName   = Bottle,
+            capacity        = 1.0,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            Fluids
+            {
+                fluid           = JuiceGrape:1.0,
+            }
+        }
+	}
+
+	item JuiceLemon
+	{
+        DisplayName = Bottle,
+        DisplayCategory = Food,
+        Type = Normal,
+        Weight = 0.1,
+        Icon     = JuiceLemonade,
+        IconFluidMask       = JuiceLemonade_Mask,
+        Packaged = TRUE,
+        CustomContextMenu = Drink,
+        EatType = Bourbon,
+        StaticModel = JuiceBottle_Lemonade,
+        WorldStaticModel = JuiceBottle_Lemonade,
+
+        component FluidContainer
+        {
+            ContainerName   = Bottle,
+            capacity        = 1.0,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            Fluids
+            {
+                fluid           = JuiceLemon:1.0,
+            }
+        }
+	}
+
+	item JuiceOrange
+	{
+        DisplayName = Bottle,
+        DisplayCategory = Food,
+        Type = Normal,
+        Weight = 0.1,
+        Icon     = JuiceOrange,
+        IconFluidMask       = JuiceOrange_Mask,
+        Packaged = TRUE,
+        CustomContextMenu = Drink,
+        EatType = Bourbon,
+        StaticModel = JuiceBottle_OrangeJuice,
+        WorldStaticModel = JuiceBottle_OrangeJuice,
+
+        component FluidContainer
+        {
+            ContainerName   = Bottle,
+            capacity        = 1.0,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            Fluids
+            {
+                fluid           = JuiceOrange:1.0,
+            }
+        }
+	}
+
+	item JuiceTomato
+	{
+        DisplayName = Bottle,
+        DisplayCategory = Food,
+        Type = Normal,
+        Weight = 0.1,
+        Icon     = TomatoJuice,
+        IconFluidMask       = TomatoJuice_Mask,
+        Packaged = TRUE,
+        CustomContextMenu = Drink,
+        EatType = Bourbon,
+        StaticModel = JuiceBottle_Tomato,
+        WorldStaticModel = JuiceBottle_Tomato,
+
+        component FluidContainer
+        	{
+            	ContainerName   = Bottle,
+            	capacity        = 1.0,
+           	 CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            	Fluids
+            		{
+                	fluid           = JuiceTomato:1.0,
+            		}
+        	}
+	}
+
+	item Pop
+	{
+		DisplayName = Diet Cola,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Pop,
+		EatType = popcan,
+		StaticModel = PopCanDiet,
+		WorldStaticModel = PopCanDiet,
+		FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapMetalMedium,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Cookable;HasMetal;SealedBeverageCan,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = CanPop,
+		Opened	= false,
+            	capacity        = 0.3,
+		CustomDrinkSound = DrinkingFromCan,
+
+            	Fluids
+            		{
+                	fluid           = ColaDiet:1.0,
+            		}
+        	}
+	}
+	
+	item Pop2
+	{
+		DisplayName = Cola,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Pop2,
+		EatType = popcan,
+		StaticModel = PopCanRed,
+		WorldStaticModel = PopCanRed,
+		FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapMetalMedium,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Cookable;HasMetal;SealedBeverageCan,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = CanPop,
+		Opened	= false,
+            	capacity        = 0.3,
+		CustomDrinkSound = DrinkingFromCan,
+
+            	Fluids
+            		{
+                	fluid           = Cola:1.0,
+            		}
+        	}
+	}
+	
+	item Pop3
+	{
+		DisplayName = Ginger Ale,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Pop3,
+		EatType = popcan,
+		StaticModel = PopCanFizz,
+		WorldStaticModel = PopCanFizz,
+		FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapMetalMedium,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Cookable;HasMetal;SealedBeverageCan,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = CanPop,
+		Opened	= false,
+            	capacity        = 0.3,
+		CustomDrinkSound = DrinkingFromCan,
+
+            	Fluids
+            		{
+                	fluid           = GingerAle:1.0,
+            		}
+        	}
+	}
+
+	item PopBottle
+	{
+		DisplayName = Bottle,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.1,
+        	Icon     = PopBottle,
+        	IconColorMask       = WaterBottle_Mask2,
+        	IconFluidMask       = PopBottle_Mask,
+		Packaged = TRUE,
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapPlasticBig,
+		FillFromToiletSound = GetWaterFromToilet,
+		StaticModel = PopBottleWorld,
+		WorldStaticModel = PopBottleWorld,
+		OnCreate	= SpecialLootSpawns.OnCreatePopBottle,
+		Tags = CookableMicrowave,
+
+        	component FluidContainer
+        	{
+			ContainerName   = BottlePlastic,
+			PickRandomFluid	= true,
+			capacity        = 2.0,
+			CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            		Fluids
+            		{
+                		fluid           = Cola:1.0,
+                		fluid           = ColaDiet:1.0,
+                		fluid           = GingerAle:1.0,
+                		fluid           = SodaPop:1.0,
+                		fluid           = SodaLime:1.0,
+                		fluid           = SodaGrape:1.0,
+            		}
+       		}
+	}
+	
+	item PopBottleRare
+	{
+		DisplayName = Bottle,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.1,
+        Icon     = PopBottle,
+        IconColorMask       = WaterBottle_Mask2,
+        IconFluidMask       = PopBottle_Mask,
+		EatType = bottle,
+		Packaged = TRUE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottlePlastic,
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapPlasticBig,
+		FillFromToiletSound = GetWaterFromToilet,
+		StaticModel = PopBottleWorld,
+		WorldStaticModel = PopBottleWorld,
+		OnCreate	= SpecialLootSpawns.OnCreatePopBottle,
+		Tags = CookableMicrowave,
+
+        	component FluidContainer
+        	{
+			ContainerName   = BottlePlastic,
+			PickRandomFluid	= true,
+			capacity        = 2.0,
+			CustomDrinkSound = DrinkingFromBottlePlastic,
+            		Fluids
+            		{
+                		fluid           = SodaBlueberry:1.0,
+                		fluid           = SodaBubblegum:1.0,
+		                fluid           = SodaPineapple:1.0,
+                		fluid           = SodaStrewberry:1.0,
+            		}
+       		}
+	}
+
+	item SodaCan
+	{
+		DisplayName = Can of Soda,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = PopCan_Generic,
+		EatType = popcan,
+		IconColorMask = PopCan_Generic_Mask,
+		StaticModel = PopCanGeneric,
+		WorldStaticModel = PopCanGeneric,
+		OnCreate = SpecialLootSpawns.OnCreateSodaCan,
+		Tags = Cookable;HasMetal;SealedBeverageCan,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = CanPop,
+		PickRandomFluid	= true,
+		Opened	= false,
+            	capacity        = 0.3,
+		CustomDrinkSound = DrinkingFromCan,
+
+            	Fluids
+            		{
+                fluid           = SodaBlueberry:1.0,
+                fluid           = SodaBubblegum:1.0,
+                fluid           = SodaPop:1.0,
+                fluid           = SodaLime:1.0,
+                fluid           = SodaGrape:1.0,
+                fluid           = SodaPineapple:1.0,
+                fluid           = SodaStrewberry:1.0,
+            		}
+        	}
+	}
+	
+	/******* DRINKS - RECIPE *******/
+
+	/* evolved recipe drinks were moved to evolved recipe items file */
+
+}

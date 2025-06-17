@@ -1,0 +1,292 @@
+module Base
+{
+
+	item LargeKnifeBlade
+	{
+		DisplayName = Large Knife Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = KnifeLargeBlade_Crude_Tang,
+		Tags = HasMetal;LargeBlade;Sharpenable;ShowCondition;SmeltableIronMedium,
+		StaticModel = CrudeHuntingKnifeForgedBlade,
+		WorldStaticModel = CrudeHuntingKnifeForgedBlade,
+		ConditionMax = 10,
+
+        Sharpness = 1.0,
+		ResearchableRecipes = Forge_Hunting_Knife_Blade;Forge_Large_Knife_Blade;Forge_Crude_Blade;Forge_Small_Knife;Forge_Fleshing_Tool,
+	}
+
+	item KitchenKnifeBlade
+	{
+		DisplayName = Kitchen Knife Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = KitchenKnifeBlade_Forged,
+		Tags = HasMetal;QuarterBarStock;Blade;Sharpenable;ShowCondition;SmeltableSteelSmall,
+		StaticModel = KitchenKnifeBladeForged,
+		WorldStaticModel = KitchenKnifeBladeForged,
+		ConditionMax = 10,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Kitchen_Knife_Blade;Forge_Crude_Blade;Forge_Small_Knife;Forge_Fleshing_Tool,
+	}
+
+	item MeatCleaverBlade
+	{
+		DisplayName = Meat Cleaver Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = CleaverBlade_Forged,
+		Tags = HasMetal;LargeBlade;Sharpenable;ShowCondition;SmeltableSteelMedium,
+		StaticModel = MeatCleaverBladeForged,
+		WorldStaticModel = MeatCleaverBladeForged,
+		ConditionMax = 10,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Crude_Blade;Forge_Fleshing_Tool,
+	}
+
+	item CrudeShortSwordBlade
+	{
+		DisplayName = Crude Shortsword Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1.5,
+		Icon = SwordBlade_Forged_01,
+		Tags = HasMetal;LargeBlade;Sharpenable;ShowCondition;SmeltableIronMediumPlus,
+		StaticModel = CrudeShortSwordBlade,
+		WorldStaticModel = CrudeShortSwordBlade,
+		ConditionMax = 10,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Crude_Shortsword_Blade;Forge_Crude_Sword_Blade;Forge_Machete_Blade;Forge_Crude_Blade;Forge_Scrap_Shortsword,
+	}
+
+	item CrudeShortSwordBlade_NoTang
+	{
+		DisplayName = Crude Shortsword Blade (No Tang),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1.5,
+		Icon = SwordBlade_Short_Forged_01_NoTang,
+		Tags = HasMetal;LargeBlade;Sharpenable;ShowCondition;SmeltableIronMediumPlus,
+		StaticModel = CrudeShortSwordBlade_NoTang,
+		WorldStaticModel = CrudeShortSwordBlade_NoTang,
+		ConditionMax = 10,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Crude_Shortsword_Blade;Forge_Crude_Sword_Blade;Forge_Machete_Blade;Forge_Crude_Blade;Forge_Scrap_Shortsword,
+	}
+
+	item HuntingKnifeBlade
+	{
+		DisplayName = Hunting Knife Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = HuntingKnifeBlade_Forged,
+		Tags = HasMetal;LargeBlade;Sharpenable;ShowCondition;SmeltableSteelMedium,
+		StaticModel = HuntingKnifeBladeForged,
+		WorldStaticModel = HuntingKnifeBladeForged,
+		ConditionMax = 10,
+
+        Sharpness = 1.0,
+		ResearchableRecipes = Forge_Hunting_Knife_Blade;Forge_Large_Knife_Blade;Forge_Crude_Blade;Forge_Small_Knife;Forge_Fleshing_Tool,
+	}
+
+	item MacheteBlade
+	{
+		DisplayName = Machete Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = MacheteBlade_Forged,
+		Tags = HasMetal;FullBlade;Sharpenable;ShowCondition;SmeltableSteelLarge,
+		StaticModel = MacheteBladeForged,
+		WorldStaticModel = MacheteBladeForged,
+		ConditionMax = 13,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Machete_Blade;Forge_Crude_Shortsword_Blade;Forge_Large_Knife_Blade;Forge_Crude_Blade;Forge_Fleshing_Tool;Forge_Scrap_Shortsword,
+	}
+
+	item MacheteBlade_NoTang
+	{
+		DisplayName = Machete Blade (No Tang),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = MacheteBlade_Forged_NoTang,
+		Tags = HasMetal;FullBlade;Sharpenable;ShowCondition;SmeltableSteelLarge,
+		StaticModel = MacheteBlade_NoTang,
+		WorldStaticModel = MacheteBlade_NoTang,
+		ConditionMax = 13,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Machete_Blade;Forge_Crude_Shortsword_Blade;Forge_Large_Knife_Blade;Forge_Crude_Blade;Forge_Fleshing_Tool;Forge_Scrap_Shortsword,
+	}
+
+	item CrudeSwordBlade
+	{
+		DisplayName = Crude Sword Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = SwordBlade_Forged_01,
+		Tags = HasMetal;FullBlade;Sharpenable;ShowCondition;SmeltableIronLarge,
+		StaticModel = CrudeSwordBlade,
+		WorldStaticModel = CrudeSwordBlade,
+		ConditionMax = 10,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Crude_Shortsword_Blade;Forge_ShortSwordBlade;Forge_Machete_Blade;Forge_Scrap_Shortsword,
+	}
+
+	item CrudeSwordBlade_NoTang
+	{
+		DisplayName = Crude Sword Blade (No Tang),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = SwordBlade_Forged_01_NoTang,
+		Tags = HasMetal;FullBlade;Sharpenable;ShowCondition;SmeltableIronLarge,
+		StaticModel = CrudeSwordBlade_NoTang,
+		WorldStaticModel = CrudeSwordBlade_NoTang,
+		ConditionMax = 10,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Crude_Shortsword_Blade;Forge_ShortSwordBlade;Forge_Machete_Blade;Forge_Scrap_Shortsword,
+	}
+
+	item CrudeSwordBlade_Broken
+	{
+		DisplayName = Broken Crude Sword Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1.5,
+		Icon = SwordBlade_Forged_01_Tang_Broken,
+		Tags = HasMetal;FullBlade;Sharpenable;ShowCondition;SmeltableIronMediumPlus,
+		StaticModel = CrudeSwordBlade_Broken,
+		WorldStaticModel = CrudeSwordBlade_Broken,
+		ConditionMax = 10,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Crude_Shortsword_Blade;Forge_ShortSwordBlade;Forge_Machete_Blade;Forge_Scrap_Shortsword,
+	}
+
+	item CrudeSwordBlade_Broken_NoTang
+	{
+		DisplayName = Broken Crude Sword Blade (No Tang),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1.5,
+		Icon = SwordBlade_Forged_01_Broken,
+		Tags = HasMetal;FullBlade;Sharpenable;ShowCondition;SmeltableIronMediumPlus,
+		StaticModel = CrudeSwordBlade_Broken_NoTang,
+		WorldStaticModel = CrudeSwordBlade_Broken_NoTang,
+		ConditionMax = 10,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Crude_Shortsword_Blade;Forge_ShortSwordBlade;Forge_Machete_Blade;Forge_Scrap_Shortsword,
+	}
+
+	item SwordBlade
+	{
+		DisplayName = Sword Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = SwordBlade_Forged_02,
+		Tags = HasMetal;FullBlade;Sharpenable;ShowCondition;SmeltableSteelLarge,
+		StaticModel = SwordBlade,
+		WorldStaticModel = SwordBlade,
+		ConditionMax = 13,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Crude_Shortsword_Blade;Forge_Crude_Sword_Blade;Forge_ShortSwordBlade;Forge_SwordBlade;Forge_Machete_Blade;Forge_Crude_Blade;Forge_Scrap_Shortsword,
+	}
+
+	item SwordBlade_NoTang
+	{
+		DisplayName = Sword Blade (No Tang),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = SwordBlade_Forged_02_NoTang,
+		Tags = HasMetal;FullBlade;Sharpenable;ShowCondition;SmeltableSteelLarge,
+		StaticModel = SwordBlade_NoTang,
+		WorldStaticModel = SwordBlade_NoTang,
+		ConditionMax = 13,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Crude_Shortsword_Blade;Forge_Crude_Sword_Blade;Forge_ShortSwordBlade;Forge_SwordBlade;Forge_Machete_Blade;Forge_Crude_Blade;Forge_Scrap_Shortsword,
+	}
+
+	item SwordBlade_Broken
+	{
+		DisplayName = Broken Sword Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1.5,
+		Icon = SwordBlade_Forged_02_Tang_Broken,
+		Tags = HasMetal;FullBlade;Sharpenable;ShowCondition;SmeltableSteelMediumPlus,
+		StaticModel = SwordBlade_Broken,
+		WorldStaticModel = SwordBlade_Broken,
+		ConditionMax = 13,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Crude_Shortsword_Blade;Forge_Crude_Sword_Blade;Forge_ShortSwordBlade;Forge_SwordBlade;Forge_Machete_Blade;Forge_Crude_Blade;Forge_Scrap_Shortsword,
+	}
+
+	item SwordBlade_Broken_NoTang
+	{
+		DisplayName = Broken Sword Blade (No Tang),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1.5,
+		Icon = SwordBlade_Forged_02_Broken,
+		Tags = HasMetal;FullBlade;Sharpenable;ShowCondition;SmeltableSteelMediumPlus,
+		StaticModel = SwordBlade_Broken_NoTang,
+		WorldStaticModel = SwordBlade_Broken_NoTang,
+		ConditionMax = 13,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Crude_Shortsword_Blade;Forge_Crude_Sword_Blade;Forge_ShortSwordBlade;Forge_SwordBlade;Forge_Machete_Blade;Forge_Crude_Blade;Forge_Scrap_Shortsword,
+	}
+
+	item ShortSwordBlade
+	{
+		DisplayName = Shortsword Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1.5,
+		Icon = SwordBlade_Forged_Short,
+		Tags = HasMetal;FullBlade;Sharpenable;ShowCondition;SmeltableSteelMediumPlus,
+		StaticModel = ShortSwordBlade,
+		WorldStaticModel = ShortSwordBlade,
+		ConditionMax = 13,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Crude_Shortsword_Blade;Forge_Crude_Sword_Blade;Forge_ShortSwordBlade;Forge_SwordBlade;Forge_Machete_Blade;Forge_Crude_Blade;Forge_Scrap_Shortsword,
+	}
+
+	item ShortSwordBlade_NoTang
+	{
+		DisplayName = Shortsword Blade (No Tang),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1.5,
+		Icon = SwordBlade_Forged_02_NoTang,
+		Tags = HasMetal;FullBlade;Sharpenable;ShowCondition;SmeltableSteelMediumPlus,
+		StaticModel = ShortSwordBlade_NoTang,
+		WorldStaticModel = ShortSwordBlade_NoTang,
+		ConditionMax = 13,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Crude_Shortsword_Blade;Forge_Crude_Sword_Blade;Forge_ShortSwordBlade;Forge_SwordBlade;Forge_Machete_Blade;Forge_Crude_Blade;Forge_Scrap_Shortsword,
+	}
+
+}

@@ -1,0 +1,30 @@
+
+module Base
+{
+	sound AlarmClockRingingLoop
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/AlarmClockRinging,
+		}
+	}
+
+	sound PocketWatchRinging
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/PocketWatchRinging,
+		}
+	}
+
+	sound WatchAlarmLoop
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/AlarmWatchRinging,
+		}
+	}
+}

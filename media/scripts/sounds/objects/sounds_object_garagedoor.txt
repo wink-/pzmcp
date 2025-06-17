@@ -1,0 +1,65 @@
+module Base
+{
+	sound GarageDoorBlocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/GarageDoor/IsBlocked,
+		}
+	}
+	
+	sound GarageDoorBreak
+	{
+		category = Object,
+		clip
+		{
+			event = Object/GarageDoor/Break,
+		}
+	}
+
+	sound GarageDoorClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/GarageDoor/Close,
+		}
+	}
+
+	sound GarageDoorLock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/GarageDoor/Lock,
+		}
+	}
+
+	sound GarageDoorLocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/GarageDoor/IsLocked,
+		}
+	}
+
+	sound GarageDoorOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/GarageDoor/Open,
+		}
+	}
+
+	sound GarageDoorUnlock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/GarageDoor/Unlock,
+		}
+	}
+}

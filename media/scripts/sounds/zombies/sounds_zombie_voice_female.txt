@@ -1,0 +1,116 @@
+module Base
+{
+	sound FemaleZombieVoiceA
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Voice/FemaleA,
+		}
+	}
+
+	sound FemaleZombieVoiceB
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Voice/FemaleB,
+		}
+	}
+
+	sound FemaleZombieVoiceC
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Voice/FemaleC,
+		}
+	}
+
+/******************************************************************************/
+
+	sound FemaleZombieSprinterVoiceA
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Voice/Sprinter/FemaleA,
+		}
+	}
+
+	sound FemaleZombieSprinterVoiceB
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Voice/Sprinter/FemaleB,
+		}
+	}
+
+	sound FemaleZombieSprinterVoiceC
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Voice/Sprinter/FemaleA,
+		}
+	}
+
+/******************************************************************************/
+
+	sound FemaleZombieBiteA
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Bite/FemaleA,
+		}
+	}
+
+	sound FemaleZombieBiteB
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Bite/FemaleB,
+		}
+	}
+
+	sound FemaleZombieBiteC
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Bite/FemaleC,
+		}
+	}
+
+/******************************************************************************/
+
+	sound FemaleZombieSprinterBiteA
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Bite/Sprinter/FemaleA,
+		}
+	}
+
+	sound FemaleZombieSprinterBiteB
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Bite/Sprinter/FemaleB,
+		}
+	}
+
+	sound FemaleZombieSprinterBiteC
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Bite/Sprinter/FemaleA,
+		}
+	}
+}

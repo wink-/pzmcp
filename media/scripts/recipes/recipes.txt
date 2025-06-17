@@ -1,0 +1,686 @@
+module Base
+{
+    craftRecipe CraftRope
+    {
+        timedAction = Making,
+        time            = 140,
+		Tags = AnySurfaceCraft,
+
+        inputs
+        {
+            item 2 [Base.Dogbane;Base.HempScutched] flags[Prop2],
+            item 1 [Base.WoodenStick2;Base.TreeBranch2;Base.Handle] mode:keep flags[Prop1],
+			item 1 tags[SharpKnife;Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+        }
+       outputs
+       {
+           item 1 Base.Rope,
+       }
+    }
+
+    craftRecipe CraftTwine
+    {
+        timedAction = Making,
+        time = 180,
+        Tags = AnySurfaceCraft,
+
+         inputs
+         {
+            item 1 [Base.Dogbane;Base.HempScutched;Base.FlaxTow;25:Base.Thread_Sinew] flags[Prop2;IsExclusive],
+            item 1 [Base.WoodenStick2;Base.TreeBranch2;Base.Handle] mode:keep flags[Prop1],
+			item 1 tags[SharpKnife;Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+         }
+         outputs
+         {
+            item 1 Base.Twine,
+         }
+    }
+
+    craftRecipe CrushLimestone
+    {
+        timedAction = CrushLimestone,
+        time            = 140,
+        Tags = AnySurfaceCraft,
+        category      = Masonry,
+        xpAward       = Masonry:5,
+
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer;Sledgehammer;StoneMaul] mode:keep flags[MayDegradeLight],
+            item 1 [Base.Limestone],
+        }
+       outputs
+       {
+           item 1 Base.CrushedLimestone,
+       }
+    }
+
+    craftRecipe CrushOre
+    {
+        timedAction = CrushLimestone,
+        time            = 140,
+        Tags = AnySurfaceCraft,
+        category      = Masonry,
+        xpAward       = Masonry:5,
+
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer;Sledgehammer;StoneMaul] mode:keep flags[MayDegradeLight],
+            item 1 [Base.IronOre;Base.CopperOre;Base.LargeMeteorite] mappers[CrushList],
+        }
+        outputs
+        {
+            item 1 mapper:CrushList,
+        }
+        itemMapper CrushList
+        {
+            Base.CopperOre_Crushed = Base.CopperOre,
+
+            default = Base.IronOre_Crushed,
+        }
+    }
+
+	craftRecipe BreakGlass
+	{
+        timedAction = SmashBottle,
+		Time = 15,
+		OnTest = Recipe.OnTest.BreakGlass,
+		Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 1 tags[Glass] flags[ItemCount],
+		}
+		outputs
+		{
+			item 1 Base.BrokenGlass,
+		}
+	}
+	
+	craftRecipe RefillLighter
+	{
+        timedAction = Making,
+		Time = 30,
+		OnCreate = Recipe.OnCreate.RefillLighter,
+		Tags = InHandCraft,
+		inputs
+		{
+			item 1 tags[RefillableLighter] mode:keep flags[NotFull;ItemCount],
+			item 1 tags[LighterFluid] flags[NotEmpty],
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe SmashBottle
+	{
+        timedAction = SmashBottle,
+        time            = 30,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Weaponry,
+		/* CanWalk = true, */
+		inputs
+		{
+			item 1 tags[GlassBottle] mode:destroy flags[Prop1;ItemCount],
+		}
+		outputs
+		{
+			item 1 Base.SmashedBottle,
+		}
+	}
+
+    /* Example using OnCanPerform and Tooltip */
+/*
+    recipe HockeyMaskSmashBottle
+    {
+        [Recipe.GetItemTypes.GlassBottle],
+        Result:SmashedBottle,
+        Time:20,
+        OnCanPerform:Recipe.OnCanPerform.HockeyMaskSmashBottle,
+        Tooltip:Tooltip_Recipe_HockeyMaskSmashBottle,
+    }
+*/
+
+	craftRecipe TakeATissue
+	{
+        timedAction = Making,
+		Time = 15,
+		/* CanWalk = true, */
+		Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 1 [Base.TissueBox],
+		}
+		outputs
+		{
+			item 1 Base.Tissue,
+		}
+	}
+
+	craftRecipe ScratchTicket
+	{
+		timedAction = Making,
+		Time = 50,
+		OnCreate = Recipe.OnCreate.ScratchTicket,
+		OnTest = Recipe.OnTest.ScratchTicket,
+		/* CanWalk = true, */
+		Tags = InHandCraft;RightClickOnly,
+		inputs
+		{
+			item 1 [Base.ScratchTicket],
+		}
+		outputs
+		{
+			item 1 Base.ScratchTicket,
+		}
+	}
+
+	craftRecipe SawOffShotgun
+	{
+        timedAction = SawOffShotgun,
+		Time = 200,
+		OnCreate = Recipe.OnCreate.ShotgunSawnoff,
+		ToolTip = Tooltip_Recipe_NeedSawMetal,
+		Tags = InHandCraft,
+        category = Weaponry,
+		inputs
+		{
+			item 1 tags[MetalSaw;SmallSaw] mode:keep flags[Prop1;MayDegrade],
+			item 1 [Base.Shotgun;Base.DoubleBarrelShotgun] flags[Prop2;InheritCondition;InheritAmmunition] mappers[shotgunType],
+		}
+		outputs
+		{
+			item 1 mapper:shotgunType,
+		}
+		itemMapper shotgunType
+		{
+			Base.ShotgunSawnoff = Base.Shotgun,
+			Base.DoubleBarrelShotgunSawnoff = Base.DoubleBarrelShotgun,
+		}
+	}
+
+	craftRecipe OpenUmbrella
+	{
+        timedAction = Making,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.CloseUmbrella,
+		Tags = InHandCraft;CanBeDoneInDark;RightClickOnly,
+		/* CanWalk = true, */
+		inputs
+		{
+			item 1 [Base.ClosedUmbrellaBlack;Base.ClosedUmbrellaBlue;Base.ClosedUmbrellaRed;Base.ClosedUmbrellaTINTED;Base.ClosedUmbrellaWhite] mappers[umbrellaElla] flags[InheritColor;Prop1],
+		}
+		outputs
+		{
+			item 1 mapper:umbrellaElla,
+		}
+        itemMapper umbrellaElla
+        {
+			Base.UmbrellaBlack = Base.ClosedUmbrellaBlack,
+			Base.UmbrellaBlue = Base.ClosedUmbrellaBlue,
+			Base.UmbrellaRed = Base.ClosedUmbrellaRed,
+			Base.UmbrellaTINTED = Base.ClosedUmbrellaTINTED,
+			Base.UmbrellaWhite = Base.ClosedUmbrellaWhite,
+		}
+	}
+
+	craftRecipe CloseUmbrella
+	{
+        timedAction = Making,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.CloseUmbrella,
+		Tags = InHandCraft;CanBeDoneInDark;RightClickOnly,
+		/* CanWalk = true, */
+		inputs
+		{
+			item 1 [Base.UmbrellaBlack;Base.UmbrellaBlue;Base.UmbrellaRed;Base.UmbrellaTINTED;Base.UmbrellaWhite] mappers[umbrellaElla] flags[InheritColor;Prop1],
+		}
+		outputs
+		{
+			item 1 mapper:umbrellaElla,
+		}
+        itemMapper umbrellaElla
+        {
+			Base.ClosedUmbrellaBlack = Base.UmbrellaBlack,
+			Base.ClosedUmbrellaBlue = Base.UmbrellaBlue,
+			Base.ClosedUmbrellaRed = Base.UmbrellaRed,
+			Base.ClosedUmbrellaTINTED = Base.UmbrellaTINTED,
+			Base.ClosedUmbrellaWhite = Base.UmbrellaWhite,
+		}
+	}
+
+	craftRecipe CraftSheetRope
+	{
+        timedAction = Making,
+		Time = 50,
+		Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 1 [Base.Sheet],
+		}
+		outputs
+		{
+			item 1 Base.SheetRope,
+		}
+	}
+
+	craftRecipe UntieSheetRope
+	{
+        timedAction = Making,
+		Time = 50,
+		Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 1 [Base.SheetRope],
+		}
+		outputs
+		{
+			item 1 Base.Sheet,
+		}
+	}
+
+	craftRecipe RipClothing
+	{
+        timedAction = RipClothing,
+		Time = 100,
+		Tags = InHandCraft;CanBeDoneInDark;RemoveResultItems,
+		OnCreate = Recipe.OnCreate.RipClothing,
+		/* OnCanPerform = Recipe.OnCanPerform.RipClothing, */
+		Tooltip = Tooltip_Recipe_ClothingNotWorn,
+		/* CanWalk = true, */
+		inputs
+		{
+			item 1 tags[RipClothingCotton] flags[AllowDestroyedItem;IsNotWorn],
+		}
+		outputs
+		{
+			item 1 Base.RippedSheets,
+		}
+	}
+
+    /*this second recipe is so that worn clothing items are not consumed when ripping all clothing*/
+    /* recipe Rip Worn Clothing 
+    {
+        [Recipe.GetItemTypes.RipClothing_Cotton],
+
+        Result:RippedSheets,
+        RemoveResultItem:true,
+        InSameInventory:true,
+        Sound:ClothesRipping,
+        Time:100.0,
+        AnimNode:RipSheets,
+        OnCreate:Recipe.OnCreate.RipClothing,
+		OnTest:Recipe.OnTest.IsWorn,
+		OnCanPerform:Recipe.OnCanPerform.RipClothing,
+		Tooltip:Tooltip_Recipe_ClothingIsWorn,
+    }*/
+
+	craftRecipe RipWornClothing
+	{
+        timedAction = RipClothing,
+		Time = 200,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;CanBeDoneInDark;RemoveResultItems,
+		OnCreate = Recipe.OnCreate.RipClothing,
+		Tooltip = Tooltip_Recipe_NotWornLowerBody,
+		OnTest = Recipe.OnTest.NotWornLowerBody,
+		inputs
+		{
+			item 1 tags[RipClothingCotton] flags[AllowDestroyedItem;IsWorn],
+		}
+		outputs
+		{
+			item 1 Base.RippedSheets,
+		}
+	}
+
+	craftRecipe RipDenimClothing
+	{
+        timedAction = CutClothing,
+		Time = 200,
+		Tags = InHandCraft;RemoveResultItems,
+		OnCreate = Recipe.OnCreate.RipClothing,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[MayDegradeLight;Prop1;IsNotDull],
+			item 1 tags[RipClothingDenim;RipClothingLeather] flags[AllowDestroyedItem;IsNotWorn] mappers[fabricType],
+		}
+		outputs
+		{
+			item 1 mapper:fabricType,
+		}
+		itemMapper fabricType
+		{
+			Base.LeatherStrips = Base.JacketLong_Random,
+			Base.LeatherStrips = Base.JacketLong_Black,
+			Base.LeatherStrips = Base.Jacket_Black,
+			Base.LeatherStrips = Base.Jacket_LeatherWildRacoons,
+			Base.LeatherStrips = Base.Jacket_LeatherIronRodent,
+			Base.LeatherStrips = Base.Jacket_LeatherBarrelDogs,
+			Base.LeatherStrips = Base.Jacket_Leather,
+			Base.LeatherStrips = Base.Jacket_LeatherBlack,
+			Base.LeatherStrips = Base.Jacket_LeatherBrown,
+			Base.LeatherStrips = Base.Belt2,
+			Base.LeatherStrips = Base.TrousersMesh_Leather,
+			Base.LeatherStrips = Base.Trousers_LeatherBlack,
+			default = Base.DenimStrips,
+		}
+	}
+
+	craftRecipe RipWornDenimClothing
+	{
+        timedAction = CutClothing,
+		Time = 300,
+		Tags = InHandCraft;RemoveResultItems,
+		AllowBatchCraft = False,
+		OnCreate = Recipe.OnCreate.RipClothing,
+		OnTest = Recipe.OnTest.NotWornLowerBody,
+		ToolTip = Tooltip_Recipe_NotWornLowerBody,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[MayDegradeLight;Prop1;IsNotDull],
+			item 1 tags[RipClothingDenim;RipClothingLeather] flags[AllowDestroyedItem;IsWorn] mappers[fabricType],
+		}
+		outputs
+		{
+			item 1 mapper:fabricType,
+		}
+		itemMapper fabricType
+		{
+			Base.LeatherStrips = Base.JacketLong_Random,
+			Base.LeatherStrips = Base.JacketLong_Black,
+			Base.LeatherStrips = Base.Jacket_Black,
+			Base.LeatherStrips = Base.Jacket_LeatherWildRacoons,
+			Base.LeatherStrips = Base.Jacket_LeatherIronRodent,
+			Base.LeatherStrips = Base.Jacket_LeatherBarrelDogs,
+			Base.LeatherStrips = Base.Jacket_Leather,
+			Base.LeatherStrips = Base.Jacket_LeatherBlack,
+			Base.LeatherStrips = Base.Jacket_LeatherBrown,
+			Base.LeatherStrips = Base.Belt2,
+			Base.LeatherStrips = Base.TrousersMesh_Leather,
+			Base.LeatherStrips = Base.Trousers_LeatherBlack,
+			default = Base.DenimStrips,
+		}
+	}
+
+	craftRecipe CutTarp
+	{
+        timedAction = CutClothing,
+		Time = 200,
+		Tags = InHandCraft,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[MayDegradeLight;Prop1;IsNotDull],
+			item 1 [Base.Tarp] flags[AllowDestroyedItem;Prop2],
+		}
+		outputs
+		{
+			item 6 Base.TarpPiece,
+		}
+	}
+
+	craftRecipe RipSheets
+	{
+        timedAction = RipClothing,
+		Time = 100,
+		Tags = InHandCraft;CanBeDoneInDark,
+		/*OnCreate = Recipe.OnCreate.RipClothing,*/
+		/* CanWalk = true, */
+		inputs
+		{
+			item 1 tags[Sheet],
+		}
+		outputs
+		{
+			item 10 Base.RippedSheets,
+		}
+	}
+
+	craftRecipe MakeNewspaperHat
+	{
+        timedAction = Making,
+		Time = 20,
+		Tags = InHandCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[Newspaper],
+		}
+		outputs
+		{
+			item 1 Base.Hat_NewspaperHat,
+		}
+	}
+
+	craftRecipe MakeTinFoilHat
+	{
+        timedAction = Making,
+		Time = 20,
+		Tags = InHandCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 [Base.Aluminum],
+		}
+		outputs
+		{
+			item 1 Base.Hat_TinFoilHat,
+		}
+	}
+
+	craftRecipe TakeAGarbageBag
+	{
+        timedAction = Making,
+		Time = 15,
+		OnCreate = Recipe.OnCreate.CreateUnpack,
+		Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 1 [Base.Garbagebag_box],
+		}
+		outputs
+		{
+			item 1 Base.Garbagebag,
+		}
+	}
+
+	craftRecipe MakeHollowBook
+	{
+        timedAction = Making,
+		Time = 250,
+		NeedToBeLearn = True,
+		OnCreate = Recipe.OnCreate.HollowBook,
+		Tags = InHandCraft,
+		AutoLearnAny = Maintenance:10,
+		inputs
+		{
+			item 1 [Base.StraightRazor;Base.Scalpel] mode:keep flags[MayDegradeLight;Prop1],
+			item 1 [Base.Brush] mode:keep,
+            item 1 tags[HollowBook;FancyBook] mappers[BookMapper] flags[Prop2],
+			item 5 [Base.Glue],
+		}
+        outputs
+        {
+            item 1 mapper:BookMapper,
+        }
+        itemMapper BookMapper
+        {
+            Base.HollowFancyBook = Base.BookFancy_Bible,
+            Base.HollowFancyBook = Base.BookFancy_Classic,
+            Base.HollowFancyBook = Base.BookFancy_ClassicFiction,
+            Base.HollowFancyBook = Base.BookFancy_ClassicNonfiction,
+            Base.HollowFancyBook = Base.BookFancy_History,
+            Base.HollowFancyBook = Base.BookFancy_Legal,
+            Base.HollowFancyBook = Base.BookFancy_Medical,
+            Base.HollowFancyBook = Base.BookFancy_MilitaryHistory,
+            Base.HollowFancyBook = Base.BookFancy_Occult,
+            Base.HollowFancyBook = Base.BookFancy_Philosophy,
+            Base.HollowFancyBook = Base.BookFancy_Politics,
+            Base.HollowFancyBook = Base.BookFancy_Religion,
+
+            default = Base.HollowBook,
+        }
+	}
+
+	craftRecipe SetCoffinUpright
+	{
+		timedAction = Making,
+		Time = 20,
+		Tags = InHandCraft;CanBeDoneInDark;RightClickOnly,
+		inputs
+		{
+			item 1 [Base.Mov_FlatCoffin],
+		}
+		outputs
+		{
+			item 1 Base.Mov_UprightCoffin,
+		}
+	}
+
+	craftRecipe SetCoffinFlat
+	{
+		timedAction = Making,
+		Time = 20,
+		Tags = InHandCraft;CanBeDoneInDark;RightClickOnly,
+		inputs
+		{
+			item 1 [Base.Mov_UprightCoffin],
+		}
+		outputs
+		{
+			item 1 Base.Mov_FlatCoffin,
+		}
+	}
+
+    craftRecipe CutUpTire
+    {
+        time            = 300,
+        tags            = AnySurfaceCraft,
+        needTobeLearn = false,
+        SkillRequired = Strength:4,
+        timedAction = Making,
+        MetaRecipe = MakeTireArmor,
+        inputs
+        {
+            item 1 tags[MetalSaw;BoltCutters] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[WholeTire] flags[AllowDestroyedItem],
+        }
+        outputs
+        {
+            item 4 Base.TirePiece,
+        }
+    }
+
+    /* NOTE: Not redundant with DuplicateBuildingKey, as one uses a workstation and the other uses hand-tools */
+    craftRecipe CopyBuildingKey
+    {
+        Time = 230,
+        OnCreate = CraftRecipeCode.CopyKey.OnCreate,
+        OnTest = CraftRecipeCode.CopyKey.OnTest,
+        Tags = AnySurfaceCraft;CannotBeResearched,
+        timedAction = Making,
+        needTobeLearn = true,
+        inputs
+        {
+            item 1 tags[SmallFiles] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[BuildingKey] mode:keep,
+            item 1 [Base.Key_Blank] flags[Prop2],
+        }
+        outputs
+        {
+            item 1 Base.Key1,
+        }
+    }
+
+	craftRecipe CutUpBelt
+	{
+        timedAction = CutClothing,
+		Time = 200,
+		Tags = InHandCraft,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[MayDegradeLight;Prop1;IsNotDull],
+			item 1 tags[ScrapAsBelt] flags[IsEmpty;AllowDestroyedItem;IsNotWorn;Prop2],
+		}
+		outputs
+		{
+			item 1 Base.Buckle,
+			item 1 Base.LeatherStrips,
+		}
+	}
+
+	craftRecipe MakeTwigBroom
+	{
+		Time = 50,
+		Tags = InHandCraft,
+        timedAction = CraftWeapon2H,
+		inputs
+		{
+			item 1 [Base.Sapling;Base.LongStick] flags[Prop2;InheritCondition],
+			item 1 [Base.TwigsBundle] flags[Prop1],
+			item 1 tags[SimpleWeaponBinding] flags[DontReplace],
+		}
+		outputs
+		{
+			item 1 Base.Broom_Twig,
+		}
+	}
+
+	craftRecipe MakeBlankID
+	{
+		Time = 500,
+        Tags = AnySurfaceCraft;CannotBeResearched,
+        timedAction = Making,
+        needTobeLearn = true,
+		inputs
+		{
+			item 2 tags[IDcard],
+			item 1 tags[Pen] mode:keep,
+			item 1 [Base.CorrectionFluid],
+			item 1 [Base.Scotchtape],
+			item 1 [Base.Scalpel;Base.StraightRazor] mode:keep flags[IsNotDull;SharpnessCheck],
+		}
+		outputs
+		{
+			item 1 Base.IDcard_Blank,
+		}
+	}
+	
+	craftRecipe ReplaceHacksawBlade
+	{
+		Time = 100,
+		OnCreate = Recipe.OnCreate.ChangeSawblade,
+		OnTest = Recipe.OnTest.OnlyBrokenSaw,
+		Tags = InHandCraft,
+        timedAction = Making,
+        category = Repair,
+		inputs
+		{
+			item 1 [Base.Saw] flags[AllowDestroyedItem],
+			item 1 [Base.HacksawBlade] flags[AllowDestroyedItem],
+		}
+		outputs
+		{
+			item 1 Base.Saw,
+		}
+	}
+
+	craftRecipe ReplaceSmallSawBlade
+	{
+		Time = 100,
+		OnCreate = Recipe.OnCreate.ChangeSawblade,
+		OnTest = Recipe.OnTest.OnlyBrokenSaw,
+		Tags = InHandCraft,
+        timedAction = Making,
+        category = Repair,
+		inputs
+		{
+			item 1 [Base.SmallSaw] flags[AllowDestroyedItem],
+			item 1 [Base.SmallSawblade] flags[AllowDestroyedItem],
+		}
+		outputs
+		{
+			item 1 Base.SmallSaw,
+		}
+	}
+}

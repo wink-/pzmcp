@@ -1,0 +1,22 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Hand_Press
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Hand Operated Press,
+            Icon                = Build_Handpress,
+
+            components
+            {
+                CraftLogic
+                {
+                    LuaPanelClass           = ISCraftDefaultPanel,
+                    DisplayName             = Press,
+                    Icon                    = Build_Handpress,
+                }
+            }
+        }
+    }
+}

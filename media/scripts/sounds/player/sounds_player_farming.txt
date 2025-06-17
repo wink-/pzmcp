@@ -1,0 +1,956 @@
+module Base
+{
+	sound Shoveling
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Shovel,
+		}
+	}
+
+	sound AttachRopeTree
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Rope/AttachTree,
+		}
+	}
+
+	sound DetachRopeTree
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Rope/DetachTree,
+		}
+	}
+
+	sound AttachRopeAnimal
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Rope/AttachAnimal,
+		}
+	}
+
+	sound DetachRopeAnimal
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Rope/DetachAnimal,
+		}
+	}
+
+	sound PetAnimalCow
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Pet/Cow,
+		}
+	}
+
+	sound PetAnimalCalf
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Pet/Calf,
+		}
+	}
+
+	sound PetAnimalBull
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Pet/Bull,
+		}
+	}
+
+	sound PetAnimalPig
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Pet/Pig,
+		}
+	}
+
+	sound PetAnimalBoar
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Pet/Boar,
+		}
+	}
+
+	sound PetAnimalPiglet
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Pet/Piglet,
+		}
+	}
+
+	sound PetAnimalSheep
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Pet/Sheep,
+		}
+	}
+
+	sound PetAnimalLamb
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Pet/Lamb,
+		}
+	}
+
+	sound PetAnimalTurkey
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Pet/Turkey,
+		}
+	}
+
+	sound PetAnimalChicken
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Pet/Chicken,
+		}
+	}
+
+	sound PetAnimalChick
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Pet/Chick,
+		}
+	}
+
+	sound PickUpAnimalCalf
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Calf,
+		}
+	}
+
+	sound PickUpAnimalChick
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Chick,
+		}
+	}
+
+	sound PickUpAnimalChicken
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Chicken,
+		}
+	}
+
+	sound PickUpAnimalLamb
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Lamb,
+		}
+	}
+
+	sound PickUpAnimalPiglet
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Piglet,
+		}
+	}
+
+	sound PickUpAnimalBabyRabbit
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/BabyRabbit,
+		}
+	}
+
+	sound PickUpAnimalBabyRaccoon
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/BabyRaccoon,
+		}
+	}
+
+	sound PickUpAnimalPig
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Pig,
+		}
+	}
+
+	sound PickUpAnimalDeer
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Deer,
+		}
+	}
+
+	sound PickUpAnimalFawn
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Fawn,
+		}
+	}
+
+	sound PickUpAnimalCow
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Cow,
+		}
+	}
+
+	sound PickUpAnimalSheep
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Sheep,
+		}
+	}
+
+	sound PickUpAnimalMouse
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Mouse,
+		}
+	}
+
+	sound PickUpAnimalRabbit
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Rabbit,
+		}
+	}
+
+	sound PickUpAnimalRaccoon
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Raccoon,
+		}
+	}
+
+	sound PickUpAnimalRat
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Rat,
+		}
+	}
+
+	sound PickUpAnimalTurkey
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Turkey,
+		}
+	}
+
+	sound PickUpAnimalTurkeyPoult
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/TurkeyPoult,
+		}
+	}
+	
+	sound PickUpAnimalDeadCalf
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/Calf,
+		}
+	}
+
+	sound PickUpAnimalDeadChick
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/Chick,
+		}
+	}
+
+	sound PickUpAnimalDeadChicken
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/Chicken,
+		}
+	}
+
+	sound PickUpAnimalDeadCow
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/Cow,
+		}
+	}
+
+	sound PickUpAnimalDeadLamb
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/Lamb,
+		}
+	}
+
+	sound PickUpAnimalDeadPiglet
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/Piglet,
+		}
+	}
+
+	sound PickUpAnimalDeadBabyRabbit
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/BabyRabbit,
+		}
+	}
+
+	sound PickUpAnimalDeadBabyRaccoon
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/BabyRaccoon,
+		}
+	}
+
+	sound PickUpAnimalDeadPig
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/Pig,
+		}
+	}
+
+	sound PickUpAnimalDeadDeer
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/Deer,
+		}
+	}
+
+	sound PickUpAnimalDeadFawn
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/Fawn,
+		}
+	}
+
+	sound PickUpAnimalDeadSheep
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/Sheep,
+		}
+	}
+
+	sound PickUpAnimalDeadMouse
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/Mouse,
+		}
+	}
+
+	sound PickUpAnimalDeadRabbit
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/Rabbit,
+		}
+	}
+
+	sound PickUpAnimalDeadRaccoon
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/Raccoon,
+		}
+	}
+
+	sound PickUpAnimalDeadRat
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/Rat,
+		}
+	}
+
+	sound PickUpAnimalDeadTurkey
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/Turkey,
+		}
+	}
+
+	sound PickUpAnimalDeadTurkeyPoult
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PickUp/Dead/TurkeyPoult,
+		}
+	}
+
+	sound PutDownAnimalCalf
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Calf,
+		}
+	}
+
+	sound PutDownAnimalChick
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Chick,
+		}
+	}
+
+	sound PutDownAnimalChicken
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Chicken,
+		}
+	}
+
+	sound PutDownAnimalLamb
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Lamb,
+		}
+	}
+
+	sound PutDownAnimalPiglet
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Piglet,
+		}
+	}
+
+	sound PutDownAnimalBabyRabbit
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/BabyRabbit,
+		}
+	}
+
+	sound PutDownAnimalBabyRaccoon
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/BabyRaccoon,
+		}
+	}
+
+	sound PutDownAnimalPig
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Pig,
+		}
+	}
+
+	sound PutDownAnimalDeer
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Deer,
+		}
+	}
+
+	sound PutDownAnimalFawn
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Fawn,
+		}
+	}
+
+	sound PutDownAnimalCow
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Cow,
+		}
+	}
+
+	sound PutDownAnimalSheep
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Sheep,
+		}
+	}
+
+	sound PutDownAnimalMouse
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Mouse,
+		}
+	}
+
+	sound PutDownAnimalRabbit
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Rabbit,
+		}
+	}
+
+	sound PutDownAnimalRaccoon
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Raccoon,
+		}
+	}
+
+	sound PutDownAnimalRat
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Rat,
+		}
+	}
+
+	sound PutDownAnimalTurkey
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Turkey,
+		}
+	}
+
+	sound PutDownAnimalTurkeyPoult
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/TurkeyPoult,
+		}
+	}
+
+	sound PutDownAnimalDeadCalf
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/Calf,
+		}
+	}
+
+	sound PutDownAnimalDeadChick
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/Chick,
+		}
+	}
+
+	sound PutDownAnimalDeadChicken
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/Chicken,
+		}
+	}
+
+	sound PutDownAnimalDeadCow
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/Cow,
+		}
+	}
+
+	sound PutDownAnimalDeadLamb
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/Lamb,
+		}
+	}
+
+	sound PutDownAnimalDeadPiglet
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/Piglet,
+		}
+	}
+
+	sound PutDownAnimalDeadBabyRabbit
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/BabyRabbit,
+		}
+	}
+
+	sound PutDownAnimalDeadBabyRaccoon
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/BabyRaccoon,
+		}
+	}
+
+	sound PutDownAnimalDeadPig
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/Pig,
+		}
+	}
+
+	sound PutDownAnimalDeadDeer
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/Deer,
+		}
+	}
+
+	sound PutDownAnimalDeadFawn
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/Fawn,
+		}
+	}
+
+	sound PutDownAnimalDeadSheep
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/Sheep,
+		}
+	}
+
+	sound PutDownAnimalDeadMouse
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/Mouse,
+		}
+	}
+
+	sound PutDownAnimalDeadRabbit
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/Rabbit,
+		}
+	}
+
+	sound PutDownAnimalDeadRaccoon
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/Raccoon,
+		}
+	}
+
+	sound PutDownAnimalDeadRat
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/Rat,
+		}
+	}
+
+	sound PutDownAnimalDeadTurkey
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/Turkey,
+		}
+	}
+
+	sound PutDownAnimalDeadTurkeyPoult
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/PutDown/Dead/TurkeyPoult,
+		}
+	}
+
+	sound LureAnimal
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Lure/Animal,
+		}
+	}
+
+	sound DigFurrowWithHands
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Furrow/Dig/Hands,
+		}
+	}
+
+	sound DigFurrowWithShovel
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Furrow/Dig/Shovel,
+		}
+	}
+
+	sound DigFurrowWithTrowel
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Furrow/Dig/Trowel,
+		}
+	}
+
+	sound OpenSeedPacket
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Seed/OpenPacket,
+		}
+	}
+
+	sound SowSeeds
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Seed/Sow,
+		}
+	}
+
+	sound DropSoilFromShovel
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Soil/Drop/FromShovel,
+		}
+	}
+
+	sound DropSoilFromTrowel
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Soil/Drop/FromTrowel,
+		}
+	}
+
+	sound DropSoilFromDirtBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Soil/Drop/FromDirtBag,
+		}
+	}
+
+	sound DropSoilFromGravelBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Soil/Drop/FromGravelBag,
+		}
+	}
+
+	sound DropSoilFromSandBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Soil/Drop/FromSandBag,
+		}
+	}
+
+	sound HarvestCrops
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Crops/Harvest,
+		}
+	}
+
+	sound WaterCrops
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/Crops/Water,
+		}
+	}
+
+	sound GiveWaterAnimal
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/FeedAnimal/GiveWater,
+		}
+	}
+
+	sound GiveFoodAnimal
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/FeedAnimal/GiveFood,
+		}
+	}
+
+	sound MilkAnimal
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/MilkAnimal,
+		}
+	}
+
+	sound GrabEggs
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/GrabEggs,
+		}
+	}
+
+	sound ScytheGrass
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Farming/ScytheGrass,
+		}
+	}
+}

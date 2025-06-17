@@ -1,0 +1,77 @@
+module Base
+{
+	xuiSkin default
+	{
+        entity ES_Tarp_Shelter
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Tarp Shelter,
+            Icon                = Build_LeanToShelterTarp,
+        }
+	}
+
+    entity Tarp_Shelter
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Tarp_Shelter,
+            uiEnabled       = false,
+        }
+
+
+        component SpriteConfig
+        {
+            isProp      = true,
+            
+            face S
+            {
+                layer
+                {
+                    row = camping_03_14 camping_03_15,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = camping_03_13,
+                    row = camping_03_12,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = camping_03_8 camping_03_9,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = camping_03_11,
+                    row = camping_03_10,
+                }
+            }
+        }
+                                
+        component CraftRecipe
+        {
+            timedAction   = BuildLowNoTool,
+            time          = 50,
+            category      = Outdoors,
+            ToolTip       = Tooltip_craft_shelterDesc,
+
+            inputs
+            {
+                item 2 [Base.TreeBranch2;Base.WoodenStick2],
+                item 1 [Base.Tarp],
+                item 4 [Base.Stone2],
+                item 4 [Base.Log],
+                item 1 [Base.LongStick;Base.Sapling],
+		        item 2 [Base.RippedSheets;Base.RippedSheetsDirty;Base.Twine;Base.Rope;Base.SheetRope] flags[DontReplace],
+            }
+        }
+    }
+}

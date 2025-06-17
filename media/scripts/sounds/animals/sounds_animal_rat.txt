@@ -1,0 +1,83 @@
+module Base
+{
+    sound AnimalVoiceRatDeath
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Rat/Voice/Death,
+        }
+    }
+
+    sound AnimalVoiceRatIdle
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Rat/Voice/Idle,
+        }
+    }
+
+    sound AnimalVoiceRatStressed
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Rat/Voice/Stressed,
+        }
+    }
+
+    sound AnimalVoiceRatPain
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Rat/Voice/Pain,
+        }
+    }
+
+    sound AnimalFootstepsRatRun
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Rat/Footsteps/Run,
+        }
+    }
+
+     sound AnimalFootstepsRatWalk
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Rat/Footsteps/Walk,
+        }
+    }
+
+    sound AnimalRatScuttleCeiling
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Rat/Scuttle/Ceiling,
+        }
+    }
+
+    sound AnimalRatScuttleCupboard
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Rat/Scuttle/Cupboard,
+        }
+    }
+
+    sound AnimalRatScuttleWall
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Rat/Scuttle/Wall,
+        }
+    }
+} 

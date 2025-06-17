@@ -1,0 +1,1392 @@
+module Base
+{
+    item AnimalMilkPowder
+    {
+        DisplayCategory = Food,
+	    Weight = 1.3,
+	    Type = Drainable,
+        UseDelta = 0.05,
+        UseWhileEquipped = false,
+	    DisplayName = Milk Powder,
+	    Icon	=	MilkPowder_Animal,
+	    Tags = FarmingLoot,
+	    WorldStaticModel = MilkPowder_Sack,
+        CantEat = true,
+    }
+
+    item AnimalSinew
+	{
+	    DisplayCategory = AnimalPart,
+	    Type = Normal,
+	    Weight = 0.1,
+	    DisplayName = Animal Sinew,
+	    StaticModel = Animal_Sinew,
+	    Icon	=	Sinew,
+	    WorldStaticModel = Animal_Sinew,
+	}
+
+	item HayTuft
+	{
+	    DisplayCategory = Food,
+	    Weight = 0.1,
+	    Type = Food,
+	    DisplayName = Hay Tuft,
+	    StaticModel = HayTuft,
+	    Icon	=	Haytuft,
+	    HungerChange = -12,
+	    AnimalFeedType = Grass,
+	    Tags = IsFireFuel;IsFireTinder;FarmingLoot,
+	    WorldStaticModel = HayTuft,
+        CantEat = true,
+	}
+
+	item GrassTuft
+	{
+	    DisplayCategory = Food,
+	    Weight = 0.1,
+	    Type = Food,
+	    DisplayName = Grass Tuft,
+	    StaticModel = GrassTuft,
+	    Icon	=	Grasstuft,
+	    HungerChange = -7,
+	    AnimalFeedType = Grass,
+	    WorldStaticModel = GrassTuft,
+	    Tags = FarmingLoot,
+	    CantEat = true,
+	}
+
+	item Scythe
+	{
+	    DisplayCategory = Gardening,
+	    Weight = 2,
+	    Type = Normal,
+	    DisplayName = Scythe,
+	    StaticModel = Scythe,
+	    Icon	=	FullScythe_Forged,
+	    Tags = Scythe;HasMetal;Sharpenable,
+	    Tooltip = Tooltip_item_CutGrass,
+	    WorldStaticModel = Scythe_Grounded,
+		ConditionMax = 10,
+
+        Sharpness = 1.0,
+        HeadCondition = 10,
+        HeadConditionLowerChanceMultiplier = 1,
+        ResearchableRecipes = Forge_Hand_Scythe_Head;Forge_Scythe_Head;MakeStoneBladeScythe,
+	}
+
+	item ScytheForged
+	{
+	    DisplayCategory = Gardening,
+	    Weight = 2,
+	    Type = Normal,
+	    DisplayName = Scythe,
+	    StaticModel = ScytheForged,
+	    Icon	=	FullScythe_Forged,
+	    Tags = Scythe;HasMetal;Sharpenable,
+	    Tooltip = Tooltip_item_CutGrass,
+	    WorldStaticModel = ScytheForged_Grounded,
+		ConditionMax = 10,
+
+        Sharpness = 1.0,
+        HeadCondition = 10,
+        HeadConditionLowerChanceMultiplier = 1,
+        ResearchableRecipes = Forge_Hand_Scythe_Head;Forge_Scythe_Head;MakeStoneBladeScythe,
+	}
+
+    /** This is a generic animal item, its properties get set when we pick up an animal **/
+    item Animal
+    {
+        Weight = 0.1,
+        Type = Animal,
+        DisplayName = Animal,
+        DisplayCategory = Generic,
+        Icon = WoolRaw,
+    }
+
+    item AnimalFeedBag
+    {
+        DisplayCategory = Gardening,
+        Type				=		Drainable,
+        DisplayName			=		Animal Feed Bag,
+        Icon				=		AnimalFeed,
+        Weight				=		4.0,
+        UseDelta			=		0.01,
+        UseWhileEquipped	=	    false,
+        ReplaceOnDeplete	=	EmptySandbag,
+        AnimalFeedType = AnimalFeed,
+		ConditionMax = 1,
+        SurvivalGear = TRUE,
+        ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+        WorldStaticModel = CompostBag,
+        Tags = FarmingLoot,
+    }
+
+    item GrassBag
+    {
+        DisplayCategory = Gardening,
+        Type				=		Drainable,
+        DisplayName			=		Grass Bag,
+        Icon				=		Compost,
+        Weight				=		2.0,
+        UseDelta			=		0.2,
+        UseWhileEquipped	=	    false,
+        ReplaceOnDeplete	=	EmptySandbag,
+        AnimalFeedType = Grass,
+		ConditionMax = 1,
+        SurvivalGear = TRUE,
+        ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+        WorldStaticModel = CompostBag,
+        Tags = FarmingLoot,
+    }
+
+    item Animal_Brain
+    {
+		DisplayCategory = AnimalPart,
+        Weight = 0.1,
+        Type = Food,
+        DisplayName = Animal Brain,
+        Icon = BrainLarge,
+        Tags = AnimalBrain,
+        WorldStaticModel = AnimalBrain,
+    }
+
+    item Animal_Brain_Small
+    {
+		DisplayCategory = AnimalPart,
+        Weight = 0.1,
+        Type = Food,
+        DisplayName = Small Animal Brain,
+        Icon = BrainSmall,
+        Tags = AnimalBrain,
+        WorldStaticModel = AnimalBrain_Small,
+    }
+
+	item BrainTan
+	{
+		DisplayName     = BrainTan,
+		DisplayCategory = Material,
+		Type    = Normal,
+		Weight  = 1,
+		Icon    = BrainTan,
+		StaticModel     = BowlBrainTan,
+		WorldStaticModel = BowlBrainTan,
+		Tags    = BrainTan,
+	    Tooltip = Tooltip_item_BrainTan,
+	}
+
+    /***************/
+    /***** COW *****/
+    /***************/
+
+    item Cow_Head_Angus
+    {
+		DisplayCategory = AnimalPart,
+        Weight = 2,
+        Type = Food,
+        DisplayName = Cow Head,
+        Icon = Head_CowFemale_Black,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Cow_Head_Black,
+    }
+
+    item Bull_Head_Angus
+    {
+		DisplayCategory = AnimalPart,
+        Weight = 2,
+        Type = Food,
+        DisplayName = Bull Head,
+        Icon = Head_CowMale_Black,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Bull_Head_Black,
+    }
+
+    item Calf_Head_Angus
+    {
+		DisplayCategory = AnimalPart,
+        Weight = 1.2,
+        Type = Food,
+        DisplayName = Calf Head,
+        Icon = Head_CowCalf_Black,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = CowCalf_Head_Black,
+    }
+
+    item Cow_Head_Simmental
+    {
+		DisplayCategory = AnimalPart,
+        Weight = 2,
+        Type = Food,
+        DisplayName = Cow Head,
+        Icon = Head_CowFemale_Brown,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Cow_Head_Brown,
+    }
+
+    item Bull_Head_Simmental
+    {
+		DisplayCategory = AnimalPart,
+        Weight = 2,
+        Type = Food,
+        DisplayName = Bull Head,
+        Icon = Head_CowMale_Brown,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Bull_Head_Brown,
+    }
+
+    item Calf_Head_Simmental
+    {
+		DisplayCategory = AnimalPart,
+        Weight = 1.2,
+        Type = Food,
+        DisplayName = Calf Head,
+        Icon = Head_CowCalf_Brown,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = CowCalf_Head_Brown,
+    }
+
+    item Cow_Head_Holstein
+    {
+		DisplayCategory = AnimalPart,
+        Weight = 2,
+        Type = Food,
+        DisplayName = Cow Head,
+        Icon = Head_CowFemale_BlackWhite,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Cow_Head_White,
+    }
+
+    item Bull_Head_Holstein
+    {
+		DisplayCategory = AnimalPart,
+        Weight = 2,
+        Type = Food,
+        DisplayName = Bull Head,
+        Icon = Head_CowMale_BlackWhite,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Bull_Head_White,
+    }
+
+    item Calf_Head_Holstein
+    {
+		DisplayCategory = AnimalPart,
+        Weight = 1.2,
+        Type = Food,
+        DisplayName = Calf Head,
+        Icon = Head_CowCalf_BlackWhite,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = CowCalf_Head_White,
+    }
+
+    item Cow_Skull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.8,
+        Type = Normal,
+        DisplayName = Cow Skull,
+        Icon = Skull_CowFemale,
+        Tags = AnimalSkull,
+        WorldStaticModel = Cow_Skull,
+    }
+
+    item Bull_Skull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.8,
+        Type = Normal,
+        DisplayName = Bull Skull,
+        Icon = Skull_CowMale,
+        Tags = AnimalSkull,
+        WorldStaticModel = Bull_Skull,
+    }
+
+    item Calf_Skull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.5,
+        Type = Normal,
+        DisplayName = Calf Skull,
+        Icon = Skull_CowCalf,
+        Tags = AnimalSkull,
+        WorldStaticModel = Calf_Skull,
+    }
+
+    /*****************/
+    /***** SHEEP *****/
+    /*****************/
+
+    item SheepShears
+    {
+        Weight	=	0.3,
+		DisplayCategory = Tool,
+        Type	=	Normal,
+        DisplayName	=	Shears,
+        Icon	=	SheepShears,
+        WorldStaticModel = SheepShears_Ground,
+        ConditionMax = 10,
+        Tags = HasMetal;ShowCondition;Shear;Sharpenable;FarmingLoot,
+        ConditionLowerStandard = 25,
+        ResearchableRecipes = Forge_Crude_Blade;Forge_Sheep_Shears;Forge_Fine_Scissors;Forge_Scissors;Forge_Small_Knife,
+    }
+
+    item SheepShearsForged
+    {
+        Weight	=	0.3,
+		DisplayCategory = Tool,
+        Type	=	Normal,
+        DisplayName	=	Shears,
+        Icon	=	SheepSheers_Forged,
+        WorldStaticModel = SheepShearsForged_Ground,
+        ConditionMax = 10,
+        Tags = HasMetal;ShowCondition;Shear;Sharpenable;FarmingLoot,
+        ConditionLowerStandard = 20,
+        ResearchableRecipes = Forge_Crude_Blade;Forge_Fine_Scissors;Forge_Scissors;Forge_Small_Knife,
+    }
+
+    item SheepElectricShears
+    {
+        Weight	=	0.3,
+		DisplayCategory = Tool,
+        Type	=	Drainable,
+        UseDelta			=		0.002,
+        DisplayName	= Shears - Electric,
+        Icon	=	SheepShears_Electric,
+        WorldStaticModel = SheepShears_Electric_Ground,
+        cantBeConsolided = TRUE,
+        DisappearOnUse = FALSE,
+        KeepOnDeplete = TRUE,
+        ConditionMax = 20,
+        UseWhileEquipped = FALSE,
+        Tags = HasMetal;MiscElectronic;ShowCondition;Shear;FarmingLoot;UsesBattery,
+        ConditionLowerStandard = 40,
+    }
+
+    item WoolRaw
+    {
+        DisplayCategory = Material,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Raw Wool,
+        Icon	=	WoolRaw,
+        WorldStaticModel = WoolRaw_Ground,
+    }
+
+    item Sheep_Ewe_Head_White
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1.3,
+        Type = Food,
+        DisplayName = White Ewe Head,
+        Icon = Head_Sheep_White,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Sheep_EweHead_White,
+    }
+
+    item Sheep_Ram_Head_White
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1.3,
+        Type = Food,
+        DisplayName = White Ram Head,
+        Icon = Head_Sheep_White,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Sheep_RamHead_White,
+    }
+
+    item Sheep_Lamb_Head_White
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.8,
+        Type = Food,
+        DisplayName = White Lamb Head,
+        Icon = Head_SheepLamb_White,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Sheep_LambHead_White,
+    }
+
+    item Sheep_Ewe_Head_Black
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1.3,
+        Type = Food,
+        DisplayName = Black Ewe Head,
+        Icon = Head_Sheep_Black,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Sheep_EweHead_Black,
+    }
+
+    item Sheep_Ram_Head_Black
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1.3,
+        Type = Food,
+        DisplayName = Black Ram Head,
+        Icon = Head_Sheep_Black,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Sheep_RamHead_Black,
+    }
+
+    item Sheep_Lamb_Head_Black
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.8,
+        Type = Food,
+        DisplayName = Black Lamb Head,
+        Icon = Head_SheepLamb_Black,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Sheep_LambHead_Black,
+    }
+
+    item Sheep_Skull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.5,
+        Type = Normal,
+        DisplayName = Sheep Skull,
+        Icon = Skull_Sheep,
+        Tags = AnimalSkull,
+        WorldStaticModel = Sheep_Skull,
+    }
+
+    item Ram_Skull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.5,
+        Type = Normal,
+        DisplayName = Ram Skull,
+        Icon = Skull_Sheep,
+        Tags = AnimalSkull,
+        WorldStaticModel = Sheep_RamSkull,
+    }
+
+    item Lamb_Skull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.3,
+        Type = Normal,
+        DisplayName = Lamb Skull,
+        Icon = Skull_SheepLamb,
+        Tags = AnimalSkull,
+        WorldStaticModel = Sheep_LambSkull,
+    }
+
+    /****************/
+    /***** PIGS *****/
+    /****************/
+
+    item Pig_Sow_Head_Pink
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1.4,
+        Type = Food,
+        DisplayName = Sow Head,
+        Icon = Head_PigFemale_Pink,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = FarmPig_SowHead_Pink,
+    }
+
+    item Pig_Boar_Head_Pink
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1.4,
+        Type = Food,
+        DisplayName = Boar Head,
+        Icon = Head_PigMale_Pink,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = FarmPig_BoarHead_Pink,
+    }
+
+    item Pig_Piglet_Head_Pink
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.8,
+        Type = Food,
+        DisplayName = Piglet Head,
+        Icon = Head_PigPiglet_Pink,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = FarmPig_PigletHead_Pink,
+    }
+
+    item Pig_Sow_Head_Black
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1.4,
+        Type = Food,
+        DisplayName = Sow Head,
+        Icon = Head_PigFemale_Black,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = FarmPig_SowHead_Black,
+    }
+
+    item Pig_Boar_Head_Black
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1.4,
+        Type = Food,
+        DisplayName = Boar Head,
+        Icon = Head_PigMale_Black,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = FarmPig_BoarHead_Black,
+    }
+
+    item Pig_Piglet_Head_Black
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.8,
+        Type = Food,
+        DisplayName = Piglet Head,
+        Icon = Head_PigPiglet_Black,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = FarmPig_PigletHead_Black,
+    }
+
+    item Pig_Skull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.5,
+        Type = Normal,
+        DisplayName = Pig Skull,
+        Icon = Skull_Pig,
+        Tags = AnimalSkull,
+        WorldStaticModel = Pig_Skull,
+    }
+
+    item Piglet_Skull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.3,
+        Type = Normal,
+        DisplayName = Piglet Skull,
+        Icon = Skull_PigPiglet,
+        Tags = AnimalSkull,
+        WorldStaticModel = Piglet_Skull,
+    }
+
+    /*******************/
+    /***** CHICKEN *****/
+    /*******************/
+
+    item ChickenFeather
+    {
+		DisplayCategory = AnimalPart,
+        Weight = 0.001,
+        Type = Food,
+        DisplayName = Chicken Feather,
+        Icon = Feather_Chicken,
+        Tags = Feather,
+        WorldStaticModel = Chicken_Feather,
+    }
+
+    item Chicken_Chick_Head
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.4,
+        Type = Food,
+        DisplayName = Chick Head,
+        Icon = Head_Chicken_Chick,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Chicken_ChickHead,
+    }
+
+    item Chicken_Hen_Brown_Head
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.4,
+        Type = Food,
+        DisplayName = Chicken Head,
+        Icon = Head_Chicken_Hen,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Chicken_Head_Brown,
+    }
+
+    item Chicken_Hen_White_Head
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.4,
+        Type = Food,
+        DisplayName = Chicken Head,
+        Icon = Head_ChickenWhite_Hen,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Chicken_Head_White,
+    }
+
+    item Chicken_Rooster_Head_Brown
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.2,
+        Type = Food,
+        DisplayName = Rooster Head,
+        Icon = Head_Chicken_Rooster,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Chicken_CockerelHead_Brown,
+    }
+
+    item Chicken_Rooster_Head_White
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.2,
+        Type = Food,
+        DisplayName = Rooster Head,
+        Icon = Head_ChickenWhite_Rooster,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Chicken_CockerelHead_White,
+    }
+
+    item Chicken_Hen_Skull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = Chicken Skull,
+        Icon = Skull_Chicken,
+        Tags = AnimalSkull;BirdSkull,
+        WorldStaticModel = Chicken_Skull,
+    }
+
+    item Chicken_Rooster_Skull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = Rooster Skull,
+        Icon = Skull_Chicken,
+        Tags = AnimalSkull;BirdSkull,
+        WorldStaticModel = Cockerel_Skull,
+    }
+
+    item Chicken_Chick_Skull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = Chick Skull,
+        Icon = Skull_Chicken_Chick,
+        Tags = AnimalSkull;BirdSkull,
+        WorldStaticModel = Chicken_Chick_Skull,
+    }
+
+    /******************/
+    /***** TURKEY *****/
+    /******************/
+
+    item TurkeyFeather
+    {
+		DisplayCategory = AnimalPart,
+        Weight = 0.001,
+        Type = Food,
+        DisplayName = Turkey Feather,
+        Icon = Feather_Turkey,
+        Tags = Feather,
+        WorldStaticModel = Turkey_Feather,
+    }
+
+    item Turkey_Hen_Head
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1,
+        Type = Food,
+        DisplayName = Turkey Head,
+        Icon = Head_Turkey,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Turkey_Hen_Head,
+    }
+
+    item Turkey_Gobbler_Head
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1,
+        Type = Food,
+        DisplayName = Turkey Tom Head,
+        Icon = Head_Turkey,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = TurkeyHead,
+    }
+
+    item Turkey_Poult_Head
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1,
+        Type = Food,
+        DisplayName = Turkey Poult Head,
+        Icon = Head_Turkey_Poult,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Turkey_PoultHead,
+    }
+
+    item TurkeyEgg
+	{
+		DisplayName = Turkey Egg,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Egg_Turkey,
+		DangerousUncooked = TRUE,
+		EvolvedRecipe = Stir fry:10;Rice:10;Pasta:10;Sandwich:10|Cooked;Burger:10|Cooked;Salad:10|Cooked;Burrito:10|Cooked;Taco:5|Cooked;Soup:10;Stew:10,
+		FoodType = Egg,
+		IsCookable = true,
+		/*ReplaceOnCooked = Base.EggBoiled,*/
+		MinutesToCook = 4,
+		MinutesToBurn = 20,
+		DaysFresh = 14,
+		DaysTotallyRotten = 21,
+		HungerChange = -10,
+		Calories = 71,
+		Carbohydrates = 0.37,
+		Lipids = 4.54,
+		Proteins = 5.78,
+		StaticModel = Egg_Turkey,
+		WorldStaticModel = Egg_Turkey,
+		Tags = Egg,
+		CookingSound = FryingFood,
+	}
+
+    item Turkey_PoultSkull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = Turkey Poult Skull,
+        Icon = Skull_Turkey_Poult,
+        Tags = AnimalSkull;BirdSkull,
+        WorldStaticModel = Turkey_PoultSkull,
+    }
+
+    item Turkey_Skull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = Turkey Skull,
+        Icon = Skull_Turkey,
+        Tags = AnimalSkull;BirdSkull,
+        WorldStaticModel = Turkey_Skull,
+    }
+
+    /*****************/
+    /**** RACCOON ****/
+    /*****************/
+
+    item Raccoon_Sow_Head
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1,
+        Type = Food,
+        DisplayName = Raccoon Head,
+        Icon = Head_Raccoon,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Raccoon_Head,
+    }
+
+    item Raccoon_Boar_Head
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1,
+        Type = Food,
+        DisplayName = Raccoon Head,
+        Icon = Head_Raccoon,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Raccoon_Head,
+    }
+
+    item Raccoon_Kit_Head
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.5,
+        Type = Food,
+        DisplayName = Raccoon Head,
+        Icon = Head_Raccoon,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = RaccoonKit_Head,
+    }
+
+    item Raccoon_Skull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = Raccoon Skull,
+        Icon = Skull_Turkey_Poult,
+        Tags = AnimalSkull,
+        WorldStaticModel = Raccoon_Skull,
+    }
+
+    /*****************/
+    /**** RABBITS ****/
+    /*****************/
+
+    item Rabbit_Head_Appalachian
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1,
+        Type = Food,
+        DisplayName = Rabbit Head,
+        Icon = Head_Rabbit_Brown,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Rabbit_Head_Appalachian,
+    }
+
+    item Rabbit_Kitten_Head_Appalachian
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.5,
+        Type = Food,
+        DisplayName = Rabbit Kitten Head,
+        Icon = Head_Rabbit_Brown_Kit,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Rabbit_KittenHead_Appalachian,
+    }
+
+    item Rabbit_Head_CottonTail
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1,
+        Type = Food,
+        DisplayName = Rabbit Head,
+        Icon = Head_Rabbit_Grey,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Rabbit_Head_CottonTail,
+    }
+    item Rabbit_Kitten_Head_CottonTail
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.5,
+        Type = Food,
+        DisplayName = Rabbit Kitten Head,
+        Icon = Head_Rabbit_Grey_Kit,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Rabbit_KittenHead_CottonTail,
+    }
+
+    item Rabbit_Head_Swamp
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1,
+        Type = Food,
+        DisplayName = Rabbit Head,
+        Icon = Head_Rabbit_Grey,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Rabbit_Head_Swamp,
+    }
+    item Rabbit_Kitten_Head_Swamp
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.5,
+        Type = Food,
+        DisplayName = Rabbit Kitten Head,
+        Icon = Head_Rabbit_Grey_Kit,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = Rabbit_KittenHead_Swamp,
+    }
+
+    item Rabbit_KittenSkull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = Rabbit Kitten Skull,
+        Icon = Skull_Rabbit_Kit,
+        Tags = AnimalSkull,
+        WorldStaticModel = Rabbit_KittenSkull,
+    }
+
+    item Rabbit_Skull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.1,
+        Type = Normal,
+        DisplayName = Rabbit Skull,
+        Icon = Skull_Rabbit,
+        Tags = AnimalSkull,
+        WorldStaticModel = Rabbit_Skull,
+    }
+
+    /****************/
+    /***** DEER *****/
+    /****************/
+
+    item Deer_Doe_Head
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1.5,
+        Type = Food,
+        DisplayName = Doe Head,
+        Icon = Head_DeerFemale,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = DeerDoe_Head,
+    }
+
+    item Deer_Buck_Head
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1.5,
+        Type = Food,
+        DisplayName = Stag Head,
+        Icon = Head_DeerMale,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = DeerStag_Head,
+        ResearchableRecipes = MakeStagHeadTrophy,
+    }
+
+    item Deer_Fawn_Head
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 1,
+        Type = Food,
+        DisplayName = Fawn Head,
+        Icon = Head_DeerFawn,
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalHead,
+        WorldStaticModel = DeerFawn_Head,
+    }
+
+    item DeerStag_Skull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.6,
+        Type = Normal,
+        DisplayName = Stag Skull,
+        Icon = Skull_DeerMale,
+        Tags = AnimalSkull,
+        WorldStaticModel = DeerStag_Skull,
+    }
+
+    item DeerDoe_Skull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.6,
+        Type = Normal,
+        DisplayName = Deer Skull,
+        Icon = Skull_DeerFemale,
+        Tags = AnimalSkull,
+        WorldStaticModel = DeerDoe_Skull,
+    }
+
+    item DeerFawn_Skull
+    {
+        DisplayCategory = AnimalPart,
+        Weight = 0.4,
+        Type = Normal,
+        DisplayName = Fawn Skull,
+        Icon = Skull_DeerFawn,
+        Tags = AnimalSkull,
+        WorldStaticModel = DeerFawn_Skull,
+    }
+
+    /****************/
+    /***** BONES *****/
+    /****************/
+
+    item SmallAnimalBone
+	{
+        DisplayCategory = AnimalPart,
+	    Weight = 0.3,
+	    Type = Normal,
+		Tags = SmallAnimalBone,
+	    DisplayName = Bone Pieces,
+	    Icon	=	Bones,
+	    WorldStaticModel = Bones_Ground,
+        ResearchableRecipes = CarveWhistle,
+	}
+
+	item SharpBoneFragment
+	{
+		DisplayName = Sharp Bone Fragment,
+        DisplayCategory = AnimalPart,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Bone_Sharpbone,
+		WorldStaticModel = SharpBone,
+		Tags = AnimalBone;SpearHead,
+        ResearchableRecipes = MakeBoneHatchetHead;CarveFleshingTool,
+	}
+
+    item HerbivoreTeeth
+	{
+        DisplayCategory = AnimalPart,
+	    Weight = 0.1,
+	    Type = Normal,
+	    DisplayName = Animal Teeth,
+	    Icon	=	Teeth_Mammal,
+	    WorldStaticModel = HerbivoreTeeth,
+	}
+
+    item PigTusk
+	{
+        DisplayCategory = AnimalPart,
+	    Weight = 0.1,
+	    Type = Normal,
+	    DisplayName = Pig Tusk,
+	    Icon	=	BoarTusk,
+	    WorldStaticModel = BoarTusk,
+	}
+
+    /****************/
+    /***** DUNG *****/
+    /****************/
+
+    item Dung_Turkey
+	{
+	    DisplayCategory = Junk,
+	    Weight = 0.01,
+	    /*Type = Normal,*/
+	    Type = Food,
+		CantEat = TRUE,
+		Tags = isCompostable,
+	    DisplayName = Dung - Turkey,
+	    Icon	=	Dung_Turkey,
+	    WorldStaticModel = Dung_Turkey,
+	    IsDung = true,
+	}
+
+	item Dung_Chicken
+	{
+	    DisplayCategory = Junk,
+	    Weight = 0.01,
+	    Type = Food,
+		CantEat = TRUE,
+		Tags = isCompostable,
+	    DisplayName = Dung - Chicken,
+	    Icon	=	Dung_Chicken,
+	    WorldStaticModel = Dung_Chicken,
+	    IsDung = true,
+	}
+
+	item Dung_Cow
+	{
+	    DisplayCategory = Junk,
+	    Weight = 1.0,
+	    /*Type = Normal,*/
+	    Type = Food,
+		CantEat = TRUE,
+		Tags = isCompostable,
+	    DisplayName = Dung - Cow,
+	    Icon	=	Dung_Cow,
+	    WorldStaticModel = Dung_Cow,
+	    IsDung = true,
+	}
+
+	item Dung_Deer
+	{
+	    DisplayCategory = Junk,
+	    Weight = 0.5,
+	    /*Type = Normal,*/
+	    Type = Food,
+		CantEat = TRUE,
+		Tags = isCompostable,
+	    DisplayName = Dung - Deer,
+	    Icon	=	Dung_Deer,
+	    WorldStaticModel = Dung_Deer,
+	    IsDung = true,
+	}
+
+	item Dung_Mouse
+	{
+	    DisplayCategory = Junk,
+	    Weight = 0.01,
+	    /*Type = Normal,*/
+	    Type = Food,
+		CantEat = TRUE,
+		Tags = isCompostable,
+	    DisplayName = Dung - Mouse,
+	    Icon	=	Dung_Mouse,
+	    WorldStaticModel = Dung_Mouse,
+	    IsDung = true,
+	}
+
+	item Dung_Pig
+	{
+	    DisplayCategory = Junk,
+	    Weight = 0.7,
+	    /*Type = Normal,*/
+	    Type = Food,
+		CantEat = TRUE,
+		Tags = isCompostable,
+	    DisplayName = Dung - Pig,
+	    Icon	=	Dung_Pig,
+	    WorldStaticModel = Dung_Pig,
+	    IsDung = true,
+	}
+
+	item Dung_Rabbit
+	{
+	    DisplayCategory = Junk,
+	    Weight = 0.1,
+	    /*Type = Normal,*/
+	    Type = Food,
+		CantEat = TRUE,
+		Tags = isCompostable,
+	    DisplayName = Dung - Rabbit,
+	    Icon	=	Dung_Rabbit,
+	    WorldStaticModel = Dung_Rabbit,
+	    IsDung = true,
+	}
+
+	item Dung_Raccoon
+	{
+	    DisplayCategory = Junk,
+	    Weight = 0.1,
+	    /*Type = Normal,*/
+	    Type = Food,
+		CantEat = TRUE,
+		Tags = isCompostable,
+	    DisplayName = Dung - Raccoon,
+	    Icon	=	Dung_Rabbit,
+	    WorldStaticModel = Dung_Raccoon,
+	    IsDung = true,
+	}
+
+	item Dung_Rat
+	{
+	    DisplayCategory = Junk,
+	    Weight = 0.01,
+	    /*Type = Normal,*/
+	    Type = Food,
+		CantEat = TRUE,
+		Tags = isCompostable,
+	    DisplayName = Dung - Rat,
+	    Icon	=	Dung_Rat,
+	    WorldStaticModel = Dung_Rat,
+	    IsDung = true,
+	}
+
+	item Dung_Sheep
+	{
+	    DisplayCategory = Junk,
+	    Weight = 0.5,
+	    /*Type = Normal,*/
+	    Type = Food,
+		CantEat = TRUE,
+		Tags = isCompostable,
+	    DisplayName = Dung - Sheep,
+	    Icon	=	Dung_Sheep,
+	    WorldStaticModel = Dung_Sheep,
+	    IsDung = true,
+	}
+
+	item FurTuft_Black
+	{
+	    DisplayCategory = Junk,
+	    Weight = 0.1,
+	    Type = Normal,
+	    DisplayName = Fur Tuft - Black,
+	    Icon	=	FurTuft_Black,
+	    WorldStaticModel = FurTuft_Black,
+	}
+
+	item FurTuft_Browndark
+	{
+	    DisplayCategory = Junk,
+	    Weight = 0.1,
+	    Type = Normal,
+	    DisplayName = Fur Tuft - Dark Brown,
+	    Icon	=	FurTuft_Browndark,
+	    WorldStaticModel = FurTuft_Browndark,
+	}
+
+	item FurTuft_Brownlight
+	{
+	    DisplayCategory = Junk,
+	    Weight = 0.1,
+	    Type = Normal,
+	    DisplayName = Fur Tuft - Light Brown,
+	    Icon	=	FurTuft_Brownlight,
+	    WorldStaticModel = FurTuft_Brownlight,
+	}
+
+	item FurTuft_Grey
+	{
+	    DisplayCategory = Junk,
+	    Weight = 0.1,
+	    Type = Normal,
+	    DisplayName = Fur Tuft - Grey,
+	    Icon	=	FurTuft_Grey,
+	    WorldStaticModel = FurTuft_Grey,
+	}
+
+	item FurTuft_White
+	{
+	    DisplayCategory = Junk,
+	    Weight = 0.1,
+	    Type = Normal,
+	    DisplayName = Fur Tuft - White,
+	    Icon	=	FurTuft_White,
+	    WorldStaticModel = FurTuft_White,
+	}
+
+    item Animal_Item_Dummy
+	{
+	    DisplayCategory = Junk,
+	    Weight = 0.01,
+	    /*Type = Normal,*/
+	    Type = Normal,
+	    DisplayName = DEBUG DUMMY ITEM,
+	    Icon	=	Dung_Turkey,
+	    WorldStaticModel = Dung_Turkey,
+	}
+
+    item CorpseAnimal
+    {
+		DisplayCategory = Corpse,
+        Weight = 0.1,
+        Type = Food,
+        DisplayName = Animal Corpse, /** this gets replaced with animal's name **/
+        Icon = CowBlack_Calf, /** this gets replaced according to the breed's definition **/
+        DaysFresh	=	5,
+        DaysTotallyRotten	=	7,
+        Tags = AnimalCorpse,
+    }
+
+    /* WALL SKULLS ETC */
+
+    item Cow_Skull_Wall
+    {
+		DisplayCategory = Furniture,
+        Weight = 0.8,
+		Type = Moveable,
+        DisplayName = Cow Skull - Jawless,
+        Tags = AnimalSkull,
+		WorldObjectSprite = constructedobjects_signs_01_56,
+    }
+
+    item Bull_Skull_Wall
+    {
+		DisplayCategory = Furniture,
+        Weight = 0.8,
+		Type = Moveable,
+        DisplayName = Bull Skull - Jawless,
+        Tags = AnimalSkull,
+		WorldObjectSprite = constructedobjects_signs_01_48,
+    }
+
+    item Sheep_Skull_Wall
+    {
+		DisplayCategory = Furniture,
+        Weight = 0.5,
+		Type = Moveable,
+        DisplayName = Sheep Skull - Jawless,
+        Tags = AnimalSkull,
+		WorldObjectSprite = constructedobjects_signs_01_48,
+    }
+
+    item Pig_Skull_Wall
+    {
+		DisplayCategory = Furniture,
+        Weight = 0.5,
+		Type = Moveable,
+        DisplayName = Pig Skull - Jawless,
+        Tags = AnimalSkull,
+		WorldObjectSprite = constructedobjects_signs_01_48,
+    }
+
+    item DeerStag_Skull_Wall
+    {
+		DisplayCategory = Furniture,
+        Weight = 0.6,
+		Type = Moveable,
+        DisplayName = Stag Skull - Jawless,
+        Tags = AnimalSkull,
+		WorldObjectSprite = constructedobjects_signs_01_64,
+    }
+
+    item DeerDoe_Skull_Wall
+    {
+		DisplayCategory = Furniture,
+        Weight = 0.6,
+		Type = Moveable,
+        DisplayName = Deer Skull - Jawless,
+        Tags = AnimalSkull,
+		WorldObjectSprite = constructedobjects_signs_01_72,
+    }
+
+    item Antlers_Wall
+    {
+		DisplayCategory = Furniture,
+        Weight = 0.56,
+		Type = Moveable,
+        DisplayName = Antlers,
+        Icon = AntlerSet,
+		WorldObjectSprite = constructedobjects_signs_01_96,
+    }
+}

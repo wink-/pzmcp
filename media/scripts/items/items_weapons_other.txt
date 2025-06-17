@@ -1,0 +1,36 @@
+module Base
+{
+	/******* WEAPONS - OTHER *******/
+	
+	item BareHands
+	{
+		DisplayName = Bare Hands,
+		DisplayCategory = Weapon,
+		Type = Weapon,
+		Weight = 1,
+		Icon = Axe,
+		Categories = Unarmed,
+		DoorDamage = 0,
+		DoorHitSound = BareHandsHit,
+		EnduranceMod = 1.7,
+		HitFloorSound = BareHandsHit,
+		HitSound = BareHandsHit,
+		KnockBackOnNoDeath = TRUE,
+		MaxDamage = 0.4,
+		MaxHitCount = 3,
+		MaxRange = 1.1,
+		MinAngle = 0.5,
+		MinDamage = 0.2,
+		MinimumSwingTime = 2.5,
+		PushBackMod = 0.5,
+		SplatBloodOnNoDeath = FALSE,
+		SplatNumber = 1,
+		SwingAmountBeforeImpact = 0.1,
+		SwingAnim = Shove,
+		SwingTime = 2.5,
+		TreeDamage = 0,
+		WeaponSprite = null,
+		WeaponWeight = 0,
+		Tags = NoMaintenanceXp;BareHands,
+	}
+}

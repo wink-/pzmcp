@@ -1,0 +1,73 @@
+module Base
+{
+    energy Electric
+    {
+        DisplayName             = EC_Energy_Electric,
+        Color                   = 0.63:0.78:0.6,
+        iconTexture             = media/ui/Entity/Energy/icon_energy_electric.png,
+        horizontalBarTexture    = media/ui/Entity/Bars/bars_horz_green.png,
+        verticalBarTexture      = media/ui/Entity/Bars/bars_vert_green.png,
+    }
+
+    energy Mechanical
+    {
+        DisplayName             = EC_Energy_Mechanical,
+        Color                   = 0.73:0.67:0.63,
+        iconTexture             = media/ui/Entity/Energy/icon_energy_mechanical.png,
+        horizontalBarTexture    = media/ui/Entity/Bars/bars_horz_yellowgreen.png,
+        verticalBarTexture      = media/ui/Entity/Bars/bars_vert_yellowgreen.png,
+    }
+
+    energy Thermal
+    {
+        DisplayName             = EC_Energy_Thermal,
+        Color                   = 0.83:0.72:0.52,
+        iconTexture             = media/ui/Entity/Energy/icon_energy_thermal.png,
+        horizontalBarTexture    = media/ui/Entity/Bars/bars_horz_orange.png,
+        verticalBarTexture      = media/ui/Entity/Bars/bars_vert_orange.png,
+    }
+
+    energy Steam
+    {
+        DisplayName             = EC_Energy_Steam,
+        Color                   = 0.87:0.64:0.62,
+        iconTexture             = media/ui/Entity/Energy/icon_energy_steam.png,
+        horizontalBarTexture    = media/ui/Entity/Bars/bars_horz_red.png,
+        verticalBarTexture      = media/ui/Entity/Bars/bars_vert_red.png,
+    }
+
+    /*
+        VoidEnergy is a debug type used in cases where energy type
+        couldn't be resolved but an energy type is required.
+    */
+    energy VoidEnergy
+    {
+        DisplayName             = EC_Energy_Void,
+        Color                   = 0.00:0.00:0.00,
+        iconTexture             = media/ui/Entity/Energy/icon_energy_solar.png,
+        horizontalBarTexture    = media/ui/Entity/Bars/bars_horz_yellow.png,
+        verticalBarTexture      = media/ui/Entity/Bars/bars_vert_yellow.png,
+    }
+
+    /*
+        The following are added in case we may implement them at some point.
+        Currently can be ignored.
+    */
+    energy Wind
+    {
+        DisplayName             = EC_Energy_Wind,
+        Color                   = 0.62:0.67:0.77,
+        iconTexture             = media/ui/Entity/Energy/icon_energy_wind.png,
+        horizontalBarTexture    = media/ui/Entity/Bars/bars_horz_blue.png,
+        verticalBarTexture      = media/ui/Entity/Bars/bars_vert_blue.png,
+    }
+
+    energy Solar
+    {
+        DisplayName             = EC_Energy_Solar,
+        Color                   = 0.84:0.81:0.54,
+        iconTexture             = media/ui/Entity/Energy/icon_energy_solar.png,
+        horizontalBarTexture    = media/ui/Entity/Bars/bars_horz_yellow.png,
+        verticalBarTexture      = media/ui/Entity/Bars/bars_vert_yellow.png,
+    }
+}

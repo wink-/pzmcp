@@ -1,0 +1,72 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_RuggedCross
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Rugged Cross,
+			Icon		= Build_CrossSimple,
+		}
+	}
+
+    entity RuggedCross
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_RuggedCross,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+		    isThumpable = false,
+			skillBaseHealth = 300,
+			
+            face W
+            {
+                layer
+                {
+                    row = crafted_04_105,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = crafted_04_107,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_04_106,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = crafted_04_104,
+                }
+            }
+        }
+		
+		component CraftRecipe
+        {
+            timedAction   = BuildLowNoTool,
+            time          = 200,
+            category      = Miscellaneous,
+            xpAward       = Woodwork:1,
+            ToolTip       = Tooltip_craft_woodenCrossDesc,
+            inputs
+            {
+                item 1 [Base.TreeBranch2;Base.WoodenStick2],
+                item 1 [Base.LongStick;Base.Sapling],
+                item 1 [Base.RippedSheets;Base.RippedSheetsDirty;Base.Twine;Base.Rope;Base.SheetRope] flags[DontReplace],
+            }
+        }
+    }
+}

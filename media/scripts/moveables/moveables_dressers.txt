@@ -1,0 +1,62 @@
+module Base
+{
+	item Mov_BirchDrawers
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Birch Drawers,
+		WorldObjectSprite = furniture_storage_01_47,
+	}
+	
+	item Mov_BirchDrawersMirror
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Birch Drawers with Mirror,
+		WorldObjectSprite = furniture_storage_01_43,
+	}
+	
+	item Mov_DarkFancyDrawers
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Dark Fancy Drawers,
+		WorldObjectSprite = furniture_storage_01_33,
+	}
+	
+	item Mov_FancyChestnutDrawers
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Fancy Chestnut Drawers,
+		WorldObjectSprite = furniture_storage_01_13,
+	}
+	
+	item Mov_SmallPineCabinet
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Small Pine Cabinet,
+		WorldObjectSprite = furniture_storage_01_48,
+	}
+	
+	item Mov_WhiteFancyDrawers
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = White Fancy Drawers,
+		WorldObjectSprite = furniture_storage_01_9,
+	}
+}

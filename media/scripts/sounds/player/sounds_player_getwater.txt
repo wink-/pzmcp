@@ -1,0 +1,164 @@
+module Base
+{
+	sound GetWaterFromLake
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromLake,
+		}
+	}
+
+	sound GetWaterFromLakeSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromLakeSmall,
+		}
+	}
+
+	sound GetWaterFromLakeBottle
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromLakeBottle,
+		}
+	}
+
+	sound GetWaterFromTap
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromTap,
+		}
+	}
+
+	sound GetWaterFromTapGlass
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromTapGlass,
+		}
+	}
+
+	sound GetWaterFromTapCeramic
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromTapCeramic,
+		}
+	}
+
+	sound GetWaterFromTapPlasticMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromTapPlasticMedium,
+		}
+	}
+
+	sound GetWaterFromTapPlasticBig
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromTapPlasticBig,
+		}
+	}
+
+	sound GetWaterFromTapMetalMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromTapMetalMedium,
+		}
+	}
+	
+	sound GetWaterFromTapMetalBig
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromTapMetalBig,
+		}
+	}
+
+	sound GetWaterFromDispenser
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromDispenser,
+		}
+	}
+
+	sound GetWaterFromDispenserGlass
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromDispenserGlass,
+		}
+	}
+
+	sound GetWaterFromDispenserCeramic
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromDispenserCeramic,
+		}
+	}
+
+	sound GetWaterFromDispenserPlasticMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromDispenserPlasticMedium,
+		}
+	}
+
+	sound GetWaterFromDispenserPlasticBig
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromDispenserPlasticBig,
+		}
+	}
+
+	sound GetWaterFromDispenserMetalMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromDispenserMetalMedium,
+		}
+	}
+	
+	sound GetWaterFromDispenserMetalBig
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromDispenserMetalBig,
+		}
+	}
+
+	sound GetWaterFromToilet
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/GetWater/FromToilet,
+		}
+	}
+}

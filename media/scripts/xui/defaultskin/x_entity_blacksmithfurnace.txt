@@ -1,0 +1,314 @@
+module Base
+{
+    xuiSkin default
+    {
+    entity ES_Stone_Anvil
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Stone Anvil,
+        Icon                = Build_AnvilStone,
+
+        components
+        {
+            CraftLogic
+            {
+                /*LuaPanelClass           = ISCraftFurnacePanel,*/
+                LuaPanelClass           = ISCraftDefaultPanel,
+                DisplayName             = Stone Anvil,
+                Icon                    = Build_AnvilStone,
+            }
+        }
+    }
+    entity ES_Chopping_Block
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Chopping Block,
+        Icon                = Build_ChoppingBlock,
+
+        components
+        {
+            CraftLogic
+            {
+                /*LuaPanelClass           = ISCraftFurnacePanel,*/
+                LuaPanelClass           = ISCraftDefaultPanel,
+                DisplayName             = Chopping Block,
+                Icon                    = Build_ChoppingBlock,
+            }
+        }
+    }
+    entity ES_Tree_Stump
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Tree Stump,
+        Icon                = Item_Logs,
+
+        components
+        {
+            CraftLogic
+            {
+                /*LuaPanelClass           = ISCraftFurnacePanel,*/
+                LuaPanelClass           = ISCraftDefaultPanel,
+                DisplayName             = Tree Stump,
+                Icon                    = Item_Logs,
+            }
+        }
+    }
+    entity ES_Boulder
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Boulder,
+        Icon                = Item_Boulder,
+
+        components
+        {
+            CraftLogic
+            {
+                /*LuaPanelClass           = ISCraftFurnacePanel,*/
+                LuaPanelClass           = ISCraftDefaultPanel,
+                DisplayName             = Boulder,
+                Icon                    = Item_Boulder,
+            }
+        }
+    }
+    entity ES_Stone_Quern
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Stone Quern,
+        Icon                = Build_StoneQuern,
+
+        components
+        {
+            CraftLogic
+            {
+                /*LuaPanelClass           = ISCraftFurnacePanel,*/
+                LuaPanelClass           = ISCraftDefaultPanel,
+                DisplayName             = Stone Quern,
+                Icon                    = Build_StoneQuern,
+            }
+        }
+    }
+    entity ES_Grinding_Slab
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Grinding Slab,
+        Icon                = Item_Rock,
+
+        components
+        {
+            CraftLogic
+            {
+                /*LuaPanelClass           = ISCraftFurnacePanel,*/
+                LuaPanelClass           = ISCraftDefaultPanel,
+                DisplayName             = Grinding Slab,
+                Icon                    = Item_Rock,
+            }
+        }
+    }
+    entity ES_Stone_Mill
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Stone Mill,
+        Icon                = Build_StoneMill,
+
+        components
+        {
+            CraftLogic
+            {
+                /*LuaPanelClass           = ISCraftFurnacePanel,*/
+                LuaPanelClass           = ISCraftDefaultPanel,
+                DisplayName             = Stone Mill,
+                Icon                    = Build_StoneMill,
+            }
+        }
+    }
+
+    entity ES_Electric_Blower_Forge
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Electric Blower Forge,
+        Icon                = Item_Anvil_Forged,
+
+        components
+        {
+            CraftLogic
+            {
+                /*LuaPanelClass           = ISCraftFurnacePanel,*/
+                LuaPanelClass           = ISCraftDefaultPanel,
+                DisplayName             = Electric Blower Forge,
+                Icon                    = Item_Anvil_Forged,
+            }
+        }
+    }
+    entity ES_Makeshift_Electric_Blower_Forge
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Makeshift Electric Blower Forge,
+        Icon                = Item_RailroadRail_Short,
+
+        components
+        {
+            CraftLogic
+            {
+                /*LuaPanelClass           = ISCraftFurnacePanel,*/
+                LuaPanelClass           = ISCraftDefaultPanel,
+                DisplayName             = Makeshift Electric Blower Forge,
+                Icon                    = Item_RailroadRail_Short,
+            }
+        }
+    }
+    entity ES_Makeshift_Electric_Blower_Forge_II
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Advanced Makeshift Electric Blower Forge,
+        Icon                = Item_Anvil_Forged,
+
+        components
+        {
+            CraftLogic
+            {
+                /*LuaPanelClass           = ISCraftFurnacePanel,*/
+                LuaPanelClass           = ISCraftDefaultPanel,
+                DisplayName             = Advanced Makeshift Electric Blower Forge,
+                Icon                = Item_Anvil_Forged,
+            }
+        }
+    }
+
+    entity ES_Arc_Furnace
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Arc Furnace,
+        Icon                = Item_Ingot_Steel,
+
+        components
+        {
+            CraftLogic
+            {
+                LuaPanelClass           = ISCraftFurnacePanel,
+                DisplayName             = Arc Furnace,
+                Icon                    = Item_Ingot_Steel,
+            }
+        }
+    }
+
+    entity ES_Dome_Kiln
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Dome Kiln,
+        Icon                = Build_DomeKiln,
+    }
+
+    entity ES_Coal_Pit
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Pit of Coals,
+        Icon                = Item_Charcoal,
+    }
+    entity ES_Coal_Pit_Large
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Large Pit of Coals,
+        Icon                = Item_Charcoal,
+    }
+
+    entity ES_Metalworkbench
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Metalworkbench,
+        Icon                = Build_MetalworkBench,
+
+        components
+        {
+            CraftLogic
+            {
+                LuaPanelClass           = ISCraftDefaultPanel,
+                DisplayName             = Metalworkbench,
+                Icon                    = Build_MetalworkBench,
+            }
+        }
+    }
+    entity ES_StandingDrillPress
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Standing Drill Press,
+        Icon                = Item_Clamp_Forged,
+
+        components
+        {
+            CraftLogic
+            {
+                LuaPanelClass           = ISCraftDefaultPanel,
+                DisplayName             = Standing Drill Press,
+                Icon                    = Item_Clamp_Forged,
+            }
+        }
+    }
+
+    entity ES_Short_Log_Bench
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Short Log Bench,
+        Icon                = Build_LogSeat,
+
+        components
+        {
+            CraftLogic
+            {
+                /*LuaPanelClass           = ISCraftFurnacePanel,*/
+                LuaPanelClass           = ISCraftDefaultPanel,
+                DisplayName             = Log Stool,
+                Icon                    = Build_LogSeat,
+            }
+        }
+    }
+
+    entity ES_Hydraulic_Press
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Hydraulic Press,
+        Icon                = Item_SheetMetal,
+
+        components
+        {
+            CraftLogic
+            {
+                LuaPanelClass           = ISCraftDefaultPanel,
+                DisplayName             = Press,
+                Icon                    = Item_SheetMetal
+            }
+        }
+    }
+    entity ES_Metalwork_Table
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Metalwork Table,
+        Icon                = Build_MetalworkTable,
+
+        components
+        {
+            CraftLogic
+            {
+                LuaPanelClass           = ISCraftDefaultPanel,
+                DisplayName         = Metalwork Table,
+                Icon                = Build_MetalworkTable,
+            }
+        }
+    }
+    entity ES_Metalwork_Lathe
+    {
+        LuaWindowClass      = ISEntityWindow,
+        DisplayName         = Metalwork Lathe,
+        Icon                = Item_BlowTorch,
+
+        components
+        {
+            CraftLogic
+            {
+                LuaPanelClass           = ISCraftDefaultPanel,
+                DisplayName         = Metalwork Lathe,
+                Icon                = Item_BlowTorch,
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,11 @@
+module Base
+{
+	sound CarBatteryChargerRunning
+	{
+		category = Object,
+		clip
+		{
+			event = Object/CarBatteryCharger/Running,
+		}
+	}
+}

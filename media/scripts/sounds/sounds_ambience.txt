@@ -1,0 +1,330 @@
+module Base
+{
+	sound WorldAmbiance
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Ambiance,
+		}
+	}
+
+	sound TentAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/Tent,
+		}
+	}
+
+	sound TreeAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/Tree,
+		}
+	}
+
+	sound VehicleAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/Vehicle,
+		}
+	}
+
+	sound HouseAlarm
+	{
+		category = World,
+		clip
+		{
+			event = Meta/HouseAlarm,
+		}
+	}
+
+	sound CorpseFlies
+	{
+		category = World,
+		clip
+		{
+			event = Meta/Flies,
+		}
+	}
+	
+	sound Thunder
+	{
+		category = World,
+		clip
+		{
+			event = World/Weather/Thunder,
+		}
+	}
+
+	sound RumbleThunder
+	{
+		category = World,
+		clip
+		{
+			event = World/Weather/Thunder,
+		}
+	}
+
+	sound FactoryMachineAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/FactoryMachine,
+		}
+	}
+
+	sound HotdogMachineAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/HotdogMachine,
+		}
+	}
+
+	sound PayPhoneAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/PayPhone,
+		}
+	}
+
+	sound StreetLightAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/StreetLight,
+		}
+	}
+
+	sound NeonLightAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/NeonLight,
+		}
+	}
+
+	sound NeonSignAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/NeonSign,
+		}
+	}
+
+	sound JukeboxAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/Jukebox,
+		}
+	}
+
+	sound ControlStationAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/ControlStation,
+		}
+	}
+
+	sound ClockAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/Clock,
+		}
+	}
+
+	sound GasPumpAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/GasPump,
+		}
+	}
+
+	sound LightBulbAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/LightBulb,
+		}
+	}
+
+	sound ArcadeMachineAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/AraceMachine,
+		}
+	}
+
+	sound PinballMachineAmbience
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/PinballMachine,
+		}
+	}
+
+	sound FountainSmallAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/FountainSmall,
+		}
+	}
+
+	sound FountainBigAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/FountainBig,
+		}
+	}
+
+	sound RadiatorAmbiance 
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/Radiator,
+		}
+	}
+
+	sound WorldEventElectricityShutdown
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Event/ElectricityShutdown,
+		}
+	}
+
+	sound BroadcastEmergency
+	{
+		category = World,
+		master = Ambient,
+		clip
+		{
+			event = Broadcast/Emergency,
+		}
+	}
+
+	sound BirdInTree
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Bird/RandomInTree,
+		}
+	}
+
+	sound WaterDrip
+	{
+		category = World,
+		master = Ambient,
+		clip
+		{
+			event = World/Ambient/WaterDrip,
+		}
+	}
+
+	sound FishBreath
+	{
+		category = World,
+		master = Ambient,
+		clip
+		{
+			event = World/Fish/Breath,
+		}
+	}
+
+	sound PylonTowerAmbience
+	{
+		category = World,
+		master = Ambient,
+		loop = true,
+		clip
+		{
+			event = World/Object/PylonTower,
+		}
+	}
+
+	sound OpenWallAmbience
+	{
+		category = Object,
+		clip
+		{
+			event = World/Ambient/Window,
+		}
+	}
+}

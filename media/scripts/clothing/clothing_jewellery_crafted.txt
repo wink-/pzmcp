@@ -1,0 +1,218 @@
+module Base
+{
+
+	item Hat_DeerHeadress
+	{
+		DisplayName = Antler Headdress,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = Antler_Headdress,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_DeerHeadress,
+		Insulation = 0.3,
+		Tags = IgnoreZombieDensity,
+	    WorldStaticModel = Hat_DeerHeadress,
+		DiscomfortModifier = 0.25,
+	}
+
+	item Necklace_Teeth
+	{
+		DisplayName = Teeth Necklace,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_Teeth_Short,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_Teeth,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_Teeth,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item NecklaceLong_Teeth
+	{
+		DisplayName = Long Teeth Necklace,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_Teeth_Long,
+		BodyLocation = Necklace_Long,
+		ClothingItem = NecklaceLong_Teeth,
+		Cosmetic = TRUE,
+		WorldStaticModel = NecklaceLong_Teeth,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item Necklace_SkullMammal
+	{
+		DisplayName = Animal Skull Necklace,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_SmallSkull_Short,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_SkullMammal,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_Teeth,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item NecklaceLong_SkullMammal
+	{
+		DisplayName = Long Animal Skull Necklace,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_SmallSkull_Long,
+		BodyLocation = Necklace_Long,
+		ClothingItem = NecklaceLong_SkullMammal,
+		Cosmetic = TRUE,
+		WorldStaticModel = NecklaceLong_Teeth,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item Necklace_SkullMammal_Multi
+	{
+		DisplayName = Animal Skulls Necklace,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_SmallSkull_Multiple_Short,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_SkullMammal_Multi,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_Teeth,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item NecklaceLong_SkullMammal_Multi
+	{
+		DisplayName = Long Animal Skulls Necklace,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_SmallSkull_Multiple_Long,
+		BodyLocation = Necklace_Long,
+		ClothingItem = NecklaceLong_SkullMammal_Multi,
+		Cosmetic = TRUE,
+		WorldStaticModel = NecklaceLong_Teeth,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item Necklace_SkullSmall
+	{
+		DisplayName = Small Animal Skull Necklace,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_BirdSkull_Short,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_SkullSmall,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_Teeth,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item NecklaceLong_SkullSmall
+	{
+		DisplayName = Long Small Animal Skull Necklace,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_BirdSkull_Long,
+		BodyLocation = Necklace_Long,
+		ClothingItem = NecklaceLong_SkullSmall,
+		Cosmetic = TRUE,
+		WorldStaticModel = NecklaceLong_Teeth,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item Necklace_SkullSmall_Multi
+	{
+		DisplayName = Small Animal Skulls Necklace,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_BirdSkull_Multiple_Short,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_SkullSmall_Multi,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_Teeth,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item NecklaceLong_SkullSmall_Multi
+	{
+		DisplayName = Long Small Animal Skulls Necklace,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_BirdSkull_Multiple_Long,
+		BodyLocation = Necklace_Long,
+		ClothingItem = NecklaceLong_SkullSmall_Multi,
+		Cosmetic = TRUE,
+		WorldStaticModel = NecklaceLong_Teeth,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item Necklace_BoarTusk
+	{
+		DisplayName = Necklace - Pig Tusk,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_BoarTusk,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_BoarTusk,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_Gold_Ground,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item Necklace_BoarTusk_Multi
+	{
+		DisplayName = Necklace - Pig Tusks,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_BoarTusk_Multiple,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_BoarTusk_Multi,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_Gold_Ground,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item Earring_BirdSkull
+	{
+		DisplayName = Earrings - Bird Skulls,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earrings_BirdSkull,
+		BodyLocation = Ears,
+		ClothingItem = Earring_BirdSkull,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_BirdSkull,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item Earring_BoarTusk
+	{
+		DisplayName = Earrings - Pig Tusk,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earrings_BoarTusk,
+		BodyLocation = Ears,
+		ClothingItem = Earring_BoarTusk,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_BoarTusk,
+		Tags = IgnoreZombieDensity,
+	}
+
+}

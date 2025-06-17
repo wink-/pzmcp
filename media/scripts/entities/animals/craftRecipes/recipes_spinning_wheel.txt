@@ -1,0 +1,60 @@
+/******************************************/
+/** RJ: PLEASE DONT TOUCH WITHOUT ASKING **/
+/******************************************/
+
+module Base
+{
+    craftRecipe Spin Thread From Wool
+    {
+        time        = 300,
+        timedAction = UseSpinningWheel,
+        tags = SpinningWheel,
+        OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+        category = Farming,
+        /* needTobeLearn = true,*/
+        inputs
+        {
+            item 1 [Base.WoolRaw] flags[InheritColor],
+        }
+        outputs
+        {
+            item 1 Base.Thread,
+        }
+    }
+
+    craftRecipe Spin Yarn From Wool
+    {
+        time        = 300,
+        timedAction = UseSpinningWheel,
+        tags = SpinningWheel,
+        OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+        /* needTobeLearn = true,*/
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.WoolRaw] flags[InheritColor],
+        }
+        outputs
+        {
+            item 1 Base.Yarn,
+        }
+    }
+
+    craftRecipe SpinThreadFromFlax
+    {
+        time        = 300,
+        timedAction = UseSpinningWheel,
+        tags = SpinningWheel,
+        OnCreate = Recipe.OnCreate.SetEcruColor,
+        /* needTobeLearn = true,*/
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.FlaxHeckled],
+        }
+        outputs
+        {
+            item 1 Base.Thread,
+        }
+    }
+}

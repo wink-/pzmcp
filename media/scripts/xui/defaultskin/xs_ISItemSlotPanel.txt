@@ -1,0 +1,58 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISItemSlotPanel
+        {
+            background          = false,
+            drawBorder          = true,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            textColor           = C_Text,
+            margin              = 24,
+            title               = "item",
+            minimumWidth        = 0,
+            minimumHeight       = 0,
+        }
+
+        ISItemSlotPanel S_ItemSlotPanel_Inputs
+        {
+            title               = "input",
+        }
+
+        ISItemSlotPanel S_ItemSlotPanel_Outputs
+        {
+            title               = "output",
+        }
+
+        ISItemSlotPanel S_ItemSlotPanel_InputsAux
+        {
+            title               = "auxiliary in",
+        }
+
+        ISItemSlotPanel S_ItemSlotPanel_OutputsAux
+        {
+            title               = "auxiliary out",
+        }
+
+        ISItemSlotPanel S_ItemSlotPanel_Corpse
+        {
+            title               = "corpse",
+        }
+
+        ISItemSlotPanel S_ItemSlotPanel_Tool
+        {
+            title               = "tool",
+        }
+
+        ISItemSlotPanel S_ItemSlotPanel_InputsFuel
+        {
+            title               = "fuel",
+        }
+
+        ISItemSlotPanel S_ItemSlotPanel_OutputsFuel
+        {
+            title               = "residual",
+        }
+    }
+}

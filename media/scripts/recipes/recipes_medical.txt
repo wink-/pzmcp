@@ -1,0 +1,188 @@
+module Base
+{
+	craftRecipe MakePlantainPoultice
+	{
+        timedAction = MixingMortarPestle,
+		Time = 60,
+		NeedToBeLearn = True,
+		Tags = AnySurfaceCraft;Health,
+        category = Medical,
+        AutoLearnAny = Doctor:5;PlantScavenging:5,
+		inputs
+		{
+			item 1 tags[MortarPestle] mode:keep,
+			item 5 tags[Plantain],
+		}
+		outputs
+		{
+			item 1 Base.PlantainCataplasm,
+		}
+	}
+
+	craftRecipe MakeComfreyPoultice
+	{
+        timedAction = MixingMortarPestle,
+		Time = 60,
+		NeedToBeLearn = True,
+		Tags = AnySurfaceCraft;Health,
+        category = Medical,
+        AutoLearnAny = Doctor:5;PlantScavenging:5,
+		inputs
+		{
+			item 1 tags[MortarPestle] mode:keep,
+			item 5 tags[Comfrey],
+		}
+		outputs
+		{
+			item 1 Base.ComfreyCataplasm,
+		}
+	}
+
+	craftRecipe MakeWildGarlicPoultice
+	{
+        timedAction = MixingMortarPestle,
+		Time = 60,
+		NeedToBeLearn = True,
+		Tags = AnySurfaceCraft;Health,
+        category = Medical,
+        AutoLearnAny = Doctor:5;PlantScavenging:5,
+		inputs
+		{
+			item 1 tags[MortarPestle] mode:keep,
+			item 5 tags[WildGarlic],
+		}
+		outputs
+		{
+			item 1 Base.WildGarlicCataplasm,
+		}
+	}
+	
+	craftRecipe DisinfectRag
+	{
+        timedAction = ApplyAlcohol,
+		Time = 40,
+		Tags = InHandCraft;Health,
+        category = Medical,
+		inputs
+		{
+			item 1 [Base.RippedSheets;Base.Bandage] mode:destroy mappers[ragType],
+			item 1 [*],
+			-fluid 0.1 [Alcohol;Vodka;Whiskey],
+		}
+		outputs
+		{
+			item 1 mapper:ragType,
+		}
+        itemMapper ragType
+        {
+            Base.AlcoholRippedSheets = Base.RippedSheets,
+            Base.AlcoholBandage = Base.Bandage,
+		}
+	}
+
+	/* NOTES: FIX_HEAT  -  energy -0.22 [Thermal] mode:keep */
+	craftRecipe DisinfectBandage
+	{
+        timedAction = ScrubClothWithSoap,
+		Time = 100,
+		Tags = InHandCraft;Health;CanBeDoneFromFloor,
+        category = Medical,
+		OnTest = Recipe.OnTest.HotFluidContainer,
+		Tooltip = Tooltip_needsToBeHot,
+		inputs
+		{
+			item 1 [Base.RippedSheets;Base.Bandage] mode:destroy mappers[ragType],
+			item 1 [*] mode:keep,
+			-fluid 0.5 [Water],
+		}
+		outputs
+		{
+			item 1 mapper:ragType,
+		}
+        itemMapper ragType
+        {
+			Base.AlcoholRippedSheets = Base.RippedSheets,
+			Base.AlcoholBandage = Base.Bandage,
+		}
+	}
+
+	craftRecipe CleanBandage
+	{
+        timedAction = ScrubClothWithSoap,
+		Time = 40,
+		Tags = InHandCraft;Health,
+        category = Medical,
+		inputs
+		{
+			item 1 [Base.BandageDirty;Base.DenimStripsDirty;Base.LeatherStripsDirty;Base.RippedSheetsDirty] mode:destroy mappers[ragType],
+			item 1 [*],
+			-fluid 0.5 categories[Water] mode:mixture,
+		}
+		outputs
+		{
+			item 1 mapper:ragType,
+		}
+        itemMapper ragType
+        {
+			Base.Bandage = Base.BandageDirty,
+			Base.DenimStrips = Base.DenimStripsDirty,
+			Base.LeatherStrips = Base.LeatherStripsDirty,
+			Base.RippedSheets = Base.RippedSheetsDirty,
+		}
+	}
+
+	craftRecipe MakeSplint
+	{
+        timedAction = Making,
+		Time = 70,
+		Tags = InHandCraft;Health,
+        category = Medical,
+		inputs
+		{
+			item 1 [Base.RippedSheets;Base.RippedSheetsDirty;Base.DenimStrips;Base.DenimStripsDirty;Base.LeatherStrips;Base.LeatherStripsDirty] mode:destroy,
+			item 1 [Base.Plank;Base.TreeBranch2;Base.WoodenStick2],
+		}
+		outputs
+		{
+			item 1 Base.Splint,
+		}
+	}
+
+	craftRecipe DouseCottonInAlcohol
+	{
+        timedAction = ApplyAlcohol,
+		Time = 20,
+		Tags = InHandCraft;Health,
+        category = Medical,
+		inputs
+		{
+			item 1 [Base.CottonBalls],
+			item 1 [*],
+			-fluid 0.1 [Alcohol;Vodka;Whiskey],
+		}
+		outputs
+		{
+			item 1 Base.AlcoholedCottonBalls,
+		}
+	}
+
+    craftRecipe PurifyWater
+    {
+        timedAction = Making,
+        Icon = Item_WaterDrop,
+        Time = 70,
+        Tags = InHandCraft;Health,
+		category = Miscellaneous, /*category = Medical,*/
+        OnTest = Recipe.OnTest.PurifyWater,
+        OnCreate = Recipe.OnCreate.PurifyWater,
+        Tooltip = Tooltip_Recipe_PurifyWater,
+        inputs
+        {
+            item 1 [*] mode:keep flags[ItemIsFluid;NotEmpty],
+            item 1 [Base.WaterPurificationTablets],
+        }
+        outputs
+        {
+        }
+    }
+}

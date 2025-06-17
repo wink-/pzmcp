@@ -1,0 +1,75 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_LogGate
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Wide Log Gate,
+			Icon		= Build_FenceOpenLogs,
+		}
+	}
+
+    entity LogGate
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_LogGate,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			skillBaseHealth = 300,
+			DontNeedFrame	= true,
+			breakSound      = BreakDoor,
+			
+            face W
+            {
+                layer
+                {
+                    row = walls_logs_89,
+                    row = walls_logs_88,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_logs_90 walls_logs_91,
+                }
+            }
+            /*face N_OPEN
+            {
+                layer
+                {
+                    row = walls_logs_87,
+                    row = walls_logs_86,
+                }
+            }
+            face W_OPEN
+            {
+                layer
+                {
+                    row = walls_logs_84 walls_logs_85,
+                }
+            }*/
+        }
+		
+        component CraftRecipe
+        {
+            timedAction   = BuildWallNoTool,
+            time          = 150,
+            category      = Carpentry,
+            tags          = Carpentry,
+            xpAward       = Woodwork:5,
+            ToolTip       = Tooltip_craft_logGateDesc,
+            inputs
+            {
+                item 5 [Base.Log],
+                item 5 [Base.RippedSheets;Base.RippedSheetsDirty;Base.Twine;Base.Rope;Base.SheetRope] flags[DontReplace],
+            }
+        }
+    }
+}

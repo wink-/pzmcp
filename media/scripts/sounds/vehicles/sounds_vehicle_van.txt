@@ -1,0 +1,186 @@
+module Base
+{
+	sound VehicleEngineVan
+	{
+		category = Vehicle,
+		master = VehicleEngine,
+		clip
+		{
+			event = Vehicle/Van/Engine,
+		}
+	}
+
+	sound VehicleIgnitionFailVan
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/IgnitionFail,
+		}
+	}
+
+	sound VehicleHornVan
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/Horn,
+		}
+	}
+
+	sound VehicleAlarmVan
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/Alarm,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleDoorIsLockedVan
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/Door/IsLocked,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleDoorOpenVan
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/Door/Open,
+		}
+	}
+
+	sound VehicleDoorCloseVan
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/Door/Close,
+		}
+	}
+
+	sound LockVehicleDoorVan
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/Door/Lock,
+		}
+	}
+
+	sound UnlockVehicleDoorVan
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/Door/UnLock,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleHoodCloseVan
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/Hood/Close,
+		}
+	}
+
+	sound VehicleHoodCloseVanStart
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/Hood/Close/Start,
+		}
+	}
+
+	sound VehicleHoodCloseVanEnd
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/Hood/Close/End,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleHoodOpenVan
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/Hood/Open,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleTrunkCloseVan
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/Trunk/Close,
+		}
+	}
+
+	sound VehicleTrunkCloseVanStart
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/Trunk/Close/Start,
+		}
+	}
+
+	sound VehicleTrunkCloseVanEnd
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/Trunk/Close/End,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleTrunkOpenVan
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/Trunk/Open,
+		}
+	}
+
+	sound VehicleTrunkLockVan
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/Trunk/Lock,
+		}
+	}
+
+	sound VehicleTrunkUnlockVan
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/Trunk/UnLock,
+		}
+	}
+}

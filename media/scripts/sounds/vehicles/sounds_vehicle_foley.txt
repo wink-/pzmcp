@@ -1,0 +1,467 @@
+module Base
+{
+	/* Vehicle-engine sounds have the starting-up and shutting-down sounds
+	   in the same FMOD event.  When an engine is already running, we want
+	   to skip straight to the "idle" sound without playing the starting-up
+	   sound. These 'soundTimeline' objects specify the timeline position
+	   (in milliseconds) somewhere in the looping idle sound. */
+	   
+	soundTimeline Vehicle/Sport/Engine
+	{
+		idle = 3500,
+	}
+	soundTimeline Vehicle/Jeep/Engine
+	{
+		idle = 3500,
+	}
+	soundTimeline Vehicle/Standard/Engine
+	{
+		idle = 5700,
+	}
+	soundTimeline Vehicle/Van/Engine
+	{
+		idle = 3600,
+	}
+
+/******************************************************************************/
+
+	sound VehicleBackUpBeeper
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			event = Vehicle/BackUpBeeper,
+		}
+	}
+
+	sound VehicleDoorAlarm
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			event = Vehicle/DoorAlarm,
+		}
+	}
+
+	sound HitVehiclePartWithWeapon
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Hit/PartWithWeapon,
+		}
+	}
+
+	sound HitVehicleWindowWithWeapon
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Hit/WindowWithWeapon,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleRunOverBody
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/RunOverBody,
+		}
+	}
+
+	sound VehicleHitCharacter
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Hit/Character,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleHitTree
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Hit/Tree,
+		}
+	}
+
+	sound VehicleHitHedge
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Hit/Hedge,
+		}
+	}
+
+	sound VehicleHitObject
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Hit/Object,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleCrash
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Crash/Heavy,
+		}
+	}
+
+	sound VehicleCrash1
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Crash/Light,
+		}
+	}
+
+	sound VehicleCrash2
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Crash/Medium,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleScrapePastPlant
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Hit/ScrapePastPlant,
+		}
+	}
+
+	sound VehicleTireExplode
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/TireExplode,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleSirenAlarm
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Siren/Alarm,
+		}
+	}
+
+	sound VehicleSirenYelp
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Siren/Yelp,
+		}
+	}
+
+	sound VehicleSirenWall
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			event = Vehicle/Siren/Wall,
+		}
+	}
+	
+	sound VehicleSetSiren
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Siren/SetSiren,
+		}
+	}
+
+	sound VehicleSetLights
+	{
+		category = Vehicle,
+		loop = true,
+		clip
+		{
+			event = Vehicle/Siren/SetLights,
+		}
+	}
+	
+/******************************************************************************/
+
+	sound VehicleHotwireStart
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Hotwire/Start,
+		}
+	}
+
+	sound VehicleHotwireFail
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Hotwire/Fail,
+		}
+	}
+	
+	sound VehicleHotwireSuccess
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Hotwire/Success,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleRunningOutOfGas
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/RunOutOfGas,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleEngineFailureDamage
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/EngineFailureDamage,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleInsertIgnitionKey
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/InsertIgnitionKey,
+		}
+	}
+
+	sound VehicleRemoveIgnitionKey
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/RemoveIgnitionKey,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleACButton
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/AC/HeaterButton,
+		}
+	}
+
+	sound VehicleACSetTemperature
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/AC/SetTemperature,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleAddFuel
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/AddFuel,
+		}
+	}
+
+	sound VehicleAddFuelFromCanister
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/AddFuel/FromCanister,
+		}
+	}
+
+	sound VehicleAddFuelFromGasPump
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/AddFuel/FromGasPump,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleHeadlightsOn
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Headlights/On,
+		}
+	}
+
+	sound VehicleHeadlightsOff
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Headlights/Off,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleWindowHandleOpen
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Window/Handle/Open,
+		}
+	}
+
+	sound VehicleWindowHandleClose
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Window/Handle/Close,
+		}
+	}
+
+	sound VehicleWindowElectricOpen
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Window/Electric/Open,
+		}
+	}
+
+	sound VehicleWindowElectricClose
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Window/Electric/Close,
+		}
+	}
+
+	sound VehicleWindowSmash
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Window/Smash,	
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleTowAttach
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Tow/Attach,	
+		}
+	}
+
+	sound VehicleTowDetach
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Tow/Detach,	
+		}
+	}
+
+	/****************************************************************************/
+
+	sound VehicleRadioButton
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Radio/RadioButton,
+		}
+	}
+
+	sound VehicleRadioStatic
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Radio/Static,
+		}
+	}
+
+	sound VehicleRadioProgram
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Radio/Program,
+		}
+	}
+
+	sound VehicleRadioTuneIn
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Radio/TuneIn,
+		}
+	}
+
+	sound VehicleRadioZap
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Radio/Zap,
+		}
+	}
+
+}

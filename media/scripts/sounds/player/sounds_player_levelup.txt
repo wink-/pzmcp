@@ -1,0 +1,11 @@
+module Base
+{
+	sound GainExperienceLevel
+	{
+		category = Player,
+		clip
+		{
+			event = Game/LevelUp,
+		}
+	}
+}

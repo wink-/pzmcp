@@ -1,0 +1,41 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISTableLayoutCell
+        {
+            drawBackground      = false,
+            drawBorder          = false,
+            backgroundColor     = C_BlackNoAlpha,
+            borderColor         = C_BlackNoAlpha,
+            minimumWidth        = 0,
+            minimumHeight       = 0,
+            padding             = 0,
+        }
+
+        ISTableLayoutCell S_TableLayoutCell_ItemSlot
+        {
+            padding             = 5,
+        }
+
+        ISTableLayoutCell S_TableLayoutCell_Component_Tab
+        {
+            padding             = 6,
+        }
+
+        ISTableLayoutCell S_TableLayoutCell_Pad5
+        {
+            padding             = 5,
+        }
+        
+        ISTableLayoutCell S_TableLayoutCell_Pad2
+        {
+            padding             = 2,
+        }
+
+        ISTableLayoutCell S_TableLayoutCell_Pad10
+        {
+            padding             = 5,
+        }
+    }
+}

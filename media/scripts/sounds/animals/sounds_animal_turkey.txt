@@ -1,0 +1,83 @@
+module Base
+{
+    sound AnimalFootstepsTurkeyWalk
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Turkey/Footsteps/Walk,
+        }
+    }
+
+    sound AnimalVoiceTurkeyIdleFly
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Turkey/Voice/Idle/Fly,
+        }
+    }
+
+    sound AnimalVoiceTurkeyIdleWalk
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Turkey/Voice/Idle/Walk,
+        }
+    }
+
+    sound AnimalVoiceTurkeyDeath
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Turkey/Voice/Death,
+        }
+    }
+
+    sound AnimalVoiceTurkeyStressed
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Turkey/Voice/Stressed,
+        }
+    }
+
+    sound AnimalVoiceTurkeyPain
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Turkey/Voice/Pain,
+        }
+    }
+
+    sound AnimalVoiceTurkeyFight
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Turkey/Voice/Fight,
+        }
+    }
+
+    sound AnimalFoleyTurkeyGrooming
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Turkey/Foley/Grooming,
+        }
+    }
+
+    sound AnimalFoleyTurkeyScratching
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Turkey/Foley/Scratching,
+        }
+    }
+}

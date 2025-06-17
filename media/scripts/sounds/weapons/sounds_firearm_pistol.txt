@@ -1,0 +1,147 @@
+module Base
+{
+	sound PistolShoot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
+		{
+			event = Weapon/Firearm/Pistol/Shoot,
+		}
+	}
+
+	sound PistolInsertAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Pistol/InsertAmmo,
+		}
+	}
+
+	sound PistolEjectAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Pistol/EjectAmmo,
+		}
+	}
+
+	sound PistolInsertAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Pistol/InsertAmmoStart,
+		}
+	}
+
+	sound PistolInsertAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Pistol/InsertAmmoStop,
+		}
+	}
+
+	sound PistolEjectAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Pistol/EjectAmmoStart,
+		}
+	}
+
+	sound PistolEjectAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Pistol/EjectAmmoStop,
+		}
+	}
+
+	sound PistolRack
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Pistol/Rack,
+		}
+	}
+
+	sound PistolJam
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Pistol/Jam,
+		}
+	}
+    
+	sound PistolBringToBear
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Pistol/BringToBear,
+		}
+	}
+    
+	sound PistolAimRelease
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Pistol/AimRelease,
+		}
+	}
+
+	sound PistolEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Pistol/Equip,
+		}
+	}
+        
+	sound PistolUnEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Pistol/UnEquip,
+		}
+	}
+            
+	sound PistolBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Pistol/Break,
+		}
+	}
+
+	sound PistolDrop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Pistol/Drop,
+		}
+	}
+
+	sound PistolCartridgeFall
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Pistol/CartridgeFall,
+		}
+	}
+}

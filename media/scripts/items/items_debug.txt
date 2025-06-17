@@ -1,0 +1,24 @@
+module Base
+{
+    /*** TEMPORARY DEBUG ***/
+
+	item DebugFluid
+	{
+		DisplayName = WaterSource,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = DebugFluid,
+		IconFluidMask = DebugFluid_Mask,
+
+        component FluidContainer
+        {
+            ContainerName   = Source,
+            capacity        = 100.0,
+            Fluids
+            {
+                fluid           = Water:1.0,
+            }
+        }
+	}
+}

@@ -1,0 +1,49 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_DirtFloor
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Dirt Floor,
+			Icon		= Build_FloorDirt,
+		}
+	}
+
+    entity DirtFloor
+    {
+        component UiConfig
+                {
+                    xuiSkin         = default,
+                    entityStyle     = ES_DirtFloor,
+                    uiEnabled       = false,
+                }
+
+        component SpriteConfig
+        {
+		    isThumpable     = false,
+		    OnIsValid = BuildRecipeCode.floor.OnIsValid,
+		    OnCreate = BuildRecipeCode.floor.OnCreate,
+			
+            face Single
+            {
+                layer
+                {
+                    row = blends_natural_01_64,
+                }
+            }
+        }
+		
+	component CraftRecipe
+        {
+            timedAction   = EmptyBag,
+            time          = 100,
+            category      = Outdoors,
+            ToolTip       = Tooltip_craft_dirtFloorDesc,
+            inputs
+            {
+                item 1 [Base.Dirtbag] flags[Prop1],
+            }
+        }
+    }
+}

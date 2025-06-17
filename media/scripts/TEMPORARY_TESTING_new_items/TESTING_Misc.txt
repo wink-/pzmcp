@@ -1,0 +1,28 @@
+module Base
+{
+    item Dogbane
+    {
+        DisplayCategory = Material,
+        Type		= Normal,
+        DisplayName	= Hemp Dogbane,
+        Icon		= Dogbane,
+        Weight		= 0.2,
+        WorldStaticModel = Dogbane_Ground,
+        Tooltip = Tooltip_item_Dogbane,
+    }
+
+	item Lighter_Battery
+	{
+		DisplayName = Lighter - Improvised Battery,
+		DisplayCategory = FireSource,
+		Type = Drainable,
+		Weight = 0.1,
+		Icon = Lighter_Crafted,
+		MetalValue = 1,
+		UseDelta = 0.05,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		WorldStaticModel = Lighter_Battery,
+		Tags = HasMetal;Lighter;StartFire,
+	}
+}

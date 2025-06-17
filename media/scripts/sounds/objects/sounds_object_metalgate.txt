@@ -1,0 +1,65 @@
+module Base
+{
+	sound MetalGateBlocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalGate/IsBlocked,
+		}
+	}
+
+	sound MetalGateBreak
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalGate/Break,
+		}
+	}
+
+	sound MetalGateClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalGate/Close,
+		}
+	}
+
+	sound MetalGateLock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalGate/Lock,
+		}
+	}
+
+	sound MetalGateLocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalGate/IsLocked,
+		}
+	}
+
+	sound MetalGateOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalGate/Open,
+		}
+	}
+
+	sound MetalGateUnlock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalGate/Unlock,
+		}
+	}
+}

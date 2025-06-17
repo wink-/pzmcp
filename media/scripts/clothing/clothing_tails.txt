@@ -1,0 +1,26 @@
+module Base
+{
+	item BunnyTail
+	{
+		DisplayName = Bunny Tail,
+		DisplayCategory = Tail,
+		Type = Clothing,
+		Icon = Rabbittail,
+		BodyLocation = Tail,
+		ClothingItem = BunnyTail,
+		WorldStaticModel = BunnyTail_Ground,
+		Tags = IsFireFuel;IsFireTinder;IsMemento;IgnoreZombieDensity,
+	}
+
+	item SpiffoTail
+	{
+		DisplayName = Spiffo Suit Tail,
+		DisplayCategory = Tail,
+		Type = Clothing,
+		Icon = SpiffoTail,
+		BodyLocation = Tail,
+		ClothingItem = SpiffoTail,
+		WorldStaticModel = SpiffoTail_Ground,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+	}
+}

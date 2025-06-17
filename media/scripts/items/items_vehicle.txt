@@ -1,0 +1,78 @@
+module Base
+{
+    /************************ Mechanic Items ************************/
+    item Jack
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	1.5,
+        Type	=	Normal,
+        DisplayName	=	Jack,
+        Icon	=	CarJack,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarJack,
+    }
+
+    item LugWrench
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	1,
+        Type	=	Normal,
+        DisplayName	=	Lug Wrench,
+        Icon	=	LugWrench,
+        MechanicsItem = TRUE,
+        WorldStaticModel = LugWrench,
+		Tags = LugWrench,
+    }
+
+    item TirePump
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	2,
+        Type	=	Normal,
+        DisplayName	=	Tire Pump,
+        Icon	=	TirePump,
+        MechanicsItem = TRUE,
+        WorldStaticModel = TirePump,
+    }
+
+    item EngineParts
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	1,
+        Type	=	Normal,
+        DisplayName	=	Spare Engine Parts,
+        Icon	=	EngineParts,
+        MetalValue = 30,
+        MechanicsItem = TRUE,
+        WorldStaticModel = EngineParts,
+    }
+
+    item CarKey
+    {
+        DisplayCategory = Security,
+		Weight = 0.05,
+        Type	=	Key,
+        DisplayName	=	Vehicle Key,
+        Icon	=	CarKey,
+        MetalValue = 7,
+        WorldStaticModel = CarKeys,
+        Tags = CarKey;MoreWhenNoZombies;FitsWallet,
+        OriginX = 0,
+        OriginY = 0,
+        originZ = 0,
+    }
+
+    item CarBatteryCharger
+    {
+        DisplayCategory = VehicleMaintenance,
+        Weight	=	2,
+        Type	=	Normal,
+        DisplayName	=	Car Battery Charger,
+        Icon	=	CarBatteryCharger,
+        MetalValue = 1,
+        Tooltip = Tooltip_CarBatteryCharger,
+        MechanicsItem = TRUE,
+        WorldStaticModel = CarBatteryCharger,
+    }
+
+}

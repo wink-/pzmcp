@@ -1,0 +1,22 @@
+module Base
+{
+	template vehicle GloveBox
+	{
+		part GloveBox
+		{
+			area = SeatFrontRight,
+			itemType = Base.GloveBox,
+			mechanicRequireKey = true,
+			durability = 3,
+			container
+			{
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+}
+

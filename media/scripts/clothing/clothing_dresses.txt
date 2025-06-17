@@ -1,0 +1,234 @@
+module Base
+{
+	item Dress_Knees
+	{
+		DisplayName = Dress - Knee-length Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressShortWhite,
+		BloodLocation = ShortsShort;Shirt,
+		BodyLocation = Dress,
+		ClothingItem = Dress_Knees,
+		FabricType = Cotton,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		WorldStaticModel = Dress_Short_Ground,
+		Tags = CanBeDyed;RipClothingCotton;NoRagdoll,
+	}
+
+	item DressKnees_Straps
+	{
+		DisplayName = Dress - Knee-length,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressGeneric,
+		BloodLocation = ShortsShort;Shirt,
+		BodyLocation = Dress,
+		ClothingItem = DressKnees_Straps,
+		FabricType = Cotton,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		WorldStaticModel = Dress_Knees_Straps_Ground,
+		Tags = RipClothingCotton;NoRagdoll,
+	}
+
+	item Dress_Long
+	{
+		DisplayName = Dress - Full Length Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressLongWhite,
+		BloodLocation = Trousers;Shirt,
+		BodyLocation = LongDress,
+		ClothingItem = Dress_Long,
+		FabricType = Cotton,
+		Insulation = 0.3,
+		RunSpeedModifier = 0.90,
+		WindResistance = 0.2,
+		WorldStaticModel = Dress_Long_Ground,
+		Tags = CanBeDyed;RipClothingCotton;NoRagdoll,
+	}
+
+	item Dress_long_Straps
+	{
+		DisplayName = Dress - Full Length,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressGeneric,
+		BloodLocation = Trousers;Shirt,
+		BodyLocation = LongDress,
+		ClothingItem = Dress_long_Straps,
+		FabricType = Cotton,
+		Insulation = 0.3,
+		RunSpeedModifier = 0.90,
+		WindResistance = 0.2,
+		WorldStaticModel = Dress_Straps_Ground,
+		Tags = RipClothingCotton;NoRagdoll,
+	}
+
+	item Dress_Normal
+	{
+		DisplayName = Dress - Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressMediumWhite,
+		BloodLocation = Trousers;Shirt,
+		BodyLocation = LongDress,
+		ClothingItem = Dress_Normal,
+		FabricType = Cotton,
+		Insulation = 0.20,
+		RunSpeedModifier = 0.93,
+		WindResistance = 0.15,
+		WorldStaticModel = Dress_Mid_Ground,
+		Tags = CanBeDyed;RipClothingCotton;NoRagdoll,
+	}
+
+	item Dress_SatinNegligee
+	{
+		DisplayName = Satin Negligee,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = NegligeeGeneric,
+		BloodLocation = ShortsShort;Shirt,
+		BodyLocation = Dress,
+		ClothingItem = Dress_SatinNegligee,
+		FabricType = Cotton,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		WorldStaticModel = Dress_Small_Straps_Ground,
+		Tags = RipClothingCotton;NoRagdoll,
+	}
+
+	item Dress_Short
+	{
+		DisplayName = Dress - Short,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressShortWhite,
+		BloodLocation = ShortsShort;Shirt,
+		BodyLocation = Dress,
+		ClothingItem = Dress_Short,
+		FabricType = Cotton,
+		Insulation = 0.1,
+		WindResistance = 0.05,
+		WorldStaticModel = Dress_Short_Ground,
+		Tags = CanBeDyed;RipClothingCotton;NoRagdoll,
+	}
+
+	item Dress_SmallBlackStrapless
+	{
+		DisplayName = Dress - Small Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = LittleBlackDressStrapless,
+		BloodLocation = ShortsShort;Shirt,
+		BodyLocation = Dress,
+		ClothingItem = Dress_SmallBlackStrapless,
+		FabricType = Cotton,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		WorldStaticModel = Dress_Small_Black_Strapless_Ground,
+		Tags = RipClothingCotton;NoRagdoll,
+	}
+
+	item Dress_SmallBlackStraps
+	{
+		DisplayName = Dress - Small,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = LittleBlackDress,
+		BloodLocation = ShortsShort;Shirt,
+		BodyLocation = Dress,
+		ClothingItem = Dress_SmallBlackStraps,
+		FabricType = Cotton,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		WorldStaticModel = Dress_Small_Black_Straps_Ground,
+		Tags = RipClothingCotton;NoRagdoll,
+	}
+
+	item Dress_SmallStrapless
+	{
+		DisplayName = Dress - Small Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressGenericStrapless,
+		BloodLocation = ShortsShort;Shirt,
+		BodyLocation = Dress,
+		ClothingItem = Dress_SmallStrapless,
+		FabricType = Cotton,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		WorldStaticModel = Dress_Small_Strapless_Ground,
+		Tags = CanBeDyed;RipClothingCotton;NoRagdoll,
+	}
+
+	item Dress_SmallStraps
+	{
+		DisplayName = Dress - Small,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressGeneric,
+		BloodLocation = ShortsShort;Shirt,
+		BodyLocation = Dress,
+		ClothingItem = Dress_SmallStraps,
+		FabricType = Cotton,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		WorldStaticModel = Dress_Small_Straps_Ground,
+		Tags = CanBeDyed;RipClothingCotton;NoRagdoll,
+	}
+
+	item Dress_Straps
+	{
+		DisplayName = Dress,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressGeneric,
+		BloodLocation = Trousers;Shirt,
+		BodyLocation = LongDress,
+		ClothingItem = Dress_Straps,
+		FabricType = Cotton,
+		Insulation = 0.20,
+		RunSpeedModifier = 0.93,
+		WindResistance = 0.15,
+		WorldStaticModel = Dress_Straps_Ground,
+		Tags = CanBeDyed;RipClothingCotton;NoRagdoll,
+	}
+
+	item WeddingDress
+	{
+		DisplayName = Dress - Wedding,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressWedding,
+		BloodLocation = Trousers;Shirt,
+		BodyLocation = FullSuit,
+		ClothingItem = WeddingDress,
+		FabricType = Cotton,
+		Insulation = 0.25,
+		RunSpeedModifier = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 0.1,
+		WorldStaticModel = WeddingDress_Ground,
+		Tags = RipClothingCotton;NoRagdoll,
+	}
+
+	item BlackRobe
+	{
+		DisplayName = Black Robe,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Robe_Judge,
+		BloodLocation = Trousers;Shirt,
+		BodyLocation = BathRobe,
+		ClothingItem = BlackRobe,
+		FabricType = Cotton,
+		Insulation = 0.3,
+		RunSpeedModifier = 0.90,
+		WindResistance = 0.2,
+		WorldStaticModel = Dress_Long_Ground,
+		Tags = RipClothingCotton;NoRagdoll,
+	}
+
+}

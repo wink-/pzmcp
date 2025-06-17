@@ -1,0 +1,338 @@
+module Base
+{
+    craftRecipe ExtractWorkableIronFromBloom
+    {
+        time        = 10,
+        tags = PrimitiveForge,
+        /*needTobeLearn = true,*/
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 tags[Charcoal],
+            item 1 tags[Charcoal],
+            item 1 tags[Charcoal],
+            item 1 [Base.IronBloom],
+            item 1 tags[ClubHammer;Hammer] mode:keep,
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 12 Base.WorkableIron,
+        }
+    }
+
+    craftRecipe Forge_Iron_Bar
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        xpAward = Blacksmith:10,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 4 [Base.WorkableIron],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[Prop2],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronBar,
+        }
+    }
+
+    craftRecipe Forge_Iron_Bar_Half
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        xpAward = Blacksmith:10,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 2 [Base.WorkableIron],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[Prop2],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronBarHalf,
+        }
+    }
+
+    craftRecipe Forge_Iron_Bar_Quarter
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        xpAward = Blacksmith:10,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.WorkableIron],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[Prop2],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronBarQuarter,
+        }
+    }
+
+    craftRecipe Forge_Iron_Piece
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        xpAward = Blacksmith:10,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.WorkableIron],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[Prop2],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronPiece,
+        }
+    }
+
+    craftRecipe Forge_Iron_Block
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 tags[Chunk],
+            item 1 tags[Chunk],
+            item 1 tags[Chunk],
+            item 1 tags[Chunk],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronBlock,
+        }
+    }
+
+    craftRecipe Forge_Iron_Chunk
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:2,
+        timedAction = Making,
+        xpAward = Blacksmith:10,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.WorkableIron],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[Prop2],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronChunk,
+        }
+    }
+
+    craftRecipe Make_Iron_Blocks
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:3,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.IronIngot],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 3 Base.IronBlock,
+        }
+    }
+
+    craftRecipe Make_Iron_Chunks
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:2,
+        timedAction = Making,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.IronBlock],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 4 Base.IronChunk,
+        }
+    }
+
+    craftRecipe Make_Iron_Bar_Halves
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.IronBar],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[CrudeChisel;MetalworkingChisel] mode:keep flags[Prop2],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 2 Base.IronBarHalf,
+        }
+    }
+
+    craftRecipe Make_Iron_Bar_Quarters
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.IronBarHalf],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[CrudeChisel;MetalworkingChisel] mode:keep flags[Prop2],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 2 Base.IronBarQuarter,
+        }
+    }
+
+    craftRecipe Forge_Iron_Bar_From_Iron_Block
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.IronBlock],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronBar,
+        }
+    }
+
+    craftRecipe Forge_Iron_Bar_Quarter_From_Iron_Chunk
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.IronChunk],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronBarQuarter,
+        }
+    }
+
+    craftRecipe Make_Workable_Iron_From_Iron_Chunk
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        xpAward = Blacksmith:10,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.IronChunk],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[Prop2],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.WorkableIron,
+        }
+    }
+
+    craftRecipe Make_Workable_Iron_From_Iron_Piece
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        xpAward = Blacksmith:10,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 5 [Base.IronPiece],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[Prop2],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.WorkableIron,
+        }
+    }
+}

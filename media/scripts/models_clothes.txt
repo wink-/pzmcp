@@ -1,0 +1,1430 @@
+module Base
+{
+	model Hoodie_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_Hoodie_Ground,
+        scale = 0.33,
+    }
+	model Jacket_Ground
+	{
+		mesh = WorldItems/Clothing/Bob_Jacket_Ground,
+		scale = 0.33,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0027 -0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model JacketLeather_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_JacketLeather_Ground,
+        scale = 0.33,
+    }
+	model JacketLong_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_LongJacket_Ground,
+        scale = 0.33,
+    }
+	model Bathrobe_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_LongJacket_Ground,
+        scale = 0.4,
+    }
+	model SuitJacket_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_SuitJacket_Ground,
+        scale = 0.33,
+    }
+	model Jumper_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_Jumper_Ground,
+        scale = 0.33,
+    }
+	model JumperSleeveless_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_SleevelessJumper_Ground,
+        scale = 0.33,
+    }
+	model Poncho_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_Poncho_Ground,
+        scale = 0.33,
+    }
+	model JacketCoat_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_CoatArmy_Ground,
+        scale = 0.33,
+    }
+	model GhillieTop_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_GhillieTop_Ground,
+        scale = 0.38,
+    }
+	model WeddingJacket_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_WeddingJacket_Ground,
+        scale = 0.33,
+    }
+	model Trousers_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_Trousers_Ground,
+        scale = 0.33,
+    }
+	model ShortShorts_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_ShortShorts_Ground,
+        scale = 0.33,
+    }
+	model LongShorts_Ground
+    {
+        mesh = WorldItems/Clothing/LongShorts_Ground,
+        scale = 0.125,
+    }
+	model GhillieTrousers_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_GihillieTrousers_Ground,
+        scale = 0.38,
+    }
+	model Dungarees_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_Dungarees_Ground,
+        scale = 0.33,
+    }
+	model BulletVest_Ground
+    {
+        mesh = WorldItems/Clothing/BulletVest_Ground,
+        scale = 0.11,
+    }
+	model HuntingVest_Ground
+    {
+        mesh = WorldItems/Clothing/HuntingVest_Ground,
+        scale = 0.33,
+    }
+	model Hazmat_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_Hazmat_Ground,
+        scale = 0.33,
+    }
+	model HospitalGown_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_HospitalGown_Ground,
+        scale = 0.33,
+    }
+	model BoilerSuit_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_BoilerSuit_Ground,
+        scale = 0.33,
+    }
+	model WeddingDress_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_WeddingDress_Ground,
+        texture = WorldItems/WeddingDress,
+        scale = 0.33,
+    }
+	model Tie_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_Tie_Ground,
+        scale = 0.33,
+    }
+	model Scarf_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_Scarf_Ground,
+        scale = 0.33,
+    }
+	model Apron_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_Apron_Ground,
+        scale = 0.33,
+    }
+	model Shirt_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_Shirt_Ground,
+        scale = 0.33,
+    }
+	model Dress_Long_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_Dress_Long_Ground,
+        scale = 0.33,
+    }
+	model Dress_Mid_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_Dress_Mid_Ground,
+        scale = 0.33,
+    }
+	model Dress_Short_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_Dress_Short_Ground,
+        scale = 0.33,
+    }
+	model Skirt_Long_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_Skirt_Long_Ground,
+        scale = 0.33,
+    }
+	model Skirt_Mid_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_Skirt_Mid_Ground,
+        scale = 0.33,
+    }
+	model Skirt_Short_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_Skirt_Short_Ground,
+        scale = 0.33,
+    }
+	model TShirt_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_TShirt_Ground,
+        scale = 0.33,
+    }
+	model Bikini_Ground
+    {
+        mesh = WorldItems/Clothing/Bikini_Ground,
+        scale = 0.42,
+    }
+	model Boots_Ground
+    {
+        mesh = WorldItems/Clothing/Boots_Ground,
+        scale = 0.33,
+    }
+	model Gloves_Ground
+    {
+        mesh = WorldItems/Clothing/Gloves_Ground,
+        scale = 0.33,
+    }
+	model GlovesLong_Ground
+    {
+        mesh = WorldItems/Clothing/GlovesLong_Ground,
+        scale = 0.33,
+    }
+	model Holster_Ground
+    {
+        mesh = WorldItems/Clothing/Holster_Ground,
+        texture = WorldItems/Holster,
+        scale = 0.33,
+    }
+	model HolsterSingle_Ground
+    {
+        mesh = WorldItems/Clothing/HolsterSingle_Ground,
+        scale = 0.125,
+    }
+	model Shoes_Ground
+    {
+        mesh = WorldItems/Clothing/Shoes_Ground,
+        scale = 0.33,
+    }
+	model SwimSuit_Ground
+    {
+        mesh = WorldItems/Clothing/SwimSuit_Ground,
+        scale = 0.45,
+    }
+	model SwimTrunks_Ground
+    {
+        mesh = WorldItems/Clothing/SwimTrunks_Ground,
+        scale = 0.33,
+    }
+	model BowTie_Ground
+    {
+        mesh = WorldItems/Clothing/BowTie_Ground,
+        scale = 0.5,
+    }
+	model Shoes_FlipFlops_Ground
+    {
+        mesh = WorldItems/Clothing/Shoes_FlipFlops,
+        scale = 0.5,
+    }
+	model Shoes_Slippers_Ground
+    {
+        mesh = WorldItems/Clothing/Shoes_Slippers,
+        scale = 0.4,
+    }
+	model Sock_Ankle_Ground
+    {
+        mesh = WorldItems/Clothing/Sock_Ankle,
+        scale = 0.45,
+    }
+	model Socks_Long_Ground
+    {
+        mesh = WorldItems/Clothing/Socks_Long,
+        scale = 0.4,
+    }
+	model CraftingSock
+    {
+        mesh = CraftingSock,
+	texture = Clothes/Shoes_Socks_Textres/WhiteSocks_Long,
+    }
+	model WatchClassicBlack
+    {
+        mesh = WorldItems/WatchClassic,
+        texture = WorldItems/WatchClassicBlack,
+        scale = 0.4,
+    }
+	model WatchClassicBrown
+    {
+        mesh = WorldItems/WatchClassic,
+        texture = WorldItems/WatchClassicBrown,
+        scale = 0.4,
+    }
+	model WatchClassicGold
+    {
+        mesh = WorldItems/WatchClassic,
+        texture = WorldItems/WatchClassicBlack,
+        scale = 0.4,
+    }
+	model WatchClassicMilitary
+    {
+        mesh = WorldItems/WatchClassic,
+        texture = WorldItems/WatchClassicBlack,
+        scale = 0.4,
+    }
+	model DigitalWatchRed
+    {
+        mesh = WorldItems/DigitalWatch,
+        texture = WorldItems/DigitalWatch,
+        scale = 0.4,
+    }
+	model DigitalWatchBlack
+    {
+        mesh = WorldItems/DigitalWatch,
+        texture = WorldItems/DigitalWatchBlack,
+        scale = 0.4,
+    }
+	model DigitalWatchGold
+    {
+        mesh = WorldItems/DigitalWatch,
+        texture = WorldItems/DigitalWatchGold,
+        scale = 0.4,
+    }
+	model Necklace_Crucifix_Ground
+    {
+        mesh = WorldItems/Necklace_Crucifix_Ground,
+        texture = NecklaceCrucifix,
+        scale = 0.4,
+    }
+	model Necklace_SilverCrucifix_Ground
+    {
+        mesh = WorldItems/Necklace_Crucifix_Ground,
+        texture = Necklace_SilverCrucifix,
+        scale = 0.4,
+    }
+	model Necklace_Pearl_Ground
+    {
+        mesh = WorldItems/Necklace_Pearl_Ground,
+        texture = EarringDiamond,
+        scale = 0.4,
+    }
+	model NecklaceLong_SilverSapphireGround
+    {
+        mesh = WorldItems/NecklaceLong_Stone_Ground,
+        texture = NecklaceLong_SilverSapphire,
+        scale = 0.5,
+    }
+	model NecklaceLong_Amber_Ground
+    {
+        mesh = WorldItems/NecklaceLong_Stone_Ground,
+        texture = NecklaceLong_Amber,
+        scale = 0.5,
+    }
+	model NecklaceLongSilverDiamond_Ground
+    {
+        mesh = WorldItems/NecklaceLong_Stone_Ground,
+        texture = NecklaceLong_SilverDiamond,
+        scale = 0.5,
+    }
+	model NecklaceLongSilverSapphire_Ground
+    {
+        mesh = WorldItems/NecklaceLong_Stone_Ground,
+        texture = NecklaceLong_SilverSapphire,
+        scale = 0.5,
+    }
+	model NecklaceLong_SilverEmerald_Ground
+    {
+        mesh = WorldItems/NecklaceLong_Stone_Ground,
+        texture = NecklaceLong_SilverEmerald,
+        scale = 0.5,
+    }
+	model NecklaceLong_Silver_Ground
+    {
+        mesh = WorldItems/NecklaceLong_Ground,
+        texture = NecklaceLong_Silver,
+        scale = 0.5,
+    }
+	model NecklaceLong_Gold_Ground
+    {
+        mesh = WorldItems/NecklaceLong_Ground,
+        texture = NecklaceLong_Gold,
+        scale = 0.5,
+    }
+	model NecklaceLong_GoldDiamond_Ground
+    {
+        mesh = WorldItems/NecklaceLong_Stone_Ground,
+        texture = NecklaceLong_GoldDiamond,
+        scale = 0.5,
+    }
+	model Necklace_GoldDiamond_Ground
+    {
+        mesh = WorldItems/Necklace_Stone_Ground,
+        texture = Necklace_GoldDiamond,
+        scale = 0.5,
+    }
+	model Necklace_GoldRuby_Ground
+    {
+        mesh = WorldItems/Necklace_Stone_Ground,
+        texture = Necklace_GoldRuby,
+        scale = 0.5,
+    }
+	model Necklace_Gold_Ground
+    {
+        mesh = WorldItems/Necklace_Ground,
+        texture = Necklace_Gold,
+        scale = 0.5,
+    }
+	model Necklace_SilverSapphire_Ground
+    {
+        mesh = WorldItems/Necklace_Stone_Ground,
+        texture = Necklace_SilverSapphire,
+        scale = 0.5,
+    }
+	model Necklace_SilverDiamond_Ground
+    {
+        mesh = WorldItems/Necklace_Stone_Ground,
+        texture = Necklace_SilverDiamond,
+        scale = 0.5,
+    }
+	model Necklace_YingYang_Ground
+    {
+        mesh = WorldItems/Necklace_Stone_Ground,
+        texture = Necklace_YingYang,
+        scale = 0.5,
+    }
+	model Necklace_Silver_Ground
+    {
+        mesh = WorldItems/Necklace_Ground,
+        texture = Necklace_Silver,
+        scale = 0.5,
+    }
+	model BalaclavaFace_Ground
+    {
+        mesh = WorldItems/BalaclavaFace_Ground,
+        texture = Clothes/Hat/Balaclava_Full2,
+        scale = 0.4,
+    }
+	model BalaclavaFull_Ground
+    {
+        mesh = WorldItems/BalaclavaFull_Ground,
+        texture = Clothes/Hat/Balaclava_Full2,
+        scale = 0.4,
+    }
+	model Bracelet_Bangle_Ground
+    {
+        mesh = WorldItems/Bracelet_Bangle_Ground,
+        texture = BraceletChain_Gold,
+        scale = 0.4,
+    }
+	model Bracelet_BangleSilver_Ground
+    {
+        mesh = WorldItems/Bracelet_Bangle_Ground,
+        texture = BraceletChain_Silver,
+        scale = 0.4,
+    }
+	model Bracelet_Chain_Ground
+    {
+        mesh = WorldItems/Bracelet_Chain_Ground,
+        texture = BraceletChain_Gold,
+        scale = 0.4,
+    }
+	model Bracelet_ChainSilver_Ground
+    {
+        mesh = WorldItems/Bracelet_Chain_Ground,
+        texture = BraceletChain_Silver,
+        scale = 0.4,
+    }
+	model Bracelet_Friendship_Ground
+    {
+        mesh = WorldItems/Bracelet_Chain_Ground,
+        texture = BraceletChain_White,
+        scale = 0.4,
+    }
+	model Choker_Ground
+    {
+        mesh = WorldItems/Choker_Ground,
+        texture = Choker,
+        scale = 0.4,
+    }
+	model Choker_Sapphire_Ground
+    {
+        mesh = WorldItems/Choker_Stone_Ground,
+        texture = Choker_Sapphire,
+        scale = 0.4,
+    }
+	model Choker_Amber_Ground
+    {
+        mesh = WorldItems/Choker_Stone_Ground,
+        texture = Choker_Amber,
+        scale = 0.4,
+    }
+	model Choker_Diamond_Ground
+    {
+        mesh = WorldItems/Choker_Stone_Ground,
+        texture = Choker_Diamond,
+        scale = 0.4,
+    }
+	model Earring_LoopLrg_Ground
+    {
+        mesh = WorldItems/Earring_LoopLrg_Ground,
+        texture = EarringGold,
+        scale = 0.4,
+    }
+	model Earring_LoopLrgSilver_Ground
+    {
+        mesh = WorldItems/Earring_LoopLrg_Ground,
+        texture = EarringSilver,
+        scale = 0.4,
+    }
+	model Earring_LoopMed_Ground
+    {
+        mesh = WorldItems/Earring_LoopMed_Ground,
+        texture = EarringGold,
+        scale = 0.4,
+    }
+	model Earring_LoopMedSilver_Ground
+    {
+        mesh = WorldItems/Earring_LoopMed_Ground,
+        texture = EarringSilver,
+        scale = 0.4,
+    }
+	model Earring_LoopSmall_Ground
+    {
+        mesh = WorldItems/Earring_LoopMed_Ground,
+        texture = EarringGold,
+        scale = 0.3,
+    }
+	model Earring_LoopSmallSilver_Ground
+    {
+        mesh = WorldItems/Earring_LoopMed_Ground,
+        texture = EarringSilver,
+        scale = 0.3,
+    }
+	model Eyepatch_Ground
+    {
+        mesh = WorldItems/Eyepatch_Ground,
+        texture = Eyepatch,
+        scale = 0.4,
+    }
+	model NBC_Mask_Ground
+    {
+        mesh = WorldItems/NBC_Mask_Ground,
+        texture = NBC_Mask,
+        scale = 0.4,
+    }
+	model Necklace_Dogtags_Ground
+    {
+        mesh = WorldItems/Necklace_Dogtags_Ground,
+        texture = Necklace_Dogtags,
+        scale = 0.4,
+    }
+	model Nosering_Ground
+    {
+        mesh = WorldItems/Nosering_Ground,
+        texture = EarringGold,
+        scale = 0.6,
+    }
+	model NoseringSilver_Ground
+    {
+        mesh = WorldItems/Nosering_Ground,
+        texture = EarringSilver,
+        scale = 0.6,
+    }
+	model NoseStud_Ground
+    {
+        mesh = WorldItems/NoseStud_Ground,
+        texture = EarringGold,
+        scale = 0.6,
+    }
+	model NoseStudSilver_Ground
+    {
+        mesh = WorldItems/NoseStud_Ground,
+        texture = EarringSilver,
+        scale = 0.6,
+    }
+	model SpiffoTail_Ground
+    {
+        mesh = WorldItems/SpiffoTail_Ground,
+        texture = Clothes\SpiffoSuit\SpiffoSuit,
+        scale = 0.4,
+    }
+	model WeddingVeil_Ground
+    {
+        mesh = WorldItems/WeddingVeil_Ground,
+        texture = Clothes/Hat/WeddingVeil,
+        scale = 0.4,
+    }
+	model Ring_Silver_Ground
+    {
+        mesh = WorldItems/Ring,
+        texture = WorldItems/RingSilver,
+        scale = 0.8,
+    }
+	model Ring_Gold_Ground
+	{
+		mesh = WorldItems/Ring,
+		texture = WorldItems/RingGold,
+		scale = 0.8,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0201 -0.0215 -0.0063,
+			rotate = -130.2238 20.8574 118.7746,
+			scale = 0.5580,
+		}
+	}
+	model Ring_Signet_Ground
+    {
+        mesh = WorldItems/Ring_Signet,
+        texture = WorldItems/Ring_Signet,
+        scale = 0.25,
+    }
+	model BunnySuitBlack_Ground
+    {
+		mesh = WorldItems/Clothing/BunnyOutfit_Ground,
+		texture = WorldItems/BunnyOutfit_Black_Ground,
+		scale = 0.5,
+    }
+	model BunnySuitPink_Ground
+    {
+		mesh = WorldItems/Clothing/BunnyOutfit_Ground,
+		texture = WorldItems/BunnyOutfit_Pink_Ground,
+		scale = 0.5,
+    }
+	model BunnyEarsWhite_Ground
+    {
+		mesh = WorldItems/Clothing/BunnyEars_Ground,
+		texture = Clothes/Hat/BunnyEars_White,
+		scale = 0.4,
+    }
+	model BunnyEarsBlack_Ground
+    {
+		mesh = WorldItems/Clothing/BunnyEars_Ground,
+		texture = Clothes/Hat/BunnyEars_Black,
+		scale = 0.4,
+    }
+	model StockingsBlack_Ground
+    {
+		mesh = WorldItems/Clothing/Stockings_Ground,
+		texture = WorldItems/Stockings_Black_80Denier,
+		scale = 0.4,
+    }
+	model StockingsBlackTrans_Ground
+    {
+		mesh = WorldItems/Clothing/Stockings_Ground,
+		texture = WorldItems/Stockings_Black_10Denier,
+		scale = 0.4,
+    }
+	model StockingsWhite_Ground
+    {
+		mesh = WorldItems/Clothing/Stockings_Ground,
+		texture = WorldItems/Stockings_White_Ground,
+		scale = 0.4,
+    }
+	model TightsTrans_Ground
+    {
+		mesh = WorldItems/Clothing/Tights_Ground,
+		texture = WorldItems/Tights_Black_10Denier_Ground,
+		scale = 0.4,
+    }
+	model TightsBlack_Ground
+    {
+		mesh = WorldItems/Clothing/Tights_Ground,
+		texture = WorldItems/Tights_Black_80Denier_Ground,
+		scale = 0.4,
+    }
+	model TightsFishnet_Ground
+	{
+		mesh = WorldItems/Clothing/Tights_Ground,
+		texture = WorldItems/Tights_BlackFishnet_Ground,
+		scale = 0.4,
+
+		attachment world
+		{
+			offset = 0.0000 -0.0028 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model Garter_Ground
+    {
+		mesh = WorldItems/Clothing/Garter,
+		texture = WorldItems/Garter,
+		scale = 0.5,
+    }
+	model BunnyTail_Ground
+    {
+		mesh = WorldItems/Clothing/BunnyTail,
+		texture = Clothes/Trousers_Mesh/BunnyTail,
+		scale = 0.4,
+    }
+	model FurryEars_Ground
+    {
+		mesh = WorldItems/FurryEars_Ground,
+		texture = Clothes/Hat/TeddyEars,
+		scale = 0.4,
+    }
+	model HeadBopper_Antlers_Ground
+    {
+		mesh = WorldItems/HeadBopper_Antlers_Ground,
+		texture = Clothes/Hat/Bopper_Antlers,
+		scale = 0.4,
+    }
+	model HeadBopper_GoldStar_Ground
+    {
+		mesh = WorldItems/HeadBopper_GoldStar_Ground,
+		texture = Clothes/Hat/Bopper_GoldStar,
+		scale = 0.4,
+    }
+	model JokeArrow_Ground
+    {
+		mesh = WorldItems/JokeArrow_Ground,
+		texture = Clothes/Hat/Joke_Arrow,
+		scale = 0.4,
+    }
+	model JokeKnife_Ground
+    {
+		mesh = WorldItems/JokeKnife_Ground,
+		texture = Clothes/Hat/Joke_Knife,
+		scale = 0.4,
+    }
+	model BoxingGlovesRed_Ground
+    {
+        mesh = WorldItems/Clothing/BoxingGloves_Ground,
+        texture = Clothes/Gloves/BoxingGloves_Red,
+        scale = 0.4,
+    }
+	model BoxingGlovesBlue_Ground
+    {
+        mesh = WorldItems/Clothing/BoxingGloves_Ground,
+        texture = Clothes/Gloves/BoxingGloves_Blue,
+        scale = 0.4,
+    }
+	model CropTop_Ground
+    {
+        mesh = WorldItems/Clothing/BoobTube,
+        texture = WorldItems/BoobTube,
+        scale = 0.6,
+    }
+	model BoobTubeSmall_Ground
+    {
+        mesh = WorldItems/Clothing/BoobTube,
+        texture = WorldItems/BoobTubeSmall,
+        scale = 0.6,
+    }
+	model Boxers_Ground
+    {
+        mesh = WorldItems/Clothing/Boxers,
+        texture = Clothes/Underwear/Male_Boxers_White,
+        scale = 0.4,
+    }
+	model Boxers_Silk_Black
+    {
+        mesh = WorldItems/Clothing/Boxers,
+        texture = Clothes/Underwear/Male_SilkBoxers_Black,
+        scale = 0.4,
+    }
+	model Boxers_Silk_Red
+    {
+        mesh = WorldItems/Clothing/Boxers,
+        texture = Clothes/Underwear/Male_SilkBoxers_Red,
+        scale = 0.4,
+    }
+	model BoxersHearts_Ground
+    {
+        mesh = WorldItems/Clothing/Boxers,
+        texture = Clothes/Underwear/Male_Boxers_Hearts,
+        scale = 0.4,
+    }
+	model BoxersRedStripes_Ground
+    {
+        mesh = WorldItems/Clothing/Boxers,
+        texture = Clothes/Underwear/Male_Boxers_RedStripes,
+        scale = 0.4,
+    }
+	model Briefs_Ground
+    {
+        mesh = WorldItems/Clothing/Male_Briefs,
+        scale = 0.4,
+    }
+	model Underpants_Ground
+    {
+        mesh = WorldItems/Clothing/Female_Underpants,
+        texture = Clothes/Underwear/Female_Underpants_White,
+        scale = 0.4,
+    }
+	model Underpants_AnimalPrint_Ground
+    {
+        mesh = WorldItems/Clothing/Female_Underpants,
+        texture = Clothes/Underwear/Female_Underpants_AnimalPrint,
+        scale = 0.4,
+    }
+	model Underpants_Frilly_Black_Ground
+    {
+        mesh = WorldItems/Clothing/Female_Underpants,
+        texture = Clothes/Underwear/Female_FrillyPants_Black,
+        scale = 0.4,
+    }
+	model Underpants_Frilly_Pink_Ground
+    {
+        mesh = WorldItems/Clothing/Female_Underpants,
+        texture = Clothes/Underwear/Female_FrillyPants_Pink,
+        scale = 0.4,
+    }
+	model Underpants_Frilly_Red_Ground
+    {
+        mesh = WorldItems/Clothing/Female_Underpants,
+        texture = Clothes/Underwear/Female_FrillyPants_Red,
+        scale = 0.4,
+    }
+	model UnderpantsRedSpots_Ground
+    {
+        mesh = WorldItems/Clothing/Female_Underpants,
+        texture = Clothes/Underwear/Female_Underpants_RedSpots,
+        scale = 0.4,
+    }
+	model UnderpantsBlack_Ground
+    {
+        mesh = WorldItems/Clothing/Female_Underpants,
+        texture = Clothes/Underwear/Female_Underpants_Black,
+        scale = 0.4,
+    }
+	model BraStrapless_Ground
+   {
+       mesh = WorldItems/Clothing/Female_Bra_Strapless_White_Ground,
+       texture = Clothes/Underwear/Female_Bra_Strapless_White,
+       scale = 0.4,
+   }
+	model BraStraplessBlack_Ground
+   {
+       mesh = WorldItems/Clothing/Female_Bra_Strapless_White_Ground,
+       texture = Clothes/Underwear/Female_Bra_Strapless_Black,
+       scale = 0.4,
+   }
+	model BraStraplessRedSpots_Ground
+   {
+       mesh = WorldItems/Clothing/Female_Bra_Strapless_White_Ground,
+       texture = Clothes/Underwear/Female_Bra_Strapless_RedSpots,
+       scale = 0.4,
+   }
+	model BraStraplessAnimalPrint_Ground
+   {
+       mesh = WorldItems/Clothing/Female_Bra_Strapless_White_Ground,
+       texture = Clothes/Underwear/Female_Bra_Strapless_AnimalPrint,
+       scale = 0.4,
+   }
+	model BraStraplessFrillyBlack_Ground
+   {
+       mesh = WorldItems/Clothing/Female_Bra_Strapless_White_Ground,
+       texture = Clothes/Underwear/Female_FrillyBra_Strapless_Black,
+       scale = 0.4,
+   }
+	model BraStraplessFrillyPink_Ground
+   {
+       mesh = WorldItems/Clothing/Female_Bra_Strapless_White_Ground,
+       texture = Clothes/Underwear/Female_FrillyBra_Strapless_Pink,
+       scale = 0.4,
+   }
+	model BraStraplessFrillyRed_Ground
+   {
+       mesh = WorldItems/Clothing/Female_Bra_Strapless_White_Ground,
+       texture = Clothes/Underwear/Female_FrillyBra_Strapless_Red,
+       scale = 0.4,
+   }
+	model Bra_Ground
+   {
+       mesh = WorldItems/Clothing/Female_Bra_Straps_White_Ground,
+       texture = Clothes/Underwear/Female_Bra_Straps_White,
+       scale = 0.4,
+   }
+	model BraBlack_Ground
+   {
+       mesh = WorldItems/Clothing/Female_Bra_Straps_White_Ground,
+       texture = Clothes/Underwear/Female_Bra_Straps_Black,
+       scale = 0.4,
+   }
+	model Bra_AnimalPrint_Ground
+   {
+       mesh = WorldItems/Clothing/Female_Bra_Straps_White_Ground,
+       texture = Clothes/Underwear/Female_Bra_Straps_AnimalPrint,
+       scale = 0.4,
+   }
+	model Bra_FrillyBlack_Ground
+   {
+       mesh = WorldItems/Clothing/Female_Bra_Straps_White_Ground,
+       texture = Clothes/Underwear/Female_FrillyBra_Straps_Black,
+       scale = 0.4,
+   }
+	model Bra_FrillyPink_Ground
+   {
+       mesh = WorldItems/Clothing/Female_Bra_Straps_White_Ground,
+       texture = Clothes/Underwear/Female_FrillyBra_Straps_Pink,
+       scale = 0.4,
+   }
+	model Bra_FrillyRed_Ground
+   {
+       mesh = WorldItems/Clothing/Female_Bra_Straps_White_Ground,
+       texture = Clothes/Underwear/Female_FrillyBra_Straps_Red,
+       scale = 0.4,
+   }
+	model Trousers_Shellsuit_Ground
+   {
+       mesh = WorldItems/Clothing/TrousersShellSuit_Ground,
+       scale = 0.3,
+   }
+	model Jacket_Shellsuit_Ground
+   {
+       mesh = WorldItems/Clothing/JacketShellSuit_Ground,
+       scale = 0.3,
+   }
+	model Dress_Straps_Ground
+   {
+      mesh = WorldItems/Clothing/Dress_Straps,
+      texture = Clothes/Dress_Textures/Dress_Straps,
+      scale = 0.4,
+   }
+	model Dress_Knees_Straps_Ground
+   {
+      mesh = WorldItems/Clothing/DressKnees_Straps,
+      texture = Clothes/Dress_Textures/DressKnees_Straps,
+      scale = 0.4,
+   }
+	model Dress_Small_Strapless_Ground
+   {
+      mesh = WorldItems/Clothing/DressSmall_Strapless,
+      texture = Clothes/Dress_Textures/DressSmall_Strapless,
+      scale = 0.4,
+   }
+	model Dress_Small_Black_Strapless_Ground
+   {
+      mesh = WorldItems/Clothing/DressSmall_Strapless,
+      texture = Clothes/Dress_Textures/Dress_SmallBlack_Strapless,
+      scale = 0.4,
+   }
+	model Dress_Small_Strapless_Ground_MultiTexture
+   {
+      mesh = WorldItems/Clothing/DressSmall_Strapless,
+      scale = 0.4,
+   }
+	model Dress_Small_Straps_Ground
+   {
+      mesh = WorldItems/Clothing/DressSmall_Straps,
+      texture = Clothes/Dress_Textures/DressSmall_Straps,
+      scale = 0.4,
+   }
+	model Dress_Small_Black_Straps_Ground
+   {
+      mesh = WorldItems/Clothing/DressSmall_Straps,
+      texture = Clothes/Dress_Textures/Dress_SmallBlack_Straps,
+      scale = 0.4,
+   }
+	model Corset_Ground
+   {
+      mesh = WorldItems/Clothing/Corset_Ground,
+      texture = WorldItems/Corset_White_Ground,
+      scale = 0.4,
+   }
+	model Corset_Black_Ground
+   {
+      mesh = WorldItems/Clothing/Corset_Ground,
+      texture = WorldItems/Corset_Black_Ground,
+      scale = 0.4,
+   }
+	model Corset_Red_Ground
+   {
+      mesh = WorldItems/Clothing/Corset_Ground,
+      texture = WorldItems/Corset_Red_Ground,
+      scale = 0.4,
+   }
+	model Corset_Medical_Ground
+   {
+      mesh = WorldItems/Clothing/Corset_Medical_Ground,
+      texture = WorldItems/Corset_Medical_Ground,
+      scale = 0.4,
+   }
+	model WatchExpensive
+    {
+        mesh = WorldItems/WatchClassic,
+        texture = WorldItems/Watch_Expensive,
+        scale = 0.4,
+    }
+	model Hat_GasMask_nofilter_Ground
+    {
+        mesh = WorldItems/Clothing/M_GasMask_FilterLess_Ground,
+        scale = 0.125,
+    }
+	model Hat_BuildersRespirator_Ground
+    {
+        mesh = WorldItems/Clothing/M_BuildersMask_Ground,
+        scale = 0.125,
+    }
+	model Hat_BuildersRespirator_nofilter_Ground
+    {
+        mesh = WorldItems/Clothing/M_BuildersMask_nofilter_Ground,
+        scale = 0.125,
+    }
+	model SCBA_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_SCBA_Ground,
+        scale = 0.125,
+    }
+	model SCBA_notank_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_SCBA_noTank_Ground,
+        scale = 0.125,
+    }
+	model Oxygen_Tank_Ground
+    {
+        mesh = WorldItems/oygen_tank_Ground,
+        texture = scba,
+        scale = 0.125,
+    }
+	model RespiratorFilters
+    {
+        mesh = WorldItems/RespiratorFilters,
+        scale = 0.125,
+    }
+	model RespiratorFilters_Taped
+    {
+        mesh = WorldItems/RespiratorFilters_Taped,
+        scale = 0.125,
+    }
+	model ShoulderHolster_Ground
+    {
+        mesh = WorldItems/Clothing/ShoulderHolster_Ground,
+        scale = 0.125,
+    }
+	model AnkleHolster_Ground
+    {
+        mesh = WorldItems/Clothing/AnkleHolster_Ground,
+        scale = 0.125,
+    }
+	model HolsterDouble_Ground
+    {
+        mesh = WorldItems/Clothing/HolsterDouble_Ground,
+        scale = 0.125,
+    }
+	model Greave_Ground
+    {
+        mesh = WorldItems/Clothing/Greave_Ground,
+        texture = WorldItems/Clothing/Greaves_Ground,
+        scale = 0.125,
+    }
+	model Vambrace_Ground
+	{
+		mesh = WorldItems/Clothing/Vambrace_Ground,
+		texture = Clothes/Armor/Vambrace,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0097 -0.0000 0.0000,
+			rotate = 90.3156 0.0000 0.0000,
+		}
+	}
+	model ShinKneeGuard_Ground_R
+    {
+       mesh = WorldItems/Clothing/ShinKneeGuard_Ground,
+        scale = 0.125,
+    }
+	model ShinKneeGuard_Ground_L
+    {
+       mesh = WorldItems/Clothing/ShinKneeGuard_Ground_L,
+        scale = 0.125,
+    }
+	model AthleticCup
+	{
+		mesh = WorldItems/Clothing/AthleticCup,
+		texture = WorldItems/Clothing/AthleticCup,
+		scale = 0.15,
+	}
+	model Vest_CatcherVest
+    {
+        mesh = WorldItems/Clothing/CatcherVest_Ground,
+        scale = 0.125,
+    }
+	model Chainmail_Sleeve_L
+    {
+        mesh = WorldItems/Clothing/Chainmail_Sleeve_L,
+        scale = 0.125,
+    }
+	model Chainmail_Sleeve_R
+    {
+        mesh = WorldItems/Clothing/Chainmail_Sleeve_R,
+        scale = 0.125,
+    }
+	model ElbowPad_Left
+    {
+        mesh = WorldItems/Clothing/ElbowPad_Ground_L,
+        scale = 0.125,
+    }
+	model ElbowPad_Right
+    {
+        mesh = WorldItems/Clothing/ElbowPad_Ground_R,
+        scale = 0.125,
+    }
+	model Shoulderpad_Football_L
+    {
+        mesh = WorldItems/Clothing/Football_Shoulderpad_Ground_L,
+        scale = 0.125,
+    }
+	model Shoulderpad_Football_R
+    {
+        mesh = WorldItems/Clothing/Football_Shoulderpad_Ground_R,
+        scale = 0.125,
+    }
+	model Shoulderpads_Football
+    {
+        mesh = WorldItems/Clothing/Football_Shoulderpads_Ground,
+        scale = 0.125,
+    }
+	model Shoulderpad_Football_Spiked_L
+    {
+        mesh = WorldItems/Clothing/FB_ShlPad_Spikd_Gnd_L,
+        scale = 0.125,
+    }
+	model Shoulderpad_Football_Spiked_R
+    {
+        mesh = WorldItems/Clothing/FB_ShlPad_Spikd_Gnd_R,
+        scale = 0.125,
+    }
+	model Shoulderpads_Football_Spiked
+    {
+        mesh = WorldItems/Clothing/FB_Shoulpad_Spk_Gnd,
+        scale = 0.125,
+    }
+	model GreaveSpike_Left
+    {
+        mesh = WorldItems/Clothing/GreaveSpike_Ground_L,
+        scale = 0.125,
+    }
+	model GreaveSpike_Right
+    {
+        mesh = WorldItems/Clothing/GreaveSpike_Ground_R,
+        scale = 0.125,
+    }
+	model Shinpad_HockeyGoalie_L
+    {
+        mesh = WorldItems/Clothing/HockeyShinpads_Ground_L,
+        scale = 0.125,
+    }
+	model Shinpad_HockeyGoalie_R
+    {
+        mesh = WorldItems/Clothing/HockeyShinpads_Ground_R,
+        scale = 0.125,
+    }
+	model Shoulderpads_IceHockey
+    {
+        mesh = WorldItems/Clothing/IceHockey_Shoulderpads_Ground,
+        scale = 0.125,
+    }
+	model Gloves_IceHockeyGloves
+    {
+        mesh = WorldItems/Clothing/IceHockeyGloves_Ground,
+        scale = 0.125,
+    }
+	model IceHockeyNeckGuard
+    {
+        mesh = WorldItems/Clothing/IceHockeyNeckGuard_Ground,
+        scale = 0.125,
+    }
+	model Kneepad_Left
+    {
+        mesh = WorldItems/Clothing/Kneepad_Ground_L,
+        scale = 0.125,
+    }
+	model Kneepad_Right
+    {
+        mesh = WorldItems/Clothing/Kneepad_Ground_R,
+        scale = 0.125,
+    }
+	model HockeyMask_Metal
+    {
+        mesh = WorldItems/Clothing/M_HockeyMask_Ground,
+        scale = 0.125,
+    }
+	model ShinKneeGuardSpike_L
+    {
+        mesh = WorldItems/Clothing/ShinKneeGuardSpike_Ground_L,
+        scale = 0.125,
+    }
+	model ShinKneeGuardSpike_R
+    {
+        mesh = WorldItems/Clothing/ShinKneeGuardSpike_Ground_R,
+        scale = 0.125,
+    }
+	model Shinpad_L
+    {
+        mesh = WorldItems/Clothing/Shinpad_Ground_L,
+        scale = 0.125,
+    }
+	model Shinpad_R
+    {
+        mesh = WorldItems/Clothing/Shinpad_Ground_R,
+        scale = 0.125,
+    }
+	model Vambrace_Leather_Left
+    {
+        mesh = WorldItems/Clothing/Vambrace_Leather_Ground_L,
+        scale = 0.125,
+    }
+	model Vambrace_Leather_Right
+    {
+        mesh = WorldItems/Clothing/Vambrace_Leather_Ground_R,
+        scale = 0.125,
+    }
+	model Vambrace_LeatherSpike_Left
+    {
+        mesh = WorldItems/Clothing/VambraceLeather_Spiked_Ground_L,
+        scale = 0.125,
+    }
+	model Vambrace_LeatherSpike_Right
+    {
+        mesh = WorldItems/Clothing/VambraceLeather_Spiked_Ground_R,
+        scale = 0.125,
+    }
+	model Shoulderpad_Articulated_L_Metal
+    {
+        mesh = WorldItems/Clothing/ArticShoulder_Ground_L,
+        scale = 0.125,
+    }
+	model Shoulderpad_Articulated_R_Metal
+    {
+        mesh = WorldItems/Clothing/ArticShoulder_Ground_R,
+        scale = 0.125,
+    }
+	model Shoulderpad_ArticulatedSpike_L
+    {
+        mesh = WorldItems/Clothing/ArticShoulderSpike_Ground_L,
+        scale = 0.125,
+    }
+	model Shoulderpad_ArticulatedSpike_R
+    {
+        mesh = WorldItems/Clothing/ArticShoulderSpike_Ground_R,
+        scale = 0.125,
+    }
+	model VambraceSpike_Left
+    {
+        mesh = WorldItems/Clothing/VambraceSpike_Ground_L,
+        scale = 0.125,
+    }
+	model VambraceSpike_Right
+    {
+        mesh = WorldItems/Clothing/VambraceSpike_Ground_R,
+        scale = 0.125,
+    }
+	model GreaveMagazine_Left
+    {
+        mesh = WorldItems/Clothing/GreaveMagazine_Ground_L,
+        scale = 0.125,
+    }
+	model GreaveMagazine_Right
+    {
+        mesh = WorldItems/Clothing/GreaveMagazine_Ground_R,
+        scale = 0.125,
+    }
+	model VambraceMagazine_Left
+    {
+        mesh = WorldItems/Clothing/VambraceMagazine_Ground_L,
+        scale = 0.15,
+    }
+	model VambraceMagazine_Right
+    {
+        mesh = WorldItems/Clothing/VambraceMagazine_Ground_R,
+        scale = 0.15,
+    }
+	model ThighMagazine_L
+    {
+        mesh = WorldItems/Clothing/ThighMagazine_Ground_L,
+        scale = 0.125,
+    }
+	model ThighMagazine_R
+    {
+        mesh = WorldItems/Clothing/ThighMagazine_Ground_R,
+        scale = 0.125,
+    }
+	model RopeBelt
+	{
+		mesh = WorldItems/Clothing/Belt_Rope,
+		texture = WorldItems/Clothing/Belt_Rope,
+		scale = 0.2,
+	}
+	model ThighArmor_L
+    {
+        mesh = WorldItems/Clothing/ThighMetal_Ground_L,
+        scale = 0.125,
+    }
+	model ThighArmor_R
+    {
+        mesh = WorldItems/Clothing/ThighMetal_Ground_R,
+        scale = 0.125,
+    }
+	model ThighArmorSpiked_L
+    {
+        mesh = WorldItems/Clothing/ThighMetalSpike_Ground_L,
+        scale = 0.125,
+    }
+	model ThighArmorSpiked_R
+    {
+        mesh = WorldItems/Clothing/ThighMetalSpike_Ground_R,
+        scale = 0.125,
+    }
+	model Vambrace_FullMetal_Left
+    {
+        mesh = WorldItems/Clothing/Vambrace_FullMetal_Ground_L,
+        scale = 0.125,
+    }
+	model Vambrace_FullMetal_Right
+    {
+        mesh = WorldItems/Clothing/Vambrace_FullMetal_Ground_R,
+        scale = 0.125,
+    }
+	model Shoulderpad_Metal_L
+    {
+        mesh = WorldItems/Clothing/Metal_Shoulderpad_Ground_L,
+        scale = 0.125,
+    }
+	model Shoulderpad_Metal_R
+    {
+        mesh = WorldItems/Clothing/Metal_Shoulderpad_Ground_R,
+        scale = 0.125,
+    }
+	model Shoulderpad_MetalSpike_L
+    {
+        mesh = WorldItems/Clothing/MetalSpike_Shoulderpad_Ground_L,
+        scale = 0.125,
+    }
+	model Shoulderpad_MetalSpike_R
+    {
+        mesh = WorldItems/Clothing/MetalSpike_Shoulderpad_Ground_R,
+        scale = 0.125,
+    }
+	model Cuirass_Bone
+    {
+        mesh = WorldItems/Clothing/Cuirass_Bone_Ground,
+        scale = 0.3,
+    }
+	model Gorget
+    {
+        mesh = WorldItems/Clothing/Gorget_Ground,
+        scale = 0.15,
+    }
+	model Codpiece
+    {
+        mesh = WorldItems/Clothing/CodPiece_Ground,
+        scale = 0.15,
+    }
+	model Necklace_Choker_Bone
+    {
+        mesh = WorldItems/Clothing/Choker_Bone_Ground,
+        scale = 0.15,
+    }
+	model Cuirass_BasicBone
+    {
+        mesh = WorldItems/Clothing/Bone_Torso_Ground,
+        scale = 0.15,
+    }
+	model Hat_DeerHeadress
+    {
+        mesh = WorldItems/Clothing/DeerHeadress_Ground,
+        scale = 0.125,
+    }
+	model Necklace_Teeth
+    {
+        mesh = WorldItems/Clothing/Necklace_Teeth_Ground,
+        scale = 0.125,
+    }
+	model NecklaceLong_Teeth
+    {
+        mesh = WorldItems/Clothing/NecklaceLong_Teeth_Ground,
+        scale = 0.125,
+    }
+	model Greave_BodyArmour_Ground_L
+    {
+        mesh = WorldItems/Clothing/Greave_BodyArmour_Ground_L,
+        scale = 0.11,
+    }
+	model Greave_BodyArmour_Ground_R
+    {
+        mesh = WorldItems/Clothing/Greave_BodyArmour_Ground_R,
+        scale = 0.11,
+    }
+	model Thigh_BodyArmour_Ground_L
+    {
+        mesh = WorldItems/Clothing/Thigh_BodyArmour_Ground_L,
+        scale = 0.11,
+    }
+	model Thigh_BodyArmour_Ground_R
+    {
+        mesh = WorldItems/Clothing/Thigh_BodyArmour_Ground_R,
+        scale = 0.11,
+    }
+	model Earring_BirdSkull
+    {
+        mesh = WorldItems/Earrings_BirdSkull,
+        texture = WorldItems/Earrings_BirdSkull,
+        scale = 0.1,
+    }
+	model Earring_BoarTusk
+    {
+        mesh = WorldItems/Earrings_BoarTusk,
+        texture = WorldItems/BoarTusk,
+        scale = 0.1,
+    }
+	model HeadSackBurlap_Ground
+    {
+        mesh = WorldItems/Clothing/HatSack_Ground,
+        texture = Clothes/Hat/HeadSack,
+	    scale = 0.11,
+    }
+	model HeadSackCotton_Ground
+    {
+        mesh = WorldItems/Clothing/HatSack_Ground,
+        texture = Clothes/Hat/HeadSack_Cotton,
+	    scale = 0.11,
+    }
+	model HeadSackGarbage_Ground
+    {
+        mesh = WorldItems/Clothing/HatSack_Ground,
+        texture = Clothes/Hat/HeadSack_GarbageBag,
+	    scale = 0.11,
+    }
+	model HeadSackHide_Ground
+    {
+        mesh = WorldItems/Clothing/HatSack_Ground,
+        texture = Clothes/Hat/HeadSack_Hide,
+	    scale = 0.11,
+    }
+	model HeadSackTarp_Ground
+    {
+        mesh = WorldItems/Clothing/HatSack_Ground,
+        texture = Clothes/Hat/HeadSack_Tarp,
+	    scale = 0.11,
+    }
+	model ChestRig_Ground
+    {
+        mesh = WorldItems/Clothing/ChestRig_Ground,
+        texture = Clothes/Bag/ChestRig,
+	    scale = 0.15,
+    }
+	model ChestRigTarp_Ground
+    {
+        mesh = WorldItems/Clothing/ChestRig_Ground,
+        texture = Clothes/Bag/ChestRig_Tarp,
+	    scale = 0.15,
+    }
+	model GaiterGround_L
+    {
+        mesh = WorldItems/Clothing/GaiterGround_L,
+	    scale = 0.15,
+    }
+	model GaiterGround_R
+    {
+        mesh = WorldItems/Clothing/GaiterGround_R,
+	    scale = 0.15,
+    }
+}

@@ -1,0 +1,176 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Charcoal_Burner
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Charcoal Burner,
+            Icon                = Item_WoodCharcoal,
+        }
+    }
+
+    entity Charcoal_Burner_MetalDrum
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Charcoal_Burner,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = WoodCharcoal,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 100,
+        	skillBaseHealth = 20,
+
+            face single
+            {
+                layer
+                {
+                    row = crafted_02_51,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            category      = Blacksmithing,
+            ToolTip       = Tooltip_craft_charcoalBurnerDesc,
+            inputs
+            {
+                item 1 [Base.MetalDrum],
+                item 4 [Base.Stone2],
+            }
+        }
+    }
+
+    entity Charcoal_Burner_OrangeBarrel
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Charcoal_Burner,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = WoodCharcoal,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 100,
+        	skillBaseHealth = 20,
+
+            face single
+            {
+                layer
+                {
+                    row = crafted_02_49,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            category      = Blacksmithing,
+            ToolTip       = Tooltip_craft_charcoalBurnerDesc,
+            inputs
+            {
+                item 1 [Base.Mov_OrangeBarrel],
+                item 4 [Base.Stone2],
+            }
+        }
+    }
+
+    entity Charcoal_Burner_DarkGreenBarrel
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Charcoal_Burner,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = WoodCharcoal,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 100,
+        	skillBaseHealth = 20,
+
+            face single
+            {
+                layer
+                {
+                    row = crafted_02_50,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            category      = Blacksmithing,
+            ToolTip       = Tooltip_craft_charcoalBurnerDesc,
+            inputs
+            {
+                item 1 [Base.Mov_DarkGreenBarrel],
+                item 4 [Base.Stone2],
+            }
+        }
+    }
+
+    entity Charcoal_Burner_LightGreenBarrel
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Charcoal_Burner,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = WoodCharcoal,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 100,
+        	skillBaseHealth = 20,
+
+            face single
+            {
+                layer
+                {
+                    row = false crafted_02_48,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            category      = Blacksmithing,
+            ToolTip       = Tooltip_craft_charcoalBurnerDesc,
+            inputs
+            {
+                item 1 [Base.Mov_LightGreenBarrel],
+                item 4 [Base.Stone2],
+            }
+        }
+    }
+}

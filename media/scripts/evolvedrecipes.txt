@@ -1,0 +1,691 @@
+module Base
+{
+
+
+	evolvedrecipe Soup
+	{
+		BaseItem:Pot,
+		MaxItems:6,
+		ResultItem:PotOfSoupRecipe,
+		Cookable:true,
+		Name:Prepare Soup,
+		Template:Soup,
+		MinimumWater: 0.9,
+	}
+	evolvedrecipe SoupBucket
+	{
+		BaseItem:Bucket,
+		MaxItems:6,
+		ResultItem:BucketOfSoup,
+		Cookable:true,
+		Name:Prepare Soup,
+		Template:Soup,
+		MinimumWater: 0.9,
+	}
+	evolvedrecipe SoupBucket2
+	{
+		BaseItem:BucketEmpty,
+		MaxItems:6,
+		ResultItem:BucketOfSoup,
+		Cookable:true,
+		Name:Prepare Soup,
+		Template:Soup,
+		MinimumWater: 0.9,
+	}
+	evolvedrecipe SoupForged
+	{
+		BaseItem:PotForged,
+		MaxItems:6,
+		ResultItem:PotForgedSoupRecipe,
+		Cookable:true,
+		Name:Prepare Soup,
+		Template:Soup,
+		MinimumWater: 0.9,
+	}
+	evolvedrecipe Soup2
+	{
+		BaseItem:PotOfSoup,
+		MaxItems:4,
+		ResultItem:PotOfSoup,
+		Cookable:true,
+		Name:Prepare Soup,
+		Template:Soup,
+		MinimumWater: 0.9,
+	}
+	evolvedrecipe Stew
+	{
+		BaseItem:Pot,
+		MaxItems:6,
+		ResultItem:PotOfStew,
+		Cookable:true,
+		Name:Prepare Stew,
+		Template:Stew,
+		MinimumWater: 0.9,
+	}
+	evolvedrecipe StewBucket
+	{
+		BaseItem:Bucket,
+		MaxItems:6,
+		ResultItem:BucketOfStew,
+		Cookable:true,
+		Name:Prepare Stew,
+		Template:Stew,
+		MinimumWater: 0.9,
+	}
+	evolvedrecipe StewBucket2
+	{
+		BaseItem:BucketEmpty,
+		MaxItems:6,
+		ResultItem:BucketOfStew,
+		Cookable:true,
+		Name:Prepare Stew,
+		Template:Stew,
+		MinimumWater: 0.9,
+	}
+	evolvedrecipe StewForged
+	{
+		BaseItem:PotForged,
+		MaxItems:6,
+		ResultItem:PotForgedStew,
+		Cookable:true,
+		Name:Prepare Stew,
+		Template:Stew,
+		MinimumWater: 0.9,
+	}
+	evolvedrecipe Pie
+	{
+		BaseItem:PiePrep,
+		MaxItems:4,
+		ResultItem:PieWholeRaw,
+		Cookable:true,
+		Name:Prepare Pie,
+		CanAddSpicesEmpty:true,
+		Template:Pie,
+	}
+
+	evolvedrecipe PieSweet
+	{
+		BaseItem:PiePrep,
+		MaxItems:4,
+		ResultItem:PieWholeRawSweet,
+		Cookable:true,
+		Name:Prepare Sweet Pie,
+		CanAddSpicesEmpty:true,
+		Template:PieSweet,
+	}
+
+	evolvedrecipe Cake
+	{
+		BaseItem:CakePrep,
+		MaxItems:4,
+		ResultItem:CakeRaw,
+		Cookable:true,
+		Name:Prepare Cake,
+		CanAddSpicesEmpty:true,
+		Template:Cake,
+	}
+
+	evolvedrecipe Stir fry
+	{
+		BaseItem:Pan,
+		MaxItems:4,
+		ResultItem:PanFriedVegetables,
+		Cookable:true,
+		Name:Prepare Stir-fry,
+		Template:Stir fry,
+	}
+
+	evolvedrecipe Stir fry Griddle Pan
+	{
+		BaseItem:GridlePan,
+		MaxItems:4,
+		ResultItem:GriddlePanFriedVegetables,
+		Cookable:true,
+		Name:Prepare Stir-fry,
+		Template:Stir fry,
+	}
+
+	evolvedrecipe Stir fry Forged
+	{
+		BaseItem:PanForged,
+		MaxItems:4,
+		ResultItem:PanFriedVegetablesForged,
+		Cookable:true,
+		Name:Prepare Stir-fry,
+		Template:Stir fry,
+	}
+
+	evolvedrecipe Roasted Vegetables
+	{
+		BaseItem:RoastingPan,
+		MaxItems:6,
+		ResultItem:PanFriedVegetables2,
+		Cookable:true,
+		Name:Place Ingredients in Roasting Pan,
+		Template:Stir fry,
+	}
+
+	evolvedrecipe Sandwich
+	{
+		BaseItem:BreadSlices,
+		MaxItems:4,
+		ResultItem:Sandwich,
+		Name:Make Sandwich,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:true,
+		Template:Sandwich,
+		Cookable:true,
+	}
+
+	evolvedrecipe Sandwich Baguette
+	{
+		BaseItem:Baguette,
+		MaxItems:4,
+		ResultItem:BaguetteSandwich,
+		Name:Make Sandwich,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:true,
+		Template:Sandwich,
+		Cookable:true,
+	}
+
+	evolvedrecipe Burger
+	{
+		BaseItem:BunsHamburger_single,
+		MaxItems:4,
+		ResultItem:BurgerRecipe,
+		Name:Prepare Burger,
+		AddIngredientIfCooked:true,
+		Template:Burger,
+	}
+
+	evolvedrecipe Burger2
+	{
+		BaseItem:Burger,
+		MaxItems:2,
+		ResultItem:Burger,
+		Name:Prepare Burger,
+		CanAddSpicesEmpty:true,
+		AddIngredientIfCooked:true,
+		Template:Burger,
+	}
+
+	evolvedrecipe Salad
+	{
+		BaseItem:Bowl,
+		MaxItems:6,
+		ResultItem:Base.Salad,
+		Name:Make Salad,
+		Template:Salad,
+	}
+
+	evolvedrecipe SaladClay
+    {
+    	BaseItem:ClayBowl,
+    	MaxItems:6,
+    	ResultItem:SaladClay,
+    	Name:Make Salad,
+    	Template:Salad,
+    }
+
+	evolvedrecipe FruitSalad
+	{
+		BaseItem:Bowl,
+		MaxItems:6,
+		ResultItem:Base.FruitSalad,
+		Name:Make Fruit Salad,
+		Template:FruitSalad,
+	}
+
+	evolvedrecipe PastaPan
+	{
+		BaseItem:WaterSaucepanPasta,
+		MaxItems:4,
+		ResultItem:PastaPan,
+		Cookable:true,
+		AddIngredientIfCooked:true,
+		Name:Prepare Pasta,
+		CanAddSpicesEmpty:true,
+		Template:Pasta,
+	}
+
+	evolvedrecipe RicePan
+	{
+		BaseItem:WaterSaucepanRice,
+		MaxItems:4,
+		ResultItem:RicePan,
+		Cookable:true,
+		AddIngredientIfCooked:true,
+		Name:Prepare Rice,
+		CanAddSpicesEmpty:true,
+		Template:Rice,
+	}
+
+	evolvedrecipe RicePanCopper
+    {
+    	BaseItem:WaterSaucepanRiceCopper,
+    	MaxItems:4,
+    	ResultItem:RicePanCopper,
+    	Cookable:true,
+    	AddIngredientIfCooked:true,
+    	Name:Prepare Rice,
+    	CanAddSpicesEmpty:true,
+    	Template:Rice,
+    }
+
+	evolvedrecipe PastaPot
+	{
+		BaseItem:WaterPotPasta,
+		MaxItems:5,
+		ResultItem:PastaPot,
+		Cookable:true,
+		AddIngredientIfCooked:true,
+		Name:Prepare Pasta,
+		CanAddSpicesEmpty:true,
+		Template:Pasta,
+	}
+
+	evolvedrecipe PastaPotForged
+	{
+		BaseItem:WaterPotForgedPasta,
+		MaxItems:5,
+		ResultItem:PastaPotForged,
+		Cookable:true,
+		AddIngredientIfCooked:true,
+		Name:Prepare Pasta,
+		CanAddSpicesEmpty:true,
+		Template:Pasta,
+	}
+
+	evolvedrecipe RicePot
+	{
+		BaseItem:WaterPotRice,
+		MaxItems:5,
+		ResultItem:RicePot,
+		Cookable:true,
+		AddIngredientIfCooked:true,
+		Name:Prepare Rice,
+		CanAddSpicesEmpty:true,
+		Template:Rice,
+	}
+
+	evolvedrecipe RicePotForged
+	{
+		BaseItem:WaterPotForgedRice,
+		MaxItems:5,
+		ResultItem:RicePotForged,
+		Cookable:true,
+		AddIngredientIfCooked:true,
+		Name:Prepare Rice,
+		CanAddSpicesEmpty:true,
+		Template:Rice,
+	}
+
+	evolvedrecipe HotDrink
+	{
+		BaseItem:Mugl,
+		MaxItems:3,
+		ResultItem:HotDrink,
+		Cookable:true,
+		AddIngredientIfCooked:true,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Prepare Beverage,
+		CanAddSpicesEmpty:true,
+		MinimumWater: 1.0,
+		Template:HotDrink,
+	}
+	evolvedrecipe HotDrinkClay
+    {
+    	BaseItem:ClayMug,
+    	MaxItems:3,
+    	ResultItem:HotDrinkClay,
+    	Cookable:true,
+    	AddIngredientIfCooked:true,
+    	AddIngredientSound:AddItemInBeverage,
+    	Name:Prepare Beverage,
+    	CanAddSpicesEmpty:true,
+    	MinimumWater: 1.0,
+    	Template:HotDrink,
+    }
+	evolvedrecipe HotDrinkTea
+	{
+		BaseItem:Teacup,
+		MaxItems:3,
+		ResultItem:HotDrinkTea,
+		Cookable:true,
+		AddIngredientIfCooked:true,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Prepare Beverage,
+		CanAddSpicesEmpty:true,
+		MinimumWater: 1.0,
+		Template:HotDrink,
+	}
+	evolvedrecipe HotDrinkTeaCeramic
+	{
+		BaseItem:CeramicTeacup,
+		MaxItems:3,
+		ResultItem:HotDrinkTeaCeramic,
+		Cookable:true,
+		AddIngredientIfCooked:true,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Prepare Beverage,
+		CanAddSpicesEmpty:true,
+		MinimumWater: 1.0,
+		Template:HotDrink,
+	}
+	evolvedrecipe HotDrinkSpiffo
+	{
+		BaseItem:MugSpiffo,
+		MaxItems:3,
+		ResultItem:HotDrinkSpiffo,
+		Cookable:true,
+		AddIngredientIfCooked:true,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Prepare Beverage,
+		CanAddSpicesEmpty:true,
+		MinimumWater: 1.0,
+		Template:HotDrink,
+	}
+	evolvedrecipe HotDrinkWhite
+	{
+		BaseItem:MugWhite,
+		MaxItems:3,
+		ResultItem:HotDrinkWhite,
+		Cookable:true,
+		AddIngredientIfCooked:true,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Prepare Beverage,
+		CanAddSpicesEmpty:true,
+		MinimumWater: 1.0,
+		Template:HotDrink,
+	}
+	evolvedrecipe Taco
+	{
+		BaseItem:TacoShell,
+		MaxItems:5,
+		ResultItem:TacoRecipe,
+		AddIngredientIfCooked:true,
+		Name:Taco,
+		Template:Taco,
+	}
+	
+	evolvedrecipe Taco2
+	{
+		BaseItem:Taco,
+		MaxItems:2,
+		ResultItem:Taco,
+		AddIngredientIfCooked:true,
+		Name:Taco,
+		CanAddSpicesEmpty:true,
+		Template:Taco,
+	}
+	
+	evolvedrecipe Burrito
+	{
+		BaseItem:Tortilla,
+		MaxItems:5,
+		ResultItem:BurritoRecipe,
+		AddIngredientIfCooked:true,
+		Name:Burrito,
+		Template:Burrito,
+	}
+	
+	evolvedrecipe Burrito2
+	{
+		BaseItem:Burrito,
+		MaxItems:0,
+		ResultItem:Burrito,
+		AddIngredientIfCooked:true,
+		CanAddSpicesEmpty:true,
+		Name:Burrito,
+		Template:Burrito,
+	}
+
+	evolvedrecipe Waffles
+	{
+		BaseItem:Waffles,
+		MaxItems:3,
+		ResultItem:WafflesRecipe,
+		AddIngredientIfCooked:true,
+		Name:Waffles,
+		CanAddSpicesEmpty:true,
+		Template:Pancakes,
+	}
+
+	evolvedrecipe Pancakes
+	{
+		BaseItem:Pancakes,
+		MaxItems:3,
+		ResultItem:PancakesRecipe,
+		AddIngredientIfCooked:true,
+		Name:Pancakes,
+		CanAddSpicesEmpty:true,
+		Template:Pancakes,
+	}
+
+	evolvedrecipe Omelette
+	{
+		BaseItem:OmeletteRecipe,
+		MaxItems:3,
+		ResultItem:OmeletteRecipe,
+		AddIngredientIfCooked:true,
+		Name:Omelette,
+		CanAddSpicesEmpty:true,
+		Template:Omelette,
+	}
+
+	evolvedrecipe Omelette Forged
+	{
+		BaseItem:OmeletteRecipeForged,
+		MaxItems:3,
+		ResultItem:OmeletteRecipe2,
+		AddIngredientIfCooked:true,
+		Name:Omelette,
+		CanAddSpicesEmpty:true,
+		Template:Omelette,
+	}
+
+	evolvedrecipe Muffin
+	{
+		BaseItem:BakingTray_Muffin,
+		MaxItems:1,
+		ResultItem:BakingTray_Muffin_Recipe,
+		Cookable:true,
+		Name:Muffin,
+		CanAddSpicesEmpty:true,
+		Template:Muffin,
+	}
+
+	evolvedrecipe ConeIcecream
+	{
+		BaseItem:ConeIcecream,
+		MaxItems:3,
+		ResultItem:ConeIcecreamToppings,
+		Name:Prepare Ice Cream Cone,
+		CanAddSpicesEmpty:true,
+		Template:ConeIcecream,
+	}
+
+	evolvedrecipe Bread
+	{
+		BaseItem:BreadDough,
+		MaxItems:2,
+		ResultItem:BreadDough,
+		Cookable:true,
+		Name:Prepare Bread,
+		CanAddSpicesEmpty:true,
+		Template:Bread,
+	}
+
+/* removed because we now have the fluids system and they're redundant*/
+/*	evolvedrecipe Beverage
+	{
+		BaseItem:GlassTumbler,
+		MaxItems:2,
+		ResultItem:Beverage,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Prepare Beverage in Tumbler,
+		Template:Beverage,
+	}
+
+	evolvedrecipe Beverage2
+	{
+		BaseItem:PlasticCup,
+		MaxItems:2,
+		ResultItem:Beverage2,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Prepare Beverage in Cup,
+		Template:Beverage,
+	}
+
+	evolvedrecipe Beverage3
+	{
+		BaseItem:FountainCup,
+		MaxItems:2,
+		ResultItem:Beverage3,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Prepare Beverage in Cup,
+		Template:Beverage,
+	}
+
+	evolvedrecipe Beverage4
+	{
+		BaseItem:Goblet,
+		MaxItems:2,
+		ResultItem:Beverage4,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Prepare Beverage in Cup,
+		Template:Beverage,
+	}*/
+
+	evolvedrecipe Toast
+	{
+		BaseItem:Toast,
+		MaxItems:3,
+		ResultItem:Toast,
+		AddIngredientIfCooked:true,
+		Name:Prepare Toast,
+		CanAddSpicesEmpty:true,
+		Template:Toast,
+	}
+
+	evolvedrecipe Oatmeal
+	{
+		BaseItem:Oatmeal,
+		MaxItems:3,
+		ResultItem:Oatmeal,
+		AddIngredientIfCooked:true,
+		Name:Oatmeal,
+		CanAddSpicesEmpty:true,
+		Template:Oatmeal,
+		Cookable:true,
+	}
+/* removed because we now have the fluids system and they're redundant*/
+	/*evolvedrecipe Beer
+	{
+		BaseItem:GlassTumbler,
+		MaxItems:1,
+		ResultItem:Beer,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Pour Tumbler of Beer,
+		Template:Beer,
+	}
+
+	evolvedrecipe Beer2
+	{
+		BaseItem:PlasticCup,
+		MaxItems:1,
+		ResultItem:Beer2,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Pour Cup of Beer,
+		Template:Beer,
+	}
+
+	evolvedrecipe Beer3
+	{
+		BaseItem:FountainCup,
+		MaxItems:1,
+		ResultItem:Beer3,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Pour Cup of Beer,
+		Template:Beer,
+	}
+
+	evolvedrecipe WineInGlass
+	{
+		BaseItem:GlassWine,
+		MaxItems:1,
+		ResultItem:WineInGlass,
+		AddIngredientSound:AddItemInBeverage,
+		Name:Pour Glass of Wine,
+		Template:WineInGlass,
+	}*/
+	
+	evolvedrecipe Pizza
+	{
+		BaseItem:PizzaRecipe,
+		MaxItems:6,
+		ResultItem:PizzaRecipe,
+		Cookable:true,
+		Name:Prepare Pizza,
+		CanAddSpicesEmpty:true,
+		Template:Pizza,
+	}
+
+	evolvedrecipe Pizza2
+	{
+		BaseItem:PizzaWhole,
+		MaxItems:0,
+		ResultItem:PizzaWhole,
+		Name:Prepare Pizza,
+		CanAddSpicesEmpty:true,
+		Template:Pizza,
+	}
+
+	evolvedrecipe BagelPlain
+	{
+		BaseItem:BagelPlain,
+		MaxItems:3,
+		ResultItem:BagelPlain,
+		AddIngredientIfCooked:true,
+		Name:Prepare Bagel,
+		CanAddSpicesEmpty:true,
+		Template:Toast,
+		Cookable:true,
+	}
+
+	evolvedrecipe BagelPoppy
+	{
+		BaseItem:BagelPoppy,
+		MaxItems:3,
+		ResultItem:BagelPoppy,
+		AddIngredientIfCooked:true,
+		Name:Prepare Poppy Bagel,
+		CanAddSpicesEmpty:true,
+		Template:Toast,
+		Cookable:true,
+	}
+
+	evolvedrecipe BagelSesame
+	{
+		BaseItem:BagelSesame,
+		MaxItems:3,
+		ResultItem:BagelSesame,
+		AddIngredientIfCooked:true,
+		Name:Prepare Sesame Bagel,
+		CanAddSpicesEmpty:true,
+		Template:Toast,
+		Cookable:true,
+	}
+
+	evolvedrecipe Hotdog
+	{
+		BaseItem:Hotdog,
+		MaxItems:2,
+		ResultItem:Hotdog,
+		Name:Prepare Hotdog,
+		AddIngredientIfCooked:true,
+		CanAddSpicesEmpty:true,
+		Template:Hotdog,
+	}
+}

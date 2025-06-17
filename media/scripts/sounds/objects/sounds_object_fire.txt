@@ -1,0 +1,78 @@
+module Base
+{
+	sound Fire
+	{
+		category = Object,
+		clip
+		{
+			event = World/Ambient/Fire,
+		}
+	}
+
+/******************************************************************************/
+
+	sound CampfireAddFuel
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Campfire/AddFuel,
+		}
+	}
+
+	sound CampfireRunning
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Campfire/Running,
+		}
+	}
+
+	sound CampfireLight
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Campfire/Light,
+		}
+	}
+
+	sound CampfireBuild
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Campfire/Build,
+		}
+	}
+
+/******************************************************************************/
+
+	sound FireplaceAddFuel
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Fireplace/AddFuel,
+		}
+	}
+
+	sound FireplaceRunning
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Fireplace/Running,
+		}
+	}
+
+	sound FireplaceLight
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Fireplace/Light,
+		}
+	}
+}

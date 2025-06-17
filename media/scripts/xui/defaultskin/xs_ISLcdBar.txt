@@ -1,0 +1,24 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISLcdBar
+        {
+            background          = true,
+            backgroundColor     = C_LcdBack,
+            borderColor         = C_Border,
+            gridColor           = C_LcdGrid,
+            greyCol             = C_Border,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+            isOn                = true,
+            ledColor            = C_White,
+            ledTextColor        = C_Black,
+            lcdfont             = media/ui/LCD_Display/LCD_Font_Small.png,
+            lcdback             = media/ui/LCD_Display/LCD_Background_Small.png,
+            doScroll            = false,
+        }
+    }
+}

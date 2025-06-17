@@ -1,0 +1,12 @@
+module Base
+{
+	sound MusicCombined
+	{
+		category = Music,
+		master = Music,
+		clip
+		{
+			event = Music/Main,
+		}
+	}
+}

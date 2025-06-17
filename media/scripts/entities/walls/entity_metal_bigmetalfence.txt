@@ -1,0 +1,64 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_MetalBigMetalFence
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Big Metal Pole Fence,
+			Icon		= Build_FenceHighMetalPosts,
+		}
+	}
+
+    entity MetalBigMetalFence
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_MetalBigMetalFence,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			LogicClass      = WoodenWall,
+			health          = 450,
+			skillBaseHealth = 50,
+
+            face W
+            {
+                layer
+                {
+                    row = constructedobjects_01_78,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = constructedobjects_01_77,
+                }
+            }
+			
+            corner = constructedobjects_01_76,
+        }
+		
+        component CraftRecipe
+        {
+            timedAction   = BuildPoleFence,
+            time          = 200,
+            needToBeLearn = true,
+            category      = Welding,
+            SkillRequired = MetalWelding:3,
+            xpAward       = MetalWelding:30,
+            ToolTip       = Tooltip_craft_BigMetalFenceDesc,
+            inputs
+            {
+                item 5 [Base.BlowTorch] flags[DontRecordInput],
+                item 5 [Base.MetalPipe],
+                item 2 [Base.ScrapMetal],
+                item 5 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+module Base
+{
+	sound Eating
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Eat/Default,
+		}
+	}
+
+	sound EatingCrispy
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Eat/Crispy,
+		}
+	}
+
+	sound EatingDeadAnimal
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Eat/DeadAnimal,
+		}
+	}
+
+	sound EatingFruit
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Eat/Fruit,
+		}
+	}
+
+	sound EatingMushy
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Eat/Mushy,
+		}
+	}
+
+	sound EatingSoup
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Eat/Soup,
+		}
+	}
+
+	sound Swallowing
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Foley/Swallow,
+		}
+	}
+}

@@ -1,0 +1,64 @@
+module Base
+{
+	item Gorget_Burlap
+	{
+		DisplayName = Burlap Neck Guard,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Neckwrap_Burlap,
+		BloodLocation = Neck,
+		BodyLocation = Gorget,
+		ClothingItem = Gorget_Burlap,
+		Insulation = 1.0,
+		WindResistance = 1.0,
+		WorldStaticModel = Gorget,
+		CanHaveHoles = TRUE,
+		BiteDefense = 10,
+		ScratchDefense = 20,
+		DiscomfortModifier = 0.25,
+	}
+
+	item Gorget_Denim
+	{
+		DisplayName = Denim Neck Guard,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Neckwrap_Denim,
+		BloodLocation = Neck,
+		BodyLocation = Gorget,
+		ClothingItem = Gorget_Denim,
+		FabricType = Denim,
+		Insulation = 1.0,
+		Tags = RipClothingDenim,
+		WindResistance = 1.0,
+		WorldStaticModel = Gorget,
+		CanHaveHoles = TRUE,
+		BiteDefense = 10,
+		ScratchDefense = 20,
+		DiscomfortModifier = 0.10,
+	}
+
+	item Gorget_Rag
+	{
+		DisplayName = Rag Neck Guard,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Neckwrap_Rag,
+		BloodLocation = Neck,
+		BodyLocation = Gorget,
+		ClothingItem = Gorget_Rag,
+		FabricType = Cotton,
+		Insulation = 1.0,
+		Tags = RipClothingCotton,
+		WindResistance = 1.0,
+		WorldStaticModel = Gorget,
+		CanHaveHoles = TRUE,
+		BiteDefense = 5,
+		ScratchDefense = 10,
+		DiscomfortModifier = 0.10,
+	}
+
+}

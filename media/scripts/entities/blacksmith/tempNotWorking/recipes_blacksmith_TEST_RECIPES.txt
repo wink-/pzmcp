@@ -1,0 +1,325 @@
+/*module Base
+{
+
+
+    craftRecipe FORGE_TEST
+    {
+        time            = 600,
+        tags            = Forge,
+         needTobeLearn = false,
+         timedAction = SmithingHammer,
+        inputs
+        {
+            item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.Katana,
+        }
+    }
+
+    craftRecipe DRILL_TEST
+    {
+        time            = 600,
+        tags            = StandingDrillPress,
+         needTobeLearn = false,
+         timedAction = UseStandingDrill,
+        inputs
+       {
+            item 1 [Base.SteelIngot],
+       }
+       outputs
+       {
+           item 1 Base.PiercedSteelIngot,
+       }
+    }
+
+    craftRecipe SAW_TEST
+    {
+        time            = 600,
+        tags            = MetalBandsaw,
+         needTobeLearn = false,
+         timedAction = UseBandsaw,
+        inputs
+       {
+            item 1 [Base.SteelBar],
+       }
+       outputs
+       {
+           item 2 Base.SteelBarHalf,
+       }
+    }
+
+    craftRecipe LATHE_TEST
+    {
+        time            = 600,
+        tags            = MetalworkLathe,
+         needTobeLearn = false,
+         timedAction = UseLathe,
+        inputs
+        {
+            item 1 [Base.LargeBranch],
+        }
+        outputs
+        {
+            item 1 Base.BaseballBat,
+        }
+    }
+
+    craftRecipe QUERN_TEST
+    {
+        time            = 600,
+         needTobeLearn = false,
+         timedAction = UseStoneQuern,
+        tags = Stone_Quern,
+         inputs
+         {
+            item 100 [Base.WheatSeed],
+         }
+         outputs
+         {
+             item 1 Base.Flour2,
+         }
+    }
+
+    craftRecipe SLAB_TEST
+    {
+        time            = 600,
+         needTobeLearn = false,
+         timedAction = UseGrindingSlab,
+        tags = Grinding_Slab,
+         inputs
+         {
+            item 5 tags[WildGarlic],
+         }
+         outputs
+         {
+             item 1 Base.WildGarlicCataplasm,
+         }
+    }
+
+    craftRecipe SMELT_TEST
+    {
+        time            = 600,
+        tags            = AnySurfaceCraft,
+         needTobeLearn = false,
+         timedAction = SmithingHammer,
+        inputs
+        {
+            item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.Katana,
+        }
+    }
+
+    craftRecipe MILL_TEST
+    {
+        time            = 600,
+         needTobeLearn = false,
+         timedAction = UseStoneQuern,
+        tags = Stone_Mill,
+         inputs
+         {
+            item 100 [Base.WheatSeed],
+         }
+         outputs
+         {
+             item 1 Base.Flour2,
+         }
+    }
+
+
+    craftRecipe ONCREATE_TEST
+    {
+        time            = 60,
+		Tags = InHandCraft,
+         needTobeLearn = false,
+         timedAction = SmithingHammer,
+        OnCreate = CraftRecipeCode.ONCREATE_TEST,
+        OnTest = CraftRecipeCode.ONTEST_TEST,
+        inputs
+        {
+            item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[Tongs] flags[Prop2],
+			item 1 [Base.DuctTape],
+        }
+        outputs
+        {
+            item 1 Base.Katana,
+        }
+    }
+    craftRecipe ONCREATE_TEST2
+    {
+        time            = 60,
+		Tags = InHandCraft,
+         needTobeLearn = false,
+         timedAction = SmithingHammer,
+        OnCreate = CraftRecipeCode.ONCREATE_TEST,
+        OnTest = CraftRecipeCode.ONTEST_TEST,
+        inputs
+        {
+			item 1 [Base.DuctTape],
+            item 1 tags[Tongs] flags[Prop2],
+            item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+        }
+        outputs
+        {
+            item 1 Base.Katana,
+        }
+    }
+
+
+    craftRecipe DRAINABLE_TEST_1
+    {
+        time            = 60,
+		Tags = InHandCraft,
+         needTobeLearn = false,
+         timedAction = SmithingHammer,
+        inputs
+        {
+			item 1 [Base.DuctTape],
+        }
+        outputs
+        {
+            item 1 Base.Katana,
+        }
+    }
+
+
+    craftRecipe DRAINABLE_TEST_2
+    {
+        time            = 60,
+		Tags = InHandCraft,
+         needTobeLearn = false,
+         timedAction = SmithingHammer,
+        inputs
+        {
+			item 2 [Base.DuctTape],
+        }
+        outputs
+        {
+            item 1 Base.Katana,
+        }
+    }
+   craftRecipe ISNOTWORN_TEST
+    {
+        time            = 60,
+		Tags = InHandCraft,
+         needTobeLearn = false,
+         timedAction = SmithingHammer,
+        OnCreate = CraftRecipeCode.ONCREATE_TEST,
+        OnTest = CraftRecipeCode.ONTEST_TEST,
+        inputs
+        {
+			item 1 tags[WeldingMask] mode:keep flags[IsNotWorn],
+        }
+        outputs
+        {
+            item 1 Base.Katana,
+        }
+    }
+
+    craftRecipe ROT_FREEZE_TEST_1
+    {
+        time            = 60,
+		Tags = InHandCraft,
+         needTobeLearn = false,
+         timedAction = SmithingHammer,
+        inputs
+        {
+			item 1 [Base.Icecream],
+        }
+        outputs
+        {
+            item 1 Base.Katana,
+        }
+    }
+
+    craftRecipe ROT_FREEZE_TEST_ALLOW_ROTTEN
+    {
+        time            = 60,
+		Tags = InHandCraft,
+         needTobeLearn = false,
+         timedAction = SmithingHammer,
+        inputs
+        {
+			item 1 [Base.Icecream] flags[AllowRottenItem],
+        }
+        outputs
+        {
+            item 1 Base.Katana,
+        }
+    }
+
+    craftRecipe ROT_FREEZE_TEST_ALLOW_FROZEN
+    {
+        time            = 60,
+		Tags = InHandCraft,
+         needTobeLearn = false,
+         timedAction = SmithingHammer,
+        inputs
+        {
+			item 1 [Base.Icecream] flags[AllowFrozenItem],
+        }
+        outputs
+        {
+            item 1 Base.Katana,
+        }
+    }
+
+    craftRecipe AllowDestroyedItem_TEST
+    {
+        time            = 60,
+		Tags = InHandCraft,
+         needTobeLearn = false,
+         timedAction = SmithingHammer,
+        inputs
+        {
+            item 1 tags[Tongs] flags[AllowDestroyedItem],
+        }
+        outputs
+        {
+            item 1 Base.Katana,
+        }
+    }
+
+
+    craftRecipe Simple_TEST
+    {
+        time            = 60,
+		Tags = InHandCraft,
+         needTobeLearn = false,
+         timedAction = SmithingHammer,
+        inputs
+        {
+            item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+            item 1 tags[Tongs] flags[Prop2],
+        }
+        outputs
+        {
+            item 1 Base.Katana,
+        }
+    }
+
+    craftRecipe ISWORN_TEST
+    {
+        time            = 60,
+		Tags = InHandCraft,
+         needTobeLearn = false,
+         timedAction = SmithingHammer,
+        OnCreate = CraftRecipeCode.FLAG_TEST,
+        inputs
+        {
+			item 1 tags[WeldingMask] mode:keep flags[IsWorn],
+            item 1 tags[Tongs]  mode:keep flags[AllowDestroyedItem],
+        }
+        outputs
+        {
+            item 1 Base.Katana,
+        }
+    }
+}*/

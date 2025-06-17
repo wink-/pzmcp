@@ -1,0 +1,25 @@
+module Base
+{
+    /****************** SOUP *******************/
+    uniquerecipe Tomato Soup
+    {
+        BaseRecipeItem:PotOfSoup,
+        Item:farming.Tomato,
+        Item:farming.Tomato,
+        Item:farming.Tomato,
+        Item:farming.Tomato,
+
+        Hapiness:15,
+        Boredom:15,
+    }
+
+    /****************** STEW *******************/
+
+    /****************** CAKE *******************/
+    uniquerecipe This Cake is a Lie
+    {
+        BaseRecipeItem:CakeRaw,
+        Item:Base.Orange,
+        Item:Base.BerryBlue,
+    }
+}

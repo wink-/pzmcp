@@ -1,0 +1,167 @@
+module Base
+{
+	/******* WATER CONTAINERS - EMPTY *******/
+
+    item FeedingBottle
+    {
+        DisplayCategory = WaterContainer,
+	    Weight = 0.1,
+	    Type = Normal,
+        UseWhileEquipped = false,
+	    DisplayName = Feeding Bottle,
+	    Icon	=	Animalbottle_Empty,
+	    IconFluidMask = Animalbottle_Mask,
+	    Tags = FarmingLoot,
+	    WorldStaticModel = Animal_Bottle,
+	    StaticModel = Animal_Bottle,
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapPlasticBig,
+		FillFromToiletSound = GetWaterFromToilet,
+		EatType = bottle,
+
+        component FluidContainer
+        {
+            ContainerName   = FeedingBottle,
+            capacity        = 1,
+        }
+    }
+
+	item BucketEmpty
+	{
+		DisplayName = Empty Bucket,
+		DisplayCategory = WaterContainer,
+		Type = Normal,
+		Weight = 1,
+		Icon = MetalBucket,
+		IconFluidMask = Bucket_Mask,
+		EatType = Bucket,
+		PourType = Bucket,
+		MetalValue = 20,
+		RainFactor = 1,
+		SurvivalGear = TRUE,
+		Tooltip = Tooltip_item_RainFromGround,
+        StaticModel = Bucket,
+		WorldStaticModel = Bucket_Ground,
+		Tags = Bucket;Cookable;HasMetal,
+        ResearchableRecipes = Forge_Bucket,
+
+        component FluidContainer
+        {
+            ContainerName   = Bucket,
+            capacity        = 10.0,
+            RainFactor	= 1,
+        }
+	}
+	
+	item PaintbucketEmpty
+	{
+		DisplayName = Empty Paint Bucket,
+		DisplayCategory = WaterContainer,
+		Type = Normal,
+		Weight = 1.0,
+		Icon = Paintbucket_Empty,
+		IconFluidMask = Paintbucket_Empty_Mask,
+		EatType = Bucket,
+		PourType = Bucket,
+		MetalValue = 20,
+		RainFactor = 1,
+		Tooltip = Tooltip_item_RainFromGround,
+		StaticModel = PaintTinEmpty_Ground,
+		WorldStaticModel = PaintTinEmpty_Ground,
+		Tags = Bucket;Cookable;HasMetal,
+
+        component FluidContainer
+        {
+            ContainerName   = BucketPaint,
+            RainFactor	= 0.8,
+            capacity        = 10.0,
+        }
+	}
+
+    item WateredCan
+	{
+        	DisplayCategory = Gardening,
+		Type		= Normal,
+		DisplayName	= Empty Watering Can,
+		Icon		= TZ_WateringCan,
+		Weight		= 2.0,
+        	RainFactor 	= 0.2,
+		Tooltip 	= Tooltip_item_RainFromGroundOnlyPurifyMicrowave,
+		PourType = wateringcan,
+        	StaticModel	= WateringCan,
+        	WorldStaticModel = WateringCanGround,
+        	SurvivalGear	= TRUE,
+		/*primaryAnimMask = HoldingTorchRight,
+		secondaryAnimMask = HoldingTorchLeft,*/
+
+        component FluidContainer
+        {
+            ContainerName   = WateringCan,
+            RainFactor      = 0.5,
+            capacity        = 8.0,
+        }
+	}
+	
+	/******* WATER CONTAINERS - FULL *******/
+
+    item BucketWaterDebug
+    {
+        DisplayCategory     = WaterContainer,
+        Weight	            = 1,
+        Type	            = Normal,
+        DisplayName	        = Bucket,
+        EatType = Bucket,
+        PourType = Bucket,
+        Icon	            = MetalBucket,
+        IconFluidMask	            = Bucket_Mask,
+        WorldStaticModel = Bucket_Ground,
+        StaticModel = Bucket,
+        Tags = Bucket;Cookable;MetalBucket;HasMetal,
+        ResearchableRecipes = MakeBucketMaul,
+
+        component FluidContainer
+        {
+            ContainerName   = Bucket,
+            capacity        = 10.0,
+            RainFactor	= 1,
+            Fluids
+            {
+                fluid           = Water:10.0,
+            }
+        }
+    }
+
+	item WaterBottle
+	{
+		DisplayName = Water Bottle,
+		DisplayCategory = Water,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = WaterBottle,
+		IconColorMask = WaterBottle_Mask2,
+		IconFluidMask = WaterBottle_Mask,
+		CookingSound = BoilingFood,
+		CustomEatSound = DrinkingFromBottlePlastic,
+		FillFromDispenserSound = GetWaterFromDispenserPlasticMedium,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapPlasticMedium,
+		Tooltip = Tooltip_item_OnlyPurifyMicrowave,
+		StaticModel = WaterBottle,
+		WorldStaticModel = WaterBottleFull,
+        	Tags = CookableMicrowave,
+		/* OnCreate	= SpecialLootSpawns.OnCreateWaterBottle, */
+
+        	component FluidContainer
+        	{
+            		ContainerName   = BottlePlastic,
+            		capacity        = 1.0,
+			PickRandomFluid	= true,
+            		Fluids
+            		{
+                		fluid           = Water:1.0,
+                		fluid           = CarbonatedWater:1.0,
+            		}
+        	}
+	}	
+}

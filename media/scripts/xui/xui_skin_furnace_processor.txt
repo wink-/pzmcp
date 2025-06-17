@@ -1,0 +1,30 @@
+module Base
+{
+    xuiSkin skin_furnace_processor
+    {
+        imports
+        {
+            default,
+        }
+
+        ISButton S_Button_Craft
+        {
+            title               = "Start",
+        }
+
+        ISItemSlotPanel S_ItemSlotPanel_Inputs
+        {
+            title               = "fuel",
+        }
+
+        ISEnergySlotPanel S_EnergySlotPanel_Outputs
+        {
+            title               = "heat",
+        }
+
+        ISEnergyBar S_EnergyBar_Vertical
+        {
+            verticalTexture     = media/ui/Entity/bar_heat_vert.png,
+        }
+    }
+}

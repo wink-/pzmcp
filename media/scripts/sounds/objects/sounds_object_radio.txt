@@ -1,0 +1,47 @@
+module Base
+{
+	sound RadioButton
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Radio/Toggle,
+		}
+	}
+
+	sound RadioStatic
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Radio/Static,
+		}
+	}
+
+	sound RadioTalk
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Radio/Program,
+		}
+	}
+
+	sound RadioZap
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Radio/Zap,
+		}
+	}
+
+	sound TuneIn
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Radio/TuneIn,
+		}
+	}
+}

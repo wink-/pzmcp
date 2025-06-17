@@ -1,0 +1,22 @@
+module Base
+{
+    /* NOTE: Not redudant with CopyBuildingKey, as one uses a workstation and the other uses hand-tools */
+    craftRecipe DuplicateBuildingKey
+    {
+        Time = 230,
+        OnCreate = CraftRecipeCode.CopyKey.OnCreate,
+        OnTest = CraftRecipeCode.CopyKey.OnTest,
+        Tags = KeyDuplicator,
+        timedAction = Making,
+        /*needTobeLearn = true,*/
+        inputs
+        {
+            item 1 tags[BuildingKey] mode:keep,
+            item 1 [Base.Key_Blank],
+        }
+        outputs
+        {
+            item 1 Base.Key1,
+        }
+    }
+}

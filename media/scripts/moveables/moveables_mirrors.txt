@@ -1,0 +1,52 @@
+module Base
+{
+	item Mov_MirrorLarge
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Large Mirror,
+		WorldObjectSprite = walls_decoration_01_5,
+	}
+	
+	item Mov_MirrorSmall
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Small Mirror,
+		WorldObjectSprite = walls_decoration_01_10,
+	}
+	
+	item Mov_MirrorSmallWide
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Small Wide Mirror,
+		WorldObjectSprite = walls_decoration_01_0,
+	}
+	
+	item Mov_MirrorTall
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Tall Mirror,
+		WorldObjectSprite = walls_decoration_01_9,
+	}
+	
+	item Mov_MirrorWood
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Wooden Framed Mirror,
+		WorldObjectSprite = walls_decoration_01_7,
+	}
+}

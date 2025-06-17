@@ -1,0 +1,62 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Forge_I
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Primitive Forge,
+            Icon                = Item_Anvil_Stone,
+        }
+    }
+
+    entity Forge_Primitive_Forge
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Forge_I,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = PrimitiveForge,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 150,
+        	skillBaseHealth = 50,
+
+            face S
+            {
+                layer
+                {
+                    row = crafted_01_61 crafted_01_20,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_01_21,
+                    row = crafted_01_62,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            category      = Blacksmithing,
+            ToolTip       = Tooltip_craft_forgeIDesc,
+            inputs
+            {
+                item 1 tags[Concrete] flags[DontRecordInput],
+                item 10 [Base.Stone2],
+                item 1 [Base.StoneAnvil],
+            }
+        }
+    }
+}

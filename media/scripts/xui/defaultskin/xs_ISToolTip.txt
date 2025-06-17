@@ -1,0 +1,19 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISToolTip
+        {
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+            /* optional: name = nil, */
+            /* optional: description = nil, */
+            /* optional: footNote = nil, */
+            /* optional: texture = nil, */
+        }
+    }
+}

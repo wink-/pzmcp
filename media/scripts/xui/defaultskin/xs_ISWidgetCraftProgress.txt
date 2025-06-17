@@ -1,0 +1,28 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISWidgetCraftProgress
+        {
+            background          = false,
+            margin              = 5,
+            autoFillContents    = false,
+            isAutoFill          = false,
+            isAutoFillX         = false,
+            isAutoFillY         = false,
+            minimumWidth        = 0,
+            minimumHeight       = 0,
+            /*styleBar            = nil, */
+        }
+
+        ISWidgetCraftProgress S_WidgetCraftProgress_Std
+        {
+
+        }
+
+        ISWidgetCraftProgress S_WidgetCraftProgress_Furnace
+        {
+            styleBar            = S_ProgressBar_Furnace,
+        }
+    }
+}

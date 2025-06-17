@@ -1,0 +1,59 @@
+module Base
+{
+    craftRecipe MeltSand
+    {
+        time        = 20,
+        Tags = Furnace,
+        category = Glassmaking,
+        inputs
+        {
+            item 1 [Base.CeramicCrucibleSmall] mode:destroy flags[ItemCount;IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 1 [Base.Sandbag],
+            item 1 tags[StartFire],
+            item 2 tags[Charcoal],
+        }
+        outputs
+        {
+            item 1 Base.CeramicCrucibleWithGlass,
+        }
+    }
+
+    craftRecipe MeltGlass
+    {
+        time        = 20,
+        Tags = Furnace,
+        category = Glassmaking,
+        inputs
+        {
+            item 1 [Base.CeramicCrucibleSmall] mode:destroy flags[ItemCount;IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 6 [Base.BrokenGlass],
+            item 1 tags[StartFire],
+            item 1 tags[Charcoal],
+        }
+        outputs
+        {
+            item 1 Base.CeramicCrucibleWithGlass,
+        }
+    }
+
+    craftRecipe CastBlacksmithAnvil
+    {
+        time        = 200,
+        tags = Furnace,
+        category = Blacksmithing,
+
+        inputs
+        {
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            item 1 [Base.ClayBlacksmithAnvilMold],
+            item 10 tags[Charcoal],
+            item 32 [Base.CeramicCrucible_Iron;Base.CeramicCrucibleSmall_Iron],
+        }
+        outputs
+        {
+            item 1 Base.BlacksmithAnvil,
+        }
+    }
+}

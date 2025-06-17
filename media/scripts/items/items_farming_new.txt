@@ -1,0 +1,2495 @@
+module Base
+{
+
+	item Roses
+	{
+		DisplayName = Roses,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Bouquet_Rose,
+		EvolvedRecipe = Salad:1;HotDrink:1,
+		Spice = true,
+		HungerChange = -1,
+		Calories = 0.1,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = Roses,
+		FoodType = Herb,
+		Tags = HerbalTea,
+		DaysFresh = 6,
+		DaysTotallyRotten = 10,
+	}
+
+    item RoseSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Rose Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item RoseBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Rose,
+		Icon				=		Seeds_Rose,
+		Weight				=		0.1,
+		StaticModel = RoseSeedBag_Ground,
+		WorldStaticModel = RoseSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Rose Growing Season,
+	}
+
+    item RoseBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Rose,
+		Icon				=		Seeds_Rose,
+		Weight				=		0.02,
+		StaticModel = RoseSeedBag_Ground,
+		WorldStaticModel = RoseSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Rose Growing Season,
+	}
+
+	item RosePetalsDried
+	{
+		DisplayName = Dried Rose Petals,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Petals_Rose,
+		EvolvedRecipe = Salad:1;HotDrink:1,
+		Spice = true,
+		HungerChange = -1,
+		Calories = 0.1,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = RosePetals,
+		FoodType = Herb,
+		Tags = HerbalTea,
+	}
+	item Poppies
+	{
+		DisplayName = Poppies,
+	    DisplayCategory = Gardening,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Bouquet_Poppy,
+		Calories = 0.1,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = Poppies,
+		DaysFresh = 6,
+		DaysTotallyRotten = 10,
+		CantEat = TRUE,
+	}
+	item PoppySeed
+	{
+		DisplayName = Poppy Seeds,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = PoppySeeds,
+		EvolvedRecipe = Salad:1;Bread:1;Muffin:1,
+		Spice = true,
+		FoodType = Seed,
+		CantBeFrozen = TRUE,
+		/*Packaged = TRUE,*/
+		HungerChange = -1,
+		Calories = 31,
+		Carbohydrates = 3,
+		Lipids = 2,
+		Proteins = 1.6,
+		WorldStaticModel = PoppySeed,
+		EvolvedRecipeName = Poppy Seed,
+		AnimalFeedType = Seeds,
+        Tags		= isSeed,
+	}
+
+    item PoppyBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Poppy,
+		Icon				=		Seeds_Poppy,
+		Weight				=		0.1,
+		StaticModel = PoppySeedBag_Ground,
+		WorldStaticModel = PoppySeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Poppy Growing Season,
+	}
+
+    item PoppyBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Poppy,
+		Icon				=		Seeds_Poppy,
+		Weight				=		0.02,
+		StaticModel = PoppySeedBag_Ground,
+		WorldStaticModel = PoppySeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Poppy Growing Season,
+	}
+
+	item PoppyPods
+	{
+		DisplayName = Poppy Pods,
+	    DisplayCategory = Gardening,
+		Type = Food,
+		Weight = 0.1,
+		Icon = PoppyPods,
+		WorldStaticModel = PoppyPods,
+		CantEat = TRUE,
+		DaysFresh = 6,
+		DaysTotallyRotten = 10,
+	}
+
+	item PoppyPodsDried
+	{
+		DisplayName = Dried Poppy Pods,
+	    DisplayCategory = Gardening,
+		Type = Food,
+		Weight = 0.1,
+		Icon = PoppyPods,
+		WorldStaticModel = PoppyPods,
+		CantEat = TRUE,
+	}
+
+	item Lavender
+	{
+		DisplayName = Lavender,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Bouquet_Lavender,
+		EvolvedRecipe = Salad:1;HotDrink:1,
+		Spice = true,
+		HungerChange = -1,
+		Calories = 0.1,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = Lavender,
+		FoodType = Herb,
+		Tags = HerbalTea,
+		DaysFresh = 6,
+		DaysTotallyRotten = 10,
+        StressChange = -1,
+	}
+
+    item LavenderSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Lavender Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item LavenderBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Lavender,
+		Icon				=		Seeds_Lavender,
+		Weight				=		0.1,
+		StaticModel = LavenderSeedBag_Ground,
+		WorldStaticModel = LavenderSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Lavender Growing Season,
+	}
+
+    item LavenderBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Lavender,
+		Icon				=		Seeds_Lavender,
+		Weight				=		0.02,
+		StaticModel = LavenderSeedBag_Ground,
+		WorldStaticModel = LavenderSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Lavender Growing Season,
+	}
+
+	item LavenderPetalsDried
+	{
+		DisplayName = Dried Lavender Petals,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Petals_Lavender,
+		EvolvedRecipe = Salad:1;HotDrink:1,
+		Spice = true,
+		HungerChange = -1,
+		Calories = 0.1,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = LavenderPetals,
+		FoodType = Herb,
+		Tags = HerbalTea,
+        StressChange = -1,
+	}
+
+    item BarleySeed
+	{
+        DisplayCategory = Gardening,
+		Type = Food,
+		Type				=		Normal,
+		HungerChange = -5,
+		DisplayName			=		Barley Grain,
+		Icon				=		WheatGrains,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		WorldStaticModel = WheatGrains,
+		CantEat = TRUE,
+		AnimalFeedType = Seeds,
+        Tags = isSeed,
+	}
+
+    item BellPepperSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Bell Pepper Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item BlackSageSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Black Sage Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item BroadleafPlantainSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Broadleaf Plantain Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item BroccoliSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Broccoli Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item CarrotSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Carrot Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item CauliflowerSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Cauliflower Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item CommonMallowSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Common Mallow Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item ComfreySeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Comfrey Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item CucumberSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Cucumber Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item HabaneroSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Habanero Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item HempSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Hemp Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item HopsSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Hops Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item JalapenoSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Jalapeno Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item LettuceSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Lettuce Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item LeekSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Leek Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item LemonGrassSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Lemon Grass Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item MintSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Mint Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+	item PumpkinSeed
+	{
+		DisplayName = Pumpkin Seeds,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = PumpkinSeeds,
+		EvolvedRecipe = Salad:1;Bread:5;Muffin:5,
+		Spice = true,
+		FoodType = Seed,
+		CantBeFrozen = TRUE,
+		/*Packaged = TRUE,*/
+		HungerChange = -5,
+		Calories = 155,
+		Carbohydrates = 14.12,
+		Lipids = 5.48,
+		Proteins = 4.34,
+		StaticModel = PumpkinSeed,
+		WorldStaticModel = PumpkinSeed,
+		EvolvedRecipeName = Pumpkin Seed,
+		AnimalFeedType = Seeds,
+        Tags		= isSeed,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		RemoveUnhappinessWhenCooked = true,
+		UnhappyChange = 5,
+		CookingSound = FryingFood,
+	}
+
+    item RedRadishSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Radish Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item RyeSeed
+	{
+        DisplayCategory = Gardening,
+		Type = Food,
+		Type				=		Normal,
+		HungerChange = -5,
+		DisplayName			=		Rye Grain,
+		Icon				=		WheatGrains,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		WorldStaticModel = WheatGrains,
+		CantEat = TRUE,
+		AnimalFeedType = Seeds,
+        Tags = isSeed,
+	}
+
+    item SpinachSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Spinach Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item StrewberrieSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Strawberries Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item SugarBeetSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Sugar Beet Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item TobaccoSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Tobacco Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item TomatoSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Tomato Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item TurnipSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		TurnipSeeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item WatermelonSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		WatermelonSeeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item ZucchiniSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Zucchini Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item WatermelonSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Watermelon Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item WildGarlicSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Wild Garlic Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item PotatoSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Potato Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+    item CabbageSeed
+    {
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Cabbage Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+    }
+
+
+    item CarrotBagSeed2
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Carrot Growing Season,
+        DisplayName			= Seed Packet - Carrot,
+        Icon				=		Seeds_Carrot,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = CarrotSeedBag_Ground,
+        WorldStaticModel = CarrotSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item CarrotBagSeed2_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Carrot Growing Season,
+        DisplayName			= Empty Seed Packet - Carrot,
+        Icon				=		Seeds_Carrot,
+        Weight				=		0.02,
+        StaticModel = CarrotSeedBag_Ground,
+        WorldStaticModel = CarrotSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item BroccoliBagSeed2
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Broccoli Growing Season,
+        DisplayName			= Seed Packet - Broccoli,
+        Icon				=		Seeds_Broccoli,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = BroccoliSeedBag_Ground,
+        WorldStaticModel = BroccoliSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item BroccoliBagSeed2_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Broccoli Growing Season,
+        DisplayName			= Empty Seed Packet - Broccoli,
+        Icon				=		Seeds_Broccoli,
+        Weight				=		0.02,
+        StaticModel = BroccoliSeedBag_Ground,
+        WorldStaticModel = BroccoliSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item RedRadishBagSeed2
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Radish Growing Season,
+        DisplayName			= Seed Packet - Radish,
+        Icon				=		Seeds_Radish,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = RadishSeedBag_Ground,
+        WorldStaticModel = RadishSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item RedRadishBagSeed2_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Radish Growing Season,
+        DisplayName			= Empty Seed Packet - Radish,
+        Icon				=		Seeds_Radish,
+        Weight				=		0.02,
+        StaticModel = RadishSeedBag_Ground,
+        WorldStaticModel = RadishSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item StrewberrieBagSeed2
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Strawberry Growing Season,
+        DisplayName			= Seed Packet - Strawberry,
+        Icon				=		Seeds_Strawberry,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = StrawberrySeedBag_Ground,
+        WorldStaticModel = StrawberrySeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item StrewberrieBagSeed2_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Strawberry Growing Season,
+        DisplayName			= Empty Seed Packet - Strawberry,
+        Icon				=		Seeds_Strawberry,
+        Weight				=		0.02,
+        StaticModel = StrawberrySeedBag_Ground,
+        WorldStaticModel = StrawberrySeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item TomatoBagSeed2
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Tomato Growing Season,
+        DisplayName			= Seed Packet - Tomato,
+        Icon				=		Seeds_Tomato,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = TomatoSeedBag_Ground,
+        WorldStaticModel = TomatoSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item TomatoBagSeed2_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Tomato Growing Season,
+        DisplayName			= Empty Seed Packet - Tomato,
+        Icon				=		Seeds_Tomato,
+        Weight				=		0.02,
+        StaticModel = TomatoSeedBag_Ground,
+        WorldStaticModel = TomatoSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item PotatoBagSeed2
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Potato Growing Season,
+        DisplayName			= Seed Packet - Potato,
+        Icon				=		Seeds_Potato,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = PotatoSeedBag_Ground,
+        WorldStaticModel = PotatoSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item PotatoBagSeed2_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Potato Growing Season,
+        DisplayName			= Empty Seed Packet - Potato,
+        Icon				=		Seeds_Potato,
+        Weight				=		0.02,
+        StaticModel = PotatoSeedBag_Ground,
+        WorldStaticModel = PotatoSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item CabbageBagSeed2
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Cabbage Growing Season,
+        DisplayName			= Seed Packet - Cabbage,
+        Icon				=		Seeds_Lettuce,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = CabbageSeedBag_Ground,
+        WorldStaticModel = CabbageSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item CabbageBagSeed2_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Cabbage Growing Season,
+        DisplayName			= Empty Seed Packet - Cabbage,
+        Icon				=		Seeds_Lettuce,
+        Weight				=		0.02,
+        StaticModel = CabbageSeedBag_Ground,
+        WorldStaticModel = CabbageSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+	item SlugRepellent
+	{
+		DisplayName = Slug Repellent,
+		DisplayCategory = Gardening,
+		Type = Drainable,
+        UseDelta	=	0.1,
+		Weight = 1,
+		Icon = SlugRepellent,
+		StaticModel = SlugRepellent,
+		WorldStaticModel = SlugRepellent,
+		UseWhileEquipped = FALSE,
+	}
+
+    item CornSeed
+	{
+        DisplayCategory = Gardening,
+		Type				=		Food,
+		DisplayName			= Corn (Dried),
+		Icon				=		DriedCorn,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = DriedSoyBeans,
+		HungerChange = -1,
+		Calories = 0,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		CantEat = TRUE,
+		Tags = DriedFood,
+		EvolvedRecipe = Soup:1;Stew:1;Rice:1;Pasta:1,
+		FoodType = Vegetables,
+		EvolvedRecipeName = DriedCorn,
+		Tags = DriedFood;isSeed,
+		CantEat = TRUE,
+		ToolTip = Tooltip_item_MustAddRecipe,
+		AnimalFeedType = Seeds,
+	}
+
+	item SoybeansSeed
+	{
+        DisplayCategory = Food,
+		Type = Food,
+		Weight				=		0.02,
+		EvolvedRecipe = Soup:5;Stew:5;Stir fry:5;Rice:5,
+		FoodType = Bean,
+		HungerChange = -1,
+		Calories = 5,
+		Carbohydrates = 2,
+		Lipids = 0.1,
+		Proteins = 0.8,
+		DisplayName			= Soybeans (Dried),
+		Icon				=		DriedSoyBeans,
+        WorldStaticModel = DriedSoyBeans,
+		Tags = DriedFood;isSeed,
+		CantEat = TRUE,
+		ToolTip = Tooltip_item_MustAddRecipe,
+	}
+
+    item KaleSeed
+	{
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Kale Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+	}
+
+    item SweetPotatoSeed
+	{
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Sweet Potato Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+	}
+
+    item GreenpeasSeed
+	{
+        DisplayCategory = Gardening,
+		Type				=		Normal,
+		DisplayName			=		Dried Green Peas,
+		Icon				=		DriedPeas,
+		Weight				=		0.02,
+		SurvivalGear = TRUE,
+		WorldStaticModel = DriedPeas,
+		HungerChange = -1,
+		Calories = 0,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		CantEat = TRUE,
+		Tags = DriedFood;isSeed,
+		EvolvedRecipe = Soup:1;Stew:1;Rice:1;Pasta:1,
+		FoodType = Vegetables,
+		EvolvedRecipeName = Pea,
+		ToolTip = Tooltip_item_MustAddRecipe,
+		AnimalFeedType = Seeds,
+	}
+
+    item WheatSeed
+	{
+        DisplayCategory = Gardening,
+		Type = Food,
+		Type				=		Normal,
+		HungerChange = -5,
+		DisplayName			=		Wheat Grain,
+		Icon				=		WheatGrains,
+		Weight				=		0.02,
+		SurvivalGear = TRUE,
+		WorldStaticModel = WheatGrains,
+		CantEat = TRUE,
+		AnimalFeedType = Seeds,
+        Tags = isSeed,
+	}
+
+    item OnionSeed
+	{
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Onion Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+	}
+
+    item GarlicSeed
+	{
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Garlic Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+	}
+
+    item BasilSeed
+	{
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Basil Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+	}
+
+    item ChamomileSeed
+	{
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Chamomile Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+	}
+
+    item ChivesSeed
+	{
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Chives Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+	}
+
+    item CilantroSeed
+	{
+        DisplayCategory = Gardening,
+        Type				=		Food,
+        DisplayName			=		Cilantro Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        EvolvedRecipe = Stir fry:1;Pizza:1;Omelette:1;Burrito:1;Salad:1;Sandwich:1;Soup:1;Stew:1;Taco:1;Burger:1,
+        Spice = true,
+        HungerChange = -1,
+        Calories = 0,
+        Carbohydrates = 0,
+        Lipids = 0,
+        Proteins = 0,
+        FoodType = Herb,
+        EvolvedRecipeName = Corriander,
+        Tags = isSeed,
+	}
+
+    item MarigoldSeed
+	{
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Marigold Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+	}
+
+    item OreganoSeed
+	{
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Oregano Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+	}
+
+    item ParsleySeed
+	{
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Parsley Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+	}
+
+    item RosemarySeed
+	{
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Rosemary Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+	}
+
+    item SageSeed
+	{
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Sage Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+	}
+
+    item ThymeSeed
+	{
+        DisplayCategory = Gardening,
+        Type				=		Normal,
+        DisplayName			=		Thyme Seeds,
+        Icon				=		Seeds_Generic,
+        Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = Seeds_Generic,
+        Tags = isSeed,
+	}
+
+/**********************************************************************/
+/***************************Seed Packages************************************/
+/**********************************************************************/
+
+
+
+    item BarleyBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Barley,
+		Icon				=		Seeds_Barley,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = BarleySeedBag_Ground,
+		WorldStaticModel = BarleySeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Barley Growing Season,
+	}
+
+    item CornBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Corn,
+		Icon				=		Seeds_Corn,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = CornSeedBag_Ground,
+		WorldStaticModel = CornSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Corn Growing Season,
+	}
+
+    item KaleBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Kale,
+		Icon				=		Seeds_Kale,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = KaleSeedBag_Ground,
+		WorldStaticModel = KaleSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Kale Growing Season,
+	}
+
+    item RyeBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Rye,
+		Icon				=		Seeds_RyeWheat,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = RyeSeedBag_Ground,
+		WorldStaticModel = RyeSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Rye Growing Season,
+	}
+
+    item SweetPotatoBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Sweet Potato,
+		Icon				=		Seeds_Sweetpotato,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = SweetPotatoSeedBag_Ground,
+		WorldStaticModel = SweetPotatoSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Sweet Potato Growing Season,
+	}
+
+    item GreenpeasBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Green Peas,
+		Icon				=		Seeds_Pea,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = GreenpeasSeedBag_Ground,
+		WorldStaticModel = GreenpeasSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Green Pea Growing Season,
+	}
+    item OnionBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Onion,
+		Icon				=		Seeds_Onion,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = OnionSeedBag_Ground,
+		WorldStaticModel = OnionSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Onion Growing Season,
+	}
+    item GarlicBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Garlic,
+		Icon				=		Seeds_Garlic,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = GarlicSeedBag_Ground,
+		WorldStaticModel = GarlicSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Garlic Growing Season,
+	}
+
+    item SoybeansBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Soybeans,
+		Icon				=		Seeds_Soybeans,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = SoybeansSeedBag_Ground,
+		WorldStaticModel = SoybeansSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Soybean Growing Season,
+	}
+
+    item SugarBeetBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Sugar Beet,
+		Icon				=		Seeds_SugarBeet,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = SugarBeetSeedBag_Ground,
+		WorldStaticModel = SugarBeetSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Sugar Beet Growing Season,
+	}
+
+
+    item WheatBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Wheat,
+		Icon				=		Seeds_RyeWheat,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = WheatSeedBag_Ground,
+		WorldStaticModel = WheatSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Wheat Growing Season,
+	}
+
+    item BasilBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Basil,
+		Icon				=		Seeds_Basil,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = BasilSeedBag_Ground,
+		WorldStaticModel = BasilSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Basil Growing Season,
+	}
+    item ChamomileBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Chamomile,
+		Icon				=		Seeds_Chamomile,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = ChamomileSeedBag_Ground,
+		WorldStaticModel = ChamomileSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Chamomile Growing Season,
+	}
+    item ChivesBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Chives,
+		Icon				=		Seeds_Chives,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = ChivesSeedBag_Ground,
+		WorldStaticModel = ChivesSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Chives Growing Season,
+	}
+    item CilantroBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Cilantro,
+		Icon				=		Seeds_Cilantro,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = CilantroSeedBag_Ground,
+		WorldStaticModel = CilantroSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Cilantro Growing Season,
+	}
+    item MarigoldBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Marigold,
+		Icon				=		Seeds_Marigold,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = MarigoldSeedBag_Ground,
+		WorldStaticModel = MarigoldSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Marigold Growing Season,
+	}
+    item OreganoBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Oregano,
+		Icon				=		Seeds_Oregano,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = OreganoSeedBag_Ground,
+		WorldStaticModel = OreganoSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Oregano Growing Season,
+	}
+    item ParsleyBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Parsley,
+		Icon				=		Seeds_Parsley,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = ParsleySeedBag_Ground,
+		WorldStaticModel = ParsleySeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Parsley Growing Season,
+	}
+    item SageBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Sage,
+		Icon				=		Seeds_Sage,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = SageSeedBag_Ground,
+		WorldStaticModel = SageSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Sage Growing Season,
+	}
+    item RosemaryBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Rosemary,
+		Icon				=		Seeds_Rosemary,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = RosemarySeedBag_Ground,
+		WorldStaticModel = RosemarySeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Rosemary Growing Season,
+	}
+    item ThymeBagSeed
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Seed Packet - Thyme,
+		Icon				=		Seeds_Thyme,
+		Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = ThymeSeedBag_Ground,
+		WorldStaticModel = ThymeSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Thyme Growing Season,
+	}
+
+    item BarleyBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Barley,
+		Icon				=		Seeds_Barley,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = BarleySeedBag_Ground,
+		WorldStaticModel = BarleySeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Barley Growing Season,
+	}
+
+    item CornBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Corn,
+		Icon				=		Seeds_Corn,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = CornSeedBag_Ground,
+		WorldStaticModel = CornSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Corn Growing Season,
+	}
+    item KaleBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Kale,
+		Icon				=		Seeds_Kale,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = KaleSeedBag_Ground,
+		WorldStaticModel = KaleSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Kale Growing Season,
+	}
+    item RyeBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Rye,
+		Icon				=		Seeds_RyeWheat,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = RyeSeedBag_Ground,
+		WorldStaticModel = RyeSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Rye Growing Season,
+	}
+    item SweetPotatoBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Sweet Potato,
+		Icon				=		Seeds_Sweetpotato,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = SweetPotatoSeedBag_Ground,
+		WorldStaticModel = SweetPotatoSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Sweet Potato Growing Season,
+	}
+    item GreenpeasBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Green Peas,
+		Icon				=		Seeds_Pea,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = GreenpeasSeedBag_Ground,
+		WorldStaticModel = GreenpeasSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Green Pea Growing Season,
+	}
+    item OnionBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Onion,
+		Icon				=		Seeds_Onion,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = OnionSeedBag_Ground,
+		WorldStaticModel = OnionSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Onion Growing Season,
+	}
+    item GarlicBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Garlic,
+		Icon				=		Seeds_Garlic,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = GarlicSeedBag_Ground,
+		WorldStaticModel = GarlicSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Garlic Growing Season,
+	}
+
+    item SoybeansBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Soybeans,
+		Icon				=		Seeds_Soybeans,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = SoybeansSeedBag_Ground,
+		WorldStaticModel = SoybeansSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Soybean Growing Season,
+	}
+
+    item SugarBeetBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Sugar Beet,
+		Icon				=		Seeds_SugarBeet,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = SugarBeetSeedBag_Ground,
+		WorldStaticModel = SugarBeetSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Sugar Beet Growing Season,
+	}
+
+    item WheatBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Wheat,
+		Icon				=		Seeds_RyeWheat,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = WheatSeedBag_Ground,
+		WorldStaticModel = WheatSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Wheat Growing Season,
+	}
+    item BasilBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Basil,
+		Icon				=		Seeds_Basil,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = BasilSeedBag_Ground,
+		WorldStaticModel = BasilSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Basil Growing Season,
+	}
+    item ChamomileBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Chamomile,
+		Icon				=		Seeds_Chamomile,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = ChamomileSeedBag_Ground,
+		WorldStaticModel = ChamomileSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Chamomile Growing Season,
+	}
+    item ChivesBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Chives,
+		Icon				=		Seeds_Chives,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = ChivesSeedBag_Ground,
+		WorldStaticModel = ChivesSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Chives Growing Season,
+	}
+    item CilantroBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Cilantro,
+		Icon				=		Seeds_Cilantro,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = CilantroSeedBag_Ground,
+		WorldStaticModel = CilantroSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Cilantro Growing Season,
+	}
+    item MarigoldBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Marigold,
+		Icon				=		Seeds_Marigold,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = MarigoldSeedBag_Ground,
+		WorldStaticModel = MarigoldSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Marigold Growing Season,
+	}
+    item OreganoBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Oregano,
+		Icon				=		Seeds_Oregano,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = OreganoSeedBag_Ground,
+		WorldStaticModel = OreganoSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Oregano Growing Season,
+	}
+    item ParsleyBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Parsley,
+		Icon				=		Seeds_Parsley,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = ParsleySeedBag_Ground,
+		WorldStaticModel = ParsleySeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Parsley Growing Season,
+	}
+    item SageBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Sage,
+		Icon				=		Seeds_Sage,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = SageSeedBag_Ground,
+		WorldStaticModel = SageSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Sage Growing Season,
+	}
+    item RosemaryBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Rosemary,
+		Icon				=		Seeds_Rosemary,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = RosemarySeedBag_Ground,
+		WorldStaticModel = RosemarySeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Rosemary Growing Season,
+	}
+    item ThymeBagSeed_Empty
+	{
+	    DisplayCategory = Gardening,
+        Type	=	Literature,
+        DisplayName			=		 Empty Seed Packet - Thyme,
+		Icon				=		Seeds_Thyme,
+		Weight				=		0.02,
+		/*SurvivalGear = TRUE,*/
+		StaticModel = ThymeSeedBag_Ground,
+		WorldStaticModel = ThymeSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+        TeachedRecipes  =   Thyme Growing Season,
+	}
+
+    item LettuceBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Lettuce Growing Season,
+        DisplayName			= Seed Packet - Lettuce,
+        Icon				=		Seeds_Lettuce,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = CabbageSeedBag_Ground,
+        WorldStaticModel = CabbageSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item LettuceBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Lettuce Growing Season,
+        DisplayName			= Empty Seed Packet - Lettuce,
+        Icon				=		Seeds_Lettuce,
+        Weight				=		0.02,
+        StaticModel = CabbageSeedBag_Ground,
+        WorldStaticModel = CabbageSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item BellPepperBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Bell Pepper Growing Season,
+        DisplayName			= Seed Packet - Bell Pepper,
+        Icon				=		Seeds_BellPepper,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = BellPepperSeedBag_Ground,
+        WorldStaticModel = BellPepperSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item BellPepperBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Bell Pepper Growing Season,
+        DisplayName			= Empty Seed Packet - Bell Pepper,
+        Icon				=		Seeds_BellPepper,
+        Weight				=		0.02,
+        StaticModel = BellPepperSeedBag_Ground,
+        WorldStaticModel = BellPepperSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item CauliflowerBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Cauliflower Growing Season,
+        DisplayName			= Seed Packet - Cauliflower,
+        Icon				=		Seeds_Cauliflower,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = CauliflowerSeedBag_Ground,
+        WorldStaticModel = CauliflowerSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item CauliflowerBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Cauliflower Growing Season,
+        DisplayName			= Empty Seed Packet - Cauliflower,
+        Icon				=		Seeds_Cauliflower,
+        Weight				=		0.02,
+        StaticModel = CauliflowerSeedBag_Ground,
+        WorldStaticModel = CauliflowerSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item CucumberBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Cucumber Growing Season,
+        DisplayName			= Seed Packet - Cucumber,
+        Icon				=		Seeds_Cucumber,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = CucumberSeedBag_Ground,
+        WorldStaticModel = CucumberSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item CucumberBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Cucumber Growing Season,
+        DisplayName			= Empty Seed Packet - Cucumber,
+        Icon				=		Seeds_Cucumber,
+        Weight				=		0.02,
+        StaticModel = CucumberSeedBag_Ground,
+        WorldStaticModel = CucumberSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item LeekBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Leek Growing Season,
+        DisplayName			= Seed Packet - Leek,
+        Icon				=		Seeds_Leek,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = LeekSeedBag_Ground,
+        WorldStaticModel = LeekSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item LeekBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Leek Growing Season,
+        DisplayName			= Empty Seed Packet - Leek,
+        Icon				=		Seeds_Leek,
+        Weight				=		0.02,
+        StaticModel = LeekSeedBag_Ground,
+        WorldStaticModel = LeekSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item LemonGrassBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Lemongrass Growing Season,
+        DisplayName			= Seed Packet - Lemongrass,
+        Icon				=		Seeds_Lettuce,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = CabbageSeedBag_Ground,
+        WorldStaticModel = CabbageSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item LemonGrassBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Lemongrass Growing Season,
+        DisplayName			= Empty Seed Packet - Lemongrass,
+        Icon				=		Seeds_Lettuce,
+        Weight				=		0.02,
+        StaticModel = CabbageSeedBag_Ground,
+        WorldStaticModel = CabbageSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item ZucchiniBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Zucchini Growing Season,
+        DisplayName			= Seed Packet - Zucchini,
+        Icon				=		Seeds_Zucchini,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = ZucchiniSeedBag_Ground,
+        WorldStaticModel = ZucchiniSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item ZucchiniBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Zucchini Growing Season,
+        DisplayName			= Empty Seed Packet - Zucchini,
+        Icon				=		Seeds_Zucchini,
+        Weight				=		0.02,
+        StaticModel = ZucchiniSeedBag_Ground,
+        WorldStaticModel = ZucchiniSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item WatermelonBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Watermelon Growing Season,
+        DisplayName			= Seed Packet - Watermelon,
+        Icon				=		Seeds_Watermelon,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = CabbageSeedBag_Ground,
+        WorldStaticModel = CabbageSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item WatermelonBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Watermelon Growing Season,
+        DisplayName			= Empty Seed Packet - Watermelon,
+        Icon				=		Seeds_Watermelon,
+        Weight				=		0.02,
+        StaticModel = CabbageSeedBag_Ground,
+        WorldStaticModel = CabbageSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item HabaneroBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Habanero Growing Season,
+        DisplayName			= Seed Packet - Habanero,
+        Icon				=		Seeds_Habanero,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = HabaneroSeedBag_Ground,
+        WorldStaticModel = HabaneroSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item HabaneroBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Habanero Growing Season,
+        DisplayName			= Empty Seed Packet - Habanero,
+        Icon				=		Seeds_Habanero,
+        Weight				=		0.02,
+        StaticModel = HabaneroSeedBag_Ground,
+        WorldStaticModel = HabaneroSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item JalapenoBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Jalapeno Growing Season,
+        DisplayName			= Seed Packet - Jalapeno,
+        Icon				=		Seeds_Jalapeno,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = JalapenoSeedBag_Ground,
+        WorldStaticModel = JalapenoSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item JalapenoBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Jalapeno Growing Season,
+        DisplayName			= Empty Seed Packet - Jalapeno,
+        Icon				=		Seeds_Jalapeno,
+        Weight				=		0.02,
+        StaticModel = JalapenoSeedBag_Ground,
+        WorldStaticModel = JalapenoSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+    item BlackSageBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Black Sage Growing Season,
+        DisplayName			= Seed Packet - Black Sage,
+        Icon				=		Seeds_BlackSage,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = BlackSageSeedBag_Ground,
+        WorldStaticModel = BlackSageSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item BlackSageBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Black Sage Growing Season,
+        DisplayName			= Empty Seed Packet - Black Sage,
+        Icon				=		Seeds_BlackSage,
+        Weight				=		0.02,
+        StaticModel = BlackSageSeedBag_Ground,
+        WorldStaticModel = BlackSageSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item BroadleafPlantainBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Broadleaf Plantain Growing Season,
+        DisplayName			= Seed Packet - Broadleaf Plantain,
+        Icon				=		Seeds_BroadleafPlantain,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = BroadleafPlantainSeedBag_Ground,
+        WorldStaticModel = BroadleafPlantainSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item BroadleafPlantainBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Broadleaf Plantain Growing Season,
+        DisplayName			= Empty Seed Packet - Broadleaf Plantain,
+        Icon				=		Seeds_BroadleafPlantain,
+        Weight				=		0.02,
+        StaticModel = BroadleafPlantainSeedBag_Ground,
+        WorldStaticModel = BroadleafPlantainSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item ComfreyBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Comfrey Growing Season,
+        DisplayName			= Seed Packet - Comfrey,
+        Icon				=		Seeds_Comfrey,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = ComfreySeedBag_Ground,
+        WorldStaticModel = ComfreySeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item ComfreyBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Comfrey Growing Season,
+        DisplayName			= Empty Seed Packet - Comfrey,
+        Icon				=		Seeds_Comfrey,
+        Weight				=		0.02,
+        StaticModel = ComfreySeedBag_Ground,
+        WorldStaticModel = ComfreySeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item CommonMallowBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Common Mallow Growing Season,
+        DisplayName			= Seed Packet - Common Mallow,
+        Icon				=		Seeds_CommonMallow,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = CommonMallowSeedBag_Ground,
+        WorldStaticModel = CommonMallowSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item CommonMallowBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Common Mallow Growing Season,
+        DisplayName			= Empty Seed Packet - Common Mallow,
+        Icon				=		Seeds_CommonMallow,
+        Weight				=		0.02,
+        StaticModel = CommonMallowSeedBag_Ground,
+        WorldStaticModel = CommonMallowSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item HempBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Hemp Growing Season,
+        DisplayName			= Seed Packet - Hemp,
+        Icon				=		Seeds_HempEnvelope,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = HempSeedBag_Ground,
+        WorldStaticModel = HempSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item HempBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Hemp Growing Season,
+        DisplayName			= Empty Seed Packet - Hemp,
+        Icon				=		Seeds_HempEnvelope,
+        Weight				=		0.02,
+        StaticModel = HempSeedBag_Ground,
+        WorldStaticModel = HempSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item HopsBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Hops Growing Season,
+        DisplayName			= Seed Packet - Hops,
+        Icon				=		Seeds_Hops,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = HopsSeedBag_Ground,
+        WorldStaticModel = HopsSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item HopsBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Hops Growing Season,
+        DisplayName			= Empty Seed Packet - Hops,
+        Icon				=		Seeds_Hops,
+        Weight				=		0.02,
+        StaticModel = HopsSeedBag_Ground,
+        WorldStaticModel = HopsSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item MintBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Mint Growing Season,
+        DisplayName			= Seed Packet - Mint,
+        Icon				=		Seeds_Mint,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = MintSeedBag_Ground,
+        WorldStaticModel = MintSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item MintBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Mint Growing Season,
+        DisplayName			= Empty Seed Packet - Mint,
+        Icon				=		Seeds_Mint,
+        Weight				=		0.02,
+        StaticModel = MintSeedBag_Ground,
+        WorldStaticModel = MintSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item TurnipBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Turnip Growing Season,
+        DisplayName			= Seed Packet - Turnip,
+        Icon				=		Seeds_Turnip,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = CabbageSeedBag_Ground,
+        WorldStaticModel = CabbageSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item TurnipBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Turnip Growing Season,
+        DisplayName			= Empty Seed Packet - Turnip,
+        Icon				=		Seeds_Turnip,
+        Weight				=		0.02,
+        StaticModel = CabbageSeedBag_Ground,
+        WorldStaticModel = CabbageSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item WatermelonBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Watermelon Growing Season,
+        DisplayName			= Seed Packet - Watermelon,
+        Icon				=		Seeds_Watermelon,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = WatermelonSeedBag_Ground,
+        WorldStaticModel = WatermelonSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item WatermelonBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Watermelon Growing Season,
+        DisplayName			= Empty Seed Packet - Watermelon,
+        Icon				=		Seeds_Watermelon,
+        Weight				=		0.02,
+        StaticModel = WatermelonSeedBag_Ground,
+        WorldStaticModel = WatermelonSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item WildGarlicBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Wild Garlic Growing Season,
+        DisplayName			= Seed Packet - Wild Garlic,
+        Icon				=		Seeds_WildGarlic,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = WildGarlicSeedBag_Ground,
+        WorldStaticModel = WildGarlicSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item WildGarlicBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Wild Garlic Growing Season,
+        DisplayName			= Empty Seed Packet - Wild Garlic,
+        Icon				=		Seeds_WildGarlic,
+        Weight				=		0.02,
+        StaticModel = WildGarlicSeedBag_Ground,
+        WorldStaticModel = WildGarlicSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item PumpkinBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Pumpkin Growing Season,
+        DisplayName			= Seed Packet - Pumpkin,
+        Icon				=		Seeds_Pumpkin,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = PumpkinSeedBag_Ground,
+        WorldStaticModel = PumpkinSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item PumpkinBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Pumpkin Growing Season,
+        DisplayName			= Empty Seed Packet - Pumpkin,
+        Icon				=		Seeds_Pumpkin,
+        Weight				=		0.02,
+        StaticModel = PumpkinSeedBag_Ground,
+        WorldStaticModel = PumpkinSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item FlaxBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Flax Growing Season,
+        DisplayName			= Seed Packet - Flax,
+        Icon				=		Seeds_Flax,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = FlaxSeedBag_Ground,
+        WorldStaticModel = FlaxSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item FlaxBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Flax Growing Season,
+        DisplayName			= Empty Seed Packet - Flax,
+        Icon				=		Seeds_Flax,
+        Weight				=		0.02,
+        StaticModel = FlaxSeedBag_Ground,
+        WorldStaticModel = FlaxSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item SpinachBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Spinach Growing Season,
+        DisplayName			= Seed Packet - Spinach,
+        Icon				=		Seeds_Spinach,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = SpinachSeedBag_Ground,
+        WorldStaticModel = SpinachSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item SpinachBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Spinach Growing Season,
+        DisplayName			= Empty Seed Packet - Spinach,
+        Icon				=		Seeds_Spinach,
+        Weight				=		0.02,
+        StaticModel = SpinachSeedBag_Ground,
+        WorldStaticModel = SpinachSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item TobaccoBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Tobacco Growing Season,
+        DisplayName			= Seed Packet - Tobacco,
+        Icon				=		Seeds_Tobacco,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = TobaccoSeedBag_Ground,
+        WorldStaticModel = TobaccoSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item TobaccoBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Tobacco Growing Season,
+        DisplayName			= Empty Seed Packet - Tobacco,
+        Icon				=		Seeds_Tobacco,
+        Weight				=		0.02,
+        StaticModel = TobaccoSeedBag_Ground,
+        WorldStaticModel = TobaccoSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item SunflowerBagSeed
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Sunflower Growing Season,
+        DisplayName			= Seed Packet - Sunflower,
+        Icon				=		Seeds_Sunflower,
+        Weight				=		0.1,
+		/*SurvivalGear = TRUE,*/
+        StaticModel = SunflowerSeedBag_Ground,
+        WorldStaticModel = SunflowerSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+
+    item SunflowerBagSeed_Empty
+    {
+        DisplayCategory = Gardening,
+        Type	=	Literature,
+        TeachedRecipes  =   Sunflower Growing Season,
+        DisplayName			= Empty Seed Packet - Sunflower,
+        Icon				=		Seeds_Sunflower,
+        Weight				=		0.02,
+        StaticModel = SunflowerSeedBag_Ground,
+        WorldStaticModel = SunflowerSeedBag_Ground,
+        ReadType = photo,
+        Tags = FastRead,
+    }
+}

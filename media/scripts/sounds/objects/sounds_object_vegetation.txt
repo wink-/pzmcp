@@ -1,0 +1,40 @@
+module Base
+{
+
+	sound ChopTree
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Tree/Chop,
+		}
+	}
+
+	sound FallingTree
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Tree/Fall,
+		}
+	}
+
+	sound Bushes
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Bush/Rustle,
+		}
+	}
+
+	sound RemovePlant
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Bush/Remove,
+		}
+	}
+
+}

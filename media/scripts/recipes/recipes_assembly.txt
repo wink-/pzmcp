@@ -1,0 +1,215 @@
+module Base
+{
+    craftRecipe AssembleBlade
+    {
+        time        = 100,
+        category = Assembly,
+        tags = AnySurfaceCraft,
+        SkillRequired = Maintenance:1,
+        timedAction = CraftWeapon1H,
+        xpAward = Maintenance:1,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer;Mallet] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 [Base.HuntingKnifeBlade;Base.CrudeShortSwordBlade;Base.CrudeSwordBlade;Base.CrudeSwordBlade_Broken;Base.HandScytheBlade;Base.KitchenKnifeBlade;Base.LargeKnifeBlade;Base.MacheteBlade;Base.MeatCleaverBlade;Base.SwordBlade;Base.SwordBlade_Broken;Base.ShortSwordBlade] flags[Prop2;InheritCondition;InheritSharpness] mappers[ThingMapper],
+            item 1 [Base.SmallHandle],
+        }
+        outputs
+        {
+            item 1 mapper:ThingMapper,
+        }
+        itemMapper ThingMapper
+        {
+            Base.CrudeShortSword = Base.CrudeShortSwordBlade,
+            Base.CrudeSword = Base.CrudeSwordBlade,
+            Base.CrudeSword_Broken = Base.CrudeSwordBlade_Broken,
+            Base.HandScytheForged = Base.HandScytheBlade,
+            Base.HuntingKnifeForged = Base.HuntingKnifeBlade,
+            Base.KitchenKnifeForged = Base.KitchenKnifeBlade,
+            Base.LargeKnife = Base.LargeKnifeBlade,
+            Base.MacheteForged = Base.MacheteBlade,
+            Base.MeatCleaverForged = Base.MeatCleaverBlade,
+            Base.ShortSword = Base.ShortSwordBlade,
+            Base.Sword = Base.SwordBlade,
+            Base.Sword_Broken = Base.SwordBlade_Broken,
+
+            default = Base.HuntingKnifeForged,
+        }
+    }
+
+    craftRecipe AssembleLongImplement
+    {
+        time        = 100,
+        category = Assembly,
+        tags = AnySurfaceCraft,
+        SkillRequired = Maintenance:1,
+        timedAction = ChoppingBlock_Hammer,
+        xpAward = Maintenance:1,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer;Mallet] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[SharpKnife] mode:keep flags[SharpnessCheck;IsNotDull],
+            item 1 [Base.OldAxeHead;Base.PickAxeHead;Base.SledgehammerHead;Base.WoodAxeHead;Base.FireAxeHead] flags[IsHeadPart;InheritSharpness] mappers[ThingMapper],
+            item 1 [Base.LongHandle] flags[Prop2;InheritCondition],
+        }
+        outputs
+        {
+            item 1 mapper:ThingMapper,
+        }
+        itemMapper ThingMapper
+        {
+            Base.Axe_Old = Base.OldAxeHead,
+            Base.Axe = Base.FireAxeHead,
+            Base.PickAxeForged = Base.PickAxeHead,
+            Base.SledgehammerForged = Base.SledgehammerHead,
+            Base.WoodAxeForged = Base.WoodAxeHead,
+            default = Base.SledgehammerForged,
+        }
+    }
+
+    craftRecipe AssembleLongerImplement
+    {
+        time        = 100,
+        category = Assembly,
+        tags = AnySurfaceCraft,
+        SkillRequired = Maintenance:1,
+        timedAction = ChoppingBlock_Hammer,
+        xpAward = Maintenance:1,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer;Mallet] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[SharpKnife] mode:keep flags[SharpnessCheck;IsNotDull],
+            item 1 [Base.GardenHoeHead;Base.RakeHead;Base.ScytheBlade;Base.SpadeHead;Base.SpadeHead_Forged] flags[IsHeadPart;InheritSharpness]  mappers[ThingMapper],
+            item 1 [Base.LongStick] flags[Prop2;InheritCondition],
+        }
+        outputs
+        {
+            item 1 mapper:ThingMapper,
+        }
+        itemMapper ThingMapper
+        {
+            Base.GardenHoeForged = Base.GardenHoeHead,
+            Base.Rake = Base.RakeHead,
+            Base.ScytheForged = Base.ScytheBlade,
+            Base.Shovel = Base.SpadeHead,
+            Base.SpadeForged = Base.SpadeHead_Forged,
+
+            default = Base.ScytheForged,
+        }
+    }
+
+    craftRecipe AssembleMace
+    {
+        time = 100,
+        category = Assembly,
+        tags = AnySurfaceCraft,
+        SkillRequired = Maintenance:1,
+        timedAction = ChoppingBlock_Hammer,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer;Mallet] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[SharpKnife] mode:keep flags[SharpnessCheck;IsNotDull],
+            item 1 [Base.MaceHead] flags[IsHeadPart],
+            item 1 [Base.ShortBat;Base.LongHandle] mappers[HandleMapper] flags[Prop2;InheritCondition],
+        }
+        outputs
+        {
+            item 1 mapper:HandleMapper,
+        }
+        itemMapper HandleMapper
+        {
+            Base.Mace = Base.ShortBat,
+            Base.LongMace = Base.LongHandle,
+
+            default = Base.Mace,
+        }
+    }
+
+    craftRecipe AssembleStoneMace
+    {
+        time = 100,
+        category = Assembly,
+        tags = AnySurfaceCraft,
+        SkillRequired = Maintenance:1,
+        timedAction = ChoppingBlock_Hammer,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer;Mallet] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[SharpKnife] mode:keep flags[SharpnessCheck;IsNotDull],
+            item 1 [Base.StoneMaceHead] flags[IsHeadPart],
+            item 1 [Base.ShortBat;Base.LongHandle] mappers[HandleMapper] flags[Prop2;InheritCondition],
+        }
+        outputs
+        {
+            item 1 mapper:HandleMapper,
+        }
+        itemMapper HandleMapper
+        {
+            Base.Mace_Stone = Base.ShortBat,
+            Base.LongMace_Stone = Base.LongHandle,
+
+            default = Base.Mace,
+        }
+    }
+
+    craftRecipe AssembleShortImplement
+    {
+        time        = 100,
+        category = Assembly,
+        tags = AnySurfaceCraft,
+        SkillRequired = Maintenance:1,
+        timedAction = ChoppingBlock_Hammer,
+        xpAward = Maintenance:1,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer;Mallet] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[SharpKnife] mode:keep flags[SharpnessCheck;IsNotDull],
+            item 1 [Base.BallPeenHammerHead;Base.ClawhammerHead;Base.ClubHammerHead;Base.HandAxeHead;Base.OldAxeHead;Base.SmithingHammerHead] flags[IsHeadPart;InheritSharpness] mappers[ThingMapper],
+            item 1 [Base.Handle] flags[Prop2;InheritCondition],
+        }
+        outputs
+        {
+            item 1 mapper:ThingMapper,
+        }
+        itemMapper ThingMapper
+        {
+            Base.BallPeenHammerForged = Base.BallPeenHammerHead,
+            Base.ClubHammerForged = Base.ClubHammerHead,
+            Base.HammerForged = Base.ClawhammerHead,
+            Base.HandAxeForged = Base.HandAxeHead,
+            Base.HandAxe_Old = Base.OldAxeHead,
+            Base.SmithingHammer = Base.SmithingHammerHead,
+
+            default = Base.HammerForged,
+        }
+    }
+
+	craftRecipe MakeCrudeKnife
+	{
+		Time = 300,
+		category = Assembly,
+        tags = InHandCraft,
+        timedAction = CraftWeapon1H,
+		xpAward = Maintenance:5,
+        SkillRequired = Maintenance:1,
+		inputs
+		{
+			item 1 [Base.StoneBlade;Base.StoneBladeLong;Base.CrudeBlade;Base.LongCrudeBlade]  mappers[BladeMapper] flags[InheritCondition;InheritSharpness],
+			item 1 [Base.SmallHandle],
+			item 1 tags[SimpleWeaponBinding]  flags[DontReplace],
+		}
+        outputs
+        {
+            item 1 mapper:BladeMapper,
+        }
+        itemMapper BladeMapper
+        {
+            Base.CrudeKnife = Base.CrudeBlade,
+            Base.LongCrudeKnife = Base.LongCrudeBlade,
+            Base.FlintKnife = Base.StoneBlade,
+            Base.StoneKnifeLong = Base.StoneBladeLong,
+
+            default = Base.CrudeKnife,
+        }
+	}
+}

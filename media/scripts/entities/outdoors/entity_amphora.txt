@@ -1,0 +1,101 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Amphora
+        {
+            LuaWindowClass      = ISEntityTabWindow,
+            DisplayName         = Amphora,
+            Icon                = Build_Amphora,
+        }
+    }
+
+    entity Amphora
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Amphora,
+            uiEnabled       = false,
+        }
+
+        component FluidContainer
+        {
+            ContainerName   = Amphora,
+            capacity        = 300,
+	        RainFactor	    = 0.4,
+            InitialPercentMin      = 0.0,
+            InitialPercentMax      = 0.0,
+        }
+        component SpriteConfig
+        {
+            health          = 100,
+            skillBaseHealth = 20,
+
+            face S
+            {
+                layer
+                {
+                    row = crafted_04_33,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_04_35,
+                }
+            }
+        }
+    }
+
+    entity Amphora_Closed
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Amphora,
+            uiEnabled       = false,
+        }
+
+        component FluidContainer
+        {
+            ContainerName   = Amphora,
+            capacity        = 300,
+            RainFactor	    = 0.0,
+            InitialPercentMin      = 0.0,
+            InitialPercentMax      = 0.0,
+        }
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_04_32,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_04_34,
+                }
+            }
+        }
+                
+        component CraftRecipe
+        {
+            timedAction   = BuildLowNoTool,
+            time          = 50,
+            category      = Pottery,
+            ToolTip       = Tooltip_craft_amphoraDesc,
+            inputs
+            {
+                item 1 tags[MasonsTrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 10 [Base.Clay] flags[DontRecordInput],
+            }
+        }
+    }
+
+}

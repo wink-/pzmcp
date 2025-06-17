@@ -1,0 +1,326 @@
+module Base
+{
+	
+	item Mov_Cot
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = Cot,
+		Weight = 6.0,
+		DisplayName = Cot,
+		WorldObjectSprite = furniture_bedding_01_56,
+		/*Tags = TentBed,
+		Tooltip = Tooltip_item_Mattress,*/
+	}
+
+	item Mov_Gurney
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = Gurney,
+		Weight = 15.0,
+		DisplayName = Gurney,
+		WorldObjectSprite = location_community_medical_01_72,
+	}
+	
+	item Mov_FitnessContraption
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Fitness Contraption,
+		WorldObjectSprite = recreational_sports_01_41,
+	}
+	
+	item Mov_MannequinFemale
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Mannequin,
+		WorldObjectSprite = location_shop_mall_01_66,
+	}
+	
+	item Mov_MannequinMale
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Mannequin,
+		WorldObjectSprite = location_shop_mall_01_69,
+	}
+	
+	item Mattress
+	{
+		DisplayCategory = Furniture,
+		Weight	=	8,
+		Type	=	Moveable,
+		DisplayName	=	Mattress,
+		Icon	=	Mattress,
+		WorldObjectSprite = carpentry_02_76,
+		Tags = TentBed,
+		Tooltip = Tooltip_item_Mattress,
+	}
+	
+	item Mov_MetalTurnstile
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Metal Turnstile,
+		WorldObjectSprite = fixtures_escalators_01_52,
+	}
+	
+	item Mov_NapkinDispenser
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Shop Dispenser,
+		WorldObjectSprite = location_shop_accessories_01_10,
+	}
+	
+	item Mov_SaleSign
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Sale Sign,
+		WorldObjectSprite = location_shop_generic_01_71,
+	}
+	
+	item Mov_SodaMachine
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Tabletop Soda Machine,
+		WorldObjectSprite = location_shop_accessories_01_8,
+	}
+	
+	item Mov_SodaMachineLarge
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Slurp Burp Soda Machine,
+		WorldObjectSprite = location_shop_zippee_01_56,
+	}
+	
+	item Mov_StandingVault
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Standing Vault,
+		WorldObjectSprite = location_business_bank_01_42,
+	}
+	
+	item Mov_TowelDispenser
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Paper-towel Dispenser,
+		WorldObjectSprite = fixtures_bathroom_01_16,
+	}
+	
+	item Mov_WaterDispenser
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Water Dispenser,
+		WorldObjectSprite = location_business_office_generic_01_49,
+	}
+	
+	item Mov_WoodPegboard
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Wood Pegboard,
+		WorldObjectSprite = location_business_machinery_01_24,
+	}
+
+	item Mov_DrumStool
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Drum Stool,
+		WorldObjectSprite = recreational_01_62,
+	}
+
+	item Mov_BlackSpeakerCabinet
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Black Speaker Cabinet,
+		WorldObjectSprite = recreational_01_80,
+	}
+
+	item Mov_WoodSpeakerCabinet
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Wood Speaker Cabinet,
+		WorldObjectSprite = recreational_01_76,
+	}
+
+	item Mov_GuitarAmplifier
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Guitar Amplifier,
+		WorldObjectSprite = recreational_01_72,
+	}
+
+	item Mov_KickDrum
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Kick Drum,
+		WorldObjectSprite = recreational_01_64,
+	}
+
+	item Mov_TomDrum
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Tom Drum,
+		WorldObjectSprite = recreational_01_65,
+	}
+
+	item Mov_SnareDrum
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Snare Drum,
+		WorldObjectSprite = recreational_01_69,
+	}
+
+	item Mov_Brazier
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Brazier,
+		WorldObjectSprite = crafted_02_42,
+	}
+
+	item MetalDrum
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = Drum_Grey,
+		Weight = 0.5,
+		DisplayName = Metal Drum,
+		WorldObjectSprite = crafted_01_32,
+	}
+
+	item Mov_OrangeBarrel
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = Drum_Orange,
+		Weight = 0.5,
+		DisplayName = Orange Barrel,
+		WorldObjectSprite = industry_01_22,
+	}
+
+	item Mov_DarkGreenBarrel
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = Drum_Green,
+		Weight = 0.5,
+		DisplayName = Dark Green Barrel,
+		WorldObjectSprite = location_military_generic_01_14,
+	}
+
+	item Mov_LightGreenBarrel
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = Drum_Olive,
+		Weight = 0.5,
+		DisplayName = Light Green Barrel,
+		WorldObjectSprite = location_military_generic_01_6,
+	}
+
+	item Mov_GymnMat
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Gymn Mat,
+		WorldObjectSprite = recreational_sports_01_35,
+		Tags = TentBed,
+		Tooltip = Tooltip_item_Mattress,
+	}
+
+	item Mov_Scarecrow
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= Scarecrow,
+		Weight		  	= 0.5,
+		DisplayName		= Scarecrow,
+		WorldObjectSprite	= location_shop_mall_01_68,
+		OnCreate = SpecialLootSpawns.OnCreateScarecrow,
+		Tags = UseDisplayName,
+	}
+
+	item Mov_SkeletonDisplay
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= Skeleton,
+		Weight		  	= 0.5,
+		DisplayName		= Skeleton (Display),
+		WorldObjectSprite	= location_shop_mall_01_68,
+		OnCreate = SpecialLootSpawns.OnCreateSkeletonDisplay,
+		/*Tags = UseDisplayName,*/
+	}
+
+	item BrokenGlass
+	{
+		DisplayName = Broken Glass,
+		DisplayCategory = Junk,
+		Type = Moveable,
+		Icon = Glass_Broken,
+		Weight = 0.5,
+		/*Weight = 0.3,
+		Icon = JarEmpty2,*/
+		WorldObjectSprite = brokenglass_1_0,
+		Tags = BrokenGlass,
+	}
+}

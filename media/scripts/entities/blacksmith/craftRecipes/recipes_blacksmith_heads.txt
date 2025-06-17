@@ -1,0 +1,471 @@
+module Base
+{
+    /********** TIER I *********/
+
+    craftRecipe Forge_Smithing_Hammer_Head
+    {
+        time        = 300,
+        SkillRequired = Blacksmith:1,
+        needTobeLearn = true,
+        AutoLearnAll = Blacksmith:3,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:25,
+        tags = PrimitiveForge,
+        category = Tools,
+        inputs
+        {
+            item 2 tags[Charcoal],
+            item 1 tags[PiercedChunk],
+            item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.SmithingHammerHead,
+        }
+    }
+
+    craftRecipe Forge_Garden_Hoe_Head
+    {
+        time        = 400,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:45,
+        AutoLearnAll = Blacksmith:6,
+        tags = PrimitiveForge,
+        category = Tools,
+        inputs
+        {
+            item 3 tags[Charcoal],
+            item 1 tags[BarStockHalf],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.GardenHoeHead,
+        }
+    }
+
+    craftRecipe Forge_Hand_Scythe_Head
+    {
+        time        = 300,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:45,
+        AutoLearnAll = Blacksmith:6,
+        tags = PrimitiveForge,
+        category = Tools,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 2 tags[Charcoal],
+            item 1 tags[BarStockQuarter],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.HandScytheBlade flags[IsBlunt],
+        }
+    }
+
+    /********** TIER II *********/
+
+    craftRecipe Forge_Ball_Peen_Hammer_Head
+    {
+        time        = 500,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:45,
+        AutoLearnAll = Blacksmith:6,
+        tags = Forge,
+        category = Tools,
+        inputs
+        {
+            item 4 tags[Charcoal],
+            item 1 [Base.PiercedSteelChunk],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.BallPeenHammerHead,
+        }
+    }
+
+    craftRecipe Forge_Scythe_Head
+    {
+        time        = 500,
+        SkillRequired = Blacksmith:5,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:50,
+        AutoLearnAll = Blacksmith:7,
+        tags = Forge,
+        category = Tools,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 4 tags[Charcoal],
+            item 1 tags[BarStockHalf],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.ScytheBlade flags[IsBlunt],
+        }
+    }
+
+    craftRecipe Forge_Clawhammer_Head
+    {
+        time        = 500,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:45,
+        AutoLearnAll = Blacksmith:6,
+        tags = Forge,
+        category = Tools,
+        inputs
+        {
+            item 4 tags[Charcoal],
+            item 1 [Base.PiercedSteelChunk],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.ClawhammerHead,
+        }
+    }
+
+    craftRecipe MakeSpikedClub
+    {
+        time        = 500,
+        SkillRequired = Blacksmith:5,
+        needTobeLearn = true,
+        AutoLearnAll = Blacksmith:8,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:50,
+        tags = Forge,
+        category = Weaponry,
+        inputs
+        {
+            item 4 tags[Charcoal],
+            item 1 [Base.IronBandSmall],
+            item 5 tags[MetalPiece],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+            item 1 [Base.AnimalBone;Base.BoneClub;Base.LargeAnimalBone;Base.LargeBoneClub;Base.LongHandle;Base.ShortBat] flags[InheritCondition] mappers[ClubMapper],
+        }
+        outputs
+        {
+            item 1 mapper:ClubMapper,
+        }
+        itemMapper ClubMapper
+        {
+            Base.BoneClub_Spiked = Base.AnimalBone,
+            Base.BoneClub_Spiked = Base.BoneClub,
+            Base.LargeBoneClub_Spiked = Base.LargeAnimalBone,
+            Base.LargeBoneClub_Spiked = Base.LargeBoneClub,
+            Base.SpikedShortBat = Base.ShortBat,
+            Base.LongSpikedClub = Base.LongHandle,
+
+            default = Base.SpikedShortBat,
+        }
+    }
+
+    craftRecipe MakeSpikedBaseballBat
+    {
+        time        = 900,
+        SkillRequired = Blacksmith:6,
+        needTobeLearn = true,
+        AutoLearnAll = Blacksmith:8,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:50,
+        tags = Forge,
+        category = Weaponry,
+        MetaRecipe = MakeSpikedClub,
+        inputs
+        {
+            item 8 tags[Charcoal],
+            item 2 [Base.IronBandSmall],
+            item 10 tags[MetalPiece],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+            item 1 [Base.BaseballBat;Base.BaseballBat_Crafted] flags[InheritCondition],
+        }
+        outputs
+        {
+            item 1 Base.BaseballBat_Spiked,
+        }
+    }
+
+    craftRecipe MakeSpikedCudgel
+    {
+        time        = 900,
+        SkillRequired = Blacksmith:7,
+        needTobeLearn = true,
+        AutoLearnAll = Blacksmith:8,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:50,
+        tags = Forge,
+        category = Weaponry,
+        MetaRecipe = MakeSpikedClub,
+        inputs
+        {
+            item 8 tags[Charcoal],
+            item 2 [Base.IronBandSmall],
+            item 10 tags[MetalPiece],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+            item 1 [Base.LargeBranch] flags[InheritCondition],
+        }
+        outputs
+        {
+            item 1 Base.Cudgel_Spike,
+        }
+    }
+
+    craftRecipe MakeJawboneMorningstar
+    {
+        time        = 1300,
+        SkillRequired = Blacksmith:7,
+        needTobeLearn = true,
+        AutoLearnAll = Blacksmith:8,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:50,
+        tags = Forge,
+        category = Weaponry,
+        inputs
+        {
+            item 12 tags[Charcoal],
+            item 3 [Base.IronBandSmall],
+            item 15 tags[MetalPiece],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+            item 1 [Base.LongHandle] flags[InheritCondition],
+            item 1 [Base.JawboneBovide] flags[InheritCondition;IsHeadPart],
+        }
+        outputs
+        {
+            item 1 Base.JawboneBovide_Morningstar,
+        }
+    }
+
+    craftRecipe Forge_Old_Axe_Head
+    {
+        time        = 600,
+        SkillRequired = Blacksmith:6,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:70,
+        AutoLearnAll = Blacksmith:7,
+        tags = Forge,
+        category = Tools,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 5 tags[Charcoal],
+            item 1 tags[PiercedBlock],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.OldAxeHead flags[IsBlunt],
+        }
+    }
+
+    craftRecipe Forge_Spade_Head
+    {
+         time        = 600,
+         SkillRequired = Blacksmith:6,
+         needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+         xpAward = Blacksmith:70,
+         AutoLearnAll = Blacksmith:7,
+         tags = Forge,
+         category = Tools,
+         /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+         inputs
+         {
+            item 5 tags[Charcoal],
+            item 1 tags[Block],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+         }
+        outputs
+        {
+            item 1 Base.SpadeHead_Forged flags[IsBlunt],
+        }
+     }
+
+    craftRecipe Forge_Hand_Axe_Head
+    {
+        time        = 500,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:50,
+        AutoLearnAll = Blacksmith:5,
+        tags = Forge,
+        category = Tools,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 4 tags[Charcoal],
+            item 1 [Base.PiercedSteelChunk],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.HandAxeHead flags[IsBlunt],
+        }
+    }
+
+    /********** TIER III *********/
+
+    craftRecipe Forge_Club_Hammer_Head
+    {
+        time        = 600,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:45,
+        AutoLearnAll = Blacksmith:6,
+        tags = AdvancedForge,
+        category = Tools,
+        inputs
+        {
+            item 5 tags[Charcoal],
+            item 1 tags[PiercedBlock],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.ClubHammerHead,
+        }
+    }
+
+    craftRecipe Forge_Pick_Axe_Head
+    {
+        time        = 700,
+        SkillRequired = Blacksmith:7,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:75,
+        AutoLearnAll = Blacksmith:8,
+        tags = AdvancedForge,
+        category = Tools,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 6 tags[Charcoal],
+            item 1 [Base.PiercedSteelBlock],
+            item 1 tags[BallPeenHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.PickAxeHead flags[IsBlunt],
+        }
+    }
+
+    craftRecipe Forge_Sledgehammer_Head
+    {
+        time        = 1000,
+        SkillRequired = Blacksmith:8,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:90,
+        AutoLearnAll = Blacksmith:9,
+        tags = AdvancedForge,
+        category = Tools,
+        inputs
+        {
+            item 9 tags[Charcoal],
+            item 1 [Base.PiercedSteelIngot],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.SledgehammerHead,
+        }
+    }
+
+    craftRecipe Forge_Wood_Axe_Head
+    {
+        time        = 600,
+        SkillRequired = Blacksmith:8,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:90,
+        AutoLearnAll = Blacksmith:9,
+        tags = AdvancedForge,
+        category = Tools,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 5 tags[Charcoal],
+            item 1 [Base.PiercedSteelBlock],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.WoodAxeHead flags[IsBlunt],
+        }
+    }
+
+    craftRecipe ForgeMaceHead
+    {
+        time        = 500,
+        SkillRequired = Blacksmith:7,
+        needTobeLearn = true,
+        AutoLearnAll = Blacksmith:8,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:75,
+        tags = AdvancedForge,
+        category = Weaponry,
+        inputs
+        {
+            item 4 tags[Charcoal],
+            item 1 tags[PiercedChunk],
+            item 5 tags[MetalPiece],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.MaceHead,
+        }
+    }
+}

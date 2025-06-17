@@ -1,0 +1,138 @@
+module Base
+{
+	sound MagnumShoot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
+		{
+			event = Weapon/Firearm/Magnum/Shoot,
+		}
+	}
+
+	sound MagnumInsertAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magnum/InsertAmmo,
+		}
+	}
+
+	sound MagnumEjectAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magnum/EjectAmmo,
+		}
+	}
+
+	sound MagnumInsertAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magnum/InsertAmmoStart,
+		}
+	}
+
+	sound MagnumInsertAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magnum/InsertAmmoStop,
+		}
+	}
+
+	sound MagnumEjectAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magnum/EjectAmmoStart,
+		}
+	}
+
+	sound MagnumEjectAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magnum/EjectAmmoStop,
+		}
+	}
+
+	sound MagnumJam
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magnum/Jam,
+		}
+	}
+    
+	sound MagnumBringToBear
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magnum/BringToBear,
+		}
+	}
+    
+	sound MagnumAimRelease
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magnum/AimRelease,
+		}
+	}
+
+	sound MagnumEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magnum/Equip,
+		}
+	}
+        
+	sound MagnumUnEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magnum/UnEquip,
+		}
+	}
+
+	sound MagnumBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magnum/Break,
+		}
+	}
+
+	sound MagnumDrop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magnum/Drop,
+		}
+	}
+
+	sound MagnumCartridgeFall
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magnum/CartridgeFall,
+		}
+	}
+}

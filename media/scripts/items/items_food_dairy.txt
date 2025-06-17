@@ -1,0 +1,145 @@
+module Base
+{
+	/******* DAIRY - LIQUID *******/
+
+	
+	item Milk
+	{
+		DisplayName = Carton of Milk,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = Milk,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCarton,
+		StaticModel = MilkCarton,
+		WorldStaticModel = Milk_Ground,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = Carton,
+            	capacity        = 1.0,
+		        CustomDrinkSound = DrinkingFromCarton,
+
+            	Fluids
+                {
+                    fluid           = CowMilk:1.0,
+                }
+        	}
+	}
+	
+	/******* DAIRY - SOLID *******/
+	
+	item Butter
+	{
+		DisplayName = Butter,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = Butter,
+		EvolvedRecipe = Pancakes:4;Sandwich:4;Stir fry:4;Pasta:4;Taco:4;Burrito:4;Toast:4;Oatmeal:4;Soup:4;Stew:4,
+		/*FoodType = NoExplicit,*/
+		Spice = true,
+		Packaged = TRUE,
+		HungerChange = -24,
+		UnhappyChange = 20,
+		Calories = 3200,
+		Carbohydrates = 0,
+		Lipids = 352,
+		Proteins = 0,
+		StaticModel = Butter,
+		WorldStaticModel = Butter,
+		Tags = BakingFat;MinorIngredient,
+	}
+	
+	item Cheese
+	{
+		DisplayName = Cheese,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Cheese,
+		EvolvedRecipe = Pizza:15;Soup:10;Stew:10;Sandwich:5;Burger:5;Hotdog:5;Salad:5;Pasta:10;Taco:5;Burrito:5;Bread:5;Toast:5;AddBaitToChum:10,
+		FoodType = Cheese,
+		DaysFresh = 14,
+		DaysTotallyRotten = 20,
+		HungerChange = -15,
+		Calories = 113,
+		Carbohydrates = 0.87,
+		Lipids = 9.33,
+		Proteins = 6.4,
+		FishingLure = true,
+		StaticModel = Cheese,
+		WorldStaticModel = Cheese,
+		Tags = Cheese,
+	}
+	
+	item Processedcheese
+	{
+		DisplayName = Processed Cheese,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Processedcheese,
+		EvolvedRecipe = Sandwich:5;Burger:5;Hotdog:5;Rice:5;Pasta:5;Bread:5;Toast:5,
+		FoodType = Cheese,
+		Packaged = TRUE,
+		DaysFresh = 6,
+		DaysTotallyRotten = 10,
+		HungerChange = -5,
+		Calories = 70,
+		Carbohydrates = 0,
+		Lipids = 6,
+		Proteins = 4,
+		StaticModel = ProcessedCheese,
+		WorldStaticModel = ProcessedCheese,
+		Tags = Cheese,
+	}
+	
+	/******* DAIRY - MISC. *******/
+
+	item SourCream
+	{
+		DisplayName = Sour Cream,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = SourCream,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = Sandwich:2;Burger:2;Rice:2;Pasta:2;Taco:2;Burrito:2,
+		Packaged = TRUE,
+		Spice = TRUE,
+		HungerChange = -16,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		Calories = 420,
+		Carbohydrates = 370,
+		Lipids = 14,
+		Proteins = 2,
+		StaticModel = SourCream,
+		WorldStaticModel = SourCream,
+		FoodType = NoExplicit,
+	}
+	
+	item Yoghurt
+	{
+		DisplayName = Yogurt,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = Yoghurt,
+		EatType = candrink,
+		EvolvedRecipe = Oatmeal:5,
+		FoodType = NoExplicit,
+		Packaged = TRUE,
+		DaysFresh = 10,
+		DaysTotallyRotten = 15,
+		HungerChange = -10,
+		Calories = 30,
+		Carbohydrates = 1,
+		Lipids = 1,
+		Proteins = 5,
+		StaticModel = Yogurt,
+		WorldStaticModel = Yogurt,
+	}
+}

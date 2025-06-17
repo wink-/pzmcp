@@ -1,0 +1,16 @@
+module Base
+{
+    /*
+        the default XuiSkin
+
+        prepend naming convention:
+        entity style    = ES
+        color           = C
+        style           = S_{CONTROL_NAME_MINUS_IS}
+    */
+
+    xuiSkin default
+    {
+        /* contents of the default skin are split into separate files in 'defaultskin' folder */
+    }
+}

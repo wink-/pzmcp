@@ -1,0 +1,88 @@
+module Base
+{
+	
+	/******* PETS - ITEMS *******/
+	
+	item CatToy
+	{
+		DisplayName = Cat Toy,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = CatToy,
+		WorldStaticModel = CatToy,
+		Tags = IsMemento,
+	}
+
+	item DogTag_Pet
+	{
+		DisplayName = Dog Tag,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.1,
+		IconsForTexture = DogTag_Bone;DogTag_Circle,
+		WorldStaticModelsByIndex = DogTag_Pet_Bone;DogTag_Pet_Circle,
+		Tags = HasMetal;FitsKeyRing;FitsWallet,
+		OnCreate = SpecialLootSpawns.OnCreateDogTag_Pet,
+	}
+
+	item DogTag_Pet_Blank
+	{
+		DisplayName = Dog Tag,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.1,
+		IconsForTexture = DogTag_Bone;DogTag_Circle,
+		WorldStaticModelsByIndex = DogTag_Pet_Bone;DogTag_Pet_Circle,
+		Tags = HasMetal;FitsKeyRing;FitsWallet,
+	}
+	
+	item DogChew
+	{
+		DisplayName = Dog Chew Toy,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = DogChew,
+		WorldStaticModel = DogChewToy,
+		Tags = IsMemento,
+	}
+	
+	item Leash
+	{
+		DisplayName = Leash,
+		DisplayCategory = Animal,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Leash,
+		WorldStaticModel = Leash,
+		Tags = HasMetal,
+	}
+	
+	item WaterDish
+	{
+		DisplayName = Water Dish,
+		DisplayCategory = Animal,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = WaterDish_Grey,
+		IconFluidMask = WaterDish_Mask,
+		MetalValue = 20,
+		WorldStaticModel = WaterDish,
+		OnCreate = SpecialLootSpawns.OnCreateRandomColor,
+		Tags = HasMetal,
+
+        	component FluidContainer
+        	{
+            		ContainerName   = Dish,
+            		capacity        = 0.3,
+			InitialPercentMin = 0.05,
+			InitialPercentMax = 0.95,
+            		RainFactor	= 1,
+            		Fluids
+            		{
+                		fluid           = TaintedWater:1.0,
+            		}
+        	}
+	}
+}

@@ -1,0 +1,97 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISButton
+        {
+            font                        = UIFont.Small,
+            backgroundColor             = C_Black,
+            borderColor                 = C_BorderLight,
+            backgroundColorMouseOver    = C_BgMouseOver,
+            textureColor                = C_TextureWhite,
+            textColor                   = C_Text,
+            anchorLeft                  = true,
+            anchorRight                 = false,
+            anchorTop                   = true,
+            anchorBottom                = false,
+            mouseOver                   = false,
+            displayBackground           = true,
+            enable                      = true,
+            /* optional: title = some title, */
+            autoSizeImage               = false,
+        }
+
+        ISButton S_Button_TransferFluids
+        {
+            image               = media/ui/Entity/icon_transfer_fluids.png,
+            width               = 24,
+            height              = 24,
+        }
+
+        ISButton S_Button_ClearFluids
+        {
+            image               = media/ui/Entity/icon_clear_fluids.png,
+            width               = 24,
+            height              = 24,
+        }
+
+        ISButton S_Button_EntityHeaderInfo
+        {
+            image               = media/ui/Entity/blueprint_info.png,
+            width               = 24,
+            height              = 24,
+        }
+
+        ISButton S_Button_Craft
+        {
+            title               = "Craft",
+            width               = 150,
+            isAutoFillX         = true,
+        }
+
+        ISButton S_Button_Craft_Furnace
+        {
+            title               = "Start",
+            width               = 44,
+            isAutoFillX         = false,
+        }
+
+        ISButton S_Button_DebugCraft
+        {
+            title               = "Debug Craft",
+            width               = 150,
+            isAutoFillX         = true,
+            /*backgroundColor     = SandyBrown,*/
+            borderColor         = Orange,
+            textColor           = Orange,
+        }
+
+        ISButton S_Button_DebugCraft_Furnace
+        {
+            title               = "dbg",
+            width               = 44,
+            isAutoFillX         = false,
+            /*backgroundColor     = SandyBrown,*/
+            borderColor         = Orange,
+            textColor           = Orange,
+        }
+
+        ISButton S_Button_Component_Tab
+        {
+            isAutoFillX         = true,
+            borderColor         = C_Border,
+            textureBackground   = media/ui/Panel_TitleBar.png,
+            autoSizeImage       = true,
+        }
+
+        ISButton S_Button_DebugEntity
+        {
+            title               = "debug.entity",
+            width               = 50,
+            isAutoFillX         = true,
+            /*backgroundColor     = SandyBrown,*/
+            borderColor         = Orange,
+            textColor           = Orange,
+        }
+    }
+}

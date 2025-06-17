@@ -1,0 +1,40 @@
+/******************************************/
+/** RJ: PLEASE DONT TOUCH WITHOUT ASKING **/
+/******************************************/
+
+module Base
+{
+    craftRecipe Churn Cow Butter
+    {
+        time        = 500,
+	    tags = ChurnBucket,
+        category = Farming,
+
+        inputs
+        {
+            item 1 [*],
+            -fluid 5 [CowMilk],
+        }
+        outputs
+        {
+            item 1 Base.Butter,
+        }
+    }
+
+    craftRecipe Churn Sheep Butter
+    {
+        time        = 500,
+	    tags = ChurnBucket,
+        category = Farming,
+
+        inputs
+        {
+            item 1 [*],
+            -fluid 5 [SheepMilk],
+        }
+        outputs
+        {
+            item 1 Base.Butter,
+        }
+    }
+}

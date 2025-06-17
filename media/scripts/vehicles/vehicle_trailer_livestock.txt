@@ -1,0 +1,190 @@
+module Base
+{
+	model Vehicles_Trailer_Livestock
+	{
+		mesh = vehicles/vehicle_livestocktrailer,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.4,
+	}
+	vehicle Trailer_Livestock
+	{
+		zombieType = Farmer,
+		mechanicType = 1,
+		offRoadEfficiency = 0.8,
+		engineRepairLevel = 4,
+		playerDamageProtection = 0.8,
+
+		model
+		{
+			file = Vehicles_Trailer_Livestock,
+			scale = 1.6500,
+			offset = 0.0000 0.1879 0.3697,
+		}
+
+		spawnOffsetY = 0.19392952,
+
+		skin
+		{
+			texture = Vehicles/LivestockTrailer,
+		}
+
+		textureMask = Vehicles/vehicle_utilitytrailer_mask,
+		textureLights = Vehicles/vehicle_utilitytrailer_lights,
+		textureDamage1Overlay = Vehicles/Veh_Blood_Mask,
+		textureDamage2Overlay = Vehicles/Veh_Blood_Hvy,
+		textureDamage1Shell = Vehicles/Veh_Damage1,
+		textureDamage2Shell = Vehicles/Veh_Damage2,
+		textureRust = Vehicles/Veh_Rust,
+		extents = 1.1152 0.8848 2.1818,
+		mass = 50,
+		physicsChassisShape = 0.8606 0.3515 1.7333,
+		centerOfMassOffset = 0.0000 -0.1424 0.1030,
+		shadowExtents = 0.9112 1.9159,
+		shadowOffset = 0.0000 0.0204,
+		engineForce = 3600,
+		engineQuality = 60,
+		engineLoudness = 55,
+		maxSpeed = 70f,
+		brakingForce = 1,
+		stoppingMovementForce = 2.0f,
+		rollInfluence = 1.0f,
+		steeringIncrement = 0.03,
+		steeringClamp = 0.3,
+		suspensionStiffness = 40,
+		suspensionCompression = 2.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 10,
+		suspensionRestLength = 0.2,
+		wheelFriction = 4.0f,
+		frontEndHealth = 150,
+		rearEndHealth = 150,
+		seats = 2,
+		animalTrailerSize = 500,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 0.5212 -0.4909 -0.2848,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -0.5212 -0.4909 -0.2848,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 0.5212 -0.4909 -0.6485,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = -0.5212 -0.4909 -0.6485,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		area AnimalEntry
+		{
+			xywh = 0.0000 -1.4606 0.8000 0.4364,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 0.5333 -0.1697 0.4485 0.4727,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -0.5333 -0.1697 0.4485 0.4727,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 0.5333 -0.1697 0.4485 0.4727,
+		}
+
+		area TireRearRight
+		{
+			xywh = -0.5333 -0.1697 0.4485 0.4727,
+		}
+
+		area TrailerAnimalFood
+		{
+			xywh = 0.0000 -1.1879 0.8000 0.4364,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -1.1879 0.8000 0.4364,
+		}
+
+		template = TrunkDoorOpened,
+		template = Trunk/part/TrailerAnimalFood,
+		template = Trunk/part/TrailerAnimalEggs,
+		template = Tire,
+		template = Brake,
+		template = Suspension,
+
+		physics box
+		{
+			offset = 0.1091 -0.2119 1.3818,
+			extents = 0.0549 0.0549 0.5385,
+			rotate = 0.0000 -20.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = -0.1091 -0.2121 1.3813,
+			extents = 0.0549 0.0549 0.5385,
+			rotate = 0.0000 20.0000 0.0000,
+		}
+
+		physics sphere
+		{
+			offset = 0.0000 -0.2000 1.5871,
+			radius = 0.0549,
+		}
+
+		useChassisPhysicsCollision = false,
+
+		physics box
+		{
+			offset = 0.0000 0.2229 0.0909,
+			extents = 0.8727 0.8970 2.1212,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = 0.5212 -0.1858 -0.1030,
+			extents = 0.1697 0.2424 0.8364,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = -0.5212 -0.1879 -0.1037,
+			extents = 0.1697 0.2424 0.8242,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.5246 1.3114,
+			rotate = 0.0000 0.0000 0.0000,
+			canAttach = trailer,
+			updateconstraint = false,
+		}
+	}
+}

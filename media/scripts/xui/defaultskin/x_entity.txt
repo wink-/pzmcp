@@ -1,0 +1,72 @@
+module Base
+{
+    xuiSkin default
+    {
+
+        /*
+            ENTITY
+        */
+
+        /* default entity style */
+        entity
+        {
+            LuaWindowClass      = ISEntityWindow,
+            /*XuiStyle          = optional, */
+            DisplayName         = Entity_DisplayName_Default,
+            Description         = Entity_Desc_Default,
+            BuildDescription    = Entity_BuildDesc_Default,
+            Icon                = Item_Dice,
+            /*LuaCanOpenWindow    = optional, */
+            /*LuaOpenWindow       = optional, */
+
+            components
+            {
+                CraftBench
+                {
+                    LuaPanelClass           = ISCraftBenchPanel,
+                    /*XuiStyle              = optional, */
+                    DisplayName             = EC_Workstation,
+                    Icon                    = Item_Dice,
+                    Enabled                 = true,
+                    ListOrderZ              = 1000,
+                }
+                CraftLogic
+                {
+                    LuaPanelClass           = ISCraftLogicPanel,
+                    /*XuiStyle              = optional, */
+                    DisplayName             = EC_Workstation,
+                    Icon                    = Item_Dice,
+                    Enabled                 = true,
+                    ListOrderZ              = 1100,
+                }
+                MashingLogic
+                {
+                    LuaPanelClass           = ISMashingLogicPanel,
+                    /*XuiStyle              = optional, */
+                    DisplayName             = EC_Workstation,
+                    Icon                    = Item_Dice,
+                    Enabled                 = true,
+                    ListOrderZ              = 1200,
+                }
+                FurnaceLogic
+                {
+                    LuaPanelClass           = ISFurnaceLogicPanel,
+                    /*XuiStyle              = optional, */
+                    DisplayName             = EC_Workstation,
+                    Icon                    = Item_Dice,
+                    Enabled                 = true,
+                    ListOrderZ              = 1300,
+                }
+                TestComponent
+                {
+                    LuaPanelClass           = ISTestComponentPanel,
+                    /*XuiStyle              = optional, */
+                    DisplayName             = Test,
+                    Icon                    = Item_Dice,
+                    Enabled                 = true,
+                    ListOrderZ              = 0,
+                }
+            }
+        }
+    }
+}

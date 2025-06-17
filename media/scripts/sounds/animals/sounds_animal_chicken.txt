@@ -1,0 +1,101 @@
+module Base
+{
+    sound AnimalFootstepsChickenWalk
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chicken/Footsteps/Walk,
+        }
+    }
+
+    sound AnimalVoiceChickenIdleFly
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chicken/Voice/Idle/Fly,
+        }
+    }
+
+    sound AnimalVoiceChickenIdlePeck
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chicken/Voice/Idle/Peck,
+        }
+    }
+
+    sound AnimalVoiceChickenIdleWalk
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chicken/Voice/Idle/Walk,
+        }
+    }
+
+    sound AnimalVoiceChickenDeath
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chicken/Voice/Death,
+        }
+    }
+
+    sound AnimalVoiceChickenStressed
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chicken/Voice/Stressed,
+        }
+    }
+
+    sound AnimalVoiceChickenPain
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chicken/Voice/Pain,
+        }
+    }
+
+    sound AnimalVoiceChickenFight
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chicken/Voice/Fight,
+        }
+    }
+
+    sound AnimalFoleyChickenDeath
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chicken/Foley/Death,
+        }
+    }
+
+    sound AnimalFoleyChickenPain
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chicken/Foley/Pain,
+        }
+    }
+
+    sound AnimalFoleyChickenFight
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chicken/Foley/Fight,
+        }
+    }
+}

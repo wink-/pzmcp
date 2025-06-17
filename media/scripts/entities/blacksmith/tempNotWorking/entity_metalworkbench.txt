@@ -1,0 +1,59 @@
+/*module Base
+{
+    stringList Recipes_Metalworkbench
+    {
+        Make Iron Bar Halves,
+        Make Iron Bar Quarters,
+        Make Iron Pieces,
+        Make Steel Bar Halves,
+        Make Steel Bar Quarters,
+        Make Steel Pieces,
+        Split Steel Sheet Into Small Sheets,
+    }
+
+    entity Metalworkbench
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Metalworkbench,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = ChoppingBlock,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_02_0 crafted_02_1,
+                }
+            }
+              face E
+          {
+                layer
+                {
+                    row = crafted_02_3,
+                    row = crafted_02_2,
+                }
+            }
+        }
+                                
+        component CraftRecipe
+        {
+            timedAction   = Test,
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 1 [Base.BenchAnvil],
+                item 1 [Base.CrudeBenchVise],
+            }
+        }
+    }
+}*/

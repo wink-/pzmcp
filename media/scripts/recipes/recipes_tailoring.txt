@@ -1,0 +1,1040 @@
+module Base
+{
+	craftRecipe ConvertIntoFingerlessGloves
+	{
+		timedAction = SewingCloth,
+		Time = 60,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        xpAward = Tailoring:2,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 [Base.Gloves_LeatherGlovesBlack;Base.Gloves_LeatherGlovesBrown] flags[IsNotWorn;CopyClothing] mappers[gloveColor],
+		}
+		outputs
+		{
+			item 1 mapper:gloveColor,
+		}
+		itemMapper gloveColor
+		{
+			Base.Gloves_FingerlessLeatherGloves = Base.Gloves_LeatherGloves,
+			Base.Gloves_FingerlessLeatherGloves_Black = Base.Gloves_LeatherGlovesBlack,
+			Base.Gloves_FingerlessLeatherGloves_Brown = Base.Gloves_LeatherGlovesBrown,
+		}
+	}
+
+	craftRecipe CutSheet
+	{
+		timedAction = SewingCloth,
+		Time = 60,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 [FabricRoll_Cotton] flags[InheritColor],
+		}
+		outputs
+		{
+			item 1 Base.Sheet,
+		}
+	}
+
+	craftRecipe DyeClothes
+	{
+	    Icon = Item_Yarn,
+        timedAction = MixingBucket,
+		Time = 150,
+		Tags = AnySurfaceCraft,
+		OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+        category = Tailoring,
+		inputs
+		{
+			item 1 [Base.Bucket;Base.BucketEmpty;Base.BucketWaterDebug;Base.BucketCarved] mode:keep,
+            	-fluid 10.0 categories[Water] mode:mixture,
+			item 1 [*] mode:keep,
+			    -fluid 0.2 [Dye] flags[InheritColor],
+			item 1 tags[CanBeDyed] mode:keep flags[IsNotWorn],
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe MakeMattress
+	{
+        timedAction = Making,
+		Time = 180,
+        tags = AnySurfaceCraft,
+        category = Tailoring,
+        xpAward = Tailoring:2,
+		inputs
+		{
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 5 tags[Thread],
+			item 5 [Base.Sheet],
+			item 5 tags[Pillow],
+		}
+		outputs
+		{
+			item 1 Base.Mattress,
+		}
+	}
+
+	craftRecipe SewClothSatchel
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+		NeedToBeLearn = True,
+        AutoLearnAll = Tailoring:3,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 2 [BurlapPiece;FabricRoll_Cotton;FabricRoll_DenimBlack;FabricRoll_DenimBlue;FabricRoll_DenimDarkBlue] flags[InheritColor] mappers[fabricType],
+			item 2 tags[Thread],
+		}
+		outputs
+		{
+			item 1 mapper:fabricType,
+		}
+		itemMapper fabricType
+		{
+			Base.Bag_ClothSatchel_Burlap = Base.BurlapPiece,
+			Base.Bag_ClothSatchel_Cotton = Base.FabricRoll_Cotton,
+			Base.Bag_ClothSatchel_Denim = Base.FabricRoll_DenimDarkBlue,
+			Base.Bag_ClothSatchel_DenimBlack = Base.FabricRoll_DenimBlack,
+			Base.Bag_ClothSatchel_DenimLight = Base.FabricRoll_DenimBlue,
+		}
+	}
+
+	craftRecipe SewDressKnees
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+		NeedToBeLearn = True,
+        AutoLearnAll = Tailoring:3,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 [BurlapPiece;FabricRoll_Cotton;FabricRoll_DenimBlack;FabricRoll_DenimBlue;FabricRoll_DenimDarkBlue] flags[InheritColor] mappers[fabricType],
+			item 1 tags[Thread],
+		}
+		outputs
+		{
+			item 1 mapper:fabricType,
+		}
+		itemMapper fabricType
+		{
+			Base.Dress_Knees_Crafted_Burlap = Base.BurlapPiece,
+			Base.Dress_Knees_Crafted_Cotton = Base.FabricRoll_Cotton,
+			Base.Dress_Knees_Crafted_Denim = Base.FabricRoll_DenimDarkBlue,
+			Base.Dress_Knees_Crafted_DenimBlack = Base.FabricRoll_DenimBlack,
+			Base.Dress_Knees_Crafted_DenimLight = Base.FabricRoll_DenimBlue,
+		}
+	}
+
+	craftRecipe SewDressLong
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+		NeedToBeLearn = True,
+        AutoLearnAll = Tailoring:3,
+        MetaRecipe = SewDressKnees,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 [BurlapPiece;FabricRoll_Cotton;FabricRoll_DenimBlack;FabricRoll_DenimBlue;FabricRoll_DenimDarkBlue] flags[InheritColor] mappers[fabricType],
+			item 1 tags[Thread],
+		}
+		outputs
+		{
+			item 1 mapper:fabricType,
+		}
+		itemMapper fabricType
+		{
+			Base.Dress_Long_Crafted_Burlap = Base.BurlapPiece,
+			Base.Dress_Long_Crafted_Cotton = Base.FabricRoll_Cotton,
+			Base.Dress_Long_Crafted_Denim = Base.FabricRoll_DenimDarkBlue,
+			Base.Dress_Long_Crafted_DenimBlack = Base.FabricRoll_DenimBlack,
+			Base.Dress_Long_Crafted_DenimLight = Base.FabricRoll_DenimBlue,
+		}
+	}
+
+	craftRecipe SewHeadSack
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:5,
+		AllowBatchCraft = False,
+		OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 [BurlapPiece;FabricRoll_Cotton;Sheet] flags[InheritColor] mappers[fabricType],
+			item 1 tags[Thread],
+		}
+		outputs
+		{
+			item 1 mapper:fabricType,
+		}
+		itemMapper fabricType
+		{
+			Base.Hat_HeadSack_Burlap = Base.BurlapPiece,
+			Base.Hat_HeadSack_Cotton = Base.FabricRoll_Cotton,
+			Base.Hat_HeadSack_Cotton = Base.Sheet,
+		}
+	}
+
+	craftRecipe SewRagBandana
+	{
+		timedAction = SewingCloth,
+		Time = 100,
+        xpAward = Tailoring:2,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 2 [Base.RippedSheets],
+			item 1 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 Base.Hat_RagBandana,
+		}
+	}
+
+	craftRecipe SewHeadwrap
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:5,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 5 [Base.RippedSheets;2:Base.BurlapPiece] mode:destroy mappers[ragType] flags[IsExclusive],
+			item 2 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 mapper:ragType,
+		}
+		itemMapper ragType
+		{
+			Base.Hat_ShemaghFull_Burlap = Base.BurlapPiece,
+			Base.Hat_ShemaghFull_Cotton = Base.RippedSheets,
+
+            default = Base.Hat_ShemaghFull_Cotton,
+		}
+	}
+
+	craftRecipe SewHandwrap
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:5,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 6 [Base.DenimStrips;Base.LeatherStrips;Base.RippedSheets;2:Base.BurlapPiece] mode:destroy mappers[ragType]flags[IsExclusive],
+			item 2 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 mapper:ragType,
+		}
+		itemMapper ragType
+		{
+			Base.Gloves_BurlapWrap = Base.BurlapPiece,
+			Base.Gloves_DenimWrap = Base.DenimStrips,
+			Base.Gloves_LeatherWrap = Base.LeatherStrips,
+			Base.Gloves_RagWrap = Base.RippedSheets,
+
+            default = Base.Gloves_RagWrap,
+		}
+	}
+
+
+	craftRecipe SewImprovisedBandeau
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:5,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 4 [Base.DenimStrips;Base.LeatherStrips;Base.RippedSheets;1:Base.BurlapPiece] mode:destroy mappers[ragType]flags[IsExclusive],
+			item 2 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 mapper:ragType,
+		}
+		itemMapper ragType
+		{
+			Base.Bandeau_Burlap = Base.BurlapPiece,
+			Base.Bandeau_Denim = Base.DenimStrips,
+			Base.Bandeau_Rag = Base.RippedSheets,
+
+            default = Base.Bandeau_Rag,
+		}
+	}
+
+	craftRecipe SewImprovisedBriefs
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:5,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 4 [Base.DenimStrips;Base.LeatherStrips;Base.RippedSheets;1:Base.BurlapPiece] mode:destroy mappers[ragType]flags[IsExclusive],
+			item 1 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 mapper:ragType,
+		}
+		itemMapper ragType
+		{
+			Base.Briefs_Burlap = Base.BurlapPiece,
+			Base.Briefs_Denim = Base.DenimStrips,
+			Base.Briefs_Rag = Base.RippedSheets,
+
+            default = Base.Briefs_Rag,
+		}
+	}
+
+	craftRecipe SewFootwrap
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:5,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 6 [Base.DenimStrips;Base.LeatherStrips;Base.RippedSheets;2:Base.BurlapPiece] mode:destroy mappers[ragType] flags[IsExclusive],
+			item 1 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 mapper:ragType,
+		}
+		itemMapper ragType
+		{
+			Base.Shoes_BurlapWrap = Base.BurlapPiece,
+			Base.Shoes_DenimWrap = Base.DenimStrips,
+			Base.Shoes_LeatherWrap = Base.LeatherStrips,
+			Base.Shoes_RagWrap = Base.RippedSheets,
+
+            default = Base.Shoes_DenimWrap,
+		}
+	}
+/*
+	craftRecipe SewHeadwrapBurlap
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:5,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 2 [Base.BurlapPiece],
+			item 1 tags[Thread],
+		}
+		outputs
+		{
+			item 1 Base.Hat_ShemaghFull_Burlap,
+		}
+	}
+*/
+	craftRecipe SewLongjohns
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:30,
+		AllowBatchCraft = False,
+		OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:3,
+		NeedToBeLearn = True,
+        AutoLearnAll = Tailoring:5,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 5 [BurlapPiece;FabricRoll_Cotton] flags[InheritColor] mappers[fabricType],
+			item 5 tags[Thread],
+		}
+		outputs
+		{
+			item 1 mapper:fabricType,
+		}
+		itemMapper fabricType
+		{
+			Base.LongJohns_Crafted_Burlap = Base.BurlapPiece,
+			Base.LongJohns_Crafted_Cotton = Base.FabricRoll_Cotton,
+		}
+	}
+
+	craftRecipe SewLongjohnsBottom
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:20,
+		AllowBatchCraft = False,
+		OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:2,
+		NeedToBeLearn = True,
+        AutoLearnAll = Tailoring:4,
+        MetaRecipe = SewLongjohns,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 3 [BurlapPiece;FabricRoll_Cotton] flags[InheritColor] mappers[fabricType],
+			item 3 tags[Thread],
+		}
+		outputs
+		{
+			item 1 mapper:fabricType,
+		}
+		itemMapper fabricType
+		{
+			Base.LongJohns_Bottoms_Crafted_Burlap = Base.BurlapPiece,
+			Base.LongJohns_Bottoms_Crafted_Cotton = Base.FabricRoll_Cotton,
+		}
+	}
+
+	craftRecipe SewPillow
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        SkillRequired = Tailoring:1,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 [Base.FabricRoll_Cotton],
+			item 1 tags[Thread],
+			item 100 [Base.ChickenFeather;Base.TurkeyFeather;10:Base.CottonBalls;5:Base.WoolRaw] flags[IsExclusive],
+		}
+		outputs
+		{
+			item 1 Base.Pillow_Crafted,
+		}
+	}
+
+	craftRecipe SewSack
+	{
+        timedAction = SewingCloth,
+		Time = 200,
+		Tags = InHandCraft,
+        category = Tailoring,
+        xpAward = Tailoring:5,
+        needTobeLearn = false,
+		inputs
+		{
+			item 1 [Base.BurlapPiece],
+            item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+            item 1 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 Base.EmptySandbag,
+		}
+	}
+
+	craftRecipe SewSackGunny
+	{
+        timedAction = SewingCloth,
+		Time = 200,
+		Tags = InHandCraft,
+        category = Tailoring,
+        xpAward = Tailoring:5,
+        needTobeLearn = false,
+		inputs
+		{
+			item 2 [Base.BurlapPiece],
+            item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+            item 1 tags[Thread],
+		}
+		outputs
+		{
+			item 1 Base.Bag_Gunny,
+		}
+	}
+
+	craftRecipe SewShirt
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:20,
+		AllowBatchCraft = False,
+		OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:2,
+		NeedToBeLearn = True,
+        AutoLearnAll = Tailoring:4,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 3 [BurlapPiece;FabricRoll_Cotton;FabricRoll_DenimBlack;FabricRoll_DenimBlue;FabricRoll_DenimDarkBlue] flags[InheritColor] mappers[fabricType],
+			item 3 tags[Thread],
+			item 3 tags[Button],
+		}
+		outputs
+		{
+			item 1 mapper:fabricType,
+		}
+		itemMapper fabricType
+		{
+			Base.Shirt_Crafted_Burlap = Base.BurlapPiece,
+			Base.Shirt_Crafted_Cotton = Base.FabricRoll_Cotton,
+			Base.Shirt_Crafted_Denim = Base.FabricRoll_DenimDarkBlue,
+			Base.Shirt_Crafted_DenimBlack = Base.FabricRoll_DenimBlack,
+			Base.Shirt_Crafted_DenimLight = Base.FabricRoll_DenimBlue,
+		}
+	}
+
+	craftRecipe SewShirtSleeveless
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+		NeedToBeLearn = True,
+        AutoLearnAll = Tailoring:3,
+        MetaRecipe = SewShirt,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 2 [BurlapPiece;FabricRoll_Cotton;FabricRoll_DenimBlack;FabricRoll_DenimBlue;FabricRoll_DenimDarkBlue] flags[InheritColor] mappers[fabricType],
+			item 2 tags[Thread],
+			item 3 tags[Button],
+		}
+		outputs
+		{
+			item 1 mapper:fabricType,
+		}
+		itemMapper fabricType
+		{
+			Base.Shirt_NoSleeves_Crafted_Burlap = Base.BurlapPiece,
+			Base.Shirt_NoSleeves_Crafted_Cotton = Base.FabricRoll_Cotton,
+			Base.Shirt_NoSleeves_Crafted_Denim = Base.FabricRoll_DenimDarkBlue,
+			Base.Shirt_NoSleeves_Crafted_DenimBlack = Base.FabricRoll_DenimBlack,
+			Base.Shirt_NoSleeves_Crafted_DenimLight = Base.FabricRoll_DenimBlue,
+		}
+	}
+
+	craftRecipe SewSkirtKnees
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+		NeedToBeLearn = True,
+        AutoLearnAll = Tailoring:3,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 2 [BurlapPiece;FabricRoll_Cotton;FabricRoll_DenimBlack;FabricRoll_DenimBlue;FabricRoll_DenimDarkBlue] flags[InheritColor] mappers[fabricType],
+			item 2 tags[Thread],
+		}
+		outputs
+		{
+			item 1 mapper:fabricType,
+		}
+		itemMapper fabricType
+		{
+			Base.Skirt_Knees_Crafted_Burlap = Base.BurlapPiece,
+			Base.Skirt_Knees_Crafted_Cotton = Base.FabricRoll_Cotton,
+			Base.Skirt_Knees_Crafted_Denim = Base.FabricRoll_DenimDarkBlue,
+			Base.Skirt_Knees_Crafted_DenimBlack = Base.FabricRoll_DenimBlack,
+			Base.Skirt_Knees_Crafted_DenimLight = Base.FabricRoll_DenimBlue,
+		}
+	}
+
+	craftRecipe SewSkirtLong
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+		NeedToBeLearn = True,
+        AutoLearnAll = Tailoring:3,
+        MetaRecipe = SewSkirtKnees,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 3 [BurlapPiece;FabricRoll_Cotton;FabricRoll_DenimBlack;FabricRoll_DenimBlue;FabricRoll_DenimDarkBlue] flags[InheritColor] mappers[fabricType],
+			item 3 tags[Thread],
+		}
+		outputs
+		{
+			item 1 mapper:fabricType,
+		}
+		itemMapper fabricType
+		{
+			Base.Skirt_Long_Crafted_Burlap = Base.BurlapPiece,
+			Base.Skirt_Long_Crafted_Cotton = Base.FabricRoll_Cotton,
+			Base.Skirt_Long_Crafted_Denim = Base.FabricRoll_DenimDarkBlue,
+			Base.Skirt_Long_Crafted_DenimBlack = Base.FabricRoll_DenimBlack,
+			Base.Skirt_Long_Crafted_DenimLight = Base.FabricRoll_DenimBlue,
+		}
+	}
+
+	craftRecipe SewTrousers
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:30,
+		AllowBatchCraft = False,
+		OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:3,
+		NeedToBeLearn = True,
+        AutoLearnAll = Tailoring:5,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 3 [BurlapPiece;FabricRoll_Cotton;FabricRoll_DenimBlack;FabricRoll_DenimBlue;FabricRoll_DenimDarkBlue] flags[InheritColor] mappers[fabricType],
+			item 3 tags[Thread],
+		}
+		outputs
+		{
+			item 1 mapper:fabricType,
+		}
+		itemMapper fabricType
+		{
+			Base.Trousers_Crafted_Burlap = Base.BurlapPiece,
+			Base.Trousers_Crafted_Cotton = Base.FabricRoll_Cotton,
+			Base.Trousers_Crafted_Denim = Base.FabricRoll_DenimDarkBlue,
+			Base.Trousers_Crafted_DenimBlack = Base.FabricRoll_DenimBlack,
+			Base.Trousers_Crafted_DenimLight = Base.FabricRoll_DenimBlue,
+		}
+	}
+
+	craftRecipe ShortenSkirt
+	{
+		timedAction = SewingCloth,
+		Time = 60,
+		Tags = AnySurfaceCraft,
+		OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+        category = Tailoring,
+        xpAward = Tailoring:2,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 [Base.Skirt_Long;Base.Skirt_Normal;Base.Skirt_Knees;Base.Skirt_Short] flags[InheritColor;IsNotWorn] mappers[skirtType],
+		}
+		outputs
+		{
+			item 1 mapper:skirtType,
+			item 1 Base.RippedSheets,
+		}
+		itemMapper skirtType
+		{
+			Base.Skirt_Normal = Base.Skirt_Long,
+			Base.Skirt_Knees = Base.Skirt_Normal,
+			Base.Skirt_Short = Base.Skirt_Knees,
+			Base.Skirt_Mini = Base.Skirt_Short,
+		}
+	}
+
+	craftRecipe ShortenSleeves
+	{
+		timedAction = SewingCloth,
+		Time = 60,
+		Tags = AnySurfaceCraft,
+		OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+        category = Tailoring,
+        xpAward = Tailoring:2,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 [Base.Shirt_CropTopTINT;Base.Shirt_FormalWhite;Base.Shirt_FormalTINT;Base.Tshirt_WhiteLongSleeve;Base.Tshirt_WhiteLongSleeveTINT;Base.Tshirt_LongSleeve_HuntingCamo] flags[InheritColor;IsNotWorn] mappers[shirtType],
+		}
+		outputs
+		{
+			item 1 mapper:shirtType,
+			item 1 Base.RippedSheets,
+		}
+		itemMapper shirtType
+		{
+			Base.Shirt_CropTopNoArmTINT = Base.Shirt_CropTopTINT,
+			Base.Shirt_FormalWhite_ShortSleeve = Base.Shirt_FormalWhite,
+			Base.Shirt_FormalWhite_ShortSleeveTINT = Base.Shirt_FormalTINT,
+			Base.Tshirt_WhiteTINT = Base.Tshirt_WhiteLongSleeve,
+			Base.Tshirt_WhiteTINT = Base.Tshirt_WhiteLongSleeveTINT,
+			Base.Tshirt_HuntingCamo = Base.Tshirt_LongSleeve_HuntingCamo,
+		}
+	}
+
+	craftRecipe ShortenSocks
+	{
+		timedAction = SewingCloth,
+		Time = 60,
+		Tags = AnySurfaceCraft,
+		OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+        category = Tailoring,
+        xpAward = Tailoring:2,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 [Base.Socks_Long;Base.Socks_Long_Black;Base.Socks_Long_White] flags[InheritColor;IsNotWorn] mappers[socksType],
+		}
+		outputs
+		{
+			item 1 mapper:socksType,
+		}
+		itemMapper socksType
+		{
+			Base.Socks_Ankle = Base.Socks_Long,
+			Base.Socks_Ankle_Black = Base.Socks_Long_Black,
+			Base.Socks_Ankle_White = Base.Socks_Long_White,
+		}
+	}
+
+	craftRecipe ShortenTrousers
+	{
+		timedAction = SewingCloth,
+		Time = 60,
+		Tags = AnySurfaceCraft,
+		OnCreate = Recipe.OnCreate.InheritTextureVariation,
+        category = Tailoring,
+        xpAward = Tailoring:2,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 [Base.Trousers_Denim;Base.Shorts_LongDenim] flags[IsNotWorn] mappers[pantsType],
+		}
+		outputs
+		{
+			item 1 mapper:pantsType,
+			item 1 Base.DenimStrips,
+		}
+		itemMapper pantsType
+		{
+			Base.Shorts_LongDenim = Base.Trousers_Denim,
+			Base.Shorts_ShortDenim = Base.Shorts_LongDenim,
+		}
+	}
+
+	/******* SCRAPPING/RECLAIMING *******/
+
+    /* note that it's intentional that it requires CLEAN Rags and Strips */
+    /* the onCreate function ensures that the output Thread item only has 1 use of thread, and is not an entire roll */
+	craftRecipe PickThread
+	{
+        timedAction = SewingCloth,
+		Time = 200,
+        tags = AnySurfaceCraft,
+        category = Tailoring,
+		/*OnCreate = Recipe.OnCreate.PickThread,*/
+        SkillRequired = Tailoring:1,
+		inputs
+		{
+			item 1 [Base.RippedSheets;Base.DenimStrips] flags[Prop2] mode:destroy,
+			item 1 tags[SewingNeedle;Tweezers;Awl] mode:keep flags[Prop1],
+		}
+		outputs
+		{
+			item 1 Base.Thread flags[HasOneUse],
+		}
+	}
+	craftRecipe PickAramidThread
+	{
+        timedAction = SewingCloth,
+		Time = 400,
+        tags = AnySurfaceCraft,
+        category = Tailoring,
+		OnCreate = Recipe.OnCreate.PickAramidThread,
+        SkillRequired = Tailoring:2,
+		inputs
+		{
+			item 1 tags[PickAramidThread] flags[AllowDestroyedItem;IsNotWorn] mode:destroy,
+			item 1 tags[Scissors] mode:keep flags[IsNotDull;MayDegrade],
+			item 1 tags[Awl;Pliers] mode:keep flags[Prop1;MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Thread_Aramid,
+		}
+	}
+
+	craftRecipe MakeSinewThread
+	{
+        timedAction = MakingHammer_Surface,
+		Time = 200,
+        tags = AnySurfaceCraft,
+        category = Tailoring,
+		/*OnCreate = Recipe.OnCreate.PickThread,*/
+		inputs
+		{
+			item 1 [Base.AnimalSinew],
+            item 1 tags[HammerStone;Hammer;Mallet;KnappingTool] mode:keep flags[Prop1;MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Thread_Sinew flags[HasOneUse],
+		}
+	}
+
+	craftRecipe ScrapSack
+	{
+        timedAction = SewingCloth,
+		Time = 200,
+		Tags = InHandCraft,
+        category = Tailoring,
+        needTobeLearn = false,
+		inputs
+		{
+			item 1 tags[BurlapBag],
+            item 1 tags[SharpKnife;Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+		}
+		outputs
+		{
+			item 1 Base.BurlapPiece,
+		}
+	}
+
+	craftRecipe ScrapSackLarge
+	{
+        timedAction = SewingCloth,
+		Time = 200,
+		Tags = InHandCraft,
+        category = Tailoring,
+        needTobeLearn = false,
+		inputs
+		{
+			item 1 tags[LargeSack],
+            item 1 tags[SharpKnife;Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+		}
+		outputs
+		{
+			item 2 Base.BurlapPiece,
+		}
+	}
+
+	craftRecipe UnmakeSheetSlingBag
+	{
+		timedAction = Making,
+		Time = 50,
+		OnTest = Recipe.OnTest.EmptyBag,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Tailoring,
+		inputs
+		{
+			item 1 [Base.Bag_SheetSlingBag;Base.Bag_TarpSlingBag] flags[IsNotWorn;IsEmpty] mappers[SheetMapper],
+		}
+        outputs
+        {
+            item 1 mapper:SheetMapper,
+        }
+        itemMapper SheetMapper
+        {
+            Base.Tarp = Base.Bag_TarpSlingBag,
+
+            default = Base.Sheet,
+        }
+	}
+
+	craftRecipe UntieRopeBelt
+	{
+        timedAction = Making,
+        Time = 50,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Tailoring,
+		inputs
+		{
+			item 1 [Base.RopeBelt] flags[IsNotWorn],
+		}
+		outputs
+		{
+			item 1 Base.Rope,
+		}
+	}
+
+	craftRecipe MakeSheetSlingBag
+	{
+		timedAction = MakeSheetSlingBag,
+		Time = 50,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Tailoring,
+		inputs
+		{
+			item 1 [Base.Sheet],
+		}
+		outputs
+		{
+			item 1 Base.Bag_SheetSlingBag,
+		}
+	}
+
+    craftRecipe MakeTireSandals
+    {
+        time        = 180,
+        tags            = AnySurfaceCraft,
+        SkillRequired = Tailoring:1;Maintenance:1,
+        timedAction = CraftArmourPiece,
+        xpAward = Tailoring:10;Maintenance:10,
+        category = Tailoring,
+        inputs
+        {
+            item 1 [Base.TirePiece] flags[Prop2],
+            item 2 [Base.LeatherStrips],
+            item 2 [Base.Buckle],
+            item 1 tags[SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+            item 1 tags[DrillWood;DrillMetal;DrillWoodPoor] mode:keep flags[MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[Thread],
+            item 1 tags[MetalSaw;BoltCutters] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.Shoes_TireSandals,
+        }
+    }
+
+	craftRecipe TieRopeBelt
+	{
+        timedAction = Making,
+        Time = 50,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Tailoring,
+		inputs
+		{
+			item 1 [Base.Rope],
+		}
+		outputs
+		{
+			item 1 Base.RopeBelt,
+		}
+	}
+
+	craftRecipe WeaveTwineShoes
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+        needTobeLearn = true,
+        AutoLearnAny = Tailoring:4,
+		inputs
+		{
+			item 5 [Base.Twine],
+		}
+		outputs
+		{
+			item 1 Base.Shoes_Twine,
+		}
+	}
+
+	/******* BEARS *******/
+
+	craftRecipe SewBear
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        SkillRequired = Tailoring:4,
+        xpAward = Tailoring:25,
+		AllowBatchCraft = False,
+		OnCreate = Recipe.OnCreate.InheritColorFromMaterial,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[SharpnessCheck;IsNotDull],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 [BurlapPiece;FabricRoll_Cotton;FabricRoll_DenimBlack;FabricRoll_DenimBlue;FabricRoll_DenimDarkBlue] flags[InheritColor] mappers[fabricType],
+			item 1 tags[Thread],
+			item 2 [Base.Button],
+			item 100 [Base.ChickenFeather;Base.TurkeyFeather;10:Base.CottonBalls;5:Base.WoolRaw] flags[IsExclusive],
+		}
+		outputs
+		{
+			item 1 mapper:fabricType,
+		}
+		itemMapper fabricType
+		{
+			Base.ToyBear_Crafted_Burlap = Base.BurlapPiece,
+
+			default = Base.ToyBear_Crafted_Cotton,
+		}
+	}
+}

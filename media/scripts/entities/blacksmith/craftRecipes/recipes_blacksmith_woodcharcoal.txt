@@ -1,0 +1,66 @@
+module Base
+{
+    craftRecipe MakeWoodCharcoal
+    {
+        /* time        = 3000,*/
+        time        = 20,
+        tags = WoodCharcoal,
+
+        inputs
+        {
+            item 2 [2:Base.Log;3:Base.LargeBranch;6:Base.Plank] flags[IsExclusive;AllowDestroyedItem],
+        }
+        outputs
+        {
+            item 12 Base.CharcoalCrafted,
+        }
+    }
+
+    craftRecipe MakeWoodCharcoalLarge
+    {
+        /* time        = 3000,*/
+        time        = 20,
+        tags = WoodCharcoal,
+
+        inputs
+        {
+            item 9 tags[MakeWoodCharcoalLarge] flags[AllowDestroyedItem],
+        }
+        outputs
+        {
+            item 12 Base.CharcoalCrafted,
+        }
+    }
+
+    craftRecipe MakeWoodCharcoalMedium
+    {
+        /* time        = 3000,*/
+        time        = 20,
+        tags = WoodCharcoal,
+
+        inputs
+        {
+            item 12 tags[MakeWoodCharcoalMedium] flags[AllowDestroyedItem],
+        }
+        outputs
+        {
+            item 12 Base.CharcoalCrafted,
+        }
+    }
+
+    craftRecipe MakeWoodCharcoalSmall
+    {
+        /* time        = 3000,*/
+        time        = 20,
+        tags = WoodCharcoal,
+
+        inputs
+        {
+            item 18 tags[MakeWoodCharcoalSmall] flags[AllowDestroyedItem],
+        }
+        outputs
+        {
+            item 12 Base.CharcoalCrafted,
+        }
+    }
+}

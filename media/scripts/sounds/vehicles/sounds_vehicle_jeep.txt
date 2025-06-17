@@ -1,0 +1,188 @@
+module Base
+{
+	sound VehicleEngineJeep
+	{
+		category = Vehicle,
+		master = VehicleEngine,
+		clip
+		{
+			event = Vehicle/Jeep/Engine,
+		}
+	}
+
+	sound VehicleIgnitionFailJeep
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/IgnitionFail,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleHornJeep
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/Horn,
+		}
+	}
+
+	sound VehicleAlarmJeep
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/Alarm,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleDoorIsLockedJeep
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/Door/IsLocked,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleDoorOpenJeep
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/Door/Open,
+		}
+	}
+
+	sound VehicleDoorCloseJeep
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/Door/Close,
+		}
+	}
+
+	sound LockVehicleDoorJeep
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/Door/Lock,
+		}
+	}
+
+	sound UnlockVehicleDoorJeep
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/Door/UnLock,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleHoodCloseJeep
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/Hood/Close,
+		}
+	}
+
+	sound VehicleHoodCloseJeepStart
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/Hood/Close/Start,
+		}
+	}
+
+	sound VehicleHoodCloseJeepEnd
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/Hood/Close/End,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleHoodOpenJeep
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/Hood/Open,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleTrunkCloseJeep
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/Trunk/Close,
+		}
+	}
+
+	sound VehicleTrunkCloseJeepStart
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/Trunk/Close/Start,
+		}
+	}
+
+	sound VehicleTrunkCloseJeepEnd
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/Trunk/Close/End,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleTrunkOpenJeep
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/Trunk/Open,
+		}
+	}
+
+	sound VehicleTrunkLockJeep
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/Trunk/Lock,
+		}
+	}
+
+	sound VehicleTrunkUnlockJeep
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Jeep/Trunk/UnLock,
+		}
+	}
+}

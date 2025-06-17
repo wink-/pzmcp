@@ -1,0 +1,95 @@
+module Base
+{
+    stringList Recipes_Advanced_Forge
+    {
+
+        Extract Workable Iron From Bloom,
+        Make Steel Bar Quarters,
+
+        Make Nail-Spiked Cudgel,
+        Make Railspike Baseball Bat,
+        Make Railspike Cudgel,
+        Make Railspike Iron Pipe,
+        Make Railspike Long Handle,
+        Make Railspike Short Bat,
+        Make Railspike Tree Branch,
+        Make Sawblade Baseball Bat,
+        Make Sawblade Cudgel,
+        Make Sawblade Long Handle,
+        Make Sawblade Short Bat,
+    }
+
+    xuiSkin default
+    {
+        entity ES_Forge_III
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Advanced Forge,
+            Icon                = Item_Anvil_Forged,
+
+            /*components
+            {
+                CraftLogic
+                {
+                    LuaPanelClass           = ISCraftDefaultPanel,
+                    DisplayName             = Advanced Forge,
+                    Icon                    = Item_Anvil_Forged,
+                }
+            }*/
+        }
+    }
+
+    entity Advanced_Forge
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Forge_III,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = PrimitiveForge;Forge;AdvancedForge,
+        }
+
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = crafted_02_25 crafted_01_18 crafted_01_39,
+                    row = crafted_02_24,
+                    row = crafted_02_32,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = crafted_02_26 crafted_02_27 crafted_02_33,
+                    row = crafted_01_35,
+                    row = crafted_01_55,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = Test,
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 1 [Base.MasonsTrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 30 [Base.StoneBlock],
+                item 1 tags[Concrete] flags[DontRecordInput],
+                item 1 [Base.BlacksmithAnvil],
+                item 1 [Base.BucketLargeWood],
+                item 1 [Base.Log],
+                item 1 [Base.LargeBellows],
+            }
+        }
+    }
+}

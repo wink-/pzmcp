@@ -1,0 +1,161 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_RainCollectorCrate_Tarp
+        {
+            LuaWindowClass      = ISEntityTabWindow,
+            DisplayName         = Rain Collector Crate Tarp,
+            Icon                = Build_RainCollectorCrate,
+        }
+
+        entity ES_RainCollectorBarrel_Tarp
+        {
+            LuaWindowClass      = ISEntityTabWindow,
+            DisplayName         = Rain Collector Barrel Tarp,
+            Icon                = Build_RainCollectorBarrel,
+        }
+    }
+
+    entity RainCollector_Tarp
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_RainCollectorCrate_Tarp,
+            uiEnabled       = false,
+        }
+
+        component FluidContainer
+        {
+            ContainerName   = Collector,
+            capacity        = 400,
+	        RainFactor	    = 0.4,
+            InitialPercentMin      = 0.0,
+            InitialPercentMax      = 0.0,
+        }
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = carpentry_02_120,
+                }
+            }
+        }
+        
+                    
+        component CraftRecipe
+        {
+            timedAction   = BuildWoodenStructureMedium,
+            time          = 50,
+            category      = Outdoors,
+            tags          = Carpentry,
+            SkillRequired = Woodwork:3,
+            xpAward       = Woodwork:30,
+            ToolTip       = Tooltip_craft_rainCollectorDesc,
+
+            inputs
+            {
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+                item 1 [Base.Tarp],
+            }
+        }
+
+    }
+
+    entity RainCollectorRound_Tarp
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_RainCollectorBarrel_Tarp,
+            uiEnabled       = false,
+        }
+
+        component FluidContainer
+        {
+            ContainerName   = Collector,
+            capacity        = 600,
+            RainFactor	    = 0.25,
+            InitialPercentMin      = 0.0,
+            InitialPercentMax      = 0.0,
+        }
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = carpentry_02_124,
+                }
+            }
+        }
+        
+
+        component CraftRecipe
+        {
+            timedAction   = BuildWoodenStructureMedium,
+            time          = 50,
+            category      = Outdoors,
+            tags          = Carpentry,
+            SkillRequired = Woodwork:5,
+            xpAward       = Woodwork:50,
+            ToolTip       = Tooltip_craft_rainCollectorDesc,
+
+            inputs
+            {
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 6 [Base.Plank],
+                item 5 [Base.Nails],
+                item 1 [Base.Tarp],
+            }
+        }
+
+    }
+/*
+    entity RainCollectorRoundClosed_Tarp
+    {
+        component FluidContainer
+        {
+            ContainerName   = Collector,
+            capacity        = 600,
+            InitialPercentMin      = 0.0,
+            InitialPercentMax      = 0.0,
+        }
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_02_127,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = BuildWoodenStructureMedium,
+            time          = 50,
+            category      = Outdoors,
+            tags          = Carpentry,
+            SkillRequired = Woodwork:5,
+            xpAward       = Woodwork:50,
+            /*
+            inputs
+            {
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+                item 1 [Base.Tarp],
+            }
+            */
+        }
+    }
+*/
+
+}

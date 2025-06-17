@@ -1,0 +1,36 @@
+module Base
+{
+
+	craftRecipe EmptySack
+	{
+        timedAction = UnPackSack,
+		Time = 15,
+		Tags = InHandCraft,
+        category = Packing,
+		inputs
+		{
+			item 1 [Base.Dirtbag;Base.Gravelbag;Base.Sandbag] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.EmptySandbag,
+		}
+	}
+
+	craftRecipe EmptySackClay
+	{
+        timedAction = UnPackSack,
+		Time = 15,
+		Tags = InHandCraft,
+        category = Packing,
+		inputs
+		{
+			item 1 [Base.Claybag] flags[IsFull] mode:destroy,
+		}
+		outputs
+		{
+			item 8 Base.Clay,
+			item 1 Base.EmptySandbag,
+		}
+	}
+}

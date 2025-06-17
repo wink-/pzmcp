@@ -1,0 +1,160 @@
+module Base
+{
+	/******* EGGS - COOKED *******/
+	
+	item EggBoiled
+	{
+		DisplayName = Egg (Boiled),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = EggBoiled,
+		EvolvedRecipe = Sandwich:10;Burger:10;Salad:10;Burrito:10;Taco:5;Soup:10;Stew:10,
+		FoodType = Egg,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -10,
+		Calories = 63,
+		Carbohydrates = 0.32,
+		Lipids = 4.18,
+		Proteins = 5.55,
+		StaticModel = EggBoiled_Ground,
+		WorldStaticModel = EggBoiled_Ground,
+		EvolvedRecipeName = Egg,
+	}
+	
+	item EggOmelette
+	{
+		DisplayName = Omelette,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = EggOmelette,
+		EvolvedRecipe = Sandwich:20;Burger:20;Salad:20;Burrito:20;Taco:10,
+		FoodType = Egg,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -20,
+		Calories = 120,
+		Carbohydrates = 0.52,
+		Lipids = 6.18,
+		Proteins = 10.55,
+		StaticModel = EggOmlette_Ground,
+		WorldStaticModel = EggOmlette_Ground,
+	}
+	
+	item EggPoached
+	{
+		DisplayName = Egg (Poached),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = EggPoached,
+		EvolvedRecipe = Sandwich:10;Burger:10;Salad:10;Burrito:10;Taco:5,
+		FoodType = Egg,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -10,
+		Calories = 63,
+		Carbohydrates = 0.32,
+		Lipids = 4.18,
+		Proteins = 5.55,
+		StaticModel = Egg,
+		WorldStaticModel = EggPoached_Ground,
+	}
+	
+	item EggScrambled
+	{
+		DisplayName = Egg (Scrambled),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = EggScrambled,
+		EvolvedRecipe = Sandwich:20;Burger:20;Salad:20;Burrito:20;Taco:10,
+		FoodType = Egg,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -20,
+		Calories = 120,
+		Carbohydrates = 0.52,
+		Lipids = 6.18,
+		Proteins = 10.55,
+		WorldStaticModel = EggScrambled_Ground,
+	}
+	
+	/******* EGGS - RAW *******/
+	
+	item Egg
+	{
+		DisplayName = Egg,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Egg,
+		DangerousUncooked = TRUE,
+		EvolvedRecipe = Stir fry:7;Rice:7;Pasta:7;Sandwich:7|Cooked;Burger:7|Cooked;Salad:7|Cooked;Burrito:7|Cooked;Taco:3|Cooked;Soup:7;Stew:7,
+		FoodType = Egg,
+		IsCookable = true,
+		/*ReplaceOnCooked = Base.EggBoiled,*/
+		MinutesToCook = 4,
+		MinutesToBurn = 20,
+		DaysFresh = 14,
+		DaysTotallyRotten = 21,
+		HungerChange = -7,
+		Calories = 63,
+		Carbohydrates = 0.32,
+		Lipids = 4.18,
+		Proteins = 5.55,
+		StaticModel = Egg,
+		WorldStaticModel = Egg,
+		Tags = Egg,
+		CookingSound = FryingFood,
+	}
+	
+	item EggCarton
+	{
+		DisplayName = Egg Carton,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1,
+		Icon = EggCarton,
+		DaysFresh = 14,
+		DaysTotallyRotten = 21,
+		StaticModel = EggCarton,
+		WorldStaticModel = EggCarton,
+	}
+	
+	/******* EGGS - FORAGED *******/
+	
+	item WildEggs
+	{
+		DisplayName = Wild Eggs,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = WildEggs,
+		BadCold = true,
+		BadInMicrowave = true,
+		CantBeFrozen = FALSE,
+		DangerousUncooked = TRUE,	
+		EvolvedRecipe = Stir fry:7;Rice:7;Pasta:7;Sandwich:7|Cooked;Burger:7|Cooked;Salad:7|Cooked;Burrito:7|Cooked;Taco:3|Cooked;Soup:7;Stew:7,
+		FoodType = Egg,
+		/*GoodHot = true,*/
+		IsCookable = true,
+		/*ReplaceOnCooked = Base.EggBoiled,*/
+		MinutesToCook = 4,
+		MinutesToBurn = 20,
+		DaysFresh = 14,
+		DaysTotallyRotten = 21,
+		HungerChange = -7,
+		Calories = 63,
+		Carbohydrates = 0.32,
+		Lipids = 4.18,
+		Proteins = 5.55,
+		StaticModel = WildEggs,
+		WorldStaticModel = WildEggs,
+		Tags = Egg,
+		EvolvedRecipeName = Wild Egg,
+		CookingSound = FryingFood,
+	}
+}

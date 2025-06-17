@@ -1,0 +1,424 @@
+module Base
+{
+
+	item Trousers_Crafted_Burlap
+	{
+		DisplayName = Crafted Burlap Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_Crafted_Burlap,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Crafted_Burlap,
+		Insulation = 0.4,
+		ScratchDefense = 10,
+		WindResistance = 0.2,
+		DiscomfortModifier = 0.10,
+		WorldStaticModel = Trousers_Ground,
+        ResearchableRecipes = SewTrousers;SewHidePants,
+	}
+
+	item Trousers_Crafted_Cotton
+	{
+		DisplayName = Cotton Crafted Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_Crafted_Cotton,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Crafted_Cotton,
+		FabricType = Cotton,
+		Insulation = 0.4,
+		ScratchDefense = 10,
+		WindResistance = 0.2,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers;SewHidePants,
+	}
+
+	item Trousers_Crafted_Denim
+	{
+		DisplayName = Denim Crafted Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_Crafted_DarkDenim,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Crafted_Denim,
+		FabricType = Denim,
+		Insulation = 0.4,
+		ScratchDefense = 10,
+		WindResistance = 0.2,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewTrousers;SewHidePants,
+	}
+
+	item Trousers_Crafted_DenimLight
+	{
+		DisplayName = Denim Crafted Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_Crafted_Denim,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Crafted_DenimLight,
+		FabricType = Denim,
+		Insulation = 0.4,
+		ScratchDefense = 10,
+		WindResistance = 0.2,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewTrousers;SewHidePants,
+	}
+
+	item Trousers_Crafted_DenimBlack
+	{
+		DisplayName = Denim Crafted Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_Crafted_BlackDenim,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Crafted_DenimBlack,
+		FabricType = Denim,
+		Insulation = 0.4,
+		ScratchDefense = 10,
+		WindResistance = 0.2,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewTrousers;SewHidePants,
+	}
+
+	item Trousers_Crafted_DenimRandom
+	{
+		DisplayName = Denim Crafted Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = Trousers_Crafted_DarkDenim;Trousers_Crafted_Denim;Trousers_Crafted_BlackDenim,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Crafted_DenimRandom,
+		FabricType = Denim,
+		Insulation = 0.4,
+		ScratchDefense = 10,
+		WindResistance = 0.2,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewTrousers;SewHidePants,
+	}
+
+
+	item LongJohns_Bottoms_Crafted_Burlap
+	{
+		DisplayName = Burlap Long Johns Bottoms,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersLongjohns_Crafted_Burlap,
+		BloodLocation = Trousers,
+		BodyLocation = Legs1,
+		ClothingItem = LongJohns_Bottoms_Crafted_Burlap,
+		Insulation = 0.3,
+		WindResistance = 0.15,
+		WorldStaticModel = Trousers_Ground,
+		ScratchDefense = 5,
+		DiscomfortModifier = 0.20,
+        ResearchableRecipes = SewLongjohns;SewLongjohnsBottom,
+	}
+
+	item LongJohns_Bottoms_Crafted_Cotton
+	{
+		DisplayName = Cotton Long Johns Bottoms,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersLongjohns_Crafted_Cotton,
+		BloodLocation = Trousers,
+		BodyLocation = Legs1,
+		ClothingItem = LongJohns_Bottoms_Crafted_Cotton,
+		FabricType = Cotton,
+		Insulation = 0.3,
+		WindResistance = 0.15,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewLongjohns;SewLongjohnsBottom,
+	}
+
+	item Skirt_Knees_Crafted_Burlap
+	{
+		DisplayName = Crafted Burlap Skirt - Knee-length,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtShort_Crafted_Burlap,
+		BloodLocation = ShortsShort,
+		BodyLocation = Skirt,
+		ClothingItem = Skirt_Knees_Crafted_Burlap,
+		Insulation = 0.1,
+		WindResistance = 0.01,
+		DiscomfortModifier = 0.10,
+		WorldStaticModel = Skirt_Short_Ground,
+		ScratchDefense = 5,
+		Tags = NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers,
+	}
+
+	item Skirt_Knees_Crafted_Cotton
+	{
+		DisplayName = Crafted Cotton Skirt - Knee-length,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtShort_Crafted_Cotton,
+		BloodLocation = ShortsShort,
+		BodyLocation = Skirt,
+		ClothingItem = Skirt_Knees_Crafted_Cotton,
+		FabricType = Cotton,
+		Insulation = 0.1,
+		WindResistance = 0.01,
+		WorldStaticModel = Skirt_Short_Ground,
+		Tags = RipClothingCotton;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers,
+	}
+
+	item Skirt_Knees_Crafted_Denim
+	{
+		DisplayName = Crafted Denim Skirt - Knee-length,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtShort_Crafted_DarkDenim,
+		BloodLocation = ShortsShort,
+		BodyLocation = Skirt,
+		ClothingItem = Skirt_Knees_Crafted_Denim,
+		FabricType = Denim,
+		Insulation = 0.1,
+		WindResistance = 0.01,
+		WorldStaticModel = Skirt_Short_Ground,
+		Tags = RipClothingDenim;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers,
+	}
+
+	item Skirt_Knees_Crafted_DenimBlack
+	{
+		DisplayName = Crafted Denim Skirt - Knee-length,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtShort_Crafted_BlackDenim,
+		BloodLocation = ShortsShort,
+		BodyLocation = Skirt,
+		ClothingItem = Skirt_Knees_Crafted_DenimBlack,
+		FabricType = Denim,
+		Insulation = 0.1,
+		WindResistance = 0.01,
+		WorldStaticModel = Skirt_Short_Ground,
+		Tags = RipClothingDenim;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers,
+	}
+
+	item Skirt_Knees_Crafted_DenimLight
+	{
+		DisplayName = Crafted Denim Skirt - Knee-length,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtShort_Crafted_Denim,
+		BloodLocation = ShortsShort,
+		BodyLocation = Skirt,
+		ClothingItem = Skirt_Knees_Crafted_DenimLight,
+		FabricType = Denim,
+		Insulation = 0.1,
+		WindResistance = 0.01,
+		WorldStaticModel = Skirt_Short_Ground,
+		Tags = RipClothingDenim;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers,
+	}
+
+	item Skirt_Long_Crafted_Burlap
+	{
+		DisplayName = Crafted Burlap Skirt - Long,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtLong_Crafted_Burlap,
+		BloodLocation = Trousers,
+		BodyLocation = LongSkirt,
+		ClothingItem = Skirt_Long_Crafted_Burlap,
+		Insulation = 0.3,
+		RunSpeedModifier = 0.93,
+		WindResistance = 0.2,
+		DiscomfortModifier = 0.12,
+		WorldStaticModel = Skirt_Long_Ground,
+		ScratchDefense = 5,
+		Tags = NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers,
+	}
+
+	item Skirt_Long_Crafted_Cotton
+	{
+		DisplayName = Crafted Cotton Skirt - Long,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtLong_Crafted_Cotton,
+		BloodLocation = Trousers,
+		BodyLocation = LongSkirt,
+		ClothingItem = Skirt_Long_Crafted_Cotton,
+		FabricType = Cotton,
+		Insulation = 0.3,
+		RunSpeedModifier = 0.93,
+		WindResistance = 0.2,
+		WorldStaticModel = Skirt_Long_Ground,
+		Tags = RipClothingCotton;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers,
+	}
+
+	item Skirt_Long_Crafted_Denim
+	{
+		DisplayName = Crafted Denim Skirt - Long,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtLong_Crafted_DarkDenim,
+		BloodLocation = Trousers,
+		BodyLocation = LongSkirt,
+		ClothingItem = Skirt_Long_Crafted_Denim,
+		FabricType = Denim,
+		Insulation = 0.3,
+		RunSpeedModifier = 0.93,
+		WindResistance = 0.2,
+		WorldStaticModel = Skirt_Long_Ground,
+		Tags = RipClothingDenim;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers,
+	}
+
+	item Skirt_Long_Crafted_DenimBlack
+	{
+		DisplayName = Crafted Denim Skirt - Long,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtLong_Crafted_BlackDenim,
+		BloodLocation = Trousers,
+		BodyLocation = LongSkirt,
+		ClothingItem = Skirt_Long_Crafted_DenimBlack,
+		FabricType = Denim,
+		Insulation = 0.3,
+		RunSpeedModifier = 0.93,
+		WindResistance = 0.2,
+		WorldStaticModel = Skirt_Long_Ground,
+		Tags = RipClothingDenim;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers,
+	}
+
+	item Skirt_Long_Crafted_DenimLight
+	{
+		DisplayName = Crafted Denim Skirt - Long,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtLong_Crafted_Denim,
+		BloodLocation = Trousers,
+		BodyLocation = LongSkirt,
+		ClothingItem = Skirt_Long_Crafted_DenimLight,
+		FabricType = Denim,
+		Insulation = 0.3,
+		RunSpeedModifier = 0.93,
+		WindResistance = 0.2,
+		WorldStaticModel = Skirt_Long_Ground,
+		Tags = RipClothingDenim;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers,
+	}
+
+	item Trousers_DeerHide
+	{
+		DisplayName = Pants - Deer Hide,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_Deerhide,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_DeerHide,
+		FabricType = Leather,
+		Insulation = 0.65,
+		RunSpeedModifier = 0.98,
+		ScratchDefense = 20,
+		WindResistance = 0.60,
+		WorldStaticModel = Trousers_Ground,
+        ResearchableRecipes = SewHidePants;SewLeatherPants;SewSheepskinPants;SewTrousers,
+	}
+
+	item Trousers_FaunHide
+	{
+		DisplayName = Pants - Fawn Hide,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_DeerFawnHide,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_FaunHide,
+		FabricType = Leather,
+		Insulation = 0.65,
+		RunSpeedModifier = 0.98,
+		ScratchDefense = 20,
+		WindResistance = 0.60,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingLeather,
+        ResearchableRecipes = SewHidePants;SewLeatherPants;SewSheepskinPants;SewTrousers,
+	}
+
+	item Trousers_Hide
+	{
+		DisplayName = Pants - Hide,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_Hide,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Hide,
+		FabricType = Leather,
+		Insulation = 0.65,
+		RunSpeedModifier = 0.98,
+		ScratchDefense = 20,
+		WindResistance = 0.60,
+		WorldStaticModel = Trousers_Ground,
+        ResearchableRecipes = SewHidePants;SewLeatherPants;SewSheepskinPants;SewTrousers,
+	}
+
+	item Trousers_LeatherCrafted
+	{
+		DisplayName = Pants - Leather,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_BrownLeather,
+		BiteDefense = 20,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_LeatherCrafted,
+		FabricType = Leather,
+		Insulation = 0.65,
+		RunSpeedModifier = 0.98,
+		ScratchDefense = 40,
+		WindResistance = 0.60,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingLeather,
+        ResearchableRecipes = SewHidePants;SewLeatherPants;SewSheepskinPants;SewTrousers,
+	}
+
+	item Trousers_SheepSkin
+	{
+		DisplayName = Sheepskin Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_Sheepskin,
+		BiteDefense = 20,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_SheepSkin,
+		FabricType = Leather,
+		ScratchDefense = 10,
+		Weight = 2,
+		Insulation = 1.0,
+		RunSpeedModifier = 0.95,
+		ScratchDefense = 40,
+		WaterResistance = 0.6,
+		WindResistance = 1.0,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingLeather,
+        ResearchableRecipes = SewHidePants;SewLeatherPants;SewSheepskinPants;SewTrousers,
+	}
+
+}

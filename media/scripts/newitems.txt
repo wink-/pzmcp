@@ -1,0 +1,107 @@
+module Base
+{
+    /* movables */
+
+    item Mov_AntiqueStove
+    {
+        DisplayCategory = Furniture,
+        Type			= Moveable,
+        Icon			= default,
+        Weight          	= 0.5,
+        DisplayName		= Antique Stove,
+        WorldObjectSprite	= appliances_cooking_01_16,
+    }
+
+    item Mov_Lamp1
+    {
+        DisplayCategory = Furniture,
+        Type			= Moveable,
+        Icon			= default,
+        Weight          	= 0.5,
+        DisplayName		= Lamp,
+        WorldObjectSprite	= lighting_indoor_01_8,
+    }
+
+    item Mov_Lamp2
+    {
+        DisplayCategory = Furniture,
+        Type			= Moveable,
+        Icon			= default,
+        Weight          	= 0.5,
+        DisplayName		= Lamp,
+        WorldObjectSprite	= lighting_indoor_01_9,
+    }
+
+    item Mov_Lamp3
+    {
+        DisplayCategory = Furniture,
+        Type			= Moveable,
+        Icon			= default,
+        Weight          	= 0.5,
+        DisplayName		= Lamp,
+        WorldObjectSprite	= lighting_indoor_01_10,
+    }
+
+    item Mov_Lamp4
+    {
+        DisplayCategory = Furniture,
+        Type			= Moveable,
+        Icon			= default,
+        Weight          	= 0.5,
+        DisplayName		= Lamp,
+        WorldObjectSprite	= lighting_indoor_01_11,
+    }
+
+    item Mov_Lamp5
+    {
+        DisplayCategory = Furniture,
+        Type			= Moveable,
+        Icon			= default,
+        Weight          	= 0.5,
+        DisplayName		= Lamp,
+        WorldObjectSprite	= lighting_indoor_01_12,
+    }
+
+    item Mov_Lamp6
+    {
+        DisplayCategory = Furniture,
+        Type			= Moveable,
+        Icon			= default,
+        Weight          	= 0.5,
+        DisplayName		= Lamp,
+        WorldObjectSprite	= lighting_indoor_01_13,
+    }
+
+    item Mov_Microwave
+    {
+        DisplayCategory = Furniture,
+        Type			= Moveable,
+        Icon			= default,
+        Weight          	= 0.5,
+        DisplayName		= Microwave,
+        WorldObjectSprite	= appliances_cooking_01_24,
+    }
+
+    item Mov_Microwave2
+    {
+        DisplayCategory = Furniture,
+        Type			= Moveable,
+        Icon			= default,
+        Weight          	= 0.5,
+        DisplayName		= Microwave,
+        WorldObjectSprite	= appliances_cooking_01_28,
+    }
+
+    item Mov_Toaster
+    {
+        DisplayCategory = Furniture,
+        Type			= Moveable,
+        Icon			= default,
+        Weight          	= 0.5,
+        DisplayName		= Toaster,
+        WorldObjectSprite	= appliances_cooking_01_32,
+    }
+
+/* ALL OF THESE ITEMS HAVE BEEN MIGRATED TO THE CATEGORIZED ITEM FILES IN THE SCRIPTS/ITEMS DIRECTORY */
+}
+

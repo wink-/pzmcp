@@ -1,0 +1,413 @@
+module Base
+{
+    craftRecipe FireBrick
+    {
+        time            = 20,
+        Tags = KilnSmall,
+		category = Pottery,
+
+        inputs
+        {
+            item 3 [Base.ClayBrickUnfired],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 3 Base.ClayBrick,
+        }
+    }
+
+    craftRecipe FireBrickLarge
+    {
+        time            = 20,
+        Tags = KilnLarge,
+		category = Pottery,
+
+        inputs
+        {
+            item 6 [Base.ClayBrickUnfired],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 6 Base.ClayBrick,
+        }
+    }
+
+    craftRecipe FireCeramicCrucible
+    {
+        time            = 20,
+        Tags = KilnSmall;KilnLarge,
+		category = Pottery,
+
+        inputs
+        {
+            item 1 [Base.CeramicCrucibleUnfired;Base.CeramicCrucibleSmallUnfired] mappers[crucibleSize],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 1 mapper:crucibleSize,
+        }
+	itemMapper crucibleSize
+	{
+		Base.CeramicCrucible = Base.CeramicCrucibleUnfired,
+		Base.CeramicCrucibleSmall = Base.CeramicCrucibleSmallUnfired,
+	}
+    }
+
+    craftRecipe FireClayBowl
+    {
+        time            = 20,
+        Tags = KilnSmall;KilnLarge,
+		category = Pottery,
+
+        inputs
+        {
+            item 1 [Base.ClayBowlUnfired],
+		    item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 1 Base.ClayBowl,
+        }
+    }
+
+
+    craftRecipe FireClayIngotMold
+    {
+        time            = 20,
+        Tags = KilnSmall;KilnLarge,
+		category = Pottery,
+
+        inputs
+        {
+            item 1 [Base.ClayIngotMoldUnfired],
+		    item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 1 Base.ClayIngotMold,
+        }
+    }
+
+    craftRecipe FireClayBarMold
+    {
+        time            = 20,
+        Tags = KilnSmall;KilnLarge,
+		category = Pottery,
+
+        inputs
+        {
+            item 1 [Base.ClayBarMoldUnfired],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 1 Base.ClayBarMold,
+        }
+    }
+
+    craftRecipe FireClayJar
+    {
+        time = 20,
+        Tags = KilnSmall;KilnLarge,
+		category = Pottery,
+
+        inputs
+        {
+            item 1 [Base.ClayJarUnfired],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 1 Base.ClayJar,
+        }
+    }
+
+    craftRecipe FireClayMug
+    {
+        time            = 20,
+        Tags = KilnSmall;KilnLarge,
+		category = Pottery,
+
+        inputs
+        {
+            item 1 [Base.ClayMugUnfired;Base.ClayMugGlazedUnfired] mappers[mugShot],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 1 mapper:mugShot,
+        }
+        itemMapper mugShot
+        {
+            Base.ClayMug = Base.ClayMugUnfired,
+            Base.MugWhite = Base.ClayMugGlazedUnfired,
+        }
+    }
+
+    craftRecipe FireClayPipeSegment
+    {
+        time = 20,
+        Tags = KilnSmall;KilnLarge,
+		category = Pottery,
+
+        inputs
+        {
+            item 1 [Base.ClayPipeSegmentUnfired],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 1 Base.ClayPipeSegment,
+        }
+    }
+
+    craftRecipe FireClayPot
+    {
+        time            = 20,
+        Tags = KilnSmall;KilnLarge,
+		category = Pottery,
+
+        inputs
+        {
+            item 1 [Base.ClayPotUnfired],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 1 Base.ClayPot,
+        }
+    }
+
+    craftRecipe FireClaySheetMold
+    {
+        time            = 20,
+        Tags = KilnSmall;KilnLarge,
+		category = Pottery,
+
+        inputs
+        {
+            item 1 [Base.ClaySheetMoldUnfired],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 1 Base.ClaySheetMold,
+        }
+    }
+
+    craftRecipe FireClayShingle
+    {
+        time            = 20,
+        Tags = KilnSmall;KilnLarge,
+		category = Pottery,
+
+        inputs
+        {
+            item 1 [Base.ClayShingleUnfired],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 1 Base.ClayShingle,
+        }
+    }
+
+    craftRecipe FireClayTile
+    {
+        time            = 20,
+        Tags = KilnSmall,
+		category = Pottery,
+
+        inputs
+        {
+            item 4 [Base.ClayTileUnfired],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 4 Base.ClayTile,
+        }
+    }
+
+    craftRecipe FireClayTileLarge
+    {
+        time            = 20,
+        Tags = KilnLarge,
+		category = Pottery,
+
+        inputs
+        {
+            item 8 [Base.ClayTileUnfired],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 8 Base.ClayTile,
+        }
+    }
+
+/*
+    craftRecipe FireCeramicIngotCast
+    {
+        time            = 20,
+        Tags = KilnSmall;KilnLarge,
+		category = Pottery,
+
+        inputs
+        {
+            item 1 [Base.CeramicIngotCastUnfired],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 1 Base.CeramicIngotCast,
+        }
+    }*/
+
+    craftRecipe FireCeramicTeacup
+    {
+        time            = 20,
+        Tags = KilnSmall;KilnLarge,
+		category = Pottery,
+
+        inputs
+        {
+            item 1 [Base.CeramicTeacupUnfired;Base.CeramicTeacupGlazedUnfired] mappers[mugShot],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 1 mapper:mugShot,
+        }
+        itemMapper mugShot
+        {
+            Base.CeramicTeacup = Base.CeramicTeacupUnfired,
+            Base.Teacup = Base.CeramicTeacupGlazedUnfired,
+        }
+    }
+
+    craftRecipe FireGlassBlowingPipe
+    {
+        time            = 20,
+        Tags = KilnSmall;KilnLarge,
+		category = Pottery,
+
+        inputs
+        {
+            item 1 [Base.GlassBlowingPipeUnfired],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 1 Base.GlassBlowingPipe,
+        }
+    }
+
+    craftRecipe FireLimestone
+    {
+        time            = 30,
+        Tags = KilnSmall,
+
+        inputs
+        {
+            item 2 tags[Limestone],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 2 Base.Quicklime,
+        }
+    }
+
+    craftRecipe FireLimestoneLarge
+    {
+        time            = 30,
+        Tags = KilnLarge,
+
+        inputs
+        {
+            item 4 tags[Limestone],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 4 Base.Quicklime,
+        }
+    }
+
+    craftRecipe FireMortarAndPestle
+    {
+        time            = 20,
+        Tags = KilnSmall;KilnLarge,
+		category = Pottery,
+
+        inputs
+        {
+            item 1 [Base.CeramicMortarandPestleUnfired],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 1 Base.CeramicMortarandPestle,
+        }
+    }
+
+    craftRecipe FireSmokingPipe
+    {
+        time = 20,
+        Tags = KilnSmall,
+		category = Pottery,
+
+        inputs
+        {
+            item 1 [Base.SmokingPipeUnfired],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 1 Base.SmokingPipe,
+        }
+    }
+
+    craftRecipe Fire_ClayBlacksmithAnvilMold
+    {
+        time = 20,
+		category = Pottery,
+		Tags = KilnLarge,
+
+        inputs
+        {
+            item 1 [Base.ClayBlacksmithAnvilMoldUnfired],
+            item 1 tags[StartFire],
+            item 1 tags[Log;Charcoal],
+        }
+        outputs
+        {
+            item 1 Base.ClayBlacksmithAnvilMold,
+        }
+    }
+}

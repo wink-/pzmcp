@@ -1,0 +1,4 @@
+module Base
+{
+	/* items migrated to items directory*/
+}

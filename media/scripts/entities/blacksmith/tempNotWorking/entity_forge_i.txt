@@ -1,0 +1,98 @@
+/*module Base
+{
+    stringList Recipes_Primitive_Forge
+    {
+        Crush Limestone,
+        Extract Workable Iron From Bloom,
+        Make Crude Whetstone,
+        Make Iron Blocks,
+        Make Iron Chunks,
+        Make Long Stone Knife,
+        Make Steel Bar Quarters,
+        Make Small Stone Wheel,
+        Make Stone Block from Stone,
+        Make Stones from Large Stone,
+        Make Stone Blade,
+        Make Stone Knife,
+        Make Stone Wheel,
+
+        Make Nail-Spiked Cudgel,
+        Make Railspike Baseball Bat,
+        Make Railspike Cudgel,
+        Make Railspike Iron Pipe,
+        Make Railspike Long Handle,
+        Make Railspike Short Bat,
+        Make Railspike Tree Branch,
+        Make Sawblade Baseball Bat,
+        Make Sawblade Cudgel,
+        Make Sawblade Long Handle,
+        Make Sawblade Short Bat,
+    }
+
+    xuiSkin default
+    {
+        entity ES_Forge_I
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Primitive Forge,
+            Icon                = Item_Anvil_Stone,
+
+            /*components
+            {
+                CraftLogic
+                {
+                    LuaPanelClass           = ISCraftDefaultPanel,
+                    DisplayName             = Forge,
+                    Icon                    = Item_Anvil_Stone,
+                }
+            }*/
+        }
+    }
+
+    entity Forge_Primitive_Forge
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Forge_I,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = PrimitiveForge,
+        }
+
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_01_61 crafted_01_20,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_01_21,
+                    row = crafted_01_62,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 1 [Base.BucketClayCement] mode:use,
+                item 10 [Base.Stone2],
+                item 1 [Base.StoneAnvil],
+            }
+        }
+    }
+}*/

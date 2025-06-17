@@ -1,0 +1,30 @@
+module Base
+{
+	item F_Hair_Stubble
+	{
+		DisplayCategory = MaleBody,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = F_Hair_Stubble,
+		WorldRender = FALSE,
+	}
+	
+	item M_Beard_Stubble
+	{
+		DisplayCategory = MaleBody,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = M_Beard_Stubble,
+		WorldRender = FALSE,
+	}
+	
+	item M_Hair_Stubble
+	{
+		DisplayCategory = MaleBody,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = M_Hair_Stubble,
+		WorldRender = FALSE,
+	}
+}
+

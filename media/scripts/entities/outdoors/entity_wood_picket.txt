@@ -1,0 +1,51 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_Wood_Picket
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Wood Picket,
+			Icon		= Build_WoodPicket,
+		}
+	}
+
+    entity WoodPicket
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Wood_Picket,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+		    isThumpable = false,
+			
+            face W
+            {
+                layer
+                {
+                    row = location_community_cemetary_01_31,
+                }
+            }
+        }
+		
+		component CraftRecipe
+        {
+		    timedAction   = BuildWoodenStructureSmall,
+            time          = 200,
+		    xpAward       = Woodwork:6,
+            category      = Miscellaneous,
+            tags          = Carpentry,
+		    ToolTip       = Tooltip_craft_woodenPicketDesc,
+
+            inputs
+            {
+                item 1 [Base.Plank],
+		        item 1 [Base.SheetRope],
+            }
+        }
+    }
+}

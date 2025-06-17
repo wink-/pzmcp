@@ -1,0 +1,65 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_MetalBigWireFence
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Big Metal Wire Fence,
+			Icon		= Build_DoubleWireFence,
+		}
+	}
+
+    entity MetalBigWireFence
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_MetalBigWireFence,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			LogicClass      = WoodenWall,
+			health          = 400,
+			skillBaseHealth = 50,
+
+            face W
+            {
+                layer
+                {
+                    row = fencing_01_58,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fencing_01_57,
+                }
+            }
+			
+            corner = fencing_01_61,
+        }
+		
+        component CraftRecipe
+        {
+            timedAction   = BuildWireFence,
+            time          = 200,
+            needToBeLearn = true,
+            category      = Welding,
+            SkillRequired = MetalWelding:3,
+            xpAward       = MetalWelding:30,
+            ToolTip       = Tooltip_craft_BigWiredFenceDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.MetalPipe],
+                item 4 [Base.ScrapMetal],
+                item 3 [Base.Wire],
+                item 5 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

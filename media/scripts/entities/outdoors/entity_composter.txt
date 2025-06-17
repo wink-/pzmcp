@@ -1,0 +1,99 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_Composter
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Composter,
+			Icon		= Build_Composter,
+		}
+
+		entity ES_ComposterShoddy
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Composter (Shoddy),
+			Icon		= Build_Composter,
+		}
+	}
+
+    entity Composter
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Composter,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			OnCreate = BuildRecipeCode.composter.OnCreate,
+
+            face W
+            {
+                layer
+                {
+                    row = camping_01_19,
+                }
+            }
+        }
+		
+		component CraftRecipe
+        {
+            OnAddToMenu   = composterLvl2Test,
+		    timedAction   = BuildWoodenStructureMedium,
+            time          = 200,
+            category      = Farming,
+            SkillRequired = Woodwork:6,
+            xpAward       = Woodwork:60,
+            ToolTip       = Tooltip_craft_composterDesc,
+            inputs
+            {
+		        item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+		        item 4 [Base.Nails],
+            }
+        }
+    }
+
+    entity ComposterShoddy
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_ComposterShoddy,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			OnCreate = BuildRecipeCode.composter.OnCreate,
+
+            face W
+            {
+                layer
+                {
+                    row = carpentry_02_116,
+                }
+            }
+        }
+
+		component CraftRecipe
+        {
+            OnAddToMenu   = composterLvl1Test,
+		    timedAction   = BuildWoodenStructureMedium,
+            time          = 200,
+            category      = Farming,
+            SkillRequired = Woodwork:3,
+            xpAward       = Woodwork:30,
+            ToolTip       = Tooltip_craft_composterDesc,
+            inputs
+            {
+		        item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+		        item 4 [Base.Nails],
+            }
+        }
+    }
+}

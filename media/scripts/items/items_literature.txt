@@ -1,0 +1,3501 @@
+module Base
+{
+	item MagazineCrossword
+	{
+		DisplayName = Magazine: Crossword,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 0.5,
+		IconsForTexture = MagazineCrossword1;MagazineCrossword2;MagazineCrossword3,
+		BoredomChange = -20,
+		StressChange = -15,
+	    WorldStaticModelsByIndex	= MagazineCrossword1_Ground;MagazineCrossword2_Ground;MagazineCrossword3_Ground,
+		Tags = ConsumeOnRead;Magazine,
+	}
+	
+	item MagazineWordsearch
+	{
+		DisplayName = Magazine: Wordsearch,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 0.5,
+		IconsForTexture = MagazineWordsearch1;MagazineWordsearch2;MagazineWordsearch3,
+		BoredomChange = -20,
+		StressChange = -15,
+	    WorldStaticModelsByIndex	= MagazineWordSearch1_Ground;MagazineWordSearch2_Ground;MagazineWordSearch3_Ground,
+		Tags = ConsumeOnRead;Magazine,
+	}
+	
+	/******* LITERATURE - MISC. *******/
+	
+	item Book
+	{
+		DisplayName = Book,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 1,
+		Icon = Book,
+		BoredomChange = -50,
+		StressChange = -40,
+		UnhappyChange = -40,
+		OnCreate = SpecialLootSpawns.OnCreateBook,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		Tags = Hardcover;HollowBook,
+	}
+	
+	item ComicBook
+	{
+		DisplayName = Comic Book,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 0.4,
+		Icon = ComicBook,
+		BoredomChange = -30,
+		StressChange = -20,
+		UnhappyChange = -20,
+		OnCreate = SpecialLootSpawns.OnCreateComicBook,
+        StaticModel = ComicBook,
+        WorldStaticModel = ComicBookGround,
+		Tags = Picturebook,
+	}
+	
+	item Doodle
+	{
+		DisplayName = Doodle,
+		DisplayCategory = Memento,
+		Type = Literature,
+		Weight = 0.1,
+		Icon = Paper,
+		StaticModel = Note1,
+        WorldStaticModel = Note1,
+		ReadType = photo,
+		OnCreate = SpecialLootSpawns.OnCreateDoodle,
+        BoredomChange	=	-5,
+        Tags = Picture;IsMemento;FastRead,
+	}
+
+	item DoodleKids
+	{
+		DisplayName = Doodle,
+		DisplayCategory = Memento,
+		Type = Literature,
+		Weight = 0.1,
+		Icon = Paper,
+		StaticModel = Note1,
+        WorldStaticModel = Note1,
+		ReadType = photo,
+		OnCreate = SpecialLootSpawns.OnCreateDoodleKids,
+        BoredomChange	=	-5,
+        Tags = Picture;IsMemento;FastRead,
+	}
+	
+	item HottieZ
+	{
+		DisplayName = Magazine: HottieZ,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineNudie1,
+		BoredomChange = -40,
+		StressChange = -50,
+		OnCreate = SpecialLootSpawns.OnCreateHottieZ,
+		StaticModel = HottieZ,
+		WorldStaticModel = HottieZGround,
+		Tags = Picturebook;IgnoreZombieDensity,
+	}
+
+	item HunkZ
+	{
+		DisplayName = Magazine: HunkZ,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineNudie2,
+		BoredomChange = -40,
+		StressChange = -50,
+		OnCreate = SpecialLootSpawns.OnCreateHunkZ,
+		StaticModel = HottieZ2,
+		WorldStaticModel = HottieZGround2,
+		Tags = Picturebook;IgnoreZombieDensity,
+	}
+	
+	item Journal
+	{
+		DisplayName = Journal,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 1,
+		Icon = Notebook,
+		CanBeWrite = true,
+		PageToWrite = 20,
+		StaticModel = EmptyNotebook,
+		WorldStaticModel = EmptyNotebook,
+		ReadType = newspaper,
+	}
+	
+	item Magazine
+	{
+		DisplayName = Magazine,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine,
+		BoredomChange = -20,
+		StressChange = -15,
+		OnCreate = SpecialLootSpawns.OnCreateMagazine,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineGround,
+		Tags = Magazine,
+		
+	}
+	
+	item Newspaper
+	{
+		DisplayName = Old Newspaper,
+		DisplayCategory = Literature,
+		Type = Literature,
+		ReadType = newspaper,
+		Weight = 0.5,
+		Icon = Newspaper,
+		/*BoredomChange = -15,
+		StressChange = -15,*/
+		StaticModel = Newspaper,
+		WorldStaticModel = Newspaper_Ground,
+        Tags = Newspaper;NewspaperRead;Uninteresting,
+		OnCreate = SpecialLootSpawns.OnCreateOldNewspaper,
+	}
+	
+	item Notebook
+	{
+		DisplayName = Notebook,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Notebook,
+		CanBeWrite = true,
+		PageToWrite = 10,
+		StaticModel = EmptyNotebook,
+		WorldStaticModel = EmptyNotebook,
+		ReadType = newspaper,
+		Tags = Magazine, /* is a magazine for armor crafting purposes*/
+	}
+	
+	item SheetPaper2
+	{
+		DisplayName = Sheet of Paper,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 0.1,
+		Icon = Paper,
+		CanBeWrite = true,
+		PageToWrite = 1,
+		StaticModel = SheetOfPaper,
+		WorldStaticModel = SheetOfPaper,
+		ReadType = newspaper,
+	}
+	
+	item TVMagazine
+	{
+		DisplayName = Magazine: TV Monthly,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 0.3,
+		Icon = Magazine,
+		BoredomChange = -20,
+		StressChange = -15,
+		StaticModel = Magazine,
+		WorldStaticModel = TVMagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateTVMagazine,
+        Tags = Magazine,
+		
+	}
+
+    item Book_AdventureNonFiction
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateAdventureNonFictionBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Art
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateArtBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Baseball
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateBaseballBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Bible
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateBibleBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Biography
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateBiographyBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Business
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateBusinessBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Childs
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateChildsBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Cinema
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateCinemaBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Classic
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateClassicBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_ClassicFiction
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateClassicFictionBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_ClassicNonfiction
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateClassicNonfictionBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Computer
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateComputerBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_CrimeFiction
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateCrimeFictionBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Fantasy
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateFantasyBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Farming
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateFarmingBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Fashion
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateFashionBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Fiction
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateFictionBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_GeneralNonFiction
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateGeneralNonFictionBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_GeneralReference
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateGeneralReferenceBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Golf
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateGolfBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_History
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateHistoryBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Horror
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateHorrorBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Legal
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateLegalBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_LiteraryFiction
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateLiteraryFictionBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Medical
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateMedicalBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Military
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateMilitaryBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_MilitaryHistory
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateMilitaryHistoryBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Music
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateMusicBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Nature
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateNatureBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Occult
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateOccultBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Philosophy
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreatePhilosophyBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Policing
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreatePolicingBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Politics
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreatePoliticsBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Quackery
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateQuackeryBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Religion
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateReligionBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Rich
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateRichBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Romance
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateRomanceBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_SadNonFiction
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateSadNonFictionBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_SchoolTextbook
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateSchoolTextbookBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Science
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateScienceBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_SciFi
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateSciFiBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Sports
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateSportsBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Thriller
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateThrillerBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Travel
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateTravelBook,
+		Tags = Hardcover;HollowBook,
+	}
+    item Book_Western
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Book,
+		StressChange	=	-40,
+		Icon	=	Book,
+		BoredomChange	=	-50,
+		StaticModel = Book,
+		WorldStaticModel = BookClosedGround,
+		OnCreate = SpecialLootSpawns.OnCreateWesternBook,
+		Tags = Hardcover;HollowBook,
+	}
+
+    item Brochure
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Brochure,
+        Icon	=	Brochure,
+		ReadType = photo,
+        StaticModel = Brochure,
+        WorldStaticModel = Brochure,
+        Tags = FastRead,
+		OnCreate = SpecialLootSpawns.OnCreateBrochure,
+    }
+
+    item BusinessCard
+    {
+        DisplayCategory = Junk,
+	  ReadType = newspaper,
+        Weight	=	0.05,
+        Type	=	Literature,
+        DisplayName	=	Business Card,
+        Icon	=	BusinessCard,
+        /*CanBeWrite  =   true,
+        PageToWrite =   1,*/
+		ReadType = photo,
+        StaticModel = BusinessCard,
+        WorldStaticModel = BusinessCard,
+		OnCreate = SpecialLootSpawns.OnCreateBusinessCard,
+        Tags = Uninteresting,
+    }
+
+    item BusinessCard_Personal
+    {
+        DisplayCategory = Junk,
+	    ReadType = newspaper,
+        Weight	=	0.05,
+        Type	=	Literature,
+        DisplayName	=	Business Card,
+        Icon	=	BusinessCard,
+        /*CanBeWrite  =   true,
+        PageToWrite =   1,*/
+		ReadType = photo,
+        StaticModel = BusinessCard,
+        WorldStaticModel = BusinessCard,
+		OnCreate = SpecialLootSpawns.OnCreateIDcard,
+		Tags = Uninteresting;ApplyOwnerName,
+    }
+
+    item BusinessCard_Nolans
+    {
+        DisplayCategory = Junk,
+	  ReadType = newspaper,
+        Weight	=	0.05,
+        Type	=	Literature,
+        DisplayName	=	Business Card,
+        Icon	=	BusinessCard,
+        /*CanBeWrite  =   true,
+        PageToWrite =   1,*/
+		ReadType = photo,
+        StaticModel = BusinessCard,
+        WorldStaticModel = BusinessCard,
+		OnCreate = SpecialLootSpawns.OnCreateBusinessCard_Nolans,
+        Tags = Uninteresting,
+    }
+
+	item Catalog
+	{
+		DisplayName = Catalog,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Catalogue,
+		BoredomChange = -10,
+		StressChange = -10,
+		StaticModel = Catalogue_Open,
+		WorldStaticModel = Catalogue,
+		Tags = Picturebook;Magazine,
+		OnCreate = SpecialLootSpawns.OnCreateCatalogue,
+	}
+
+    item Diary1
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.3,
+        Type	=	Literature,
+		DisplayName	=	Diary,
+		Icon	=	Diary1,
+        CanBeWrite  =   true,
+        PageToWrite =   40,
+		StaticModel = Diary1_Open,
+		WorldStaticModel = Diary1,
+		ReadType = book,
+		Tags = ApplyOwnerName,
+    }
+
+    item Diary2
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.3,
+        Type	=	Literature,
+		DisplayName	=	Diary,
+		Icon	=	Diary2,
+        CanBeWrite  =   true,
+        PageToWrite =   40,
+		StaticModel = Diary1_Open,
+		WorldStaticModel = Diary2,
+		ReadType = book,
+		Tags = ApplyOwnerName,
+    }
+
+    item Flier
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Flier,
+        Icon	=	Flier,
+		ReadType = photo,
+        StaticModel = Flier1,
+        WorldStaticModel = Flier1,
+        Tags = FastRead,
+		OnCreate = SpecialLootSpawns.OnCreateFlier,
+    }
+
+    item Flier_Nolans
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Flier,
+        Icon	=	Flier,
+		ReadType = photo,
+        StaticModel = Flier1,
+        WorldStaticModel = Flier1,
+        Tags = FastRead,
+		OnCreate = SpecialLootSpawns.OnCreateFlier_Nolans,
+    }
+
+    item IndexCard
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Index Card,
+        Icon	=	IndexCard,
+        CanBeWrite  =   true,
+        PageToWrite =   1,
+        WorldStaticModel = IndexCard,
+    }
+
+    item Magazine_Art
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateArtMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Business
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateBusinessMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Car
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateCarMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Childs
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateChildsMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Cinema
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateCinemaMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Crime
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateCrimeMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Fashion
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateFashionMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Firearm
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateFirearmMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Gaming
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateGamingMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Golf
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateGolfMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Health
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateHealthMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Hobby
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateHobbyMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Horror
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateHorrorMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Humor
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateHumorMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Military
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateMilitaryMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Music
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateMusicMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Outdoors
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateOutdoorsMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Police
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreatePoliceMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Popular
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreatePopularMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Rich
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateRichMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Science
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateScienceMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Sports
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateSportsMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Tech
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateTechMagazine,
+		Tags = Magazine,
+
+    }
+
+    item Magazine_Teens
+    {
+        DisplayCategory = Literature,
+		Weight = 0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateTeensMagazine,
+		Tags = Magazine,
+
+    }
+
+    item MenuCard
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Menu,
+        Icon	=	MenuCard,
+        CanBeWrite  =   true,
+        PageToWrite =   1,
+        WorldStaticModel = MenuCard,
+    }
+
+    item Paperback
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateBook,
+		Tags = Softcover,
+	}
+    item Paperback_AdventureNonFiction
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateAdventureNonFictionBook,
+		Tags = Softcover,
+	}
+    item Paperback_Art
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateArtBook,
+		Tags = Softcover,
+	}
+    item Paperback_Baseball
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateBaseballBook,
+		Tags = Softcover,
+	}
+    item Paperback_Bible
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateBibleBook,
+		Tags = Softcover,
+	}
+    item Paperback_Biography
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateBiographyBook,
+		Tags = Softcover,
+	}
+    item Paperback_Business
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateBusinessBook,
+		Tags = Softcover,
+	}
+    item Paperback_Childs
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateChildsBook,
+		Tags = Softcover,
+	}
+    item Paperback_Cinema
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateCinemaBook,
+		Tags = Softcover,
+	}
+    item Paperback_Classic
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateClassicBook,
+		Tags = Softcover,
+	}
+    item Paperback_ClassicFiction
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateClassicFictionBook,
+		Tags = Softcover,
+	}
+    item Paperback_ClassicNonfiction
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateClassicNonfictionBook,
+		Tags = Softcover,
+	}
+    item Paperback_Computer
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateComputerBook,
+		Tags = Softcover,
+	}
+    item Paperback_Conspiracy
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateConspiracyBook,
+		Tags = Softcover,
+		ReadType = book,
+	}
+    item Paperback_CrimeFiction
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateCrimeFictionBook,
+		Tags = Softcover,
+	}
+    item Paperback_Diet
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateDietBook,
+		Tags = Softcover,
+	}
+    item Paperback_Fantasy
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateFantasyBook,
+		Tags = Softcover,
+	}
+    item Paperback_Fashion
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateFashionBook,
+		Tags = Softcover,
+	}
+    item Paperback_Fiction
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateFictionBook,
+		Tags = Softcover,
+	}
+    item Paperback_Golf
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateGolfBook,
+		Tags = Softcover,
+	}
+    item Paperback_Hass
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateHassBook,
+		Tags = Softcover,
+	}
+    item Paperback_History
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateHistoryBook,
+		Tags = Softcover,
+	}
+    item Paperback_Horror
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateHorrorBook,
+		Tags = Softcover,
+	}
+    item Paperback_Legal
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateLegalBook,
+		Tags = Softcover,
+	}
+    item Paperback_LiteraryFiction
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateLiteraryFictionBook,
+		Tags = Softcover,
+	}
+    item Paperback_Medical
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateMedicalBook,
+		Tags = Softcover,
+	}
+    item Paperback_Military
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateMilitaryBook,
+		Tags = Softcover,
+	}
+    item Paperback_MilitaryHistory
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateMilitaryHistoryBook,
+		Tags = Softcover,
+	}
+    item Paperback_Music
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateMusicBook,
+		Tags = Softcover,
+	}
+    item Paperback_Nature
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateNatureBook,
+		Tags = Softcover,
+	}
+    item Paperback_NewAge
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateNewAgeBook,
+		Tags = Softcover,
+	}
+    item Paperback_Occult
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateOccultBook,
+		Tags = Softcover,
+	}
+    item Paperback_Philosophy
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreatePhilosophyBook,
+		Tags = Softcover,
+	}
+    item Paperback_Play
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreatePlayBook,
+		Tags = Softcover,
+	}
+    item Paperback_Policing
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreatePolicingBook,
+		Tags = Softcover,
+	}
+    item Paperback_Politics
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreatePoliticsBook,
+		Tags = Softcover,
+	}
+    item Paperback_Poor
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreatePoorBook,
+		Tags = Softcover,
+	}
+    item Paperback_Quackery
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateQuackeryBook,
+		Tags = Softcover,
+	}
+    item Paperback_Quigley
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateQuigleyBook,
+		Tags = Softcover,
+	}
+    item Paperback_Relationship
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateRelationshipBook,
+		Tags = Softcover,
+	}
+    item Paperback_Religion
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateReligionBook,
+		Tags = Softcover,
+	}
+    item Paperback_Rich
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateRichBook,
+		Tags = Softcover,
+	}
+    item Paperback_Romance
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateRomanceBook,
+		Tags = Softcover,
+	}
+    item Paperback_SadNonFiction
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateSadNonFictionBook,
+		Tags = Softcover,
+	}
+    item Paperback_Scary
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateScaryBook,
+		Tags = Softcover,
+	}
+    item Paperback_Science
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateScienceBook,
+		Tags = Softcover,
+	}
+    item Paperback_SciFi
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateSciFiBook,
+		Tags = Softcover,
+	}
+    item Paperback_SelfHelp
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateSelfHelpBook,
+		Tags = Softcover,
+	}
+    item Paperback_Sexy
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateSexyBook,
+		Tags = Softcover,
+	}
+    item Paperback_Sports
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateSportsBook,
+		Tags = Softcover,
+	}
+    item Paperback_Teens
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateTeensBook,
+		Tags = Softcover,
+	}
+    item Paperback_Thriller
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateThrillerBook,
+		Tags = Softcover,
+	}
+    item Paperback_Travel
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateTravelBook,
+		Tags = Softcover,
+	}
+    item Paperback_TrueCrime
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateTrueCrimeBook,
+		Tags = Softcover,
+	}
+    item Paperback_Western
+	{
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName	=	Paperback,
+		StressChange	=	-40,
+		Icon	=	Novel1,
+		BoredomChange	=	-50,
+		StaticModel = Novel_Open,
+		WorldStaticModel = Novel1,
+		OnCreate = SpecialLootSpawns.OnCreateWesternBook,
+		Tags = Softcover,
+	}
+
+    item Phonebook
+	{
+	    DisplayCategory = Literature,
+		Weight	=	2,
+		Type	=	Literature,
+		DisplayName	=	Phonebook,
+		Icon	=	Phonebook,
+		BoredomChange	=	20,
+		StaticModel = Phonebook_Open,
+		WorldStaticModel = Phonebook,
+        Tags = Uninteresting,
+	}
+
+    item Receipt
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.05,
+        Type	=	Literature,
+        DisplayName	=	Receipt,
+        Icon	=	Receipt,
+        /*CanBeWrite  =   true,
+        PageToWrite =   1,*/
+		ReadType = photo,
+        StaticModel = Receipt,
+        WorldStaticModel = Receipt,
+        Tags = Uninteresting,
+    }
+
+    item RPGmanual
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.8,
+        Type	=	Literature,
+        DisplayName	=	RPG Manual,
+        Icon	=	RPGmanual,
+        UnhappyChange	=	-20,
+        StressChange	=	-20,
+        BoredomChange	=	-30,
+        StaticModel = RPGmanual_Open,
+        WorldStaticModel = RPGmanual,
+		OnCreate = SpecialLootSpawns.OnCreateRPGmanual,
+    }
+
+    item ComicBook_Retail
+    {
+        DisplayCategory = Literature,
+		Weight = 0.4,
+        Type	=	Literature,
+        DisplayName	=	Comic Book,
+        Icon	=	ComicBook,
+        UnhappyChange	=	-20,
+        StressChange	=	-20,
+        BoredomChange	=	-30,
+        StaticModel = ComicBook,
+        WorldStaticModel = ComicBookGround,
+		Tags = Picturebook,
+		OnCreate = SpecialLootSpawns.OnCreateComicBookRetail,
+    }
+
+    item GraphPaper
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Graph Paper,
+        Icon	=	GraphPaper,
+        CanBeWrite  =   true,
+        PageToWrite =   1,
+		StaticModel = GraphPaper,
+		WorldStaticModel = GraphPaper,
+		ReadType = newspaper,
+    }
+
+    item Note
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Note,
+        IconsForTexture	=	Note1;Note2,
+        /*CanBeWrite  =   true,
+        PageToWrite =   1,*/
+        StaticModelsByIndex = Note1;Note2,
+        WorldStaticModelsByIndex = Note1;Note2,
+		ReadType = photo,
+		Tags = Uninteresting,
+		/*OnCreate = SpecialLootSpawns.OnCreateNote,*/
+    }
+
+    item Photo
+    {
+        DisplayCategory = Memento,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Photograph,
+        IconsForTexture	=	Photo_Landscape1;Photo_People1;Photo_People2,
+        /*UnhappyChange	=	-10,
+        StressChange	=	-10,*/
+        BoredomChange	=	-5,
+		ReadType = photo,
+        StaticModelsByIndex =  Photo_Landscape1;Photo_People1;Photo_People2,
+        WorldStaticModelsByIndex =  Photo_Landscape1;Photo_People1;Photo_People2,
+		OnCreate = SpecialLootSpawns.OnCreatePhoto,
+		Tags = Picture;IsMemento;FastRead,
+    }
+
+    item Photo_Racy
+    {
+        DisplayCategory = Memento,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Photograph,
+        Icon	=	Photo_Secret1,
+        /*UnhappyChange	=	-10,
+        StressChange	=	-10,*/
+        BoredomChange	=	-5,
+		ReadType = photo,
+        StaticModel = Photo_Secret,
+        WorldStaticModel = Photo_Secret,
+		OnCreate = SpecialLootSpawns.OnCreatePhoto_Racy,
+		Tags = Picture;IgnoreZombieDensity;IsMemento;FastRead,
+    }
+
+    item Photo_Secret
+    {
+        DisplayCategory = Memento,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Photograph,
+        Icon	=	Photo_Secret1,
+        /*UnhappyChange	=	-10,
+        StressChange	=	-10,*/
+        BoredomChange	=	-5,
+		ReadType = photo,
+        StaticModel = Photo_Secret,
+        WorldStaticModel = Photo_Secret,
+		OnCreate = SpecialLootSpawns.OnCreatePhoto_Secret,
+		Tags = Picture;IgnoreZombieDensity;IsMemento;FastRead,
+    }
+
+    item Photo_VeryOld
+    {
+        DisplayCategory = Memento,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Old Photograph,
+        IconsForTexture	=	Photo_Old1;Photo_Old2,
+        /*UnhappyChange	=	-10,
+        StressChange	=	-10,*/
+        BoredomChange	=	-5,
+		ReadType = photo,
+        StaticModelsByIndex =  Photo_Old1;Photo_Old2,
+        WorldStaticModelsByIndex =  Photo_Old1;Photo_Old2,
+		OnCreate = SpecialLootSpawns.OnCreatePhoto_VeryOld,
+		Tags = Picture;IgnoreZombieDensity;IsMemento;FastRead,
+    }
+
+    item Postcard
+    {
+        DisplayCategory = Memento,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Postcard,
+        Icon	=	Postcard,
+        /*UnhappyChange	=	-10,
+        StressChange	=	-10,*/
+        BoredomChange	=	-5,
+		ReadType = photo,
+        StaticModelsByIndex =  Postcard,
+        WorldStaticModelsByIndex =  Postcard,
+		OnCreate = SpecialLootSpawns.OnCreatePostcard,
+		Tags = Picture;IgnoreZombieDensity;IsMemento,
+    }
+
+    item StockCertificate
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Stock Certificate,
+        Icon	=	StockCertificate1,
+        /*CanBeWrite  =   true,
+        PageToWrite =   1,*/
+	    ReadType = newspaper,
+        StaticModel = StockCertificate1,
+        WorldStaticModel = StockCertificate1,
+		OnCreate = SpecialLootSpawns.OnCreateStockCertificate,
+        Tags = Uninteresting,
+    }
+
+    item ScratchTicket
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Scratch Ticket,
+        Icon	=	ScratchTicket,
+		ReadType = photo,
+        StaticModel = ScratchTicket,
+        WorldStaticModel = ScratchTicket,
+        Tags = Uninteresting,
+    }
+
+    item ScratchTicket_Loser
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Scratch Ticket - Loser,
+        Icon	=	ScratchTicket_Loser,
+		ReadType = photo,
+        StaticModel = ScratchTicket_Loser,
+        WorldStaticModel = ScratchTicket_Loser,
+        Tags = Uninteresting,
+    }
+
+    item ScratchTicket_Winner
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Scratch Ticket - Winner,
+        Icon	=	ScratchTicket_Winner,
+		ReadType = photo,
+        StaticModel = ScratchTicket_Winner,
+        WorldStaticModel = ScratchTicket_Winner,
+		OnCreate = SpecialLootSpawns.OnCreateScratchTicketWinner,
+        Tags = Uninteresting,
+    }
+
+	item Notepad
+	{
+		DisplayName = Notepad,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 0.2,
+		Icon = Notepad,
+		CanBeWrite = true,
+		PageToWrite =   5,
+		StaticModel = Notepad,
+		WorldStaticModel = Notepad,
+		ReadType = newspaper,
+	}
+
+	item Newspaper_Recent
+	{
+		DisplayName = Newspaper,
+		DisplayCategory = Literature,
+		Type = Literature,
+		ReadType = newspaper,
+		Weight = 0.5,
+		Icon = Newspaper,
+		/*BoredomChange = -15,
+		StressChange = -15,*/
+		StaticModel = Newspaper,
+		WorldStaticModel = Newspaper_Ground,
+        Tags = Newspaper;FastRead;Regional,
+		OnCreate = SpecialLootSpawns.OnCreateRecentNewspaper,
+	}
+
+	item Newspaper_New
+	{
+		DisplayName = Newspaper,
+		DisplayCategory = Literature,
+		Type = Literature,
+		ReadType = newspaper,
+		Weight = 0.5,
+		Icon = Newspaper,
+		/*BoredomChange = -15,
+		StressChange = -15,*/
+		StaticModel = Newspaper,
+		WorldStaticModel = Newspaper_Ground,
+        Tags = Newspaper;FastRead;Regional,
+		OnCreate = SpecialLootSpawns.OnCreateNewNewspaper,
+	}
+
+	item Newspaper_Dispatch_New
+	{
+		DisplayName = Newspaper,
+		DisplayCategory = Literature,
+		Type = Literature,
+		ReadType = newspaper,
+		Weight = 0.5,
+		Icon = Newspaper,
+		/*BoredomChange = -15,
+		StressChange = -15,*/
+		StaticModel = Newspaper,
+		WorldStaticModel = Newspaper_Ground,
+        Tags = Newspaper;FastRead,
+		OnCreate = SpecialLootSpawns.OnCreateDispatchNewNewspaper,
+	}
+
+	item Newspaper_Herald_New
+	{
+		DisplayName = Newspaper,
+		DisplayCategory = Literature,
+		Type = Literature,
+		ReadType = newspaper,
+		Weight = 0.5,
+		Icon = Newspaper,
+		/*BoredomChange = -15,
+		StressChange = -15,*/
+		StaticModel = Newspaper,
+		WorldStaticModel = Newspaper_Ground,
+        Tags = Newspaper;FastRead,
+		OnCreate = SpecialLootSpawns.OnCreateHeraldNewNewspaper,
+	}
+
+	item Newspaper_Knews_New
+	{
+		DisplayName = Newspaper,
+		DisplayCategory = Literature,
+		Type = Literature,
+		ReadType = newspaper,
+		Weight = 0.5,
+		Icon = Newspaper,
+		/*BoredomChange = -15,
+		StressChange = -15,*/
+		StaticModel = Newspaper,
+		WorldStaticModel = Newspaper_Ground,
+        Tags = Newspaper;FastRead,
+		OnCreate = SpecialLootSpawns.OnCreateKnewsNewNewspaper,
+	}
+
+	item Newspaper_Times_New
+	{
+		DisplayName = Newspaper,
+		DisplayCategory = Literature,
+		Type = Literature,
+		ReadType = newspaper,
+		Weight = 0.5,
+		Icon = Newspaper,
+		/*BoredomChange = -15,
+		StressChange = -15,*/
+		StaticModel = Newspaper,
+		WorldStaticModel = Newspaper_Ground,
+        Tags = Newspaper;FastRead,
+		OnCreate = SpecialLootSpawns.OnCreateTimesNewNewspaper,
+	}
+
+
+	item Magazine_New
+	{
+		DisplayName = Magazine,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine,
+		BoredomChange = -20,
+		StressChange = -15,
+		OnCreate = SpecialLootSpawns.OnCreateMagazine,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineGround,
+		Tags = New;Magazine,
+	}
+
+    item Magazine_Art_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateArtMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Business_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateBusinessMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Car_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateCarMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Childs_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateChildsMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Cinema_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateCinemaMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Crime_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateCrimeMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Fashion_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateFashionMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Firearm_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateFirearmMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Gaming_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateGamingMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Golf_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateGolfMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Health_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateHealthMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Hobby_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateHobbyMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Horror_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateHorrorMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Humor_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateHumorMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Military_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateMilitaryMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Music_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateMusicMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Outdoors_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateOutdoorsMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Police_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreatePoliceMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Popular_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreatePopularMagazine,
+		Tags = New;Magazine,
+
+    }
+
+    item Magazine_Rich_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateRichMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Science_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateScienceMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Sports_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateSportsMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Tech_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateTechMagazine,
+		Tags = New;Magazine,
+    }
+
+    item Magazine_Teens_New
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.5,
+        Type	=	Literature,
+        DisplayName	=	Magazine,
+        StressChange	=	-15,
+        Icon	=	Magazine,
+        BoredomChange	=	-20,
+        StaticModel = Magazine,
+        WorldStaticModel = MagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateTeensMagazine,
+		Tags = New;Magazine,
+    }
+
+	item TVMagazine_New
+	{
+		DisplayName = Magazine: TV Monthly,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 0.4,
+		Icon = Magazine,
+		BoredomChange = -20,
+		StressChange = -15,
+		StaticModel = Magazine,
+		WorldStaticModel = TVMagazineGround,
+        OnCreate = SpecialLootSpawns.OnCreateTVMagazine,
+		Tags = New;Magazine,
+	}
+
+	item HottieZ_New
+	{
+		DisplayName = HottieZ,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineNudie1,
+		BoredomChange = -40,
+		StressChange = -50,
+		OnCreate = SpecialLootSpawns.OnCreateHottieZ,
+		StaticModel = HottieZ,
+		WorldStaticModel = HottieZGround,
+		Tags = Picturebook;New;Magazine,
+	}
+
+    item GenericMail
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Mail,
+        Icon	=	Paperwork5,
+		OnCreate = SpecialLootSpawns.OnCreateGenericMail,
+        StaticModel = Paperwork5,
+        WorldStaticModel = Paperwork5,
+		ReadType = newspaper,
+       /* CanBeWrite  =   true,
+        PageToWrite =   1,*/
+		Tags = Uninteresting,
+    }
+
+    item LetterHandwritten
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Handwritten Letter,
+        IconsForTexture	=	LetterHandwritten1;LetterHandwritten2,
+		OnCreate = SpecialLootSpawns.OnCreateLetterHandwritten,
+        /*BoredomChange	=	-15,*/
+		StaticModelsByIndex = LetterHandwritten1;LetterHandwritten2,
+		WorldStaticModelsByIndex = LetterHandwritten1;LetterHandwritten2,
+		ReadType = newspaper,
+		Tags = Uninteresting,
+       /* CanBeWrite  =   true,
+        PageToWrite =   1,*/
+    }
+
+	item Card_Birthday
+	{
+		DisplayName = Card - Birthday,
+		DisplayCategory = Memento,
+		Type = Literature,
+		Weight = 0.2,
+		Icon = Card_Birthday,
+        CanBeWrite  =   true,
+        PageToWrite =   1,
+		WorldStaticModel = Card_Birthday,
+	    Tags = IsMemento,
+	}
+
+	item Card_Christmas
+	{
+		DisplayName = Card - Christmas,
+		DisplayCategory = Memento,
+		Type = Literature,
+		Weight = 0.2,
+		/*Icon = Card_Christmas,*/
+		IconsForTexture = Card_Christmas;Card_Christmas2,
+        CanBeWrite  =   true,
+        PageToWrite =   1,
+		/*WorldStaticModel = Card_Christmas,*/
+	    WorldStaticModelsByIndex	= Card_Christmas;Card_Christmas2,
+		/*OnCreate = SpecialLootSpawns.OnCreateCard_Christmas,*/
+	    Tags = IsMemento,
+	}
+
+	item Card_Easter
+	{
+		DisplayName = Card - Easter,
+		DisplayCategory = Memento,
+		Type = Literature,
+		Weight = 0.2,
+		Icon = Card_Easter,
+        CanBeWrite  =   true,
+        PageToWrite =   1,
+		WorldStaticModel = Card_Easter,
+	    Tags = IsMemento,
+	}
+
+	item Card_Halloween
+	{
+		DisplayName = Card - Halloween,
+		DisplayCategory = Memento,
+		Type = Literature,
+		Weight = 0.2,
+		Icon = Card_Halloween,
+        CanBeWrite  =   true,
+        PageToWrite =   1,
+	    WorldStaticModel = Card_Halloween,
+	    Tags = IsMemento,
+	}
+
+	item Card_Hanukkah
+	{
+		DisplayName = Card - Hanukkah,
+		DisplayCategory = Memento,
+		Type = Literature,
+		Weight = 0.2,
+		Icon = Card_Hanukkah,
+        CanBeWrite  =   true,
+        PageToWrite =   1,
+		WorldStaticModel = Card_Hanukkah,
+	    Tags = IsMemento,
+	}
+
+	item Card_LunarYear
+	{
+		DisplayName = Card - Lunar New Year,
+		DisplayCategory = Memento,
+		Type = Literature,
+		Weight = 0.2,
+		Icon = Card_LunarYear,
+        CanBeWrite  =   true,
+        PageToWrite =   1,
+		WorldStaticModel = Card_LunarYear,
+	    Tags = IsMemento,
+	}
+
+	item Card_StPatrick
+	{
+		DisplayName = Card - St. Patrick's Day,
+		DisplayCategory = Memento,
+		Type = Literature,
+		Weight = 0.2,
+		Icon = Card_StPatrick,
+        CanBeWrite  =   true,
+        PageToWrite =   1,
+		WorldStaticModel = Card_StPatrick,
+	    Tags = IsMemento,
+	}
+
+	item Card_Sympathy
+	{
+		DisplayName = Card - Sympathy,
+		DisplayCategory = Memento,
+		Type = Literature,
+		Weight = 0.2,
+		Icon = Card_Birthday,
+        CanBeWrite  =   true,
+        PageToWrite =   1,
+		WorldStaticModel = Card_Sympathy,
+	    Tags = IsMemento,
+	}
+
+	item Card_Valentine
+	{
+		DisplayName = Card - Valentine's,
+		DisplayCategory = Memento,
+		Type = Literature,
+		Weight = 0.2,
+		/*Icon = Card_Valentine,*/
+		IconsForTexture = Card_Valentine;Card_Valentine2,
+        CanBeWrite  =   true,
+        PageToWrite =   1,
+		/*WorldStaticModel = Card_Valentine,*/
+	    WorldStaticModelsByIndex	= Card_Valentine;Card_Valentine2,
+	    Tags = IsMemento,
+	}
+    item Paperwork
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Paperwork,
+        Icon	=	Paperwork1,
+        /*CanBeWrite  =   true,
+        PageToWrite =   1,*/
+        StaticModel = Paperwork1,
+        WorldStaticModel = Paperwork1,
+		ReadType = newspaper,
+		OnCreate = SpecialLootSpawns.OnCreatePaperwork,
+		Tags = Uninteresting,
+    }
+
+    item IDcard
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	ID Card,
+        Icon	=	IDcard,
+        WorldStaticModel = IDcard,
+		OnCreate = SpecialLootSpawns.OnCreateIDcard,
+		Tags = IDcard;ApplyOwnerName;Uninteresting,
+    }
+
+    item IDcard_Stolen
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	ID Card,
+        Icon	=	IDcard,
+        WorldStaticModel = IDcard,
+		OnCreate = SpecialLootSpawns.OnCreateIDcard,
+		Tags = IDcard;Uninteresting,
+    }
+
+    item IDcard_Blank
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	ID Card - Blank,
+        Icon	=	IDcard,
+        CanBeWrite  =   true,
+        PageToWrite =   1,
+        WorldStaticModel = IDcard,
+		Tags = LockOnWrite;Uninteresting,
+		Tooltip = Tooltip_item_WriteOnce,
+    }
+
+    item IDcard_Female
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	ID Card,
+        Icon	=	IDcard,
+        WorldStaticModel = IDcard,
+		OnCreate = SpecialLootSpawns.OnCreateIDcard_Female,
+		Tags = IDcard;ApplyOwnerName;Uninteresting,
+    }
+
+    item IDcard_Male
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	ID Card,
+        Icon	=	IDcard,
+        WorldStaticModel = IDcard,
+		OnCreate = SpecialLootSpawns.OnCreateIDcard_Male,
+		Tags = IDcard;ApplyOwnerName;Uninteresting,
+    }
+
+    item Passport
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Passport,
+        Icon	=	Passport,
+        WorldStaticModel = Passport,
+		OnCreate = SpecialLootSpawns.OnCreateIDcard,
+		Tags = ApplyOwnerName;IgnoreZombieDensity;Uninteresting,
+    }
+
+    item PressID
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Press Badge,
+        Icon	=	PressBadge,
+        WorldStaticModel = PressID,
+		OnCreate = SpecialLootSpawns.OnCreateIDcard,
+		Tags = ApplyOwnerName;Uninteresting,
+    }
+
+   /* item LiquorLicense
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Liquor License,
+        Icon	=	LiquorLicense,
+        WorldStaticModel = LiquorLicense,
+    }*/
+
+    item OfficialDocument
+    {
+        DisplayCategory = Junk,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Official Document,
+        Icon	=	LiquorLicense,
+        WorldStaticModel = LiquorLicense,
+        Tags = Uninteresting,
+    }
+
+	item BookFancy_Bible
+	{
+		DisplayName = Leatherbound Book,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 1,
+        Icon	=	Book_OldFancy,
+		BoredomChange = -50,
+		StressChange = -40,
+		UnhappyChange = -40,
+		OnCreate = SpecialLootSpawns.OnCreateBibleBook,
+        StaticModel = BookFancy_Hand,
+		WorldStaticModel = BookFancyClosed,
+		Tags = FancyBook,
+	}
+	item BookFancy_Classic
+	{
+		DisplayName = Leatherbound Book,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 1,
+        Icon	=	Book_OldFancy,
+		BoredomChange = -50,
+		StressChange = -40,
+		UnhappyChange = -40,
+		OnCreate = SpecialLootSpawns.OnCreateClassicBook,
+        StaticModel = BookFancy_Hand,
+		WorldStaticModel = BookFancyClosed,
+		Tags = FancyBook,
+	}
+    item BookFancy_ClassicFiction
+    {
+        DisplayCategory = Literature,
+        Weight = 1,
+        Type	=	Literature,
+        UnhappyChange	=	-40,
+		DisplayName = Leatherbound Book,
+        StressChange	=	-40,
+        Icon	=	Book_OldFancy,
+        BoredomChange	=	-50,
+        StaticModel = BookFancy_Hand,
+        WorldStaticModel = BookClosedGround,
+        OnCreate = SpecialLootSpawns.OnCreateClassicFictionBook,
+		Tags = FancyBook,
+    }
+     item BookFancy_ClassicNonfiction
+    {
+        DisplayCategory = Literature,
+        Weight = 1,
+        Type	=	Literature,
+        UnhappyChange	=	-40,
+        DisplayName	=	Book,
+        StressChange	=	-40,
+        Icon	=	Book_OldFancy,
+		DisplayName = Leatherbound Book,
+        BoredomChange	=	-50,
+        StaticModel = BookFancy_Hand,
+		WorldStaticModel = BookFancyClosed,
+        OnCreate = SpecialLootSpawns.OnCreateClassicNonfictionBook,
+		Tags = FancyBook,
+    }
+     item BookFancy_History
+    {
+        DisplayCategory = Literature,
+        Weight = 1,
+        Type	=	Literature,
+        UnhappyChange	=	-40,
+		DisplayName = Leatherbound Book,
+        StressChange	=	-40,
+        Icon	=	Book_OldFancy,
+        BoredomChange	=	-50,
+        StaticModel = BookFancy_Hand,
+		WorldStaticModel = BookFancyClosed,
+        OnCreate = SpecialLootSpawns.OnCreateHistoryBook,
+		Tags = FancyBook,
+    }
+     item BookFancy_Legal
+    {
+        DisplayCategory = Literature,
+        Weight = 1,
+        Type	=	Literature,
+        UnhappyChange	=	-40,
+		DisplayName = Leatherbound Book,
+        StressChange	=	-40,
+        Icon	=	Book_OldFancy,
+        BoredomChange	=	-50,
+        StaticModel = BookFancy_Hand,
+		WorldStaticModel = BookFancyClosed,
+        OnCreate = SpecialLootSpawns.OnCreateLegalBook,
+		Tags = FancyBook,
+    }
+    item BookFancy_Medical
+	{
+	    DisplayCategory = Literature,
+		Weight = 1,
+		Type	=	Literature,
+		UnhappyChange	=	-40,
+		DisplayName = Leatherbound Book,
+		StressChange	=	-40,
+        Icon	=	Book_OldFancy,
+		BoredomChange	=	-50,
+        StaticModel = BookFancy_Hand,
+		WorldStaticModel = BookFancyClosed,
+		OnCreate = SpecialLootSpawns.OnCreateMedicalBook,
+		Tags = FancyBook,
+	}
+     item BookFancy_MilitaryHistory
+    {
+        DisplayCategory = Literature,
+        Weight = 1,
+        Type	=	Literature,
+        UnhappyChange	=	-40,
+		DisplayName = Leatherbound Book,
+        StressChange	=	-40,
+        Icon	=	Book_OldFancy,
+        BoredomChange	=	-50,
+        StaticModel = BookFancy_Hand,
+		WorldStaticModel = BookFancyClosed,
+        OnCreate = SpecialLootSpawns.OnCreateMilitaryHistoryBook,
+		Tags = FancyBook,
+    }
+     item BookFancy_Occult
+    {
+        DisplayCategory = Literature,
+        Weight = 1,
+        Type	=	Literature,
+        UnhappyChange	=	-40,
+		DisplayName = Leatherbound Book,
+        StressChange	=	-40,
+        Icon	=	Book_OldFancy,
+        BoredomChange	=	-50,
+        StaticModel = BookFancy_Hand,
+		WorldStaticModel = BookFancyClosed,
+        OnCreate = SpecialLootSpawns.OnCreateOccultBook,
+		Tags = FancyBook,
+    }
+     item BookFancy_Philosophy
+    {
+        DisplayCategory = Literature,
+        Weight = 1,
+        Type	=	Literature,
+        UnhappyChange	=	-40,
+		DisplayName = Leatherbound Book,
+        StressChange	=	-40,
+        Icon	=	Book_OldFancy,
+        BoredomChange	=	-50,
+        StaticModel = BookFancy_Hand,
+		WorldStaticModel = BookFancyClosed,
+        OnCreate = SpecialLootSpawns.OnCreatePhilosophyBook,
+		Tags = FancyBook,
+    }
+     item BookFancy_Politics
+    {
+        DisplayCategory = Literature,
+        Weight = 1,
+        Type	=	Literature,
+        UnhappyChange	=	-40,
+		DisplayName = Leatherbound Book,
+        StressChange	=	-40,
+        Icon	=	Book_OldFancy,
+        BoredomChange	=	-50,
+        StaticModel = BookFancy_Hand,
+		WorldStaticModel = BookFancyClosed,
+        OnCreate = SpecialLootSpawns.OnCreatePoliticsBook,
+		Tags = FancyBook,
+    }
+     item BookFancy_Religion
+    {
+        DisplayCategory = Literature,
+        Weight = 1,
+        Type	=	Literature,
+        UnhappyChange	=	-40,
+		DisplayName = Leatherbound Book,
+        StressChange	=	-40,
+        Icon	=	Book_OldFancy,
+        BoredomChange	=	-50,
+        StaticModel = BookFancy_Hand,
+		WorldStaticModel = BookFancyClosed,
+        OnCreate = SpecialLootSpawns.OnCreateReligionBook,
+		Tags = FancyBook,
+    }
+
+	item PhotoBook
+	{
+		DisplayName = Photo Book,
+		DisplayCategory = Literature,
+		Type = Literature,
+		Weight = 1,
+		Icon = Book_Photography,
+		BoredomChange = -50,
+		StressChange = -40,
+		UnhappyChange = -40,
+		OnCreate = SpecialLootSpawns.OnCreatePhotoBook,
+		StaticModel = PhotoBook_Hand,
+		WorldStaticModel = PhotoBook,
+		Tags = Picturebook,
+	}
+
+    item ChildsPictureBook
+	{
+		DisplayName	=	Picture Book,
+	    DisplayCategory = Literature,
+		Weight	=	0.5,
+		Type	=	Literature,
+		Icon = Book_Picture1,
+		UnhappyChange	=	-40,
+		StressChange	=	-40,
+		BoredomChange	=	-50,
+		StaticModel = ChildsPictureBook_Hand,
+		WorldStaticModel = ChildsPictureBook,
+		OnCreate = SpecialLootSpawns.OnCreateChildsPictureBook,
+		Tags = Picturebook,
+	}
+
+}

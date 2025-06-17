@@ -1,0 +1,59 @@
+/*module Base
+{
+
+    entity Arc_Furnace
+    {
+        component UiConfig
+        {
+            xuiSkin         = skin_furnace_processor,
+            entityStyle     = ES_Arc_Furnace,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@12,
+                Item@Input@12,
+                Item@Input@12,
+                Item@Input@12,
+                Item@Input@12,
+                Item@Input@12,
+                Item@Input@12,
+            }
+            group craft_outputs
+            {
+                Item@Output@5,
+                Item@Output@5,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes         = Recipes_Blast_Furnace,
+            StartMode       = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_02_67 crafted_02_68 crafted_02_69,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_02_66,
+                    row = crafted_02_65,
+                    row = crafted_02_64,
+                }
+            }
+        }
+    }
+}*/

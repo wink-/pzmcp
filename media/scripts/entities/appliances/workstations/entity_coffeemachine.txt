@@ -1,0 +1,112 @@
+module Base
+{
+	craftRecipe MakeCoffeeMug
+	{
+		timedAction = MakeCoffee,
+		Time = 40,
+		OnCreate = Recipe.OnCreate.MakeCoffee,
+		category = Cooking,
+		Tags = CoffeeMachine;Cooking,
+		inputs
+		{
+			item 5 [Base.Coffee2],
+			item 1 tags[CoffeeMaker] mode:destroy flags[InheritColor;InheritModelVariation] mappers[mugShot],
+			-fluid 0.2 categories[Water] mode:mixture,
+		}
+		outputs
+		{
+		    item 1 mapper:mugShot,
+		}
+		itemMapper mugShot
+		{
+		    Base.HotDrink = Base.Mugl,
+		    Base.HotDrinkWhite = Base.MugWhite,
+		    Base.HotDrinkSpiffo = Base.MugSpiffo,
+		    Base.HotDrinkClay = Base.ClayMug,
+
+		    Default = Base.HotDrinkWhite,
+		}
+	}
+
+	craftRecipe MakeCoffeeTeacup
+	{
+		timedAction = MakeCoffee,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.MakeCoffee,
+		category = Cooking,
+		Tags = CoffeeMachine;Cooking,
+		inputs
+		{
+			item 5 [Base.Coffee2],
+			item 1 [Base.Teacup;Base.CeramicTeacup] mode:destroy flags[InheritColor] mappers[mugShot],
+			-fluid 0.1 categories[Water] mode:mixture,
+		}
+		outputs
+		{
+		    item 1 mapper:mugShot,
+		}
+		itemMapper mugShot
+        {
+            Base.HotDrinkTeaCeramic = Base.CeramicTeacup,
+
+            Default = Base.HotDrinkTea,
+        }
+	}
+
+    xuiSkin default
+    {
+        entity ES_Coffee_Machine
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Coffee Machine,
+            Icon                = Item_MugFulll,
+        }
+    }
+
+    entity Coffee_Machine
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Coffee_Machine,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes         = CoffeeMachine,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = appliances_cooking_01_56,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = appliances_cooking_01_57,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = appliances_cooking_01_58,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = appliances_cooking_01_59,
+                }
+            }
+        }
+    }
+}

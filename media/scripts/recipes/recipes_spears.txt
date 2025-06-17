@@ -1,0 +1,236 @@
+module Base
+{
+	craftRecipe CarveSpear
+	{
+        Time = 100,
+        OnCreate = Recipe.OnCreate.CarveSpear,
+        Tags = InHandCraft,
+        timedAction = SharpenStake,
+        xpAward = Carving:5,
+        category = Carving,
+		inputs
+		{
+			item 1 [Base.LongStick;Base.Sapling;Base.Rake;Base.Gaffhook;Base.IceHockeyStick;Base.Mop;Base.Broom;Base.Broom_Twig] flags[Prop2;InheritCondition],
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.SpearCrafted,
+		}
+	}
+
+	craftRecipe FireHardenSpear
+	{
+        Time = 100,
+        NeedToBeLearn = true,
+        OnCreate = Recipe.OnCreate.FireHardenSpear,
+        OnTest = Recipe.OnCanPerform.OpenFire,
+        ToolTip = Tooltip_Recipe_OpenFire,
+        Tags = InHandCraft;Survivalist,
+        category = Weaponry,
+        timedAction = SharpenStake,
+        AutoLearnAny = Spear:6,
+        xpAward = Carving:5,
+		inputs
+		{
+			item 1 [Base.SpearCrafted] flags[Prop2],
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.SpearCraftedFireHardened,
+		}
+	}
+
+    craftRecipe BindSpear
+    {
+        time            = 300,
+        Tags = InHandCraft;Survivalist,
+        category = Weaponry,
+        needTobeLearn = true,
+        timedAction = CraftKnifeSpear,
+        xpAward = Maintenance:10,
+        SkillRequired = Maintenance:1,
+        AutoLearnAll = Maintenance:3;Spear:1,
+		OnCreate = Recipe.OnCreate.SlightlyMoreDurable,
+        inputs
+        {
+            item 1 [Base.SmallKnife;Base.LargeKnife;Base.LargeKnife_Scrap;Base.FightingKnife;Base.BrokenGlass;Base.CrudeBlade;Base.CrudeKnife;Base.FlintKnife;Base.HandFork;Base.HuntingKnife;Base.HuntingKnifeForged;Base.KitchenKnife;Base.KitchenKnifeForged;Base.LongCrudeBlade;Base.LongCrudeKnife;Base.Plunger;Base.Scissors;Base.Screwdriver;Base.Screwdriver_Old;Base.SharpBone_Long;Base.SharpBoneFragment;Base.SmashedBottle;Base.StoneBlade;Base.StoneBladeLong;Base.StoneKnifeLong;Base.SteakKnife] mappers[SpearMapper] flags[Prop1;IsHeadPart;InheritSharpness],
+            item 1 [Base.LongStick;Base.Sapling] flags[Prop2;InheritCondition],
+            item 2 [Base.Zipties;Base.LeatherStrips;Base.Twine] flags[DontReplace],
+        }
+        outputs
+        {
+            item 1 mapper:SpearMapper,
+        }
+        itemMapper SpearMapper
+        {
+            Base.SpearGlass = Base.BrokenGlass,
+            Base.SpearCrude = Base.CrudeBlade,
+            Base.SpearCrude = Base.CrudeKnife,
+            Base.SpearStone = Base.FlintKnife,
+            Base.SpearHandFork = Base.HandFork,
+            Base.SpearHuntingKnife = Base.HuntingKnife,
+            Base.SpearHuntingKnife = Base.HuntingKnifeForged,
+            Base.SpearKnife = Base.KitchenKnife,
+            Base.SpearKnife = Base.KitchenKnifeForged,
+            Base.SpearCrudeLong = Base.LongCrudeBlade,
+            Base.SpearCrudeLong = Base.LongCrudeKnife,
+            Base.Spear_Plunger = Base.Plunger,
+            Base.SpearScissors = Base.Scissors,
+            Base.SpearScrewdriver = Base.Screwdriver,
+            Base.SpearScrewdriver = Base.Screwdriver_Old,
+            Base.Spear_BoneLong = Base.SharpBone_Long,
+            Base.Spear_Bone = Base.SharpBoneFragment,
+            Base.SpearGlass = Base.SmashedBottle,
+            Base.SpearStone = Base.StoneBlade,
+            Base.SpearStoneLong = Base.StoneBladeLong,
+            Base.SpearStoneLong = Base.StoneKnifeLong,
+
+            Base.SpearKnifeSmall = Base.SmallKnife,
+            Base.SpearLargeKnife = Base.LargeKnife,
+            Base.SpearScrapKnife = Base.LargeKnife_Scrap,
+            Base.SpearFightingKnife = Base.FightingKnife,
+            Base.SpearSteakKnife = Base.SteakKnife,
+
+            default = Base.SpearKnife,
+        }
+    }
+
+    craftRecipe DuctTapeSpear
+    {
+        time            = 300,
+        Tags = InHandCraft;Survivalist,
+        category = Weaponry,
+        needTobeLearn = false,
+        timedAction = CraftKnifeSpear,
+        xpAward = Maintenance:5,
+        inputs
+        {
+            item 1 [Base.SmallKnife;Base.LargeKnife;Base.LargeKnife_Scrap;Base.FightingKnife;Base.BrokenGlass;Base.CrudeBlade;Base.CrudeKnife;Base.FlintKnife;Base.HandFork;Base.HuntingKnife;Base.HuntingKnifeForged;Base.KitchenKnife;Base.KitchenKnifeForged;Base.LongCrudeBlade;Base.LongCrudeKnife;Base.Plunger;Base.Scissors;Base.Screwdriver;Base.Screwdriver_Old;Base.SharpBone_Long;Base.SharpBoneFragment;Base.SmashedBottle;Base.StoneBlade;Base.StoneBladeLong;Base.StoneKnifeLong;Base.SteakKnife] mappers[SpearMapper] flags[Prop1;IsHeadPart;InheritSharpness],
+            item 1 [Base.LongStick;Base.Sapling] flags[Prop2;InheritCondition],
+            item 2 [Base.DuctTape],
+        }
+        outputs
+        {
+            item 1 mapper:SpearMapper,
+        }
+        itemMapper SpearMapper
+        {
+            Base.SpearGlass = Base.BrokenGlass,
+            Base.SpearCrude = Base.CrudeBlade,
+            Base.SpearCrude = Base.CrudeKnife,
+            Base.SpearStone = Base.FlintKnife,
+            Base.SpearHandFork = Base.HandFork,
+            Base.SpearHuntingKnife = Base.HuntingKnife,
+            Base.SpearHuntingKnife = Base.HuntingKnifeForged,
+            Base.SpearKnife = Base.KitchenKnife,
+            Base.SpearKnife = Base.KitchenKnifeForged,
+            Base.SpearCrudeLong = Base.LongCrudeBlade,
+            Base.SpearCrudeLong = Base.LongCrudeKnife,
+            Base.Spear_Plunger = Base.Plunger,
+            Base.SpearScissors = Base.Scissors,
+            Base.SpearScrewdriver = Base.Screwdriver,
+            Base.SpearScrewdriver = Base.Screwdriver_Old,
+            Base.Spear_BoneLong = Base.SharpBone_Long,
+            Base.Spear_Bone = Base.SharpBoneFragment,
+            Base.SpearGlass = Base.SmashedBottle,
+            Base.SpearStone = Base.StoneBlade,
+            Base.SpearStoneLong = Base.StoneBladeLong,
+            Base.SpearStoneLong = Base.StoneKnifeLong,
+
+            Base.SpearKnifeSmall = Base.SmallKnife,
+            Base.SpearLargeKnife = Base.LargeKnife,
+            Base.SpearScrapKnife = Base.LargeKnife_Scrap,
+            Base.SpearFightingKnife = Base.FightingKnife,
+            Base.SpearSteakKnife = Base.SteakKnife,
+
+            default = Base.SpearKnife,
+        }
+    }
+
+    craftRecipe WireSpear
+    {
+        time            = 300,
+        Tags = InHandCraft;Survivalist,
+        category = Weaponry,
+        needTobeLearn = true,
+        SkillRequired = Maintenance:1,
+        timedAction = CraftKnifeSpear,
+        xpAward = Maintenance:10,
+        AutoLearnAll = Maintenance:3;Spear:1,
+        MetaRecipe = BindSpear,
+		OnCreate = Recipe.OnCreate.SlightlyMoreDurable,
+        inputs
+        {
+            item 1 [Base.SmallKnife;Base.LargeKnife;Base.LargeKnife_Scrap;Base.FightingKnife;Base.BrokenGlass;Base.CrudeBlade;Base.CrudeKnife;Base.FlintKnife;Base.HandFork;Base.HuntingKnife;Base.HuntingKnifeForged;Base.KitchenKnife;Base.KitchenKnifeForged;Base.LongCrudeBlade;Base.LongCrudeKnife;Base.Plunger;Base.Scissors;Base.Screwdriver;Base.Screwdriver_Old;Base.SharpBone_Long;Base.SharpBoneFragment;Base.SmashedBottle;Base.StoneBlade;Base.StoneBladeLong;Base.StoneKnifeLong;Base.SteakKnife] mappers[SpearMapper] flags[IsHeadPart;InheritSharpness],
+            item 1 [Base.LongStick;Base.Sapling] flags[Prop2;InheritCondition],
+            item 2 [Base.Wire;Base.ElectricWire],
+            item 1 tags[Pliers] mode:keep flags[Prop1;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 mapper:SpearMapper,
+        }
+        itemMapper SpearMapper
+        {
+            Base.SpearGlass = Base.BrokenGlass,
+            Base.SpearCrude = Base.CrudeBlade,
+            Base.SpearCrude = Base.CrudeKnife,
+            Base.SpearStone = Base.FlintKnife,
+            Base.SpearHandFork = Base.HandFork,
+            Base.SpearHuntingKnife = Base.HuntingKnife,
+            Base.SpearHuntingKnife = Base.HuntingKnifeForged,
+            Base.SpearKnife = Base.KitchenKnife,
+            Base.SpearKnife = Base.KitchenKnifeForged,
+            Base.SpearCrudeLong = Base.LongCrudeBlade,
+            Base.SpearCrudeLong = Base.LongCrudeKnife,
+            Base.Spear_Plunger = Base.Plunger,
+            Base.SpearScissors = Base.Scissors,
+            Base.SpearScrewdriver = Base.Screwdriver,
+            Base.SpearScrewdriver = Base.Screwdriver_Old,
+            Base.Spear_BoneLong = Base.SharpBone_Long,
+            Base.Spear_Bone = Base.SharpBoneFragment,
+            Base.SpearGlass = Base.SmashedBottle,
+            Base.SpearStone = Base.StoneBlade,
+            Base.SpearStoneLong = Base.StoneBladeLong,
+            Base.SpearStoneLong = Base.StoneKnifeLong,
+
+            Base.SpearKnifeSmall = Base.SmallKnife,
+            Base.SpearLargeKnife = Base.LargeKnife,
+            Base.SpearScrapKnife = Base.LargeKnife_Scrap,
+            Base.SpearFightingKnife = Base.FightingKnife,
+            Base.SpearSteakKnife = Base.SteakKnife,
+
+            default = Base.SpearKnife,
+        }
+    }
+
+    craftRecipe AssembleSpear
+    {
+        time        = 100,
+        category = Weaponry,
+        tags = AnySurfaceCraft,
+        SkillRequired = Maintenance:1,
+        timedAction = CraftKnifeSpear,
+        xpAward = Maintenance:10,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer;Mallet] mode:keep flags[MayDegradeLight],
+            item 1 tags[SharpKnife] mode:keep flags[Prop1;SharpnessCheck;IsNotDull],
+            item 1 [Base.SpearLongHead;Base.SpearHead] flags[IsHeadPart;InheritSharpness] mappers[ThingMapper],
+            item 1 [Base.LongStick;Base.Sapling] flags[Prop2;InheritCondition],
+        }
+        outputs
+        {
+            item 1 mapper:ThingMapper,
+        }
+        itemMapper ThingMapper
+        {
+			Base.SpearLong = Base.SpearLongHead,
+			Base.SpearShort = Base.SpearHead,
+
+            default = Base.SpearShort,
+        }
+    }
+}

@@ -1,0 +1,665 @@
+module Base
+{
+
+	craftRecipe SawLogs
+	{
+        timedAction = SawLogs,
+		Time = 230,
+		Tags = InHandCraft;CanBeDoneFromFloor,
+        category = Carpentry,
+		xpAward = Woodwork:5,
+		inputs
+		{
+			item 1 [Base.Log] flags[Prop2],
+			item 1 tags[Saw] mode:keep flags[MayDegradeLight;Prop1],
+		}
+		outputs
+		{
+			item 3 Base.Plank,
+		}
+	}
+
+	craftRecipe SawLongStick
+	{
+        timedAction = SawLogs,
+		Time = 230,
+		Tags = InHandCraft;CanBeDoneFromFloor,
+        category = Carpentry,
+		xpAward = Woodwork:5,
+		inputs
+		{
+			item 1 [Base.LongStick;Base.Sapling] flags[Prop2;InheritCondition] mappers[StickMapper],
+			item 1 tags[CrudeSaw;Saw] mode:keep flags[MayDegradeLight;Prop1],
+		}
+        outputs
+        {
+            item 2 mapper:StickMapper,
+        }
+        itemMapper StickMapper
+        {
+            Base.WoodenStick2 = Base.LongStick,
+            Base.TreeBranch2 = Base.Sapling,
+
+            default = Base.WoodenStick2,
+        }
+	}
+
+	craftRecipe SawWoodenRod
+	{
+        timedAction = SawLogs,
+		Time = 230,
+		Tags = InHandCraft;CanBeDoneFromFloor,
+        category = Carpentry,
+		xpAward = Woodwork:5,
+		inputs
+		{
+			item 1 [Base.WoodenStick2] flags[Prop2],
+			item 1 tags[CrudeSaw;Saw] mode:keep flags[MayDegradeLight;Prop1],
+		}
+		outputs
+		{
+			item 4 Base.SmallHandle,
+		}
+	}
+
+	craftRecipe SawDownBaseballBat
+	{
+        timedAction = SawLogs,
+		Time = 230,
+		Tags = AnySurfaceCraft;CanBeDoneFromFloor,
+        category = Carpentry,
+		xpAward = Woodwork:5,
+		inputs
+		{
+		    /* it's intentional that the player gets a fresh short bat from a worn baseball bat, it's recycling */
+			item 1 [Base.BaseballBat;Base.BaseballBat_Crafted;BaseballBat_Nails] flags[Prop2],
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+		}
+		outputs
+		{
+			item 1 Base.ShortBat,
+		}
+	}
+
+	craftRecipe ChopLog
+	{
+        timedAction = MakingHammer_Surface,
+		Time = 60,
+		Tags = AnySurfaceCraft;CanBeDoneFromFloor,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.Log] flags[Prop2],
+			item 1 tags[ChopTree] mode:keep flags[IsNotDull;MayDegradeLight;Prop1],
+		}
+		outputs
+		{
+			item 6 Base.Firewood,
+			item 1 Base.Splinters,
+		}
+	}
+
+	craftRecipe ChopLargeBranch
+	{
+        timedAction = MakingHammer_Surface,
+		Time = 40,
+		Tags = AnySurfaceCraft;CanBeDoneFromFloor,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.LargeBranch] flags[Prop2],
+			item 1 tags[ChopTree] mode:keep flags[IsNotDull;MayDegradeLight;Prop1],
+		}
+		outputs
+		{
+			item 4 Base.Firewood,
+			item 1 Base.Splinters,
+		}
+	}
+
+	craftRecipe SawLargeBranch
+	{
+        timedAction = SawLogs,
+		Time = 160,
+		Tags = InHandCraft;CanBeDoneFromFloor,
+        category = Carpentry,
+		xpAward = Woodwork:5,
+		inputs
+		{
+			item 1 [Base.LargeBranch] flags[Prop2;InheritCondition],
+			item 1 tags[Saw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+		}
+		outputs
+		{
+			item 1 Base.Plank,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe MakeTwoLogStack
+	{
+        timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.CreateLogStack,
+		Tags = InHandCraft;CanBeDoneFromFloor,
+        category = Carpentry,
+		inputs
+		{
+			item 2 [Base.Log],
+			item 2 tags[Rope],
+		}
+		outputs
+		{
+			item 1 Base.LogStacks2,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe MakeThreeLogStack
+	{
+        timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.CreateLogStack,
+		Tags = InHandCraft;CanBeDoneFromFloor,
+        category = Carpentry,
+		inputs
+		{
+			item 3 [Base.Log],
+			item 2 tags[Rope],
+		}
+		outputs
+		{
+			item 1 Base.LogStacks3,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe MakeFourLogStack
+	{
+        timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.CreateLogStack,
+		Tags = InHandCraft;CanBeDoneFromFloor,
+        category = Carpentry,
+		inputs
+		{
+			item 4 [Base.Log],
+			item 2 tags[Rope],
+		}
+		outputs
+		{
+			item 1 Base.LogStacks4,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe UnstackTwoLogs
+	{
+        timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.SplitFirewoodBundle,
+		Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = Carpentry,
+		inputs
+		{
+			item 1 [Base.LogStacks2],
+		}
+		outputs
+		{
+			item 2 Base.Log,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe UnstackThreeLogs
+	{
+        timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.SplitLogStack,
+		Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = Carpentry,
+		inputs
+		{
+			item 1 [Base.LogStacks3],
+		}
+		outputs
+		{
+			item 3 Base.Log,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe UnstackFourLogs
+	{
+        timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.SplitLogStack,
+		Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = Carpentry,
+		inputs
+		{
+			item 1 [Base.LogStacks4],
+		}
+		outputs
+		{
+			item 4 Base.Log,
+		}
+	}
+
+	craftRecipe MakeFirewoodBundle
+	{
+        timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.CreateLogStack,
+		Tags = InHandCraft;CanBeDoneFromFloor,
+        category = Carpentry,
+		inputs
+		{
+			item 6 [Base.Firewood] flags[Prop2],
+			item 1 tags[Rope],
+		}
+		outputs
+		{
+			item 1 Base.FirewoodBundle,
+		}
+	}
+
+	craftRecipe UnbundleFirewood
+	{
+        timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.SplitLogStack,
+		Tags = InHandCraft;CanBeDoneFromFloor;CanBeDoneInDark,
+        category = Carpentry,
+		inputs
+		{
+			item 1 [Base.FirewoodBundle] flags[Prop2],
+		}
+		outputs
+		{
+			item 6 Base.Firewood,
+		}
+	}
+
+	craftRecipe MakeOilPress
+	{
+        timedAction = Making,
+		Time = 150,
+        category = Carpentry,
+        tags = AnySurfaceCraft;Carpentry,
+		xpAward = Woodwork:20,
+        SkillRequired = Woodwork:2,
+		inputs
+		{
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+			item 1 [Base.Plank] flags[Prop2],
+			item 1 [Base.Nails],
+		}
+		outputs
+		{
+			item 1 Base.OilPress,
+		}
+	}
+	
+	craftRecipe MakeWoodenToolbox
+	{
+        timedAction = Making,
+		Time = 200,
+        tags = AnySurfaceCraft;Carpentry,
+		category = Carpentry,
+		xpAward = Woodwork:10,
+        SkillRequired = Woodwork:1,
+		inputs
+		{
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+            item 1 tags[DrillWood;DrillMetal;DrillWoodPoor] mode:keep flags[MayDegradeLight],
+			item 2 [Base.Plank] flags[Prop2],
+			item 1 [Base.WoodenStick2;Base.Handle],
+			item 1 [Base.Nails],
+		}
+		outputs
+		{
+			item 1 Base.Toolbox_Wooden,
+		}
+	}
+
+	craftRecipe MakeWoodenCrucibleMold
+	{
+        timedAction = Making,
+		Time = 150,
+        category = Carpentry,
+        tags = AnySurfaceCraft;Carpentry,
+		xpAward = Woodwork:20,
+        SkillRequired = Woodwork:2,
+		inputs
+		{
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+			item 1 [Base.Plank] flags[Prop2],
+			item 1 [Base.Nails],
+		}
+		outputs
+		{
+			item 1 Base.WoodenCrucibleMold,
+		}
+	}
+
+	/*craftRecipe MakeWoodenBenchAnvilMold
+	{
+        timedAction = Making,
+		Time = 150,
+        category = Carpentry,
+        tags = AnySurfaceCraft;Carpentry,
+		xpAward = Woodwork:20,
+        SkillRequired = Woodwork:2,
+		inputs
+		{
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+			item 2 [Base.Plank] flags[Prop2],
+			item 1 [Base.Nails],
+		}
+		outputs
+		{
+			item 1 Base.WoodenBenchAnvilMold,
+		}
+	}*/
+
+	craftRecipe MakeWoodenBlacksmithAnvilMold
+	{
+        timedAction = Making,
+		Time = 150,
+        category = Carpentry,
+        tags = AnySurfaceCraft;Carpentry,
+		xpAward = Woodwork:20,
+        SkillRequired = Woodwork:2,
+		inputs
+		{
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+			item 4 [Base.Plank] flags[Prop2],
+			item 1 [Base.Nails],
+		}
+		outputs
+		{
+			item 1 Base.WoodenBlacksmithAnvilMold,
+		}
+	}
+
+/*
+	craftRecipe MakeWoodenBlockAnvilMold
+	{
+        timedAction = Making,
+		Time = 150,
+        category = Carpentry,
+        tags = AnySurfaceCraft;Carpentry,
+		xpAward = Woodwork20,
+        SkillRequired = Woodwork:2,
+		inputs
+		{
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+			item 2 [Base.Plank] flags[Prop2],
+			item 1 [Base.Nails],
+		}
+		outputs
+		{
+			item 1 Base.WoodenBlockAnvilMold,
+		}
+	}*/
+
+	craftRecipe MakeWoodenIngotCastMold
+	{
+        timedAction = Making,
+		Time = 150,
+        category = Carpentry,
+        tags = AnySurfaceCraft;Carpentry,
+		xpAward = Woodwork:20,
+        SkillRequired = Woodwork:2,
+		inputs
+		{
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+			item 1 [Base.Plank] flags[Prop2],
+			item 1 [Base.Nails],
+		}
+		outputs
+		{
+			item 1 Base.WoodenIngotCastMold,
+		}
+	}
+
+	craftRecipe MakeWoodenBarCastMold
+	{
+        timedAction = Making,
+		Time = 150,
+        category = Carpentry,
+        tags = AnySurfaceCraft;Carpentry,
+		xpAward = Woodwork:20,
+        SkillRequired = Woodwork:2,
+		inputs
+		{
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+			item 1 [Base.Plank] flags[Prop2],
+			item 1 [Base.Nails],
+		}
+		outputs
+		{
+			item 1 Base.WoodenBarCastMold,
+		}
+	}
+
+	craftRecipe MakeWoodenCrudeBenchVisePartsMold
+	{
+        timedAction = Making,
+		Time = 150,
+        category = Carpentry,
+        tags = AnySurfaceCraft;Carpentry,
+		xpAward = Woodwork:20,
+        SkillRequired = Woodwork:2,
+		inputs
+		{
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+			item 2 [Base.Plank] flags[Prop2],
+			item 1 [Base.Nails],
+		}
+		outputs
+		{
+			item 1 Base.WoodenCrudeBenchVisePartsMold,
+		}
+	}
+
+	craftRecipe MakeWoodenShingleMold
+	{
+        timedAction = Making,
+		Time = 150,
+        category = Carpentry,
+        tags = AnySurfaceCraft;Carpentry,
+		xpAward = Woodwork:10,
+        SkillRequired = Woodwork:1,
+		inputs
+		{
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+			item 1 [Base.Plank] flags[Prop2],
+			item 1 [Base.Nails],
+		}
+		outputs
+		{
+			item 1 Base.WoodenShingleMold,
+		}
+	}
+
+	craftRecipe MakeWoodenTileMold
+	{
+        timedAction = Making,
+		Time = 150,
+        category = Carpentry,
+        tags = AnySurfaceCraft;Carpentry,
+		xpAward = Woodwork:10,
+        SkillRequired = Woodwork:1,
+		inputs
+		{
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+			item 1 [Base.Plank] flags[Prop2],
+			item 1 [Base.Nails],
+		}
+		outputs
+		{
+			item 1 Base.WoodenTileMold,
+		}
+	}
+
+	craftRecipe MakeWoodenBucket
+	{
+        timedAction = Making,
+		Time = 150,
+        category = Carpentry,
+        tags = AnySurfaceCraft;Carpentry,
+		xpAward = Woodwork:20,
+        SkillRequired = Woodwork:2,
+		inputs
+		{
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+			item 4 [Base.Plank] flags[Prop2],
+			item 4 [Base.Nails],
+			item 1 [Base.Wire],
+			item 1 [Base.SmallHandle],
+			item 2 [Base.IronBandSmall],
+		}
+		outputs
+		{
+			item 1 Base.BucketLargeWood,
+		}
+	}
+
+/*
+	craftRecipe MakeBellows
+	{
+        timedAction = Making,
+		Time = 150,
+        category = Carpentry,
+        tags = AnySurfaceCraft;Carpentry,
+		xpAward = Woodwork:10,
+        SkillRequired = Woodwork:1,
+		inputs
+		{
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+			item 1 [Base.Plank] flags[Prop2],
+			item 1 [Base.Nails],
+			item 2 [Base.SmallHandle],
+			item 1 tags[LeatherCrudeTannedSmall],
+		}
+		outputs
+		{
+			item 1 Base.Bellows,
+		}
+	}*/
+
+	craftRecipe MakeLargeBellows
+	{
+        timedAction = Making,
+		Time = 150,
+        category = Carpentry,
+        tags = AnySurfaceCraft;Carpentry,
+		xpAward = Woodwork:15,
+        SkillRequired = Woodwork:1,
+		inputs
+		{
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+			item 2 [Base.Plank] flags[Prop2],
+			item 2 [Base.Nails],
+			item 2 [Base.Handle],
+			item 1 tags[LeatherCrudeTannedMedium],
+		}
+		outputs
+		{
+			item 1 Base.LargeBellows,
+		}
+	}
+
+	craftRecipe MakeStagHeadTrophy
+	{
+        timedAction = Making,
+		Time = 500,
+        category = Carpentry,
+        tags = AnySurfaceCraft,
+		xpAward = Woodwork:40;Tailoring:40,
+        SkillRequired = Woodwork:4;Tailoring:4,
+        needTobeLearn = true,
+        AutoLearnAll = Woodwork:6;Tailoring:6,
+		inputs
+		{
+			item 1 [Base.Deer_Buck_Head] flags[ItemCount] mode:destroy,
+            item 1 tags[SharpKnife;Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Saw;SmallSaw] mode:keep flags[MayDegradeLight],
+			item 2 [Base.Plank],
+			item 2 [Base.Nails],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 2 tags[HeavyThread],
+			item 10 [Base.RippedSheets;Base.CottonBalls],
+		}
+		outputs
+		{
+			item 1 Base.Mov_HuntingTrophy,
+		}
+	}
+
+	craftRecipe MakeAdvancedFramepackFrame
+	{
+		timedAction = Making,
+		Time = 200,
+        xpAward = Woodwork:40,
+		Tags = AnySurfaceCraft,
+        category = Carpentry,
+        SkillRequired = Woodwork:4,
+		NeedToBeLearn = True,
+        AutoLearnAll = Tailoring:1;Woodwork:7,
+        MetaRecipe = AssembleAdvancedFramepack,
+		inputs
+		{
+			item 1 [Base.Plank],
+            item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+            item 2 [Base.Nails],
+			item 1 tags[Saw;SmallSaw] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.PackFrame,
+		}
+	}
+
+	craftRecipe MakeAdvancedLargeFramepackFrame
+	{
+		timedAction = Making,
+		Time = 200,
+        xpAward = Woodwork:60,
+		Tags = AnySurfaceCraft,
+        category = Carpentry,
+        SkillRequired = Woodwork:6,
+		NeedToBeLearn = True,
+        AutoLearnAll = Tailoring:1;Woodwork::9,
+        MetaRecipe = AssembleAdvancedFramepack,
+		inputs
+		{
+			item 2 [Base.Plank],
+            item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+            item 4 [Base.Nails],
+			item 1 tags[Saw;SmallSaw] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.PackFrameLarge,
+		}
+	}
+}

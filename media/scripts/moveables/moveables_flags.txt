@@ -1,0 +1,32 @@
+module Base
+{
+	item Mov_FlagAdmin
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Administrative Flag,
+		WorldObjectSprite = walls_decoration_01_18,
+	}
+	
+	item Mov_FlagUSA
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Stars & Stripes Flag,
+		WorldObjectSprite = walls_decoration_01_16,
+	}
+	
+	item Mov_FlagUSALarge
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = USA Flag,
+		WorldObjectSprite = location_military_knox_01_8,
+	}
+}

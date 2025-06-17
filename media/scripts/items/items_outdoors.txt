@@ -1,0 +1,174 @@
+module Base
+{
+	/******* OUTDOORS - LUMBER *******/
+
+	item FirewoodBundle
+	{
+		DisplayName = Firewood Bundle,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = Firewood_Bundle,
+		StaticModel = FirewoodBundle,
+		WorldStaticModel = FirewoodBundle,
+		Tags = IsFireFuel,
+        FireFuelRatio = 1.35,
+	}
+	
+	item Log
+	{
+		DisplayName = Log,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 9,
+		Icon = Logs,
+		StaticModel = Log,
+		WorldStaticModel = Log,
+		Tags = IsFireFuel;Log,
+        ResearchableRecipes = CarveGoblets;CarveBucket,
+	}
+	
+	item LogStacks2
+	{
+		DisplayName = Log Stack - Two,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 6,
+		Icon = Logs2,
+		StaticModel = TwoLogsStack,
+		WorldStaticModel = TwoLogsStack,
+	}
+
+	item LogStacks3
+	{
+		DisplayName = Log Stack - Three,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 9,
+		Icon = Logs3,
+		StaticModel = ThreeLogsStack,
+		WorldStaticModel = ThreeLogsStack,
+	}
+
+	item LogStacks4
+	{
+		DisplayName = Log Stack - Four,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 12,
+		Icon = Logs4,
+		StaticModel = FourLogsStack,
+		WorldStaticModel = FourLogsStack,
+	}
+	
+	/******* OUTDOORS - MISC. *******/
+	
+	item Frog
+	{
+		DisplayName = Frog,
+		DisplayCategory = Frog,
+		Type = Normal,
+		Weight = 0.4,
+		Icon = Frog,
+		WorldStaticModel = Frog_Ground,
+	}
+	
+	item PercedWood
+	{
+		DisplayName = Notched Wooden Plank,
+		DisplayCategory = Camping,
+		Type = Normal,
+		Weight = 3,
+		Icon = TZ_PerforatedWoodenPlank,
+		WorldStaticModel = PercedWood,
+	}
+	
+	item Pinecone
+	{
+		DisplayName = Pine Cone,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Pinecone,
+		WorldStaticModel = PineCone,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Twigs
+	{
+		DisplayName = Twigs,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = Twigs,
+		WorldStaticModel = Twigs,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item TwigsBundle
+	{
+		DisplayName = Bundle of Twigs,
+		DisplayCategory = Camping,
+		Type = Normal,
+		Weight = 2,
+		Icon = Kindling,
+		StaticModel = TwigsBundle,
+		WorldStaticModel = TwigsBundle,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	/******* OUTDOORS - STONES *******/
+
+	item LargeStone
+	{
+		DisplayName = Large Stone,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 40,
+		Icon = Boulder,
+		StaticModelsByIndex = LargeStone;LargeStone2;LargeStone3,
+		WorldStaticModelsByIndex = LargeStone;LargeStone2;LargeStone3,
+		Tags = HeavyItem,
+		RequiresEquippedBothHands = TRUE,
+		WorldStaticModelsByIndex = LargeStone;LargeStone2;LargeStone3,
+	}
+
+	item Limestone
+	{
+		DisplayName = Limestone,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = Limestone,
+		WorldStaticModel = Limestone,
+		Tags = Stone;Limestone,
+		Tooltip = Tooltip_too_soft_hammer,
+
+	}
+
+	item SharpedStone
+	{
+		DisplayName = Sharp Flint Flake,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = RockSharpened,
+		StaticModel = ChippedStone,
+		WorldStaticModel = ChippedStone,
+		Tags = ShowCondition;SharpKnife;FlintPiece,
+		ConditionLowerChanceOneIn = 5,
+		ConditionMax = 5,
+		ResearchableRecipes = MakeStoneBlade;MakeStoneAwl,
+	}
+
+	item StoneBlock
+	{
+		DisplayName = Stone Block,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = RoughBlock,
+		StaticModel = StoneBlock,
+		WorldStaticModel = StoneBlock,
+	}
+}

@@ -1,0 +1,35 @@
+module Base
+{
+    template vehicle PickupVanCollision
+    {
+        useChassisPhysicsCollision = false,
+
+		physics box
+		{
+			offset = 0.0000 0.1703 0.0006,
+			extents = 0.8242 0.3516 2.1978,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = 0.0000 0.4011 0.3846,
+			extents = 0.6923 0.1758 0.4176,
+			rotate = 55.0000 0.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = 0.0000 0.4542 -0.9890,
+			extents = 0.6923 0.2967 0.1758,
+			rotate = 16.0000 0.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = 0.0000 0.4835 -0.3461,
+			extents = 0.6923 0.2747 1.3626,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }
+}

@@ -1,0 +1,16 @@
+module Base
+{
+    xuiSkin default
+    {
+        /* note: abstract class - for reference */
+        ISBaseComponentPanel
+        {
+            enableHeader        = false,
+            background          = false,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            minimumWidth        = 0,
+            minimumHeight       = 0,
+        }
+    }
+}

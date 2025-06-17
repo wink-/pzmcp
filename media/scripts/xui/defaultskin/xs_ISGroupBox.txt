@@ -1,0 +1,23 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISGroupBox
+        {
+            background          = false,
+            drawBorder          = true,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            textColor           = C_Text,
+            margin              = 24,
+            title               = "group",
+            minimumWidth        = 0,
+            minimumHeight       = 0,
+        }
+
+        ISGroupBox S_GroupBox_Furnace
+        {
+            title               = "chamber",
+        }
+    }
+}

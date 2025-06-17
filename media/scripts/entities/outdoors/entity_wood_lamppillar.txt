@@ -1,0 +1,87 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_LampPillar
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Lamp On Pillar,
+			Icon		= Build_FlashlightLamp,
+		}
+	}
+
+    entity WoodLampPillar
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_LampPillar,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			skillBaseHealth = 300,
+			isThumpable = true,
+			lightRadius = 10,
+			lightsourceItem = tags[FlashlightPillar], /* can also be [Base.HandTorch] etc. */
+			lightsourceFuel = Base.Battery, /* used when replacing "fuel" from a lamp on pillar */
+			debugItem = Base.Torch, /* Just used when using cheat build mode, as we need an item */
+			
+            face W
+            {
+                lightOffsetX = -4,
+                lightOffsetY = 0,
+                layer
+                {
+                    row = carpentry_02_61,
+                }
+            }
+            face N
+            {
+                lightOffsetX = 0,
+                lightOffsetY = -4,
+                layer
+                {
+                    row = carpentry_02_60,
+                }
+            }
+            face E
+            {
+                lightOffsetX = 4,
+                lightOffsetY = 0,
+                layer
+                {
+                    row = carpentry_02_62,
+                }
+            }
+            face S
+            {
+                lightOffsetX = 0,
+                lightOffsetY = 4,
+                layer
+                {
+                    row = carpentry_02_59,
+                }
+            }
+        }
+		
+		component CraftRecipe
+        {
+            timedAction   = BuildWallHammer,
+            time          = 200,
+            tags          = Carpentry,
+            SkillRequired = Woodwork:1,
+            xpAward       = Woodwork:10,
+            ToolTip       = Tooltip_craft_lampOnPillarDesc,
+            inputs
+            {
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 [Base.Log],
+                item 4 [Base.Nails],
+                item 1 [Base.Rope],
+                item 1 tags[FlashlightPillar] mode:destroy,
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+module Base
+{
+	sound FirstAidApplyAlcohol
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/FirstAid/ApplyAlcohol,
+		}
+	}
+
+	sound FirstAidApplyAlcoholWipes
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/FirstAid/ApplyAlcoholWipes,
+		}
+	}
+
+	sound FirstAidApplyBandage
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/FirstAid/ApplyBandage,
+		}
+	}
+
+	sound FirstAidApplySplint
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/FirstAid/ApplySplint,
+		}
+	}
+
+	sound FirstAidApplyStitch
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/FirstAid/ApplyStitch,
+		}
+	}
+
+	sound FirstAidFracture
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/FirstAid/Fracture,
+		}
+	}
+
+	sound FirstAidCleanBurn
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/FirstAid/CleanBurn,
+		}
+	}
+
+	sound FirstAidRemoveFromWound
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/FirstAid/RemoveFromWound,
+		}
+	}
+
+	sound FirstAidTakePills
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/FirstAid/TakePills,
+		}
+	}
+
+	sound FirstAidCleanRag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/FirstAid/CleanRag,
+		}
+	}
+}

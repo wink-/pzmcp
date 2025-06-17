@@ -1,0 +1,57 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_Rugged_Table
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Rugged Table,
+			Icon		= Build_LogSeat2,
+		}
+	}
+
+    entity Rugged_Table
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Rugged_Table,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_04_108 crafted_04_109,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_04_111,
+                    row = crafted_04_110,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = BuildWallNoTool,
+            time          = 50,
+            SkillRequired = Woodwork:1,
+            xpAward       = Woodwork:10,
+            category      = Furniture,
+            tags          = Carpentry;Furniture,
+            ToolTip       = Tooltip_craft_tableDesc,
+            inputs
+            {
+                item 8 [Base.TreeBranch2;Base.WoodenStick2],
+		        item 4 [Base.RippedSheets;Base.RippedSheetsDirty;Base.Twine;Base.Rope;Base.SheetRope] flags[DontReplace],
+            }
+        }
+    }
+}

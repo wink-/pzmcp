@@ -1,0 +1,92 @@
+module Base
+{
+	item Mov_ConcreteMixer
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Mortar Grinder,
+		WorldObjectSprite = construction_01_6,
+	}
+	
+	item Mov_ConcreteRoadBlock
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Mortar Grinder,
+		WorldObjectSprite = street_decoration_01_28,
+	}
+	
+	item Mov_PalletBricks
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Pallet with Bricks,
+		WorldObjectSprite = construction_01_4,
+	}
+	
+	item Mov_PalletEmpty
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Empty Pallet,
+		WorldObjectSprite = construction_01_5,
+	}
+	
+	item Mov_RoadBarrier
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Road Block,
+		WorldObjectSprite = construction_01_8,
+	}
+	
+	item Mov_RoadCone
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Road Cone,
+		WorldObjectSprite = street_decoration_01_26,
+	}
+	
+	item Mov_RoadCone2
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Road Cone,
+		WorldObjectSprite = street_decoration_01_27,
+	}
+	
+	item Mov_FireHydrant
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Standpipe,
+		WorldObjectSprite = street_decoration_01_12,
+	}
+	
+	item Mov_StopSign
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Stop Sign,
+		WorldObjectSprite = street_decoration_01_0,
+	}
+}

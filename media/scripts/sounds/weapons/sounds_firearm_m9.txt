@@ -1,0 +1,147 @@
+module Base
+{
+	sound M9Shoot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
+		{
+			event = Weapon/Firearm/M9/Shoot,
+		}
+	}
+
+	sound M9InsertAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M9/InsertAmmo,
+		}
+	}
+
+	sound M9EjectAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M9/EjectAmmo,
+		}
+	}
+
+	sound M9InsertAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M9/InsertAmmoStart,
+		}
+	}
+
+	sound M9InsertAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M9/InsertAmmoStop,
+		}
+	}
+
+	sound M9EjectAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M9/EjectAmmoStart,
+		}
+	}
+
+	sound M9EjectAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M9/EjectAmmoStop,
+		}
+	}
+
+	sound M9Rack
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M9/Rack,
+		}
+	}
+
+	sound M9Jam
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M9/Jam,
+		}
+	}
+    
+	sound M9BringToBear
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M9/BringToBear,
+		}
+	}
+    
+	sound M9AimRelease
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M9/AimRelease,
+		}
+	}
+
+	sound M9Equip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M9/Equip,
+		}
+	}
+        
+	sound M9UnEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M9/UnEquip,
+		}
+	}
+            
+	sound M9Break
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M9/Break,
+		}
+	}
+
+	sound M9Drop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M9/Drop,
+		}
+	}
+
+	sound M9CartridgeFall
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M9/CartridgeFall,
+		}
+	}
+}

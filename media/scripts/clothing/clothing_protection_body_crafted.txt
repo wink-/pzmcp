@@ -1,0 +1,83 @@
+module Base
+{
+
+	item Shoulderpads_FootballOnTop_Spiked
+    {
+        DisplayName = Spiked Football Shoulderpads (On Top),
+        DisplayCategory = ProtectiveGear,
+        Type = Clothing,
+        Icon = Football_ShoulderPads_Spiked,
+        BloodLocation = UpperBody,
+        BodyLocation = SportShoulderpadOnTop,
+
+        ClothingExtraSubmenu = Wear on top,
+        ClothingItem = Shoulderpads_FootballOnTop_Spiked,
+
+
+        CanHaveHoles = FALSE,
+        WorldStaticModel = Shoulderpads_Football_Spiked,
+        BiteDefense = 100,
+        ScratchDefense = 100,
+        CombatSpeedModifier = 0.95,
+        DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+        Weight = 4,
+        DiscomfortModifier = 0.1,
+        Tooltip = Tooltip_item_NoBackpack,
+        Tags = IgnoreZombieDensity;HasMetal;Spiked,
+		ConditionMax = 10,
+		ConditionLowerChanceOneIn = 3,
+    }
+
+	item Shoulderpad_Football_Spiked_L
+    {
+        DisplayName = Spiked Football Shoulderpad - Left,
+        DisplayCategory = ProtectiveGear,
+        Type = Clothing,
+        Icon = Football_ShoulderPad_Left_Spiked,
+        BloodLocation = UpperBody,
+        BodyLocation = ShoulderpadLeft,
+        ClothingItem = Shoulderpad_Football_Spiked_L,
+        CanHaveHoles = FALSE,
+        WorldStaticModel = Shoulderpad_Football_Spiked_L,
+        BiteDefense = 50,
+        ScratchDefense = 50,
+        CombatSpeedModifier = 0.98,
+        DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+        Weight = 2,
+        DiscomfortModifier = 0.1,
+        Tooltip = Tooltip_item_NoBackpack,
+        Tags = IgnoreZombieDensity;HasMetal;Spiked,
+		ConditionMax = 5,
+		ConditionLowerChanceOneIn = 3,
+    }
+
+	item Shoulderpad_Football_Spiked_R
+    {
+        DisplayName = Spiked Football Shoulderpad - Right,
+        DisplayCategory = ProtectiveGear,
+        Type = Clothing,
+        Icon = Football_ShoulderPad_Right_Spiked,
+        BloodLocation = UpperBody,
+        BodyLocation = ShoulderpadRight,
+        ClothingItem = Shoulderpad_Football_Spiked_R,
+        CanHaveHoles = FALSE,
+        WorldStaticModel = Shoulderpad_Football_Spiked_R,
+        BiteDefense = 50,
+        ScratchDefense = 50,
+        CombatSpeedModifier = 0.97,
+        DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+        Weight = 2,
+        DiscomfortModifier = 0.1,
+        Tooltip = Tooltip_item_NoBackpack,
+        Tags = IgnoreZombieDensity;HasMetal;Spiked,
+		ConditionMax = 5,
+		ConditionLowerChanceOneIn = 3,
+    }
+
+}

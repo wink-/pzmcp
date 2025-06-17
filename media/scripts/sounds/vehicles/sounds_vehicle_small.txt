@@ -1,0 +1,42 @@
+module Base
+{
+	sound VehicleEngineSmallCar
+	{
+		category = Vehicle,
+		master = VehicleEngine,
+		clip
+		{
+			event = Vehicle/Standard/Engine,
+		}
+	}
+
+	sound VehicleIgnitionFailSmallCar
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/IgnitionFail,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleEngineSmallCar02
+	{
+		category = Vehicle,
+		master = VehicleEngine,
+		clip
+		{
+			event = Vehicle/Standard/Engine,
+		}
+	}
+
+	sound VehicleIgnitionFailSmallCar02
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/IgnitionFail,
+		}
+	}
+}

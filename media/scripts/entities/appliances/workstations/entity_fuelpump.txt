@@ -1,0 +1,17 @@
+module Base
+{
+    entity FuelPump
+    {
+        component FluidContainer
+        {
+            ContainerName   = Fuel Pump,
+            capacity        = 22000,
+            InitialPercentMin      = 0.05,
+            InitialPercentMax      = 0.15,
+            fluids
+            {
+                fluid           = Petrol:1.0,
+            }
+        }
+    }
+}

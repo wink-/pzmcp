@@ -1,0 +1,436 @@
+module Base
+{
+	/******* CARTRIDGES *******/
+	
+	item 223Bullets
+	{
+		DisplayName = .223 Round,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.035,
+		Icon = RifleAmmo223loose,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = RifleAmmo,
+		Tags = Ammo,
+	}
+	
+	item 308Bullets
+	{
+		DisplayName = .308 Round,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.04,
+		Icon = RifleAmmo308loose,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = RifleAmmo,
+		Tags = Ammo,
+	}
+	
+	item 556Bullets
+	{
+		DisplayName = 5.56mm Round,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.035,
+		Icon = RifleAmmo308loose,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = RifleAmmo,
+		Tags = Ammo,
+	}
+	
+	item Bullets38
+	{
+		DisplayName = .38 Special Round,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.015,
+		Icon = PistolAmmo,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = 38SpecialBullets,
+		Tags = Ammo,
+	}
+	
+	item Bullets44
+	{
+		DisplayName = .44 Magnum Round,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.03,
+		Icon = PistolAmmo,
+		Count = 3,
+		MetalValue = 1,
+		WorldStaticModel = 9mmRounds,
+		Tags = Ammo,
+	}
+	
+	item Bullets45
+	{
+		DisplayName = .45 Auto Round,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.025,
+		Icon = PistolAmmo,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = 9mmRounds,
+		Tags = Ammo,
+	}
+	
+	item Bullets9mm
+	{
+		DisplayName = 9mm Round,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.02,
+		Icon = PistolAmmo,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = 9mmRounds,
+		Tags = Ammo,
+	}
+	
+	item ShotgunShells
+	{
+		DisplayName = Shotgun Shells,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.06,
+		Icon = ShotgunAmmo,
+		AlwaysWelcomeGift = TRUE,
+		Count = 6,
+		MetalValue = 1,
+		WorldStaticModel = ShotGunShells,
+		Tags = Ammo;ShotgunShell,
+	}
+	
+	/******* BOXES *******/
+	
+	item 223Box
+	{
+		DisplayName = Box of .223 Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 1.2,
+		Icon = RifleAmmo223,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 40,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = RifleAmmoBox,
+		WorldStaticModel = RifleAmmoBox,
+	}
+
+	item 223Carton
+	{
+		DisplayName = Carton of .223 Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 12,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = Parcel_Ammo_Medium,
+		WorldStaticModel = Parcel_Ammo_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item 308Box
+	{
+		DisplayName = Box of .308 Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.6,
+		Icon = RifleAmmo308,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 40,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = RifleAmmoBox,
+		WorldStaticModel = RifleAmmoBox,
+	}
+
+	item 308Carton
+	{
+		DisplayName = Carton of .308 Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 6,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item 556Box
+	{
+		DisplayName = Box of 5.56mm Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 1.2,
+		Icon = RifleAmmo308,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 40,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = RifleAmmoBox,
+		WorldStaticModel = RifleAmmoBox,
+	}
+
+	item 556Carton
+	{
+		DisplayName = Carton of 5.56 Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 6,
+		Icon = Parcel_Medium_Military,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 400,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Military_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item Bullets38Box
+	{
+		DisplayName = Box of .38 Special Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.50,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = BoxOf38Special,
+		WorldStaticModel = BoxOf38Special,
+	}
+
+	item Bullets38Carton
+	{
+		DisplayName = Carton of .38 Special Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 5,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item Bullets44Box
+	{
+		DisplayName = Box of .44 Magnum Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.40,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = BoxOf44Magnum,
+		WorldStaticModel = BoxOf44Magnum,
+	}
+
+	item Bullets44Carton
+	{
+		DisplayName = Carton of .44 Magnum Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 4,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item Bullets45Box
+	{
+		DisplayName = Box of .45 Auto Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 1,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = BoxOf45Auto,
+		WorldStaticModel = BoxOf45Auto,
+	}
+
+	item Bullets45Carton
+	{
+		DisplayName = Carton of .45 Auto Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 10,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item Bullets9mmBox
+	{
+		DisplayName = Box of 9mm Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = HandgunAmmoBox,
+		MetalValue = 30,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		StaticModel = HandGunAmmoBox,
+		WorldStaticModel = HandGunAmmoBox,
+	}
+
+	item Bullets9mmCarton
+	{
+		DisplayName = Carton of 9mm Rounds,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 8,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 300,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item ShotgunShellsBox
+	{
+		DisplayName = Box of Shotgun Shells,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 1.2,
+		Icon = ShotgunAmmoBox,
+		MetalValue = 24,
+		PlaceMultipleSound = BoxOfShellsPlaceAll,
+		PlaceOneSound = BoxOfShellsPlaceOne,
+		StaticModel = BoxOfShotGunShells,
+		WorldStaticModel = BoxOfShotGunShells,
+	}
+
+	item ShotgunShellsCarton
+	{
+		DisplayName = Carton of Shotgun Shells,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 12,
+		Icon = Parcel_Medium_Ammo,
+		AlwaysWelcomeGift = TRUE,
+		MetalValue = 240,
+		PlaceMultipleSound = BoxOfRoundsPlaceAll,
+		PlaceOneSound = BoxOfRoundsPlaceOne,
+		WorldStaticModel = Parcel_Ammo_Medium,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	/******* MAGAZINES *******/
+	
+	item 44Clip
+	{
+		DisplayName = D-E Magazine,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = BerettaClip,
+		AmmoType = Base.Bullets44,
+		CanStack = FALSE,
+		GunType = Base.Pistol3,
+		MaxAmmo = 8,
+		StaticModel = GunMagazine,
+		/*WorldStaticModel = Gun_Magazine_Ground,*/
+		WorldStaticModel = Gun_Pistol_Magazine,
+		Tags = HasMetal;PistolMagazine;IgnoreZombieDensity,
+	}
+	
+	item 45Clip
+	{
+		DisplayName = M1911 Auto Magazine,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = BerettaClip,
+		AmmoType = Base.Bullets45,
+		CanStack = FALSE,
+		GunType = Base.Pistol2,
+		MaxAmmo = 7,
+		StaticModel = GunMagazine,
+		/*WorldStaticModel = Gun_Magazine_Ground,*/
+		WorldStaticModel = Gun_Pistol_Magazine,
+		Tags = HasMetal;PistolMagazine,
+	}
+	
+	item 556Clip
+	{
+		DisplayName = M16 Magazine,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = m16clip,
+		AmmoType = Base.556Bullets,
+		CanStack = FALSE,
+		GunType = Base.AssaultRifle,
+		MaxAmmo = 30,
+		StaticModel = GunMagazine,
+		/*WorldStaticModel = Gun_Magazine_Ground,*/
+		WorldStaticModel = gun_magazine_new,
+		Tags = HasMetal;RifleMagazine,
+	}
+	
+	item 9mmClip
+	{
+		DisplayName = M9 Magazine,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = BerettaClip,
+		AmmoType = Base.Bullets9mm,
+		CanStack = FALSE,
+		GunType = Base.Pistol,
+		MaxAmmo = 15,
+		StaticModel = GunMagazine,
+		/*WorldStaticModel = Gun_Magazine_Ground,*/
+		WorldStaticModel = Gun_Pistol_Magazine,
+		Tags = HasMetal;PistolMagazine,
+	}
+	
+	item M14Clip
+	{
+		DisplayName = M14 Magazine,
+		DisplayCategory = Ammo,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = m14clip,
+		AmmoType = Base.308Bullets,
+		CanStack = FALSE,
+		GunType = Base.AssaultRifle2,
+		MaxAmmo = 20,
+		StaticModel = GunMagazine,
+		WorldStaticModel = gun_magazine_M14,
+		Tags = HasMetal;RifleMagazine,
+	}
+}

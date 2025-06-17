@@ -1,0 +1,111 @@
+module Base
+{
+   
+	/* NOTES: FIX_ACTION */
+	craftRecipe MakeWoodenBoxTrap
+	{
+        timedAction = SawLogs,
+		Time = 120,
+		NeedToBeLearn = True,
+		Tags = InHandCraft;Trapper,
+        category = Miscellaneous, /*category = Survival,*/
+		AutoLearnAny = Trapping:4,
+		xpAward = Woodwork:5,
+		inputs
+		{
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 3 [Base.Plank] flags[Prop2],
+			item 5 [Base.Nails],
+		}
+		outputs
+		{
+			item 1 Base.TrapCrate,
+		}
+	}
+
+	craftRecipe MakeStickTrap
+	{
+        timedAction = SharpenStake,
+		Time = 120,
+		NeedToBeLearn = True,
+		Tags = InHandCraft;Trapper,
+		AutoLearnAny = Trapping:2,
+        category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 4 [Base.WoodenStick2],
+			item 1 [Base.Twine],
+		}
+		outputs
+		{
+			item 1 Base.TrapStick,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe MakeSnareTrap
+	{
+        timedAction = SharpenStake,
+		Time = 130,
+		NeedToBeLearn = True,
+		SkillRequired = Trapping:1,
+		Tags = InHandCraft,
+        category = Miscellaneous, /*category = Survival,*/
+		AutoLearnAny = Trapping:6,
+		xpAward = Woodwork:5,
+		inputs
+		{
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+			item 1 [Base.Plank] flags[Prop2],
+			item 2 [Base.Twine],
+		}
+		outputs
+		{
+			item 1 Base.TrapSnare,
+		}
+	}
+
+	craftRecipe MakeTrapBox
+	{
+        timedAction = SawLogs,
+		Time = 150,
+		NeedToBeLearn = True,
+		SkillRequired = Woodwork:1;Trapping:2,
+		Tags = InHandCraft;Trapper,
+        category = Miscellaneous, /*category = Survival,*/
+		AutoLearnAny = Trapping:8,
+		xpAward = Woodwork:5,
+		inputs
+		{
+			item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight;Prop1],
+			item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 4 [Base.Plank] flags[Prop2],
+			item 7 [Base.Nails],
+		}
+		outputs
+		{
+			item 1 Base.TrapBox,
+		}
+	}
+
+	craftRecipe MakeCageTrap
+	{
+        timedAction = Making,
+		Time = 180,
+		NeedToBeLearn = True,
+		SkillRequired = Trapping:3,
+		Tags = InHandCraft;Trapper,
+        category = Miscellaneous, /*category = Survival,*/
+		AutoLearnAny = Trapping:5,
+		inputs
+		{
+			item 5 [Base.Wire],
+			item 1 tags[Pliers] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.TrapCage,
+		}
+	}
+}

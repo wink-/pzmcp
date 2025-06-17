@@ -1,0 +1,62 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_Metal_Wallframe
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Metal Wall Frame,
+			Icon		= Build_WallframeMetal,
+		}
+	}
+
+    entity MetalWallFrame
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Metal_Wallframe,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			health        = 100,
+			skillBaseHealth = 20,
+			
+            face W
+            {
+                layer
+                {
+                    row = constructedobjects_01_68,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = constructedobjects_01_69,
+                }
+            }
+			
+			corner = constructedobjects_01_51,
+        }
+		
+		component CraftRecipe
+        {
+			timedAction   = BuildWallMetal,
+            time          = 200,
+            needToBeLearn = true,
+            category      = Welding,
+			SkillRequired = MetalWelding:2,
+			xpAward       = MetalWelding:20,
+			ToolTip       = Tooltip_craft_woodenWallFrameDesc,
+            inputs
+            {
+                item 1 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.MetalBar],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

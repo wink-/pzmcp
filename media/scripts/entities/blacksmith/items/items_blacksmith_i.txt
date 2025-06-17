@@ -1,0 +1,386 @@
+module Base
+{
+	item CrudeWoodenTongs
+	{
+		DisplayName = Crude Wooden Tongs,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 1,
+		Icon = TwigTongs,
+		StaticModel = Tongs_Twine,
+		WorldStaticModel = Tongs_Twine,
+		Tags = CrudeTongs;BreakOnSmithing;Crude;IsFireFuel;IsFireTinder,
+		BreakSound = PlankBreak,
+		ConditionMax = 1,
+		ConditionLowerChanceOneIn = 1,
+		ToolTip = Tooltip_item_BreakOnSmithing,
+		ResearchableRecipes = Forge_Tongs;Forge_Heading_Tool,
+	}
+/*
+	item CrudeWoodenTongsSoaked
+	{
+		DisplayName = Crude Wooden Tongs (Soaked),
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 1,
+		Icon = TwigTongs,
+		StaticModel = Tongs_Twine,
+		WorldStaticModel = Tongs_Twine,
+		Tags = CrudeTongs,
+		ItemWhenDry = Base.CrudeWoodenTongs,
+		Wet = TRUE,
+		WetCooldown = 10000,
+		Tags = CrudeTongs;BreakOnSmithing;Crude,
+		BreakSound = PlankBreak,
+		ConditionMax = 1,
+		ConditionLowerChanceOneIn = 1,
+		ToolTip = Tooltip_item_BreakOnSmithing,
+		ResearchableRecipes = Forge_Tongs;Forge_Heading_Tool,
+	}*/
+
+	item IronBloom
+	{
+		DisplayName = Iron Bloom,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 20,
+		Icon = IronBloom,
+		StaticModel = IronBloom,
+		WorldStaticModel = IronBloom,
+		Tags = HasMetal;HeavyItem;IronSource,
+		RequiresEquippedBothHands = TRUE,
+	}
+
+	item IronOre
+	{
+		DisplayName = Iron Ore,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 40,
+		Icon = IronORe,
+		StaticModel = IronOre,
+		WorldStaticModel = IronOre,
+		Tags = HasMetal;HeavyItem;IronOre;IronSource,
+		RequiresEquippedBothHands = TRUE,
+	}
+
+	item IronOre_Crushed
+	{
+		DisplayName = Iron Ore - Crushed,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 40,
+		Icon = IronOre_Rubble,
+		WorldStaticModel = IronOre_Crushed,
+		Tags = HasMetal;HeavyItem;IronOre;IronSource,
+		RequiresEquippedBothHands = TRUE,
+	}
+
+	item CopperOre
+	{
+		DisplayName = Copper Ore,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 40,
+		Icon = CopperOre,
+		StaticModel = CopperOre,
+		WorldStaticModel = CopperOre,
+		Tags = HasMetal;HeavyItem;CopperOre;CopperSource,
+		RequiresEquippedBothHands = TRUE,
+	}
+
+	item CopperOre_Crushed
+	{
+		DisplayName = Copper Ore - Crushed,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 40,
+		Icon = CopperOre_Rubble,
+		WorldStaticModel = CopperOre_Crushed,
+		Tags = HasMetal;HeavyItem;CopperOre;CopperSource,
+		RequiresEquippedBothHands = TRUE,
+	}
+
+	item LargeMeteorite
+	{
+		DisplayName = Large Meteorite,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 40,
+		Icon = Meteorite,
+		StaticModel = Meteorite,
+		WorldStaticModel = Meteorite,
+		Tags = HasMetal;HeavyItem;IronOre;IronSource;IsMemento,
+		RequiresEquippedBothHands = TRUE,
+	}
+/*
+	item WorkableIron
+	{
+		DisplayName = Workable Iron,
+		DisplayCategory = Material,
+		/*Type = Drainable,*/
+		Type = Normal,
+		Weight = 0.5,
+		/*WeightEmpty = 0.01,
+		Icon = MetalBits,*/
+		Icon = WorkableIron,
+		/*ConsolidateOption = ContextMenu_Merge,
+        cantBeConsolided = FALSE,
+		UseDelta = 0.01,
+		UseWhileEquipped = FALSE,*/
+		StaticModel = WorkableIron,
+		WorldStaticModel = WorkableIron,
+		Tags = WorkableIron;IronMaterial;HasMetal,
+	}
+*/
+	item CharcoalCrafted
+	{
+		DisplayName = Wood Charcoal,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = WoodCharcoal,
+		StaticModel = CharcoalWood,
+		WorldStaticModel = CharcoalWood,
+		Tags = Charcoal;IsFireFuel,
+		FireFuelRatio = 2,
+	}
+
+	item CeramicIngotCastUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Unfired Ceramic Ingot Cast,
+		Icon                = CeramicCast_Bar_Unfired,
+		StaticModel         = CeramicIngotCastUnfired,
+		WorldStaticModel    = CeramicIngotCastUnfired,
+	}
+
+	item CeramicIngotCast
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Ceramic Ingot Cast,
+		Icon                = CeramicCast_Bar_Fired,
+		StaticModel         = CeramicIngotCast,
+		WorldStaticModel    = CeramicIngotCast,
+		ToolTip = Tooltip_item_BreakOnSmithing,
+	}
+
+	item SmallHandle
+	{
+		DisplayName = Small Handle,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Handle,
+		StaticModel = SmallHandle,
+		WorldStaticModel = SmallHandle,
+		Tags = WoodHandle;IsFireFuel,
+        ConditionMax	=	1,
+	}
+
+	item DappleDeerHide
+	{
+		DisplayCategory = Material,
+		Type = Moveable,
+		Icon = HideSmall_Rolled,
+		Weight = 5,
+		DisplayName = Dapple Deer Hide,
+		WorldObjectSprite = rugs_animals_2,
+		WorldStaticModel = RolledHide,
+	}
+
+	item DeerHide
+	{
+		DisplayCategory = Material,
+		Type = Moveable,
+		Icon = HideSmall_Rolled,
+		Weight = 5,
+		DisplayName = Deer Hide,
+		WorldObjectSprite = rugs_animals_18,
+		WorldStaticModel = RolledHide,
+	}
+
+	item CowHide
+	{
+		DisplayCategory = Material,
+		Type = Moveable,
+		Icon = HideLarge_Rolled,
+		Weight = 5,
+		DisplayName = Cow Hide,
+		WorldObjectSprite = rugs_animals_40,
+		WorldStaticModel = RolledHide_Large,
+	}
+
+	item Hematite
+	{
+		DisplayCategory = Material,
+		Type = Moveable,
+		Icon = default,
+		Weight = 2.5,
+		DisplayName = Iron Ore Chunks,
+		WorldObjectSprite = crafting_ore_01_9,
+	}
+
+	item HematiteLarge
+	{
+		DisplayCategory = Material,
+		Type = Moveable,
+		Icon = default,
+		Weight = 5,
+		DisplayName = Large Iron Ore Chunks,
+		WorldObjectSprite = crafting_ore_01_10,
+	}
+
+	item Malachite
+	{
+		DisplayCategory = Material,
+		Type = Moveable,
+		Icon = default,
+		Weight = 2.5,
+		DisplayName = Copper Ore Chunks,
+		WorldObjectSprite = crafting_ore_01_25,
+	}
+
+	item MalachiteLarge
+	{
+		DisplayCategory = Material,
+		Type = Moveable,
+		Icon = default,
+		Weight = 5,
+		DisplayName = Large Copper Ore Chunks,
+		WorldObjectSprite = crafting_ore_01_26,
+	}
+
+	item LargeBellows
+	{
+		DisplayCategory = Material,
+		Type            = Moveable,
+		Icon            = Bellows_Large,
+		Weight          = 40,
+		DisplayName     = Large Bellows,
+		WorldObjectSprite = crafted_02_16,
+		Tooltip         = Tooltip_item_LargeBellows,
+	}
+
+	item LargePlank
+	{
+	    DisplayCategory     = Material,
+		Weight	=	10,
+		Type = Normal,
+		Icon = RailroadTie,
+		DisplayName	=	Railroad Tie,
+		DisplayName	=	Large Plank,
+		Tags = HeavyItem,
+		RequiresEquippedBothHands = TRUE,
+		StaticModel = RailroadTie,
+		WorldStaticModel = RailroadTie,
+	}
+
+	item RailroadTrack
+	{
+	    DisplayCategory     = Material,
+		Weight	=	40,
+		Type = Normal,
+		Icon = RailroadRail,
+		DisplayName	=	Railroad Track,
+		Tags = ;HeavyItem,
+		RequiresEquippedBothHands = TRUE,
+		StaticModel = RailroadTrack,
+		WorldStaticModel = RailroadTrack,
+		Tooltip =   Tooltip_item_RailroadTrack,
+	}
+
+	item RailroadTrackPiece
+	{
+	    DisplayCategory     = Material,
+		Weight	=	15,
+		Type = Normal,
+		Icon = RailroadRail_Short,
+		DisplayName	=	Railroad Track Piece,
+		Tags = ;HeavyItem,
+		RequiresEquippedBothHands = TRUE,
+		StaticModel = RailroadTrackPiece,
+		WorldStaticModel = RailroadTrackPiece,
+		Tooltip =   Tooltip_item_RailroadTrackPiece,
+	}
+
+
+	item Mov_ElectricBlowerForge
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Electric Blower Forge,
+		WorldObjectSprite = crafted_02_52,
+	}
+
+	item IronBand
+	{
+		DisplayName = Iron Band,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = Metal_Band,
+		StaticModel = IronBand,
+		WorldStaticModel = IronBand,
+		Tags = HasMetal;SmeltableIronLarge,
+	}
+
+	item IronBandSmall
+	{
+		DisplayName = Iron Band - Small,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Metal_BandSmall,
+		StaticModel = IronBandSmall,
+		WorldStaticModel = IronBandSmall,
+	    Tooltip = Tooltip_item_IronBandSmall,
+		Tags = HasMetal;SmeltableIronSmall,
+	}
+
+	item Mov_UprightCoffin
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Upright Coffin,
+		WorldObjectSprite = crafted_04_52,
+	}
+
+	item Mov_FlatCoffin
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = Coffin_Plain,
+		Weight = 0.5,
+		DisplayName = Coffin,
+		WorldObjectSprite = crafted_04_44,
+	}
+
+	item Mov_KeyDuplicator
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Key Duplicator,
+		WorldObjectSprite = industry_04_16,
+	}
+
+	item Mov_BenchGrinder
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Bench Grinder,
+		WorldObjectSprite = industry_04_20,
+	}
+}

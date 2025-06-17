@@ -1,0 +1,74 @@
+module Base
+{
+	sound WoodDoorBlocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodDoor/IsBlocked,
+		}
+	}
+
+	sound WoodDoorBreak
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodDoor/Break,
+		}
+	}
+
+	sound WoodDoorClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodDoor/Close,
+		}
+	}
+
+	sound WoodDoorCreak
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodDoor/Creak,
+		}
+	}
+
+	sound WoodDoorLock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodDoor/Lock,
+		}
+	}
+
+	sound WoodDoorLocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodDoor/IsLocked,
+		}
+	}
+
+	sound WoodDoorOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodDoor/Open,
+		}
+	}
+
+	sound WoodDoorUnlock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodDoor/Unlock,
+		}
+	}
+}

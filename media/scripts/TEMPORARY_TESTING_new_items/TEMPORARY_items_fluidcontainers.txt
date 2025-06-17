@@ -1,0 +1,834 @@
+module Base
+{
+    item Bucket
+    {
+        DisplayCategory     = WaterContainer,
+        Weight	            = 1,
+        Type	            = Normal,
+        DisplayName	        = Bucket,
+        EatType = Bucket,
+        PourType = Bucket,
+        Icon	            = MetalBucket,
+        IconFluidMask	            = Bucket_Mask,
+        StaticModel = Bucket_Ground_Fluid,
+        WorldStaticModel = Bucket_Ground,
+        Tags = Bucket;Cookable;HasMetal;MetalBucket,
+        ResearchableRecipes = MakeBucketMaul;Forge_Bucket;CarveBucket,
+
+        component FluidContainer
+        {
+            ContainerName   = Bucket,
+            RainFactor	= 0.5,
+            capacity        = 10.0,
+        }
+    }
+
+    item BucketWood
+    {
+        DisplayCategory     = WaterContainer,
+        Weight	            = 1,
+        Type	            = Normal,
+        DisplayName	        = Wooden Bucket,
+        EatType = Bucket,
+        PourType = Bucket,
+        Icon	            = QuenchBucket_Empty,
+        /*IconFluidMask	            = Bucket_Mask,*/
+        StaticModel = BucketWood,
+        WorldStaticModel = BucketWood,
+        Tags = Bucket;HasMetal,
+        ResearchableRecipes = Forge_Bucket;CarveBucket,
+
+        component FluidContainer
+        {
+            ContainerName   = Bucket,
+            RainFactor	= 0.5,
+            capacity        = 10.0,
+        }
+    }
+
+    item BucketCarved
+    {
+        DisplayCategory     = WaterContainer,
+        Weight	            = 2,
+        Type	            = Normal,
+        DisplayName	        = Carved Bucket,
+        EatType = Bucket,
+        PourType = Bucket,
+        Icon	            = Bucket_Crude,
+        IconFluidMask	            = Bucket_Crude_Mask,
+        StaticModel = BucketCarved_Hand,
+        WorldStaticModel = BucketCarved,
+        Tags = Bucket;IsFireFuel,
+        ResearchableRecipes = Forge_Bucket;CarveGoblets;CarveBucket,
+
+        component FluidContainer
+        {
+            ContainerName   = Bucket,
+            RainFactor	= 0.5,
+            capacity        = 10.0,
+        }
+    }
+
+    item BucketForged
+    {
+        DisplayCategory     = WaterContainer,
+        Weight	            = 1,
+        Type	            = Normal,
+        DisplayName	        = Bucket,
+        EatType = Bucket,
+        PourType = Bucket,
+        Icon	            = Bucket_Forged,
+        IconFluidMask	            = Bucket_Mask,
+        StaticModel = BucketForged_Fluid,
+        WorldStaticModel = BucketForged,
+        Tags = Bucket;HasMetal;MetalBucket;Cookable,
+        ResearchableRecipes = MakeBucketMaul;CarveBucket,
+
+        component FluidContainer
+        {
+            ContainerName   = Bucket,
+            RainFactor	= 0.5,
+            capacity        = 10.0,
+        }
+    }
+
+    item CanteenMilitary
+    {
+        DisplayCategory = WaterContainer,
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	Empty Canteen,
+        /*Icon	=	CanteenMilitary,*/
+        IconsForTexture = Canteen_Military_Green;Canteen_Military_Camo,
+        /*StaticModel = CanteenMilitary,
+        WorldStaticModel = CanteenMilitary_Ground,*/
+        StaticModelsByIndex	= CanteenMilitaryUS;CanteenMilitaryCamo,
+        WorldStaticModelsByIndex	= CanteenMilitaryUS_Ground;CanteenMilitaryCamo_Ground,
+        AttachmentType = Walkie,
+        Tags = HasMetal;LightWhenAttached,
+        IsCookable = TRUE,
+        CookingSound = BoilingFood,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+
+        component FluidContainer
+        {
+            ContainerName   = Canteen,
+            capacity        = 0.5,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+        }
+    }
+
+	item CanteenMilitaryFull
+	{
+        DisplayName = Canteen,
+        DisplayCategory = WaterContainer,
+        Type = Normal,
+        Weight = 0.2,
+        /*Icon	=	CanteenMilitary,*/
+        IconsForTexture = Canteen_Military_Green;Canteen_Military_Camo,
+        FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        IsCookable = TRUE,
+        /*StaticModel = CanteenMilitary,
+        WorldStaticModel = CanteenMilitary_Ground,*/
+        StaticModelsByIndex	= CanteenMilitaryUS;CanteenMilitaryCamo,
+        WorldStaticModelsByIndex	= CanteenMilitaryUS_Ground;CanteenMilitaryCamo_Ground,
+        AttachmentType = Walkie,
+        Tags = HasMetal;LightWhenAttached,
+        CookingSound = BoilingFood,
+
+        	component FluidContainer
+        	{
+            		ContainerName   = Canteen,
+            		capacity        = 0.5,
+            		CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            		Fluids
+            		{
+                		fluid           = Water:1.0,
+            		}
+        	}
+	}
+
+	item Canteen
+    {
+        DisplayCategory = WaterContainer,
+        Weight	=	0.2,
+        CanStoreWater	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	Canteen,
+        /*Icon	=	CanteenMilitary,*/
+        IconsForTexture = Canteen_Military_Green;Canteen_Military_Camo;Canteen_Black;Canteen_Metal,
+        /*ReplaceOnUseOn	=	WaterSource-CanteenMilitaryFull,*/
+        /*StaticModel = CanteenMilitary,
+        WorldStaticModel = CanteenMilitary_Ground,*/
+        StaticModelsByIndex	= CanteenMilitaryUS;CanteenMilitaryCamo;CanteenMilitaryBlack;CanteenMilitaryMetal,
+        WorldStaticModelsByIndex	= CanteenMilitaryUS_Ground;CanteenMilitaryCamo_Ground;CanteenMilitaryBlack_Ground;CanteenMilitaryMetal_Ground,
+        /*ReplaceTypes = WaterSource CanteenMilitaryFull,*/
+        AttachmentType = Walkie,
+        Tags = HasMetal;LightWhenAttached,
+        /*OnCreate = SpecialLootSpawns.OnCreateCanteen,*/
+
+        component FluidContainer
+        {
+            ContainerName   = Canteen,
+            capacity        = 0.5,
+            InitialPercentMin = 0.0,
+            InitialPercentMax = 1.0,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+            Fluids
+            {
+                fluid           = Water:1.0,
+            }
+        }
+    }
+
+	item CanteenClay
+    {
+        DisplayCategory = WaterContainer,
+        Weight	=	0.2,
+        CanStoreWater	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	Canteen,
+        Icon	=	Canteen_Clay,
+        StaticModel = CanteenClay,
+        WorldStaticModel = CanteenClay_Ground,
+        AttachmentType = Walkie,
+        Tags = LightWhenAttached,
+
+        component FluidContainer
+        {
+            ContainerName   = Canteen,
+            capacity        = 0.5,
+        }
+    }
+
+    item DrinkingGlass
+    {
+        DisplayCategory 	= WaterContainer,
+        Weight	=	0.3,
+        Type	=	Normal,
+        DisplayName	=   Glass,
+        Icon	=	DrinkingGlass,
+        EatType = popcan,
+        StaticModel = DrinkingGlass,
+        WorldStaticModel = DrinkingGlass,
+        Tags = Glass,
+
+        component FluidContainer
+        {
+            ContainerName   = Glass,
+            RainFactor	= 0.5,
+            capacity        = 0.2,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+    }
+
+	item FountainCupWater
+	{
+        DisplayName = Fountain Cup of Water,
+        DisplayCategory = WaterContainer,
+        Type	=	Normal,
+        Weight = 0.3,
+        Icon	=	FountainCup,
+        EatType = popcan,
+        FillFromDispenserSound = GetWaterFromDispenserCeramic,
+        FillFromTapSound = GetWaterFromTapCeramic,
+        Tooltip = Tooltip_item_RainFromGroundOnlyPurifyMicrowave,
+        StaticModel = FountainCup_Ground,
+        WorldStaticModel = FountainCup_Ground,
+        Tooltip = Tooltip_item_OnlyPurifyMicrowave,
+        EatTime = 160,
+
+        component FluidContainer
+        {
+            ContainerName   = CupFountain,
+            RainFactor	= 0.5,
+            capacity        = 0.5,
+            CustomDrinkSound = DrinkingFromMug,
+
+            Fluids
+            {
+                 fluid           = Water:1.0,
+            }
+        }
+	}
+
+    item Goblet
+    {
+        DisplayCategory 	= Memento,
+        Weight	=	0.5,
+        Type	=	Normal,
+        DisplayName	=   Goblet,
+        Icon	=	Goblet,
+        IconFluidMask	=	Goblet_Mask,
+        EatType = popcan,
+        StaticModel = Goblet,
+        WorldStaticModel = Goblet,
+        Tags = HasMetal;IsMemento;OmitEmptyFromName,
+        ResearchableRecipes = CarveGoblets;Forge_Goblets,
+
+        component FluidContainer
+        {
+            ContainerName   = Goblet,
+            RainFactor	= 0.5,
+            capacity        = 0.5,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+    }
+
+    item Goblet_Gold
+    {
+        DisplayCategory 	= Memento,
+        Weight	=	0.5,
+        Type	=	Normal,
+        DisplayName	=   Gold Goblet,
+        Icon	=	Goblet_Metal,
+        IconFluidMask	=	Goblet_Mask,
+        EatType = popcan,
+        StaticModel = Goblet_Gold,
+        WorldStaticModel = Goblet_Gold,
+        Tags = HasMetal;IsMemento;OmitEmptyFromName;IgnoreZombieDensity;GoldScrap,
+		ColorRed = 207,
+        ColorGreen = 181,
+        ColorBlue = 59,
+        ResearchableRecipes = CarveGoblets,
+
+        component FluidContainer
+        {
+            ContainerName   = Goblet_Gold,
+            RainFactor	= 0.5,
+            capacity        = 0.5,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+    }
+
+    item Goblet_Silver
+    {
+        DisplayCategory 	= Memento,
+        Weight	=	0.5,
+        Type	=	Normal,
+        DisplayName	=   Silver Goblet,
+        Icon	=	Goblet_Metal,
+        IconFluidMask	=	Goblet_Mask,
+        EatType = popcan,
+        StaticModel = Goblet_Silver,
+        WorldStaticModel = Goblet_Silver,
+        Tags = HasMetal;IsMemento;OmitEmptyFromName;IgnoreZombieDensity;SilverScrap,
+        ResearchableRecipes = CarveGoblets,
+
+        component FluidContainer
+        {
+            ContainerName   = Goblet_Silver,
+            RainFactor	= 0.5,
+            capacity        = 0.5,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+    }
+
+    item Goblet_Wood
+    {
+        DisplayCategory 	= Memento,
+        Weight	=	0.5,
+        Type	=	Normal,
+        DisplayName	=   Wood Goblet,
+        Icon	=	Goblet_Wood,
+        IconFluidMask	=	Goblet_Wood_Mask,
+        EatType = popcan,
+        StaticModel = Goblet_Wood,
+        WorldStaticModel = Goblet_Wood,
+        Tags = IsFireFuel;OmitEmptyFromName;IgnoreZombieDensity,
+        ResearchableRecipes = CarveGoblets;CarveBucket,
+        ResearchableRecipes = CarveGoblets;Forge_Goblets,
+
+        component FluidContainer
+        {
+            ContainerName   = Goblet_Wood,
+            RainFactor	= 0.5,
+            capacity        = 0.5,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+    }
+
+    item HotWaterBottle
+    {
+        DisplayCategory = WaterContainer,
+        Weight	=	0.4,
+        Type	=	Normal,
+        DisplayName	=	Empty Hot Water Bottle,
+        Icon	=	HotWaterBottle,
+        /*StaticModel = CanteenMilitary,*/
+        WorldStaticModel = HotWaterBottle,
+        IsCookable = TRUE,
+        CookingSound = BoilingFood,
+	Tags = CookableMicrowave,
+
+        component FluidContainer
+        {
+            ContainerName   = HotWaterBottle,
+            capacity        = 1.0,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+        }
+    }
+
+	item JerryCan
+	{
+		DisplayName = Jerrycan of Gas,
+		DisplayCategory = VehicleMaintenance,
+		Type = Normal,
+		Weight = 4,
+		Icon = JerrycanMilitary,
+		ReplaceInPrimaryHand = Bag_JerryCan_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_JerryCan_LHand holdingbagleft,
+		SurvivalGear = TRUE,
+		StaticModel = JerryCan,
+		WorldStaticModel = JerryCan,
+		Tags = Petrol,
+
+        	component FluidContainer
+        	{
+            		ContainerName   = Jerrycan,
+            		capacity        = 10.0,
+
+            		Fluids
+            		{
+                 		fluid           = Petrol:1.0,
+            		}
+        	}
+	}
+
+/* beverages, juices */
+
+	item SimpleSyrup
+	{
+        DisplayName = Bottle,
+        DisplayCategory = Food,
+        Type = Normal,
+        Weight = 0.1,
+        Icon     = SimpleSyrup,
+        IconFluidMask       = SimpleSyrup_Mask,
+        Packaged = TRUE,
+        CustomContextMenu = Drink,
+        EatType = Bourbon,
+        StaticModel = WhiskeyBottle,
+        WorldStaticModel = WhiskeyBottleGround,
+
+        component FluidContainer
+        {
+            ContainerName   = Bottle,
+            capacity        = 1.0,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            Fluids
+            {
+                fluid           = SimpleSyrup:1.0,
+            }
+        }
+	}
+
+/*  MILK */
+
+	item MilkBottle
+	{
+        DisplayName = Bottle,
+        DisplayCategory = Food,
+        Type = Normal,
+        Weight = 0.1,
+        Icon = MilkBottle,
+        /* IconFluidMask       = MilkBottle_Mask, */
+        CustomContextMenu = Drink,
+        EatType = Bourbon,
+        StaticModel = MilkBottle,
+        WorldStaticModel = MilkBottle,
+
+        component FluidContainer
+        {
+            ContainerName   = BottleMilk,
+            capacity        = 1.0,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            Fluids
+            {
+                fluid           = CowMilk:1.0,
+            }
+        }
+	}
+
+    item Flask
+    {
+        DisplayCategory = Memento,
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Flask,
+        Icon            = Flask,
+        EatType = Bourbon,
+        Tags = IgnoreZombieDensity;HasMetal;IsMemento,
+        StaticModel = Flask,
+        WorldStaticModel = Flask,
+
+        component FluidContainer
+        {
+            ContainerName   = Flask,
+            capacity        = 0.5,
+	    PickRandomFluid = true,
+            InitialPercentMin = 0.0,
+            InitialPercentMax = 1.0,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            Fluids
+            {
+                fluid           = Gin:1.0,
+                fluid           = Rum:1.0,
+                fluid           = Scotch:1.0,
+                fluid           = Vodka:1.0,
+                fluid           = Whiskey:1.0,
+            }
+        }
+	}
+
+    item Sportsbottle
+    {
+        DisplayCategory = WaterContainer,
+        Weight          = 0.1,
+        Type            = Normal,
+        DisplayName     = Sports Bottle,
+        Icon            = Sportsbottle,
+        EatType = Bourbon,
+        StaticModel = Sportsbottle,
+        WorldStaticModel = Sportsbottle,
+
+        component FluidContainer
+        {
+            ContainerName   = SportsBottle,
+            capacity        = 1.0,
+            InitialPercentMin = 0.0,
+            InitialPercentMax = 1.0,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            Fluids
+            {
+                fluid           = Water:1.0,
+            }
+        }
+	}
+
+    item WaterDispenserBottle
+    {
+        DisplayCategory     = WaterContainer,
+        Weight	            = 2,
+        Type	            = Normal,
+        DisplayName	    = Dispenser Bottle,
+        EatType = Bucket,
+        PourType = Bucket,
+        Icon	            = WaterTank,
+        IconFluidMask	    = Bucket_Mask,
+        StaticModel = WaterTank,
+        WorldStaticModel = WaterTank,
+
+        component FluidContainer
+        {
+            ContainerName   = BottleDispenser,
+            capacity        = 15.0,
+            Fluids
+            {
+                fluid           = Water:1.0,
+            }
+        }
+    }
+
+	item Bag_LeatherWaterBag
+	{
+        DisplayCategory = WaterContainer,
+        Type = Clothing,
+        Weight = 0.3,
+        DisplayName = Leather Water Bag,
+        ClothingItem =Bag_LeatherWaterBag,
+        BodyLocation = AmmoStrap,
+        Icon =  Wineskin,
+        StaticModel = CanteenCowboy_Ground,
+        WorldStaticModel = CanteenCowboy_Ground,
+        EatType = Bourbon,
+        CanHaveHoles = FALSE,
+        WaterResistance = 1.0,
+        ReplaceInPrimaryHand = Bag_LeatherWaterBag_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_LeatherWaterBag_LHand holdingbagleft,
+        WorldStaticModel = LeatherWaterBag_Ground,
+
+        component FluidContainer
+        {
+            ContainerName   = LeatherWaterBag,
+            capacity        = 1.0,
+            InitialPercentMin = 0.0,
+            InitialPercentMax = 1.0,
+            Fluids
+            {
+                fluid           = Water:1.0,
+            }
+        }
+	}
+
+    item CanteenCowboy
+    {
+        DisplayCategory = WaterContainer,
+        Type = Clothing,
+        Weight = 0.3,
+        DisplayName = Western Canteen,
+        ClothingItem = CanteenCowboy,
+        BodyLocation = AmmoStrap,
+        IconsForTexture =  CanteenCowboy;Canteen_Green;Canteen_Camo;CanteenCowboy,
+        Tags = HasMetal;IsMemento,
+        StaticModel = CanteenCowboy_Ground,
+        WorldStaticModel = CanteenCowboy_Ground,
+        EatType = Bourbon,
+        CanHaveHoles = FALSE,
+        WaterResistance = 1.0,
+
+        component FluidContainer
+        {
+            ContainerName   = WesternCanteen,
+            capacity        = 1.0,
+            InitialPercentMin = 0.0,
+            InitialPercentMax = 1.0,
+            CustomDrinkSound = DrinkingFromBottlePlastic,
+
+            Fluids
+            {
+                fluid           = Water:1.0,
+            }
+        }
+    }
+
+
+	item KnapsackSprayer
+	{
+		DisplayName = Backpack Sprayer,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		IconsForTexture = Sprayer_Blue;Sprayer_White;Sprayer_Yellow,
+		BodyLocation = Back,
+		BloodLocation = Bag,
+		CanHaveHoles = FALSE,
+		RunSpeedModifier = 0.98,
+		ClothingExtraSubmenu = Unstow,
+		ClothingItem = Bag_KnapsackSprayer,
+		ClothingItemExtra = KnapsackSprayer_Stowed,
+		ClothingItemExtraOption = Stow,
+		WorldStaticModel = KnapsackSprayerStowed_Ground,
+		Weight = 5.0,
+		Tags = Sprayer;HasMetal;ReplacePrimary;Equippable,
+		WaterResistance = 1.0,
+		/*ReplaceInPrimaryHand = Bag_KnapsackSprayer_Stowed_RHand holdingbagright,*/
+		ReplaceInSecondHand = Bag_KnapsackSprayer_Stowed_LHand holdingbagleft,
+        DiscomfortModifier = 0.20,
+
+        component FluidContainer
+        {
+            ContainerName   = KnapsackSprayer,
+            capacity        = 16.0,
+            InitialPercentMin = 0.0,
+            InitialPercentMax = 1.0,
+            Fluids
+            {
+            }
+        }
+	}
+
+	item KnapsackSprayer_Stowed
+	{
+		DisplayName = Backpack Sprayer (Stowed),
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		IconsForTexture = Sprayer_Blue;Sprayer_White;Sprayer_Yellow,
+		BodyLocation = Back,
+		BloodLocation = Bag,
+		CanHaveHoles = FALSE,
+		RunSpeedModifier = 0.98,
+		ClothingExtraSubmenu = Stow,
+		ClothingItem = Bag_KnapsackSprayer_Stowed,
+		ClothingItemExtra = KnapsackSprayer,
+		ClothingItemExtraOption = Unstow,
+		WorldStaticModel = KnapsackSprayerStowed_Ground,
+		Weight = 5.0,
+		Tags = Sprayer;HasMetal;Equippable,
+		ReplaceInPrimaryHand = Bag_KnapsackSprayer_Stowed_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_KnapsackSprayer_Stowed_LHand holdingbagleft,
+        DiscomfortModifier = 0.20,
+
+        component FluidContainer
+        {
+            ContainerName   = KnapsackSprayer,
+            capacity        = 16.0,
+            InitialPercentMin = 0.0,
+            InitialPercentMax = 1.0,
+            Fluids
+            {
+            }
+        }
+	}
+
+
+	item Bag_HydrationBackpack
+    {
+        DisplayName = Hydration Pack,
+        DisplayCategory = Bag,
+        Type = Container,
+        Weight = 1.0,
+        IconsForTexture = Hydropack_Black;Hydropack_Blue;Hydropack_Neon,
+        AttachmentReplacement = Bag,
+        BloodLocation = Bag,
+        CanBeEquipped = Back,
+        Capacity = 12,
+        CloseSound = CloseHydrationPack,
+        ClothingItem = Bag_HydrationBackpack,
+        EquipSound = EquipBackpackLarge,
+        OpenSound = OpenHydrationPack,
+        PutInSound = StoreItemHydrationPack,
+        ReplaceInPrimaryHand = Bag_HydrationBackpack_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_HydrationBackpack_LHand holdingbagleft,
+        RunSpeedModifier = 0.97,
+        SoundParameter = EquippedBaggageContainer SchoolBag,
+        WeightReduction = 85,
+        WorldStaticModel = HydrationBackpack_Ground,
+        Tags = IgnoreZombieDensity,
+
+        component FluidContainer
+        {
+            ContainerName   = HydrationBackpack,
+            capacity        = 1.0,
+            InitialPercentMin = 0.0,
+            InitialPercentMax = 1.0,
+            Fluids
+            {
+                fluid           = Water:1.0,
+            }
+        }
+    }
+
+	item Bag_HydrationBackpack_Camo
+    {
+        DisplayName = Hydration Pack,
+        DisplayCategory = Bag,
+        Type = Container,
+        Weight = 1.0,
+        Icon = Hydropack_Camo,
+        AttachmentReplacement = Bag,
+        BloodLocation = Bag,
+        CanBeEquipped = Back,
+        Capacity = 12,
+        CloseSound = CloseHydrationPack,
+        ClothingItem = Bag_HydrationBackpack_Camo,
+        EquipSound = EquipBackpackLarge,
+        OpenSound = OpenHydrationPack,
+        PutInSound = StoreItemHydrationPack,
+        ReplaceInPrimaryHand = Bag_HydrationBackpack_Camo_RHand holdingbagright,
+        ReplaceInSecondHand = Bag_HydrationBackpack_Camo_LHand holdingbagleft,
+        RunSpeedModifier = 0.97,
+        SoundParameter = EquippedBaggageContainer SchoolBag,
+        WeightReduction = 85,
+        WorldStaticModel = HydrationBackpack_Ground,
+        Tags = IgnoreZombieDensity,
+
+        component FluidContainer
+        {
+            ContainerName   = HydrationBackpack,
+            capacity        = 1.0,
+            InitialPercentMin = 0.0,
+            InitialPercentMax = 1.0,
+            Fluids
+            {
+                fluid           = Water:1.0,
+            }
+        }
+    }
+
+    /* note: not a mug because food/mug stuff!*/
+	item MetalCup
+	{
+		DisplayName = Metal Cup,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		PourType = Mug,
+		Weight = 0.5,
+		Icon = Mug_Forged,
+		IconFluidMask = MugMetal_Mask,
+		Tooltip = Tooltip_item_RainFromGround,
+		StaticModel = Mug_Metal,
+		WorldStaticModel = Mug_Metal,
+		Tags = CoffeeMaker;HasMetal;SmeltableSteelSmall,
+
+        	component FluidContainer
+        	{
+                ContainerName   = Metal_Cup,
+                capacity        = 0.5,
+                RainFactor = 0.2,
+                CustomDrinkSound = DrinkingFromMug,
+        	}
+	}
+	item CopperCup
+	{
+		DisplayName = Copper Cup,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		PourType = Mug,
+		Weight = 0.5,
+		Icon = Mug_Copper,
+		IconFluidMask = MugMetal_Mask,
+		Tooltip = Tooltip_item_RainFromGround,
+		StaticModel = Mug_Copper,
+		WorldStaticModel = Mug_Copper,
+		Tags = CoffeeMaker;HasMetal;ScrapSmallCopper,
+
+        	component FluidContainer
+        	{
+                ContainerName   = Copper_Cup,
+                capacity        = 0.5,
+                RainFactor = 0.2,
+                CustomDrinkSound = DrinkingFromMug,
+        	}
+	}
+	item GoldCup
+	{
+		DisplayName = Gold Cup,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		PourType = Mug,
+		Weight = 0.5,
+		Icon = Mug_Gold,
+		IconFluidMask = MugMetal_Mask,
+		Tooltip = Tooltip_item_RainFromGround,
+		StaticModel = Mug_Gold,
+		WorldStaticModel = Mug_Gold,
+		Tags = CoffeeMaker;HasMetal;GoldScrap,
+
+        	component FluidContainer
+        	{
+                ContainerName   = Gold_Cup,
+                capacity        = 0.5,
+                RainFactor = 0.2,
+                CustomDrinkSound = DrinkingFromMug,
+        	}
+	}
+	item SilverCup
+	{
+		DisplayName = Silver Cup,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		PourType = Mug,
+		Weight = 0.5,
+		Icon = Mug_Metal,
+		IconFluidMask = MugMetal_Mask,
+		Tooltip = Tooltip_item_RainFromGround,
+		StaticModel = Mug_Silver,
+		WorldStaticModel = Mug_Silver,
+		Tags = CoffeeMaker;HasMetal;SilverScrap,
+
+        	component FluidContainer
+        	{
+                ContainerName   = Silver_Cup,
+                capacity        = 0.5,
+                RainFactor = 0.2,
+                CustomDrinkSound = DrinkingFromMug,
+        	}
+	}
+}

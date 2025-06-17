@@ -1,0 +1,314 @@
+module Base
+{
+
+	item Shirt_Crafted_Burlap
+	{
+		DisplayName = Crafted Burlap Shirt,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Shirt_Crafted_Burlap,
+		BloodLocation = ShirtLongSleeves,
+		BodyLocation = ShortSleeveShirt,
+		ClothingItem = Shirt_Crafted_Burlap,
+		FabricType = Cotton,
+		Insulation = 0.25,
+		WindResistance = 0.15,
+        DiscomfortModifier = 0.12,
+		WorldStaticModel = Shirt_Ground,
+		Tags = RipClothingCotton,
+		ScratchDefense = 5,
+        ResearchableRecipes = SewShirt;SewShirtSleeveless,
+	}
+
+	item Shirt_Crafted_Cotton
+	{
+		DisplayName = Crafted Cotton Shirt,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Shirt_Crafted_Cotton,
+		BloodLocation = ShirtLongSleeves,
+		BodyLocation = ShortSleeveShirt,
+		ClothingItem = Shirt_Crafted_Cotton,
+		FabricType = Cotton,
+		Insulation = 0.25,
+		WindResistance = 0.15,
+		WorldStaticModel = Shirt_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewShirt;SewShirtSleeveless,
+	}
+
+	item Shirt_Crafted_Denim
+	{
+		DisplayName = Crafted Denim Shirt,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Shirt_Crafted_Denim,
+		BloodLocation = ShirtLongSleeves,
+		BodyLocation = ShortSleeveShirt,
+		ClothingItem = Shirt_Crafted_Denim,
+		FabricType = Denim,
+		Insulation = 0.25,
+		WindResistance = 0.15,
+		WorldStaticModel = Shirt_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewShirt;SewShirtSleeveless,
+	}
+
+	item Shirt_Crafted_DenimBlack
+	{
+		DisplayName = Crafted Denim Shirt,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Shirt_Crafted_BlackDenim,
+		BloodLocation = ShirtLongSleeves,
+		BodyLocation = ShortSleeveShirt,
+		ClothingItem = Shirt_Crafted_DenimBlack,
+		FabricType = Denim,
+		Insulation = 0.25,
+		WindResistance = 0.15,
+		WorldStaticModel = Shirt_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewShirt;SewShirtSleeveless,
+	}
+
+	item Shirt_Crafted_DenimLight
+	{
+		DisplayName = Crafted Denim Shirt,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Shirt_Crafted_Denim,
+		BloodLocation = ShirtLongSleeves,
+		BodyLocation = ShortSleeveShirt,
+		ClothingItem = Shirt_Crafted_DenimLight,
+		FabricType = Denim,
+		Insulation = 0.25,
+		WindResistance = 0.15,
+		WorldStaticModel = Shirt_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewShirt;SewShirtSleeveless,
+	}
+
+	item Shirt_Crafted_DenimRandom
+	{
+		DisplayName = Crafted Denim Shirt,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = Shirt_Crafted_Denim;Shirt_Crafted_Denim;Shirt_Crafted_BlackDenim,
+		BloodLocation = ShirtLongSleeves,
+		BodyLocation = ShortSleeveShirt,
+		ClothingItem = Shirt_Crafted_DenimRandom,
+		FabricType = Denim,
+		Insulation = 0.25,
+		WindResistance = 0.15,
+		WorldStaticModel = Shirt_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewShirt;SewShirtSleeveless,
+	}
+
+	item Shirt_NoSleeves_Crafted_Burlap
+	{
+		DisplayName = Crafted Sleeveless Burlap Shirt,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = ShirtSleeveless_Crafted_Burlap,
+		BloodLocation = ShirtNoSleeves,
+		BodyLocation = ShortSleeveShirt,
+		ClothingItem = Shirt_NoSleeves_Crafted_Burlap,
+		Insulation = 0.15,
+		WindResistance = 0.05,
+		DiscomfortModifier = 0.10,
+		WorldStaticModel = TShirt_Ground,
+		ScratchDefense = 5,
+        ResearchableRecipes = SewShirt;SewShirtSleeveless,
+	}
+
+	item Shirt_NoSleeves_Crafted_Cotton
+	{
+		DisplayName = Crafted Sleeveless Cotton Shirt,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = ShirtSleeveless_Crafted_Cotton,
+		BloodLocation = ShirtNoSleeves,
+		BodyLocation = ShortSleeveShirt,
+		ClothingItem = Shirt_NoSleeves_Crafted_Cotton,
+		FabricType = Cotton,
+		Insulation = 0.15,
+		WindResistance = 0.05,
+		WorldStaticModel = TShirt_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewShirt;SewShirtSleeveless,
+	}
+
+	item Shirt_NoSleeves_Crafted_Denim
+	{
+		DisplayName = Crafted Sleeveless Denim Shirt,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = ShirtSleeveless_Crafted_DarkDenim,
+		BloodLocation = ShirtNoSleeves,
+		BodyLocation = ShortSleeveShirt,
+		ClothingItem = Shirt_NoSleeves_Crafted_Denim,
+		FabricType = Denim,
+		Insulation = 0.15,
+		WindResistance = 0.05,
+		WorldStaticModel = TShirt_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewShirt;SewShirtSleeveless,
+	}
+
+	item Shirt_NoSleeves_Crafted_DenimBlack
+	{
+		DisplayName = Crafted Sleeveless Denim Shirt,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = ShirtSleeveless_Crafted_BlackDenim,
+		BloodLocation = ShirtNoSleeves,
+		BodyLocation = ShortSleeveShirt,
+		ClothingItem = Shirt_NoSleeves_Crafted_DenimBlack,
+		FabricType = Denim,
+		Insulation = 0.15,
+		WindResistance = 0.05,
+		WorldStaticModel = TShirt_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewShirt;SewShirtSleeveless,
+	}
+
+	item Shirt_NoSleeves_Crafted_DenimLight
+	{
+		DisplayName = Crafted Sleeveless Denim Shirt,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = ShirtSleeveless_Crafted_Denim,
+		BloodLocation = ShirtNoSleeves,
+		BodyLocation = ShortSleeveShirt,
+		ClothingItem = Shirt_NoSleeves_Crafted_DenimLight,
+		FabricType = Denim,
+		Insulation = 0.15,
+		WindResistance = 0.05,
+		WorldStaticModel = TShirt_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewShirt;SewShirtSleeveless,
+	}
+
+	item Bandeau_Burlap
+	{
+		DisplayName = Burlap Bandeau,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Bandeau_Burlap,
+		BloodLocation = UpperBody,
+		BodyLocation = Tshirt,
+		ClothingItem = Shirt_Bandeau_Burlap,
+		ScratchDefense = 10,
+		DiscomfortModifier = 0.15,
+		WorldStaticModel = CropTop_Ground,
+        ResearchableRecipes = SewShirtSleeveless,
+	}
+
+	item Bandeau_Denim
+	{
+		DisplayName = Denim Bandeau,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Bandeau_Denim,
+		BloodLocation = UpperBody,
+		BodyLocation = Tshirt,
+		ClothingItem = Shirt_Bandeau_Denim,
+		FabricType = Denim,
+		ScratchDefense = 10,
+		WorldStaticModel = CropTop_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewShirtSleeveless,
+	}
+
+	item Bandeau_FaunHide
+	{
+		DisplayName = Fawn Hide Bandeau,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Bandeau_Deerhide,
+		BloodLocation = UpperBody,
+		BodyLocation = Tshirt,
+		ClothingItem = Shirt_Bandeau_FaunHide,
+		FabricType = Leather,
+		Insulation = 0.40,
+		ScratchDefense = 10,
+		WaterResistance = 0.35,
+		WindResistance = 0.30,
+		WorldStaticModel = CropTop_Ground,
+		Tags = RipClothingLeather,
+        ResearchableRecipes = SewShirtSleeveless,
+	}
+
+	item Bandeau_Garbage
+	{
+		DisplayName = Garbage Bag Bandeau,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Bandeau_Garbagebag,
+		BloodLocation = UpperBody,
+		BodyLocation = Tshirt,
+		ClothingItem = Shirt_Bandeau_Garbage,
+		Insulation = 0.40,
+		ScratchDefense = 5,
+		WaterResistance = 1,
+		WindResistance = 0.30,
+		DiscomfortModifier = 0.10,
+		WorldStaticModel = CropTop_Ground,
+        ResearchableRecipes = SewShirtSleeveless,
+	}
+
+	item Bandeau_Hide
+	{
+		DisplayName = Hide Bandeau,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Bandeau_Hide,
+		BloodLocation = UpperBody,
+		BodyLocation = Tshirt,
+		ClothingItem = Shirt_Bandeau_Hide,
+		FabricType = Leather,
+		Insulation = 0.40,
+		ScratchDefense = 10,
+		WaterResistance = 0.35,
+		WindResistance = 0.30,
+		WorldStaticModel = CropTop_Ground,
+		Tags = RipClothingLeather,
+        ResearchableRecipes = SewShirtSleeveless,
+	}
+
+	item Bandeau_Rag
+	{
+		DisplayName = Rag Bandeau,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Bandeau_Sheet,
+		BloodLocation = UpperBody,
+		BodyLocation = Tshirt,
+		ClothingItem = Shirt_Bandeau_Rag,
+		FabricType = Cotton,
+		ScratchDefense = 5,
+		WorldStaticModel = CropTop_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewShirtSleeveless,
+	}
+
+	item Bandeau_Tarp
+	{
+		DisplayName = Tarp Bandeau,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Bandeau_Tarp,
+		BloodLocation = UpperBody,
+		BodyLocation = Tshirt,
+		ClothingItem = Shirt_Bandeau_Tarp,
+		Insulation = 0.40,
+		ScratchDefense = 10,
+		WaterResistance = 1,
+		WindResistance = 0.30,
+		DiscomfortModifier = 0.12,
+		WorldStaticModel = CropTop_Ground,
+        ResearchableRecipes = SewShirtSleeveless,
+	}
+
+}

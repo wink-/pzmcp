@@ -1,0 +1,100 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Furnace_I
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Primitive Furnace,
+            Icon                = Item_WoodCharcoal,
+
+            /*components
+            {
+                CraftLogic
+                {
+                    LuaPanelClass           = ISCraftFurnacePanel,
+                    DisplayName             = Furnace,
+                    Icon                    = Item_WoodCharcoal,
+                }
+            }*/
+        }
+    }
+
+    entity Primitive_Furnace
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Furnace_I,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = PrimitiveFurnace,
+        }
+
+        /*component Resources
+        {
+            group furnace_fuel_inputs
+            {
+                Item@Input@5,
+            }
+            group furnace_fuel_outputs
+            {
+                Item@Output@10,
+            }
+            group craft_inputs
+            {
+                Item@Input@8,
+                Item@Input@8,
+            }
+            group craft_outputs
+            {
+                Item@Output@1,
+            }
+        }
+
+        component FurnaceLogic
+        {
+            fuelRecipes     = BurnWood,
+            fuelInputGroup  = furnace_fuel_inputs,
+            fuelOutputGroup = furnace_fuel_outputs,
+            furnaceRecipes  = PrimitiveFurnace,
+            StartMode       = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }*/
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_01_112,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_01_113,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = Test,
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 6 [Base.Clay] flags[DontRecordInput],
+                item 4 [Base.Stone2],
+                item 1 tags[Concrete] flags[DontRecordInput],
+            }
+        }
+    }
+}

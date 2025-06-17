@@ -1,0 +1,214 @@
+/*module Base
+{
+    entity Charcoal_Burner_MetalDrum
+    {
+
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Charcoal_Burner,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@8,
+            }
+            group craft_outputs
+            {
+                Item@Output@1,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes         = WoodCharcoal,
+            StartMode       = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+        component SpriteConfig
+        {
+            face single
+            {
+                layer
+                {
+                    row = crafted_02_51,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 1 [Base.MetalDrum],
+                item 4 [Base.Stone2],
+            }
+        }
+    }
+
+    entity Charcoal_Burner_OrangeBarrel
+    {
+
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Charcoal_Burner,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@8,
+            }
+            group craft_outputs
+            {
+                Item@Output@1,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes         = WoodCharcoal,
+            StartMode       = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+        component SpriteConfig
+        {
+            face single
+            {
+                layer
+                {
+                    row = crafted_02_49,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 1 [Base.Mov_OrangeBarrel],
+                item 4 [Base.Stone2],
+            }
+        }
+    }
+
+    entity Charcoal_Burner_DarkGreenBarrel
+    {
+
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Charcoal_Burner,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@8,
+            }
+            group craft_outputs
+            {
+                Item@Output@1,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes         = WoodCharcoal,
+            StartMode       = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+        component SpriteConfig
+        {
+            face single
+            {
+                layer
+                {
+                    row = crafted_02_50,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 1 [Base.Mov_DarkGreenBarrel],
+                item 4 [Base.Stone2],
+            }
+        }
+    }
+
+    entity Charcoal_Burner_LightGreenBarrel
+    {
+
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Charcoal_Burner,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@8,
+            }
+            group craft_outputs
+            {
+                Item@Output@1,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes         = Recipes_Charcoal_Pit,
+            StartMode       = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+        component SpriteConfig
+        {
+            face single
+            {
+                layer
+                {
+                    row = false crafted_02_48,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 1 [Base.Mov_LightGreenBarrel],
+                item 4 [Base.Stone2],
+            }
+        }
+    }
+}*/

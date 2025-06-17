@@ -1,0 +1,419 @@
+module Base
+{
+
+    item BarleySheaf
+	{
+	    Weight = 1,
+		HungerChange = -5,
+        DisplayCategory = Food,
+		Type = Food,
+		DisplayName			=		Barley Sheaf,
+		Icon				=		Barley,
+        WorldStaticModel = BarleySheaf,
+		CantEat = TRUE,
+		AnimalFeedType = Seeds,
+		DaysFresh 			=		7,
+		DaysTotallyRotten 	=	 	14,
+	}
+
+    item BarleySheafDried
+	{
+	    Weight = 1,
+		HungerChange = -5,
+        DisplayCategory = Food,
+		Type = Food,
+		DisplayName			=		Barley Sheaf (Dried),
+		Icon				=		Barley,
+        StaticModel = BarleySheafDried,
+        WorldStaticModel = BarleySheafDried,
+		CantEat = TRUE,
+		AnimalFeedType = Seeds,
+	}
+    item Flax
+    {
+        DisplayCategory = Material,
+        Type		= Food,
+        DisplayName	= Flax,
+        Icon		= Flax_Harvested,
+        Weight		= 0.2,
+        WorldStaticModel = FlaxBundle,
+		DaysFresh 			=		7,
+		DaysTotallyRotten 	=	 	14,
+		CantEat = TRUE,
+    }
+
+    item FlaxBroken
+    {
+        DisplayCategory = Material,
+        Type		= Normal,
+        DisplayName	= Broken Flax,
+        Icon		= Flax_Broken,
+        Weight		= 0.2,
+        WorldStaticModel = FlaxBroken,
+    }
+
+    item FlaxDried
+    {
+        DisplayCategory = Material,
+        Type		= Normal,
+        DisplayName	= Dried Flax,
+        Icon		= Flax_Dried,
+        Weight		= 0.2,
+        WorldStaticModel = FlaxBundleDried,
+    }
+
+    item FlaxHeckled
+    {
+        DisplayCategory = Material,
+        Type		= Normal,
+        DisplayName	= Heckled Flax,
+        Icon		= Flax_Heckled,
+        Weight		= 0.2,
+        WorldStaticModel = FlaxHeckled,
+    }
+
+    item FlaxRippled
+    {
+        DisplayCategory = Material,
+        Type		= Food,
+        DisplayName	= Rippled Flax,
+        Icon		= Flax_Rippled,
+        Weight		= 0.2,
+        WorldStaticModel = FlaxRippled,
+		CantEat = TRUE,
+    }
+
+    item FlaxScutched
+    {
+        DisplayCategory = Material,
+        Type		= Normal,
+        DisplayName	= Scutched Flax,
+        Icon		= Flax_Scutched,
+        Weight		= 0.2,
+        WorldStaticModel = FlaxScutched,
+    }
+
+    item FlaxSeed
+    {
+        DisplayCategory = Gardening,
+        Type		= Food,
+        DisplayName	= Flax Seeds,
+        Icon		= Flax_Seeds,
+        Weight		= 0.02,
+		/*SurvivalGear = TRUE,*/
+        WorldStaticModel = FlaxSeeds,
+		AnimalFeedType = Seeds,
+        Tags		= isSeed,
+		HungerChange = -1,
+		EvolvedRecipe = Salad:1;Bread:1;Muffin:1,
+		Spice = true,
+		FoodType = Seed,
+		CantBeFrozen = TRUE,
+    }
+
+    item FlaxTow
+    {
+        DisplayCategory = Material,
+        Type		= Normal,
+        DisplayName	= Flax Tow,
+        Icon		= Flax_Tow,
+        Weight		= 0.2,
+        WorldStaticModel = FlaxTow,
+    }
+
+    item HempBundle
+	{
+	    Weight = 1,
+		HungerChange = -5,
+        DisplayCategory = Food,
+		Type = Food,
+		DisplayName			=		Hemp Bundle,
+		Icon				=		IndustrialHemp,
+        WorldStaticModel = HempBundle,
+		CantEat = TRUE,
+		AnimalFeedType = Grass,
+		Tags = isSeed,
+		DaysFresh 			=		7,
+		DaysTotallyRotten 	=	 	14,
+	}
+
+    item HempBundleDried
+	{
+	    Weight = 1,
+		HungerChange = -5,
+        DisplayCategory = Food,
+		Type = Food,
+		DisplayName			=		Hemp Bundle (Dried),
+		Icon				=		IndustrialHemp_Dried,
+        WorldStaticModel = HempBundleDried,
+		CantEat = TRUE,
+		AnimalFeedType = Grass,
+	}
+
+    item HempBroken
+    {
+        DisplayCategory = Material,
+        Type		= Normal,
+        DisplayName	= Broken Hemp,
+        Icon		= Hemp_Broken,
+        Weight		= 0.2,
+        WorldStaticModel = HempBroken,
+    }
+
+    item HempScutched
+    {
+        DisplayCategory = Material,
+        Type		= Normal,
+        DisplayName	= Scutched Hemp,
+        Icon		= Hemp_Scutched,
+        Weight		= 0.2,
+        WorldStaticModel = HempScutched,
+    }
+
+    item Hops
+	{
+	    Weight = 0.3,
+        DisplayCategory = Food,
+		Type = Food,
+		DisplayName			=		Hops,
+		Icon				=		Hops,
+        WorldStaticModel = Hops,
+		CantEat = TRUE,
+		DaysFresh 			=		7,
+		DaysTotallyRotten 	=	 	14,
+	}
+
+    item HopsDried
+	{
+	    Weight = 0.3,
+        DisplayCategory = Food,
+		Type = Food,
+		DisplayName			=		Hops (Dried),
+		Icon				=		Hops_Dried,
+        WorldStaticModel = HopsDried,
+		CantEat = TRUE,
+	}
+
+    item RyeSheaf
+	{
+	    Weight = 1,
+		HungerChange = -5,
+        DisplayCategory = Food,
+		Type = Food,
+		DisplayName			=		Rye Sheaf,
+		Icon				=		RyeWheat,
+        WorldStaticModel = RyeSheaf,
+		CantEat = TRUE,
+		AnimalFeedType = Seeds,
+		DaysFresh 			=		7,
+		DaysTotallyRotten 	=	 	14,
+	}
+
+    item RyeSheafDried
+	{
+	    Weight = 1,
+		HungerChange = -5,
+        DisplayCategory = Food,
+		Type = Food,
+		DisplayName			=		Rye Sheaf (Dried),
+		Icon				=		RyeWheat,
+        StaticModel = RyeSheafDried,
+        WorldStaticModel = RyeSheafDried,
+		CantEat = TRUE,
+		AnimalFeedType = Seeds,
+	}
+
+    item SeedPaste
+    {
+        DisplayCategory = Tool,
+        Type		= Food,
+        DisplayName	= Seed Paste,
+        Icon		= Flax_Paste,
+        Weight		= 0.2,
+        WorldStaticModel = FlaxSeedPasteBlob,
+		HungerChange = -30,
+		UnhappyChange = 50,
+		Calories = 2120,
+		Carbohydrates = 0,
+		Lipids = 130,
+		Proteins = 0,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+    }
+
+    item SeedPasteBowl
+    {
+        DisplayCategory = Tool,
+        Type		= Food,
+        DisplayName	= Bowl with Seed Paste,
+        Icon		= Flax_PasteBowl,
+        Weight		= 0.3,
+        WorldStaticModel = FlaxBowlPaste,
+		HungerChange = -30,
+		UnhappyChange = 50,
+		Calories = 2120,
+		Carbohydrates = 0,
+		Lipids = 130,
+		Proteins = 0,
+		ReplaceOnUse = Bowl,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+    }
+
+    item SunflowerHead
+    {
+	    DisplayCategory = Gardening,
+        Type		= Food,
+        DisplayName	= Sunflower Head,
+        Icon		= SunflowerHead,
+        Weight		= 0.2,
+        StaticModel = SunflowerHead,
+        WorldStaticModel = SunflowerHead,
+		CantEat = TRUE,
+		DaysFresh 			=		10,
+		DaysTotallyRotten 	=	 	13,
+    }
+
+    item SunflowerHeadDried
+    {
+	    DisplayCategory = Gardening,
+        Type		= Food,
+        DisplayName	= Sunflower Head (Dried),
+        Icon		= SunflowerHead_Dried,
+        Weight		= 0.2,
+        StaticModel = SunflowerHeadDried,
+        WorldStaticModel = SunflowerHeadDried,
+		CantEat = TRUE,
+    }
+
+    item Tobacco
+    {
+        DisplayCategory = Tool,
+        Type		= Food,
+        DisplayName	= Tobacco,
+        Icon		= Tobacco,
+        Weight		= 0.2,
+        WorldStaticModel = TobaccoLeaf,
+		DaysFresh 			=		7,
+		DaysTotallyRotten 	=	 	14,
+		CantEat = TRUE,
+    }
+
+    item TobaccoDried
+    {
+        DisplayCategory = Tool,
+        Type		= Normal,
+        DisplayName	= Dried Tobacco,
+        Icon		= Tobacco_Dried,
+        Weight		= 0.2,
+        WorldStaticModel = TobaccoLeafDried,
+    }
+
+    item WheatSheaf
+	{
+	    Weight = 1,
+		HungerChange = -5,
+        DisplayCategory = Food,
+		Type = Food,
+		DisplayName			=		Wheat Sheaf,
+		Icon				=		WheatBundle,
+        WorldStaticModel = WheatSheaf,
+		CantEat = TRUE,
+		AnimalFeedType = Seeds,
+		DaysFresh 			=		7,
+		DaysTotallyRotten 	=	 	14,
+	}
+
+    item WheatSheafDried
+	{
+	    Weight = 1,
+		HungerChange = -5,
+        DisplayCategory = Food,
+		Type = Food,
+		DisplayName			=		Wheat Sheaf (Dried),
+		Icon				=		WheatBundle,
+        StaticModel = WheatSheafDried,
+        WorldStaticModel = WheatSheafDried,
+		CantEat = TRUE,
+		AnimalFeedType = Seeds,
+	}
+
+	item SugarBeetPulpPot
+	{
+		DisplayName = Rice,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 3,
+		Icon = PotFull,
+		BadInMicrowave = true,
+		CookingSound = BoilingFood,
+		EatType = Pot,
+		PourType = Pot,
+		IsCookable = true,
+		ReplaceOnUse = Pot,
+		MinutesToCook = 120,
+		MinutesToBurn = 150,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		UnhappyChange = 30,
+		Calories = 216,
+		Carbohydrates = 27,
+		Lipids = 0,
+		Proteins = 36,
+		StaticModel = CookingPotRice_Ground,
+		WorldStaticModel = CookingPotRice_Ground,
+		Tags = HasMetal,
+		HungerChange = -45,
+		SoundMap = DumpContents EmptyPot,
+	}
+
+	item SugarBeetSyrupPot
+	{
+		DisplayName = Rice,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 3,
+		Icon = PotFull,
+		BadInMicrowave = true,
+		CookingSound = BoilingFood,
+		EatType = Pot,
+		PourType = Pot,
+		ReplaceOnUse = Pot,
+		DaysFresh = 1,
+		DaysTotallyRotten = 1,
+		UnhappyChange = 30,
+		Calories = 387,
+		Carbohydrates = 100,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = CookingPotGround_Fluid,
+		WorldStaticModel = CookingPotGround_Fluid,
+		Tags = HasMetal,
+		HungerChange = -30,
+		SoundMap = DumpContents EmptyPot,
+		ReplaceOnRotten = SugarBeetSugarPot,
+	}
+
+	item SugarBeetSugarPot
+	{
+		DisplayName = Rice,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 3,
+		Icon = PotFull,
+		BadInMicrowave = true,
+		CookingSound = BoilingFood,
+		EatType = Pot,
+		PourType = Pot,
+		ReplaceOnUse = Pot,
+		Calories = 387,
+		Carbohydrates = 100,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = CookingPotGround_Fluid,
+		WorldStaticModel = CookingPotGround_Fluid,
+		Tags = HasMetal;Sugar,
+		HungerChange = -30,
+		SoundMap = DumpContents EmptyPot,
+	}
+}

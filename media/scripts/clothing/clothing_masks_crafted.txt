@@ -1,0 +1,288 @@
+module Base
+{
+
+	item Hat_ImprovisedGasMask
+	{
+		DisplayName = Improvised Gas Mask,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = GasMask_Crafted_Filtre,
+		BiteDefense = 20,
+		BloodLocation = Head,
+		BodyLocation = MaskEyes,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_ImprovisedGasMask,
+		Insulation = 0.75,
+		ScratchDefense = 50,
+		CorpseSicknessDefense = 25,
+		WaterResistance = 1.0,
+		WindResistance = 0.60,
+		Tags = GasMask;IsDisguise;IgnoreZombieDensity,
+		OnCreate = SpecialLootSpawns.OnCreateGasMask,
+		WithoutDrainable = Hat_ImprovisedGasMask_nofilter,
+		VisionModifier = 0.5,
+		ChanceToFall = 20,
+		DiscomfortModifier = 0.60,
+		ConditionMax = 2,
+		ConditionLowerChanceOneIn = 2,
+	}
+
+	item Hat_ImprovisedGasMask_nofilter
+	{
+		DisplayName = Improvised Gas Mask (No Filter),
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = GasMask_Crafted,
+		BiteDefense = 20,
+		BloodLocation = Head,
+		BodyLocation = MaskEyes,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_ImprovisedGasMask_nofilter,
+		Insulation = 0.75,
+		ScratchDefense = 50,
+		WaterResistance = 1.0,
+		WindResistance = 0.60,
+		Tags = GasMaskNoFilter;IsDisguise;IgnoreZombieDensity,
+		WithDrainable = Hat_ImprovisedGasMask,
+		VisionModifier = 0.5,
+		ChanceToFall = 20,
+		DiscomfortModifier = 0.60,
+		ConditionMax = 2,
+		ConditionLowerChanceOneIn = 2,
+	}
+
+	item Hat_ShemaghFull_Burlap
+	{
+		DisplayName = Burlap Headwrap (Fully Closed),
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Ragmask_Crafted_Burlap,
+		BloodLocation = Neck;Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = Hat_ShemaghFull_Burlap,
+
+		ClothingItemExtra = Hat_ShemaghFace_Burlap,
+		ClothingItemExtraOption = RevealFace,
+		WorldStaticModel = Shemagh_Ground,
+		CorpseSicknessDefense = 25,
+		DiscomfortModifier = 0.1,
+
+        Tags = IsDisguise;IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+
+	item Hat_ShemaghFace_Burlap
+	{
+		DisplayName = Burlap Headwrap (Open Face),
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Ragmask_Crafted_Burlap,
+		BloodLocation = Neck;Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = Hat_ShemaghFace_Burlap,
+
+		ClothingItemExtra = Hat_ShemaghFull_Burlap,
+		ClothingItemExtraOption = CoverFace,
+		WorldStaticModel = Shemagh_Ground,
+		CorpseSicknessDefense = 25,
+		DiscomfortModifier = 0.1,
+
+        Tags = IsDisguise;IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+
+	item Hat_ShemaghFull_Cotton
+	{
+		DisplayName = Cloth Headwrap (Fully Closed),
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Ragmask_Crafted_Cotton,
+		BloodLocation = Neck;Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = Hat_ShemaghFull_Cotton,
+
+		ClothingItemExtra = Hat_ShemaghFace_Cotton,
+		ClothingItemExtraOption = RevealFace,
+		WorldStaticModel = Shemagh_Ground,
+		CorpseSicknessDefense = 25,
+
+        Tags = IsDisguise;IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+
+	item Hat_ShemaghFace_Cotton
+	{
+		DisplayName = Cloth Headwrap (Open Face),
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Ragmask_Crafted_Cotton,
+		BloodLocation = Neck;Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = Hat_ShemaghFace_Cotton,
+
+		ClothingItemExtra = Hat_ShemaghFull_Cotton,
+		ClothingItemExtraOption = CoverFace,
+		WorldStaticModel = Shemagh_Ground,
+		CorpseSicknessDefense = 25,
+
+        Tags = IsDisguise;IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+
+	item Hat_HeadSack_Burlap
+	{
+		DisplayName = Burlap Headsack,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Icon = Bagmask_Crafted_Burlap,
+		BloodLocation = Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = TRUE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_HeadSack_Burlap,
+		Insulation = 0.75,
+		WaterResistance = 0.75,
+		WindResistance = 0.75,
+		VisionModifier = 0.5,
+		HearingModifier = 0.85,
+		Tags = IgnoreZombieDensity;IsDisguise;IsFireFuel;IsFireTinder,
+		ScratchDefense = 10,
+		DiscomfortModifier = 0.1,
+		WorldStaticModel = HeadSackBurlap_Ground,
+	}
+
+	item Hat_HeadSack_Cotton
+	{
+		DisplayName = Cotton Headsack,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Icon = Bagmask_Crafted_Cotton,
+		BloodLocation = Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = TRUE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_HeadSack_Cotton,
+		Insulation = 0.75,
+		WaterResistance = 0.75,
+		WindResistance = 0.75,
+		VisionModifier = 0.5,
+		HearingModifier = 0.85,
+		Tags = IgnoreZombieDensity;IsDisguise;IsFireFuel;IsFireTinder,
+		ScratchDefense = 5,
+		WorldStaticModel = HeadSackCotton_Ground,
+	}
+
+	item Hat_HeadSack_Garbage
+	{
+		DisplayName = Garbage Bag Headsack,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Icon = BagMask_Garbagebag,
+		BloodLocation = Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = TRUE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_HeadSack_Garbage,
+		Insulation = 0.75,
+		ScratchDefense = 5,
+		WaterResistance = 1,
+		WindResistance = 0.75,
+		VisionModifier = 0.5,
+		HearingModifier = 0.85,
+		Tags = IgnoreZombieDensity;IsDisguise;IsFireFuel;IsFireTinder,
+		ScratchDefense = 5,
+		DiscomfortModifier = 0.1,
+		WorldStaticModel = HeadSackGarbage_Ground,
+	}
+
+	item Hat_HeadSack_Hide
+	{
+		DisplayName = Hide Headsack,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Icon = Bagmask_Crafted_Burlap,
+		BloodLocation = Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = TRUE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_HeadSack_Hide,
+		FabricType = Leather,
+		Insulation = 0.75,
+		WaterResistance = 0.75,
+		WindResistance = 0.75,
+		VisionModifier = 0.5,
+		HearingModifier = 0.85,
+		Tags = IgnoreZombieDensity;IsDisguise;IsFireFuel;IsFireTinder;RipClothingLeather,
+		ScratchDefense = 10,
+		DiscomfortModifier = 0.05,
+		WorldStaticModel = HeadSackHide_Ground,
+	}
+
+	item Hat_HeadSack_Tarp
+	{
+		DisplayName = Tarp Headsack,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Icon = BagMask_Tarp,
+		BloodLocation = Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = TRUE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_HeadSack_Tarp,
+		Insulation = 0.75,
+		ScratchDefense = 10,
+		WaterResistance = 1,
+		WindResistance = 0.75,
+		VisionModifier = 0.5,
+		HearingModifier = 0.85,
+		Tags = IgnoreZombieDensity;IsDisguise;IsFireFuel;IsFireTinder,
+		ScratchDefense = 10,
+		DiscomfortModifier = 0.1,
+		WorldStaticModel = HeadSackTarp_Ground,
+	}
+
+	item Hat_HockeyMask_Hide
+	{
+		DisplayName = Hide Mask,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = Mask_Hide,
+		BiteDefense = 50,
+		ScratchDefense = 80,
+		BiteDefense = 20,
+		BloodLocation = Head,
+		BodyLocation = MaskEyes,
+		CanHaveHoles = TRUE,
+		ClothingItem = Hat_HockeyMask_Hide,
+		FabricType = Leather,
+		Insulation = 0.25,
+		WindResistance = 0.55,
+		VisionModifier = 0.5,
+		DiscomfortModifier = 0.05,
+		DamagedSound = ArmourBreakWood,
+		ScratchDefense = 40,
+		Tags = IgnoreZombieDensity;HasMetal;IsDisguise;IsFireFuel;IsFireTinder;RipClothingLeather,
+		WorldStaticModel = HockeyMask_Metal,
+	}
+
+}

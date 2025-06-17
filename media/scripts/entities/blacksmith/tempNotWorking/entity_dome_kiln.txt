@@ -1,0 +1,78 @@
+/*module Base
+{
+
+    craftRecipe Make Coke
+     {
+       /* time        = 3000,*/
+        time        = 10,
+	tags = DomeKiln,
+
+         inputs
+         {
+            item 8 tags[Charcoal],
+            replace 4 Base.Coke,
+         }
+     }
+
+    entity Dome_Kiln
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Dome_Kiln,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@8,
+            }
+            group craft_outputs
+            {
+                Item@Output@8,
+            }
+        }
+
+        component CraftLogic
+        {
+           Recipes         = DomeKiln,
+           StartMode       = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_01_81 crafted_01_83,
+                    row = crafted_01_80 crafted_01_82,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_01_98 crafted_01_99,
+                    row = crafted_01_96 crafted_01_97,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 40 [Base.StoneBlock],
+                item 1 tags[Concrete] flags[DontRecordInput],
+                item 1 [Base.MasonsTrowel] mode:keep flags[Prop1],
+            }
+        }
+    }
+}*/

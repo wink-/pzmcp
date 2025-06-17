@@ -1,0 +1,155 @@
+module Base
+{
+
+/*
+	sound FemaleZombieCombined
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Voice/FemaleA,
+		}
+		clip
+		{
+			event = Zombie/Voice/FemaleB,
+		}
+		clip
+		{
+			event = Zombie/Voice/FemaleC,
+		}
+	}
+
+	sound MaleZombieCombined
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Voice/MaleA,
+		}
+		clip
+		{
+			event = Zombie/Voice/MaleB,
+		}
+		clip
+		{
+			event = Zombie/Voice/MaleC,
+		}
+	}
+*/
+
+/******************************************************************************/
+
+	sound MaleZombieVoiceA
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Voice/MaleA,
+		}
+	}
+
+	sound MaleZombieVoiceB
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Voice/MaleB,
+		}
+	}
+
+	sound MaleZombieVoiceC
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Voice/MaleC,
+		}
+	}
+
+/******************************************************************************/
+
+	sound MaleZombieSprinterVoiceA
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Voice/Sprinter/MaleA,
+		}
+	}
+
+	sound MaleZombieSprinterVoiceB
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Voice/Sprinter/MaleB,
+		}
+	}
+
+	sound MaleZombieSprinterVoiceC
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Voice/Sprinter/MaleC,
+		}
+	}
+
+/******************************************************************************/
+
+	sound MaleZombieBiteA
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Bite/MaleA,
+		}
+	}
+
+	sound MaleZombieBiteB
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Bite/MaleB,
+		}
+	}
+
+	sound MaleZombieBiteC
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Bite/MaleC,
+		}
+	}
+
+/******************************************************************************/
+
+	sound MaleZombieSprinterBiteA
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Bite/Sprinter/MaleA,
+		}
+	}
+
+	sound MaleZombieSprinterBiteB
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Bite/Sprinter/MaleB,
+		}
+	}
+
+	sound MaleZombieSprinterBiteC
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Bite/Sprinter/MaleC,
+		}
+	}
+}

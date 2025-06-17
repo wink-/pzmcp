@@ -1,0 +1,59 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_StickFence
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Stick Fence,
+			Icon		= Build_FenceStakes,
+		}
+	}
+
+    entity StickFence
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_StickFence,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			health          = 200,
+			skillBaseHealth = 50,
+			
+            face W
+            {
+                layer
+                {
+                    row = crafted_04_124,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = crafted_04_123,
+                }
+            }
+			corner = crafted_04_127,
+        }
+		
+	    component CraftRecipe
+        {
+            timedAction   = BuildLowNoTool,
+            time          = 100,
+            category      = Carpentry,
+            tags          = Carpentry,
+            xpAward       = Woodwork:1,
+            ToolTip       = Tooltip_craft_stickFenceDesc,
+            inputs
+            {
+                item 6 [Base.LongStick;Base.Sapling],
+		        item 2 [Base.RippedSheets;Base.RippedSheetsDirty;Base.Twine;Base.Rope;Base.SheetRope] flags[DontReplace],
+            }
+        }
+    }
+}

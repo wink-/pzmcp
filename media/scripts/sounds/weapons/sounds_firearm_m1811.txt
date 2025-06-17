@@ -1,0 +1,147 @@
+module Base
+{
+	sound M1911Shoot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
+		{
+			event = Weapon/Firearm/M1911/Shoot,
+		}
+	}
+
+	sound M1911InsertAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M1911/InsertAmmo,
+		}
+	}
+
+	sound M1911EjectAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M1911/EjectAmmo,
+		}
+	}
+
+	sound M1911InsertAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M1911/InsertAmmoStart,
+		}
+	}
+
+	sound M1911InsertAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M1911/InsertAmmoStop,
+		}
+	}
+
+	sound M1911EjectAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M1911/EjectAmmoStart,
+		}
+	}
+
+	sound M1911EjectAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M1911/EjectAmmoStop,
+		}
+	}
+
+	sound M1911Rack
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M1911/Rack,
+		}
+	}
+
+	sound M1911Jam
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M1911/Jam,
+		}
+	}
+    
+	sound M1911BringToBear
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M1911/BringToBear,
+		}
+	}
+    
+	sound M1911AimRelease
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M1911/AimRelease,
+		}
+	}
+
+	sound M1911Equip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M1911/Equip,
+		}
+	}
+        
+	sound M1911UnEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M1911/UnEquip,
+		}
+	}
+
+	sound M1911Break
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M1911/Break,
+		}
+	}
+
+	sound M1911Drop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M1911/Drop,
+		}
+	}
+
+	sound M1911CartridgeFall
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M1911/CartridgeFall,
+		}
+	}
+}

@@ -1,0 +1,22 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Channels_Test
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Test Entity,
+            Icon                = Item_Dice,
+
+            components
+            {
+                CraftLogic
+                {
+                    LuaPanelClass           = ISCraftDefaultPanel,
+                    DisplayName             = Channels Test,
+                    Icon                    = Item_Note2,
+                }
+            }
+        }
+    }
+}

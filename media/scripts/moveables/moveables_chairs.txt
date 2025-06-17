@@ -1,0 +1,322 @@
+module Base
+{
+	item Mov_BacklessWoodenBench
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Backless Wooden Bench,
+		WorldObjectSprite = furniture_seating_indoor_03_0,
+	}
+	
+	item Mov_BeachChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Beach Chair,
+		WorldObjectSprite = furniture_seating_outdoor_01_25,
+	}
+	
+	item Mov_BlueComfyChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Blue Comfy Chair,
+		WorldObjectSprite = furniture_seating_indoor_03_25,
+	}
+	
+	item Mov_BluePlasticChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Blue Plastic Chair,
+		WorldObjectSprite = furniture_seating_indoor_02_13,
+	}
+	
+	item Mov_BlueRattanChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Blue Rattan Chair,
+		WorldObjectSprite = furniture_seating_indoor_02_41,
+	}
+	
+	item Mov_BrownComfyChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Brown Lazy Chair,
+		WorldObjectSprite = furniture_seating_indoor_02_44,
+	}
+	
+	item Mov_DarkBlueChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Dark Blue Chair,
+		WorldObjectSprite = furniture_seating_indoor_03_49,
+	}
+	
+	item Mov_DarkWoodenChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Dark Wooden Chair,
+		WorldObjectSprite = furniture_seating_indoor_02_0,
+	}
+	
+	item Mov_FancyBlackChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Black Fancy Chair,
+		WorldObjectSprite = furniture_seating_indoor_03_41,
+	}
+	
+	item Mov_FancyWhiteChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = White Fancy Chair,
+		WorldObjectSprite = furniture_seating_indoor_01_37,
+	}
+	
+	item Mov_FoldingChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Folding Chair,
+		WorldObjectSprite = furniture_seating_indoor_01_60,
+	}
+	
+	item Mov_GreenChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Green Wooden Chair,
+		WorldObjectSprite = furniture_seating_indoor_01_57,
+	}
+	
+	item Mov_GreenComfyChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Green Comfy Chair,
+		WorldObjectSprite = furniture_seating_indoor_01_9,
+	}
+	
+	item Mov_GreyChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Gray Chair,
+		WorldObjectSprite = furniture_seating_indoor_01_54,
+	}
+	
+	item Mov_GreyComfyChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Grey Lazy Chair,
+		WorldObjectSprite = furniture_seating_indoor_03_4,
+	}
+	
+	item Mov_MetalStool
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Metal Stool,
+		WorldObjectSprite = location_community_medical_01_10,
+	}
+	
+	item Mov_OakBench
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Oak Bench,
+		WorldObjectSprite = furniture_seating_outdoor_01_20,
+	}
+	
+	item Mov_OfficeChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Black Office Chair,
+		WorldObjectSprite = furniture_seating_indoor_01_50,
+	}
+	
+	item Mov_OrangeFuton
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Orange Futon,
+		WorldObjectSprite = furniture_seating_indoor_01_46,
+	}
+	
+	item Mov_OrangeModernChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Orange Modern Chair,
+		WorldObjectSprite = furniture_seating_indoor_01_12,
+	}
+	
+	item Mov_PileOCrepeChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Pile o' Crepe Chair,
+		WorldObjectSprite = location_restaurant_pileocrepe_01_41,
+	}
+	
+	item Mov_PlasticChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Plastic Chair,
+		WorldObjectSprite = furniture_seating_outdoor_01_17,
+	}
+	
+	item Mov_PurpleRattanChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Purple Rattan Chair,
+		WorldObjectSprite = furniture_seating_indoor_01_33,
+	}
+	
+	item Mov_PurpleWoodenChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Purple Wooden Chair,
+		WorldObjectSprite = furniture_seating_indoor_03_45,
+	}
+	
+	item Mov_RedChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Red Chair,
+		WorldObjectSprite = furniture_seating_indoor_01_41,
+	}
+	
+	item Mov_RedWoodenChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Red Wooden Chair,
+		WorldObjectSprite = furniture_seating_indoor_02_9,
+	}
+	
+	item Mov_YellowModernChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Yellow Modern Chair,
+		WorldObjectSprite = furniture_seating_indoor_03_28,
+	}
+	
+	item Mov_WhiteComfyChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = White Lazy Chair,
+		WorldObjectSprite = furniture_seating_indoor_02_20,
+	}
+	
+	item Mov_WhiteSimpleChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = White Simple Chair,
+		WorldObjectSprite = furniture_seating_indoor_03_57,
+	}
+	
+	item Mov_WhiteWoodenChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = White Wooden Chair,
+		WorldObjectSprite = furniture_seating_indoor_02_56,
+	}
+	
+	item Mov_WoodenChair
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Wooden Chair,
+		WorldObjectSprite = furniture_seating_indoor_02_5,
+	}
+	
+	item Mov_WoodenStool
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Wooden Bar Stool,
+		WorldObjectSprite = location_restaurant_bar_01_26,
+	}
+}

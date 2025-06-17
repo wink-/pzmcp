@@ -1,0 +1,263 @@
+module Base
+{
+	sound BuildingGeneric
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/Building,
+		}
+	}
+    
+	sound Hammering
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/Hammering,
+		}
+	}
+
+	sound Sawing
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/Sawing,
+		}
+	}
+
+	sound Screwdriver
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/Screwing,
+		}
+	}
+
+	sound Painting
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/Painting,
+		}
+	}
+
+	sound Plastering
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/Plastering,
+		}
+	}
+
+	sound MakePlaster
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/MakePlaster,
+		}
+	}
+
+	sound EmptyPaintCan
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/EmptyPaintCan,
+		}
+	}
+
+	sound BuildWoodenStructureSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BuildWoodenStructure/Small,
+		}
+	}
+
+	sound BuildWoodenStructureMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BuildWoodenStructure/Medium,
+		}
+	}
+
+	sound BuildWoodenStructureLarge
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BuildWoodenStructure/Large,
+		}
+	}
+
+	sound BuildMetalStructureSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BuildMetalStructure/Small,
+		}
+	}
+
+	sound BuildMetalStructureMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BuildMetalStructure/Medium,
+		}
+	}
+
+	sound BuildMetalStructureSmallScrap
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BuildMetalStructure/SmallScrap,
+		}
+	}
+
+	sound BuildMetalStructureLargePoleFence
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BuildMetalStructure/LargePoleFence,
+		}
+	}
+
+	sound BuildMetalStructureSmallPoleFence
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BuildMetalStructure/SmallPoleFence,
+		}
+	}
+
+	sound BuildMetalStructureLargeWiredFence
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BuildMetalStructure/LargeWiredFence,
+		}
+	}
+
+	sound BuildMetalStructureSmallWiredFence
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BuildMetalStructure/SmallWiredFence,
+		}
+	}
+
+	sound BuildMetalStructureWallFrame
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BuildMetalStructure/LargePoleFence,
+		}
+	}
+
+	sound BuildFenceCairn
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BuildFence/Cairn,
+		}
+	}
+
+	sound BuildFenceSandbag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BuildFence/Sandbag,
+		}
+	}
+
+	sound BuildFenceSandbagFoley
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BuildFence/SandbagFoley,
+		}
+	}
+
+	sound BuildFenceGravelbag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BuildFence/Gravelbag,
+		}
+	}
+
+	sound BuildFenceGravelbagFoley
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BuildFence/GravelFoley,
+		}
+	}
+	
+	sound BreakMetalItem
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BreakMetalItem,
+		}
+	}
+
+	sound BreakWoodItem
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BreakWoodItem,
+		}
+	}
+
+	sound BreakGlassItem
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/BreakGlassItem,
+		}
+	}
+
+	sound LogAddToStack
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/Logs/AddToStack,
+		}
+	}
+
+	sound LogRemoveFromStack
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Carpentry/Logs/RemoveFromStack,
+		}
+	}
+}

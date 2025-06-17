@@ -1,0 +1,160 @@
+module Base
+{
+	animationsMesh Human
+	{
+		meshFile = Skinned/MaleBody,
+		animationDirectory = Bob,
+		animationDirectory = Kate,
+		animationDirectory = Zombie,
+	}
+
+	animationsMesh Mannequin_Scarecrow
+	{
+		meshFile = Skinned/Mannequin_Scarecrow,
+		animationDirectory = Mannequin_Scarecrow,
+	}
+
+	animationsMesh Mannequin_Skeleton
+	{
+		meshFile = Skinned/Mannequin_Skeleton,
+		animationDirectory = Mannequin_Skeleton,
+	}
+
+	animationsMesh Deer_Doe
+	{
+		meshFile = Skinned/DeerDoe,
+		animationDirectory = Deer,
+		animationPrefix = Deer_,
+	}
+
+	animationsMesh Deer_Fawn
+	{
+		meshFile = Skinned/DeerFawn,
+		animationDirectory = Deer,
+		animationPrefix = DeerFawn_,
+	}
+
+	animationsMesh Deer_Stag
+	{
+		meshFile = Skinned/DeerStag,
+		animationDirectory = Deer,
+		animationPrefix = DeerStag_,
+	}
+
+	animationsMesh Chicken_Hen
+    {
+        meshFile = Skinned/Chicken_Hen,
+        animationDirectory = Chicken,
+        animationPrefix = Chk_,
+        animationPrefix = !Chk_Chick_,
+        animationPrefix = !Chk_Cock_,
+    }
+
+	animationsMesh Chicken_Chick
+	{
+		meshFile = Skinned/Chicken_Chick,
+		animationDirectory = Chicken,
+		animationPrefix = Chk_Chick_,
+	}
+
+	animationsMesh Chicken_Cockrel
+	{
+		meshFile = Skinned/Chicken_Cockrel,
+		animationDirectory = Chicken,
+		animationPrefix = Chk_Cock_,
+	}
+
+	animationsMesh CowAndBull
+	{
+		meshFile = Skinned/CowBody,
+		animationDirectory = Cow,
+		animationPrefix = Cow_,
+	}
+
+	animationsMesh Cow_Calf
+	{
+		meshFile = Skinned/CowCalf_Body,
+		animationDirectory = Cow,
+		animationPrefix = CowCalf_,
+	}
+
+    animationsMesh Pig_BoarAndSow
+    {
+        meshFile = Skinned/FarmPig_SowBody,
+        animationDirectory = Pig,
+        animationPrefix = FarmPig_,
+    }
+
+    animationsMesh Pig_Piglet
+    {
+        meshFile = Skinned/FarmPig_PigletBody,
+        animationDirectory = Pig,
+        animationPrefix = Piglet_,
+    }
+
+    animationsMesh Rat
+    {
+        meshFile = Skinned/Rat_Body,
+        animationDirectory = Rat,
+    }
+
+    animationsMesh Raccoon
+    {
+        meshFile = Skinned/Raccoon_Body,
+        animationDirectory = Raccoon,
+    }
+
+    animationsMesh Sheep_Ewe
+    {
+        meshFile = Skinned/Sheep_EweFleece,
+        animationDirectory = Sheep,
+        animationPrefix = Sheep_,
+        animationPrefix = !SheepRam_,
+    }
+
+    animationsMesh Sheep_Lamb
+    {
+        meshFile = Skinned/Sheep_Lamb,
+        animationDirectory = Sheep,
+        animationPrefix = SheepLamb_,
+    }
+
+    animationsMesh Sheep_Ram
+    {
+        meshFile = Skinned/Sheep_RamFleece,
+        animationDirectory = Sheep,
+        animationPrefix = SheepRam_,
+    }
+
+    animationsMesh Rabbit_Kitten
+    {
+        meshFile = Skinned/RabKitten_Body,
+        animationDirectory = Rabbit,
+        animationPrefix = RabKitten_,
+    }
+
+    animationsMesh Rabbit
+    {
+        meshFile = Skinned/Rab_Body,
+        animationDirectory = Rabbit,
+        animationPrefix = Rab_,
+    }
+    animationsMesh Mouse
+    {
+        meshFile = Skinned/Mouse_Body,
+        animationDirectory = Mouse,
+        animationPrefix = Mouse_,
+    }
+    animationsMesh Turkey_Poult
+    {
+        meshFile = Skinned/Turkey_Poult,
+        animationDirectory = Turkey_Poult,
+        animationPrefix = TurkPoult_,
+    }
+    animationsMesh Turkey
+    {
+        meshFile = Skinned/Turkey,
+        animationDirectory = Turkey,
+        animationPrefix = Turk_,
+    }
+}

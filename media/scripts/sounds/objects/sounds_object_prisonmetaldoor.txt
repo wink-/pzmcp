@@ -1,0 +1,65 @@
+module Base
+{
+	sound PrisonMetalDoorBlocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/PrisonMetalDoor/IsBlocked,
+		}
+	}
+
+	sound PrisonMetalDoorBreak
+	{
+		category = Object,
+		clip
+		{
+			event = Object/PrisonMetalDoor/Break,
+		}
+	}
+
+	sound PrisonMetalDoorClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/PrisonMetalDoor/Close,
+		}
+	}
+
+	sound PrisonMetalDoorLock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/PrisonMetalDoor/Lock,
+		}
+	}
+
+	sound PrisonMetalDoorLocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/PrisonMetalDoor/IsLocked,
+		}
+	}
+
+	sound PrisonMetalDoorOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/PrisonMetalDoor/Open,
+		}
+	}
+
+	sound PrisonMetalDoorUnlock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/PrisonMetalDoor/Unlock,
+		}
+	}
+}

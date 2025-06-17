@@ -1,0 +1,457 @@
+module Base
+{
+	craftRecipe MakeMildewCure
+	{
+        timedAction = Making,
+		Time = 40,
+		NeedToBeLearn = True,
+		Tags = InHandCraft;Farming,
+        category = Farming,
+		AutoLearnAny = Farming:6,
+		inputs
+		{
+			item 1 [Base.GardeningSprayEmpty],
+			item 1 [*],
+			-fluid 1.0 [CowMilk],
+		}
+		outputs
+		{
+			item 1 Base.GardeningSprayMilk,
+		}
+	}
+
+	craftRecipe MakeAphidsCure
+	{
+        timedAction = Making,
+		Time = 40,
+		NeedToBeLearn = True,
+		Tags = InHandCraft;Farming,
+        category = Farming,
+		AutoLearnAny = Farming:6,
+		inputs
+		{
+			item 1 [Base.GardeningSprayEmpty],
+			item 1 [*],
+			-fluid 1.0 [Water;TaintedWater],
+			item 1 [*],
+			-fluid 0.2 [Alcohol],
+		}
+		outputs
+		{
+			item 1 Base.GardeningSprayAphids,
+		}
+	}
+
+	craftRecipe MakeFliesCureFromCigarettes
+	{
+        timedAction = Making,
+		Time = 40,
+		NeedToBeLearn = True,
+		Tags = InHandCraft;Farming,
+        category = Farming,
+		AutoLearnAny = Farming:6,
+        MetaRecipe = MakeFliesCure,
+		inputs
+		{
+			item 1 [Base.GardeningSprayEmpty],
+			item 1 [*],
+			-fluid 1.0 [Water],
+			item 5 [Base.CigaretteSingle] flags[ItemCount],
+		}
+		outputs
+		{
+			item 1 Base.GardeningSprayCigarettes,
+		}
+	}
+
+	craftRecipe MakeFliesCureFromLooseTobacco
+	{
+        timedAction = Making,
+		Time = 40,
+		NeedToBeLearn = True,
+		Tags = InHandCraft;Farming,
+        category = Farming,
+		AutoLearnAny = Farming:6,
+        MetaRecipe = MakeFliesCure,
+		inputs
+		{
+			item 1 [Base.GardeningSprayEmpty],
+			item 1 [*],
+			-fluid 1.0 [Water],
+			item 8 tags[Tobacco],
+		}
+		outputs
+		{
+			item 1 Base.GardeningSprayCigarettes,
+		}
+	}
+
+	craftRecipe MakeFliesCureFromChewingTobacco
+	{
+        timedAction = Making,
+		Time = 40,
+		NeedToBeLearn = True,
+		Tags = InHandCraft;Farming,
+        category = Farming,
+		AutoLearnAny = Farming:6,
+        MetaRecipe = MakeFliesCure,
+		inputs
+		{
+			item 1 [Base.GardeningSprayEmpty],
+			item 1 [*],
+			-fluid 1.0 [Water],
+			item 5.0 [Base.TobaccoChewing],
+		}
+		outputs
+		{
+			item 1 Base.GardeningSprayCigarettes,
+		}
+	}
+
+	craftRecipe PutSeedsInPacket
+	{
+        timedAction = PutSeedsInPacket,
+		Time = 10,
+		Tags = InHandCraft;Farming,
+        category = Farming,
+		inputs
+		{
+			item 5 [BarleySeed;BasilSeed;BellPepperSeed;BlackSageSeed;BroadleafPlantainSeed;BroccoliSeed;CabbageSeed;CarrotSeed;CauliflowerSeed;ChamomileSeed;ChivesSeed;CilantroSeed;ComfreySeed;CommonMallowSeed;CornSeed;CucumberSeed;GarlicSeed;GreenpeasSeed;HabaneroSeed;HempSeed;HopsSeed;JalapenoSeed;KaleSeed;LeekSeed;LemonGrassSeed;LettuceSeed;MarigoldSeed;MintSeed;OnionSeed;OreganoSeed;ParsleySeed;PotatoSeed;25:PumpkinSeed;RedRadishSeed;RosemarySeed;RyeSeed;SageSeed;SoybeansSeed;StrewberrieSeed;SugarBeetSeed;SweetPotatoSeed;ThymeSeed;TomatoSeed;TurnipSeed;WatermelonSeed;25:WheatSeed;WildGarlicSeed;ZucchiniSeed;RoseSeed;PoppySeed;LavenderSeed;FlaxSeed;SpinachSeed;25:SunflowerSeeds;TobaccoSeed] mappers[seedType] flags[IsExclusive;ItemCount],
+			item 1 [BarleyBagSeed_Empty;BasilBagSeed_Empty;BellPepperBagSeed_Empty;BlackSageBagSeed_Empty;BroadleafPlantainBagSeed_Empty;BroccoliBagSeed2_Empty;CabbageBagSeed2_Empty;CarrotBagSeed2_Empty;CauliflowerBagSeed_Empty;ChamomileBagSeed_Empty;ChivesBagSeed_Empty;CilantroBagSeed_Empty;ComfreyBagSeed_Empty;CommonMallowBagSeed_Empty;CornBagSeed_Empty;CucumberBagSeed_Empty;GarlicBagSeed_Empty;GreenpeasBagSeed_Empty;HabaneroBagSeed_Empty;HempBagSeed_Empty;HopsBagSeed_Empty;JalapenoBagSeed_Empty;KaleBagSeed_Empty;LeekBagSeed_Empty;LemonGrassBagSeed_Empty;LettuceBagSeed_Empty;MarigoldBagSeed_Empty;MintBagSeed_Empty;OnionBagSeed_Empty;OreganoBagSeed_Empty;ParsleyBagSeed_Empty;PotatoBagSeed2_Empty;PumpkinBagSeed_Empty;RedRadishBagSeed2_Empty;RosemaryBagSeed_Empty;RyeBagSeed_Empty;SageBagSeed_Empty;SoybeansBagSeed_Empty;StrewberrieBagSeed2_Empty;SugarBeetBagSeed_Empty;SweetPotatoBagSeed_Empty;ThymeBagSeed_Empty;TomatoBagSeed2_Empty;TurnipBagSeed_Empty;WatermelonBagSeed_Empty;WheatBagSeed_Empty;WildGarlicBagSeed_Empty;ZucchiniBagSeed_Empty;RoseBagSeed_Empty;PoppyBagSeed_Empty;LavenderBagSeed_Empty;FlaxBagSeed_Empty;SpinachBagSeed_Empty;SunflowerBagSeed_Empty;TobaccoBagSeed_Empty] flags[Prop2] mappers[seedType],
+		}
+		outputs
+		{
+			item 1 mapper:seedType,
+		}
+		itemMapper seedType
+		{
+			Base.BarleyBagSeed = Base.BarleySeed;Base.BarleyBagSeed_Empty,
+			Base.BasilBagSeed = Base.BasilSeed;Base.BasilBagSeed_Empty,
+			Base.BellPepperBagSeed = Base.BellPepperSeed;Base.BellPepperBagSeed_Empty,
+			Base.BlackSageBagSeed = Base.BlackSageSeed;Base.BlackSageBagSeed_Empty,
+			Base.BroadleafPlantainBagSeed = Base.BroadleafPlantainSeed;Base.BroadleafPlantainBagSeed_Empty,
+			Base.BroccoliBagSeed2 = Base.BroccoliSeed;Base.BroccoliBagSeed2_Empty,
+			Base.CabbageBagSeed2 = Base.CabbageSeed;Base.CabbageBagSeed2_Empty,
+			Base.CarrotBagSeed2 = Base.CarrotSeed;Base.CarrotBagSeed2_Empty,
+			Base.CauliflowerBagSeed = Base.CauliflowerSeed;Base.CauliflowerBagSeed_Empty,
+			Base.ChamomileBagSeed = Base.ChamomileSeed;Base.ChamomileBagSeed_Empty,
+			Base.ChivesBagSeed = Base.ChivesSeed;Base.ChivesBagSeed_Empty,
+			Base.CilantroBagSeed = Base.CilantroSeed;Base.CilantroBagSeed_Empty,
+			Base.ComfreyBagSeed = Base.ComfreySeed;Base.ComfreyBagSeed_Empty,
+			Base.CommonMallowBagSeed = Base.CommonMallowSeed;Base.CommonMallowBagSeed_Empty,
+			Base.CornBagSeed = Base.CornSeed;Base.CornBagSeed_Empty,
+			Base.CucumberBagSeed = Base.CucumberSeed;Base.CucumberBagSeed_Empty,
+			Base.GarlicBagSeed = Base.GarlicSeed;Base.GarlicBagSeed_Empty,
+			Base.GreenpeasBagSeed = Base.GreenpeasSeed;Base.GreenpeasBagSeed_Empty,
+			Base.HabaneroBagSeed = Base.HabaneroSeed;Base.HabaneroBagSeed_Empty,
+			Base.HempBagSeed = Base.HempSeed;Base.HempBagSeed_Empty,
+			Base.HopsBagSeed = Base.HopsSeed;Base.HopsBagSeed_Empty,
+			Base.JalapenoBagSeed = Base.JalapenoSeed;Base.JalapenoBagSeed_Empty,
+			Base.KaleBagSeed = Base.KaleSeed;Base.KaleBagSeed_Empty,
+			Base.LeekBagSeed = Base.LeekSeed;Base.LeekBagSeed_Empty,
+			Base.LemonGrassBagSeed = Base.LemonGrassSeed;Base.LemonGrassBagSeed_Empty,
+			Base.LettuceBagSeed = Base.LettuceSeed;Base.LettuceBagSeed_Empty,
+			Base.MarigoldBagSeed = Base.MarigoldSeed;Base.MarigoldBagSeed_Empty,
+			Base.MintBagSeed_Empty = Base.MintSeed;Base.MintBagSeed_Empty,
+			Base.OnionBagSeed = Base.OnionSeed;Base.OnionBagSeed_Empty,
+			Base.OreganoBagSeed = Base.OreganoSeed;Base.OreganoBagSeed_Empty,
+			Base.ParsleyBagSeed = Base.ParsleySeed;Base.ParsleyBagSeed_Empty,
+			Base.PotatoBagSeed2 = Base.PotatoSeed;Base.PotatoBagSeed2_Empty,
+			Base.PumpkinBagSeed = Base.PumpkinSeed;Base.PumpkinBagSeed_Empty,
+			Base.RedRadishBagSeed2 = Base.RedRadishSeed;Base.RedRadishBagSeed2_Empty,
+			Base.RosemaryBagSeed = Base.RosemarySeed;Base.RosemaryBagSeed_Empty,
+			Base.RyeBagSeed = Base.RyeSeed;Base.RyeBagSeed_Empty,
+			Base.SageBagSeed = Base.SageSeed;Base.SageBagSeed_Empty,
+			Base.SoybeansBagSeed = Base.SoybeansSeed;Base.SoybeansBagSeed_Empty,
+			Base.StrewberrieBagSeed2 = Base.StrewberrieSeed;Base.StrewberrieBagSeed2_Empty,
+			Base.SugarBeetBagSeed = Base.SugarBeetSeed;Base.SugarBeetBagSeed_Empty,
+			Base.SweetPotatoBagSeed = Base.SweetPotatoSeed;Base.SweetPotatoBagSeed_Empty,
+			Base.ThymeBagSeed = Base.ThymeSeed;Base.ThymeBagSeed_Empty,
+			Base.TomatoBagSeed2 = Base.TomatoSeed;Base.TomatoBagSeed2_Empty,
+			Base.TurnipBagSeed = Base.TurnipSeed;Base.TurnipBagSeed_Empty,
+			Base.WatermelonBagSeed = Base.WatermelonSeed;Base.WatermelonBagSeed_Empty,
+			Base.WheatBagSeed = Base.WheatSeed;Base.WheatBagSeed_Empty,
+			Base.WildGarlicBagSeed = Base.WildGarlicSeed;Base.WildGarlicBagSeed_Empty,
+			Base.ZucchiniBagSeed = Base.ZucchiniSeed;Base.ZucchiniBagSeed_Empty,
+			Base.RoseBagSeed = Base.RoseSeed;Base.RoseBagSeed_Empty,
+			Base.PoppyBagSeed = Base.PoppySeed;Base.PoppyBagSeed_Empty,
+			Base.LavenderBagSeed = Base.LavenderSeed;Base.LavenderBagSeed_Empty,
+			Base.FlaxBagSeed = Base.FlaxSeed;Base.FlaxBagSeed_Empty,
+			Base.SpinachBagSeed = Base.SpinachSeed;Base.SpinachBagSeed_Empty,
+			Base.SunflowerBagSeed = Base.SunflowerSeeds;Base.SunflowerBagSeed_Empty,
+			Base.TobaccoBagSeed = Base.TobaccoSeed;Base.TobaccoBagSeed_Empty,
+		}
+	}
+
+	craftRecipe OpenPacketOfSeeds
+	{
+        timedAction = PutSeedsInPacket,
+		Time = 20,
+		/* CanWalk = true, */
+		Tags = InHandCraft;Farming;CanBeDoneInDark,
+        category = Farming,
+		inputs
+		{
+			item 1 [CarrotBagSeed2;BroccoliBagSeed2;RedRadishBagSeed2;StrewberrieBagSeed2;TomatoBagSeed2;PotatoBagSeed2;CabbageBagSeed2;CornBagSeed;KaleBagSeed;SweetPotatoBagSeed;GreenpeasBagSeed;OnionBagSeed;GarlicBagSeed;WheatBagSeed;SoybeansBagSeed;SugarBeetBagSeed;BasilBagSeed;ChamomileBagSeed;ChivesBagSeed;CilantroBagSeed;MarigoldBagSeed;OreganoBagSeed;ParsleyBagSeed;SageBagSeed;RosemaryBagSeed;ThymeBagSeed;LettuceBagSeed;BellPepperBagSeed;CucumberBagSeed;CauliflowerBagSeed;LeekBagSeed;LemonGrassBagSeed;ZucchiniBagSeed;HabaneroBagSeed;JalapenoBagSeed;BlackSageBagSeed;BroadleafPlantainBagSeed;ComfreyBagSeed;CommonMallowBagSeed;WildGarlicBagSeed;BarleyBagSeed;RyeBagSeed;PumpkinBagSeed;HempBagSeed;HopsBagSeed;MintBagSeed;TurnipBagSeed;WatermelonBagSeed;RoseBagSeed;PoppyBagSeed;LavenderBagSeed;FlaxBagSeed;SpinachBagSeed;SunflowerBagSeed;TobaccoBagSeed] mappers[seedTypes;packetTypes],
+		}
+		outputs
+		{
+			item 5 mapper:seedTypes,
+			item 1 mapper:packetTypes,
+		}
+        itemMapper seedTypes
+        {
+			Base.CarrotSeed = Base.CarrotBagSeed2,
+			Base.BroccoliSeed = Base.BroccoliBagSeed2,
+			Base.RedRadishSeed = Base.RedRadishBagSeed2,
+			Base.StrewberrieSeed = Base.StrewberrieBagSeed2,
+			Base.TomatoSeed = Base.TomatoBagSeed2,
+			Base.PotatoSeed = Base.PotatoBagSeed2,
+			Base.CabbageSeed = Base.CabbageBagSeed2,
+			Base.CornSeed = Base.CornBagSeed,
+			Base.KaleSeed = Base.KaleBagSeed,
+			Base.SweetPotatoSeed = Base.SweetPotatoBagSeed,
+			Base.GreenpeasSeed = Base.GreenpeasBagSeed,
+			Base.OnionSeed = Base.OnionBagSeed,
+			Base.GarlicSeed = Base.GarlicBagSeed,
+			Base.WheatSeed = Base.WheatBagSeed,
+			Base.SoybeansSeed = Base.SoybeansBagSeed,
+			Base.SugarBeetSeed = Base.SugarBeetBagSeed,
+			Base.BasilSeed = Base.BasilBagSeed,
+			Base.ChamomileSeed = Base.ChamomileBagSeed,
+			Base.ChivesSeed = Base.ChivesBagSeed,
+			Base.CilantroSeed = Base.CilantroBagSeed,
+			Base.MarigoldSeed = Base.MarigoldBagSeed,
+			Base.OreganoSeed = Base.OreganoBagSeed,
+			Base.ParsleySeed = Base.ParsleyBagSeed,
+			Base.SageSeed = Base.SageBagSeed,
+			Base.RosemarySeed = Base.RosemaryBagSeed,
+			Base.ThymeSeed = Base.ThymeBagSeed,
+			Base.LettuceSeed = Base.LettuceBagSeed,
+			Base.BellPepperSeed = Base.BellPepperBagSeed,
+			Base.CucumberSeed = Base.CucumberBagSeed,
+			Base.CauliflowerSeed = Base.CauliflowerBagSeed,
+			Base.LeekSeed = Base.LeekBagSeed,
+			Base.LemonGrassSeed = Base.LemonGrassBagSeed,
+			Base.ZucchiniSeed = Base.ZucchiniBagSeed,
+			Base.HabaneroSeed = Base.HabaneroBagSeed,
+			Base.JalapenoSeed = Base.JalapenoBagSeed,
+			Base.BlackSageSeed = Base.BlackSageBagSeed,
+			Base.BroadleafPlantainSeed = Base.BroadleafPlantainBagSeed,
+			Base.ComfreySeed = Base.ComfreyBagSeed,
+			Base.CommonMallowSeed = Base.CommonMallowBagSeed,
+			Base.WildGarlicSeed = Base.WildGarlicBagSeed,
+			Base.BarleySeed = Base.BarleyBagSeed,
+			Base.RyeSeed = Base.RyeBagSeed,
+			Base.PumpkinSeed = Base.PumpkinBagSeed,
+			Base.HempSeed = Base.HempBagSeed,
+			Base.HopsSeed = Base.HopsBagSeed,
+			Base.MintSeed = Base.MintBagSeed,
+           	Base.WatermelonSeed = Base.WatermelonBagSeed,
+			Base.TurnipSeed = Base.TurnipBagSeed,
+			Base.RoseSeed = Base.RoseBagSeed,
+			Base.PoppySeed = Base.PoppyBagSeed,
+			Base.LavenderSeed = Base.LavenderBagSeed,
+			Base.FlaxSeed = Base.FlaxBagSeed,
+			Base.SpinachSeed = Base.SpinachBagSeed,
+			Base.SunflowerSeeds = Base.SunflowerBagSeed,
+			Base.TobaccoSeed = Base.TobaccoBagSeed,
+		}
+        itemMapper packetTypes
+        {
+			Base.CarrotBagSeed2_Empty = Base.CarrotBagSeed2,
+			Base.BroccoliBagSeed2_Empty = Base.BroccoliBagSeed2,
+			Base.RedRadishBagSeed2_Empty = Base.RedRadishBagSeed2,
+			Base.StrewberrieBagSeed2_Empty = Base.StrewberrieBagSeed2,
+			Base.TomatoBagSeed2_Empty = Base.TomatoBagSeed2,
+			Base.PotatoBagSeed2_Empty = Base.PotatoBagSeed2,
+			Base.CabbageBagSeed2_Empty = Base.CabbageBagSeed2,
+			Base.CornBagSeed_Empty = Base.CornBagSeed,
+			Base.KaleBagSeed_Empty = Base.KaleBagSeed,
+			Base.SweetPotatoBagSeed_Empty = Base.SweetPotatoBagSeed,
+			Base.GreenpeasBagSeed_Empty = Base.GreenpeasBagSeed,
+			Base.OnionBagSeed_Empty = Base.OnionBagSeed,
+			Base.GarlicBagSeed_Empty = Base.GarlicBagSeed,
+			Base.WheatBagSeed_Empty = Base.WheatBagSeed,
+			Base.SoybeansBagSeed_Empty = Base.SoybeansBagSeed,
+			Base.SugarBeetBagSeed_Empty = Base.SugarBeetBagSeed,
+			Base.BasilBagSeed_Empty = Base.BasilBagSeed,
+			Base.ChamomileBagSeed_Empty = Base.ChamomileBagSeed,
+			Base.ChivesBagSeed_Empty = Base.ChivesBagSeed,
+			Base.CilantroBagSeed_Empty = Base.CilantroBagSeed,
+			Base.MarigoldBagSeed_Empty = Base.MarigoldBagSeed,
+			Base.OreganoBagSeed_Empty = Base.OreganoBagSeed,
+			Base.ParsleyBagSeed_Empty = Base.ParsleyBagSeed,
+			Base.SageBagSeed_Empty = Base.SageBagSeed,
+			Base.RosemaryBagSeed_Empty = Base.RosemaryBagSeed,
+			Base.ThymeBagSeed_Empty = Base.ThymeBagSeed,
+			Base.LettuceBagSeed_Empty = Base.LettuceBagSeed,
+			Base.BellPepperBagSeed_Empty = Base.BellPepperBagSeed,
+			Base.CucumberBagSeed_Empty = Base.CucumberBagSeed,
+			Base.CauliflowerBagSeed_Empty = Base.CauliflowerBagSeed,
+			Base.LeekBagSeed_Empty = Base.LeekBagSeed,
+			Base.LemonGrassBagSeed_Empty = Base.LemonGrassBagSeed,
+			Base.ZucchiniBagSeed_Empty = Base.ZucchiniBagSeed,
+			Base.HabaneroBagSeed_Empty = Base.HabaneroBagSeed,
+			Base.JalapenoBagSeed_Empty = Base.JalapenoBagSeed,
+			Base.BlackSageBagSeed_Empty = Base.BlackSageBagSeed,
+			Base.BroadleafPlantainBagSeed_Empty = Base.BroadleafPlantainBagSeed,
+			Base.ComfreyBagSeed_Empty = Base.ComfreyBagSeed,
+			Base.CommonMallowBagSeed_Empty = Base.CommonMallowBagSeed,
+			Base.WildGarlicBagSeed_Empty = Base.WildGarlicBagSeed,
+			Base.BarleyBagSeed_Empty = Base.BarleyBagSeed,
+			Base.RyeBagSeed_Empty = Base.RyeBagSeed,
+			Base.PumpkinBagSeed_Empty = Base.PumpkinBagSeed,
+			Base.HempBagSeed_Empty = Base.HempBagSeed,
+			Base.HopsBagSeed_Empty = Base.HopsBagSeed,
+			Base.MintBagSeed_Empty = Base.MintBagSeed,
+            Base.WatermelonBagSeed_Empty = Base.WatermelonBagSeed,
+			Base.TurnipBagSeed_Empty = Base.TurnipBagSeed,
+			Base.RoseBagSeed_Empty = Base.RoseBagSeed,
+			Base.PoppyBagSeed_Empty = Base.PoppyBagSeed,
+			Base.LavenderBagSeed_Empty = Base.LavenderBagSeed,
+			Base.FlaxBagSeed_Empty = Base.FlaxBagSeed,
+			Base.SpinachBagSeed_Empty = Base.SpinachBagSeed,
+			Base.SunflowerBagSeed_Empty = Base.SunflowerBagSeed,
+			Base.TobaccoBagSeed_Empty = Base.TobaccoBagSeed,
+		}
+	}
+
+    /* recipe Make Scarecrow
+    {
+        destroy WoodenStick2=2,
+        destroy LongJohns,
+        destroy Rope,
+        destroy HayTuft/GrassTuft=100,
+
+        CanBeDoneFromFloor:true,
+        Result:Mov_Scarecrow,
+        Time:150.0,
+        OnGiveXP:Recipe.OnGiveXP.None,
+        Category:Farming,
+        NeedToBeLearn:true,
+    } */
+
+	craftRecipe MakeScarecrow
+	{
+        timedAction = Making,
+		Time = 150,
+		NeedToBeLearn = True,
+		Tags = InHandCraft;Farming,
+        category = Farming,
+		AutoLearnAny = Farming:6,
+		inputs
+		{
+			item 2 [Base.LongStick;Base.Sapling] flags[Prop2],
+			item 1 [Base.LongJohns],
+		    item 4 [Base.RippedSheets;Base.RippedSheetsDirty;Base.Twine;Base.Rope;Base.SheetRope] flags[DontReplace],
+			item 100 [Base.HayTuft;Base.GrassTuft],
+		}
+		outputs
+		{
+			item 1 Base.Mov_Scarecrow,
+		}
+	}
+
+	craftRecipe CollectSeeds
+	{
+		timedAction = Making,
+		Time = 50,
+		ToolTip = Tooltip_Recipe_RequireWholeVegetable,
+		Tags = InHandCraft;Farming,
+        	category = Farming,
+		inputs
+		{
+			item 1 tags[Tweezers;DullKnife;SharpKnife] mode:keep flags[MayDegradeLight;Prop1;IsNotDull],
+			item 1 [Base.BellPepper;Base.Cucumber;Base.PepperHabanero;Base.PepperJalapeno;Base.Pumpkin;Base.Tomato;Base.Strewberrie;Base.Watermelon;Base.Zucchini] flags[AllowRottenItem;ItemCount] mappers[veggie] mode:destroy,
+		}
+		outputs
+		{
+			item 1 mapper:veggie,
+		}
+		itemMapper veggie
+		{
+			Base.BellPepperSeed = Base.BellPepper,
+			Base.CucumberSeed = Base.Cucumber,
+			Base.HabaneroSeed = Base.PepperHabanero,
+			Base.JalapenoSeed = Base.PepperJalapeno,
+			Base.PumpkinSeed = Base.Pumpkin,
+			Base.StrewberrieSeed = Base.Strewberrie,
+			Base.TomatoSeed = Base.Tomato,
+			Base.WatermelonSeed = Base.Watermelon,
+			Base.ZucchiniSeed = Base.Zucchini,
+		}
+	}
+
+	craftRecipe CollectSunflowerSeeds
+	{
+		timedAction = Making,
+		Time = 50,
+		Tags = InHandCraft;Farming,
+        category = Farming,
+		inputs
+		{
+			item 1 [Base.SunflowerHeadDried] mode:destroy flags[Prop2],
+		}
+		outputs
+		{
+			item 10 Base.SunflowerSeeds,
+		}
+	}
+
+	craftRecipe CollectPoppySeeds
+	{
+		timedAction = Making,
+		Time = 50,
+		Tags = InHandCraft;Farming,
+        category = Farming,
+		inputs
+		{
+			item 1 [Base.PoppyPodsDried] mode:destroy flags[Prop2],
+		}
+		outputs
+		{
+			item 1 Base.PoppySeed,
+		}
+	}
+
+	craftRecipe ShredTobacco
+	{
+		timedAction = Making,
+		Time = 300,
+		Tags = AnySurfaceCraft;Farming,
+        category = Farming,
+		inputs
+		{
+			item 1 [Base.TobaccoDried] mode:destroy flags[Prop2],
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[MayDegradeLight;Prop1;IsNotDull],
+		}
+		outputs
+		{
+			item 1 Base.TobaccoLoose,
+		}
+	}
+
+	craftRecipe ThreshGrain
+	{
+		timedAction = Threshing,
+		Time = 50,
+		Tags = InHandCraft;Farming,
+        category = Farming,
+		inputs
+		{
+			item 1 [Base.BarleySheafDried;Base.RyeSheafDried;Base.WheatSheafDried]  mappers[grain] mode:destroy flags[Prop1],
+		}
+		outputs
+		{
+			item 1 mapper:grain,
+		}
+		itemMapper grain
+		{
+			Base.BarleySeed = Base.BarleySheafDried,
+			Base.RyeSeed = Base.RyeSheafDried,
+			Base.WheatSeed = Base.WheatSheafDried,
+		}
+	}
+
+}

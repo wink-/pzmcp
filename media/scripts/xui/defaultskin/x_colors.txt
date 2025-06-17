@@ -1,0 +1,62 @@
+module Base
+{
+    xuiSkin default
+    {
+
+        /*
+            COLORS
+            NOTE: Next to named colors that can be defined here,
+            the named colors from Colors.java may also be used in style scripting.
+        */
+
+        colors
+        {
+            C_MyColor           = 1.00 : 0.00 : 0.00 : 1.00,
+            C_AnotherColor      = 1.00 : 0.70 : 0.50 : 1.00,
+            C_Grey              = 0.10 : 0.10 : 0.10 : 1.00,
+
+            C_BlackNoAlpha      = 0.00 : 0.00 : 0.00 : 0.00,
+            C_Black             = 0.00 : 0.00 : 0.00 : 1.00,
+            C_White             = 1.00 : 1.00 : 1.00 : 1.00,
+            C_ProgressYellow    = 1.00 : 0.95 : 0.45 : 1.00,
+            C_ProgressGreen     = 0.20 : 1.00 : 0.20 : 1.00,
+
+            C_UiDefault         = 1.00 : 1.00 : 1.00 : 1.00,
+            C_Background        = 0.00 : 0.00 : 0.00 : 0.50,
+            C_BgWindow          = 0.00 : 0.00 : 0.00 : 0.80,
+            C_BgCompHeader      = 0.10 : 0.10 : 0.10 : 1.00,
+            C_BgMouseOver       = 0.30 : 0.30 : 0.30 : 1.00,
+            C_Border            = 0.40 : 0.40 : 0.40 : 1.00,
+            C_BorderLocked      = 0.18 : 0.31 : 0.31 : 1.00,
+            C_BorderLight       = 0.70 : 0.70 : 0.70 : 1.00,
+            C_BgSlot            = 0.10 : 0.10 : 0.10 : 1.00,
+            C_BgSlotBgHover     = 0.25 : 0.25 : 0.25 : 1.00,
+            C_Grid              = 0.20 : 0.20 : 0.20 : 1.00,
+
+            C_Text              = 1.00 : 1.00 : 1.00 : 1.00,
+            C_TextPointNine     = 0.90 : 0.90 : 0.90 : 0.90,
+            C_TextEntityHeader  = 1.00 : 1.00 : 0.80 : 1.00,
+            C_TextCompHeader    = 1.00 : 1.00 : 1.00 : 1.00,
+            C_TextListHeader    = 0.40 : 0.40 : 0.40 : 0.30,
+
+            C_ValidGreen        = 0.20 : 0.80 : 0.20 : 1.00,
+            C_InvalidRed        = 0.80 : 0.20 : 0.20 : 1.00,
+            
+            C_UsedInputYellow   = 1.00 : 0.95 : 0.45 : 1.00,
+
+            C_Input             = rgb :   0 : 162 : 232,
+            C_InputAux          = rgb :   0 :  92 : 207,
+            C_Output            = rgb : 255 : 201 :  14,
+            C_OutputAux         = rgb : 255 : 127 :  39,
+
+            C_TextureWhite      = 1.00 : 1.00 : 1.00 : 1.00,
+
+            C_LedOn             = 1.00 : 0.00 : 0.00 : 1.00,
+            C_LedOff            = 0.30 : 0.00 : 0.00 : 1.00,
+
+            C_LcdGrid           = 0.00 : 0.30 : 0.00 : 1.00,
+            C_LcdBack           = 0.00 : 0.00 : 0.00 : 0.10,
+
+        }
+    }
+}

@@ -1,0 +1,162 @@
+/* FOR HAMMERS, SEE ITEMS_WEAPONS_1HANDED */
+
+module Base
+{
+	/******* CARPENTRY - ITEMS *******/
+	
+	item Nails
+	{
+		DisplayName = Nails,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.05,
+		Icon = Nails,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		SurvivalGear = TRUE,
+		WorldStaticModel = Nails,
+		Tags = FishingHook,
+		ResearchableRecipes = Forge_Nails;Forge_Heading_Tool,
+	}
+	
+	item NailsBox
+	{
+		DisplayName = Box of Nails,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = NailsBox,
+		MetalValue = 100,
+		SurvivalGear = TRUE,
+		WorldStaticModel = NailsBox,
+	}
+
+	item NailsCarton
+	{
+		DisplayName = Carton of Nails,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 20,
+        Icon	=	Parcel_Large_Hardware,
+		MetalValue = 1200,
+		SurvivalGear = TRUE,
+		WorldStaticModel = Parcel_Hardware_Large,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item Screws
+	{
+		DisplayName = Screws,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.05,
+		Icon = Screws,
+		AlwaysWelcomeGift = TRUE,
+		Count = 5,
+		MetalValue = 1,
+		WorldStaticModel = Screws,
+	}
+	
+	item ScrewsBox
+	{
+		DisplayName = Box of Screws,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = ScrewsBox,
+		MetalValue = 100,
+		WorldStaticModel = ScrewsBox,
+	}
+
+	item ScrewsCarton
+	{
+		DisplayName = Carton of Screws,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 20,
+        Icon	=	Parcel_Large_Hardware,
+		MetalValue = 1200,
+		WorldStaticModel = Parcel_Hardware_Large,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item Woodglue
+	{
+		DisplayName = Wood Glue,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 1,
+		Icon = Woodglue,
+		SurvivalGear = TRUE,
+		Tooltip = Tooltip_FixItems,
+		UseDelta = 0.2,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = WoodGlue,
+		Tags = Glue,
+	}
+	
+	/******* CARPENTRY - TOOLS *******/
+	
+	item GardenSaw
+	{
+		DisplayName = Wood Saw,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 1,
+		Icon = Handsaw,
+		MetalValue = 35,
+		SurvivalGear = TRUE,
+		StaticModel = GardenSaw,
+		WorldStaticModel = GardenSawGround,
+		Tags = Saw;ShowCondition,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax	=	10,
+        ResearchableRecipes = MakeSawPlank;Forge_Saw;MakeStoneBladeSaw,
+	}
+
+	item Saw
+	{
+		DisplayName = Hacksaw,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 1,
+		Icon = Hacksaw,
+		MetalValue = 35,
+		SurvivalGear = TRUE,
+		StaticModel = Hacksaw,
+		WorldStaticModel = HacksawGround,
+		Tags = Saw;MetalSaw;ShowCondition,
+        ConditionLowerChanceOneIn = 10,
+        ConditionMax	=	10,
+        ResearchableRecipes = Forge_Saw;MakeStoneBladeSaw,
+	}
+
+	/******* CARPENTRY - PARTS *******/
+
+	item PackFrame
+	{
+		DisplayName = Pack Frame,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = Framepack_Shelf_Small,
+		WorldStaticModel = CraftedFrame_Lrg2_Grnd,
+		Tags = HasMetal,
+        ResearchableRecipes = AssembleSmallFramepack;AssembleLargeFramepack;AssembleAdvancedFramepack;AssembleAdvancedLargeFramepack;MakeAdvancedFramepackFrame;MakeAdvancedLargeFramepackFrame,
+	}
+
+	item PackFrameLarge
+	{
+		DisplayName = Large Pack Frame,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 3,
+		Icon = Framepack_Shelf_Large,
+		WorldStaticModel = CraftedFrame_Lrg3_Grnd,
+		Tags = HasMetal,
+        ResearchableRecipes = AssembleSmallFramepack;AssembleLargeFramepack;AssembleAdvancedFramepack;AssembleAdvancedLargeFramepack;MakeAdvancedFramepackFrame;MakeAdvancedLargeFramepackFrame,
+	}
+}
+
+/* FOR HAMMERS, SEE ITEMS_WEAPONS_1HANDED */

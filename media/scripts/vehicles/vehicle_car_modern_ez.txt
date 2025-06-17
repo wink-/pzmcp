@@ -1,0 +1,703 @@
+module Base
+{
+	model Vehicles_ModernCar_ez
+	{
+		mesh = vehicles/ModernCarWithDoors_ez|Vehicles_ModernCar_mesh,
+		shader = vehicle,
+		scale = 0.4,
+		static = TRUE,
+	}
+	model ModernCar_ez_DoorFrontLeft
+	{
+		mesh = vehicles/ModernCarWithDoors_ez|DoorFrontLeft_mesh,
+		shader = vehicle,
+		scale = 0.4,
+		static = FALSE,
+	}
+	model ModernCar_ez_DoorFrontRight
+	{
+		mesh = vehicles/ModernCarWithDoors_ez|DoorFrontRight_mesh,
+		shader = vehicle,
+		scale = 0.4,
+		static = FALSE,
+	}
+	model ModernCar_ez_DoorRearLeft
+	{
+		mesh = vehicles/ModernCarWithDoors_ez|DoorRearLeft_mesh,
+		shader = vehicle,
+		scale = 0.4,
+		static = FALSE,
+	}
+	model ModernCar_ez_DoorRearRight
+	{
+		mesh = vehicles/ModernCarWithDoors_ez|DoorRearRight_mesh,
+		shader = vehicle,
+		scale = 0.4,
+		static = FALSE,
+	}
+	model ModernCar_ez_Hood
+	{
+		mesh = vehicles/ModernCarWithDoors_ez|Hood_mesh,
+		shader = vehicle,
+		scale = 0.4,
+		static = FALSE,
+	}
+	model ModernCar_ez_Trunk
+	{
+		mesh = vehicles/ModernCarWithDoors_ez|Trunk_mesh,
+		shader = vehicle,
+		scale = 0.4,
+		static = FALSE,
+	}
+	/* commented out so they don't ever spawn */
+/*	vehicle ModernCar_ez
+	{
+		mechanicType = 3,
+		engineRepairLevel = 6,
+		playerDamageProtection = 1.1,
+		engineRPMType = firebird,
+
+		model
+		{
+			file = Vehicles_ModernCar_ez,
+			scale = 1.8200,
+			offset = 0.0000 0.1978 0.0000,
+			rotate = 0 180 0,
+		}
+
+		spawnOffsetY = 0.22158828,
+
+		skin
+		{
+			texture = Vehicles/vehicle_moderncarshell,
+		}
+
+		textureRust = Vehicles/vehicle_moderncar_rust,
+		textureMask = Vehicles/vehicle_carmodern_mask,
+		textureLights = Vehicles/vehicle_carmodern_lights,
+		textureDamage1Overlay = Vehicles/vehicle_moderncaroverlays_damaged_01,
+		textureDamage1Shell = Vehicles/vehicle_moderncarshell_damaged_01,
+		textureDamage2Overlay = Vehicles/vehicle_moderncaroverlays_damaged_02,
+		textureDamage2Shell = Vehicles/vehicle_moderncarshell_damaged_02,
+
+		sound
+		{
+			alarmLoop = VehicleAlarmA VehicleAlarmB VehicleAlarmC VehicleAlarmD VehicleAlarmE,
+			horn = VehicleHornStandard,
+		}
+
+		extents = 0.9231 0.6374 2.3077,
+		mass = 800,
+		physicsChassisShape = 0.9231 0.6374 2.3077,
+		centerOfMassOffset = 0.0000 0.1978 0.0000,
+		shadowExtents = 0.9231 2.3077,
+		shadowOffset = 0.0000 0.0000,
+		engineForce = 5000,
+		maxSpeed = 90f,
+		engineLoudness = 80,
+		engineQuality = 70,
+		brakingForce = 90,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 1.0f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 40,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 10,
+		suspensionRestLength = 0.2,
+		wheelFriction = 1.4f,
+		frontEndHealth = 150,
+		rearEndHealth = 150,
+		seats = 4,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 0.3626 -0.3022 0.7198,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -0.3626 -0.3022 0.7198,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 0.3626 -0.3022 -0.6264,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = -0.3626 -0.3022 -0.6264,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		template = PassengerSeat4,
+
+		passenger FrontLeft
+		{
+			position inside
+			{
+				offset = 0.1813 -0.1374 0.0989,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 0.6319 -0.4176 0.0989,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			position inside
+			{
+				offset = -0.1813 -0.1374 0.0989,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -0.6319 -0.4176 0.0989,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		passenger RearLeft
+		{
+			position inside
+			{
+				offset = 0.1813 -0.1374 -0.3681,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 0.6319 -0.4176 -0.3516,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			position inside
+			{
+				offset = -0.1813 -0.1374 -0.3681,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -0.6319 -0.4176 -0.3516,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 1.3901 0.9231 0.4725,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -1.3901 0.9231 0.4725,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 0.6978 0.2033 0.4725 0.5604,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -0.6978 0.2033 0.4725 0.5604,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 0.6978 -0.3132 0.4725 0.4725,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -0.6978 -0.3132 0.4725 0.4725,
+		}
+
+		area GasTank
+		{
+			xywh = 0.6978 -0.6264 0.4725 0.4725,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 0.6978 0.7198 0.4725 0.4725,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -0.6978 0.7198 0.4725 0.4725,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 0.6978 -0.6264 0.4725 0.4725,
+		}
+
+		area TireRearRight
+		{
+			xywh = -0.6978 -0.6264 0.4725 0.4725,
+		}
+
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = ModernCar_ez_Trunk,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 180.0000 0.0000,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = Trunk_closing,
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				anim = Trunk_closing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Closed
+			{
+				anim = Trunk_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = Trunk_closing,
+				animate = FALSE,
+			}
+		}
+
+		template = Trunk/part/TruckBed,
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+
+		part Seat*
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+		}
+
+		part GloveBox
+		{
+			area = SeatFrontRight,
+
+			container
+			{
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+		}
+
+		template = GasTank,
+
+		part GasTank
+		{
+			install
+			{
+				skills = Mechanics:7,
+				recipes = Advanced Mechanics,
+			}
+
+			uninstall
+			{
+				skills = Mechanics:7,
+				recipes = Advanced Mechanics,
+			}
+		}
+
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = ModernCar_ez_Hood,
+				rotate = 0.0000 180.0000 0.0000,
+				offset = 0.0000 0.0000 0.0000,
+			}
+
+			anim Close
+			{
+				anim = Hood_closing,
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				anim = Hood_closing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Closed
+			{
+				anim = Hood_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = Hood_closing,
+				animate = FALSE,
+			}
+		}
+
+		template = Heater,
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield*
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+		}
+
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
+
+		part Window*
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
+
+		part Door*
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				rotate = 0 180 0,
+			}
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = ModernCar_ez_DoorFrontLeft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 180.0000 0.0000,
+			}
+
+			anim Close
+			{
+				anim = DoorFrontLeft_closing,
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				anim = DoorFrontLeft_closing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorFrontLeft_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorFrontLeft_closing,
+				animate = FALSE,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = ModernCar_ez_DoorFrontRight,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 180.0000 0.0000,
+			}
+
+			anim Close
+			{
+				anim = DoorFrontRight_closing,
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				anim = DoorFrontRight_closing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorFrontRight_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorFrontRight_closing,
+				animate = FALSE,
+			}
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = ModernCar_ez_DoorRearLeft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 180.0000 0.0000,
+			}
+
+			anim Close
+			{
+				anim = DoorRearLeft_closing,
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				anim = DoorRearLeft_closing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorRearLeft_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorRearLeft_closing,
+				animate = FALSE,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = ModernCar_ez_DoorRearRight,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 180.0000 0.0000,
+			}
+
+			anim Close
+			{
+				anim = DoorRearRight_closing,
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				anim = DoorRearRight_closing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorRearRight_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorRearRight_closing,
+				animate = FALSE,
+			}
+		}
+
+		template = Tire,
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:7,
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:7,
+				recipes = Advanced Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:7,
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:7,
+				recipes = Advanced Mechanics,
+			}
+		}
+
+		template = Radio,
+		template = Headlight,
+
+		part TestPart1
+		{
+			model TestModel
+			{
+				file = Vehicles_Wheel,
+				offset = 0.0000 -0.1429 1.3407,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.1703 -1.1758,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}*/
+}

@@ -1,0 +1,261 @@
+module Base
+{
+
+	item Boilersuit
+	{
+		DisplayName = Coveralls,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = BoilerSuitWhite,
+		BloodLocation = Trousers;Jumper,
+		BodyLocation = Boilersuit,
+		ClothingItem = Boilersuit,
+		ColorBlue = 161,
+		ColorGreen = 161,
+		ColorRed = 161,
+		FabricType = Cotton,
+		Insulation = 0.65,
+		RunSpeedModifier = 0.9,
+		ScratchDefense = 10,
+		WindResistance = 0.45,
+		WorldStaticModel = BoilerSuit_Ground,
+		Tags = RipClothingCotton,
+	}
+
+	item Boilersuit_BlueRed
+	{
+		DisplayName = Coveralls,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = BoilerSuitBlue;BoilerSuitRed,
+		BloodLocation = Trousers;Jumper,
+		BodyLocation = Boilersuit,
+		ClothingItem = Boilersuit_BlueRed,
+		FabricType = Cotton,
+		Insulation = 0.65,
+		RunSpeedModifier = 0.9,
+		ScratchDefense = 10,
+		WindResistance = 0.45,
+		WorldStaticModel = BoilerSuit_Ground,
+		Tags = RipClothingCotton,
+	}
+
+	item Boilersuit_Flying
+	{
+		DisplayName = Coveralls - Air Force,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = BoilerSuitGreen,
+		BloodLocation = Trousers;Jumper,
+		BodyLocation = Boilersuit,
+		ClothingItem = Boilersuit_Flying,
+		FabricType = Cotton,
+		Insulation = 0.75,
+		RunSpeedModifier = 0.9,
+		ScratchDefense = 10,
+		WindResistance = 0.55,
+		WorldStaticModel = BoilerSuit_Ground,
+		Tags = RipClothingCotton,
+	}
+
+	item Boilersuit_Prisoner
+	{
+		DisplayName = Jumpsuit - Prisoner,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = JumpsuitPrisonOrange,
+		BloodLocation = Trousers;Jumper,
+		BodyLocation = Boilersuit,
+		ClothingItem = Boilersuit_Prisoner,
+		FabricType = Cotton,
+		Insulation = 0.45,
+		RunSpeedModifier = 0.9,
+		ScratchDefense = 10,
+		WindResistance = 0.35,
+		WorldStaticModel = BoilerSuit_Ground,
+		Tags = RipClothingCotton,
+	}
+
+	item Boilersuit_PrisonerKhaki
+	{
+		DisplayName = Jumpsuit - Prisoner,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = JumpsuitPrisonKhaki,
+		BloodLocation = Trousers;Jumper,
+		BodyLocation = Boilersuit,
+		ClothingItem = Boilersuit_PrisonerKhaki,
+		FabricType = Cotton,
+		Insulation = 0.40,
+		RunSpeedModifier = 0.9,
+		ScratchDefense = 10,
+		WindResistance = 0.30,
+		WorldStaticModel = BoilerSuit_Ground,
+		Tags = RipClothingCotton,
+	}
+
+	item Boilersuit_SWAT
+	{
+		DisplayName = Coveralls,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = BoilerSuitBlue,
+		BloodLocation = Trousers;Jumper,
+		BodyLocation = Boilersuit,
+		ClothingItem = Boilersuit_SWAT,
+		FabricType = Cotton,
+		Insulation = 0.65,
+		RunSpeedModifier = 0.9,
+		ScratchDefense = 10,
+		WindResistance = 0.45,
+		WorldStaticModel = BoilerSuit_Ground,
+		Tags = RipClothingCotton,
+	}
+
+	item Boilersuit_Yellow
+	{
+		DisplayName = Coveralls,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = JumpsuitPrisonKhaki,
+		BloodLocation = Trousers;Jumper,
+		BodyLocation = Boilersuit,
+		ClothingItem = Boilersuit_Yellow,
+		FabricType = Cotton,
+		Insulation = 0.65,
+		RunSpeedModifier = 0.9,
+		ScratchDefense = 10,
+		WindResistance = 0.45,
+		WorldStaticModel = BoilerSuit_Ground,
+		Tags = RipClothingCotton,
+	}
+
+	item HazmatSuit
+	{
+		DisplayName = Hazmat Suit,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = BoilerSuitOrange,
+		Icon = Hazmatsuit,
+		BiteDefense = 5,
+		BloodLocation = Trousers;Jumper;Head;Neck;Hands;Shoes,
+		BodyLocation = FullSuitHead,
+		ClothingItem = HazmatSuit,
+		Insulation = 0.65,
+		RunSpeedModifier = 0.75,
+		ScratchDefense = 15,
+		WindResistance = 0.9,
+		WorldStaticModel = Hazmat_Ground,
+		Tags = HazmatSuit;SCBA;IgnoreZombieDensity,
+		OnCreate = SpecialLootSpawns.OnCreateSCBA,
+		Tooltip = Tooltip_item_SCBA_NoBackpack,
+		VisionModifier = 0.5,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.50,
+	}
+
+	item HospitalGown
+	{
+		DisplayName = Hospital Gown,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = HospitalGown,
+		BloodLocation = Trousers;Shirt,
+		BodyLocation = LongDress,
+		ClothingItem = Gown_Hospital,
+		FabricType = Cotton,
+		Insulation = 0.10,
+		WindResistance = 0.05,
+		WorldStaticModel = HospitalGown_Ground,
+		Tags = RipClothingCotton,
+	}
+
+	item LongCoat_Bathrobe
+	{
+		DisplayName = Bath Robe,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = BathrobeWhite,
+		BloodLocation = Trousers;Jumper,
+		BodyLocation = BathRobe,
+		ClothingItem = LongCoat_Bathrobe,
+		FabricType = Cotton,
+		Insulation = 0.5,
+		RunSpeedModifier = 0.9,
+		ScratchDefense = 10,
+		WindResistance = 0.35,
+		WorldStaticModel = Bathrobe_Ground,
+		Tags = RipClothingCotton,
+	}
+
+	item LongJohns
+	{
+		DisplayName = Long Johns,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Longjohns,
+		BloodLocation = Trousers;ShirtLongSleeves,
+		BodyLocation = Torso1Legs1,
+		ClothingItem = LongJohns,
+		FabricType = Cotton,
+		Insulation = 0.3,
+		WindResistance = 0.15,
+		WorldStaticModel = BoilerSuit_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewLongjohns;SewLongjohnsBottom,
+	}
+	
+	item SpiffoSuit
+	{
+		DisplayName = Spiffo Suit,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Icon = SpiffoSuit,
+		BloodLocation = Trousers;Jumper,
+		BodyLocation = FullSuit,
+		ClothingItem = SpiffoSuit,
+		Insulation = 0.85,
+		RunSpeedModifier = 0.7,
+		ScratchDefense = 10,
+		WindResistance = 0.6,
+		WorldStaticModel = BoilerSuit_Ground,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+	}
+
+	item LongJohns_Crafted_Burlap
+	{
+		DisplayName = Burlap Long Johns,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Longjohns_Crafted_Burlap,
+		BloodLocation = Trousers;ShirtLongSleeves,
+		BodyLocation = Torso1Legs1,
+		ClothingItem = LongJohns_Crafted_Burlap,
+		FabricType = Cotton,
+		Insulation = 0.3,
+		WindResistance = 0.15,
+		DiscomfortModifier = 0.20,
+		WorldStaticModel = BoilerSuit_Ground,
+		Tags = RipClothingCotton,
+		ScratchDefense = 5,
+        ResearchableRecipes = SewLongjohns;SewLongjohnsBottom,
+	}
+
+	item LongJohns_Crafted_Cotton
+	{
+		DisplayName = Cotton Long Johns,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Longjohns_Crafted_Cotton,
+		BloodLocation = Trousers;ShirtLongSleeves,
+		BodyLocation = Torso1Legs1,
+		ClothingItem = LongJohns_Crafted_Cotton,
+		FabricType = Cotton,
+		Insulation = 0.3,
+		WindResistance = 0.15,
+		WorldStaticModel = BoilerSuit_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewLongjohns;SewLongjohnsBottom,
+	}
+
+}

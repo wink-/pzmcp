@@ -1,0 +1,22 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Pottery_Wheel
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Pottery Wheel,
+            Icon                = Build_PotteryWheel,
+
+            components
+            {
+                CraftLogic
+                {
+                    LuaPanelClass           = ISCraftDefaultPanel,
+                    DisplayName             = Pottery Wheel,
+                    Icon                    = Build_PotteryWheel,
+                }
+            }
+        }
+    }
+}

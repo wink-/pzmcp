@@ -1,0 +1,76 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_CounterCorner_Lvl2
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Metal Counter Corner,
+			Icon		= Build_MetalCounterCorner,
+		}
+	}
+
+    entity Metal_CounterCorner_Lvl2
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_CounterCorner_Lvl2,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+            canBePadlocked = true,
+            face W
+            {
+                layer
+                {
+                    row = fixtures_counters_01_34,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_counters_01_36,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = fixtures_counters_01_38,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = fixtures_counters_01_32,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            OnAddToMenu   = metalCounterLvl2Test,
+            timedAction   = BuildMetalStructureMedium,
+            time          = 50,
+            needToBeLearn = true,
+            SkillRequired = MetalWelding:8,
+            xpAward       = MetalWelding:80,
+            category      = Furniture,
+            tags          = Welding,
+            ToolTip       = Tooltip_craft_metalCounterCornerDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.SmallSheetMetal],
+                item 2 [Base.MetalPipe],
+                item 2 [Base.Hinge],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

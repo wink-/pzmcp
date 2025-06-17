@@ -1,0 +1,165 @@
+module Base
+{
+	sound UseMatch
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Use/Match,
+		}
+	}
+
+	sound UseLighter
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Use/Lighter,
+		}
+	}
+
+/******************************************************************************/
+
+	sound FixWithTape
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/FixItemWithTape,
+		}
+	}
+
+	sound FixingItemFailed
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/FixItemWithTapeFail,
+		}
+	}
+
+/******************************************************************************/
+
+	sound BlowWhistle
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Whistle/Blow,
+		}
+	}
+
+/******************************************************************************/
+
+	sound BlowHarmonica
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Harmonica/Blow,
+		}
+	}
+
+/******************************************************************************/
+
+	sound MegaphoneEquip
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Megaphone/Equip,
+		}
+	}
+
+	sound MegaphoneUnEquip
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Megaphone/UnEquip,
+		}
+	}
+
+/******************************************************************************/
+
+	sound CorpseGrabByLegs
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Corpse/GrabByLegs,
+		}
+	}
+
+	sound CorpseDropByLegs
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Corpse/DropByLegs,
+		}
+	}
+
+	sound CorpseGrabByArms
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Corpse/GrabByArms,
+		}
+	}
+
+	sound CorpseDropByArms
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Corpse/DropByArms,
+		}
+	}
+
+	sound CorpseDrag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Corpse/Drag,
+		}
+	}
+
+	sound CorpseDragTurn
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Corpse/Turn,
+		}
+	}
+
+	sound CorpseAdjustGrip
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Corpse/AdjustGrip,
+		}
+	}
+
+	sound CorpseThrowOutWindow
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Corpse/ThrowOutWindow,
+		}
+	}
+
+	sound CorpseLand
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Corpse/CorpseLand,
+		}
+	}
+}

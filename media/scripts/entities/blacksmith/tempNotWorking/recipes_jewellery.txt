@@ -1,0 +1,101 @@
+module Base
+{
+/*
+	craftRecipe RemoveGem
+	{
+		Time = 100,
+		OnCreate = Recipe.OnCreate.RemoveGem,
+        tags            = AnySurfaceCraft,
+		timedAction = MakingJewellery,
+		inputs
+		{
+			item 1 tags[DiamondJewellery;EmeraldJewellery;RubyJewellery;SapphireJewellery] mappers[gemType],
+			item 1 tags[Pliers] mode:keep,
+			item 1 tags[Magnifier] mode:keep,
+		}
+		outputs
+		{
+			item 1 mapper:gemType,
+		}
+		itemMapper gemType
+		{
+			Base.Diamond = DiamondJewellery,
+			Base.Emerald = EmeraldJewellery,
+			Base.Ruby = RubyJewellery,
+			Base.Sapphire = SapphireJewellery,
+		}
+	}*/
+/*
+	craftRecipe RemoveDiamond
+	{
+		Time = 100,
+		OnCreate = Recipe.OnCreate.RemoveGem,
+        tags            = AnySurfaceCraft,
+		timedAction = MakingJewellery,
+		inputs
+		{
+			item 1 tags[DiamondJewellery],
+			item 1 tags[Pliers] mode:keep,
+			item 1 tags[Magnifier] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.Diamond,
+		}
+	}
+
+	craftRecipe RemoveEmerald
+	{
+		Time = 100,
+		OnCreate = Recipe.OnCreate.RemoveGem,
+        tags            = AnySurfaceCraft,
+		timedAction = MakingJewellery,
+		inputs
+		{
+			item 1 tags[EmeraldJewellery],
+			item 1 tags[Pliers] mode:keep,
+			item 1 tags[Magnifier] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.Emerald,
+		}
+	}
+
+	craftRecipe RemoveRuby
+	{
+		Time = 100,
+		OnCreate = Recipe.OnCreate.RemoveGem,
+        tags            = AnySurfaceCraft,
+		timedAction = MakingJewellery,
+		inputs
+		{
+			item 1 tags[RubyJewellery],
+			item 1 tags[Pliers] mode:keep,
+			item 1 tags[Magnifier] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.Ruby,
+		}
+	}
+
+	craftRecipe RemoveSapphire
+	{
+		Time = 100,
+		OnCreate = Recipe.OnCreate.RemoveGem,
+        tags            = AnySurfaceCraft,
+		timedAction = MakingJewellery,
+		inputs
+		{
+			item 1 tags[SapphireJewellery],
+			item 1 tags[Pliers] mode:keep,
+			item 1 tags[Magnifier] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.Sapphire,
+		}
+	}
+*/
+}

@@ -1,0 +1,39 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISFluidSlot
+        {
+            background          = false,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            minimumBarSize      = 100,
+            margin              = 5,
+            disableButtons      = true,
+            hideButtons         = false,
+            enableTransfer      = false,
+            enableClear         = false,
+            /*
+            styleBtnTransfer    = nil,
+            styleBtnClear       = nil,
+            styleBar            = nil,
+            */
+        }
+
+        ISFluidSlot S_FluidSlot_Editable
+        {
+            disableButtons      = false,
+            hideButtons         = false,
+            enableTransfer      = true,
+            enableClear         = true,
+        }
+
+        ISFluidSlot S_FluidSlot_Locked
+        {
+            disableButtons      = true,
+            hideButtons         = true,
+            enableTransfer      = true,
+            enableClear         = true,
+        }
+    }
+}

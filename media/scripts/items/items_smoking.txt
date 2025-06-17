@@ -1,0 +1,230 @@
+module Base
+{
+	/******* SMOKING - LIGHTERS/MATCHES *******/
+	
+	item Matches
+	{
+		DisplayName = Matches,
+		DisplayCategory = FireSource,
+		Type = Drainable,
+		Weight = 0.1,
+		Icon = Matches,
+		ConsolidateOption = ContextMenu_Merge,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = Matches,
+		Tags = StartFire;LessFull;FitsWallet,
+        SurvivalGear = TRUE,
+	}
+	
+	/******* SMOKING - TOBACCO *******/
+
+	item Cigar
+	{
+		DisplayName = Cigar,
+		DisplayCategory = Junk,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Cigar,
+		CantBeFrozen = TRUE,
+		CustomContextMenu = Smoke,
+		EatType = Cigarettes,
+		OnEat = OnEat_Cigar,
+		RequireInHandOrInventory	=	CandleLit/Matches/Matchbox/LighterDisposable/Lighter/LighterBBQ/Lighter_Battery,
+		HungerChange = 0,
+		StressChange = -20,
+		UnhappyChange =	-40,
+		BoredomChange = -20,
+		StaticModel = Cigar_Lit,
+		WorldStaticModel = Cigar,
+		CustomEatSound = ,
+		Tags = IgnoreZombieDensity;UseAll;Smokable,
+		EatTime = 920,
+	}
+
+	item CigarettePack
+	{
+	    DisplayCategory = Junk,
+		Weight	=	0.2,
+        UseDelta	=	0.05,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		KeepOnDeplete = FALSE,
+		DisplayName	=	Cigarette Pack,
+		Icon	=	IckySticks,
+		WorldStaticModel = CigarettePack_Closed,
+		Tags = Packed;LessFull,
+	}
+
+	item CigaretteCarton
+	{
+	    DisplayCategory = Junk,
+		Weight	=	2,
+		Type	=	Normal,
+		DisplayName	=	Cigarette Carton,
+		Icon	=	CigaretteCarton,
+		WorldStaticModel = CigaretteCarton,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item CigaretteSingle
+	{
+		DisplayName = Cigarette,
+		DisplayCategory = Junk,
+		Type = Food,
+		Weight = 0.01,
+		Icon = Cigarette,
+		CantBeFrozen = TRUE,
+		CustomContextMenu = Smoke,
+		EatType = Cigarettes,
+		HungerChange = 0,
+		OnEat = OnEat_Cigarettes,
+		RequireInHandOrInventory	=	CandleLit/Matches/Matchbox/LighterDisposable/Lighter/LighterBBQ/Lighter_Battery,
+		StressChange = -5,
+		StaticModel = Cigarette_Lit,
+		WorldStaticModel = Cigarette2,
+		CustomEatSound = ,
+		Tags = UseAll;Smokable,
+		EatTime = 460,
+	}
+
+	item CigaretteRolled
+	{
+		DisplayName = Rolled Cigarette,
+		DisplayCategory = Junk,
+		Type = Food,
+		Weight = 0.01,
+		Icon = CigaretteRolled,
+		CantBeFrozen = TRUE,
+		CustomContextMenu = Smoke,
+		EatType = Cigarettes,
+		OnEat = OnEat_Cigarettes,
+		RequireInHandOrInventory	=	CandleLit/Matches/Matchbox/LighterDisposable/Lighter/LighterBBQ/Lighter_Battery,
+		HungerChange = 0,
+		StressChange = -3,
+		StaticModel = CigaretteRolled_Lit,
+		WorldStaticModel = CigaretteRolled,
+		CustomEatSound = ,
+		Tags = UseAll;Smokable,
+		EatTime = 460,
+	}
+
+	item Cigarillo
+	{
+		DisplayName = Cigarillo,
+		DisplayCategory = Junk,
+		Type = Food,
+		Weight = 0.02,
+		Icon = Cigarillo,
+		CantBeFrozen = TRUE,
+		CustomContextMenu = Smoke,
+		EatType = Cigarettes,
+		OnEat = OnEat_Cigarillo,
+		RequireInHandOrInventory	=	CandleLit/Matches/Matchbox/LighterDisposable/Lighter/LighterBBQ/Lighter_Battery,
+		HungerChange = 0,
+		StressChange = -10,
+		StaticModel = Cigarillo_Lit,
+		WorldStaticModel = Cigarillo,
+		CustomEatSound = ,
+		Tags = IgnoreZombieDensity;UseAll;Smokable,
+		EatTime = 920,
+	}
+
+	item SmokingPipe_Tobacco
+	{
+		DisplayCategory = Junk,
+		Weight              = 0.3,
+		Type = Food,
+		DisplayName         = Smoking Pipe with Tobacco,
+		Icon                = Ceramic_Smokingpipe_Unfired,
+		CantBeFrozen = TRUE,
+		CustomContextMenu = Smoke,
+		EatType = pipe,
+		CustomEatSound = ,
+		OnEat = OnEat_Cigarillo,
+		RequireInHandOrInventory	=	CandleLit/Matches/Matchbox/LighterDisposable/Lighter/LighterBBQ/Lighter_Battery,
+		HungerChange = 0,
+		StressChange = -10,
+		StaticModel         = SmokingPipeFired,
+		WorldStaticModel    = SmokingPipeFired,
+		ReplaceOnUse = SmokingPipe,
+		EatTime = 920,
+	}
+
+	item CanPipe
+	{
+	    DisplayCategory     = Junk,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Can Pipe,
+		Icon                = Pipe_BeerCan,
+		StaticModel         = CanPipe,
+		WorldStaticModel    = CanPipe,
+	}
+
+	item CanPipe_Tobacco
+	{
+		DisplayCategory = Junk,
+		Weight              = 0.3,
+		Type = Food,
+		DisplayName         = Can Pipe with Tobacco,
+		Icon                = Pipe_BeerCan,
+		CantBeFrozen = TRUE,
+		CustomContextMenu = Smoke,
+		EatType = pipe,
+		CustomEatSound = ,
+		OnEat = OnEat_Cigarillo,
+		RequireInHandOrInventory	=	CandleLit/Matches/Matchbox/LighterDisposable/Lighter/LighterBBQ/Lighter_Battery,
+		HungerChange = 0,
+		StressChange = -10,
+		StaticModel         = CanPipe,
+		WorldStaticModel    = CanPipe,
+		ReplaceOnUse = CanPipe,
+		EatTime = 920,
+	}
+
+	item CigaretteRollingPapers
+	{
+		DisplayName = Rolling Papers,
+		DisplayCategory = Junk,
+		Type = Drainable,
+		Weight = 0.1,
+		Icon = CigaretteRollingPapers,
+		UseDelta = 0.02,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = CigaretteRollingPapers,
+		Tags = RollingPaper;LessFull;FitsWallet,
+	}
+
+	item TobaccoLoose
+	{
+		DisplayName = Pouch of Tobacco,
+		DisplayCategory = Junk,
+		Type = Drainable,
+		Weight = 0.3,
+		Icon = TobaccoLoose,
+		UseDelta = 0.02,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = TobaccoLoose,
+		Tags = IgnoreZombieDensity;Tobacco;LessFull,
+	}
+
+	item TobaccoChewing
+	{
+	    DisplayCategory = Junk,
+        /*StressChange	=	-5,*/
+		Weight	=	0.3,
+        UseDelta	=	0.05,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		DisplayName	=	Chewing Tobacco,
+		Icon	=	TobaccoChewing,
+		StaticModel = TobaccoChewing_Hand,
+		WorldStaticModel = TobaccoChewing,
+		Tags = IgnoreZombieDensity;Consumable;ChewingTobacco;LessFull,
+		CustomContextMenu = Chew,
+		OnEat = OnEat_ChewingTobacco,
+		EatType = eatBox,
+	}
+	
+}

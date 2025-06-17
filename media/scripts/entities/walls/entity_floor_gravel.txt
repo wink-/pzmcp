@@ -1,0 +1,49 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_GravelFloor
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Gravel Floor,
+			Icon		= Build_FloorGravel,
+		}
+	}
+
+    entity GravelFloor
+    {
+        component UiConfig
+                {
+                    xuiSkin         = default,
+                    entityStyle     = ES_GravelFloor,
+                    uiEnabled       = false,
+                }
+
+        component SpriteConfig
+        {
+		    isThumpable     = false,
+		    OnIsValid = BuildRecipeCode.floor.OnIsValid,
+		    OnCreate = BuildRecipeCode.floor.OnCreate,
+			
+            face Single
+            {
+                layer
+                {
+                    row = blends_street_01_55,
+                }
+            }
+        }
+		
+	component CraftRecipe
+        {
+            timedAction   = EmptyBag,
+            time          = 100,
+            category      = Outdoors,
+            ToolTip       = Tooltip_craft_gravelFloorDesc,
+            inputs
+            {
+                item 1 [Base.Gravelbag] flags[Prop1],
+            }
+        }
+    }
+}

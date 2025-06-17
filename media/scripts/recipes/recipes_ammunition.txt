@@ -1,0 +1,374 @@
+module Base
+{
+
+	craftRecipe GatherGunpowder
+	{
+        timedAction = Making,
+		Time = 30,
+        category = Packing,
+		Tags = AnySurfaceCraft,
+		/*OnCreate = Recipe.OnCreate.GatherGunpowder,*/
+		inputs
+		{
+			item 1 tags[Pliers;ViseGrips] mode:keep,
+			item 1 tags[Ammo] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.GunPowder flags[HasOneUse],
+		}
+	}
+
+	craftRecipe OpenBoxOfBullets50
+	{
+        timedAction = OpenAmmoBox,
+		Time = 15,
+        category = Packing,
+        Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 1 [Base.Bullets9mmBox;Base.Bullets45Box;Base.Bullets38Box;Base.223Box;Base.556Box] mappers[ammoTypes] flags[Prop2] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 50 mapper:ammoTypes,
+		}
+        	itemMapper ammoTypes
+        {
+			Base.Bullets9mm = Base.Bullets9mmBox,
+			Base.Bullets45 = Base.Bullets45Box,
+			Base.Bullets38 = Base.Bullets38Box,
+			Base.223Bullets = Base.223Box,
+			Base.556Bullets = Base.556Box,
+		}
+	}
+
+	craftRecipe OpenBoxOfBullets20
+	{
+        timedAction = OpenAmmoBox,
+		Time = 15,
+        category = Packing,
+        Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 1 [Base.Bullets44Box;Base.308Box] mappers[ammoTypes] flags[Prop2] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 20 mapper:ammoTypes,
+		}
+        	itemMapper ammoTypes
+        	{
+			Base.Bullets44 = Base.Bullets44Box,
+			Base.308Bullets = Base.308Box,
+		}
+	}
+
+	craftRecipe OpenBoxOfShotgunShells
+	{
+        timedAction = OpenShellsBox,
+		Time = 15,
+        category = Packing,
+        Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 1 [Base.ShotgunShellsBox] flags[Prop2] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 25 Base.ShotgunShells,
+		}
+	}
+
+	craftRecipe OpenCartonOfBullets
+	{
+        timedAction = UnPackBox,
+		Time = 50,
+        category = Packing,
+        Tags = InHandCraft;CanBeDoneInDark,
+		inputs
+		{
+			item 1 [Base.Bullets9mmCarton;Base.Bullets45Carton;Base.Bullets38Carton;Base.Bullets44Carton;Base.223Carton;Base.308Carton;Base.ShotgunShellsCarton;Base.556Carton] mappers[ammoTypes] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 12 mapper:ammoTypes,
+		}
+        	itemMapper ammoTypes
+        	{
+			Base.Bullets9mmBox = Base.Bullets9mmCarton,
+			Base.Bullets45Box = Base.Bullets45Carton,
+			Base.Bullets38Box = Base.Bullets38Carton,
+			Base.Bullets44Box = Base.Bullets44Carton,
+			Base.223Box = Base.223Carton,
+			Base.308Box = Base.308Carton,
+			Base.ShotgunShellsBox = Base.ShotgunShellsCarton,
+			Base.556Box = Base.556Carton,
+		}
+	}
+
+	craftRecipe Place556AmmoInBox
+	{
+        timedAction = PlaceAmmoInBox,
+		Time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 50 [Base.556Bullets] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.556Box,
+		}
+	}
+
+	craftRecipe Place223AmmoInBox
+	{
+        timedAction = PlaceAmmoInBox,
+		Time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 50 [Base.223Bullets] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.223Box,
+		}
+	}
+
+	craftRecipe Place308AmmoInBox
+	{
+        timedAction = PlaceAmmoInBox,
+		Time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 20 [Base.308Bullets] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.308Box,
+		}
+	}
+
+	craftRecipe Place9mmBulletsInBox
+	{
+        timedAction = PlaceAmmoInBox,
+		Time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 50 [Base.Bullets9mm] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.Bullets9mmBox,
+		}
+	}
+
+	craftRecipe Place45AutoBulletsInBox
+	{
+        timedAction = PlaceAmmoInBox,
+		Time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 50 [Base.Bullets45] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.Bullets45Box,
+		}
+	}
+
+	craftRecipe Place38SpecialBulletsInBox
+	{
+        timedAction = PlaceAmmoInBox,
+		Time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 50 [Base.Bullets38] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.Bullets38Box,
+		}
+	}
+
+	craftRecipe Place44MagnumBulletsInBox
+	{
+        timedAction = PlaceAmmoInBox,
+		Time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 20 [Base.Bullets44] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.Bullets44Box,
+		}
+	}
+
+	craftRecipe PlaceShotgunShellsInBox
+	{
+        timedAction = PlaceAmmoInBox,
+		Time = 15,
+        category = Packing,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 25 [Base.ShotgunShells] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.ShotgunShellsBox,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe PlaceBoxesOf556AmmoInCarton
+	{
+        timedAction = PackingBox,
+		Time = 50,
+        category = Packing,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 12 [Base.556Box] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.556Carton,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe PlaceBoxesOf223AmmoInCarton
+	{
+        timedAction = PackingBox,
+		Time = 50,
+        category = Packing,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 12 [Base.223Box] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.223Carton,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe PlaceBoxesOf308AmmoInCarton
+	{
+        timedAction = PackingBox,
+		Time = 50,
+        category = Packing,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 12 [Base.308Box] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.308Carton,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe PlaceBoxesOf9mmBulletsInCarton
+	{
+        timedAction = PackingBox,
+		Time = 50,
+        category = Packing,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 12 [Base.Bullets9mmBox] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.Bullets9mmCarton,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe PlaceBoxesOf45AutoBulletsInCarton
+	{
+        timedAction = PackingBox,
+		Time = 50,
+        category = Packing,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 12 [Base.Bullets45Box] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.Bullets45Carton,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe PlaceBoxesOf38SpecialBulletsInCarton
+	{
+        timedAction = PackingBox,
+		Time = 50,
+        category = Packing,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 12 [Base.Bullets38Box] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.Bullets38Carton,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe PlaceBoxesOf44MagnumBulletsInCarton
+	{
+        timedAction = PackingBox,
+		Time = 50,
+        category = Packing,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 12 [Base.Bullets44Box] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.Bullets44Carton,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe PlaceBoxesOfShotgunShellsInCarton
+	{
+        timedAction = PackingBox,
+		Time = 50,
+        category = Packing,
+        Tags = InHandCraft,
+		inputs
+		{
+			item 12 [Base.ShotgunShellsBox] flags[AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.ShotgunShellsCarton,
+		}
+	}
+
+}

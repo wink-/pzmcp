@@ -1,0 +1,239 @@
+module Base
+{
+
+	sound ZombieFootstepsCombined
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Footsteps,
+		}
+	}
+
+	sound HeadSmash
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/HeadSmash,
+		}
+	}
+	
+	sound HeadStab
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/HeadStab,
+		}
+	}
+
+	sound HeadSlice
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/HeadSlice,
+		}
+	}
+
+	sound BurningFlesh
+	{
+		category = Zombie,
+		clip
+		{
+			event = Character/Combat/BurningFlesh,
+		}
+	}
+
+	sound ZombieThumpGeneric
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Thump/Generic,
+		}
+	}
+
+	sound ZombieThumpMetal
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Thump/Metal,
+		}
+	}
+
+	sound ZombieThumpWood
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Thump/Wood,
+			volume = 0.25,
+		}
+	}
+
+	sound ZombieThumpWoodCollapse
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Thump/WoodCollapse,
+		}
+	}
+
+	sound ZombieThumpMetalPoleGate
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Thump/MetalPoleGate,
+		}
+	}
+
+	sound ZombieThumpVehicle
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Thump/Vehicle,
+		}
+	}
+
+	sound ZombieThumpVehicleWindow
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Thump/VehicleWindow,
+		}
+	}
+
+	sound ZombieThumpWindow
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Thump/Window,
+		}
+	}
+
+	sound ZombieThumpChainlinkFence
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Thump/ChainlinkFence,
+		}
+	}
+
+	sound ZombieThumpChainlinkFenceDamageMid
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Thump/ChainlinkFenceDamageMid,
+		}
+	}
+
+	sound ZombieThumpChainlinkFenceDamageHigh
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Thump/ChainlinkFenceDamageHigh,
+		}
+	}
+
+	sound ZombieThumpChainlinkFenceDamageCollapse
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Thump/ChainlinkFenceDamageCollapse,
+		}
+	}
+
+	sound ZombieThumpGarageDoor
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Thump/GarageDoor,
+		}
+	}
+	
+	sound ZombieScratch
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Scratch,
+		}
+	}
+
+	sound ZombieBite
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Bite,
+		}
+	}
+
+	sound NeckBite
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Bite/NeckBite,
+		}
+	}
+
+	sound ZombieCrawlLungeSwing
+	{
+		category = Zombie,
+		clip
+		{
+			event = Weapon/Melee/BluntShort/Hammer/Swing,
+		}
+	}
+
+	sound ZombieCrawlLungeHit
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Scratch,
+			volume = 0.5,
+		}
+	}
+
+	sound ZombieSurprisedPlayer
+	{
+		category = Zombie,
+		clip
+		{
+			event = Game/ZombieSurprisedPlayer,
+		}
+	}
+
+	sound BodyHitGround
+	{
+		category = Zombie,
+		clip
+		{
+			event = Character/Foley/BodyHitGround,
+		}
+	}
+
+	sound ZombieTrip
+	{
+		category = Zombie,
+		clip
+		{
+			event = Zombie/Trip,
+		}
+	}
+}

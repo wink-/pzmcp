@@ -1,0 +1,133 @@
+module Base 
+{
+    ragdoll JOINT_RIGHT_KNEE_constraint
+    {
+        joint = 5,
+        constraintType = 4,
+        constraintPartA = 5,
+        constraintPartB = 6,
+        constraintAxisA = 0.0 1.5707964 0.0,
+        constraintAxisB = 0.0 1.5707964 0.0,
+        constraintPositionOffsetA = 0.0 -0.225 0.0,
+        constraintPositionOffsetB = 0.0 0.185 0.0,
+        constraintLimit = 0.0 1.5707964 0.0,
+    }
+
+    ragdoll JOINT_RIGHT_HIP_constraint
+    {
+        joint = 4,
+        constraintType = 5,
+        constraintPartA = 0,
+        constraintPartB = 5,
+        constraintAxisA = 0.0 0.0 0.7853982,
+        constraintAxisB = 0.0 0.0 0.7853982,
+        constraintPositionOffsetA = 0.1 -0.1 0.0,
+        constraintPositionOffsetB = 0.0 0.175 0.0,
+        constraintLimit = 0.212 0.724 0.318,
+    }
+
+    ragdoll JOINT_SPINE_HEAD_constraint
+    {
+        joint = 1,
+        constraintType = 5,
+        constraintPartA = 1,
+        constraintPartB = 2,
+        constraintAxisA = 0.0 0.0 1.5707964,
+        constraintAxisB = 0.0 0.0 1.5707964,
+        constraintPositionOffsetA = 0.0 0.15 0.0,
+        constraintPositionOffsetB = 0.0 -0.1 0.0,
+        constraintLimit = 0.7853982 0.7853982 1.077,
+    }
+
+    ragdoll JOINT_LEFT_ELBOW_constraint
+    {
+        joint = 7,
+        constraintType = 4,
+        constraintPartA = 7,
+        constraintPartB = 8,
+        constraintAxisA = 0.0 1.5707964 0.0,
+        constraintAxisB = 0.0 1.5707964 0.0,
+        constraintPositionOffsetA = 0.0 0.1 0.0,
+        constraintPositionOffsetB = 0.0 -0.1 0.0,
+        constraintLimit = 0.0 1.5707964 0.0,
+    }
+
+    ragdoll JOINT_RIGHT_SHOULDER_constraint
+    {
+        joint = 8,
+        constraintType = 5,
+        constraintPartA = 1,
+        constraintPartB = 9,
+        constraintAxisA = 0.0 0.0 0.0,
+        constraintAxisB = 0.0 0.0 1.5707964,
+        constraintPositionOffsetA = 0.1 0.1 0.0,
+        constraintPositionOffsetB = 0.0 -0.075 0.0,
+        constraintLimit = 1.0 1.0 2.402,
+    }
+
+    ragdoll JOINT_PELVIS_SPINE_constraint
+    {
+        joint = 0,
+        constraintType = 4,
+        constraintPartA = 0,
+        constraintPartB = 1,
+        constraintAxisA = 0.0 1.5707964 0.0,
+        constraintAxisB = 0.0 1.5707964 0.0,
+        constraintPositionOffsetA = 0.0 0.1 0.0,
+        constraintPositionOffsetB = 0.0 -0.1 0.0,
+        constraintLimit = -0.565 0.935 1.571,
+    }
+
+    ragdoll JOINT_LEFT_HIP_constraint
+    {
+        joint = 2,
+        constraintType = 5,
+        constraintPartA = 0,
+        constraintPartB = 3,
+        constraintAxisA = 0.0 0.0 2.3561945,
+        constraintAxisB = 0.0 0.0 2.3561945,
+        constraintPositionOffsetA = -0.1 -0.1 0.0,
+        constraintPositionOffsetB = 0.0 0.175 0.0,
+        constraintLimit = 0.212 0.741 0.282,
+    }
+
+    ragdoll JOINT_LEFT_KNEE_constraint
+    {
+        joint = 3,
+        constraintType = 4,
+        constraintPartA = 3,
+        constraintPartB = 4,
+        constraintAxisA = 0.0 1.5707964 0.0,
+        constraintAxisB = 0.0 1.5707964 0.0,
+        constraintPositionOffsetA = 0.0 -0.225 0.0,
+        constraintPositionOffsetB = 0.0 0.185 0.0,
+        constraintLimit = 0.0 1.5707964 0.0,
+    }
+
+    ragdoll JOINT_LEFT_SHOULDER_constraint
+    {
+        joint = 6,
+        constraintType = 5,
+        constraintPartA = 1,
+        constraintPartB = 7,
+        constraintAxisA = 0.0 0.0 3.1415927,
+        constraintAxisB = 0.0 0.0 1.5707964,
+        constraintPositionOffsetA = -0.1 0.1 0.0,
+        constraintPositionOffsetB = 0.0 -0.075 0.0,
+        constraintLimit = 1.0 1.0 2.402,
+    }
+
+    ragdoll JOINT_RIGHT_ELBOW_constraint
+    {
+        joint = 9,
+        constraintType = 4,
+        constraintPartA = 9,
+        constraintPartB = 10,
+        constraintAxisA = 0.0 1.5707964 0.0,
+        constraintAxisB = 0.0 1.5707964 0.0,
+        constraintPositionOffsetA = 0.0 0.1 0.0,
+        constraintPositionOffsetB = 0.0 -0.1 0.0,
+        constraintLimit = 0.0 1.5707964 0.0,
+    }
+
+}

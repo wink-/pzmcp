@@ -1,0 +1,32 @@
+module Base
+{
+	item Mov_HaystackDouble
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 5,
+		DisplayName = Double Stacked Hay,
+		WorldObjectSprite = vegetation_farm_01_10,
+	}
+	
+	item Mov_HaystackSingle
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 5,
+		DisplayName = Single Stacked Hay,
+		WorldObjectSprite = vegetation_farm_01_8,
+	}
+
+	item Mov_SaltLick
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Salt Lick,
+		WorldObjectSprite = location_farm_accesories_01_12,
+	}
+}

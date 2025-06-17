@@ -1,0 +1,831 @@
+module Base
+{
+	model Turkey_Poult
+	{
+		mesh = Skinned/Turkey_Poult,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = Turkey_Poult,
+
+		attachment head
+		{
+			offset = -0.0106 0.2956 0.1175,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+	}
+	model Turkey
+	{
+		mesh = Skinned/Turkey,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = Turkey,
+
+		attachment head
+		{
+			offset = -0.0106 0.2366 0.2595,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment head_hat
+		{
+			offset = 0.0043 -0.0046 0.0131,
+			rotate = -61.6296 -11.4902 2.4886,
+			scale = 0.1484,
+			bone = Bip01_Head,
+		}
+	}
+	model Chicken_Chick
+	{
+		mesh = Skinned/Chicken_Chick,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = Chicken_Chick,
+
+		attachment head
+		{
+			offset = -0.0106 0.2881 0.0874,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+	}
+	model Chicken_Hen
+	{
+		mesh = Skinned/Chicken_Hen,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = Chicken_Hen,
+
+		attachment head
+		{
+			offset = -0.0106 0.3446 0.2709,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+	}
+	model Chicken_Cockrel
+	{
+		mesh = Skinned/Chicken_Cockrel,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = Chicken_Cockrel,
+
+		attachment head
+		{
+			offset = -0.0106 0.2246 0.2833,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+	}
+	model Bull_Body
+	{
+		mesh = Skinned/Bull_Body,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = CowAndBull,
+
+        attachment head
+        {
+            offset = -0.0106 0.9940 0.7262,
+            rotate = -179.0000 -5.0000 95.0000,
+            bone = Dummy01,
+        }
+	}
+	model CowBody
+	{
+		mesh = Skinned/CowBody,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = CowAndBull,
+
+		attachment rightmilk
+		{
+			offset = -0.2585 -0.1030 0.4933,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment leftmilk
+		{
+			offset = 0.2772 0.0287 0.4999,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment head
+		{
+			offset = 0.0038 1.0402 0.7262,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment head_hat
+		{
+			offset = -0.0219 0.0168 -0.0057,
+			rotate = 179.6544 -23.7812 3.2347,
+			scale = 0.4093,
+			bone = Bip01_Head,
+		}
+
+		attachment bowtie
+		{
+			offset = 0.0038 0.5636 -0.6823,
+			rotate = 156.8358 0.4641 178.8851,
+			scale = 1.1400,
+			bone = Neck,
+		}
+	}
+	model CowCalf_Body
+	{
+		mesh = Skinned/CowCalf_Body,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = Cow_Calf,
+
+		attachment head
+		{
+			offset = -0.0106 0.5035 0.2718,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+	}
+	model FarmPig_BoarBody
+	{
+		mesh = Skinned/FarmPig_BoarBody,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = Pig_BoarAndSow,
+
+		attachment head
+		{
+			offset = 0.0038 0.7200 0.2526,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+	}
+	model FarmPig_PigletBody
+	{
+		mesh = Skinned/FarmPig_PigletBody,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = Pig_Piglet,
+
+		attachment head
+		{
+			offset = 0.0038 0.4314 0.3644,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+	}
+	model FarmPig_SowBody
+	{
+		mesh = Skinned/FarmPig_SowBody,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = Pig_BoarAndSow,
+
+		attachment head
+		{
+			offset = 0.0038 0.6970 0.1979,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment head_hat
+		{
+			offset = -0.0219 0.0103 -0.0057,
+			rotate = 179.9990 -16.6684 3.0199,
+			scale = 0.3725,
+			bone = Bip01_Head,
+		}
+
+		attachment bowtie
+		{
+			offset = 0.0038 0.2082 -0.4598,
+			rotate = 156.8358 0.4641 178.8851,
+			scale = 1.1400,
+			bone = Neck,
+		}
+	}
+	model Rat_Body
+	{
+		mesh = Skinned/Rat_Body,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = Rat,
+
+		attachment head
+        {
+            offset = -0.0106 0.2881 0.0874,
+            rotate = -179.0000 -5.0000 95.0000,
+            bone = Dummy01,
+        }
+	}
+	model Raccoon_Body
+    {
+        mesh = Skinned/Raccoon_Body,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Raccoon,
+
+        attachment head
+        {
+            offset = -0.0106 0.2881 0.0874,
+            rotate = -179.0000 -5.0000 95.0000,
+            bone = Dummy01,
+        }
+    }
+	model DeerFawn
+    {
+        mesh = Skinned/DeerFawn,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Deer_Fawn,
+    }
+	model DeerDoe
+    {
+        mesh = Skinned/DeerDoe,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Deer_Doe,
+    }
+	model DeerStag
+    {
+        mesh = Skinned/DeerStag,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Deer_Stag,
+    }
+	model Sheep_EweSheared_Headless
+    {
+        mesh = Skinned/Sheep_EweSheared_Headless,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Sheep_Ewe,
+    }
+	model Sheep_EweFleece
+	{
+		mesh = Skinned/Sheep_EweFleece,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = Sheep_Ewe,
+
+		attachment rightshear
+		{
+			offset = -0.1300 0.0270 0.2592,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment leftshear
+		{
+			offset = 0.1943 0.0287 0.2427,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment rightmilk
+		{
+			offset = -0.1300 0.0270 0.2592,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment leftmilk
+		{
+			offset = 0.1384 -0.0386 0.2172,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment head
+		{
+			offset = 0.0038 0.3996 0.3662,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment head_hat
+		{
+			offset = -0.0219 0.0168 -0.0057,
+			rotate = 179.6544 -23.7812 3.2347,
+			scale = 0.4093,
+			bone = Bip01_Head,
+		}
+
+		attachment bowtie
+		{
+			offset = 0.0038 0.5636 -0.6823,
+			rotate = 156.8358 0.4641 178.8851,
+			scale = 1.1400,
+			bone = Neck,
+		}
+	}
+	model Sheep_EweSheared
+	{
+		mesh = Skinned/Sheep_EweSheared,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = Sheep_Ewe,
+
+		attachment rightshear
+		{
+			offset = -0.1300 0.0270 0.2592,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment leftshear
+		{
+			offset = 0.1943 0.0287 0.2427,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment rightmilk
+		{
+			offset = -0.1714 0.1568 0.2592,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment leftmilk
+		{
+			offset = 0.1780 0.1518 0.2172,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment head
+		{
+			offset = 0.0038 0.3996 0.3662,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment head_hat
+		{
+			offset = 0.0111 0.0016 0.0249,
+			rotate = -179.9933 -16.1491 2.7914,
+			scale = 0.2640,
+			bone = Bip01_Head,
+		}
+
+		attachment bowtie
+		{
+			offset = 0.0038 0.2764 -0.3306,
+			rotate = 156.8358 0.4641 178.8851,
+			scale = 0.7525,
+			bone = Neck,
+		}
+	}
+	model Sheep_Lamb
+	{
+		mesh = Skinned/Sheep_Lamb,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = Sheep_Lamb,
+
+		attachment head
+		{
+			offset = 0.0038 0.1888 0.1425,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+	}
+	model Sheep_RamSheared_Headless
+    {
+        mesh = Skinned/Sheep_RamSheared_Headless,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Sheep_Ram,
+    }
+	model Sheep_RamFleece
+	{
+		mesh = Skinned/Sheep_RamFleece,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = Sheep_Ram,
+
+		attachment rightshear
+		{
+			offset = -0.1300 0.0270 0.2592,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment leftshear
+		{
+			offset = 0.1943 0.0287 0.2427,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment head
+		{
+			offset = 0.0038 0.4314 0.3644,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+	}
+	model Sheep_RamSheared
+	{
+		mesh = Skinned/Sheep_RamSheared,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = Sheep_Ram,
+
+		attachment rightshear
+		{
+			offset = -0.1300 0.0270 0.2592,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment leftshear
+		{
+			offset = 0.1943 0.0287 0.2427,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+
+		attachment head
+		{
+			offset = 0.0038 0.4314 0.3644,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+	}
+	model RabKitten_Body
+	{
+		mesh = Skinned/RabKitten_Body,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = Rabbit_Kitten,
+
+		attachment head
+		{
+			offset = -0.0106 0.1107 -0.2689,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+	}
+	model Rab_Body
+	{
+		mesh = Skinned/Rab_Body,
+		shader = animalEffect,
+		static = false,
+		animationsMesh = Rabbit,
+
+		attachment head
+		{
+			offset = -0.0106 0.2062 -0.2146,
+			rotate = -179.0000 -5.0000 95.0000,
+			bone = Dummy01,
+		}
+	}
+	model Mouse_Body
+    {
+        mesh = Skinned/Mouse_Body,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Mouse,
+
+		attachment head
+        {
+            offset = -0.0106 0.2881 0.0874,
+            rotate = -179.0000 -5.0000 95.0000,
+            bone = Dummy01,
+        }
+    }
+	model Chicken_Skeleton
+    {
+        mesh = Skinned/Chicken_Skeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Chicken_Hen,
+    }
+	model Chicken_Skeleton_NoHead
+    {
+        mesh = Skinned/Chicken_Skeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Chicken_Hen,
+    }
+	model Cockerel_Skeleton
+    {
+        mesh = Skinned/Cockerel_Skeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Chicken_Cockrel,
+    }
+	model Cockerel_Skeleton_NoHead
+    {
+        mesh = Skinned/Cockerel_Skeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Chicken_Cockrel,
+    }
+	model Chicken_Chick_Skeleton
+    {
+        mesh = Skinned/Chicken_Chick_Skeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Chicken_Chick,
+    }
+	model Chicken_Chick_Skeleton_NoHead
+    {
+        mesh = Skinned/Chicken_Chick_Skeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Chicken_Hen,
+    }
+	model Rabbit_KittenSkeleton
+    {
+        mesh = Skinned/Rabbit_KittenSkeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Rabbit_Kitten,
+    }
+	model Rabbit_KittenSkeleton_NoHead
+    {
+        mesh = Skinned/Rabbit_KittenSkeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Rabbit_Kitten,
+    }
+	model Rabbit_Skeleton
+    {
+        mesh = Skinned/Rabbit_Skeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Rabbit,
+    }
+	model Rabbit_Skeleton_NoHead
+    {
+        mesh = Skinned/Rabbit_Skeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Rabbit,
+    }
+	model Raccoon_Skeleton
+    {
+        mesh = Skinned/Raccoon_Skeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Raccoon,
+    }
+	model Raccoon_Skeleton_NoHead
+    {
+        mesh = Skinned/Raccoon_Skeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Raccoon,
+    }
+	model Turkey_PoultSkeleton
+    {
+        mesh = Skinned/Turkey_PoultSkeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Turkey_Poult,
+    }
+	model Turkey_PoultSkeleton_NoHead
+    {
+        mesh = Skinned/Turkey_PoultSkeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Turkey_Poult,
+    }
+	model Turkey_Skeleton
+    {
+        mesh = Skinned/Turkey_Skeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Turkey,
+    }
+	model Turkey_Skeleton_NoHead
+    {
+        mesh = Skinned/Turkey_Skeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Turkey,
+    }
+	model Bull_Skeleton
+    {
+        mesh = Skinned/Bull_Skeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = CowAndBull,
+    }
+	model Bull_Skeleton_NoHead
+    {
+        mesh = Skinned/Bull_Skeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = CowAndBull,
+    }
+	model Bull_Headless
+    {
+        mesh = Skinned/Bull_Headless,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = CowAndBull,
+    }
+	model Cow_Headless
+    {
+        mesh = Skinned/Cow_Headless,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = CowAndBull,
+    }
+	model Cow_Skeleton
+    {
+        mesh = Skinned/Cow_Skeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = CowAndBull,
+    }
+	model Cow_Skeleton_NoHead
+    {
+        mesh = Skinned/Cow_Skeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = CowAndBull,
+    }
+	model CowCalf_Headless
+    {
+        mesh = Skinned/CowCalf_Headless,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Cow_Calf,
+    }
+	model CowCalf_Skeleton
+    {
+        mesh = Skinned/CowCalf_Skeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Cow_Calf,
+    }
+	model Calf_Skeleton_NoHead
+    {
+        mesh = Skinned/Calf_Skeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Cow_Calf,
+    }
+	model FarmPig_PigletSkeleton
+    {
+        mesh = Skinned/FarmPig_PigletSkeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Pig_Piglet,
+    }
+	model Piglet_Skeleton_NoHead
+    {
+        mesh = Skinned/Piglet_Skeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Pig_Piglet,
+    }
+	model FarmPig_BoarHeadless
+    {
+        mesh = Skinned/FarmPig_BoarHeadless,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Pig_BoarAndSow,
+    }
+	model FarmPig_SowHeadless
+    {
+        mesh = Skinned/FarmPig_SowHeadless,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Pig_BoarAndSow,
+    }
+	model FarmPig_Skeleton
+    {
+        mesh = Skinned/FarmPig_Skeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Pig_BoarAndSow,
+    }
+	model Pig_Skeleton_NoHead
+    {
+        mesh = Skinned/Pig_Skeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Pig_BoarAndSow,
+    }
+	model Sheep_EweSkeleton
+    {
+        mesh = Skinned/Sheep_EweSkeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Sheep_Ewe,
+    }
+	model Sheep_EweSkeleton_NoHead
+    {
+        mesh = Skinned/Sheep_EweSkeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Sheep_Ewe,
+    }
+	model Sheep_RamSkeleton
+    {
+        mesh = Skinned/Sheep_RamSkeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Sheep_Ram,
+    }
+	model Sheep_RamSkeleton_NoHead
+    {
+        mesh = Skinned/Sheep_RamSkeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Sheep_Ram,
+    }
+	model Sheep_LambSkeleton
+    {
+        mesh = Skinned/Sheep_LambSkeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Sheep_Lamb,
+    }
+	model Sheep_LambSkeleton_NoHead
+    {
+        mesh = Skinned/Sheep_LambSkeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Sheep_Lamb,
+    }
+	model DeerDoe_Headless
+    {
+        mesh = Skinned/DeerDoe_Headless,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Deer_Doe,
+    }
+	model DeerStag_Headless
+    {
+        mesh = Skinned/DeerStag_Headless,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Deer_Stag,
+    }
+	model Deer_DoeSkeleton
+    {
+        mesh = Skinned/Deer_DoeSkeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Deer_Doe,
+    }
+	model DeerDoe_Skeleton_NoHead
+    {
+        mesh = Skinned/DeerDoe_Skeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Deer_Doe,
+    }
+	model Deer_StagSkeleton
+    {
+        mesh = Skinned/Deer_StagSkeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Deer_Stag,
+    }
+	model DeerStag_Skeleton_NoHead
+    {
+        mesh = Skinned/DeerStag_Skeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Deer_Fawn,
+    }
+	model Deer_FawnSkeleton
+    {
+        mesh = Skinned/Deer_FawnSkeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Deer_Fawn,
+    }
+	model DeerFawn_Skeleton_NoHead
+    {
+        mesh = Skinned/DeerFawn_Skeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Deer_Stag,
+    }
+	model Rat_Skeleton
+    {
+        mesh = Skinned/Rat_Skeleton,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Rat,
+    }
+	model Rat_Skeleton_NoHead
+    {
+        mesh = Skinned/Rat_Skeleton_NoHead,
+        shader = animalEffect,
+        static = false,
+        animationsMesh = Rat,
+    }
+}

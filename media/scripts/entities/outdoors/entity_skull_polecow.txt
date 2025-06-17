@@ -1,0 +1,72 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_SkullPoleCow
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Cow Skull Pole,
+			Icon		= Build_Stake_SkullCow,
+		}
+	}
+
+    entity SkullPoleCow
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_SkullPoleCow,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 50,
+        	skillBaseHealth = 10,
+			
+            face W
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_62,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_61,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_63,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_60,
+                }
+            }
+        }
+		
+		component CraftRecipe
+        {
+		    timedAction   = BuildWallNoTool,
+            time          = 150,
+            category      = Miscellaneous,
+		    ToolTip       = Tooltip_craft_skullPoleDesc,
+
+            inputs
+            {
+                item 1 [Base.LongStick;Base.Sapling],
+                item 1 [Base.SheetRope],
+                item 1 [Base.Cow_Skull],
+            }
+        }
+    }
+}

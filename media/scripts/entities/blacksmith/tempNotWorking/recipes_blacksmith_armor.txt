@@ -1,0 +1,117 @@
+module Base
+{
+
+    craftRecipe Forge_Small_Armor_Plate
+    {
+        time        = 180,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        AutoLearnAll = Blacksmith:10,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SmallSheetMetal],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch;SmallPunch] mode:keep flags[MayDegradeLight],
+            item 1 tags[HeadingTool] mode:keep,
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SmallArmorPlate,
+        }
+    }
+
+    craftRecipe Assemble_Forearm_Armor
+    {
+        time        = 180,
+        SkillRequired = Blacksmith:1;Tailoring:1,
+        timedAction = CraftArmourPiece,
+        xpAward = Blacksmith:10;Tailoring:10,
+        Tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.SmallArmorPlate],
+            item 2 [Base.LeatherStrips],
+            item 2 [Base.Buckle],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.Vambrace_Left,
+        }
+    }
+
+    craftRecipe Assemble_Shin_Armor
+    {
+        time        = 180,
+        SkillRequired = Blacksmith:1;Tailoring:1,
+        timedAction = Making,
+        xpAward = Blacksmith:10;Tailoring:10,
+        Tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.SmallArmorPlate],
+            item 2 [Base.LeatherStrips],
+            item 2 [Base.Buckle],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.Greave_Left,
+        }
+    }
+
+    craftRecipe Assemble_Shoulder_Armor_Left
+    {
+         time        = 180,
+         SkillRequired = Blacksmith:1;Tailoring:1,
+         timedAction = Making,
+         xpAward = Blacksmith:10;Tailoring:10,
+         Tags = Forge,
+         category = Blacksmithing,
+         inputs
+         {
+            item 2 [Base.SmallArmorPlate],
+            item 2 [Base.LeatherStrips],
+            item 1 [Base.Buckle],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+         }
+         outputs
+         {
+             item 1 Base.Shoulderpad_Articulated_L_Metal,
+         }
+    }
+
+    craftRecipe Assemble_Shoulder_Armor_Right
+    {
+         time        = 180,
+         SkillRequired = Blacksmith:1;Tailoring:1,
+         timedAction = Making,
+         xpAward = Blacksmith:10;Tailoring:10,
+         Tags = Forge,
+         category = Blacksmithing,
+         inputs
+         {
+            item 2 [Base.SmallArmorPlate],
+            item 2 [Base.LeatherStrips],
+            item 1 [Base.Buckle],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+         }
+         outputs
+         {
+             item 1 Base.Shoulderpad_Articulated_R_Metal,
+         }
+    }
+}

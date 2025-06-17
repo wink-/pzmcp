@@ -1,0 +1,476 @@
+module Base
+{
+    /********** TIER I *********/
+
+/*
+    craftRecipe Forge_Railroad_Spike_Knife
+    {
+        time        = 180,
+        SkillRequired = Blacksmith:2,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:10,
+        AutoLearnAll = Blacksmith:4;SmallBlade:1,
+        tags = PrimitiveForge,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 1 [Base.RailroadSpike],
+            item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.RailroadSpikeKnife flags[IsBlunt],
+        }
+    }*/
+
+    craftRecipe Forge_Crude_Blade
+    {
+        time        = 200,
+        needTobeLearn = false,
+        /*SkillRequired = Blacksmith:1,*/
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:25,
+        /*AutoLearnAll = Blacksmith:2;SmallBlade:1,*/
+        tags = PrimitiveForge,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 1 [Base.IronBarQuarter;Base.SteelBarQuarter;Base.Katana_Shard;Base.Sword_Shard;Base.CrudeSword_Shard;Base.KitchenKnifeBlade],
+            item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs;CrudeTongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.CrudeBlade flags[IsBlunt],
+        }
+    }
+
+    craftRecipe Forge_Small_Knife
+    {
+        time        = 300,
+        SkillRequired = Blacksmith:1,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:35,
+        AutoLearnAll = Blacksmith:2;SmallBlade:1,
+        tags = PrimitiveForge,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 2 tags[Charcoal],
+            item 1 [Base.IronBarQuarter;Base.SteelBarQuarter;Base.Katana_Shard;Base.Sword_Shard;Base.CrudeSword_Shard;Base.KitchenKnifeBlade],
+            item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs;CrudeTongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.SmallKnife flags[IsBlunt],
+        }
+    }
+
+    craftRecipe Forge_Long_Crude_Blade
+    {
+        time        = 300,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        SkillRequired = Blacksmith:3,
+        AutoLearnAll = Blacksmith:4;SmallBlade:1,
+        xpAward = Blacksmith:45,
+        tags = PrimitiveForge,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 2 tags[Charcoal],
+            item 1 [Base.IronBarHalf;Base.SteelBarHalf;Base.LargeKnifeBlade;Base.MeatCleaverBlade;Base.HuntingKnifeBlade],
+            item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs;CrudeTongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.LongCrudeBlade flags[IsBlunt],
+        }
+    }
+
+    craftRecipe Forge_Scrap_Shortsword
+    {
+        time        = 500,
+        SkillRequired = Blacksmith:5,
+        needTobeLearn = true,
+        AutoLearnAll = Blacksmith:6;LongBlade:2,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:50,
+        tags = PrimitiveForge,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 4 tags[Charcoal],
+            item 1 [Base.IronBar;Base.SteelBar;Base.Katana;Base.Katana_Blade;Base.SwordBlade;Base.SwordBlade_NoTang;Base.CrudeSwordBlade;Base.CrudeSwordBlade_NoTang] mappers[metalType],
+            item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 [Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.ShortSword_Scrap flags[IsBlunt],
+        }
+    }
+
+    craftRecipe Forge_Scrap_Sword
+    {
+        time        = 700,
+        SkillRequired = Blacksmith:7,
+        needTobeLearn = true,
+        AutoLearnAll = Blacksmith:8;LargeBlade:4,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:70,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 6 tags[Charcoal],
+            item 1 tags[BarStock],
+            item 1 tags[BarStockHalf],
+            item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[Whetstone;File] mode:keep flags[MayDegradeLight],
+            item 1 [Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips] mode:destroy,
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.Sword_Scrap flags[IsBlunt],
+        }
+    }
+
+    /********** TIER II *********/
+
+    craftRecipe Forge_Crude_Shortsword_Blade
+    {
+        time        = 600,
+        SkillRequired = Blacksmith:6,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:60,
+        AutoLearnAll = Blacksmith:7;LongBlade:2,
+        tags = Forge,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 5 tags[Charcoal],
+            item 1 [Base.IronBar;Base.SteelBar;Base.Katana;Base.Katana_Blade;Base.SwordBlade;Base.SwordBlade_NoTang;Base.CrudeSwordBlade;Base.CrudeSwordBlade_NoTang] mappers[metalType],
+            item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.CrudeShortSwordBlade flags[IsBlunt],
+			item 1 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+			Base.SteelBarQuarter = Base.SteelBar,
+			Base.Katana_Shard = Base.Katana,
+			Base.Katana_Shard = Base.Katana_Blade,
+			Base.Sword_Shard = Base.SwordBlade,
+			Base.Sword_Shard = Base.SwordBlade_NoTang,
+			Base.CrudeSword_Shard = Base.SwordBlade,
+			Base.CrudeSword_Shard = Base.SwordBlade_NoTang,
+
+			default = Base.IronBarQuarter,
+		}
+    }
+
+    craftRecipe Forge_Large_Knife_Blade
+    {
+        time        = 400,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:45,
+        AutoLearnAll = Blacksmith:5;SmallBlade:2,
+        tags = Forge,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 3 tags[Charcoal],
+            item 1 [Base.IronBarHalf;Base.SteelBarHalf;Base.LargeKnifeBlade;Base.MeatCleaverBlade;Base.HuntingKnifeBlade],
+            item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.LargeKnifeBlade flags[IsBlunt],
+        }
+    }
+
+    craftRecipe Forge_Crude_Sword_Blade
+    {
+        time        = 700,
+        SkillRequired = Blacksmith:8,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:90,
+        AutoLearnAll = Blacksmith:9;LongBlade:2,
+        tags = Forge,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 6 tags[Charcoal],
+            item 1 [Base.IronBar;Base.SteelBar;Base.Katana;Base.Katana_Blade;Base.SwordBlade;Base.SwordBlade_NoTang;Base.CrudeSwordBlade;Base.CrudeSwordBlade_NoTang;Base.MacheteBlade;Base.MacheteBlade_NoTang],
+            item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.CrudeSwordBlade flags[IsBlunt],
+        }
+    }
+
+    /********** AT THIS POINT STEEL STARTS BECOMING REQUIRED *********/
+
+    craftRecipe Forge_Meat_Cleaver_Blade
+    {
+        time        = 500,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:45,
+        AutoLearnAll = Blacksmith:5;SmallBlade:1,
+        tags = Forge,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 4 tags[Charcoal],
+            item 1 [Base.SteelBarHalf;Base.MeatCleaverBlade;Base.HuntingKnifeBlade],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.MeatCleaverBlade flags[IsBlunt],
+        }
+    }
+
+    craftRecipe Forge_Kitchen_Knife_Blade
+    {
+        time        = 400,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:45,
+        AutoLearnAll = Blacksmith:6;SmallBlade:2,
+        tags = AdvancedForge,
+        MetaRecipe = KitchenTools,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 3 tags[Charcoal],
+            item 1 [Base.SteelBarQuarter;Base.Katana_Shard;Base.Sword_Shard;Base.KitchenKnifeBlade],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.KitchenKnifeBlade flags[IsBlunt],
+        }
+    }
+
+    craftRecipe ForgeSpearHead
+    {
+        time        = 400,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:45,
+        AutoLearnAll = Blacksmith:6;Spear:2,
+        tags = AdvancedForge,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 3 tags[Charcoal],
+            item 1 [Base.SteelBarQuarter;Base.Katana_Shard;Base.Sword_Shard;Base.MeatCleaverBlade;Base.HuntingKnifeBlade],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.SpearHead flags[IsBlunt],
+        }
+    }
+
+    /********** TIER III *********/
+
+    craftRecipe Forge_Hunting_Knife_Blade
+    {
+        time        = 500,
+        SkillRequired = Blacksmith:5,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:50,
+        AutoLearnAll = Blacksmith:6;SmallBlade:5,
+        tags = AdvancedForge,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 4 tags[Charcoal],
+            item 1 [Base.SteelBarHalf;Base.MeatCleaverBlade;Base.HuntingKnifeBlade],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.HuntingKnifeBlade flags[IsBlunt],
+        }
+    }
+
+    craftRecipe ForgeLongSpearHead
+    {
+        time        = 500,
+        SkillRequired = Blacksmith:5,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:50,
+        AutoLearnAll = Blacksmith:6;Spear:5,
+        tags = AdvancedForge,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 4 tags[Charcoal],
+            item 1 [Base.SteelBarHalf],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.SpearLongHead flags[IsBlunt],
+        }
+    }
+
+    craftRecipe ForgeHandguardDagger
+    {
+        time        = 500,
+        SkillRequired = Blacksmith:6,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:60,
+        AutoLearnAll = Blacksmith:7;SmallBlade:5,
+        tags = AdvancedForge,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 4 tags[Charcoal],
+            item 1 [Base.SteelBarHalf],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 [Base.SmallHandle],
+            item 1 [Base.SmallSheetMetal],
+        }
+        outputs
+        {
+            item 1 Base.HandguardDagger flags[IsBlunt],
+        }
+    }
+
+    craftRecipe Forge_ShortSwordBlade
+    {
+        time        = 900,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        SkillRequired = Blacksmith:7,
+        AutoLearnAll = Blacksmith:8;LongBlade:4,
+        xpAward = Blacksmith:75,
+        tags = AdvancedForge,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 8 tags[Charcoal],
+            item 1 [Base.SteelBar;Base.Katana;Base.Katana_Blade;Base.SwordBlade;Base.SwordBlade_NoTang] mappers[metalType],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.ShortSwordBlade flags[IsBlunt],
+			item 1 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+			Base.SteelBarQuarter = Base.SteelBar,
+			Base.Katana_Shard = Base.Katana,
+			Base.Katana_Shard = Base.Katana_Blade,
+			Base.Sword_Shard = Base.SwordBlade,
+			Base.Sword_Shard = Base.SwordBlade_NoTang,
+
+			default = Base.SteelBarQuarter,
+		}
+    }
+
+    craftRecipe Forge_Sword_Blade
+    {
+        time        = 900,
+        SkillRequired = Blacksmith:9,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:100,
+        AutoLearnAll = Blacksmith:10;LongBlade:5,
+        tags = AdvancedForge,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 8 tags[Charcoal],
+            item 1 [Base.SteelBar;Base.Katana;Base.Katana_Blade;Base.SwordBlade;Base.SwordBlade_NoTang;Base.MacheteBlade;Base.MacheteBlade_NoTang],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.SwordBlade flags[IsBlunt],
+        }
+    }
+
+    craftRecipe Forge_Machete_Blade
+    {
+        time        = 900,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        SkillRequired = Blacksmith:9,
+        AutoLearnAll = Blacksmith:10;LongBlade:4,
+        xpAward = Blacksmith:100,
+        tags = AdvancedForge,
+        category = Blade,
+        /* OnCreate = Recipe.OnCreate.MakeBlunt, */
+        inputs
+        {
+            item 8 tags[Charcoal],
+            item 1 [Base.SteelBar;Base.Katana;Base.Katana_Blade;Base.SwordBlade;Base.SwordBlade_NoTang;Base.MacheteBlade;Base.MacheteBlade_NoTang],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.MacheteBlade flags[IsBlunt],
+        }
+    }
+}

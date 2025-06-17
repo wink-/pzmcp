@@ -1,0 +1,138 @@
+module Base
+{
+	sound SawnOffDoubleBarrelShotgunShoot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffDoubleBarrelShotgun/Shoot,
+		}
+	}
+
+	sound SawnOffDoubleBarrelShotgunInsertAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffDoubleBarrelShotgun/InsertAmmo,
+		}
+	}
+
+	sound SawnOffDoubleBarrelShotgunEjectAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffDoubleBarrelShotgun/EjectAmmo,
+		}
+	}
+
+	sound SawnOffDoubleBarrelShotgunInsertAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffDoubleBarrelShotgun/InsertAmmoStart,
+		}
+	}
+
+	sound SawnOffDoubleBarrelShotgunInsertAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffDoubleBarrelShotgun/InsertAmmoStop,
+		}
+	}
+
+	sound SawnOffDoubleBarrelShotgunEjectAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffDoubleBarrelShotgun/EjectAmmoStart,
+		}
+	}
+
+	sound SawnOffDoubleBarrelShotgunEjectAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffDoubleBarrelShotgun/EjectAmmoStop,
+		}
+	}
+
+	sound SawnOffDoubleBarrelShotgunJam
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffDoubleBarrelShotgun/Jam,
+		}
+	}
+
+	sound SawnOffDoubleBarrelShotgunBringToBear
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffDoubleBarrelShotgun/BringToBear,
+		}
+	}
+
+	sound SawnOffDoubleBarrelShotgunAimRelease
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffDoubleBarrelShotgun/AimRelease,
+		}
+	}
+
+	sound SawnOffDoubleBarrelShotgunEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffDoubleBarrelShotgun/Equip,
+		}
+	}
+        
+	sound SawnOffDoubleBarrelShotgunUnEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffDoubleBarrelShotgun/UnEquip,
+		}
+	}
+            
+	sound SawnOffDoubleBarrelShotgunBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffDoubleBarrelShotgun/Break,
+		}
+	}
+
+	sound SawnOffDoubleBarrelShotgunDrop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffDoubleBarrelShotgun/Drop,
+		}
+	}
+
+	sound SawnOffDoubleBarrelShotgunCartridgeFall
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/SawnOffDoubleBarrelShotgun/CartridgeFall,
+		}
+	}
+}

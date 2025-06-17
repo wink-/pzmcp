@@ -1,0 +1,20 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISCraftGridPanel
+        {
+            enableHeader        = true,
+            background          = false,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            minimumWidth        = 0,
+            minimumHeight       = 0,
+        }
+
+        ISCraftGridPanel S_CraftGridPanel_NoHeader
+        {
+            enableHeader        = false,
+        }
+    }
+}

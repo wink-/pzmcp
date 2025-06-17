@@ -1,0 +1,783 @@
+module Base
+{
+	model Chicken_Skull
+    {
+        mesh = WorldItems/Chicken_Skull,
+        texture = WorldItems/ChickenSkeleton,
+        scale = 1,
+    }
+	model Cockerel_Skull
+    {
+        mesh = WorldItems/Cockerel_Skull,
+        texture = WorldItems/ChickenSkeleton,
+        scale = 1,
+    }
+	model Chicken_Chick_Skull
+    {
+        mesh = WorldItems/Chicken_Chick_Skull,
+        texture = WorldItems/ChickenSkeleton,
+        scale = 1,
+    }
+	model Chicken_Feather
+    {
+        mesh = WorldItems/Feather,
+        texture = WorldItems/Feather_Chicken,
+        scale = 0.1,
+    }
+	model Turkey_Feather
+    {
+        mesh = WorldItems/Feather_Turkey,
+        texture = WorldItems/Feather_Turkey,
+        scale = 0.1,
+    }
+	model Bull_Skull
+    {
+        mesh = WorldItems/Bull_Skull,
+        texture = WorldItems/Bull_Skeleton,
+        scale = 0.3,
+    }
+	model Calf_Skull
+    {
+        mesh = WorldItems/Calf_Skull,
+        texture = WorldItems/Bull_Skeleton,
+        scale = 0.3,
+    }
+	model Cow_Skull
+    {
+        mesh = WorldItems/Cow_Skull,
+        texture = WorldItems/Bull_Skeleton,
+        scale = 0.3,
+    }
+	model DeerDoe_Skull
+    {
+        mesh = WorldItems/DeerDoe_Skull,
+        texture = WorldItems/DeerStag_Skeleton,
+        scale = 0.3,
+    }
+	model DeerFawn_Skull
+    {
+        mesh = WorldItems/DeerFawn_Skull,
+        texture = WorldItems/DeerStag_Skeleton,
+        scale = 0.4,
+    }
+	model DeerStag_Skull
+    {
+        mesh = WorldItems/DeerStag_Skull,
+        texture = WorldItems/DeerStag_Skeleton,
+        scale = 0.3,
+    }
+	model Pig_Skull
+    {
+        mesh = WorldItems/Pig_Skull,
+        texture = WorldItems/PigSkeleton,
+        scale = 0.3,
+    }
+	model Piglet_Skull
+    {
+        mesh = WorldItems/Piglet_Skull,
+        texture = WorldItems/PigSkeleton,
+        scale = 1,
+    }
+	model Sheep_LambSkull
+    {
+        mesh = WorldItems/Sheep_LambSkull,
+        texture = WorldItems/SheepSkeleton,
+        scale = 1,
+    }
+	model Sheep_RamSkull
+    {
+        mesh = WorldItems/Sheep_RamSkull,
+        texture = WorldItems/SheepSkeleton,
+        scale = 0.5,
+    }
+	model Sheep_Skull
+    {
+        mesh = WorldItems/Sheep_Skull,
+        texture = WorldItems/SheepSkeleton,
+        scale = 0.5,
+    }
+	model Rabbit_KittenSkull
+    {
+        mesh = WorldItems/Rabbit_KittenSkull,
+        texture = WorldItems/RabbitSkeleton,
+        scale = 1,
+    }
+	model Rabbit_Skull
+    {
+        mesh = WorldItems/Rabbit_Skull,
+        texture = WorldItems/RabbitSkeleton,
+        scale = 0.5,
+    }
+	model Raccoon_Skull
+    {
+        mesh = WorldItems/Raccoon_Skull,
+        texture = WorldItems/RaccoonSkeleton,
+        scale = 0.01,
+    }
+	model Turkey_PoultSkull
+    {
+        mesh = WorldItems/Turkey_PoultSkull,
+        texture = WorldItems/TurkeySkeleton,
+        scale = 1,
+    }
+	model Turkey_Skull
+    {
+        mesh = WorldItems/Turkey_Skull,
+        texture = WorldItems/TurkeySkeleton,
+        scale = 0.5,
+    }
+    model Chicken_Head_Brown
+    {
+        mesh = WorldItems/Chicken_Head,
+        texture = Body/Chicken,
+        scale = 0.5,
+    }
+    model Chicken_Head_BrownRotten
+    {
+        mesh = WorldItems/Chicken_Head,
+        texture = Body/ChickenBrown_Rotting,
+        scale = 0.5,
+    }
+	model Chicken_Head_White
+    {
+        mesh = WorldItems/Chicken_Head,
+        texture = Body/Chicken_White,
+        scale = 0.5,
+    }
+	model Chicken_Head_WhiteRotten
+    {
+        mesh = WorldItems/Chicken_Head,
+        texture = Body/ChickenWhite_Rotting,
+        scale = 0.5,
+    }
+	model Chicken_CockerelHead_Brown
+    {
+        mesh = WorldItems/Chicken_CockrelHead,
+        texture = Body/Chicken,
+        scale = 0.5,
+    }
+    model Chicken_CockerelHead_BrownRotten
+    {
+        mesh = WorldItems/Chicken_CockrelHead,
+        texture = Body/ChickenBrown_Rotting,
+        scale = 0.5,
+    }
+	model Chicken_CockerelHead_White
+    {
+        mesh = WorldItems/Chicken_CockrelHead,
+        texture = Body/Chicken_White,
+        scale = 0.5,
+    }
+	model Chicken_CockerelHead_WhiteRotten
+    {
+        mesh = WorldItems/Chicken_CockrelHead,
+        texture = Body/ChickenWhite_Rotting,
+        scale = 0.5,
+    }
+	model Chicken_ChickHead
+    {
+        mesh = WorldItems/Chicken_ChickHead,
+        texture = Body/Chick,
+        scale = 0.6,
+    }
+	model Chicken_ChickHeadRotten
+    {
+        mesh = WorldItems/Chicken_ChickHead,
+        texture = Body/ChickenWhite_Rotting,
+        scale = 0.6,
+    }
+	model FarmPig_BoarHead_Pink
+    {
+        mesh = WorldItems/FarmPig_BoarHead,
+        texture = Body/FarmPig_Boar,
+        scale = 0.25,
+    }
+	model FarmPig_BoarHead_PinkRotten
+    {
+        mesh = WorldItems/FarmPig_BoarHead,
+        texture = Body/Pig_Rotting,
+        scale = 0.25,
+    }
+	model FarmPig_BoarHead_Black
+    {
+        mesh = WorldItems/FarmPig_BoarHead,
+        texture = Body/FarmPig_Boar_Black,
+        scale = 0.25,
+    }
+	model FarmPig_BoarHead_BlackRotten
+    {
+        mesh = WorldItems/FarmPig_BoarHead,
+        texture = Body/PigBoar_Rotting,
+        scale = 0.25,
+    }
+	model FarmPig_SowHead_Pink
+    {
+        mesh = WorldItems/FarmPig_SowHead,
+        texture = Body/FarmPig_Boar,
+        scale = 0.25,
+    }
+	model FarmPig_SowHead_PinkRotten
+    {
+        mesh = WorldItems/FarmPig_SowHead,
+        texture = Body/Pig_Rotting,
+        scale = 0.25,
+    }
+	model FarmPig_SowHead_Black
+    {
+        mesh = WorldItems/FarmPig_SowHead,
+        texture = Body/FarmPig_Boar_Black,
+        scale = 0.25,
+    }
+	model FarmPig_SowHead_BlackRotten
+    {
+        mesh = WorldItems/FarmPig_SowHead,
+        texture = Body/PigBoar_Rotting,
+        scale = 0.25,
+    }
+	model FarmPig_PigletHead_Pink
+    {
+        mesh = WorldItems/FarmPig_PigletHead,
+        texture = Body/FarmPig_Boar,
+        scale = 1,
+    }
+	model FarmPig_PigletHead_PinkRotten
+    {
+        mesh = WorldItems/FarmPig_PigletHead,
+        texture = Body/Pig_Rotting,
+        scale = 1,
+    }
+	model FarmPig_PigletHead_Black
+    {
+        mesh = WorldItems/FarmPig_PigletHead,
+        texture = Body/FarmPig_Boar_Black,
+        scale = 1,
+    }
+	model FarmPig_PigletHead_BlackRotten
+    {
+        mesh = WorldItems/FarmPig_PigletHead,
+        texture = Body/PigBoar_Rotting,
+        scale = 1,
+    }
+	model Bull_Head_Black
+    {
+        mesh = WorldItems/Bull_Head,
+        texture = Body/Cow_Black,
+        scale = 0.25,
+    }
+	model Bull_Head_BlackRotten
+    {
+        mesh = WorldItems/Bull_Head,
+        texture = Body/CowBlack_Rotting,
+        scale = 0.25,
+    }
+	model Bull_Head_White
+    {
+        mesh = WorldItems/Bull_Head,
+        texture = Body/Cow_BW_01,
+        scale = 0.25,
+    }
+	model Bull_Head_WhiteRotten
+    {
+        mesh = WorldItems/Bull_Head,
+        texture = Body/CowBW_Rotting,
+        scale = 0.25,
+    }
+	model Bull_Head_Brown
+    {
+        mesh = WorldItems/Bull_Head,
+        texture = Body/Cow_Brown_01,
+        scale = 0.25,
+    }
+	model Bull_Head_BrownRotten
+    {
+        mesh = WorldItems/Bull_Head,
+        texture = Body/CowBrown_Rotting,
+        scale = 0.25,
+    }
+	model CowCalf_Head_Black
+    {
+        mesh = WorldItems/CowCalf_Head,
+        texture = Body/Cow_Black,
+        scale = 0.3,
+    }
+	model CowCalf_Head_BlackRotten
+    {
+        mesh = WorldItems/CowCalf_Head,
+        texture = Body/CowBlack_Rotting,
+        scale = 0.3,
+    }
+	model CowCalf_Head_White
+    {
+        mesh = WorldItems/CowCalf_Head,
+        texture = Body/Cow_BW_01,
+        scale = 0.3,
+    }
+	model CowCalf_Head_WhiteRotten
+    {
+        mesh = WorldItems/CowCalf_Head,
+        texture = Body/CowBW_Rotting,
+        scale = 0.3,
+    }
+	model CowCalf_Head_Brown
+    {
+        mesh = WorldItems/CowCalf_Head,
+        texture = Body/Cow_Brown_01,
+        scale = 0.3,
+    }
+	model CowCalf_Head_BrownRotten
+    {
+        mesh = WorldItems/CowCalf_Head,
+        texture = Body/CowBrown_Rotting,
+        scale = 0.3,
+    }
+	model Cow_Head_Black
+    {
+        mesh = WorldItems/Cow_Head,
+        texture = Body/Cow_Black,
+        scale = 0.25,
+    }
+	model Cow_Head_BlackRotten
+    {
+        mesh = WorldItems/Cow_Head,
+        texture = Body/CowBlack_Rotting,
+        scale = 0.25,
+    }
+	model Cow_Head_White
+    {
+        mesh = WorldItems/Cow_Head,
+        texture = Body/Cow_BW_01,
+        scale = 0.25,
+    }
+	model Cow_Head_WhiteRotten
+    {
+        mesh = WorldItems/Cow_Head,
+        texture = Body/CowBW_Rotting,
+        scale = 0.25,
+    }
+	model Cow_Head_Brown
+    {
+        mesh = WorldItems/Cow_Head,
+        texture = Body/Cow_Brown_01,
+        scale = 0.25,
+    }
+	model Cow_Head_BrownRotten
+    {
+        mesh = WorldItems/Cow_Head,
+        texture = Body/CowBrown_Rotting,
+        scale = 0.25,
+    }
+	model DeerDoe_Head
+    {
+        mesh = WorldItems/DeerDoe_Head,
+        texture = Body/DeerDoe,
+        scale = 0.25,
+    }
+	model DeerDoe_HeadRotten
+    {
+        mesh = WorldItems/DeerDoe_Head,
+        texture = Body/DeerStag_Rotting,
+        scale = 0.25,
+    }
+	model DeerStag_Head
+    {
+        mesh = WorldItems/DeerStag_Head,
+        texture = Body/DeerStag,
+        scale = 0.25,
+    }
+	model DeerStag_HeadRotten
+    {
+        mesh = WorldItems/DeerStag_Head,
+        texture = Body/DeerStag_Rotting,
+        scale = 0.25,
+    }
+	model DeerFawn_Head
+    {
+        mesh = WorldItems/DeerFawn_Head,
+        texture = Body/DeerFawn,
+        scale = 0.25,
+    }
+	model DeerFawn_HeadRotten
+    {
+        mesh = WorldItems/DeerFawn_Head,
+        texture = Body/DeerStag_Rotting,
+        scale = 0.25,
+    }
+    model Sheep_EweHead_Black
+    {
+        mesh = WorldItems/Sheep_EweHead,
+        texture = Body/Sheep,
+        scale = 0.4,
+    }
+    model Sheep_EweHead_BlackRotten
+    {
+        mesh = WorldItems/Sheep_EweHead,
+        texture = Body/Sheep_Rotting,
+        scale = 0.4,
+    }
+    model Sheep_EweHead_White
+    {
+        mesh = WorldItems/Sheep_EweHead,
+        texture = Body/Sheep_White,
+        scale = 0.4,
+    }
+    model Sheep_EweHead_WhiteRotten
+    {
+        mesh = WorldItems/Sheep_EweHead,
+        texture = Body/Sheep_Rotting,
+        scale = 0.4,
+    }
+    model Sheep_LambHead_Black
+    {
+        mesh = WorldItems/Sheep_LambHead,
+        texture = Body/Sheep,
+        scale = 0.4,
+    }
+    model Sheep_LambHead_BlackRotten
+    {
+        mesh = WorldItems/Sheep_LambHead,
+        texture = Body/Sheep_Rotting,
+        scale = 0.4,
+    }
+    model Sheep_LambHead_White
+    {
+        mesh = WorldItems/Sheep_LambHead,
+        texture = Body/Sheep_White,
+        scale = 0.4,
+    }
+    model Sheep_LambHead_WhiteRotten
+    {
+        mesh = WorldItems/Sheep_LambHead,
+        texture = Body/Sheep_Rotting,
+        scale = 0.4,
+    }
+    model Sheep_RamHead_Black
+    {
+        mesh = WorldItems/Sheep_RamHead,
+        texture = Body/Sheep,
+        scale = 0.4,
+    }
+    model Sheep_RamHead_BlackRotten
+    {
+        mesh = WorldItems/Sheep_RamHead,
+        texture = Body/Sheep_Rotting,
+        scale = 0.4,
+    }
+    model Sheep_RamHead_White
+    {
+        mesh = WorldItems/Sheep_RamHead,
+        texture = Body/Sheep_White,
+        scale = 0.4,
+    }
+    model Sheep_RamHead_WhiteRotten
+    {
+        mesh = WorldItems/Sheep_RamHead,
+        texture = Body/Sheep_Rotting,
+        scale = 0.4,
+    }
+    model Rabbit_Head_Appalachian
+    {
+        mesh = WorldItems/Rabbit_Head,
+        texture = Body/Rabbit_Appalachian,
+        scale = 0.4,
+    }
+    model Rabbit_Head_AppalachianRotten
+    {
+        mesh = WorldItems/Rabbit_Head,
+        texture = Body/Rabbit_Rotting,
+        scale = 0.4,
+    }
+    model Rabbit_Head_CottonTail
+    {
+        mesh = WorldItems/Rabbit_Head,
+        texture = Body/Rabbit_Cottontail,
+        scale = 0.4,
+    }
+    model Rabbit_Head_CottonTailRotten
+    {
+        mesh = WorldItems/Rabbit_Head,
+        texture = Body/Rabbit_Rotting,
+        scale = 0.4,
+    }
+    model Rabbit_Head_Swamp
+    {
+        mesh = WorldItems/Rabbit_Head,
+        texture = Body/Rabbit_Swamp,
+        scale = 0.4,
+    }
+    model Rabbit_Head_SwampRotten
+    {
+        mesh = WorldItems/Rabbit_Head,
+        texture = Body/Rabbit_Rotting,
+        scale = 0.4,
+    }
+    model Rabbit_KittenHead_Appalachian
+    {
+        mesh = WorldItems/Rabbit_KittenHead,
+        texture = Body/Rabbit_Appalachian,
+        scale = 0.4,
+    }
+    model Rabbit_KittenHead_AppalachianRotten
+    {
+        mesh = WorldItems/Rabbit_KittenHead,
+        texture = Body/Rabbit_Rotting,
+        scale = 0.4,
+    }
+    model Rabbit_KittenHead_CottonTail
+    {
+        mesh = WorldItems/Rabbit_KittenHead,
+        texture = Body/Rabbit_Cottontail,
+        scale = 0.4,
+    }
+    model Rabbit_KittenHead_CottonTailRotten
+    {
+        mesh = WorldItems/Rabbit_KittenHead,
+        texture = Body/Rabbit_Rotting,
+        scale = 0.4,
+    }
+    model Rabbit_KittenHead_Swamp
+    {
+        mesh = WorldItems/Rabbit_KittenHead,
+        texture = Body/Rabbit_Swamp,
+        scale = 0.4,
+    }
+    model Rabbit_KittenHead_SwampRotten
+    {
+        mesh = WorldItems/Rabbit_KittenHead,
+        texture = Body/Rabbit_Rotting,
+        scale = 0.4,
+    }
+    model Turkey_PoultHead
+    {
+        mesh = WorldItems/Turkey_PoultHead,
+        texture = Body/Turkey_Poult,
+        scale = 0.45,
+    }
+    model Turkey_PoultHeadRotten
+    {
+        mesh = WorldItems/Turkey_PoultHead,
+        texture = Body/Turkey_Rotting,
+        scale = 0.45,
+    }
+    model Turkey_Hen_Head
+    {
+        mesh = WorldItems/TurkeyHead,
+        texture = Body/Turkey_Hen,
+        scale = 0.45,
+    }
+    model Turkey_Hen_HeadRotten
+    {
+        mesh = WorldItems/TurkeyHead,
+        texture = Body/Turkey_Rotting,
+        scale = 0.45,
+    }
+    model TurkeyHead
+    {
+        mesh = WorldItems/TurkeyHead,
+        texture = Body/Turkey,
+        scale = 0.45,
+    }
+    model TurkeyHeadRotten
+    {
+        mesh = WorldItems/TurkeyHead,
+        texture = Body/Turkey_Rotting,
+        scale = 0.45,
+    }
+	model Raccoon_Head
+    {
+        mesh = WorldItems/Raccoon_Head,
+        texture = Body/Raccoon,
+        scale = 0.013,
+    }
+	model Raccoon_HeadRotten
+    {
+        mesh = WorldItems/Raccoon_Head,
+        texture = Body/Raccoon_Rotting,
+        scale = 0.013,
+    }
+	model RaccoonKit_Head
+    {
+        mesh = WorldItems/Raccoon_Head,
+        texture = Body/Raccoon,
+        scale = 0.009,
+    }
+	model RaccoonKit_HeadRotten
+    {
+        mesh = WorldItems/Raccoon_Head,
+        texture = Body/Raccoon_Rotting,
+        scale = 0.009,
+    }
+    model AnimalBrain
+    {
+        mesh = WorldItems/Brain,
+        texture = WorldItems/Brain,
+        scale = 0.1,
+    }
+    model AnimalBrain_Small
+    {
+        mesh = WorldItems/Brain,
+        texture = WorldItems/Brain,
+        scale = 0.05,
+    }
+    model Leather_Black
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Black,
+        scale = 0.1,
+    }
+    model Leather_Grey
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Grey,
+        scale = 0.1,
+    }
+    model Leather_Brown
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Brown,
+        scale = 0.1,
+    }
+    model Leather_BrownPatches
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_CowBrownPatches,
+        scale = 0.1,
+    }
+    model Leather_WhitePatches
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_CowWhitePatches,
+        scale = 0.1,
+    }
+    model Leather_Crude
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Crude,
+        scale = 0.1,
+    }
+    model Leather_CrudeTainted
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_CrudeTainted,
+        scale = 0.1,
+    }
+    model Leather_Pink
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Pig,
+        scale = 0.1,
+    }
+    model Leather_White
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Sheep,
+        scale = 0.1,
+    }
+    model Leather_Black_Medium
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Black,
+        scale = 0.08,
+    }
+    model Leather_Grey_Medium
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Grey,
+        scale = 0.08,
+    }
+    model Leather_Brown_Medium
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Brown,
+        scale = 0.08,
+    }
+    model Leather_BrownPatches_Medium
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_CowBrownPatches,
+        scale = 0.08,
+    }
+    model Leather_WhitePatches_Medium
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_CowWhitePatches,
+        scale = 0.08,
+    }
+    model Leather_Crude_Medium
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Crude,
+        scale = 0.08,
+    }
+    model Leather_CrudeTainted_Medium
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_CrudeTainted,
+        scale = 0.08,
+    }
+    model Leather_Pink_Medium
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Pig,
+        scale = 0.08,
+    }
+    model Leather_White_Medium
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Sheep,
+        scale = 0.08,
+    }
+    model Leather_Black_Small
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Black,
+        scale = 0.055,
+    }
+    model Leather_Grey_Small
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Grey,
+        scale = 0.055,
+    }
+    model Leather_Brown_Small
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Brown,
+        scale = 0.055,
+    }
+    model Leather_BrownPatches_Small
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_CowBrownPatches,
+        scale = 0.055,
+    }
+    model Leather_WhitePatches_Small
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_CowWhitePatches,
+        scale = 0.055,
+    }
+    model Leather_Crude_Small
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Crude,
+        scale = 0.055,
+    }
+    model Leather_CrudeTainted_Small
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_CrudeTainted,
+        scale = 0.055,
+    }
+    model Leather_Pink_Small
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Pig,
+        scale = 0.055,
+    }
+    model Leather_White_Small
+    {
+        mesh = WorldItems/Leather_Rolled,
+        texture = WorldItems/LeatherRolled_Sheep,
+        scale = 0.055,
+    }
+}

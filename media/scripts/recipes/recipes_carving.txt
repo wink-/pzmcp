@@ -1,0 +1,660 @@
+module Base
+{
+	craftRecipe MakeStake
+	{
+        timedAction = SharpenStake,
+        Time = 100,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+		Tags = InHandCraft,
+		xpAward = Carving:5,
+        category = Carving,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[MayDegrade;IsNotDull],
+			item 1 [Base.TreeBranch2;Base.Handle;Base.LongStick_Broken;Base.WoodenStick2;Base.LongHandle_Broken;Base.LongHandle;Base.LongStick;Base.Plunger] flags[AllowDestroyedItem],
+		}
+		outputs
+		{
+			item 1 Base.Stake,
+		}
+	}
+
+	craftRecipe CarveLongStick
+	{
+		Time = 100,
+		Tags = InHandCraft,
+		/*OnCreate = Recipe.OnCreate.MinorCarving,*/
+        timedAction = SharpenStake,
+        category = Carving,
+		xpAward = Carving:5,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight;Prop1;IsNotDull],
+			item 1 tags[CarveLongStick] flags[Prop2;InheritCondition],
+		}
+		outputs
+		{
+			item 1 Base.LongStick,
+		}
+	}
+
+	craftRecipe MakeCrudeWoodenTongs
+	{
+		Time = 150,
+		Tags = InHandCraft,
+        timedAction = Making,
+		xpAward = Carving:5,
+        category = Carving,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.Plank;Base.TreeBranch2;Base.WoodenStick2;Base.LongHandle] flags[Prop2],
+			item 1 [Base.Twine;Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips;Base.Rope] flags[DontReplace],
+		}
+		outputs
+		{
+			item 1 Base.CrudeWoodenTongs,
+		}
+	}
+
+	craftRecipe CarveTrowel
+	{
+        timedAction = SharpenStake,
+		Time = 100,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+		Tags = InHandCraft,
+		xpAward = Carving:5,
+        category = Carving,
+        needTobeLearn = false,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[MayDegrade;IsNotDull],
+			item 1 [Base.TreeBranch2;Base.Handle;Base.LongStick_Broken;Base.WoodenStick2;Base.LongHandle_Broken;Base.LongHandle;Base.LongStick;Base.Plunger] flags[AllowDestroyedItem],
+		}
+		outputs
+		{
+			item 1 Base.MasonsTrowel_Wood,
+		}
+	}
+
+	craftRecipe CarveClaySculptingTool
+	{
+        time = 100,
+        tags = AnySurfaceCraft,
+		xpAward = Carving:10,
+        SkillRequired = Carving:1,
+        needTobeLearn = false,
+        timedAction = SharpenStake,
+        category = Carving,
+		inputs
+		{
+            item 1 tags[SharpKnife] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.SmallHandle] flags[Prop2],
+		}
+        outputs
+        {
+            item 1 Base.ClayTool_Carved,
+        }
+	}
+
+	craftRecipe CarveKnappingTools
+	{
+		Time = 100,
+		SkillRequired = Carving:1,
+        tags = AnySurfaceCraft,
+        timedAction = SharpenStake,
+		xpAward = Carving:10,
+        category = Carving,
+		inputs
+		{
+			item 1 tags[SharpKnife] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.Antlers_Wall],
+		}
+		outputs
+		{
+			item 2 Base.KnappingTool,
+		}
+	}
+
+	craftRecipe CarveWoodenSpoon
+	{
+        time = 100,
+        tags = AnySurfaceCraft,
+		xpAward = Carving:10,
+        SkillRequired = Carving:1,
+        needTobeLearn = false,
+        timedAction = SharpenStake,
+        category = Carving,
+		inputs
+		{
+            item 1 tags[SharpKnife] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.SmallHandle] flags[Prop2],
+		}
+        outputs
+        {
+            item 1 Base.WoodenSpoon,
+        }
+	}
+
+	craftRecipe CarveStick
+	{
+		Time = 200,
+		SkillRequired = Carving:1,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+		Tags = InHandCraft,
+        timedAction = SharpenStake,
+		xpAward = Carving:10,
+        category = Carving,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver;Saw] mode:keep flags[MayDegradeLight;Prop1;IsNotDull],
+			item 1 [Base.Plank;Base.TreeBranch2;Base.LongStick_Broken;Base.FieldHockeyStick_Broken;Base.LongHandle_Broken] flags[Prop2],
+		}
+		outputs
+		{
+			item 1 Base.WoodenStick2,
+		}
+	}
+
+	craftRecipe CarveSmallHandle
+	{
+		Time = 100,
+		SkillRequired = Carving:1,
+		Tags = InHandCraft,
+		xpAward = Carving:10,
+        category = Carving,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.Handle;Base.BanjoNeck_Broken;Base.GardenToolHandle_Broken;Base.GuitarAcousticNeck_Broken;Base.GuitarElectricNeck_Broken;Base.WoodenStick_Broken] flags[AllowDestroyedItem;Prop2],
+		}
+		outputs
+		{
+			item 1 Base.SmallHandle,
+		}
+	}
+
+	craftRecipe Carve2SmallHandles
+	{
+		Time = 200,
+		SkillRequired = Carving:1,
+		Tags = InHandCraft,
+        timedAction = SharpenStake,
+		xpAward = Carving:10,
+        category = Carving,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.Antlers_Wall;Base.UnusableWood;Base.BaseballBat_Broken;Base.Branch_Broken;Base.Firewood;Base.FieldHockeyStick_Broken;Base.GuitarElectricBassNeck_Broken;Base.LongHandle_Broken] flags[AllowDestroyedItem;Prop2],
+		}
+		outputs
+		{
+			item 2 Base.SmallHandle,
+		}
+	}
+
+	craftRecipe Carve4SmallHandles
+	{
+		Time = 300,
+		SkillRequired = Carving:1,
+		Tags = InHandCraft,
+        timedAction = SharpenStake,
+		xpAward = Carving:10,
+        category = Carving,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.TreeBranch2;Base.WoodenStick2;Base.LongStick_Broken;Base.Plank_Broken;Base.TableLeg_Broken] flags[AllowDestroyedItem;Prop2],
+		}
+		outputs
+		{
+			item 4 Base.SmallHandle,
+		}
+	}
+
+	craftRecipe Carve8SmallHandles
+	{
+		Time = 400,
+		SkillRequired = Carving:1,
+		Tags = InHandCraft,
+        timedAction = SharpenStake,
+		xpAward = Carving:10,
+        category = Carving,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.LongStick;Base.Sapling] flags[AllowDestroyedItem;Prop2],
+		}
+		outputs
+		{
+			item 8 Base.SmallHandle,
+		}
+	}
+
+	craftRecipe CarveSmallHandlesFromPlank
+	{
+		Time = 500,
+		SkillRequired = Carving:1,
+		OnTest = Recipe.OnTest.OnlyBrokenHandle,
+        tags = AnySurfaceCraft,
+        timedAction = SharpenStake,
+		xpAward = Carving:10,
+        category = Carving,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight;Prop1;IsNotDull],
+			item 1 [Base.Plank] flags[AllowDestroyedItem;Prop2],
+		}
+		outputs
+		{
+			item 12 Base.SmallHandle,
+		}
+	}
+
+    craftRecipe CarveDice
+	{
+		Time = 100,
+		SkillRequired = Carving:2,
+        tags = AnySurfaceCraft,
+        timedAction = SharpenStake,
+		xpAward = Carving:20,
+        category = Carving,
+		inputs
+		{
+			item 1 tags[SharpKnife] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.SmallHandle;Base.SmallAnimalBone] mappers[DiceMap],
+		}
+		outputs
+		{
+            item 1 mapper:DiceMap,
+        }
+        itemMapper DiceMap
+        {
+            Base.Dice_Bone = Base.SmallAnimalBone,
+            Base.Dice_Wood = Base.SmallHandle,
+
+            default = Base.Dice_Wood,
+        }
+	}
+
+    craftRecipe CarvePlank
+	{
+		Time = 200,
+		SkillRequired = Carving:2,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+        tags = AnySurfaceCraft,
+        timedAction = SharpenStake,
+		xpAward = Carving:20,
+        category = Carving,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.LargeBranch] flags[Prop2;InheritCondition],
+		}
+		outputs
+		{
+			item 1 Base.Plank,
+		}
+	}
+
+	craftRecipe CarveMediumHandle
+	{
+		Time = 200,
+		SkillRequired = Carving:2,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+        tags = AnySurfaceCraft,
+        timedAction = SharpenStake,
+		xpAward = Carving:20,
+        category = Carving,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.LongHandle;Base.LongStick_Broken;Base.WoodenStick2;Base.FieldHockeyStick_Broken;Base.LongHandle_Broken;Base.TreeBranch2] flags[AllowDestroyedItem;Prop2],
+		}
+		outputs
+		{
+			item 1 Base.Handle,
+		}
+	}
+
+	craftRecipe CarveMediumHandlesFromPlank
+	{
+		Time = 300,
+		SkillRequired = Carving:2,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+        tags = AnySurfaceCraft,
+        timedAction = SharpenStake,
+		xpAward = Carving:20,
+        category = Carving,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.Plank] flags[AllowDestroyedItem] flags[Prop2],
+		}
+		outputs
+		{
+			item 6 Base.Handle,
+		}
+	}
+
+	craftRecipe CarveWoodenFork
+	{
+        time = 200,
+        tags = AnySurfaceCraft,
+		xpAward = Carving:20,
+        SkillRequired = Carving:2,
+        timedAction = SharpenStake,
+        category = Carving,
+        needTobeLearn = true,
+		AutoLearnAny = Carving:4,
+		inputs
+		{
+            item 1 tags[SharpKnife] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.SmallHandle;Base.WoodenSpoon] flags[Prop2],
+		}
+        outputs
+        {
+            item 1 Base.WoodenFork,
+        }
+	}
+
+	craftRecipe CarveCuttingBoards
+	{
+        time = 300,
+        tags = AnySurfaceCraft,
+		xpAward = Carving:30,
+        SkillRequired = Carving:3,
+        needTobeLearn = false,
+        timedAction = SharpenStake,
+        category = Carving,
+		inputs
+		{
+            item 1 tags[SharpKnife] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+            item 1 tags[Saw] mode:keep flags[MayDegradeLight],
+			item 1 [Base.Plank] flags[Prop2],
+		}
+        outputs
+        {
+            item 2 Base.CuttingBoardWooden
+        }
+	}
+
+    craftRecipe CarveLongHandle
+	{
+		Time = 200,
+		SkillRequired = Carving:3,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+        tags = AnySurfaceCraft,
+        timedAction = SharpenStake,
+		xpAward = Carving:30,
+        category = Carving,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.Plank;Base.LargeBranch] flags[Prop2],
+		}
+		outputs
+		{
+			item 1 Base.LongHandle,
+		}
+	}
+
+    craftRecipe CarveKnittingNeedles
+	{
+		Time = 200,
+		SkillRequired = Carving:3,
+        needTobeLearn = true,
+		Tags = InHandCraft,
+        timedAction = SharpenStake,
+		xpAward = Carving:30,
+        category = Carving,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.SharpBone_Long;Base.TreeBranch2;Base.Handle;Base.LongStick_Broken;Base.WoodenStick2;Base.LongHandle_Broken] flags[Prop2] mappers[NeedleMapper],
+		}
+		outputs
+		{
+            item 1 mapper:NeedleMapper,
+		}
+        itemMapper NeedleMapper
+        {
+            Base.KnittingNeedles_Bone = Base.SharpBone_Long,
+
+            default = Base.KnittingNeedles_Wood,
+        }
+	}
+
+	craftRecipe CarvePipe
+	{
+        time = 400,
+        tags = AnySurfaceCraft,
+		xpAward = Carving:30,
+        SkillRequired = Carving:3,
+        needTobeLearn = false,
+        timedAction = SharpenStake,
+        category = Carving,
+		inputs
+		{
+            item 1 tags[SharpKnife] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.SmallHandle] flags[Prop2],
+		}
+        outputs
+        {
+            item 1 Base.SmokingPipe,
+        }
+	}
+
+    craftRecipe CarveWoodenSpade
+	{
+		Time = 300,
+		SkillRequired = Carving:4,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+		Tags = InHandCraft,
+        timedAction = SharpenStake,
+		xpAward = Carving:40,
+        category = Carving,
+        needTobeLearn = true,
+		AutoLearnAny = Carving:6,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.LargeBranch;Base.Plank] flags[Prop2;InheritCondition],
+		}
+		outputs
+		{
+			item 1 Base.SpadeWood,
+		}
+	}
+
+	craftRecipe CarveBucket
+	{
+        time = 600,
+        tags = AnySurfaceCraft,
+		xpAward = Carving:30,
+        SkillRequired = Carving:4,
+        needTobeLearn = false,
+        timedAction = SharpenStake,
+        category = Carving,
+        needTobeLearn = true,
+		AutoLearnAny = Carving:6,
+		inputs
+		{
+            item 1 tags[SharpKnife] mode:keep flags[Prop1;IsNotDull;MayDegradeHeavy],
+			item 1 [Base.Log] flags[Prop2],
+			item 1 [Base.Handle;Base.TreeBranch2;Base.WoodenStick2],
+		}
+        outputs
+        {
+            item 1 Base.BucketCarved,
+        }
+	}
+
+	craftRecipe CarveGoblets
+	{
+        time = 600,
+        tags = AnySurfaceCraft,
+		xpAward = Carving:50,
+        SkillRequired = Carving:5,
+        needTobeLearn = false,
+        timedAction = SharpenStake,
+        category = Carving,
+        needTobeLearn = true,
+		AutoLearnAny = Carving:7,
+		inputs
+		{
+            item 1 tags[SharpKnife] mode:keep flags[Prop1;IsNotDull;MayDegradeHeavy],
+			item 1 [Base.Log] flags[Prop2],
+		}
+        outputs
+        {
+            item 4 Base.Goblet_Wood,
+        }
+	}
+
+    craftRecipe CarveShortBat
+	{
+		Time = 300,
+        needTobeLearn = true,
+		SkillRequired = Carving:7,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+        tags = AnySurfaceCraft,
+        timedAction = SharpenStake,
+		xpAward = Carving:70,
+        category = Carving,
+        MetaRecipe = CarveBat,
+		AutoLearnAny = Carving:9;SmallBlunt:9,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.Plank;Base.TreeBranch2;Base.BaseballBat;Base.BaseballBat_Crafted;Base.LargeBranch] flags[Prop2],
+		}
+		outputs
+		{
+			item 1 Base.ShortBat,
+		}
+	}
+
+    craftRecipe CarveBat
+	{
+		Time = 600,
+        needTobeLearn = true,
+		SkillRequired = Carving:9,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+        tags = AnySurfaceCraft,
+        timedAction = SharpenStake,
+		xpAward = Carving:90,
+        category = Carving,
+		AutoLearnAny = Carving:10;Blunt:10,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.LargeBranch] flags[Prop2],
+		}
+		outputs
+		{
+			item 1 Base.BaseballBat_Crafted,
+		}
+	}
+
+	craftRecipe MakePigTuskNecklace
+	{
+		Time = 200,
+        timedAction = Making,
+		xpAward = Carving:20;Tailoring:5,
+        SkillRequired = Carving:2;Tailoring:1,
+        tags = AnySurfaceCraft,
+        category = Carving,
+		inputs
+		{
+            item 1 tags[DrillWood;DrillMetal;DrillWoodPoor] mode:keep flags[MayDegradeLight;Prop1],
+			item 1 [Base.PigTusk] flags[Prop2],
+			item 1 [Base.Twine],
+		}
+		outputs
+		{
+			item 1 Base.Necklace_BoarTusk,
+		}
+	}
+
+	craftRecipe MakePigTusksNecklace
+	{
+		Time = 800,
+        timedAction = Making,
+		xpAward = Carving:20;Tailoring:5,
+        SkillRequired = Carving:2;Tailoring:1,
+        tags = AnySurfaceCraft,
+        category = Carving,
+		inputs
+		{
+            item 1 tags[DrillWood;DrillMetal;DrillWoodPoor] mode:keep flags[MayDegradeLight;Prop1],
+			item 4 [Base.PigTusk] flags[Prop2],
+			item 2 [Base.Twine],
+		}
+		outputs
+		{
+			item 1 Base.Necklace_BoarTusk_Multi,
+		}
+	}
+
+	craftRecipe MakePigTuskEarrings
+	{
+		Time = 400,
+        timedAction = Making,
+		xpAward = Carving:20;Tailoring:5,
+        SkillRequired = Carving:2;Tailoring:1,
+        tags = AnySurfaceCraft,
+        category = Carving,
+		inputs
+		{
+            item 1 tags[DrillWood;DrillMetal;DrillWoodPoor] mode:keep flags[MayDegradeLight],
+			item 2 [Base.PigTusk] flags[Prop2],
+			item 1 [Base.Wire],
+			item 1 tags[Pliers] mode:keep flags[Prop1],
+		}
+		outputs
+		{
+			item 1 Base.Earring_BoarTusk,
+		}
+	}
+
+	craftRecipe MakeToothNecklace
+	{
+		Time = 400,
+        timedAction = Making,
+		xpAward = Carving:30;Tailoring:5,
+        SkillRequired = Carving:3;Tailoring:1,
+        tags = AnySurfaceCraft,
+        category = Carving,
+		inputs
+		{
+            item 1 tags[DrillWood;DrillMetal;DrillWoodPoor] mode:keep flags[MayDegradeLight;Prop1],
+			item 2 [Base.HerbivoreTeeth] flags[Prop2],
+			item 1 [Base.Twine],
+		}
+		outputs
+		{
+			item 1 Base.Necklace_Teeth,
+		}
+	}
+
+	craftRecipe MakeLongToothNecklace
+	{
+		Time = 600,
+        timedAction = Making,
+		xpAward = Carving:30;Tailoring:5,
+        SkillRequired = Carving:3;Tailoring:1,
+        tags = AnySurfaceCraft,
+        category = Carving,
+		inputs
+		{
+            item 1 tags[DrillWood;DrillMetal;DrillWoodPoor] mode:keep flags[MayDegradeLight;Prop1],
+			item 3 [Base.HerbivoreTeeth] flags[Prop2],
+			item 2 [Base.Twine],
+		}
+		outputs
+		{
+			item 1 Base.NecklaceLong_Teeth,
+		}
+	}
+}

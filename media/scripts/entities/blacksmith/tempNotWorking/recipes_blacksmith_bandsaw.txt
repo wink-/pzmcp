@@ -1,0 +1,206 @@
+module Base
+{
+    craftRecipe Cut_Iron_Blocks
+    {
+        time        = 50,
+        SkillRequired = MetalWelding:2,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.IronIngot],
+        }
+        outputs
+        {
+            item 3 Base.IronBlock,
+        }
+    }
+
+    craftRecipe Cut_Iron_Chunks
+    {
+        time        = 50,
+        SkillRequired = MetalWelding:1,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.IronBlock],
+        }
+        outputs
+        {
+            item 4 Base.IronChunk,
+        }
+    }
+
+    craftRecipe Cut_Iron_Bar_Halves
+    {
+        time        = 10,
+        SkillRequired = MetalWelding:1,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.IronBar],
+        }
+        outputs
+        {
+            item 2 Base.IronBarHalf,
+        }
+    }
+
+    craftRecipe Cut_Iron_Bar_Quarters
+    {
+        time        = 10,
+        SkillRequired = MetalWelding:1,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.IronBarHalf],
+        }
+        outputs
+        {
+            item 2 Base.IronBarQuarter,
+        }
+    }
+
+    craftRecipe Cut_Steel_Blocks
+    {
+        time        = 50,
+        SkillRequired = MetalWelding:3,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.SteelIngot],
+        }
+        outputs
+        {
+            item 3 Base.SteelBlock,
+        }
+    }
+
+    craftRecipe Cut_Steel_Chunks
+    {
+        time        = 50,
+        SkillRequired = MetalWelding:2,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.SteelBlock],
+        }
+        outputs
+        {
+            item 4 Base.SteelChunk,
+        }
+    }
+
+    craftRecipe Cut_Steel_Bar_Halves
+    {
+        time        = 10,
+        SkillRequired = MetalWelding:1,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.SteelBar],
+        }
+        outputs
+        {
+            item 2 Base.SteelBarHalf,
+        }
+    }
+
+    craftRecipe Cut_Steel_Bar_Quarters
+    {
+        time        = 10,
+        SkillRequired = MetalWelding:1,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.SteelBarHalf],
+        }
+        outputs
+        {
+            item 2 Base.SteelBarQuarter,
+        }
+    }
+
+    craftRecipe Cut_Steel_Pieces
+    {
+        time        = 50,
+        SkillRequired = MetalWelding:1,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.SteelBarQuarter;Base.SteelChunk],
+        }
+        outputs
+        {
+            item 5 Base.SteelPiece,
+        }
+    }
+
+    craftRecipe Cut_Iron_Pieces
+    {
+        time        = 50,
+        SkillRequired = MetalWelding:1,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.IronBarQuarter;Base.IronChunk],
+        }
+        outputs
+        {
+            item 5 Base.IronPiece,
+        }
+    }
+
+    craftRecipe Cut_Steel_Sheet_Into_Small_Sheets
+    {
+        time        = 50,
+        SkillRequired = MetalWelding:1,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.SheetMetal],
+        }
+        outputs
+        {
+            item 4 Base.SmallSheetMetal,
+        }
+    }
+
+    craftRecipe Cut_Railroad_Track
+    {
+        time        = 100,
+        SkillRequired = MetalWelding:4,
+        timedAction = Welding,
+        tags            = MetalBandsaw,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.RailroadTrack],
+        }
+        outputs
+        {
+            item 3 Base.RailroadTrackPiece,
+        }
+    }
+}

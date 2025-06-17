@@ -1,0 +1,1057 @@
+module Base
+{
+/*
+	item SteelFragments
+	{
+		DisplayName = Steel Fragments,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		WeightEmpty = 0.01,
+		Icon = MetalBits,
+		ConsolidateOption = ContextMenu_Merge,
+        cantBeConsolided = FALSE,
+		UseDelta = 0.01,
+		UseWhileEquipped = FALSE,
+		StaticModel = MetalPieces,
+		WorldStaticModel = MetalPieces,
+		/*Tags = SteelMaterial;HasMetal;WorkableSteel,
+		Tags = SteelMaterial;HasMetal;WorkableSteel,*/
+	}
+	*/
+	item BlacksmithAnvil
+	{
+	    DisplayCategory     = Tool,
+		Weight	=	40,
+		/*Type	=	Moveable,
+		WorldObjectSprite = crafted_01_18,*/
+		Type = Normal,
+		Icon = Anvil_Forged,
+		DisplayName	=	Blacksmith Anvil,
+		Tags = HasMetal;HeavyItem,
+		StaticModel = BlacksmithAnvil,
+		WorldStaticModel = BlacksmithAnvil,
+		RequiresEquippedBothHands = TRUE,
+		Tooltip = Tooltip_item_BlacksmithAnvil,
+	}
+
+	item BlacksmithAnvilAssembled
+	{
+	    DisplayCategory     = Tool,
+		Weight	=	40,
+		Type	=	Moveable,
+		WorldObjectSprite = crafted_03_35,
+		DisplayName	=	Assembled Blacksmith Anvil,
+		Tags = HasMetal;HeavyItem,
+		RequiresEquippedBothHands = TRUE,
+		Icon = default,
+	}
+
+	item BlacksmithAnvilUntreated
+	{
+	    DisplayCategory     = Material,
+		Weight	=	40,
+		Type	=	Normal,
+		Icon = Anvil_Forged,
+		DisplayName	=	Untreated Blacksmith Anvil,
+		Tags = HasMetal;HeavyItem,
+		StaticModel = BlacksmithAnvilUntreated,
+		WorldStaticModel = BlacksmithAnvilUntreated,
+		RequiresEquippedBothHands = TRUE,
+	}
+
+	item BlockAnvil
+	{
+	    DisplayCategory     = Tool,
+		Weight	=	30,
+		/*Type	=	Moveable,
+		WorldObjectSprite = crafted_01_19,*/
+		Type = Normal,
+		Icon = BlockAnvil,
+		DisplayName	=	Block Anvil,
+		Tags = HasMetal;HeavyItem,
+		RequiresEquippedBothHands = TRUE,
+		StaticModel = BlockAnvil,
+		WorldStaticModel = BlockAnvil,
+	}
+
+	item BlockAnvilUntreated
+	{
+	    DisplayCategory     = Material,
+		Weight	=	30,
+		Type	=	Normal,
+		Icon = BlockAnvil,
+		DisplayName	=	Untreated Block Anvil,
+		Tags = HasMetal;HeavyItem,
+		RequiresEquippedBothHands = TRUE,
+		StaticModel = BlockAnvil,
+		WorldStaticModel = BlockAnvil,
+	}
+
+	item BenchAnvil
+	{
+	    DisplayCategory     = Tool,
+		Weight	=	20,
+		Type	=	Normal,
+		Icon = Anvil_Forged,
+		DisplayName	=	Bench Anvil,
+		StaticModel = BenchAnvil,
+		WorldStaticModel = BenchAnvil,
+		Tags = HasMetal;HeavyItem,
+		RequiresEquippedBothHands = TRUE,
+	}
+
+	item BenchAnvilUntreated
+	{
+	    DisplayCategory     = Material,
+		Weight	=	20,
+		Type	=	Normal,
+		Icon = Anvil_Forged,
+		DisplayName	=	Untreated Bench Anvil,
+		StaticModel = BenchAnvilUntreated,
+		WorldStaticModel = BenchAnvilUntreated,
+		Tags = HasMetal;HeavyItem,
+		RequiresEquippedBothHands = TRUE,
+	}
+
+	item SteelIngot
+	{
+		DisplayName = Steel Ingot,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 6,
+		WeightEmpty = 0.01,
+		Icon = Ingot_Steel,
+		StaticModel = SteelIngot,
+		WorldStaticModel = SteelIngot,
+		Tags = HasMetal;SteelMaterial;Ingot,
+	}
+
+	item SteelBlock
+	{
+		DisplayName = Steel Block,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = SteelBillet,
+		StaticModel = SteelBlock,
+		WorldStaticModel = SteelBlock,
+		Tags = HasMetal;SteelMaterial;Block;SmeltableSteelLarge,
+	}
+
+	item SteelChunk
+	{
+		DisplayName = Steel Chunk,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		WeightEmpty = 0.01,
+		Icon = SteelChunk,
+		StaticModel = SteelChunk,
+		WorldStaticModel = SteelChunk,
+		Tags = HasMetal;SteelMaterial;Chunk;SmeltableSteelSmall,
+	}
+
+	item PiercedSteelIngot
+	{
+		DisplayName = Pierced Steel Ingot,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 6,
+		WeightEmpty = 0.01,
+		Icon = Ingot_Steel_Hole,
+		StaticModel = PiercedSteelIngot,
+		WorldStaticModel = PiercedSteelIngot,
+		Tags = HasMetal;SteelMaterial;PiercedIngot,
+	}
+
+	item PiercedSteelBlock
+	{
+		DisplayName = Pierced Steel Block,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = Billet_Steel_Hole,
+		StaticModel = PiercedSteelBlock,
+		WorldStaticModel = PiercedSteelBlock,
+		Tags = HasMetal;SteelMaterial;PiercedBlock;SmeltableSteelLarge,
+	}
+
+	item PiercedSteelChunk
+	{
+		DisplayName = Pierced Steel Chunk,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		WeightEmpty = 0.01,
+		Icon = Chunk_Steel_Hole,
+		StaticModel = PiercedSteelChunk,
+		WorldStaticModel = PiercedSteelChunk,
+		Tags = HasMetal;SteelMaterial;PiercedChunk;SmeltableSteelSmall,
+	}
+
+
+	item SteelBarQuarter
+	{
+		DisplayName = Steel Bar Quarter,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+        Icon = SteelBar_Quarter,
+		StaticModel = SteelBarStockQuarter,
+		WorldStaticModel = SteelBarStockQuarter,
+		Tags = HasMetal;SteelMaterial;BarStockQuarter;SmeltableSmellSmall,
+        ResearchableRecipes = MakeShiv,
+	}
+
+	item SteelPiece
+	{
+		DisplayName = Steel Piece,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.1,
+        Icon = SteelBar_Tenth,
+		StaticModel = SteelBarStockPiece,
+		WorldStaticModel = SteelBarStockPiece,
+		Tags = HasMetal;SteelMaterial;MetalPiece,
+	}
+
+	item IronIngot
+	{
+		DisplayName = Iron Ingot,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 6,
+		Icon = Ingot_Iron,
+		StaticModel = IronIngot,
+		WorldStaticModel = IronIngot,
+		Tags = HasMetal;Ingot,
+	}
+
+    item IronBlock
+    {
+        DisplayName = Iron Block,
+        DisplayCategory = Material,
+        Type = Normal,
+        Weight = 2,
+        Icon = IronBillet,
+        StaticModel = IronBlock,
+        WorldStaticModel = IronBlock,
+        Tags = HasMetal;IronMaterial;Block;SmeltableIronLarge,
+    }
+
+    item IronChunk
+    {
+        DisplayName = Iron Chunk,
+        DisplayCategory = Material,
+        Type = Normal,
+        Weight = 0.5,
+        WeightEmpty = 0.01,
+        Icon = IronChunk,
+        StaticModel = IronChunk,
+        WorldStaticModel = IronChunk,
+        Tags = HasMetal;IronMaterial;Chunk;SmeltableIronSmall,
+    }
+
+	item PiercedIronIngot
+	{
+		DisplayName = Pierced Iron Ingot,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 6,
+		Icon = Ingot_Iron_Hole,
+		StaticModel = PiercedIronIngot,
+		WorldStaticModel = PiercedIronIngot,
+		Tags = HasMetal;PiercedIngot;SmeltableIronLarge,
+	}
+
+    item PiercedIronBlock
+    {
+        DisplayName = Pierced Iron Block,
+        DisplayCategory = Material,
+        Type = Normal,
+        Weight = 2,
+        Icon = Billet_Iron_Hole,
+        StaticModel = PiercedIronBlock,
+        WorldStaticModel = PiercedIronBlock,
+        Tags = HasMetal;IronMaterial;PiercedBlock;SmeltableIronLarge,
+        Tooltip = Tooltip_item_PiercedIronBlock,
+    }
+
+    item PiercedIronChunk
+    {
+        DisplayName = Pierced Iron Chunk,
+        DisplayCategory = Material,
+        Type = Normal,
+        Weight = 0.5,
+        WeightEmpty = 0.01,
+        Icon = Chunk_Iron_Hole,
+        StaticModel = PiercedIronChunk,
+        WorldStaticModel = PiercedIronChunk,
+        Tags = HasMetal;IronMaterial;PiercedChunk;SmeltableIronSmall,
+    }
+
+    item IronBarQuarter
+    {
+        DisplayName = Iron Bar Quarter,
+        DisplayCategory = Material,
+        Type = Normal,
+        Weight = 0.5,
+        Icon = IronBar_Quarter,
+        StaticModel = IronBarStockQuarter,
+        WorldStaticModel = IronBarStockQuarter,
+        Tags = HasMetal;IronMaterial;BarStockQuarter;SmeltableIronSmall,
+        ResearchableRecipes = MakeShiv,
+    }
+
+    item IronPiece
+    {
+        DisplayName = Iron Piece,
+        DisplayCategory = Material,
+        Type = Normal,
+        Weight = 0.1,
+        Icon = IronBar_Tenth,
+        StaticModel = IronBarStockPiece,
+        WorldStaticModel = IronBarStockPiece,
+        Tags = HasMetal;IronMaterial;MetalPiece,
+    }
+/*
+	item PigIronIngot
+	{
+		DisplayName = Pig Iron Ingot,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = Ingot_Pigiron,
+		StaticModel = PigIronIngot,
+		WorldStaticModel = PigIronIngot,
+		Tags = HasMetal,
+	}
+*/
+	item BrassIngot
+	{
+		DisplayName = Brass Ingot,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = Ingot_Brass,
+		StaticModel = BrassIngot,
+		WorldStaticModel = BrassIngot,
+		Tags = HasMetal,
+	}
+
+	item SledgehammerHead
+	{
+		DisplayName = Sledgehammer Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 6,
+		Icon = SledgehammerHead_Forged,
+		StaticModel         = SledgehammerHeadForged,
+		WorldStaticModel    = SledgehammerHeadForged,
+		Tags = HasMetal;ToolHead;ShowCondition,
+		ConditionMax = 10,
+        ResearchableRecipes = Forge_Club_Hammer_Head;MakeStoneMaulHead,
+	}
+
+	item BallPeenHammerHead
+	{
+		DisplayName = Ball Peen Hammer Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = BallPeenHammerHead_Forged,
+		StaticModel         = BallPeenHammerHeadForged,
+		WorldStaticModel    = BallPeenHammerHeadForged,
+		Tags = HasMetal;ToolHead;SmeltableSteelSmall;ShowCondition,
+		ConditionMax = 10,
+        ResearchableRecipes = Forge_Clawhammer_Head;Forge_Club_Hammer_Head;Forge_Smithing_Hammer_Head,
+	}
+
+	item ClawhammerHead
+	{
+		DisplayName = Clawhammer Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = HammerHead_Forged,
+		StaticModel         = ClawhammerHeadForged,
+		WorldStaticModel    = ClawhammerHeadForged,
+		Tags = HasMetal;ToolHead;SmeltableSteelSmall;ShowCondition,
+		ConditionMax = 10,
+        ResearchableRecipes = Forge_Ball_Peen_Hammer_Head;Forge_Club_Hammer_Head;Forge_Smithing_Hammer_Head,
+	}
+
+	item ClubHammerHead
+	{
+		DisplayName = Club Hammer Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = ClubHammerHead_Forged,
+		StaticModel         = ClubHammerForgedHead,
+		WorldStaticModel    = ClubHammerForgedHead,
+		Tags = HasMetal;ToolHead;SmeltableIronLarge;ShowCondition,
+		ConditionMax = 10,
+        ResearchableRecipes = Forge_Sledgehammer_Head;MakeStoneMaulHead;Forge_Clawhammer_Head;Forge_Ball_Peen_Hammer_Head;Forge_Smithing_Hammer_Head,
+	}
+
+	item WoodAxeHead
+	{
+		DisplayName = Wood Axe Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = AxeHead_Forged,
+		StaticModel         = WoodAxeHeadForged,
+		WorldStaticModel    = WoodAxeHeadForged,
+		Tags = HasMetal;Sharpenable;SmeltableSteelLarge;ShowCondition,
+		ConditionMax = 15,
+        Sharpness = 1.0,
+        ResearchableRecipes = MakeLargeStoneAxeHead;Forge_Old_Axe_Head,
+	}
+
+	item WoodenCrucibleMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Wooden Crucible Mold,
+		Icon                = WoodMold_CrucibleCast,
+		StaticModel         = WoodenCrucibleMold,
+		WorldStaticModel    = WoodenCrucibleMold,
+	}
+
+	item WoodenBenchAnvilMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Wooden Bench Anvil Mold,
+		Icon                = WoodMold_AnvilCast,
+		StaticModel         = WoodenBenchAnvilMold,
+		WorldStaticModel    = WoodenBenchAnvilMold,
+	}
+
+	item WoodenBlacksmithAnvilMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Wooden Blacksmith Anvil Mold,
+		Icon                = WoodMold_AnvilCast,
+		StaticModel         = WoodenBlacksmithAnvilMold,
+		WorldStaticModel    = WoodenBlacksmithAnvilMold,
+	}
+
+	item WoodenBlockAnvilMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Wooden Block Anvil Mold,
+		Icon                = WoodMold_BlockAnvilCast,
+		StaticModel         = WoodenBlockAnvilMold,
+		WorldStaticModel    = WoodenBlockAnvilMold,
+	}
+
+	item ClayBenchAnvilMoldUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Unfired Bench Anvil Mold,
+		Icon                = Ceramic_Anvil_Unfired,
+		StaticModel         = ClayBenchAnvilMoldUnfired,
+		WorldStaticModel    = ClayBenchAnvilMoldUnfired,
+	}
+
+	item ClayBenchAnvilMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Bench Anvil Mold,
+		Icon                = Ceramic_Anvil_Fired,
+		StaticModel         = ClayBenchAnvilMold,
+		WorldStaticModel    = ClayBenchAnvilMold,
+	}
+
+	item ClayBlacksmithAnvilMoldUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Unfired Blacksmith Anvil Mold,
+		Icon                = Ceramic_Anvil_Unfired,
+		StaticModel         = ClayBlacksmithAnvilMoldUnfired,
+		WorldStaticModel    = ClayBlacksmithAnvilMoldUnfired,
+	}
+
+	item ClayBlacksmithAnvilMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Blacksmith Anvil Mold,
+		Icon                = Ceramic_Anvil_Fired,
+		StaticModel         = ClayBlacksmithAnvilMold,
+		WorldStaticModel    = ClayBlacksmithAnvilMold,
+	}
+
+	item ClayBlockAnvilMoldUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Unfired Block Anvil Mold,
+		Icon                = Ceramic_BlockAnvil_Unfired,
+		StaticModel         = ClayBlockAnvilMoldUnfired,
+		WorldStaticModel    = ClayBlockAnvilMoldUnfired,
+	}
+
+	item ClayBlockAnvilMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Bench Block Mold,
+		Icon                = Ceramic_BlockAnvil_Fired,
+		StaticModel         = ClayBlockAnvilMoldFired,
+		WorldStaticModel    = ClayBlockAnvilMoldFired,
+	}
+
+	item WoodenIngotCastMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Wooden Ingot Cast Mold,
+		Icon                = WoodMold_BarCast,
+		StaticModel         = WoodenIngotCastMold,
+		WorldStaticModel    = WoodenIngotCastMold,
+	}
+
+	item Coke
+	{
+		DisplayName = Coke,
+		DisplayCategory = Material,
+		Type = Normal,
+		/*Weight = 8,
+		Type = Drainable,
+		WeightEmpty = 0.02,
+		ConsolidateOption = ContextMenu_Merge,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		*/
+		Weight = 0.5,
+		Icon = CokeCoal,
+		StaticModel = Coke,
+		WorldStaticModel = Coke,
+		Tags = Charcoal;IsFireFuel,
+        FireFuelRatio = 2,
+		Tooltip = Tooltip_item_Coke,
+	}
+
+    item BucketLargeWood
+    {
+        DisplayCategory     = WaterContainer,
+        Weight	            = 10,
+        Type	            = Normal,
+        DisplayName	        = Large Wooden Bucket,
+	    EatType = Bucket,
+	    PourType = Bucket,
+        Icon	            = QuenchBucket_Empty,
+	    StaticModel = BucketLargeWood_Fluid,
+	    WorldStaticModel = BucketLargeWood,
+	    Tags = Bucket;HasMetal;HeavyItem,
+        ResearchableRecipes = Forge_Bucket;CarveBucket,
+
+        component FluidContainer
+        {
+            ContainerName   = Large Bucket,
+            RainFactor	= 0.7,
+            capacity        = 20.0,
+        }
+    }
+
+	item CrudeSaw
+	{
+		DisplayName = Crude Saw,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 1,
+		Icon = Handsaw_Forged,
+		MetalValue = 35,
+		SurvivalGear = TRUE,
+		StaticModel = SawForgedWood,
+		WorldStaticModel = SawForgedWood,
+		Tags = Saw;ShowCondition;SmeltableIronMedium,
+        ConditionLowerChanceOneIn = 5,
+        ConditionMax	=	5,
+	}
+
+	item ClayBarMoldUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Unfired Bar Mold,
+		Icon                = CeramicCast_LongBar_Fired,
+		StaticModel         = ClayBarStockMoldUnfired,
+		WorldStaticModel    = ClayBarStockMoldUnfired,
+	}
+
+	item ClayBarMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Bar Mold,
+		Icon                = CeramicCast_LongBar_Unfired,
+		StaticModel         = ClayBarStockMold,
+		WorldStaticModel    = ClayBarStockMold,
+		Tags = Destructible;BreakOnSmithing,
+		ToolTip = Tooltip_item_BreakOnSmithing,
+	}
+
+	item WoodenBarCastMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Wooden Bar Cast Mold,
+		Icon                = WoodMold_LonbBarCast,
+		StaticModel         = WoodenBarStockCastMold,
+		WorldStaticModel    = WoodenBarStockCastMold,
+	}
+
+	item HandScytheBlade
+	{
+		DisplayName = Hand Scythe Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = ScytheHead_Forged,
+		StaticModel         = HandScytheHeadForged,
+		WorldStaticModel    = HandScytheHeadForged,
+		Tags = HasMetal;Sharpenable;SmeltableIronSmall;ShowCondition,
+		ConditionMax = 5,
+        Sharpness = 1.0,
+	}
+
+	item ScytheBlade
+	{
+		DisplayName = Scythe Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = FullScytheHead_Forged,
+		StaticModel         = ScytheHeadForged,
+		WorldStaticModel    = ScytheHeadForged,
+		Tags = HasMetal;Sharpenable;SmeltableIronMedium;ShowCondition,
+		ConditionMax = 10,
+        Sharpness = 1.0,
+	}
+
+	item GardenHoeHead
+	{
+		DisplayName = Garden Hoe Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = HoeHead_Forged,
+		StaticModel         = GardenHoeHeadForged,
+		WorldStaticModel    = GardenHoeHeadForged,
+		Tags = HasMetal;ToolHead;SmeltableIronMedium;ShowCondition,
+		ConditionMax = 10,
+	}
+
+	item PickAxeHead
+	{
+		DisplayName = Pick Axe Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = PickaxeHead_Forged,
+		StaticModel         = PickAxeHeadForged,
+		WorldStaticModel    = PickAxeHeadForged,
+		Tags = HasMetal;ToolHead;SmeltableSteelLarge;ShowCondition,
+		ConditionMax = 13,
+		ResearchableRecipes = MakeStoneMaulHead,
+	}
+
+	item PotForged
+	{
+		DisplayName = Empty Cooking Pot,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 1,
+		Icon = Pot_Forged,
+		IconFluidMask = Pot_Forged_Mask,
+		CanStoreWater = TRUE,
+		EatType = Pot,
+		PourType = Pot,
+		MetalValue = 40,
+		Tags = Cookable;HasMetal;SmeltableSteelMedium,
+		StaticModel = CookingPotForged,
+		WorldStaticModel = CookingPotForgedGround,
+		FillFromDispenserSound = GetWaterFromDispenserMetalMedium,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapMetalMedium,
+        FillFromToiletSound = GetWaterFromToilet,
+
+		component FluidContainer
+        {
+            ContainerName   = Pot,
+            RainFactor	= 0.8,
+            capacity        = 1.5,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+	}
+
+	item SmithingHammerHead
+	{
+		DisplayName = Smithing Hammer Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = SmithingHammer_Head,
+		StaticModel         = SmithingHammerHead,
+		WorldStaticModel    = SmithingHammerHead,
+		Tags = HasMetal;SmeltableIronSmall;ShowCondition,
+		ConditionMax = 10,
+        ResearchableRecipes = Forge_Clawhammer_Head;Forge_Ball_Peen_Hammer_Head;Forge_Club_Hammer_Head,
+	}
+
+	item GoldBar
+	{
+		DisplayName = Gold Bar,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 16,
+		Icon = Ingot_Gold,
+		StaticModel = GoldBar,
+		WorldStaticModel = GoldBar,
+		Tags = IgnoreZombieDensity;HasMetal,
+	}
+
+	item SmallGoldBar
+	{
+		DisplayName = Gold Bar - Small,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = Ingot_Gold,
+		StaticModel = GoldBarSmall,
+		WorldStaticModel = GoldBarSmall,
+		Tags = IgnoreZombieDensity;HasMetal,
+	}
+
+	item SilverBar
+	{
+		DisplayName = Silver Bar,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 8,
+		Icon = Ingot_Silver,
+		StaticModel = SilverBar,
+		WorldStaticModel = SilverBar,
+		Tags = IgnoreZombieDensity;HasMetal,
+	}
+
+	item SmallSilverBar
+	{
+		DisplayName = Silver Bar - Small,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = Ingot_Silver,
+		StaticModel = SilverBarSmall,
+		WorldStaticModel = SilverBarSmall,
+		Tags = IgnoreZombieDensity;HasMetal,
+	}
+
+	item CopperIngot
+	{
+		DisplayName = Copper Ingot,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 6,
+		Icon = Ingot_Copper,
+		StaticModel = CopperIngot,
+		WorldStaticModel = CopperIngot,
+		Tags = HasMetal,
+	}
+
+	item CopperSheet
+	{
+		DisplayName = Copper Sheet,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = Sheet_Copper_Large,
+		MetalValue = 80,
+		WorldStaticModel = CopperSheet,
+	}
+
+	item SmallCopperSheet
+	{
+		DisplayName = Copper Sheet - Small,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Sheet_Copper_Small,
+		MetalValue = 20,
+		WorldStaticModel = SmallCopperSheet,
+	}
+
+	item CopperScrap
+	{
+		DisplayName = Copper Scrap,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Copper_Scrap,
+		WorldStaticModel = CopperScrap,
+		Tags = HasMetal,
+	}
+
+	item AluminumScrap
+	{
+		DisplayName = Aluminum Scrap,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = AluminumScrap,
+		WorldStaticModel = AluminumScrap,
+		Tags = HasMetal;ScrapAluminum,
+	}
+
+	item BrassScrap
+	{
+		DisplayName = Brass Scrap,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = BrassScrap,
+		WorldStaticModel = BrassScrap,
+		Tags = HasMetal,
+	}
+
+	item IronScrap
+	{
+		DisplayName = Iron Scrap,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = IronScrap,
+		WorldStaticModel = IronScrap,
+		Tags = HasMetal;SmeltableIronSmall,
+	}
+
+	item SteelScrap
+	{
+		DisplayName = Steel Scrap,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = SteelScrap,
+		WorldStaticModel = SteelScrap,
+		Tags = HasMetal;SmeltableSteelSmall,
+	}
+
+	item GoldScrap
+	{
+		DisplayName = Gold Fragments,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.05,
+		Icon = GoldScrap,
+		WorldStaticModel = GoldScrap,
+		Tags = HasMetal,
+	}
+
+	item SilverScrap
+	{
+		DisplayName = Silver Fragments,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.05,
+		Icon = SilverScrap,
+		WorldStaticModel = SilverScrap,
+		Tags = HasMetal,
+	}
+
+    item SteelRodQuarter
+    {
+        DisplayName = Steel Rod Quarter,
+        DisplayCategory = Material,
+        Type = Normal,
+        Weight = 0.375,
+        Icon = SteelRod_Quarter,
+        StaticModel = SteelRodQuarter,
+        WorldStaticModel = SteelRodQuarter,
+        Tags = HasMetal;IronMaterial,
+    }
+
+    item SteelSlug
+    {
+        DisplayName = Steel Slug,
+        DisplayCategory = Material,
+        Type = Normal,
+        Weight = 0.075,
+        Icon = SteelRod_Slug,
+        StaticModel = SteelSlug,
+        WorldStaticModel = SteelSlug,
+        Tags = HasMetal;IronMaterial,
+    }
+/*
+    item IronRodQuarter
+    {
+        DisplayName = Iron Rod Quarter,
+        DisplayCategory = Material,
+        Type = Normal,
+        Weight = 0.375,
+        Icon = IronRod_Quarter,
+        StaticModel = IronRodQuarter,
+        WorldStaticModel = IronRodQuarter,
+        Tags = HasMetal;IronMaterial;SmeltableIronSmall,
+    }
+
+    item IronSlug
+    {
+        DisplayName = Iron Slug,
+        DisplayCategory = Material,
+        Type = Normal,
+        Weight = 0.075,
+        Icon = IronRod_Slug,
+        StaticModel = IronSlug,
+        WorldStaticModel = IronSlug,
+        Tags = HasMetal;IronMaterial,
+    }*/
+
+    item Latch
+    {
+        DisplayName = Latch,
+        DisplayCategory = Material,
+        Type = Normal,
+        Weight = 0.5,
+        Icon = Latch_Forged,
+        StaticModel = Latch,
+        WorldStaticModel = Latch,
+        Tags = HasMetal;SmeltableIronSmall,
+    }
+
+	item FlatStone
+	{
+		DisplayName = Large Smooth Flat Stone,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 10,
+		Icon = FlatRock,
+		StaticModel = FlatStone,
+		WorldStaticModel = FlatStone,
+        ResearchableRecipes = MakeStoneMaulHead;MakeLargeStoneAxeHead,
+	}
+
+	item RakeHead
+	{
+		DisplayName = Rake-Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = RakeHead,
+		StaticModel = RakeHead,
+		WorldStaticModel = RakeHead,
+		Tags = SmeltableIronMedium;ShowCondition,
+        ResearchableRecipes = MakeRakeHeadWeapon,
+	}
+
+	item GoldSheet
+	{
+		DisplayName = Gold Sheet,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = MetalSheet_Small,
+		MetalValue = 20,
+		WorldStaticModel = SmallGoldSheet,
+		Tags = HasMetal;IgnoreZombieDensity,
+		ColorRed = 207,
+        ColorGreen = 181,
+        ColorBlue = 59,
+	}
+
+	item SilverSheet
+	{
+		DisplayName = Silver Sheet,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = MetalSheet_Small,
+		MetalValue = 20,
+		WorldStaticModel = SmallSilverSheet,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
+    item CeramicCrucible_Iron
+	{
+	    DisplayCategory     = Material,
+		Weight              = 15.0,
+		Type                = Drainable,
+		UseDelta	        = 0.05,
+		UseWhileEquipped = FALSE,
+		ReplaceOnDeplete = CeramicCrucible,
+		DisplayName         = Large Ceramic Crucible with Iron,
+		Icon                = Ceramic_Crucible_MoltenIron,
+		StaticModel         = CeramicCrucible_Steel,
+		WorldStaticModel    = CeramicCrucible_Steel,
+		Tags = HasMetal,
+	}
+
+	item CeramicCrucible_Steel
+	{
+	    DisplayCategory     = Material,
+		Weight              = 15.0,
+		Type                = Drainable,
+		UseDelta	        = 0.05,
+		UseWhileEquipped = FALSE,
+		ReplaceOnDeplete = CeramicCrucible,
+		DisplayName         = Large Ceramic Crucible with Steel,
+		Icon                = Ceramic_Crucible_MoltenSteel,
+		StaticModel         = CeramicCrucible_Iron,
+		WorldStaticModel    = CeramicCrucible_Iron,
+		Tags = HasMetal,
+	}
+
+	item CeramicCrucibleSmall_Iron
+    {
+        DisplayCategory     = Material,
+        Weight              = 5.2,
+        Type                = Drainable,
+        UseDelta	        = 0.1,
+        UseWhileEquipped = FALSE,
+        ReplaceOnDeplete = CeramicCrucible,
+        DisplayName         = Small Ceramic Crucible with Iron,
+		Icon                = Ceramic_Crucible_MoltenIron,
+		StaticModel         = CeramicCrucibleSmall_Iron,
+		WorldStaticModel    = CeramicCrucibleSmall_Iron,
+        Tags = HasMetal,
+    }
+
+    item CeramicCrucibleSmall_Steel
+    {
+        DisplayCategory     = Material,
+        Weight              = 5.2,
+        Type                = Drainable,
+        UseDelta	        = 0.1,
+        UseWhileEquipped = FALSE,
+        ReplaceOnDeplete = CeramicCrucible,
+        DisplayName         = Small Ceramic Crucible with Steel,
+		Icon                = Ceramic_Crucible_MoltenSteel,
+		StaticModel         = CeramicCrucibleSmall_Steel,
+		WorldStaticModel    = CeramicCrucibleSmall_Steel,
+        Tags = HasMetal,
+    }
+}

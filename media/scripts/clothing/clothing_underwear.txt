@@ -1,0 +1,624 @@
+module Base
+{
+	item Bra_Strapless_Black
+	{
+		DisplayName = Bra - Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BraStraplessGeneric,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Bra_Strapless_Black,
+		ColorBlue = 58,
+		ColorGreen = 58,
+		ColorRed = 58,
+		WorldStaticModel = BraStraplessBlack_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Bra_Strapless_RedSpots
+	{
+		DisplayName = Bra - Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BraStraplessSpotted,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Bra_Strapless_RedSpots,
+		WorldStaticModel = BraStraplessRedSpots_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Bra_Strapless_White
+	{
+		DisplayName = Bra - Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BraStraplessGeneric,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Bra_Strapless_White,
+		WorldStaticModel = BraStrapless_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Bra_Straps_Black
+	{
+		DisplayName = Bra,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BraGeneric,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Bra_Straps_Black,
+		ColorBlue = 58,
+		ColorGreen = 58,
+		ColorRed = 58,
+		WorldStaticModel = BraBlack_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Bra_Straps_White
+	{
+		DisplayName = Bra,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BraGeneric,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Bra_Straps_White,
+		WorldStaticModel = Bra_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Underpants_Black
+	{
+		DisplayName = Underpants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Underwear2,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Underpants_Black,
+		ColorBlue = 58,
+		ColorGreen = 58,
+		ColorRed = 58,
+		WorldStaticModel = UnderpantsBlack_Ground,
+		FabricType = Cotton,
+	}
+	
+	item Underpants_RedSpots
+	{
+		DisplayName = Underpants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = PantiesSpotted,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Underpants_RedSpots,
+		WorldStaticModel = UnderpantsRedSpots_Ground,
+		FabricType = Cotton,
+	}
+	
+	item Underpants_White
+	{
+		DisplayName = Underpants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = PantiesGeneric,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Underpants_White,
+		WorldStaticModel = Underpants_Ground,
+		FabricType = Cotton,
+	}
+	
+	item Boxers_Hearts
+	{
+		DisplayName = Boxers,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BoxersHearts,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Boxers_Hearts,
+		WorldStaticModel = BoxersHearts_Ground,
+		FabricType = Cotton,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item Boxers_Silk_Black
+	{
+		DisplayName = Boxers,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BoxersBlacksilky,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Boxers_Silk_Black,
+		WorldStaticModel = Boxers_Silk_Black,
+		FabricType = Cotton,
+	}
+	
+	item Boxers_Silk_Red
+	{
+		DisplayName = Boxers,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BoxersRedsilky,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Boxers_Silk_Red,
+		WorldStaticModel = Boxers_Silk_Red,
+		FabricType = Cotton,
+	}
+	
+	item Boxers_RedStripes
+	{
+		DisplayName = Boxers,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BoxersStriped,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Boxers_RedStripes,
+		WorldStaticModel = BoxersRedStripes_Ground,
+		FabricType = Cotton,
+	}
+	
+	item Boxers_White
+	{
+		DisplayName = Boxers,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BoxersGeneric,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Boxers_White,
+		WorldStaticModel = Boxers_Ground,
+		FabricType = Cotton,
+	}
+	
+	item Briefs_White
+	{
+		DisplayName = Briefs,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BriefsGeneric,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Briefs_White,
+		WorldStaticModel = Briefs_Ground,
+		FabricType = Cotton,
+	}
+	
+	item Briefs_AnimalPrints
+	{
+		DisplayName = Briefs,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BriefsLeopard,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Briefs_AnimalPrint,
+		WorldStaticModel = Briefs_Ground,
+		FabricType = Cotton,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item Briefs_SmallTrunks_Black
+	{
+		DisplayName = Trunks,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Speedo_Black,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_SmallTrunks_Black,
+		WorldStaticModel = Briefs_Ground,
+		FabricType = Cotton,
+	}
+	
+	item Briefs_SmallTrunks_Blue
+	{
+		DisplayName = Trunks,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Speedo_Blue,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_SmallTrunks_Blue,
+		WorldStaticModel = Briefs_Ground,
+		FabricType = Cotton,
+	}
+	
+	item Briefs_SmallTrunks_Red
+	{
+		DisplayName = Trunks,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Speedo_Red,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_SmallTrunks_Red,
+		WorldStaticModel = Briefs_Ground,
+		FabricType = Cotton,
+	}
+	
+	item Briefs_SmallTrunks_WhiteTINT
+	{
+		DisplayName = Trunks,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = SpeedoGeneric,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_SmallTrunks_WhiteTINT,
+		WorldStaticModel = Briefs_Ground,
+		FabricType = Cotton,
+	}
+	
+	item StockingsBlack
+	{
+		DisplayName = Stockings - Black,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = StockingsOpaque,
+		BodyLocation = UnderwearExtra1,
+		ClothingItem = StockingsBlack,
+		WorldStaticModel = StockingsBlack_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item StockingsBlackTrans
+	{
+		DisplayName = Stockings - Transparent,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = StockingsSheer,
+		BodyLocation = UnderwearExtra1,
+		ClothingItem = StockingsBlackTrans,
+		WorldStaticModel = StockingsBlackTrans_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item StockingsBlackSemiTrans
+	{
+		DisplayName = Stockings - Semi-Transparent,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = StockingsSemiOpaque,
+		BodyLocation = UnderwearExtra1,
+		ClothingItem = StockingsBlackSemiTrans,
+		WorldStaticModel = StockingsBlackTrans_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item TightsBlack
+	{
+		DisplayName = Tights - Black,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = PantyhoseOpaque,
+		BodyLocation = UnderwearExtra1,
+		ClothingItem = TightsBlack,
+		WorldStaticModel = TightsBlack_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item TightsBlackTrans
+	{
+		DisplayName = Tights - Transparent,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = PantyhoseSheer,
+		BodyLocation = UnderwearExtra1,
+		ClothingItem = TightsBlackTrans,
+		WorldStaticModel = TightsTrans_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item TightsBlackSemiTrans
+	{
+		DisplayName = Tights - Semi-Transparent,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = PantyhoseSemiOpaque,
+		BodyLocation = UnderwearExtra1,
+		ClothingItem = TightsBlackSemiTrans,
+		WorldStaticModel = TightsTrans_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item TightsFishnets
+	{
+		DisplayName = Tights - Fishnet,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = PantyhoseFishnet,
+		BodyLocation = UnderwearExtra1,
+		ClothingItem = TightsBlackFishnet,
+		WorldStaticModel = TightsFishnet_Ground,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+	
+	item StockingsWhite
+	{
+		DisplayName = Stockings - White,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = StockingsWhite,
+		BodyLocation = UnderwearExtra1,
+		ClothingItem = StockingsWhite,
+		WorldStaticModel = StockingsWhite_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Garter
+	{
+		DisplayName = Garter,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Garter,
+		BodyLocation = UnderwearExtra2,
+		ClothingItem = Garter,
+		WorldStaticModel = Garter_Ground,
+		Tags = IgnoreZombieDensity;FitsWallet;IsMemento,
+	}
+	
+	item Corset_Black
+	{
+		DisplayName = Corset,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = CorsetBlack,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Corset_Black,
+		WorldStaticModel = Corset_Black_Ground,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+	
+	item Corset_Red
+	{
+		DisplayName = Corset,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = CorsetRed,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Corset_Red,
+		WorldStaticModel = Corset_Red_Ground,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+	
+	item Corset
+	{
+		DisplayName = Corset,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = CorsetWhite,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Corset,
+		WorldStaticModel = Corset_Ground,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+	
+	item Corset_Medical
+	{
+		DisplayName = Corset,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = CorsetMedical,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Corset_Medical,
+		WorldStaticModel = Corset_Medical_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Bra_Strapless_AnimalPrint
+	{
+		DisplayName = Bra - Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BraLeopardStrapless,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Bra_Strapless_AnimalPrint,
+		WorldStaticModel = BraStraplessAnimalPrint_Ground,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+	
+	item Bra_Straps_AnimalPrint
+	{
+		DisplayName = Bra,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BraLeopard,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Bra_Straps_AnimalPrint,
+		WorldStaticModel = Bra_AnimalPrint_Ground,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+	
+	item Bra_Straps_FrillyBlack
+	{
+		DisplayName = Bra,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BraBlacklacy,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_FrillyBra_Straps_Black,
+		WorldStaticModel = Bra_FrillyBlack_Ground,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+	
+	item Bra_Strapless_FrillyBlack
+	{
+		DisplayName = Bra - Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BraBlacklacyStrapless,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_FrillyBra_Strapless_Black,
+		WorldStaticModel = BraStraplessFrillyBlack_Ground,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+	
+	item Bra_Straps_FrillyPink
+	{
+		DisplayName = Bra,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BraPinklacy,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_FrillyBra_Straps_Pink,
+		WorldStaticModel = Bra_FrillyPink_Ground,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+	
+	item Bra_Strapless_FrillyPink
+	{
+		DisplayName = Bra - Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BraPinklacyStrapless,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_FrillyBra_Strapless_Pink,
+		WorldStaticModel = BraStraplessFrillyPink_Ground,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+	
+	item Bra_Straps_FrillyRed
+	{
+		DisplayName = Bra,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BraRedsilky,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_FrillyBra_Straps_Red,
+		WorldStaticModel = Bra_FrillyRed_Ground,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+	
+	item Bra_Strapless_FrillyRed
+	{
+		DisplayName = Bra - Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BraRedsilkyStrapless,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_FrillyBra_Strapless_Red,
+		WorldStaticModel = BraStraplessFrillyRed_Ground,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+	
+	item Underpants_AnimalPrint
+	{
+		DisplayName = Underpants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = PantiesLeopard,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Underpants_AnimalPrint,
+		WorldStaticModel = Underpants_AnimalPrint_Ground,
+		FabricType = Cotton,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item FrillyUnderpants_Black
+	{
+		DisplayName = Underpants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = PantiesBlacklacy,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_FrillyUnderpants_Black,
+		WorldStaticModel = Underpants_Frilly_Black_Ground,
+		FabricType = Cotton,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item FrillyUnderpants_Pink
+	{
+		DisplayName = Underpants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = PantiesPinklacy,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_FrillyUnderpants_Pink,
+		WorldStaticModel = Underpants_Frilly_Pink_Ground,
+		FabricType = Cotton,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item FrillyUnderpants_Red
+	{
+		DisplayName = Underpants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = PantiesRedsilky,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_FrillyUnderpants_Red,
+		WorldStaticModel = Underpants_Frilly_Red_Ground,
+		FabricType = Cotton,
+		Tags = IgnoreZombieDensity,
+	}
+}

@@ -1,0 +1,134 @@
+module Base
+{
+    craftRecipe Forge_Baking_Pan
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:2,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:4;Cooking:1,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SheetMetal],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.BakingPan,
+        }
+    }
+
+    craftRecipe Forge_Baking_Tray
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:2,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:4;Cooking:1,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SheetMetal],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.BakingTray,
+        }
+    }
+
+    craftRecipe Forge_Cooking_Pot
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:3,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:5;Cooking:2,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SheetMetal],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            item 0.1 [Base.Wire],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.PotForged,
+        }
+    }
+
+    craftRecipe Forge_Frying_Pan
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:2,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:20,
+        AutoLearnAll = Blacksmith:4;Cooking:1,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SheetMetal],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[CrudeChisel;MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.PanForged,
+        }
+    }
+
+    craftRecipe Forge_Roasting_Pan
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:2,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:4;Cooking:1,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SheetMetal],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.RoastingPan,
+        }
+    }
+
+}

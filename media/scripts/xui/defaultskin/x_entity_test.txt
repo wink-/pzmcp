@@ -1,0 +1,187 @@
+module Base
+{
+    xuiSkin default
+    {
+
+        /*
+            ENTITY UI
+        */
+
+        entity ES_WaterGenerator
+        {
+            DisplayName         = Water Pump,
+            Icon                = Item_WaterDrop,
+
+            /*
+            components
+            {
+                CraftGrid
+                {
+                    DisplayName             = Operating,
+                    Icon                    = Item_Note2,
+                }
+            }
+            */
+        }
+
+        entity ES_SteamBoiler
+        {
+            DisplayName         = Steam Boiler,
+            Icon                = Item_PropaneTank,
+
+            /*
+            components
+            {
+                CraftGrid
+                {
+                    DisplayName             = Operating,
+                    Icon                    = Item_Note2,
+                }
+            }
+            */
+        }
+
+        entity ES_SteamGenerator
+        {
+            DisplayName         = Steam Turbine,
+            Icon                = Item_WaterDrop,
+
+            /*
+            components
+            {
+                CraftGrid
+                {
+                    DisplayName             = Operating,
+                    Icon                    = Item_Note2,
+                }
+            }
+            */
+        }
+
+        entity ES_SteamCrafter
+        {
+            DisplayName         = Juice Maker,
+            Icon                = Item_Orange,
+
+            /*
+            components
+            {
+                CraftGrid
+                {
+                    DisplayName             = Spiffo's Technologies,
+                    Icon                    = Item_PlushSpiffo,
+                }
+            }
+            */
+        }
+
+        entity ES_BottleMachine
+        {
+            DisplayName         = Bottling Machine,
+            Icon                = Item_WaterBottle,
+
+            /*
+            components
+            {
+                CraftGrid
+                {
+                    DisplayName             = Spiffo's Technologies,
+                    Icon                    = Item_PlushSpiffo,
+                }
+            }
+            */
+        }
+
+        entity ES_PetrolGenerator
+        {
+            DisplayName         = Generator,
+            Icon                = Item_Petrol,
+
+            /*
+            components
+            {
+                CraftGrid
+                {
+                    DisplayName             = Operating,
+                    Icon                    = Item_Note2,
+                }
+            }
+            */
+        }
+
+        entity ES_MechanicalSaw
+        {
+            DisplayName         = Sawmill,
+            Icon                = Item_Logs,
+
+            /*
+            components
+            {
+                CraftGrid
+                {
+                    DisplayName             = Operating,
+                    Icon                    = Item_Note2,
+                }
+            }
+            */
+        }
+
+        entity ES_Decrafter
+        {
+            DisplayName         = CeroSec - FS-800,
+            Icon                = Item_CarBatteryCharger,
+
+            /*
+            components
+            {
+                CraftGrid
+                {
+                    DisplayName             = Fluid Separator,
+                    Icon                    = Item_WaterDrop,
+                }
+            }
+            */
+        }
+
+        entity ES_NuEntity
+        {
+            DisplayName         = Nu Entity,
+            Description         = Entity_Desc_Default,
+            BuildDescription    = Entity_BuildDesc_Default,
+        }
+
+        entity ES_EntityTestChannels
+        {
+            DisplayName         = Channels Test,
+            Description         = Entity_Desc_Default,
+            BuildDescription    = Entity_BuildDesc_Default,
+        }
+
+        entity ES_EntityTestSingle
+        {
+            LuaWindowClass      = ISEntityTabWindow,
+            DisplayName         = Test Single,
+            Description         = Entity_Desc_Default,
+            BuildDescription    = Entity_BuildDesc_Default,
+        }
+
+        entity ES_TestKiln
+        {
+            LuaWindowClass      = ISEntityTabWindow,
+            DisplayName         = Test Kiln,
+            Icon                = Item_CarBatteryCharger,
+
+            components
+            {
+                CraftLogic
+                {
+                    LuaPanelClass           = ISCraftFurnacePanel,
+                    DisplayName             = Kiln Furnace,
+                    Icon                    = Item_Note2,
+                }
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,131 @@
+module Base
+{
+
+    craftRecipe PressBarMold
+    {
+        time = 100,
+        timedAction = UseHandPress,
+        Tags = HandPress,
+        xpAward = Pottery:5,
+		category = Pottery,
+        inputs
+        {
+            item 1 [Base.Clay],
+            item 1 [Base.WoodenBarCastMold] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.ClayBarMoldUnfired,
+        }
+    }
+
+    craftRecipe PressClayBrick
+    {
+        time        = 50,
+        timedAction = UseHandPress,
+        Tags = HandPress,
+        xpAward = Pottery:5,
+		category = Pottery,
+        inputs
+        {
+            item 1 [Base.Clay],
+            item 1 [Base.WoodenBrickMold] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.ClayBrickUnfired,
+        }
+    }
+
+    craftRecipe PressClayShingle
+    {
+        time        = 50,
+        timedAction = UseHandPress,
+        Tags = HandPress,
+        xpAward = Pottery:5,
+		category = Pottery,
+        inputs
+        {
+            item 1 [Base.Clay],
+            item 1 [Base.WoodenShingleMold] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.ClayShingleUnfired,
+        }
+    }
+
+    craftRecipe PressClayTile
+    {
+        time        = 50,
+        timedAction = UseHandPress,
+        Tags = HandPress,
+        xpAward = Pottery:5,
+		category = Pottery,
+        inputs
+        {
+            item 1 [Base.Clay],
+            item 1 [Base.WoodenTileMold] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.ClayTileUnfired,
+        }
+    }
+
+
+    craftRecipe PressIngotMold
+    {
+        time = 100,
+        timedAction = UseHandPress,
+        Tags = HandPress,
+        xpAward = Pottery:5,
+		category = Pottery,
+        inputs
+        {
+            item 1 [Base.Clay],
+            item 1 [Base.WoodenIngotCastMold] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.ClayIngotMoldUnfired,
+        }
+    }
+
+
+    craftRecipe PressOil
+    {
+        timedAction = UseHandPress,
+        time = 100,
+	    Tags = Handpress,
+        category = Farming,
+        inputs
+        {
+            item 30 [Base.SeedPaste;Base.SeedPasteBowl],
+            item 1 [Base.OilPress] mode:keep ,
+            item 1 [Base.StoneBlock] mode:keep,
+            item 1 [Base.CheeseCloth] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.OilVegetable,
+        }
+    }
+
+    craftRecipe Press Blacksmith Anvil Mold
+    {
+        time        = 100,
+		category = Pottery,
+		xpAward = Pottery:20,
+		Tags = Handpress,
+        inputs
+        {
+            item 8 [Base.Clay],
+            item 1 [Base.WoodenBlacksmithAnvilMold] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.ClayBlacksmithAnvilMoldUnfired,
+        }
+    }
+}

@@ -1,0 +1,95 @@
+module Base
+{
+    fixing Fix Pistol
+    {
+       Require : Pistol,
+
+       Fixer : Pistol; Aiming=3,
+    }
+
+    fixing Fix Pistol2
+    {
+       Require : Pistol2,
+
+       Fixer : Pistol2; Aiming=3,
+    }
+
+    fixing Fix Pistol3
+    {
+       Require : Pistol3,
+
+       Fixer : Pistol3; Aiming=3,
+    }
+
+    fixing Fix Revolver
+    {
+       Require : Revolver,
+
+       Fixer : Revolver; Aiming=3,
+    }
+
+    fixing Fix Revolver_Long
+    {
+       Require : Revolver_Long,
+
+       Fixer : Revolver_Long; Aiming=3,
+    }
+
+    fixing Fix Revolver_Short
+    {
+       Require : Revolver_Short,
+
+       Fixer : Revolver_Short; Aiming=3,
+    }
+
+    fixing Fix Shotgun
+    {
+       Require : Shotgun,
+
+       Fixer : Shotgun; Aiming=2,
+       Fixer : ShotgunSawnoff; Aiming=2,
+    }
+
+    fixing Fix DoubleBarrelShotgun
+    {
+       Require : DoubleBarrelShotgun,
+
+       Fixer : DoubleBarrelShotgun; Aiming=2,
+    }
+
+    fixing Fix ShotgunSawnoff
+    {
+       Require : ShotgunSawnoff,
+
+       Fixer : ShotgunSawnoff; Aiming=2,
+       Fixer : Shotgun; Aiming=2,
+    }
+
+    fixing Fix Hunting Rifle
+    {
+       Require : HuntingRifle,
+
+       Fixer : HuntingRifle; Aiming=4,
+    }
+
+    fixing Fix Varmint Rifle
+    {
+       Require : VarmintRifle,
+
+       Fixer : VarmintRifle; Aiming=4,
+    }
+
+    fixing Fix Assault Rifle
+    {
+       Require : AssaultRifle,
+
+       Fixer : AssaultRifle; Aiming=5,
+    }
+
+    fixing Fix AssaultRifle2
+    {
+       Require : AssaultRifle2,
+
+       Fixer : AssaultRifle2; Aiming=5,
+    }
+}

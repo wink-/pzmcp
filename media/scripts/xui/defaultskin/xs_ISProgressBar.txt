@@ -1,0 +1,43 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISProgressBar
+        {
+            background          = true,
+            backgroundColor     = C_Black,
+            borderColor         = C_Border,
+            progressColor       = C_ProgressGreen,
+            textColor           = C_Text,
+            textBackColor       = C_Black,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+            moveWithMouse       = false,
+            font                = UIFont.Small,
+            isVertical          = false,
+            doRenderTexture     = false,
+            horizontalTexture   = media/ui/Entity/bar_efficiency_horz.png,
+            verticalTexture     = media/ui/Entity/bar_efficiency_vert.png,
+            doTextBackdrop      = true,
+            padding             = 2,
+            /* optional: text = text, */
+        }
+
+        ISProgressBar S_ProgressBar_Craft
+        {
+            progressColor       = C_ProgressYellow,
+            width               = 150,
+            isAutoFillX         = true,
+        }
+
+        ISProgressBar S_ProgressBar_Furnace
+        {
+            progressColor       = C_ProgressYellow,
+            width               = 40,
+            height              = 10,
+            isAutoFillX         = false,
+        }
+    }
+}

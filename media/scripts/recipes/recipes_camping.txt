@@ -1,0 +1,43 @@
+module Base
+{
+/* 
+    recipe Make Campfire Kit
+    {
+        Plank = 3,
+        RippedSheets/RippedSheetsDirty/Sheet/Book/Magazine/Newspaper/Twigs,
+
+        Result:CampfireKit,
+        Time:50.0,
+        Category:Survivalist,
+    }
+
+   recipe Make Campfire Kit
+    {
+        Log = 2,
+        RippedSheets/RippedSheetsDirty/Sheet/Book/Magazine/Newspaper/Twigs,
+
+        Result:CampfireKit,
+        Time:50.0,
+        Category:Survivalist,
+    }*/
+  
+  
+	craftRecipe MakeTentKit
+	{
+        timedAction = Making,
+		Time = 120,
+		Tags = InHandCraft;Survivalist,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.Tarp],
+			item 4 tags[TentPeg],
+			item 2 [Base.WoodenStick2;Base.TreeBranch2],
+			item 1 [Base.LongStick;Base.Sapling],
+		}
+		outputs
+		{
+			item 1 Base.ImprovisedTentKit,
+		}
+	}
+}

@@ -1,0 +1,54 @@
+module Base
+{
+	sound VehicleEngineModernCar
+	{
+		category = Vehicle,
+		master = VehicleEngine,
+		clip
+		{
+			event = Vehicle/Sport/Engine,
+		}
+	}
+	
+	sound VehicleIgnitionFailModernCar
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/IgnitionFail,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleEngineModernCar02
+	{
+		category = Vehicle,
+		master = VehicleEngine,
+		clip
+		{
+			event = Vehicle/Sport/Engine,
+		}
+	}
+
+	sound VehicleIgnitionFailModernCar02
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/IgnitionFail,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleWheelTurnModernCar
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/WheelTurn,
+		}
+	}
+
+}

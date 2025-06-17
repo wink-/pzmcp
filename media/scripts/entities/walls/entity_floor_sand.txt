@@ -1,0 +1,49 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_SandFloor
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Sand Floor,
+			Icon		= Build_FloorSand,
+		}
+	}
+
+    entity SandFloor
+    {
+        component UiConfig
+                {
+                    xuiSkin         = default,
+                    entityStyle     = ES_SandFloor,
+                    uiEnabled       = false,
+                }
+
+        component SpriteConfig
+        {
+		    isThumpable     = false,
+		    OnIsValid = BuildRecipeCode.floor.OnIsValid,
+		    OnCreate = BuildRecipeCode.floor.OnCreate,
+			
+            face Single
+            {
+                layer
+                {
+                    row = blends_natural_01_5,
+                }
+            }
+        }
+		
+	component CraftRecipe
+        {
+            timedAction   = EmptyBag,
+            time          = 100,
+            category      = Outdoors,
+            ToolTip       = Tooltip_craft_sandFloorDesc,
+            inputs
+            {
+                item 1 [Base.Sandbag] flags[Prop1],
+            }
+        }
+    }
+}

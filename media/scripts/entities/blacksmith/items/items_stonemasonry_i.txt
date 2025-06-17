@@ -1,0 +1,55 @@
+module Base
+{
+
+
+	item StoneAnvil
+	{
+	    DisplayCategory     = Tool,
+		Weight	=	40,
+		Type = Normal,
+		Icon = Anvil_Stone,
+		DisplayName	=	Stone Anvil,
+		WorldStaticModel = StoneAnvil,
+		/*Type	=	Moveable,
+		WorldObjectSprite = crafted_01_19,*/
+		Tags = HeavyItem,
+		RequiresEquippedBothHands = TRUE,
+		Tooltip = Tooltip_item_StoneAnvil,
+	}
+
+	item StoneChisel
+	{
+		DisplayName = Stone Chisel,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 1,
+		Icon = StoneChisel,
+		StaticModel = StoneChisel,
+		WorldStaticModel = StoneChisel,
+		Tags = CrudeChisel;Crude;CarpentryChisel,
+        ResearchableRecipes = Forge_Masons_Chisel;Forge_Carpentry_Chisel;MakeStoneChisel;MakeStoneDrill,
+	}
+
+	item StoneWheel
+	{
+	    DisplayCategory     = Material,
+		Weight	=	20,
+		Type = Normal,
+		Icon = StoneWheel,
+		DisplayName	=	Stone Wheel,
+		WorldStaticModel = StoneWheel_Big,
+		RequiresEquippedBothHands = TRUE,
+	}
+
+	item StoneWheelSmall
+	{
+	    DisplayCategory     = Material,
+		Weight	=	15,
+		Type = Normal,
+		Icon = StoneWheelSmall,
+		DisplayName	=	Small Stone Wheel,
+		WorldStaticModel = StoneWheel_Small,
+		RequiresEquippedBothHands = TRUE,
+	}
+
+}

@@ -1,0 +1,72 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_SkullPoleSheep
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Sheep Skull Pole,
+			Icon		= Build_Stake_SkullSheep,
+		}
+	}
+
+    entity SkullPoleSheep
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_SkullPoleSheep,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 50,
+        	skillBaseHealth = 10,
+			
+            face W
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_77,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_78,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_79,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_76,
+                }
+            }
+        }
+		
+		component CraftRecipe
+        {
+		    timedAction   = BuildWallNoTool,
+            time          = 150,
+            category      = Miscellaneous,
+		    ToolTip       = Tooltip_craft_skullPoleDesc,
+
+            inputs
+            {
+                item 1 [Base.LongStick;Base.Sapling],
+                item 1 [Base.SheetRope],
+                item 1 [Base.Sheep_Skull],
+            }
+        }
+    }
+}

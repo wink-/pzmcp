@@ -1,0 +1,38 @@
+module Base
+{
+    sound AnimalVoiceChickIdle
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chick/Voice/Idle,
+        }
+    }
+
+    sound AnimalVoiceChickStressed
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chick/Voice/Stressed,
+        }
+    }
+
+    sound AnimalVoiceChickDeath
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chick/Voice/Death,
+        }
+    }
+
+    sound AnimalVoiceChickPain
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Chick/Voice/Pain,
+        }
+    }
+}

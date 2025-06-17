@@ -1,0 +1,183 @@
+module Base
+{
+
+	craftRecipe KnitBalaclavaFace
+	{
+        timedAction = Knitting,
+        Time = 200,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+        xpAward = Tailoring:5,
+        needTobeLearn = true,
+		inputs
+		{
+			item 1 tags[KnittingNeedles] mode:keep,
+            item 1 [Yarn] flags[InheritColor],
+		}
+		outputs
+		{
+			item 1 Base.Hat_BalaclavaFace,
+		}
+	}
+
+	craftRecipe KnitBalaclavaFull
+	{
+        timedAction = Knitting,
+        Time = 200,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+        xpAward = Tailoring:5,
+        needTobeLearn = true,
+		inputs
+		{
+			item 1 tags[KnittingNeedles] mode:keep,
+            item 1 [Yarn] flags[InheritColor],
+		}
+		outputs
+		{
+			item 1 Base.Hat_BalaclavaFull,
+		}
+	}
+
+	craftRecipe KnitBeany
+	{
+        timedAction = Knitting,
+        Time = 200,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+        xpAward = Tailoring:5,
+        needTobeLearn = true,
+		inputs
+		{
+			item 1 tags[KnittingNeedles] mode:keep,
+            item 1 [Yarn] flags[InheritColor],
+		}
+		outputs
+		{
+			item 1 Base.Hat_Beany,
+		}
+	}
+
+	craftRecipe KnitDoily
+	{
+        timedAction = Knitting,
+        Time = 200,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+        xpAward = Tailoring:5,
+        needTobeLearn = true,
+		inputs
+		{
+			item 1 tags[KnittingNeedles] mode:keep,
+            item 1 [Yarn] flags[InheritColor],
+		}
+		outputs
+		{
+			item 1 Base.Doily,
+		}
+	}
+
+	craftRecipe KnitLegwarmers
+	{
+        timedAction = Knitting,
+        Time = 200,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+        xpAward = Tailoring:5,
+        needTobeLearn = true,
+		inputs
+		{
+			item 1 tags[KnittingNeedles] mode:keep,
+            item 1 [Yarn] flags[InheritColor],
+		}
+		outputs
+		{
+			item 1 Base.Socks_LegWarmers,
+		}
+	}
+
+	craftRecipe KnitScarf
+	{
+        timedAction = Knitting,
+        Time = 200,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+        xpAward = Tailoring:5,
+        needTobeLearn = true,
+		inputs
+		{
+			item 1 tags[KnittingNeedles] mode:keep,
+            item 1 [Yarn] flags[InheritColor],
+		}
+		outputs
+		{
+			item 1 Base.Scarf_White,
+		}
+	}
+
+	craftRecipe KnitSocks
+	{
+        timedAction = Knitting,
+        Time = 200,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+        xpAward = Tailoring:5,
+        needTobeLearn = true,
+		inputs
+		{
+			item 1 tags[KnittingNeedles] mode:keep,
+            item 1 [Yarn] flags[InheritColor],
+		}
+		outputs
+		{
+			item 1 Base.Socks_Heavy,
+		}
+	}
+
+	craftRecipe KnitSweaterVest
+	{
+        timedAction = Knitting,
+        Time = 200,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+        xpAward = Tailoring:5,
+        needTobeLearn = true,
+		inputs
+		{
+			item 1 tags[KnittingNeedles] mode:keep,
+            item 1 [Yarn] flags[InheritColor],
+		}
+		outputs
+		{
+			item 1 Base.Jumper_TankTopTINT,
+		}
+	}
+
+	craftRecipe KnitWoolyHat
+	{
+        timedAction = Knitting,
+        Time = 200,
+        Tags = InHandCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+        xpAward = Tailoring:5,
+        needTobeLearn = true,
+		inputs
+		{
+			item 1 tags[KnittingNeedles] mode:keep,
+            item 1 [Yarn] flags[InheritColor],
+		}
+		outputs
+		{
+			item 1 Base.Hat_WoolyHat,
+		}
+	}
+}

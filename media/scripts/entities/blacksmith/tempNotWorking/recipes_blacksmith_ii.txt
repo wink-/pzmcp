@@ -1,0 +1,233 @@
+module Base
+{
+    craftRecipe Forge_Steel_Sheet
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:5,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:20,
+        AutoLearnAll = Blacksmith:10,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelBlock],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SheetMetal,
+            item 5 Base.SteelPiece,
+        }
+    }
+
+    craftRecipe Forge_Small_Steel_Sheet
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:5,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:10,
+        AutoLearnAll = Blacksmith:10,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelChunk;Base.SmallArmorPlate],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SmallSheetMetal,
+        }
+    }
+
+    craftRecipe Split_Steel_Sheet_Into_Small_Sheets
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:5,
+        timedAction = Making,
+        xpAward = Blacksmith:10,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.SheetMetal],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 4 Base.SmallSheetMetal,
+        }
+    }
+
+    craftRecipe Forge_Steel_Bar_Quarter_From_Steel_Chunk
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelChunk],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SteelBarQuarter,
+        }
+    }
+
+    craftRecipe Forge_Steel_Bar_From_Steel_Block
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelBlock],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SteelBar,
+        }
+    }
+
+    craftRecipe Forge_Steel_Rod_From_Steel_Bar
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        tags = AdvancedForge,
+        category = Blacksmithing,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelBar],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.MetalBar,
+        }
+    }
+/*
+       craftRecipe Make_Steel_Fragments_From_Steel_Chunk
+       {
+        time        = 10,
+            SkillRequired = Blacksmith:1,
+             timedAction = Making,
+            inputs
+           {
+                /*item 1 [Base.Bellows] mode:keep,*/
+                item 1 tags[Charcoal],
+                item 1 [Base.SteelChunk],
+                item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+                item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+                item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+                /* energy 130 [Thermal] mode:keep,*/
+           }
+           outputs
+           {
+               item 0.11 Base.SteelFragments,
+           }
+       }
+
+       craftRecipe Make_Steel_Fragments_From_Steel_Piece
+       {
+        time        = 10,
+           SkillRequired = Blacksmith:1,
+             timedAction = Making,
+            inputs
+           {
+                item 1 [Base.SteelPiece],
+                item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+                item 1 tags[MetalworkingChisel] mode:keep flags[Prop2],
+                /* energy 130 [Thermal] mode:keep,*/
+           }
+           outputs
+           {
+               item 0.02 Base.SteelFragments,
+           }
+       }
+*/
+
+/*
+    craftRecipe Heat Treat Bench Anvil
+     {
+        time        = 10,
+        /* needTobeLearn = true,*/
+         inputs
+         {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 10 tags[Charcoal],
+            item 1 [Base.BenchAnvilUntreated],
+            replace 1 Base.BenchAnvil,
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+         }
+     }
+
+
+    craftRecipe Heat Treat Blacksmith Anvil
+     {
+        time        = 10,
+        /* needTobeLearn = true,*/
+         inputs
+         {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 10 tags[Charcoal],
+            item 1 [Base.BlacksmithAnvilUntreated],
+            replace 1 Base.BlacksmithAnvil,
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+         }
+     }
+
+    craftRecipe Heat Treat Block Anvil
+     {
+        time        = 10,
+        /* needTobeLearn = true,*/
+         inputs
+         {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 10 tags[Charcoal],
+            item 1 [Base.BlockAnvilUntreated],
+            replace 1 Base.BlockAnvil,
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+         }
+     }
+*/
+}

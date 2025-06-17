@@ -1,0 +1,57 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISImage
+        {
+            /*texture             = media/inventory/Question_On.png,*/
+            textureOverride     = nil,
+            backgroundColor     = C_White,
+            borderColor         = C_BorderLight,
+            mouseover           = false,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+            font                = UIFont.Small,
+            autoScale           = false,
+        }
+
+        ISImage S_Image_EnergyIcon
+        {
+            width               = 24,
+            height              = 24,
+            autoScale           = true,
+        }
+
+        ISImage S_Image_EntityHeaderIcon
+        {
+            width               = 32,
+            height              = 32,
+            autoScale           = true,
+        }
+
+        ISImage S_Image_ComponentHeaderIcon
+        {
+            width               = 24,
+            height              = 24,
+            autoScale           = true,
+        }
+
+        ISImage S_Image_HandcraftWindowHeaderIcon
+        {
+            width               = 48,
+            height              = 48,
+            autoScale           = true,
+            texture             = media/ui/Carpentry_On.png,
+        }
+        
+        ISImage S_Image_BuildWindowHeaderIcon
+        {
+            width               = 48,
+            height              = 48,
+            autoScale           = true,
+            texture             = media/ui/Build_Tool.png,
+        }
+    }
+}

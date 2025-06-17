@@ -1,0 +1,65 @@
+module Base
+{
+	sound MetalDoorBlocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalDoor/IsBlocked,
+		}
+	}
+
+	sound MetalDoorBreak
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalDoor/Break,
+		}
+	}
+
+	sound MetalDoorClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalDoor/Close,
+		}
+	}
+
+	sound MetalDoorLock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalDoor/Lock,
+		}
+	}
+
+	sound MetalDoorLocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalDoor/IsLocked,
+		}
+	}
+
+	sound MetalDoorOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalDoor/Open,
+		}
+	}
+
+	sound MetalDoorUnlock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalDoor/Unlock,
+		}
+	}
+}

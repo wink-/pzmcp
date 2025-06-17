@@ -1,0 +1,170 @@
+module Base
+{
+
+    craftRecipe Make_Stones_from_Large_Stone
+    {
+        time        = 300,
+        tags = InHandCraft;CanBeDoneFromFloor,
+        category    = Masonry,
+        xpAward       = Masonry:10,
+        timedAction = MakingHammer_Surface,
+        inputs
+        {
+            item 1 tags[ClubHammer;Sledgehammer;StoneMaul;PickAxe] mode:keep flags[MayDegradeLight;Prop1],
+            item 1 [Base.LargeStone],
+        }
+        outputs
+        {
+            item 10 Base.Stone2,
+        }
+    }
+
+    craftRecipe Make_Stone_Block_from_Stone
+    {
+        time        = 100,
+        tags = AnySurfaceCraft,
+        category    = Masonry,
+        xpAward       = Masonry:20,
+        SkillRequired = Masonry:1,
+        timedAction = MakingHammer_Surface,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[MayDegradeLight;Prop1],
+            item 1 tags[CrudeChisel;MasonsChisel] mode:keep flags[MayDegradeLight;Prop2],
+            item 1 tags[Stone],
+
+        }
+        outputs
+        {
+            item 1 Base.StoneBlock,
+        }
+    }
+
+    craftRecipe Make_Small_Stone_Wheel
+    {
+        time        = 300,
+        tags = AnySurfaceCraft;CanBeDoneFromFloor,
+        category    = Masonry,
+        xpAward       = Masonry:30,
+        SkillRequired = Masonry:2,
+        timedAction = MakingHammer_Surface,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[MayDegradeLight;Prop1],
+            item 1 tags[CrudeChisel;MasonsChisel] mode:keep flags[MayDegradeLight;Prop2],
+            item 1 [Base.LargeStone],
+        }
+        outputs
+        {
+            item 2 Base.StoneWheelSmall,
+        }
+    }
+
+    craftRecipe Make_Stone_Wheel
+    {
+        time        = 600,
+        tags = AnySurfaceCraft;CanBeDoneFromFloor,
+        category    = Masonry,
+        xpAward       = Masonry:30,
+        SkillRequired = Masonry:2,
+        timedAction = MakingHammer_Surface,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[MayDegradeLight;Prop1],
+            item 1 tags[CrudeChisel;MasonsChisel] mode:keep flags[MayDegradeLight;Prop2],
+            item 1 [Base.LargeStone],
+
+        }
+        outputs
+        {
+            item 1 Base.StoneWheel,
+        }
+    }
+
+    craftRecipe Make_Stone_Anvil
+    {
+        time        = 600,
+        tags = AnySurfaceCraft;CanBeDoneFromFloor,
+        category    = Masonry,
+        xpAward       = Masonry:30,
+        SkillRequired = Masonry:2,
+        timedAction = MakingHammer_Surface,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[MayDegradeLight;Prop1],
+            item 1 tags[CrudeChisel;MasonsChisel] mode:keep flags[MayDegradeLight;Prop2],
+            item 1 [Base.LargeStone],
+
+        }
+        outputs
+        {
+            item 1 Base.StoneAnvil,
+        }
+    }
+
+    craftRecipe MakeLargeStoneAxeHead2
+    {
+        time        = 300,
+        needTobeLearn = false,
+        SkillRequired = Masonry:6,
+		xpAward = Masonry:60,
+        tags = AnySurfaceCraft;CanBeDoneFromFloor,
+        category    = Masonry,
+        timedAction = MakingHammer_Surface,
+		OnCreate = Recipe.OnCreate.MinorMasonry,
+        inputs
+        {
+            item 1 [Base.FlatStone] flags[Prop2],
+            item 1 tags[ClubHammer] mode:keep flags[MayDegradeLight;Prop1],
+            item 1 tags[MasonsChisel] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.StoneAxeHead,
+        }
+    }
+
+    craftRecipe MakeStoneMaulHead2
+    {
+        time        = 300,
+        needTobeLearn = false,
+        SkillRequired = Masonry:7,
+		xpAward = Masonry:70,
+        tags = AnySurfaceCraft;CanBeDoneFromFloor,
+        category    = Masonry,
+        timedAction = MakingHammer_Surface,
+		OnCreate = Recipe.OnCreate.MinorMasonry,
+        inputs
+        {
+            item 1 [Base.FlatStone] flags[Prop2],
+            item 1 tags[ClubHammer] mode:keep flags[MayDegradeLight;Prop1],
+            item 1 tags[MasonsChisel] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.StoneMaulHead,
+        }
+    }
+
+    craftRecipe MakeStoneMaceHead
+    {
+        time        = 300,
+        needTobeLearn = false,
+        SkillRequired = Masonry:8,
+		xpAward = Masonry:80,
+        tags = AnySurfaceCraft;CanBeDoneFromFloor,
+        category    = Masonry,
+        timedAction = MakingHammer_Surface,
+		OnCreate = Recipe.OnCreate.MinorMasonry,
+        inputs
+        {
+            item 1 [Base.FlatStone] flags[Prop2],
+            item 1 tags[ClubHammer] mode:keep flags[MayDegradeLight;Prop1],
+            item 1 tags[MasonsChisel] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.StoneMaceHead,
+        }
+    }
+}

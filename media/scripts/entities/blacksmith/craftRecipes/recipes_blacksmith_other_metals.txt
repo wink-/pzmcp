@@ -1,0 +1,727 @@
+module Base
+{
+
+    craftRecipe Forge_Small_Copper_Sheet
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:0,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 1 [Base.CopperScrap;10:Base.ElectricWire],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs;MetalworkingPliers] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.SmallCopperSheet,
+        }
+    }
+
+    craftRecipe Forge_Copper_Sheet
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:0,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 4 [Base.CopperScrap;Base.SmallCopperSheet],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs;MetalworkingPliers] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.CopperSheet,
+        }
+    }
+
+    craftRecipe Forge_Saucepan
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:3,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:5;Cooking:2,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.CopperSheet],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SaucepanCopper,
+        }
+    }
+
+    craftRecipe Forge_Kettle
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:3,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:5;Cooking:2,
+        tags = AdvancedForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.CopperSheet],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            item 1 [Base.SmallHandle],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.Kettle_Copper,
+        }
+    }
+
+    craftRecipe Forge_Cup
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:3,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:5,
+        tags = Forge,
+        category = Cookware,
+        inputs
+        {
+            /* item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.GoldSheet;Base.SilverSheet;Base.SmallSheetMetal;Base.SmallCopperSheet] mappers[metalMapper],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 mapper:metalMapper,
+        }
+		itemMapper metalMapper
+		{
+            Base.CopperCup = Base.SmallCopperSheet,
+            Base.MetalCup = Base.SmallSheetMetal,
+            Base.GoldCup = Base.GoldSheet,
+            Base.SilverCup = Base.SilverSheet,
+
+			default = SilverCup,
+		}
+    }
+
+    craftRecipe Forge_Goblet
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:5,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:50,
+        AutoLearnAll = Blacksmith:7,
+        tags = Forge,
+        category = Cookware,
+        inputs
+        {
+            /* item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.GoldSheet;Base.SilverSheet] mappers[metalMapper],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 mapper:metalMapper,
+        }
+		itemMapper metalMapper
+		{
+            Base.Goblet_Gold = Base.GoldSheet,
+            Base.Goblet_Silver = Base.SilverSheet,
+
+			default = Goblet_Silver,
+		}
+    }
+/*
+    craftRecipe Forge_Precious_Metal_Sheet
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:1,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 10 [Base.GoldScrap;Base.SilverScrap] mappers[metalMapper],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 mapper:metalMapper,
+        }
+		itemMapper metalMapper
+		{
+            Base.GoldSheet = Base.GoldScrap,
+            Base.SilverSheet = Base.SilverScrap,
+
+			default = Base.SilverSheet,
+		}
+    }*/
+
+    craftRecipe Forge_Gold_Sheet
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:1,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 10 [Base.GoldCoin;Base.GoldScrap],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.GoldSheet,
+        }
+    }
+
+    craftRecipe Forge_Silver_Sheet
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:1,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 10 [Base.SilverCoin;Base.SilverScrap],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.SilverSheet,
+        }
+    }
+
+    craftRecipe Forge_Silver_Sheets
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:1,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 1 [Base.SmallSilverBar],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 2 Base.SilverSheet,
+        }
+    }
+
+    craftRecipe Forge_Gold_Sheets
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:1,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 1 [Base.SmallGoldBar],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 4 Base.GoldSheet,
+        }
+    }
+
+    craftRecipe Split_Silver_Bar
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:0,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 1 [Base.SilverBar],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 8 Base.SmallSilverBar,
+        }
+    }
+
+    craftRecipe Split_Gold_Bar
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:0,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 1 [Base.GoldBar],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 8 Base.SmallGoldBar,
+        }
+    }
+
+    craftRecipe Scrap_Small_Copper
+    {
+		Time = 100,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+        inputs
+        {
+            item 1 tags[ScrapSmallCopper] flags[Prop2;AllowDestroyedItem] mode:destroy,
+			item 1 tags[MetalSaw;BoltCutters;SmallSaw;SheetMetalSnips;CrudeSaw] mode:keep flags[Prop1;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.CopperScrap,
+        }
+    }
+
+    craftRecipe Scrap_Large_Copper
+    {
+		Time = 100,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+        inputs
+        {
+            item 1 tags[ScrapLargeCopper] flags[Prop2;AllowDestroyedItem] mode:destroy,
+			item 1 tags[MetalSaw;BoltCutters;SmallSaw;SheetMetalSnips;CrudeSaw] mode:keep flags[Prop1;MayDegradeLight],
+        }
+        outputs
+        {
+            item 4 Base.CopperScrap,
+        }
+    }
+
+	craftRecipe SawCopperSheetIntoSmallSheets
+	{
+		Time = 100,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.CopperSheet] flags[Prop2],
+			item 1 tags[MetalSaw] mode:keep flags[Prop1;MayDegradeLight],
+		}
+		outputs
+		{
+			item 4 Base.SmallCopperSheet,
+		}
+	}
+    craftRecipe Forge_Precious_Metal_Spoons
+    {
+        time        = 100,
+        SkillRequired = Blacksmith:2,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:35,
+        AutoLearnAll = Blacksmith:4,
+        tags = Forge,
+        category = Cookware,
+        MetaRecipe = Forge_Fine_Spoons,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 1 [Base.GoldSheet;Base.SilverSheet] mappers[metalMapper],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 2 mapper:metalMapper,
+        }
+		itemMapper metalMapper
+		{
+            Base.Spoon_Gold = Base.GoldSheet,
+            Base.Spoon_Silver = Base.SilverSheet,
+
+			default = Base.Spoon_Gold,
+		}
+    }
+
+    craftRecipe Forge_Precious_Metal_Butter_Knives
+    {
+        time        = 100,
+        SkillRequired = Blacksmith:2,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:35,
+        AutoLearnAll = Blacksmith:4,
+        tags = Forge,
+        category = Cookware,
+        MetaRecipe = Forge_Fine_Butter_Knives,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 1 [Base.GoldSheet;Base.SilverSheet] mappers[metalMapper],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+            item 2 mapper:metalMapper,
+        }
+		itemMapper metalMapper
+		{
+            Base.ButterKnife_Gold = Base.GoldSheet,
+            Base.ButterKnife_Silver = Base.SilverSheet,
+
+			default = Base.ButterKnife_Gold,
+		}
+    }
+
+    craftRecipe Forge_Precious_Metal_Forks
+    {
+        time        = 100,
+        SkillRequired = Blacksmith:3,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        AutoLearnAll = Blacksmith:5,
+        xpAward = Blacksmith:40,
+        tags = Forge,
+        category = Cookware,
+        MetaRecipe = Forge_Fine_Forks,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 1 [Base.GoldSheet;Base.SilverSheet] mappers[metalMapper],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers] mode:keep flags[Prop2],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 2 mapper:metalMapper,
+        }
+		itemMapper metalMapper
+		{
+            Base.Fork_Gold = Base.GoldSheet,
+            Base.Fork_Silver = Base.SilverSheet,
+
+			default = Base.Fork_Gold,
+		}
+    }
+
+    craftRecipe Scrap_Gold_Jewellery
+    {
+		Time = 200,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		OnCreate = Recipe.OnCreate.ScrapJewellery,
+        inputs
+        {
+            item 20 tags[TinyGoldScrap] flags[Prop2;AllowDestroyedItem],
+			item 1 tags[SmallSaw;Pliers;MetalworkingPliers;LightMetalSnips] mode:keep flags[Prop1;MayDegradeVeryLight],
+        }
+        outputs
+        {
+            item 1 Base.GoldScrap,
+        }
+    }
+
+    craftRecipe Scrap_Silver_Jewellery
+    {
+		Time = 200,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		OnCreate = Recipe.OnCreate.ScrapJewellery,
+        inputs
+        {
+            item 20 tags[TinySilverScrap] flags[Prop2;AllowDestroyedItem],
+			item 1 tags[SmallSaw;Pliers;MetalworkingPliers;LightMetalSnips] mode:keep flags[Prop1;MayDegradeVeryLight],
+        }
+        outputs
+        {
+            item 1 Base.SilverScrap,
+        }
+    }
+
+    craftRecipe Scrap_Gold_Object
+    {
+		Time = 100,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+        inputs
+        {
+            item 1 tags[GoldScrap] flags[Prop2;AllowDestroyedItem] mode:destroy,
+			item 1 tags[MetalSaw;BoltCutters;SmallSaw;SheetMetalSnips;MetalworkingPliers] mode:keep flags[Prop1;MayDegradeVeryLight],
+        }
+        outputs
+        {
+            item 10 Base.GoldScrap,
+        }
+    }
+
+    craftRecipe Scrap_Small_Gold_Object
+    {
+		Time = 100,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+        inputs
+        {
+            item 1 tags[SmallGoldScrap] flags[Prop2;AllowDestroyedItem] mode:destroy,
+			item 1 tags[MetalSaw;BoltCutters;SmallSaw;SheetMetalSnips;MetalworkingPliers] mode:keep flags[Prop1;MayDegradeVeryLight],
+        }
+        outputs
+        {
+            item 5 Base.GoldScrap,
+        }
+    }
+
+    craftRecipe Scrap_Smaller_Gold_Object
+    {
+		Time = 100,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+        inputs
+        {
+            item 1 tags[SmallerGoldScrap] flags[Prop2;AllowDestroyedItem] mode:destroy,
+			item 1 tags[MetalSaw;BoltCutters;SmallSaw;SheetMetalSnips;MetalworkingPliers] mode:keep flags[Prop1;MayDegradeVeryLight],
+        }
+        outputs
+        {
+            item 2 Base.GoldScrap,
+        }
+    }
+
+    craftRecipe Scrap_Smallest_Gold_Object
+    {
+		Time = 100,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+        inputs
+        {
+            item 1 tags[SmallestGoldScrap] flags[Prop2;AllowDestroyedItem] mode:destroy,
+			item 1 tags[MetalSaw;BoltCutters;SmallSaw;SheetMetalSnips;MetalworkingPliers] mode:keep flags[Prop1;MayDegradeVeryLight],
+        }
+        outputs
+        {
+            item 1 Base.GoldScrap,
+        }
+    }
+
+    craftRecipe Scrap_Silver_Object
+    {
+		Time = 100,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+        inputs
+        {
+            item 1 tags[SilverScrap] flags[Prop2;AllowDestroyedItem] mode:destroy,
+			item 1 tags[MetalSaw;BoltCutters;SmallSaw;SheetMetalSnips;MetalworkingPliers] mode:keep flags[Prop1;MayDegradeVeryLight],
+        }
+        outputs
+        {
+            item 10 Base.SilverScrap,
+        }
+    }
+
+    craftRecipe Scrap_Small_Silver_Object
+    {
+		Time = 100,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+        inputs
+        {
+            item 1 tags[SmallSilverScrap] flags[Prop2;AllowDestroyedItem] mode:destroy,
+			item 1 tags[MetalSaw;BoltCutters;SmallSaw;SheetMetalSnips;MetalworkingPliers] mode:keep flags[Prop1;MayDegradeVeryLight],
+        }
+        outputs
+        {
+            item 5 Base.SilverScrap,
+        }
+    }
+
+    craftRecipe Scrap_Smaller_Silver_Object
+    {
+		Time = 100,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+        inputs
+        {
+            item 1 tags[SmallerSilverScrap] flags[Prop2;AllowDestroyedItem] mode:destroy,
+			item 1 tags[MetalSaw;BoltCutters;SmallSaw;SheetMetalSnips;MetalworkingPliers] mode:keep flags[Prop1;MayDegradeVeryLight],
+        }
+        outputs
+        {
+            item 2 Base.SilverScrap,
+        }
+    }
+
+    craftRecipe Scrap_Smallest_Silver_Object
+    {
+		Time = 100,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+        inputs
+        {
+            item 1 tags[SmallestSilverScrap] flags[Prop2;AllowDestroyedItem] mode:destroy,
+			item 1 tags[MetalSaw;BoltCutters;SmallSaw;SheetMetalSnips;MetalworkingPliers] mode:keep flags[Prop1;MayDegradeVeryLight],
+        }
+        outputs
+        {
+            item 1 Base.SilverScrap,
+        }
+    }
+
+    craftRecipe ScrapAluminumLarge
+    {
+		Time = 200,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+        inputs
+        {
+            item 1 tags[ScrapAluminumLarge] flags[Prop2;AllowDestroyedItem],
+			item 1 tags[MetalSaw;BoltCutters;SmallSaw] mode:keep flags[Prop1;MayDegradeLight],
+        }
+        outputs
+        {
+            item 4 Base.AluminumScrap,
+        }
+    }
+
+    craftRecipe ScrapMetal
+    {
+		Time = 200,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.AluminumScrap;Base.IronScrap;Base.SteelScrap] flags[Prop2;AllowDestroyedItem] mappers[metalType],
+			item 1 tags[MetalSaw;BoltCutters;SmallSaw] mode:keep flags[Prop1;MayDegradeLight],
+        }
+        outputs
+        {
+         	item 5 mapper:metalType,
+        }
+        itemMapper metalType
+        {
+            Base.AluminumFragments = Base.AluminumScrap,
+            Base.IronPiece = Base.IronScrap,
+            Base.SteelPiece = Base.SteelScrap,
+
+            default = Base.SteelPiece,
+        }
+    }
+
+    craftRecipe Forge_KeyRing
+    {
+        time        = 100,
+        needTobeLearn = false,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:5,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 [Base.IronPiece;Base.SteelPiece;2:Base.GoldScrap;2:Base.SilverScrap] flags[IsExclusive] mappers[metalType],
+        }
+        outputs
+        {
+         	item 1 mapper:metalType,
+        }
+        itemMapper metalType
+        {
+            Base.KeyRing_Forged_Gold = Base.GoldScrap,
+            Base.KeyRing_Forged_Silver = Base.SilverScrap,
+
+            default = Base.KeyRing_Forged,
+        }
+    }
+
+    craftRecipe Forge_Coins
+    {
+        time        = 100,
+        SkillRequired = Blacksmith:1,
+        needTobeLearn = false,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:25,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 [Base.GoldSheet;Base.SilverSheet] mappers[metalType],
+        }
+        outputs
+        {
+         	item 10 mapper:metalType,
+        }
+        itemMapper metalType
+        {
+            Base.GoldCoin = Base.GoldSheet,
+            Base.SilverCoin = Base.SilverSheet,
+
+            default = Base.SilverCoin,
+        }
+    }
+
+}

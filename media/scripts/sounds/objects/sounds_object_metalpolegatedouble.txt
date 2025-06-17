@@ -1,0 +1,65 @@
+module Base
+{
+	sound MetalPoleGateDoubleBlocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalPoleGateDouble/IsBlocked,
+		}
+	}
+
+	sound MetalPoleGateDoubleBreak
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalPoleGateDouble/Break,
+		}
+	}
+
+	sound MetalPoleGateDoubleClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalPoleGateDouble/Close,
+		}
+	}
+
+	sound MetalPoleGateDoubleLock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalPoleGateDouble/Lock,
+		}
+	}
+
+	sound MetalPoleGateDoubleLocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalPoleGateDouble/IsLocked,
+		}
+	}
+
+	sound MetalPoleGateDoubleOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalPoleGateDouble/Open,
+		}
+	}
+
+	sound MetalPoleGateDoubleUnlock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalPoleGateDouble/Unlock,
+		}
+	}
+}

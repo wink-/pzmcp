@@ -1,0 +1,618 @@
+module Base
+{
+	/******* MEDICAL - BANDAGES *******/
+	
+	item AlcoholBandage
+	{
+		DisplayName = Bandage - Sterilized,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Bandage,
+		Alcoholic = TRUE,
+		AlwaysWelcomeGift = TRUE,
+		BandagePower = 4,
+		CanBandage = TRUE,
+		Count = 1,
+		Medical = TRUE,
+		ReplaceOnUse = BandageDirty,
+		Tooltip = Tooltip_AlcoholBandage,
+		WorldStaticModel = Bandage,
+		Tags = NoPour,
+	}
+	
+	item AlcoholRippedSheets
+	{
+		DisplayName = Rag - Sterilized,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Rag,
+		Alcoholic = TRUE,
+		AlwaysWelcomeGift = TRUE,
+		BandagePower = 2,
+		CanBandage = TRUE,
+		ReplaceOnUse = RippedSheetsDirty,
+		Tooltip = Tooltip_SterilizedRag,
+		WorldStaticModel = RippedSheets,
+		Tags = NoPour,
+	}
+	
+	item Bandage
+	{
+		DisplayName = Bandage,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Bandage,
+		AlwaysWelcomeGift = TRUE,
+		BandagePower = 4,
+		CanBandage = TRUE,
+		Count = 1,
+		Medical = TRUE,
+		ReplaceOnUse = BandageDirty,
+		Tooltip = Tooltip_UseOnHealthPanel,
+		WorldStaticModel = Bandage,
+		Tags = IsFireFuel;IsFireTinder;NoPour,
+		FireFuelRatio = 0.25,
+	}
+
+	item BandageBox
+	{
+		DisplayName = Box of Bandages,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 1,
+        Icon	=	GenericMedicalParcel2,
+		Medical = TRUE,
+		WorldStaticModel = MedicalParcel_Green,
+		Tags = IgnoreZombieDensity;IsFireFuel,
+		FireFuelRatio = 0.25,
+	}
+
+	item BandageDirty
+	{
+		DisplayName = Bandage (Dirty),
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = BandageDirty,
+		AlwaysWelcomeGift = TRUE,
+		BandagePower = 0.5,
+		CanBandage = TRUE,
+		Count = 1,
+		Medical = TRUE,
+		WorldStaticModel = BandageDirty,
+		ItemAfterCleaning = Base.Bandage,
+		Tags = IsFireFuel;IsFireTinder;CanBeWashed,
+		FireFuelRatio = 0.25,
+	}
+	
+	item Bandaid
+	{
+		DisplayName = Bandages - Adhesive,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.05,
+		Icon = Bandaid,
+		BandagePower = 1.5,
+		CanBandage = TRUE,
+		Medical = TRUE,
+		Tooltip = Tooltip_UseOnHealthPanel,
+		WorldStaticModel = BandAid,
+		Tags = FitsWallet,
+	}
+
+	item AdhesiveBandageBox
+	{
+		DisplayName = Box of Adhesive Bandages,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 1,
+        Icon	=	GenericMedicalParcel2,
+		Medical = TRUE,
+		WorldStaticModel = MedicalParcel_Green,
+	}
+	
+	/******* MEDICAL - PILLS *******/
+	
+	item Antibiotics
+	{
+		DisplayName = Antibiotics,
+		DisplayCategory = FirstAid,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Antibiotics,
+		CantBeFrozen = TRUE,
+		CustomContextMenu = Take,
+		Medical = TRUE,
+		ReduceInfectionPower = 50,
+		Tooltip = Tooltip_Antibiotics,
+		WorldStaticModel = Antibiotics,
+	}
+	
+	item AntibioticsBox
+	{
+		DisplayName = Box of Antibiotics,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 1,
+        Icon	=	GenericMedicalParcel1,
+		Medical = TRUE,
+		WorldStaticModel = MedicalParcel_Red,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item Pills
+	{
+		DisplayName = Painkillers,
+		DisplayCategory = FirstAid,
+		Type = Drainable,
+		Weight = 0.2,
+		Icon = PillsPainkiller,
+		Medical = TRUE,
+		Tooltip = Tooltip_Painkillers,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		StaticModel = PillBottle,
+		WorldStaticModel = PainKillers_Ground,
+		Tags = Pills,
+	}
+
+	item PillsAntiDep
+	{
+		DisplayName = Antidepressants,
+		DisplayCategory = FirstAid,
+		Type = Drainable,
+		Weight = 0.2,
+		Icon = PillsAntidepressant,
+		Medical = TRUE,
+		Tooltip = Tooltip_PillsAntidepressant,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		StaticModel = PillBottle,
+		WorldStaticModel = PillBottleGround,
+		Tags = Pills,
+	}
+
+	item PillsBeta
+	{
+		DisplayName = Beta Blockers,
+		DisplayCategory = FirstAid,
+		Type = Drainable,
+		Weight = 0.2,
+		Icon = PillsBetablocker,
+		Medical = TRUE,
+		Tooltip = Tooltip_PillsBetablocker,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		StaticModel = PillBottle,
+		WorldStaticModel = PillBottleGround,
+		Tags = Pills,
+	}
+
+	item PillsSleepingTablets
+	{
+		DisplayName = Sleeping Pills,
+		DisplayCategory = FirstAid,
+		Type = Drainable,
+		Weight = 0.2,
+		Icon = PillsSleeping,
+		Medical = TRUE,
+		Tooltip = Tooltip_PillsSleeping,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		StaticModel = PillBottle,
+		WorldStaticModel = SleepingTablets_Ground,
+		Tags = Pills,
+	}
+	
+	item PillsVitamins
+	{
+		DisplayName = Caffeine Pills,
+		DisplayCategory = FirstAid,
+		Type = Drainable,
+		Weight = 0.2,
+		Icon = PillsCaffeine,
+		Medical = TRUE,
+		Tooltip = Tooltip_Vitamins,
+		/*UseDelta = 0.1,*/
+		UseDelta = 0.2,
+		UseWhileEquipped = FALSE,
+		/*FatigueChange = -2,*/
+		FatigueChange = -4,
+		StressChange = 1,
+		/*StaticModel = PillBottle,
+		WorldStaticModel = Vitamins_Ground,*/
+		StaticModel = CaffeinePills,
+		WorldStaticModel = CaffeinePills,
+		Tags = Pills,
+	}
+	
+	/******* MEDICAL - TOOLS *******/
+	
+	item SutureNeedle
+	{
+	    /* note that this a specialized sterile delicate one-use surgical instrument, and is not suitable for tailoring tasks */
+	    /* it is deliberate that this is not usable for Tailoring purposes */
+		DisplayName = Suture Needle,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = SutureNeedle,
+		Medical = TRUE,
+		MetalValue = 5,
+		Tooltip = Tooltip_SutureNeedle,
+		WorldStaticModel = SutureNeedle,
+		Tags = FitsWallet,
+	}
+
+	item SutureNeedleBox
+	{
+		DisplayName = Box of Suture Needles,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 1,
+        Icon	=	GenericMedicalParcel1,
+		Medical = TRUE,
+		WorldStaticModel = MedicalParcel_Red,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item SutureNeedleHolder
+	{
+		DisplayName = Forceps,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = SutureNeedleHolder,
+		Medical = TRUE,
+		MetalValue = 9,
+		Tooltip = Tooltip_SutureNeedleHolder,
+		WorldStaticModel = SutureNeedleHolder,
+		Tags = RemoveBullet;RemoveGlass,
+        ResearchableRecipes = Forge_Tweezers;Forge_Forceps;Forge_Heading_Tool,
+	}
+
+	item Forceps_Forged
+	{
+		DisplayName = Forceps,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Forceps_Forged,
+		Medical = TRUE,
+		MetalValue = 9,
+		Tooltip = Tooltip_SutureNeedleHolder,
+		WorldStaticModel = Forceps_Forged,
+		Tags = RemoveBullet;RemoveGlass,
+        ResearchableRecipes = Forge_Tweezers;Forge_Forceps;Forge_Heading_Tool,
+	}
+	
+	item Tweezers
+	{
+		DisplayName = Tweezers,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Tweezers,
+		Medical = TRUE,
+		MetalValue = 1,
+		Tooltip = Tooltip_Tweezers,
+		WorldStaticModel = Tweezers,
+		Tags = RemoveBullet;RemoveGlass;Tweezers,
+        ResearchableRecipes = Forge_Tweezers;Forge_Forceps,
+	}
+
+	item Tweezers_Forged
+	{
+		DisplayName = Tweezers,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Tweezers_Forged,
+		Medical = TRUE,
+		MetalValue = 1,
+		Tooltip = Tooltip_Tweezers,
+		WorldStaticModel = Tweezers_Forged,
+		Tags = RemoveBullet;RemoveGlass;Tweezers,
+        ResearchableRecipes = Forge_Tweezers;Forge_Forceps,
+	}
+	
+	/******* MEDICAL - MISC. *******/
+	
+	item AlcoholedCottonBalls
+	{
+		DisplayName = Cotton Balls Doused in Alcohol,
+		DisplayCategory = FirstAid,
+		Type = Drainable,
+		Weight = 0.1,
+		Icon = CottonBalls,
+		AlcoholPower = 4,
+		ConsolidateOption = ContextMenu_Merge,
+		Medical = TRUE,
+		Tooltip = Tooltip_AlcoholBandage,
+		UseDelta = 1,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = CottonBalls,
+	}
+	
+	item AlcoholWipes
+	{
+		DisplayName = Alcohol Wipes,
+		DisplayCategory = FirstAid,
+		Type = Drainable,
+		Weight = 0.3,
+		Icon = AlcoholWipes,
+		AlcoholPower = 4,
+		ConsolidateOption = ContextMenu_Merge,
+		Medical = TRUE,
+		Tooltip = Tooltip_AlcoholBandage,
+		UseDelta = 0.2,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = AlcoholWipes,
+	}
+	
+	item Coldpack
+	{
+		DisplayName = Cold Pack,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Coldpack,
+		Tooltip = Tooltip_ItemTraps,
+		WorldStaticModel = ColdPack,
+	}
+	
+	item ColdpackBox
+	{
+		DisplayName = Box of Cold Packs,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 1.5,
+        Icon	=	GenericMedicalParcel1,
+		WorldStaticModel = MedicalParcel_Red,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item CottonBalls
+	{
+		DisplayName = Cotton Balls,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = CottonBalls,
+		Medical = TRUE,
+		WorldStaticModel = CottonBalls,
+		Tags = IsFireFuel;IsFireTinder,
+		FireFuelRatio = 0.25,
+	}
+
+	item CottonBallsBox
+	{
+		DisplayName = Box of Cotton Balls,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 1,
+        Icon	=	GenericMedicalParcel2,
+		Medical = TRUE,
+		WorldStaticModel = MedicalParcel_Green,
+		Tags = IgnoreZombieDensity,
+		Tags = IsFireFuel,
+		FireFuelRatio = 0.25,
+	}
+	
+	item Disinfectant
+	{
+		DisplayName = Bottle of Disinfectant,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = Alcohol,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottlePlastic,
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapPlasticMedium,
+		Tooltip = Tooltip_Disinfectant,
+		WorldStaticModel = Disinfectant,
+
+        	component FluidContainer
+        	{
+            		ContainerName   = Bottle,
+            		capacity        = 0.5,
+            		Fluids
+            		{
+                		fluid           = Alcohol:1.0,
+            		}
+        	}
+	}
+	
+	item Splint
+	{
+		DisplayName = Splint,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 1,
+		Icon = Splint,
+		Medical = TRUE,
+		MetalValue = 1,
+		Tooltip = Tooltip_Splint,
+		WorldStaticModel = Splint,
+	}
+	
+	item Tissue
+	{
+		DisplayName = Tissue,
+		DisplayCategory = FirstAid,
+		Type = Drainable,
+		Weight = 0.1,
+		Icon = Tissue,
+		cantBeConsolided = TRUE,
+		Tooltip = Tooltip_tissue_tooltip,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = Tissue,
+		Tags = MuffleSneeze;FitsWallet;IsFireFuel;IsFireTinder,
+		FireFuelRatio = 0.25,
+	}
+
+	item TissueBox
+	{
+		DisplayName = Box of Tissues,
+	    DisplayCategory = FirstAid,
+		Type = Drainable,
+        UseDelta	=	0.05,
+		Weight = 1,
+		Icon = TissueBox,
+		WorldStaticModel = TissueBox,
+		Tags = IsFireFuel,
+		FireFuelRatio = 0.25,
+		UseWhileEquipped = FALSE,
+	}
+
+	/* medical herb stuff */
+
+	item Comfrey
+	{
+		DisplayName = Comfrey,
+		DisplayCategory = FirstAid,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Comfrey,
+		Tooltip = Tooltip_Comfrey,
+		WorldStaticModel = MedicinalHerbsLeafBundle,
+		CantEat = TRUE,
+		DaysFresh = 6,
+		DaysTotallyRotten = 10,
+		Tags = Comfrey,
+	}
+
+	item ComfreyDried
+	{
+		DisplayName = Comfrey (Dried),
+		DisplayCategory = FirstAid,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Comfrey_Dried,
+		Tooltip = Tooltip_Comfrey,
+		WorldStaticModel = MedicinalHerbsLeafBundleDried,
+		CantEat = TRUE,
+		Tags = Comfrey,
+	}
+
+	item ComfreyCataplasm
+	{
+		DisplayName = Comfrey Poultice,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = MashedHerbs,
+		Tooltip = Tooltip_Comfrey,
+		WorldStaticModel = Poultice,
+	}
+
+	item Plantain
+	{
+		DisplayName = Plantain,
+		DisplayCategory = FirstAid,
+		Type = Food,
+		Weight = 0.1,
+		Icon = PlantainPlantago,
+		Tooltip = Tooltip_Plantain,
+		WorldStaticModel = MedicinalHerbsLeafBundle,
+		CantEat = TRUE,
+		DaysFresh = 6,
+		DaysTotallyRotten = 10,
+		Tags = Plantain,
+	}
+
+	item PlantainDried
+	{
+		DisplayName = Plantain (Dried),
+		DisplayCategory = FirstAid,
+		Type = Food,
+		Weight = 0.1,
+		Icon = BroadleafPlaintain_Dried,
+		Tooltip = Tooltip_Plantain,
+		WorldStaticModel = MedicinalHerbsLeafBundleDried,
+		CantEat = TRUE,
+		Tags = Plantain,
+	}
+
+	 item PlantainCataplasm
+	{
+		DisplayName = Plantain Poultice,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = MashedHerbs,
+		Tooltip = Tooltip_Plantain,
+		WorldStaticModel = Poultice,
+	}
+
+	item WildGarlicCataplasm
+	{
+		DisplayName = Wild Garlic Poultice,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = MashedHerbs,
+		Tooltip = Tooltip_Garlic,
+		WorldStaticModel = Poultice,
+	}
+
+	item ScissorsBluntMedical
+	{
+		DisplayName = Medical Shears,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = ScissorsBluntMedical,
+		AttachmentType = Screwdriver,
+		MetalValue = 6,
+		StaticModel = ScissorsBluntMedical,
+		WorldStaticModel = ScissorsBluntMedical,
+		Tags = Scissors;ShowCondition;Sharpenable;LightMetalSnips,
+		Medical = TRUE,
+		ConditionLowerChanceOneIn = 10,
+		ConditionMax = 10,
+        Sharpness = 1.0,
+	}
+
+	item Stethoscope
+	{
+		DisplayName = Stethoscope,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.3,
+        Icon	=	Stethoscope,
+		Medical = TRUE,
+		WorldStaticModel = Stethoscope,
+		Tags = HasMetal,
+	}
+
+	item TongueDepressor
+	{
+		DisplayName = Tongue Depressor,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = TongueDepressor,
+		Medical = TRUE,
+		WorldStaticModel = TongueDepressor,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item TongueDepressorBox
+	{
+		DisplayName = Box of Tongue Depressors,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 1,
+        Icon	=	GenericMedicalParcel2,
+		Medical = TRUE,
+		WorldStaticModel = MedicalParcel_Green,
+        FireFuelRatio = 0.66,
+		Tags = IsFireFuel,
+	}
+}

@@ -1,0 +1,27 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISTickBox
+        {
+            background          = true,
+            backgroundColor     = C_Background,
+            borderColor         = C_Grid,
+            choicesColor        = C_BorderLight,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+            tickTexture         = Quest_Succeed,
+            /* optional: name = name */
+            leftMargin          = 0,
+            boxSize             = 16,
+            textGap             = 4,
+            font                = UIFont.Small,
+            itemGap             = 4,
+            itemHgt             = 30,
+            tooltip             = nil,
+            enable              = true,
+        }
+    }
+}

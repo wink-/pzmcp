@@ -1,0 +1,5 @@
+module Base
+{
+    /* mechanic items moved to items_vehicle.txt in the items directory */
+    /* parts items moved to items_vehicle_parts.txt in the items directory */
+}

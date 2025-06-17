@@ -1,0 +1,109 @@
+module Base
+{
+	template vehicle Windshield
+	{
+		part Windshield
+        {
+            area = Engine,
+            category = bodywork,
+            itemType = Base.Windshield,
+            mechanicRequireKey = true,
+            durability = 2,
+            window
+            {
+                openable = false,
+            }
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 300,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 300,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+        }
+
+		part WindshieldRear
+		{
+			area = TruckBed,
+            category = bodywork,
+            itemType = Base.RearWindshield,
+            mechanicRequireKey = true,
+            durability = 2,
+            window
+            {
+                openable = false,
+            }
+            table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 300,
+                  skills = Mechanics:5,
+                  recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Window,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = Screwdriver,
+                        count = 1,
+                        keep = true,
+ 						equip = primary,
+                   }
+                }
+                time = 300,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+	    }
+	}
+}

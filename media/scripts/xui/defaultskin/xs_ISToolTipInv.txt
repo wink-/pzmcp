@@ -1,0 +1,15 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISToolTipInv
+        {
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+        }
+    }
+}

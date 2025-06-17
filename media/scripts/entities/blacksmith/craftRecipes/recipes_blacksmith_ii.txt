@@ -1,0 +1,128 @@
+module Base
+{
+   craftRecipe Forge_Steel_Sheet
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:45,
+        AutoLearnAll = Blacksmith:6,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelBlock],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.SheetMetal,
+        }
+    }
+
+    craftRecipe Forge_Small_Steel_Sheet
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:45,
+        AutoLearnAll = Blacksmith:6,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelChunk],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.SmallSheetMetal,
+        }
+    }
+
+    craftRecipe Split_Steel_Sheet_Into_Small_Sheets
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:3,
+        timedAction = MakingHammer_Surface,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.SheetMetal],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 4 Base.SmallSheetMetal,
+        }
+    }
+
+    craftRecipe Forge_Lantern
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:5,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        xpAward = Blacksmith:60,
+        AutoLearnAll = Blacksmith:7,
+        tags = AdvancedForge,
+        category = Tools,
+		/*OnCreate = Recipe.OnCreate.EmptyDrainable,*/
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 4 [Base.SmallSheetMetal;Base.SmallCopperSheet;Base.GoldSheet;Base.SilverSheet] mappers[LampMapper] flags[IsExclusive],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 [Base.Wire],
+            item 1 [Base.LanternGlass],
+        }
+		outputs
+		{
+            item 1 mapper:LampMapper flags[HasNoUses],
+		}
+        itemMapper LampMapper
+        {
+            Base.Lantern_Hurricane_Forged = Base.SmallSheetMetal,
+            Base.Lantern_Hurricane_Copper = Base.SmallCopperSheet,
+            Base.Lantern_Hurricane_Gold = Base.GoldSheet,
+            Base.Lantern_Hurricane_Silver = Base.SilverSheet,
+
+            default = Base.Lantern_Hurricane_Forged,
+        }
+    }
+
+    craftRecipe ExtractIronFromBloom
+    {
+        time        = 200,
+        tags = PrimitiveForge,
+        /*needTobeLearn = true,*/
+        category = Blacksmithing,
+        xpAward = Blacksmith:10,
+        timedAction = MakingHammer_Surface,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 4 tags[Charcoal],
+            item 1 [Base.IronBloom],
+            item 1 tags[ClubHammer;Hammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 12 Base.IronChunk,
+        }
+    }
+}

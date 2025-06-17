@@ -1,0 +1,146 @@
+module Base
+{
+	sound GeneratorFailedToStart
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Generator/StartupFail,
+		}
+	}
+
+	sound GeneratorStarting
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Generator/Startup,
+		}
+	}
+
+	sound GeneratorStopping
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Generator/Shutdown,
+		}
+	}
+
+	sound GeneratorLoop
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Generator/Running,
+		}
+	}
+
+	sound GeneratorAddFuel
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Generator/AddFuel,
+		}
+	}
+
+	sound GeneratorRepair
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Generator/Repair,
+		}
+	}
+
+	sound GeneratorConnect
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Generator/Connect,
+		}
+	}
+
+	sound GeneratorBackfire
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Generator/Backfire,
+		}
+	}
+
+	sound OldGeneratorFailedToStart
+	{
+		category = Object,
+		clip
+		{
+			event = Object/OldGenerator/StartupFail,
+		}
+	}
+
+	sound OldGeneratorStarting
+	{
+		category = Object,
+		clip
+		{
+			event = Object/OldGenerator/Startup,
+		}
+	}
+
+	sound OldGeneratorStopping
+	{
+		category = Object,
+		clip
+		{
+			event = Object/OldGenerator/Shutdown,
+		}
+	}
+
+	sound OldGeneratorLoop
+	{
+		category = Object,
+		clip
+		{
+			event = Object/OldGenerator/Running,
+		}
+	}
+
+	sound OldGeneratorAddFuel
+	{
+		category = Object,
+		clip
+		{
+			event = Object/OldGenerator/AddFuel,
+		}
+	}
+
+	sound OldGeneratorRepair
+	{
+		category = Object,
+		clip
+		{
+			event = Object/OldGenerator/Repair,
+		}
+	}
+
+	sound OldGeneratorConnect
+	{
+		category = Object,
+		clip
+		{
+			event = Object/OldGenerator/Connect,
+		}
+	}
+
+	sound OldGeneratorBackfire
+	{
+		category = Object,
+		clip
+		{
+			event = Object/OldGenerator/Backfire,
+		}
+	}
+}

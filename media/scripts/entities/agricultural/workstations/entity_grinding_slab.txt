@@ -1,0 +1,117 @@
+/*module Base
+{
+    craftRecipe MakePlantainPoultice
+     {
+        time        = 60,
+        timedAction = UseGrindingSlab,
+        needTobeLearn = true,
+        tags = Grinding_Slab,
+        inputs
+        {
+            item 5 tags[Plantain],
+        }
+        outputs
+        {
+            item 1 Base.PlantainCataplasm,
+        }
+     }
+
+    craftRecipe MakeComfreyPoultice
+     {
+        time        = 60,
+        timedAction = UseGrindingSlab,
+        needTobeLearn = true,
+        tags = Grinding_Slab,
+        inputs
+        {
+            item 5 tags[Comfrey],
+        }
+        outputs
+        {
+            item 1 Base.ComfreyCataplasm,
+        }
+     }
+
+    craftRecipe MakeWildGarlicPoultice
+     {
+        time        = 60,
+        timedAction = UseGrindingSlab,
+        needTobeLearn = true,
+        tags = Grinding_Slab,
+        inputs
+        {
+            item 5 tags[WildGarlic],
+        }
+        outputs
+        {
+            item 1 Base.WildGarlicCataplasm,
+        }
+     }
+
+
+
+
+    entity Grinding_Slab
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Grinding_Slab,
+            uiEnabled       = true,
+        }
+
+   /*    component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@100,
+            }
+            group craft_outputs
+            {
+                Item@Output@1,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes             = Recipes_Stone_Quern,
+            StartMode           = Manual,
+            inputGroup          = craft_inputs,
+            outputGroup         = craft_outputs,
+        }*/
+
+
+        component CraftBench
+        {
+            Recipes             = Grinding_Slab,
+        }
+
+
+        component SpriteConfig
+        {
+		    isThumpable = false,
+            face single
+            {
+                layer
+                {
+                    row = crafted_02_46,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = BuildCairn,
+            time          = 50,
+            category      = Farming,
+            tags          = Masonry,
+            xpAward       = Masonry:5,
+            ToolTip       = Tooltip_craft_grindingSlabDesc,
+            inputs
+            {
+                item 1 [Base.Stone2],
+                item 1 [Base.FlatStone],
+            }
+        }
+    }
+}*/

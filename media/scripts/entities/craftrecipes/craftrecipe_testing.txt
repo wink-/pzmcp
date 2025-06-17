@@ -1,0 +1,254 @@
+module Base
+{
+    /*
+    craftRecipe ExampleFull
+    {
+        enabled         = true,
+        debugOnly       = false,
+        -- if set to false, input and output resources need to match their shapedIndex
+        shapeless       = true,
+        -- normally inputs are consumed on start, but for smelt recipes or such this may be set to consume on finish.
+        consumeOnFinish = false,
+
+        time            = 4,
+        OnTest          = MyLua.Table.OnTest,
+        OnCreate        = MyLua.Table.OnCreate,
+        OnFailed        = MyLua.Table.OnFailed,
+
+        inputs
+        {
+            -- first param must be the type (item,fluid,energy)
+            -- second param must be amount
+            -- other params can be put in any particular order
+            item 2 [Base.Apple;Base.Shovel],
+            -- for mode use: if amount set to 0 it will try to use the default use delta
+            -- a custom use value may also be applied by changing amount to > 0
+            item 0 [Base.Cologne],
+            item 1 [Base.Comb] mode:keep,
+            -- define items by tag:
+            item 1 tags[TagOne;TagTwo],
+            fluid 0.25 [Water],
+            item 1 mode:keep [Base.Hammer],
+
+            item 1 [Base.Apple],
+            -- a replace line may be added to inputs, it applies to the line above and will take that lines type.
+            replace 1 Base.Hammer,
+        }
+
+        outputs
+        {
+            item 2 Base.Log,
+            item 1 Base.Mirror chance:0.35,
+            energy 100 Electric,
+        }
+    }
+
+    craftRecipe SimpleTest
+    {
+        inputs
+        {
+            item 2 [Base.Apple],
+            item 0.25 [Base.Sandbag],
+            item 1 mode:keep [Base.Hammer],
+            fluid 0.5 [Water],
+        }
+        outputs
+        {
+            item 2 Base.Log,
+            item 1 Base.Mirror chance:0.35,
+            fluid 2.0 Petrol,
+        }
+    }
+    */
+
+    /*
+    craftRecipe GenerateWaterPoof
+    {
+        time        = 400,
+        inputs
+        {
+            fluid 0.25 [Petrol],
+        }
+        outputs
+        {
+            fluid 0.1 Water,
+        }
+    }
+
+    craftRecipe BoilWaterSteam
+    {
+        time        = 120,
+        inputs
+        {
+            item 1 [Base.Log],
+            fluid 0.25 [Water],
+        }
+        outputs
+        {
+            energy 0.1 Steam,
+        }
+    }
+
+    craftRecipe SteamToElectric
+    {
+        time        = 25,
+        inputs
+        {
+            energy 5.0 [Steam],
+        }
+        outputs
+        {
+            energy 1.0 Electric,
+        }
+    }
+
+    craftRecipe SpiffoJuice
+    {
+        time        = 30,
+        inputs
+        {
+            item 2 [Base.Orange],
+            item 0.1 [Base.Sugar2],
+            item 1 [Base.SecretFlavoring],
+            fluid 0.2 [CarbonatedWater],
+            energy 5.0 [Electric],
+        }
+        outputs
+        {
+            fluid 2.0 SpiffoJuice,
+        }
+    }
+
+    craftRecipe DecraftSpiffoJuice
+    {
+        time        = 30,
+        inputs
+        {
+            fluid 0.5 [SpiffoJuice],
+            energy 1.0 [Electric],
+        }
+        outputs
+        {
+            item 2 Base.Orange,
+            item 1 Base.Sugar2,
+            fluid 0.2 CarbonatedWater,
+            fluid 0.1 SecretFlavoring,
+        }
+    }
+
+    craftRecipe SpiffoJuiceCanning
+    {
+        time        = 50,
+        inputs
+        {
+            energy 1.0 [Electric] mode:keep,
+            fluid 0.5 [SpiffoJuice],
+            item 1 [Base.TestBottleEmpty],
+        }
+        outputs
+        {
+            item 1 Base.TestBottleSpiffoJuice,
+        }
+    }
+
+    craftRecipe PetrolToElectric
+    {
+        time        = 800,
+        inputs
+        {
+            fluid 1.0 [Petrol],
+        }
+        outputs
+        {
+            energy 1.0 Electric,
+        }
+    }
+
+    craftRecipe SawLog
+    {
+        time        = 60,
+        inputs
+        {
+            energy 1.0 [Electric],
+            item 1 [Base.Log],
+        }
+        outputs
+        {
+            item 3 Base.Plank,
+        }
+    }
+
+    craftRecipe SawPlank
+    {
+        time        = 40,
+        inputs
+        {
+            energy 1.0 [Electric],
+            item 1 [Base.Plank],
+        }
+        outputs
+        {
+            item 4 Base.WoodStick,
+        }
+    }
+
+    craftRecipe SawStick
+    {
+        time        = 20,
+        inputs
+        {
+            energy 1.0 [Electric],
+            item 1 [Base.WoodStick],
+        }
+        outputs
+        {
+            item 2 Base.Chopsticks,
+        }
+    }
+
+    craftRecipe FireApple
+    {
+        inputs
+        {
+            item 2 [Base.Apple;Base.Shovel],
+            item 1 [Base.HairDyeBlack],
+            item 1 [Base.Comb] mode:keep,
+            fluid 0.25 [Water],
+            item 1 mode:keep [Base.Hammer],
+        }
+        outputs
+        {
+            item 2 Base.Log,
+            item 1 Base.Mirror chance:0.35,
+        }
+    }
+    */
+
+    /*** Test recipes for the Kiln Furnace example ***/
+
+    craftRecipe ThermalFuel_Log
+    {
+        time        = 300,
+	    tags = BurnWood;RightClickOnly,
+        inputs
+        {
+            item 1 [Base.Log],
+        }
+        outputs
+        {
+        }
+    }
+
+    craftRecipe ThermalFuel_Plank
+    {
+        time        = 150,
+	    tags = BurnWood;RightClickOnly,
+        inputs
+        {
+            item 1 [Base.Plank],
+        }
+        outputs
+        {
+        }
+    }
+}

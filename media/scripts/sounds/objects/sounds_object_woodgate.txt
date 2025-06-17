@@ -1,0 +1,65 @@
+module Base
+{
+	sound WoodGateSmallBlocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodGateSmall/IsBlocked,
+		}
+	}
+
+	sound WoodGateSmallBreak
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodGateSmall/Break,
+		}
+	}
+
+	sound WoodGateSmallClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodGateSmall/Close,
+		}
+	}
+
+	sound WoodGateSmallLock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodGateSmall/Lock,
+		}
+	}
+
+	sound WoodGateSmallLocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodGateSmall/IsLocked,
+		}
+	}
+
+	sound WoodGateSmallOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodGateSmall/Open,
+		}
+	}
+
+	sound WoodGateSmallUnlock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodGateSmall/Unlock,
+		}
+	}
+}

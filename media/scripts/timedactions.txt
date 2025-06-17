@@ -1,0 +1,910 @@
+module Base
+{
+    timedAction ApplyAlcohol
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = ApplyAlcohol,
+        sound		= FirstAidApplyAlcohol,
+        prop1 		= Base.WhiskeyBottle,
+        prop2 		= Base.DishCloth_Hand,
+    }
+
+	timedAction ApplyGlaze
+    {
+        metabolics      = LightDomestic,
+        actionAnim      = ApplyGlaze,
+        prop1 		= Base.Brush,
+        prop2 		= Base.ClayJarUnfired,
+    }
+
+    timedAction Craft_Glassmaking
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = Craft_Glassmaking,
+        prop2 		= Base.CraftingGlassBlowPipe,
+    }
+
+    timedAction Craft_PotteryBench
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = Making_Surface,
+	    prop2 		= Base.Clay,
+    }
+
+    timedAction Craft_PotteryWheel
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = Craft_PotteryWheel,
+	    prop2 		= Base.ClayJarUnfired,
+    }
+
+    timedAction CrushLimestone
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = MakingHammer_Surface,
+        sound		= Hammering,
+        prop1 		= Base.ClubHammer,
+        prop2 		= Base.LimestoneCrushed,
+        muscleStrainFactor = 0.0133,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+    }
+
+    timedAction CrushWatermelon
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = HammerSmashedMelon,
+        sound		= SmashWatermelon,
+        muscleStrainFactor = 0.0133,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+    }
+
+    timedAction CutWire
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = CutWire,
+        sound		= WireCutting,
+        prop1 		= Base.CraftingPliers,
+        prop2 		= Base.CraftingWire,
+        muscleStrainFactor = 0.0133,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+    }
+
+    timedAction Dismantle
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = Disassemble,
+        sound		= Dismantle,
+        prop1 		= Base.Screwdriver,
+        prop2 		= Base.CraftingMetalPart,
+    }
+
+    timedAction DrawCard
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = Making,
+        sound		= PlayingCardsDraw,
+    }
+
+    timedAction EmptyBag
+    {
+        metabolics      = Default,
+        actionAnim      = Pour,
+	    sound		= OpenSack,
+    }
+
+    timedAction EmptyPan
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = Pour,
+	    sound		= EmptyPan,
+    }
+
+    timedAction Knitting
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = Knitting,
+	    prop2 		= Base.CraftingKnitting_Prop,
+        muscleStrainFactor = 0.01,
+        muscleStrainSkill = Tailoring,
+        muscleStrainParts = Neck,
+        sound           = Knitting,
+    }
+
+    timedAction Making
+    {
+        metabolics      = Default,
+        actionAnim      = Making,
+	    prop2 		= Base.CraftingMetalPart,
+    }
+
+    timedAction MakeCoffee
+    {
+        metabolics      = Default,
+        actionAnim      = Making,
+        prop2           = Base.CraftingMetalPart,
+        sound           = MakeCoffee,
+    }
+
+    timedAction MakeSheetSlingBag
+    {
+        metabolics      = Default,
+        actionAnim      = Making,
+        prop2           = Base.CraftingMetalPart,
+        sound           = CraftSheetSlingBag,
+    }
+
+    timedAction MixingBucket
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = MixingBucket,
+        sound		= MakePlaster,
+        prop1 		= Base.WoodenStick_Broken,
+        prop2 		= Base.CraftingBucket,
+        muscleStrainFactor = 0.0133,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+
+    }
+
+    timedAction OpenChampagne
+    {
+        metabolics      = StandingAtRest,
+        actionAnim      = OpenChampagne,
+        sound		= CorkPopChampagne,
+        prop1 		= Base.CraftingChampagne,
+
+    }
+
+    timedAction Paint
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = Paint,
+	    sound		= Painting,
+    }
+
+    timedAction RipClothing
+    {
+        metabolics      = StandingAtRest,
+        actionAnim      = RipSheets,
+        sound           = ClothesRipping,
+	    prop2 		= Base.BurlapPiece,
+        muscleStrainFactor = 0.005,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R;Hand_L;ForeArm_L;UpperArm_L,
+    }
+
+    timedAction CutClothing
+    {
+        metabolics      = Default,
+        actionAnim      = RipSheets,
+    	sound		= ClothesRipping,
+	    prop2 		= Base.BurlapPiece,
+        muscleStrainFactor = 0.0025,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+    }
+
+    timedAction RollDice
+    {
+        metabolics      = StandingAtRest,
+        actionAnim      = RollDice,
+	    sound		= PlayingDiceRollSingle,
+    }
+
+    timedAction RollDiceDouble
+    {
+        metabolics      = StandingAtRest,
+        actionAnim      = RollDice,
+	    sound		= PlayingDiceRollDouble,
+    }
+
+    timedAction RollTwoDice
+    {
+        metabolics      = StandingAtRest,
+        actionAnim      = RollDice,
+	    sound		= PlayingDiceRollDouble,
+    }
+
+    timedAction SawLogs
+    {
+        metabolics      = MediumWork,
+        actionAnim      = SawLog,
+        sound		= Sawing,
+        /*prop1 		= Base.GardenSaw,
+        prop2 		= Base.Log,*/
+        muscleStrainFactor = 0.0133,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+
+    }
+
+    timedAction SawOffShotgun
+    {
+        metabolics      = MediumWork,
+        actionAnim      = SawOffShotgun,
+        sound		= Sawing,
+        prop1 		= Base.Hacksaw,
+        muscleStrainFactor = 0.0133,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+    }
+
+    timedAction Sew
+    {
+        metabolics      = Default,
+        actionAnim      = Making,
+    }
+
+    timedAction SmashBottle
+    {
+        metabolics      = Default,
+        actionAnim      = Making,
+	    sound	= BreakGlassItem,
+    }
+
+    timedAction Welding
+    {
+        metabolics      = LightWork,
+        actionAnim      = Welding,
+        prop1 		= Base.CraftingWeldingTorch,
+        prop2 		= Base.CraftingWeldingPipe,
+
+    }
+
+	timedAction MixingBowl
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = MixingBowl,
+        sound		= FirstAidApplyAlcohol,
+        prop1 		= Base.Spoon,
+        prop2 		= Base.CraftingBowl,
+        muscleStrainFactor = 0.0025,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+    }
+
+	timedAction SliceBread_Surface
+    {
+        metabolics      = LightDomestic,
+        actionAnim      = SliceFood_Surface,
+        sound		= SliceBread,
+        prop1 		= Base.Knife,
+        prop2 		= Base.CraftingCarrot,
+
+    }
+
+	timedAction SliceFood
+    {
+        metabolics      = LightDomestic,
+        actionAnim      = SliceFood,
+        sound		= PZ_FoodSwoosh,
+        prop1 		= Base.Knife,
+        prop2 		= Base.CraftingCarrot,
+
+    }
+
+	timedAction SliceFood_Surface
+    {
+        metabolics      = LightDomestic,
+        actionAnim      = SliceFood_Surface,
+        sound		= PZ_FoodSwoosh,
+        prop1 		= Base.Knife,
+        prop2 		= Base.CraftingCarrot,
+
+    }
+
+
+	timedAction OpenTinCan
+    {
+        metabolics      = LightDomestic,
+        actionAnim      = OpenTinCan,
+        sound		= OpenCannedFoodWithCanOpener,
+        prop1 		= Base.CanOpener,
+
+    }
+
+	timedAction OpenTinCanWithKnife
+    {
+        metabolics      = LightDomestic,
+        actionAnim      = OpenTinCanWithKnife,
+        sound		= PZ_FoodSwoosh,
+        prop1 		= Base.Knife,
+    }
+
+	timedAction MixingMortarPestle
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = MixingMortarPestle,
+        sound		= FirstAidApplyAlcohol,
+        prop1 		= Base.Pestle,
+        prop2 		= Base.Mortar,
+    }
+
+	timedAction SharpenStake
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = SharpenStake,
+        prop1 		= Base.KnifePocket,
+        prop2 		= Base.CraftingStake,
+        muscleStrainFactor = 0.0025,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+    }
+
+	timedAction SliceMeat
+    {
+        metabolics      = LightDomestic,
+        actionAnim      = SliceFood,
+        sound		= Chop,
+        prop1 		= Base.Knife,
+        prop2 		= Base.Salami_Ground,
+
+    }
+
+    timedAction SliceFish
+    {
+        metabolics      = LightDomestic,
+        actionAnim      = SawSmallItemMetal,
+        sound		    = Painting,
+        prop1 		    = Base.Knife,
+        prop2           = Base.FishFillet,
+    }
+
+	timedAction SliceMeat_Surface
+    {
+        metabolics      = LightDomestic,
+        actionAnim      = SliceFood_Surface,
+        sound		= Chop,
+        prop1 		= Base.Knife,
+        prop2 		= Base.Salami_Ground,
+
+    }
+
+	timedAction UncorkBottle
+    {
+        metabolics      = LightDomestic,
+        actionAnim      = UncorkBottle,
+        prop1 		= Base.CorkScrew_Hand,
+        sound		= CorkPopWine,
+
+    }
+
+    	timedAction MakingElectrical
+    {
+        metabolics      = LightDomestic,
+        actionAnim      = MakingElectrical,
+	    prop2 		= Base.Receiver,
+    }
+
+    	timedAction DismantleElectrical
+    {
+        metabolics      = LightDomestic,
+        actionAnim      = disassembleElectrical,
+        sound		= Dismantle,
+        prop1 		= Base.Screwdriver,
+        prop2 		= Base.Receiver,
+    }
+
+    	timedAction CraftKnifeSpear
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = CraftKnifeSpear,
+	    prop2 		= Base.SpearKnife,
+    }
+
+   	timedAction OpenPopCan
+    {
+        metabolics      = Default,
+        actionAnim      = OpenPopCan,
+	    sound		= OpenCan,
+    }
+
+    	timedAction ChoppingBlock_Hammer
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = ChoppingBlock_Hammer,
+	    /*sound		= Hammering,*/
+        muscleStrainFactor = 0.0133,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+    }
+
+   	timedAction   SmithingHammer
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = SmithingHammer,
+        /*sound		= Hammering,*/
+        prop1 		= Base.SmithingHammer,
+        prop2 		= Base.Tongs,
+        muscleStrainFactor = 0.0133,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+    }
+
+    	timedAction   SawSmallItemMetal
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = SawSmallItemMetal,
+        sound		= Sawing,
+        prop1 		= Base.Hacksaw,
+        prop2 		= Base.SteelBarStockHalf,
+        muscleStrainFactor = 0.0133,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+
+    }
+
+    	timedAction   MakingJewellery
+    {
+        metabolics      = Default,
+        actionAnim      = MakingJewellery,
+        prop1 		= Base.Pliers,
+        prop2 		= Base.Ring_Gold_Ground,
+
+    }
+
+    	timedAction   CraftWeapon1H
+    {
+        metabolics      = Default,
+        actionAnim      = CraftWeapon1H,
+	    prop1 		= Base.Knife,
+    }
+    
+	timedAction   CraftWeapon2H
+    {
+        metabolics      = Default,
+        actionAnim      = CraftWeapon2H,
+	    prop2 		= Base.BaseballBat,
+    }
+
+	timedAction   CraftArmourPiece
+    {
+        metabolics      = Default,
+        actionAnim      = CraftArmourPiece,
+	    prop2 		= Base.Vambrace_Ground,
+    }
+
+    	timedAction MakingHammer_Surface
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = MakingHammer_Surface,
+        /*sound		= Hammering,*/
+        prop1 		= Base.Hammer,
+        prop2 		= Base.BaseballBat,
+        muscleStrainFactor = 0.0133,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+    }
+
+    	timedAction Making_Surface
+    {
+        metabolics      = Default,
+        actionAnim      = Making_Surface,
+	    prop2 		= Base.CraftingMetalPart,
+    }
+    
+	timedAction Welding_Surface
+    {
+        metabolics      = Default,
+        actionAnim      = Welding_Surface,
+        prop1 		= Base.CraftingWeldingTorch,
+        prop2 		= Base.CraftingWeldingPipe,
+
+    }
+
+	timedAction ScrubClothWithSoap
+    {
+        metabolics      = Default,
+        actionAnim      = ScrubClothWithSoap,
+        prop1 		= Base.Soap,
+        prop2 		= Base.DishCloth_Hand,
+        sound       = FirstAidCleanRag,
+    }
+
+	timedAction Chisel_Surface
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = Chisel_Surface,
+        prop1 		= Base.ClubHammer,
+        prop2 		= Base.MasonsChisel,
+
+    }
+
+	timedAction SharpenBlade
+    {
+        metabolics      = Default,
+        actionAnim      = SharpenBlade,
+        prop1 		= Base.Whetstone,
+        prop2 		= Base.CraftingKnife,
+        sound           = SharpenBladeWhetstone,
+    }
+
+	timedAction UseHandPress
+    {
+        metabolics      = Default,
+        actionAnim      = UseHandPress,
+    }
+
+	timedAction UseGrindingStone
+    {
+        metabolics      = Default,
+        actionAnim      = UseGrindingStone,
+        prop1           = Base.Knife,
+        sound           = SharpenBladeGrindstone,
+    }
+
+	timedAction PutSeedsInPacket
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = PutSeedsInPacket,
+	    sound		= OpenSeedPacket,
+    }
+
+	timedAction TanLeatherBarrel
+    {
+        metabolics      = Default,
+        actionAnim      = TanLeatherBarrel,
+    }
+
+	timedAction OpenAmmoBox
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = OpenAmmoBox,
+        prop2 		= Base.HandGunAmmoBox,
+	    sound		= BoxOfRoundsOpenOne,
+    }
+
+	timedAction OpenShellsBox
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = OpenAmmoBox,
+	    sound		= BoxOfShellsOpenOne,
+    }
+
+	timedAction PlaceAmmoInBox
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = PlaceAmmoInBox,
+        prop2 		= Base.HandGunAmmoBox,
+        sound		= BoxOfRoundsOpenOne,
+    }
+
+	timedAction PackingBox
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = PackingBox,
+	    prop2 		= Base.CraftingParcel,
+    }
+
+	timedAction UnPackBox    
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = UnPackBox,
+	    prop2 		= Base.CraftingParcel,
+    }
+
+	timedAction PackingBox_Small
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = PackingBox_Small,
+	    prop2 		= Base.CraftingParcel_Small,
+    }
+
+	timedAction UnPackBox_Small  
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = UnPackBox_Small,
+	    prop2 		= Base.CraftingParcel_Small,
+    }
+
+	timedAction SewingCloth  
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = SewingCloth,
+        sound           = Sewing,
+	    prop2 		= Base.CraftingSock,
+        muscleStrainFactor = 0.005,
+        muscleStrainSkill = Tailoring,
+        muscleStrainParts = Neck,
+    }
+
+	timedAction UnPackSack
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = UnPackSack,
+        sound		= PutItemInBag,
+        prop2 		= Base.CraftingSack_OPEN,
+    }
+
+    timedAction PutInBag
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = PutInBag,
+        sound		= PutItemInBag,
+        prop2 		= Base.CraftingSack_OPEN,
+    }
+	timedAction UnPackSmallBag
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = UnPackSmallBag,
+        sound		= PutItemInBag,
+        prop2 		= Base.CraftingSmallBag_OPEN,
+    }
+
+    timedAction PutInSmallBag
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = PutInSmallBag,
+        sound		= PutItemInBag,
+        prop2 		= Base.CraftingSmallBag_OPEN,
+    }
+
+    timedAction OpenBeerBottle
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = OpenBeerBottle,
+        sound           = OpenBeerBottle,
+    }
+
+    timedAction UseBandsaw
+    {
+        metabolics      = Default,
+        actionAnim      = UseBandsaw,
+        prop1 		= Base.SteelRod,
+        prop2 		= Base.CraftingWoodBlock,
+    }
+
+    timedAction UseGrindingSlab
+    {
+        metabolics      = Default,
+        actionAnim      = UseGrindingSlab,
+    }
+
+    timedAction UseLathe
+    {
+        metabolics      = Default,
+        actionAnim      = UseLathe,
+    }
+
+    timedAction UseStandingDrill
+    {
+        metabolics      = Default,
+        actionAnim      = UseStandingDrill,
+	    prop2 		= Base.CraftingWoodBlock,
+    }
+
+    timedAction UseStoneQuern
+    {
+        metabolics      = HeavyDomestic,
+        actionAnim      = UseStoneQuern,
+        muscleStrainFactor = 0.0025,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+    }
+
+    timedAction UseSpinningWheel
+    {
+        metabolics      = Default,
+        actionAnim      = UseSpinningWheel,
+    }
+    
+    timedAction BuildBarbedWireFence
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = Loot,
+        animVarKey      = LootPosition,
+        animVarVal      = Low,
+	    sound           = BuildingGeneric,
+        completionSound = BuildMetalStructureSmallWiredFence,
+    }
+
+    timedAction BuildCairn
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = Loot,
+        animVarKey      = LootPosition,
+        animVarVal      = Low,
+	    sound           = BuildingGeneric,
+        completionSound = BuildFenceCairn,
+        muscleStrainFactor = 0.0025,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Neck,
+    }
+
+	timedAction BuildLowHammer
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = BuildLow,
+/*        sound           = Hammering,*/
+        completionSound = BuildWoodenStructureMedium,
+        muscleStrainFactor = 0.0025,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Neck;Hand_R;ForeArm_R;UpperArm_R,
+    }
+
+	timedAction BuildLowMetal
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = BlowTorchFloor,
+	    sound           = BlowTorch,
+        completionSound = BuildMetalStructureSmallScrap,
+	    prop1 		= Base.CraftingWeldingTorch,
+    }
+
+    timedAction BuildLowNoTool
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = Loot,
+        animVarKey      = LootPosition,
+        animVarVal      = Low,
+	    sound           = BuildingGeneric,
+        completionSound = BuildWoodenStructureLarge,
+        muscleStrainFactor = 0.0025,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Neck,
+    }
+
+    timedAction BuildCampfire
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = Loot,
+        animVarKey      = LootPosition,
+        animVarVal      = Low,
+        sound           = CampfireBuild,
+        muscleStrainFactor = 0.0025,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Neck,
+    }
+
+	timedAction BuildMetalStructureMedium
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = BlowTorch,
+	    sound           = BlowTorch,
+        completionSound = BuildMetalStructureMedium,
+	    prop1 		= Base.CraftingWeldingTorch,
+    }
+
+	timedAction BuildMetalStructureScrap
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = BlowTorch,
+	    sound           = BlowTorch,
+        completionSound = BuildMetalStructureSmallScrap,
+	    prop1 		= Base.CraftingWeldingTorch,
+    }
+
+	timedAction BuildMetalStructureSmall
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = BlowTorch,
+	    sound           = BlowTorch,
+        completionSound = BuildMetalStructureSmall,
+	    prop1 		= Base.CraftingWeldingTorch,
+    }
+
+	timedAction BuildPoleFence
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = BlowTorch,
+	    sound           = BlowTorch,
+        completionSound = BuildMetalStructureLargePoleFence,
+	    prop1 		= Base.CraftingWeldingTorch,
+    }
+
+	timedAction BuildPoleFenceSmall
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = BlowTorch,
+	    sound           = BlowTorch,
+        completionSound = BuildMetalStructureSmallPoleFence,
+	    prop1 		= Base.CraftingWeldingTorch,
+    }
+
+    timedAction BuildSandbagWall
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = Loot,
+        animVarKey      = LootPosition,
+        animVarVal      = Low,
+	    sound           = BuildFenceSandbagFoley,
+        completionSound = BuildFenceSandbag,
+    }
+
+	timedAction BuildWallHammer
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = Build,
+/*        sound           = Hammering,*/
+        completionSound = BuildWoodenStructureLarge,
+        muscleStrainFactor = 0.0025,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+    }
+
+	timedAction BuildWallMetal
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = BlowTorch,
+	    sound           = BlowTorch,
+        completionSound = BuildMetalStructureWallFrame,
+	    prop1 		= Base.CraftingWeldingTorch,
+    }
+
+    timedAction BuildWallNoTool
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = Loot,
+        animVarKey      = LootPosition,
+        animVarVal      = High,
+		sound           = BuildingGeneric,
+        completionSound = BuildWoodenStructureLarge,
+        muscleStrainFactor = 0.0025,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_L;ForeArm_L;UpperArm_L;Hand_R;ForeArm_R;UpperArm_R,
+    }
+
+	timedAction BuildWireFence
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = BlowTorch,
+	    sound           = BlowTorch,
+        completionSound = BuildMetalStructureLargeWiredFence,
+	    prop1 		= Base.CraftingWeldingTorch,
+    }
+
+	timedAction BuildWoodenStructureMedium
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = Build,
+/*        sound           = BuildingGeneric,*/
+        completionSound = BuildWoodenStructureMedium,
+        muscleStrainFactor = 0.0025,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+    }
+
+	timedAction BuildWoodenStructureSmall
+    {
+        metabolics      = HeavyWork,
+        actionAnim      = Build,
+/*        sound           = BuildingGeneric,*/
+        completionSound = BuildWoodenStructureSmall,
+        muscleStrainFactor = 0.0025,
+        muscleStrainSkill = Strength,
+        muscleStrainParts = Hand_R;ForeArm_R;UpperArm_R,
+    }
+
+    	timedAction Threshing
+    {
+        metabolics      = Default,
+        actionAnim      = Threshing,
+    }
+
+    	timedAction UseLoom
+    {
+        metabolics      = Default,
+        actionAnim      = UseLoom,
+    }
+
+
+	timedAction Test
+	{
+	    metabolics      = Default,
+        actionAnim      = test,
+		sound           = test,
+	}
+
+	timedAction MakeChum
+    {
+        metabolics      = SedentaryActivity,
+        actionAnim      = MakeChum,
+        prop2 		= Base.Chum,
+        sound           = MakeChumBase,
+    }
+
+	
+}

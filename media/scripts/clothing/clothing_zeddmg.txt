@@ -1,0 +1,1617 @@
+module Base
+{
+	item ZedDmg_BACK_Slash
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BACK_Slash,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BACK_Spine
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BACK_Spine,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BellySlashLeft
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BellySlashLeft,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BellySlashRight
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BellySlashRight,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BELLY_Bullet
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BELLY_Bullet,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BELLY_Shotgun
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BELLY_Shotgun,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BELLY_Skin
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BELLY_Skin,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BELLY_Slash
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BELLY_Slash,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BulletBelly01
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BulletBelly01,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BulletBelly02
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BulletBelly02,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BulletBelly03
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BulletBelly03,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BulletChest01
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BulletChest01,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BulletChest02
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BulletChest02,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BulletChest03
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BulletChest03,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BulletChest04
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BulletChest04,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BulletFace01
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BulletFace01,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BulletFace02
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BulletFace02,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BulletForehead01
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BulletForehead01,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BulletForehead02
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BulletForehead02,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BulletForehead03
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BulletForehead03,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BulletLeftTemple
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BulletLeftTemple,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_BulletRightTemple
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_BulletRightTemple,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_ChestSlashLeft
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_ChestSlashLeft,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_CHEST_Bullet
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_CHEST_Bullet,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_CHEST_Shotgun
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_CHEST_Shotgun,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_CHEST_Slash
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_CHEST_Slash,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_FaceSkullLeft
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_FaceSkullLeft,
+		WorldRender = FALSE,
+		VisionModifier = 0.5,
+	}
+	
+	item ZedDmg_FaceSkullRight
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_FaceSkullRight,
+		WorldRender = FALSE,
+		VisionModifier = 0.5,
+	}
+	
+	item ZedDmg_HeadSlashCentre01
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_HeadSlashCentre01,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_HeadSlashCentre02
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_HeadSlashCentre02,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_HeadSlashCentre03
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_HeadSlashCentre03,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_HeadSlashLeft01
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_HeadSlashLeft01,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_HeadSlashLeft02
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_HeadSlashLeft02,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_HeadSlashLeft03
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_HeadSlashLeft03,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_HeadSlashLeftBack01
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_HeadSlashLeftBack01,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_HeadSlashLeftBack02
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_HeadSlashLeftBack02,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_HeadSlashRight01
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_HeadSlashRight01,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_HeadSlashRight02
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_HeadSlashRight02,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_HeadSlashRight03
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_HeadSlashRight03,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_HeadSlashRightBack01
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_HeadSlashRightBack01,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_HeadSlashRightBack02
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_HeadSlashRightBack02,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_HEAD_Bullet
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_HEAD_Bullet,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_HEAD_Shotgun
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_HEAD_Shotgun,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_HEAD_Skin
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_HEAD_Skin,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_HEAD_Slash
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_HEAD_Slash,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_Mouth01
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_Mouth01,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_Mouth02
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_Mouth02,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_MouthLeft
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_MouthLeft,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_MouthRight
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_MouthRight,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_NeckBiteBackLeft
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_NeckBiteBackLeft,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_NeckBiteBackRight
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_NeckBiteBackRight,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_NeckBiteFrontLeft
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_NeckBiteFrontLeft,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_NeckBiteFrontRight
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_NeckBiteFrontRight,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_NECK_Bite
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_NECK_Bite,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_NoChin
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_NoChin,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_NoEarLeft
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_NoEarLeft,
+		WorldRender = FALSE,
+		HearingModifier = 0.5,
+	}
+	
+	item ZedDmg_NoEarRight
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_NoEarRight,
+		WorldRender = FALSE,
+		HearingModifier = 0.5,
+	}
+	
+	item ZedDmg_NoNose
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_NoNose,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_RibsLeft
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_RibsLeft,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_RibsRight
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_RibsRight,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_ShotgunBelly
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_ShotgunBelly,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_ShotgunChestCentre
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_ShotgunChestCentre,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_ShotgunChestLeft
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_ShotgunChestLeft,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_ShotgunChestRight
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_ShotgunChestRight,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_ShotgunFaceFull
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_ShotgunFaceFull,
+		WorldRender = FALSE,
+		VisionModifier = 0.25,
+	}
+	
+	item ZedDmg_ShotgunFaceLeft
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_ShotgunFaceLeft,
+		WorldRender = FALSE,
+		VisionModifier = 0.5,
+	}
+	
+	item ZedDmg_ShotgunFaceRight
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_ShotgunFaceRight,
+		WorldRender = FALSE,
+		VisionModifier = 0.5,
+	}
+	
+	item ZedDmg_ShotgunLeft
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_ShotgunLeft,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_ShotgunRight
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_ShotgunRight,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_ShoulderSlashLeft
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_ShoulderSlashLeft,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_ShoulderSlashRight
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_ShoulderSlashRight,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_SkullCap
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_SkullCap,
+		WorldRender = FALSE,
+	}
+	
+	item ZedDmg_SkullUpLeft
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_SkullUpLeft,
+		WorldRender = FALSE,
+		VisionModifier = 0.5,
+	}
+	
+	item ZedDmg_SkullUpRight
+	{
+		DisplayCategory = ZedDmg,
+		Type = Clothing,
+		BodyLocation = ZedDmg,
+		ClothingItem = ZedDmg_SkullUpRight,
+		WorldRender = FALSE,
+		VisionModifier = 0.5,
+	}
+	
+	item Bandage_LeftUpperArm
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_LeftUpperArm,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_LeftUpperArm_Blood
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_LeftUpperArm_Blood,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_RightUpperArm
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_RightUpperArm,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_RightUpperArm_Blood
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_RightUpperArm_Blood,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_Abdomen
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_Abdomen,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_Abdomen_Blood
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_Abdomen_Blood,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_Chest
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_Chest,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_Chest_Blood
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_Chest_Blood,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_Groin
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_Groin,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_Groin_Blood
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_Groin_Blood,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_LeftLowerLeg
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_LeftLowerLeg,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_LeftLowerLeg_Blood
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_LeftLowerLeg_Blood,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_RightLowerLeg
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_RightLowerLeg,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_RightLowerLeg_Blood
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_RightLowerLeg_Blood,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_LeftFoot
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_LeftFoot,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_LeftFoot_Blood
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_LeftFoot_Blood,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_RightFoot
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_RightFoot,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_RightFoot_Blood
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_RightFoot_Blood,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_LeftHand
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_LeftHand,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_LeftHand_Blood
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_LeftHand_Blood,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_RightHand
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_RightHand,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_RightHand_Blood
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_RightHand_Blood,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_LeftUpperLeg
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_LeftUpperLeg,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_LeftUpperLeg_Blood
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_LeftUpperLeg_Blood,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_RightUpperLeg
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_RightUpperLeg,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_RightUpperLeg_Blood
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_RightUpperLeg_Blood,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_LeftLowerArm
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_LeftLowerArm,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_LeftLowerArm_Blood
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_LeftLowerArm_Blood,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_RightLowerArm
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_RightLowerArm,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_RightLowerArm_Blood
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_RightLowerArm_Blood,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_Neck
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_Neck,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_Neck_Blood
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_Neck_Blood,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_Head
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_Head,
+		WorldRender = FALSE,
+	}
+	
+	item Bandage_Head_Blood
+	{
+		DisplayCategory = Bandage,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Bandage,
+		ClothingItem = Bandage_Head_Blood,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Chest_Bite_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Chest_Bite_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Chest_Scratch_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Chest_Scratch_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Chest_Laceration_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Chest_Laceration_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Chest_Bite_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Chest_Bite_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Chest_Scratch_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Chest_Scratch_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Chest_Laceration_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Chest_Laceration_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Abdomen_Bite_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Abdomen_Bite_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Abdomen_Scratch_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Abdomen_Scratch_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Abdomen_Laceration_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Abdomen_Laceration_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Abdomen_Bite_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Abdomen_Bite_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Abdomen_Scratch_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Abdomen_Scratch_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Abdomen_Laceration_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Abdomen_Laceration_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LHand_Bite_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LHand_Bite_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LHand_Scratch_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LHand_Scratch_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LHand_Laceration_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LHand_Laceration_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LHand_Bite_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LHand_Bite_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LHand_Scratch_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LHand_Scratch_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LHand_Laceration_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LHand_Laceration_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RHand_Bite_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RHand_Bite_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RHand_Scratch_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RHand_Scratch_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RHand_Laceration_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RHand_Laceration_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RHand_Bite_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RHand_Bite_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RHand_Scratch_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RHand_Scratch_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RHand_Laceration_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RHand_Laceration_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Neck_Bite_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Neck_Bite_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Neck_Scratch_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Neck_Scratch_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Neck_Laceration_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Neck_Laceration_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Neck_Bite_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Neck_Bite_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Neck_Scratch_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Neck_Scratch_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Neck_Laceration_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Neck_Laceration_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LUArm_Bite_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LUArm_Bite_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LUArm_Scratch_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LUArm_Scratch_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LUArm_Laceration_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LUArm_Laceration_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LUArm_Bite_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LUArm_Bite_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LUArm_Scratch_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LUArm_Scratch_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LUArm_Laceration_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LUArm_Laceration_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RUArm_Bite_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RUArm_Bite_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RUArm_Scratch_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RUArm_Scratch_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RUArm_Laceration_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RUArm_Laceration_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RUArm_Bite_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RUArm_Bite_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RUArm_Scratch_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RUArm_Scratch_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RUArm_Laceration_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RUArm_Laceration_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LForearm_Bite_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LForearm_Bite_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LForearm_Scratch_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LForearm_Scratch_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LForearm_Laceration_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LForearm_Laceration_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LForearm_Bite_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LForearm_Bite_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LForearm_Scratch_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LForearm_Scratch_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_LForearm_Laceration_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_LForearm_Laceration_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RForearm_Bite_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RForearm_Bite_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RForearm_Scratch_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RForearm_Scratch_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RForearm_Laceration_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RForearm_Laceration_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RForearm_Bite_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RForearm_Bite_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RForearm_Scratch_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RForearm_Scratch_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_RForearm_Laceration_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_RForearm_Laceration_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Groin_Bite_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Groin_Bite_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Groin_Scratch_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Groin_Scratch_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Groin_Laceration_Male
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Groin_Laceration_Male,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Groin_Bite_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Groin_Bite_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Groin_Scratch_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Groin_Scratch_Female,
+		WorldRender = FALSE,
+	}
+	
+	item Wound_Groin_Laceration_Female
+	{
+		DisplayCategory = Wound,
+		Type = Clothing,
+		Weight = 0,
+		BodyLocation = Wound,
+		ClothingItem = Wound_Groin_Laceration_Female,
+		WorldRender = FALSE,
+	}
+}

@@ -1,0 +1,93 @@
+/*module Base
+{
+    stringList Recipes_Forge
+    {
+        Extract Workable Iron From Bloom,
+        Make Iron Pieces,
+        Make Steel Bar Quarters,
+
+        Make Nail-Spiked Cudgel,
+        Make Railspike Baseball Bat,
+        Make Railspike Cudgel,
+        Make Railspike Iron Pipe,
+        Make Railspike Long Handle,
+        Make Railspike Short Bat,
+        Make Railspike Tree Branch,
+        Make Sawblade Baseball Bat,
+        Make Sawblade Cudgel,
+        Make Sawblade Long Handle,
+        Make Sawblade Short Bat,
+    }
+
+    xuiSkin default
+    {
+        entity ES_Forge_II
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Forge,
+            Icon                = Item_BlockAnvil,
+
+            /*components
+            {
+                CraftLogic
+                {
+                    LuaPanelClass           = ISCraftDefaultPanel,
+                    DisplayName             = Forge,
+                    Icon                    = Item_BlockAnvil,
+                }
+            }*/
+        }
+    }
+
+    entity Forge
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Forge_II,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = PrimitiveForge;Forge,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_01_42 crafted_01_116 crafted_01_38,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_01_54,
+                    row = crafted_01_19,
+                    row = crafted_01_36,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = Test,
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 1 [Base.MasonsTrowel] mode:keep flags[Prop1],
+                item 30 [Base.StoneBlock],
+                item 1 tags[Concrete] flags[DontRecordInput],
+                item 1 [Base.BlacksmithAnvil],
+                item 1 [Base.BucketLargeWood],
+                item 1 [Base.Log],
+            }
+        }
+    }
+
+}*/

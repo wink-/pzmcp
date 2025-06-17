@@ -1,0 +1,76 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_Metal_Crate_Lvl1
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Metal Crate (Shoddy),
+			Icon		= Build_CrateMetal,
+		}
+	}
+
+    entity Metal_Crate_Lvl1
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Metal_Crate_Lvl1,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+            canBePadlocked = true,
+            face W
+            {
+                layer
+                {
+                    row = constructedobjects_01_45,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = constructedobjects_01_44,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = constructedobjects_01_47,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = constructedobjects_01_46,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            OnAddToMenu   = metalCrateLvl1Test,
+            timedAction   = BuildMetalStructureMedium,
+            time          = 50,
+            needToBeLearn = true,
+            SkillRequired = MetalWelding:3,
+            xpAward       = MetalWelding:30,
+            category      = Furniture,
+            tags          = Welding,
+            ToolTip       = Tooltip_craft_crateDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 2 [Base.SmallSheetMetal],
+                item 2 [Base.SheetMetal],
+                item 1 [Base.ScrapMetal],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

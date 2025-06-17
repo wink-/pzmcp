@@ -1,0 +1,148 @@
+module Base
+{
+	sound JS2000ShotgunShoot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
+		{
+			event = Weapon/Firearm/JS2000Shotgun/Shoot,
+		}
+	}
+
+	sound JS2000ShotgunInsertAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/JS2000Shotgun/InsertAmmo,
+		}
+	}
+	
+	sound JS2000ShotgunEjectAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/JS2000Shotgun/EjectAmmo,
+		}
+	}
+
+	sound JS2000ShotgunInsertAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/JS2000Shotgun/InsertAmmoStart,
+		}
+	}
+
+	sound JS2000ShotgunInsertAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/JS2000Shotgun/InsertAmmoStop,
+		}
+	}
+
+	sound JS2000ShotgunEjectAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/JS2000Shotgun/EjectAmmoStart,
+		}
+	}
+
+	sound JS2000ShotgunEjectAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/JS2000Shotgun/EjectAmmoStop,
+		}
+	}
+
+	sound JS2000ShotgunRack
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/JS2000Shotgun/Rack,
+		}
+	}
+
+	sound JS2000ShotgunJam
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/JS2000Shotgun/Jam,
+		}
+	}
+        
+	sound JS2000ShotgunBringToBear
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/JS2000Shotgun/BringToBear,
+		}
+	}
+
+	sound JS2000ShotgunAimRelease
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/JS2000Shotgun/AimRelease,
+		}
+	}
+
+	sound JS2000ShotgunEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/JS2000Shotgun/Equip,
+		}
+	}
+        
+	sound JS2000ShotgunUnEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/JS2000Shotgun/UnEquip,
+		}
+	}
+
+            
+	sound JS2000ShotgunBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/JS2000Shotgun/Break,
+		}
+	}
+
+	sound JS2000ShotgunDrop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/JS2000Shotgun/Drop,
+		}
+	}
+
+	sound JS2000ShotgunCartridgeFall
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/JS2000Shotgun/CartridgeFall,
+		}
+	}
+}

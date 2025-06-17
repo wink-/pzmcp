@@ -1,0 +1,55 @@
+module Base
+{
+    template vehicle Radio
+    {
+		part Radio
+		{
+		    area = Engine,
+		    itemType = Base.RadioBlack;Base.RadioRed;Base.RadioMakeShift,
+		    specificItem = false,
+		    durability = 2,
+		    table install
+            {
+                items
+                {
+                    1
+                    {
+                        tags = Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 100,
+                professions = ,
+                skills = ,
+                traits = ,
+                recipes = ,
+                test = Vehicles.InstallTest.Default,
+                complete = Vehicles.InstallComplete.Radio,
+            }
+            table uninstall
+            {
+                items
+                {
+                    1
+                    {
+                        tags = Screwdriver,
+                        count = 1,
+                        keep = true,
+						equip = primary,
+                    }
+                }
+                time = 100,
+                test = Vehicles.UninstallTest.Default,
+                /*complete = Vehicles.UninstallComplete.Radio,*/
+            }
+			lua
+			{
+				create = Vehicles.Create.Radio,
+				update = Vehicles.Update.Radio,
+			}
+		}
+	}
+}
+

@@ -1,0 +1,71 @@
+/*module Base
+{
+    craftRecipe MakeWoodCharcoal
+     {
+       /* time        = 3000,*/
+        time        = 10,
+	tags = WoodCharcoal,
+
+         inputs
+         {
+            item 8 [Base.Log],
+         }
+         outputs
+         {
+            item 8 Base.CharcoalCrafted,
+	 }
+     }
+
+    entity Charcoal_Pit
+    {
+
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Charcoal_Pit,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@8,
+            }
+            group craft_outputs
+            {
+                Item@Output@1,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes         = WoodCharcoal,
+            StartMode       = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+        component SpriteConfig
+        {
+            face single
+            {
+                layer
+                {
+                    row = false crafted_01_126,
+                    row = crafted_01_124 crafted_01_125,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 1 [Base.Shovel] mode:keep flags[Prop1],
+            }
+        }
+    }
+}*/

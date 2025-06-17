@@ -1,0 +1,169 @@
+/*module Base
+{
+    entity Metalwork_Table
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Metalwork_Table,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = Metalworkbench,
+        }
+
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = industry_03_82 industry_03_91,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = industry_03_89,
+                    row = industry_03_80,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = industry_03_90 industry_03_83,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = industry_03_81,
+                    row = industry_03_88,
+                }
+            }
+        }
+    }
+    entity Metalwork_Table2
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Metalwork_Table,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = Metalworkbench,
+        }
+
+        /*
+        component Resources
+        {
+        }
+
+        component CraftLogic
+        {
+            CraftProcessor
+            {
+                Recipes             = Recipes_Metalworkbench,
+                StartMode           = Manual,
+                AllowShaped         = false,
+                isPlayerAction      = true,
+                manualRecipeSelect  = true,
+
+                resources Input
+                {
+                    item
+                    {
+                        Capacity    = 5,
+                    }
+                    item
+                    {
+                        Capacity    = 1,
+                    }
+                    item
+                    {
+                        Capacity    = 1,
+                    }
+                    item
+                    {
+                        Capacity    = 1,
+                    }
+                    item
+                    {
+                        Capacity    = 1,
+                    }
+                    item
+                    {
+                        Capacity    = 1,
+                    }
+                }
+                resources Output
+                {
+                    item
+                    {
+                        Capacity    = 10,
+                    }
+                    item
+                    {
+                        Capacity    = 10,
+                    }
+                }
+            }
+        }
+        */
+
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = industry_03_122 industry_03_95,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = industry_03_93,
+                    row = industry_03_120,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = industry_03_94 industry_03_123,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = industry_03_121,
+                    row = industry_03_92,
+                }
+            }
+        }
+                                
+        component CraftRecipe
+        {
+            timedAction   = Test,
+            time          = 50,
+            tags          = Welding,
+            inputs
+            {
+                item 1 [Base.Log],
+            }
+        }
+    }
+}*/

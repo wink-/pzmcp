@@ -1,0 +1,285 @@
+module Base
+{
+	
+	/******* ENTERTAINMENT - COLLECTIBLES *******/
+	
+	item BorisBadger
+	{
+		DisplayName = Boris The Badger,
+		DisplayCategory = Badger,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = Plush_Badger,
+		WorldStaticModel = PlushieBadger_Ground,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+	
+	item FluffyfootBunny
+	{
+		DisplayName = Fluffyfoot The Bunny,
+		DisplayCategory = Bunny,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = Plush_Rabbit,
+		WorldStaticModel = PlushieRabbit_Ground,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+	
+	item FreddyFox
+	{
+		DisplayName = Freddy The Fox,
+		DisplayCategory = Fox,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = Plush_Fox,
+		WorldStaticModel = PlushieFox_Ground,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+	
+	item FurbertSquirrel
+	{
+		DisplayName = Furbert The Squirrel,
+		DisplayCategory = Squirrel,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = Plush_Squirrel,
+		WorldStaticModel = PlushieSquirrel_Ground,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+	
+	item JacquesBeaver
+	{
+		DisplayName = Jacques The Beaver,
+		DisplayCategory = Beaver,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = Plush_Beaver,
+		WorldStaticModel = PlushieBeaver_Ground,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+	
+	item MoleyMole
+	{
+		DisplayName = Moley The Mole,
+		DisplayCategory = Mole,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = Plush_Mole,
+		WorldStaticModel = PlushieMole_Ground,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+
+	item PancakeHedgehog
+	{
+		DisplayName = Pancake The Hedgehog,
+		DisplayCategory = Hedgehog,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = Plush_Hedgehog,
+		WorldStaticModel = PlushieHedgehog_Ground,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+
+	item PanchoDog
+	{
+		DisplayName = Pancho the Dog,
+        DisplayCategory = Dog,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = Plush_PanchoTaco,
+		WorldStaticModel = Pancho,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+
+	item Plushabug
+	{
+		DisplayName = Plumpabug the Aphid,
+        DisplayCategory = Bug,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = Plumpabug,
+		WorldStaticModel = Plushabug,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+	
+	item Spiffo
+	{
+		DisplayName = Spiffo,
+		DisplayCategory = Raccoon,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = PlushSpiffo,
+		WorldStaticModel = SpiffoPlushie,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+	
+	item SpiffoBig
+	{
+		DisplayName = Spiffo - Big,
+		DisplayCategory = Raccoon,
+		Type = Normal,
+		Weight = 5,
+		Icon = SpiffoXL,
+		WorldStaticModel = SpiffoPlushieBig,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+
+	item ToyBear
+	{
+	    DisplayCategory = Teddy Bear,
+		Weight	=	5,
+		Type	=	Normal,
+		DisplayName	=	Toy Bear,
+		Icon	=	ToyBear,
+		WorldStaticModel = ToyBear,
+		Tags = IsFireFuel;IsFireTinder;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+
+	item ToyBear_Crafted_Cotton
+	{
+	    DisplayCategory = Teddy Bear,
+		Weight	=	5,
+		Type	=	Normal,
+		DisplayName	=	Teddy Bear,
+		Icon = TeddyBear_Crafted2,
+		WorldStaticModel = ToyBear_Crafted_Cotton,
+		Tags = IsFireFuel;IsFireTinder;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+
+	item ToyBear_Crafted_Burlap
+	{
+	    DisplayCategory = Teddy Bear,
+		Weight	=	5,
+		Type	=	Normal,
+		DisplayName	=	Teddy Bear,
+		Icon = TeddyBear_Crafted,
+		WorldStaticModel = ToyBear_Crafted_Denim,
+		Tags = IsFireFuel;IsFireTinder;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+	
+	/******* ENTERTAINMENT - TOYS *******/
+
+    item Bricktoys
+	{
+	    DisplayCategory = Memento,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	= Brick Toys,
+		Icon	=	Bricktoys,
+		WorldStaticModel = BrickToys,
+		Tags = IsMemento,
+	}
+	
+	item Crayons
+	{
+		DisplayName = Crayons,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.4,
+		Icon = Crayons,
+		WorldStaticModel = Crayons,
+		Tags = BluePen;Pen;Pencil;RedPen;GreenPen;Write,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Cube
+	{
+		DisplayName = Cube,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Cube,
+		StaticModel = CubePuzzle,
+		WorldStaticModel = Cube_Ground,
+		Tags = IsMemento,
+	}
+	
+	item Doll
+	{
+		DisplayName = Doll,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = Doll,
+		WorldStaticModel = Doll,
+		Tags = IsFireFuel;IsFireTinder;IsMemento,
+		FireFuelRatio = 0.25,
+	}
+	
+	item Rubberducky
+	{
+		DisplayName = Rubber Duck,
+		DisplayCategory = Duck,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Rubberducky,
+		IconColorMask = Rubberducky_Mask,
+		WorldStaticModel = RubberduckyTINTED,
+		Tags = IsMemento;IsAtomic,
+		Tooltip = Tooltip_item_Duck,
+		OnCreate = SpecialLootSpawns.OnCreateRandomColor,
+	}
+
+	item RubberSpider
+	{
+		DisplayName = RubberSpider,
+		DisplayCategory = Spider,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = RubberSpider,
+		WorldStaticModel = RubberSpider,
+		Tags = IsMemento,
+	}
+
+	item ToyBadge
+	{
+		DisplayName = Toy Badge,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.2,
+		IconsForTexture = SheriffBadge_Toy,
+		WorldStaticModelsByIndex = ToyBadge,
+		Tags = IsMemento;HasMetal;FitsWallet,
+	}
+	
+	item ToyCar
+	{
+		DisplayName = Toy Car,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = ToyCar,
+		IconColorMask = ToyCar_Mask,
+		WorldStaticModel = ToyCar,
+		Tags = IsMemento;HasMetal,
+		OnCreate = SpecialLootSpawns.OnCreateRandomColor,
+	}
+	
+	item Yoyo
+	{
+		DisplayName = Yoyo,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = Yoyo,
+		WorldStaticModel = Yoyo,
+		Tags = IsMemento,
+	}
+
+
+	/*ACCESSORIES*/
+}

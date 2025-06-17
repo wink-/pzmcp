@@ -1,0 +1,72 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_SkullPoleDeerDoe
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Doe Skull Pole,
+			Icon		= Build_Stake_SkullDoe,
+		}
+	}
+
+    entity SkullPoleDeerDoe
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_SkullPoleDeerDoe,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 50,
+        	skillBaseHealth = 10,
+			
+            face W
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_94,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_93,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_95,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_92,
+                }
+            }
+        }
+		
+		component CraftRecipe
+        {
+		    timedAction   = BuildWallNoTool,
+            time          = 150,
+            category      = Miscellaneous,
+		    ToolTip       = Tooltip_craft_skullPoleDesc,
+
+            inputs
+            {
+                item 1 [Base.LongStick;Base.Sapling],
+                item 1 [Base.SheetRope],
+                item 1 [Base.DeerDoe_Skull],
+            }
+        }
+    }
+}

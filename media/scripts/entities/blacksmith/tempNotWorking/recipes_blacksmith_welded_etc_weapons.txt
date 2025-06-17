@@ -1,0 +1,304 @@
+module Base
+{
+
+
+    craftRecipe MakeBlockBludgeon
+    {
+        time            = 600,
+        tags            = AnySurfaceCraft,
+        needTobeLearn = false,
+        SkillRequired = MetalWelding:1,
+        timedAction = Welding_Surface,
+		xpAward = MetalWelding:5,
+        inputs
+        {
+            item 1 [Base.IronRod;Base.IronRodHalf;Base.MetalBar;Base.MetalPipe;Base.MetalPipe_Broken;Base.SteelRodHalf] mappers[BlockMapper] flags[Prop2;InheritCondition],
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep flags[IsWorn],
+            item 1 [Base.PiercedIronBlock;Base.PiercedSteelBlock] flags[Prop1;IsHeadPart],
+            item 1 [Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips] mode:destroy,
+        }
+        outputs
+        {
+            item 1 mapper:BlockMapper,
+        }
+        itemMapper BlockMapper
+        {
+            Base.BlockMaul = Base.IronRod,
+            Base.BlockMace = Base.IronRodHalf,
+            Base.BlockMaul = Base.MetalBar,
+            Base.BlockMaul = Base.MetalPipe,
+            Base.BlockMace = Base.MetalPipe_Broken,
+            Base.BlockMace = Base.SteelRodHalf,
+
+            default = Base.BlockMaul,
+        }
+    }
+
+    craftRecipe Make_Scrap_Knife
+     {
+        time            = 600,
+         SkillRequired = MetalWelding:2,
+         needTobeLearn = false,
+         timedAction = Welding,
+         xpAward = MetalWelding:10,
+         inputs
+         {
+            item 1 tags[BarStockHalf;FullBlade]  flags[Prop2],
+            item 1 tags[Whetstone;File] mode:keep flags[Prop1;MayDegradeLight],
+			item 1 [Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips] mode:destroy,
+         }
+         outputs
+         {
+             item 1 Base.LargeKnife_Scrap,
+         }
+     }
+
+    craftRecipe Make_Scrap_Shortsword
+     {
+        time            = 600,
+         SkillRequired = MetalWelding:4,
+         needTobeLearn = true,
+         timedAction = Welding,
+         xpAward = MetalWelding:15,
+         inputs
+         {
+            item 1 tags[BarStock;FullBlade] flags[Prop2],
+            item 1 tags[Whetstone;File] mode:keep flags[Prop1;MayDegradeLight],
+			item 1 [Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips]  mode:destroy,
+         }
+         outputs
+         {
+             item 1 Base.ShortSword_Scrap,
+             item 1 Base.IronBarQuarter,
+         }
+     }
+
+    craftRecipe Make_Scrap_Sword
+     {
+        time            = 600,
+         SkillRequired = MetalWelding:5,
+         needTobeLearn = false,
+         timedAction = Welding,
+         xpAward = MetalWelding:15,
+         inputs
+         {
+            item 1 tags[BarStock] flags[Prop2],
+            item 1 tags[Whetstone;File] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[BarStockQuarter],
+			item 1 [Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips] mode:destroy,
+            item 1 tags[Wrench] mode:keep flags[MayDegradeLight],
+            item 1 [Base.NutsBolts],
+            item 1 tags[DrillMetal] mode:keep flags[MayDegradeLight],
+			item 1 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep flags[IsWorn],
+         }
+         outputs
+         {
+             item 1 Base.Sword_Scrap,
+         }
+     }
+
+    craftRecipe SawbladeBat
+     {
+        time            = 600,
+         SkillRequired = MetalWelding:4,
+         needTobeLearn = false,
+         timedAction = Welding,
+         xpAward = MetalWelding:10,
+        category = Metalworking,
+         inputs
+         {
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep flags[IsWorn],
+            item 1 [Base.BaseballBat_Metal] flags[Prop2],
+            item 2 [Base.NutsBolts],
+            item 1 [Base.CircularSawblade_Half],
+            item 1 tags[Wrench] mode:keep flags[MayDegradeLight],
+            item 1 tags[DrillMetal] mode:keep flags[MayDegrade],
+			item 1 tags[SheetMetalSnips;MetalSaw] mode:keep flags[MayDegradeLight],
+            item 1 [Base.SmallSheetMetal;Base.IronBand],
+         }
+         outputs
+         {
+             item 1 Base.BaseballBat_Metal_Sawblade,
+         }
+     }
+
+    craftRecipe MakeScrapMetalWeapon
+     {
+        time            = 600,
+         SkillRequired = MetalWelding:3,
+         needTobeLearn = false,
+         timedAction = Welding,
+         xpAward = MetalWelding:10,
+         inputs
+         {
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep flags[IsWorn],
+            item 1 [Base.IronRod;Base.MetalBar;Base.MetalPipe] flags[Prop2],
+            item 1 [Base.NutsBolts],
+            item 1 [Base.CircularSawblade_Half;Base.EngineParts;Base.ModernBrake1;Base.ModernBrake2;Base.ModernBrake3;Base.NormalBrake1;Base.NormalBrake2;Base.NormalBrake3;Base.OldBrake1;Base.OldBrake2;Base.OldBrake3;Base.RakeHead;Base.GardenForkHead;Base.GardenForkHead_Forged;Base.SpadeHead;Base.SpadeHead_Forged;Base.ScrapMetal] mappers[ScrapMapper],
+            item 1 tags[Wrench] mode:keep flags[MayDegradeLight],
+            item 1 tags[DrillMetal] mode:keep flags[MayDegrade],
+            item 1 [Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips],
+         }
+        outputs
+        {
+            item 1 mapper:ScrapMapper,
+        }
+        itemMapper ScrapMapper
+        {
+            Base.Axe_Sawblade = Base.CircularSawblade_Half,
+            Base.EngineMaul = Base.EngineParts,
+
+            Base.ScrapWeapon_Brake = Base.ModernBrake1,
+            Base.ScrapWeapon_Brake = Base.ModernBrake2,
+            Base.ScrapWeapon_Brake = Base.ModernBrake3,
+            Base.ScrapWeapon_Brake = Base.NormalBrake1,
+            Base.ScrapWeapon_Brake = Base.NormalBrake2,
+            Base.ScrapWeapon_Brake = Base.NormalBrake3,
+            Base.ScrapWeapon_Brake = Base.OldBrake1,
+            Base.ScrapWeapon_Brake = Base.OldBrake2,
+            Base.ScrapWeapon_Brake = Base.OldBrake3,
+
+            Base.ScrapWeaponRakeHead = Base.RakeHead,
+            Base.ScrapWeaponGardenFork = Base.GardenForkHead,
+            Base.ScrapWeaponGardenFork = Base.GardenForkHead_Forged,
+            Base.ScrapWeaponSpade = Base.SpadeHead,
+            Base.ScrapWeaponSpade = Base.SpadeHead_Forged,
+            Base.ScrapMaul = Base.ScrapMetal,
+            Base.Axe_Sawblade = SmallSheetMetal,
+
+            default = Base.Axe_ScrapCleaver,
+        }
+     }
+
+    craftRecipe MakeShortScrapMetalWeapon
+     {
+        time            = 600,
+         SkillRequired = MetalWelding:3,
+         needTobeLearn = false,
+         timedAction = Welding,
+         xpAward = MetalWelding:10,
+         inputs
+         {
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep flags[IsWorn],
+            item 1 [Base.IronRod;Base.MetalBar;Base.MetalPipe] flags[Prop2],
+            item 1 [Base.NutsBolts],
+            item 1 [Base.CircularSawblade_Half;Base.SmallSheetMetal] mappers[ScrapMapper],
+            item 1 tags[Wrench] mode:keep flags[MayDegradeLight],
+            item 1 tags[DrillMetal] mode:keep flags[MayDegradeLight],
+            item 1 [Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips] mode:destroy,
+         }
+        outputs
+        {
+            item 1 mapper:ScrapMapper,
+        }
+        itemMapper ScrapMapper
+        {
+            Base.Axe_Sawblade_Hatchet = Base.CircularSawblade_Half,
+            Base.MeatCleaver_Scrap = SmallSheetMetal,
+
+            default = Base.Axe_Sawblade_Hatchet,
+        }
+     }
+    craftRecipe MakeScrapMorningstar
+    {
+        time            = 600,
+        tags            = AnySurfaceCraft,
+        needTobeLearn = false,
+        SkillRequired = MetalWelding:4,
+        timedAction = Welding_Surface,
+		xpAward = MetalWelding:5,
+        inputs
+        {
+            item 1 [Base.IronRod;Base.IronRodHalf;Base.MetalBar;Base.MetalPipe;Base.MetalPipe_Broken;Base.SteelRodHalf] mappers[HandleMapper] flags[Prop2;InheritCondition],
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep flags[IsWorn],
+			item 1 tags[SheetMetalSnips;MetalSaw] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 [Base.SmallSheetMetal],
+            item 1 [Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips] mode:destroy,
+        }
+        outputs
+        {
+            item 1 mapper:HandleMapper,
+        }
+        itemMapper HandleMapper
+        {
+            Base.Morningstar_Scrap = Base.IronRod,
+            Base.Morningstar_Scrap_Short = Base.IronRodHalf,
+            Base.Morningstar_Scrap = Base.MetalBar,
+            Base.Morningstar_Scrap = Base.MetalPipe,
+            Base.Morningstar_Scrap_Short = Base.MetalPipe_Broken,
+            Base.Morningstar_Scrap_Short = Base.SteelRodHalf,
+
+            default = Base.BlockMaul,
+        }
+    }
+    craftRecipe MakeScrapCleaver
+    {
+        time            = 600,
+        tags            = AnySurfaceCraft,
+        needTobeLearn = false,
+        SkillRequired = MetalWelding:3,
+        timedAction = Welding_Surface,
+		xpAward = MetalWelding:5,
+        inputs
+        {
+            item 1 [Base.IronRod;Base.IronRodHalf;Base.MetalBar;Base.MetalPipe;Base.MetalPipe_Broken;Base.SteelRodHalf] mappers[HandleMapper] flags[Prop2;InheritCondition],
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep flags[IsWorn],
+			item 1 tags[Whetstone;File] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 [Base.SmallSheetMetal] flags[IsHeadPart],
+            item 1 [Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips] mode:destroy,
+            item 1 [Base.NutsBolts],
+            item 1 tags[Wrench] mode:keep flags[MayDegradeLight],
+            item 1 tags[DrillMetal] mode:keep flags[MayDegradeLight],
+			item 1 tags[SheetMetalSnips;MetalSaw] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 mapper:HandleMapper,
+        }
+        itemMapper HandleMapper
+        {
+            Base.Axe_ScrapCleaver = Base.IronRod,
+            Base.MeatCleaver_Scrap = Base.IronRodHalf,
+            Base.Axe_ScrapCleaver = Base.MetalBar,
+            Base.Axe_ScrapCleaver = Base.MetalPipe,
+            Base.MeatCleaver_Scrap = Base.MetalPipe_Broken,
+            Base.MeatCleaver_Scrap = Base.SteelRodHalf,
+
+            default = Base.MeatCleaver_Scrap,
+        }
+    }
+    craftRecipe MakeScrapChopper
+    {
+        time            = 600,
+        tags            = AnySurfaceCraft,
+        needTobeLearn = false,
+        SkillRequired = MetalWelding:4,
+        timedAction = Welding_Surface,
+		xpAward = MetalWelding:10,
+        inputs
+        {
+            item 1 [Base.IronRod;Base.IronRodHalf;Base.MetalBar;Base.MetalPipe;Base.MetalPipe_Broken;Base.SteelRodHalf] flags[Prop2;InheritCondition],
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep flags[IsWorn],
+			item 1 tags[Whetstone;File] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 [Base.SheetMetal] flags[IsHeadPart],
+            item 1 [Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips] mode:destroy,
+            item 1 [Base.NutsBolts],
+            item 1 tags[Wrench] mode:keep flags[MayDegradeLight],
+            item 1 tags[DrillMetal] mode:keep flags[MayDegradeLight],
+			item 1 tags[SheetMetalSnips;MetalSaw] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.Machete_Crude,
+        }
+    }
+
+}

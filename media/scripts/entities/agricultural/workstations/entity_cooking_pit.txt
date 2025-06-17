@@ -1,0 +1,82 @@
+module Base
+{
+
+    xuiSkin default
+    {
+        entity ES_Cooking_Pit
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Cooking Pit,
+            Icon                = Build_CookingPit,
+        }
+    }
+
+    entity Cooking_Pit
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Cooking_Pit,
+            uiEnabled       = false,
+        }
+/*
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@1,
+                Item@Input@1,
+                Item@Input@1,
+                Item@Input@1,
+                Item@Input@1,
+                Item@Input@1,
+                Item@Input@1,
+                Item@Input@1,
+                /* Energy@Input@130@Thermal@Channel_Red@null, */
+            }
+            group craft_outputs
+            {
+                Item@Output@1,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes             = Recipes_Cooking_Pit,
+            StartMode           = Manual,
+            inputGroup          = craft_inputs,
+            outputGroup         = craft_outputs,
+        }*/
+
+
+        component SpriteConfig
+        {
+            isProp      = true,
+
+            face single
+            {
+                layer
+                {
+                    row = camping_03_19,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = BuildCairn,
+            time          = 50,
+            category      = Masonry,
+            tags          = Outdoors,
+            SkillRequired = Masonry:2,
+            xpAward       = Masonry:20,
+            ToolTip       = Tooltip_craft_cookingPitDesc,
+            inputs
+            {
+                item 10 [Base.StoneBlock],
+                item 1 tags[Concrete] flags[DontRecordInput],
+                item 1  tags[MasonsTrowel] mode:keep flags[Prop1;MayDegradeLight],
+            }
+        }
+    }
+}

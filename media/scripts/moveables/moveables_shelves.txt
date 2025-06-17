@@ -1,0 +1,43 @@
+module Base
+{
+	
+	item Mov_ComicsShopShelves
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Comics Shop Shelves,
+		WorldObjectSprite = location_shop_generic_01_1,
+	}
+	
+	item Mov_MetalLocker
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Metal Locker,
+		WorldObjectSprite = furniture_storage_02_0,
+	}
+	
+	item Mov_MetalWallShelves
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Metal Wall Shelves,
+		WorldObjectSprite = furniture_shelving_01_28,
+	}
+	
+	item Mov_OakShelves
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Oak Shelves,
+		WorldObjectSprite = furniture_shelving_01_40,
+	}
+}

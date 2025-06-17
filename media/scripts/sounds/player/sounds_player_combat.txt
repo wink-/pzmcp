@@ -1,0 +1,299 @@
+module Base
+{
+	sound AttackShove
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/AttackShove,
+		}
+	}
+
+	sound AttackStomp
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/AttackStomp,
+		}
+	}
+
+	sound ZombieRipClothing
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/RipCloth,
+		}
+	}
+
+	sound BloodSplatter
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/BloodSplatter,
+		}
+	}
+
+	sound BulletHitBody
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/BulletHitBody,
+		}
+	}
+
+	sound BulletImpact
+	{
+		category = Player,
+		clip
+		{
+			event = Weapon/Firearm/Bullet/Impact,
+		}
+	}
+
+	sound ArmourBreakKevlar
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/Break/Kevlar,
+		}
+	}
+
+	sound ArmourBreakMetal
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/Break/Metal,
+		}
+	}
+
+	sound ArmourBreakSportsPadding
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/Break/SportsPadding,
+		}
+	}
+
+	sound ArmourBreakMagazine
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/Break/Magazine,
+		}
+	}
+
+	sound ArmourBreakLeather
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/Break/Leather,
+		}
+	}
+
+	sound ArmourBreakChainmail
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/Break/Chainmail,
+		}
+	}
+
+	sound ArmourBreakRubber
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/Break/Rubber,
+		}
+	}
+
+	sound ArmourBreakWood
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/Break/Wood,
+		}
+	}
+
+	sound ArmourBreakBone
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/Break/Bone,
+		}
+	}
+
+	sound ArmourFirearmHitKevlar
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/FirearmHit/Kevlar,
+		}
+	}
+
+	sound ArmourFirearmHitMetal
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/FirearmHit/Metal,
+		}
+	}
+
+	sound ArmourFirearmHitSportsPadding
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/FirearmHit/SportsPadding,
+		}
+	}
+
+	sound ArmourFirearmHitMagazine
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/FirearmHit/Magazine,
+		}
+	}
+
+	sound ArmourFirearmHitLeather
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/FirearmHit/Leather,
+		}
+	}
+
+	sound ArmourFirearmHitChainmail
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/FirearmHit/Chainmail,
+		}
+	}
+
+	sound ArmourFirearmHitRubber
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/FirearmHit/Rubber,
+		}
+	}
+
+	sound ArmourFirearmHitWood
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/FirearmHit/Wood,
+		}
+	}
+
+	sound ArmourFirearmHitBone
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/FirearmHit/Bone,
+		}
+	}
+
+	sound ArmourMeleeHitKevlar
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/MeleeHit/Kevlar,
+		}
+	}
+
+	sound ArmourMeleeHitMetal
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/MeleeHit/Metal,
+		}
+	}
+
+	sound ArmourMeleeHitSportsPadding
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/MeleeHit/SportsPadding,
+		}
+	}
+
+	sound ArmourMeleeHitMagazine
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/MeleeHit/Magazine,
+		}
+	}
+
+	sound ArmourMeleeHitLeather
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/MeleeHit/Leather,
+		}
+	}
+
+	sound ArmourMeleeHitChainmail
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/MeleeHit/Chainmail,
+		}
+	}
+
+	sound ArmourMeleeHitRubber
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/MeleeHit/Rubber,
+		}
+	}
+
+	sound ArmourMeleeHitWood
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/MeleeHit/Wood,
+		}
+	}
+
+	sound ArmourMeleeHitBone
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Combat/Armour/MeleeHit/Bone,
+		}
+	}
+}

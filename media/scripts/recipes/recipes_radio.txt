@@ -1,0 +1,304 @@
+module Base
+{
+
+	/* NOTES: FIX_ACTION, FIX_FLAGS */
+	craftRecipe DismantleRadio
+	{
+        timedAction = DismantleElectrical,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.DismantleRadio,
+		Tags = InHandCraft;Electrical,
+        category = Electrical,
+		xpAward = Electricity:2,
+		inputs
+		{
+			item 1 [Base.RadioRed;Base.RadioBlack] flags[NoBrokenItems;ResearchInput] mode:destroy,
+			item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight;NoBrokenItems],
+		}
+		outputs
+		{
+			item 1 Base.ElectronicsScrap,
+		}
+	}
+
+	/* NOTES: FIX_ACTION, FIX_FLAGS */
+	craftRecipe DismantleTwoWayRadio
+	{
+        timedAction = DismantleElectrical,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.DismantleRadioTwoWay,
+		Tags = InHandCraft;Electrical,
+        category = Electrical,
+		xpAward = Electricity:2,
+		inputs
+		{
+			item 1 [Base.WalkieTalkie1;Base.WalkieTalkie2;Base.WalkieTalkie3;Base.WalkieTalkie4;Base.WalkieTalkie5] flags[NoBrokenItems;ResearchInput] mode:destroy,
+			item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight;NoBrokenItems],
+		}
+		outputs
+		{
+			item 1 Base.ElectronicsScrap,
+		}
+	}
+	/*
+	craftRecipe DismantlePager
+	{
+        timedAction = DismantleElectrical,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.DismantleRadioTwoWay,
+		Tags = InHandCraft;Electrical,
+        category = Electrical,
+		xpAward = Electricity:2,
+		inputs
+		{
+			item 1 [Base.Pager] flags[NoBrokenItems;ResearchInput] mode:destroy,
+			item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight;NoBrokenItems],
+		}
+		outputs
+		{
+			item 1 Base.ElectronicsScrap,
+		}
+	}
+    */
+	craftRecipe DismantleHAMRadio
+	{
+        timedAction = DismantleElectrical,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.DismantleRadioHAM,
+        tags = AnySurfaceCraft,
+        category = Electrical,
+		xpAward = Electricity:2,
+		inputs
+		{
+			item 1 [Base.HamRadio1;Base.HamRadio2;Base.ManPackRadio] flags[NoBrokenItems;ResearchInput] mode:destroy,
+			item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight;NoBrokenItems],
+		}
+		outputs
+		{
+			item 1 Base.ElectronicsScrap,
+		}
+	}
+
+    /* recipe Dismantle Manpack Radio
+    {
+       ManPackRadio,
+       keep [Recipe.GetItemTypes.Screwdriver],
+
+       NoBrokenItems:true,
+       Result:ElectronicsScrap,
+       Time:30.0,
+       OnCreate:Recipe.OnCreate.DismantleRadioHAM,
+       OnGiveXP:Recipe.OnGiveXP.DismantleRadio,
+       Category:Electrical,
+       AnimNode:Disassemble,
+       Prop1:Screwdriver,
+       Prop2:CDplayer,
+       Sound:Dismantle,
+    } */
+
+	/* NOTES: FIX_ACTION, FIX_FLAGS */
+	craftRecipe DismantleManpackRadio
+	{
+        timedAction = DismantleElectrical,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.DismantleRadioHAM,
+        tags = AnySurfaceCraft,
+        category = Electrical,
+		xpAward = Electricity:2,
+		inputs
+		{
+			item 1 [Base.ManPackRadio] flags[NoBrokenItems;ResearchInput] mode:destroy,
+			item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight;NoBrokenItems],
+		}
+		outputs
+		{
+			item 1 Base.ElectronicsScrap,
+		}
+	}
+
+    /* recipe Dismantle Television
+    {
+       TvAntique/TvWideScreen/TvBlack,
+       keep [Recipe.GetItemTypes.Screwdriver],
+
+       NoBrokenItems:true,
+       Result:ElectronicsScrap,
+       Time:30.0,
+       OnCreate:Recipe.OnCreate.DismantleRadioTV,
+       OnGiveXP:Recipe.OnGiveXP.DismantleRadio,
+       Category:Electrical,
+       AnimNode:Disassemble,
+       Prop1:Screwdriver,
+       Prop2:CDplayer,
+       Sound:Dismantle,
+    } */
+
+	/* NOTES: FIX_ACTION, FIX_FLAGS */
+	craftRecipe DismantleTelevision
+	{
+        timedAction = DismantleElectrical,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.DismantleRadioTV,
+        tags = AnySurfaceCraft,
+        category = Electrical,
+		xpAward = Electricity:2,
+		inputs
+		{
+			item 1 [Base.TvAntique;Base.TvWideScreen;Base.TvBlack] flags[NoBrokenItems] mode:destroy,
+			item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight;NoBrokenItems],
+		}
+		outputs
+		{
+			item 1 Base.ElectronicsScrap,
+		}
+	}
+    /* recipe Craft Makeshift Radio
+    {
+        ElectronicsScrap=2,
+        Amplifier,
+        LightBulb,
+        RadioReceiver,
+        ElectricWire,
+        [Recipe.GetItemTypes.Aluminum]=2,
+        keep [Recipe.GetItemTypes.Screwdriver],
+
+        NoBrokenItems:true,
+        Result:RadioMakeShift,
+        SkillRequired:Electricity=1,
+        NeedToBeLearn:true,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.RadioCraft,
+        OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+        Category:Electrical,
+    } */
+
+	/* NOTES: FIX_FLAGS */
+	craftRecipe CraftMakeshiftRadio
+	{
+        timedAction = DismantleElectrical,
+		Time = 100,
+		NeedToBeLearn = True,
+		SkillRequired = Electricity:1,
+		OnCreate = Recipe.OnCreate.RadioCraft,
+		Tags = AnySurfaceCraft,
+        category = Electrical,
+		AutoLearnAny = Electricity:6,
+		xpAward = Electricity:10,
+		inputs
+		{
+			item 2 [Base.ElectronicsScrap] flags[NoBrokenItems],
+			item 1 [Base.Amplifier] flags[NoBrokenItems],
+			item 1 [Base.LightBulb] flags[NoBrokenItems],
+			item 1 [Base.RadioReceiver] flags[NoBrokenItems],
+			item 1 [Base.ElectricWire] flags[NoBrokenItems],
+			item 2 tags[Aluminum] flags[NoBrokenItems],
+			item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight;NoBrokenItems],
+		}
+		outputs
+		{
+			item 1 Base.RadioMakeShift,
+		}
+	}
+    /* recipe Craft Makeshift HAM Radio
+    {
+        ElectronicsScrap=4,
+        Amplifier,
+        LightBulb,
+        LightBulbGreen,
+        RadioReceiver,
+        RadioTransmitter,
+        ElectricWire=3,
+        [Recipe.GetItemTypes.Aluminum]=4,
+        keep [Recipe.GetItemTypes.Screwdriver],
+
+        NoBrokenItems:true,
+        Result:HamRadioMakeShift,
+        SkillRequired:Electricity=1,
+        NeedToBeLearn:true,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.RadioCraft,
+        OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+        Category:Electrical,
+    } */
+
+	/* NOTES: FIX_FLAGS */
+	craftRecipe CraftMakeshiftHAMRadio
+	{
+        timedAction = DismantleElectrical,
+		Time = 100,
+		NeedToBeLearn = True,
+		SkillRequired = Electricity:3,
+		OnCreate = Recipe.OnCreate.RadioCraft,
+		Tags = AnySurfaceCraft,
+        category = Electrical,
+		AutoLearnAny = Electricity:8,
+		xpAward = Electricity:30,
+		inputs
+		{
+			item 4 [Base.ElectronicsScrap] flags[NoBrokenItems],
+			item 1 [Base.Amplifier] flags[NoBrokenItems],
+			item 1 [Base.LightBulb] flags[NoBrokenItems],
+			item 1 [Base.LightBulbGreen] flags[NoBrokenItems],
+			item 1 [Base.RadioReceiver] flags[NoBrokenItems],
+			item 1 [Base.RadioTransmitter] flags[NoBrokenItems],
+			item 3 [Base.ElectricWire] flags[NoBrokenItems],
+			item 4 tags[Aluminum] flags[NoBrokenItems],
+			item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight;NoBrokenItems],
+		}
+		outputs
+		{
+			item 1 Base.HamRadioMakeShift,
+		}
+	}
+    /* recipe Craft Makeshift Walkie Talkie
+    {
+        ElectronicsScrap=3,
+        Amplifier,
+        LightBulb,
+        LightBulbGreen,
+        RadioReceiver,
+        RadioTransmitter,
+        ElectricWire=2,
+        [Recipe.GetItemTypes.Aluminum]=3,
+        keep [Recipe.GetItemTypes.Screwdriver],
+
+        NoBrokenItems:true,
+        Result:WalkieTalkieMakeShift,
+        SkillRequired:Electricity=1,
+        NeedToBeLearn:true,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.RadioCraft,
+        OnGiveXP:Recipe.OnGiveXP.RadioCraft,
+        Category:Electrical,
+    } */
+
+	/* NOTES: FIX_FLAGS */
+	craftRecipe CraftMakeshiftWalkieTalkie
+	{
+        timedAction = MakingElectrical,
+		Time = 100,
+		NeedToBeLearn = True,
+		SkillRequired = Electricity:2,
+		OnCreate = Recipe.OnCreate.RadioCraft,
+		Tags = AnySurfaceCraft,
+        category = Electrical,
+		AutoLearnAny = Electricity:7,
+		xpAward = Electricity:20,
+		inputs
+		{
+			item 3 [Base.ElectronicsScrap] flags[NoBrokenItems],
+			item 1 [Base.Amplifier] flags[NoBrokenItems],
+			item 1 [Base.LightBulb] flags[NoBrokenItems],
+			item 1 [Base.LightBulbGreen] flags[NoBrokenItems],
+			item 1 [Base.RadioReceiver] flags[NoBrokenItems],
+			item 1 [Base.RadioTransmitter] flags[NoBrokenItems],
+			item 2 [Base.ElectricWire] flags[NoBrokenItems],
+			item 3 tags[Aluminum] flags[NoBrokenItems],
+			item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight;NoBrokenItems],
+		}
+		outputs
+		{
+			item 1 Base.WalkieTalkieMakeShift,
+		}
+	}
+}

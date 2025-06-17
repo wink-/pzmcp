@@ -1,0 +1,647 @@
+module Base
+{
+	item Hat_Army
+	{
+		DisplayName = Helmet - Military,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetArmyGreen,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_Army,
+		Insulation = 0.25,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		WaterResistance = 0.2,
+		VisionModifier = 0.75,
+		DiscomfortModifier = 0.20,
+	}
+
+	item Hat_ArmyWWII
+	{
+		DisplayName = Old Army Helmet,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Icon = HelmetArmyGreen,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_ArmyWWII,
+		Insulation = 0.25,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		WaterResistance = 0.2,
+		VisionModifier = 0.75,
+		DiscomfortModifier = 0.25,
+		Tags = HasMetal;IsMemento,
+	}
+
+	item Hat_SWAT
+	{
+		DisplayName = SWAT Helmet,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetSWAT,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_SWAT,
+		Insulation = 0.25,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		WaterResistance = 0.2,
+		VisionModifier = 0.75,
+		DiscomfortModifier = 0.20,
+	}
+
+	item Hat_BaseballHelmet
+	{
+		DisplayName = Helmet - Batting,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		IconsFortexture = HelmetBaseballRed;HelmetBaseballGreen;HelmetBaseballBlue,
+		BloodLocation = FullHelmet,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_BaseballHelmet,
+		CombatSpeedModifier = 0.95,
+		Insulation = 0.3,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		VisionModifier = 0.75,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.10,
+	}
+
+	item Hat_BaseballHelmet_KY
+	{
+		DisplayName = Helmet - Batting,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetBaseballRed,
+		BloodLocation = FullHelmet,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_BaseballHelmet_KY,
+		CombatSpeedModifier = 0.95,
+		Insulation = 0.3,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		VisionModifier = 0.75,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.10,
+	}
+
+	item Hat_BaseballHelmet_Rangers
+	{
+		DisplayName = Helmet - Batting,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetBaseballGreen,
+		BloodLocation = FullHelmet,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_BaseballHelmet_Rangers,
+		CombatSpeedModifier = 0.95,
+		Insulation = 0.3,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		VisionModifier = 0.75,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.10,
+	}
+
+	item Hat_BaseballHelmet_Z
+	{
+		DisplayName = Helmet - Batting,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetBaseballBlue,
+		BloodLocation = FullHelmet,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_BaseballHelmet_Z,
+		CombatSpeedModifier = 0.95,
+		Insulation = 0.3,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		VisionModifier = 0.75,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.10,
+	}
+
+	item Hat_BicycleHelmet
+	{
+		DisplayName = Helmet - Bicycle,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetBicycleWhite,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_BicycleHelmet,
+		Insulation = 0.25,
+		WindResistance = 0.15,
+		DiscomfortModifier = 0.10,
+		BiteDefense = 30,
+		ScratchDefense = 50,
+	}
+
+	item Hat_CrashHelmet
+	{
+		DisplayName = Helmet - Crash,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetCrash,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_CrashHelmet,
+		Insulation = 0.8,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		WindResistance = 0.8,
+		VisionModifier = 0.75,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.25,
+	}
+
+	item Hat_CrashHelmetFULL
+	{
+		DisplayName = Helmet - Motorcycle,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		IconsForTexture = HelmetMotorcycleFullBlue;HelmetMotorcycleFullBlack;HelmetMotorcycleFullRed,
+		BloodLocation = FullHelmet,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_CrashHelmetFULL,
+		CombatSpeedModifier = 0.95,
+		Insulation = 1.0,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		WindResistance = 1.0,
+		VisionModifier = 0.5,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.35,
+	}
+
+	item Hat_CrashHelmetFULL_Black
+	{
+		DisplayName = Helmet - Motorcycle,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetMotorcycleFullBlack,
+		BloodLocation = FullHelmet,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_CrashHelmetFULL_Black,
+		CombatSpeedModifier = 0.95,
+		Insulation = 1.0,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		WindResistance = 1.0,
+		VisionModifier = 0.5,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.35,
+	}
+
+	item Hat_CrashHelmet_Police
+	{
+		DisplayName = Helmet - Police Motorcycle,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetMotorcyclePolice,
+		BloodLocation = FullHelmet,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_CrashHelmet_Police,
+		CombatSpeedModifier = 0.95,
+		Insulation = 0.8,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		WindResistance = 0.8,
+		VisionModifier = 0.75,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.25,
+	}
+
+	item Hat_CrashHelmet_Stars
+	{
+		DisplayName = Helmet - USA Crash,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetMotorcycleFlag,
+		BloodLocation = FullHelmet,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_CrashHelmet_Stars,
+		CombatSpeedModifier = 0.95,
+		Insulation = 0.8,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		WindResistance = 0.8,
+		VisionModifier = 0.75,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.25,
+	}
+
+	item Hat_Fireman
+	{
+		DisplayName = Helmet - Firefighter,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 1.5,
+		Icon = HelmetFireman,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_Fireman,
+		Insulation = 0.65,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		WaterResistance = 0.60,
+		WindResistance = 0.55,
+		VisionModifier = 0.75,
+		DiscomfortModifier = 0.15,
+	}
+
+	item Hat_FootballHelmet
+	{
+		DisplayName = Helmet - Football,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 1.5,
+		IconsForTexture = HelmetFootballBlue;HelmetFootballRed;HelmetFootballWhite,
+		BloodLocation = FullHelmet,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_FootballHelmet,
+		CombatSpeedModifier = 0.95,
+		Insulation = 0.55,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		WaterResistance = 0.85,
+		WindResistance = 0.35,
+		VisionModifier = 0.5,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.20,
+	}
+
+	item Hat_FootballHelmet_Blue
+	{
+		DisplayName = Helmet - Football,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 1.5,
+		Icon = HelmetFootballBlue,
+		BloodLocation = FullHelmet,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_FootballHelmet_Blue,
+		CombatSpeedModifier = 0.95,
+		Insulation = 0.55,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		WaterResistance = 0.85,
+		WindResistance = 0.35,
+		VisionModifier = 0.5,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.20,
+	}
+
+	item Hat_FootballHelmet_Red
+	{
+		DisplayName = Helmet - Football,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 1.5,
+		Icon = HelmetFootballRed,
+		BloodLocation = FullHelmet,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_FootballHelmet_Red,
+		CombatSpeedModifier = 0.95,
+		Insulation = 0.55,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		WaterResistance = 0.85,
+		WindResistance = 0.35,
+		VisionModifier = 0.5,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.20,
+	}
+
+	item Hat_FootballHelmet_White
+	{
+		DisplayName = Helmet - Football,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 1.5,
+		Icon = HelmetFootballWhite,
+		BloodLocation = FullHelmet,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_FootballHelmet_White,
+		CombatSpeedModifier = 0.95,
+		Insulation = 0.55,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		WaterResistance = 0.85,
+		WindResistance = 0.35,
+		VisionModifier = 0.5,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.20,
+	}
+
+	item Hat_HardHat
+	{
+		DisplayName = Hard Hat,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		IconsForTexture = HardHatYellow;HardHatBlue;HardHatRed;HardHatWhite,
+		BiteDefense = 70,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_HardHat,
+		Insulation = 0.15,
+		ScratchDefense = 80,
+		WaterResistance = 0.5,
+		WindResistance = 0.25,
+		VisionModifier = 0.75,
+		DiscomfortModifier = 0.15,
+		DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+	}
+
+	item Hat_HardHat_Miner
+	{
+		DisplayName = Helmet - Mining,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HardHatMiner,
+		BiteDefense = 70,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_HardHat_Miner,
+		Insulation = 0.15,
+		ScratchDefense = 80,
+		WindResistance = 0.20,
+		VisionModifier = 0.75,
+		DiscomfortModifier = 0.15,
+		DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+	}
+
+	item Hat_HockeyHelmet
+	{
+		DisplayName = Helmet - Hockey,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetHockeyBlack,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_HockeyHelmet,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		VisionModifier = 0.75,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.10,
+		DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+	}
+
+	item Hat_HockeyHelmet_TINT
+	{
+		DisplayName = Helmet - Hockey,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetHockeyBlack,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_HockeyHelmet_TINT,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		VisionModifier = 0.75,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.10,
+		DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+	}
+
+	item Hat_JockeyHelmet01
+	{
+		DisplayName = Helmet - Jockey No. 1,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetJockeyBlue,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_JockeyHelmet01,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		DiscomfortModifier = 0.10,
+	}
+
+	item Hat_JockeyHelmet02
+	{
+		DisplayName = Helmet - Jockey No. 2,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetJockeyRed,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_JockeyHelmet02,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		DiscomfortModifier = 0.10,
+	}
+
+	item Hat_JockeyHelmet03
+	{
+		DisplayName = Helmet - Jockey No. 3,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetJockeyGreen,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_JockeyHelmet03,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		DiscomfortModifier = 0.10,
+	}
+
+	item Hat_JockeyHelmet04
+	{
+		DisplayName = Helmet - Jockey No. 4,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetJockeyPurple,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_JockeyHelmet04,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		DiscomfortModifier = 0.10,
+	}
+
+	item Hat_JockeyHelmet05
+	{
+		DisplayName = Helmet - Jockey No. 5,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetJockeyYellow,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_JockeyHelmet05,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		DiscomfortModifier = 0.10,
+	}
+
+	item Hat_JockeyHelmet06
+	{
+		DisplayName = Helmet - Jockey No. 6,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetJockeyOrange,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_JockeyHelmet06,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		DiscomfortModifier = 0.10,
+	}
+
+	item Hat_RidingHelmet
+	{
+		DisplayName = Helmet - Riding,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetCrash,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_RidingHelmet,
+		BiteDefense = 40,
+		ScratchDefense = 60,
+		DiscomfortModifier = 0.10,
+	}
+
+	item Hat_RiotHelmet
+	{
+		DisplayName = Helmet - Riot,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetRiot,
+		BloodLocation = FullHelmet,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_RiotHelmet,
+		CombatSpeedModifier = 0.95,
+		Insulation = 0.45,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		WaterResistance = 1.0,
+		WindResistance = 0.65,
+		VisionModifier = 0.5,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.25,
+	}
+
+	item Hat_SPHhelmet
+	{
+		DisplayName = Helmet - Airforce,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetSP,
+		BloodLocation = FullHelmet,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_SPHhelmet,
+		CombatSpeedModifier = 0.95,
+		Insulation = 0.70,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		WaterResistance = 1.0,
+		WindResistance = 0.70,
+		Tags = CanEat,
+		VisionModifier = 0.5,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.15,
+	}
+
+	item Hat_ArmyDesertNew
+	{
+		DisplayName = Helmet - Military,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = ArmyHelmet_SandCamo,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_ArmyDesertNew,
+		Insulation = 0.25,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		WaterResistance = 0.2,
+		VisionModifier = 0.75,
+		DiscomfortModifier = 0.20,
+	}
+
+	item Hat_ArmyDesert
+	{
+		DisplayName = Helmet - Military,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = ArmyHelmet_CamoDesert,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_ArmyDesert,
+		Insulation = 0.25,
+		BiteDefense = 70,
+		ScratchDefense = 80,
+		WaterResistance = 0.2,
+		VisionModifier = 0.75,
+		DiscomfortModifier = 0.20,
+	}
+
+}

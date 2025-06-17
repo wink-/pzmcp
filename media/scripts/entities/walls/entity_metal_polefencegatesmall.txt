@@ -1,0 +1,77 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_MetalPoleFenceGateSmall
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Small Pole Fence Gate,
+			Icon		= Build_FenceMetalPosts,
+		}
+	}
+
+    entity MetalPoleFenceGateSmall
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_MetalPoleFenceGateSmall,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			skillBaseHealth = 300,
+			dontNeedFrame	= true,
+			breakSound      = BreakDoor,
+			
+            face W
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_28,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_29,
+                }
+            }
+			face W_OPEN
+            {
+                layer
+                {
+					row = fixtures_doors_fences_01_30,
+                }
+            }
+            face N_OPEN
+            {
+                layer
+                {
+					row = fixtures_doors_fences_01_31,
+                }
+            }
+        }
+		
+		component CraftRecipe
+        {
+            timedAction   = BuildPoleFenceSmall,
+            time          = 200,
+            needToBeLearn = true,
+            category      = Welding,
+            SkillRequired = MetalWelding:3,
+            xpAward       = MetalWelding:30,
+            ToolTip       = Tooltip_craft_poleFenceGateSmallDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.MetalPipe],
+                item 2 [Base.Hinge],
+                item 2 [Base.ScrapMetal],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISComponentsListPanel
+        {
+            background          = true,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            padding             = 0,
+            margin              = 5,
+        }
+
+        ISComponentsListPanel S_ComponentsListPanel_Std
+        {
+            background          = true,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            padding             = 0,
+            margin              = 5,
+        }
+    }
+}

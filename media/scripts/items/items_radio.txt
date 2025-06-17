@@ -1,0 +1,513 @@
+/*module Radio*/
+module Base
+{
+	/*imports
+		{
+			 Base,
+		}*/
+
+	/******* RADIO - PORTABLE *******/
+	
+	item WalkieTalkie1
+	{
+		DisplayName = Toys-R-Mine Walkie Talkie,
+		DisplayCategory = Communications,
+		Type = Radio,
+		Weight = 1.0,
+		Icon = WalkieTalkieBudget,
+		AttachmentType = Walkie,
+		BaseVolumeRange = 8,
+		DisappearOnUse = FALSE,
+		IsHighTier = FALSE,
+		IsPortable = TRUE,
+		IsTelevision = FALSE,
+		MaxChannel = 150000,
+		MicRange = 5,
+		MinChannel = 75000,
+		Tooltip = Tooltip_item_Radio,
+		TransmitRange = 750,
+		TwoWay = TRUE,
+		UseDelta = 0.007, 
+		UseWhileEquipped = FALSE,
+		UsesBattery = TRUE,
+		WorldObjectSprite = appliances_com_01_16,
+		StaticModel = WalkieTalkieToy,
+        ResearchableRecipes = CraftMakeshiftRadio;CraftMakeshiftWalkieTalkie,
+	}
+	
+	item WalkieTalkie2
+	{
+		DisplayName = ValuTech Walkie Talkie,
+		DisplayCategory = Communications,
+		Type = Radio,
+		Weight = 1.0,
+		Icon = WalkieTalkieCivilian,
+		AttachmentType = Walkie,
+		BaseVolumeRange = 10,
+		DisappearOnUse = FALSE,
+		IsHighTier = FALSE,
+		IsPortable = TRUE,
+		IsTelevision = FALSE,
+		MaxChannel = 200000,
+		MicRange = 5,
+		MinChannel = 50000,
+		Tooltip = Tooltip_item_Radio,
+		TransmitRange = 2000,
+		TwoWay = TRUE,
+		UseDelta = 0.008, 
+		UseWhileEquipped = FALSE,
+		UsesBattery = TRUE,
+		WorldObjectSprite = appliances_com_01_24,
+		StaticModel = WalkieTalkieValue,
+        ResearchableRecipes = CraftMakeshiftRadio;CraftMakeshiftWalkieTalkie,
+	}
+	
+	item WalkieTalkie3
+	{
+		DisplayName = Premium Tech. Walkie Talkie,
+		DisplayCategory = Communications,
+		Type = Radio,
+		Weight = 1.0,
+		Icon = WalkieTalkieCivilian2,
+		AttachmentType = Walkie,
+		BaseVolumeRange = 12,
+		DisappearOnUse = FALSE,
+		IsHighTier = FALSE,
+		IsPortable = TRUE,
+		IsTelevision = FALSE,
+		MaxChannel = 300000,
+		MicRange = 5,
+		MinChannel = 25000,
+		Tooltip = Tooltip_item_Radio,
+		TransmitRange = 4000,
+		TwoWay = TRUE,
+		UseDelta = 0.009, 
+		UseWhileEquipped = FALSE,
+		UsesBattery = TRUE,
+		WorldObjectSprite = appliances_com_01_32,
+		StaticModel = WalkieTalkiePremium,
+        ResearchableRecipes = CraftMakeshiftRadio;CraftMakeshiftWalkieTalkie,
+	}
+	
+	item WalkieTalkie4
+	{
+		DisplayName = Tactical Walkie Talkie,
+		DisplayCategory = Communications,
+		Type = Radio,
+		Weight = 1.25,
+		Icon = WalkieTalkiePolice,
+		AttachmentType = Walkie,
+		BaseVolumeRange = 14,
+		DisappearOnUse = FALSE,
+		IsHighTier = FALSE,
+		IsPortable = TRUE,
+		IsTelevision = FALSE,
+		MaxChannel = 500000,
+		MicRange = 5,
+		MinChannel = 10000,
+		Tooltip = Tooltip_item_Radio,
+		TransmitRange = 8000,
+		TwoWay = TRUE,
+		UseDelta = 0.010, 
+		UseWhileEquipped = FALSE,
+		UsesBattery = TRUE,
+		WorldObjectSprite = appliances_com_01_40,
+		StaticModel = WalkieTalkieTactical,
+        ResearchableRecipes = CraftMakeshiftRadio;CraftMakeshiftWalkieTalkie;CraftMakeshiftHAMRadio,
+	}
+	
+	item WalkieTalkie5
+	{
+		DisplayName = US Army Walkie Talkie,
+		DisplayCategory = Communications,
+		Type = Radio,
+		Weight = 1.5,
+		Icon = WalkieTalkieMilitary,
+		AttachmentType = Walkie,
+		BaseVolumeRange = 16,
+		DisappearOnUse = FALSE,
+		IsHighTier = TRUE,
+		IsPortable = TRUE,
+		IsTelevision = FALSE,
+		MaxChannel = 1000000,
+		MicRange = 5,
+		MinChannel = 200,
+		Tooltip = Tooltip_item_Radio,
+		TransmitRange = 16000,
+		TwoWay = TRUE,
+		UseDelta = 0.014, 
+		UseWhileEquipped = FALSE,
+		UsesBattery = TRUE,
+		WorldObjectSprite = appliances_com_01_48,
+		StaticModel = WalkieTalkieUSArmy,
+        ResearchableRecipes = CraftMakeshiftRadio;CraftMakeshiftWalkieTalkie;CraftMakeshiftHAMRadio,
+	}
+	
+	item WalkieTalkieMakeShift
+	{
+		DisplayName = Makeshift Walkie Talkie,
+		DisplayCategory = Communications,
+		Type = Radio,
+		Weight = 1.0,
+		Icon = WalkieTalkieBudget,
+		AttachmentType = Walkie,
+		BaseVolumeRange = 8,
+		DisappearOnUse = FALSE,
+		IsHighTier = FALSE,
+		IsPortable = TRUE,
+		IsTelevision = FALSE,
+		MaxChannel = 150000,
+		MicRange = 5,
+		MinChannel = 75000,
+		Tooltip = Tooltip_item_Radio,
+		TransmitRange = 1000,
+		TwoWay = TRUE,
+		UseDelta = 0.007,
+		UseWhileEquipped = FALSE,
+		UsesBattery = TRUE,
+		WorldObjectSprite = appliances_com_01_64,
+		StaticModel = CraftMakeshiftRadio;WalkieTalkieMakeshift,
+	}
+
+	item ManPackRadio
+	{
+		DisplayName = US ARMY COMM. Manpack Radio,
+		DisplayCategory = Communications,
+		Type = Radio,
+		Weight = 15.0,
+		Icon = ManPack,
+		BaseVolumeRange = 15,
+		ConditionMax = 100,
+		DisappearOnUse = FALSE,
+		IsHighTier = TRUE,
+		IsPortable = TRUE,
+		IsTelevision = FALSE,
+		MaxChannel = 1000000,
+		MicRange = 5,
+		MinChannel = 200,
+		Tooltip = Tooltip_item_Radio,
+		TransmitRange = 20000,
+		TwoWay = TRUE,
+		UseDelta = 0.014,
+		UseWhileEquipped = FALSE,
+		UsesBattery = TRUE,
+
+		AttachmentReplacement = Bag,
+		BloodLocation = Bag,
+		CanBeEquipped = Back,
+		ClothingItem = Bag_ManPackRadio,
+		ReplaceInPrimaryHand = Bag_ManPackRadio_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_ManPackRadio_LHand holdingbagleft,
+		RunSpeedModifier = 0.97,
+		WorldStaticModel = ManPackRadio_Ground,
+
+		Tags = Wearable;HasMetal,
+        ResearchableRecipes = CraftMakeshiftRadio;CraftMakeshiftWalkieTalkie;CraftMakeshiftHAMRadio,
+	}
+	
+	/******* RADIO - HAM *******/
+	
+	item HamRadio1
+	{
+		DisplayName = Premium Technologies Ham Radio,
+		DisplayCategory = Communications,
+		Type = Radio,
+		Weight = 15.0,
+		Icon = HamRadioCivilian,
+		BaseVolumeRange = 10,
+		ConditionMax = 100,
+		DisappearOnUse = FALSE,
+		IsHighTier = FALSE,
+		IsPortable = FALSE,
+		IsTelevision = FALSE,
+		MaxChannel = 500000,
+		MicRange = 5,
+		MinChannel = 10000,
+		Tooltip = Tooltip_item_Radio,
+		TransmitRange = 7500,
+		TwoWay = TRUE,
+		UseDelta = 0.010, 
+		UseWhileEquipped = FALSE,
+		UsesBattery = TRUE,
+		WorldObjectSprite = appliances_com_01_0,
+        ResearchableRecipes = CraftMakeshiftRadio;CraftMakeshiftWalkieTalkie;CraftMakeshiftHAMRadio,
+	}
+	
+	item HamRadio2
+	{
+		DisplayName = US ARMY COMM. Ham Radio,
+		DisplayCategory = Communications,
+		Type = Radio,
+		Weight = 15.0,
+		Icon = HamRadioMilitary,
+		BaseVolumeRange = 15,
+		ConditionMax = 100,
+		DisappearOnUse = FALSE,
+		IsHighTier = TRUE,
+		IsPortable = FALSE,
+		IsTelevision = FALSE,
+		MaxChannel = 1000000,
+		MicRange = 5,
+		MinChannel = 200,
+		Tooltip = Tooltip_item_Radio,
+		TransmitRange = 20000,
+		TwoWay = TRUE,
+		UseDelta = 0.014, 
+		UseWhileEquipped = FALSE,
+		UsesBattery = TRUE,
+		WorldObjectSprite = appliances_com_01_8,
+        ResearchableRecipes = CraftMakeshiftRadio;CraftMakeshiftWalkieTalkie;CraftMakeshiftHAMRadio,
+	}
+	
+	item HamRadioMakeShift
+	{
+		DisplayName = Makeshift Ham Radio,
+		DisplayCategory = Communications,
+		Type = Radio,
+		Weight = 15.0,
+		Icon = HamRadioCivilian,
+		BaseVolumeRange = 10,
+		DisappearOnUse = FALSE,
+		IsHighTier = FALSE,
+		IsPortable = FALSE,
+		IsTelevision = FALSE,
+		MaxChannel = 500000,
+		MicRange = 5,
+		MinChannel = 10000,
+		Tooltip = Tooltip_item_Radio,
+		TransmitRange = 6000,
+		TwoWay = TRUE,
+		UseDelta = 0.010,
+		UseWhileEquipped = FALSE,
+		UsesBattery = TRUE,
+		WorldObjectSprite = appliances_com_01_56,
+        ResearchableRecipes = CraftMakeshiftRadio;CraftMakeshiftWalkieTalkie;CraftMakeshiftHAMRadio,
+	}
+	
+	/******* RADIO - PLAYBACK *******/
+	
+	item CDplayer
+	{
+		DisplayName = CD Player,
+		DisplayCategory = Electronics,
+		Type = Radio,
+		Weight = 0.8,
+		Icon = CDplayer,
+		AcceptMediaType = 0,
+		BaseVolumeRange = 15,
+		ConditionMax = 100,
+		DisappearOnUse = FALSE,
+		IsHighTier = FALSE,
+		IsPortable = TRUE,
+		IsTelevision = FALSE,
+		MaxChannel = 108000,
+		MicRange = 0,
+		MinChannel = 88000,
+		NoTransmit = TRUE,
+		Tooltip = Tooltip_media_item_operate,
+		TransmitRange = 0,
+		TwoWay = FALSE,
+		UseDelta = 0.009,
+		UseWhileEquipped = FALSE,
+		UsesBattery = TRUE,
+		StaticModel = CDplayer,
+		WorldStaticModel = CDplayer,
+	}
+	
+	/******* RADIO - STANDARD *******/
+	
+	item RadioBlack
+	{
+		DisplayName = ValuTech Radio,
+		DisplayCategory = Communications,
+		Type = Radio,
+		Weight = 1.5,
+		Icon = RadioBlack,
+		BaseVolumeRange = 10,
+		ConditionMax = 100,
+		DisappearOnUse = FALSE,
+		IsHighTier = FALSE,
+		IsPortable = TRUE,
+		IsTelevision = FALSE,
+		MaxChannel = 108000,
+		MicRange = 0,
+		MinChannel = 88000,
+		Tooltip = Tooltip_item_Radio,
+		TransmitRange = 0,
+		TwoWay = FALSE,
+		UseDelta = 0.007, 
+		UseWhileEquipped = FALSE,
+		UsesBattery = TRUE,
+		WorldObjectSprite = appliances_radio_01_0,
+		WorldStaticModel = RadioBlack_Ground,
+        ResearchableRecipes = CraftMakeshiftRadio,
+	}
+	
+	item RadioMakeShift
+	{
+		DisplayName = Makeshift Radio,
+		DisplayCategory = Communications,
+		Type = Radio,
+		Weight = 1.5,
+		Icon = Radio,
+		BaseVolumeRange = 10,
+		DisappearOnUse = FALSE,
+		IsHighTier = FALSE,
+		IsPortable = TRUE,
+		IsTelevision = FALSE,
+		MaxChannel = 108000,
+		MicRange = 0,
+		MinChannel = 88000,
+		Tooltip = Tooltip_item_Radio,
+		TransmitRange = 0,
+		TwoWay = FALSE,
+		UseDelta = 0.007,
+		UseWhileEquipped = FALSE,
+		UsesBattery = TRUE,
+		WorldObjectSprite = appliances_radio_01_16,
+		WorldStaticModel = RadioBlue_Ground,
+        ResearchableRecipes = CraftMakeshiftRadio,
+	}
+	
+	item RadioRed
+	{
+		DisplayName = Premium Technologies Radio,
+		DisplayCategory = Communications,
+		Type = Radio,
+		Weight = 1.5,
+		Icon = RadioRed,
+		AcceptMediaType = 0,
+		BaseVolumeRange = 15,
+		ConditionMax = 100,
+		DisappearOnUse = FALSE,
+		IsHighTier = FALSE,
+		IsPortable = TRUE,
+		IsTelevision = FALSE,
+		MaxChannel = 108000,
+		MicRange = 0,
+		MinChannel = 88000,
+		Tooltip = Tooltip_item_Radio,
+		TransmitRange = 0,
+		TwoWay = FALSE,
+		UseDelta = 0.009, 
+		UseWhileEquipped = FALSE,
+		UsesBattery = TRUE,
+		WorldObjectSprite = appliances_radio_01_8,
+		WorldStaticModel = RadioRed_Ground,
+        ResearchableRecipes = CraftMakeshiftRadio,
+	}
+	
+	/******* RADIO - TELEVISION *******/
+	
+	item TvAntique
+	{
+		DisplayName = Antique Television,
+		DisplayCategory = Communications,
+		Type = Radio,
+		Weight = 10.0,
+		Icon = Television,
+		BaseVolumeRange = 10,
+		DisappearOnUse = FALSE,
+		IsHighTier = FALSE,
+		IsPortable = FALSE,
+		IsTelevision = TRUE,
+		MaxChannel = 1000000,
+		MicRange = 0,
+		MinChannel = 200,
+		TransmitRange = 0,
+		TwoWay = FALSE,
+		UseDelta = 0.014, 
+		UseWhileEquipped = FALSE,
+		UsesBattery = FALSE,
+		WorldObjectSprite = appliances_television_01_8,
+        ResearchableRecipes = CraftMakeshiftRadio,
+	}
+	
+	item TvBlack
+	{
+		DisplayName = ValuTech Television,
+		DisplayCategory = Communications,
+		Type = Radio,
+		Weight = 10.0,
+		Icon = Television,
+		AcceptMediaType = 1,
+		BaseVolumeRange = 12,
+		DisappearOnUse = FALSE,
+		IsHighTier = FALSE,
+		IsPortable = FALSE,
+		IsTelevision = TRUE,
+		MaxChannel = 1000000,
+		MicRange = 0,
+		MinChannel = 200,
+		TransmitRange = 0,
+		TwoWay = FALSE,
+		UseDelta = 0.009, 
+		UseWhileEquipped = FALSE,
+		UsesBattery = FALSE,
+		WorldObjectSprite = appliances_television_01_4,
+        ResearchableRecipes = CraftMakeshiftRadio,
+	}
+	
+	item TvWideScreen
+	{
+		DisplayName = Premium Technologies Television,
+		DisplayCategory = Communications,
+		Type = Radio,
+		Weight = 10.0,
+		Icon = Television,
+		AcceptMediaType = 1,
+		BaseVolumeRange = 15,
+		DisappearOnUse = FALSE,
+		IsHighTier = FALSE,
+		IsPortable = FALSE,
+		IsTelevision = TRUE,
+		MaxChannel = 1000000,
+		MicRange = 0,
+		MinChannel = 200,
+		TransmitRange = 0,
+		TwoWay = FALSE,
+		UseDelta = 0.007, 
+		UseWhileEquipped = FALSE,
+		UsesBattery = FALSE,
+		WorldObjectSprite = appliances_television_01_0,
+        ResearchableRecipes = CraftMakeshiftRadio,
+	}
+	
+	/******* RADIO - MAGAZINES *******/
+	
+	item RadioMag1
+	{
+		DisplayName = Guerilla Radio Vol. 1,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineElectronics01,
+		TeachedRecipes = CraftMakeshiftRadio,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineRadio1Ground,
+	}
+	
+	item RadioMag2
+	{
+		DisplayName = Sparky's Electrics Guide (Improvised Walkie Talkies),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_Electric2,
+		TeachedRecipes = CraftMakeshiftWalkieTalkie,
+		StaticModel = Magazine,
+		WorldStaticModel = RadioMag2,
+	}
+	
+	item RadioMag3
+	{
+		DisplayName = Guerilla Radio Vol. 2,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineMechanics,
+		TeachedRecipes = CraftMakeshiftHAMRadio,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineRadio3Ground,
+	}
+}

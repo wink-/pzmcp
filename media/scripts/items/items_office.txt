@@ -1,0 +1,198 @@
+module Base
+{
+
+	/******* OFFICE - MISC. *******/
+	
+	item Eraser
+	{
+		DisplayName = Eraser,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Eraser,
+		WorldStaticModel = Eraser,
+		Tags = Eraser,
+	}
+	
+	item HolePuncher
+	{
+		DisplayName = Hole Puncher,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = HolePuncher,
+		WorldStaticModel = HolePuncher_Ground,
+	}
+	
+	item Paperclip
+	{
+		DisplayName = Paperclip,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = Paperclip,
+		MetalValue = 1,
+		WorldStaticModel = Paperclip,
+		Tags = FishingHook;FitsWallet,
+	}
+	
+	item PaperclipBox
+	{
+		DisplayName = Box of Paperclips,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = PaperclipBox,
+		MetalValue = 40,
+		WorldStaticModel = PaperclipBox,
+	}
+	
+	item RubberBand
+	{
+		DisplayName = Rubber Band,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = RubberBand,
+		WorldStaticModel = RubberBand,
+		Tags = FitsWallet,
+	}
+	
+	item Scotchtape
+	{
+		DisplayName = Adhesive Tape,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Scotchtape,
+		SurvivalGear = TRUE,
+		Tooltip = Tooltip_FixItems,
+		WorldStaticModel = Scotchtape,
+		Tags = Tape,
+	}
+
+	item AdhesiveTapeBox
+	{
+		DisplayName = Box of Adhesive Tape,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 3,
+        Icon	=	Parcel_Small_Food,
+		WorldStaticModel = Parcel_Food_Small,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item Stapler
+	{
+		DisplayName = Stapler,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Stapler,
+		WorldStaticModel = Stapler_Ground,
+	}
+	
+	item Staples
+	{
+		DisplayName = Staples,
+		DisplayCategory = Junk,
+		Type = Drainable,
+		Weight = 0.1,
+		Icon = Staples,
+		WorldStaticModel = Staples_Ground,
+		UseWhileEquipped = FALSE,
+		Tags = HasMetal;HideRemaining,
+        cantBeConsolided = TRUE,
+	}
+	
+	item Twine
+	{
+		DisplayName = Twine,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 0.5,
+		Icon = Twine,
+		ConsolidateOption = ContextMenu_Merge,
+		SurvivalGear = TRUE,
+		UseDelta = 0.2,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = Twine,
+		Tags = FishingLine;Binding;Twine;SimpleWeaponBinding,
+	}
+
+	item Calculator
+	{
+		DisplayName = Calculator,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Calculator,
+		WorldStaticModel = Calculator,
+		Tags = HasMetal;MiscElectronic,
+	}
+
+	item MarkerBlack
+	{
+		DisplayName = Marker - Black,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = MarkerBlack,
+		WorldStaticModel = MarkerBlack,
+		Tags = Write;Pen,
+	}
+
+	item MarkerBlue
+	{
+		DisplayName = Marker - Blue,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = MarkerBlue,
+		WorldStaticModel = MarkerBlue,
+		Tags = Write;BluePen,
+	}
+
+	item MarkerGreen
+	{
+		DisplayName = Marker - Green,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = MarkerGreen,
+		WorldStaticModel = MarkerGreen,
+		Tags = Write;GreenPen,
+	}
+
+	item MarkerRed
+	{
+		DisplayName = Marker - Red,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = MarkerRed,
+		WorldStaticModel = MarkerRed,
+		Tags = Write;RedPen,
+	}
+
+	item Clipboard
+	{
+		DisplayName = Clipboard,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 1,
+		Icon = Clipboard,
+		WorldStaticModel = Clipboard,
+	}
+
+	item Tsquare
+	{
+		DisplayName = T-Square,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 1,
+		Icon = Tsquare,
+		WorldStaticModel = Tsquare,
+	}
+
+}

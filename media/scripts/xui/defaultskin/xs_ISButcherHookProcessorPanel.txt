@@ -1,0 +1,12 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISButcherHookProcessorPanel
+        {
+            background          = false,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+        }
+    }
+}

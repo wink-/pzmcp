@@ -1,0 +1,38 @@
+module Base
+{
+	sound ChickenCoopWoodOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/ChickenCoop/Wood/Open,
+		}	
+	}
+
+	sound ChickenCoopWoodClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/ChickenCoop/Wood/Close,
+		}	
+	}
+
+	sound ChickenCoopMetalOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/ChickenCoop/Metal/Open,
+		}	
+	}
+
+	sound ChickenCoopMetalClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/ChickenCoop/Metal/Close,
+		}	
+	}
+}

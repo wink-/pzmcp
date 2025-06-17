@@ -1,0 +1,101 @@
+/* FOR WELDING MASKS, SEE CLOTHING_HATS */
+
+module Base
+{
+	/******* METALWORKING - ITEMS *******/
+	
+	item ScrapMetal
+	{
+		DisplayName = Scrap Metal,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = ScrapMetal,
+		MetalValue = 30,
+		/*SurvivalGear = TRUE,*/
+		WorldStaticModel = ScrapMetal,
+		Tags = SmeltableIronSmall,
+        ResearchableRecipes = MakeShiv,
+	}
+
+	item SheetMetal
+	{
+		DisplayName = Steel Sheet,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = SheetMetal,
+		MetalValue = 80,
+		/*SurvivalGear = TRUE,*/
+		WorldStaticModel = MetalSheet,
+		Tags = SmeltableSteelLarge,
+        ResearchableRecipes = SheetMetalWeapon,
+	}
+	
+	item SmallSheetMetal
+	{
+		DisplayName = Steel Sheet - Small,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = MetalSheetSmall,
+		MetalValue = 20,
+		WorldStaticModel = MetalSheetSmall,
+		Tags = SmeltableSteelSmall;SmallSheetMetal,
+        ResearchableRecipes = SheetMetalWeapon;MakeShiv,
+	}
+	
+	item WeldingRods
+	{
+		DisplayName = Welding Rods,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 1.5,
+		WeightEmpty = 0.2,
+		Icon = WeldingRods,
+		ConsolidateOption = ContextMenu_Merge,
+		MetalValue = 20,
+		UseDelta = 0.05,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = WeldingRods,
+	}
+	
+	/******* METALWORKING - TOOLS *******/
+	
+	item BlowTorch
+	{
+		DisplayName = Welding Torch,
+		DisplayCategory = Tool,
+		Type = Drainable,
+		Weight = 1.0,
+		WeightEmpty = 0.3,
+		Icon = BlowTorch,
+		KeepOnDeplete = TRUE,
+		MetalValue = 20,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		StaticModel = BlowTorch,
+		WorldStaticModel = BlowtorchGround,
+	}
+	
+	item PropaneTank
+	{
+		DisplayName = Propane Tank,
+		DisplayCategory = Material,
+		Type = Drainable,
+		Weight = 10.0,
+		WeightEmpty = 5.0,
+		Icon = PropaneTank,
+		ScaleWorldIcon = 2.0,
+		UseDelta = 0.0002,
+		UseWhileEquipped = FALSE,
+		UseWorldItem = TRUE,
+		cantBeConsolided = TRUE,
+		WorldStaticModel = PropaneTank,
+		KeepOnDeplete = TRUE,
+		Tags = HasMetal;SmeltableSteelLarge,
+	}
+}
+
+/* FOR WELDING MASKS, SEE CLOTHING_HATS */

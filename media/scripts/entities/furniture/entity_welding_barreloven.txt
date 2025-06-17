@@ -1,0 +1,73 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_BarrelOven
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Metal Barrel Oven,
+			Icon		= Build_BarrelOven,
+		}
+	}
+
+    entity BarrelOven
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_BarrelOven,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = crafted_05_5,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = crafted_05_7,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_05_6,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = crafted_05_4,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = BuildMetalStructureMedium,
+            time          = 50,
+            SkillRequired = MetalWelding:5,
+            xpAward       = MetalWelding:50,
+            category      = Welding,
+            tags          = Welding,
+            ToolTip       = Tooltip_craft_barrelOvenDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 2 [Base.SmallSheetMetal],
+                item 2 [Base.SheetMetal],
+                item 1 [Base.ScrapMetal],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

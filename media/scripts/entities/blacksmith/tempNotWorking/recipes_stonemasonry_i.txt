@@ -1,0 +1,84 @@
+module Base
+{
+
+    craftRecipe Make_Stone_Anvil
+    {
+        time        = 600,
+        tags = StoneAnvil,
+        inputs
+        {
+            item 1 [Base.LargeStone],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[MayDegradeLight;Prop1],
+            item 1 tags[CrudeChisel;MasonsChisel] mode:keep flags[MayDegradeLight;Prop2],
+        }
+        outputs
+        {
+            item 1 Base.StoneAnvil,
+        }
+    }
+
+
+ craftRecipe Make_Small_Stone_Wheel
+    {
+        time        = 300,
+        tags = StoneAnvil,
+        /*NeedToBeLearn:true,*/
+        inputs
+        {
+            item 1 [Base.LargeStone],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[MayDegradeLight;Prop1],
+            item 1 tags[CrudeChisel;MasonsChisel] mode:keep flags[MayDegradeLight;Prop2],
+        }
+        outputs
+        {
+            item 1 Base.StoneWheelSmall,
+        }
+    }
+ craftRecipe Make_Stone_Wheel
+    {
+        time        = 600,
+        tags = StoneAnvil,
+        /*NeedToBeLearn:true,*/
+        inputs
+        {
+            item 1 [Base.LargeStone],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[MayDegradeLight;Prop1],
+            item 1 tags[CrudeChisel;MasonsChisel] mode:keep flags[MayDegradeLight;Prop2],
+        }
+        outputs
+        {
+            item 1 Base.StoneWheel,StoneWheelSmall
+        }
+    }
+
+ craftRecipe Make_Stone_Block_from_Stone
+    {
+        time        = 600,
+        tags = StoneAnvil,
+        inputs
+        {
+            item 1 tags[Stone],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[MayDegradeLight;Prop1],
+            item 1 tags[CrudeChisel;MasonsChisel] mode:keep flags[MayDegradeLight;Prop2],
+        }
+        outputs
+        {
+            item 1 Base.StoneBlock,
+        }
+    }
+    craftRecipe Make_Stones_from_Large_Stone
+    {
+        time        = 10,
+        inputs
+        {
+            item 1 [Base.LargeStone],
+            item 1 tags[Hammer;ClubHammer;Sledgehammer] mode:keep flags[MayDegradeLight;Prop1],
+            item 1 tags[CrudeChisel;MasonsChisel] mode:keep flags[MayDegradeLight;Prop2],
+        }
+        outputs
+        {
+            item 10 Base.Stone2,
+        }
+    }
+
+}

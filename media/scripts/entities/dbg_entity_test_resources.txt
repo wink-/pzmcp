@@ -1,0 +1,90 @@
+/*
+module Base
+{
+    /*
+        TEMPORARY FILE FOR DEBUG TESTING
+    */
+
+    /*
+    ********************************************
+        New Resources formatting test
+    ********************************************
+    */
+
+    xuiSkin default
+    {
+        entity ES_Test_Resources
+        {
+            LuaWindowClass      = ISEntityTabWindow,
+            DisplayName         = Resources Test,
+            Icon                = Item_Apple,
+
+            /*
+            components
+            {
+                CraftBench
+                {
+                    LuaPanelClass           = ISCraftBenchPanel,
+                    DisplayName             = Kiln Furnace,
+                    Icon                    = Item_Note2,
+                }
+            }
+            */
+        }
+    }
+
+    entity Turbo_Test_Resources
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Test_Resources,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@10,
+                Item@Input@10@null@Channel_Blue@null,
+                Item@Input@10,
+                fluidTank = Fluid@Input@1.0,
+            }
+            group craft_outputs
+            {
+                Item@Output@10,
+                Item@Output@10,
+                Fluid@Output@1.0,
+                battery = Energy@Output@100@Electric@Channel_Red@AutoDecay,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes         = ExamplesAutomation;AutomationCompatible,
+            StartMode       = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+        component SpriteConfig
+        {
+            face single
+            {
+                layer
+                {
+                    row = industry_02_44,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = Test,
+            time          = 50,
+            category      = Demo,
+        }
+    }
+}
+*/

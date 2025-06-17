@@ -1,0 +1,47 @@
+module Base
+{
+	sound PourWaterIntoObject
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Liquid/WaterIntoObject,
+		}
+	}
+
+	sound PourLiquidOnGround
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Liquid/LiquidOnGround,
+		}
+	}
+
+	sound PourLiquidOnGroundMetal
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Liquid/LiquidOnGroundMetal,
+		}
+	}
+
+	sound PourWineIntoGlass
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Liquid/WineIntoGlass,
+		}
+	}
+
+	sound TransferLiquid
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Liquid/TransferLiquid,
+		}
+	}
+}

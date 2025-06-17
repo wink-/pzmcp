@@ -1,0 +1,38 @@
+module Base
+{
+    sound AnimalVoiceTurkeyPoultIdle
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/TurkeyPoult/Voice/Idle,
+        }
+    }
+
+    sound AnimalVoiceTurkeyPoultStressed
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/TurkeyPoult/Voice/Stressed,
+        }
+    }
+
+    sound AnimalVoiceTurkeyPoultDeath
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/TurkeyPoult/Voice/Death,
+        }
+    }
+
+    sound AnimalVoiceTurkeyPoultPain
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/TurkeyPoult/Voice/Pain,
+        }
+    }
+}

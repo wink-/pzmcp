@@ -1,0 +1,74 @@
+module Base
+{
+	sound OpenWindow
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Window/Open,
+		}
+	}
+
+	sound CloseWindow
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Window/Close,
+		}
+	}
+
+	sound SmashWindow
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Window/Smash,
+		}
+	}
+
+	sound WindowIsLocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Window/Locked,
+		}
+	}
+
+	sound BreakLockOnWindow
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Window/BreakLock,
+		}
+	}
+
+	sound WindowRattle
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Window/Rattle,
+		}
+	}
+
+	sound WindowWind
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Window/Wind,
+		}
+	}
+
+	sound WindowAmbiance
+	{
+		category = Object,
+		clip
+		{
+			event = World/Ambient/Window,
+		}
+	}
+}

@@ -1,0 +1,446 @@
+module Base
+{
+
+    /************************ Traps ************************/
+
+	craftRecipe MakeRemoteControllerV1
+	{
+        timedAction = MakingElectrical,
+		Time = 50,
+		NeedToBeLearn = True,
+		SkillRequired = Electricity:2,
+		Tags = AnySurfaceCraft,
+        category = Electrical,
+		AutoLearnAny = Electricity:8,
+		xpAward = Electricity:6,
+		inputs
+		{
+			item 1 [Base.Remote;Base.CordlessPhone;Base.Pager],
+			item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight],
+			item 1 tags[Pliers] mode:keep flags[MayDegradeLight],
+			item 2 [Base.ElectronicsScrap],
+			item 2 [Base.Glue],
+		}
+		outputs
+		{
+			item 1 Base.RemoteCraftedV1,
+		}
+	}
+
+	craftRecipe MakeRemoteControllerV2
+	{
+        timedAction = MakingElectrical,
+		Time = 50,
+		NeedToBeLearn = True,
+		SkillRequired = Electricity:4,
+		Tags = AnySurfaceCraft,
+        category = Electrical,
+		AutoLearnAny = Electricity:9,
+		xpAward = Electricity:10,
+		inputs
+		{
+			item 1 [Base.Remote;Base.CordlessPhone;Base.Pager],
+			item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight],
+			item 1 tags[Pliers] mode:keep flags[MayDegradeLight],
+			item 3 [Base.ElectronicsScrap],
+			item 2 [Base.Glue],
+		}
+		outputs
+		{
+			item 1 Base.RemoteCraftedV2,
+		}
+	}
+
+	craftRecipe MakeRemoteControllerV3
+	{
+        timedAction = MakingElectrical,
+		Time = 50,
+		NeedToBeLearn = True,
+		SkillRequired = Electricity:6,
+		Tags = AnySurfaceCraft,
+        category = Electrical,
+		AutoLearnAny = Electricity:10,
+		xpAward = Electricity:14,
+		inputs
+		{
+			item 1 [Base.Remote;Base.CordlessPhone;Base.Pager],
+			item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight],
+			item 1 tags[Pliers] mode:keep flags[MayDegradeLight],
+			item 4 [Base.ElectronicsScrap],
+			item 2 [Base.Glue],
+		}
+		outputs
+		{
+			item 1 Base.RemoteCraftedV3,
+		}
+	}
+
+	craftRecipe MakeRemoteTrigger
+	{
+        timedAction = MakingElectrical,
+		Time = 50,
+		NeedToBeLearn = True,
+		SkillRequired = Electricity:2,
+		Tags = AnySurfaceCraft,
+        category = Electrical,
+		AutoLearnAny = Electricity:8,
+		xpAward = Electricity:6,
+		inputs
+		{
+			item 1 [Base.Receiver;Base.RadioReceiver;Base.CordlessPhone],
+			item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight],
+			item 1 tags[Pliers] mode:keep flags[MayDegradeLight],
+			item 2 [Base.ElectronicsScrap],
+			item 2 [Base.Glue],
+		}
+		outputs
+		{
+			item 1 Base.TriggerCrafted,
+		}
+	}
+
+	craftRecipe MakeTimer
+	{
+        timedAction = MakingElectrical,
+		Time = 50,
+		NeedToBeLearn = True,
+		SkillRequired = Electricity:1,
+		Tags = AnySurfaceCraft,
+        category = Electrical,
+		AutoLearnAny = Electricity:8,
+		xpAward = Electricity:4,
+		inputs
+		{
+			item 1 [Base.Timer;Base.AlarmClock2],
+			item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight],
+			item 1 tags[Pliers] mode:keep flags[MayDegradeLight],
+			item 1 [Base.ElectronicsScrap],
+			item 1 [Base.Glue],
+		}
+		outputs
+		{
+			item 1 Base.TimerCrafted,
+		}
+	}
+
+	craftRecipe AddTimerToBomb
+	{
+        timedAction = MakingElectrical,
+		Time = 80,
+		NeedToBeLearn = True,
+		Tags = AnySurfaceCraft,
+        category = Electrical,
+		AutoLearnAny = Electricity:8,
+		xpAward = Electricity:2,
+		inputs
+		{
+			item 1 [Base.Aerosolbomb;Base.FlameTrap;Base.NoiseTrap;Base.PipeBomb;Base.SmokeBomb] mappers:[bobOmb],
+			item 1 [Base.TimerCrafted],
+			item 2 [Base.ElectronicsScrap],
+			item 1 [Base.DuctTape],
+		}
+		outputs
+		{
+			item 1 mapper:bobOmb,
+		}
+		itemMapper bobOmb
+		{
+			Base.AerosolbombTriggered = Base.Aerosolbomb,
+			Base.FlameTrapTriggered = Base.FlameTrap,
+			Base.NoiseTrapTriggered = Base.NoiseTrap,
+			Base.PipeBombTriggered = Base.PipeBomb,
+			Base.SmokeBombTriggered = Base.SmokeBomb,
+		}
+	}
+
+	craftRecipe AddMotionSensorV1ToBomb
+	{
+        timedAction = MakingElectrical,
+		Time = 80,
+		NeedToBeLearn = True,
+		SkillRequired = Electricity:2,
+		Tags = AnySurfaceCraft,
+        category = Electrical,
+		AutoLearnAny = Electricity:8,
+		xpAward = Electricity:6,
+		inputs
+		{
+			item 1 [Base.Aerosolbomb;Base.FlameTrap;Base.NoiseTrap;Base.PipeBomb;Base.SmokeBomb] mappers:[bobOmb],
+			item 1 [Base.MotionSensor],
+			item 2 [Base.ElectronicsScrap],
+			item 1 [Base.DuctTape],
+		}
+		outputs
+		{
+			item 1 mapper:bobOmb,
+		}
+		itemMapper bobOmb
+		{
+			Base.AerosolbombSensorV1 = Base.Aerosolbomb,
+			Base.FlameTrapSensorV1 = Base.FlameTrap,
+			Base.NoiseTrapSensorV1 = Base.NoiseTrap,
+			Base.PipeBombSensorV1 = Base.PipeBomb,
+			Base.SmokeBombSensorV1 = Base.SmokeBomb,
+		}
+	}
+
+	craftRecipe AddMotionSensorV2ToBomb
+	{
+        timedAction = MakingElectrical,
+		Time = 80,
+		NeedToBeLearn = True,
+		SkillRequired = Electricity:4,
+		Tags = AnySurfaceCraft,
+        category = Electrical,
+		AutoLearnAny = Electricity:9,
+		xpAward = Electricity:10,
+		inputs
+		{
+			item 1 [Base.Aerosolbomb;Base.FlameTrap;Base.NoiseTrap;Base.PipeBomb;Base.SmokeBomb] mappers:[bobOmb],
+			item 1 [Base.MotionSensor],
+			item 3 [Base.ElectronicsScrap],
+			item 1 [Base.DuctTape],
+		}
+		outputs
+		{
+			item 1 mapper:bobOmb,
+		}
+		itemMapper bobOmb
+		{
+			Base.AerosolbombSensorV2 = Base.Aerosolbomb,
+			Base.FlameTrapSensorV2 = Base.FlameTrap,
+			Base.NoiseTrapSensorV2 = Base.NoiseTrap,
+			Base.PipeBombSensorV2 = Base.PipeBomb,
+			Base.SmokeBombSensorV2 = Base.SmokeBomb,
+		}
+	}
+
+	craftRecipe AddMotionSensorV3ToBomb
+	{
+        timedAction = MakingElectrical,
+		Time = 80,
+		NeedToBeLearn = True,
+		SkillRequired = Electricity:6,
+		Tags = AnySurfaceCraft,
+        category = Electrical,
+		AutoLearnAny = Electricity:10,
+		xpAward = Electricity:14,
+		inputs
+		{
+			item 1 [Base.Aerosolbomb;Base.FlameTrap;Base.NoiseTrap;Base.PipeBomb;Base.SmokeBomb] mappers:[bobOmb],
+			item 1 [Base.MotionSensor],
+			item 4 [Base.ElectronicsScrap],
+			item 1 [Base.DuctTape],
+		}
+		outputs
+		{
+			item 1 mapper:bobOmb,
+		}
+		itemMapper bobOmb
+		{
+			Base.AerosolbombSensorV3 = Base.Aerosolbomb,
+			Base.FlameTrapSensorV3 = Base.FlameTrap,
+			Base.NoiseTrapSensorV3 = Base.NoiseTrap,
+			Base.PipeBombSensorV3 = Base.PipeBomb,
+			Base.SmokeBombSensorV3 = Base.SmokeBomb,
+		}
+	}
+
+	craftRecipe AddCraftedTriggerToBomb
+	{
+        timedAction = MakingElectrical,
+		Time = 80,
+		NeedToBeLearn = True,
+		SkillRequired = Electricity:2,
+		Tags = AnySurfaceCraft,
+        category = Electrical,
+		AutoLearnAny = Electricity:8,
+		xpAward = Electricity:6,
+		inputs
+		{
+			item 1 [Base.Aerosolbomb;Base.FlameTrap;Base.NoiseTrap;Base.PipeBomb;Base.SmokeBomb] mappers:[bobOmb],
+			item 1 [Base.TriggerCrafted],
+			item 2 [Base.ElectronicsScrap],
+			item 1 [Base.DuctTape],
+		}
+		outputs
+		{
+			item 1 mapper:bobOmb,
+		}
+		itemMapper bobOmb
+		{
+			Base.AerosolbombRemote = Base.Aerosolbomb,
+			Base.FlameTrapRemote = Base.FlameTrap,
+			Base.NoiseTrapRemote = Base.NoiseTrap,
+			Base.PipeBombRemote = Base.PipeBomb,
+			Base.SmokeBombRemote = Base.SmokeBomb,
+		}
+	}
+
+/*
+    recipe Make Molotov Cocktail
+    {
+       destroy [Recipe.GetItemTypes.Liquor],
+       RippedSheets/RippedSheetsDirty/DenimStrips/DenimStripsDirty,
+
+       Result:Molotov,
+       Time:50.0,
+       OnTest:Recipe.OnTest.FullLiquor,
+    }
+
+    recipe Make Molotov Cocktail2
+    {
+       WineEmpty/WineEmpty2/WhiskeyEmpty/BeerEmpty,
+       RippedSheets/RippedSheetsDirty/DenimStrips/DenimStripsDirty,
+       [Recipe.GetItemTypes.Petrol]=1,
+
+       Result:Molotov,
+       Time:50.0,
+    }
+*/
+	craftRecipe MakeAerosolBomb
+	{
+        timedAction = MakingElectrical,
+		Time = 80,
+		NeedToBeLearn = True,
+		Tags = AnySurfaceCraft,
+        category = Electrical,
+		inputs
+		{
+			item 1 tags[Aerosol] flags[ItemCount] mode:destroy,
+			item 1 [Base.Sparklers],
+			item 1 tags[Aluminum],
+			item 1 [Base.DuctTape],
+			item 1 tags[MortarPestle] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Aerosolbomb,
+		}
+	}
+
+	craftRecipe MakeFlameBomb
+	{
+        timedAction = MakingElectrical,
+		Time = 80,
+		NeedToBeLearn = True,
+		Tags = InHandCraft;Engineer,
+        category = Electrical,
+		inputs
+		{
+			item 1 [Base.WaterBottle],
+			item 1 [Base.RippedSheets;Base.RippedSheetsDirty] mode:destroy,
+			item 1 [*],
+			-fluid 1.0 [Petrol],
+		}
+		outputs
+		{
+			item 1 Base.FlameTrap,
+		}
+	}
+
+		craftRecipe MakeMolotovCocktail
+    	{
+            timedAction = MakingElectrical,
+    		Time = 80,
+    		Tags = InHandCraft,
+            category = Electrical,
+    		inputs
+    		{
+    			item 1 tags[GlassBottle] mode:destroy flags[IsEmpty],
+    			item 1 [Base.RippedSheets;Base.RippedSheetsDirty;Base.DenimStrips;Base.DenimStripsDirty] mode:destroy,
+    			item 1 [*],
+    			-fluid 1.0 [Alcohol;Petrol;Tequila;Vodka;Whiskey],
+    		}
+    		outputs
+    		{
+    			item 1 Base.Molotov,
+    		}
+    	}
+
+	craftRecipe MakeSmokeBomb
+	{
+        timedAction = MakingElectrical,
+		Time = 80,
+		NeedToBeLearn = True,
+		Tags = AnySurfaceCraft,
+        category = Electrical,
+		inputs
+		{
+			item 1 [Base.Coldpack],
+			item 1 [Base.RippedSheets;Base.RippedSheetsDirty] mode:destroy,
+			item 2 tags[Newspaper],
+		}
+		outputs
+		{
+			item 1 Base.SmokeBomb,
+		}
+	}
+
+	craftRecipe MakeNoiseMaker
+	{
+        timedAction = MakingElectrical,
+		Time = 80,
+		NeedToBeLearn = True,
+		SkillRequired = Electricity:3,
+		Tags = AnySurfaceCraft,
+        category = Electrical,
+		AutoLearnAny = Electricity:7,
+		xpAward = Electricity:8,
+		inputs
+		{
+			item 7 [Base.ElectronicsScrap],
+			item 1 [Base.Amplifier],
+			item 1 tags[Screwdriver] mode:keep flags[MayDegradeLight],
+			item 1 tags[Pliers] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.NoiseTrap,
+		}
+	}
+
+	craftRecipe MakePipeBomb
+	{
+        timedAction = MakingElectrical,
+		Time = 100,
+		NeedToBeLearn = True,
+		Tags = AnySurfaceCraft,
+        category = Electrical,
+        xpAward = Electricity:2,
+		inputs
+		{
+			item 3 [Base.ElectronicsScrap],
+			item 1 [Base.MetalPipe],
+			item 20 [Base.GunPowder],
+			item 1 [Base.Twine],
+			item 1 tags[MetalSaw;SmallSaw] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.PipeBomb,
+		}
+	}
+
+	craftRecipe MakeFirecracker
+	{
+		timedAction = Making,
+		Time = 100,
+		NeedToBeLearn = True,
+		Tags = AnySurfaceCraft,
+		category = Miscellaneous,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[IsNotDull],
+			item 1 [Base.Glue],
+			item 1 [Base.GunPowder],
+			item 1 [Base.SheetPaper2;Base.GraphPaper;Base.Brochure;Base.Flier;Base.Paperwork;Base.LetterHandwritten;Base.Doodle;Base.DoodleKids;Base.GenericMail],
+			item 1 [Base.Twine],
+		}
+		outputs
+		{
+			item 1 Base.Firecracker_Crafted,
+		}
+	}
+
+}

@@ -1,0 +1,28 @@
+module Base
+{
+	/******* VEHICLE MAINTENANCE - PETROL *******/
+	
+	item PetrolCan
+	{
+	    DisplayCategory = VehicleMaintenance,
+		Weight = 1.6,
+		Type = Normal,
+		DisplayName	=	Gas Can,
+		Icon	=	Petrol,
+		StaticModel = GasCan,
+		ReplaceInSecondHand = Bag_GasCan_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_GasCan_RHand holdingbagright,
+        WorldStaticModel = GasCan_Ground,
+		Tags = Petrol,
+
+        	component FluidContainer
+        	{
+            	ContainerName   = GasCan,
+            	capacity        = 10.0,
+            	Fluids
+            		{
+                	fluid           = Petrol:1.0,
+            		}
+        	}
+	}
+}

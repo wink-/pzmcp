@@ -1,0 +1,28 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISWidgetTitleHeader
+        {
+            background          = true,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            paddingTop          = 2,
+            paddingBottom       = 2,
+            paddingLeft         = 2,
+            paddingRight        = 2,
+            marginTop           = 5,
+            marginBottom        = 5,
+            marginLeft          = 5,
+            marginRight         = 5,
+            enableIcon          = false,
+            enableInfoButton    = false,
+        }
+
+        ISWidgetTitleHeader S_WidgetTitleHeader_Std
+        {
+            enableIcon          = true,
+            enableInfoButton    = true,
+        }
+    }
+}

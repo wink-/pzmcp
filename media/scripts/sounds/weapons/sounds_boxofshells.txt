@@ -1,0 +1,38 @@
+module Base
+{
+	sound BoxOfShellsOpenAll
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/BoxOfShells/OpenAll,
+		}
+	}
+
+	sound BoxOfShellsOpenOne
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/BoxOfShells/OpenOne,
+		}
+	}
+
+	sound BoxOfShellsPlaceAll
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/BoxOfShells/PlaceAll,
+		}
+	}
+
+	sound BoxOfShellsPlaceOne
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/BoxOfShells/PlaceOne,
+		}
+	}
+}

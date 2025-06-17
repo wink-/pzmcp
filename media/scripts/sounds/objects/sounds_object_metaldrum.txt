@@ -1,0 +1,29 @@
+module Base
+{
+	sound MetalDrumEmptyWater
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalDrum/EmptyWater,
+		}
+	}
+
+	sound MetalDrumAddLogs
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalDrum/AddLogs,
+		}
+	}
+
+	sound MetalDrumRemoveLogs
+	{
+		category = Object,
+		clip
+		{
+			event = Object/MetalDrum/RemoveLogs,
+		}
+	}
+}

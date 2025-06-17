@@ -1,0 +1,457 @@
+module Base
+{
+    craftRecipe DryBasil
+     {
+        time        = 10,
+	    tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.Basil],
+        }
+        outputs
+        {
+            item 1 Base.BasilDried,
+        }
+     }
+    craftRecipe DryChamomile
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.Chamomile],
+        }
+        outputs
+        {
+            item 1 Base.ChamomileDried,
+        }
+     }
+    craftRecipe DryChives
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.Chives],
+        }
+        outputs
+        {
+            item 1 Base.ChivesDried,
+        }
+     }
+    craftRecipe DryCilantro
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.Cilantro],
+        }
+        outputs
+        {
+            item 1 Base.CilantroDried,
+        }
+     }
+    craftRecipe DryMarigold
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.Marigold],
+        }
+        outputs
+        {
+            item 1 Base.MarigoldDried,
+        }
+     }
+    craftRecipe DryOregano
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.Oregano],
+        }
+        outputs
+        {
+            item 1 Base.OreganoDried,
+        }
+     }
+    craftRecipe DryParsley
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.Parsley],
+        }
+        outputs
+        {
+            item 1 Base.ParsleyDried,
+        }
+     }
+    craftRecipe DryRosemary
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.Rosemary],
+        }
+        outputs
+        {
+            item 1 Base.RosemaryDried,
+        }
+     }
+    craftRecipe DrySage
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.Sage],
+        }
+        outputs
+        {
+            item 1 Base.SageDried,
+        }
+     }
+    craftRecipe DryThyme
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.Thyme],
+        }
+        outputs
+        {
+            item 1 Base.ThymeDried,
+        }
+     }
+
+    craftRecipe DryBlackSage
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.BlackSage],
+        }
+        outputs
+        {
+            item 1 Base.BlackSageDried,
+        }
+     }
+
+    craftRecipe DryComfrey
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.Comfrey],
+        }
+        outputs
+        {
+            item 1 Base.ComfreyDried,
+        }
+     }
+
+    craftRecipe DryCommonMallow
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.CommonMallow],
+        }
+        outputs
+        {
+            item 1 Base.CommonMallowDried,
+        }
+     }
+
+    craftRecipe DryBroadleafPlantain
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.Plantain],
+        }
+	    outputs
+        {
+            item 1 Base.PlantainDried,
+        }
+     }
+
+    craftRecipe DryWildGarlic
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.WildGarlic2],
+        }
+        outputs
+        {
+            item 1 Base.WildGarlicDried,
+        }
+     }
+    craftRecipe DryJalapenos
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+         inputs
+         {
+            item 2 [Base.PepperJalapeno] mode:destroy,
+         }
+         outputs
+         {
+            item 1 Base.PepperJalapenoDried,
+         }
+     }
+    craftRecipe DryHabaneros
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 2 [Base.PepperHabanero] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.PepperHabaneroDried,
+        }
+     }
+    craftRecipe DryGreenpeas
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 4 [Base.Greenpeas] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.GreenpeasSeed,
+        }
+     }
+    craftRecipe DrySoybeans
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 5 [Base.Soybeans] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.SoybeansSeed,
+        }
+     }
+    craftRecipe DryRoses
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.Roses] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.RosePetalsDried,
+        }
+     }
+    craftRecipe DryLavender
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.Lavender] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.LavenderPetalsDried,
+        }
+     }
+    craftRecipe DryPoppyPods
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.PoppyPods] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.PoppyPodsDried,
+        }
+     }
+    craftRecipe DryHops
+     {
+        time        = 10,
+        tags = DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.Hops] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.HopsDried,
+        }
+     }
+
+    xuiSkin default
+    {
+        entity ES_DryingRackHerb
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = SmallPlantDryingRack,
+            Icon                = Build_HerbDryerSmall,
+        }
+        entity ES_SimpleDryingRackHerb
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = SimpleSmallPlantDryingRack,
+            Icon                = Build_HerbDryerSmall,
+        }
+    }
+
+    entity Herb_Drying_Rack
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_DryingRackHerb,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+           Recipes         = DryingRackHerb,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 100,
+        	skillBaseHealth = 20,
+
+            face S
+            {
+                layer
+                {
+                    row = vegetation_drying_01_1,
+                    row = vegetation_drying_01_0,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = vegetation_drying_01_8 vegetation_drying_01_9,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = Making,
+            time          = 50,
+            SkillRequired = Woodwork:1,
+            xpAward       = Woodwork:10,
+            category      = Farming,
+            tags          = Farming,
+            ToolTip       = Tooltip_craft_dryHerbsRackDesc,
+            inputs
+            {
+                item 4 [Base.LongStick],
+                item 6 [Base.WoodenStick2],
+                item 4 [Base.Twine],
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[CrudeSaw;Saw] mode:keep flags[MayDegradeLight],
+                item 1 tags[DrillWood;DrillMetal;DrillWoodPoor] mode:keep flags[MayDegradeLight],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+
+    entity Simple_Herb_Drying_Rack
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_SimpleDryingRackHerb,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+           Recipes         = DryingRackHerb,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 100,
+        	skillBaseHealth = 20,
+
+            face S
+            {
+                layer
+                {
+                    row = vegetation_drying_01_217,
+                    row = vegetation_drying_01_216,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = vegetation_drying_01_224 vegetation_drying_01_225,
+                }
+            }
+        }
+
+        component CraftRecipe
+        {
+            timedAction   = Making,
+            time          = 50,
+            xpAward       = Woodwork:5,
+            category      = Farming,
+            tags          = Farming,
+            ToolTip       = Tooltip_craft_dryHerbsRackDesc,
+            inputs
+            {
+                item 4 [Base.LongStick;Base.Sapling],
+                item 6 [Base.WoodenStick2;Base.TreeBranch2],
+                item 4 [Base.Twine;Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips;Base.Rope] flags[DontReplace],
+            }
+        }
+    }
+}

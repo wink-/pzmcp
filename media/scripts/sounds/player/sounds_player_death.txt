@@ -1,0 +1,29 @@
+module Base
+{
+	sound PlayerDied
+	{
+		category = Player,
+		clip
+		{
+			event = Game/GameOver,
+		}
+	}
+
+	sound FemaleBeingEatenDeath
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Death/FemaleEaten,
+		}
+	}
+
+	sound MaleBeingEatenDeath
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Death/MaleEaten,
+		}
+	}
+}

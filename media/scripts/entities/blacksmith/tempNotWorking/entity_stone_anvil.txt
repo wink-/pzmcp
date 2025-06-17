@@ -1,0 +1,44 @@
+/*module Base
+{
+    entity Stone_Anvil
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Stone_Anvil,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = AnySurfaceCraft;StoneAnvil,
+        }
+
+
+        component SpriteConfig
+        {
+			previousStage   = Boulder;Boulder2,
+            face Single
+            {
+                layer
+                {
+                    row = crafted_03_20,
+                }
+            }
+        }
+                                
+        component CraftRecipe
+        {
+            timedAction   = BuildWallHammer,
+            time          = 200,
+            tags          = Masonry,
+            SkillRequired = Masonry:1,
+            xpAward       = Masonry:10,
+            inputs
+            {
+                item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+                item 1 tags[MasonsChisel;CrudeChisel] mode:keep flags[Prop2],
+            }
+        }
+    }
+}*/

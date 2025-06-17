@@ -1,0 +1,51 @@
+module Base
+{
+	xuiSkin default
+	{
+        entity ES_Simple_Cooking_Pit
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Simple Cooking Pit,
+            Icon                = Build_CookingPitSimple,
+        }
+    }
+
+    entity Simple_Cooking_Pit
+    {
+       component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Simple_Cooking_Pit,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+            isProp      = true,
+
+            face single
+            {
+                layer
+                {
+                    row = camping_03_16,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = BuildCairn,
+            time          = 50,
+            category      = Masonry,
+            SkillRequired = Masonry:1,
+            xpAward       = Masonry:10,
+            ToolTip       = Tooltip_craft_cookingPitDesc,
+            inputs
+            {
+                item 1 tags[Concrete] flags[DontRecordInput],
+                item 10 [Base.Stone2],
+                item 3 [Base.TreeBranch2;Base.WoodenStick2],
+            }
+        }
+    }
+}

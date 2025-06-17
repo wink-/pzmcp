@@ -1,0 +1,80 @@
+module Base
+{
+	craftRecipe OpenBottleOfBeer
+	{
+        timedAction = OpenBeerBottle,
+		Time = 15,
+		OnCreate = Recipe.OnCreate.OpenBeer,
+		OnTest = Recipe.OnTest.BottleNotOpened,
+		AllowBatchCraft = False,
+		/* CanWalk = true, */
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Cooking,
+		inputs
+		{
+			item 1 [Base.BeerBottle;Base.BeerImported] mode:keep flags[DontPutBack;Prop2],
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe OpenBottleOfChampagne
+	{
+		timedAction = OpenChampagne,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.OpenBeer,
+		OnTest = Recipe.OnTest.BottleNotOpened,
+		AllowBatchCraft = False,
+		/* CanWalk = true, */
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Cooking,
+		inputs
+		{
+			item 1 [Base.Champagne] mode:keep flags[DontPutBack],
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe OpenCanOfBeverage
+	{
+        timedAction = OpenPopCan,
+		Time = 15,
+		OnCreate = Recipe.OnCreate.OpenBeer,
+		OnTest = Recipe.OnTest.BottleNotOpened,
+		AllowBatchCraft = False,
+		/* CanWalk = true, */
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Cooking,
+		inputs
+		{
+			item 1 tags[SealedBeverageCan] mode:keep flags[DontPutBack;Prop2],
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe OpenBottleOfWine
+	{
+		timedAction = UncorkBottle,
+		Time = 30,
+		OnCreate = Recipe.OnCreate.OpenBeer,
+		OnTest = Recipe.OnTest.BottleNotOpened,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Cooking,
+		inputs
+		{
+			item 1 tags[Corkscrew] mode:keep,
+			item 1 [Base.Wine;Base.Wine2;Base.WineAged] mode:keep flags[DontPutBack;Prop2],
+		}
+		outputs
+		{
+			item 1 Base.Cork,
+		}
+	}
+
+}

@@ -1,0 +1,292 @@
+module Base
+{
+	item Mov_PaintingAaaaah
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Aaaaah! Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_37,
+	}
+	
+	item Mov_PaintingAbeLincoln
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Abe Lincoln Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_44,
+	}
+	
+	item Mov_PaintingAppleFacedMan
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Apple Faced Man Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_34,
+	}
+	
+	item Mov_PaintingBejaminFranklin
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Benjamin Franklin Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_43,
+	}
+	
+	item Mov_PaintingBetty
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Betty Painting,
+		WorldObjectSprite = walls_decoration_01_48,
+	}
+	
+	item Mov_PaintingCalvinist
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Calvinist Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_28,
+	}
+	
+	item Mov_PaintingChromaticAccident
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Chromatic Accident Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_56,
+	}
+	
+	item Mov_PaintingDesertLandscape
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Desert Landscape Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_20,
+	}
+	
+	item Mov_PaintingFlowersOnTable
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Flowers On Table Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_40,
+	}
+	
+	item Mov_PaintingGeorgeWashington
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = George Washington Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_41,
+	}
+	
+	item Mov_PaintingGreen
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Waterbeach Hills Painting,
+		WorldObjectSprite = walls_decoration_01_35,
+	}
+	
+	item Mov_PaintingElisa
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Monica Elisa Painting,
+		WorldObjectSprite = walls_decoration_01_46,
+	}
+	
+	item Mov_PaintingHelianthus
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Helianthus Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_38,
+	}
+	
+	item Mov_PaintingIslandBeach
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Island Beach Painting,
+		WorldObjectSprite = walls_decoration_01_44,
+	}
+	
+	item Mov_PaintingJohnAdams
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = John Adams Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_42,
+	}
+	
+	item Mov_PaintingLakeside
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Lakeside Painting,
+		WorldObjectSprite = walls_decoration_01_52,
+	}
+	
+	item Mov_PaintingLibrary
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Incognito Library Painting,
+		WorldObjectSprite = walls_decoration_01_57,
+	}
+	
+	item Mov_PaintingLillysWaterpond
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Lilly's Waterpond Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_26,
+	}
+	
+	item Mov_PaintingManWithOneEar
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Man With One Ear Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_36,
+	}
+	
+	item Mov_PaintingMargarite
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Margarite Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_29,
+	}
+	
+	item Mov_PaintingMountNeverRest
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Mount Never Rest Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_64,
+	}
+	
+	item Mov_PaintingNightWithStars
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Night With Stars Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_30,
+	}
+	
+	item Mov_PaintingNomadAboveTheGloom
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Nomad Above The Gloom Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_24,
+	}
+	
+	item Mov_PaintingRiverside
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Riverside Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_32,
+	}
+	
+	item Mov_PaintingShesGotIt
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = She's Got It Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_22,
+	}
+	
+	item Mov_PaintingSirBrakefire
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Sir Brakefire Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_35,
+	}
+	
+	item Mov_PaintingThomasJefferson
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Thomas Jefferson Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_45,
+	}
+	
+	item Mov_PaintingTwoFrame
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Two Frame Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_67,
+	}
+	
+	item Mov_PaintingVioletta
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Violetta Painting,
+		WorldObjectSprite = location_entertainment_gallery_01_39,
+	}
+}

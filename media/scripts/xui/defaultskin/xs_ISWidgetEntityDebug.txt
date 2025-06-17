@@ -1,0 +1,23 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISWidgetEntityDebug
+        {
+            background          = false,
+            margin              = 5,
+            autoFillContents    = false,
+            isAutoFill          = false,
+            isAutoFillX         = false,
+            isAutoFillY         = false,
+            minimumWidth        = 0,
+            minimumHeight       = 0,
+            /* styleButton         = nil, */
+        }
+
+        ISWidgetEntityDebug S_WidgetEntityDebug_Std
+        {
+
+        }
+    }
+}

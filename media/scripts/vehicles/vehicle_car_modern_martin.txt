@@ -1,0 +1,833 @@
+module Base
+{
+	model Vehicles_ModernCar_Martin
+	{
+		mesh = vehicles/ModernCarWithDoors_Martin|Vehicles_ModernCar_mesh,
+		shader = vehicle,
+		static = TRUE,
+		scale = 0.01,
+	}
+	model ModernCar_Martin_DoorFrontLeft
+	{
+		mesh = vehicles/ModernCarWithDoors_Martin|DoorFrontLeft_mesh,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.01,
+
+		attachment TireOnFrontLeftDoor
+		{
+			offset = -0.3846 0.0000 0.0748,
+			rotate = 0.0000 90.0000 0.0000,
+			bone = DoorFrontLeft_bone,
+		}
+	}
+	model ModernCar_Martin_DoorFrontRight
+	{
+		mesh = vehicles/ModernCarWithDoors_Martin|DoorFrontRight_mesh,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model ModernCar_Martin_DoorRearLeft
+	{
+		mesh = vehicles/ModernCarWithDoors_Martin|DoorRearLeft_mesh,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = DoorRearLeft_bone 1.0,
+	}
+	model ModernCar_Martin_DoorRearRight
+	{
+		mesh = vehicles/ModernCarWithDoors_Martin|DoorRearRight_mesh,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model ModernCar_Martin_Hood
+	{
+		mesh = vehicles/ModernCarWithDoors_Martin|Hood_mesh,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.01,
+
+		attachment HoodOrnament
+		{
+			offset = 0.3868 0.4444 0.0450,
+			rotate = -78.0000 0.0000 0.0000,
+			bone = Hood_bone,
+		}
+	}
+	model ModernCar_MartinTrunk
+	{
+		mesh = vehicles/ModernCarWithDoors_Martin|Trunk_mesh,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.01,
+	}
+	model ModernCar_Martin_WindowRearLeft
+	{
+		mesh = vehicles/ModernCarWithDoors_Martin|DoorRearLeftWindow_mesh,
+		shader = vehicle,
+		static = FALSE,
+		scale = 0.01,
+		boneWeight = DoorRearLeftWindow_bone 1.0,
+	}
+	vehicle ModernCar_Martin
+	{
+		mechanicType = 3,
+		engineRepairLevel = 6,
+		playerDamageProtection = 1.1,
+		engineRPMType = firebird,
+
+		model
+		{
+			file = Vehicles_ModernCar_Martin,
+			scale = 1.8200,
+			offset = 0.0000 0.2000 0.0000,
+			rotate = 0 0 0,
+		}
+
+		spawnOffsetY = 0.5,
+
+		skin
+		{
+			texture = Vehicles/vehicle_moderncarshell,
+		}
+
+		textureRust = Vehicles/vehicle_moderncar_rust,
+		textureMask = Vehicles/vehicle_carmodern_mask,
+		textureLights = Vehicles/vehicle_carmodern_lights,
+		textureDamage1Overlay = Vehicles/vehicle_moderncaroverlays_damaged_01,
+		textureDamage1Shell = Vehicles/vehicle_moderncarshell_damaged_01,
+		textureDamage2Overlay = Vehicles/vehicle_moderncaroverlays_damaged_02,
+		textureDamage2Shell = Vehicles/vehicle_moderncarshell_damaged_02,
+
+		sound
+		{
+			alarmLoop = VehicleAlarmA VehicleAlarmB VehicleAlarmC VehicleAlarmD VehicleAlarmE,
+			horn = VehicleHornStandard,
+		}
+
+		extents = 0.9300 0.6400 2.3100,
+		mass = 800,
+		physicsChassisShape = 0.9300 0.6400 2.3100,
+		centerOfMassOffset = 0.0000 0.2000 0.0000,
+		shadowExtents = 0.9231 2.3077,
+		shadowOffset = 0.0000 0.0000,
+		engineForce = 5000,
+		maxSpeed = 90f,
+		engineLoudness = 80,
+		engineQuality = 70,
+		brakingForce = 90,
+		stoppingMovementForce = 4.0f,
+		rollInfluence = 1.0f,
+		steeringIncrement = 0.04,
+		steeringClamp = 0.3,
+		suspensionStiffness = 40,
+		suspensionCompression = 3.83,
+		suspensionDamping = 2.88,
+		maxSuspensionTravelCm = 10,
+		suspensionRestLength = 0.2,
+		wheelFriction = 1.4f,
+		frontEndHealth = 150,
+		rearEndHealth = 150,
+		seats = 4,
+
+		wheel FrontLeft
+		{
+			front = true,
+			offset = 0.3650 -0.3000 0.7200,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		wheel FrontRight
+		{
+			front = true,
+			offset = -0.3650 -0.3000 0.7200,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		wheel RearLeft
+		{
+			front = false,
+			offset = 0.3650 -0.3000 -0.6250,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		wheel RearRight
+		{
+			front = false,
+			offset = -0.3650 -0.3000 -0.6250,
+			radius = 0.15f,
+			width = 0.2f,
+		}
+
+		template = PassengerSeat4,
+
+		passenger FrontLeft
+		{
+			position inside
+			{
+				offset = 0.1800 -0.1350 0.1000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 0.6300 -0.4200 0.1000,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontLeft,
+			}
+		}
+
+		passenger FrontRight
+		{
+			position inside
+			{
+				offset = -0.1800 -0.1350 0.1000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -0.6300 -0.4200 0.1000,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatFrontRight,
+			}
+		}
+
+		passenger RearLeft
+		{
+			position inside
+			{
+				offset = 0.1800 -0.1350 -0.3700,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = 0.6300 -0.4200 -0.3500,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearLeft,
+			}
+		}
+
+		passenger RearRight
+		{
+			position inside
+			{
+				offset = -0.1800 -0.1350 -0.3700,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			position outside
+			{
+				offset = -0.6300 -0.4200 -0.3500,
+				rotate = 0.0000 0.0000 0.0000,
+				area = SeatRearRight,
+			}
+		}
+
+		area Engine
+		{
+			xywh = 0.0000 1.3900 0.9300 0.4700,
+		}
+
+		area TruckBed
+		{
+			xywh = 0.0000 -1.3900 0.9300 0.4700,
+		}
+
+		area SeatFrontLeft
+		{
+			xywh = 0.7000 0.2050 0.4700 0.5600,
+		}
+
+		area SeatFrontRight
+		{
+			xywh = -0.7000 0.2050 0.4700 0.5600,
+		}
+
+		area SeatRearLeft
+		{
+			xywh = 0.7000 -0.3150 0.4700 0.4700,
+		}
+
+		area SeatRearRight
+		{
+			xywh = -0.7000 -0.3150 0.4700 0.4700,
+		}
+
+		area GasTank
+		{
+			xywh = 0.7000 -0.6250 0.4700 0.4700,
+		}
+
+		area TireFrontLeft
+		{
+			xywh = 0.7000 0.7200 0.4700 0.4700,
+		}
+
+		area TireFrontRight
+		{
+			xywh = -0.7000 0.7200 0.4700 0.4700,
+		}
+
+		area TireRearLeft
+		{
+			xywh = 0.7000 -0.6250 0.4700 0.4700,
+		}
+
+		area TireRearRight
+		{
+			xywh = -0.7000 -0.6250 0.4700 0.4700,
+		}
+
+		template = TrunkDoor,
+
+		part TrunkDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = ModernCar_MartinTrunk,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+				scale = 1.0,
+			}
+
+			anim Close
+			{
+				anim = Trunk_closing,
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				anim = Trunk_closing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Closed
+			{
+				anim = Trunk_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = Trunk_closing,
+				animate = FALSE,
+			}
+		}
+
+		template = Trunk/part/TruckBed,
+		template = Seat/part/SeatFrontLeft,
+		template = Seat/part/SeatFrontRight,
+		template = Seat/part/SeatRearLeft,
+		template = Seat/part/SeatRearRight,
+
+		part Seat*
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+		}
+
+		part GloveBox
+		{
+			area = SeatFrontRight,
+
+			container
+			{
+				capacity = 5,
+				test = Vehicles.ContainerAccess.GloveBox,
+			}
+		}
+
+		template = GasTank,
+
+		part GasTank
+		{
+			install
+			{
+				skills = Mechanics:7,
+				recipes = Advanced Mechanics,
+			}
+
+			uninstall
+			{
+				skills = Mechanics:7,
+				recipes = Advanced Mechanics,
+			}
+		}
+
+		template = Battery,
+		template = Engine,
+		template = Muffler,
+
+		part Muffler
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+		}
+
+		template = EngineDoor,
+
+		part EngineDoor
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				file = ModernCar_Martin_Hood,
+				rotate = 0.0000 0.0000 0.0000,
+				offset = 0.0000 0.0000 0.0000,
+			}
+
+			anim Close
+			{
+				anim = Hood_closing,
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				anim = Hood_closing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Closed
+			{
+				anim = Hood_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = Hood_closing,
+				animate = FALSE,
+			}
+		}
+
+		template = Heater,
+		part Heater
+		{
+			category = engine,
+
+			lua
+			{
+				update = Vehicles.Update.Heater,
+			}
+		}
+
+		part PassengerCompartment
+		{
+			category = nodisplay,
+
+			lua
+			{
+				update = Vehicles.Update.PassengerCompartment,
+			}
+		}
+
+		template = Windshield/part/Windshield,
+		template = Windshield/part/WindshieldRear,
+
+		part Windshield*
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+		}
+
+		template = Window/part/WindowFrontLeft,
+		template = Window/part/WindowFrontRight,
+		template = Window/part/WindowRearLeft,
+		template = Window/part/WindowRearRight,
+
+		part Window*
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+		}
+
+		part WindowRearLeft
+		{
+			model Default
+			{
+				file = ModernCar_Martin_WindowRearLeft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			anim ClosedToOpen
+			{
+				anim = DoorRearLeftWindow_closing,
+				animate = FALSE,
+			}
+		}
+
+		template = Door/part/DoorFrontLeft,
+		template = Door/part/DoorFrontRight,
+		template = Door/part/DoorRearLeft,
+		template = Door/part/DoorRearRight,
+
+		part Door*
+		{
+			table install
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				recipes = Advanced Mechanics,
+			}
+
+			model Default
+			{
+				rotate = 0 0 0,
+			}
+		}
+
+		part DoorFrontLeft
+		{
+			model Default
+			{
+				file = ModernCar_Martin_DoorFrontLeft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			anim Close
+			{
+				anim = DoorFrontLeft_closing,
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				anim = DoorFrontLeft_closing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorFrontLeft_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorFrontLeft_closing,
+				animate = FALSE,
+			}
+		}
+
+		part DoorFrontRight
+		{
+			model Default
+			{
+				file = ModernCar_Martin_DoorFrontRight,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			anim Close
+			{
+				anim = DoorFrontRight_closing,
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				anim = DoorFrontRight_closing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorFrontRight_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorFrontRight_closing,
+				animate = FALSE,
+			}
+		}
+
+		part DoorRearLeft
+		{
+			model Default
+			{
+				file = ModernCar_Martin_DoorRearLeft,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			anim Close
+			{
+				anim = DoorRearLeft_closing,
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				anim = DoorRearLeft_closing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorRearLeft_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorRearLeft_closing,
+				animate = FALSE,
+			}
+		}
+
+		part DoorRearRight
+		{
+			model Default
+			{
+				file = ModernCar_Martin_DoorRearRight,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+			}
+
+			anim Close
+			{
+				anim = DoorRearRight_closing,
+				rate = 2.5,
+			}
+
+			anim Open
+			{
+				anim = DoorRearRight_closing,
+				reverse = TRUE,
+				rate = 2.0,
+			}
+
+			anim Closed
+			{
+				anim = DoorRearRight_closing,
+				reverse = TRUE,
+				animate = FALSE,
+			}
+
+			anim Opened
+			{
+				anim = DoorRearRight_closing,
+				animate = FALSE,
+			}
+		}
+
+		template = Tire,
+		template = Brake,
+
+		part Brake*
+		{
+			table install
+			{
+				skills = Mechanics:7,
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:7,
+				recipes = Advanced Mechanics,
+			}
+		}
+
+		template = Suspension,
+
+		part Suspension*
+		{
+			table install
+			{
+				skills = Mechanics:7,
+				recipes = Advanced Mechanics,
+			}
+
+			table uninstall
+			{
+				skills = Mechanics:7,
+				recipes = Advanced Mechanics,
+			}
+		}
+
+		template = Radio,
+		template = Headlight,
+
+		part TestPart1
+		{
+			parent = DoorFrontLeft,
+
+			model TestModel
+			{
+				file = Vehicles_Wheel,
+				offset = 0.0000 0.0000 0.0000,
+				rotate = 0.0000 0.0000 0.0000,
+				attachmentParent = TireOnFrontLeftDoor,
+			}
+		}
+
+		template = HoodOrnament,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.1703 -1.1593,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model HoodOrnament_Badger
+	{
+		mesh = WorldItems/PlushieBadger,
+		scale = 0.4,
+
+		attachment HoodOrnament
+		{
+			offset = -0.0001 -0.0000 0.0244,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model HoodOrnament_Beaver
+	{
+		mesh = WorldItems/PlushieBeaver,
+		scale = 0.4,
+
+		attachment HoodOrnament
+		{
+			offset = -0.0000 -0.0000 0.0056,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	model HoodOrnament_Spiffo
+	{
+		mesh = WorldItems/SpiffoPlushie,
+		scale = 0.4,
+	}
+	item HoodOrnament_Badger
+	{
+		DisplayCategory = VehicleMaintenance,
+		Weight = 1.0,
+		Type = Normal,
+		DisplayName = Hood Ornament - Badger,
+		Icon = Plush_Badger,
+		MechanicsItem = FALSE,
+		WorldStaticModel = PlushieBadger_Ground,
+		VehiclePartModel = HoodOrnament Default HoodOrnament_Badger,
+	}
+	item HoodOrnament_Beaver
+	{
+		DisplayCategory = VehicleMaintenance,
+		Weight = 1.0,
+		Type = Normal,
+		DisplayName = Hood Ornament - Beaver,
+		Icon = Plush_Beaver,
+		MechanicsItem = FALSE,
+		WorldStaticModel = PlushieBeaver_Ground,
+		VehiclePartModel = HoodOrnament Default HoodOrnament_Beaver,
+	}
+	item HoodOrnament_Spiffo
+	{
+		DisplayCategory = VehicleMaintenance,
+		Weight = 1.0,
+		Type = Normal,
+		DisplayName = Hood Ornament - Spiffo,
+		Icon = PlushSpiffo,
+		MechanicsItem = FALSE,
+		WorldStaticModel = SpiffoPlushie,
+		VehiclePartModel = HoodOrnament Default HoodOrnament_Spiffo,
+	}
+	template vehicle HoodOrnament
+	{
+		part HoodOrnament
+		{
+			area = Engine,
+			category = bodywork,
+			specificItem = false,
+			itemType = Base.HoodOrnament_Badger;Base.HoodOrnament_Beaver;Base.HoodOrnament_Spiffo,
+			parent = EngineDoor,
+			model Default
+			{
+				/* FIXME: which parent model is attachmentParent for? */
+				attachmentParent = HoodOrnament,
+				attachmentSelf = HoodOrnament,
+				ignoreVehicleScale = true,
+			}
+			table install
+			{
+				time = 100,
+			}
+			table uninstall
+			{
+				time = 100,
+			}
+		}
+	}
+}

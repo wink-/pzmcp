@@ -1,0 +1,84 @@
+module Base
+{
+	template vehicle SoundsJeep
+	{
+		sound
+		{
+			alarmLoop = VehicleAlarmA VehicleAlarmB VehicleAlarmC VehicleAlarmD VehicleAlarmE,
+			engine = VehicleEngineOffRoad,
+			engineStart = VehicleEngineOffRoad,
+			engineTurnOff = VehicleEngineOffRoad,
+			horn = VehicleHornJeep,
+			ignitionFail = VehicleIgnitionFailOffRoad,
+		}
+
+		part Door*
+		{
+			anim Open
+			{
+				sound = VehicleDoorOpenJeep,
+			}
+			
+			anim Close
+			{
+				sound = VehicleDoorCloseJeep,
+			}
+
+			anim Lock
+			{
+				sound = LockVehicleDoorJeep,
+			}
+			
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorJeep,
+			}
+
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedJeep,
+			}
+		}
+
+		part EngineDoor*
+		{
+			anim Open
+			{
+				sound = VehicleHoodOpenJeep,
+			}
+
+			anim Close
+			{
+				sound = VehicleHoodCloseJeep,
+			}
+		}
+
+		part TrunkDoor*
+		{
+			anim Open
+			{
+				sound = VehicleTrunkOpenJeep,
+			}
+
+			anim Close
+			{
+				sound = VehicleTrunkCloseJeep,
+			}
+
+			anim Lock
+			{
+				sound = VehicleTrunkLockJeep,
+			}
+
+			anim Unlock
+			{
+				sound = VehicleTrunkUnlockJeep,
+			}
+
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedJeep,
+			}
+		}
+	}
+}

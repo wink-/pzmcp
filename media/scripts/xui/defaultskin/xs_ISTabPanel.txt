@@ -1,0 +1,26 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISTabPanel
+        {
+            background          = false,
+            backgroundColor     = C_BlackNoAlpha,
+            borderColor         = C_Border,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+            tabTransparency     = 1.0,
+            textTransparency    = 1.0,
+            maxLength           = 0,
+            tabHeight           = 25,
+            tabPadX             = 20,
+            allowDraggingTabs   = false,
+            allowTornOffTabs    = false,
+            equalTabWidth       = true,
+            centerTabs          = false,
+            scrollX             = 0,
+        }
+    }
+}

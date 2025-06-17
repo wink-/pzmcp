@@ -1,0 +1,539 @@
+module Base
+{
+	/******* CANNING - ITEMS *******/
+	
+	item BoxOfJars
+	{
+		DisplayName = Box of Jars,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 1.5,
+		Icon = JarBox,
+		SurvivalGear = TRUE,
+		WorldStaticModel = BoxOfJars,
+	}
+	
+	item EmptyJar
+	{
+		DisplayName = Empty Jar,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = GlassJar,
+		IconFluidMask = GlassJar_Mask,
+		SurvivalGear = TRUE,
+		Tooltip = Tooltip_Jar,
+		StaticModel = JarCrafted_Ground,
+		WorldStaticModel = JarCrafted_Ground,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass,
+
+        component FluidContainer
+        {
+			ContainerName   = Jar,
+			RainFactor	= 0.5,
+			capacity        = 1.0,
+			CustomDrinkSound = DrinkingFromMug,
+		}
+	}
+	
+	item JarLid
+	{
+		DisplayName = Jar Lid,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = JarLid,
+		MetalValue = 10,
+		SurvivalGear = TRUE,
+		WorldStaticModel = LidJar,
+		Tags = HasMetal;ShowCondition,
+		ConditionMax = 10,
+	}
+	
+	/******* CANNING - PRODUCE *******/
+	
+	item CannedBellPepper
+	{
+		DisplayName = Jar of Bell Peppers,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarBrown,
+		DaysFresh = 365,
+		DaysTotallyRotten = 730,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToBurn = 120,
+		MinutesToCook = 60,
+		WorldStaticModel = JarFoodBellPeppers_Ground,
+		CantEat = TRUE,
+		HungerChange = -48,
+		Calories = 180,
+		Carbohydrates = 42,
+		Lipids = 0,
+		Proteins = 6,
+		Tags = HasMetal;HideHungerChange;SpawnCooked,
+	}
+	
+	item CannedBroccoli
+	{
+		DisplayName = Jar of Broccoli,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarGreen,
+		DaysFresh = 365,
+		DaysTotallyRotten = 730,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToBurn = 120,
+		MinutesToCook = 60,
+		WorldStaticModel = JarFoodBroccoli_Ground,
+		CantEat = TRUE,
+		HungerChange = -45,
+		Calories = 55,
+		Carbohydrates = 10,
+		Lipids = 0.5,
+		Proteins = 4.5,
+		Tags = HasMetal;HideHungerChange;SpawnCooked,
+	}
+	
+	item CannedCabbage
+	{
+		DisplayName = Jar of Cabbage,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarGreen,
+		DaysFresh = 365,
+		DaysTotallyRotten = 730,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToBurn = 120,
+		MinutesToCook = 60,
+		WorldStaticModel = JarFoodCabbage_Ground,
+		CantEat = TRUE,
+		HungerChange 		=		-48,
+        Carbohydrates = 82,
+        Proteins = 18,
+        Lipids = 1.4,
+        Calories = 360,
+		Tags = HasMetal;HideHungerChange;SpawnCooked,
+	}
+	
+	item CannedCarrots
+	{
+		DisplayName = Jar of Carrots,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarBrown,
+		DaysFresh = 365,
+		DaysTotallyRotten = 730,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToBurn = 120,
+		MinutesToCook = 60,
+		WorldStaticModel = JarFoodCarrots_Ground,
+		CantEat = TRUE,
+		HungerChange = -40,
+		Calories = 125,
+		Carbohydrates = 30,
+		Lipids = 0.75,
+		Proteins = 3,
+		Tags = HasMetal;HideHungerChange;SpawnCooked,
+	}
+	
+	item CannedEggplant
+	{
+		DisplayName = Jar of Eggplants,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JamPurple,
+		DaysFresh = 365,
+		DaysTotallyRotten = 730,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToBurn = 120,
+		MinutesToCook = 60,
+		WorldStaticModel = JarFoodEggplants_Ground,
+		CantEat = TRUE,
+		HungerChange = -48,
+		Calories = 342,
+		Carbohydrates = 81,
+		Lipids = 2.4,
+		Proteins = 13.5,
+		Tags = HasMetal;HideHungerChange;SpawnCooked,
+	}
+	
+	item CannedLeek
+	{
+		DisplayName = Jar of Leeks,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarWhite,
+		DaysFresh = 365,
+		DaysTotallyRotten = 730,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToBurn = 120,
+		MinutesToCook = 60,
+		WorldStaticModel = JarFoodLeeks_Ground,
+		CantEat = TRUE,
+		HungerChange = -48,
+		Calories = 216,
+		Carbohydrates = 560,
+		Lipids = 1.2,
+		Proteins = 15.2,
+		Tags = HasMetal;HideHungerChange;SpawnCooked,
+	}
+	
+	item CannedPotato
+	{
+		DisplayName = Jar of Potatoes,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarWhite,
+		DaysFresh = 365,
+		DaysTotallyRotten = 730,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToBurn = 120,
+		MinutesToCook = 60,
+		WorldStaticModel = JarFoodPotatoes_Ground,
+		CantEat = TRUE,
+		HungerChange 		=		-48,
+        Carbohydrates = 45,
+        Proteins = 9,
+        Lipids = 0.45,
+        Calories = 210,
+		Tags = HasMetal;HideHungerChange;SpawnCooked,
+	}
+	
+	item CannedRedRadish
+	{
+		DisplayCategory = Food,
+		DisplayName = Jar of Radishes,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarBrown,
+		DaysFresh = 365,
+		DaysTotallyRotten = 730,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToBurn = 120,
+		MinutesToCook = 60,
+		WorldStaticModel = JarFoodRadish_Ground,
+		CantEat = TRUE,
+		HungerChange 		=		-45,
+        Carbohydrates = 2.25,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 15,
+		Tags = HasMetal;HideHungerChange;SpawnCooked,
+	}
+	
+	item CannedTomato
+	{
+		DisplayName = Jar of Tomatoes,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarBrown,
+		DaysFresh = 365,
+		DaysTotallyRotten = 730,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToBurn = 120,
+		MinutesToCook = 60,
+		WorldStaticModel = JarFoodTomatoes_Ground,
+		CantEat = TRUE,
+		HungerChange 		=		-48,
+        Carbohydrates = 14,
+        Proteins = 5.2,
+        Lipids = 0.8,
+        Calories = 56,
+		Tags = HasMetal;HideHungerChange;SpawnCooked,
+	}
+
+
+
+
+
+	item CannedBellPepper_Open
+	{
+		DisplayName = Opened Jar of Bell Peppers,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarBrown,
+		/*DaysFresh = 60,
+		DaysTotallyRotten = 90,*/
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		StaticModel = JarFoodRed_Open,
+		WorldStaticModel = JarFoodRed_Open,
+		ReplaceOnUse = EmptyJar,
+		FoodType = Vegetables,
+		EvolvedRecipe = Pizza:8;Omelette:4;Soup:8;Stew:8;Pie:8;Stir fry:8;Sandwich:2;Burger:2;Salad:4;Rice:8;Pasta:8;Taco:2;Burrito:4,
+		EvolvedRecipeName = Pepper,
+		HungerChange = -48,
+		Calories = 180,
+		Carbohydrates = 42,
+		Lipids = 0,
+		Proteins = 6,
+		Tags = HasMetal,
+		EatType = candrink,
+	}
+
+	item CannedBroccoli_Open
+	{
+		DisplayName = Opened Jar of Broccoli,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarGreen,
+		/*DaysFresh = 60,
+		DaysTotallyRotten = 90,*/
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		StaticModel = JarFoodGreen_Open,
+		WorldStaticModel = JarFoodGreen_Open,
+		ReplaceOnUse = EmptyJar,
+		FoodType = Vegetables,
+		EvolvedRecipe = Pizza:9;Omelette:9;Soup:9;Stew:9;Pie:9;Stir fry:9;Salad:9;Rice:9;Pasta:9,
+		EvolvedRecipeName = Broccoli,
+		HungerChange = -45,
+		Calories = 55,
+		Carbohydrates = 10,
+		Lipids = 0.5,
+		Proteins = 4.5,
+		Tags = HasMetal,
+		EatType = candrink,
+	}
+
+	item CannedCabbage_Open
+	{
+		DisplayName = Opened Jar of Cabbage,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarGreen,
+		/*DaysFresh = 60,
+		DaysTotallyRotten = 90,*/
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		StaticModel = JarFoodGreen_Open,
+		WorldStaticModel = JarFoodGreen_Open,
+		ReplaceOnUse = EmptyJar,
+		FoodType = Vegetables,
+		EvolvedRecipe       =       Soup:12;Stew:12;Stir fry:12;Sandwich:6;Burger:6;Salad:12;Taco:6;Burrito:6,
+		EvolvedRecipeName = Cabbage,
+		HungerChange 		=		-48,
+        Carbohydrates = 82,
+        Proteins = 18,
+        Lipids = 1.4,
+        Calories = 360,
+		Tags = HasMetal,
+		EatType = candrink,
+	}
+
+	item CannedCarrots_Open
+	{
+		DisplayName = Opened Jar of Carrots,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarBrown,
+		/*DaysFresh = 60,
+		DaysTotallyRotten = 90,*/
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		StaticModel = JarFoodOrange_Open,
+		WorldStaticModel = JarFoodOrange_Open,
+		ReplaceOnUse = EmptyJar,
+		FoodType = Vegetables,
+		EvolvedRecipe = Soup:8;Stew:8;Pie:8;Stir fry:8;Sandwich:4;Salad:4;Rice:8;Pasta:8,
+		EvolvedRecipeName = Carrot,
+		HungerChange = -40,
+		Calories = 125,
+		Carbohydrates = 30,
+		Lipids = 0.75,
+		Proteins = 3,
+		Tags = HasMetal,
+		EatType = candrink,
+	}
+
+	item CannedEggplant_Open
+	{
+		DisplayName = Opened Jar of Eggplants,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JamPurple,
+		/*DaysFresh = 60,
+		DaysTotallyRotten = 90,*/
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		StaticModel = JarFoodPurple_Open,
+		WorldStaticModel = JarFoodPurple_Open,
+		ReplaceOnUse = EmptyJar,
+		FoodType = Vegetables,
+		EvolvedRecipe = Pizza:8;Omelette:8;Soup:16;Stew:16;Pie:16;Stir fry:16;Burger:8|Cooked;Sandwich:4|Cooked;Salad:8|Cooked;Rice:16;Pasta:16,
+		EvolvedRecipeName = Eggplant,
+		HungerChange = -48,
+		Calories = 342,
+		Carbohydrates = 81,
+		Lipids = 2.4,
+		Proteins = 13.5,
+		Tags = HasMetal,
+		EatType = candrink,
+	}
+
+	item CannedLeek_Open
+	{
+		DisplayName = Opened Jar of Leeks,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarWhite,
+		/*DaysFresh = 60,
+		DaysTotallyRotten = 90,*/
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		StaticModel = JarFoodGreen_Open,
+		WorldStaticModel = JarFoodGreen_Open,
+		ReplaceOnUse = EmptyJar,
+		FoodType = Vegetables,
+		EvolvedRecipe = Omelette:6;Soup:12;Stew:12;Pie:12;Stir fry:12;Salad:6;Rice:12;Pasta:12,
+		EvolvedRecipeName = Leek,
+		HungerChange = -48,
+		Calories = 216,
+		Carbohydrates = 560,
+		Lipids = 1.2,
+		Proteins = 15.2,
+		Tags = HasMetal,
+		EatType = candrink,
+	}
+
+	item CannedPotato_Open
+	{
+		DisplayName = Opened Jar of Potatoes,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarWhite,
+		/*DaysFresh = 60,
+		DaysTotallyRotten = 90,*/
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		StaticModel = JarFoodBrown_Open,
+		WorldStaticModel = JarFoodBrown_Open,
+		ReplaceOnUse = EmptyJar,
+		FoodType = Vegetables,
+        EvolvedRecipe       =       Omelette:9;Soup:18;Stew:18;Pie:18;Stir fry:18;Salad:9|Cooked,
+        EvolvedRecipeName = Potato,
+		HungerChange 		=		-48,
+        Carbohydrates = 45,
+        Proteins = 9,
+        Lipids = 0.45,
+        Calories = 210,
+		Tags = HasMetal,
+		EatType = candrink,
+	}
+
+	item CannedRedRadish_Open
+	{
+		DisplayCategory = Food,
+		DisplayName = Opened Jar of Red Radishes,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarBrown,
+		/*DaysFresh = 60,
+		DaysTotallyRotten = 90,*/
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		StaticModel = JarFoodRed_Open,
+		WorldStaticModel = JarFoodRed_Open,
+		ReplaceOnUse = EmptyJar,
+		FoodType = Vegetables,
+		EvolvedRecipe = Soup:3;Stew:3;Stir fry:3;Burger:3;Salad:3;Sandwich:3,
+		EvolvedRecipeName = Radish,
+		HungerChange 		=		-45,
+        Carbohydrates = 2.25,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 15,
+		Tags = HasMetal,
+		EatType = candrink,
+	}
+
+	item CannedTomato_Open
+	{
+		DisplayName = Opened Jar of Tomatoes,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarBrown,
+		/*DaysFresh = 60,
+		DaysTotallyRotten = 90,*/
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		OnCooked = CannedFood_OnCooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		StaticModel = JarFoodRed_Open,
+		WorldStaticModel = JarFoodRed_Open,
+		ReplaceOnUse = EmptyJar,
+		FoodType = Vegetables,
+		EvolvedRecipe       =       Pizza:12;Omelette:6;Soup:12;Stew:12;Pie:12;Stir fry:12;Sandwich:6;Burger:6;Salad:6;Rice:12;Pasta:12;Taco:6;Burrito:6,
+		EvolvedRecipeName = Tomato,
+		HungerChange 		=		-48,
+        Carbohydrates = 14,
+        Proteins = 5.2,
+        Lipids = 0.8,
+        Calories = 56,
+		Tags = HasMetal,
+		EatType = candrink,
+	}
+}

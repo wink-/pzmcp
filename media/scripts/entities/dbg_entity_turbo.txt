@@ -1,0 +1,464 @@
+/*
+module Base
+{
+    /*
+        TEMPORARY FILE FOR DEBUG TESTING
+    */
+
+    xuiSkin default
+    {
+        entity ES_Recipe_Select_Machine
+        {
+            LuaWindowClass      = ISEntityTabWindow,
+            DisplayName         = Test Machine,
+            Icon                = Item_ClayJar_Glazed_Fired,
+
+            /*
+            components
+            {
+                CraftLogic
+                {
+                    LuaPanelClass           = ISCraftFurnacePanel,
+                    DisplayName             = Kiln Furnace,
+                    Icon                    = Item_Note2,
+                }
+            }
+            */
+        }
+
+        entity ES_Meta_Test_Machine
+        {
+            LuaWindowClass      = ISEntityTabWindow,
+            DisplayName         = Meta Test Machine,
+            Icon                = Item_ClayJar_Glazed_Fired,
+
+            /*
+            components
+            {
+                CraftLogic
+                {
+                    LuaPanelClass           = ISCraftFurnacePanel,
+                    DisplayName             = Kiln Furnace,
+                    Icon                    = Item_Note2,
+                }
+            }
+            */
+        }
+    }
+
+    craftRecipe DbgLogToApple
+    {
+        inputs
+        {
+            item 1 [Base.Log] flags[Prop2],
+            item 1 [Base.Saw] mode:keep flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.Apple,
+        }
+    }
+
+    craftRecipe DbgLogToHammer
+    {
+        inputs
+        {
+            item 1 [Base.Log] flags[Prop2],
+            item 1 [Base.Saw] mode:keep flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.Hammer,
+        }
+    }
+
+    craftRecipe DbgLogToMirror
+    {
+        inputs
+        {
+            item 1 [Base.Log],
+            item 1 [Base.Saw] mode:keep flags[Prop1],
+        }
+        outputs
+        {
+            item 1 Base.Mirror,
+        }
+    }
+
+    stringList CraftRecipes_SelectTest
+    {
+        DbgLogToApple,
+        DbgLogToHammer,
+        DbgLogToMirror,
+    }
+
+    stringList Recipes_SelectTest
+    {
+        Make Unfired Clay Jar,
+        Glaze Clay Jar,
+        Make Unfired Clay Brick,
+        Make Unfired Clay Shingle,
+        Make Unfired Clay Tile,
+    }
+
+    entity Recipe_Select_Machine
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Recipe_Select_Machine,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@10,
+                Item@Input@10,
+            }
+            group craft_outputs
+            {
+                Item@Output@10,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes             = CraftRecipes_SelectTest,
+            StartMode           = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+        component SpriteConfig
+        {
+            face single
+            {
+                layer
+                {
+                    row = crafted_01_30,
+                }
+            }
+        }
+         
+        component CraftRecipe
+        {
+            timedAction   = Test,
+            time          = 50,
+            category      = Demo,
+        }
+    }
+
+    craftRecipe DbgMetaTestRecipe
+    {
+        time    = 20,
+        inputs
+        {
+            item 1 [Base.Aluminum],
+        }
+        outputs
+        {
+            item 1 Base.Bell,
+        }
+    }
+
+    stringList CraftRecipes_MetaTest
+    {
+        DbgMetaTestRecipe,
+    }
+
+    entity Meta_Test_Machine
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Meta_Test_Machine,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@100,
+            }
+            group craft_outputs
+            {
+                Item@Output@100,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes         = CraftRecipes_MetaTest,
+            StartMode       = Automatic,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+        component SpriteConfig
+        {
+            face single
+            {
+                layer
+                {
+                    row = crafted_01_31,
+                }
+            }
+        } 
+                
+        component CraftRecipe
+        {
+            timedAction   = Test,
+            time          = 50,
+            category      = Demo,
+        }
+    }
+
+    craftRecipe DbgAppleToLog
+    {
+        time            = 100,
+        consumeOnFinish = true,
+
+        inputs
+        {
+            item 1 [Base.Apple],
+            replace 1 Base.Log,
+            energy 130 [Thermal] mode:keep,
+        }
+    }
+
+    stringList Recipes_Test_Furnace
+    {
+	    DbgAppleToLog,
+    }
+
+    craftRecipe ThermalFuel_TestLogs
+    {
+        time        = 50,
+	    tags = RightClickOnly,
+        inputs
+        {
+            item 1 [Base.Log],
+        }
+        outputs
+        {
+            energy 130 Thermal apply:onTick,
+        }
+    }
+
+    stringList Recipes_Test_Furnace_Fuels
+    {
+        ThermalFuel_TestLogs,
+    }
+
+    entity Turbo_Test_Furnace
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Kiln_Small,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@10,
+            }
+            group craft_outputs
+            {
+                Energy@Output@130@Thermal@Channel_Red@null,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes         = Recipes_Test_Furnace_Fuels,
+            StartMode       = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+        component SpriteConfig
+        {
+            face single
+            {
+                layer
+                {
+                    row = crafted_01_32,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = Test,
+            time          = 50,
+            category      = Demo,
+        }
+    }
+
+    fluid FilterTestA
+    {
+        ColorReference  = Red,
+        DisplayName     = Fluid_Filter_A,
+
+        Categories
+        {
+            Beverage,
+        }
+
+        Properties
+        {
+            thirstChange            = -20,
+        }
+    }
+
+    fluid FilterTestB
+    {
+        ColorReference  = Green,
+        DisplayName     = Fluid_Filter_B,
+
+        Categories
+        {
+            Alcoholic,
+            Medical,
+        }
+
+        Properties
+        {
+            alcohol                 = 1.0,
+        }
+
+        blendBlackList
+        {
+            fluid           = FilterTestA,
+        }
+    }
+
+    fluid FilterTestC
+    {
+        ColorReference  = Blue,
+        DisplayName     = Fluid_Filter_C,
+
+        Categories
+        {
+            Alcoholic,
+            Beverage,
+        }
+
+        Properties
+        {
+            alcohol                 = 1.0,
+        }
+
+        blendBlackList
+        {
+            category        = Medical,
+        }
+    }
+
+	item BottleFilterA
+	{
+		DisplayName = Filter Fluid A,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Wine,
+		IconFluidMask = Wine_Mask,
+		WorldStaticModel = WineWhiteGround,
+
+        component FluidContainer
+        {
+            ContainerName   = Bottle,
+            Opened	        = true,
+            capacity        = 1.0,
+            Fluids
+            {
+                fluid       = FilterTestA:1.0:Red,
+            }
+        }
+	}
+
+	item BottleFilterB
+	{
+		DisplayName = Filter Fluid B,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Wine,
+		IconFluidMask = Wine_Mask,
+		WorldStaticModel = WineWhiteGround,
+
+        component FluidContainer
+        {
+            ContainerName   = Bottle,
+            Opened	        = true,
+            capacity        = 1.0,
+            Fluids
+            {
+                fluid       = FilterTestB:1.0:Green,
+            }
+        }
+	}
+
+	item BottleFilterC
+	{
+		DisplayName = Filter Fluid C,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Wine,
+		IconFluidMask = Wine_Mask,
+		WorldStaticModel = WineWhiteGround,
+
+        component FluidContainer
+        {
+            ContainerName   = Bottle,
+            Opened	        = true,
+            capacity        = 1.0,
+            Fluids
+            {
+                fluid       = FilterTestC:1.0:Blue,
+            }
+        }
+	}
+
+    craftRecipe Test_Item_Uses_1
+    {
+        time            = 30,
+        tags            = ExamplesHandcraft;AutomationCompatible,
+        inputs
+        {
+            item 1 [Base.LongStick],
+            item 1 [Base.Wire],
+            -uses 2,
+            item 1 tags[Pliers] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.Milk,
+        }
+    }
+
+    craftRecipe Test_Item_Uses_2
+    {
+        time            = 30,
+        tags            = ExamplesHandcraft;AutomationCompatible,
+        inputs
+        {
+            item 1 [Base.LongStick],
+            item 1 [Base.Wire],
+            -uses 0.1,
+            item 1 tags[Pliers] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.Cheese,
+        }
+    }
+}
+*/

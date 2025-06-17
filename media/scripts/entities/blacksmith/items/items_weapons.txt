@@ -1,0 +1,424 @@
+module Base
+{
+	item StoneBlade
+	{
+		DisplayName = Stone Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = SpearHead_Stone_Crude01,
+		StaticModel = StoneSpearhead,
+		WorldStaticModel = StoneSpearhead,
+		Tags = ShowCondition;SpearHead,
+		ResearchableRecipes = MakeLongStoneBlade;Forge_Crude_Blade;CarveFleshingTool,
+	}
+
+	item StoneBladeLong
+	{
+		DisplayName = Long Stone Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.75,
+		Icon = SpearHead_Stone_Crude02,
+		StaticModel = StoneSpearheadLong,
+		WorldStaticModel = StoneSpearheadLong,
+		Tags = ShowCondition;SpearHead,
+		ResearchableRecipes = MakeStoneBlade;Forge_Crude_Blade;CarveFleshingTool,
+	}
+
+	item StoneAxeHead
+	{
+		DisplayName = Large Stone Axe Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = StoneAxeHead,
+		StaticModel = StoneAxeLargeHead,
+		WorldStaticModel = StoneAxeLargeHead,
+		Tags = ShowCondition,
+		ResearchableRecipes = MakeStoneMaulHead;Forge_Old_Axe_Head,
+	}
+
+	item StoneMaulHead
+	{
+		DisplayName = Stone Maul Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = StoneMaulHead,
+		StaticModel = StoneMaulHead,
+		WorldStaticModel = StoneMaulHead,
+		Tags = ShowCondition,
+        ResearchableRecipes = Forge_Club_Hammer_Head;Forge_Sledgehammer_Head;MakeLargeStoneAxeHead;Forge_Pick_Axe_Head,
+	}
+/*
+	item StickNailSpiked
+	{
+        DisplayCategory = Material,
+        DisplayName = Stick - Nail-Spiked,
+        Icon = Shaft,
+        WeaponSprite	=	LongShaftNailSpike,
+        MaxRange	=	1.6,
+        MinAngle	=	0.85,
+        Type	=	Weapon,
+        MinimumSwingTime	=	2,
+        KnockBackOnNoDeath	=	FALSE,
+        SwingAmountBeforeImpact	=	0.02,
+        Categories	=	Improvised;Blunt,
+        ConditionLowerChanceOneIn	=	5,
+        Weight	=	2,
+        SplatNumber	=	1,
+        PushBackMod	=	0.3,
+        SubCategory	=	Swinging,
+        ConditionMax	=	5,
+        MaxHitCount	=	3,
+        DoorDamage	=	1,
+        SwingAnim	=	Bat,
+        MinRange	=	0.61,
+        SwingTime	=	2,
+        KnockdownMod	=	0,
+        SplatBloodOnNoDeath	=	FALSE,
+        RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+        BreakSound  =   WoodenStickBreak,
+        DoorHitSound = WoodenStickHit,
+        DropSound = WoodenStickDrop,
+		HitSound = WoodenStickHit,
+		HitFloorSound = WoodenStickHit,
+		SwingSound = WoodenStickSwing,
+        TreeDamage  =   0,
+        CriticalChance	=	5,
+        CritDmgMultiplier = 1,
+        MinDamage	=	0.3,
+        MaxDamage	=	0.6,
+        BaseSpeed = 1.2,
+		WeaponLength = 0.55,
+		/*Tags = WoodHandle,*/
+		TwoHandWeapon = TRUE,
+		OnBreak = OnBreak.LongStick,
+	}*/
+
+
+	item Katana_Shard
+	{
+		DisplayName = Katana Blade Shard,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Katana_Tip,
+		Tags = HasMetal;ShowCondition;SmeltableSteelSmall,
+		StaticModel = Katana_Shard,
+		WorldStaticModel = Katana_Shard,
+		ConditionMax = 13,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Crude_Shortsword_Blade;Forge_Crude_Sword_Blade;Forge_ShortSwordBlade;Forge_SwordBlade;Forge_Straight_Razor,
+	}
+
+	item Katana_Handle
+	{
+		DisplayName = Katana Handle,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Katana_Handle,
+		Tags = HasMetal,
+		StaticModel = Katana_Handle,
+		WorldStaticModel = Katana_Handle,
+	}
+
+	item Katana_Blade
+	{
+		DisplayName = Katana Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = KatanaBlade,
+		Tags = HasMetal;SmeltableSteelLarge,
+		StaticModel = Katana_Blade,
+		WorldStaticModel = Katana_Blade,
+        ResearchableRecipes = Forge_Crude_Shortsword_Blade;Forge_Crude_Sword_Blade;Forge_ShortSwordBlade;Forge_SwordBlade;Forge_Straight_Razor,
+	}
+
+	item Katana_Blade_Broken
+	{
+		DisplayName = Broken Katana Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1.5,
+		Icon = KatanaBlade_Broken,
+		Tags = HasMetal;SmeltableSteelMediumPlus,
+		StaticModel = Katana_Blade_Broken,
+		WorldStaticModel = Katana_Blade_Broken,
+        ResearchableRecipes = Forge_Crude_Shortsword_Blade;Forge_Crude_Sword_Blade;Forge_ShortSwordBlade;Forge_SwordBlade;Forge_Straight_Razor,
+	}
+
+	item Sword_Shard
+	{
+		DisplayName = Sword Blade Shard,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Sword_Forged_02_Tip,
+		Tags = HasMetal;ShowCondition;SmeltableSteelSmall,
+		StaticModel = Sword_Shard,
+		WorldStaticModel = Sword_Shard,
+		ConditionMax = 13,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Crude_Blade;Forge_Scrap_Shortsword,
+	}
+
+	item CrudeSword_Shard
+	{
+		DisplayName = Crude Sword Blade Shard,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Sword_Forged_01_Tip,
+		Tags = HasMetal;ShowCondition;SmeltableIronSmall,
+		StaticModel = CrudeSword_Shard,
+		WorldStaticModel = CrudeSword_Shard,
+		ConditionMax = 10,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Crude_Blade;Forge_Scrap_Shortsword,
+	}
+
+	item Sword_Scrap_Shard
+	{
+		DisplayName = Scrap Metal Blade Shard,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Sword_Crude_Tip,
+		Tags = HasMetal;ShowCondition;SmeltableIronSmall,
+		StaticModel = Sword_Scrap_Shard,
+		WorldStaticModel = Sword_Scrap_Shard,
+		ConditionMax = 13,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = Forge_Crude_Blade;Forge_Scrap_Shortsword,
+	}
+
+/* RE-DO AS WEAPONS! */
+
+/*	item SpadeHead2
+	{
+		DisplayName = Spade Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = ShovelHead_Forged,
+		StaticModel = SpadeHead2,
+		WorldStaticModel = SpadeHead2,
+		Tags = HasMetal;ToolHead,
+	}*/
+
+	item SpadeHead
+	{
+		DisplayName = Spade Head,
+		DisplayCategory = JunkWeapon,
+		Type = Weapon,
+		Weight = 1,
+		Icon = ShovelHead_Forged,
+		BaseSpeed = 1.2,
+		BreakSound = MeatCleaverBreak,
+		Categories = Blunt,
+		ConditionLowerChanceOneIn = 15,
+		ConditionMax = 10,
+		CritDmgMultiplier = 2,
+		CriticalChance = 15,
+		DamageCategory = Slash,
+		DamageMakeHole = TRUE,
+		DoorDamage = 5,
+		DoorHitSound = MeatCleaverHit,
+		DropSound = MeatCleaverDrop,
+		HitFloorSound = MeatCleaverHit,
+		HitSound = MeatCleaverHit,
+		KnockBackOnNoDeath = FALSE,
+		KnockdownMod = 2,
+		MaxDamage = 0.8,
+		MaxHitCount = 2,
+		MaxRange = 1.1,
+		MinAngle = 0.65,
+		MinDamage = 0.4,
+		MinRange = 0.61,
+		MinimumSwingTime = 4,
+		PushBackMod = 0.3,
+		SplatBloodOnNoDeath = TRUE,
+		SplatNumber = 3,
+		SubCategory = Swinging,
+		SwingAmountBeforeImpact = 0.02,
+		SwingAnim = Bat,
+		SwingSound = MeatCleaverSwing,
+		SwingTime = 4,
+		TreeDamage = 5,
+		WeaponLength = 0.2,
+		WeaponSpritesByIndex = SpadeHead2,
+		Tags = HasMetal;SmeltableIronMedium,
+        ResearchableRecipes = MakeSpadeHeadCudgel;Forge_Spade_Head;Forge_Gardening_Trowel,
+	}
+
+	item SpadeHead_Forged
+	{
+		DisplayName = Spade Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = ShovelHead_Forged,
+		StaticModel = SpadeHeadForged,
+		WorldStaticModel = SpadeHeadForged,
+		Tags = HasMetal;ToolHead;SmeltableIronMedium,
+        ResearchableRecipes = MakeSpadeHeadCudgel;Forge_Spade_Head;Forge_Gardening_Trowel,
+	}
+
+	/*item GardenForkHead
+	{
+		DisplayName = Garden Fork Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = Pitchfork_Broken_Head,
+		StaticModel = GardenFork_Head,
+		WorldStaticModel = GardenFork_Head,
+		Tags = HasMetal;ToolHead,
+	}*/
+
+	item GardenForkHead
+	{
+		DisplayName = Garden Fork Head,
+		DisplayCategory = MaterialWeapon,
+		Type = Weapon,
+		Weight = 1,
+		Icon = Pitchfork_Broken_Head,
+		BaseSpeed = 1.2,
+		BreakSound = MeatCleaverBreak,
+		Categories = Blunt,
+		ConditionLowerChanceOneIn = 15,
+		ConditionMax = 10,
+		CritDmgMultiplier = 2,
+		CriticalChance = 15,
+		DamageCategory = Slash,
+		DamageMakeHole = TRUE,
+		DoorDamage = 1,
+		DoorHitSound = MeatCleaverHit,
+		DropSound = MeatCleaverDrop,
+		HitFloorSound = MeatCleaverHit,
+		HitSound = MeatCleaverHit,
+		KnockBackOnNoDeath = FALSE,
+		KnockdownMod = 2,
+		MaxDamage = 0.8,
+		MaxHitCount = 2,
+		MaxRange = 1.1,
+		MinAngle = 0.65,
+		MinDamage = 0.4,
+		MinRange = 0.61,
+		MinimumSwingTime = 4,
+		PushBackMod = 0.3,
+		SplatBloodOnNoDeath = TRUE,
+		SplatNumber = 3,
+		SubCategory = Swinging,
+		SwingAmountBeforeImpact = 0.02,
+		SwingAnim = Bat,
+		SwingSound = MeatCleaverSwing,
+		SwingTime = 4,
+		TreeDamage = 0,
+		WeaponLength = 0.2,
+		WeaponSprite = GardenFork_Head,
+		Tags = HasMetal,
+        ResearchableRecipes = MakeGardenForkHeadWeapon,
+	}
+
+	item GardenForkHead_Forged
+	{
+		DisplayName = Garden Fork Head,
+		DisplayCategory = MaterialWeapon,
+		Type = Weapon,
+		Weight = 1,
+		Icon = GardenFork_Head_Forged,
+		BaseSpeed = 1.2,
+		BreakSound = MeatCleaverBreak,
+		Categories = Blunt,
+		ConditionLowerChanceOneIn = 15,
+		ConditionMax = 10,
+		CritDmgMultiplier = 2,
+		CriticalChance = 15,
+		DamageCategory = Slash,
+		DamageMakeHole = TRUE,
+		DoorDamage = 1,
+		DoorHitSound = MeatCleaverHit,
+		DropSound = MeatCleaverDrop,
+		HitFloorSound = MeatCleaverHit,
+		HitSound = MeatCleaverHit,
+		KnockBackOnNoDeath = TRUE,
+		KnockdownMod = 2,
+		MaxDamage = 0.8,
+		MaxHitCount = 2,
+		MaxRange = 1.1,
+		MinAngle = 0.65,
+		MinDamage = 0.4,
+		MinRange = 0.61,
+		MinimumSwingTime = 4,
+		PushBackMod = 0.3,
+		SplatBloodOnNoDeath = FALSE,
+		SplatNumber = 3,
+		SubCategory = Swinging,
+		SwingAmountBeforeImpact = 0.02,
+		SwingAnim = Bat,
+		SwingSound = MeatCleaverSwing,
+		SwingTime = 4,
+		TreeDamage = 0,
+		WeaponLength = 0.2,
+		WeaponSprite = GardenFork_Head,
+		Tags = HasMetal;ToolHead,
+        ResearchableRecipes = MakeGardenForkHeadWeapon,
+	}
+
+	item OldAxeHead
+	{
+		DisplayName = Axe Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = Axehead_Forged02,
+		StaticModel         = AxeHead_Old,
+		WorldStaticModel    = AxeHead_Old,
+		Tags = HasMetal;Sharpenable;SmeltableIronLarge,
+		ConditionMax = 15,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = MakeLargeStoneAxeHead;Forge_Old_Axe_Head;Forge_Hand_Axe_Head;Forge_Wood_Axe_Head,
+	}
+
+	item FireAxeHead
+	{
+		DisplayName = Firefighter Axe Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = Fireaxe_Head,
+		StaticModel         = FireAxe_Head,
+		WorldStaticModel    = FireAxe_Head,
+		Tags = HasMetal;Sharpenable;SmeltableSteelLarge,
+		ConditionMax = 15,
+
+        Sharpness = 1.0,
+        ResearchableRecipes = MakeLargeStoneAxeHead;Forge_Old_Axe_Head;Forge_Hand_Axe_Head;Forge_Wood_Axe_Head,
+	}
+
+	item HatchetHead_Bone
+	{
+		DisplayName = Bone War Hatchet Head,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Scapula_Axehead,
+		StaticModel         = HatchetHead_Bone,
+		WorldStaticModel    = HatchetHead_Bone,
+		Tags = IgnoreZombieDensity,
+        ResearchableRecipes = MakeBoneHatchetHead;CarveFleshingTool,
+		ConditionLowerChanceOneIn = 10,
+		ConditionMax = 10,
+	}
+}

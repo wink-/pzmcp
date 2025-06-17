@@ -1,0 +1,206 @@
+module Base
+{
+	sound VehicleEngineDefault
+	{
+		category = Vehicle,
+		master = VehicleEngine,
+		clip
+		{
+			event = Vehicle/Standard/Engine,
+		}
+	}
+
+	sound VehicleIgnitionFailDefault
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/IgnitionFail,
+		}
+	}
+
+	sound VehicleHorn
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Horn,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleDoorIsLocked
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Door/IsLocked,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleDoorOpen
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Door/Open,
+		}
+	}
+
+	sound VehicleDoorClose
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Door/Close,
+		}
+	}
+
+	sound LockVehicleDoor
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Door/Lock,
+		}
+	}
+
+	sound UnlockVehicleDoor
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Door/UnLock,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleHoodOpen
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Hood/Open,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleHoodClose
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Hood/Close,
+		}
+	}
+
+	sound VehicleHoodCloseStart
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Hood/Close/Start,
+		}
+	}
+
+	sound VehicleHoodCloseEnd
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Hood/Close/End,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleTrunkClose
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Trunk/Close,
+		}
+	}
+
+	sound VehicleTrunkCloseStart
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Trunk/Close/Start,
+		}
+	}
+
+	sound VehicleTrunkCloseEnd
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Trunk/Close/End,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleTrunkOpen
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Trunk/Open,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleAlarmA
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Alarm/Alarm_A,
+}
+	}	
+
+		sound VehicleAlarmB
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Alarm/Alarm_B,
+		}
+	}	
+
+		sound VehicleAlarmC
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Alarm/Alarm_C,
+		}
+	}	
+
+		sound VehicleAlarmD
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Alarm/Alarm_D,
+		}
+	}	
+
+		sound VehicleAlarmE
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Alarm/Alarm_E,
+		}
+	}	
+}

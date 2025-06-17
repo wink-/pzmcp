@@ -1,0 +1,672 @@
+module Base
+{
+
+
+	item Glasses
+	{
+		DisplayName = Reflective Sunglasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		/*Icon = ShootingGlasses,*/
+		Icon = ShootingGlasses_Reflective,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses,
+		Cosmetic = TRUE,
+		Tags = IsUpperDisguise,
+	}
+
+	item Glasses_Prescription
+	{
+		DisplayName = Prescription Reflective Sunglasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		/*Icon = ShootingGlasses,*/
+		Icon = ShootingGlasses_Reflective,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Prescription,
+		Cosmetic = TRUE,
+        VisualAid = TRUE,
+		Tags = IgnoreZombieDensity;IsUpperDisguise,
+	}
+
+	item Glasses_Aviators
+	{
+		DisplayName = Aviator Glasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = GlassesAviator,
+		BodyLocation = Eyes,
+		ChanceToFall = 50,
+		ClothingItem = Glasses_Aviators,
+		Cosmetic = TRUE,
+		Tags = IsUpperDisguise,
+	}
+
+	item Glasses_Prescription_Aviators
+	{
+		DisplayName = Prescription Aviator Glasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = GlassesAviator,
+		BodyLocation = Eyes,
+		ChanceToFall = 50,
+		ClothingItem = Glasses_Prescription_Aviators,
+		Cosmetic = TRUE,
+        VisualAid = TRUE,
+		Tags = IgnoreZombieDensity;IsUpperDisguise,
+	}
+
+	item Glasses_Normal
+	{
+		DisplayName = Prescription Glasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		IconsForTexture = GlassesBlack;GlassesBlue;GlassesRed,
+		BodyLocation = Eyes,
+		ChanceToFall = 50,
+		ClothingItem = Glasses_Normal,
+		Cosmetic = TRUE,
+        VisualAid = TRUE,
+	}
+
+	item Glasses_Cosmetic_Normal
+	{
+		DisplayName = Cosmetic Glasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		IconsForTexture = GlassesBlack;GlassesBlue;GlassesRed,
+		BodyLocation = Eyes,
+		ChanceToFall = 50,
+		ClothingItem = Glasses_Cosmetic_Normal,
+		Cosmetic = TRUE,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item Glasses_Reading
+	{
+		DisplayName = Reading Glasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		IconsForTexture = GlassesReading;GlassesReading;GlassesReading,
+		BodyLocation = Eyes,
+		ChanceToFall = 50,
+		ClothingItem = Glasses_Reading,
+		Cosmetic = TRUE,
+	}
+
+	item Glasses_SafetyGoggles
+	{
+		DisplayName = Safety Goggles,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = SafetyGoggles,
+		BloodLocation = Head,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_SafetyGoggles,
+		/*Cosmetic = TRUE,*/
+		ScratchDefense = 5,
+		VisionModifier = 0.75,
+	}
+
+	item Glasses_Shooting
+	{
+		DisplayName = Shooting Glasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		/*Icon = ShootingGlasses_Reflective,*/
+		Icon = ShootingGlasses,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Shooting,
+		Cosmetic = TRUE,
+		Tags = IsUpperDisguise,
+	}
+
+	item Glasses_Prescription_Shooting
+	{
+		DisplayName = Prescription Shooting Glasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		/*Icon = ShootingGlasses_Reflective,*/
+		Icon = ShootingGlasses,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Prescription_Shooting,
+		Cosmetic = TRUE,
+		VisualAid = TRUE,
+		Tags = IgnoreZombieDensity;IsUpperDisguise,
+	}
+
+	item Glasses_SkiGoggles
+	{
+		DisplayName = Ski Goggles,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		IconsForTexture = SkiGogglesBlack;SkiGogglesWhite,
+		BloodLocation = Head,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_SkiGoggles,
+		/*Cosmetic = TRUE,*/
+		ScratchDefense = 5,
+		VisionModifier = 0.75,
+		Tags = IsUpperDisguise,
+	}
+
+	item Glasses_Sun
+	{
+		DisplayName = Sunglasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = GlassesSun,
+		BodyLocation = Eyes,
+		ChanceToFall = 50,
+		ClothingItem = Glasses_Sun,
+		Cosmetic = TRUE,
+		Tags = IsUpperDisguise,
+	}
+
+	item Glasses_Prescription_Sun
+	{
+		DisplayName = Prescription Sunglasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = GlassesSun,
+		BodyLocation = Eyes,
+		ChanceToFall = 50,
+		ClothingItem = Glasses_Prescription_Sun,
+		Cosmetic = TRUE,
+		VisualAid = TRUE,
+		Tags = IgnoreZombieDensity;IsUpperDisguise,
+	}
+
+	item Glasses_SwimmingGoggles
+	{
+		DisplayName = Swimming Goggles,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = SwimmingGoggles,
+		BodyLocation = Eyes,
+		ChanceToFall = 30,
+		ClothingItem = Glasses_SwimmingGoggles,
+		Cosmetic = TRUE,
+		VisionModifier = 0.75,
+	}
+
+	item Glasses_Eyepatch_Left
+	{
+		DisplayName = Eyepatch,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.01,
+		Icon = Eyepatch,
+		BodyLocation = LeftEye,
+		ClothingExtraSubmenu = EyeLeft,
+		ClothingItem = Glasses_Eyepatch_Left,
+		ClothingItemExtra = Glasses_Eyepatch_Right,
+		ClothingItemExtraOption = EyeRight,
+		Cosmetic = TRUE,
+		WorldStaticModel = Eyepatch_Ground,
+		VisionModifier = 0.5,
+	}
+
+	item Glasses_Eyepatch_Right
+	{
+		DisplayName = Eyepatch,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.01,
+		Icon = Eyepatch,
+		BodyLocation = RightEye,
+		ClothingExtraSubmenu = EyeRight,
+		ClothingItem = Glasses_Eyepatch_Right,
+		ClothingItemExtra = Glasses_Eyepatch_Left,
+		ClothingItemExtraOption = EyeLeft,
+		Cosmetic = TRUE,
+		WorldStaticModel = Eyepatch_Ground,
+		VisionModifier = 0.5,
+	}
+
+	item Glasses_CatsEye
+	{
+		DisplayName = Cat-Eye Prescription Glasses,
+		DisplayCategory = Accessory,
+		IconsForTexture = Glasses_CatsEye_Black;Glasses_CatsEye_Purple;Glasses_CatsEye_Teal,
+		Type = Clothing,
+		Weight = 0.1,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_CatsEye,
+		Cosmetic = TRUE,
+        VisualAid = TRUE,
+	}
+
+	item Glasses_CatsEye_Sun
+	{
+		DisplayName = Cat-Eye Sunglasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		IconsForTexture = Glasses_CatsEye_Sun_Black;Glasses_CatsEye_Sun_Purple;Glasses_CatsEye_Sun_Teal,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_CatsEye_Sun,
+		Cosmetic = TRUE,
+		Tags = IsUpperDisguise,
+	}
+
+	item Glasses_Cosmetic_CatsEye
+	{
+		DisplayName = Cat-Eye Cosmetic Glasses,
+		DisplayCategory = Accessory,
+		IconsForTexture = Glasses_CatsEye_Black;Glasses_CatsEye_Purple;Glasses_CatsEye_Teal,
+		Type = Clothing,
+		Weight = 0.1,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Cosmetic_CatsEye,
+		Cosmetic = TRUE,
+	}
+
+	item Glasses_Prescription_CatsEye_Sun
+	{
+		DisplayName = Cat-Eye Prescription Suglasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		IconsForTexture = Glasses_CatsEye_Sun_Black;Glasses_CatsEye_Sun_Purple;Glasses_CatsEye_Sun_Teal,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Prescription_CatsEye_Sun,
+		Cosmetic = TRUE,
+		Tags = IsUpperDisguise,
+        VisualAid = TRUE,
+	}
+
+	item Glasses_Normal_HornRimmed
+	{
+		DisplayName = Horn Rimmed Prescription Glasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Glasses_HornRimmed,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Normal_HornRimmed,
+		Cosmetic = TRUE,
+        VisualAid = TRUE,
+	}
+
+	item Glasses_Cosmetic_Normal_HornRimmed
+	{
+		DisplayName = Horn Rimmed Cosmetic Glasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Glasses_HornRimmed,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Cosmetic_Normal_HornRimmed,
+		Cosmetic = TRUE,
+	}
+
+	item Glasses_JackieO
+	{
+		DisplayName = Big Retro Sunglasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		IconsForTexture = Glasses_JackieO_Red;Glasses_JackieO_Brown,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_JackieO,
+		Cosmetic = TRUE,
+		Tags = IsUpperDisguise,
+	}
+
+	item Glasses_Prescription_JackieO
+	{
+		DisplayName = Big Retro Prescription Sunglasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		IconsForTexture = Glasses_JackieO_Red;Glasses_JackieO_Brown,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Prescription_JackieO,
+		Cosmetic = TRUE,
+		Tags = IsUpperDisguise,
+        VisualAid = TRUE,
+	}
+
+	item Glasses_Macho
+	{
+		DisplayName = Fancy Reflective Sunglasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		IconsForTexture = Glasses_Oakley_Sun_Blue;Glasses_Oakley_Sun_Purple,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Macho,
+		Cosmetic = TRUE,
+		Tags = IsUpperDisguise,
+	}
+
+	item Glasses_Round_Normal
+	{
+		DisplayName = Round Prescription Glasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Glasses_Lennon,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Round_Normal,
+		Cosmetic = TRUE,
+        VisualAid = TRUE,
+	}
+
+	item Glasses_Round_Shades
+	{
+		DisplayName = Round Sunglasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Glasses_Lennon_Sun,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Round_Shades,
+		Cosmetic = TRUE,
+		Tags = IsUpperDisguise,
+	}
+
+	item Glasses_Cosmetic_Round_Normal
+	{
+		DisplayName = Round Cosmetic Glasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Glasses_Lennon,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Cosmetic_Round_Normal,
+		Cosmetic = TRUE,
+	}
+
+	item Glasses_Prescription_Round_Shades
+	{
+		DisplayName = Round Prescription Sunglasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Glasses_Lennon_Sun,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Prescription_Round_Shades,
+		Cosmetic = TRUE,
+		Tags = IsUpperDisguise,
+        VisualAid = TRUE,
+	}
+
+	item Glasses_70s_Gold
+	{
+		DisplayName = Retro Gold-Framed Prescription Glasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Glasses_70s_Gold,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_70s_Gold,
+		Cosmetic = TRUE,
+        VisualAid = TRUE,
+	}
+
+	item Glasses_Cosmetic_70s_Gold
+	{
+		DisplayName = Retro Gold-Framed Cosmetic Glasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Glasses_70s_Gold,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Cosmetic_70s_Gold,
+		Cosmetic = TRUE,
+	}
+
+/* i had some o fthose , i could never see out of lol - puppers */
+	item Glasses_Round_HoloSkulls
+	{
+		DisplayName = Hologram Skull Sunglasses,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Glasses_Novelty_HoloSkulls,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Round_HoloSkulls,
+		Cosmetic = TRUE,
+		Tags = IsMemento;IsUpperDisguise;IgnoreZombieDensity,
+		VisionModifier = 0.75,
+	}
+
+	item Glasses_OldWeldingGoggles
+	{
+		DisplayName = Old Welding Goggles,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = WeldingGoggles,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_OldWeldingGoggles,
+		Cosmetic = TRUE,
+		Tags = IsMemento;WeldingMask;IsUpperDisguise;IgnoreZombieDensity,
+		VisionModifier = 0.5,
+		DiscomfortModifier = 0.05,
+	}
+
+	item Glasses_HalfMoon
+	{
+		DisplayName = Half Moon Prescription Glasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Glasses_HalfMoon,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_HalfMoon,
+		Cosmetic = TRUE,
+        VisualAid = TRUE,
+	}
+
+	item Glasses_Cosmetic_HalfMoon
+	{
+		DisplayName = Half Moon Cosmetic Glasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Glasses_HalfMoon,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_HalfMoon,
+		Cosmetic = TRUE,
+	}
+
+	item Glasses_MonocleLeft
+	{
+		DisplayName = Prescription Monocle,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.05,
+		Icon = Monocle,
+		BodyLocation = Eyes,
+		ClothingExtraSubmenu = EyeLeft,
+		ClothingItem = Glasses_MonocleLeft,
+		ClothingItemExtra = Glasses_MonocleRight,
+		ClothingItemExtraOption = EyeRight,
+		Cosmetic = TRUE,
+        VisualAid = TRUE,
+		Tags = IsMemento;IgnoreZombieDensity,
+		VisionModifier = 0.75,
+	}
+
+	item Glasses_MonocleRight
+	{
+		DisplayName = Prescription Monocle,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.05,
+		Icon = Monocle,
+		BodyLocation = Eyes,
+		ClothingExtraSubmenu = EyeRight,
+		ClothingItem = Glasses_MonocleRight,
+		ClothingItemExtra = Glasses_MonocleLeft,
+		ClothingItemExtraOption = EyeLeft,
+		Cosmetic = TRUE,
+        VisualAid = TRUE,
+		Tags = IsMemento;IgnoreZombieDensity,
+		VisionModifier = 0.75,
+	}
+
+	item Glasses_Cosmetic_MonocleLeft
+	{
+		DisplayName = Cosmetic Monocle,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.05,
+		Icon = Monocle,
+		BodyLocation = Eyes,
+		ClothingExtraSubmenu = EyeLeft,
+		ClothingItem = Glasses_Cosmetic_MonocleLeft,
+		ClothingItemExtra = Glasses_Cosmetic_MonocleRight,
+		ClothingItemExtraOption = EyeRight,
+		Cosmetic = TRUE,
+		Tags = IsMemento;IgnoreZombieDensity,
+		VisionModifier = 0.75,
+	}
+
+	item Glasses_Cosmetic_MonocleRight
+	{
+		DisplayName = Cosmetic Monocle,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.05,
+		Icon = Monocle,
+		BodyLocation = Eyes,
+		ClothingExtraSubmenu = EyeRight,
+		ClothingItem = Glasses_Cosmetic_MonocleRight,
+		ClothingItemExtra = Glasses_Cosmetic_MonocleLeft,
+		ClothingItemExtraOption = EyeLeft,
+		Cosmetic = TRUE,
+		Tags = IsMemento;IgnoreZombieDensity,
+		VisionModifier = 0.75,
+	}
+
+	item Glasses_SunCheap
+	{
+		DisplayName = Cheap Sunglasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		IconsForTexture = Glasses_Sun_Cheap_Pink;Glasses_Sun_Cheap_Green,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_SunCheap,
+		Cosmetic = TRUE,
+		Tags = IsUpperDisguise,
+	}
+
+	item Glasses_3dGlasses
+	{
+		DisplayName = 3D Glasses,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Glasses_Novelty_3d,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_3dGlasses,
+		Cosmetic = TRUE,
+		Tags = IsMemento;IsUpperDisguise;IgnoreZombieDensity,
+	}
+
+	item Glasses_Groucho
+	{
+		DisplayName = Novelty Glasses,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Glasses_Novelty_Groucho,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Groucho,
+		Cosmetic = TRUE,
+		Tags = IsMemento;IsUpperDisguise;IgnoreZombieDensity,
+	}
+
+	item Glasses_Venetian
+	{
+		DisplayName = Venetian Sunglasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		IconsForTexture = Glasses_Venetian_Blue;Glasses_Venetian_Green;Glasses_Venetian_Pink,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Venetian,
+		Cosmetic = TRUE,
+		Tags = IsUpperDisguise,
+		VisionModifier = 0.75,
+	}
+
+	item Glasses_NewWave
+	{
+		DisplayName = New Wave Sunglasses,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		IconsForTexture = Glasses_NewWave_BlackPink;Glasses_NewWave_BlackOrange;Glasses_NewWave_WhiteBlue;Glasses_NewWave_WhiteGreen,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_NewWave,
+		Cosmetic = TRUE,
+		Tags = IsUpperDisguise;IgnoreZombieDensity,
+	}
+
+	item Glasses_Novelty_Xray
+	{
+		DisplayName = Novelty Xray Glasses,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Glasses_Novelty_Xray,
+		BodyLocation = Eyes,
+		ChanceToFall = 20,
+		ClothingItem = Glasses_Novelty_Xray,
+		Cosmetic = TRUE,
+		Tags = IsMemento;IsUpperDisguise;IgnoreZombieDensity;,
+		VisionModifier = 0.5,
+	}
+
+
+}

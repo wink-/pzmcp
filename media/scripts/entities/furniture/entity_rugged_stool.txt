@@ -1,0 +1,56 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_Rugged_Stool
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Rugged Stool,
+			Icon		= Build_LogSeat2,
+		}
+	}
+
+    entity Rugged_Stool
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Rugged_Stool,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_04_113,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_04_112,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = BuildWallNoTool,
+            time          = 50,
+            SkillRequired = Woodwork:1,
+            xpAward       = Woodwork:10,
+            category      = Furniture,
+            tags          = carpentry;Furniture,
+            ToolTip       = Tooltip_craft_stoolDesc,
+            inputs
+            {
+                item 4 [Base.TreeBranch2;Base.WoodenStick2],
+		        item 2 [Base.RippedSheets;Base.RippedSheetsDirty;Base.Twine;Base.Rope;Base.SheetRope] flags[DontReplace],
+            }
+        }
+    }
+}

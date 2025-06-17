@@ -1,0 +1,163 @@
+/*module camping*/
+module Base
+{
+	/*imports
+	{
+		Base
+	}*/
+
+/**********************************************************************/
+/************************* Camping Items ******************************/
+/**********************************************************************/
+
+
+    item CampingTentKit2
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		Icon				=		TZ_TentKit,
+		Weight		  	= 6.0,
+		DisplayName			=	 Small Tent,
+		WorldObjectSprite	= camping_01_1,
+		Tooltip = Tooltip_item_NeedsPackedTent,
+		Tags = IsFireFuel;IsFireTinder,
+		FireFuelRatio = 0.25,
+	}
+
+    item CampingTentKit2_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		Tent2_Rolled,
+		Weight		  	= 3.0,
+		DisplayName			=	 Small Tent (Packed),
+		/*WorldStaticModel  = CampingTentKit_Ground,
+		StaticModel  = CampingTentKit_Ground,*/
+		AttachmentType = Bedroll,
+		StaticModel  = YellowTent,
+		WorldStaticModel  = YellowTent,
+		Tooltip = Tooltip_item_NeedsUnpacked,
+		Tags = IsFireFuel;LightWhenAttached,
+		FireFuelRatio = 0.25,
+	}
+
+    item ImprovisedTentKit
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		Icon				=		TZ_TentKit,
+		Weight		  	= 8.0,
+		DisplayName			=	 Improvised Tent Kit,
+		WorldObjectSprite	= camping_03_25,
+		Tooltip = Tooltip_item_NeedsPackedTent,
+		Tags = IsFireFuel;IsFireTinder,
+		FireFuelRatio = 0.25,
+	}
+
+    item ImprovisedTentKit_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		TZ_TentKit,
+		Weight		  	= 4.0,
+		DisplayName			=	 Improvised Tent Kit (Packed),
+		/*WorldStaticModel  = CampingTentKit_Ground,
+		StaticModel  = CampingTentKit_Ground,*/
+		AttachmentType = Bedroll,
+		StaticModel  = Tent_Makeshift,
+		WorldStaticModel  = Tent_Makeshift,
+		Tooltip = Tooltip_item_NeedsUnpacked,
+		Tags = IsFireFuel;LightWhenAttached,
+		FireFuelRatio = 0.25,
+	}
+
+    item HideTent_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		TentCrafted_Packed,
+		Weight		  	= 4.0,
+		DisplayName			=	 Hide Tent (Packed),
+		AttachmentType = Bedroll,
+		StaticModel  = Tent_Hide,
+		WorldStaticModel  = Tent_Hide,
+		Tooltip = Tooltip_item_NeedsUnpacked,
+	}
+
+    item HideTent
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		/*Icon = TentCrafted_Packed,*/
+        Icon			= default,
+		Weight		  	= 8.0,
+		DisplayName			=	 Hide Tent,
+		WorldObjectSprite	= camping_03_44,
+		Tooltip = Tooltip_item_NeedsPackedTent,
+	}
+
+	item CompassDirectional
+	{
+		DisplayName = Compass,
+		DisplayCategory = Camping,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = CompassDirectional,
+		SurvivalGear = TRUE,
+		MetalValue = 1,
+		WorldStaticModel = CompassDirectional,
+		Tags = Compass;HasMetal;FitsKeyRing,
+	}
+
+    /* note that this item doesn't do anything as of yet*/
+	item InsectRepellent
+    {
+        DisplayCategory = Camping,
+        Weight	=	0.8,
+        Type	=	Drainable,
+        UseDelta	=	0.05,
+        DisplayName	=	Insect Repellent,
+        Icon	=	InsectRepellant,
+        WorldStaticModel = InsectRepellant,
+        Tags = HasMetal;Aerosol;HideRemaining,
+		UseWhileEquipped = FALSE,
+        cantBeConsolided = TRUE,
+    }
+
+    item WaterPurificationTablets
+	{
+		Weight	=	0.2,
+		DisplayCategory = Camping,
+        UseDelta	=	0.05,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		DisplayName	=	Water Purification Tablets,
+		Icon	=	WaterPurificationTablets,
+        SurvivalGear = TRUE,
+		WorldStaticModel = WaterPurificationTablets,
+		Tags = PurifyWater,
+	}
+
+    item P38
+	{
+		DisplayName = P38 Can Opener,
+	    DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.05,
+		Icon = Canopenerp38,
+		WorldStaticModel = CanopenerP38,
+		Tags = CanOpener;HasMetal;FitsKeyRing,
+	}
+
+	item Spork
+	{
+		DisplayName = Plastic Spork,
+		DisplayCategory = Camping,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Spork,
+		StaticModel = Spork_Hand,
+		WorldStaticModel = Spork,
+		Tags = Spoon;Fork;MixingUtensil;Puppers,
+	}
+}

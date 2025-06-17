@@ -1,0 +1,147 @@
+module Base
+{
+    sound AnimalFoleyEatGrass
+    {
+        category = Animals,
+        clip 
+        {
+            event = Animal/Foley/Eat/Grass,
+        }
+    }
+
+    sound AnimalFoleyFeedFromMother
+    {
+        category = Animals,
+        clip 
+        {
+            event = Animal/Foley/Eat/FeedFromMother,
+        }
+    }
+
+    sound AnimalThumpGeneric
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Foley/Thump/Generic,
+        }
+    }
+
+    sound AnimalThumpMetal
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Foley/Thump/Metal,
+        }
+    }
+
+    sound AnimalThumpMetalPoleGate
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Foley/Thump/MetalPoleGate,
+        }
+    }
+
+    sound AnimalThumpChainlinkFence
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Foley/Thump/ChainlinkFence,
+        }
+    }
+
+     sound AnimalFoleyShearSheepManual
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Foley/ShearSheep/Manual,
+        }
+    }
+
+    sound AnimalFoleyShearSheepElectric
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Foley/ShearSheep/Electric,
+        }
+    }
+
+    sound ButcheringAddCorpse
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Foley/Butchering/AddCorpse,
+        }
+    }
+
+    sound ButcheringRemoveCorpse
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Foley/Butchering/Remove Corpse,
+        }
+    }
+
+    sound ButcheringBleedCorpse
+    {
+        category = Animals,
+        clip 
+        {
+            event = Animal/Foley/Butchering/BleedCorpse,
+        }
+    }
+
+    sound ButcheringGatherBones
+    {
+        category = Animals,
+        clip 
+        {
+            event = Animal/Foley/Butchering/GatherBones,
+        }
+    }
+
+    sound ButcheringGatherMeatLarge
+    {
+        category = Animals,
+        clip 
+        {
+            event = Animal/Foley/Butchering/GatherMeatLarge,
+        }
+    }
+
+    sound ButcheringGatherMeatSmall
+    {
+        category = Animals,
+        clip 
+        {
+            event = Animal/Foley/Butchering/GatherMeatSmall,
+        }
+    }
+
+    sound ButcheringRemoveHead
+    {
+        category = Animals,
+        clip 
+        {
+            event = Animal/Foley/Butchering/RemoveHead,
+        }
+    }
+
+    sound ButcheringSkinCorpse
+    {
+        category = Animals,
+        clip 
+        {
+            event = Animal/Foley/Butchering/SkinCorpse,
+        }
+    }
+
+}

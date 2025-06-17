@@ -1,0 +1,11 @@
+module Base
+{
+	sound BareHandsHit
+	{
+		category = Player,
+		clip
+		{
+			event = Weapon/Melee/BareHands/Hit,
+		}
+	}
+}

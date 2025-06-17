@@ -1,0 +1,102 @@
+module Base
+{
+	sound ToggleStove
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Stove/Toggle,
+		}
+	}
+
+	sound StoveRunning
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Stove/Running,
+		}
+	}
+
+	sound StoveTimerExpired
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Stove/Finished,
+		}
+	}
+
+	sound StoveTimer
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Stove/Timer,
+		}
+	}
+
+	sound StoveDoorOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Stove/DoorOpen,
+		}
+	}
+
+	sound StoveDoorClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Stove/DoorClose,
+		}
+	}
+
+	sound AddFoodSmall
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Stove/AddFoodSmall,
+		}
+	}
+
+	sound AddFoodMedium
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Stove/AddFoodMedium,
+		}
+	}
+
+	sound AddFoodLarge
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Stove/AddFoodLarge,
+		}
+	}
+
+	sound ToggleTemp
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Stove/TempToggle,
+		}
+	}
+
+	sound KnobSwitch
+	{
+		category = Object,
+		clip
+		{
+/*			event = Vehicle/AC/SetTemperature, Only works when the "Inside" parameter is -1 */
+			event = Object/Stove/TempToggle,
+		}
+	}
+}

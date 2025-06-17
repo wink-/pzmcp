@@ -1,0 +1,114 @@
+module Base
+{
+    craftRecipe GrindCornflour
+     {
+        time        = 300,
+        timedAction = UseStoneQuern,
+        tags = Stone_Quern,
+        category = Farming,
+        inputs
+        {
+            item 20 [Base.CornSeed],
+        }
+        outputs
+        {
+         item 1 Base.Cornflour2,
+        }
+     }
+    craftRecipe GrindCornmeal
+     {
+        time        = 300,
+        timedAction = UseStoneQuern,
+        tags = Stone_Quern,
+        category = Farming,
+        inputs
+        {
+            item 20 [Base.CornSeed],
+        }
+        outputs
+        {
+         item 1 Base.Cornmeal2,
+        }
+     }
+    craftRecipe GrindFlour
+     {
+        time        = 300,
+        timedAction = UseStoneQuern,
+        tags = Stone_Quern,
+        category = Farming,
+        inputs
+        {
+            item 12 [Base.WheatSeed;Base.RyeSeed;Base.BarleySeed],
+        }
+        outputs
+        {
+            item 1 Base.Flour2,
+        }
+     }
+
+
+    entity Stone_Quern
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Stone_Quern,
+            uiEnabled       = true,
+        }
+
+
+        component CraftBench
+        {
+            Recipes             = Stone_Quern,
+        }
+
+    /*   component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@20,
+            }
+            group craft_outputs
+            {
+                Item@Output@1,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes             = Recipes_Stone_Quern,
+            StartMode           = Manual,
+            inputGroup          = craft_inputs,
+            outputGroup         = craft_outputs,
+        }*/
+
+
+        component SpriteConfig
+        {
+		    isThumpable = false,
+            face single
+            {
+                layer
+                {
+                    row = crafted_02_40,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = BuildCairn,
+            time          = 50,
+            category      = Farming,
+            SkillRequired = Masonry:1,
+            xpAward       = Masonry:10,
+            ToolTip       = Tooltip_craft_stoneQuernDesc,
+            inputs
+            {
+                item 1 [Base.StoneWheel],
+                item 2 [Base.StoneWheelSmall],
+                item 1 [Base.Handle],
+            }
+        }
+    }
+}

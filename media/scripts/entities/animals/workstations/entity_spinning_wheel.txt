@@ -1,0 +1,80 @@
+/******************************************/
+/** RJ: PLEASE DONT TOUCH WITHOUT ASKING **/
+/******************************************/
+
+module Base
+{
+	xuiSkin default
+	{
+        entity ES_Spinning_Wheel
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Spinning Wheel,
+            Icon                = Build_SpinningWheel,
+        }
+    }
+
+    entity Spinning_Wheel
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Spinning_Wheel,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes         = SpinningWheel,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_04_37,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_04_36,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = crafted_04_38,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = crafted_04_39,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+		    timedAction   = BuildWoodenStructureMedium,
+            time          = 50,
+            category      = Farming,
+		    SkillRequired = Woodwork:5,
+		    xpAward       = Woodwork:50,
+            ToolTip       = Tooltip_craft_spinningWheelDesc,
+            inputs
+            {
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+                item 3 [Base.LongStick],
+            }
+        }
+    }
+}

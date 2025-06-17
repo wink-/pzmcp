@@ -1,0 +1,617 @@
+module Base
+{
+    /* NOTES: FIX_ACTION */
+    craftRecipe SawSteelBarIntoHalves
+    {
+        Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.SteelBar] flags[Prop2],
+            item 1 tags[MetalSaw;SmallSaw] mode:keep flags[Prop1;MayDegradeLight],
+        }
+        outputs
+        {
+            item 2 Base.SteelBarHalf,
+        }
+    }
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawSteelBarHalfIntoQuarters
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.SteelBarHalf] flags[Prop2],
+			item 1 tags[MetalSaw;SmallSaw] mode:keep flags[Prop1;MayDegradeLight],
+		}
+		outputs
+		{
+			item 2 Base.SteelBarQuarter,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawSteelIntoPieces
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.SteelBarQuarter;Base.SteelChunk] flags[Prop2],
+			item 1 tags[MetalSaw;SmallSaw] mode:keep flags[Prop1;MayDegradeLight],
+		}
+		outputs
+		{
+			item 5 Base.SteelPiece,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawSteelIngotIntoBlocks
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.SteelIngot] flags[Prop2],
+			item 1 tags[MetalSaw] mode:keep flags[Prop1;MayDegradeHeavy],
+		}
+		outputs
+		{
+			item 3 Base.SteelBlock,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawSteelBlockIntoChunks
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.SteelBlock] flags[Prop2],
+			item 1 tags[MetalSaw] mode:keep flags[Prop1;MayDegrade],
+		}
+		outputs
+		{
+			item 4 Base.SteelChunk,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawIronBarIntoHalves
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.IronBar] flags[Prop2;AllowDestroyedItem],
+			item 1 tags[MetalSaw;SmallSaw] mode:keep flags[Prop1;MayDegradeLight],
+		}
+		outputs
+		{
+			item 2 Base.IronBarHalf,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawIronBarHalfIntoQuarters
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.IronBarHalf] flags[Prop2],
+			item 1 tags[MetalSaw;SmallSaw] mode:keep flags[Prop1;MayDegradeLight],
+		}
+		outputs
+		{
+			item 2 Base.IronBarQuarter,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawIronIntoPieces
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.IronBarQuarter;Base.IronChunk] flags[Prop2],
+			item 1 tags[MetalSaw;SmallSaw] mode:keep flags[Prop1;MayDegradeLight],
+		}
+		outputs
+		{
+			item 5 Base.IronPiece,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawIronIngotIntoBlocks
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.IronIngot] flags[Prop2],
+			item 1 tags[MetalSaw] mode:keep flags[Prop1;MayDegradeHeavy],
+		}
+		outputs
+		{
+			item 3 Base.IronBlock,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawIronBlockIntoChunks
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.IronBlock] flags[Prop2],
+			item 1 tags[MetalSaw] mode:keep flags[Prop1;MayDegrade],
+		}
+		outputs
+		{
+			item 4 Base.IronChunk,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawSteelSheetIntoSmallSheets
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.SheetMetal] flags[Prop2],
+			item 1 tags[MetalSaw] mode:keep flags[Prop1;MayDegradeLight],
+		}
+		outputs
+		{
+			item 4 Base.SmallSheetMetal,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawRailroadTrack
+	{
+		Time = 500,
+        tags = AnySurfaceCraft;CanBeDoneFromFloor,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.RailroadTrack] flags[Prop2],
+			item 1 tags[MetalSaw] mode:keep flags[Prop1;MayDegradeHeavy],
+		}
+		outputs
+		{
+			item 3 Base.RailroadTrackPiece,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe CutRailroadTrack
+	{
+		Time = 200,
+		SkillRequired = MetalWelding:4,
+        tags = AnySurfaceCraft;CanBeDoneFromFloor,
+        timedAction = Welding,
+		xpAward = MetalWelding:10,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.RailroadTrack] flags[Prop2],
+			item 5 [Base.BlowTorch] flags[Prop1],
+			item 1 tags[WeldingMask] mode:keep flags[IsWorn],
+		}
+		outputs
+		{
+			item 3 Base.RailroadTrackPiece,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe CutSteelIngotIntoBlocks
+	{
+		Time = 100,
+		SkillRequired = MetalWelding:3,
+		Tags = InHandCraft;Welding,
+        timedAction = Welding,
+		xpAward = MetalWelding:10,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.SteelIngot] flags[Prop2],
+			item 2 [Base.BlowTorch] flags[Prop1],
+			item 1 tags[WeldingMask] mode:keep flags[IsWorn],
+		}
+		outputs
+		{
+			item 3 Base.SteelBlock,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe CutSteelBlockIntoChunks
+	{
+		Time = 100,
+		SkillRequired = MetalWelding:2,
+		Tags = InHandCraft;Welding,
+        timedAction = Welding,
+		xpAward = MetalWelding:10,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.SteelBlock] flags[Prop2],
+			item 2 [Base.BlowTorch] flags[Prop1],
+			item 1 tags[WeldingMask] mode:keep flags[IsWorn],
+		}
+		outputs
+		{
+			item 4 Base.SteelChunk,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe CutIronIngotIntoBlocks
+	{
+		Time = 100,
+		SkillRequired = MetalWelding:2,
+        tags = AnySurfaceCraft,
+        timedAction = Welding,
+		xpAward = MetalWelding:10,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.IronIngot] flags[Prop2],
+			item 2 [Base.BlowTorch] flags[Prop1],
+			item 1 tags[WeldingMask] mode:keep flags[IsWorn],
+		}
+		outputs
+		{
+			item 3 Base.IronBlock,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe CutIronBlockIntoChunks
+	{
+		Time = 100,
+		SkillRequired = MetalWelding:1,
+        tags = AnySurfaceCraft,
+        timedAction = Welding,
+		xpAward = MetalWelding:10,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.IronBlock] flags[Prop2],
+			item 2 [Base.BlowTorch] flags[Prop1],
+			item 1 tags[WeldingMask] mode:keep flags[IsWorn],
+		}
+		outputs
+		{
+			item 4 Base.IronChunk,
+		}
+	}
+
+	craftRecipe MakeCrudeWoodenTongs
+	{
+		Time = 150,
+		Tags = InHandCraft;Smithing,
+        timedAction = Making,
+		xpAward = Carving:5,
+        category = Carving,
+		inputs
+		{
+			item 1 [Base.Plank;Base.TreeBranch2;Base.WoodenStick2;Base.LongHandle] flags[Prop2],
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.Twine;Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips;Base.Rope] flags[DontReplace],
+		}
+		outputs
+		{
+			item 1 Base.CrudeWoodenTongs,
+		}
+	}
+/*
+      recipe Soak_Crude_Wooden_Tongs
+      {
+	    Fluid.Water=1.0,
+        CrudeWoodenTongs,
+
+        Result:CrudeWoodenTongsSoaked,
+        Time:100.0,
+        Category:Smithing,
+      }*/
+
+    craftRecipe Make_Steel_Blocks
+    {
+        time        = 100,
+        SkillRequired = Blacksmith:4,
+        timedAction = Making,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelIngot],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 3 Base.SteelBlock,
+        }
+    }
+
+    craftRecipe Pierce_Steel_Ingot
+    {
+        time        = 180,
+        SkillRequired = Blacksmith:4,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelIngot],
+            item 1 tags[ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeHeavy],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.PiercedSteelIngot,
+        }
+    }
+
+    craftRecipe Pierce_Iron_Ingot
+    {
+        time        = 180,
+        SkillRequired = Blacksmith:3,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.IronIngot],
+            item 1 tags[ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeHeavy],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.PiercedIronIngot,
+        }
+    }
+
+    craftRecipe Pierce_Steel_Block
+    {
+        time        = 100,
+        SkillRequired = Blacksmith:3,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelBlock],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegrade],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.PiercedSteelBlock,
+        }
+    }
+
+    craftRecipe Pierce_Iron_Block
+    {
+        time        = 100,
+        SkillRequired = Blacksmith:2,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.IronBlock],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegrade],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.PiercedIronBlock,
+        }
+    }
+
+    craftRecipe Pierce_Steel_Chunk
+    {
+        time        = 100,
+        SkillRequired = Blacksmith:2,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelChunk],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.PiercedSteelChunk,
+        }
+    }
+
+    craftRecipe Pierce_Iron_Chunk
+    {
+        time        = 100,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.IronChunk],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingPliers;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.PiercedIronChunk,
+        }
+    }
+
+    craftRecipe Make_Steel_Chunks
+    {
+        time        = 100,
+        SkillRequired = Blacksmith:3,
+        timedAction = Making,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.SteelBlock],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 4 Base.SteelChunk,
+        }
+    }
+
+    craftRecipe Make_Steel_Bar_Halves
+    {
+        time        = 50,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.SteelBar],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[Prop2;MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 2 Base.SteelBarHalf,
+        }
+    }
+
+    craftRecipe Make_Steel_Bar_Quarters
+    {
+        time        = 50,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.SteelBarHalf],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[Prop2;MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 2 Base.SteelBarQuarter,
+        }
+    }
+
+    craftRecipe Make_Steel_Pieces
+    {
+        time        = 100,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.SteelBarQuarter;Base.SteelChunk],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[Prop2;MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 5 Base.SteelPiece,
+        }
+    }
+
+    craftRecipe Make_Iron_Pieces
+    {
+        time        = 100,
+        SkillRequired = Blacksmith:1,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.IronBarQuarter;Base.IronChunk],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[CrudeChisel;MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 5 Base.IronPiece,
+        }
+    }
+}

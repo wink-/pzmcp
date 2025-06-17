@@ -1,0 +1,122 @@
+module Base
+{
+	vehicleEngineRPM generic
+	{
+		VERSION = 1,
+		data
+		{
+			gearChange = 3500,
+			afterGearChange = 2000,
+		}
+		data
+		{
+			gearChange = 4000,
+			afterGearChange = 2500,
+		}
+		data
+		{
+			gearChange = 4800,
+			afterGearChange = 2800,
+		}
+		data
+		{
+			gearChange = 5300,
+			afterGearChange = 3000,
+		}
+		data
+		{
+			gearChange = 5800,
+			afterGearChange = 4500,
+		}
+	}
+
+	vehicleEngineRPM firebird
+	{
+		VERSION = 1,
+		data
+		{
+			gearChange = 3000,
+			afterGearChange = 2000,
+		}
+		data
+		{
+			gearChange = 3500,
+			afterGearChange = 2000,
+		}
+		data
+		{
+			gearChange = 4000,
+			afterGearChange = 2500,
+		}
+		data
+		{
+			gearChange = 4500,
+			afterGearChange = 2800,
+		}
+		data
+		{
+			gearChange = 6000,
+			afterGearChange = 4500,
+		}
+	}
+
+	vehicleEngineRPM jeep
+	{
+		VERSION = 1,
+		data
+		{
+			gearChange = 3000,
+			afterGearChange = 2000,
+		}
+		data
+		{
+			gearChange = 3500,
+			afterGearChange = 2000,
+		}
+		data
+		{
+			gearChange = 4000,
+			afterGearChange = 2500,
+		}
+		data
+		{
+			gearChange = 4500,
+			afterGearChange = 2800,
+		}
+		data
+		{
+			gearChange = 6000,
+			afterGearChange = 4500,
+		}
+	}
+
+	vehicleEngineRPM van
+	{
+		VERSION = 1,
+		data
+		{
+			gearChange = 3500,
+			afterGearChange = 2000,
+		}
+		data
+		{
+			gearChange = 3500,
+			afterGearChange = 2500,
+		}
+		data
+		{
+			gearChange = 4000,
+			afterGearChange = 2800,
+		}
+		data
+		{
+			gearChange = 4500,
+			afterGearChange = 3000,
+		}
+		data
+		{
+			gearChange = 6000,
+			afterGearChange = 4500,
+		}
+	}
+}

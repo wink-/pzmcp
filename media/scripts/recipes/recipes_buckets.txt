@@ -1,0 +1,112 @@
+module Base
+{
+	craftRecipe MakeBucketOfClayCement
+	{
+        timedAction = MixingBucket,
+		Time = 150,
+		Tags = InHandCraft,
+        category = Masonry, /*category = Carpentry,*/
+		inputs
+		{
+			item 1 [Base.Bucket;Base.BucketEmpty;Base.BucketWaterDebug;Base.BucketCarved] mode:destroy mappers[bucketList],
+            		-fluid 10.0 categories[Water] mode:mixture,
+			item 2 [Base.Clay],
+			item 1 [Base.Sandbag],
+		}
+		outputs
+		{
+			item 1 mapper:bucketList,
+		}
+		itemMapper bucketList
+		{
+			Base.BucketCarvedClayCement = Base.BucketCarved,
+
+            default = Base.BucketClayCement,
+		}
+	}
+
+	craftRecipe MakeBucketOfClayCementFromGrass
+	{
+        timedAction = MixingBucket,
+		Time = 150,
+		Tags = InHandCraft,
+        category = Masonry, /*category = Carpentry,*/
+		inputs
+		{
+			item 1 [Base.Bucket;Base.BucketEmpty;Base.BucketWaterDebug;Base.BucketCarved] mode:destroy mappers[bucketList],
+            		-fluid 10.0 categories[Water] mode:mixture,
+			item 2 [Base.Clay],
+			item 50 [Base.GrassTuft;Base.HayTuft] flags[ItemCount],
+		}
+		outputs
+		{
+			item 1 mapper:bucketList,
+		}
+		itemMapper bucketList
+		{
+			Base.BucketCarvedClayCement = Base.BucketCarved,
+
+            default = Base.BucketClayCement,
+		}
+	}
+
+	craftRecipe MakeBucketOfConcrete
+	{
+        timedAction = MixingBucket,
+		Time = 150,
+		Tags = InHandCraft,
+        category = Masonry, /*category = Carpentry,*/
+		inputs
+		{
+			item 1 [Base.Bucket;Base.BucketEmpty;Base.BucketWaterDebug;Base.BucketCarved] mode:destroy mappers[bucketList],
+            		-fluid 10.0 categories[Water] mode:mixture,
+			item 1 [Base.ConcretePowder],
+		}
+		outputs
+		{
+			item 1 mapper:bucketList,
+		}
+		itemMapper bucketList
+		{
+			Base.BucketCarvedConcreteFull = Base.BucketCarved,
+
+            default = Base.BucketConcreteFull,
+		}
+	}
+
+	craftRecipe MakeBucketOfPlaster
+	{
+        timedAction = MixingBucket,
+		Time = 150,
+		Tags = InHandCraft,
+        category = Carpentry,
+		inputs
+		{
+			item 1 [Base.Bucket;Base.BucketEmpty;Base.BucketWaterDebug] mode:destroy,
+            		-fluid 10.0 categories[Water] mode:mixture,
+			item 1 [Base.Quicklime;PlasterPowder],
+		}
+		outputs
+		{
+			item 1 Base.BucketPlasterFull,
+		}
+	}
+
+	craftRecipe MakeBucketOfWallpaperPaste
+	{
+		timedAction = MixingBucket,
+		Time = 150,
+		Tags = InHandCraft,
+        category = Carpentry,
+		inputs
+		{
+			item 1 [Base.Bucket;Base.BucketEmpty;Base.BucketWaterDebug] mode:destroy,
+            		-fluid 10.0 categories[Water] mode:mixture,
+			item 1 [Base.WallpaperPastePowder],
+		}
+		outputs
+		{
+			item 1 Base.BucketWallpaperPaste,
+		}
+	}
+}

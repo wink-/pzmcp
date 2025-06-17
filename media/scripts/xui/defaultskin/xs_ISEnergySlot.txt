@@ -1,0 +1,31 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISEnergySlot
+        {
+            background          = false,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            /*
+            styleIcon           = nil,
+            styleBar            = nil,
+            */
+            margin              = 5,
+            minimumBarSize      = 100,
+            enableIcon          = true,
+            isVertical          = true,
+            equalSpacing        = true,
+        }
+
+        ISEnergySlot S_EnergySlot_Vertical
+        {
+            isVertical          = true,
+        }
+
+        ISEnergySlot S_EnergySlot_Horizontal
+        {
+            isVertical          = false,
+        }
+    }
+}

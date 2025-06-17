@@ -1,0 +1,23 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISEntityTabWindow
+        {
+            enableHeader        = true,
+            backgroundColor     = C_BgWindow,
+            borderColor         = C_Border,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+            resizable           = true,
+            pin                 = true,
+            minimumWidth        = 400,
+            minimumHeight       = 0,
+            maximumWidth        = 0,
+            maximumHeight       = 0,
+            maximumHeightPercent = 0.9,
+        }
+    }
+}

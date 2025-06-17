@@ -1,0 +1,92 @@
+module Base
+{
+
+    item MilitaryMedal
+    {
+        DisplayCategory = Memento,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=   Military Medal,
+		IconsForTexture = Medal_Military1;Medal_Military2;Medal_Military3;Medal_Military4;Medal_Military5;Medal_Military6,
+	    WorldStaticModelsByIndex	= MedalMilitary1;MedalMilitary2;MedalMilitary3;MedalMilitary4;MedalMilitary5;MedalMilitary6,
+	    Tags = IgnoreZombieDensity;HasMetal;IsMemento,
+    }
+
+	item Pocketwatch
+	{
+		DisplayName = Pocketwatch,
+		DisplayCategory = Memento,
+		Type = AlarmClock,
+		Weight = 0.2,
+		Icon = Pocketwatch,
+		MetalValue = 1,
+		WorldStaticModel = Pocketwatch,
+		Tags = HasMetal,
+        AlarmSound = PocketWatchRinging,
+        SoundRadius = 7,
+	    Tags = IgnoreZombieDensity;HasMetal;IsMemento;FitsKeyRing,
+	}
+
+	item TrophyBronze
+	{
+		DisplayName = Trophy - Bronze,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 3,
+		Icon = TrophyBronze,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		WorldStaticModel = TrophyBronze,
+		Tags = IgnoreZombieDensity;HasMetal;IsMemento;OmitEmptyFromName,
+
+        component FluidContainer
+        {
+            ContainerName   = Trophy,
+            capacity        = 0.5,
+            CustomDrinkSound = DrinkingFromCan,
+        }
+	}
+
+	item TrophyGold
+	{
+		DisplayName = Trophy - Gold,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 3,
+		Icon = TrophyGold,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		WorldStaticModel = TrophyGold,
+		Tags = IgnoreZombieDensity;HasMetal;IsMemento;OmitEmptyFromName,
+
+        component FluidContainer
+        {
+			ContainerName   = Trophy,
+			capacity        = 0.5,
+			CustomDrinkSound = DrinkingFromCan,
+		}
+	}
+
+	item TrophySilver
+	{
+		DisplayName = Trophy - Silver,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 3,
+		Icon = TrophySilver,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		WorldStaticModel = TrophySilver,
+		Tags = IgnoreZombieDensity;HasMetal;IsMemento;OmitEmptyFromName,
+
+        component FluidContainer
+        {
+			ContainerName   = Trophy,
+			capacity        = 0.5,
+			CustomDrinkSound = DrinkingFromCan,
+		}
+	}
+}

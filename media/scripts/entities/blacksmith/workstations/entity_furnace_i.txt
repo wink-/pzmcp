@@ -1,0 +1,62 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Furnace_I
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Primitive Furnace,
+            Icon                = Build_PrimitiveFurnace,
+        }
+    }
+
+    entity Primitive_Furnace
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Furnace_I,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = PrimitiveFurnace,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 150,
+        	skillBaseHealth = 50,
+
+            face S
+            {
+                layer
+                {
+                    row = crafted_01_112,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_01_113,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = Test,
+            time          = 50,
+            category      = Blacksmithing,
+            ToolTip       = Tooltip_craft_furnaceIDesc,
+            inputs
+            {
+                item 6 [Base.Clay] flags[DontRecordInput],
+                item 4 [Base.Stone2],
+                item 1 tags[Concrete] flags[DontRecordInput],
+            }
+        }
+    }
+}

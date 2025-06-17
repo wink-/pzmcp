@@ -1,0 +1,157 @@
+module Base
+{
+	/******* FIRE - ITEMS *******/
+	
+	item Charcoal
+	{
+		DisplayName = Charcoal,
+		DisplayCategory = Material,
+		/*Type = Drainable,
+		Weight = 8,
+		WeightEmpty = 0.02,*/
+		Weight = 0.8,
+		Type = Normal,
+		/*Icon = TZ_CharCoal,*/
+		Icon = Charcoal,
+		/*ConsolidateOption = ContextMenu_Merge,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,*/
+		WorldStaticModel = Charcoal_Ground,
+		Tags = Charcoal;IsFireFuel,
+		FireFuelRatio = 2,
+	}
+
+     item BBQStarterFluid
+	{
+		DisplayName = Barbeque Starter Fluid,
+		DisplayCategory = Household,
+		Type = Drainable,
+		Weight = 0.5,
+		Icon = BBQStarterFluid,
+		UseDelta = 0.05,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = BBQStarterFluid,
+		Tags = HasMetal,
+	}
+
+	item DryerLint
+	{
+		DisplayName = Dryer Lint,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.01,
+		Icon = DryerLint,
+		WorldStaticModel = DryerLint,
+	}
+
+	item DryFirestarterBlock
+	{
+		DisplayName = Firestarting Block,
+		DisplayCategory = Camping,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = DryFirestarterBlock,
+		WorldStaticModel = DryFirestarterBlock,
+		SurvivalGear = TRUE,
+	}
+
+	item Lighter
+	{
+		DisplayName = Lighter,
+		DisplayCategory = FireSource,
+		Type = Drainable,
+		Weight = 0.1,
+		Icon = Lighter,
+		ActivatedItem = TRUE,
+		cantBeConsolided = TRUE,
+		KeepOnDeplete = TRUE,
+		LightDistance = 5,
+		LightStrength = 0.8,
+		MetalValue = 1,
+		ticksPerEquipUse = 130,
+		TorchCone = FALSE,
+		UseWhileEquipped = TRUE,
+		StaticModel = Zippo,
+		WeightEmpty = 0.1,
+		WorldStaticModel = ZippoGround,
+		Tags = HasMetal;Lighter;StartFire;LessFull;RefillableLighter,
+		UseDelta = 0.2,
+		SurvivalGear = TRUE,
+	}
+
+	item LighterDisposable
+	{
+		DisplayName = Lighter - Disposable,
+		DisplayCategory = FireSource,
+		Type = Drainable,
+		Weight = 0.1,
+		Icon = LighterDisposable,
+		ActivatedItem = TRUE,
+		cantBeConsolided = TRUE,
+		LightDistance = 5,
+		LightStrength = 0.6,
+		ticksPerEquipUse = 110,
+		TorchCone = FALSE,
+		UseWhileEquipped = TRUE,
+		StaticModel = LighterDisposable,
+		WeightEmpty = 0.1,
+		WorldStaticModel = LighterDisposable,
+		Tags = HasMetal;Lighter;StartFire;LessFull,
+		UseDelta = 0.2,
+		SurvivalGear = TRUE,
+	}
+
+	item LighterFluid
+	{
+		DisplayName = Lighter Fluid,
+		DisplayCategory = Household,
+		Type = Drainable,
+		Weight = 0.2,
+		Icon = LighterFluid,
+		UseDelta = 0.05,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = LighterFluid,
+		Tags = HasMetal;LighterFluid,
+	}
+
+	item MagnesiumFirestarter
+	{
+		DisplayName = Magnesium Firestarter,
+		DisplayCategory = Camping,
+		Type = Drainable,
+		Weight = 0.1,
+		Icon = MagnesiumFirestarter,
+		UseDelta    =   0.02,
+		WorldStaticModel = MagnesiumFirestarter,
+		SurvivalGear = TRUE,
+		Tags = StartFire;HasMetal,
+		UseWhileEquipped = FALSE,
+	}
+
+	item MagnesiumShavings
+	{
+		DisplayName = Magnesium Shavings,
+		DisplayCategory = Camping,
+		Type = Normal,
+		Weight = 0.001,
+		Icon = MagnesiumShavings,
+		WorldStaticModel = MagnesiumShavings,
+		Tags = IsFireTinder;HasMetal,
+	}
+
+	item Matchbox
+	{
+	    DisplayCategory = FireSource,
+		Weight	=	0.3,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		UseDelta    =   0.02,
+		DisplayName	=	Matchbox,
+		Icon	=	Matchbox,
+		ConsolidateOption = ContextMenu_Merge,
+		WorldStaticModel = Matchbox,
+		Tags = StartFire;LessFull;IgnoreZombieDensity,
+		SurvivalGear = TRUE,
+		UseWhileEquipped = FALSE,
+	}
+}

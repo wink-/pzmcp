@@ -1,0 +1,65 @@
+module Base
+{
+	sound FarmGateBlocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/FarmGate/IsBlocked,
+		}
+	}
+
+	sound FarmGateBreak
+	{
+		category = Object,
+		clip
+		{
+			event = Object/FarmGate/Break,
+		}
+	}
+
+	sound FarmGateClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/FarmGate/Close,
+		}
+	}
+
+	sound FarmGateLock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/FarmGate/Lock,
+		}
+	}
+
+	sound FarmGateLocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/FarmGate/IsLocked,
+		}
+	}
+
+	sound FarmGateOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/FarmGate/Open,
+		}
+	}
+
+	sound FarmGateUnlock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/FarmGate/Unlock,
+		}
+	}
+}

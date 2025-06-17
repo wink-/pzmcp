@@ -1,0 +1,61 @@
+module Base
+{
+	craftRecipe MakeToast
+	{
+        	timedAction = Making,
+		Time = 20,
+		category = Cooking,
+		Tags = Toaster;Cooking,
+		inputs
+		{
+			item 1 [Base.BreadSlices] flags[ItemCount],
+		}
+		outputs
+		{
+			item 1 Base.Toast,
+		}
+	}
+
+    xuiSkin default
+    {
+        entity ES_Toaster
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Toaster,
+            Icon                = Item_Toast,
+        }
+    }
+
+    entity Toaster
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Toaster,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes         = Toaster,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = appliances_cooking_01_32,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = appliances_cooking_01_33,
+                }
+            }
+        }
+    }
+}

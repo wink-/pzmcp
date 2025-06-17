@@ -1,0 +1,171 @@
+module Base
+{
+
+	item SmithingMag1
+	{
+		DisplayName = Magazine: Everyday Smithing (Helpful Tools),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineBlacksmith1,
+        BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = Forge_Tongs;Forge_Heading_Tool;Forge_Draw_Plate;Forge_Nails;Forge_Smithing_Hammer_Head;Forge_Masons_Chisel;Forge_Masons_Trowel;Forge_Metalworking_Chisel;Forge_Metalworking_Punch;Forge_Metalworking_Pliers;Forge_Fireplace_Poker;MakeCrudeWhetstone;Forge_File;Forge_Drill;Drill_Draw_Plate;Drill_Heading_Tool;Forge_Wrench,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineGround,
+        Tags = Magazine,
+	}
+
+	item SmithingMag2
+	{
+		DisplayName = Magazine: Everyday Smithing (Kitchen Tools),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineBlacksmith2,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = KitchenTools;Forge_Cooking_Pot;Forge_Roasting_Pan;Forge_Saucepan;Forge_Baking_Tray;Forge_Baking_Pan;Forge_Frying_Pan;Forge_Bucket;Forge_Corkscrew;Forge_Kettle;Forge_Goblet;Forge_Cup,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineGround,
+        Tags = Magazine,
+	}
+
+	item SmithingMag3
+	{
+		DisplayName = Magazine: Everyday Smithing (Farming Tools),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineBlacksmith3,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = Forge_Steel_Sheet;Forge_Small_Steel_Sheet;Forge_Saw;Forge_Spade_Head;Forge_Gardening_Trowel;Forge_Garden_Hoe_Head;Forge_Hand_Scythe_Head;Forge_Sheep_Shears;Forge_Scythe_Head;Forge_Saw;Forge_Lantern,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineGround,
+        Tags = Magazine,
+	}
+
+	item SmithingMag4
+	{
+		DisplayName = Magazine: Everyday Smithing (Small Tools),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineBlacksmith4,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = Forge_Tweezers;Forge_Forceps;Forge_Scissors;Forge_Door_Knob;Forge_Hinge;Forge_Straight_Razor;Forge_Fishing_Hooks;Forge_Needle;Forge_Buckle,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineGround,
+        Tags = Magazine,
+	}
+
+	item SmithingMag5
+	{
+		DisplayName = Magazine: Everyday Smithing (More Helpful Tools),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineBlacksmith4,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = Forge_Clawhammer_Head;Forge_Crowbar;Forge_Sledgehammer_Head;Forge_Ball_Peen_Hammer_Head;Forge_Club_Hammer_Head;Forge_Pick_Axe_Head,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineGround,
+        Tags = Magazine,
+	}
+
+	item SmithingMag6
+	{
+		DisplayName = Magazine: Modern Metalworking at Home,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = MagazineBlacksmith1,
+		BoredomChange = -20,
+        StressChange = -15,
+		/*TeachedRecipes = Forge;Advanced_Forge;Makeshift_Electric_Blower_Forge,*/
+		TeachedRecipes = Forge;Advanced_Forge,
+		StaticModel = Magazine,
+		WorldStaticModel = MagazineGround,
+        Tags = Magazine,
+	}
+
+
+	item SmithingMag7
+	{
+		DisplayName = Medieval Armory (Swords and Spears),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_Armory2,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = Forge_Crude_Sword_Blade;Forge_Crude_Shortsword_Blade;Forge_Sword_Blade;Forge_ShortSwordBlade;ForgeSpearHead;ForgeLongSpearHead;ForgeHandguardDagger,
+		StaticModel = Magazine,
+		WorldStaticModel = SmithingMag7,
+        Tags = Magazine,
+	}
+
+	item SmithingMag8
+	{
+		DisplayName = Magazine: American Bladecraft,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_Bladecraft1,
+		BoredomChange = -20,
+        StressChange = -15,
+		/*TeachedRecipes = Forge Meat Cleaver;Forge Hunting Knife Blade;Forge Machete Blade;Forge Wood Axe Head;Forge Small Knife;Forge Large Knife Blade;Forge Railroad Spike Knife,*/
+		TeachedRecipes = Forge_Meat_Cleaver_Blade;Forge_Hunting_Knife_Blade;Forge_Machete_Blade;Forge_Hand_Axe_Head;Forge_Wood_Axe_Head;Forge_Old_Axe_Head;Forge_Small_Knife;Forge_Large_Knife_Blade;Forge_Fleshing_Tool,
+		StaticModel = Magazine,
+		WorldStaticModel = SmithingMag8,
+        Tags = Magazine,
+	}
+
+	item SmithingMag9
+	{
+		DisplayName = Iron Age Metalworking,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_Metalworking1,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = Charcoal_Pit;Forge_Primitive_Forge;Primitive_Furnace,
+		StaticModel = Magazine,
+		WorldStaticModel = SmithingMag9,
+        Tags = Magazine,
+	}
+
+	item SmithingMag10
+	{
+		DisplayName = Medieval Metalworking,
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_Metalworking2,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = Smelting_Furnace;Blast_Furnace,
+		StaticModel = Magazine,
+		WorldStaticModel = SmithingMag10,
+        Tags = Magazine,
+	}
+
+	item SmithingMag11
+	{
+		DisplayName = Medieval Armory (Maces and Bludgeons),
+		DisplayCategory = SkillBook,
+		Type = Literature,
+		Weight = 0.5,
+		Icon = Magazine_Armory1,
+		BoredomChange = -20,
+        StressChange = -15,
+		TeachedRecipes = ForgeMaceHead;MakeSpikedClub;MakeSpikedBaseballBat;MakeSpikedCudgel;Forge_Old_Axe_Head;CarveShortBat,
+		StaticModel = Magazine,
+		WorldStaticModel = SmithingMag11,
+        Tags = Magazine,
+	}
+}

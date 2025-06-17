@@ -1,0 +1,89 @@
+/* FOR MOPS AND BROOMS, SEE ITEMS_WEAPONS_2HANDED */
+
+module Base
+{
+	/******* CLEANING - ITEMS *******/
+	
+	item Bleach
+	{
+		DisplayName = Bleach,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = Bleach,
+		EatType = BleachBottle,
+		CustomContextMenu = Drink,
+
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapPlasticMedium,
+		StaticModel = BleachBottle,
+		WorldStaticModel = BleachBottle,
+
+        	component FluidContainer
+        	{
+            		ContainerName   = BottleBleach,
+            		capacity        = 1.0,
+			CustomDrinkSound = DrinkingFromBottlePlastic,
+            		Fluids
+            		{
+                		fluid           = Bleach:1.0,
+            		}
+        	}
+	}
+	
+	item CleaningLiquid2
+	{
+		DisplayName = Cleaning Liquid,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = CleaningLiquid,
+		CustomContextMenu = Drink,
+		FillFromDispenserSound = GetWaterFromDispenserPlastic,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapPlasticMedium,
+		StaticModel = CleaningLiquid,
+		WorldStaticModel = CleaningLiquid,
+
+        	component FluidContainer
+        	{
+            		ContainerName   = BottleCleaningLiquid,
+            		capacity        = 0.5,
+			CustomDrinkSound = DrinkingFromBottlePlastic,
+            		Fluids
+            		{
+                		fluid           = CleaningLiquid:1.0,
+            		}
+        	}
+	}
+	
+	item Soap2
+	{
+		DisplayName = Soap,
+		DisplayCategory = Household,
+		Type = Drainable,
+		Weight = 0.2,
+		Icon = Soap,
+		UseDelta = 0.05,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		StaticModel = Soap,
+		WorldStaticModel = Soap,
+	}
+	
+	item Sponge
+	{
+		DisplayName = Sponge,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Sponge,
+		StaticModel = Sponge,
+		WorldStaticModel = Sponge,
+		Tags = CleanStains,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+}
+
+/* FOR MOPS AND BROOMS, SEE ITEMS_WEAPONS_2HANDED */

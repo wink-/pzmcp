@@ -1,0 +1,1579 @@
+module Base
+{
+	/******* FUR AND HIDE CRAFTS INCLUDING ONES THAT ALSO ACCEPT LEATHER *******/
+
+	craftRecipe SewHideBandeau
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:5,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall;LeatherFurTannedSmall] mappers[HideType],
+			item 1 tags[Thread;Twine],
+		}
+		/*outputs
+		{
+			item 1 Base.Bandeau_Hide,
+		}*/
+		outputs
+		{
+			item 1 mapper:HideType,
+		}
+		itemMapper HideType
+		{
+			Base.Bandeau_FaunHide = Base.FawnLeather_Fur_Tan,
+
+            default = Base.Bandeau_Hide,
+		}
+	}
+
+	craftRecipe SewHideSack
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:5,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedMedium;LeatherFurTannedMedium],
+			item 1 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 Base.Bag_HideSack,
+		}
+	}
+
+	craftRecipe SewHideHeadSack
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:5,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall;LeatherFurTannedSmall],
+			item 1 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 Base.Hat_HeadSack_Hide,
+		}
+	}
+
+	craftRecipe SewHideSkirtKnees
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:5,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedMedium;LeatherFurTannedMedium] mappers[HideType],
+			item 1 tags[Thread;Twine],
+		}
+		/*outputs
+		{
+			item 1 Base.Skirt_Knees_Hide,
+		}*/
+		outputs
+		{
+			item 1 mapper:HideType,
+		}
+		itemMapper HideType
+		{
+			Base.Skirt_Knees_DeerHide = Base.DeerLeather_Fur_Tan,
+
+            default = Base.Skirt_Knees_Hide,
+		}
+	}
+
+	craftRecipe SewHideSkirt
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:5,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedLarge;LeatherFurTannedLarge],
+			item 1 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 Base.Skirt_Normal_Hide,
+		}
+	}
+
+	craftRecipe SewHideSkirtLong
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:5,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedLarge;LeatherFurTannedLarge],
+			item 1 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 Base.Skirt_Long_Hide,
+		}
+	}
+
+	craftRecipe SewHideSkirtShort
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:5,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall;LeatherFurTannedSmall] mappers[HideType],
+			item 1 tags[Thread;Twine],
+		}
+		/*outputs
+		{
+			item 1 Base.Skirt_Short_Hide,
+		}*/
+		outputs
+		{
+			item 1 mapper:HideType,
+		}
+		itemMapper HideType
+		{
+			Base.Base.Skirt_Short_FaunHide = Base.FawnLeather_Fur_Tan,
+
+            default = Base.Skirt_Short_Hide,
+		}
+	}
+
+	craftRecipe SewHideWallet
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:2,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall;LeatherFurTannedSmall],
+			item 1 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 Base.Wallet_Hide,
+		}
+	}
+
+	craftRecipe SewPouch
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:5,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall;LeatherFurTannedSmall],
+			item 1 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 Base.SeedBag,
+		}
+	}
+
+	craftRecipe SewCrudeLeatherShoes
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall;LeatherFurTannedSmall],
+			item 1 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 Base.Shoes_CrudeLeatherFootwear,
+		}
+	}
+
+	craftRecipe SewHideBra
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall;LeatherFurTannedSmall],
+			item 1 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 Base.Bra_Straps_Hide,
+		}
+	}
+
+	craftRecipe SewHideBraStrapless
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall;LeatherFurTannedSmall],
+			item 1 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 Base.Bra_Strapless_Hide,
+		}
+	}
+
+	craftRecipe SewHideBriefs
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall;LeatherFurTannedSmall],
+			item 1 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 Base.Briefs_Hide,
+		}
+	}
+
+	craftRecipe SewHideDress
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedMedium;LeatherFurTannedMedium] mappers[HideType],
+			item 4 tags[HeavyThread],
+		}
+		/*outputs
+		{
+			item 1 Base.Dress_SmallHideStrapless,
+		}*/
+		outputs
+		{
+			item 1 mapper:HideType,
+		}
+		itemMapper HideType
+		{
+			Base.Dress_SmallDeerHideStrapless = Base.DeerLeather_Fur_Tan,
+
+            default = Base.Dress_SmallHideStrapless,
+		}
+	}
+
+	craftRecipe SewHideFannyBag
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:30,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:3,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:5,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall;LeatherFurTannedSmall],
+			item 1 tags[HeavyThread],
+			item 1 [Base.LeatherStrips] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.Bag_FannyPackFront_Hide,
+		}
+	}
+
+	craftRecipe SewHideSatchel
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedMedium;LeatherFurTannedMedium],
+			item 2 tags[HeavyThread],
+			item 1 [Base.LeatherStrips] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.Bag_HideSatchel,
+		}
+	}
+
+	craftRecipe SewHideSlingBag
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedMedium;LeatherFurTannedMedium],
+			item 1 tags[HeavyThread],
+			item 1 [Base.LeatherStrips] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.Bag_HideSlingBag,
+		}
+	}
+
+	craftRecipe SewHideTankTop
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherFurTannedSmall;LeatherFurTannedSmall] mappers[HideType],
+			item 2 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 mapper:HideType,
+		}
+		itemMapper HideType
+		{
+			Base.Vest_DeerHide = Base.DeerLeather_Fur_Tan_Small,
+			Base.Vest_FawnHide = Base.FawnLeather_Fur_Tan,
+			Base.Vest_AngusHide = Base.CowLeather_Angus_Fur_Tan_Small,
+			Base.Vest_HolsteinHide = Base.CowLeather_Holstein_Fur_Tan_Small,
+			Base.Vest_SimmentalHide = Base.CowLeather_Simmental_Fur_Tan_Small,
+
+            default = Base.Vest_Hide,
+		}
+	}
+
+	craftRecipe SewHideUnderpants
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle;Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall;LeatherFurTannedSmall],
+			item 1 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 Base.Underpants_Hide,
+		}
+	}
+
+	craftRecipe SewCrudeLeatherBackpack
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:20,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:2,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:4,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedMedium;LeatherFurTannedMedium],
+			item 2 tags[HeavyThread],
+			item 2 [Base.LeatherStrips;Base.Rope] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.Bag_CrudeLeatherBag,
+		}
+	}
+
+	craftRecipe AssembleSmallFramepack
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:30,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:3,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:5,
+		inputs
+		{
+            item 2 [Base.Twine;Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips;3:Base.DuctTape;1:Base.Rope] flags[DontReplace],
+			item 4 [Base.WoodenStick2;Base.TreeBranch2],
+			item 1 [Base.Bag_CrudeLeatherBag;Base.Bag_CrudeTarpBag] flags[IsEmpty] mappers[BagMapper],
+		}
+		outputs
+		{
+			item 1 Base.Bag_CraftedFramepack_Small,
+            item 1 mapper:BagMapper,
+		}
+        itemMapper BagMapper
+        {
+            Base.Bag_TarpFramepack_Small = Base.Bag_CrudeTarpBag,
+
+            default = Base.Bag_CraftedFramepack_Small,
+        }
+	}
+
+	craftRecipe AssembleLargeFramepack
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:40,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:6,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedLarge;LeatherFurTannedLarge],
+			item 4 tags[HeavyThread],
+			item 2 [Base.LeatherStrips;Base.Rope] mode:destroy,
+            item 3 [Base.Twine;Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips;5:Base.DuctTape;2:Base.Rope] flags[DontReplace],
+			item 5 [Base.WoodenStick2],
+		}
+		outputs
+		{
+			item 1 Base.Bag_CraftedFramepack_Large,
+		}
+	}
+
+	craftRecipe AssembleAdvancedFramepack
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:60,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:6,
+		NeedToBeLearn = True,
+        AutoLearnAll = Tailoring:8;Woodwork:1,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedLarge],
+			item 4 tags[HeavyThread],
+            item 6 [Base.LeatherStrips] flags[DontReplace],
+			item 1 [Base.Base.PackFrame],
+		}
+		outputs
+		{
+			item 1 Base.Bag_CraftedFramepack_Large2,
+		}
+	}
+
+	craftRecipe AssembleAdvancedLargeFramepack
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:80,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:8,
+		NeedToBeLearn = True,
+        AutoLearnAll = Tailoring:10;Woodwork:2,
+        MetaRecipe = AssembleAdvancedFramepack,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 2 tags[LeatherCrudeTannedLarge],
+			item 8 tags[HeavyThread],
+            item 8 [Base.LeatherStrips] flags[DontReplace],
+			item 1 [Base.Base.PackFrameLarge],
+		}
+		outputs
+		{
+			item 1 Base.Bag_CraftedFramepack_Large3,
+		}
+	}
+
+	craftRecipe SewHideApron
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:30,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:3,
+		NeedToBeLearn = False,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedLarge;LeatherFurTannedLarge],
+            item 2 [Base.LeatherStrips] flags[DontReplace],
+			item 3 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 Base.Apron_Hide,
+		}
+	}
+
+	craftRecipe SewHideMask
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:30,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:3,
+		NeedToBeLearn = False,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall;LeatherFurTannedSmall],
+			item 1 tags[HeavyThread],
+            item 1 [Base.LeatherStrips] flags[DontReplace],
+		}
+		outputs
+		{
+			item 1 Base.Hat_HockeyMask_Hide,
+		}
+	}
+
+	craftRecipe SewHideBoots
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:20,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:2,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:4,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedMedium;LeatherFurTannedMedium],
+			item 1 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 Base.Shoes_HideBoots,
+		}
+	}
+
+	craftRecipe SewHideHat
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:20,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:2,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:4,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall;LeatherFurTannedSmall],
+			item 1 tags[Thread;Twine],
+		}
+		outputs
+		{
+			item 1 Base.Hat_HideHat,
+		}
+	}
+
+	craftRecipe SewHolster
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:20,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:2,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:4,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall;LeatherFurTannedSmall],
+			item 1 tags[HeavyThread],
+			item 1 [Base.Buckle],
+			item 1 [Base.LeatherStrips],
+		}
+		outputs
+		{
+			item 1 Base.Holster_Hide,
+		}
+	}
+
+	craftRecipe SewHidePants
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:30,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:3,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:5,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedMedium;LeatherFurTannedMedium] mappers[HideType],
+			item 3 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 mapper:HideType,
+		}
+		itemMapper HideType
+		{
+			Base.Trousers_DeerHide = Base.DeerLeather_Fur_Tan,
+
+            default = Base.Trousers_Hide,
+		}
+	}
+
+	craftRecipe SewHidePants2
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:30,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        MetaRecipe = SewHidePants,
+        SkillRequired = Tailoring:3,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:5,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 2 tags[LeatherCrudeTannedSmall;LeatherFurTannedSmall] mappers[HideType] flags[IsExclusive],
+			item 3 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 mapper:HideType,
+		}
+		itemMapper HideType
+		{
+			Base.Trousers_FaunHide = Base.FawnLeather_Fur_Tan,
+
+            default = Base.Trousers_Hide,
+		}
+	}
+
+	craftRecipe SewHideRobe
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:30,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:3,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:5,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedLarge;LeatherFurTannedLarge],
+			item 3 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 Base.LongCoat_Hide,
+		}
+	}
+
+	craftRecipe SewHideSleepingBag
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:30,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:3,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:5,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 2 tags[LeatherCrudeTannedLarge;LeatherFurTannedLarge],
+			item 10 [Base.WoolRaw],
+			item 2 [Base.SheepLeather_Fur],
+			item 8 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 Base.SleepingBag_Hide_Packed,
+		}
+	}
+
+	craftRecipe SewHideCoat
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:40,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:6,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedLarge;LeatherFurTannedLarge],
+			item 3 tags[Button],
+			item 6 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 Base.JacketLong_Hide,
+		}
+	}
+
+	craftRecipe SewHideJacket
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:40,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:6,
+		OnCreate = Recipe.OnCreate.SewHideJacket,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedMedium;LeatherFurTannedMedium],
+			item 3 tags[Button],
+			item 4 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 Base.Jacket_Hide,
+		}
+	}
+
+	craftRecipe SewHideHoodie
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:50,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:5,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:7,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedLarge;LeatherFurTannedLarge],
+			item 3 tags[Button],
+			item 4 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 Base.Hoodie_Hide_UP,
+		}
+	}
+	/******* FURS *******/
+
+	craftRecipe SewFurredHideCoat
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:40,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:6,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:8,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 [4:Base.CalfLeather_Angus_Fur_Tan;Base.CowLeather_Angus_Fur_Tan;4:Base.CalfLeather_Holstein_Fur_Tan;Base.CowLeather_Holstein_Fur_Tan;4:Base.CalfLeather_Simmental_Fur_Tan;Base.CowLeather_Simmental_Fur_Tan;2:Base.SheepLeather_Fur_Tan] mappers[HideMapper] flags[IsExclusive],
+			item 3 tags[Button],
+			item 6 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 mapper:HideMapper,
+		}
+		itemMapper HideMapper
+		{
+			Base.JacketLong_AngusCalfHide = Base.CalfLeather_Angus_Fur_Tan,
+			Base.JacketLong_HolsteinCalfHide = Base.CalfLeather_Holstein_Fur_Tan,
+			Base.JacketLong_SimmentalCalfHide = Base.CalfLeather_Simmental_Fur_Tan,
+			Base.JacketLong_AngusHide = Base.CowLeather_Angus_Fur_Tan,
+			Base.JacketLong_HolsteinHide = Base.CowLeather_Holstein_Fur_Tan,
+			Base.JacketLong_SimmentalHide = Base.CowLeather_Simmental_Fur_Tan,
+			Base.JacketLong_SheepSkin = Base.SheepLeather_Fur_Tan,
+
+			default = Base.JacketLong_CowHide,
+		}
+	}
+
+	craftRecipe SewFurredHideJacket
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:40,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:6,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:8,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 [2:Base.CalfLeather_Angus_Fur_Tan;Base.CowLeather_Angus_Fur_Tan_Medium;2:Base.CalfLeather_Holstein_Fur_Tan;Base.CowLeather_Holstein_Fur_Tan_Medium;2:Base.CalfLeather_Simmental_Fur_Tan;Base.CowLeather_Simmental_Fur_Tan_Medium;Base.DeerLeather_Fur_Tan;Base.SheepLeather_Fur_Tan] mappers[HideMapper] flags[IsExclusive],
+			item 3 tags[Button],
+			item 4 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 mapper:HideMapper,
+		}
+		itemMapper HideMapper
+		{
+			Base.Jacket_AngusCalfHide = Base.CalfLeather_Angus_Fur_Tan,
+			Base.Jacket_HolsteinCalfHide = Base.CalfLeather_Holstein_Fur_Tan,
+			Base.Jacket_SimmentalCalfHide = Base.CalfLeather_Simmental_Fur_Tan,
+			Base.Jacket_AngusHide = Base.CowLeather_Angus_Fur_Tan_Medium,
+			Base.Jacket_HolsteinHide = Base.CowLeather_Holstein_Fur_Tan_Medium,
+			Base.Jacket_SimmentalHide = Base.CowLeather_Simmental_Fur_Tan_Medium,
+			Base.Jacket_DeerHide = Base.DeerLeather_Fur_Tan,
+			Base.Jacket_SheepSkin = Base.SheepLeather_Fur_Tan,
+
+			default = Base.Jacket_CowHide,
+		}
+    }
+
+	craftRecipe SewFurHat
+	{
+        timedAction = SewingCloth,
+		Time = 200,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+        xpAward = Tailoring:40,
+        needTobeLearn = false,
+		inputs
+		{
+			item 1 [Base.RaccoonLeather_Grey_Fur_Tan;Base.SheepLeather_Fur_Tan_Small;Base.LambLeather_Fur_Tan;Base.CowLeather_Angus_Fur_Tan_Small;Base.CalfLeather_Angus_Fur_Tan;Base.CowLeather_Holstein_Fur_Tan_Small;Base.CalfLeather_Holstein_Fur_Tan;Base.CowLeather_Simmental_Fur_Tan_Small;Base.CalfLeather_Simmental_Fur_Tan] mappers[HatMapper],
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+            item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+            item 2 tags[Thread],
+		}
+		outputs
+		{
+            item 1 mapper:HatMapper,
+        }
+        itemMapper HatMapper
+        {
+            Base.Hat_Raccoon = Base.Base.RaccoonLeather_Grey_Fur_Tan,
+            Base.Hat_WinterHat_SheepSkin = Base.SheepLeather_Fur_Tan_Small,
+            Base.Hat_WinterHat_SheepSkin = Base.LambLeather_Fur_Tan,
+            Base.Hat_Cowboy_Angus = Base.CowLeather_Angus_Fur_Tan_Small,
+            Base.Hat_Cowboy_Angus = Base.CalfLeather_Angus_Fur_Tan,
+            Base.Hat_Cowboy_Holstein = Base.CowLeather_Holstein_Fur_Tan_Small,
+            Base.Hat_Cowboy_Holstein = Base.CalfLeather_Holstein_Fur_Tan,
+            Base.Hat_Cowboy_Simmental = Base.CowLeather_Simmental_Fur_Tan_Small,
+            Base.Hat_Cowboy_Simmental = Base.CalfLeather_Simmental_Fur_Tan,
+
+            default = Base.Hat_Raccoon,
+        }
+	}
+
+	craftRecipe SewSheepskinVest
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:40,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:6,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 [Base.SheepLeather_Fur_Tan],
+			item 3 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 Base.Vest_SheepSkin,
+		}
+	}
+
+	craftRecipe SewSheepskinPants
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:40,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:6,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 [Base.SheepLeather_Fur_Tan],
+			item 3 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 Base.Trousers_SheepSkin,
+		}
+	}
+
+	/******* LEATHER ONLY CRAFTS *******/
+
+	craftRecipe SewBelt
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:3,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 2 [Base.LeatherStrips] mode:destroy,
+			item 1 tags[HeavyThread],
+			item 1 [Base.Buckle],
+		}
+		outputs
+		{
+			item 1 Base.Belt2,
+		}
+	}
+
+	craftRecipe SewLeatherToolRoll
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:10,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:1,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:3,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 [Base.Leather_Crude_Medium_Tan;2:Base.Leather_Crude_Small_Tan],
+			item 1 [Base.LeatherStrips] mode:destroy flags[DontReplace],
+			item 1 tags[HeavyThread],
+			item 1 [Base.Buckle],
+		}
+		outputs
+		{
+			item 1 Base.ToolRoll_Leather,
+		}
+	}
+
+	craftRecipe SewLeatherVambrace
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:20,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:2,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:4,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall],
+			item 1 tags[HeavyThread],
+			item 1 [Base.LeatherStrips] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.Vambrace_Leather_Left,
+		}
+	}
+
+	craftRecipe SewSandals
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:20,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:2,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:4,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall],
+			item 1 tags[HeavyThread],
+			item 2 [Base.LeatherStrips] mode:destroy,
+			item 2 [Base.Buckle],
+		}
+		outputs
+		{
+			item 1 Base.Shoes_Sandals,
+		}
+	}
+
+	craftRecipe SewLeatherCodpiece
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:30,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:3,
+        AutoLearnAny = Tailoring:5,
+		NeedToBeLearn = True,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall],
+			item 1 tags[HeavyThread],
+			item 1 [Base.LeatherStrips] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.Codpiece_Leather,
+		}
+	}
+
+	craftRecipe SewLeatherGaiter
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:30,
+		AllowBatchCraft = True,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:3,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:5,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall],
+			item 1 tags[HeavyThread],
+			item 1 [Base.LeatherStrips] mode:destroy,
+			item 2 [Base.Buckle],
+		}
+		outputs
+		{
+			item 1 Base.Gaiter_Left,
+		}
+	}
+
+	craftRecipe SewLeatherGloves
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:30,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:3,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:5,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall],
+			item 2 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 Base.Gloves_LeatherGlovesBrown,
+		}
+	}
+
+	craftRecipe SewLeatherWaterBag
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:30,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:3,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:5,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 [Base.Leather_Crude_Medium_Tan;2:Base.Leather_Crude_Small_Tan],
+			item 2 tags[HeavyThread],
+			item 1 [Base.LeatherStrips] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.Bag_LeatherWaterBag,
+		}
+	}
+
+	craftRecipe SewLeatherApron
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:30,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:3,
+		NeedToBeLearn = False,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 [Base.Leather_Crude_Large_Tan;2:Base.Leather_Crude_Medium_Tan],
+            item 2 [Base.LeatherStrips] flags[DontReplace],
+			item 3 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 Base.Apron_Leather,
+		}
+	}
+
+	craftRecipe SewLeatherGorget
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:30,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+        AutoLearnAny = Tailoring:6,
+		NeedToBeLearn = True,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedSmall],
+			item 1 tags[HeavyThread],
+			item 1 [Base.Buckle],
+		}
+		outputs
+		{
+			item 1 Base.Gorget_Leather,
+		}
+	}
+
+	craftRecipe SewHolsterDouble
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:40,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:6,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 [Base.Leather_Crude_Medium_Tan;2:Base.Leather_Crude_Small_Tan],
+			item 2 tags[HeavyThread],
+			item 1 [Base.Buckle],
+			item 1 [Base.LeatherStrips] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.HolsterDouble,
+		}
+	}
+
+	craftRecipe MakeWesternBoots
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:40;Carving:20,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4;Carving:2,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:6,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedMedium],
+			item 2 tags[HeavyThread],
+			item 1 [Base.Plank],
+            item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight],
+            item 1 tags[SharpKnife] mode:keep flags[IsNotDull;MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.Shoes_CowboyBoots_Brown,
+		}
+	}
+
+	craftRecipe SewBandolier
+	{
+		timedAction = SewingCloth,
+		Time = 400,
+        xpAward = Tailoring:40,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:5,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 4 [Base.LeatherStrips] mode:destroy,
+			item 4 tags[HeavyThread],
+			item 1 [Base.Buckle],
+		}
+		outputs
+		{
+			item 1 Base.AmmoStrap_Brown_Bullets,
+		}
+	}
+
+	craftRecipe SewShellsBandolier
+	{
+		timedAction = SewingCloth,
+		Time = 400,
+        xpAward = Tailoring:40,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:4,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:5,
+        MetaRecipe = SewBandolier,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 4 [Base.LeatherStrips] mode:destroy,
+			item 4 tags[HeavyThread],
+			item 1 [Base.Buckle],
+		}
+		outputs
+		{
+			item 1 Base.AmmoStrap_Brown_Shells,
+		}
+	}
+
+	craftRecipe SewKneePads
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:50,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:5,
+        AutoLearnAny = Tailoring:7,
+		NeedToBeLearn = True,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedMedium],
+			item 2 tags[HeavyThread],
+			item 2 [Base.LeatherStrips] mode:destroy,
+			item 2 [Base.Buckle],
+		}
+		outputs
+		{
+			item 1 Base.Kneepad_Left_Leather,
+			item 1 Base.Kneepad_Right_Leather,
+		}
+	}
+
+	craftRecipe SewLeatherPants
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:50,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:5,
+		NeedToBeLearn = True,
+        AutoLearnAny = Tailoring:7,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedMedium],
+			item 3 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 Base.Trousers_LeatherCrafted,
+		}
+	}
+
+	craftRecipe SewElbowPads
+	{
+		timedAction = SewingCloth,
+		Time = 200,
+        xpAward = Tailoring:50,
+		AllowBatchCraft = False,
+		Tags = AnySurfaceCraft,
+        category = Tailoring,
+        SkillRequired = Tailoring:6,
+        AutoLearnAny = Tailoring:8,
+		NeedToBeLearn = True,
+		inputs
+		{
+			item 1 tags[Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+			item 1 tags[LeatherCrudeTannedMedium],
+			item 2 tags[HeavyThread],
+		}
+		outputs
+		{
+			item 1 Base.ElbowPad_Left_Leather,
+			item 1 Base.ElbowPad_Right_Leather,
+		}
+	}
+
+	craftRecipe TieHeadband
+	{
+		timedAction = SewingCloth,
+		Time = 50,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Tailoring,
+		inputs
+		{
+            item 1 [Base.LeatherStrips] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.Hat_LeatherStripTied,
+		}
+	}
+
+	craftRecipe UntieHeadband
+	{
+		timedAction = SewingCloth,
+		Time = 50,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Tailoring,
+		OnCreate = Recipe.OnCreate.UntieHeadband,
+		inputs
+		{
+            item 1 [Base.Hat_LeatherStripTied],
+		}
+		outputs
+		{
+			item 1 Base.LeatherStrips,
+		}
+	}
+}

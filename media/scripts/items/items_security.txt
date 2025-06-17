@@ -1,0 +1,83 @@
+/* FOR NIGHTSTICKS, SEE ITEMS_WEAPONS_1HANDED */
+/* FOR GUNS, SEE ITEMS_WEAPONS_FIREARMS */
+/* FOR BULLETPROOF VESTS, SEE CLOTHING_SHIRTS */
+
+module Base
+{
+	/******* SECURITY - KEYS *******/
+	
+	item Key1
+	{
+		DisplayName = Key,
+		DisplayCategory = Security,
+		Type = Key,
+		Weight = 0.05,
+		IconsForTexture = Key1;Key2;Key3;Key4;Key5,
+		MetalValue = 5,
+		WorldStaticModelsByIndex = Key;Key2;Key3;Key3;Key2,
+		Tags = BuildingKey;MoreWhenNoZombies;FitsWallet;HasMetal,
+        OriginX = 0,
+        OriginY = 0,
+        originZ = 0,
+	}
+
+	item Key_Blank
+	{
+		DisplayName = Blank Key,
+		DisplayCategory = Security,
+		Type = Key,
+		Weight = 0.05,
+		Icon = Key_Blank,
+		MetalValue = 5,
+		WorldStaticModel = Key_Blank,
+		Tags = FitsWallet;HasMetal,
+	}
+
+
+	
+	/******* SECURITY - PADLOCKS *******/
+	
+	item CombinationPadlock
+	{
+		DisplayName = Combination Padlock,
+		DisplayCategory = Security,
+		Type = Key,
+		Weight = 0.3,
+		Icon = PadlockDigital,
+		DigitalPadlock =	TRUE,
+		MetalValue = 15,
+		Tooltip = Tooltip_Padlock,
+		WorldStaticModel = CombinationPadlock,
+		Tags = Lock,
+	}
+	
+	item KeyPadlock
+	{
+		DisplayName = Padlock Key,
+		DisplayCategory = Security,
+		Type = Key,
+		Weight = 0.05,
+		Icon = KeyPadlock1,
+		MetalValue = 5,
+		WorldStaticModel = KeyPadlock,
+		Tags = HasMetal;FitsWallet,
+	}
+	
+	item Padlock
+	{
+		DisplayName = Padlock,
+		DisplayCategory = Security,
+		Type = Key,
+		Weight = 0.3,
+		Icon = Padlock,
+		MetalValue = 15,
+		Padlock =	TRUE,
+		Tooltip = Tooltip_Padlock,
+		WorldStaticModel = Padlock,
+		Tags = Lock,
+	}
+}
+
+/* FOR NIGHTSTICKS, SEE ITEMS_WEAPONS_1HANDED */
+/* FOR GUNS, SEE ITEMS_WEAPONS_FIREARMS */
+/* FOR BULLETPROOF VESTS, SEE CLOTHING_SHIRTS */

@@ -1,0 +1,157 @@
+ module Base
+{
+
+
+    entity Boulder
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Boulder,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@5,
+                Item@Input@1,
+                Item@Input@1,
+                Item@Input@1,
+                Item@Input@1,
+                Item@Input@1,
+            }
+            group craft_outputs
+            {
+                Item@Output@10,
+                Item@Output@10,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes             = Recipes_Stone_Anvil,
+            StartMode           = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = boulders_0,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = boulders_1,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = boulders_2,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = boulders_3,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            OnAddToMenu   = ignoreFromBuildMenu,
+            time          = 50,
+            category      = Masonry,
+        }
+    }
+
+    entity Boulder2
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Boulder,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@1,
+                Item@Input@1,
+                Item@Input@1,
+                Item@Input@1,
+            }
+            group craft_outputs
+            {
+                Item@Output@10,
+                Item@Output@10,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes             = Recipes_Stone_Anvil,
+            StartMode           = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = boulders_4,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = boulders_5,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = boulders_6,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = boulders_7,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            OnAddToMenu   = ignoreFromBuildMenu,
+            timedAction   = BuildCairn,
+            time          = 50,
+            tags          = Masonry,
+        }
+    }
+
+
+}

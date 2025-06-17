@@ -1,0 +1,299 @@
+module Base
+{
+	/******* ENTERTAINMENT - BOARD/TABLETOP GAMES *******/
+	
+	item BackgammonBoard
+	{
+		DisplayName = Backgammon Board,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 1,
+		Icon = BackgammonBoard,
+		WorldStaticModel = BackgammonBoard_Ground,
+	}
+
+	item CardDeck
+	{
+		DisplayName = Playing Cards,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = CardDeck,
+		WorldStaticModel = CardDeck,
+		Tags = IsFireFuel;IsFireTinder,
+		FireFuelRatio = 0.25,
+	}
+	
+	item ChessBlack
+	{
+		DisplayName = Chess Pieces,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = ChessBlack,
+		WorldStaticModel = BlackChessPieces,
+	}
+
+	item ChessWhite
+	{
+		DisplayName = Chess Pieces,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = ChessWhite,
+		WorldStaticModel = WhiteChessPieces,
+	}
+	
+	item CheckerBoard
+	{
+		DisplayName = Checkerboard,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 1,
+		Icon = CheckerBoard,
+		WorldStaticModel = CheckerBoard_Ground,
+	}
+	
+	item GamePieceBlack
+	{
+		DisplayName = Game Pieces,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = GamePieces_Black,
+		WorldStaticModel = GamePiecesBlack_Ground,
+	}
+
+	item GamePieceRed
+	{
+		DisplayName = Game Pieces,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = GamePieces_Red,
+		WorldStaticModel = GamePiecesRed_Ground,
+	}
+
+	item GamePieceWhite
+	{
+		DisplayName = Game Pieces,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = GamePieces_White,
+		WorldStaticModel = GamePiecesWhite_Ground,
+	}
+	
+	item PokerChips
+	{
+		DisplayName = Poker Chips,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = PokerChips,
+		WorldStaticModel = PokerChips_Ground,
+		Tags = FitsWallet,
+	}
+
+	/******* ENTERTAINMENT - MEDIA *******/
+	
+	item Disc_Retail
+	{
+		DisplayName = CD,
+		DisplayCategory = Entertainment,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Disc,
+		MediaCategory = CDs,
+		WorldStaticModel = Disk,
+	}
+
+	item VHS_Retail
+	{
+		DisplayName = VHS - Retail,
+		DisplayCategory = Entertainment,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Cassette3,
+		MediaCategory = Retail-VHS,
+		WorldStaticModel = VHSBox2,
+		Tags = IsFireFuel,
+		FireFuelRatio = 0.25,
+	}
+
+	item VHS_Home
+	{
+		DisplayName = VHS - Home,
+		DisplayCategory = Entertainment,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Cassette3,
+		MediaCategory = Home-VHS,
+		WorldStaticModel = VHSBox3,
+		Tags = IgnoreZombieDensity;IsFireFuel,
+		FireFuelRatio = 0.25,
+	}
+
+	/*DICE*/
+
+	item Dice
+	{
+		DisplayName = Dice,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = Dice,
+		WorldStaticModel = Dice,
+		Tags = Dice;2d6,
+	}
+
+	item Dice_Bone
+	{
+		DisplayName = Dice - Bone,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = Dice_Bone,
+		WorldStaticModel = Dice_Bone,
+		Tags = Dice;2d6,
+	}
+
+	item Dice_Wood
+	{
+		DisplayName = Dice - Wood,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = Dice_Wood,
+		WorldStaticModel = Dice_Wood,
+		Tags = Dice;2d6;IsFireFuel,
+	}
+
+	/*NOTE: changed the display names so they'd "clump" in the inventory.*/
+	item Dice_00
+	{
+		DisplayName = Dice - Percentile,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.05,
+		Icon = Dice_00,
+		WorldStaticModel = Dice_00,
+		Tags = Dice;d00;IsMemento,
+	}
+
+	item Dice_10
+	{
+		DisplayName = Dice - 10-sided,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.05,
+		Icon = Dice_10,
+		WorldStaticModel = Dice_10,
+		Tags = Dice;d10;IsMemento,
+	}
+
+	item Dice_12
+	{
+		DisplayName = Dice - 12-sided,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.05,
+		Icon = Dice_12,
+		WorldStaticModel = Dice_12,
+		Tags = Dice;d12;IsMemento,
+	}
+
+	item Dice_20
+	{
+		DisplayName = Dice - 20-sided,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.05,
+		Icon = Dice_20,
+		WorldStaticModel = Dice_20,
+		Tags = Dice;d20;IsMemento,
+	}
+
+	item Dice_4
+	{
+		DisplayName = Dice - 4-sided,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.05,
+		Icon = Dice_4,
+		WorldStaticModel = Dice_4,
+		Tags = Dice;d4;IsMemento,
+	}
+
+	item Dice_6
+	{
+		DisplayName = Dice - 6-sided,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.05,
+		Icon = Dice_6,
+		WorldStaticModel = Dice_6,
+		Tags = Dice;d6;IsMemento,
+	}
+
+	item Dice_8
+	{
+		DisplayName = Dice - 8-sided,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.05,
+		Icon = Dice_8,
+		WorldStaticModel = Dice_8,
+		Tags = Dice;d8;IsMemento,
+	}
+
+	/* INSTRUMENTS AND SOUNDMAKERS */
+	item Harmonica
+	{
+		DisplayName = Harmonica,
+		DisplayCategory = Instrument,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Harmonica,
+		primaryAnimMask = HoldingTorchRight,
+		secondaryAnimMask = HoldingTorchLeft,
+		StaticModel = Harmonica,
+		WorldStaticModel = Harmonica,
+		Tags = Harmonica;HasMetal;IsMemento,
+		ShoutType = BlowHarmonica,
+		ShoutMultiplier = 1.5,
+	}
+
+	item Whistle
+	{
+		DisplayName = Whistle,
+		DisplayCategory = Instrument,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Whistle,
+		primaryAnimMask = HoldingTorchRight,
+		secondaryAnimMask = HoldingTorchLeft,
+		StaticModel = Whistle,
+		WorldStaticModel = Whistle,
+		Tags = Whistle;HasMetal;FitsKeyRing,
+		ShoutType = BlowWhistle,
+		ShoutMultiplier = 2,
+        ResearchableRecipes = CarveWhistle,
+	}
+
+	item Whistle_Bone
+	{
+		DisplayName = Bone Whistle,
+		DisplayCategory = Instrument,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Whistle_Bone,
+		primaryAnimMask = HoldingTorchRight,
+		secondaryAnimMask = HoldingTorchLeft,
+		StaticModel = Whistle_Bone,
+		WorldStaticModel = Whistle_Bone,
+		Tags = Whistle,
+		ShoutType = BlowWhistle,
+		ShoutMultiplier = 1.9,
+	}
+}

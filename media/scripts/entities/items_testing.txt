@@ -1,0 +1,93 @@
+module Base
+{
+    /*** TEMPORARY DEBUG ***/
+
+	item TestMug
+	{
+		DisplayName = Empty Mug,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		PourType = Mug,
+		Weight = 0.2,
+		Icon = MugWhite,
+		CanStoreWater = TRUE,
+		RainFactor = 0.2,
+		ReplaceOnUseOn = WaterSource-TestWaterMug,
+		Tooltip = Tooltip_item_RainFromGround,
+		StaticModel = MugWhite,
+		WorldStaticModel = MugWhite,
+		OnCreate	= SpecialLootSpawns.OnCreateRandomColor,
+		Tags = CoffeeMaker,
+	}
+
+	item TestHotDrink
+	{
+		DisplayName = Hot Drink,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = MugWhiteFull,
+		EatType = popcan,
+		PourType = Mug,
+		GoodHot = true,
+		IsCookable = true,
+		ReplaceOnUse = TestMug,
+		MinutesToCook = 10,
+		MinutesToBurn = 50,
+		ThirstChange = -20,
+		UnhappyChange = -10,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		StaticModel = MugWhite,
+		WorldStaticModel = MugWhite,
+		Tags = AlcoholicBeverage;LowAlcohol;HerbalTea;CoffeeMaker,
+		CookingSound = BoilingFood,
+		EatTime = 160,
+	}
+
+	item TestWaterMug
+	{
+		DisplayName = Mug of Water,
+		DisplayCategory = Water,
+		Type = Drainable,
+		Weight = 0.8,
+		Icon = MugWhite,
+		CanStoreWater = TRUE,
+		CookingSound = BoilingFood,
+		EatType = popcan,
+		PourType = Mug,
+		FillFromDispenserSound = GetWaterFromDispenserCeramic,
+		FillFromTapSound = GetWaterFromTapCeramic,
+		IsCookable = TRUE,
+		IsWaterSource = TRUE,
+		RainFactor = 0.2,
+		ReplaceOnDeplete = TestMug,
+		ReplaceOnUseOn = WaterSource-TestWaterMug,
+		Tooltip = Tooltip_item_RainFromGround,
+		UseDelta = 1,
+		UseWhileEquipped = FALSE,
+		StaticModel = MugWhite,
+		WorldStaticModel = MugWhite,
+		Tags = CoffeeMaker,
+		EatTime = 160,
+	}
+
+	item TestDebugWater
+	{
+		DisplayName = WaterSource,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = WaterDrop,
+
+        component FluidContainer
+        {
+            ContainerName   = Source,
+            capacity        = 100.0,
+            Fluids
+            {
+                fluid           = Water:1.0,
+            }
+        }
+	}
+}

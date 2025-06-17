@@ -1,0 +1,86 @@
+module Base
+{
+	template vehicle SoundsSportsCar
+	{
+		sound
+		{
+			alarmLoop = VehicleAlarmA VehicleAlarmB VehicleAlarmC VehicleAlarmD VehicleAlarmE,
+			engine = VehicleEngineSportsCar,
+			engineStart = VehicleEngineSportsCar,
+			engineTurnOff = VehicleEngineSportsCar,
+			horn = VehicleHornSportsCar,
+			ignitionFail = VehicleIgnitionFailSportsCar,
+		}
+
+		part Door*
+		{
+			anim Open
+			{
+				sound = VehicleDoorOpenSportsCar,
+			}
+
+			anim Close
+			{
+				sound = VehicleDoorCloseSportsCar,
+			}
+
+			anim Lock
+			{
+				sound = LockVehicleDoorSportsCar,
+			}
+
+			anim Unlock
+			{
+				sound = UnlockVehicleDoorSportsCar,
+			}
+
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedSportsCar,
+			}
+		}
+
+		part EngineDoor*
+		{
+			anim Open
+			{
+				sound = VehicleHoodOpenSportsCar,
+			}
+
+			anim Close
+			{
+				sound = VehicleHoodCloseSportsCar,
+			}
+		}
+
+		part TrunkDoor*
+		{
+			anim Open
+			{
+				sound = VehicleTrunkOpenSportsCar,
+			}
+
+			anim Close
+			{
+				sound = VehicleTrunkCloseSportsCar,
+			}
+
+			anim Lock
+			{
+				sound = VehicleTrunkLockSportsCar,
+			}
+
+			anim Unlock
+			{
+				sound = VehicleTrunkUnlockSportsCar,
+			}
+
+			anim IsLocked
+			{
+				sound = VehicleDoorIsLockedSportsCar,
+			}
+		}
+
+	}
+}
+

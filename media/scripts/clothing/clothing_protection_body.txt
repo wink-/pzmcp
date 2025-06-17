@@ -1,0 +1,312 @@
+module Base
+{
+
+	item Shoulderpads_Football
+    {
+        DisplayName = Football Shoulderpads,
+        DisplayCategory = ProtectiveGear,
+        Type = Clothing,
+        Icon = Football_ShoulderPads,
+        BloodLocation = UpperBody,
+        BodyLocation = SportShoulderpad,
+
+        ClothingExtraSubmenu = Wear under Jersey,
+        ClothingItem = Shoulderpads_Football,
+        ClothingItemExtra = Shoulderpads_FootballOnTop,
+        ClothingItemExtraOption = WearOver,
+
+        CanHaveHoles = FALSE,
+        WorldStaticModel = Shoulderpads_Football,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+        CombatSpeedModifier = 0.95,
+        DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+        Weight = 4,
+        DiscomfortModifier = 0.05,
+        Tooltip = Tooltip_item_NoBackpack,
+        Tags = IgnoreZombieDensity,
+		ConditionMax = 10,
+		ConditionLowerChanceOneIn = 3,
+    }
+
+	item Shoulderpads_FootballOnTop
+    {
+        DisplayName = Football Shoulderpads (On Top),
+        DisplayCategory = ProtectiveGear,
+        Type = Clothing,
+        Icon = Football_ShoulderPads,
+        BloodLocation = UpperBody,
+        BodyLocation = SportShoulderpadOnTop,
+
+        ClothingExtraSubmenu = Wear on top,
+        ClothingItem = Shoulderpads_FootballOnTop,
+        ClothingItemExtra = Shoulderpads_Football,
+        ClothingItemExtraOption = WearUnder,
+
+        CanHaveHoles = FALSE,
+        WorldStaticModel = Shoulderpads_Football,
+        BiteDefense = 100,
+        ScratchDefense = 100,
+        CombatSpeedModifier = 0.95,
+        DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+        Weight = 4,
+        DiscomfortModifier = 0.05,
+        Tooltip = Tooltip_item_NoBackpack,
+        Tags = IgnoreZombieDensity,
+		ConditionMax = 10,
+		ConditionLowerChanceOneIn = 3,
+    }
+
+	item Shoulderpad_Football_L
+    {
+        DisplayName = Football Shoulderpad - Left,
+        DisplayCategory = ProtectiveGear,
+        Type = Clothing,
+        Icon = Football_ShoulderPad_Left,
+        BloodLocation = UpperBody,
+        BodyLocation = ShoulderpadLeft,
+        ClothingItem = Shoulderpad_Football_L,
+        CanHaveHoles = FALSE,
+        WorldStaticModel = Shoulderpad_Football_L,
+        BiteDefense = 50,
+        ScratchDefense = 50,
+        CombatSpeedModifier = 0.98,
+        DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+        Weight = 2,
+        DiscomfortModifier = 0.05,
+        Tooltip = Tooltip_item_NoBackpack,
+        Tags = IgnoreZombieDensity,
+		ConditionMax = 5,
+		ConditionLowerChanceOneIn = 3,
+    }
+
+	item Shoulderpad_Football_R
+    {
+        DisplayName = Football Shoulderpad - Right,
+        DisplayCategory = ProtectiveGear,
+        Type = Clothing,
+        Icon = Football_ShoulderPad_Right,
+        BloodLocation = UpperBody,
+        BodyLocation = ShoulderpadRight,
+        ClothingItem = Shoulderpad_Football_R,
+        CanHaveHoles = FALSE,
+        WorldStaticModel = Shoulderpad_Football_R,
+        BiteDefense = 50,
+        ScratchDefense = 50,
+        CombatSpeedModifier = 0.97,
+        DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+        Weight = 2,
+        DiscomfortModifier = 0.05,
+        Tooltip = Tooltip_item_NoBackpack,
+        Tags = IgnoreZombieDensity,
+		ConditionMax = 5,
+		ConditionLowerChanceOneIn = 3,
+    }
+
+	item Shoulderpads_IceHockey
+    {
+        DisplayName = Ice Hockey Shoulderpads,
+        DisplayCategory = ProtectiveGear,
+        Type = Clothing,
+        Icon = Hockey_ShoulderPads,
+        BloodLocation = UpperBody;UpperArms,
+        BodyLocation = SportShoulderpad,
+
+        ClothingExtraSubmenu = WearUnder,
+        ClothingItem = Shoulderpads_IceHockey,
+        ClothingItemExtra = Shoulderpads_IceHockeyOnTop,
+        ClothingItemExtraOption = WearOver,
+
+        CanHaveHoles = FALSE,
+        WorldStaticModel = Shoulderpads_IceHockey,
+        BiteDefense = 100,
+        ScratchDefense = 100,
+        CombatSpeedModifier = 0.9,
+        DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+        Weight = 5,
+        DiscomfortModifier = 0.05,
+        Tooltip = Tooltip_item_NoBackpack,
+        Tags = IgnoreZombieDensity,
+		ConditionMax = 5,
+		ConditionLowerChanceOneIn = 3,
+    }
+
+	item Shoulderpads_IceHockeyOnTop
+    {
+        DisplayName = Ice Hockey Shoulderpads (On Top),
+        DisplayCategory = ProtectiveGear,
+        Type = Clothing,
+        Icon = Hockey_ShoulderPads,
+        BloodLocation = UpperBody;UpperArms,
+        BodyLocation = SportShoulderpadOnTop,
+
+        ClothingExtraSubmenu = WearOver,
+        ClothingItem = Shoulderpads_IceHockeyOnTop,
+        ClothingItemExtra = Shoulderpads_IceHockey,
+        ClothingItemExtraOption = WearUnder,
+
+        CanHaveHoles = FALSE,
+        WorldStaticModel = Shoulderpads_IceHockey,
+        BiteDefense = 100,
+        ScratchDefense = 100,
+        CombatSpeedModifier = 0.9,
+        DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+        Weight = 5,
+        DiscomfortModifier = 0.05,
+        Tooltip = Tooltip_item_NoBackpack,
+        Tags = IgnoreZombieDensity,
+		ConditionMax = 5,
+		ConditionLowerChanceOneIn = 3,
+    }
+
+    /* generic version */
+	item Vest_CatcherVest
+	{
+		DisplayName = Catcher's Vest,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		IconsForTexture = BaseballCatcherVest_Blue;BaseballCatcherVest_Green;BaseballCatcherVest_Red,
+		BloodLocation = ShirtNoSleeves,
+		BodyLocation = TorsoExtraVestBullet,
+		ClothingItem = Vest_CatcherVest,
+		CanHaveHoles = TRUE,
+		Insulation = 0.75,
+		BiteDefense = 80,
+		ScratchDefense = 100,
+		Weight = 5,
+		RunSpeedModifier = 0.9,
+		CombatSpeedModifier = 0.9,
+		WindResistance = 0.45,
+		WorldStaticModel = Vest_CatcherVest,
+		DiscomfortModifier = 0.15,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item Vest_CatcherVest_Red
+	{
+		DisplayName = Catcher's Vest,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = BaseballCatcherVest_Red,
+		BloodLocation = ShirtNoSleeves,
+		BodyLocation = TorsoExtraVestBullet,
+		ClothingItem = Vest_CatcherVest_Red,
+		CanHaveHoles = TRUE,
+		Insulation = 0.75,
+		BiteDefense = 80,
+		ScratchDefense = 100,
+		Weight = 5,
+		RunSpeedModifier = 0.9,
+		CombatSpeedModifier = 0.9,
+		WindResistance = 0.45,
+		WorldStaticModel = Vest_CatcherVest,
+		DiscomfortModifier = 0.15,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item Vest_CatcherVest_Blue
+	{
+		DisplayName = Catcher's Vest,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = BaseballCatcherVest_Blue,
+		BloodLocation = ShirtNoSleeves,
+		BodyLocation = TorsoExtraVestBullet,
+		ClothingItem = Vest_CatcherVest_Blue,
+		CanHaveHoles = TRUE,
+		Insulation = 0.75,
+		BiteDefense = 80,
+		ScratchDefense = 100,
+		Weight = 5,
+		RunSpeedModifier = 0.9,
+		CombatSpeedModifier = 0.9,
+		WindResistance = 0.45,
+		WorldStaticModel = Vest_CatcherVest,
+		DiscomfortModifier = 0.15,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item Vest_CatcherVest_Green
+	{
+		DisplayName = Catcher's Vest,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = BaseballCatcherVest_Green,
+		BloodLocation = ShirtNoSleeves,
+		BodyLocation = TorsoExtraVestBullet,
+		ClothingItem = Vest_CatcherVest_Green,
+		CanHaveHoles = TRUE,
+		Insulation = 0.75,
+		BiteDefense = 80,
+		ScratchDefense = 100,
+		Weight = 5,
+		RunSpeedModifier = 0.9,
+		CombatSpeedModifier = 0.9,
+		WindResistance = 0.45,
+		WorldStaticModel = Vest_CatcherVest,
+		DiscomfortModifier = 0.15,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item IceHockeyNeckGuard
+	{
+		DisplayName = Ice Hockey Neck Guard,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = HockeyNeckGuard,
+		BloodLocation = Neck,
+		BodyLocation = Gorget,
+		ClothingItem = IceHockeyNeckGuard,
+        CanHaveHoles = TRUE,
+		Insulation = 1.0,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		WindResistance = 1.0,
+		WorldStaticModel = IceHockeyNeckGuard,
+		DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+		DiscomfortModifier = 0.20,
+		Tags = IgnoreZombieDensity,
+        ResearchableRecipes = SewLeatherGorget,
+	}
+
+	item AthleticCup
+	{
+		DisplayName = Athletic Cup,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = AthleticCup,
+		BodyLocation = UnderwearBottom,
+		BodyLocation = UnderwearBottom,
+		/*BodyLocation = Codpiece,*/
+		BloodLocation = Groin,
+		CanHaveHoles = TRUE,
+		ClothingItem = AthleticCup,
+		WorldStaticModel = AthleticCup,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		DiscomfortModifier = 0.20,
+		RunSpeedModifier = 0.97,
+		DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+		Tags = IgnoreZombieDensity,
+        ResearchableRecipes = SewLeatherCodpiece,
+	}
+
+}

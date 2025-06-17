@@ -1,0 +1,54 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Charcoal_Pit
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Charcoal Burning Pit,
+            Icon                = Build_Coalpit,
+        }
+    }
+
+    entity Charcoal_Pit
+    {
+
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Charcoal_Pit,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = WoodCharcoal,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 100,
+        	skillBaseHealth = 20,
+
+            face single
+            {
+                layer
+                {
+                    row = false crafted_01_126,
+                    row = crafted_01_124 crafted_01_125,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            category      = Blacksmithing,
+            ToolTip       = Tooltip_craft_charcoalPitDesc,
+            inputs
+            {
+                item 1 tags[DigGrave] mode:keep flags[Prop1;MayDegradeLight],
+            }
+        }
+    }
+}

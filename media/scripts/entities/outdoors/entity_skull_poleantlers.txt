@@ -1,0 +1,58 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_SkullPoleAntlers
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Antlers Pole,
+			Icon		= Build_Stake_Antlers,
+		}
+	}
+
+    entity SkullPoleAntlers
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_SkullPoleAntlers,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 50,
+        	skillBaseHealth = 10,
+			
+            face E
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_101,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_100,
+                }
+            }
+        }
+		
+		component CraftRecipe
+        {
+		    timedAction   = BuildWallNoTool,
+            time          = 150,
+            category      = Miscellaneous,
+		    ToolTip       = Tooltip_craft_skullPoleDesc,
+
+            inputs
+            {
+                item 1 [Base.LongStick;Base.Sapling],
+                item 1 [Base.SheetRope],
+                item 1 [Base.DeerStag_Skull],
+            }
+        }
+    }
+}

@@ -1,0 +1,248 @@
+module Base
+{
+    craftRecipe MakeCeramicCrucible
+    {
+        timedAction = Craft_PotteryWheel,
+        time = 120,
+        Tags = PotteryWheel,
+        SkillRequired = Pottery:1,
+        xpAward = Pottery:25,
+        category = Pottery,
+        inputs
+        {
+            item 2 [Base.Clay],
+            item 1 [Base.Sandbag],
+        }
+        outputs
+        {
+            item 1 Base.CeramicCrucibleUnfired,
+        }
+    }
+
+    craftRecipe MakeCeramicCrucibleSmall
+    {
+        timedAction = Craft_PotteryWheel,
+        time = 100,
+        Tags = PotteryWheel,
+        SkillRequired = Pottery:1,
+        xpAward = Pottery:25,
+        category = Pottery,
+        inputs
+        {
+            item 1 [Base.Clay],
+            item 1 [Base.Sandbag],
+        }
+        outputs
+        {
+            item 1 Base.CeramicCrucibleSmallUnfired,
+        }
+    }
+
+    craftRecipe MakeCeramicMortarAndPestle
+    {
+        timedAction = Craft_PotteryWheel,
+        time = 120,
+        Tags = PotteryWheel,
+        xpAward = Pottery:15,
+        category = Pottery,
+        inputs
+        {
+            item 2 [Base.Clay],
+            item 1 [Base.Sandbag],
+        }
+        outputs
+        {
+            item 1 Base.CeramicMortarandPestleUnfired,
+        }
+    }
+
+    craftRecipe MakeCeramicTeacup
+    {
+        timedAction = Craft_PotteryWheel,
+        time = 120,
+        Tags = PotteryWheel,
+        xpAward = Pottery:15,
+        category = Pottery,
+        inputs
+        {
+            item 1 [Base.Clay],
+            item 1 [Base.Sandbag],
+        }
+        outputs
+        {
+            item 1 Base.CeramicTeacupUnfired,
+        }
+    }
+
+    craftRecipe MakeClayBowl
+    {
+        timedAction = Craft_PotteryWheel,
+        time = 80,
+        Tags = PotteryWheel,
+        xpAward = Pottery:15,
+        category = Pottery,
+        inputs
+        {
+            item 2 [Base.Clay],
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 0.25 [Water;TaintedWater],
+        }
+        outputs
+        {
+            item 1 Base.ClayBowlUnfired,
+        }
+    }
+
+    craftRecipe MakeClayJar
+    {
+        timedAction = Craft_PotteryWheel,
+        time = 120,
+        Tags = PotteryWheel,
+        SkillRequired = Pottery:5,
+        xpAward = Pottery:40,
+        category = Pottery,
+        inputs
+        {
+            item 3 [Base.Clay],
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 0.25 [Water;TaintedWater],
+        }
+        outputs
+        {
+            item 1 Base.ClayJarUnfired,
+        }
+    }
+
+    craftRecipe MakeClayMug
+    {
+        timedAction = Craft_PotteryWheel,
+        time = 100,
+        Tags = PotteryWheel,
+        xpAward = Pottery:15,
+        category = Pottery,
+        inputs
+        {
+            item 1 [Base.Clay],
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 0.25 [Water;TaintedWater],
+        }
+        outputs
+        {
+            item 1 Base.ClayMugUnfired,
+        }
+    }
+
+    craftRecipe MakeClayPipeSegment
+    {
+        timedAction = Craft_PotteryWheel,
+        time = 120,
+        Tags = PotteryWheel,
+        xpAward = Pottery:15,
+		category = Pottery,
+        inputs
+        {
+            item 1 [Base.Clay],
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 0.25 [Water;TaintedWater],
+        }
+        outputs
+        {
+            item 1 Base.ClayPipeSegmentUnfired,
+        }
+    }
+
+
+    craftRecipe MakeClayPot
+    {
+        timedAction = Craft_PotteryWheel,
+        time = 120,
+        Tags = PotteryWheel,
+        xpAward = Pottery:15,
+		category = Pottery,
+        inputs
+        {
+            item 5 [Base.Clay],
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 0.25 [Water;TaintedWater],
+        }
+        outputs
+        {
+            item 1 Base.ClayPotUnfired,
+        }
+    }
+
+    craftRecipe MakeGlassBlowingPipe
+    {
+        timedAction = Craft_PotteryWheel,
+        time = 100,
+        Tags = PotteryBench,
+        SkillRequired = Pottery:2,
+        xpAward = Pottery:35,
+        category = Pottery,
+        inputs
+        {
+            item 2 [Base.Clay],
+            item 1 [*] mode:keep flags[ItemIsFluid],
+            -fluid 0.25 [Water;TaintedWater],
+        }
+        outputs
+        {
+            item 1 Base.GlassBlowingPipeUnfired,
+        }
+    }
+
+/*
+    craftRecipe MakeIngotMold
+    {
+        time = 100,
+        Tags = PotteryBench,
+        xpAward = Pottery:10,
+		category = Pottery,
+        inputs
+        {
+            item 1 [Base.Clay],
+            item 1 [Base.WoodenIngotCastMold] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.ClayIngotMoldUnfired,
+        }
+    }*/
+
+    craftRecipe MakeSheetMold
+    {
+        timedAction = Craft_PotteryBench,
+        time = 100,
+        Tags = PotteryBench,
+        xpAward = Pottery:15,
+        category = Pottery,
+        inputs
+        {
+            item 3 [Base.Clay],
+            item 1 tags[ClayTool] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.ClaySheetMoldUnfired,
+        }
+    }
+
+    craftRecipe MakeSmokingPipe
+    {
+        timedAction = Craft_PotteryBench,
+        time = 100,
+        tags = PotteryBench,
+        SkillRequired = Pottery:3,
+        xpAward = Pottery:40,
+        category = Pottery,
+        inputs
+        {
+            item 1 [Base.Clay],
+            item 1 tags[ClayTool] mode:keep,
+        }
+        outputs
+        {
+            item 1 Base.SmokingPipeUnfired,
+        }
+    }
+}

@@ -1,0 +1,54 @@
+module Base
+{
+	template vehicle Muffler
+	{
+		part Muffler
+        {
+            area = TruckBed,
+            itemType = Base.OldCarMuffler;Base.NormalCarMuffler;Base.ModernCarMuffler,
+            category = engine,
+            durability = 3,
+            table install
+            {
+                items
+                {
+                    item
+                    {
+						tags = Wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 500,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.InstallTest.Default,
+                door = EngineDoor,
+            }
+            table uninstall
+            {
+                items
+                {
+                    item
+                    {
+						tags = Wrench,
+                        count = 1,
+                        keep = true,
+                        equip = primary,
+                    }
+                }
+                time = 500,
+                skills = Mechanics:5,
+                recipes = Basic Mechanics,
+                test = Vehicles.UninstallTest.Default,
+            }
+            lua
+            {
+                create = Vehicles.Create.Default,
+                update = Vehicles.Update.Muffler,
+            }
+        }
+	}
+}
+

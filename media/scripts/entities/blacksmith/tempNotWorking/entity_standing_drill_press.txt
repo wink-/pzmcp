@@ -1,0 +1,49 @@
+/*module Base
+{
+    entity StandingDrillPress
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_StandingDrillPress,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = StandingDrillPress,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = industry_02_269,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = industry_02_268,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = industry_02_270,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = industry_02_271,
+                }
+            }
+        }
+    }
+}*/

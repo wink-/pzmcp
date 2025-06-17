@@ -1,0 +1,20 @@
+module Base
+{
+	sound ClothingWasherRunning
+	{
+		category = Object,
+		clip
+		{
+			event = Object/ClothingWasher/Running,
+		}
+	}
+
+	sound ClothingWasherFinished
+	{
+		category = Object,
+		clip
+		{
+			event = Object/ClothingWasher/Finished,
+		}
+	}
+}

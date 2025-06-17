@@ -1,0 +1,351 @@
+module Base
+{
+	item CandiedApple
+	{
+		DisplayName = Candied Apple, /* used candied apple and not caramel apple because candied apple is more generic */
+		DisplayCategory = Food,
+		EatType = eatOffStick,
+		Type = Food,
+		Weight = 0.2,
+		Icon = CandiedApple,
+		FoodType = Candy,
+		CustomEatSound = EatingFruit,
+		DaysFresh = 5,
+		DaysTotallyRotten = 8,
+		HungerChange = -18,
+		UnhappyChange = -10,
+		ThirstChange = -4,
+		Calories = 250,
+		Carbohydrates = 36,
+		Lipids = 9,
+		Proteins = 6,
+		StaticModel = CandiedApple,
+		WorldStaticModel = CandiedApple,
+	}
+
+	item CandyCaramels
+	{
+		DisplayName = Caramel Candies,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = CandyCaramels,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		EvolvedRecipeName = Caramel Candy,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 170,
+		Carbohydrates = 28,
+		Lipids = 5,
+		Proteins = 1,
+		WorldStaticModel = CandyCaramels,
+	}
+
+	item CandyGummyfish
+	{
+		DisplayName = Gummy Fish Candy,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = CandyGummyfish,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		EvolvedRecipeName = Gummy Fish,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 110,
+		Carbohydrates = 27,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = CandyGummyfish,
+	}
+
+	item CandyMolasses
+	{
+		DisplayName = Halloween Candy,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = CandyMolasses,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		EvolvedRecipeName = Halloween Candy,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 160,
+		Carbohydrates = 33,
+		Lipids = 3.5,
+		Proteins = 0.1,
+		WorldStaticModel = CandyMolasses,
+	}
+
+	item CandyNovapops
+	{
+		DisplayName = Novapops Candy,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = CandyNovapops,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		EvolvedRecipeName = Novapop,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 120,
+		Carbohydrates = 24,
+		Lipids = 2.5,
+		Proteins = 0,
+		WorldStaticModel = CandyNovapops,
+	}
+
+	item Chocolate_Butterchunkers
+	{
+		DisplayName = Butterchunkers Bar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Chocolate_Butterchunkers,
+		EvolvedRecipe = Cake:20;PieSweet:20;Muffin:10;Pancakes:10;Bread:10;ConeIcecream:5;Toast:5,
+		EvolvedRecipeName = Butterchunkers,
+		FoodType = Candy,
+		Packaged = TRUE,
+		HungerChange = -20,
+		UnhappyChange = -10,
+		Calories = 230,
+		Carbohydrates = 29,
+		Lipids = 12,
+		Proteins = 2,
+		WorldStaticModel = Chocolate_Butterchunkers,
+	}
+
+	item Chocolate_Candy
+	{
+		DisplayName = Chocolate Candy,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Chocolate_Candy,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		EvolvedRecipeName = Chocolate Candy,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 110,
+		Carbohydrates = 27,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = Chocolate_Candy,
+	}
+
+	item Chocolate_Crackle
+	{
+		DisplayName = Crackle Bar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Chocolate_Crackle,
+		EvolvedRecipe = Cake:20;PieSweet:20;Muffin:10;Pancakes:10;Bread:10;ConeIcecream:5;Toast:5,
+		EvolvedRecipeName = Crackle,
+		FoodType = Candy,
+		Packaged = TRUE,
+		HungerChange = -20,
+		UnhappyChange = -10,
+		Calories = 230,
+		Carbohydrates = 29,
+		Lipids = 12,
+		Proteins = 2,
+		StaticModel = Chocolate_Crackle,
+		WorldStaticModel = Chocolate_Crackle,
+	}
+
+	item Chocolate_Deux
+	{
+		DisplayName = Deux Bar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Chocolate_Deux,
+		EvolvedRecipe = Cake:20;PieSweet:20;Muffin:10;Pancakes:10;Bread:10;ConeIcecream:5;Toast:5,
+		EvolvedRecipeName = Deux,
+		FoodType = Candy,
+		Packaged = TRUE,
+		HungerChange = -20,
+		UnhappyChange = -10,
+		Calories = 250,
+		Carbohydrates = 34,
+		Lipids = 12,
+		Proteins = 2,
+		StaticModel = Chocolate_Deux,
+		WorldStaticModel = Chocolate_Deux,
+	}
+
+	item Chocolate_GalacticDairy
+	{
+		DisplayName = Galactic Dairy Bar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Chocolate_GalacticDairy,
+		EvolvedRecipe = Cake:20;PieSweet:20;Muffin:10;Pancakes:10;Bread:10;ConeIcecream:5;Toast:5,
+		EvolvedRecipeName = Galactic Dairy,
+		FoodType = Candy,
+		Packaged = TRUE,
+		HungerChange = -20,
+		UnhappyChange = -10,
+		Calories = 190,
+		Carbohydrates = 30,
+		Lipids = 8,
+		Proteins = 2,
+		StaticModel = Chocolate_GalacticDairy,
+		WorldStaticModel = Chocolate_GalacticDairy,
+	}
+
+	item Chocolate_HeartBox
+	{
+		DisplayName = Box of Chocolates,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = Chocolate_Heartbox,
+		EvolvedRecipe = Cake:25;PieSweet:25;Muffin:10;Pancakes:10;Bread:10;ConeIcecream:5;Toast:5,
+		EvolvedRecipeName = Chocolate,
+		FoodType = NoExplicit,
+		Packaged = TRUE,
+		HungerChange = -40,
+		UnhappyChange = -20,
+		Calories = 1700,
+		Carbohydrates = 220,
+		Lipids = 130,
+		Proteins = 20,
+		StaticModel = ChocolateHeartbox_Hand,
+		WorldStaticModel = ChocolateHeartbox_Ground,
+		EatType = eatBox,
+	}
+
+	item Chocolate_RoysPBPucks
+	{
+		DisplayName = Roy's Peanut Butter Pucks,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Chocolate_RoysPBPucks,
+		EvolvedRecipe = Cake:20;PieSweet:20;Muffin:10;Pancakes:10;Bread:10;ConeIcecream:5;Toast:5,
+		EvolvedRecipeName = Peanut Butter Puck,
+		FoodType = Candy,
+		Packaged = TRUE,
+		HungerChange = -20,
+		UnhappyChange = -10,
+		Calories = 230,
+		Carbohydrates = 26,
+		Lipids = 13,
+		Proteins = 5,
+		StaticModel = Chocolate_RoysPBPucks,
+		WorldStaticModel = Chocolate_RoysPBPucks,
+	}
+
+	item Chocolate_Smirkers
+	{
+		DisplayName = Smirkers Bar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Chocolate_Smirkers,
+		EvolvedRecipe = Cake:20;PieSweet:20;Muffin:10;Pancakes:10;Bread:10;ConeIcecream:5;Toast:5,
+		EvolvedRecipeName = Smirkers,
+		FoodType = Candy,
+		Packaged = TRUE,
+		HungerChange = -20,
+		UnhappyChange = -10,
+		Calories = 280,
+		Carbohydrates = 35,
+		Lipids = 14,
+		Proteins = 4,
+		StaticModel = Chocolate_Smirkers,
+		WorldStaticModel = Chocolate_Smirkers,
+	}
+
+	item Chocolate_SnikSnak
+	{
+		DisplayName = SnikSnak Bar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Chocolate_SnikSnak,
+		EvolvedRecipe = Cake:20;PieSweet:20;Muffin:10;Pancakes:10;Bread:10;ConeIcecream:5;Toast:5,
+		EvolvedRecipeName = SnikSnak,
+		FoodType = Candy,
+		Packaged = TRUE,
+		HungerChange = -20,
+		UnhappyChange = -10,
+		Calories = 230,
+		Carbohydrates = 29,
+		Lipids = 12,
+		Proteins = 3,
+		StaticModel = Chocolate_SnikSnak,
+		WorldStaticModel = Chocolate_SnikSnak,
+	}
+
+	item Gingerbreadman
+	{
+		DisplayName = Gingerbread Man,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Gingerbreadman,
+		/*DaysFresh = 7,
+		DaysTotallyRotten = 30,*/
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 160,
+		Carbohydrates = 22,
+		Lipids = 8,
+		Proteins = 1,
+		CustomEatSound = EatingCrispy,
+		StaticModel = Gingerbreadman,
+		WorldStaticModel = Gingerbreadman,
+		Tags = FitsToaster,
+	}
+
+	item JellyRoll
+	{
+		DisplayName = Jelly Roll,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = JellyRoll,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -7,
+		UnhappyChange = -15,
+		Calories = 230,
+		Carbohydrates = 41,
+		Lipids = 7,
+		Proteins = 1,
+		StaticModel = JellyRoll,
+		WorldStaticModel = JellyRoll,
+	}
+
+	item ScoutCookies
+	{
+		DisplayName = Scout Cookies,
+		DisplayCategory = Food,
+		EatType = eatBox,
+		Type = Food,
+		Weight = 0.2,
+		Icon = CookieBox,
+		Packaged = TRUE,
+		HungerChange = -20,
+		Calories = 1200,
+		Carbohydrates = 290,
+		Lipids = 13,
+		Proteins = 26,
+		StaticModel = ScoutCookies,
+		WorldStaticModel = ScoutCookies,
+	}
+}

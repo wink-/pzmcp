@@ -1,0 +1,52 @@
+module Base
+{
+    entity Kiln_Large
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Kiln_Large,
+            uiEnabled       = true,
+        }
+
+         component CraftBench
+        {
+            Recipes         = KilnLarge,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 200,
+        	skillBaseHealth = 50,
+
+            face S
+            {
+                layer
+                {
+                    row = crafted_01_58,
+                    row = crafted_01_57,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_01_106 crafted_01_107,
+                }
+            }
+        }
+                
+        component CraftRecipe
+        {
+            timedAction   = BuildWallNoTool,
+            time          = 100,
+            category      = Pottery,
+            ToolTip       = Tooltip_craft_kilnLargeDesc,
+            inputs
+            {
+                item 1 tags[MasonsTrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 20 [Base.Clay] flags[DontRecordInput],
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+module Base
+{
+	sound AnimalFeederAddFeed
+	{
+		category = Object,
+		clip
+		{
+			event = Object/AnimalFeeder/AddFeed,
+		}
+	}
+
+	sound AnimalFeederAddWater
+	{
+		category = Object,
+		clip
+		{
+			event = Object/AnimalFeeder/AddWater,
+		}
+	}
+
+	sound AnimalFeederEmptyWater
+	{
+		category = Object,
+		clip
+		{
+			event = Object/AnimalFeeder/EmptyWater,
+		}
+	}
+}

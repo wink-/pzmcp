@@ -1,0 +1,157 @@
+module Base
+{
+	sound VehicleEngineStandard
+	{
+		category = Vehicle,
+		master = VehicleEngine,
+		clip
+		{
+			event = Vehicle/Standard/Engine,
+		}
+	}
+
+	sound VehicleIgnitionFailStandard
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/IgnitionFail,
+		}
+	}
+
+	sound VehicleHornStandard
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Horn,
+		}
+	}
+
+	sound VehicleAlarmStandard
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Alarm,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleDoorIsLockedStandard
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Door/IsLocked,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleDoorOpenStandard
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Door/Open,
+		}
+	}
+
+	sound VehicleDoorCloseStandard
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Door/Close,
+		}
+	}
+
+	sound LockVehicleDoorStandard
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Door/Lock,
+		}
+	}
+
+	sound UnlockVehicleDoorStandard
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Door/UnLock,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleHoodCloseStandard
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Hood/Close,
+		}
+	}
+
+	sound VehicleHoodCloseStandardStart
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Hood/Close/Start,
+		}
+	}
+
+	sound VehicleHoodCloseStandardEnd
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Hood/Close/End,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleTrunkCloseStandard
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Trunk/Close,
+		}
+	}
+
+	sound VehicleTrunkCloseStandardStart
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Trunk/Close/Start,
+		}
+	}
+
+	sound VehicleTrunkCloseStandardEnd
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Trunk/Close/End,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleTrunkOpenStandard
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Standard/Trunk/Open,
+		}
+	}
+}

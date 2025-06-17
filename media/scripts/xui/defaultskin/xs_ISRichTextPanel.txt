@@ -1,0 +1,28 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISRichTextPanel
+        {
+            contentTransparency = 1.0,
+            backgroundColor     = C_Background,
+            borderColor         = C_BlackNoAlpha,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+            marginLeft          = 20,
+            marginTop           = 10,
+            marginRight         = 10,
+            marginBottom        = 10,
+            autosetheight       = true,
+            /* optional: text = my_text, */
+            textR               = 1,
+            textG               = 1,
+            textB               = 1,
+            clip                = false,
+            maxLines            = 0,
+            defaultFont         = UIFont.NewSmall,
+        }
+    }
+}

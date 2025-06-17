@@ -1,0 +1,66 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_RippleComb
+        {
+            LuaWindowClass      = ISEntityTabWindow,
+            DisplayName         = Ripple Comb,
+            Icon                = Build_RippleComb,
+        }
+    }
+
+    entity RippleComb
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_RippleComb,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+           Recipes         = Rippling,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_04_58 crafted_04_59,
+                }
+            }
+
+           face E
+            {
+                layer
+                {
+                    row = crafted_04_61,
+                    row = crafted_04_60,
+                }
+            }            
+        }
+
+        component CraftRecipe
+        {
+            timedAction   = BuildWoodenStructureMedium,
+            time          = 50,
+            tags          = Outdoors,
+            category      = Farming,
+		    SkillRequired = Woodwork:3,
+		    xpAward       = Woodwork:30,
+            ToolTip       = Tooltip_craft_rippleCombDesc,
+            inputs
+            {
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[Saw;CrudeSaw] mode:keep flags[MayDegradeLight],
+                item 4 [Base.Plank],
+                item 8 [Base.Nails],
+            }
+        }
+    }
+
+}

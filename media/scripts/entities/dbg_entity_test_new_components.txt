@@ -1,0 +1,215 @@
+/*
+module Base
+{
+    /*
+        TEMPORARY FILE FOR DEBUG TESTING
+    */
+
+    xuiSkin default
+    {
+        entity ES_Turbo_Test_Mashing
+        {
+            LuaWindowClass      = ISEntityTabWindow,
+            DisplayName         = Mashing Barrel,
+            Icon                = Item_Apple,
+
+            /*
+            components
+            {
+                MashingLogic
+                {
+                    LuaPanelClass           = ISMashingLogicPanel,
+                    DisplayName             = Mashing Barrel,
+                    Icon                    = Item_Note2,
+                }
+            }
+            */
+        }
+
+        entity ES_Turbo_Test_New_Furnace
+        {
+            LuaWindowClass      = ISEntityTabWindow,
+            DisplayName         = New Furnace,
+            Icon                = Item_Apple,
+
+            /*
+            components
+            {
+                MashingLogic
+                {
+                    LuaPanelClass           = ISFurnaceLogicPanel,
+                    DisplayName             = Kiln Furnace,
+                    Icon                    = Item_Note2,
+                }
+            }
+            */
+        }
+    }
+
+    /*
+        Mashing
+    */
+
+    entity Turbo_Test_Mashing
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Turbo_Test_Mashing,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group mashing_inputs
+            {
+                Item@Input@10,
+                Item@Input@10,
+                Item@Input@10,
+                mashing_barrel = Fluid@Input@10,
+            }
+        }
+
+        component MashingLogic
+        {
+            Recipes         = MashingTestTag,
+            inputGroup      = mashing_inputs,
+            fluidID         = mashing_barrel,
+        }
+
+        component SpriteConfig
+        {
+            face single
+            {
+                layer
+                {
+                    row = construction_01_6,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            category      = Demo,
+        }
+    }
+
+    craftRecipe DbgMashingTest
+    {
+        time = 3,
+        tags = MashingTestTag,
+
+        inputs
+        {
+            fluid 10 [Water],
+            item 5 [Base.Apple],
+            item 5 [Base.Orange],
+        }
+
+        outputs
+        {
+            fluid 10 Wine,
+        }
+    }
+
+    /*
+        Furnace
+    */
+
+    entity Turbo_Test_New_Furnace
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Turbo_Test_New_Furnace,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group furnace_fuel_inputs
+            {
+                Item@Input@5,
+            }
+            group furnace_fuel_outputs
+            {
+                Item@Output@10,
+            }
+            group furnace_inputs
+            {
+                Item@Input@1,
+                Item@Input@1,
+                Item@Input@1,
+            }
+            group furnace_outputs
+            {
+                Item@Output@1,
+                Item@Output@1,
+                Item@Output@1,
+            }
+        }
+
+        component FurnaceLogic
+        {
+            fuelRecipes     = NewFurnaceFuelTestTag,
+            fuelInputGroup  = furnace_fuel_inputs,
+            fuelOutputGroup = furnace_fuel_outputs,
+            furnaceRecipes  = NewFurnaceTestTag,
+            inputGroup      = furnace_inputs,
+            outputGroup     = furnace_outputs,
+            startMode       = Manual,
+        }
+
+        component SpriteConfig
+        {
+            face single
+            {
+                layer
+                {
+                    row = construction_01_7,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            category      = Demo,
+        }
+    }
+
+    craftRecipe DbgNewFurnaceFuelTest
+    {
+        time = 30,
+        tags = NewFurnaceFuelTestTag,
+
+        inputs
+        {
+            item 1 [Base.Log],
+        }
+
+        outputs
+        {
+            item 2 Base.Charcoal,
+        }
+    }
+
+    craftRecipe DbgNewFurnaceTest
+    {
+        time = 30,
+        tags = NewFurnaceTestTag,
+
+        inputs
+        {
+            item 1 [Base.Apple],
+        }
+
+        outputs
+        {
+            item 1 Base.Orange,
+        }
+    }
+
+}
+*/

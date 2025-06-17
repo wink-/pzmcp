@@ -1,0 +1,56 @@
+module Base
+{
+	sound MagazineInsertAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magazine/InsertAmmo,
+		}
+	}
+
+	sound MagazineEjectAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magazine/EjectAmmo,
+		}
+	}
+
+	sound MagazineInsertAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magazine/InsertAmmoStart,
+		}
+	}
+
+	sound MagazineInsertAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magazine/InsertAmmoStop,
+		}
+	}
+
+	sound MagazineEjectAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magazine/EjectAmmoStart,
+		}
+	}
+
+	sound MagazineEjectAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/Magazine/EjectAmmoStop,
+		}
+	}
+}

@@ -1,0 +1,38 @@
+module Base
+{
+	sound BoxOfRoundsOpenAll
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/BoxOfRounds/OpenAll,
+		}
+	}
+
+	sound BoxOfRoundsOpenOne
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/BoxOfRounds/OpenOne,
+		}
+	}
+
+	sound BoxOfRoundsPlaceAll
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/BoxOfRounds/PlaceAll,
+		}
+	}
+
+	sound BoxOfRoundsPlaceOne
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/BoxOfRounds/PlaceOne,
+		}
+	}
+}

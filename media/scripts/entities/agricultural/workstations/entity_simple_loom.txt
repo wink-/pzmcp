@@ -1,0 +1,198 @@
+module Base
+{
+    craftRecipe WeaveCloth
+    {
+        time        = 300,
+        timedAction = UseLoom,
+        tags = Weaving,
+        /* needTobeLearn = true,*/
+        category = Farming,
+         inputs
+         {
+            item 100 [Base.Thread] flags[InheritColor],
+         }
+         outputs
+         {
+             item 1 Base.FabricRoll_Cotton,
+         }
+    }
+
+    craftRecipe WeaveCheeseCloth
+    {
+        time        = 60,
+        timedAction = UseLoom,
+        tags = Weaving,
+        /* needTobeLearn = true,*/
+        category = Farming,
+         inputs
+         {
+            item 20 [Base.Thread],
+         }
+         outputs
+         {
+             item 1 Base.CheeseCloth,
+         }
+    }
+
+    craftRecipe WeaveBurlap
+    {
+        time        = 200,
+        timedAction = UseLoom,
+        tags = Weaving,
+        /* needTobeLearn = true,*/
+        category = Farming,
+         inputs
+         {
+            item 3 [Base.HempScutched;Base.Dogbane],
+         }
+         outputs
+         {
+             item 1 Base.BurlapPiece,
+         }
+    }
+
+    xuiSkin default
+    {
+        entity ES_SimpleLoom
+        {
+            LuaWindowClass      = ISEntityTabWindow,
+            DisplayName         = Simple Loom,
+			Icon		        = Build_LoomSimple,
+        }
+    }
+
+    xuiSkin default
+    {
+        entity ES_Loom
+        {
+            LuaWindowClass      = ISEntityTabWindow,
+            DisplayName         = Loom,
+            Icon                = Build_Loom,
+        }
+    }
+
+    entity SimpleLoom
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_SimpleLoom,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+           Recipes         = Weaving,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_04_81,
+                    row = crafted_04_80,
+                }
+            }
+
+           face E
+            {
+                layer
+                {
+                    row = crafted_04_83 crafted_04_84,
+                }
+            }            
+        }
+
+        component CraftRecipe
+        {
+            timedAction   = BuildWoodenStructureMedium,
+            time          = 50,
+            category      = Farming,
+            tags          = Outdoors,
+		    SkillRequired = Woodwork:3,
+		    xpAward       = Woodwork:30,
+            ToolTip       = Tooltip_craft_loomSimpleDesc,
+            inputs
+            {
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[CrudeSaw;Saw] mode:keep flags[MayDegradeLight],
+                item 4 [Base.Log],
+                item 5 [Base.LongStick],
+		        item 4 [Base.RippedSheets;Base.RippedSheetsDirty;Base.Twine;Base.Rope;Base.SheetRope] flags[DontReplace],
+            }
+        }
+    }
+
+
+    entity Loom
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Loom,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+           Recipes         = Weaving,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_04_72,
+                }
+            }
+
+           face E
+            {
+                layer
+                {
+                    row = crafted_04_73,
+                }
+            }
+
+            face N
+            {
+                layer
+                {
+                    row = crafted_04_74,
+                }
+            }
+
+           face W
+            {
+                layer
+                {
+                    row = crafted_04_75,
+                }
+            }
+        }
+/*
+        component CraftRecipe
+        {
+            timedAction   = BuildWoodenStructureMedium,
+            time          = 50,
+            category      = Farming,
+            tags          = Outdoors,
+		    SkillRequired = Woodwork:3,
+		    xpAward       = Woodwork:30,
+            ToolTip       = Tooltip_craft_loomDesc,
+            inputs
+            {
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[CrudeSaw;Saw] mode:keep flags[MayDegradeLight],
+                item 4 [Base.Log],
+                item 5 [Base.LongStick],
+		        item 4 [Base.RippedSheets;Base.RippedSheetsDirty;Base.Twine;Base.Rope;Base.SheetRope] flags[DontReplace],
+            }
+        }*/
+    }
+
+}

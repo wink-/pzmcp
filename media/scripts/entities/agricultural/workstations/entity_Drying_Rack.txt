@@ -1,0 +1,242 @@
+module Base
+{
+    craftRecipe DryCorn
+     {
+        time        = 10,
+	    tags = DryingRackGrain,
+        category = Farming,
+        inputs
+        {
+            item 14 [Base.Corn] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.CornSeed,
+        }
+     }
+    craftRecipe DrySunflower
+     {
+        time        = 10,
+	    tags = DryingRackGrain,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.SunflowerHead] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.SunflowerHeadDried,
+        }
+     }
+    craftRecipe DryWheat
+     {
+        time        = 10,
+	    tags = DryingRackGrain,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.WheatSheaf] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.WheatSheafDried,
+        }
+     }
+    craftRecipe DryFlax
+     {
+        time        = 10,
+	    tags = DryingRackGrain,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.Flax;Base.FlaxRippled] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.FlaxDried,
+        }
+     }
+    craftRecipe DryTobacco
+     {
+        time        = 10,
+	    tags = DryingRackGrain;DryingRackHerb,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.Tobacco] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.TobaccoDried,
+        }
+     }
+    craftRecipe DryRye
+     {
+        time        = 10,
+	    tags = DryingRackGrain,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.RyeSheaf] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.RyeSheafDried,
+        }
+     }
+    craftRecipe DryHemp
+     {
+        time        = 10,
+	    tags = DryingRackGrain,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.HempBundle] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.HempBundleDried,
+        }
+     }
+    craftRecipe DryBarley
+     {
+        time        = 10,
+	    tags = DryingRackGrain,
+        category = Farming,
+        inputs
+        {
+            item 1 [Base.BarleySheaf] mode:destroy,
+        }
+        outputs
+        {
+            item 1 Base.BarleySheafDried,
+        }
+     }
+
+
+    xuiSkin default
+    {
+        entity ES_DryingRackGrain
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = LargePlantDryingRack,
+            Icon                = Build_HerbDryerLarge,
+        }
+        entity ES_SimpleDryingRackGrain
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = SimpleLargePlantDryingRack,
+            Icon                = Build_HerbDryerLarge,
+        }
+    }
+
+    entity Drying_Rack
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_DryingRackGrain,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+           Recipes         = DryingRackGrain,
+        }
+
+        component SpriteConfig
+        {
+            health          = 100,
+            skillBaseHealth = 20,
+
+            face S
+            {
+                layer
+                {
+                    row = vegetation_drying_01_17 vegetation_drying_01_19,
+                    row = vegetation_drying_01_16 vegetation_drying_01_18,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = vegetation_drying_01_22 vegetation_drying_01_23,
+                    row = vegetation_drying_01_20 vegetation_drying_01_21,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = Making,
+            time          = 50,
+            SkillRequired = Woodwork:1,
+            xpAward       = Woodwork:10,
+            category      = Farming,
+            tags          = Farming,
+            ToolTip       = Tooltip_craft_dryGrainRackDesc,
+            inputs
+            {
+                item 6 [Base.LongStick],
+                item 8 [Base.Twine],
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[CrudeSaw;Saw] mode:keep flags[MayDegradeLight],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+
+    entity Simple_Drying_Rack
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_SimpleDryingRackGrain,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+           Recipes         = DryingRackGrain,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 100,
+        	skillBaseHealth = 20,
+
+            face S
+            {
+                layer
+                {
+                    row = vegetation_drying_01_233 vegetation_drying_01_235,
+                    row = vegetation_drying_01_232 vegetation_drying_01_234,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = vegetation_drying_01_238 vegetation_drying_01_239,
+                    row = vegetation_drying_01_236 vegetation_drying_01_237,
+                }
+            }
+        }
+
+        component CraftRecipe
+        {
+            timedAction   = Making,
+            time          = 50,
+            xpAward       = Woodwork:5,
+            category      = Farming,
+            tags          = Farming,
+            ToolTip       = Tooltip_craft_dryGrainRackDesc,
+            inputs
+            {
+                item 6 [Base.LongStick;Base.Sapling],
+                item 8 [Base.Twine;Base.RippedSheets;Base.DenimStrips;Base.LeatherStrips;Base.Rope] flags[DontReplace],
+            }
+        }
+    }
+}

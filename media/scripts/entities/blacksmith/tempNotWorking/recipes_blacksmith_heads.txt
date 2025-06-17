@@ -1,0 +1,266 @@
+module Base
+{
+    craftRecipe Forge_Ball_Peen_Hammer_Head
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:10,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.PiercedSteelChunk],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.BallPeenHammerHead,
+        }
+    }
+
+    craftRecipe Forge_Clawhammer_Head
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:10,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.PiercedSteelChunk],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.ClawhammerHead,
+        }
+    }
+
+    craftRecipe Forge_Club_Hammer_Head
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:10,
+        tags = AdvancedForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.PiercedSteelChunk],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.ClubHammerHead,
+        }
+    }
+
+    craftRecipe Forge_Garden_Hoe_Head
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:10,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 tags[PiercedBlock],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.GardenHoeHead,
+        }
+    }
+
+    craftRecipe Forge_Hand_Scythe_Head
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:10,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 tags[BarStockQuarter],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[Whetstone] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.HandScytheBlade,
+        }
+    }
+
+    craftRecipe Forge_Pick_Axe_Head
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:8,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:10,
+        tags = AdvancedForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.PiercedSteelBlock],
+            item 1 tags[BallPeenHammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+            item 1 tags[Whetstone] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.PickAxeHead,
+        }
+    }
+
+    craftRecipe Forge_Sledgehammer_Head
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:8,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:10,
+        tags = AdvancedForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.PiercedSteelIngot],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SledgehammerHead,
+            item 4 Base.SteelChunk,
+        }
+    }
+
+    craftRecipe Forge_Smithing_Hammer_Head
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:4,
+        timedAction = Making,
+        xpAward = Blacksmith:10,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 tags[PiercedChunk],
+            item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[Prop2],
+            item 1 tags[CrudeChisel;MetalworkingChisel;MetalworkingPunch] mode:keep,
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SmithingHammerHead,
+        }
+    }
+
+    craftRecipe Forge_Wood_Axe_Head
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:8,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:10,
+        tags = AdvancedForge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 [Base.PiercedSteelBlock],
+            item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+            item 1 tags[Whetstone] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.WoodAxeHead,
+        }
+    }
+
+    craftRecipe Forge_Scythe_Head
+    {
+        time        = 10,
+        SkillRequired = Blacksmith:5,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = Blacksmith:25,
+        AutoLearnAll = Blacksmith:10,
+        tags = Forge,
+        category = Blacksmithing,
+        inputs
+        {
+            /*item 1 [Base.Bellows] mode:keep,*/
+            item 1 tags[Charcoal],
+            item 1 tags[BarStockHalf],
+            item 1 tags[SmithingHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeLight],
+            item 1 tags[Whetstone] mode:keep flags[MayDegradeLight],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.ScytheBlade,
+        }
+    }
+}

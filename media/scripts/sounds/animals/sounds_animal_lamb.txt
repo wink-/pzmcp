@@ -1,0 +1,74 @@
+module Base
+{
+    sound AnimalVoiceLambIdle
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Lamb/Voice/Idle,
+        }
+    }
+
+    sound AnimalVoiceLambDeath
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Lamb/Voice/Death,
+        }
+    }
+
+    sound AnimalVoiceLambStressed
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Lamb/Voice/Stressed,
+        }
+    }
+
+    sound AnimalVoiceLambPain
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Lamb/Voice/Pain,
+        }
+    }
+
+    sound AnimalFootstepsLambWalkFront
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Lamb/Footsteps/Walk/Front,
+        }
+    }
+
+    sound AnimalFootstepsLambWalkBack
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Lamb/Footsteps/Walk/Back,
+        }
+    }
+
+    sound AnimalFootstepsLambRun
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Lamb/Footsteps/Run,
+        }
+    }
+
+    sound AnimalFoleyLambBodyfall
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Lamb/Foley/Bodyfall,
+        }
+    }
+} 

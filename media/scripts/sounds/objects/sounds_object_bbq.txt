@@ -1,0 +1,74 @@
+module Base
+{
+	sound CharcoalBarbecueRunning
+	{
+		category = Object,
+		clip
+		{
+			event = Object/CharcoalBarbecue/Running,
+		}
+	}
+
+	sound PropaneBarbecueRunning
+	{
+		category = Object,
+		clip
+		{
+			event = Object/PropaneBarbecue/Running,
+		}
+	}
+
+	sound BBQPropaneTankInsert
+	{
+		category = Object,
+		clip
+		{
+			event = Object/BBQ/Propane/TankInsert,
+		}
+	}
+
+	sound BBQPropaneTankRemove
+	{
+		category = Object,
+		clip
+		{
+			event = Object/BBQ/Propane/TankRemove,
+		}
+	}
+
+	sound BBQPropaneRunning
+	{
+		category = Object,
+		clip
+		{
+			event = Object/BBQ/Propane/Running,
+		}
+	}
+
+	sound BBQRegularAddFuel
+	{
+		category = Object,
+		clip
+		{
+			event = Object/BBQ/Regular/AddFuel,
+		}
+	}
+
+	sound BBQRegularLight
+	{
+		category = Object,
+		clip
+		{
+			event = Object/BBQ/Regular/Light,
+		}
+	}
+
+	sound BBQRegularRunning
+	{
+		category = Object,
+		clip
+		{
+			event = Object/BBQ/Regular/Running,
+		}
+	}
+}

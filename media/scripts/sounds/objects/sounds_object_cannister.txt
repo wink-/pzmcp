@@ -1,0 +1,20 @@
+module Base
+{
+	sound CanisterAddFuelFromGasPump
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Canister/AddFuel/FromGasPump,
+		}
+	}
+
+	sound CanisterAddFuelSiphon
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Canister/AddFuel/Siphon,
+		}
+	}
+}

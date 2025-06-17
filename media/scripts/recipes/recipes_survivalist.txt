@@ -1,0 +1,20 @@
+module Base
+{
+   	craftRecipe DrillPlank
+	{
+        timedAction = Making,
+		Time = 40,
+        tags = AnySurfaceCraft,
+        category = Miscellaneous, /*category = Survival,*/
+		xpAward = Carving:1,
+		inputs
+		{
+			item 1 [Base.Plank;Base.Log;Base.LargeBranch] flags[Prop2],
+			item 1 tags[Screwdriver;DullKnife;SharpKnife;DrillWood;DrillWoodPoor] mode:keep flags[Prop1;MayDegradeLight],
+		}
+		outputs
+		{
+			item 1 Base.PercedWood,
+		}
+	}
+}

@@ -1,0 +1,147 @@
+module Base
+{
+	sound M14Shoot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
+		{
+			event = Weapon/Firearm/M14/Shoot,
+		}
+	}
+
+	sound M14InsertAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M14/InsertAmmo,
+		}
+	}
+
+	sound M14EjectAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M14/EjectAmmo,
+		}
+	}
+
+	sound M14InsertAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M14/InsertAmmoStart,
+		}
+	}
+
+	sound M14InsertAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M14/InsertAmmoStop,
+		}
+	}
+
+	sound M14EjectAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M14/EjectAmmoStart,
+		}
+	}
+
+	sound M14EjectAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M14/EjectAmmoStop,
+		}
+	}
+
+	sound M14Rack
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M14/Rack,
+		}
+	}
+
+	sound M14Jam
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M14/Jam,
+		}
+	}
+    
+	sound M14BringToBear
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M14/BringToBear,
+		}
+	}
+    
+	sound M14AimRelease
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M14/AimRelease,
+		}
+	}
+
+	sound M14Equip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M14/Equip,
+		}
+	}
+        
+	sound M14UnEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M14/UnEquip,
+		}
+	}
+            
+	sound M14Break
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M14/Break,
+		}
+	}
+
+	sound M14Drop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M14/Drop,
+		}
+	}
+
+	sound M14CartridgeFall
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M14/CartridgeFall,
+		}
+	}
+}

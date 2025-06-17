@@ -1,0 +1,147 @@
+module Base
+{
+	sound MSR788Shoot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
+		{
+			event = Weapon/Firearm/MSR788/Shoot,
+		}
+	}
+
+	sound MSR788InsertAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/MSR788/InsertAmmo,
+		}
+	}
+
+	sound MSR788EjectAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/MSR788/EjectAmmo,
+		}
+	}
+
+	sound MSR788InsertAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/MSR788/InsertAmmoStart,
+		}
+	}
+
+	sound MSR788InsertAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/MSR788/InsertAmmoStop,
+		}
+	}
+
+	sound MSR788EjectAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/MSR788/EjectAmmoStart,
+		}
+	}
+
+	sound MSR788EjectAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/MSR788/EjectAmmoStop,
+		}
+	}
+
+	sound MSR788Rack
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/MSR788/Rack,
+		}
+	}
+
+	sound MSR788Jam
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/MSR788/Jam,
+		}
+	}
+    
+	sound MSR788BringToBear
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/MSR788/BringToBear,
+		}
+	}
+    
+	sound MSR788AimRelease
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/MSR788/AimRelease,
+		}
+	}
+
+	sound MSR788Equip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/MSR788/Equip,
+		}
+	}
+        
+	sound MSR788UnEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/MSR788/UnEquip,
+		}
+	}
+            
+	sound MSR788Break
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/MSR788/Break,
+		}
+	}
+
+	sound MSR788Drop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/MSR788/Drop,
+		}
+	}
+
+	sound MSR788CartridgeFall
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/MSR788/CartridgeFall,
+		}
+	}
+}

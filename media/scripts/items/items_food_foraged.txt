@@ -1,0 +1,1019 @@
+module Base
+{
+	/******* FORAGED - EDIBLE PLANTS *******/
+	
+	item Acorn
+	{
+		DisplayName = Acorn,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Acorn,
+		EvolvedRecipe = Soup:10;Bread:10,
+		FoodType = Nut,
+		DaysFresh = 180,
+		DaysTotallyRotten = 365,
+		HungerChange = -10,
+		Calories = 55,
+		Carbohydrates = 12,
+		Lipids = 24,
+		Proteins = 6,
+		StaticModel = Acorn_Ground,
+		WorldStaticModel = Acorn_Ground,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		RemoveUnhappinessWhenCooked = true,
+		UnhappyChange = 10,
+		CookingSound = FryingFood,
+	}
+	
+	item BeautyBerry
+	{
+		DisplayName = Berries,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = BeautyBerries,
+		EvolvedRecipe = Cake:10;FruitSalad:10;Pancakes:10;Muffin:10;ConeIcecream:5;PieSweet:10;Oatmeal:5,
+		FoodType = Berry,
+		HerbalistType = Berry,
+		DaysFresh = 6,
+		DaysTotallyRotten = 10,
+		HungerChange = -10,
+		ThirstChange = -1,
+		Calories = 23,
+		Carbohydrates = 5,
+		Lipids = 0,
+		Proteins = 4,
+		CustomEatSound = EatingFruit,
+		StaticModel = BeautyBerries_Ground,
+		WorldStaticModel = BeautyBerries_Ground,
+	}
+	
+	item Dandelions
+	{
+		DisplayName = Dandelions,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Dandelions,
+		EvolvedRecipe = Pizza:5;HotDrink:2;Omelette:5;Sandwich:5;Salad:5;Soup:5;Burger:5,
+		FoodType = Greens,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -5,
+		Calories = 25,
+		Carbohydrates = 5,
+		Lipids = 0.5,
+		Proteins = 1.5,
+		StaticModel = Dandelion_Ground,
+		WorldStaticModel = Dandelion_Ground,
+		EvolvedRecipeName = Dandelion,
+		DaysFresh = 6,
+		DaysTotallyRotten = 10,
+	}
+
+	item FourLeafClover
+	{
+		DisplayName = Four Leaf Clover,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = FourLeafClover,
+		EvolvedRecipe = Salad:1;HotDrink:1;Soup:1,
+		Spice = TRUE,
+		FoodType = Herb,
+		HungerChange = -1,
+		Calories = 1,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = FourLeafClover,
+		WorldStaticModel = FourLeafClover,
+		EvolvedRecipeName = Clover,
+	}
+	
+	item GrapeLeaves
+	{
+		DisplayName = Grape Leaves,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = GrapeLeaves,
+		EvolvedRecipe = Soup:4;Stew:4;Salad:4;Rice:4;Pie:4;Sandwich:4,
+		FoodType = Vegetables,
+		HungerChange = -4,
+		Calories = 73,
+		Carbohydrates = 11,
+		Lipids = 2,
+		Proteins = 4,
+		WorldStaticModel = GrapeLeaves,
+		EvolvedRecipeName = Grape Leaf,
+		DaysFresh = 6,
+		DaysTotallyRotten = 10,
+	}
+	
+	item HollyBerry
+	{
+		DisplayName = Berries,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = HollyBerries,
+		EvolvedRecipe = Cake:10;FruitSalad:10;Pancakes:10;Muffin:10;ConeIcecream:5;PieSweet:10;Oatmeal:5,
+		FoodType = Berry,
+		HerbalistType = Berry,
+		DaysFresh = 6,
+		DaysTotallyRotten = 10,
+		HungerChange = -10,
+		ThirstChange = -1,
+		Calories = 23,
+		Carbohydrates = 5,
+		Lipids = 0,
+		Proteins = 4,
+		CustomEatSound = EatingFruit,
+		StaticModel = HollyBerries_Ground,
+		WorldStaticModel = HollyBerries_Ground,
+	}
+	
+	item LemonGrass
+	{
+		DisplayName = Lemongrass,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = LemonGrass,
+		EvolvedRecipe = Soup:1;Stew:1;Stir fry:1;Rice:1;HotDrink:1,
+		Spice = true,
+		ReduceFoodSickness = 12,
+		FoodType = Herb,
+		Tooltip = Tooltip_LemonGrass,
+		HungerChange = -1,
+		Calories = 0.1,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = LemonGrass,
+		WorldStaticModel = LemonGrass,
+		Tags = HerbalTea;isCutting;isSeed,
+		DaysFresh = 6,
+	}
+	
+	item Nettles
+	{
+		DisplayName = Nettles,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Nettle,
+		EvolvedRecipe = Salad:2;HotDrink:2;Soup:2,
+		FoodType = Herb,
+		Spice = true,
+		HungerChange = -4,
+		Calories = 50,
+		Carbohydrates = 15,
+		Lipids = 0,
+		Proteins = 2,
+		StaticModel = Nettles_Ground,
+		WorldStaticModel = Nettles_Ground,
+		EvolvedRecipeName = Nettle,
+	}
+	
+	item Rosehips
+	{
+		DisplayName = Rose Hips,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Rosehips,
+		EvolvedRecipe = HotDrink:2;Salad:3;FruitSalad:3;Soup:6;PieSweet:6;Bread:6,
+		Spice = true,
+		FoodType = Berry,
+		HungerChange = -6,
+		Calories = 81,
+		Carbohydrates = 19,
+		Lipids = 0,
+		Proteins = 2,
+		StaticModel = RoseHips,
+		WorldStaticModel = RoseHips,
+		EvolvedRecipeName = Rosehip,
+		Tags = HerbalTea,	
+	}
+	
+	item Thistle
+	{
+		DisplayName = Thistles,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Thistle,
+		EvolvedRecipe = Salad:2;HotDrink:2;Soup:2,
+		Spice = true,
+		FoodType = Herb,
+		HungerChange = -4,
+		Calories = 45,
+		Carbohydrates = 18,
+		Lipids = 0,
+		Proteins = 3,
+		StaticModel = Thistle_Ground,
+		WorldStaticModel = Thistle_Ground,
+		EvolvedRecipeName = Thistle,
+	}
+	
+	item Violets
+	{
+		DisplayName = Violets,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Violets,
+		EvolvedRecipe = Salad:2;HotDrink:2,
+		Spice = true,
+		FoodType = NoExplicit,
+		HungerChange = -2,
+		Calories = 27,
+		Carbohydrates = 7,
+		Lipids = 0,
+		Proteins = 1,
+		WorldStaticModel = Violets,
+		EvolvedRecipeName = Violet,
+	}
+	
+	item WinterBerry
+	{
+		DisplayName = Berries,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Winterberries,
+		EvolvedRecipe = Cake:10;FruitSalad:10;Pancakes:10;Muffin:10;ConeIcecream:5;PieSweet:10;Oatmeal:5,
+		FoodType = Berry,
+		HerbalistType = Berry,
+		DaysFresh = 6,
+		DaysTotallyRotten = 10,
+		HungerChange = -10,
+		ThirstChange = -1,
+		Calories = 23,
+		Carbohydrates = 5,
+		Lipids = 0,
+		Proteins = 4,
+		CustomEatSound = EatingFruit,
+		StaticModel = WinterBerries_Ground,
+		WorldStaticModel = WinterBerries_Ground,
+	}
+	
+	/******* FORAGED - MEDICINAL PLANTS *******/
+	
+	item BlackSage
+	{
+		DisplayName = Black Sage,
+		DisplayCategory = FirstAid,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = BlackSage,
+		PainReduction = 7,
+		EvolvedRecipe = HotDrink:1,
+		Spice = true,
+		FoodType = Herb,
+		Tooltip = Tooltip_BlackSage,
+		HungerChange = -1,
+		Calories = 0.1,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = BlackSage,
+		Tags = HerbalTea,
+		DaysFresh = 6,
+		DaysTotallyRotten = 10,
+	}
+
+	item BlackSageDried
+	{
+		DisplayName = Black Sage (Dried),
+		DisplayCategory = FirstAid,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = BlackSage_Dried,
+		PainReduction = 7,
+		EvolvedRecipe = HotDrink:1,
+		Spice = true,
+		FoodType = Herb,
+		Tooltip = Tooltip_BlackSage,
+		HungerChange = -1,
+		Calories = 0.1,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = BlackSage,
+		Tags = HerbalTea,
+	}
+	
+	item CommonMallow
+	{
+		DisplayName = Common Mallow,
+		DisplayCategory = FirstAid,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = CommonMallow,
+		EvolvedRecipe = HotDrink:1;Soup:1;Stew:1;Stir fry:1;Sandwich:1;Salad:1,
+		Spice = true,
+		FluReduction = 5,
+		Tooltip = Tooltip_Mallow,
+		HungerChange = -1,
+		Calories = 0.1,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = CommonMallow,
+		Tags = HerbalTea,	
+		FoodType = Herb,
+		DaysFresh = 6,
+		DaysTotallyRotten = 10,
+	}
+
+	item CommonMallowDried
+	{
+		DisplayName = Common Mallow (Dried),
+		DisplayCategory = FirstAid,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = CommonMallow_Dried,
+		EvolvedRecipe = HotDrink:1,
+		Spice = true,
+		FluReduction = 5,
+		Tooltip = Tooltip_Mallow,
+		HungerChange = -1,
+		Calories = 0.1,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = MedicinalHerbsLeafBundleDried,
+		Tags = HerbalTea;CommonMallow,
+		FoodType = Herb,
+	}
+	
+	item Ginseng
+	{
+		DisplayName = Ginseng,
+		DisplayCategory = FirstAid,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Ginseng,
+		EvolvedRecipe = HotDrink:1,
+		Spice = true,
+		FoodType = NoExplicit,
+		EnduranceChange = 2,
+		Tooltip = Tooltip_Ginseng,
+		HungerChange = -1,
+		Calories = 0.1,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = Ginseng,
+		WorldStaticModel = Ginseng,
+		Tags = HerbalTea,
+	}
+	
+    item WildGarlic2
+    {
+		DisplayCategory = FirstAid,
+		Weight = 0.1,
+		Type = Food,
+		DisplayName = Wild Garlic,
+		EatType = EatSmall,
+		Icon = WildGarlic,
+		EvolvedRecipe = Pizza:1;Omelette:1;Soup:1;Stew:1;Pie:1;Stir fry:1;Sandwich:1;Burger:1;Hotdog:1;Salad:1;Rice:1;Pasta:1;Taco:1;Burrito:1;Salad:1;Toast:1,
+		FoodType = Herb,
+		Spice = true,
+		HungerChange = -1,
+		Calories = 0.1,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		Tooltip = Tooltip_Garlic,
+		WorldStaticModel = MedicinalHerbsLeafBundle,
+		Tags = HerbalTea;isCutting;isSeed;WildGarlic,
+		DaysFresh = 6,
+		DaysTotallyRotten = 10,
+    }
+
+    item WildGarlicDried
+    {
+		DisplayCategory = FirstAid,
+		Weight = 0.1,
+		Type = Food,
+		DisplayName = Wild Garlic,
+		EatType = EatSmall,
+		Icon = WildGarlic,
+		EvolvedRecipe = Pizza:1;Omelette:1;Soup:1;Stew:1;Pie:1;Stir fry:1;Sandwich:1;Burger:1;Hotdog:1;Salad:1;Rice:1;Pasta:1;Taco:1;Burrito:1;Salad:1;Toast:1,
+		FoodType = Herb,
+		Spice = true,
+		HungerChange = -1,
+		Calories = 0.1,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		Tooltip = Tooltip_Garlic,
+		WorldStaticModel = MedicinalHerbsLeafBundleDried,
+		Tags = HerbalTea;WildGarlic,
+    }
+	
+	/******* FORAGED - INSECTS *******/
+	
+	item AmericanLadyCaterpillar
+	{
+		DisplayName = Caterpillar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Insect_AmericanLadyCaterpillar,
+		IsCookable = TRUE,
+		/*EvolvedRecipe = AddBaitToChum:5,*/
+		EvolvedRecipe = AddBaitToChum:1,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		/*HungerChange = -5,*/
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 27,
+		Carbohydrates = 3,
+		Lipids = 20.24,
+		Proteins = 27.55,
+		FishingLure = true,
+		StaticModel = AmericanLadyCaterpillar_Ground,
+		WorldStaticModel = AmericanLadyCaterpillar_Ground,
+		/*Tags = HideUncooked,*/
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item BandedWoolyBearCaterpillar
+	{
+		DisplayName = Caterpillar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Insect_BandedWoolyBearCaterpillar,
+		IsCookable = TRUE,
+		/*EvolvedRecipe = AddBaitToChum:5,*/
+		EvolvedRecipe = AddBaitToChum:1,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		/*HungerChange = -5,*/
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 27,
+		Carbohydrates = 3,
+		Lipids = 20.24,
+		Proteins = 27.55,
+		FishingLure = true,
+		StaticModel = BandedWoolyBearCaterpillar_Ground,
+		WorldStaticModel = BandedWoolyBearCaterpillar_Ground,
+		/*Tags = HideUncooked,*/
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item Centipede
+	{
+		DisplayName = Centipede,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Insect_Centipede1,
+		DangerousUncooked = TRUE,
+		IsCookable = TRUE,
+		/*EvolvedRecipe = AddBaitToChum:5,*/
+		EvolvedRecipe = AddBaitToChum:1,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		/*HungerChange = -5,*/
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 60,
+		Carbohydrates = 3.5,
+		Lipids = 6.5,
+		Proteins = 15.21,
+		FishingLure = true,
+		StaticModel = Insect_Centipede_Ground,
+		WorldStaticModel = Insect_Centipede_Ground,
+		/*Tags = HideUncooked,*/
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item Centipede2
+	{
+		DisplayName = Centipede,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Insect_Centipede2,
+		DangerousUncooked = TRUE,
+		IsCookable = TRUE,
+		/*EvolvedRecipe = AddBaitToChum:5,*/
+		EvolvedRecipe = AddBaitToChum:1,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		/*HungerChange = -5,*/
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 60,
+		Carbohydrates = 3.5,
+		Lipids = 6.5,
+		Proteins = 15.21,
+		FishingLure = true,
+		StaticModel = Insect_Centipede2_Ground,
+		WorldStaticModel = Insect_Centipede2_Ground,
+		/*Tags = HideUncooked,*/
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item Cockroach
+	{
+		DisplayName = Cockroach,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Cockroach,
+		IsCookable = TRUE,
+		/*EvolvedRecipe = AddBaitToChum:5,*/
+		EvolvedRecipe = AddBaitToChum:1,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		/*HungerChange = -5,*/
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 30,
+		Carbohydrates = 1.27,
+		Lipids = 3.9,
+		Proteins = 7.41,
+		FishingLure = true,
+		StaticModel = Cockroach_Ground,
+		WorldStaticModel = Cockroach_Ground,
+		Tags = Vermin,
+		CookingSound = FryingFood,
+		/*Tags = HideUncooked,*/
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item Cricket
+	{
+		DisplayName = Cricket,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Cricket,
+		IsCookable = TRUE,
+		/*EvolvedRecipe = AddBaitToChum:5,*/
+		EvolvedRecipe = AddBaitToChum:1,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		/*HungerChange = -5,*/
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 20,
+		Carbohydrates = 1.34,
+		Lipids = 1.32,
+		Proteins = 3.6,
+		FishingLure = true,
+		StaticModel = Cricket_Ground,
+		WorldStaticModel = Cricket_Ground,
+		CookingSound = FryingFood,
+		/*Tags = HideUncooked,*/
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item Grasshopper
+	{
+		DisplayName = Grasshopper,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Grasshopper,
+		IsCookable = TRUE,
+		/*EvolvedRecipe = AddBaitToChum:5,*/
+		EvolvedRecipe = AddBaitToChum:1,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		/*HungerChange = -5,*/
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 25,
+		Carbohydrates = 3,
+		Lipids = 0.24,
+		Proteins = 5.55,
+		FishingLure = true,
+		StaticModel = Grasshopper_Ground,
+		WorldStaticModel = Grasshopper_Ground,
+		CookingSound = FryingFood,
+		/*Tags = HideUncooked,*/
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item Ladybug
+	{
+		DisplayName = Ladybug,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.01,
+		Icon = Insect_Ladybug,
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 1.5,
+		Carbohydrates = 0,
+		Lipids = 0.05,
+		Proteins = 0.25,
+		WorldStaticModel = Ladybug,
+	}
+
+	item Maggots
+	{
+		DisplayName = Maggots,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.01,
+		Icon = Insect_Maggots,
+		/*EvolvedRecipe = AddBaitToChum:3,*/
+		EvolvedRecipe = AddBaitToChum:1,
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 1.5,
+		Carbohydrates = 0,
+		Lipids = 0.05,
+		Proteins = 0.25,
+		FishingLure = true,
+		WorldStaticModel = Maggots_Ground,
+		Tags = Vermin,
+		IsCookable = TRUE,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		CookingSound = FryingFood,
+		/*Tags = HideUncooked,*/
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item Millipede
+	{
+		DisplayName = Millipede,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Insect_Millipede1,
+		DangerousUncooked = TRUE,
+		IsCookable = TRUE,
+		/*EvolvedRecipe = AddBaitToChum:5,*/
+		EvolvedRecipe = AddBaitToChum:1,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		/*HungerChange = -5,*/
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 60,
+		Carbohydrates = 3.5,
+		Lipids = 6.5,
+		Proteins = 15.21,
+		FishingLure = true,
+		StaticModel = Insect_Millipede_Ground,
+		WorldStaticModel = Insect_Millipede_Ground,
+		CookingSound = FryingFood,
+		PoisonPower = 1,
+		/*Tags = HideUncooked,*/
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item Millipede2
+	{
+		DisplayName = Millipede,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Insect_Millipede2,
+		DangerousUncooked = TRUE,
+		IsCookable = TRUE,
+		/*EvolvedRecipe = AddBaitToChum:5,*/
+		EvolvedRecipe = AddBaitToChum:1,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		/*HungerChange = -5,*/
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 60,
+		Carbohydrates = 3.5,
+		Lipids = 6.5,
+		Proteins = 15.21,
+		FishingLure = true,
+		StaticModel = Insect_Millipede2_Ground,
+		WorldStaticModel = Insect_Millipede2_Ground,
+		CookingSound = FryingFood,
+		PoisonPower = 1,
+		/*Tags = HideUncooked,*/
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item MonarchCaterpillar
+	{
+		DisplayName = Caterpillar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Insect_MonarchrCaterpillar,
+		IsCookable = TRUE,
+		/*EvolvedRecipe = AddBaitToChum:5,*/
+		EvolvedRecipe = AddBaitToChum:1,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		/*HungerChange = -5,*/
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 27,
+		Carbohydrates = 3,
+		Lipids = 20.24,
+		Proteins = 27.55,
+		FishingLure = true,
+		StaticModel = MonarchrCaterpillar_Ground,
+		WorldStaticModel = MonarchrCaterpillar_Ground,
+		CookingSound = FryingFood,
+		PoisonPower = 1,
+		/*Tags = HideUncooked,*/
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item Pillbug
+	{
+		DisplayName = Pillbug,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.01,
+		Icon = Insect_Pillbug,
+		EvolvedRecipe = AddBaitToChum:1,
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 1.5,
+		Carbohydrates = 0,
+		Lipids = 0.05,
+		Proteins = 0.25,
+		FishingLure = true,
+		StaticModel = Insect_Pillbug_Ground,
+		WorldStaticModel = Insect_Pillbug_Ground,
+		IsCookable = TRUE,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		CookingSound = FryingFood,
+		/*Tags = HideUncooked,*/
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item SawflyLarva
+	{
+		DisplayName = Caterpillar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Insect_SawflyLarva,
+		IsCookable = TRUE,
+		/*EvolvedRecipe = AddBaitToChum:5,*/
+		EvolvedRecipe = AddBaitToChum:1,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		/*HungerChange = -5,*/
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 27,
+		Carbohydrates = 3,
+		Lipids = 20.24,
+		Proteins = 27.55,
+		FishingLure = true,
+		StaticModel = SawflyLarva_Ground,
+		WorldStaticModel = SawflyLarva_Ground,
+		CookingSound = FryingFood,
+		/*Tags = HideUncooked,*/
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item SilkMothCaterpillar
+	{
+		DisplayName = Caterpillar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Insect_SilkMothCaterpillar,
+		IsCookable = TRUE,
+		/*EvolvedRecipe = AddBaitToChum:5,*/
+		EvolvedRecipe = AddBaitToChum:1,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		/*HungerChange = -5,*/
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 27,
+		Carbohydrates = 3,
+		Lipids = 20.24,
+		Proteins = 27.55,
+		FishingLure = true,
+		StaticModel = SilkMothCaterpillar_Ground,
+		WorldStaticModel = SilkMothCaterpillar_Ground,
+		CookingSound = FryingFood,
+		/*Tags = HideUncooked,*/
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item Slug
+	{
+		DisplayName = Slug,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Slug1,
+		DangerousUncooked = TRUE,
+		IsCookable = TRUE,
+		/*EvolvedRecipe = AddBaitToChum:6,*/
+		EvolvedRecipe = AddBaitToChum:1,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		/*HungerChange = -5,*/
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 90,
+		Carbohydrates = 2.11,
+		Lipids = 1.9,
+		Proteins = 17.41,
+		FishingLure = true,
+		StaticModel = Slug1_Ground,
+		WorldStaticModel = Slug1_Ground,
+		CookingSound = FryingFood,
+		/*Tags = HideUncooked,*/
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item Slug2
+	{
+		DisplayName = Slug,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Slug2,
+		DangerousUncooked = TRUE,
+		IsCookable = TRUE,
+		/*EvolvedRecipe = AddBaitToChum:6,*/
+		EvolvedRecipe = AddBaitToChum:1,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		/*HungerChange = -5,*/
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 90,
+		Carbohydrates = 2.11,
+		Lipids = 1.9,
+		Proteins = 17.41,
+		FishingLure = true,
+		StaticModel = Slug2_Ground,
+		WorldStaticModel = Slug2_Ground,
+		CookingSound = FryingFood,
+		/*Tags = HideUncooked,*/
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item Snail
+	{
+		DisplayName = Snail,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Snail,
+		DangerousUncooked = TRUE,
+		IsCookable = TRUE,
+		/*EvolvedRecipe = AddBaitToChum:6,*/
+		EvolvedRecipe = AddBaitToChum:1;Stir fry:1,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		/*HungerChange = -5,*/
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 90,
+		Carbohydrates = 2.11,
+		Lipids = 1.9,
+		Proteins = 17.41,
+		FishingLure = true,
+		StaticModel = Snail_Ground,
+		WorldStaticModel = Snail_Ground,
+		CookingSound = FryingFood,
+		/*Tags = HideUncooked,*/
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item SwallowtailCaterpillar
+	{
+		DisplayName = Caterpillar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Insect_SwallowtailCaterpillar,
+		IsCookable = TRUE,
+		/*EvolvedRecipe = AddBaitToChum:5,*/
+		EvolvedRecipe = AddBaitToChum:1,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		/*HungerChange = -5,*/
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 27,
+		Carbohydrates = 3,
+		Lipids = 20.24,
+		Proteins = 27.55,
+		FishingLure = true,
+		StaticModel = SwallowtailCaterpillar_Ground,
+		WorldStaticModel = SwallowtailCaterpillar_Ground,
+		CookingSound = FryingFood,
+		PoisonPower = 1,
+		/*Tags = HideUncooked,*/
+		FoodType = Insect,
+		Tags = NoCookingXP,
+	}
+	
+	item Termites
+	{
+		DisplayName = Termites,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.01,
+		Icon = Insect_Termite,
+		IsCookable = TRUE,
+		EvolvedRecipe = AddBaitToChum:1,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 2.5,
+		Carbohydrates = 0,
+		Lipids = 0.5,
+		Proteins = 0.5,
+		FishingLure = true,
+		StaticModel = Insect_Termite_Ground,
+		WorldStaticModel = Insect_Termite_Ground,
+		CookingSound = FryingFood,
+		/*Tags = HideUncooked,*/
+		FoodType = Insect,
+	}
+	
+	item Worm
+	{
+		DisplayName = Worm,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.01,
+		Icon = Worm,
+		/*EvolvedRecipe = AddBaitToChum:5,*/
+		EvolvedRecipe = AddBaitToChum:1,
+		/*HungerChange = -2,*/
+		/*hunger value deliberately nerfed*/
+		HungerChange = -1,
+		UnhappyChange = 20,
+		Calories = 3,
+		Carbohydrates = 0,
+		Lipids = 0.1,
+		Proteins = 0.5,
+		FishingLure = true,
+		StaticModel = Worm_Ground,
+		WorldStaticModel = Worm_Ground,
+		IsCookable = TRUE,
+		MinutesToCook = 5,
+		MinutesToBurn = 25,
+		CookingSound = FryingFood,
+		/*Tags = CantCompost;HideUncooked,*/
+		/* worms rot now because of a worm nerf */
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		Tags = CantCompost;NoCookingXP,
+		FoodType = Insect,
+	}
+}

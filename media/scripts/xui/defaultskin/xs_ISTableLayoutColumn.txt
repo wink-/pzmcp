@@ -1,0 +1,18 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISTableLayoutColumn
+        {
+            isAutoFill          = false,
+            minimumWidth        = 0,
+            backgroundColor     = C_BlackNoAlpha,
+            borderColor         = C_BlackNoAlpha,
+        }
+
+        ISTableLayoutColumn S_TableLayoutColumn_AutoFill
+        {
+            isAutoFill          = true,
+        }
+    }
+}

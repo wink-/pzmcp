@@ -1,0 +1,68 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Furnace_III
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Blast Furnace,
+            Icon                = Item_Bellows_Large,
+        }
+    }
+
+    entity Blast_Furnace
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Furnace_III,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = PrimitiveFurnace;Furnace;AdvancedFurnace,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 150,
+        	skillBaseHealth = 50,
+
+            face single
+            {
+                layer
+                {
+                    row = crafted_02_11 crafted_02_9,
+                   /* row = crafted_02_8 crafted_02_10,
+                    row = crafted_02_16 crafted_02_19,*/
+
+                    row = crafted_03_8 crafted_03_10,
+                    row = crafted_02_17 crafted_02_18,
+                }
+            }
+          /*  face E
+            {
+                layer
+                {
+                    row = crafted_01_34,
+                }
+            }*/
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = Test,
+            time          = 50,
+            category      = Blacksmithing,
+            ToolTip       = Tooltip_craft_furnaceIIIDesc,
+            inputs
+            {
+                item 1  tags[MasonsTrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 40 [Base.StoneBlock],
+                item 1 tags[Concrete] flags[DontRecordInput],
+                item 1 [Base.LargeBellows],
+            }
+        }
+    }
+}

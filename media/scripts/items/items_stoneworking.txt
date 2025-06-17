@@ -1,0 +1,25 @@
+module Base
+{
+	item CrushedLimestone
+	{
+		DisplayName = Limestone Pieces,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LimestonePile,
+		WorldStaticModel = LimestoneCrushed,
+		Tags = Limestone,
+	}
+
+	item Quicklime
+	{
+		DisplayName = Quicklime,
+		DisplayCategory = Material,
+		Type    = Normal,
+		Weight  = 0.3,
+		Icon    = Quicklime,
+		WorldStaticModel = Quicklime,
+		Tooltip = Tooltip_item_Quicklime,
+	}
+
+}

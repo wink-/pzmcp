@@ -1,0 +1,21 @@
+module Base
+{
+	sound VehicleEngineStepVan
+	{
+		category = Vehicle,
+		master = VehicleEngine,
+		clip
+		{
+			event = Vehicle/Van/Engine,
+		}
+	}
+
+	sound VehicleIgnitionFailStepVan
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Van/IgnitionFail,
+		}
+	}
+}

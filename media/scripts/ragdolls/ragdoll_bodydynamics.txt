@@ -1,0 +1,135 @@
+module Base 
+{
+    ragdoll BODYPART_LEFT_UPPER_ARM_bodydynamics
+    {
+        part = 7,
+        linearDamping = 0.05,
+        angularDamping = 0.989,
+        deactivationTime = 0.8,
+        linearSleepingThreshold = 1.6,
+        angularSleepingThreshold = 2.5,
+        friction = 1.5,
+        rollingFriction = 0.5,
+    }
+
+    ragdoll BODYPART_PELVIS_bodydynamics
+    {
+        part = 0,
+        linearDamping = 0.05,
+        angularDamping = 0.85,
+        deactivationTime = 0.8,
+        linearSleepingThreshold = 1.6,
+        angularSleepingThreshold = 2.5,
+        friction = 1.5,
+        rollingFriction = 0.5,
+    }
+
+    ragdoll BODYPART_SPINE_bodydynamics
+    {
+        part = 1,
+        linearDamping = 0.05,
+        angularDamping = 0.85,
+        deactivationTime = 0.8,
+        linearSleepingThreshold = 1.6,
+        angularSleepingThreshold = 2.5,
+        friction = 1.5,
+        rollingFriction = 0.5,
+    }
+
+    ragdoll BODYPART_RIGHT_UPPER_LEG_bodydynamics
+    {
+        part = 5,
+        linearDamping = 0.05,
+        angularDamping = 0.85,
+        deactivationTime = 0.8,
+        linearSleepingThreshold = 1.6,
+        angularSleepingThreshold = 2.5,
+        friction = 1.5,
+        rollingFriction = 0.5,
+    }
+
+    ragdoll BODYPART_LEFT_LOWER_LEG_bodydynamics
+    {
+        part = 4,
+        linearDamping = 0.05,
+        angularDamping = 0.85,
+        deactivationTime = 0.8,
+        linearSleepingThreshold = 1.6,
+        angularSleepingThreshold = 2.5,
+        friction = 1.5,
+        rollingFriction = 0.5,
+    }
+
+    ragdoll BODYPART_RIGHT_UPPER_ARM_bodydynamics
+    {
+        part = 9,
+        linearDamping = 0.05,
+        angularDamping = 0.989,
+        deactivationTime = 0.8,
+        linearSleepingThreshold = 1.6,
+        angularSleepingThreshold = 2.5,
+        friction = 1.5,
+        rollingFriction = 0.5,
+    }
+
+    ragdoll BODYPART_HEAD_bodydynamics
+    {
+        part = 2,
+        linearDamping = 0.05,
+        angularDamping = 0.85,
+        deactivationTime = 0.8,
+        linearSleepingThreshold = 1.6,
+        angularSleepingThreshold = 2.5,
+        friction = 1.5,
+        rollingFriction = 0.5,
+    }
+
+    ragdoll BODYPART_LEFT_LOWER_ARM_bodydynamics
+    {
+        part = 8,
+        linearDamping = 0.05,
+        angularDamping = 0.85,
+        deactivationTime = 0.8,
+        linearSleepingThreshold = 1.6,
+        angularSleepingThreshold = 2.5,
+        friction = 1.5,
+        rollingFriction = 0.5,
+    }
+
+    ragdoll BODYPART_RIGHT_LOWER_ARM_bodydynamics
+    {
+        part = 10,
+        linearDamping = 0.05,
+        angularDamping = 0.85,
+        deactivationTime = 0.8,
+        linearSleepingThreshold = 1.6,
+        angularSleepingThreshold = 2.5,
+        friction = 1.5,
+        rollingFriction = 0.5,
+    }
+
+    ragdoll BODYPART_RIGHT_LOWER_LEG_bodydynamics
+    {
+        part = 6,
+        linearDamping = 0.05,
+        angularDamping = 0.85,
+        deactivationTime = 0.8,
+        linearSleepingThreshold = 1.6,
+        angularSleepingThreshold = 2.5,
+        friction = 1.5,
+        rollingFriction = 0.5,
+    }
+
+    ragdoll BODYPART_LEFT_UPPER_LEG_bodydynamics
+    {
+        part = 3,
+        linearDamping = 0.05,
+        angularDamping = 0.85,
+        deactivationTime = 0.8,
+        linearSleepingThreshold = 1.6,
+        angularSleepingThreshold = 2.5,
+        friction = 1.5,
+        rollingFriction = 0.5,
+    }
+
+}

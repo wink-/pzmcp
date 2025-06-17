@@ -1,0 +1,36 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISLabel
+        {
+            font                = UIFont.Small,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+            left                = true,
+            /* optional: name = nil, */
+            textColor           = C_Text,
+            tooltip             = nil,
+            center              = false,
+            translation         = nil,
+        }
+
+        ISLabel S_Label_EntityHeaderTitle
+        {
+            font                = UIFont.Medium,
+            left                = true,
+            textColor           = C_TextEntityHeader,
+        }
+
+        ISLabel S_Label_ComponentHeaderTitle
+        {
+            font                = UIFont.Small,
+            left                = true,
+            textColor           = C_TextCompHeader,
+        }
+    }
+}

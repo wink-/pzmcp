@@ -1,0 +1,1151 @@
+module Base
+{
+    craftRecipe ExtractIronBloom
+    {
+        time        = 200,
+        tags = PrimitiveFurnace,
+        category = Blacksmithing,
+
+        inputs
+        {
+            item 8 tags[Charcoal],
+            item 1 [Base.IronOre_Crushed],
+        }
+        outputs
+        {
+            item 1 Base.IronBloom,
+        }
+    }
+
+    craftRecipe SmeltCopperOre
+    {
+        time        = 200,
+        tags = PrimitiveFurnace,
+        category = Blacksmithing,
+
+        inputs
+        {
+            item 4 tags[Charcoal],
+            item 1 [Base.CopperOre_Crushed],
+        }
+        outputs
+        {
+            item 10 Base.CopperScrap,
+        }
+    }
+
+    craftRecipe ExtractIronFromIronBloom
+    {
+         time        = 200,
+         tags = PrimitiveForge,
+         category = Blacksmithing,
+         inputs
+         {
+             item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+             item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeLight],
+             item 18 tags[Charcoal],
+             item 1 [Base.IronBloom] mode:destroy flags[ItemCount;AllowDestroyedItem],
+             /* energy 130 [Thermal] mode:keep,*/
+         }
+         outputs
+         {
+                item 12 Base.IronChunk,
+         }
+    }
+
+    craftRecipe ExtractIronFromIronOre
+    {
+        time        = 200,
+        tags = Furnace,
+        category = Blacksmithing,
+        OnCreate = Recipe.OnCreate.SmeltIronOrSteelIngot,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible;Base.CeramicCrucible_Steel] mode:destroy flags[NotFull;ItemCount] mappers[SmeltMapper],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 18 tags[Charcoal],
+            item 1 [Base.IronOre_Crushed;Base.IronBloom] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 mapper:SmeltMapper,
+        }
+        itemMapper SmeltMapper
+        {
+
+            default = Base.CeramicCrucible_Steel,
+        }
+    }
+
+    craftRecipe ExtractIronFromLargeItem
+    {
+        time        = 200,
+        tags = PrimitiveFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 6 tags[Charcoal],
+            item 1 tags[SmeltableIronLarge] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 4 Base.IronChunk,
+        }
+    }
+
+    craftRecipe ExtractIronFromMediumItem
+    {
+        time        = 200,
+        tags = PrimitiveFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 3 tags[Charcoal],
+            item 1 tags[SmeltableIronMedium] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 2 Base.IronChunk,
+        }
+    }
+
+    craftRecipe ExtractIronFromMediumPlusItem
+    {
+        time        = 200,
+        tags = PrimitiveFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 4 tags[Charcoal],
+            /*item 1 [Base.ClayIngotMold],*/
+            item 1 tags[SmeltableIronMediumPlus] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 3 Base.IronChunk,
+        }
+    }
+
+    craftRecipe ExtractIronFromSmallItem
+    {
+        time        = 200,
+        tags = PrimitiveFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            /*item 1 [Base.ClayIngotMold],*/
+            item 1 tags[Charcoal],
+            item 1 tags[SmeltableIronSmall] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronChunk,
+        }
+    }
+
+    craftRecipe ExtractIronFromSmallerItems
+    {
+        time        = 200,
+        tags = PrimitiveFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            /*item 1 [Base.ClayIngotMold],*/
+            item 1 tags[Charcoal],
+            item 10 [Base.FishingHook_Forged;2:Base.ForkForged;5:Base.IronPiece;Base.Nails;50:Base.Needle_Forged;2:Base.SpoonForged] mode:destroy flags[ItemCount;AllowDestroyedItem;IsExclusive],
+        }
+        outputs
+        {
+            item 1 Base.IronChunk,
+        }
+    }
+
+    craftRecipe ExtractSteelFromLargeItem
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 9 tags[Charcoal],
+            /*item 1 [Base.ClayIngotMold],*/
+            item 1 tags[SmeltableSteelLarge] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 4 Base.SteelChunk,
+        }
+    }
+
+    craftRecipe ExtractSteelFromMediumItem
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 5 tags[Charcoal],
+            /*item 1 [Base.ClayIngotMold],*/
+            item 1 tags[SmeltableSteelMedium] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 2 Base.SteelChunk,
+        }
+    }
+
+    craftRecipe ExtractSteelFromMediumPlusItem
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 6 tags[Charcoal],
+            /*item 1 [Base.ClayIngotMold],*/
+            item 1 tags[SmeltableSteelMediumPlus] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 3 Base.SteelChunk,
+        }
+    }
+
+    craftRecipe ExtractSteelFromSmallItem
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            /*item 1 [Base.ClayIngotMold],*/
+            item 2 tags[Charcoal],
+            item 1 tags[SmeltableSteelSmall] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SteelChunk,
+        }
+    }
+
+    craftRecipe ExtractSteelFromLargeIronItem
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 9 [Base.Coke],
+            item 9 [Base.CrushedLimestone],
+            /*item 1 [Base.ClayIngotMold],*/
+            item 1 tags[SmeltableIronLarge] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 4 Base.SteelChunk,
+        }
+    }
+
+    craftRecipe ExtractSteelFromMediumIronItem
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 5 [Base.Coke],
+            item 5 [Base.CrushedLimestone],
+            /*item 1 [Base.ClayIngotMold],*/
+            item 1 tags[SmeltableIronMedium] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 2 Base.SteelChunk,
+        }
+    }
+
+    craftRecipe ExtractSteelFromMediumPlusIronItem
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 6 [Base.Coke],
+            item 6 [Base.CrushedLimestone],
+            /*item 1 [Base.ClayIngotMold],*/
+            item 1 tags[SmeltableIronMediumPlus] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 3 Base.SteelChunk,
+        }
+    }
+
+    craftRecipe ExtractSteelFromSmallIronItem
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            /*item 1 [Base.ClayIngotMold],*/
+            item 2 [Base.Coke],
+            item 2 [Base.CrushedLimestone],
+            item 1 tags[SmeltableIronSmall] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SteelChunk,
+        }
+    }
+
+    craftRecipe ExtractSteelFromSmallerIronItems
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            /*item 1 [Base.ClayIngotMold],*/
+            item 2 [Base.Coke],
+            item 2 [Base.CrushedLimestone],
+            item 10 [Base.FishingHook_Forged;2:Base.ForkForged;5:Base.IronPiece;Base.Nails;50:Base.Needle_Forged;2:Base.SpoonForged] mode:destroy flags[ItemCount;AllowDestroyedItem;IsExclusive],
+        }
+        outputs
+        {
+            item 1 Base.SteelChunk,
+        }
+    }
+
+    craftRecipe SmeltLargeIronItem
+    {
+        time        = 200,
+        tags = Furnace,
+        category = Blacksmithing,
+        OnCreate = Recipe.OnCreate.SmeltIronOrSteelLarge,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible;Base.CeramicCrucibleSmall;Base.CeramicCrucible_Iron;Base.CeramicCrucibleSmall_Iron] mode:destroy flags[NotFull;ItemCount] mappers[SmeltMapper],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 4 tags[Charcoal],
+            item 1 tags[SmeltableIronLarge] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 mapper:SmeltMapper,
+        }
+        itemMapper SmeltMapper
+        {
+            Base.CeramicCrucibleSmall_Iron = Base.CeramicCrucibleSmall,
+            Base.CeramicCrucibleSmall_Iron = Base.CeramicCrucibleSmall_Iron,
+
+            default = Base.CeramicCrucible_Iron,
+        }
+    }
+
+    craftRecipe SmeltMediumIronItem
+    {
+        time        = 200,
+        tags = Furnace,
+        category = Blacksmithing,
+        OnCreate = Recipe.OnCreate.SmeltIronOrSteelMedium,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible;Base.CeramicCrucibleSmall;Base.CeramicCrucible_Iron;Base.CeramicCrucibleSmall_Iron] mode:destroy flags[NotFull;ItemCount] mappers[SmeltMapper],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 2 tags[Charcoal],
+            item 1 tags[SmeltableIronMedium] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 mapper:SmeltMapper,
+        }
+        itemMapper SmeltMapper
+        {
+            Base.CeramicCrucibleSmall_Iron = Base.CeramicCrucibleSmall,
+            Base.CeramicCrucibleSmall_Iron = Base.CeramicCrucibleSmall_Iron,
+
+            default = Base.CeramicCrucible_Iron,
+        }
+    }
+
+    craftRecipe SmeltMediumPlusIronItem
+    {
+        time        = 200,
+        tags = Furnace,
+        category = Blacksmithing,
+        OnCreate = Recipe.OnCreate.SmeltIronOrSteelMediumPlus,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible;Base.CeramicCrucibleSmall;Base.CeramicCrucible_Iron;Base.CeramicCrucibleSmall_Iron] mode:destroy flags[NotFull;ItemCount] mappers[SmeltMapper],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 2 tags[Charcoal],
+            item 1 tags[SmeltableIronMediumPlus] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 mapper:SmeltMapper,
+        }
+        itemMapper SmeltMapper
+        {
+            Base.CeramicCrucibleSmall_Iron = Base.CeramicCrucibleSmall,
+            Base.CeramicCrucibleSmall_Iron = Base.CeramicCrucibleSmall_Iron,
+
+            default = Base.CeramicCrucible_Iron,
+        }
+    }
+
+    craftRecipe SmeltSmallIronItem
+    {
+        time        = 200,
+        tags = Furnace,
+        category = Blacksmithing,
+        OnCreate = Recipe.OnCreate.SmeltIronOrSteelSmall,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible;Base.CeramicCrucibleSmall;Base.CeramicCrucible_Iron;Base.CeramicCrucibleSmall_Iron] mode:destroy flags[NotFull;ItemCount] mappers[SmeltMapper],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 1 tags[Charcoal],
+            item 1 tags[SmeltableIronSmall] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 mapper:SmeltMapper,
+        }
+        itemMapper SmeltMapper
+        {
+            Base.CeramicCrucibleSmall_Iron = Base.CeramicCrucibleSmall,
+            Base.CeramicCrucibleSmall_Iron = Base.CeramicCrucibleSmall_Iron,
+
+            default = Base.CeramicCrucible_Iron,
+        }
+    }
+
+    craftRecipe SmeltSmallerIronItem
+    {
+        time        = 200,
+        tags = Furnace,
+        category = Blacksmithing,
+        OnCreate = Recipe.OnCreate.SmeltIronOrSteelSmall,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible;Base.CeramicCrucibleSmall;Base.CeramicCrucible_Iron;Base.CeramicCrucibleSmall_Iron] mode:destroy flags[NotFull;ItemCount] mappers[SmeltMapper],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 1 tags[Charcoal],
+            item 10 [Base.FishingHook_Forged;2:Base.ForkForged;5:Base.IronPiece;Base.Nails;50:Base.Needle_Forged;2:Base.SpoonForged] mode:destroy flags[ItemCount;AllowDestroyedItem;IsExclusive],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 mapper:SmeltMapper,
+        }
+        itemMapper SmeltMapper
+        {
+            Base.CeramicCrucibleSmall_Iron = Base.CeramicCrucibleSmall,
+            Base.CeramicCrucibleSmall_Iron = Base.CeramicCrucibleSmall_Iron,
+
+            default = Base.CeramicCrucible_Iron,
+        }
+    }
+
+    craftRecipe SmeltSmallerSteelItem
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        OnCreate = Recipe.OnCreate.SmeltIronOrSteelSmall,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible;Base.CeramicCrucibleSmall;Base.CeramicCrucible_Steel;Base.CeramicCrucibleSmall_Steel] mode:destroy flags[NotFull;ItemCount] mappers[SmeltMapper],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 1 tags[Charcoal],
+            item 10 [Base.FishingHook;2:Base.Fork;5:Base.SteelPiece;Base.Screws;50:Base.Needle;2:Base.Spoon;2:Base.ButterKnife;Base.TinCanEmpty] mode:destroy flags[ItemCount;AllowDestroyedItem;IsExclusive],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 mapper:SmeltMapper,
+        }
+        itemMapper SmeltMapper
+        {
+            Base.CeramicCrucibleSmall_Steel = Base.CeramicCrucibleSmall,
+            Base.CeramicCrucibleSmall_Steel = Base.CeramicCrucibleSmall_Steel,
+
+            default = Base.CeramicCrucible_Steel,
+        }
+    }
+
+    craftRecipe CastIronBar
+    {
+        time        = 200,
+        tags = Furnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 4 [Base.CeramicCrucible_Iron;Base.CeramicCrucibleSmall_Iron],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 4 tags[Charcoal],
+            item 1 [Base.ClayBarMold;Base.IronBarMold;Base.SteelBarMold] mode:keep,
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronBar,
+        }
+    }
+
+    craftRecipe CastIronIngot
+    {
+        time        = 200,
+        tags = Furnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 12 [Base.CeramicCrucible_Iron;Base.CeramicCrucibleSmall_Iron],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 12 tags[Charcoal],
+            item 1 [Base.ClayIngotMold;Base.IronIngotMold;Base.SteelIngotMold] mode:keep,
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronIngot,
+        }
+    }
+
+    craftRecipe SmeltLargeSteelItem
+    {
+        time        = 200,
+        tags = Furnace,
+        category = Blacksmithing,
+        OnCreate = Recipe.OnCreate.SmeltIronOrSteelLarge,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible;Base.CeramicCrucibleSmall;Base.CeramicCrucible_Steel;Base.CeramicCrucibleSmall_Steel] mode:destroy flags[NotFull;ItemCount] mappers[SmeltMapper],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 4 tags[Charcoal],
+            item 1 tags[SmeltableSteelLarge] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 mapper:SmeltMapper,
+        }
+        itemMapper SmeltMapper
+        {
+            Base.CeramicCrucibleSmall_Steel = Base.CeramicCrucibleSmall,
+            Base.CeramicCrucibleSmall_Steel = Base.CeramicCrucibleSmall_Steel,
+
+            default = Base.CeramicCrucible_Steel,
+        }
+    }
+
+    craftRecipe SmeltMediumSteelItem
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        OnCreate = Recipe.OnCreate.SmeltIronOrSteelMedium,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible;Base.CeramicCrucibleSmall;Base.CeramicCrucible_Steel;Base.CeramicCrucibleSmall_Steel] mode:destroy flags[NotFull;ItemCount] mappers[SmeltMapper],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 2 tags[Charcoal],
+            item 1 tags[SmeltableSteelMedium] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 mapper:SmeltMapper,
+        }
+        itemMapper SmeltMapper
+        {
+            Base.CeramicCrucibleSmall_Steel = Base.CeramicCrucibleSmall,
+            Base.CeramicCrucibleSmall_Steel = Base.CeramicCrucibleSmall_Steel,
+
+            default = Base.CeramicCrucible_Steel,
+        }
+    }
+
+    craftRecipe SmeltMediumPlusSteelItem
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        OnCreate = Recipe.OnCreate.SmeltIronOrSteelMediumPlus,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible;Base.CeramicCrucibleSmall;Base.CeramicCrucible_Steel;Base.CeramicCrucibleSmall_Steel] mode:destroy flags[NotFull;ItemCount] mappers[SmeltMapper],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 2 tags[Charcoal],
+            item 1 tags[SmeltableSteelMediumPlus] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 mapper:SmeltMapper,
+        }
+        itemMapper SmeltMapper
+        {
+            Base.CeramicCrucibleSmall_Steel = Base.CeramicCrucibleSmall,
+            Base.CeramicCrucibleSmall_Steel = Base.CeramicCrucibleSmall_Steel,
+
+            default = Base.CeramicCrucible_Steel,
+        }
+    }
+
+    craftRecipe SmeltSmallSteelItem
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        OnCreate = Recipe.OnCreate.SmeltIronOrSteelSmall,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible;Base.CeramicCrucibleSmall;Base.CeramicCrucible_Steel;Base.CeramicCrucibleSmall_Steel] mode:destroy flags[NotFull;ItemCount] mappers[SmeltMapper],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 1 tags[Charcoal],
+            item 1 tags[SmeltableSteelSmall] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 mapper:SmeltMapper,
+        }
+        itemMapper SmeltMapper
+        {
+            Base.CeramicCrucibleSmall_Steel = Base.CeramicCrucibleSmall,
+            Base.CeramicCrucibleSmall_Steel = Base.CeramicCrucibleSmall_Steel,
+
+            default = Base.CeramicCrucible_Steel,
+        }
+    }
+
+    craftRecipe CastSteelBar
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 4 [Base.CeramicCrucible_Steel;Base.CeramicCrucibleSmall_Steel],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 4 tags[Charcoal],
+            item 1 [Base.ClayBarMold;Base.IronBarMold;Base.SteelBarMold] mode:keep,
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SteelBar,
+        }
+    }
+
+    craftRecipe CastSteelIngot
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 12 [Base.CeramicCrucible_Steel;Base.CeramicCrucibleSmall_Steel],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 12 tags[Charcoal],
+            item 1 [Base.ClayIngotMold;Base.IronIngotMold;Base.SteelIngotMold] mode:keep,
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SteelIngot,
+        }
+    }
+
+/*    craftRecipe CastIronBarFromLargeItem
+    {
+        time        = 200,
+        tags = PrimitiveFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 6 tags[Charcoal],
+            item 1 [Base.ClayBarMold;Base.IronBarMold;Base.SteelBarMold] mode:keep,
+            item 1 tags[SmeltableIronLarge] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronBar,
+        }
+    }
+
+    craftRecipe CastIronBarFromMediumItems
+    {
+        time        = 200,
+        tags = PrimitiveFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 6 tags[Charcoal],
+            item 1 [Base.ClayBarMold;Base.IronBarMold;Base.SteelBarMold] mode:keep,
+            item 2 tags[SmeltableIronMedium] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronBar,
+        }
+    }
+
+    craftRecipe CastIronBarFromSmallItems
+    {
+        time        = 200,
+        tags = PrimitiveFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 6 tags[Charcoal],
+            item 1 [Base.ClayBarMold;Base.IronBarMold;Base.SteelBarMold] mode:keep,
+            item 4 tags[SmeltableIronSmall] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronBar,
+        }
+    }
+
+    craftRecipe CastIronIngotFromLargeItems
+    {
+        time        = 200,
+        tags = PrimitiveFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 18 tags[Charcoal],
+            item 1 [Base.ClayIngotMold;Base.IronIngotMold;Base.SteelIngotMold] mode:keep,
+            item 3 tags[SmeltableIronLarge] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronIngot,
+        }
+    }
+
+    craftRecipe CastIronIngotFromMediumItems
+    {
+        time        = 200,
+        tags = PrimitiveFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 18 tags[Charcoal],
+            item 1 [Base.ClayIngotMold;Base.IronIngotMold;Base.SteelIngotMold] mode:keep,
+            item 6 tags[SmeltableIronMedium] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronIngot,
+        }
+    }
+
+    craftRecipe CastIronIngotFromMediumPlusItems
+    {
+        time        = 200,
+        tags = PrimitiveFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 18 tags[Charcoal],
+            item 1 [Base.ClayIngotMold;Base.IronIngotMold;Base.SteelIngotMold] mode:keep,
+            item 4 tags[SmeltableIronMediumPlus] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronIngot,
+        }
+    }
+
+    craftRecipe CastIronIngotFromSmallItems
+    {
+        time        = 200,
+        tags = PrimitiveFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 18 tags[Charcoal],
+            item 1 [Base.ClayIngotMold;Base.IronIngotMold;Base.SteelIngotMold] mode:keep,
+            item 12 tags[SmeltableIronSmall] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronIngot,
+        }
+    }
+
+    craftRecipe CastSteelBarFromLargeItem
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 6 tags[Charcoal],
+            item 1 [Base.ClayBarMold;Base.SteelBarMold] mode:keep,
+            item 1 tags[SmeltableSteelLarge] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SteelBar,
+        }
+    }
+
+    craftRecipe CastSteelBarFromMediumItems
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 6 tags[Charcoal],
+            item 1 [Base.ClayBarMold;Base.SteelBarMold] mode:keep,
+            item 2 tags[SmeltableSteelMedium] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SteelBar,
+        }
+    }
+
+    craftRecipe CastSteelBarFromSmallItems
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 6 tags[Charcoal],
+            item 1 [Base.ClayBarMold;Base.SteelBarMold] mode:keep,
+            item 4 tags[SmeltableSteelSmall] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SteelBar,
+        }
+    }
+*/
+
+    craftRecipe CastSteelIngotFromIron
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 12 [Base.CeramicCrucible_Iron;Base.CeramicCrucibleSmall_Iron],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 18 [Base.Coke],
+            item 18 [Base.CrushedLimestone],
+            item 1 [Base.ClayIngotMold;Base.SteelIngotMold] mode:keep, }
+        }
+        outputs
+        {
+            item 1 Base.SteelIngot,
+        }
+    }
+
+    craftRecipe CastSteelBarFromIron
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 4 [Base.CeramicCrucible_Iron;Base.CeramicCrucibleSmall_Iron],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 6 [Base.Coke],
+            item 6 [Base.CrushedLimestone],
+            item 1 [Base.ClayBarMold;Base.SteelBarMold] mode:keep,}
+        }
+        outputs
+        {
+            item 1 Base.SteelBar,
+        }
+    }
+/*
+    craftRecipe CastSteelIngotFromIron
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 18 [Base.Coke],
+            item 18 [Base.CrushedLimestone],
+            item 1 [Base.ClayIngotMold;Base.SteelIngotMold] mode:keep,
+            item 12 [1:Base.IronIngot;1:Base.PiercedIronIngot;3:Base.IronBar;3:Base.IronBlock;3:Base.PiercedIronBlock;6:Base.IronBarHalf;Base.IronChunk;Base.PiercedIronChunk;Base.IronScrap;Base.IronBarQuarter;60:Base.IronPiece] mode:destroy flags[ItemCount;AllowDestroyedItem;IsExclusive],
+            /*item 12 [1:Base.IronIngot;1:Base.PiercedIronIngot;3:Base.IronBar;3:Base.IronBlock;3:Base.PiercedIronBlock;4:Base.IronRod;6:Base.IronBarHalf;8:Base.IronRodHalf;Base.IronChunk;Base.PiercedIronChunk;Base.IronScrap;Base.IronBarQuarter;16:Base.IronRodQuarter;60:Base.IronPiece] mode:destroy flags[ItemCount;AllowDestroyedItem;IsExclusive],*/
+        }
+        outputs
+        {
+            item 1 Base.SteelIngot,
+        }
+    }
+
+    craftRecipe CastSteelBarFromIron
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 6 [Base.Coke],
+            item 6 [Base.CrushedLimestone],
+            item 1 [Base.ClayBarMold;Base.SteelBarMold] mode:keep,
+            item 4 [1:Base.IronBar;1:Base.IronBlock;1:Base.PiercedIronBlock;2:Base.IronBarHalf;Base.IronChunk;Base.PiercedIronChunk;Base.IronScrap;Base.IronBarQuarter;20:Base.IronPiece] mode:destroy flags[ItemCount;AllowDestroyedItem;IsExclusive],
+            /*item 4 [1:Base.IronBar;1:Base.IronBlock;1:Base.PiercedIronBlock;2:Base.IronRod;2:Base.IronBarHalf;3:Base.IronRodHalf;Base.IronChunk;Base.PiercedIronChunk;Base.IronScrap;Base.IronBarQuarter;6:Base.IronRodQuarter;20:Base.IronPiece] mode:destroy flags[ItemCount;AllowDestroyedItem;IsExclusive],*/
+        }
+        outputs
+        {
+            item 1 Base.SteelBar,
+        }
+    }
+
+    craftRecipe CastSteelIngotFromLargeItems
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 18 tags[Charcoal],
+            item 1 [Base.ClayIngotMold;Base.SteelIngotMold] mode:keep,
+            item 3 tags[SmeltableSteelLarge] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SteelIngot,
+        }
+    }
+
+    craftRecipe CastSteelIngotFromMediumItems
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 18 tags[Charcoal],
+            item 1 [Base.ClayIngotMold;Base.SteelIngotMold] mode:keep,
+            item 6 tags[SmeltableSteelMedium] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SteelIngot,
+        }
+    }
+
+    craftRecipe CastSteelIngotFromMediumPlusItems
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 18 tags[Charcoal],
+            item 1 [Base.ClayIngotMold;Base.SteelIngotMold] mode:keep,
+            item 4 tags[SmeltableSteelMediumPlus] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SteelIngot,
+        }
+    }
+
+    craftRecipe CastSteelIngotFromSmallItems
+    {
+        time        = 200,
+        tags = AdvancedFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 18 tags[Charcoal],
+            item 1 [Base.ClayIngotMold;Base.SteelIngotMold] mode:keep,
+            item 12 tags[SmeltableSteelSmall] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.SteelIngot,
+        }
+    }
+
+
+    craftRecipe CastIronIngotFromIronBloom
+    {
+        time        = 200,
+        tags = PrimitiveFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 18 tags[Charcoal],
+            item 1 [Base.ClayIngotMold;Base.IronIngotMold;Base.SteelIngotMold] mode:keep,
+            item 1 [Base.IronBloom] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronIngot,
+        }
+    }
+
+    craftRecipe CastIronBarsFromIronBloom
+    {
+        time        = 200,
+        tags = PrimitiveFurnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 18 tags[Charcoal],
+            item 3 [Base.ClayBarMold;Base.IronBarMold;Base.SteelBarMold] mode:keep,
+            item 1 [Base.IronBloom] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 3 Base.IronBar,
+        }
+    }
+*/
+/*
+    craftRecipe CastIronIngotFromIronOre
+    {
+        time        = 200,
+        tags = Furnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 18 tags[Charcoal],
+            item 1 [Base.ClayIngotMold;Base.IronIngotMold;Base.SteelIngotMold] mode:keep,
+            item 1 [Base.IronOre_Crushed] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 1 Base.IronIngot,
+        }
+    }
+
+    craftRecipe CastIronBarsFromIronOre
+    {
+        time        = 200,
+        tags = Furnace,
+        category = Blacksmithing,
+        inputs
+        {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[MayDegradeLight],
+            item 18 tags[Charcoal],
+            item 3 [Base.ClayBarMold;Base.IronBarMold;Base.SteelBarMold] mode:keep,
+            item 1 [Base.IronOre_Crushed] mode:destroy flags[ItemCount;AllowDestroyedItem],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+            item 3 Base.IronBar,
+        }
+    }
+    */
+}

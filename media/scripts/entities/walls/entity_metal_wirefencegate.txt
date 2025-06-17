@@ -1,0 +1,77 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_MetalWireFenceGate
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Big Wire Fence Gate,
+			Icon		= Build_TallWireGate,
+		}
+	}
+
+    entity MetalWireFenceGate
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_MetalWireFenceGate,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			skillBaseHealth = 300,
+			dontNeedFrame	= true,
+			breakSound      = BreakDoor,
+			
+            face W
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_128,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_129,
+                }
+            }
+			face W_OPEN
+            {
+                layer
+                {
+					row = fixtures_doors_fences_01_130,
+                }
+            }
+            face N_OPEN
+            {
+                layer
+                {
+					row = fixtures_doors_fences_01_131,
+                }
+            }
+        }
+		
+		component CraftRecipe
+        {
+            timedAction   = BuildWireFence,
+            time          = 200,
+            needToBeLearn = true,
+            category      = Welding,
+            SkillRequired = MetalWelding:3,
+            xpAward       = MetalWelding:30,
+            ToolTip       = Tooltip_craft_wireFenceGateDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.MetalPipe],
+                item 2 [Base.Hinge],
+                item 4 [Base.ScrapMetal],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+module Base
+{
+	sound MapOpen
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Map/Open,
+		}
+	}
+
+	sound MapClose
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Map/Close,
+		}
+	}
+
+	sound MapAddNote
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Map/AddNote,
+		}
+	}
+
+	sound MapAddSymbol
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Map/AddSymbol,
+		}
+	}
+
+	sound MapRemoveMarking
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Map/RemoveMarking,
+		}
+	}
+}

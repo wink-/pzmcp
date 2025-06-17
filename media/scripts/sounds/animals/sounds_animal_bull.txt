@@ -1,0 +1,83 @@
+module Base 
+{
+    sound AnimalVoiceBullAttack
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Bull/Voice/Attack,
+        }
+    }
+
+    sound AnimalVoiceBullIdle
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Bull/Voice/Idle,
+        }
+    }
+
+    sound AnimalVoiceBullDeath
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Bull/Voice/Death,
+        }
+    }
+
+    sound AnimalVoiceBullStressed
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Bull/Voice/Stressed,
+        }
+    }
+
+    sound AnimalVoiceBullPain
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Bull/Voice/Pain,
+        }
+    }
+
+    sound AnimalFootstepsBullWalkFront
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Bull/Footsteps/Walk/Front,
+        }
+    }
+
+    sound AnimalFootstepsBullWalkBack
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Bull/Footsteps/Walk/Back,
+        }
+    }
+
+    sound AnimalFootstepsBullRun
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Bull/Footsteps/Run,
+        }
+    }
+
+    sound AnimalFoleyBullBodyfall
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Bull/Foley/Bodyfall,
+        }
+    }
+}

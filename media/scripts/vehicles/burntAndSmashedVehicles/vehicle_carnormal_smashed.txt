@@ -1,0 +1,159 @@
+module Base
+{
+	model Vehicles_CarNormalSmashedRear
+	{
+		mesh = vehicles/Vehicles_CarNormalSMASH_Rear,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle CarNormalSmashedRear
+	{
+		template! = CarNormal,
+		template = CarNormalCollision,
+
+		model
+		{
+			file = Vehicles_CarNormalSmashedRear,
+			scale = 1.8200,
+			offset = 0.0000 0.2692 0.0000,
+		}
+
+		extents = 0.8901 0.6484 2.6044,
+		physicsChassisShape = 0.8901 0.6484 2.6044,
+		centerOfMassOffset = 0.0000 0.3022 0.0000,
+		shadowExtents = 0.8901 2.6044,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.3462,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.3187,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+	model Vehicles_CarNormalSmashedRight
+	{
+		mesh = vehicles/Vehicles_CarNormalSMASH_Right,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle CarNormalSmashedRight
+	{
+		template! = CarNormal,
+		template = CarNormalCollision,
+
+		model
+		{
+			file = Vehicles_CarNormalSmashedRight,
+			scale = 1.8200,
+			offset = 0.0000 0.2692 0.0000,
+		}
+
+		extents = 0.8901 0.6484 2.6044,
+		physicsChassisShape = 0.8901 0.6484 2.6044,
+		centerOfMassOffset = 0.0000 0.3022 0.0000,
+		shadowExtents = 0.8901 2.6044,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.3462,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.3187,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+	model Vehicles_CarNormalSmashedLeft
+	{
+		mesh = vehicles/Vehicles_CarNormalSMASH_Left,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle CarNormalSmashedLeft
+	{
+		template! = CarNormal,
+		template = CarNormalCollision,
+
+		model
+		{
+			file = Vehicles_CarNormalSmashedLeft,
+			scale = 1.8200,
+			offset = 0.0000 0.2692 0.0000,
+		}
+
+		extents = 0.8901 0.6484 2.6044,
+		physicsChassisShape = 0.8901 0.6484 2.6044,
+		centerOfMassOffset = 0.0000 0.3022 0.0000,
+		shadowExtents = 0.8901 2.6044,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.3462,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.3187,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+	model Vehicles_CarNormalSmashedFront
+	{
+		mesh = vehicles/Vehicles_CarNormalSMASH_Front,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle CarNormalSmashedFront
+	{
+		template! = CarNormal,
+		template = CarNormalCollision,
+
+		model
+		{
+			file = Vehicles_CarNormalSmashedFront,
+			scale = 1.8200,
+			offset = 0.0000 0.2692 0.0000,
+		}
+
+		extents = 0.8901 0.6484 2.6044,
+		physicsChassisShape = 0.8901 0.6484 2.6044,
+		centerOfMassOffset = 0.0000 0.3022 0.0000,
+		shadowExtents = 0.8901 2.6044,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.3462,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.3187,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}

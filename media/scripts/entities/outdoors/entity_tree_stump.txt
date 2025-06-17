@@ -1,0 +1,31 @@
+/*module Base
+{
+
+
+    entity Tree_Stump
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Chopping_Block,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = AnySurfaceCraft;ChoppingBlock,
+        }
+
+
+        component SpriteConfig
+        {
+            face single
+            {
+                layer
+                {
+                    row = crafted_02_86,
+                }
+            }
+        }
+    }
+}*/

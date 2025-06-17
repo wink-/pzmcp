@@ -1,0 +1,63 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_Metal_Stairs
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Metal Stairs,
+			Icon		= Build_StairsMetal,
+		}
+	}
+
+    entity Metal_Stairs
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Metal_Stairs,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+        	OnCreate = BuildRecipeCode.stairs.OnCreate,
+        	OnIsValid = BuildRecipeCode.stairs.OnIsValid,
+
+            face S
+            {
+                layer
+                {
+                    row = constructedobjects_01_90 constructedobjects_01_89 constructedobjects_01_88,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = constructedobjects_01_98,
+                    row = constructedobjects_01_97,
+                    row = constructedobjects_01_96,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = BuildWallMetal,
+            time          = 200,
+            needToBeLearn = true,
+            category      = Welding,
+            SkillRequired = MetalWelding:5,
+            xpAward       = MetalWelding:50,
+            ToolTip       = Tooltip_craft_stairsDesc,
+            inputs
+            {
+		        item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.MetalBar],
+                item 6 [Base.SmallSheetMetal],
+		        item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

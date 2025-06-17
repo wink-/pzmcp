@@ -1,0 +1,75 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Grindstone
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Grindstone,
+            Icon                = Build_Grindstone,
+        }
+    }
+
+    entity Grindstone
+    {
+
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Grindstone,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+           Recipes         = Grindstone,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_01_120,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_01_121,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = crafted_01_122,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = crafted_01_123,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = Test,
+            time          = 50,
+            category      = Blacksmithing,
+            ToolTip       = Tooltip_craft_grindstoneDesc,
+            inputs
+            {
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+                item 1 [Base.StoneWheel],
+            }
+        }
+    }
+}

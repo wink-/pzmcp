@@ -1,0 +1,128 @@
+/*module Base
+{
+
+    entity Hydraulic_Press
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Hydraulic_Press,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@1,
+                Item@Input@1,
+            }
+            group craft_outputs
+            {
+                Item@Output@10,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes         = HandPress,
+            StartMode       = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = industry_03_51,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = industry_03_50,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = industry_03_49,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = industry_03_48,
+                }
+            }
+        }
+    }
+    entity Hydraulic_Press2
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Hydraulic_Press,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@1,
+                Item@Input@1,
+            }
+            group craft_outputs
+            {
+                Item@Output@10,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes         = HandPress,
+            StartMode       = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+        component SpriteConfig
+        {
+            face E
+            {
+                layer
+                {
+                    row = industry_03_54,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = industry_03_55,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = industry_03_53,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = industry_03_52,
+                }
+            }
+        }
+    }
+}*/

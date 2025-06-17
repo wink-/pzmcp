@@ -1,0 +1,29 @@
+module Base
+{
+	sound LightSwitch
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Light/FlipSwitch,
+		}
+	}
+
+	sound LightbulbBurnedOut
+	{
+		category = Player,
+		clip
+		{
+			event = Object/Light/BulbBurnOut,
+		}
+	}
+
+	sound LightFlicker
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Light/Flicker,
+		}
+	}
+}

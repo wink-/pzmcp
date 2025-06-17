@@ -1,0 +1,199 @@
+module Base
+{
+	model Vehicles_CarLightsSmashedRear
+	{
+		mesh = vehicles/Vehicles_CarNormalLightsSMASH_Rear,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle CarLightsSmashedRear
+	{
+		template! = CarLights,
+		template = CarLightsCollision,
+
+		model
+		{
+			file = Vehicles_CarLightsSmashedRear,
+			scale = 1.8200,
+			offset = 0.0000 0.2692 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/vehicle_carrangershell,
+		}
+
+		skin
+		{
+			texture = Vehicles/vehicle_carlights_police,
+		}
+
+		extents = 0.8901 0.6264 2.6044,
+		physicsChassisShape = 0.8901 0.6264 2.6044,
+		centerOfMassOffset = 0.0000 0.2692 0.0000,
+		shadowExtents = 0.8901 2.6044,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.3462,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.3297,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+	model Vehicles_CarLightsSmashedFront
+	{
+		mesh = vehicles/Vehicles_CarNormalLightsSMASH_Front,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle CarLightsSmashedFront
+	{
+		template! = CarLights,
+        template = CarLightsCollision,
+
+		model
+		{
+			file = Vehicles_CarLightsSmashedFront,
+			scale = 1.8200,
+			offset = 0.0000 0.2692 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/vehicle_carrangershell,
+		}
+
+		skin
+		{
+			texture = Vehicles/vehicle_carlights_police,
+		}
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.3462,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.3297,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+
+		extents = 0.8901 0.6264 2.6044,
+		physicsChassisShape = 0.8901 0.6264 2.6044,
+		centerOfMassOffset = 0.0000 0.2692 0.0000,
+		shadowExtents = 0.8901 2.6044,
+		shadowOffset = 0.0000 0.0000,
+	}
+	model Vehicles_CarLightsSmashedRight
+	{
+		mesh = vehicles/Vehicles_CarNormalLightsSMASH_Right,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle CarLightsSmashedRight
+	{
+		template! = CarLights,
+        template = CarLightsCollision,
+
+		model
+		{
+			file = Vehicles_CarLightsSmashedRight,
+			scale = 1.8200,
+			offset = 0.0000 0.2692 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/vehicle_carrangershell,
+		}
+
+		skin
+		{
+			texture = Vehicles/vehicle_carlights_police,
+		}
+
+		extents = 0.8901 0.6264 2.6044,
+		physicsChassisShape = 0.8901 0.6264 2.6044,
+		centerOfMassOffset = 0.0000 0.2692 0.0000,
+		shadowExtents = 0.8901 2.6044,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.3462,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.3297,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+	model Vehicles_CarLightsSmashedLeft
+	{
+		mesh = vehicles/Vehicles_CarNormalLightsSMASH_Left,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle CarLightsSmashedLeft
+	{
+		template! = CarLights,
+        template = CarLightsCollision,
+
+		model
+		{
+			file = Vehicles_CarLightsSmashedLeft,
+			scale = 1.8200,
+			offset = 0.0000 0.2692 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/vehicle_carrangershell,
+		}
+
+		skin
+		{
+			texture = Vehicles/vehicle_carlights_police,
+		}
+
+		extents = 0.8901 0.6264 2.6044,
+		physicsChassisShape = 0.8901 0.6264 2.6044,
+		centerOfMassOffset = 0.0000 0.2692 0.0000,
+		shadowExtents = 0.8901 2.6044,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.3462,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.3297,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}

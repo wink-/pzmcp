@@ -1,0 +1,143 @@
+/*module Base
+{
+
+
+    stringList Recipes_Coal_Pit
+    {
+        Heat Treat Bench Anvil,
+        Heat Treat Block Anvil,
+    }
+    stringList Recipes_Coal_Pit_Large
+    {
+        Heat Treat Bench Anvil,
+        Heat Treat Blacksmith Anvil,
+        Heat Treat Block Anvil,
+    }
+
+    craftRecipe Make Wood Charcoal
+     {
+       /* time        = 3000,*/
+        time        = 10,
+	tags = CoalPit;DomeKiln,
+
+         inputs
+         {
+            item 8 [Base.Log],
+            replace 8 Base.CharcoalCrafted,
+         }
+     }
+
+    entity Coal_Pit
+    {
+
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Coal_Pit,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@10,
+                Item@Input@10,
+                Item@Input@10,
+                Item@Input@10,
+            }
+            group craft_outputs
+            {
+                Item@Output@10,
+            }
+        }
+
+        component CraftLogic
+        {
+           Recipes         = CoalPit,
+           StartMode       = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+        component SpriteConfig
+        {
+            face single
+            {
+                layer
+                {
+                    row = crafted_04_26 crafted_04_29 crafted_04_31,
+                    row = crafted_04_25 crafted_04_28 crafted_04_30,
+                    row = crafted_04_24 crafted_04_27,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 1 [Base.Shovel] mode:keep flags[Prop1],
+            }
+        }
+    }
+
+    entity Coal_Pit_Large
+    {
+
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Coal_Pit,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                Item@Input@10,
+                Item@Input@10,
+                Item@Input@10,
+                Item@Input@10,
+            }
+            group craft_outputs
+            {
+                Item@Output@10,
+            }
+        }
+
+
+        component CraftLogic
+        {
+           Recipes         = Recipes_Coal_Pit,
+           StartMode       = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+        component SpriteConfig
+        {
+            face single
+            {
+                layer
+                {
+                    row = crafted_04_5 crafted_04_7,
+                    row = crafted_04_4 crafted_04_6,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 1 [Base.Shovel] mode:keep flags[Prop1],
+            }
+        }
+    }
+}*/

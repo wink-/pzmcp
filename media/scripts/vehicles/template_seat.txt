@@ -1,0 +1,111 @@
+module Base
+{
+	template vehicle Seat
+	{
+		part SeatFrontLeft
+		{
+			area = SeatFrontLeft,
+			container
+			{
+				seat = FrontLeft,
+			}
+		}
+
+		part SeatFrontRight
+		{
+			area = SeatFrontRight,
+			container
+			{
+				seat = FrontRight,
+			}
+		}
+
+		part SeatMiddleLeft
+		{
+			area = SeatMiddleLeft,
+			container
+			{
+				seat = MiddleLeft,
+			}
+		}
+
+		part SeatMiddleRight
+		{
+			area = SeatMiddleRight,
+			container
+			{
+				seat = MiddleRight,
+			}
+		}
+
+		part SeatRearLeft
+		{
+			area = SeatRearLeft,
+			container
+			{
+				seat = RearLeft,
+			}
+		}
+
+		part SeatRearRight
+		{
+			area = SeatRearRight,
+			container
+			{
+				seat = RearRight,
+			}
+		}
+
+		part Seat*
+		{
+			category = seat,
+			itemType = Base.NormalCarSeat,
+			mechanicRequireKey = true,
+			durability = 3,
+			container
+			{
+				test = Vehicles.ContainerAccess.Seat,
+			}
+			table install
+			{
+				items
+				{
+					1
+					{
+						tags = Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:1,
+				recipes = Basic Mechanics,
+				test = Vehicles.InstallTest.Default,
+			}
+			table uninstall
+			{
+				items
+				{
+					1
+					{
+						tags = Screwdriver,
+						count = 1,
+						keep = true,
+						equip = primary,
+					}
+				}
+				time = 300,
+				skills = Mechanics:1,
+				recipes = Basic Mechanics,
+				test = Vehicles.UninstallTest.Default,
+				requireEmpty = true,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+	}
+}
+

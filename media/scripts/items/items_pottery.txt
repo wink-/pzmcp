@@ -1,0 +1,630 @@
+module Base
+{
+	item Brush
+	{
+	    DisplayCategory     = Tool,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Small Brush,
+		Icon                = Brush_Glaze,
+		StaticModel         = Brush,
+		WorldStaticModel    = Brush,
+	}
+
+	item ClayTool
+	{
+	    DisplayCategory     = Tool,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Clay Sculpting Tool,
+		Icon                = ClayTool_02,
+		StaticModel         = ClayTool2,
+		WorldStaticModel    = ClayTool2,
+		Tags                = HasMetal;ClayTool,
+	}
+
+	item ClayTool_Carved
+	{
+	    DisplayCategory     = Tool,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Wood Clay Sculpting Tool,
+		Icon                = ClayTool_01,
+		StaticModel         = ClayTool,
+		WorldStaticModel    = ClayTool,
+		Tags                = ClayTool;IsFireFuel;IsFireTinder,
+        ConditionMax        = 1,
+	}
+
+	item Clay
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Clay,
+		Icon                = Clay,
+		StaticModel         = Clay,
+		WorldStaticModel    = Clay,
+	}
+
+	item ClayBowl
+	{
+		DisplayName = Clay Bowl,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Ceramic_Bowl_Unfired,
+		IconFluidMask = Bowl_Mask,
+		PourType = bowl,
+		Tooltip = Tooltip_item_RainFromGround,
+		StaticModel = BowlCraftedFired,
+		WorldStaticModel = BowlCraftedFired,
+		FillFromDispenserSound = GetWaterFromDispenserCeramic,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapCeramic,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Bowl,
+
+        component FluidContainer
+        {
+            ContainerName   = Bowl,
+            RainFactor	= 0.5,
+            capacity        = 0.3,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+	}
+
+	item ClayBowlUnfired
+	{
+		DisplayName = Unfired Clay Bowl,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Ceramic_Bowl_Fired,
+		StaticModel = BowlCraftedUnfired,
+		WorldStaticModel = BowlCraftedUnfired,
+	}
+
+	item ClayIngotMoldUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Unfired Ingot Mold,
+		Icon                = CeramicCast_Bar_Unfired,
+		StaticModel         = CeramicIngotCastUnfired,
+		WorldStaticModel    = CeramicIngotCastUnfired,
+	}
+
+	item ClayIngotMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Ingot Mold,
+		Icon                = CeramicCast_Bar_Fired,
+		StaticModel         = CeramicIngotCast,
+		WorldStaticModel    = CeramicIngotCast,
+		Tags = Destructible;BreakOnSmithing,
+		ToolTip = Tooltip_item_BreakOnSmithing,
+	}
+
+	item ClayJarUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Unfired Clay Jar,
+		Icon                = ClayJar_Unfired,
+		StaticModel         = ClayJarUnfired,
+		WorldStaticModel    = ClayJarUnfired,
+	}
+
+	item ClayJar
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Clay Jar,
+		Icon                = ClayJar_Fired,
+		StaticModel         = ClayJar,
+		WorldStaticModel    = ClayJar,
+		FillFromDispenserSound = GetWaterFromDispenserCeramic,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapCeramic,
+        FillFromToiletSound = GetWaterFromToilet,
+
+        component FluidContainer
+        {
+            ContainerName   = Jar,
+            RainFactor = 0.2,
+            capacity        = 2.5,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+	}
+
+	item ClayJarGlazedUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Unfired Glazed Clay Jar,
+		Icon                = ClayJar_Glazed_Unfired,
+		StaticModel         = GlazedClayJarUnfired,
+		WorldStaticModel    = GlazedClayJarUnfired,
+	}
+
+	item ClayJarGlazed
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Glazed Clay Jar,
+		Icon                = ClayJar_Glazed_Fired,
+		StaticModel         = GlazedClayJar,
+		WorldStaticModel    = GlazedClayJar,
+		FillFromDispenserSound = GetWaterFromDispenserCeramic,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapCeramic,
+        FillFromToiletSound = GetWaterFromToilet,
+
+        component FluidContainer
+        {
+            ContainerName   = Jar,
+            RainFactor = 0.2,
+            capacity        = 2.5,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+	}
+
+	item ClayMug
+	{
+		DisplayName = Clay Mug,
+		DisplayCategory = Cooking,
+		Type = Normal,
+		PourType = Mug,
+		Weight = 0.2,
+		Icon = Ceramic_Mug_Unfired,
+		IconFluidMask = Mug_Mask,
+		Tooltip = Tooltip_item_RainFromGround,
+		StaticModel = MugClay,
+		WorldStaticModel = MugClay,
+		FillFromDispenserSound = GetWaterFromDispenserCeramic,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapCeramic,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = CoffeeMaker,
+
+        	component FluidContainer
+        	{
+            		ContainerName   = Mug,
+			RainFactor = 0.2,
+            		capacity        = 0.2,
+			CustomDrinkSound = DrinkingFromMug,
+        	}
+	}
+
+	item ClayMugUnfired
+	{
+		DisplayName = Unfired Clay Mug,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = Ceramic_Mug_Fired,
+		StaticModel = MugClayUnfired,
+		WorldStaticModel = MugClayUnfired,
+	}
+
+	item ClayMugGlazedUnfired
+	{
+		DisplayName = Unfired Clay Mug,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = MugWhite,
+		StaticModel = MugClayUnfired,
+		WorldStaticModel = MugWhite,
+	}
+
+	item ClayPipeSegment
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Pipe Segment,
+		Icon                = Ceramic_Pipe_Unfired,
+		StaticModel         = PipeClayFired,
+		WorldStaticModel    = PipeClayFired,
+	}
+
+	item ClayPipeSegmentUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Unfired Pipe Segment,
+		Icon                = Ceramic_Pipe_Fired,
+		StaticModel         = PipeClayUnfired,
+		WorldStaticModel    = PipeClayUnfired,
+	}
+
+	item ClayPlate
+	{
+		DisplayName = Plate,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = CeramicPlate_Fired,
+		WorldStaticModel = PlateClayFired,
+	}
+
+	item ClayPlateUnfired
+	{
+		DisplayName = Unfired Plate,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = CeramicPlate_Unfired,
+		WorldStaticModel = PlateClayUnfired,
+	}
+
+	item ClayPot
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Clay Pot,
+		Icon                = ClayJar_Fired,
+		StaticModel         = ClayJar,
+		WorldStaticModel    = ClayJar,
+	}
+
+	item ClayPotUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Unfired Clay Pot,
+		Icon                = ClayJar_Unfired,
+		StaticModel         = ClayJarUnfired,
+		WorldStaticModel    = ClayJarUnfired,
+	}
+
+	item ClaySheetMoldUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Unfired Sheet Mold,
+		Icon                = ClayMold_GlassPane_Unfired,
+		StaticModel         = MoldGlass_Unfired,
+		WorldStaticModel    = MoldGlass_Unfired,
+	}
+
+	item ClaySheetMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Sheet Mold,
+		Icon                = ClayMold_GlassPane_Fired,
+		StaticModel         = MoldGlass_Fired,
+		WorldStaticModel    = MoldGlass_Fired,
+	}
+
+	item GlazeBowl
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Bowl of Glaze,
+		Icon                = Bowl_Glaze,
+		StaticModel         = BowlOfGlaze,
+		WorldStaticModel    = BowlOfGlaze,
+	    Tooltip             = Tooltip_item_GlazeBowl,
+	}
+
+	item CeramicCrucibleUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 5.0,
+		Type                = Normal,
+		DisplayName         = Unfired Large Ceramic Crucible,
+		Icon                = Ceramic_Crucible_Unfired,
+		StaticModel         = CeramicCrucibleUnfired,
+		WorldStaticModel    = CeramicCrucibleUnfired,
+	}
+
+	item CeramicCrucible
+	{
+	    DisplayCategory     = Material,
+		Weight              = 5.0,
+		Type                = Normal,
+		DisplayName         = Large Ceramic Crucible,
+		Icon                = Ceramic_Crucible_Fired,
+		IconFluidMask       = Crucible_Mask,
+		StaticModel         = CeramicCrucible,
+		WorldStaticModel    = CeramicCrucible,
+		FillFromDispenserSound = GetWaterFromDispenserCeramic,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapCeramic,
+        FillFromToiletSound = GetWaterFromToilet,
+
+        component FluidContainer
+        {
+            ContainerName   = Crucible,
+            RainFactor = 0.3,
+            capacity        = 3.0,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+	}
+
+	item CeramicCrucibleSmall
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.2,
+		Type                = Normal,
+		DisplayName         = Small Ceramic Crucible,
+		Icon                = Ceramic_Crucible_Fired,
+		IconFluidMask       = Crucible_Mask,
+		StaticModel         = CeramicCrucibleSmall,
+		WorldStaticModel    = CeramicCrucibleSmall,
+		FillFromDispenserSound = GetWaterFromDispenserCeramic,
+        FillFromLakeSound = GetWaterFromLakeSmall,
+        FillFromTapSound = GetWaterFromTapCeramic,
+        FillFromToiletSound = GetWaterFromToilet,
+
+        component FluidContainer
+        {
+            ContainerName   = Crucible,
+            RainFactor = 0.3,
+            capacity        = 1.5,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+	}
+
+	item CeramicCrucibleSmallUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.2,
+		Type                = Normal,
+		DisplayName         = Unfired Small Ceramic Crucible,
+		Icon                = Ceramic_Crucible_Unfired,
+		StaticModel         = CeramicCrucibleUnfired,
+		WorldStaticModel    = CeramicCrucibleUnfired,
+	}
+
+	item CeramicMortarandPestle
+	{
+		DisplayName         = Ceramic Mortar and Pestle,
+		DisplayCategory = FirstAid,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = Ceramic_MortarPestle_Fired,
+		StaticModel = MortarFired,
+		WorldStaticModel = MortarFired_Ground,
+		Tags = MortarPestle,
+	}
+
+	item CeramicMortarandPestleGlazedUnfired
+	{
+		DisplayName         = Unfired Ceramic Mortar and Pestle,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = MortarPestle,
+		StaticModel = Mortar,
+		WorldStaticModel = Mortar_Ground,
+	}
+
+	item CeramicMortarandPestleUnfired
+	{
+		DisplayName         = Unfired Ceramic Mortar and Pestle,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = Ceramic_MortarPestle_Unfired,
+		StaticModel = MortarUnfired,
+		WorldStaticModel = MortarUnfired_Ground,
+	}
+
+    item CeramicTeacup
+    {
+        Type				= Normal,
+        DisplayCategory = Cooking,
+        DisplayName			= Teacup,
+        Icon				= Ceramic_Teacup_Fired,
+        Weight				= 0.2,
+        StaticModel = Teacup_Fired,
+        WorldStaticModel = Teacup_Fired,
+		FillFromDispenserSound = GetWaterFromDispenserCeramic,
+		FillFromLakeSound = GetWaterFromLakeSmall,
+		FillFromTapSound = GetWaterFromTapCeramic,
+		FillFromToiletSound = GetWaterFromToilet,
+        Tags = CookableMicrowave,
+
+        component FluidContainer
+        {
+            ContainerName   = Teacup,
+            RainFactor	= 1.0,
+            capacity        = 0.1,
+            CustomDrinkSound = DrinkingFromMug,
+        }
+    }
+
+    item CeramicTeacupGlazedUnfired
+    {
+        Type				= Normal,
+        DisplayCategory = Material,
+        DisplayName			= Unfired Teacup,
+        Icon				= Teacup,
+        Weight				= 0.2,
+        StaticModel = Teacup_Ground,
+        WorldStaticModel = Teacup_Ground,
+    }
+
+    item CeramicTeacupUnfired
+    {
+        Type				= Normal,
+	    DisplayCategory = Material,
+        DisplayName			= Unfired Teacup,
+        Icon				= Ceramic_Teacup_Unfired,
+        Weight				= 0.2,
+        StaticModel = Teacup_Unfired,
+        WorldStaticModel = Teacup_Unfired,
+    }
+
+	item GlassBlowingPipeUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Unfired Glass Blowing Pipe,
+		Icon                = Ceramic_Glasspipe_Fired,
+		StaticModel         = GlassBlowingPipeUnfired,
+		WorldStaticModel    = GlassBlowingPipeUnfired,
+	}
+
+	item GlassBlowingPipe
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Glass Blowing Pipe,
+		Icon                = Ceramic_Glasspipe_Unfired,
+		StaticModel         = GlassBlowingPipeFired,
+		WorldStaticModel    = GlassBlowingPipeFired,
+	}
+
+	item SmokingPipeUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Unfired Smoking Pipe,
+		Icon                = Ceramic_Smokingpipe_Fired,
+		StaticModel         = SmokingPipeUnfired,
+		WorldStaticModel    = SmokingPipeUnfired,
+	}
+
+	item SmokingPipe
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Smoking Pipe,
+		Icon                = Ceramic_Smokingpipe_Unfired,
+		StaticModel         = SmokingPipeFired,
+		WorldStaticModel    = SmokingPipeFired,
+	}
+
+	item ClayBrickUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Unfired Clay Brick,
+		Icon                = ClayBrick_Unfired,
+		StaticModel         = ClayBrickUnfired,
+		WorldStaticModel    = ClayBrickUnfired,
+	}
+
+	item ClayShingleUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Unfired Clay Shingle,
+		Icon                = ClayShingle_Unfired,
+		StaticModel         = ClayShingleUnfired,
+		WorldStaticModel    = ClayShingleUnfired,
+	}
+
+	item ClayTileUnfired
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Unfired Clay Tile,
+		Icon                = ClayTile_Unfired,
+		StaticModel         = ClayTileUnfired,
+		WorldStaticModel    = ClayTileUnfired,
+	}
+
+	item ClayBrick
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Clay Brick,
+		Icon                = ClayBrick_Fired,
+		StaticModel         = ClayBrick,
+		WorldStaticModel    = ClayBrick,
+	}
+
+	item ClayShingle
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Clay Shingle,
+		Icon                = ClayShingle_Fired,
+		StaticModel         = ClayShingle,
+		WorldStaticModel    = ClayShingle,
+	}
+
+	item ClayTile
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Clay Tile,
+		Icon                = ClayTile_Fired,
+		StaticModel         = ClayTile,
+		WorldStaticModel    = ClayTile,
+	}
+
+	item PlateGlazedUnfired
+	{
+		DisplayName = Unfired Plate,
+        DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = Plate,
+		WorldStaticModel = Plate_Ground,
+		Tags = DontInheritConditon,
+	}
+
+	item WoodenBrickMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Wooden Brick Mold,
+		Icon                = ClayMold_Brick,
+		StaticModel         = WoodenBrickMold,
+		WorldStaticModel    = WoodenBrickMold,
+	}
+
+	item WoodenShingleMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Wooden Shingle Mold,
+		Icon                = ClayMold_Shingle,
+		StaticModel         = WoodenShingleMold,
+		WorldStaticModel    = WoodenShingleMold,
+	}
+
+	item WoodenTileMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 0.3,
+		Type                = Normal,
+		DisplayName         = Wooden Tile Mold,
+		Icon                = ClayMold_Tile,
+		StaticModel         = WoodenTileMold,
+		WorldStaticModel    = WoodenTileMold,
+	}
+}

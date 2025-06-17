@@ -1,0 +1,65 @@
+module Base
+{
+	item Apron_Garbage
+	{
+		DisplayName = Garbage Bag Apron,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Apron_Garbagebag,
+		BloodLocation = Apron,
+		BodyLocation = TorsoExtra,
+		ClothingItem = Apron_Garbage,
+		ScratchDefense = 5,
+		WorldStaticModel = Apron_Ground,
+		DiscomfortModifier = 0.1,
+		WaterResistance = 1,
+	}
+
+	item Apron_Hide
+	{
+		DisplayName = Hide Apron,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Apron_Hide,
+		BiteDefense = 10,
+		BloodLocation = Apron,
+		BodyLocation = TorsoExtra,
+		ClothingItem = Apron_Hide,
+		FabricType = Leather,
+		ScratchDefense = 20,
+		WorldStaticModel = Apron_Ground,
+		Tags = RipClothingLeather,
+	}
+
+	item Apron_Leather
+	{
+		DisplayName = Leather Apron,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Apron_Leather,
+		BiteDefense = 20,
+		BloodLocation = Apron,
+		BodyLocation = TorsoExtra,
+		ClothingItem = Apron_Leather,
+		FabricType = Leather,
+		ScratchDefense = 40,
+		WorldStaticModel = Apron_Ground,
+		Tags = RipClothingLeather,
+	}
+
+	item Apron_Tarp
+	{
+		DisplayName = Tarp Apron,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Apron_Tarp,
+		BloodLocation = Apron,
+		BodyLocation = TorsoExtra,
+		ClothingItem = Apron_Tarp,
+		ScratchDefense = 10,
+		WorldStaticModel = Apron_Ground,
+		DiscomfortModifier = 0.1,
+		WaterResistance = 1,
+	}
+
+}

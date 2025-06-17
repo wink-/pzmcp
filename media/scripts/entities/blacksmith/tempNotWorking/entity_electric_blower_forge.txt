@@ -1,0 +1,67 @@
+/*module Base
+{
+    entity Electric_Blower_Forge
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Electric_Blower_Forge,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = Recipes_Advanced_Forge,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_03_36 crafted_03_0 crafted_03_13,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = crafted_03_15 crafted_03_2 crafted_03_44,
+                }
+            }
+              face E
+            {
+                layer
+                {
+                    row = crafted_03_52,
+                    row = crafted_03_4,
+                    row = crafted_03_27,
+                }
+            }
+              face W
+            {
+                layer
+                {
+                    row = crafted_03_29,
+                    row = crafted_03_5,
+                    row = crafted_03_60,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 1 [Base.BlacksmithAnvil],
+                item 1 [Base.Log],
+                item 1 [Base.Mov_ElectricBlowerForge],
+                item 0.25 [Base.ElectricWire] mode:use,
+                item 1 [Base.Mov_OrangeBarrel],
+            }
+        }
+    }
+}*/

@@ -1,0 +1,305 @@
+/******************************************/
+/** RJ: PLEASE DONT TOUCH WITHOUT ASKING **/
+/******************************************/
+
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_SofteningBeam
+        {
+            LuaWindowClass      = ISEntityTabWindow,
+            DisplayName         = Softening Beam,
+            Icon                = Build_SofteningBeam,
+        }
+    }
+
+    entity SofteningBeam
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_SofteningBeam,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+           Recipes         = RemoveFlesh;RemoveFur,
+        }
+
+        component SpriteConfig
+        {
+		    isThumpable = false,
+            face S
+            {
+                layer
+                {
+                    row = crafted_05_76,
+                }
+            }
+
+           face E
+            {
+                layer
+                {
+                    row = crafted_05_77,
+                }
+            }
+        }
+
+        component CraftRecipe
+        {
+            timedAction   = BuildWoodenStructureMedium,
+            time          = 50,
+            category      = Farming,
+            ToolTip       = Tooltip_craft_softeningBeamDesc,
+            inputs
+            {
+		        item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+		        item 2 [Base.Nails],
+            }
+        }
+    }
+
+    xuiSkin default
+    {
+        entity ES_TanninBarrel
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Tannin Barrel,
+            Icon                = Build_TanningBarrel,
+        }
+    }
+
+    entity TanninBarrel
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_TanninBarrel,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes         = TanLeather,
+        }
+
+        component SpriteConfig
+        {
+		    isThumpable = false,
+            face single
+            {
+                layer
+                {
+                    row = crafted_05_73,
+                }
+            }
+        }
+
+        component CraftRecipe
+        {
+		    timedAction   = BuildLowNoTool,
+            time          = 50,
+            category      = Farming,
+            ToolTip       = Tooltip_craft_tanningBarrelDesc,
+            inputs
+            {
+		        item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+		        item 2 [Base.Nails],
+            }
+        }
+    }
+
+    xuiSkin default
+    {
+        entity ES_DryingRackLarge
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Large Drying Rack,
+            Icon                = Build_DryingFrameLarge,
+        }
+    }
+
+    entity DryingRackLarge
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_DryingRackLarge,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+           Recipes         = DryLeatherLarge,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_05_81 crafted_05_83,
+                    row = crafted_05_80 crafted_05_82,
+                }
+            }
+
+            face E
+            {
+                layer
+                {
+                    row = crafted_05_86 crafted_05_87,
+                    row = crafted_05_84 crafted_05_85,
+                }
+            }
+        }
+
+        component CraftRecipe
+        {
+            timedAction   = BuildWallNoTool,
+            time          = 50,
+            /*SkillRequired = Woodwork:1,*/
+            /*xpAward       = Woodwork:5,*/
+            category      = Farming,
+            ToolTip       = Tooltip_craft_dryLeatherRackLargeDesc,
+            inputs
+            {
+                item 6 [Base.LongStick],
+                item 8 [Base.Twine],
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+
+    xuiSkin default
+    {
+        entity ES_DryingRackMedium
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Medium Drying Rack,
+            Icon                = Build_DryingFrameSmall,
+        }
+    }
+
+    entity DryingRackMedium
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_DryingRackMedium,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+           Recipes         = DryLeatherMedium,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_05_108 crafted_05_109,
+                }
+            }
+
+            face E
+            {
+                layer
+                {
+                    row = crafted_05_111,
+                    row = crafted_05_110,
+                }
+            }
+        }
+
+        component CraftRecipe
+        {
+            timedAction   = BuildWallNoTool,
+            time          = 50,
+            /*SkillRequired = Woodwork:1,
+            xpAward       = Woodwork:10,*/
+            category      = Farming,
+            ToolTip       = Tooltip_craft_dryLeatherRackMediumDesc,
+            inputs
+            {
+                item 6 [Base.LongStick],
+                item 8 [Base.Twine],
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight],
+                item 2 [Base.Nails],
+            }
+        }
+    }
+
+    xuiSkin default
+    {
+        entity ES_DryingRackSmall
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Small Drying Rack,
+            Icon                = Build_DryingFrameSmall,
+        }
+    }
+
+    entity DryingRackSmall
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_DryingRackSmall,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+           Recipes         = DryLeatherSmall,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_05_74,
+                }
+            }
+
+            face E
+            {
+                layer
+                {
+                    row = crafted_05_75,
+                }
+            }
+        }
+
+        component CraftRecipe
+        {
+            timedAction   = BuildWallNoTool,
+            time          = 50,
+            SkillRequired = Woodwork:1,
+            xpAward       = Woodwork:10,
+            category      = Farming,
+            ToolTip       = Tooltip_craft_dryLeatherRackSmallDesc,
+            inputs
+            {
+                item 4 [Base.LongStick],
+                item 4 [Base.Twine],
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegradeLight],
+                item 1 [Base.Nails],
+            }
+        }
+    }
+}

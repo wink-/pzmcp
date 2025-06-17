@@ -1,0 +1,17 @@
+module Base
+{
+	template vehicle SoundsStepVan
+	{
+		template! = SoundsVan,
+
+		sound
+		{
+			alarmLoop = VehicleAlarmA VehicleAlarmB VehicleAlarmC VehicleAlarmD VehicleAlarmE,
+			engine = VehicleEngineStepVan,
+			engineStart = VehicleEngineStepVan,
+			engineTurnOff = VehicleEngineStepVan,
+			horn = VehicleHornVan,
+			ignitionFail = VehicleIgnitionFailStepVan,
+		}
+	}
+}

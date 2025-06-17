@@ -1,0 +1,1251 @@
+module Base
+{
+	sound PenHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BluntShort/Pen/Hit,
+		}
+	}
+
+	sound PenBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BluntShort/Pen/Break,
+		}
+	}
+
+	sound PenSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BluntShort/Pen/Swing,
+		}
+	}
+
+	sound PenDrop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BluntShort/Pen/Drop,
+		}
+	}
+
+	/* BreadKnife */
+
+	sound SpearBreadKnifeBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Break,
+		}
+	}
+
+	sound SpearBreadKnifeHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/BreadKnife/Hit,
+		}
+	}
+
+	sound SpearBreadKnifeSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Swing,
+		}
+	}
+
+	sound SpearBreadKnifeStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/BreadKnife/Stab,
+		}
+	}
+
+	/* ButterKnife */
+	
+	sound SpearButterKnifeBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Break,
+		}
+	}
+
+	sound SpearButterKnifeHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/ButterKnife/Hit,
+		}
+	}
+
+	sound SpearButterKnifeSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Swing,
+		}
+	}
+
+	sound SpearButterKnifeStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/ButterKnife/Stab,
+		}
+	}
+
+	/* Crafted */
+	
+	sound SpearCraftedBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/CraftedSpear/Break,
+		}
+	}
+
+	sound SpearCraftedDrop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/CraftedSpear/Drop,
+		}
+	}
+
+	sound SpearCraftedHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/CraftedSpear/Hit,
+		}
+	}
+
+	sound SpearCraftedSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/CraftedSpear/Swing,
+		}
+	}
+
+	sound SpearCraftedStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/CraftedSpear/Stab,
+		}
+	}
+
+	/* Fork */
+	
+	sound SpearForkBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Break,
+		}
+	}
+
+	sound SpearForkHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/Fork/Hit,
+		}
+	}
+
+	sound SpearForkSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Swing,
+		}
+	}
+
+	sound SpearForkStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/Fork/Stab,
+		}
+	}
+
+	/* HandFork */
+	
+	sound SpearHandForkBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Break,
+		}
+	}
+
+	sound SpearHandForkHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/HandFork/Hit,
+		}
+	}
+
+	sound SpearHandForkSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Swing,
+		}
+	}
+
+	sound SpearHandForkStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/HandFork/Stab,
+		}
+	}
+
+	/* HuntingKnife */
+	
+	sound SpearHuntingKnifeBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Break,
+		}
+	}
+
+	sound SpearHuntingKnifeHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/HuntingKnife/Hit,
+		}
+	}
+
+	sound SpearHuntingKnifeSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Swing,
+		}
+	}
+
+	sound SpearHuntingKnifeStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/HuntingKnife/Stab,
+		}
+	}
+
+	/* IcePick */
+	
+	sound SpearIcePickBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Break,
+		}
+	}
+
+	sound SpearIcePickHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/IcePick/Hit,
+		}
+	}
+
+	sound SpearIcePickSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Swing,
+		}
+	}
+
+	sound SpearIcePickStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/IcePick/Stab,
+		}
+	}
+
+	/* Knife */
+	
+	sound SpearKnifeBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Break,
+		}
+	}
+
+	sound SpearKnifeHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/KitchenKnife/Hit,
+		}
+	}
+
+	sound SpearKnifeSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Swing,
+		}
+	}
+
+	sound SpearKnifeStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/KitchenKnife/Stab,
+		}
+	}
+
+	/* LetterOpener */
+	
+	sound SpearLetterOpenerBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Break,
+		}
+	}
+
+	sound SpearLetterOpenerHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/LetterOpener/Hit,
+		}
+	}
+
+	sound SpearLetterOpenerSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Swing,
+		}
+	}
+
+	sound SpearLetterOpenerStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/LetterOpener/Stab,
+		}
+	}
+
+	/* Machete */
+	
+	sound SpearMacheteBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Break,
+		}
+	}
+
+	sound SpearMacheteHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeLong/Machete/Hit,
+		}
+	}
+
+	sound SpearMacheteSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Swing,
+		}
+	}
+
+	sound SpearMacheteStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeLong/Machete/Stab,
+		}
+	}
+
+	/* Scalpel */
+	
+	sound SpearScalpelBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Break,
+		}
+	}
+
+	sound SpearScalpelHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/Scalpel/Hit,
+		}
+	}
+
+	sound SpearScalpelSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Swing,
+		}
+	}
+
+	sound SpearScalpelStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/Scalpel/Stab,
+		}
+	}
+
+	/* Scissors */
+	
+	sound SpearScissorsBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Break,
+		}
+	}
+
+	sound SpearScissorsHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/Scissors/Hit,
+		}
+	}
+
+	sound SpearScissorsSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Swing,
+		}
+	}
+
+	sound SpearScissorsStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/Scissors/Stab,
+		}
+	}
+
+	/* Screwdriver */
+	
+	sound SpearScrewdriverBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Break,
+		}
+	}
+
+	sound SpearScrewdriverHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/Screwdriver/Hit,
+		}
+	}
+
+	sound SpearScrewdriverSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Swing,
+		}
+	}
+
+	sound SpearScrewdriverStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/Screwdriver/Stab,
+		}
+	}
+
+	/* Spoon */
+	
+	sound SpearSpoonBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Break,
+		}
+	}
+
+	sound SpearSpoonHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/Spoon/Hit,
+		}
+	}
+
+	sound SpearSpoonSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Swing,
+		}
+	}
+
+	sound SpearSpoonStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/Spoon/Stab,
+		}
+	}
+
+	/* CarvingFork */
+	
+	sound SpearCarvingForkBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Break,
+		}
+	}
+
+	sound SpearCarvingForkHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/CarvingFork/Hit,
+		}
+	}
+
+	sound SpearCarvingForkSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Swing,
+		}
+	}
+
+	sound SpearCarvingForkStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/CarvingFork/Stab,
+		}
+	}
+
+	/* GardenFork */
+	
+	sound SpearGardenForkBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Break,
+		}
+	}
+
+	sound SpearGardenForkHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BluntLong/GardenFork/Hit,
+		}
+	}
+
+	sound SpearGardenForkSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Swing,
+		}
+	}
+
+	sound SpearGardenForkStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BluntLong/GardenFork/Stab,
+		}
+	}
+
+	/* WoodenLance */
+	
+	sound WoodenLanceBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Break,
+		}
+	}
+
+	sound WoodenLanceHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/Stake/Hit,
+		}
+	}
+
+	sound WoodenLanceSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/WoodenSpear/Swing,
+		}
+	}
+
+	sound WoodenLanceStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/BladeShort/Stake/Stab,
+		}
+	}
+
+	/* CrudeSpear */
+
+	sound CrudeSpearBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/CrudeSpear/Break,
+		}
+	}
+
+	sound CrudeSpearHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/CrudeSpear/Hit,
+		}
+	}
+
+	sound CrudeSpearSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/CrudeSpear/Swing,
+		}
+	}
+
+	sound CrudeSpearStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/CrudeSpear/Stab,
+		}
+	}
+
+	/* FireHardenedCraftedSpear */
+
+	sound FireHardenedCraftedSpearBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/FireHardenedCraftedSpear/Break,
+		}
+	}
+
+	sound FireHardenedCraftedSpearHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/FireHardenedCraftedSpear/Hit,
+		}
+	}
+
+	sound FireHardenedCraftedSpearSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/FireHardenedCraftedSpear/Swing,
+		}
+	}
+
+	sound FireHardenedCraftedSpearStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/FireHardenedCraftedSpear/Stab,
+		}
+	}
+
+	/* LongCrudeSpear */
+
+	sound LongCrudeSpearBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongCrudeSpear/Break,
+		}
+	}
+
+	sound LongCrudeSpearDrop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongCrudeSpear/Drop,
+		}
+	}
+
+	sound LongCrudeSpearHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongCrudeSpear/Hit,
+		}
+	}
+
+	sound LongCrudeSpearSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongCrudeSpear/Swing,
+		}
+	}
+
+	sound LongCrudeSpearStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongCrudeSpear/Stab,
+		}
+	}
+
+	/* LongSpear */
+
+	sound LongSpearBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongSpear/Break,
+		}
+	}
+
+	sound LongSpearHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongSpear/Hit,
+		}
+	}
+
+	sound LongSpearSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongSpear/Swing,
+		}
+	}
+
+	sound LongSpearStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongSpear/Stab,
+		}
+	}
+
+	/* LongStoneSpear */
+
+	sound LongStoneSpearBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongStoneSpear/Break,
+		}
+	}
+
+	sound LongStoneSpearDrop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongStoneSpear/Drop,
+		}
+	}
+
+	sound LongStoneSpearHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongStoneSpear/Hit,
+		}
+	}
+
+	sound LongStoneSpearSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongStoneSpear/Swing,
+		}
+	}
+
+	sound LongStoneSpearStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongStoneSpear/Stab,
+		}
+	}
+
+	/* ShortSpear */
+
+	sound ShortSpearBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/ShortSpear/Break,
+		}
+	}
+
+	sound ShortSpearDrop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/ShortSpear/Drop,
+		}
+	}
+
+	sound ShortSpearHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/ShortSpear/Hit,
+		}
+	}
+
+	sound ShortSpearSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/ShortSpear/Swing,
+		}
+	}
+
+	sound ShortSpearStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/ShortSpear/Stab,
+		}
+	}
+
+	/* StoneSpear */
+
+	sound StoneSpearBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/StoneSpear/Break,
+		}
+	}
+
+	sound StoneSpearHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/StoneSpear/Hit,
+		}
+	}
+
+	sound StoneSpearSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/StoneSpear/Swing,
+		}
+	}
+
+	sound StoneSpearStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/StoneSpear/Stab,
+		}
+	}
+
+	/* Spear Head */
+
+	sound SpearHeadBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearHead/Break,
+		}
+	}
+
+	sound SpearHeadDrop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearHead/Drop,
+		}
+	}
+
+	sound SpearHeadHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearHead/Hit,
+		}
+	}
+
+	sound SpearHeadStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearHead/Stab,
+		}
+	}
+
+	sound SpearHeadSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearHead/Swing,
+		}
+	}
+
+	/* Spear Head Long */
+
+	sound SpearHeadLongBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearHeadLong/Break,
+		}
+	}
+
+	sound SpearHeadLongDrop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearHeadLong/Drop,
+		}
+	}
+
+	sound SpearHeadLongHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearHeadLong/Hit,
+		}
+	}
+
+	sound SpearHeadLongStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearHeadLong/Stab,
+		}
+	}
+
+	sound SpearHeadLongSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearHeadLong/Swing,
+		}
+	}
+
+	sound PlungerSpearBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/PlungerSpear/Break,
+		}
+	}
+
+	sound PlungerSpearDrop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/PlungerSpear/Drop,
+		}
+	}
+
+	sound PlungerSpearHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/PlungerSpear/Hit,
+		}
+	}
+
+	sound PlungerSpearSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/PlungerSpear/Swing,
+		}
+	}
+
+	sound LongSpearBoneBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongSpearBone/Break,
+		}
+	}
+
+	sound LongSpearBoneDrop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongSpearBone/Drop,
+		}
+	}
+
+	sound LongSpearBoneHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongSpearBone/Hit,
+		}
+	}
+
+	sound LongSpearBoneStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongSpearBone/Stab,
+		}
+	}
+
+	sound LongSpearBoneSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/LongSpearBone/Swing,
+		}
+	}
+
+	sound SpearBoneBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearBone/Break,
+		}
+	}
+
+	sound SpearBoneDrop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearBone/Drop,
+		}
+	}
+
+	sound SpearBoneHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearBone/Hit,
+		}
+	}
+
+	sound SpearBoneStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearBone/Stab,
+		}
+	}
+
+	sound SpearBoneSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearBone/Swing,
+		}
+	}
+
+	sound SpearGlassBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearGlass/Break,
+		}
+	}
+
+	sound SpearGlassDrop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearGlass/Drop,
+		}
+	}
+
+	sound SpearGlassHit
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearGlass/Hit,
+		}
+	}
+
+	sound SpearGlassStab
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearGlass/Stab,
+		}
+	}
+
+	sound SpearGlassSwing
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Melee/Spear/SpearGlass/Swing,
+		}
+	}
+}

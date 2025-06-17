@@ -1,0 +1,67 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_HeckleComb
+        {
+            LuaWindowClass      = ISEntityTabWindow,
+            DisplayName         = Heckle Comb,
+            Icon                = Build_HeckleComb,
+        }
+    }
+
+    entity HeckleComb
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_HeckleComb,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+           Recipes         = Heckling,
+        }
+
+        component SpriteConfig
+        {
+		    isThumpable = false,
+            face S
+            {
+                layer
+                {
+                    row = crafted_04_86 crafted_04_87,
+                }
+            }
+
+           face E
+            {
+                layer
+                {
+                    row = crafted_04_71,
+                    row = crafted_04_70,
+                }
+            }            
+        }
+
+        component CraftRecipe
+        {
+            timedAction   = BuildWoodenStructureMedium,
+            time          = 50,
+            category      = Farming,
+            tags          = Outdoors,
+		    SkillRequired = Woodwork:3,
+		    xpAward       = Woodwork:30,
+            ToolTip       = Tooltip_craft_heckleCombDesc,
+            inputs
+            {
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 1 tags[Saw;CrudeSaw] mode:keep flags[MayDegradeLight],
+                item 4 [Base.Plank],
+                item 8 [Base.Nails],
+            }
+        }
+    }
+
+}

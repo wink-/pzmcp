@@ -1,0 +1,19 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISTextEntryBox
+        {
+            /* optional: title = title, */
+            background          = true,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            keeplog             = false,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+            font                = UIFont.Small,
+        }
+    }
+}

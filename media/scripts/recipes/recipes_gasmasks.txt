@@ -1,0 +1,379 @@
+module Base
+{
+
+	craftRecipe RemoveGasMaskFilter
+	{
+		timedAction = Making,
+		Time = 30,
+		OnCreate = Recipe.OnCreate.GasmaskFilterRemoval,
+		OnTest = Recipe.OnTest.GasmaskFilterRemoval,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;CanBeDoneInDark,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 tags[GasMask] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.GasmaskFilter,
+		}
+	}
+
+	craftRecipe RemoveCraftedGasMaskFilter
+	{
+		timedAction = Making,
+		Time = 30,
+		OnCreate = Recipe.OnCreate.GasmaskFilterRemoval,
+		OnTest = Recipe.OnTest.GasmaskFilterCraftedRemoval,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;CanBeDoneInDark,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 tags[GasMask] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.GasmaskFilterCrafted,
+		}
+	}
+
+	craftRecipe RemoveRespiratorFilters
+	{
+		timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.GasmaskFilterRemoval,
+		OnTest = Recipe.OnTest.RespiratorFilterRemoval,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;CanBeDoneInDark,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 tags[GasMask] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.RespiratorFilters,
+		}
+	}
+
+	craftRecipe RemoveRechargedRespiratorFilters
+	{
+		timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.GasmaskFilterRemoval,
+		OnTest = Recipe.OnTest.RespiratorFilterRechargedRemoval,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;CanBeDoneInDark,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 tags[GasMask] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.RespiratorFiltersRecharged,
+		}
+	}
+
+	craftRecipe PutFilterOnGasMask
+	{
+		timedAction = Making,
+		Time = 30,
+		OnCreate = Recipe.OnCreate.GasmaskFilterInsert,
+		OnTest = Recipe.OnTest.GasmaskFilterInsert,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;CanBeDoneInDark,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.Hat_GasMask_nofilter;Base.Hat_ImprovisedGasMask_nofilter;Base.Hat_NBCmask_nofilter] mappers[maskMapper] flags[IsNotWorn;AllowFavorite;InheritFavorite;CopyClothing],
+			item 1 tags[GasmaskFilter] flags[ItemCount] mode:destroy,
+		}
+		outputs
+		{
+			item 1 mapper:maskMapper,
+		}
+        itemMapper maskMapper
+        {
+			Base.Hat_GasMask = Base.Hat_GasMask_nofilter,
+			Base.Hat_ImprovisedGasMask = Base.Hat_ImprovisedGasMask_nofilter,
+			Base.Hat_NBCmask = Base.Hat_NBCmask_nofilter,
+
+            default = Base.Hat_GasMask,
+		}
+	}
+/*
+	craftRecipe PutFilterOnNuclearBiochemicalMask
+	{
+		timedAction = Making,
+		Time = 30,
+		OnCreate = Recipe.OnCreate.GasmaskFilterInsert,
+		OnTest = Recipe.OnTest.GasmaskFilterInsert,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;CanBeDoneInDark,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.Hat_NBCmask_nofilter] flags[IsNotWorn],
+			item 1 tags[GasmaskFilter] flags[ItemCount] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.Hat_NBCmask,
+		}
+	}
+*/
+	craftRecipe PutFilterOnWornGasMask
+	{
+		timedAction = Making,
+		Time = 30,
+		OnCreate = Recipe.OnCreate.WornGasmaskFilterInsert,
+		OnTest = Recipe.OnTest.WornGasmaskFilterInsert,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;CanBeDoneInDark,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.Hat_GasMask_nofilter;Base.Hat_ImprovisedGasMask_nofilter;Base.Hat_NBCmask_nofilter] mappers[maskMapper] flags[IsWorn;AllowFavorite;InheritFavorite;CopyClothing],
+			item 1 tags[GasmaskFilter] flags[ItemCount] mode:destroy,
+		}
+		outputs
+		{
+			item 1 mapper:maskMapper,
+		}
+        itemMapper maskMapper
+        {
+			Base.Hat_GasMask = Base.Hat_GasMask_nofilter,
+			Base.Hat_ImprovisedGasMask = Base.Hat_ImprovisedGasMask_nofilter,
+			Base.Hat_NBCmask = Base.Hat_NBCmask_nofilter,
+
+            default = Base.Hat_GasMask,
+		}
+	}
+/*
+	craftRecipe PutFilterOnWornNuclearBiochemicalMask
+	{
+		timedAction = Making,
+		Time = 30,
+		OnCreate = Recipe.OnCreate.WornGasmaskFilterInsert,
+		OnTest = Recipe.OnTest.WornGasmaskFilterInsert,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;CanBeDoneInDark,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.Hat_NBCmask_nofilter] flags[IsWorn],
+			item 1 tags[GasmaskFilter] flags[ItemCount] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.Hat_NBCmask,
+		}
+	}*/
+
+	craftRecipe PutFiltersOnRespirator
+	{
+		timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.GasmaskFilterInsert,
+		OnTest = Recipe.OnTest.GasmaskFilterInsert,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;CanBeDoneInDark,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.Hat_BuildersRespirator_nofilter] flags[IsNotWorn;AllowFavorite;InheritFavorite;CopyClothing],
+			item 1 tags[RespiratorFilter] flags[ItemCount] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.Hat_BuildersRespirator,
+		}
+	}
+
+	craftRecipe PutFiltersOnWornRespirator
+	{
+		timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.WornGasmaskFilterInsert,
+		OnTest = Recipe.OnTest.WornGasmaskFilterInsert,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;CanBeDoneInDark,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.Hat_BuildersRespirator_nofilter] flags[IsWorn;AllowFavorite;InheritFavorite;CopyClothing],
+			item 1 tags[RespiratorFilter] flags[ItemCount] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.Hat_BuildersRespirator,
+		}
+	}
+
+	craftRecipe MakeCraftedGasMaskFilter
+	{
+		timedAction = Making,
+		Time = 80,
+		NeedToBeLearn = True,
+		Tags = InHandCraft;Engineer,
+        category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 tags[MetalSaw;SheetMetalSnips;SmallSaw;LightMetalSnips] mode:keep flags[MayDegradeLight],
+			item 1 tags[Pliers] mode:keep flags[MayDegradeLight],
+			item 1 tags[MortarPestle] mode:keep,
+			item 1 tags[EmptyCan] flags[IsEmpty;ItemCount],
+			item 1 [Base.Sponge],
+			item 1 tags[Charcoal],
+			item 1 [Base.RippedSheets] mode:destroy,
+			item 1 tags[Glue],
+			item 1 tags[Tape],
+		}
+		outputs
+		{
+			item 1 Base.GasmaskFilterCrafted,
+		}
+	}
+
+	craftRecipe MakeImprovisedGasMask
+	{
+		timedAction = Making,
+		Time = 80,
+		NeedToBeLearn = True,
+		Tags = InHandCraft;Engineer,
+		category = Miscellaneous, /*category = Survival,*/
+        xpAward = Tailoring:5,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull;SharpnessCheck],
+			item 2 [Base.DuctTape],
+			item 1 [Base.RippedSheets] mode:destroy,
+			item 1 [Base.PopBottle;Base.WaterBottle] flags[IsEmpty;ItemCount],
+		}
+		outputs
+		{
+			item 1 Base.Hat_ImprovisedGasMask_nofilter,
+		}
+	}
+
+	craftRecipe RechargeFilters
+	{
+		timedAction = Making,
+		Time = 80,
+		NeedToBeLearn = True,
+		OnTest = Recipe.OnTest.GasmaskFilterNotFull,
+		Tags = InHandCraft;Engineer,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 tags[GasmaskFilter;RespiratorFilter] mappers[FilterMapper],
+			item 1 tags[MortarPestle] mode:keep,
+			item 1 [Base.Sponge],
+			item 1 tags[Charcoal],
+			item 1 [Base.RippedSheets] mode:destroy,
+			item 1 tags[Glue],
+			item 1 tags[Tape],
+		}
+		outputs
+		{
+            item 1 mapper:FilterMapper,
+		}
+        itemMapper FilterMapper
+        {
+            Base.GasmaskFilterCrafted = Base.GasmaskFilter,
+            Base.GasmaskFilterCrafted = Base.GasmaskFilterCrafted,
+            Base.RespiratorFiltersRecharged = Base.RespiratorFilters,
+            Base.RespiratorFiltersRecharged = Base.RespiratorFiltersRecharged,
+
+            default = Base.GasmaskFilterCrafted,
+        }
+	}
+
+	craftRecipe RemoveOxygenTankFromHazmatSuit
+	{
+		timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.OxygenTankRemoval,
+		OnTest = Recipe.OnTest.OxygenTankRemoval,
+		AllowBatchCraft = False,
+		ToolTip = Tooltip_Recipe_CantBeWorn,
+		Tags = InHandCraft;CanBeDoneInDark,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.HazmatSuit;Base.SCBA] mode:keep flags[IsNotWorn;AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.Oxygen_Tank,
+		}
+	}
+
+/*
+	craftRecipe RemoveOxygenTankFromSCBA
+	{
+		timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.OxygenTankRemoval,
+		OnTest = Recipe.OnTest.OxygenTankRemoval,
+		AllowBatchCraft = False,
+		ToolTip = Tooltip_Recipe_CantBeWorn,
+		Tags = InHandCraft;CanBeDoneInDark,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.SCBA] mode:keep flags[IsNotWorn;AllowFavorite;InheritFavorite],
+		}
+		outputs
+		{
+			item 1 Base.Oxygen_Tank,
+		}
+	}
+*/
+
+	craftRecipe PutOxygenTankOnHazmatSuit
+	{
+		timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.OxygenTankAttach,
+		OnTest = Recipe.OnTest.OxygenTankAttach,
+		AllowBatchCraft = False,
+		ToolTip = Tooltip_Recipe_CantBeWorn,
+		Tags = InHandCraft;CanBeDoneInDark,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.HazmatSuit] flags[IsNotWorn;AllowFavorite;InheritFavorite;CopyClothing],
+			item 1 [Base.Oxygen_Tank] flags[ItemCount] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.HazmatSuit,
+		}
+	}
+
+	craftRecipe PutOxygenTankOnSCBA
+	{
+		timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.OxygenTankAttach,
+		OnTest = Recipe.OnTest.OxygenTankAttach,
+		AllowBatchCraft = False,
+		ToolTip = Tooltip_Recipe_CantBeWorn,
+		Tags = InHandCraft;CanBeDoneInDark,
+		category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.SCBA_notank] flags[IsNotWorn;AllowFavorite;InheritFavorite;CopyClothing],
+			item 1 [Base.Oxygen_Tank] flags[ItemCount] mode:destroy,
+		}
+		outputs
+		{
+			item 1 Base.SCBA,
+		}
+	}
+
+}

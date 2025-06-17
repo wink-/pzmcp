@@ -1,0 +1,11 @@
+module Base
+{
+	sound PropaneLanternRunning
+	{
+		category = Object,
+		clip
+		{
+			event = Object/PropaneLantern/Running,
+		}
+	}
+}

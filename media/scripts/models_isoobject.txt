@@ -1,0 +1,1738 @@
+module Base
+{
+	model appliances_laundry_P1_00
+	{
+		mesh = IsoObject/appliances_laundry_P1_00,
+		texture = IsoObject/appliances_laundry_P1_00,
+		undoCoreScale = true,
+	}
+
+	animationsMesh door_n_sw
+	{
+		meshFile = IsoObject/door_n_sw.glb,
+		keepMeshAnimations = true,
+	}
+	
+	animationsMesh door_w_se
+	{
+		meshFile = IsoObject/door_w_se.glb,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh door_pair_left_n
+	{
+		meshFile = IsoObject/door_pair_left_n.glb,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh door_pair_right_n
+	{
+		meshFile = IsoObject/door_pair_right_n.glb,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh door_pair_right_n_open
+	{
+		meshFile = IsoObject/door_pair_right_n_open.glb,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh door_pair_left_w
+	{
+		meshFile = IsoObject/door_pair_left_w.glb,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh door_pair_left_w_open
+	{
+		meshFile = IsoObject/door_pair_left_w_open,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh door_pair_right_w
+	{
+		meshFile = IsoObject/door_pair_right_w.glb,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh carpentry_01_48
+	{
+		meshFile = IsoObject/carpentry_01_48,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh carpentry_01_49
+	{
+		meshFile = IsoObject/carpentry_01_49,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_bathroom_01_48
+	{
+		meshFile = IsoObject/fixtures_bathroom_01_48,
+		keepMeshAnimations = true,
+		postProcess = -JOIN_IDENTICAL_VERTICES,
+	}
+
+	animationsMesh fixtures_bathroom_01_49
+	{
+		meshFile = IsoObject/fixtures_bathroom_01_49,
+		keepMeshAnimations = true,
+		postProcess = -JOIN_IDENTICAL_VERTICES,
+	}
+
+	animationsMesh fixtures_doors_02_18
+	{
+		meshFile = IsoObject/fixtures_doors_02_18,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_02_19
+	{
+		meshFile = IsoObject/fixtures_doors_02_19,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_0
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_0,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_1
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_1,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_4
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_4,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_5
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_5,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_8
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_8,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_9
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_9,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_12
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_12,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_13
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_13,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_16
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_16,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_17
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_17,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_20
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_20,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_21
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_21,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_24
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_24,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_25
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_25,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_28
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_28,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_29
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_29,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_33
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_33,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_34
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_34,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_40
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_40,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_43
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_43,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_49
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_49,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_50
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_50,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_56
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_56,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_59
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_59,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_65
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_65,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_66
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_66,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_72
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_72,
+		keepMeshAnimations = true,
+	}
+	
+	animationsMesh fixtures_doors_fences_01_75
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_75,
+		keepMeshAnimations = true,
+	}
+	
+	animationsMesh fixtures_doors_fences_01_81
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_81,
+		keepMeshAnimations = true,
+	}
+	
+	animationsMesh fixtures_doors_fences_01_82
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_82,
+		keepMeshAnimations = true,
+	}
+	
+	animationsMesh fixtures_doors_fences_01_88
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_88,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_91
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_91,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_97
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_97,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_98
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_98,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_104
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_104,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_107
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_107,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_128
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_128,
+		keepMeshAnimations = true,
+	}
+
+	animationsMesh fixtures_doors_fences_01_129
+	{
+		meshFile = IsoObject/fixtures_doors_fences_01_129,
+		keepMeshAnimations = true,
+	}
+
+	model blender_test
+	{
+		mesh = IsoObject/blender_test,
+		texture = door1,
+		scale = 0.01,
+	}
+
+	model door1_test
+	{
+		mesh = IsoObject/door1,
+		texture = fixtures_doors_01_2,
+		shader = door,
+		scale = 1.0,
+		static = false,
+	}
+
+	model door1_static
+	{
+		mesh = IsoObject/door1_static,
+		texture = fixtures_doors_01_2,
+		shader = door,
+		scale = 0.01,
+		static = true,
+	}
+
+	model carpentry_01_48
+	{
+		mesh = IsoObject/carpentry_01_48,
+		animationsMesh = carpentry_01_48,
+		texture = carpentry_01_50,
+		shader = door,
+		static = false,
+		scale = 1.0,
+		undoCoreScale = true,
+	}
+
+	model carpentry_01_49
+	{
+		mesh = IsoObject/carpentry_01_49,
+		animationsMesh = carpentry_01_49,
+		texture = carpentry_01_50,
+		shader = door,
+		static = false,
+		scale = 1.0,
+		undoCoreScale = true,
+	}
+
+	model fixtures_bathroom_01_48
+	{
+		mesh = IsoObject/fixtures_bathroom_01_48,
+		animationsMesh = fixtures_bathroom_01_48,
+		texture = fixtures_bathroom_01_51,
+		shader = door,
+		static = false,
+		scale = 1.0,
+		undoCoreScale = true,
+		postProcess = -JOIN_IDENTICAL_VERTICES,
+	}
+
+	model fixtures_bathroom_01_49
+	{
+		mesh = IsoObject/fixtures_bathroom_01_49,
+		animationsMesh = fixtures_bathroom_01_49,
+		texture = fixtures_bathroom_01_51,
+		shader = door,
+		static = false,
+		scale = 1.0,
+		undoCoreScale = true,
+		postProcess = -JOIN_IDENTICAL_VERTICES,
+	}
+
+	model fixtures_doors_02_18
+	{
+		mesh = IsoObject/fixtures_doors_02_18,
+		animationsMesh = fixtures_doors_02_18,
+		texture = fixtures_doors_02_18,
+		shader = door,
+		static = false,
+		scale = 1.0,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_02_19
+	{
+		mesh = IsoObject/fixtures_doors_02_19,
+		animationsMesh = fixtures_doors_02_19,
+		texture = fixtures_doors_02_18,
+		shader = door,
+		static = false,
+		scale = 1.0,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_0
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_0,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_0,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_1
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_1,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_1,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_4
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_4,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_4,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_5
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_5,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_5,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_8
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_8,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_8,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_9
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_9,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_9,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_12
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_12,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_12,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_13
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_13,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_13,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_16
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_16,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_16,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_17
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_17,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_17,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_20
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_20,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_20,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_21
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_21,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_21,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_24
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_24,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_24,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_25
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_25,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_25,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_28
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_28,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_28,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_29
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_29,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_29,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_33
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_33,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_33,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_34
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_34,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_34,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_40
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_40,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_40,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_43
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_43,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_43,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_49
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_49,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_49,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_50
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_50,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_50,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_56
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_56,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_56,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_59
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_59,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_59,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_65
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_65,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_65,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_66
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_66,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_66,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_72
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_72,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_72,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_75
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_75,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_75,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_81
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_81,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_81,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_82
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_82,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_82,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_88
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_88,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_88,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_97
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_97,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_97,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_91
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_91,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_91,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_98
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_98,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_98,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_104
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_104,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_104,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_107
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_107,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_107,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_128
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_128,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_128,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model fixtures_doors_fences_01_129
+	{
+		mesh = IsoObject/fixtures_doors_fences_01_129,
+		texture = IsoObject/MODELS_fixtures_doors_fences_01,
+		animationsMesh = fixtures_doors_fences_01_129,
+		shader = door,
+		static = false,
+		undoCoreScale = true,
+	}
+
+	model SheetDoorClosed
+	{
+		mesh = IsoObject/SheetDoor_Closed|SheetDoor_Closed,
+		texture = IsoObject/SheetDoor_Closed,
+		static = true,
+		scale = 0.01,
+		undoCoreScale = true,
+	}
+
+	model SheetDoorOpen
+	{
+		mesh = IsoObject/SheetDoor_Open|SheetDoor_Open,
+		texture = IsoObject/SheetDoor_Open,
+		static = true,
+		scale = 0.01,
+		undoCoreScale = true,
+	}
+
+	model ramp10segment1
+	{
+		mesh = IsoObject/ramp10|Segment1,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp10segment2
+	{
+		mesh = IsoObject/ramp10|Segment2,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp10segment3
+	{
+		mesh = IsoObject/ramp10|Segment3,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp10segment4
+	{
+		mesh = IsoObject/ramp10|Segment4,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp10segment5
+	{
+		mesh = IsoObject/ramp10|Segment5,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp10segment6
+	{
+		mesh = IsoObject/ramp10|Segment6,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp10segment7
+	{
+		mesh = IsoObject/ramp10|Segment7,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp10segment8
+	{
+		mesh = IsoObject/ramp10|Segment8,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp10segment9
+	{
+		mesh = IsoObject/ramp10|Segment9,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp10segment10
+	{
+		mesh = IsoObject/ramp10|Segment10,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	physicsShape ramp10segment1n
+	{
+		mesh = physics/ramp10|Segment1,
+		translate = 0.0 0 0.5,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp10segment2n
+	{
+		mesh = physics/ramp10|Segment2,
+		translate = 0.0 0 1.5,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp10segment3n
+	{
+		mesh = physics/ramp10|Segment3,
+		translate = 0.0 0 2.5,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp10segment4n
+	{
+		mesh = physics/ramp10|Segment4,
+		translate = 0.0 0 3.5,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp10segment5n
+	{
+		mesh = physics/ramp10|Segment5,
+		translate = 0.0 0 4.5,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp10segment6n
+	{
+		mesh = physics/ramp10|Segment6,
+		translate = 0.0 0 5.5,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp10segment7n
+	{
+		mesh = physics/ramp10|Segment7,
+		translate = 0.0 0 6.5,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp10segment8n
+	{
+		mesh = physics/ramp10|Segment8,
+		translate = 0.0 0 7.5,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp10segment9n
+	{
+		mesh = physics/ramp10|Segment9,
+		translate = 0.0 0 8.5,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp10segment10n
+	{
+		mesh = physics/ramp10|Segment10,
+		translate = 0.0 0 9.5,
+		rotate = 0 180 0,
+	}
+
+
+	model ramp20segment1
+	{
+		mesh = IsoObject/ramp20|Segment1,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment2
+	{
+		mesh = IsoObject/ramp20|Segment2,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment3
+	{
+		mesh = IsoObject/ramp20|Segment3,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment4
+	{
+		mesh = IsoObject/ramp20|Segment4,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment5
+	{
+		mesh = IsoObject/ramp20|Segment5,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment6
+	{
+		mesh = IsoObject/ramp20|Segment6,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment7
+	{
+		mesh = IsoObject/ramp20|Segment7,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment8
+	{
+		mesh = IsoObject/ramp20|Segment8,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment9
+	{
+		mesh = IsoObject/ramp20|Segment9,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment10
+	{
+		mesh = IsoObject/ramp20|Segment10,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment11
+	{
+		mesh = IsoObject/ramp20|Segment11,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment12
+	{
+		mesh = IsoObject/ramp20|Segment12,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment13
+	{
+		mesh = IsoObject/ramp20|Segment13,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment14
+	{
+		mesh = IsoObject/ramp20|Segment14,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment15
+	{
+		mesh = IsoObject/ramp20|Segment15,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment16
+	{
+		mesh = IsoObject/ramp20|Segment16,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment17
+	{
+		mesh = IsoObject/ramp20|Segment17,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment18
+	{
+		mesh = IsoObject/ramp20|Segment18,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment19
+	{
+		mesh = IsoObject/ramp20|Segment19,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ramp20segment20
+	{
+		mesh = IsoObject/ramp20|Segment20,
+		texture = IsoObject/MODELS_ramp,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	physicsShape ramp20segment1n
+	{
+		mesh = physics/ramp20|Segment1,
+		translate = 0.0 0 0.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment2n
+	{
+		mesh = physics/ramp20|Segment2,
+		translate = 0.0 0 1.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment3n
+	{
+		mesh = physics/ramp20|Segment3,
+		translate = 0.0 0 2.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment4n
+	{
+		mesh = physics/ramp20|Segment4,
+		translate = 0.0 0 3.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment5n
+	{
+		mesh = physics/ramp20|Segment5,
+		translate = 0.0 0 4.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment6n
+	{
+		mesh = physics/ramp20|Segment6,
+		translate = 0.0 0 5.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment7n
+	{
+		mesh = physics/ramp20|Segment7,
+		translate = 0.0 0 6.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment8n
+	{
+		mesh = physics/ramp20|Segment8,
+		translate = 0.0 0 7.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment9n
+	{
+		mesh = physics/ramp20|Segment9,
+		translate = 0.0 0 8.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment10n
+	{
+		mesh = physics/ramp20|Segment10,
+		translate = 0.0 0 9.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment11n
+	{
+		mesh = physics/ramp20|Segment11,
+		translate = 0.0 0 10.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment12n
+	{
+		mesh = physics/ramp20|Segment12,
+		translate = 0.0 0 11.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment13n
+	{
+		mesh = physics/ramp20|Segment13,
+		translate = 0.0 0 12.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment14n
+	{
+		mesh = physics/ramp20|Segment14,
+		translate = 0.0 0 13.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment15n
+	{
+		mesh = physics/ramp20|Segment15,
+		translate = 0.0 0 14.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment16n
+	{
+		mesh = physics/ramp20|Segment16,
+		translate = 0.0 0 15.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment17n
+	{
+		mesh = physics/ramp20|Segment17,
+		translate = 0.0 0 16.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment18n
+	{
+		mesh = physics/ramp20|Segment18,
+		translate = 0.0 0 17.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment19n
+	{
+		mesh = physics/ramp20|Segment19,
+		translate = 0.0 0 18.0,
+		rotate = 0 180 0,
+	}
+
+	physicsShape ramp20segment20n
+	{
+		mesh = physics/ramp20|Segment20,
+		translate = 0.0 0 19.0,
+		rotate = 0 180 0,
+	}
+
+
+	physicsShape ramp20segment1s
+	{
+		mesh = physics/ramp20|Segment1,
+		translate = 0.0 0 0.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment2s
+	{
+		mesh = physics/ramp20|Segment2,
+		translate = 0.0 0 -1.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment3s
+	{
+		mesh = physics/ramp20|Segment3,
+		translate = 0.0 0 -2.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment4s
+	{
+		mesh = physics/ramp20|Segment4,
+		translate = 0.0 0 -3.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment5s
+	{
+		mesh = physics/ramp20|Segment5,
+		translate = 0.0 0 -4.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment6s
+	{
+		mesh = physics/ramp20|Segment6,
+		translate = 0.0 0 -5.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment7s
+	{
+		mesh = physics/ramp20|Segment7,
+		translate = 0.0 0 -6.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment8s
+	{
+		mesh = physics/ramp20|Segment8,
+		translate = 0.0 0 -7.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment9s
+	{
+		mesh = physics/ramp20|Segment9,
+		translate = 0.0 0 -8.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment10s
+	{
+		mesh = physics/ramp20|Segment10,
+		translate = 0.0 0 -9.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment11s
+	{
+		mesh = physics/ramp20|Segment11,
+		translate = 0.0 0 -10.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment12s
+	{
+		mesh = physics/ramp20|Segment12,
+		translate = 0.0 0 -11.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment13s
+	{
+		mesh = physics/ramp20|Segment13,
+		translate = 0.0 0 -12.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment14s
+	{
+		mesh = physics/ramp20|Segment14,
+		translate = 0.0 0 -13.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment15s
+	{
+		mesh = physics/ramp20|Segment15,
+		translate = 0.0 0 -14.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment16s
+	{
+		mesh = physics/ramp20|Segment16,
+		translate = 0.0 0 -15.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment17s
+	{
+		mesh = physics/ramp20|Segment17,
+		translate = 0.0 0 -16.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment18s
+	{
+		mesh = physics/ramp20|Segment18,
+		translate = 0.0 0 -17.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment19s
+	{
+		mesh = physics/ramp20|Segment19,
+		translate = 0.0 0 -18.0,
+		rotate = 0 0 0,
+	}
+
+	physicsShape ramp20segment20s
+	{
+		mesh = physics/ramp20|Segment20,
+		translate = 0.0 0 -19.0,
+		rotate = 0 0 0,
+	}
+
+
+	physicsShape ramp20segment1w
+	{
+		mesh = physics/ramp20|Segment1,
+		translate = 0.0 0 0.0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment2w
+	{
+		mesh = physics/ramp20|Segment2,
+		translate = 1.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment3w
+	{
+		mesh = physics/ramp20|Segment3,
+		translate = 2.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment4w
+	{
+		mesh = physics/ramp20|Segment4,
+		translate = 3.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment5w
+	{
+		mesh = physics/ramp20|Segment5,
+		translate = 4.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment6w
+	{
+		mesh = physics/ramp20|Segment6,
+		translate = 5.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment7w
+	{
+		mesh = physics/ramp20|Segment7,
+		translate = 6.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment8w
+	{
+		mesh = physics/ramp20|Segment8,
+		translate = 7.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment9w
+	{
+		mesh = physics/ramp20|Segment9,
+		translate = 8.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment10w
+	{
+		mesh = physics/ramp20|Segment10,
+		translate = 9.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment11w
+	{
+		mesh = physics/ramp20|Segment11,
+		translate = 10.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment12w
+	{
+		mesh = physics/ramp20|Segment12,
+		translate = 11.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment13w
+	{
+		mesh = physics/ramp20|Segment13,
+		translate = 12.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment14w
+	{
+		mesh = physics/ramp20|Segment14,
+		translate = 13.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment15w
+	{
+		mesh = physics/ramp20|Segment15,
+		translate = 14.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment16w
+	{
+		mesh = physics/ramp20|Segment16,
+		translate = 15.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment17w
+	{
+		mesh = physics/ramp20|Segment17,
+		translate = 16.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment18w
+	{
+		mesh = physics/ramp20|Segment18,
+		translate = 17.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment19w
+	{
+		mesh = physics/ramp20|Segment19,
+		translate = 18.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+	physicsShape ramp20segment20w
+	{
+		mesh = physics/ramp20|Segment20,
+		translate = 19.0 0.0 0,
+		rotate = 0 270 0,
+	}
+
+
+	physicsShape ramp20segment1e
+	{
+		mesh = physics/ramp20|Segment1,
+		translate = 0.0 0 0.0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment2e
+	{
+		mesh = physics/ramp20|Segment2,
+		translate = -1.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment3e
+	{
+		mesh = physics/ramp20|Segment3,
+		translate = -2.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment4e
+	{
+		mesh = physics/ramp20|Segment4,
+		translate = -3.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment5e
+	{
+		mesh = physics/ramp20|Segment5,
+		translate = -4.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment6e
+	{
+		mesh = physics/ramp20|Segment6,
+		translate = -5.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment7e
+	{
+		mesh = physics/ramp20|Segment7,
+		translate = -6.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment8e
+	{
+		mesh = physics/ramp20|Segment8,
+		translate = -7.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment9e
+	{
+		mesh = physics/ramp20|Segment9,
+		translate = -8.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment10e
+	{
+		mesh = physics/ramp20|Segment10,
+		translate = -9.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment11e
+	{
+		mesh = physics/ramp20|Segment11,
+		translate = -10.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment12e
+	{
+		mesh = physics/ramp20|Segment12,
+		translate = -11.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment13e
+	{
+		mesh = physics/ramp20|Segment13,
+		translate = -12.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment14e
+	{
+		mesh = physics/ramp20|Segment14,
+		translate = -13.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment15e
+	{
+		mesh = physics/ramp20|Segment15,
+		translate = -14.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment16e
+	{
+		mesh = physics/ramp20|Segment16,
+		translate = -15.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment17e
+	{
+		mesh = physics/ramp20|Segment17,
+		translate = -16.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment18e
+	{
+		mesh = physics/ramp20|Segment18,
+		translate = -17.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment19e
+	{
+		mesh = physics/ramp20|Segment19,
+		translate = -18.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	physicsShape ramp20segment20e
+	{
+		mesh = physics/ramp20|Segment20,
+		translate = -19.0 0.0 0,
+		rotate = 0 90 0,
+	}
+
+	model stairs3part1
+	{
+		mesh = IsoObject/stairs3|Step1,
+		texture = IsoObject/door1,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model stairs3part2
+	{
+		mesh = IsoObject/stairs3|Step2,
+		texture = IsoObject/door1,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model stairs3part3
+	{
+		mesh = IsoObject/stairs3|Step3,
+		texture = IsoObject/door1,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model stairs4
+	{
+		mesh = IsoObject/stairs4,
+		texture = IsoObject/door1,
+		static = true,
+		undoCoreScale = true,
+	}
+
+	model ClockHandMinuteBlack
+	{
+		mesh = IsoObject/ClockHandMinute,
+		texture = IsoObject/ClockHandMinuteBlack,
+		static = true,
+		scale = 1.8,
+		undoCoreScale = true,
+	}
+
+	model ClockHandHourRed
+	{
+		mesh = IsoObject/ClockHandHour,
+		texture = IsoObject/ClockHandHourRed,
+		static = true,
+		scale = 1.8,
+		undoCoreScale = true,
+	}
+}

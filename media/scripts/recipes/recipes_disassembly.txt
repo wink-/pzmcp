@@ -1,0 +1,450 @@
+module Base
+{
+    craftRecipe DismantleBlade
+    {
+        time        = 100,
+        tags = AnySurfaceCraft,
+        category = Assembly,
+        timedAction = CraftWeapon1H,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer;Mallet] mode:keep flags[Prop1],
+            item 1 [CrudeKnife;CrudeShortSword;CrudeSword;CrudeSword_Broken;HandScythe;HandScytheForged;HuntingKnife;HuntingKnifeForged;KitchenKnife;KitchenKnifeForged;LargeKnife;LongCrudeKnife;Machete;MacheteForged;MeatCleaver;MeatCleaverForged;ShortSword;Sword;Sword_Broken;FlintKnife;StoneKnifeLong] flags[InheritCondition;InheritSharpness;Prop2;AllowDestroyedItem] mappers[ThingMapper],
+        }
+        outputs
+        {
+            item 1 mapper:ThingMapper,
+        }
+        itemMapper ThingMapper
+        {
+            CrudeBlade = CrudeKnife,
+            CrudeShortSwordBlade = CrudeShortSword,
+            CrudeSwordBlade = CrudeSword,
+            CrudeSwordBlade_Broken = CrudeSword_Broken,
+            HandScytheBlade = HandScythe,
+            HandScytheBlade = HandScytheForged,
+            HuntingKnifeBlade = HuntingKnife,
+            HuntingKnifeBlade = HuntingKnifeForged,
+            KitchenKnifeBlade = KitchenKnife,
+            KitchenKnifeBlade = KitchenKnifeForged,
+            LargeKnifeBlade = LargeKnife,
+            LongCrudeBlade = LongCrudeKnife,
+            MacheteBlade = Machete,
+            MacheteBlade = MacheteForged,
+            MeatCleaverBlade = MeatCleaver,
+            MeatCleaverBlade = MeatCleaverForged,
+            ShortSwordBlade = ShortSword,
+            SwordBlade = Sword,
+            SwordBlade_Broken = Sword_Broken,
+            StoneBlade = FlintKnife,
+            StoneBladeLong = StoneKnifeLong,
+            default = HuntingKnifeBlade,
+        }
+    }
+
+    craftRecipe DismantleLongImplement
+    {
+        time        = 100,
+        tags = AnySurfaceCraft,
+        category = Assembly,
+        timedAction = ChoppingBlock_Hammer,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer;Mallet] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 [Base.Axe_Old;Base.LongMace;Base.LongMace_Stone;Base.PickAxe;Base.PickAxeForged;Base.Sledgehammer;Base.SledgehammerForged;Base.Sledgehammer2;Base.WoodAxe;Base.WoodAxeForged;Base.Axe;Base.GardenHoe;Base.GardenFork;Base.GardenHoeForged;Base.GardenFork;Base.Rake;Base.Scythe;Base.ScytheForged;Base.Shovel;Base.SpadeForged;Base.SpearCrude;Base.SpearCrudeLong;Base.SpearLong;Base.SpearShort;Base.SpearStoneLong;Base.SpearStone;Base.Spear_BoneLong;Base.Spear_Bone;Base.AxeStone;Base.HammerStone;Base.StoneAxeLarge;Base.StoneMaul] flags[InheritHeadCondition;InheritSharpness;Prop2;AllowDestroyedItem]  mappers[ThingMapper;HandleMapper],
+        }
+        outputs
+        {
+            item 1 mapper:ThingMapper,
+            item 1 mapper:HandleMapper,
+        }
+        itemMapper ThingMapper
+        {
+            Base.MaceHead = Base.LongMace,
+            Base.StoneMaceHead = Base.LongMace_Stone,
+            Base.OldAxeHead = Base.Axe_Old,
+            Base.PickAxeHead = Base.PickAxe,
+            Base.PickAxeHead = Base.PickAxeForged,
+            Base.SledgehammerHead = Base.Sledgehammer,
+            Base.SledgehammerHead = Base.SledgehammerForged,
+            Base.SledgehammerHead = Base.Sledgehammer2,
+            Base.WoodAxeHead = Base.WoodAxe,
+            Base.WoodAxeHead = Base.WoodAxeForged,
+            Base.FireAxeHead = Base.Axe,
+
+            Base.GardenForkHead = Base.GardenFork,
+            Base.GardenHoeHead = Base.GardenHoe,
+            Base.GardenHoeHead = Base.GardenHoeForged,
+            Base.GardenForkHead_Forged = Base.GardenFork_Forged,
+            Base.RakeHead = Base.Rake,
+            Base.ScytheBlade = Base.Scythe,
+            Base.ScytheBlade = Base.ScytheForged,
+            Base.SpadeHead = Base.Shovel,
+            Base.SpadeHead_Forged = Base.SpadeForged,
+
+			Base.CrudeBlade = Base.SpearCrude,
+			Base.LongCrudeBlade = Base.SpearCrudeLong,
+			Base.StoneBladeLong = Base.SpearStoneLong,
+			Base.StoneBlade = Base.SpearStone,
+			Base.SharpBone_Long = Base.Spear_BoneLong,
+			Base.SharpBoneFragment = Base.Spear_Bone,
+			Base.SpearLongHead = Base.SpearLong,
+			Base.SpearHead = Base.SpearShort,
+			Base.SharpedStone = Base.AxeStone,
+			Base.Stone2 = Base.HammerStone,
+			Base.StoneAxeHead = Base.StoneAxeLarge,
+			Base.StoneMaulHead = Base.StoneMaul,
+
+            default = Base.ScytheBlade,
+        }
+        itemMapper HandleMapper
+        {
+            Base.LongHandle_Broken = Base.LongMace,
+            Base.LongHandle_Broken = Base.Axe_Old,
+            Base.LongHandle_Broken = Base.PickAxe,
+            Base.LongHandle_Broken = Base.PickAxeForged,
+            Base.LongHandle_Broken = Base.Sledgehammer,
+            Base.LongHandle_Broken = Base.SledgehammerForged,
+            Base.LongHandle_Broken = Base.Sledgehammer2,
+            Base.LongHandle_Broken = Base.WoodAxe,
+            Base.LongHandle_Broken = Base.WoodAxeForged,
+            Base.LongHandle_Broken = Base.Axe,
+
+            Base.LongStick_Broken = Base.GardenHoe,
+            Base.LongStick_Broken = Base.GardenHoeForged,
+            Base.LongStick_Broken = Base.GardenFork_Forged,
+            Base.LongStick_Broken = Base.Rake,
+            Base.LongStick_Broken = Base.Scythe,
+            Base.LongStick_Broken = Base.ScytheForged,
+            Base.LongStick_Broken = Base.SpadeForged,
+
+			Base.LongStick_Broken = Base.SpearCrude,
+			Base.LongStick_Broken = Base.SpearCrudeLong,
+			Base.LongStick_Broken = Base.SpearStoneLong,
+			Base.LongStick_Broken = Base.SpearStone,
+			Base.LongStick_Broken = Base.Spear_BoneLong,
+			Base.LongStick_Broken = Base.Spear_Bone,
+			Base.LongStick_Broken = Base.SpearLong,
+			Base.LongStick_Broken = Base.SpearShort,
+
+            Base.GardenToolHandle_Broken = Base.GardenFork,
+            Base.GardenToolHandle_Broken = Base.Shovel,
+			Base.Branch_Broken = Base.AxeStone,
+			Base.Branch_Broken = Base.HammerStone,
+			Base.LongHandle_Broken = = Base.StoneAxeLarge,
+			Base.LongHandle_Broken = = Base.StoneMaul,
+
+            default = Base.LongStick_Broken,
+        }
+    }
+
+/*    craftRecipe DismantleLongImplement
+    {
+        time        = 100,
+        tags = AnySurfaceCraft,
+        category = Assembly,
+        timedAction = ChoppingBlock_Hammer,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer;Mallet] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 [Base.Axe_Old;Base.LongMace;Base.PickAxe;Base.PickAxeForged;Base.Sledgehammer;Base.SledgehammerForged;Base.Sledgehammer2;Base.WoodAxe;Base.WoodAxeForged;Base.Axe] flags[InheritHeadCondition;InheritSharpness;Prop2;AllowDestroyedItem]  mappers[ThingMapper],
+        }
+        outputs
+        {
+            item 1 mapper:ThingMapper,
+            item 1 Base.LongHandle_Broken,
+        }
+        itemMapper ThingMapper
+        {
+            Base.MaceHead = Base.LongMace,
+            Base.OldAxeHead = Base.Axe_Old,
+            Base.PickAxeHead = Base.PickAxe,
+            Base.PickAxeHead = Base.PickAxeForged,
+            Base.SledgehammerHead = Base.Sledgehammer,
+            Base.SledgehammerHead = Base.SledgehammerForged,
+            Base.SledgehammerHead = Base.Sledgehammer2,
+            Base.WoodAxeHead = Base.WoodAxe,
+            Base.WoodAxeHead = Base.WoodAxeForged,
+            Base.FireAxeHead = Base.Axe,
+
+            Base.GardenForkHead = Base.GardenFork,
+            Base.GardenHoeHead = Base.GardenHoe,
+            Base.GardenHoeHead = Base.GardenHoeForged,
+            Base.GardenForkHead_Forged = Base.GardenFork_Forged,
+            Base.RakeHead = Base.Rake,
+            Base.ScytheBlade = Base.Scythe,
+            Base.ScytheBlade = Base.ScytheForged,
+            Base.SpadeHead = Base.Shovel,
+            Base.SpadeHead_Forged = Base.SpadeForged,
+
+			Base.CrudeBlade = Base.SpearCrude,
+			Base.LongCrudeBlade = Base.SpearCrudeLong,
+			Base.StoneBladeLong = Base.SpearStoneLong,
+			Base.StoneBlade = Base.SpearStone,
+			Base.SharpBone_Long = Base.Spear_BoneLong,
+			Base.SharpBoneFragment = Base.Spear_Bone,
+			Base.SpearLongHead = Base.SpearLong,
+			Base.SpearHead = Base.SpearShort,
+
+            default = Base.ScytheBlade,
+        }
+        itemMapper HandleMapper
+        {
+            Base.LongHandle_Broken = Base.LongMace,
+            Base.LongHandle_Broken = Base.Axe_Old,
+            Base.LongHandle_Broken = Base.PickAxe,
+            Base.LongHandle_Broken = Base.PickAxeForged,
+            Base.LongHandle_Broken = Base.Sledgehammer,
+            Base.LongHandle_Broken = Base.SledgehammerForged,
+            Base.LongHandle_Broken = Base.Sledgehammer2,
+            Base.LongHandle_Broken = Base.WoodAxe,
+            Base.LongHandle_Broken = Base.WoodAxeForged,
+            Base.LongHandle_Broken = Base.Axe,
+
+            Base.LongStick_Broken = Base.GardenFork,
+            Base.LongStick_Broken = Base.GardenHoe,
+            Base.LongStick_Broken = Base.GardenHoeForged,
+            Base.LongStick_Broken = Base.GardenFork_Forged,
+            Base.LongStick_Broken = Base.Rake,
+            Base.LongStick_Broken = Base.Scythe,
+            Base.LongStick_Broken = Base.ScytheForged,
+            Base.LongStick_Broken = Base.Shovel,
+            Base.LongStick_Broken = Base.SpadeForged,
+
+			Base.LongStick_Broken = Base.SpearCrude,
+			Base.LongStick_Broken = Base.SpearCrudeLong,
+			Base.LongStick_Broken = Base.SpearStoneLong,
+			Base.LongStick_Broken = Base.SpearStone,
+			Base.LongStick_Broken = Base.Spear_BoneLong,
+			Base.LongStick_Broken = Base.Spear_Bone,
+			Base.LongStick_Broken = Base.SpearLong,
+			Base.LongStick_Broken = Base.SpearShort,
+
+            Base.GardenToolHandle_Broken = Base.GardenFork,
+            Base.GardenToolHandle_Broken = Base.Shovel,
+
+            default = Base.LongStick_Broken,
+        }
+    }
+
+    craftRecipe DismantleLongerImplement
+    {
+        time        = 100,
+        tags = AnySurfaceCraft,
+        category = Assembly,
+        timedAction = ChoppingBlock_Hammer,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer;Mallet] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 [Base.GardenHoe;Base.GardenFork;Base.GardenHoeForged;Base.GardenFork;Base.Rake;Base.Scythe;Base.ScytheForged;Base.Shovel;Base.SpadeForged;Base.SpearCrude;Base.SpearCrudeLong;Base.SpearLong;Base.SpearShort;Base.SpearStoneLong;Base.SpearStone;Base.Spear_BoneLong;Base.Spear_Bone] flags[InheritHeadCondition;InheritSharpness;Prop2;AllowDestroyedItem]  mappers[ThingMapper;HandleMapper],
+        }
+        outputs
+        {
+            item 1 mapper:ThingMapper,
+            item 1 mapper:HandleMapper,
+        }
+        itemMapper ThingMapper
+        {
+            Base.GardenForkHead = Base.GardenFork,
+            Base.GardenHoeHead = Base.GardenHoe,
+            Base.GardenHoeHead = Base.GardenHoeForged,
+            Base.GardenForkHead_Forged = Base.GardenFork_Forged,
+            Base.RakeHead = Base.Rake,
+            Base.ScytheBlade = Base.Scythe,
+            Base.ScytheBlade = Base.ScytheForged,
+            Base.SpadeHead = Base.Shovel,
+            Base.SpadeHead_Forged = Base.SpadeForged,
+
+			Base.CrudeBlade = Base.SpearCrude,
+			Base.LongCrudeBlade = Base.SpearCrudeLong,
+			Base.StoneBladeLong = Base.SpearStoneLong,
+			Base.StoneBlade = Base.SpearStone,
+			Base.SharpBone_Long = Base.Spear_BoneLong,
+			Base.SharpBoneFragment = Base.Spear_Bone,
+			Base.SpearLongHead = Base.SpearLong,
+			Base.SpearHead = Base.SpearShort,
+
+            default = Base.ScytheBlade,
+        }
+    }
+
+    craftRecipe DismantleLongerImplement
+    {
+        time        = 100,
+        tags = AnySurfaceCraft,
+        category = Assembly,
+        timedAction = ChoppingBlock_Hammer,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer;Mallet] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 [Base.GardenHoe;Base.GardenHoeForged;Base.GardenFork;Base.Rake;Base.Scythe;Base.ScytheForged;Base.SpadeForged;Base.SpearCrude;Base.SpearCrudeLong;Base.SpearLong;Base.SpearShort;Base.SpearStoneLong;Base.SpearStone;Base.Spear_BoneLong;Base.Spear_Bone] flags[InheritHeadCondition;InheritSharpness;Prop2;AllowDestroyedItem]  mappers[ThingMapper],
+        }
+        outputs
+        {
+            item 1 mapper:ThingMapper,
+            item 1 Base.LongStick_Broken,
+        }
+        itemMapper ThingMapper
+        {
+            Base.GardenHoeHead = Base.GardenHoe,
+            Base.GardenHoeHead = Base.GardenHoeForged,
+            Base.GardenForkHead_Forged = Base.GardenFork_Forged,
+            Base.RakeHead = Base.Rake,
+            Base.ScytheBlade = Base.Scythe,
+            Base.ScytheBlade = Base.ScytheForged,
+            Base.SpadeHead_Forged = Base.SpadeForged,
+
+			Base.CrudeBlade = Base.SpearCrude,
+			Base.LongCrudeBlade = Base.SpearCrudeLong,
+			Base.StoneBladeLong = Base.SpearStoneLong,
+			Base.StoneBlade = Base.SpearStone,
+			Base.SharpBone_Long = Base.Spear_BoneLong,
+			Base.SharpBoneFragment = Base.Spear_Bone,
+			Base.SpearLongHead = Base.SpearLong,
+			Base.SpearHead = Base.SpearShort,
+
+            default = Base.ScytheBlade,
+        }
+    }
+
+    craftRecipe DismantleGardenImplement
+    {
+        time        = 100,
+        tags = AnySurfaceCraft,
+        category = Assembly,
+        timedAction = ChoppingBlock_Hammer,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer;Mallet] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 [Base.GardenFork;Base.Shovel] flags[InheritHeadCondition;InheritSharpness;Prop2]  mappers[ThingMapper],
+        }
+        outputs
+        {
+            item 1 mapper:ThingMapper,
+            item 1 Base.GardenToolHandle_Broken,
+        }
+        itemMapper ThingMapper
+        {
+            Base.GardenForkHead = Base.GardenFork,
+            Base.SpadeHead = Base.Shovel,
+
+            default = Base.SpadeHead,
+        }
+    }
+*/
+    craftRecipe GetLongStick
+    {
+        time        = 100,
+        tags = InHandCraft,
+        category = Assembly,
+        timedAction = Making,
+        inputs
+        {
+            item 1 tags[GivesLongStick] flags[Prop2;InheritCondition],
+        }
+        outputs
+        {
+            item 1 Base.LongStick,
+        }
+    }
+
+    craftRecipe DismantleShortImplement
+    {
+        time        = 100,
+        tags = AnySurfaceCraft,
+        category = Assembly,
+        timedAction = ChoppingBlock_Hammer,
+        inputs
+        {
+            item 1 tags[Hammer;ClubHammer;Mallet] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 [BallPeenHammer;BallPeenHammerForged;ClubHammer;ClubHammerForged;Hammer;HammerForged;HandAxe;HandAxeForged;HandAxe_Old;Mace;Mace_Stone;SmithingHammer;Hatchet_Bone] flags[InheritHeadCondition;InheritSharpness;Prop2;AllowDestroyedItem]  mappers[ThingMapper],
+        }
+        outputs
+        {
+            item 1 mapper:ThingMapper,
+        }
+        itemMapper ThingMapper
+        {
+            BallPeenHammerHead = BallPeenHammer,
+            BallPeenHammerHead = BallPeenHammerForged,
+            ClawhammerHead = Hammer,
+            ClawhammerHead = HammerForged,
+            ClubHammerHead = ClubHammer,
+            ClubHammerHead = ClubHammerForged,
+            HandAxeHead = HandAxe,
+            HandAxeHead = HandAxeForged,
+            MaceHead = Mace,
+            StoneMaceHead = Mace_Stone,
+            OldAxeHead = HandAxe_Old,
+            SmithingHammerHead = SmithingHammer,
+            HatchetHead_Bone = Hatchet_Bone,
+
+            default = Base.ClawhammerHead,
+        }
+    }
+
+	craftRecipe ReclaimFromSpear
+	{
+        timedAction = CraftKnifeSpear,
+        Time = 60,
+        Tags = InHandCraft;Survivalist,
+        category = Assembly,
+        OnCreate = Recipe.OnCreate.DismantleSpear,
+		inputs
+		{
+			item 1 [Base.SpearKnifeSmall;Base.SpearLargeKnife;Base.SpearScrapKnife;Base.SpearFightingKnife;Base.SpearHandFork;Base.SpearHuntingKnife;Base.SpearKnife;Base.SpearScissors;Base.SpearScrewdriver;Base.Spear_Plunger;Base.SpearSteakKnife] flags[InheritHeadCondition;Prop2;InheritSharpness;AllowDestroyedItem] mappers[weaponType],
+		}
+		outputs
+		{
+			item 1 mapper:weaponType,
+			item 1 Base.LongStick,
+		}
+		itemMapper weaponType
+		{
+			Base.HandFork = Base.SpearHandFork,
+			Base.HuntingKnife = Base.SpearHuntingKnife,
+			Base.KitchenKnife = Base.SpearKnife,
+			Base.Scissors = Base.SpearScissors,
+			Base.Screwdriver = Base.SpearScrewdriver,
+			Base.Plunger = Base.Spear_Plunger,
+
+            Base.SmallKnife = Base.SpearKnifeSmall,
+            Base.LargeKnife = Base.SpearLargeKnife,
+            Base.LargeKnife_Scrap = Base.SpearScrapKnife,
+            Base.FightingKnife = Base.SpearFightingKnife,
+            Base.SteakKnife = Base.SpearSteakKnife,
+
+            default = Base.KitchenKnife,
+		}
+	}
+/*
+	craftRecipe ReclaimFromSpear2
+	{
+        timedAction = CraftKnifeSpear,
+        Time = 60,
+        Tags = InHandCraft;Survivalist,
+        category = Assembly,
+		inputs
+		{
+			item 1 [Base.SpearCrude;Base.SpearCrudeLong;Base.SpearLong;Base.SpearShort;Base.SpearStoneLong;Base.SpearStone;Base.Spear_BoneLong;Base.Spear_Bone] flags[InheritHeadCondition;Prop2;InheritSharpness;AllowDestroyedItem] mappers[weaponType],
+		}
+		outputs
+		{
+			item 1 mapper:weaponType,
+			item 1 Base.LongStick_Broken,
+		}
+		itemMapper weaponType
+		{
+			Base.CrudeBlade = Base.SpearCrude,
+			Base.LongCrudeBlade = Base.SpearCrudeLong,
+			Base.StoneBladeLong = Base.SpearStoneLong,
+			Base.StoneBlade = Base.SpearStone,
+			Base.SharpBone_Long = Base.Spear_BoneLong,
+			Base.SharpBoneFragment = Base.Spear_Bone,
+			Base.SpearLongHead = Base.SpearLong,
+			Base.SpearHead = Base.SpearShort,
+
+            default = Base.StoneBlade,
+		}
+	}*/
+}

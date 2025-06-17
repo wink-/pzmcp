@@ -1,0 +1,39 @@
+module Base
+{
+	sound RotateObject
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Generic/Rotate,
+		}
+	}
+
+	sound BreakObject
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Door/Break,
+		}
+	}
+
+	sound BurnedObjectExploded
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Burned/Explode,
+		}
+	}
+	
+	sound RemoveBrokenGlass
+	{
+		category = Object,
+		clip
+		{
+			event = Object/BrokenGlass/Remove,
+		}
+	}
+
+}

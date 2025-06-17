@@ -1,0 +1,1269 @@
+module Base
+{
+
+
+
+    item Yeast
+    {
+        DisplayCategory = Food,
+        Type	            =	        Drainable,
+        UseDelta	        =	        0.1,
+        UseWhileEquipped	=	        FALSE,
+        DisplayName			=		    Yeast,
+        Icon				=			Yeast,
+        Weight				=			0.2,
+        WorldStaticModel = Yeast,
+    }
+	/******* BAKING - BAGELS *******/
+
+	/* bagels are evolved recipe items */
+	
+	/******* BAKING - BREAD *******/
+	
+	item Baguette
+	{
+		DisplayName = Baguette,
+		DisplayCategory = Food,
+		EatType = eatOffStick,
+		Type = Food,
+		Weight = 0.3,
+		Icon = Baguette,
+		IsCookable = TRUE,
+		MinutesToCook = 0,
+		MinutesToBurn = 30,
+		EvolvedRecipe = Soup:5;Stew:5;Salad:5;AddBaitToChum:10,
+		FoodType = Bread,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -23,
+		Calories = 532,
+		Carbohydrates = 99,
+		Lipids = 6.66,
+		Proteins = 17.7,
+		FishingLure = true,
+		StaticModel = Baguette_Ground,
+		WorldStaticModel = Baguette_Ground,
+		Tags = AlreadyCooked;HideCooked,
+		EvolvedRecipeName = Bread,
+	}
+	
+	item Biscuit
+	{
+		DisplayName = Biscuit,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Biscuit,
+		EvolvedRecipe = Soup:5;Stew:5,
+		FoodType = NoExplicit,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -5,
+		Calories = 160,
+		Carbohydrates = 22,
+		Lipids = 8,
+		Proteins = 1,
+		CustomEatSound = EatingCrispy,
+		StaticModel = Biscuit_Ground,
+		WorldStaticModel = Biscuit_Ground,
+		Tags = FitsToaster,
+	}
+	
+	item Bread
+	{
+		DisplayName = Bread,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = Bread,
+		EvolvedRecipe = Soup:5;Stew:5;Salad:5;AddBaitToChum:10,
+		FoodType = Bread,
+		Packaged = TRUE,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -30,
+		Calories = 532,
+		Carbohydrates = 99,
+		Lipids = 6.66,
+		Proteins = 17.7,
+		FishingLure = true,
+		StaticModel = Bread,
+		WorldStaticModel = Bread,
+	}
+	
+	item BreadSlices
+	{
+		DisplayName = Bread Slices,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = BreadSlices,
+		EvolvedRecipe = Soup:5;Stew:5;Salad:5,
+		FoodType = Bread,
+		IsCookable = true,
+		ReplaceOnCooked = Toast,
+		MinutesToCook = 4,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -10,
+		Calories = 177,
+		Carbohydrates = 33,
+		Lipids = 2.22,
+		Proteins = 5.9,
+		StaticModel = BreadSlices,
+		WorldStaticModel = BreadSlices,
+		Tags = HideCooked;FitsToaster,
+		EvolvedRecipeName = Bread,
+	}
+
+	item BunsHamburger
+	{
+		DisplayName = Pack of Hamburger Buns,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.4,
+		Icon = BunsHamburger,
+		Packaged = TRUE,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		Calories = 708,
+		Carbohydrates = 132,
+		Lipids = 8.88,
+		Proteins = 23.6,
+		WorldStaticModel = Buns_Hamburger,
+		CantEat = TRUE,
+	}
+
+	item BunsHamburger_single
+	{
+		DisplayName = Hamburger Bun,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = BunsHamburger_single,
+		EvolvedRecipe = Soup:5;Stew:5;Salad:5,
+		FoodType = Bread,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -10,
+		Calories = 177,
+		Carbohydrates = 33,
+		Lipids = 2.22,
+		Proteins = 5.9,
+		StaticModel = Buns_Hamburger_Single,
+		WorldStaticModel = Buns_Hamburger_Single,
+	}
+
+	item BunsHotdog
+	{
+		DisplayName = Pack of Hotdog Buns,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = BunsHotdog,
+		Packaged = TRUE,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		Calories = 532,
+		Carbohydrates = 99,
+		Lipids = 6.66,
+		Proteins = 17.7,
+		WorldStaticModel = Buns_Hotdog,
+		CantEat = TRUE,
+	}
+
+	item BunsHotdog_single
+	{
+		DisplayName = Hotdog Bun,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = BunsHotdog_single,
+		EvolvedRecipe = Soup:5;Stew:5;Salad:5,
+		FoodType = Bread,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -10,
+		Calories = 177,
+		Carbohydrates = 33,
+		Lipids = 2.22,
+		Proteins = 5.9,
+		StaticModel = Buns_Hotdog_Single,
+		WorldStaticModel = Buns_Hotdog_Single,
+	}
+	
+	item CinnamonRoll
+	{
+		DisplayName = Cinnamon Roll,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = CinnamonRoll,
+		HungerChange = -12,
+		Calories = 350,
+		Carbohydrates = 50,
+		Lipids = 24,
+		Proteins = 4,
+		StaticModel = CinnamonRoll_Ground,
+		WorldStaticModel = CinnamonRoll_Ground,
+	}
+	
+	item Cornbread
+	{
+		DisplayName = Cornbread,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Cornbread,
+		EvolvedRecipe = Soup:5;Stew:5,
+		FoodType = NoExplicit,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -10,
+		Calories = 300,
+		Carbohydrates = 54,
+		Lipids = 10,
+		Proteins = 7,
+		CustomEatSound = EatingCrispy,
+		StaticModel = Cornbread_Ground,
+		WorldStaticModel = Cornbread_Ground,
+		Tags = FitsToaster,
+	}
+
+	item CrispyRiceSquare
+	{
+		DisplayName = Crispy Rice Square,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = CrispyRiceSquare,
+		HungerChange = -10,
+		UnhappyChange = -10,
+		Calories = 140,
+		Carbohydrates = 28,
+		Lipids = 3,
+		Proteins = 1,
+       	StaticModel = CrispyRiceSquare,
+       	WorldStaticModel = CrispyRiceSquare,
+	}
+	
+	item Croissant
+	{
+		DisplayName = Croissant,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Croissant,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -8,
+		UnhappyChange = -15,
+		Calories = 180,
+		Carbohydrates = 32,
+		Lipids = 15,
+		Proteins = 4,
+		StaticModel = Croissant_Ground,
+		WorldStaticModel = Croissant_Ground,
+		Tags = FitsToaster,
+	}
+
+	item Danish
+	{
+		DisplayName = Danish,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Danish,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -7,
+		UnhappyChange = -15,
+		Calories = 263,
+		Carbohydrates = 34,
+		Lipids = 13,
+		Proteins = 4,
+		StaticModel = Danish,
+		WorldStaticModel = Danish,
+	}
+
+	item LemonBar
+	{
+		DisplayName = Lemon Bar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = LemonBar,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -7,
+		UnhappyChange = -15,
+		Calories = 156,
+		Carbohydrates = 22,
+		Lipids = 11,
+		Proteins = 2,
+		StaticModel = LemonBar,
+		WorldStaticModel = LemonBar,
+	}
+	
+	item Painauchocolat
+	{
+		DisplayName = Chocolate Bread,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Painauchocolat,
+		DaysFresh = 3,
+		DaysTotallyRotten = 7,
+		HungerChange = -2,
+		Calories = 414,
+		Carbohydrates = 47.4,
+		Lipids = 21.1,
+		Proteins = 6.9,
+		StaticModel = Painauchocolat_Ground,
+		WorldStaticModel = Painauchocolat_Ground,
+		UnhappyChange = -5,
+	}
+
+	/* toast is an evolved recipe item */
+	
+	/******* BAKING - CAKE *******/
+	
+	item CakeBlackForest
+	{
+		DisplayName = Cake Slice - Black Forest,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = CakeBlackForest,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -10,
+		UnhappyChange = -15,
+		Calories = 90,
+		Carbohydrates = 4,
+		Lipids = 12,
+		Proteins = 10,
+		StaticModel = BlackForestCake_Ground,
+		WorldStaticModel = BlackForestCake_Ground,
+	}
+	
+	item CakeCarrot
+	{
+		DisplayName = Cake Slice - Carrot,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = CakeCarrot,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -7,
+		UnhappyChange = -10,
+		Calories = 70,
+		Carbohydrates = 4,
+		Lipids = 12,
+		Proteins = 10,
+		StaticModel = CarrotCake_Ground,
+		WorldStaticModel = CarrotCake_Ground,
+	}
+	
+	item CakeCheeseCake
+	{
+		DisplayName = Cake Slice - Cheese,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = CakeCheesecake,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -8,
+		UnhappyChange = -10,
+		Calories = 80,
+		Carbohydrates = 4,
+		Lipids = 12,
+		Proteins = 10,
+		StaticModel = CheeseCake_Ground,
+		WorldStaticModel = CheeseCake_Ground,
+	}
+	
+	item CakeChocolate
+	{
+		DisplayName = Cake Slice - Chocolate,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = CakeChocolate,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -10,
+		UnhappyChange = -15,
+		Calories = 90,
+		Carbohydrates = 4,
+		Lipids = 12,
+		Proteins = 10,
+		StaticModel = ChocolateCake_Ground,
+		WorldStaticModel = ChocolateCake_Ground,
+	}
+	
+	item CakeRedVelvet
+	{
+		DisplayName = Cake Slice - Red Velvet,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = CakeRedVelvet,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -8,
+		UnhappyChange = -10,
+		Calories = 80,
+		Carbohydrates = 4,
+		Lipids = 12,
+		Proteins = 10,
+		StaticModel = RedVelvetCake_Ground,
+		WorldStaticModel = RedVelvetCake_Ground,
+	}
+	
+	item CakeSlice
+	{
+		DisplayName = Cake Slice,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = CakeSlice,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -7,
+		UnhappyChange = -10,
+		Calories = 70,
+		Carbohydrates = 1,
+		Lipids = 5,
+		Proteins = 5,
+		StaticModel = CakeSlice,
+		WorldStaticModel = CakeSlice,
+	}
+	
+	item CakeStrawberryShortcake
+	{
+		DisplayName = Cake Slice - Strawberry,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = CakeStrawberryShortcake,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -8,
+		UnhappyChange = -10,
+		Calories = 75,
+		Carbohydrates = 4,
+		Lipids = 12,
+		Proteins = 10,
+		StaticModel = StrawberryShortcake_Ground,
+		WorldStaticModel = StrawberryShortcake_Ground,
+	}
+	
+	/******* BAKING - COOKIES *******/
+	
+	item CookieChocolateChip
+	{
+		DisplayName = Cookie - Chocolate Chip,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = CookieChocolateChip,
+		/*DaysFresh = 7,
+		DaysTotallyRotten = 30,*/
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 160,
+		Carbohydrates = 22,
+		Lipids = 8,
+		Proteins = 1,
+		CustomEatSound = EatingCrispy,
+		StaticModel = Cookie_Hand,
+		WorldStaticModel = Cookie,
+		Tags = FitsToaster,
+	}
+	
+	item CookieJelly
+	{
+		DisplayName = Cookie - Raspberry Shortbread,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = CookieJelly,
+		/*DaysFresh = 7,
+		DaysTotallyRotten = 30,*/
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 160,
+		Carbohydrates = 22,
+		Lipids = 8,
+		Proteins = 1,
+		StaticModel = CookieJelly,
+		WorldStaticModel = CookieJelly,
+		Tags = FitsToaster,
+	}
+	
+	item CookiesChocolate
+	{
+		DisplayName = Cookie - Chocolate,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = CookiesChocolate,
+		/*DaysFresh = 7,
+		DaysTotallyRotten = 30,*/
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 170,
+		Carbohydrates = 25,
+		Lipids = 9,
+		Proteins = 2,
+		CustomEatSound = EatingCrispy,
+		StaticModel = Cookie_Chocolate_Hand,
+		WorldStaticModel = Cookie_Chocolate_Ground,
+		Tags = FitsToaster,
+	}
+	
+	item CookiesOatmeal
+	{
+		DisplayName = Cookie - Oatmeal,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = CookiesOatmeal,
+		/*DaysFresh = 7,
+		DaysTotallyRotten = 30,*/
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 110,
+		Carbohydrates = 20,
+		Lipids = 6,
+		Proteins = 1,
+		CustomEatSound = EatingCrispy,
+		StaticModel = Cookie_Oatmeal_Hand,
+		WorldStaticModel = Cookie_Oatmeal_Ground,
+		Tags = FitsToaster,
+	}
+	
+	item CookiesShortbread
+	{
+		DisplayName = Cookie - Shortbread,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = CookiesShortbread,
+		/*DaysFresh = 7,
+		DaysTotallyRotten = 30,*/
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 120,
+		Carbohydrates = 22,
+		Lipids = 8,
+		Proteins = 2,
+		CustomEatSound = EatingCrispy,
+		StaticModel = Cookie_Shortbread_Hand,
+		WorldStaticModel = Cookie_Shortbread_Ground,
+		Tags = FitsToaster,
+	}
+	
+	item CookiesSugar
+	{
+		DisplayName = Cookie - Sugar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = CookiesSugar,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 120,
+		Carbohydrates = 22,
+		Lipids = 8,
+		Proteins = 2,
+		CustomEatSound = EatingCrispy,
+		Tags = FitsToaster,
+		StaticModel = CookiesSugar_Hand,
+		WorldStaticModel = CookiesSugar_Ground,
+	}
+	
+	/******* BAKING - DOUGHNUTS *******/
+	
+	item DoughnutChocolate
+	{
+		DisplayName = Donut - Chocolate,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = DoughnutChocolate,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -7,
+		UnhappyChange = -15,
+		Calories = 180,
+		Carbohydrates = 35,
+		Lipids = 15,
+		Proteins = 3,
+		StaticModel = Doughnut_Chocolate_Ground,
+		WorldStaticModel = Doughnut_Chocolate_Ground,
+		Tags = FitsToaster,
+	}
+	
+	item DoughnutFrosted
+	{
+		DisplayName = Donut - Frosted,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = DoughnutFrosted,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -7,
+		UnhappyChange = -15,
+		Calories = 180,
+		Carbohydrates = 35,
+		Lipids = 15,
+		Proteins = 3,
+		StaticModel = Doughnut_Frosted_Ground,
+		WorldStaticModel = Doughnut_Frosted_Ground,
+		Tags = FitsToaster,
+	}
+	
+	item DoughnutJelly
+	{
+		DisplayName = Donut - Jelly,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = DoughnutJelly,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -7,
+		UnhappyChange = -15,
+		Calories = 180,
+		Carbohydrates = 35,
+		Lipids = 15,
+		Proteins = 3,
+		StaticModel = Doughnut_Jelly_Ground,
+		WorldStaticModel = Doughnut_Jelly_Ground,
+		Tags = FitsToaster,
+	}
+	
+	item DoughnutPlain
+	{
+		DisplayName = Donut,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = DoughnutPlain,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -7,
+		UnhappyChange = -15,
+		Calories = 180,
+		Carbohydrates = 35,
+		Lipids = 15,
+		Proteins = 3,
+		StaticModel = Doughnut_Ground,
+		WorldStaticModel = Doughnut_Ground,
+		Tags = FitsToaster,
+	}
+	
+	/******* BAKING - MUFFINS *******/
+	
+	item MuffinFruit
+	{
+		DisplayName = Muffin - Fruit,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = MuffinFruit,
+		DaysFresh = 5,
+		DaysTotallyRotten = 8,
+		HungerChange = -7,
+		UnhappyChange = -10,
+		Calories = 120,
+		Carbohydrates = 10.45,
+		Lipids = 12.61,
+		Proteins = 14.53,
+		StaticModel = MuffinFruit_Ground,
+		WorldStaticModel = MuffinFruit_Ground,
+	}
+	
+	item MuffinGeneric
+	{
+		DisplayName = Muffin,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = MuffinGeneric,
+		DaysFresh = 5,
+		DaysTotallyRotten = 8,
+		HungerChange = -7,
+		UnhappyChange = -10,
+		Calories = 120,
+		Carbohydrates = 10.45,
+		Lipids = 12.61,
+		Proteins = 14.53,
+		StaticModel = MuffinGeneric_Ground,
+		WorldStaticModel = MuffinGeneric_Ground,
+	}
+	
+	/******* BAKING - PIES *******/
+	
+	item Pie
+	{
+		DisplayName = Pie Slice,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = Pie,
+		DaysFresh = 5,
+		DaysTotallyRotten = 8,
+		HungerChange = -30,
+		Calories = 404,
+		Carbohydrates = 20.45,
+		Lipids = 20.61,
+		Proteins = 54.53,
+		StaticModel = PieSlice,
+		WorldStaticModel = Pie,
+		UnhappyChange = -10,
+	}
+	
+	item PieApple
+	{
+		DisplayName = Pie Slice - Apple,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = Pie_Apple,
+		DaysFresh = 5,
+		DaysTotallyRotten = 8,
+		HungerChange = -30,
+		Calories = 404,
+		Carbohydrates = 20.45,
+		Lipids = 20.61,
+		Proteins = 54.53,
+		StaticModel = PieApple_Ground,
+		WorldStaticModel = PieApple_Ground,
+		UnhappyChange = -10,
+	}
+	
+	item PieBlueberry
+	{
+		DisplayName = Pie Slice - Blueberry,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = Pie_Blueberry,
+		DaysFresh = 5,
+		DaysTotallyRotten = 8,
+		HungerChange = -30,
+		Calories = 404,
+		Carbohydrates = 20.45,
+		Lipids = 20.61,
+		Proteins = 54.53,
+		StaticModel = PieBlueberry_Ground,
+		WorldStaticModel = PieBlueberry_Ground,
+		UnhappyChange = -10,
+	}
+	
+	item PieKeyLime
+	{
+		DisplayName = Pie Slice - Key Lime,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = Pie_Keylime,
+		DaysFresh = 5,
+		DaysTotallyRotten = 8,
+		HungerChange = -30,
+		Calories = 404,
+		Carbohydrates = 20.45,
+		Lipids = 20.61,
+		Proteins = 54.53,
+		StaticModel = Pie_Keylime_Ground,
+		WorldStaticModel = Pie_Keylime_Ground,
+		UnhappyChange = -10,
+	}
+	
+	item PieLemonMeringue
+	{
+		DisplayName = Pie Slice - Lemon Meringue,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = Pie_Lemonmeringue,
+		DaysFresh = 5,
+		DaysTotallyRotten = 8,
+		HungerChange = -30,
+		Calories = 404,
+		Carbohydrates = 20.45,
+		Lipids = 20.61,
+		Proteins = 54.53,
+		StaticModel = PieLemonmeringue_Ground,
+		WorldStaticModel = PieLemonmeringue_Ground,
+		UnhappyChange = -10,
+	}
+	
+	item PiePumpkin
+	{
+		DisplayName = Pie Slice - Pumpkin,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = PiePumpkin,
+		DaysFresh = 5,
+		DaysTotallyRotten = 8,
+		HungerChange = -30,
+		Calories = 404,
+		Carbohydrates = 20.45,
+		Lipids = 20.61,
+		Proteins = 54.53,
+		StaticModel = PiePumpkin,
+		WorldStaticModel = PiePumpkin,
+		UnhappyChange = -10,
+	}
+	
+	/******* BAKING - RECIPE ITEMS *******/
+	
+	item BaguetteDough 
+	{
+		DisplayName = Baguette,
+		DisplayCategory = Food,
+		EatType = eatOffStick,
+		Type = Food,
+		Weight = 0.3,
+		Icon = Doughnut_Baguette,
+		IsCookable = TRUE,
+		EvolvedRecipe = AddBaitToChum:10,
+		ReplaceOnCooked = Base.Baguette,
+		MinutesToCook = 20,
+		/*MinutesToBurn = 50,*/
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -15,
+		ThirstChange = 15,
+		UnhappyChange = 10,
+		Calories = 532,
+		Carbohydrates = 99,
+		Lipids = 6.66,
+		Proteins = 17.7,
+		FishingLure = true,
+		StaticModel = BaguetteDough,
+		WorldStaticModel = BaguetteDough,
+	}
+	
+	item BakingTray_Muffin
+	{
+		DisplayName = Muffin Tray with Muffins,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.5,
+		Icon = Muffintray_Batter,
+		BadCold = true,
+		BadInMicrowave = true,
+		CantEat = TRUE,
+		GoodHot = true,
+		IsCookable = true,
+		ReplaceOnUse = MuffinTray,
+		MinutesToCook = 30,
+		MinutesToBurn = 60,
+		DaysFresh = 3,
+		DaysTotallyRotten = 10,
+		HungerChange = -30,
+		Calories = 520,
+		Carbohydrates = 50.45,
+		Lipids = 52.61,
+		Proteins = 54.53,
+		WorldStaticModel = MuffinTray_Batter,
+		Tags = HasMetal,
+	}
+	
+	item BakingTray_Muffin_Recipe
+	{
+		DisplayName = Muffin Tray with Muffins,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.5,
+		Icon = Muffintray_Batter,
+		BadCold = true,
+		BadInMicrowave = true,
+		CantEat = TRUE,
+		GoodHot = true,
+		IsCookable = true,
+		ReplaceOnUse = MuffinTray,
+		MinutesToCook = 30,
+		MinutesToBurn = 60,
+		DaysFresh = 3,
+		DaysTotallyRotten = 10,
+		HungerChange = -30,
+		Calories = 520,
+		Carbohydrates = 50.45,
+		Lipids = 52.61,
+		Proteins = 54.53,
+		WorldStaticModel = MuffinTray_Batter,
+		Tags = HasMetal,
+	}
+	
+	item BreadDough
+	{
+		DisplayName = Bread,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = Dough,
+		EatType = 2handforced,
+		IsCookable = TRUE,
+		EvolvedRecipe = AddBaitToChum:10,
+		RemoveNegativeEffectOnCooked = TRUE,
+		MinutesToCook = 20,
+		MinutesToBurn = 50,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -24,
+		ThirstChange = 15,
+		UnhappyChange = 10,
+		Calories = 532,
+		Carbohydrates = 99,
+		Lipids = 6.66,
+		Proteins = 17.7,
+		FishingLure = true,
+		StaticModel = BreadDough,
+		WorldStaticModel = BreadDough,
+	}
+	
+	item CakeBatter
+	{
+		DisplayName = Cake Batter,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = CakeBatter,
+		Calories = 800,
+		Carbohydrates = 50,
+		Lipids = 48,
+		Proteins = 8,
+		WorldStaticModel = CakeBatter,
+	}
+	
+	item CakePrep
+	{
+		DisplayName = Cake Preparation,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = Cake,
+		EatType = plate,
+		DaysFresh = 4,
+		DaysTotallyRotten = 7,
+		HungerChange = -30,
+		UnhappyChange = -20,
+		Calories = 800,
+		Carbohydrates = 50,
+		Lipids = 48,
+		Proteins = 8,
+		StaticModel = CakePreparation,
+		WorldStaticModel = CakePreparation,
+		Tags = HasMetal,
+	}
+	
+	item CakeRaw
+	{
+		DisplayName = Cake,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Cake,
+		BadInMicrowave = true,
+		EatType = plate,
+		IsCookable = TRUE,
+		ReplaceOnUse = BakingPan,
+		MinutesToCook = 40,
+		MinutesToBurn = 110,
+		DaysFresh = 4,
+		DaysTotallyRotten = 9,
+		HungerChange = -15,
+		UnhappyChange = -10,
+		Calories = 560,
+		Carbohydrates = 9,
+		Lipids = 53,
+		Proteins = 10,
+		StaticModel = Cake,
+		WorldStaticModel = Cake,
+		Tags = HasMetal,
+	}
+	
+	item CookieChocolateChipDough
+	{
+		DisplayName = Baking Tray with Chocolate Chip Cookies,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.9,
+		Icon = BakingTray_CookiesBaked,
+		IsCookable = true,
+		EatType = 2handforced,
+		ReplaceOnUse = BakingTray,
+		MinutesToCook = 30,
+		MinutesToBurn = 60,
+		DaysFresh = 7,
+		DaysTotallyRotten = 30,
+		HungerChange = -23,
+		UnhappyChange = -30,
+		Calories = 960,
+		Carbohydrates = 132,
+		Lipids = 48,
+		Proteins = 1,
+		StaticModel = BakingTray_Cookies,
+		WorldStaticModel = BakingTray_Cookies,
+		BadInMicrowave = true,
+		Tags = HasMetal,
+		CookingSound = FryingFood,
+	}
+	
+	item CookiesChocolateDough
+	{
+		DisplayName = Baking Tray with Chocolate Cookies,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.9,
+		Icon = BakingTray_CookiesBaked,
+		IsCookable = true,
+		EatType = 2handforced,
+		ReplaceOnUse = BakingTray,
+		MinutesToCook = 30,
+		MinutesToBurn = 60,
+		DaysFresh = 7,
+		DaysTotallyRotten = 30,
+		HungerChange = -23,
+		UnhappyChange = -30,
+		Calories = 1020,
+		Carbohydrates = 150,
+		Lipids = 54,
+		Proteins = 12,
+		StaticModel = BakingTray_Cookies,
+		WorldStaticModel = BakingTray_Cookies,
+		BadInMicrowave = true,
+		Tags = HasMetal,
+		CookingSound = FryingFood,
+	}
+	
+	item CookiesOatmealDough
+	{
+		DisplayName = Baking Tray with Oatmeal Cookies,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.9,
+		Icon = BakingTray_CookiesBaked,
+		IsCookable = true,
+		EatType = 2handforced,
+		ReplaceOnUse = BakingTray,
+		HungerChange = -23,
+		MinutesToCook = 30,
+		MinutesToBurn = 60,
+		DaysFresh = 7,
+		DaysTotallyRotten = 30,
+		Calories = 660,
+		Carbohydrates = 120,
+		Lipids = 36,
+		Proteins = 6,
+		StaticModel = BakingTray_Cookies,
+		WorldStaticModel = BakingTray_Cookies,
+		BadInMicrowave = true,
+		Tags = HasMetal,
+		CookingSound = FryingFood,
+	}
+	
+	item CookiesShortbreadDough
+	{
+		DisplayName = Baking Tray with Shortbread Cookies,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.9,
+		Icon = BakingTray_CookiesBaked,
+		IsCookable = true,
+		EatType = 2handforced,
+		ReplaceOnUse = BakingTray,
+		MinutesToCook = 30,
+		MinutesToBurn = 60,
+		DaysFresh = 7,
+		DaysTotallyRotten = 30,
+		HungerChange = -23,
+		UnhappyChange = -30,
+		Calories = 720,
+		Carbohydrates = 132,
+		Lipids = 48,
+		Proteins = 12,
+		StaticModel = BakingTray_Cookies,
+		WorldStaticModel = BakingTray_Cookies,
+		BadInMicrowave = true,
+		Tags = HasMetal,
+		CookingSound = FryingFood,
+	}
+	
+	item CookiesSugarDough
+	{
+		DisplayName = Baking Tray with Sugar Cookies,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.9,
+		Icon = BakingTray_CookiesBaked,
+		IsCookable = true,
+		EatType = 2handforced,
+		ReplaceOnUse = BakingTray,
+		MinutesToCook = 30,
+		MinutesToBurn = 60,
+		DaysFresh = 7,
+		DaysTotallyRotten = 30,
+		HungerChange = -23,
+		UnhappyChange = -30,
+		Calories = 720,
+		Carbohydrates = 132,
+		Lipids = 48,
+		Proteins = 12,
+		StaticModel = BakingTray_Cookies,
+		WorldStaticModel = BakingTray_Cookies,
+		BadInMicrowave = true,
+		Tags = HasMetal,
+		CookingSound = FryingFood,
+	}
+	
+	item Dough
+	{
+		DisplayName = Dough,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = Dough,
+		DangerousUncooked = TRUE,
+		IsCookable = TRUE,
+		EvolvedRecipe = AddBaitToChum:10,
+		MinutesToCook = 40,
+		MinutesToBurn = 80,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		HungerChange = -15,
+		ThirstChange = 20,
+		UnhappyChange = -20,
+		Calories = 532,
+		Carbohydrates = 99,
+		Lipids = 6.66,
+		Proteins = 17.7,
+		FishingLure = true,
+		StaticModel = Dough,
+		WorldStaticModel = Dough,
+	}
+	
+	item Muffintray_Biscuit
+	{
+		DisplayName = Muffin Tray with Biscuits,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 1.5,
+		Icon = Muffintray_Batter,
+		BadCold = true,
+		BadInMicrowave = true,
+		CantEat = TRUE,
+		IsCookable = true,
+		ReplaceOnUse = MuffinTray,
+		MinutesToCook = 30,
+		MinutesToBurn = 60,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -23,
+		Calories = 960,
+		Carbohydrates = 132,
+		Lipids = 48,
+		Proteins = 6,
+		WorldStaticModel = MuffinTray_Batter,
+		Tags = HasMetal,
+	}
+	
+	item PieDough
+	{
+		DisplayName = Pie Dough,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Dough,
+		Calories = 800,
+		Carbohydrates = 50,
+		Lipids = 48,
+		Proteins = 8,
+		WorldStaticModel = Dough,
+	}
+	
+	item PiePrep
+	{
+		DisplayName = Pie Preparation,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = PieWhole,
+		EatType = plate,
+		DaysFresh = 4,
+		DaysTotallyRotten = 7,
+		HungerChange = -15,
+		UnhappyChange = 10,
+		Calories = 189,
+		Carbohydrates = 11.2,
+		Lipids = 11.5,
+		Proteins = 9.6,
+		StaticModel = PiePreparation,
+		WorldStaticModel = PiePreparation,
+		Tags = HasMetal,
+	}
+	
+	item PieWholeRaw
+	{
+		DisplayName = Pie,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = PieWhole,
+		BadInMicrowave = true,
+		EatType = plate,
+		IsCookable = TRUE,
+		ReplaceOnUse = BakingPan,
+		MinutesToCook = 40,
+		MinutesToBurn = 110,
+		DaysFresh = 4,
+		DaysTotallyRotten = 9,
+		HungerChange = -15,
+		UnhappyChange = 10,
+		Calories = 189,
+		Carbohydrates = 11.2,
+		Lipids = 11.5,
+		Proteins = 9.6,
+		StaticModel = PiePreparation,
+		WorldStaticModel = PiePreparation,
+		RemoveNegativeEffectOnCooked = TRUE,
+		Tags = HasMetal,
+	}
+	
+	item PieWholeRawSweet
+	{
+		DisplayName = Pie,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.5,
+		Icon = PieWhole,
+		BadInMicrowave = true,
+		EatType = plate,
+		IsCookable = TRUE,
+		ReplaceOnUse = BakingPan,
+		MinutesToCook = 40,
+		MinutesToBurn = 110,
+		DaysFresh = 4,
+		DaysTotallyRotten = 9,
+		HungerChange = -15,
+		UnhappyChange = 10,
+		Calories = 189,
+		Carbohydrates = 11.2,
+		Lipids = 11.5,
+		Proteins = 9.6,
+		StaticModel = PiePreparation,
+		WorldStaticModel = PiePreparation,
+		RemoveNegativeEffectOnCooked = TRUE,
+		Tags = HasMetal,
+	}
+}

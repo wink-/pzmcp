@@ -1,0 +1,16 @@
+module Base
+{
+	/******* SMITHING - ITEMS *******/
+	
+	item Bellows
+	{
+		DisplayName = Bellows,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 1,
+		Icon = Bellows,
+		Tooltip = Tooltip_Bellows,
+		WorldStaticModel = Bellows,
+	}
+
+}

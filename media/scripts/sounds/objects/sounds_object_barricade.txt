@@ -1,0 +1,92 @@
+module Base
+{
+	sound AddBarricadeMetal
+	{
+		category = Object,
+		clip
+		{
+			event = Object/BarricadeMetal/Place,
+		}
+	}
+
+	sound BeginRemoveBarricadeMetal
+	{
+		category = Object,
+		clip
+		{
+			event = Character/Survival/MetalWorking/Welding,
+		}
+	}
+
+	sound RemoveBarricadeMetal
+	{
+		category = Object,
+		clip
+		{
+			event = Object/BarricadeMetal/Remove,
+		}
+	}
+
+	sound BreakBarricadeMetal
+	{
+		category = Object,
+		clip
+		{
+			event = Object/BarricadeMetal/Break,
+		}
+	}
+
+	sound HitBarricadeMetal
+	{
+		category = Object,
+		clip
+		{
+			event = Object/BarricadeMetal/Hit,
+		}
+	}
+
+	sound BreakBarricadePlank
+	{
+		category = Object,
+		clip
+		{
+			event = Object/BarricadeWood/Break,
+		}
+	}
+
+	sound BeginRemoveBarricadePlank
+	{
+		category = Object,
+		clip
+		{
+			event = Object/BarricadeWood/BeginRemove,
+		}
+	}
+
+	sound BeginRemoveBarricadePlankCrowbar
+	{
+		category = Object,
+		clip
+		{
+			event = Object/BarricadeWood/BeginRemoveCrowbar,
+		}
+	}
+
+	sound HitBarricadePlank
+	{
+		category = Object,
+		clip
+		{
+			event = Object/BarricadeWood/Hit,
+		}
+	}
+
+	sound RemoveBarricadePlank
+	{
+		category = Object,
+		clip
+		{
+			event = Object/BarricadeWood/Remove,
+		}
+	}
+}

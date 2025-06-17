@@ -1,0 +1,135 @@
+module Base 
+{
+    ragdoll BODYPART_RIGHT_LOWER_ARM_bodypartinfo
+    {
+        part = 10,
+        calculateLength = false,
+        radius = 0.055,
+        height = 0.3,
+        gap = 0.1,
+        shape = 0,
+        mass = 0.02295,
+        offset = 0.0 0.1 0.0,
+    }
+
+    ragdoll BODYPART_RIGHT_LOWER_LEG_bodypartinfo
+    {
+        part = 6,
+        calculateLength = false,
+        radius = 0.055,
+        height = 0.35,
+        gap = 0.1,
+        shape = 0,
+        mass = 0.0643,
+        offset = 0.0 -0.1 0.0,
+    }
+
+    ragdoll BODYPART_SPINE_bodypartinfo
+    {
+        part = 1,
+        calculateLength = true,
+        radius = 0.11,
+        height = 0.1,
+        gap = 0.1,
+        shape = 1,
+        mass = 0.3111,
+        offset = 0.0 0.0 0.0,
+    }
+
+    ragdoll BODYPART_LEFT_LOWER_LEG_bodypartinfo
+    {
+        part = 4,
+        calculateLength = false,
+        radius = 0.055,
+        height = 0.35,
+        gap = 0.1,
+        shape = 0,
+        mass = 0.0643,
+        offset = 0.0 -0.1 0.0,
+    }
+
+    ragdoll BODYPART_LEFT_UPPER_ARM_bodypartinfo
+    {
+        part = 7,
+        calculateLength = true,
+        radius = 0.055,
+        height = 0.1,
+        gap = 0.1,
+        shape = 0,
+        mass = 0.03075,
+        offset = 0.0 0.0 0.0,
+    }
+
+    ragdoll BODYPART_PELVIS_bodypartinfo
+    {
+        part = 0,
+        calculateLength = true,
+        radius = 0.075,
+        height = 0.1,
+        gap = 0.1,
+        shape = 1,
+        mass = 0.1481,
+        offset = 0.0 0.0 0.0,
+    }
+
+    ragdoll BODYPART_LEFT_UPPER_LEG_bodypartinfo
+    {
+        part = 3,
+        calculateLength = true,
+        radius = 0.055,
+        height = 0.1,
+        gap = 0.1,
+        shape = 0,
+        mass = 0.11125,
+        offset = 0.0 0.0 0.0,
+    }
+
+    ragdoll BODYPART_RIGHT_UPPER_ARM_bodypartinfo
+    {
+        part = 9,
+        calculateLength = true,
+        radius = 0.055,
+        height = 0.1,
+        gap = 0.1,
+        shape = 0,
+        mass = 0.03075,
+        offset = 0.0 0.0 0.0,
+    }
+
+    ragdoll BODYPART_HEAD_bodypartinfo
+    {
+        part = 2,
+        calculateLength = false,
+        radius = 0.1,
+        height = 0.1,
+        gap = 0.1,
+        shape = 1,
+        mass = 0.0823,
+        offset = -0.125 0.0 0.0,
+    }
+
+    ragdoll BODYPART_LEFT_LOWER_ARM_bodypartinfo
+    {
+        part = 8,
+        calculateLength = false,
+        radius = 0.055,
+        height = 0.3,
+        gap = 0.1,
+        shape = 0,
+        mass = 0.02295,
+        offset = 0.0 0.1 0.0,
+    }
+
+    ragdoll BODYPART_RIGHT_UPPER_LEG_bodypartinfo
+    {
+        part = 5,
+        calculateLength = true,
+        radius = 0.055,
+        height = 0.1,
+        gap = 0.1,
+        shape = 0,
+        mass = 0.11125,
+        offset = 0.0 0.0 0.0,
+    }
+
+}

@@ -1,0 +1,123 @@
+module Base
+{
+	/*CHRISTMAS*/
+	item ChristmasHanging
+	{
+		DisplayName = Christmas Garland,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 1,
+		Icon = ChristmasHanging,
+		WorldStaticModel = ChristmasHanging,
+	    Tags = IsMemento,
+	}
+
+	item ChristmasOrnament_Gold1
+	{
+		DisplayName = Christmas Ornament - Gold,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = ChristmasOrnament_Gold1,
+		WorldStaticModel = ChristmasOrnament_Gold1,
+	    Tags = IsMemento,
+	}
+
+	item ChristmasOrnament_Gold2
+	{
+		DisplayName = Christmas Ornament - Gold with Stripes,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = ChristmasOrnament_Gold2,
+		WorldStaticModel = ChristmasOrnament_Gold2,
+	    Tags = IsMemento,
+	}
+
+	item ChristmasOrnament_Gold3
+	{
+		DisplayName = Christmas Ornament - Gold with Snowflakes,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = ChristmasOrnament_Gold3,
+		WorldStaticModel = ChristmasOrnament_Gold3,
+	    Tags = IsMemento,
+	}
+
+	item ChristmasOrnament_Green1
+	{
+		DisplayName = Christmas Ornament - Green,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = ChristmasOrnament_Green1,
+		WorldStaticModel = ChristmasOrnament_Green1,
+	    Tags = IsMemento,
+	}
+
+	item ChristmasOrnament_Green2
+	{
+		DisplayName = Christmas Ornament - Green with Stripes,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = ChristmasOrnament_Green2,
+		WorldStaticModel = ChristmasOrnament_Green2,
+	    Tags = IsMemento,
+	}
+
+	item ChristmasOrnament_Green3
+	{
+		DisplayName = Christmas Ornament - Green with Snowflakes,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = ChristmasOrnament_Green3,
+		WorldStaticModel = ChristmasOrnament_Green3,
+	    Tags = IsMemento,
+	}
+
+	item ChristmasOrnament_Red1
+	{
+		DisplayName = Christmas Ornament - Red,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = ChristmasOrnament_Red1,
+		WorldStaticModel = ChristmasOrnament_Red1,
+	    Tags = IsMemento,
+	}
+
+	item ChristmasOrnament_Red2
+	{
+		DisplayName = Christmas Ornament - Red with Stripes,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = ChristmasOrnament_Red2,
+		WorldStaticModel = ChristmasOrnament_Red2,
+	    Tags = IsMemento,
+	}
+
+	item ChristmasOrnament_Red3
+	{
+		DisplayName = Christmas Ornament - Red with Snowflakes,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = ChristmasOrnament_Red3,
+		WorldStaticModel = ChristmasOrnament_Red3,
+	    Tags = IsMemento,
+	}
+	item ChristmasWreath
+	{
+		DisplayName = Christmas Wreath,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 2,
+		Icon = ChristmasWreath,
+		WorldStaticModel = ChristmasWreath,
+	    Tags = IsMemento,
+	}
+}

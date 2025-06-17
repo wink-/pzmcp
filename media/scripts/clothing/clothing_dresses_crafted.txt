@@ -1,0 +1,525 @@
+module Base
+{
+
+	item Dress_Long_Crafted_Burlap
+	{
+		DisplayName = Crafted Burlap Dress - Full Length,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressLong_Crafted_Burlap,
+		BloodLocation = Trousers;Shirt,
+		BodyLocation = LongDress,
+		ClothingItem = Dress_Long_Crafted_Burlap,
+		Insulation = 0.3,
+		RunSpeedModifier = 0.90,
+		WindResistance = 0.2,
+        DiscomfortModifier = 0.12,
+		WorldStaticModel = Dress_Long_Ground,
+		ScratchDefense = 5,
+		Tags = NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewShirtSleeveless,
+	}
+
+	item Dress_Long_Crafted_Cotton
+	{
+		DisplayName = Crafted Cotton Dress - Full Length,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressLong_Crafted_Cotton,
+		BloodLocation = Trousers;Shirt,
+		BodyLocation = LongDress,
+		ClothingItem = Dress_Long_Crafted_Cotton,
+		FabricType = Cotton,
+		Insulation = 0.3,
+		RunSpeedModifier = 0.90,
+		WindResistance = 0.2,
+		WorldStaticModel = Dress_Long_Ground,
+		Tags = RipClothingCotton;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewShirtSleeveless,
+	}
+
+	item Dress_Long_Crafted_Denim
+	{
+		DisplayName = Crafted Denim Dress - Full Length,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressLong_Crafted_DarkDenim,
+		BloodLocation = Trousers;Shirt,
+		BodyLocation = LongDress,
+		ClothingItem = Dress_Long_Crafted_Denim,
+		FabricType = Denim,
+		Insulation = 0.3,
+		RunSpeedModifier = 0.90,
+		WindResistance = 0.2,
+		WorldStaticModel = Dress_Long_Ground,
+		Tags = RipClothingDenim;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewShirtSleeveless,
+	}
+
+	item Dress_Long_Crafted_DenimBlack
+	{
+		DisplayName = Crafted Denim Dress - Full Length,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressLong_Crafted_BlackDenim,
+		BloodLocation = Trousers;Shirt,
+		BodyLocation = LongDress,
+		ClothingItem = Dress_Long_Crafted_DenimBlack,
+		FabricType = Denim,
+		Insulation = 0.3,
+		RunSpeedModifier = 0.90,
+		WindResistance = 0.2,
+		WorldStaticModel = Dress_Long_Ground,
+		Tags = RipClothingDenim;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewShirtSleeveless,
+	}
+
+	item Dress_Long_Crafted_DenimLight
+	{
+		DisplayName = Crafted Denim Dress - Full Length,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressLong_Crafted_Denim,
+		BloodLocation = Trousers;Shirt,
+		BodyLocation = LongDress,
+		ClothingItem = Dress_Long_Crafted_DenimLight,
+		FabricType = Denim,
+		Insulation = 0.3,
+		RunSpeedModifier = 0.90,
+		WindResistance = 0.2,
+		WorldStaticModel = Dress_Long_Ground,
+		Tags = RipClothingDenim;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewShirtSleeveless,
+	}
+
+	item Dress_Knees_Crafted_Burlap
+	{
+		DisplayName = Crafted Burlap Dress - Knee-length Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressShort_Crafted_Burlap,
+		BloodLocation = ShortsShort;Shirt,
+		BodyLocation = Dress,
+		ClothingItem = Dress_Knees_Crafted_Burlap,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+        DiscomfortModifier = 0.10,
+		WorldStaticModel = Dress_Short_Ground,
+		Tags = NoRagdoll,
+		ScratchDefense = 5,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewShirtSleeveless,
+	}
+
+	item Dress_Knees_Crafted_Cotton
+	{
+		DisplayName = Crafted Cotton Dress - Knee-length Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressShort_Crafted_Cotton,
+		BloodLocation = ShortsShort;Shirt,
+		BodyLocation = Dress,
+		ClothingItem = Dress_Knees_Crafted_Cotton,
+		FabricType = Cotton,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		WorldStaticModel = Dress_Short_Ground,
+		Tags = RipClothingCotton;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewShirtSleeveless,
+	}
+
+	item Dress_Knees_Crafted_Denim
+	{
+		DisplayName = Crafted Denim Dress - Knee-length Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressShort_Crafted_DarkDenim,
+		BloodLocation = ShortsShort;Shirt,
+		BodyLocation = Dress,
+		ClothingItem = Dress_Knees_Crafted_Denim,
+		FabricType = Denim,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		WorldStaticModel = Dress_Short_Ground,
+		Tags = RipClothingDenim;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewShirtSleeveless,
+	}
+
+	item Dress_Knees_Crafted_DenimBlack
+	{
+		DisplayName = Crafted Denim Dress - Knee-length Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressShort_Crafted_BlackDenim,
+		BloodLocation = ShortsShort;Shirt,
+		BodyLocation = Dress,
+		ClothingItem = Dress_Knees_Crafted_DenimBlack,
+		FabricType = Denim,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		WorldStaticModel = Dress_Short_Ground,
+		Tags = RipClothingDenim;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewShirtSleeveless,
+	}
+
+	item Dress_Knees_Crafted_DenimLight
+	{
+		DisplayName = Crafted Denim Dress - Knee-length Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressShort_Crafted_Denim,
+		BloodLocation = ShortsShort;Shirt,
+		BodyLocation = Dress,
+		ClothingItem = Dress_Knees_Crafted_DenimLight,
+		FabricType = Denim,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		WorldStaticModel = Dress_Short_Ground,
+		Tags = RipClothingDenim;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewShirtSleeveless,
+	}
+
+	item Dress_SmallGarbageStrapless
+	{
+		DisplayName = Dress - Small Garbage Bag Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressStrapless_Garbagebag,
+		BloodLocation = ShortsShort;Shirt,
+		BodyLocation = Dress,
+		ClothingItem = Dress_SmallGarbageStrapless,
+		Insulation = 0.15,
+		ScratchDefense = 5,
+		WindResistance = 0.1,
+		WaterResistance = 1,
+		DiscomfortModifier = 0.05,
+		WorldStaticModel = Dress_Small_Strapless_Ground_MultiTexture,
+        ResearchableRecipes = MakeGarbageBagTankTop;MakeTarpDress;SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewShirtSleeveless,
+		Tags = NoRagdoll,
+	}
+
+	item Dress_SmallTarpStrapless
+	{
+		DisplayName = Dress - Small Tarp Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressStrapless_Tarp,
+		BloodLocation = ShortsShort;Shirt,
+		BodyLocation = Dress,
+		ClothingItem = Dress_SmallTarpStrapless,
+		Insulation = 0.15,
+		ScratchDefense = 10,
+		WindResistance = 0.1,
+		WaterResistance = 1,
+        DiscomfortModifier = 0.05,
+		WorldStaticModel = Dress_Small_Strapless_Ground_MultiTexture,
+        ResearchableRecipes = MakeTarpTankTop;MakeGarbageBagDress;SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewShirtSleeveless,
+		Tags = NoRagdoll,
+	}
+
+	item Dress_SmallDeerHideStrapless
+	{
+		DisplayName = Dress - Small Deer Hide Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressStrapless_Deerhide,
+		BloodLocation = ShortsShort;Shirt,
+		BodyLocation = Dress,
+		ClothingItem = Dress_SmallDeerHideStrapless,
+		FabricType = Leather,
+		Insulation = 0.15,
+		ScratchDefense = 10,
+		WaterResistance = 0.35,
+		WindResistance = 0.30,
+		WorldStaticModel = Dress_Small_Strapless_Ground_MultiTexture,
+		Tags = RipClothingLeather;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewShirtSleeveless,
+	}
+
+	item Dress_SmallHideStrapless
+	{
+		DisplayName = Dress - Small Hide Strapless,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = DressStrapless_Hide,
+		BloodLocation = ShortsShort;Shirt,
+		BodyLocation = Dress,
+		ClothingItem = Dress_SmallHideStrapless,
+		FabricType = Leather,
+		Insulation = 0.15,
+		ScratchDefense = 10,
+		WaterResistance = 0.35,
+		WindResistance = 0.30,
+		WorldStaticModel = Dress_Small_Strapless_Ground_MultiTexture,
+		Tags = RipClothingLeather;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewShirtSleeveless,
+	}
+
+	item Skirt_Knees_DeerHide
+	{
+		DisplayName = Skirt - Knee-Length Deer Hide,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtKnee_Deerhide,
+		BloodLocation = ShortsShort,
+		BodyLocation = Skirt,
+		ClothingItem = Skirt_Knees_DeerHide,
+		FabricType = Leather,
+		Insulation = 0.1,
+		ScratchDefense = 10,
+		WaterResistance = 0.35,
+		WindResistance = 0.01,
+		WorldStaticModel = Skirt_Short_Ground,
+		Tags = RipClothingLeather;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers;SewHidePants,
+	}
+
+	item Skirt_Knees_Hide
+	{
+		DisplayName = Skirt - Knee-Length Hide,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtKnee_Hide,
+		BloodLocation = ShortsShort,
+		BodyLocation = Skirt,
+		ClothingItem = Skirt_Knees_Hide,
+		FabricType = Leather,
+		Insulation = 0.1,
+		ScratchDefense = 10,
+		WaterResistance = 0.35,
+		WindResistance = 0.01,
+		WorldStaticModel = Skirt_Short_Ground,
+		Tags = RipClothingLeather;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers;SewHidePants,
+	}
+
+	item Skirt_Long_Hide
+	{
+		DisplayName = Skirt - Long Hide,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtLong_Hide,
+		BloodLocation = Trousers,
+		BodyLocation = LongSkirt,
+		ClothingItem = Skirt_Long_Hide,
+		FabricType = Leather,
+		Insulation = 0.3,
+		RunSpeedModifier = 0.93,
+		ScratchDefense = 10,
+		WaterResistance = 0.35,
+		WindResistance = 0.2,
+		WorldStaticModel = Skirt_Long_Ground,
+		Tags = RipClothingLeather;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers;SewHidePants,
+	}
+
+	item Skirt_Normal_Hide
+	{
+		DisplayName = Skirt - Hide,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtLong_Hide,
+		BloodLocation = Trousers,
+		BodyLocation = LongSkirt,
+		ClothingItem = Skirt_Normal_Hide,
+		FabricType = Leather,
+		Insulation = 0.25,
+		RunSpeedModifier = 0.93,
+		ScratchDefense = 10,
+		WaterResistance = 0.35,
+		WindResistance = 0.1,
+		WorldStaticModel = Skirt_Mid_Ground,
+		Tags = RipClothingLeather;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers;SewHidePants,
+	}
+
+	item Skirt_Short_FaunHide
+	{
+		DisplayName = Skirt - Short Fawn Hide,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtShort_Deerhide,
+		BloodLocation = ShortsShort,
+		BodyLocation = Skirt,
+		ClothingItem = Skirt_Short_FaunHide,
+		FabricType = Leather,
+		Insulation = 0.05,
+		ScratchDefense = 10,
+		WaterResistance = 0.35,
+		WorldStaticModel = Skirt_Short_Ground,
+		Tags = RipClothingLeather;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers;SewHidePants,
+	}
+
+	item Skirt_Short_Hide
+	{
+		DisplayName = Skirt - Short Hide,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtShort_Hide,
+		BloodLocation = ShortsShort,
+		BodyLocation = Skirt,
+		ClothingItem = Skirt_Short_Hide,
+		FabricType = Leather,
+		Insulation = 0.05,
+		ScratchDefense = 10,
+		WaterResistance = 0.35,
+		WorldStaticModel = Skirt_Short_Ground,
+		Tags = RipClothingLeather;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers;SewHidePants,
+	}
+
+	item Skirt_Knees_Garbage
+	{
+		DisplayName = Skirt - Garbage Bag Knee-length,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtKnee_Garbagebag,
+		BloodLocation = ShortsShort,
+		BodyLocation = Skirt,
+		ClothingItem = Skirt_Knees_Garbage,
+		Insulation = 0.1,
+		ScratchDefense = 5,
+		WindResistance = 0.01,
+		WaterResistance = 1,
+        DiscomfortModifier = 0.05,
+		WorldStaticModel = Skirt_Short_Ground,
+        ResearchableRecipes = MakeGarbageBagDress;SewSkirtKnees;SewSkirtLong,
+		Tags = NoRagdoll,
+	}
+
+	item Skirt_Long_Garbage
+	{
+		DisplayName = Skirt - Garbage Bag Long,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtLong_Garbagebag,
+		BloodLocation = Trousers,
+		BodyLocation = LongSkirt,
+		ClothingItem = Skirt_Long_Garbage,
+		Insulation = 0.3,
+		RunSpeedModifier = 0.93,
+		ScratchDefense = 5,
+		WindResistance = 0.2,
+		WaterResistance = 1,
+        DiscomfortModifier = 0.07,
+		WorldStaticModel = Skirt_Long_Ground,
+        ResearchableRecipes = MakeGarbageBagDress;SewSkirtKnees;SewSkirtLong,
+		Tags = NoRagdoll,
+	}
+
+	item Skirt_Normal_Garbage
+	{
+		DisplayName = Skirt -  Garbage Bag,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Skirt_Garbagebag,
+		BloodLocation = Trousers,
+		BodyLocation = LongSkirt,
+		ClothingItem = Skirt_Normal_Garbage,
+		Insulation = 0.25,
+		RunSpeedModifier = 0.93,
+		ScratchDefense = 5,
+		WindResistance = 0.1,
+		WaterResistance = 1,
+        DiscomfortModifier = 0.07,
+		WorldStaticModel = Skirt_Mid_Ground,
+        ResearchableRecipes = MakeGarbageBagDress;SewSkirtKnees;SewSkirtLong,
+		Tags = NoRagdoll,
+	}
+
+	item Skirt_Short_Garbage
+	{
+		DisplayName = Skirt - Garbage Bag Short,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtShort_Garbagebag,
+		BloodLocation = ShortsShort,
+		BodyLocation = Skirt,
+		ClothingItem = Skirt_Short_Garbage,
+		Insulation = 0.05,
+		ScratchDefense = 5,
+		WaterResistance = 1,
+        DiscomfortModifier = 0.05,
+		WorldStaticModel = Skirt_Short_Ground,
+        ResearchableRecipes = MakeGarbageBagDress;SewSkirtKnees;SewSkirtLong,
+		Tags = NoRagdoll,
+	}
+
+	item Skirt_Knees_Tarp
+	{
+		DisplayName = Skirt - Tarp Knee-length,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtKnee_Tarp,
+		BloodLocation = ShortsShort,
+		BodyLocation = Skirt,
+		ClothingItem = Skirt_Knees_Tarp,
+		Insulation = 0.1,
+		ScratchDefense = 10,
+		WindResistance = 0.01,
+		WaterResistance = 1,
+        DiscomfortModifier = 0.07,
+		WorldStaticModel = Skirt_Short_Ground,
+        ResearchableRecipes = MakeTarpDress;SewSkirtKnees;SewSkirtLong,
+		Tags = NoRagdoll,
+	}
+
+	item Skirt_Long_Tarp
+	{
+		DisplayName = Skirt - Tarp Long,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtLong_Tarp,
+		BloodLocation = Trousers,
+		BodyLocation = LongSkirt,
+		ClothingItem = Skirt_Long_Tarp,
+		Insulation = 0.3,
+		RunSpeedModifier = 0.93,
+		ScratchDefense = 10,
+		WindResistance = 0.2,
+		WaterResistance = 1,
+        DiscomfortModifier = 0.07,
+		WorldStaticModel = Skirt_Long_Ground,
+        ResearchableRecipes = MakeTarpDress;SewSkirtKnees;SewSkirtLong,
+		Tags = NoRagdoll,
+	}
+
+	item Skirt_Normal_Tarp
+	{
+		DisplayName = Skirt - Tarp,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Skirt_Tarp,
+		BloodLocation = Trousers,
+		BodyLocation = LongSkirt,
+		ClothingItem = Skirt_Normal_Tarp,
+		Insulation = 0.25,
+		RunSpeedModifier = 0.93,
+		ScratchDefense = 10,
+		WindResistance = 0.1,
+		WaterResistance = 1,
+        DiscomfortModifier = 0.07,
+		WorldStaticModel = Skirt_Mid_Ground,
+        ResearchableRecipes = MakeTarpDress;SewSkirtKnees;SewSkirtLong,
+		Tags = NoRagdoll,
+	}
+
+	item Skirt_Short_Tarp
+	{
+		DisplayName = Skirt - Tarp Short,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtShort_Tarp,
+		BloodLocation = ShortsShort,
+		BodyLocation = Skirt,
+		ClothingItem = Skirt_Short_Tarp,
+		Insulation = 0.05,
+		ScratchDefense = 10,
+		WaterResistance = 1,
+        DiscomfortModifier = 0.05,
+		WorldStaticModel = Skirt_Short_Ground,
+        ResearchableRecipes = MakeTarpDress;SewSkirtKnees;SewSkirtLong,
+		Tags = NoRagdoll,
+	}
+
+}

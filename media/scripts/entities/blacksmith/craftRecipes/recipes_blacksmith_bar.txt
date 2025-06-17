@@ -1,0 +1,889 @@
+module Base
+{
+    craftRecipe Forge_Block_From_Chunk
+    {
+        time        = 300,
+        SkillRequired = Blacksmith:0,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        xpAward = Blacksmith:10,
+        inputs
+        {
+            item 2 tags[Charcoal],
+            item 4 [Base.IronChunk;Base.SteelChunk] mappers[metalType] flags[IsExclusive],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+			item 1 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+			Base.IronBlock = Base.IronChunk,
+			Base.SteelBlock = Base.SteelChunk,
+
+			default = Base.IronBlock,
+		}
+    }
+
+    craftRecipe Forge_Bar_Quarter_From_Chunk
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:0,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        xpAward = Blacksmith:10,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 1 [Base.IronChunk;Base.SteelChunk] mappers[metalType] flags[IsExclusive],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+			item 1 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+			Base.IronBarQuarter = Base.IronChunk,
+			Base.SteelBarQuarter = Base.SteelChunk,
+
+			default = Base.IronBarQuarter,
+		}
+    }
+
+    craftRecipe Forge_Bar_Half
+    {
+        time        = 300,
+        SkillRequired = Blacksmith:0,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        xpAward = Blacksmith:10,
+        inputs
+        {
+            item 2 tags[Charcoal],
+            item 2 [2:Base.IronChunk;2:Base.SteelChunk;2:Base.IronBarQuarter;2:Base.SteelBarQuarter] mappers[metalType] flags[IsExclusive],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+			item 1 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+			Base.IronBarHalf = Base.IronChunk,
+			Base.SteelBarHalf = Base.SteelChunk,
+
+			default = Base.IronBarHalf,
+		}
+    }
+/*
+    craftRecipe Forge_Bar_Half_From_Chunk
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:0,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        xpAward = Blacksmith:10,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 2 [Base.IronChunk;Base.SteelChunk] mappers[metalType] flags[IsExclusive],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+			item 1 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+			Base.IronBarHalf = Base.IronChunk,
+			Base.SteelBarHalf = Base.SteelChunk,
+
+			default = Base.IronBarHalf,
+		}
+    }
+
+    craftRecipe Forge_Bar_Half_From_Quarter
+    {
+        time        = 200,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        xpAward = Blacksmith:10,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 2 [Base.IronBarQuarter;Base.SteelBarQuarter] mappers[metalType] flags[IsExclusive],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+			item 1 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+			Base.IronBarHalf = Base.IronBarQuarter,
+			Base.SteelBarHalf = Base.SteelBarQuarter,
+
+			default = Base.IronBarHalf,
+		}
+    }
+*/
+    craftRecipe Forge_Bar_From_Chunk
+    {
+        time        = 500,
+        SkillRequired = Blacksmith:0,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        xpAward = Blacksmith:10,
+        inputs
+        {
+            item 4 tags[Charcoal],
+            item 4 [Base.IronChunk;Base.SteelChunk] mappers[metalType] flags[IsExclusive],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+			item 1 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+			Base.IronBar = Base.IronChunk,
+			Base.SteelBar = Base.SteelChunk,
+
+			default = Base.IronBar,
+		}
+    }
+
+    craftRecipe Forge_Bar
+    {
+        time        = 500,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        xpAward = Blacksmith:10,
+        inputs
+        {
+            item 4 tags[Charcoal],
+            item 4 [4:Base.IronChunk;4:Base.SteelChunk;4:Base.IronBarQuarter;4:Base.SteelBarQuarter;2:Base.IronBarHalf;2:Base.SteelBarHalf] mappers[metalType] flags[IsExclusive],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+			item 1 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+			Base.IronBar = Base.IronChunk,
+			Base.SteelBar = Base.SteelChunk,
+			Base.IronBar = Base.IronBarQuarter,
+			Base.SteelBar = Base.SteelBarQuarter,
+			Base.IronBar = Base.IronBarHalf,
+			Base.SteelBar = Base.SteelBarHalf,
+
+			default = Base.IronBar,
+		}
+    }
+/*
+    craftRecipe Forge_Bar_From_Quarter
+    {
+        time        = 200,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        xpAward = Blacksmith:10,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 4 [Base.IronBarQuarter;Base.SteelBarQuarter] mappers[metalType] flags[IsExclusive],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+			item 1 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+			Base.IronBar = Base.IronBarQuarter,
+			Base.SteelBar = Base.SteelBarQuarter,
+
+			default = Base.IronBar,
+		}
+    }
+
+    craftRecipe Forge_Bar_From_Half
+    {
+        time        = 200,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        xpAward = Blacksmith:10,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 2 [Base.IronBarHalf;Base.SteelBarHalf] mappers[metalType] flags[IsExclusive],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+			item 1 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+			Base.IronBar = Base.IronBarHalf,
+			Base.SteelBar = Base.SteelBarHalf,
+
+			default = Base.IronBar,
+		}
+    }
+*/
+
+    craftRecipe Pierce_Ingot
+    {
+        time        = 500,
+        SkillRequired = Blacksmith:3,
+        timedAction = Making,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 4 tags[Charcoal],
+            item 1 [Base.IronIngot;Base.SteelIngot] mappers[metalType],
+            item 1 tags[ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegradeHeavy],
+            /* energy 130 [Thermal] mode:keep,*/
+        }
+        outputs
+        {
+			item 1 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+			Base.PiercedIronIngot = Base.IronIngot,
+			Base.PiercedSteelIngot = Base.SteelIngot,
+
+			default = Base.PiercedIronIngot,
+		}
+    }
+
+    craftRecipe Pierce_Block
+    {
+        time        = 300,
+        SkillRequired = Blacksmith:0,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        xpAward = Blacksmith:10,
+        inputs
+        {
+            item 2 tags[Charcoal],
+            item 1 [Base.IronBlock;Base.SteelBlock] mappers[metalType],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegrade],
+        }
+        outputs
+        {
+			item 1 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+			Base.PiercedIronBlock = Base.IronBlock,
+			Base.PiercedSteelBlock = Base.SteelBlock,
+
+			default = Base.PiercedIronBlock,
+		}
+    }
+
+    craftRecipe Pierce_Chunk
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:0,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        xpAward = Blacksmith:10,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 1 [Base.IronChunk;Base.SteelChunk] mappers[metalType],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[Prop2;MayDegradeLight],
+            item 1 tags[MetalworkingPunch] mode:keep flags[MayDegrade],
+        }
+        outputs
+        {
+			item 1 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+			Base.PiercedIronChunk = Base.IronChunk,
+			Base.PiercedSteelChunk = Base.SteelChunk,
+
+			default = Base.PiercedIronChunk,
+		}
+    }
+
+    /* NOTES: FIX_ACTION */
+    craftRecipe SawBarIntoHalves
+    {
+        Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.SteelBar;Base.MetalBar] flags[Prop2;AllowDestroyedItem] mappers[barMap],
+            item 1 tags[MetalSaw;SmallSaw] mode:keep flags[Prop1;MayDegradeLight],
+        }
+        outputs
+        {
+			item 2 mapper:barMap,
+        }
+		itemMapper barMap
+		{
+			Base.SteelBarHalf = Base.SteelBar,
+			Base.SteelRodHalf = Base.MetalBar,
+
+			default = Base.SteelBarHalf,
+		}
+    }
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawBarHalfIntoQuarters
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.SteelBarHalf;Base.SteelRodHalf] flags[Prop2;AllowDestroyedItem] mappers[barMap],
+			item 1 tags[MetalSaw;SmallSaw] mode:keep flags[Prop1;MayDegradeLight],
+		}
+        outputs
+        {
+			item 2 mapper:barMap,
+        }
+		itemMapper barMap
+		{
+			Base.SteelBarQuarter = Base.SteelBarHalf,
+			Base.SteelRodQuarter = Base.SteelRodHalf,
+
+			default = Base.SteelBarQuarter,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawIntoPieces
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.PiercedIronChunk;Base.IronBarQuarter;Base.IronChunk;Base.PiercedSteelChunk;Base.SteelBarQuarter;Base.SteelChunk] flags[Prop2] mappers[metalType],
+			item 1 tags[MetalSaw;SmallSaw] mode:keep flags[Prop1;MayDegradeLight],
+		}
+		outputs
+		{
+			item 5 Base.SteelPiece,
+		}
+        outputs
+        {
+			item 5 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+			Base.SteelPiece = Base.PiercedSteelChunk,
+			Base.SteelPiece = Base.SteelBarQuarter,
+			Base.SteelPiece = Base.SteelChunk,
+
+			default = Base.IronPiece,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawSteelIngotIntoBlocks
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.SteelIngot] flags[Prop2],
+			item 1 tags[MetalSaw] mode:keep flags[Prop1;MayDegradeHeavy],
+		}
+		outputs
+		{
+			item 3 Base.SteelBlock,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawSteelBlockIntoChunks
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.SteelBlock] flags[Prop2],
+			item 1 tags[MetalSaw] mode:keep flags[Prop1;MayDegrade],
+		}
+		outputs
+		{
+			item 4 Base.SteelChunk,
+		}
+	}
+
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawIronIngotIntoBlocks
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.IronIngot] flags[Prop2],
+			item 1 tags[MetalSaw] mode:keep flags[Prop1;MayDegradeHeavy],
+		}
+		outputs
+		{
+			item 3 Base.IronBlock,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawIronBlockIntoChunks
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.IronBlock] flags[Prop2],
+			item 1 tags[MetalSaw] mode:keep flags[Prop1;MayDegrade],
+		}
+		outputs
+		{
+			item 4 Base.IronChunk,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawSteelSheetIntoSmallSheets
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.SheetMetal] flags[Prop2],
+			item 1 tags[MetalSaw] mode:keep flags[Prop1;MayDegradeLight],
+		}
+		outputs
+		{
+			item 4 Base.SmallSheetMetal,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	/*
+	craftRecipe SawRailroadTrack
+	{
+		Time = 500,
+        tags = AnySurfaceCraft;CanBeDoneFromFloor,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.RailroadTrack] flags[Prop2],
+			item 1 tags[MetalSaw] mode:keep flags[Prop1;MayDegradeHeavy],
+		}
+		outputs
+		{
+			item 3 Base.RailroadTrackPiece,
+		}
+	}*/
+
+	/* NOTES: FIX_ACTION */
+	/*
+	craftRecipe CutRailroadTrack
+	{
+		Time = 200,
+		SkillRequired = MetalWelding:4,
+        tags = AnySurfaceCraft;CanBeDoneFromFloor,
+        timedAction = Welding,
+		xpAward = MetalWelding:10,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.RailroadTrack] flags[Prop2],
+			item 5 [Base.BlowTorch]  flags[DontRecordInput],
+			item 1 tags[WeldingMask] mode:keep,
+		}
+		outputs
+		{
+			item 3 Base.RailroadTrackPiece,
+		}
+	}
+	*/
+
+	/* NOTES: FIX_ACTION */
+
+	craftRecipe CutIngotIntoBlocks
+	{
+		Time = 100,
+		SkillRequired = MetalWelding:2,
+        tags = AnySurfaceCraft,
+        timedAction = Welding,
+		xpAward = MetalWelding:10,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.IronIngot;Base.PiercedIronIngot;Base.PiercedSteelIngot;Base.SteelIngot] flags[Prop2] mappers[metalType],
+			item 2 [Base.BlowTorch] flags[Prop1],
+			item 1 tags[WeldingMask] mode:keep,
+		}
+        outputs
+        {
+			item 3 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+			Base.SteelBlock = Base.PiercedSteelIngot,
+			Base.SteelBlock = Base.SteelIngot,
+
+			default = Base.IronBlock,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe CutBlockIntoChunks
+	{
+		Time = 100,
+		SkillRequired = MetalWelding:1,
+        tags = AnySurfaceCraft,
+        timedAction = Welding,
+		xpAward = MetalWelding:10,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.IronBlock;Base.PiercedIronBlock;Base.PiercedSteelBlock;Base.PiercedSteelBlock] flags[Prop2] mappers[metalType],
+			item 2 [Base.BlowTorch] flags[Prop1],
+			item 1 tags[WeldingMask] mode:keep,
+		}
+        outputs
+        {
+			item 4 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+			Base.SteelChunk = Base.PiercedSteelBlock,
+			Base.SteelChunk = Base.SteelBlock,
+
+			default = Base.IronChunk,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe CutBar
+	{
+		Time = 50,
+		SkillRequired = MetalWelding:1,
+        tags = AnySurfaceCraft,
+        timedAction = Welding,
+		xpAward = MetalWelding:10,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.IronBar;Base.IronBarHalf;Base.SteelBarHalf;Base.SteelBar] flags[Prop2;AllowDestroyedItem] mappers[metalType],
+			item 1 [Base.BlowTorch] flags[Prop1],
+			item 1 tags[WeldingMask] mode:keep,
+		}
+        outputs
+        {
+			item 2 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+            Base.IronBarHalf = Base.IronBar,
+			Base.SteelBarHalf = Base.SteelBar,
+            Base.IronBarQuarter = Base.IronBarHalf,
+			Base.SteelBarQuarter = Base.SteelBarHalf,
+
+			default = Base.IronBarHalf,
+		}
+	}
+
+	craftRecipe ForgeBarIntoHalves
+	{
+		Time = 100,
+        tags = PrimitiveForge,
+        timedAction = MakingHammer_Surface,
+        category = Blacksmithing,
+		xpAward = Blacksmithing:10,
+		inputs
+		{
+			item 1 [Base.IronBar;Base.IronBarHalf;Base.SteelBarHalf;Base.SteelBar] flags[Prop2;AllowDestroyedItem] mappers[metalType],
+			item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+			item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+			item 1 tags[Charcoal],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+		}
+        outputs
+        {
+			item 2 mapper:metalType,
+        }
+        	itemMapper metalType
+        {
+            Base.IronBarHalf = Base.IronBar,
+			Base.SteelBarHalf = Base.SteelBar,
+            Base.IronBarQuarter = Base.IronBarHalf,
+			Base.SteelBarQuarter = Base.SteelBarHalf,
+
+			default = Base.IronBarHalf,
+		}
+	}
+
+	craftRecipe ForgeBarIntoRod
+	{
+		Time = 500,
+        tags = AdvancedForge,
+        timedAction = MakingHammer_Surface,
+        category = Blacksmithing,
+		xpAward = Blacksmithing:10,
+		inputs
+		{
+			item 1 [Base.SteelBarHalf;Base.SteelBar] flags[Prop2] mappers[MetalType;ScrapType],
+			/*item 1 [Base.IronBar;Base.IronBarHalf;Base.SteelBarHalf;Base.SteelBar] flags[Prop2] mappers[MetalType;ScrapType],*/
+			item 1 tags[BallPeenHammer] mode:keep flags[Prop1;MayDegradeLight],
+			item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+			item 4 tags[Charcoal],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+		}
+        outputs
+        {
+			item 1 mapper:MetalType,
+			item 1 mapper:ScrapType,
+        }
+        	itemMapper MetalType
+        {
+            /*Base.IronRod = Base.IronBar,*/
+			Base.MetalBar = Base.SteelBar,
+            /*Base.IronRodHalf = Base.IronBarHalf,*/
+			Base.SteelRodHalf = Base.SteelBarHalf,
+
+			default = Base.SteelRodHalf,
+		}
+        	itemMapper ScrapType
+        {
+            Base.IronChunk = Base.IronBar,
+			Base.SteelChunk = Base.SteelBar,
+           /* Base.IronPiece = Base.IronBarHalf,*/
+			Base.SteelPiece = Base.SteelBarHalf,
+
+			default = Base.SteelPiece,
+		}
+	}
+
+	craftRecipe ForgeRodIntoBar
+	{
+		Time = 400,
+        tags = PrimitiveForge,
+        timedAction = MakingHammer_Surface,
+        category = Blacksmithing,
+		xpAward = Blacksmithing:10,
+		inputs
+		{
+			item 1 [Base.MetalBar;Base.SteelRodHalf] flags[Prop2] mappers[MetalType;ScrapType],
+			/*item 1 [Base.IronRod;Base.IronRodHalf;Base.MetalBar;Base.SteelRodHalf] flags[Prop2] mappers[MetalType;ScrapType],*/
+			item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+			item 3 tags[Charcoal],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+		}
+        outputs
+        {
+			item 1 mapper:MetalType,
+			item 1 mapper:ScrapType,
+        }
+        	itemMapper MetalType
+        {
+           /* Base.IronBarHalf = Base.IronRod,
+            Base.IronBarQuarter = Base.IronRodHalf,*/
+			Base.SteelBarHalf = Base.MetalBar,
+			Base.SteelBarQuarter = Base.SteelRodHalf,
+
+			default = Base.SteelBarHalf,
+		}
+        	itemMapper ScrapType
+        {
+            /*Base.IronChunk = Base.IronRod,
+            Base.IronPiece = Base.IronRodHalf,*/
+			Base.SteelChunk = Base.MetalBar,
+			Base.SteelPiece = Base.SteelRodHalf,
+
+			default = Base.SteelChunk,
+		}
+	}
+
+    craftRecipe ForgeSmallIronBand
+    {
+        time        = 200,
+        SkillRequired = Blacksmith:0,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        xpAward = Blacksmith:10,
+        inputs
+        {
+            item 1 tags[Charcoal],
+            item 1 [Base.IronBarQuarter;Base.SteelBarQuarter],
+            item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[Prop2],
+        }
+        outputs
+        {
+            item 1 Base.IronBandSmall,
+        }
+    }
+
+    craftRecipe ForgeIronBand
+    {
+        time        = 500,
+        SkillRequired = Blacksmith:0,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        xpAward = Blacksmith:10,
+        inputs
+        {
+            item 4 tags[Charcoal],
+            item 1 [Base.IronBar;Base.SteelBar],
+            item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[CrudeTongs;Tongs] mode:keep flags[Prop2],
+        }
+        outputs
+        {
+            item 1 Base.IronBand,
+        }
+    }
+
+	craftRecipe ForgeCircularSawbladeIntoHalves
+	{
+		Time = 200,
+        tags = PrimitiveForge,
+        timedAction = MakingHammer_Surface,
+        category = Blacksmithing,
+		inputs
+		{
+            item 1 [Base.CircularSawblade] flags[AllowDestroyedItem],
+			item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+			item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+			item 1 tags[Charcoal],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+            item 2 Base.CircularSawblade_Half,
+		}
+	}
+
+	craftRecipe ForgeIronBandIntoQuarters
+	{
+		Time = 300,
+        tags = PrimitiveForge,
+        timedAction = MakingHammer_Surface,
+        category = Blacksmithing,
+		inputs
+		{
+            item 1 [Base.IronBand] flags[AllowDestroyedItem],
+			item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+			item 1 tags[MetalworkingChisel] mode:keep flags[MayDegradeLight],
+			item 2 tags[Charcoal],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+            item 4 Base.IronBandSmall,
+		}
+	}
+
+    craftRecipe ForgeScrapIntoBarQuarter
+    {
+        time        = 300,
+        SkillRequired = Blacksmith:0,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 2 tags[Charcoal],
+            item 1 [Base.IronScrap;Base.SteelScrap] mappers[metalType],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+         	item 1 mapper:metalType,
+        }
+        itemMapper metalType
+        {
+            Base.IronBarQuarter = Base.IronScrap,
+            Base.SteelBarQuarter = Base.SteelScrap,
+
+            default = Base.IronBarQuarter,
+        }
+    }
+
+    craftRecipe ForgeScrapIntoChunk
+    {
+        time        = 300,
+        SkillRequired = Blacksmith:0,
+        timedAction = MakingHammer_Surface,
+        tags = PrimitiveForge,
+        category = Blacksmithing,
+        inputs
+        {
+            item 2 tags[Charcoal],
+            item 1 [Base.IronScrap;Base.SteelScrap] mappers[metalType],
+            item 1 tags[Hammer;ClubHammer] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[Tongs] mode:keep flags[Prop2;MayDegradeLight],
+        }
+        outputs
+        {
+         	item 1 mapper:metalType,
+        }
+        itemMapper metalType
+        {
+            Base.IronChunk = Base.IronScrap,
+            Base.SteelChunk = Base.SteelScrap,
+
+            default = Base.IronChunk,
+        }
+    }
+}

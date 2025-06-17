@@ -1,0 +1,252 @@
+module Base
+{
+	item Mov_BinRound
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Round Bin,
+		WorldObjectSprite = trashcontainers_01_20,
+	}
+	
+	item Mov_BlueWallLocker
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Blue Wall Locker,
+		WorldObjectSprite = furniture_storage_02_5,
+	}
+	
+	item Mov_CabinetTool
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Red Mobile Tool Cabinet,
+		WorldObjectSprite = location_business_machinery_01_32,
+	}
+	
+	item Mov_CardboardBox
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Cardboard Box,
+		WorldObjectSprite = trashcontainers_01_24,
+	}
+	
+	item Mov_ClothesStand
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Clothes Stand,
+		WorldObjectSprite = location_shop_generic_01_52,
+	}
+	
+	item Mov_GrayGarbageBin
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Gray Garbage Bin,
+		WorldObjectSprite = trashcontainers_01_18,
+	}
+	
+	item Mov_GreenGarbageBin
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Green Garbage Bin,
+		WorldObjectSprite = trashcontainers_01_17,
+	}
+	
+	item Mov_GreenWallLocker
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Green Wall Locker,
+		WorldObjectSprite = furniture_storage_02_8,
+	}
+	
+	item Mov_LargeOpenToppedGarbageBin
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Large Open-Topped Garbage Bin,
+		WorldObjectSprite = location_shop_mall_01_44,
+	}
+	
+	item Mov_Mailbox
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Mail Box,
+		WorldObjectSprite = street_decoration_01_21,
+	}
+	
+	item Mov_MilitaryCrate
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Military Crate,
+		WorldObjectSprite = location_military_generic_01_1,
+	}
+	
+	item Mov_MilitaryLocker
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Military Locker,
+		WorldObjectSprite = location_military_generic_01_22,
+	}
+	
+	item Mov_PublicGarbageBin
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Public Garbage Bin,
+		WorldObjectSprite = trashcontainers_01_21,
+	}
+	
+	item Mov_PublicMailBox
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Public Mail Box,
+		WorldObjectSprite = street_decoration_01_8,
+	}
+	
+	item Mov_RecycleBin
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Recycle Bin,
+		WorldObjectSprite = trashcontainers_01_16,
+	}
+	
+	item Mov_ShopDisplayCounter
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Shop Display Counter,
+		WorldObjectSprite = location_shop_generic_01_88,
+	}
+	
+	item Mov_ShoppingBaskets
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Vegetable Basket,
+		WorldObjectSprite = location_shop_greenes_01_37,
+	}
+	
+	item Mov_SmallChest
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Small Chest,
+		WorldObjectSprite = furniture_storage_02_28,
+	}
+	
+	item Mov_SnackVendingMachine
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Snack Vending Machine,
+		WorldObjectSprite = location_shop_accessories_01_19,
+	}
+	
+	item Mov_SodaVendingMachine
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Soda Vending Machine,
+		WorldObjectSprite = location_shop_accessories_01_19,
+	}
+	
+	item Mov_TrapezoidShopShelves
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Trapezoid Shop Shelves,
+		WorldObjectSprite = location_shop_generic_01_92,
+	}
+	
+	item Mov_WashingBin
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Washing Bin,
+		WorldObjectSprite = appliances_laundry_01_24,
+	}
+	
+	item Mov_WheelieBin
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Wheelie Bin,
+		WorldObjectSprite = trashcontainers_01_0,
+	}
+	
+	item Mov_WhiteFileCabinet
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = White File Cabinet,
+		WorldObjectSprite = location_business_office_generic_01_32,
+	}
+	
+	item Mov_YellowWallLocker
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Yellow Wall Locker,
+		WorldObjectSprite = furniture_storage_02_13,
+	}
+}

@@ -1,0 +1,76 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_LockerSmall_Lvl1
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Small Metal Locker (Shoddy),
+			Icon		= Build_GunLocker,
+		}
+	}
+
+    entity Metal_LockerSmall_Lvl1
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_LockerSmall_Lvl1,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+            canBePadlocked = true,
+            face W
+            {
+                layer
+                {
+                    row = crafted_05_20,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = crafted_05_21,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_05_22,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = crafted_05_23,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            OnAddToMenu   = metalLockedSmallLvl1Test,
+            timedAction   = BuildMetalStructureMedium,
+            time          = 50,
+            needToBeLearn = true,
+            SkillRequired = MetalWelding:5,
+            xpAward       = MetalWelding:50,
+            category      = Furniture,
+            tags          = Welding;Furniture,
+            ToolTip       = Tooltip_craft_lockerDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.SmallSheetMetal],
+                item 3 [Base.MetalPipe],
+                item 2 [Base.Hinge],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

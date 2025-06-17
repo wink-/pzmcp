@@ -1,0 +1,29 @@
+module Base
+{
+	sound MicrowaveRunning
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Microwave/Running,
+		}
+	}
+
+	sound MicrowaveCookingMetal
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Microwave/RunningMetal,
+		}
+	}
+
+	sound MicrowaveTimerExpired
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Microwave/Finished,
+		}
+	}
+}

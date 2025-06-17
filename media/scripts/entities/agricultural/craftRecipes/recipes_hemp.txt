@@ -1,0 +1,23 @@
+module Base
+{
+/*
+    craftRecipe TwistRopeFromHemp
+     {
+        time = 140,
+	    timedAction = Making,
+		Tags = AnySurfaceCraft,
+        category = Farming,
+        inputs
+        {
+            item 2 [Base.HempScutched] flags[Prop2],
+            item 1 [Base.WoodenStick2;Base.TreeBranch2;Base.Handle] mode:keep flags[Prop1],
+            item 1 tags[SharpKnife;Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.Rope,
+        }
+     }
+*/
+
+}

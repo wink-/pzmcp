@@ -1,0 +1,29 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISWidgetCraftControl
+        {
+            background          = false,
+            margin              = 5,
+            autoFillContents    = false,
+            isAutoFill          = false,
+            isAutoFillX         = false,
+            isAutoFillY         = false,
+            minimumWidth        = 0,
+            minimumHeight       = 0,
+            /*styleButton         = nil, */
+        }
+
+        ISWidgetCraftControl S_WidgetCraftControl_Std
+        {
+            autoFillContents    = false,
+        }
+
+        ISWidgetCraftControl S_WidgetCraftControl_Furnace
+        {
+            autoFillContents    = false,
+            styleButton         = S_Button_Craft_Furnace,
+        }
+    }
+}

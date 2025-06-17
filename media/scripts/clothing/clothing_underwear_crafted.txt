@@ -1,0 +1,140 @@
+module Base
+{
+
+	item Briefs_Burlap
+	{
+		DisplayName = Briefs - Burlap,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Briefs_Burlap,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Briefs_Burlap,
+		WorldStaticModel = Briefs_Ground,
+		BloodLocation = Groin,
+		ScratchDefense = 10,
+        DiscomfortModifier = 0.20,
+	}
+
+	item Briefs_Denim
+	{
+		DisplayName = Briefs - Denim Strip,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Briefs_Denim,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Briefs_Denim,
+		WorldStaticModel = Briefs_Ground,
+		FabricType = Denim,
+		BloodLocation = Groin,
+		ScratchDefense = 10,
+	}
+
+	item Briefs_Garbage
+	{
+		DisplayName = Briefs - Garbage Bag,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Briefs_Garbagebag,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Briefs_Garbage,
+		WorldStaticModel = Briefs_Ground,
+		BloodLocation = Groin,
+		ScratchDefense = 5,
+        DiscomfortModifier = 0.15,
+	}
+
+	item Briefs_Hide
+	{
+		DisplayName = Briefs - Hide,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Briefs_Hide,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Briefs_Hide,
+		WorldStaticModel = Briefs_Ground,
+		FabricType = Leather,
+		BloodLocation = Groin,
+		ScratchDefense = 10,
+	}
+
+	item Briefs_Rag
+	{
+		DisplayName = Briefs - Rag,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Briefs_Sheet,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Briefs_Rag,
+		WorldStaticModel = Briefs_Ground,
+		BloodLocation = Groin,
+		ScratchDefense = 5,
+	}
+
+	item Briefs_Tarp
+	{
+		DisplayName = Briefs - Tarp,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Briefs_Tarp,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Briefs_Tarp,
+		WorldStaticModel = Briefs_Ground,
+		BloodLocation = Groin,
+		ScratchDefense = 10,
+		DiscomfortModifier = 0.15,
+	}
+
+	item Bra_Strapless_Hide
+	{
+		DisplayName = Bra - Strapless Hide,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BraLeopardStrapless,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Bra_Strapless_Hide,
+		WorldStaticModel = BraStraplessAnimalPrint_Ground,
+	}
+
+	item Bra_Straps_Hide
+	{
+		DisplayName = Bra - Hide,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BraLeopard,
+		BodyLocation = UnderwearTop,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Bra_Straps_Hide,
+		WorldStaticModel = Bra_AnimalPrint_Ground,
+	}
+
+	item Underpants_Hide
+	{
+		DisplayName = Underpants - Hide,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = PantiesLeopard,
+		BodyLocation = UnderwearBottom,
+		CanHaveHoles = FALSE,
+		ClothingItem = Underwear_Underpants_Hide,
+		WorldStaticModel = Underpants_AnimalPrint_Ground,
+		FabricType = Leather,
+		BloodLocation = Groin,
+		ScratchDefense = 10,
+	}
+}

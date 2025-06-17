@@ -1,0 +1,101 @@
+module Base
+{
+	sound DrinkingFromGeneric
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Drink/FromGeneric,
+		}
+	}
+
+	sound DrinkingFromBottle
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Drink/FromBottle,
+		}
+	}
+
+	sound DrinkingFromBottleGlass
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Drink/FromBottleGlass,
+		}
+	}
+
+	sound DrinkingFromBottlePlastic
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Drink/FromBottlePlastic,
+		}
+	}
+
+	sound DrinkingFromCan
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Drink/FromCan,
+		}
+	}
+
+	sound DrinkingFromMug
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Drink/FromMug,
+		}
+	}
+
+	sound DrinkingFromCarton
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Drink/FromCarton,
+		}
+	}
+
+	sound DrinkingFromPool
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Drink/FromPool,
+		}
+	}
+
+	sound DrinkingFromRiver
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Drink/FromRiver,
+		}
+	}
+
+	sound DrinkingFromTap
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Drink/FromTap,
+		}
+	}
+
+	sound DrinkingFromToilet
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Drink/FromToilet,
+		}
+	}
+}

@@ -1,0 +1,413 @@
+module Base
+{
+
+	item CircularSawblade
+	{
+		DisplayName = Circular Sawblade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 2,
+		Icon = CircularSawBlade,
+		StaticModel = CircularSawblade,
+		WorldStaticModel = CircularSawblade,
+		Tags = HasMetal;SmeltableSteelLarge,
+        ConditionMax	=	10,
+        ResearchableRecipes = MakeSawbladeWeapon;Forge_Saw,
+	}
+
+	item CircularSawblade_Half
+	{
+		DisplayName = Circular Sawblade Half,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = CircularSawBlade_Half,
+		StaticModel = CircularSawblade_Half,
+		WorldStaticModel = CircularSawblade_Half,
+		Tags = HasMetal;SmeltableSteelMedium,
+        ConditionMax	=	5,
+        ResearchableRecipes = MakeSawbladeWeapon;Forge_Saw,
+	}
+
+	item DrawPlate
+	{
+		DisplayName = Draw Plate,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Drawplate,
+		StaticModel = DrawPlate,
+		WorldStaticModel = DrawPlate,
+		Tags = HasMetal;SmeltableIronSmall,
+	}
+
+	item HacksawBlade
+	{
+		DisplayName = Hacksaw Blade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Sawblade,
+		StaticModel = HacksawBlade,
+		WorldStaticModel = HacksawBlade,
+		Tags = HasMetal;SawBlade;SmeltableSteelSmall;RepairableSawblade,
+        ConditionMax	=	10,
+        ResearchableRecipes = Forge_Saw;MakeStoneBladeSaw,
+	}
+
+	item HandDrill
+	{
+		DisplayName = Hand Drill,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 2,
+		Icon = Drill_OldFashioned,
+		StaticModel = HandDrill,
+		WorldStaticModel = HandDrill,
+		Tags = DrillWood;DrillMetal;DrillWoodPoor,
+        ConditionLowerChanceOneIn = 10,
+		ResearchableRecipes = Forge_Drill;MakeStoneDrill,
+	}
+
+    item HeadingTool
+    {
+        DisplayName = Heading Tool,
+        DisplayCategory = Tool,
+        Type = Normal,
+        Weight = 0.5,
+		Icon = HeaderTool,
+		StaticModel = HeaderTool,
+		WorldStaticModel = HeaderTool,
+        Tags = HasMetal;HeadingTool;SmeltableIronSmall,
+    }
+
+	item MetalworkingPliers
+	{
+		DisplayName = Metalworking Pliers,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.5,
+		Icon	=	Pliers_Forged,
+		WorldStaticModel = MetalworkingPliers,
+		Tags = Pliers;MetalworkingPliers;SmeltableIronSmall,
+		ResearchableRecipes = Forge_Tongs;Forge_Heading_Tool,
+	}
+
+    item OilPress
+    {
+        DisplayCategory = Tool,
+        Type		= Normal,
+        DisplayName	= Oil Press,
+        Icon		= FlaxPress,
+        Weight		= 0.2,
+        WorldStaticModel = FlaxPress,
+        Tooltip     = Tooltip_item_OilPress,
+    }
+
+	item OldDrill
+	{
+		DisplayName = Auger Drill,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 1,
+		Icon = Drill_HandAuger,
+		StaticModel = OldDrill,
+		WorldStaticModel = OldDrill,
+		Tags = DrillWoodPoor,
+        ConditionLowerChanceOneIn = 8,
+		ConditionMax = 5,
+		ResearchableRecipes = MakeStoneDrill,
+	}
+
+	item Pliers
+	{
+		DisplayName = Pliers,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.3,
+		Icon	=	Pliers,
+		StaticModel = Pliers,
+		WorldStaticModel = Pliers,
+		Tags = Pliers;RemoveBullet;RemoveGlass,
+		ResearchableRecipes = Forge_Tongs;Forge_Metalworking_Pliers;Forge_Heading_Tool,
+	}
+
+	item RubberHose
+	{
+		DisplayName = Rubber Hose,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = RubberHose,
+		StaticModel = RubberHose,
+		WorldStaticModel = RubberHose,
+		Tags = SiphonGas, /*;UseWorldStaticModel,*/
+		/*AttachmentType = Walkie,*/
+	}
+	
+	item ScissorsBlunt
+	{
+		DisplayName = Safety Scissors,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = ScissorsBlunt,
+		MetalValue = 4,
+		StaticModel = ScissorsBlunt,
+		WorldStaticModel = ScissorsBlunt,
+		Tags = Scissors;ShowCondition;Sharpenable,
+		ConditionLowerChanceOneIn = 5,
+		ConditionMax = 5,
+        Sharpness = 1.0,
+	}
+
+	item SmallFileSet
+	{
+		DisplayName = Small File Set,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 1,
+		Icon = Files_Forged,
+		MetalValue = 15,
+		StaticModel = MetalworkingFile,
+		WorldStaticModel = SmallMetalworkingFiles,
+		ConditionLowerChanceOneIn = 8,
+		ConditionMax = 8,
+		Tags = File;SmallFiles;HasMetal;ShowCondition;SmeltableSteelMedium,
+		ResearchableRecipes = Forge_File;Forge_Small_Files,
+	}
+
+	item SmallPunchSet
+	{
+		DisplayName = Small Punch and Chisel Set,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 1,
+		Icon = Punches_Forged,
+		MetalValue = 15,
+		StaticModel = MetalworkingPunch,
+		WorldStaticModel = SmallMetalworkingPunches,
+		ConditionLowerChanceOneIn = 4,
+		ConditionMax = 8,
+		Tags = SmallPunch;HasMetal;ShowCondition;Awl;SmeltableSteelMedium,
+		Tooltip = Tooltip_item_SmallPunchSet,
+		ResearchableRecipes = Forge_Metalworking_Chisel;Forge_Metalworking_Punch;Forge_Small_Metalworking_Punch_Set,
+	}
+
+	item SmallSaw
+	{
+		DisplayName = Small Saw,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.7,
+		Icon = Saw_Forged,
+		MetalValue = 15,
+		StaticModel = SmallMetalworkingSaw,
+		WorldStaticModel = SmallMetalworkingSaw,
+		Tags = SmallSaw;HasMetal;ShowCondition;SmeltableSteelSmall,
+        ConditionLowerChanceOneIn = 5,
+        ConditionMax	=	10,
+        ResearchableRecipes = Forge_Saw;MakeStoneBladeSaw,
+	}
+
+	item SmallSawblade
+	{
+		DisplayName = Small Sawblade,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = SawbladeSmall,
+		StaticModel = HacksawBladeSmall,
+		WorldStaticModel = HacksawBladeSmall,
+		Tags = HasMetal;SawBlade;SmeltableSteelSmall;RepairableSawblade,
+        ConditionMax	=	10,
+        ResearchableRecipes = Forge_Saw;MakeStoneBladeSaw,
+	}
+	
+	item SteelWool
+	{
+		DisplayName = Steel Wool,
+		DisplayCategory = Tool,
+		Type = Drainable,
+		Weight = 0.3,
+		UseDelta    =   0.2,
+		Icon = SteelWool,
+		WorldStaticModel = SteelWool,
+		Tags = HasMetal;IsFireTinder,
+		FireFuelRatio = 0.25,
+		UseWhileEquipped = FALSE,
+        ResearchableRecipes = MakeImprovisedLighter,
+	}
+
+	item StoneDrill
+	{
+		DisplayName = Stone Drill,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 1,
+		Icon = Drill_Stone,
+		StaticModel = StoneDrill,
+		WorldStaticModel = StoneDrill,
+		Tags = DrillWoodPoor;Crude,
+        ConditionLowerChanceOneIn = 3,
+		ResearchableRecipes = Forge_Drill,
+	}
+
+	item Tongs
+	{
+		DisplayName = Tongs,
+		DisplayCategory = Tool,
+		Type = Normal,
+		/*Weight = 0.5,*/
+		Weight = 1,
+		Icon = BlacksmithTongs,
+		/*MetalValue = 15,*/
+		MetalValue = 30,
+		StaticModel = Tongs,
+		WorldStaticModel = Tongs,
+		Tags = Tongs;SmeltableIronMedium;ShowCondition,
+		ResearchableRecipes = Forge_Metalworking_Pliers;Forge_Heading_Tool,
+	}
+
+	item ViseGrips
+	{
+		DisplayName = Vise Grips,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.5,
+		Icon	=	ViseGrip,
+		StaticModel = ViseGrips,
+		WorldStaticModel = ViseGrips,
+		Tags = ViseGrips;MetalworkingPliers;SmeltableSteelSmall,
+		ResearchableRecipes = Forge_Tongs;Forge_Metalworking_Pliers;Forge_Heading_Tool,
+
+	}
+
+	item Whetstone
+	{
+		DisplayName = Whetstone,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Whetstone2,
+		WorldStaticModel = Whetstone,
+		Tags = Whetstone;ShowCondition,
+		ConditionMax = 20,
+        ConditionLowerChanceOneIn = 10,
+        ResearchableRecipes = MakeCrudeWhetstone,
+	}
+
+	item CrudeWhetstone
+	{
+		DisplayName = Crude Whetstone,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Whetstone1,
+		WorldStaticModel = CrudeWhetstone,
+		Tags = Whetstone;ShowCondition;Crude,
+		ConditionMax = 5,
+        ConditionLowerChanceOneIn = 5,
+	}
+
+	item Zipties
+	{
+		DisplayName = Zip Ties,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Zipties,
+		WorldStaticModel = Zipties,
+		Tooltip = Tooltip_FixItems,
+		Tags = InferiorBinding,
+	}
+
+	item Bullhorn
+	{
+		DisplayName = Megaphone,
+		DisplayCategory = Tool,
+		Type = Drainable,
+		Weight = 2,
+		Icon = Bullhorn,
+		EquipSound = MegaphoneEquip,
+        UnequipSound = MegaphoneUnEquip,
+		WorldStaticModel = Megaphone,
+        UseWhileEquipped	=	TRUE,
+        Tags = HasMetal;MiscElectronic;HideRemaining,
+        cantBeConsolided = TRUE,
+
+		/*Tags = HasMetal;MiscElectronic;UsesBattery,
+        StaticModel = Megaphone_Hand,
+        primaryAnimMask = HoldingTorchRight,
+        secondaryAnimMask = HoldingTorchLeft,
+        DisappearOnUse	=	FALSE,
+		KeepOnDeplete = TRUE,
+        UseDelta = 0.001,
+        ActivatedItem	=	TRUE,
+        cantBeConsolided = TRUE,
+		ShoutMultiplier = 5,*/
+
+	}
+
+	item Funnel
+	{
+		DisplayName = Funnel,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Funnel,
+		WorldStaticModel = Funnel,
+	}
+
+	item KnappingTool
+	{
+		DisplayName = Knapping Tool,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = AntlerFlint,
+		StaticModel = KnappingTool,
+		WorldStaticModel = KnappingTool,
+		Tags = KnappingTool,
+		ConditionLowerChanceOneIn = 20,
+		ConditionMax = 20,
+	}
+
+	item Loupe
+	{
+		DisplayName = Loupe,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Loupe,
+		WorldStaticModel = Loupe,
+		Tags = HasMetal;Magnifier,
+	}
+
+	item MagnifyingGlass
+	{
+		DisplayName = Magnifying Glass,
+		DisplayCategory = Household,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = MagnifyingGlass,
+		WorldStaticModel = MagnifyingGlass,
+		Tags = HasMetal;Magnifier,
+	}
+    /* in this case the script name/type is a misnomer; it's a general purpose trowel that can also dig furrows and slather plaster */
+    item MasonsTrowel_Wood
+	{
+		DisplayName = Wooden Trowel,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Wood_Trowel,
+		StaticModel = MasonsTrowel_Wood,
+		WorldStaticModel = MasonsTrowel_Wood,
+		Tags = DigPlow;MasonsTrowel;ShowCondition;PlasterTrowel;MixingUtensil;DigWorms,
+   		ConditionLowerChanceOneIn = 3,
+   		ConditionMax = 3,
+        ResearchableRecipes = Forge_Masons_Trowel;CarveWoodenSpade,
+        DigType = Trowel,
+	}
+}

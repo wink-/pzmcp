@@ -1,0 +1,46 @@
+module Base
+{
+    /*craftRecipe TwistTwine
+     {
+        time = 180,
+	    timedAction = Making,
+		Tags = AnySurfaceCraft,
+        category = Farming,
+         inputs
+         {
+            item 1 [Base.HempScutched;Base.FlaxTow] flags[Prop2],
+            item 1 [Base.WoodenStick2;Base.TreeBranch2;Base.Handle] mode:keep flags[Prop1],
+			item 1 tags[SharpKnife;Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+         }
+         outputs
+         {
+             item 1 Base.Twine,
+         }
+     }*/
+
+    craftRecipe ScutchFibre
+     {
+        time        = 100,
+        timedAction = MakingHammer_Surface,
+		Tags = Scutching,
+        category = Farming,
+         inputs
+         {
+            item 1 [Base.FlaxRippled;Base.HempBundleDried] mode:destroy mappers[fiberTypes] flags[Prop2],
+            item 1 tags[BreakFiber] mode:keep flags[Prop1;MayDegradeLight],
+            item 1 tags[DullKnife] mode:keep flags[MayDegradeLight],
+         }
+		outputs
+		{
+			item 1 mapper:fiberTypes,
+		}
+        	itemMapper fiberTypes
+        {
+            Base.FlaxScutched = Base.FlaxRippled,
+			Base.HempScutched = Base.HempBundleDried,
+
+			default = Base.FlaxScutched,
+		}
+     }
+
+}

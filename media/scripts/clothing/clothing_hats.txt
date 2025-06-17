@@ -1,0 +1,2557 @@
+module Base
+{
+	
+	item Hat_Bandana
+	{
+		DisplayName = Bandana - Head,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		IconsForTexture = BandanaBlack;BandanaBlue;BandanaRed;BandanaGreen,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_Bandana,
+		ClothingItemExtra = Hat_BandanaTied;Hat_BandanaMask,
+		ClothingItemExtraOption = TieBandana;TieBandanaFace,
+		Insulation = 0.10,
+		FabricType = Cotton,
+        Tags = noRope;FitsWallet,
+	}
+
+	item Hat_Bandana_Green
+	{
+		DisplayName = Bandana - Head,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BandanaGreen,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_Bandana_Green,
+		ClothingItemExtra = Hat_BandanaTied_Green;Hat_BandanaMask_Green,
+		ClothingItemExtraOption = TieBandana;TieBandanaFace,
+		Insulation = 0.10,
+		FabricType = Cotton,
+        Tags = noRope;FitsWallet,
+	}
+	
+	item Hat_BandanaTINT
+	{
+		DisplayName = Bandana - Head,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BandanaBlack,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_BandanaTINT,
+		ClothingItemExtra = Hat_BandanaTiedTINT;Hat_BandanaMaskTINT,
+		ClothingItemExtraOption = TieBandana;TieBandanaFace,
+		Insulation = 0.10,
+		FabricType = Cotton,
+		Tags = noRope;FitsWallet,
+	}
+	
+	item Hat_BaseballCap
+	{
+		DisplayName = Baseball Cap,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		IconsForTexture = BaseballCapRed;BaseballCapGreen;BaseballCapBlue,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap,
+		ClothingItemExtra = Hat_BaseballCap_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BaseballCap_Reverse
+	{
+		DisplayName = Baseball Cap,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		IconsForTexture = BaseballCapRed;BaseballCapGreen;BaseballCapBlue,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_Reverse,
+		ClothingItemExtra = Hat_BaseballCap,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BaseballCap_AmericanEats
+	{
+		DisplayName = Baseball Cap - American Eats,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_AmericanEats,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_AmericanEats,
+		ClothingItemExtra = Hat_BaseballCap_AmericanEats_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_AmericanEats_Reverse
+	{
+		DisplayName = Baseball Cap - American Eats,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_AmericanEats,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_AmericanEats_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_AmericanEats,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_3N
+	{
+		DisplayName = Baseball Cap - 3N,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_3n,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_3N,
+		ClothingItemExtra = Hat_BaseballCap_3N_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_3N_Reverse
+	{
+		DisplayName = Baseball Cap - 3N,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_3n,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_3N_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_3N,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_AmericanTire
+	{
+		DisplayName = Baseball Cap - American Tire,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_AmericanTire,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_AmericanTire,
+		ClothingItemExtra = Hat_BaseballCap_AmericanTire_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_AmericanTire_Reverse
+	{
+		DisplayName = Baseball Cap - American Tire,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_AmericanTire,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_AmericanTire_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_AmericanTire,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_AmeriglobeCom
+	{
+		DisplayName = Baseball Cap - Ameriglobe,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Ameriglobe,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_AmeriglobeCom,
+		ClothingItemExtra = Hat_BaseballCap_AmeriglobeCom_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_AmeriglobeCom_Reverse
+	{
+		DisplayName = Baseball Cap - Ameriglobe,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Ameriglobe,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_AmeriglobeCom_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_AmeriglobeCom,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_BodyChisel
+	{
+		DisplayName = Baseball Cap - Body Chisel,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_BodyChisel,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_BodyChisel,
+		ClothingItemExtra = Hat_BaseballCap_BodyChisel_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_BodyChisel_Reverse
+	{
+		DisplayName = Baseball Cap - Body Chisel,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_BodyChisel,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_BodyChisel_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_BodyChisel,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_BoxpopBrewery
+	{
+		DisplayName = Baseball Cap - Boxpop Brewery,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Boxpop,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_BoxpopBrewery,
+		ClothingItemExtra = Hat_BaseballCap_BoxpopBrewery_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_BoxpopBrewery_Reverse
+	{
+		DisplayName = Baseball Cap - Boxpop Brewery,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Boxpop,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_BoxpopBrewery_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_BoxpopBrewery,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_FireDept
+	{
+		DisplayName = Baseball Cap - Fire Department,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_KYFD,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_FireDept,
+		ClothingItemExtra = Hat_BaseballCap_FireDept_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_FireDept_Reverse
+	{
+		DisplayName = Baseball Cap - Fire Department,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_KYFD,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_FireDept_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_FireDept,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_Fossoil
+	{
+		DisplayName = Baseball Cap - Fossoil,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Fossoil_01,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_Fossoil,
+		ClothingItemExtra = Hat_BaseballCap_Fossoil_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_Fossoil_Reverse
+	{
+		DisplayName = Baseball Cap - Fossoil,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Fossoil_01,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_Fossoil_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_Fossoil,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_Fossoil02
+	{
+		DisplayName = Baseball Cap - Fancy Fossoil,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Fossoil_02,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_Fossoil02,
+		ClothingItemExtra = Hat_BaseballCap_Fossoil02_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_Fossoil02_Reverse
+	{
+		DisplayName = Baseball Cap - Fancy Fossoil,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Fossoil_02,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_Fossoil02_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_Fossoil02,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_JaysChicken
+	{
+		DisplayName = Baseball Cap - Jay's Chicken,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_JaysChicken,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_JaysChicken,
+		ClothingItemExtra = Hat_BaseballCap_JaysChicken_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_JaysChicken_Reverse
+	{
+		DisplayName = Baseball Cap - Jay's Chicken,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_JaysChicken,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_JaysChicken_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_JaysChicken,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_KnoxDistillery
+	{
+		DisplayName = Baseball Cap - Knox Distillery,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_KnoxDistillery,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_KnoxDistillery,
+		ClothingItemExtra = Hat_BaseballCap_KnoxDistillery_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_KnoxDistillery_Reverse
+	{
+		DisplayName = Baseball Cap - Knox Distillery,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_KnoxDistillery,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_KnoxDistillery_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_KnoxDistillery,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_KYTransit
+	{
+		DisplayName = Baseball Cap - KY Transit,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_KYTransit,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_KYTransit,
+		ClothingItemExtra = Hat_BaseballCap_KYTransit_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_KYTransit_Reverse
+	{
+		DisplayName = Baseball Cap - KY Transit,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_KYTransit,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_KYTransit_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_KYTransit,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_LBMW
+	{
+		DisplayName = Baseball Cap - LBMW Radio,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_LBMW,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_LBMW,
+		ClothingItemExtra = Hat_BaseballCap_LBMW_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_LBMW_Reverse
+	{
+		DisplayName = Baseball Cap - LBMW Radio,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_LBMW,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_LBMW_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_LBMW,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_LouisvilleBruiser
+	{
+		DisplayName = Baseball Cap - Louisville Bruiser,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Bruiser,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_LouisvilleBruiser,
+		ClothingItemExtra = Hat_BaseballCap_LouisvilleBruiser_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_LouisvilleBruiser_Reverse
+	{
+		DisplayName = Baseball Cap - Louisville Bruiser,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Bruiser,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_LouisvilleBruiser_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_LouisvilleBruiser,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_LSU
+	{
+		DisplayName = Baseball Cap - LSU,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_LSU,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_LSU,
+		ClothingItemExtra = Hat_BaseballCap_LSU_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_LSU_Reverse
+	{
+		DisplayName = Baseball Cap - LSU,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_LSU,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_LSU_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_LSU,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_MassGenfac
+	{
+		DisplayName = Baseball Cap - Mass Genfac,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_MassGenfac,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_MassGenfac,
+		ClothingItemExtra = Hat_BaseballCap_MassGenfac_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_MassGenfac_Reverse
+	{
+		DisplayName = Baseball Cap - Mass Genfac,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_MassGenfac,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_MassGenfac_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_MassGenfac,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_Police
+	{
+		DisplayName = Baseball Cap - Police,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Police,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_Police,
+		ClothingItemExtra = Hat_BaseballCap_Police_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_Police_Reverse
+	{
+		DisplayName = Baseball Cap - Police,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Police,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_Police_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_Police,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_ScarletOakDistillery
+	{
+		DisplayName = Baseball Cap - Scarlet Oak,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_ScarletOak,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_ScarletOakDistillery,
+		ClothingItemExtra = Hat_BaseballCap_ScarletOakDistillery_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_ScarletOakDistillery_Reverse
+	{
+		DisplayName = Baseball Cap - Scarlet Oak,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_ScarletOak,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_ScarletOakDistillery_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_ScarletOakDistillery,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_Sheriff
+	{
+		DisplayName = Baseball Cap - Sheriff,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Sheriff,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_Sheriff,
+		ClothingItemExtra = Hat_BaseballCap_Sheriff_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_Sheriff_Reverse
+	{
+		DisplayName = Baseball Cap - Sheriff,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Sheriff,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_Sheriff_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_Sheriff,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_Spiffos
+	{
+		DisplayName = Baseball Cap - Spiffo's,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Spiffos_01,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_Spiffos,
+		ClothingItemExtra = Hat_BaseballCap_Spiffos_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+	}
+
+	item Hat_BaseballCap_Spiffos_Reverse
+	{
+		DisplayName = Baseball Cap - Spiffo's,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Spiffos_01,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_Spiffos_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_Spiffos,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+	}
+
+	item Hat_BaseballCap_SpiffosLogo
+	{
+		DisplayName = Baseball Cap - Spiffo's Logo,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Spiffos_02,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_SpiffosLogo,
+		ClothingItemExtra = Hat_BaseballCap_SpiffosLogo_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+	}
+
+	item Hat_BaseballCap_SpiffosLogo_Reverse
+	{
+		DisplayName = Baseball Cap - Spiffo's Logo,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Spiffos_02,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_SpiffosLogo_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_SpiffosLogo,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+	}
+
+	item Hat_BaseballCap_SWAT
+	{
+		DisplayName = Baseball Cap - SWAT,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_SWAT,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_SWAT,
+		ClothingItemExtra = Hat_BaseballCap_SWAT_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_SWAT_Reverse
+	{
+		DisplayName = Baseball Cap - SWAT,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_SWAT,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_SWAT_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_SWAT,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_USL
+	{
+		DisplayName = Baseball Cap - United Shipping Logistics,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_USL,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_USL,
+		ClothingItemExtra = Hat_BaseballCap_USL_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_USL_Reverse
+	{
+		DisplayName = Baseball Cap - United Shipping Logistics,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_USL,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_USL_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_USL,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_WestMapleCountryClub
+	{
+		DisplayName = Baseball Cap - West Maple Country Club,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_WestMaple,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_WestMapleCountryClub,
+		ClothingItemExtra = Hat_BaseballCap_WestMapleCountryClub_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_WestMapleCountryClub_Reverse
+	{
+		DisplayName = Baseball Cap - West Maple Country Club,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_WestMaple,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_WestMapleCountryClub_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_WestMapleCountryClub,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_PizzaWhirled
+	{
+		DisplayName = Baseball Cap - Pizza Whirled,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_PizzaWhirled,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_PizzaWhirled,
+		ClothingItemExtra = Hat_BaseballCap_PizzaWhirled_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_PizzaWhirled_Reverse
+	{
+		DisplayName = Baseball Cap - Pizza Whirled,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_PizzaWhirled,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_PizzaWhirled_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_PizzaWhirled,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_Gas2Go
+	{
+		DisplayName = Baseball Cap - Gas-2-Go,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Gas2Go,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_Gas2Go,
+		ClothingItemExtra = Hat_BaseballCap_Gas2Go_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_Gas2Go_Reverse
+	{
+		DisplayName = Baseball Cap Gas-2-Go,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_Gas2Go,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_Gas2Go_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_Gas2Go,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCapKY
+	{
+		DisplayName = Baseball Cap - Kentucky,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		IconsForTexture = BaseballCapRed;BaseballCapGreen;BaseballCapBlue,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCapKY,
+		ClothingItemExtra = Hat_BaseballCapKY_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BaseballCapKY_Reverse
+	{
+		DisplayName = Baseball Cap - Kentucky,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		IconsForTexture = BaseballCapRed;BaseballCapGreen;BaseballCapBlue,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCapKY_Reverse,
+		ClothingItemExtra = Hat_BaseballCapKY,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BaseballCapKY_Red
+	{
+		DisplayName = Baseball Cap - Kentucky,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballCapRed,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCapKY_Red,
+		ClothingItemExtra = Hat_BaseballCapKY_Red_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCapKY_Red_Reverse
+	{
+		DisplayName = Baseball Cap - Kentucky,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballCapRed,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCapKY_Red_Reverse,
+		ClothingItemExtra = Hat_BaseballCapKY_Red,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BaseballCapBlue
+	{
+		DisplayName = Baseball Cap,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballCapBlue,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCapBlue,
+		ClothingItemExtra = Hat_BaseballCapBlue_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BaseballCapBlue_Reverse
+	{
+		DisplayName = Baseball Cap,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballCapBlue,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCapBlue_Reverse,
+		ClothingItemExtra = Hat_BaseballCapBlue,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BaseballCapRed
+	{
+		DisplayName = Baseball Cap,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballCapRed,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCapRed,
+		ClothingItemExtra = Hat_BaseballCapRed_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BaseballCapRed_Reverse
+	{
+		DisplayName = Baseball Cap,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballCapRed,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCapRed_Reverse,
+		ClothingItemExtra = Hat_BaseballCapRed,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BaseballCapGreen
+	{
+		DisplayName = Baseball Cap,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballCapGreen,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCapGreen,
+		ClothingItemExtra = Hat_BaseballCapGreen_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BaseballCapGreen_Reverse
+	{
+		DisplayName = Baseball Cap,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballCapGreen,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCapGreen_Reverse,
+		ClothingItemExtra = Hat_BaseballCapGreen,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BaseballCapArmy
+	{
+		DisplayName = Baseball Cap - Army,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_CamoGreen,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCapArmy,
+		ClothingItemExtra = Hat_BaseballCapArmy_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BaseballCapArmy_Reverse
+	{
+		DisplayName = Baseball Cap - Army,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_CamoGreen,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCapArmy_Reverse,
+		ClothingItemExtra = Hat_BaseballCapArmy,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BaseballCapTINT
+	{
+		DisplayName = Baseball Cap,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_CamoGreen,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCapTINT,
+		ClothingItemExtra = Hat_BaseballCapTINT_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = CanBeDyed;IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BaseballCapTINT_Reverse
+	{
+		DisplayName = Baseball Cap,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_CamoGreen,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCapTINT_Reverse,
+		ClothingItemExtra = Hat_BaseballCapTINT,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = CanBeDyed;IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_Beany
+	{
+		DisplayName = Hat - Beanie,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BeanieGeneric,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 40,
+		ClothingItem = Hat_Beany,
+		Insulation = 0.6,
+		WindResistance = 0.3,
+		Tags = CanBeDyed;IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_Beret
+	{
+		DisplayName = Beret,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BeretGrey,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_Beret,
+		Insulation = 0.3,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BeretArmy
+	{
+		DisplayName = Beret - Army,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BeretGreen,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_BeretArmy,
+		Insulation = 0.3,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_ChefHat
+	{
+		DisplayName = Hat - Chef,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = ChefHat,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		ClothingItem = Hat_ChefHat,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_Cowboy
+	{
+		DisplayName = Hat - Cowboy,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		IconsForTexture = HatCowboyBlack;HatCowboyBrown;HatCowboyWhite,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 50,
+		ClothingItem = Hat_Cowboy,
+		Insulation = 0.3,
+		WindResistance = 0.2,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_Cowboy_Black
+	{
+		DisplayName = Hat - Cowboy,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		IconsForTexture = HatCowboyBlack,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 50,
+		ClothingItem = Hat_Cowboy_Black,
+		Insulation = 0.3,
+		WindResistance = 0.2,
+		Tags = IsFireFuel;IsFireTinder;Whistle,
+		ShoutType = BlowWhistle,
+		ShoutMultiplier = 2,
+        ResearchableRecipes = CarveWhistle,
+	}
+
+	item Hat_Cowboy_Plastic
+	{
+		DisplayName = Hat - Plastic Cowboy with Whistle,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		IconsForTexture = CowboyHat_Toy_Blue;CowboyHat_Toy_Green;CowboyHat_Toy_Pink;CowboyHat_Toy_Yellow,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 50,
+		ClothingItem = Hat_Cowboy_Plastic,
+		Insulation = 0.3,
+		WindResistance = 0.2,
+		Tags = IsFireFuel;IsFireTinder;Whistle;IsMemento,
+        ShoutType = BlowWhistle,
+        ShoutMultiplier = 2,
+        ResearchableRecipes = CarveWhistle,
+	}
+
+	item Hat_Cowboy_White
+	{
+		DisplayName = Hat - Cowboy,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		IconsForTexture = HatCowboyWhite,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 50,
+		ClothingItem = Hat_Cowboy_White,
+		Insulation = 0.3,
+		WindResistance = 0.2,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_EarMuffs
+	{
+		DisplayName = Ear Muffs,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = EarMuffs,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_EarMuffs,
+		Insulation = 0.4,
+		WindResistance = 0.4,
+		HearingModifier = 0.75,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_EarMuff_Protectors
+	{
+		DisplayName = Ear Protectors,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = EarProtectors,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_EarMuff_Protectors,
+		Insulation = 0.35,
+		WindResistance = 0.35,
+		HearingModifier = 0.5,
+		DiscomfortModifier = 0.05,
+	}
+	
+	item Hat_FastFood
+	{
+		DisplayName = Hat - Fast Food Server,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		IconsForTexture = CookHatBlack;CookHatBlue;CookHatGreen;CookHatRed;ChefHat;CookHatYellow,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		ClothingItem = Hat_FastFood,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_FastFood_IceCream
+	{
+		DisplayName = Hat - Ice Cream Server,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = CookHatIceCream,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		ClothingItem = Hat_FastFood_IceCream,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_FastFood_Spiffo
+	{
+		DisplayName = Hat - Spiffo's Server,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = CookHatSpiffo,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		ClothingItem = Hat_FastFood_SPiffo,
+		Tags = IgnoreZombieDensity;IsFireFuel;IsFireTinder;IsMemento,
+	}
+	
+	item Hat_Fedora
+	{
+		DisplayName = Hat - Fedora,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		IconsForTexture = FedoraGrey;FedoraBrown,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		ChanceToFall = 40,
+		ClothingItem = Hat_Fedora,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_Fedora_Delmonte
+	{
+		DisplayName = Hat - Fedora,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = FedoraYellow,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 40,
+		ClothingItem = Hat_Fedora_Delmonte,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_GolfHat
+	{
+		DisplayName = Cap - Golf,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		IconsForTexture = HatGolfTartan;HatGolfWhitePlaid;HatGolfBluePlaid;HatGolfGreenPlaid,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_GolfHat,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_GolfHatTINT
+	{
+		DisplayName = Cap - Golf,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = HatGolfWhite,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_GolfHatTINT,
+		Tags = CanBeDyed;IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_Police
+	{
+		DisplayName = Hat - Police Deputy,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Icon = HatPoliceBlue,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 40,
+		ClothingItem = Hat_Police,
+		WaterResistance = 0.2,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_Sheriff
+	{
+		DisplayName = Hat - "Sheriff Deputy,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Icon = HatSheriff,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 40,
+		ClothingItem = Hat_Sheriff,
+		WaterResistance = 0.2,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_Police_Grey
+	{
+		DisplayName = Hat - Police Trooper,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Icon = HatPoliceGrey,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 40,
+		ClothingItem = Hat_Police_Grey,
+		WaterResistance = 0.2,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_Raccoon
+	{
+		DisplayName = Hat - Raccoon,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 2,
+		Icon = HatRaccoon,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_Raccoon,
+		Insulation = 0.80,
+		WaterResistance = 0.35,
+		WindResistance = 0.75,
+		Tags = IgnoreZombieDensity;IsMemento,
+	}
+	
+	item Hat_Ranger
+	{
+		DisplayName = Hat - Ranger,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Icon = HatRanger,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 40,
+		ClothingItem = Hat_Ranger,
+		Insulation = 0.45,
+		WaterResistance = 0.25,
+		WindResistance = 0.40,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_SantaHat
+	{
+		DisplayName = Hat - Santa,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = HatSantaRed,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		ClothingItem = Hat_SantaHAt,
+		Insulation = 0.80,
+		WindResistance = 0.25,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_SantaHatDebug
+	{
+		DisplayName = Hat - Santa,
+		DisplayCategory = Accessory,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = HatSantaRed,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		Insulation = 0.80,
+		WindResistance = 0.25,
+		StaticModel = SantaHat_Debug,
+		WorldStaticModel = SantaHat_Debug,
+	}
+
+    item Animal_BowtieGold
+	{
+		DisplayName = Bowtie,
+		DisplayCategory = Accessory,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = HatSantaRed,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		Insulation = 0.80,
+		WindResistance = 0.25,
+		StaticModel = Animal_Bowtie_Gold,
+		WorldStaticModel = Animal_Bowtie_Gold,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+    item Animal_BowtieRed
+	{
+		DisplayName = Bowtie,
+		DisplayCategory = Accessory,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = HatSantaRed,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		Insulation = 0.80,
+		WindResistance = 0.25,
+		StaticModel = Animal_Bowtie_Red,
+		WorldStaticModel = Animal_Bowtie_Red,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+    item Animal_BowtieGreen
+	{
+		DisplayName = Bowtie,
+		DisplayCategory = Accessory,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = HatSantaRed,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		Insulation = 0.80,
+		WindResistance = 0.25,
+		StaticModel = Animal_Bowtie_Green,
+		WorldStaticModel = Animal_Bowtie_Green,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_SantaHatGreen
+	{
+		DisplayName = Hat - Green Santa,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = HatSantaGreen,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		ClothingItem = Hat_SantaHAtGreen,
+		Insulation = 0.80,
+		WindResistance = 0.25,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_ShowerCap
+	{
+		DisplayName = Cap - Shower,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Showercap,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_ShowerCap,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_FishermanRainHat
+	{
+		DisplayName = Hat - Fisherman Rain,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = Hat_Slickerpng,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_FishermanRainHat,
+		WaterResistance = 1.0,
+		Insulation = 0.80,
+		WindResistance = 0.70,
+		Tags = IsMemento;IsFireFuel,
+	}
+	
+	item Hat_SummerHat
+	{
+		DisplayName = Hat - Summer,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		IconsForTexture = HatSummerYellow;HatSummerPink;HatSummerStriped,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		ClothingItem = Hat_SummerHat,
+		Insulation = 0.1,
+		WindResistance = 0.1,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_SummerFlowerHat
+	{
+		DisplayName = Hat - Summer Flower,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Icon = Hat_Flowery,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		ClothingItem = Hat_SummerFlowerHat,
+		Insulation = 0.1,
+		WindResistance = 0.1,
+		Tags = IsFireFuel;IsFireTinder;IsMemento;IgnoreZombieDensity,
+	}
+
+	item Hat_StrawHat
+	{
+		DisplayName = Hat - Straw,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Icon = Hat_RusticStraw,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		ClothingItem = Hat_StrawHat,
+		Insulation = 0.1,
+		WindResistance = 0.1,
+		Tags = IsFireFuel;IsFireTinder;IsMemento;IgnoreZombieDensity,
+	}
+
+	item Hat_SurgicalCap
+	{
+		DisplayName = Cap - Medical,
+		DisplayCategory = FirstAid,
+		Type = Clothing,
+		Weight = 0.2,
+		IconsForTexture = SurgicalCapBlue;SurgicalCapGreen,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_SurgicalCap_Blue,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_Sweatband
+	{
+		DisplayName = Sweatband,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = SweatbandWhite,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_Sweatband,
+		Insulation = 0.05,
+		WindResistance = 0.05,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_WeddingVeil
+	{
+		DisplayName = Wedding Veil,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = VeilWedding,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		ClothingItem = Hat_WeddingVeil,
+		WorldStaticModel = WeddingVeil_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_WinterHat
+	{
+		DisplayName = Hat - Winter,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		IconsForTexture = WinterHatBlue;WinterHatGreen;WinterHatBlack,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 40,
+		ClothingItem = Hat_WinterHat,
+		Insulation = 1.0,
+		WaterResistance = 0.5,
+		WindResistance = 1.0,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_WinterHat_SheepSkin
+	{
+		DisplayName = Hat - Winter,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = WinterHat_Sheepskin,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 40,
+		ClothingItem = Hat_WinterHat_SheepSkin,
+		Insulation = 1.0,
+		WaterResistance = 0.5,
+		WindResistance = 1.0,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_WoolyHat
+	{
+		DisplayName = Hat - Woolly,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = WoolHatGeneric,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 40,
+		ClothingItem = Hat_WoolyHat,
+		Insulation = 0.90,
+		WindResistance = 0.90,
+		Tags = CanBeDyed;IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BucketHat
+	{
+		DisplayName = Hat - Bucket,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BobHat,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_BucketHat,
+		Insulation = 0.5,
+		WindResistance = 0.3,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BucketHatFishing
+	{
+		DisplayName = Hat - Fisherman,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = Hat_Fisherman,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_BucketHatFishing,
+		Insulation = 0.5,
+		WindResistance = 0.3,
+		Tags = IsFireFuel;IsFireTinder;IsMemento,
+	}
+	
+	item Hat_BonnieHat
+	{
+		DisplayName = Boonie Hat,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = HatBonnieGreen,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_BonnieHat,
+		Insulation = 0.5,
+		WindResistance = 0.3,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_BonnieHat_CamoGreen
+	{
+		DisplayName = Boonie Hat,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = HatBonnieCamo,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_BonnieHat_CamoGreen,
+		Insulation = 0.5,
+		WindResistance = 0.3,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BonnieHat_OliveDrab
+	{
+		DisplayName = Boonie Hat,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = HatBonnie_CamoOlive,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_BonnieHat_OliveDrab,
+		Insulation = 0.5,
+		WindResistance = 0.3,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BonnieHat_DesertCamoNew
+	{
+		DisplayName = Boonie Hat,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = HatBonnie_SandDesert,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_BonnieHat_DesertCamoNew,
+		Insulation = 0.5,
+		WindResistance = 0.3,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+
+	item Hat_BonnieHat_MiliusCamo
+	{
+		DisplayName = Boonie Hat,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = HatBonnie_CamoSpots,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_BonnieHat_MiliusCamo,
+		Insulation = 0.5,
+		WindResistance = 0.3,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+
+	item Hat_BonnieHat_TigerStripeCamo
+	{
+		DisplayName = Boonie Hat,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = HatBonnie_CamoStripes,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_BonnieHat_TigerStripeCamo,
+		Insulation = 0.5,
+		WindResistance = 0.3,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+	
+	item Hat_VisorBlack
+	{
+		DisplayName = Visor,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = HatVisorBlack,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_VisorBlack,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_VisorRed
+	{
+		DisplayName = Visor,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = HatVisorRed,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_VisorRed,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_Visor_WhiteTINT
+	{
+		DisplayName = Visor,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = HatVisorWhite,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_Visor_WhiteTINT,
+		Tags = CanBeDyed;IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_PeakedCapArmy
+	{
+		DisplayName = Cap - Peaked Army,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = HatBeretArmy,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_PeakedCapArmy,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_PeakedCapYacht
+	{
+		DisplayName = Cap - Captain,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Hat_Captain,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_PeakedCapYacht,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		Tags = IsFireFuel;IsFireTinder;IsMemento,
+	}
+	
+	item Hat_BandanaTied
+	{
+		DisplayName = Bandana - Tied,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		IconsForTexture = RamboBandanna_Black;RamboBandanna_Blue;RamboBandanna_Red;BandanaGreen,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_BandanaTied,
+		ClothingItemExtra = Hat_Bandana;Hat_BandanaMask,
+		ClothingItemExtraOption = UntieBandana;TieBandanaFace,
+		Insulation = 0.10,
+		FabricType = Cotton,
+		Tags = noRope,
+	}
+
+	item Hat_BandanaTied_Green
+	{
+		DisplayName = Bandana - Tied,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BandanaGreen,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_BandanaTied_Green,
+		ClothingItemExtra = Hat_Bandana_Green;Hat_BandanaMask_Green,
+		ClothingItemExtraOption = UntieBandana;TieBandanaFace,
+		Insulation = 0.10,
+		FabricType = Cotton,
+		Tags = noRope,
+	}
+	
+	item Hat_BandanaTiedTINT
+	{
+		DisplayName = Bandana - Tied,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = RamboBandanna,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_BandanaTiedTINT,
+		ClothingItemExtra = Hat_BandanaTINT;Hat_BandanaMaskTINT,
+		ClothingItemExtraOption = UntieBandana;TieBandanaFace,
+		Insulation = 0.10,
+		FabricType = Cotton,
+		Tags = CanBeDyed;noRope,
+	}
+	
+	item Hat_NewspaperHat
+	{
+		DisplayName = Hat - Newspaper,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = NewspaperHat,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 80,
+		ClothingItem = Hat_NewspaperHat,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+	
+	item Hat_PartyHat_Stars
+	{
+		DisplayName = Party Hat - Stars,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = PartyHat_Stars,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_PartyHat_Stars,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder;IsMemento,
+	}
+	
+	item Hat_PartyHat_TINT
+	{
+		DisplayName = Party Hat - Colored,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = PartyHat_Stripes,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_PartyHat_TINT,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder;IsMemento,
+	}
+	
+	item Hat_TinFoilHat
+	{
+		DisplayName = Hat - Tin Foil,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = FoilHat,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_TinFoilHat,
+		Insulation = 0.10,
+	}
+	
+	item Hat_BoxingRed
+	{
+		DisplayName = Boxing Head Gear,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = BoxingHeadgear_Red,
+		BiteDefense = 30,
+		BloodLocation = FullHelmet,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_BoxingRed,
+		Insulation = 0.30,
+		ScratchDefense = 50,
+		WindResistance = 0.1,
+		Tags = CanEat,
+		VisionModifier = 0.75,
+		HearingModifier = 0.75,
+	}
+	
+	item Hat_BoxingBlue
+	{
+		DisplayName = Boxing Head Gear,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = BoxingHeadgear_Blue,
+		BiteDefense = 30,
+		BloodLocation = FullHelmet,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_BoxingBlue,
+		Insulation = 0.30,
+		ScratchDefense = 50,
+		WindResistance = 0.1,
+		Tags = CanEat,
+		VisionModifier = 0.75,
+		HearingModifier = 0.75,
+	}
+	
+	item Hat_GoldStar
+	{
+		DisplayName = GoldStar Boppers,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Headband_Stars,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_GoldStar,
+		WorldStaticModel = HeadBopper_GoldStar_Ground,
+		Tags = IsFireFuel;IsFireTinder;IsMemento;IgnoreZombieDensity,
+	}
+	
+	item Hat_Antlers
+	{
+		DisplayName = Antlers Boppers,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Headband_Reindeer,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_Antlers,
+		WorldStaticModel = HeadBopper_Antlers_Ground,
+		Tags = IsFireFuel;IsFireTinder;IsMemento;IgnoreZombieDensity,
+	}
+	
+	item Hat_Jay
+	{
+		DisplayName = Hat - Jay's Chicken,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Icon = JaysChickenHat,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_Jay,
+		Tags = IsFireFuel;IsFireTinder;IsMemento;IgnoreZombieDensity,
+	}
+	
+	item Hat_JokeArrow
+	{
+		DisplayName = Hat - Joke Arrow,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Headband_Arrow,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_JokeArrow,
+		WorldStaticModel = JokeArrow_Ground,
+		Tags = IsFireFuel;IsFireTinder;IsMemento;IgnoreZombieDensity,
+	}
+	
+	item Hat_JokeKnife
+	{
+		DisplayName = Hat - Joke Knife,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Headband_Knife,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_JokeKnife,
+		WorldStaticModel = JokeKnife_Ground,
+		Tags = IsFireFuel;IsFireTinder;IsMemento;IgnoreZombieDensity,
+	}
+
+	item Hat_Pilgrim
+	{
+		DisplayName = Hat - Pilgrim,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Icon = Hat_Pilgrim,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 50,
+		ClothingItem = Hat_Pilgrim,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity;IsMemento,
+	}
+
+	item Hat_Pirate
+	{
+		DisplayName = Hat - Pirate,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Icon = Hat_Pirate,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 50,
+		ClothingItem = Hat_Pirate,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity;IsMemento,
+	}
+
+	item Hat_Stovepipe
+	{
+		DisplayName = Hat - Stovepipe,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		IconsForTexture = Hat_StovepipeBlack;Hat_StovepipeBrown,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 50,
+		ClothingItem = Hat_Stovepipe,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+
+	item Hat_Stovepipe_Black
+	{
+		DisplayName = Hat - Stovepipe,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		IconsForTexture = Hat_StovepipeBlack;Hat_StovepipeBrown,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 50,
+		ClothingItem = Hat_Stovepipe_Black,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+
+	item Hat_Stovepipe_UncleSam
+	{
+		DisplayName = Hat - Uncle Sam,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Icon = Hat_UncleSam,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 50,
+		ClothingItem = Hat_Stovepipe_UncleSam,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity;IsMemento,
+	}
+
+	item Hat_Witch
+	{
+		DisplayName = Hat - Witch,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Icon = Hat_Witch,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 50,
+		ClothingItem = Hat_Witch,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity;IsMemento,
+	}
+
+	item Hat_Wizard
+	{
+		DisplayName = Hat - Wizard,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Icon = Hat_Wizard,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 50,
+		ClothingItem = Hat_Wizard,
+		Insulation = 0.15,
+		WindResistance = 0.1,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity;IsMemento,
+	}
+
+	item Hat_HeadMirrorUP
+	{
+		DisplayName = Head Mirror,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = HeadMirror,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = WearUp,
+		ClothingItem = Hat_HeadMirrorUP,
+		ClothingItemExtra = Hat_HeadMirrorDOWN,
+		ClothingItemExtraOption = WearDown,
+		Insulation = 0.10,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item Hat_HeadMirrorDOWN
+	{
+		DisplayName = Head Mirror,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = HeadMirror,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = WearDown,
+		ClothingItem = Hat_HeadMirrorDOWN,
+		ClothingItemExtra = Hat_HeadMirrorUP,
+		ClothingItemExtraOption = WearUp,
+		Insulation = 0.10,
+		Tags = IgnoreZombieDensity,
+		VisionModifier = 0.75,
+	}
+
+	item Hat_BonnieHat_DesertCamo
+	{
+		DisplayName = Boonie Hat,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = HatBonnie_SandCamo,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingItem = Hat_BonnieHat_DesertCamo,
+		Insulation = 0.5,
+		WindResistance = 0.3,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_HuntingCamo
+	{
+		DisplayName = Baseball Cap - Hunting Camo,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_CamoTree,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ForwardCap,
+		ClothingItem = Hat_BaseballCap_HuntingCamo,
+		ClothingItemExtra = Hat_BaseballCap_HuntingCamo_Reverse,
+		ClothingItemExtraOption = ReverseCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BaseballCap_HuntingCamo_Reverse
+	{
+		DisplayName = Baseball Cap - Hunting Camo,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BaseballHat_CamoTree,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 60,
+		ClothingExtraSubmenu = ReverseCap,
+		ClothingItem = Hat_BaseballCap_HuntingCamo_Reverse,
+		ClothingItemExtra = Hat_BaseballCap_HuntingCamo,
+		ClothingItemExtraOption = ForwardCap,
+		Insulation = 0.10,
+		Tags = IsFireFuel;IsFireTinder,
+	}
+
+}

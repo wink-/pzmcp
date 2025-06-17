@@ -1,0 +1,309 @@
+module Base 
+{
+    ragdoll Bip01_R_Finger0_anchor
+    {
+        bone = 17,
+        bodyPart = 10,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_R_Finger1_anchor
+    {
+        bone = 18,
+        bodyPart = 10,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_L_Clavicle_anchor
+    {
+        bone = 7,
+        bodyPart = 1,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_BackPack_anchor
+    {
+        bone = 19,
+        bodyPart = 1,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Dummy01_anchor
+    {
+        bone = 0,
+        bodyPart = 0,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_R_Calf_anchor
+    {
+        bone = 25,
+        bodyPart = 6,
+        reverse = true,
+        original = false,
+        enabled = true,
+    }
+
+    ragdoll Bip01_L_Calf_anchor
+    {
+        bone = 21,
+        bodyPart = 4,
+        reverse = true,
+        original = false,
+        enabled = true,
+    }
+
+    ragdoll Bip01_Pelvis_anchor
+    {
+        bone = 2,
+        bodyPart = 0,
+        reverse = false,
+        original = false,
+        enabled = true,
+    }
+
+    ragdoll Bip01_Spine_anchor
+    {
+        bone = 3,
+        bodyPart = 1,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_R_Foot_anchor
+    {
+        bone = 26,
+        bodyPart = 6,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_Head_anchor
+    {
+        bone = 6,
+        bodyPart = 2,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_R_Clavicle_anchor
+    {
+        bone = 13,
+        bodyPart = 1,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_L_Finger0_anchor
+    {
+        bone = 11,
+        bodyPart = 8,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_anchor
+    {
+        bone = 1,
+        bodyPart = 0,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_Prop1_anchor
+    {
+        bone = 32,
+        bodyPart = 10,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_Neck_anchor
+    {
+        bone = 5,
+        bodyPart = 2,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_DressFront_anchor
+    {
+        bone = 28,
+        bodyPart = 1,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_L_Forearm_anchor
+    {
+        bone = 9,
+        bodyPart = 8,
+        reverse = false,
+        original = false,
+        enabled = true,
+    }
+
+    ragdoll Bip01_L_UpperArm_anchor
+    {
+        bone = 8,
+        bodyPart = 7,
+        reverse = false,
+        original = false,
+        enabled = true,
+    }
+
+    ragdoll Bip01_L_Toe0_anchor
+    {
+        bone = 23,
+        bodyPart = 4,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_R_UpperArm_anchor
+    {
+        bone = 14,
+        bodyPart = 9,
+        reverse = false,
+        original = false,
+        enabled = true,
+    }
+
+    ragdoll Bip01_L_Hand_anchor
+    {
+        bone = 10,
+        bodyPart = 8,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_R_Toe0_anchor
+    {
+        bone = 27,
+        bodyPart = 6,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_Spine1_anchor
+    {
+        bone = 4,
+        bodyPart = 1,
+        reverse = false,
+        original = false,
+        enabled = true,
+    }
+
+    ragdoll Bip01_DressBack02_anchor
+    {
+        bone = 31,
+        bodyPart = 1,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_R_Forearm_anchor
+    {
+        bone = 15,
+        bodyPart = 10,
+        reverse = false,
+        original = false,
+        enabled = true,
+    }
+
+    ragdoll Bip01_L_Foot_anchor
+    {
+        bone = 22,
+        bodyPart = 4,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_DressBack_anchor
+    {
+        bone = 30,
+        bodyPart = 1,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_R_Thigh_anchor
+    {
+        bone = 24,
+        bodyPart = 5,
+        reverse = true,
+        original = false,
+        enabled = true,
+    }
+
+    ragdoll Bip01_DressFront02_anchor
+    {
+        bone = 29,
+        bodyPart = 1,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_L_Finger1_anchor
+    {
+        bone = 12,
+        bodyPart = 8,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_R_Hand_anchor
+    {
+        bone = 16,
+        bodyPart = 0,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+    ragdoll Bip01_L_Thigh_anchor
+    {
+        bone = 20,
+        bodyPart = 3,
+        reverse = true,
+        original = false,
+        enabled = true,
+    }
+
+    ragdoll Bip01_Prop2_anchor
+    {
+        bone = 33,
+        bodyPart = 8,
+        reverse = false,
+        original = false,
+        enabled = false,
+    }
+
+}

@@ -1,0 +1,180 @@
+/******************************************/
+/** RJ: PLEASE DONT TOUCH WITHOUT ASKING **/
+/******************************************/
+
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_FeedingTroughDoubleMetal
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Metal Feeding Trough,
+            Icon                = Build_TroughMetal,
+        }
+    }
+
+    entity FeedingTroughDoubleMetal
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_FeedingTroughDoubleMetal,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			OnCreate = BuildRecipeCode.feedingTrough.OnCreate,
+
+            face S
+            {
+                layer
+                {
+                    row = location_farm_accesories_01_32 location_farm_accesories_01_33,
+                }
+            }
+
+            face E
+            {
+                layer
+                {
+                    row = location_farm_accesories_01_35,
+                    row = location_farm_accesories_01_34,
+                }
+            }
+        }
+
+		component CraftRecipe
+        {
+		    timedAction   = BuildWallHammer,
+            time          = 200,
+            category      = Farming,
+            tags          = Outdoors,
+            SkillRequired = MetalWelding:3,
+            xpAward       = MetalWelding:30,
+            ToolTip       = Tooltip_craft_feedingTroughDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.SheetMetal],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+
+    xuiSkin default
+    {
+        entity ES_FeedingTroughDouble
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Long Wood Feeding Trough,
+            Icon                = Build_TroughWoodLong,
+        }
+    }
+
+    entity FeedingTroughDouble
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_FeedingTroughDouble,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			OnCreate = BuildRecipeCode.feedingTrough.OnCreate,
+
+            face S
+            {
+                layer
+                {
+                    row = location_farm_accesories_01_6 location_farm_accesories_01_7,
+                }
+            }
+
+            face E
+            {
+                layer
+                {
+                    row = location_farm_accesories_01_5,
+                    row = location_farm_accesories_01_4,
+                }
+            }
+        }
+		
+		component CraftRecipe
+        {
+		    timedAction   = BuildWallHammer,
+            time          = 200,
+            category      = Farming,
+            SkillRequired = Woodwork:3,
+            xpAward       = Woodwork:30,
+            ToolTip       = Tooltip_craft_feedingTroughDesc,
+            inputs
+            {
+		        item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+		        item 2 [Base.Nails],
+            }
+        }
+    }
+
+    xuiSkin default
+    {
+        entity ES_FeedingTroughSimple
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Short Wood Feeding Trough,
+            Icon                = Build_TroughWoodShort,
+        }
+    }
+
+    entity FeedingTroughSimple
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_FeedingTroughSimple,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			OnCreate = BuildRecipeCode.feedingTrough.OnCreate,
+
+            face S
+            {
+                layer
+                {
+                    row = location_farm_accesories_01_15,
+                }
+            }
+
+            face E
+            {
+                layer
+                {
+                    row = location_farm_accesories_01_14,
+                }
+            }
+        }
+
+		component CraftRecipe
+        {
+		    timedAction   = BuildWallHammer,
+            time          = 200,
+            category      = Farming,
+            SkillRequired = Woodwork:1,
+            xpAward       = Woodwork:10,
+            ToolTip       = Tooltip_craft_feedingTroughDesc,
+            inputs
+            {
+		        item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+		        item 2 [Base.Nails],
+            }
+        }
+    }
+}

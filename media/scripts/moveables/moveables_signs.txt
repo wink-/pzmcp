@@ -1,0 +1,72 @@
+module Base
+{
+	item Mov_SignArmy
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Property Sign,
+		WorldObjectSprite = location_military_generic_01_18,
+	}
+	
+	item Mov_SignCitrus
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Citrus Sign,
+		WorldObjectSprite = location_shop_accessories_01_27,
+	}
+	
+	item Mov_SignRestricted
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Restricted Area Sign,
+		WorldObjectSprite = location_military_generic_01_19,
+	}
+	
+	item Mov_SignWarning
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Warning Sign,
+		WorldObjectSprite = location_military_generic_01_21,
+	}
+
+	item Mov_SignOutOfGas
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Out of Gas Sign,
+		WorldObjectSprite = signs_one-off_07_85,
+	}
+
+	item Mov_SignOutOfGas_Fossoil
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Fossoil Out of Gas Sign,
+		WorldObjectSprite = location_shop_fossoil_01_68,
+	}
+
+	item Mov_SignOutOfGas_Gas2Go
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Gas2Go Out of Gas Sign,
+		WorldObjectSprite = location_shop_gas2go_01_38,
+	}
+}

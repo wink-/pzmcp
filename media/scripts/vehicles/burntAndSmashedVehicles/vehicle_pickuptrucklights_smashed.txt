@@ -1,0 +1,127 @@
+module Base
+{
+    model Vehicles_PickUpTruckLightsSmashedRear
+	{
+		mesh = vehicles/Vehicles_PickUpTruckLightsCRASH_Rear,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle PickUpTruckLightsSmashedRear
+	{
+		template! = PickUpTruckLights,
+
+		model
+		{
+			file = Vehicles_PickUpTruckLightsSmashedRear,
+			scale = 1.8200,
+			offset = 0.0000 0.3022 0.0000,
+		}
+
+        skin
+		{
+			texture = Vehicles/vehicle_pickuptruck_ranger,
+		}
+		skin
+		{
+			texture = Vehicles/vehicle_pickupfossoilshell,
+		}
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfireshell,
+        }
+	}
+
+    model Vehicles_PickUpTruckLightsSmashedRight
+	{
+		mesh = vehicles/Vehicles_PickUpTruckLightsCRASH_Right,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle PickUpTruckLightsSmashedRight
+	{
+		template! = PickUpTruckLights,
+
+		model
+		{
+			file = Vehicles_PickUpTruckLightsSmashedRight,
+			scale = 1.8200,
+			offset = 0.0000 0.3022 0.0000,
+		}
+        skin
+		{
+			texture = Vehicles/vehicle_pickuptruck_ranger,
+		}
+		skin
+		{
+			texture = Vehicles/vehicle_pickupfossoilshell,
+		}
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfireshell,
+        }
+	}
+
+	model Vehicles_PickUpTruckLightsSmashedLeft
+	{
+		mesh = vehicles/Vehicles_PickUpTruckLightsCRASH_Left,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle PickUpTruckLightsSmashedLeft
+	{
+		template! = PickUpTruckLights,
+
+		model
+		{
+			file = Vehicles_PickUpTruckLightsSmashedLeft,
+			scale = 1.8200,
+			offset = 0.0000 0.3022 0.0000,
+		}
+        skin
+		{
+			texture = Vehicles/vehicle_pickuptruck_ranger,
+		}
+		skin
+		{
+			texture = Vehicles/vehicle_pickupfossoilshell,
+		}
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfireshell,
+        }
+	}
+
+	model Vehicles_PickUpTruckLightsSmashedFront
+	{
+		mesh = vehicles/Vehicles_PickUpTruckLightsCRASH_Front,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle PickUpTruckLightsSmashedFront
+	{
+		template! = PickUpTruckLights,
+
+		model
+		{
+			file = Vehicles_PickUpTruckLightsSmashedFront,
+			scale = 1.8200,
+			offset = 0.0000 0.3022 0.0000,
+		}
+        skin
+		{
+			texture = Vehicles/vehicle_pickuptruck_ranger,
+		}
+		skin
+		{
+			texture = Vehicles/vehicle_pickupfossoilshell,
+		}
+        skin
+        {
+            texture = Vehicles/vehicle_pickupfireshell,
+        }
+	}
+}

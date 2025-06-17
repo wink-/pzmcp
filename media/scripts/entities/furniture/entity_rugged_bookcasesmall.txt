@@ -1,0 +1,70 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_Stick_BookcaseSmall
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Stick Small Bookcase,
+			Icon		= Build_StickBookcaseSmall,
+		}
+	}
+
+    entity Stick_BookcaseSmall_Lvl1
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Stick_BookcaseSmall,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+            face W
+            {
+                layer
+                {
+                    row = crafted_04_91,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = crafted_04_89,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_04_90,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = crafted_04_88,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            OnAddToMenu   = woodenBarElementLvl1Test,
+            timedAction   = BuildWallNoTool,
+            time          = 50,
+            xpAward       = Woodwork:5,
+            category      = Furniture,
+            tags          = carpentry;Furniture,
+            ToolTip       = Tooltip_craft_bookcaseDesc,
+            inputs
+            {
+                item 8 [Base.TreeBranch2;Base.WoodenStick2],
+		        item 4 [Base.RippedSheets;Base.RippedSheetsDirty;Base.Twine;Base.Rope;Base.SheetRope] flags[DontReplace],
+            }
+        }
+    }
+}

@@ -1,0 +1,690 @@
+module Base
+{
+    /* debatable whether it's a mask but it goes in the bodylocation slot */
+	item Hat_BalaclavaFace
+	{
+		DisplayName = Balaclava - Open,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = BalaclavaOpen,
+		BloodLocation = Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_BalaclavaFace,
+		Insulation = 0.8,
+		ScratchDefense = 5,
+		WindResistance = 0.8,
+		WorldStaticModel = BalaclavaFace_Ground,
+		Tags = CanEat;IsDisguise;IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BalaclavaFull
+	{
+		DisplayName = Balaclava,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.5,
+		Icon = Balaclava,
+		BloodLocation = Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_BalaclavaFull,
+		Insulation = 1.0,
+		ScratchDefense = 5,
+		WaterResistance = 0.5,
+		WindResistance = 1.0,
+		WorldStaticModel = BalaclavaFull_Ground,
+		Tags = CanEat;IsDisguise;IsFireFuel;IsFireTinder,
+	}
+
+	item Hat_BandanaMask
+	{
+		DisplayName = Bandana - Face,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		IconsForTexture = Handkerchief_Black;Handkerchief_Blue;Handkerchief_Red;BandanaGreen,
+		BloodLocation = Head,
+		BodyLocation = Mask,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_BandanaMask,
+		ClothingItemExtra = Hat_Bandana;Hat_BandanaTied,
+		ClothingItemExtraOption = UntieBandana;TieBandana,
+		Insulation = 0.10,
+		ScratchDefense = 5,
+		CorpseSicknessDefense = 25,
+		FabricType = Cotton,
+		Tags = noRope;IsLowerDisguise;FitsWallet,
+	}
+
+	item Hat_BandanaMask_Green
+	{
+		DisplayName = Bandana - Face,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = BandanaGreen,
+		BloodLocation = Head,
+		BodyLocation = Mask,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_BandanaMask_Green,
+		ClothingItemExtra = Hat_Bandana_Green;Hat_BandanaTied_Green,
+		ClothingItemExtraOption = UntieBandana;TieBandana,
+		Insulation = 0.10,
+		ScratchDefense = 5,
+		CorpseSicknessDefense = 25,
+		FabricType = Cotton,
+		Tags = noRope;IsLowerDisguise;FitsWallet,
+	}
+
+	item Hat_BandanaMaskTINT
+	{
+		DisplayName = Bandana - Face,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Handkerchief,
+		BloodLocation = Head,
+		BodyLocation = Mask,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_BandanaMaskTINT,
+		ClothingItemExtra = Hat_BandanaTINT;Hat_BandanaTiedTINT,
+		ClothingItemExtraOption = UntieBandana;TieBandana,
+		Insulation = 0.10,
+		ScratchDefense = 5,
+		CorpseSicknessDefense = 25,
+		FabricType = Cotton,
+		Tags = noRope;IsLowerDisguise;FitsWallet,
+	}
+
+	item Hat_BuildersRespirator
+	{
+		DisplayName = Half Mask Respirator,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = Respirator_wFilter,
+		BiteDefense = 10,
+		BloodLocation = Head,
+		BodyLocation = Mask,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_BuildersRespirator,
+		Insulation = 0.75,
+		ScratchDefense = 30,
+		CorpseSicknessDefense = 25,
+		WaterResistance = 1.0,
+		WindResistance = 0.60,
+		Tags = GasMask,
+		OnCreate = SpecialLootSpawns.OnCreateRespirator,
+		WithoutDrainable = Hat_BuildersRespirator_nofilter,
+		WorldStaticModel = Hat_BuildersRespirator_Ground,
+		ChanceToFall = 10,
+		DiscomfortModifier = 0.50,
+		Tags = IsLowerDisguise,
+		ConditionMax = 3,
+		ConditionLowerChanceOneIn = 2,
+		ResearchableRecipes = MakeCraftedGasMaskFilter;RechargeFilters;MakeImprovisedGasMask,
+	}
+
+	item Hat_BuildersRespirator_nofilter
+	{
+		DisplayName = Half Mask Respirator (No Filters),
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = Respirator,
+		BiteDefense = 10,
+		BloodLocation = Head,
+		BodyLocation = Mask,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_BuildersRespirator_nofilter,
+		Insulation = 0.75,
+		ScratchDefense = 30,
+		WaterResistance = 1.0,
+		WindResistance = 0.60,
+		Tags = GasMaskNoFilter,
+		WithDrainable = Hat_BuildersRespirator,
+		WorldStaticModel = Hat_BuildersRespirator_nofilter_Ground,
+		ChanceToFall = 10,
+		DiscomfortModifier = 0.50,
+		Tags = IsLowerDisguise,
+		ConditionMax = 3,
+		ConditionLowerChanceOneIn = 2,
+		ResearchableRecipes = MakeImprovisedGasMask,
+	}
+
+	item Hat_DustMask
+	{
+		DisplayName = Dust Mask,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = DustMask,
+		BloodLocation = Head,
+		BodyLocation = Mask,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_DustMask,
+		Insulation = 0.6,
+		ScratchDefense = 5,
+		CorpseSicknessDefense = 25,
+		WindResistance = 0.5,
+		ChanceToFall = 10,
+		DiscomfortModifier = 0.20,
+		Tags = IsFireFuel;IsFireTinder,
+		ConditionMax = 1,
+		ConditionLowerChanceOneIn = 1,
+	}
+
+	item Hat_GasMask
+	{
+		DisplayName = Gas Mask,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = GasMask,
+		BiteDefense = 30,
+		BloodLocation = Head,
+		BodyLocation = MaskEyes,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_GasMask,
+		Insulation = 0.75,
+		ScratchDefense = 50,
+		CorpseSicknessDefense = 25,
+		WaterResistance = 1.0,
+		WindResistance = 0.60,
+		Tags = GasMask;IsDisguise,
+		OnCreate = SpecialLootSpawns.OnCreateGasMask,
+		WithoutDrainable = Hat_GasMask_nofilter,
+		VisionModifier = 0.5,
+		ChanceToFall = 5,
+		DiscomfortModifier = 0.60,
+		ConditionMax = 3,
+		ConditionLowerChanceOneIn = 2,
+		ResearchableRecipes = MakeCraftedGasMaskFilter;RechargeFilters;MakeImprovisedGasMask,
+	}
+
+	item Hat_GasMask_nofilter
+	{
+		DisplayName = Gas Mask (No Filter),
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = GasMask,
+		BiteDefense = 10,
+		BloodLocation = Head,
+		BodyLocation = MaskEyes,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_GasMask_nofilter,
+		Insulation = 0.75,
+		ScratchDefense = 30,
+		WaterResistance = 1.0,
+		WindResistance = 0.60,
+		Tags = GasMaskNoFilter;IsDisguise,
+		WithDrainable = Hat_GasMask,
+		WorldStaticModel = Hat_GasMask_nofilter_Ground,
+		VisionModifier = 0.5,
+		ChanceToFall = 5,
+		DiscomfortModifier = 0.60,
+		ConditionMax = 3,
+		ConditionLowerChanceOneIn = 2,
+		ResearchableRecipes = MakeImprovisedGasMask,
+	}
+
+	item Hat_HalloweenMaskDevil
+	{
+		DisplayName = Mask - Devil,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Mask_Devil,
+		BloodLocation = Head,
+		BodyLocation = MaskEyes,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_HalloweenMaskDevil,
+		Insulation = 0.25,
+		ScratchDefense = 5,
+		WindResistance = 0.55,
+		WaterResistance = 1.0,
+		VisionModifier = 0.75,
+		Tags = IsDisguise;IsFireFuel;IsFireTinder;IsMemento,
+		ConditionMax = 1,
+		ConditionLowerChanceOneIn = 1,
+	}
+
+	item Hat_HalloweenMaskMonster
+	{
+		DisplayName = Mask - Monster,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Mask_Frankenstein,
+		BloodLocation = Head,
+		BodyLocation = MaskEyes,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_HalloweenMaskMonster,
+		Insulation = 0.25,
+		ScratchDefense = 5,
+		WindResistance = 0.55,
+		WaterResistance = 1.0,
+		VisionModifier = 0.75,
+		Tags = IsDisguise;IsFireFuel;IsFireTinder;IsMemento,
+		ConditionMax = 1,
+		ConditionLowerChanceOneIn = 1,
+	}
+
+	item Hat_HalloweenMaskPumpkin
+	{
+		DisplayName = Mask - Pumpkin,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Mask_Pumpkin,
+		BloodLocation = Head,
+		BodyLocation = MaskEyes,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_HalloweenMaskPumpkin,
+		Insulation = 0.25,
+		ScratchDefense = 5,
+		WindResistance = 0.55,
+		WaterResistance = 1.0,
+		VisionModifier = 0.75,
+		Tags = IsDisguise;IsFireFuel;IsFireTinder;IsMemento,
+		ConditionMax = 1,
+		ConditionLowerChanceOneIn = 1,
+	}
+
+	item Hat_HalloweenMaskSkeleton
+	{
+		DisplayName = Mask - Skeleton,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Mask_Skeleton,
+		BloodLocation = Head,
+		BodyLocation = MaskEyes,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_HalloweenMaskSkeleton,
+		Insulation = 0.25,
+		ScratchDefense = 5,
+		WindResistance = 0.55,
+		WaterResistance = 1.0,
+		VisionModifier = 0.75,
+		Tags = IsDisguise;IsFireFuel;IsFireTinder;IsMemento,
+		ConditionMax = 1,
+		ConditionLowerChanceOneIn = 1,
+	}
+
+	item Hat_HalloweenMaskVampire
+	{
+		DisplayName = Mask - Vampire,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Mask_Vampire,
+		BloodLocation = Head,
+		BodyLocation = MaskEyes,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_HalloweenMaskVampire,
+		Insulation = 0.25,
+		ScratchDefense = 5,
+		WindResistance = 0.55,
+		WaterResistance = 1.0,
+		VisionModifier = 0.75,
+		Tags = IsDisguise;IsFireFuel;IsFireTinder;IsMemento,
+		ConditionMax = 1,
+		ConditionLowerChanceOneIn = 1,
+	}
+
+	item Hat_HalloweenMaskWitch
+	{
+		DisplayName = Mask - Witch,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Mask_Witch,
+		BloodLocation = Head,
+		BodyLocation = MaskEyes,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 30,
+		ClothingItem = Hat_HalloweenMaskWitch,
+		Insulation = 0.25,
+		ScratchDefense = 5,
+		WindResistance = 0.55,
+		WaterResistance = 1.0,
+		VisionModifier = 0.75,
+		Tags = IsDisguise;IsFireFuel;IsFireTinder;IsMemento,
+		ConditionMax = 1,
+		ConditionLowerChanceOneIn = 1,
+	}
+
+	item Hat_HockeyMask
+	{
+		DisplayName = Hockey Mask,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HockeyMask,
+		BiteDefense = 30,
+		BloodLocation = Head,
+		BodyLocation = MaskEyes,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_HockeyMask,
+		Insulation = 0.25,
+		ScratchDefense = 50,
+		WindResistance = 0.55,
+		VisionModifier = 0.5,
+		DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+		Tags = IsDisguise,
+		DiscomfortModifier = 0.05,
+		ConditionMax = 5,
+		ConditionLowerChanceOneIn = 3,
+	}
+
+	item Hat_NBCmask
+	{
+		DisplayName = Nuclear Biochemical Mask,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = NBCMask,
+		BiteDefense = 100,
+		BloodLocation = Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_NBCmask,
+		Insulation = 0.50,
+		ScratchDefense = 100,
+		WaterResistance = 1.0,
+		WindResistance = 0.65,
+		WorldStaticModel = NBC_Mask_Ground,
+		Tags = GasMask,
+		OnCreate = SpecialLootSpawns.OnCreateGasMask,
+		VisionModifier = 0.5,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.75,
+		Tags = IsDisguise,
+		WithoutDrainable = Hat_NBCmask_nofilter,
+		ResearchableRecipes = MakeCraftedGasMaskFilter;RechargeFilters;MakeImprovisedGasMask,
+	}
+
+	item Hat_NBCmask_nofilter
+	{
+		DisplayName = Nuclear Biochemical Mask (No Filter),
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = NBCMask,
+		BiteDefense = 100,
+		BloodLocation = Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_NBCmask_nofilter,
+		Insulation = 0.50,
+		ScratchDefense = 100,
+		WaterResistance = 1.0,
+		WindResistance = 0.65,
+		WorldStaticModel = NBC_Mask_Ground,
+		Tags = GasMask,
+		VisionModifier = 0.5,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.75,
+		Tags = IsDisguise,
+		WithDrainable = Hat_NBCmask,
+		ResearchableRecipes = MakeImprovisedGasMask,
+	}
+
+    /* isn't it a scarf? probably but having all the things that can cover the face in one place makes it a mask */
+    /* general shemagh item for loot spawning; having every variety in some tables would result in too many spawning */
+	item Hat_ShemaghFace
+	{
+		DisplayName = Shemagh (Open Face),
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		IconsForTexture = Shemagh_BlackWhite;Shemagh_BlueWhite;Shemagh_Green;Shemagh_Red;Shemagh_RedWhite,
+		BloodLocation = Neck;Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = Hat_ShemaghFace,
+
+		ClothingItemExtra = Hat_ShemaghFull;ShemaghScarf;ShemaghScarfFace,
+		ClothingItemExtraOption = CoverFace;Scarf;ScarfOverFace,
+		WorldStaticModel = Shemagh_Ground,
+
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+
+	}
+
+	item Hat_ShemaghFull
+	{
+		DisplayName = Shemagh (Fully Closed),
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		IconsForTexture = Shemagh_BlackWhite;Shemagh_BlueWhite;Shemagh_Green;Shemagh_Red;Shemagh_RedWhite,
+		BloodLocation = Neck;Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = Hat_ShemaghFull,
+
+		ClothingItemExtra = Hat_ShemaghFace;ShemaghScarf;ShemaghScarfFace,
+		ClothingItemExtraOption = RevealFace;Scarf;ScarfOverFace,
+		WorldStaticModel = Shemagh_Ground,
+		CorpseSicknessDefense = 25,
+
+        Tags = IsDisguise;IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+
+	item ShemaghScarf
+	{
+		DisplayName = Shemagh (Scarf),
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		IconsForTexture = Shemagh_BlackWhite;Shemagh_BlueWhite;Shemagh_Green;Shemagh_Red;Shemagh_RedWhite,
+		BloodLocation = Neck,
+		BodyLocation = Scarf,
+		CanHaveHoles = FALSE,
+		FabricType = Cotton,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = ShemaghScarf,
+
+		ClothingItemExtra = Hat_ShemaghFull;Hat_ShemaghFace;ShemaghScarfFace,
+		ClothingItemExtraOption = CoverHeadFully;CoverHead;ScarfOverFace,
+		WorldStaticModel = Shemagh_Ground,
+
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+
+	item ShemaghScarfFace
+	{
+		DisplayName = Shemagh (Face Covering Scarf),
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		IconsForTexture = Shemagh_BlackWhite;Shemagh_BlueWhite;Shemagh_Green;Shemagh_Red;Shemagh_RedWhite,
+		BloodLocation = Neck;Head,
+		BodyLocation = Mask,
+		CanHaveHoles = FALSE,
+		FabricType = Cotton,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = ShemaghScarfFace,
+
+		ClothingItemExtra = ShemaghScarf;Hat_ShemaghFull;Hat_ShemaghFace,
+		ClothingItemExtraOption = Scarf;CoverHeadFully;CoverHead,
+		WorldStaticModel = Shemagh_Ground,
+		CorpseSicknessDefense = 25,
+
+        Tags = IsLowerDisguise;IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+
+	item Hat_ShemaghFace_Green
+	{
+		DisplayName = Green Shemagh (Open Face),
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Shemagh_Green,
+		BloodLocation = Neck;Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = Hat_ShemaghFace_Green,
+
+		ClothingItemExtra = Hat_ShemaghFull_Green;ShemaghScarf_Green;ShemaghScarfFace_Green,
+		ClothingItemExtraOption = CoverFace;Scarf;ScarfOverFace,
+		WorldStaticModel = Shemagh_Ground,
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+
+	}
+
+	item Hat_ShemaghFull_Green
+	{
+		DisplayName = Green Shemagh (Fully Closed),
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Shemagh_Green,
+		BloodLocation = Neck;Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = Hat_ShemaghFull_Green,
+
+		ClothingItemExtra = Hat_ShemaghFace_Green;ShemaghScarf_Green;ShemaghScarfFace_Green,
+		ClothingItemExtraOption = RevealFace;Scarf;ScarfOverFace,
+		WorldStaticModel = Shemagh_Ground,
+		CorpseSicknessDefense = 25,
+
+        Tags = IsDisguise;IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+
+	item ShemaghScarf_Green
+	{
+		DisplayName = Green Shemagh (Scarf),
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Shemagh_Green,
+		BloodLocation = Neck,
+		BodyLocation = Scarf,
+		CanHaveHoles = FALSE,
+		FabricType = Cotton,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = ShemaghScarf_Green,
+
+		ClothingItemExtra = Hat_ShemaghFull_Green;Hat_ShemaghFace_Green;ShemaghScarfFace_Green,
+		ClothingItemExtraOption = CoverHeadFully;CoverHead;ScarfOverFace,
+		WorldStaticModel = Shemagh_Ground,
+
+		Tags = IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+
+	}
+
+	item ShemaghScarfFace_Green
+	{
+		DisplayName = Green Shemagh (Face Covering Scarf),
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Shemagh_Green,
+		BloodLocation = Neck;Head,
+		BodyLocation = Mask,
+		CanHaveHoles = FALSE,
+		FabricType = Cotton,
+		Insulation = 0.8,
+		ScratchDefense = 10,
+		WindResistance = 1.0,
+		ClothingItem = ShemaghScarfFace_Green,
+
+		ClothingItemExtra = ShemaghScarf_Green;Hat_ShemaghFull_Green;Hat_ShemaghFace_Green,
+		ClothingItemExtraOption = Scarf;CoverHeadFully;CoverHead,
+		WorldStaticModel = Shemagh_Ground,
+		CorpseSicknessDefense = 25,
+
+        Tags = IsLowerDisguise;IsFireFuel;IsFireTinder;IgnoreZombieDensity,
+	}
+
+	item Hat_Spiffo
+	{
+		DisplayName = Spiffo Suit Head,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Icon = SpiffoHead,
+		BloodLocation = Head,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_Spiffo,
+		Insulation = 0.75,
+		WaterResistance = 0.75,
+		WindResistance = 0.75,
+		VisionModifier = 0.25,
+		HearingModifier = 0.75,
+		Tags = IgnoreZombieDensity;IsDisguise;IsFireFuel;IsFireTinder;IsMemento,
+	}
+
+	item Hat_SurgicalMask
+	{
+		DisplayName = Medical Mask,
+		DisplayCategory = FirstAid,
+		Type = Clothing,
+		Weight = 0.2,
+		IconsForTexture = SurgicalMaskBlue;SurgicalMaskGreen,
+		BloodLocation = Head,
+		BodyLocation = Mask,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_SurgicalMask,
+		ScratchDefense = 5,
+		CorpseSicknessDefense = 25,
+		ChanceToFall = 10,
+		Tags = FitsWallet;IsFireFuel;IsFireTinder,
+		ConditionMax = 1,
+		ConditionLowerChanceOneIn = 1,
+	}
+
+	item WeldingMask
+	{
+		DisplayName = Welder Mask,
+		DisplayCategory = Tool,
+		Type = Clothing,
+		Icon = WeldingMask,
+		BiteDefense = 50,
+		BloodLocation = Head,
+		BodyLocation = MaskFull,
+		CanHaveHoles = FALSE,
+		ClothingItem = Hat_WeldersMask,
+		Insulation = 0.25,
+		ScratchDefense = 70,
+		WaterResistance = 1.0,
+		WindResistance = 0.55,
+		Tags = WeldingMask;IsDisguise,
+		VisionModifier = 0.5,
+		DiscomfortModifier = 0.2,
+	}
+	
+}

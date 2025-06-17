@@ -1,0 +1,406 @@
+/*module farming*/
+module Base
+{
+/*	imports
+	{
+		Base
+	}*/
+
+/**********************************************************************/
+/***********************Farming Food Items*********************************/
+/**********************************************************************/
+
+
+    item RedRadish
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Radish,
+		Icon				=		Radish,
+		Weight				=		0.1,
+		HungerChange 		=		-3,
+		DaysFresh 			=		3,
+		DaysTotallyRotten 	=	 	7,
+		EvolvedRecipe = Soup:3;Stew:3;Stir fry:3;Burger:3;Salad:3;Sandwich:3,
+		ThirstChange	=	-1,
+		FoodType    =   Vegetables,
+        Carbohydrates = 0.15,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 1,
+        StaticModel = RedRadish_Ground,
+        WorldStaticModel = RedRadish_Ground,
+	}
+
+    item Strewberrie
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Strawberries,
+		Icon				=		BerryStraw,
+		Weight				=		0.1,
+		HungerChange 		=		-5,
+		UnhappyChange 		= 		-10,
+		DaysFresh 			=		2,
+		DaysTotallyRotten 	=	 	5,
+		EvolvedRecipe = Cake:5;FruitSalad:5;Pancakes:5;ConeIcecream:5;Oatmeal:5;PieSweet:5;Salad:5;HotDrink:5,
+		FoodType    =   Berry,
+		ThirstChange	=	-1,
+        Carbohydrates = 0.92,
+        Proteins = 0.08,
+        Lipids = 0.04,
+        Calories = 4,
+        StaticModel = Strawberry_Ground,
+        WorldStaticModel = Strawberry_Ground,
+		EvolvedRecipeName = Strawberry,
+	}
+
+    item Tomato
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Tomato,
+		Icon				=		Tomato,
+		Weight				=		0.2,
+		HungerChange 		=		-12,
+		DaysFresh 			=		4,
+		DaysTotallyRotten 	=	 	12,
+		EvolvedRecipe       =       Pizza:12;Omelette:6;Soup:12;Stew:12;Pie:12;Stir fry:12;Sandwich:6;Burger:6;Hotdog:6;Salad:6;Rice:12;Pasta:12;Taco:6;Burrito:6,
+		ThirstChange	=	-8,
+		FoodType    =   Vegetables,
+        Carbohydrates = 3.5,
+        Proteins = 1.3,
+        Lipids = 0.2,
+        Calories = 14,
+        StaticModel = Tomato_Ground,
+        WorldStaticModel = Tomato_Ground,
+		Tags = HideUncooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		CookingSound = FryingFood,
+		GoodHot = true,
+	}
+
+    item Potato
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Potato,
+		Icon				=		Potato,
+		Weight				=		0.2,
+		HungerChange 		=		-18,
+		/*DaysFresh 			=		14,
+		DaysTotallyRotten 	=	 	28,*/
+		DaysFresh 			=		28,
+		DaysTotallyRotten 	=	 	280,
+        EvolvedRecipe       =       Omelette:9;Soup:18;Stew:18;Pie:18;Stir fry:18;Salad:9|Cooked,
+        ThirstChange	=	-7,
+        FoodType    =   Vegetables,
+        Carbohydrates = 15,
+        Proteins = 3,
+        Lipids = 0.15,
+        Calories = 70,
+        StaticModel = Potato_Ground,
+        WorldStaticModel = Potato_Ground,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		RemoveUnhappinessWhenCooked = true,
+		UnhappyChange = 5,
+		CookingSound = FryingFood,
+		GoodHot = true,
+		Tags = isSeed,
+	}
+
+    item Cabbage
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Cabbage,
+		Icon				=		Cabbage,
+		Weight				=		0.2,
+		HungerChange 		=		-24,
+		DaysFresh 			=		2,
+		DaysTotallyRotten 	=	 	4,
+		EvolvedRecipe       =       Soup:12;Stew:12;Stir fry:12;Sandwich:6;Burger:6;Hotdog:6;Salad:12;Taco:6;Burrito:6,
+		ThirstChange	=	-10,
+		FoodType    =   Vegetables,
+        Carbohydrates = 41,
+        Proteins = 9,
+        Lipids = 0.7,
+        Calories = 180,
+        StaticModel = Cabbage_Ground,
+        WorldStaticModel = Cabbage_Ground,
+		Tags = HideUncooked,
+		IsCookable = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 30,
+		CookingSound = FryingFood,
+		/*GoodHot = true,*/
+	}
+
+/**********************************************************************/
+/***************************Food Items*************************************/
+/**********************************************************************/
+
+    item Bacon
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Bacon,
+		Icon				=		Bacon,
+		Weight				=		0.3,
+		IsCookable			= 		true,
+		MinutesToCook   	= 		20,
+		MinutesToBurn   	= 		50,
+		HungerChange 		=		-12,
+		DaysFresh 			=		3,
+		DaysTotallyRotten 	=		5,
+		DangerousUncooked 	= 		true,
+		EvolvedRecipe       =       Pizza:12;Stew:12;Pie:12;Stir fry:12;Sandwich:4|Cooked;Burger:4|Cooked;Hotdog:4|Cooked;Rice:12;Pasta:12;Taco:4|Cooked;Burrito:4|Cooked;Toast:4|Cooked,
+		FoodType    =   Bacon,
+        Carbohydrates = 0,
+        Proteins = 10,
+        Lipids = 14,
+        Calories = 160,
+        Packaged = TRUE,
+        GoodHot = true,
+        BadCold = true,
+        StaticModel = BaconStrip_Hand,
+        WorldStaticModel = Bacon_Ground,
+		EvolvedRecipeName = Bacon,
+		CookingSound = FryingFood,
+	}
+
+    item BaconRashers
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Bacon Strip,
+		Icon				=		TZ_BaconRashers,
+		Weight				=		0.1,
+		IsCookable			= 		true,
+		MinutesToCook   	= 		15,
+		MinutesToBurn   	= 		35,
+		HungerChange 		=		-4,
+		DaysFresh 			=		3,
+		DaysTotallyRotten 	=		5,
+		DangerousUncooked 	= 		true,
+		EvolvedRecipe       =       Pizza:4;Omelette:4;Stew:4;Pie:4;Stir fry:4;Sandwich:4|Cooked;Burger:4|Cooked;Hotdog:4|Cooked;Salad:4|Cooked;Taco:4|Cooked;Burrito:4|Cooked;Toast:4|Cooked,
+		FoodType    =   Bacon,
+        Carbohydrates = 0,
+        Proteins = 2.5,
+        Lipids = 3.5,
+        Calories = 40,
+        GoodHot = true,
+        BadCold = true,
+        StaticModel = BaconStrip_Hand,
+        WorldStaticModel = Bacon_Ground,
+		EvolvedRecipeName = Bacon,
+		CookingSound = FryingFood,
+	}
+
+    item BaconBits
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Bacon Bits,
+		Icon				=		TZ_BaconBits,
+		Weight				=		0.025,
+		IsCookable			= 		true,
+		MinutesToCook   	= 		15,
+		MinutesToBurn   	= 		30,
+		HungerChange 		=		-1,
+		DaysFresh 			=		3,
+		DaysTotallyRotten 	=		5,
+		DangerousUncooked 	= 		true,
+		EvolvedRecipe       =       Pizza:1;Omelette:1;Stew:1;Pie:1;Stir fry:1;Sandwich:1|Cooked;Burger:1|Cooked;Hotdog:1|Cooked;Salad:1|Cooked;Rice:1;Pasta:1;Taco:1|Cooked;Burrito:1|Cooked;Toast:1|Cooked,
+		Spice = true,
+		FoodType    =   Bacon,
+        Carbohydrates = 0,
+        Proteins = 0.6125,
+        Lipids = 0.875,
+        Calories = 10,
+        GoodHot = true,
+        BadCold = true,
+        StaticModel = BaconBits_Ground,
+        WorldStaticModel = BaconBits_Ground,
+		EvolvedRecipeName = Bacon Bits,
+		CookingSound = FryingFood,
+	}
+
+    item MayonnaiseFull
+	{
+	    DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Mayonnaise,
+		Icon				=		TZ_MayonnaiseFull,
+		Weight				=		0.5,
+		HungerChange 		=		-30,
+		BoredomChange 		=		10,
+		UnhappyChange 		=		5,
+		DaysFresh 			=		10,
+		DaysTotallyRotten 	=	 	13,
+		ReplaceOnUse 	    = 		MayonnaiseEmpty,
+		EvolvedRecipe       =       Sandwich:2;Burger:2;Hotdog:2;Salad:2;Rice:2;Pasta:2;Taco:2;Burrito:2,
+		Spice   =   true,
+        Carbohydrates = 0,
+        Proteins = 0,
+        Lipids = 330,
+        Calories = 3000,
+        Packaged = TRUE,
+        EatType = candrink,
+        StaticModel = MayoJar,
+        WorldStaticModel = MayoJar_Ground,
+		FoodType = NoExplicit,
+		SoundMap = DumpContents EmptyMayonnaise,
+	}
+
+    item RemouladeFull
+    {
+        DisplayCategory = Food,
+        Type				=		Food,
+        DisplayName			=		Remoulade,
+        Icon				=		TZ_RemouladeFull,
+        Weight				=		0.5,
+        HungerChange 		=		-10,
+        BoredomChange 		=		10,
+        UnhappyChange 		=		5,
+        DaysFresh 			=		8,
+        DaysTotallyRotten 	=	 	11,
+        UseDelta			=		0.16,
+        ReplaceOnUse 	    = 		RemouladeEmpty,
+        Carbohydrates = 0,
+        Proteins = 0,
+        Lipids = 50,
+        Calories = 150,
+        Packaged = TRUE,
+        EatType = candrink,
+        StaticModel = RemouladeJar,
+        WorldStaticModel = Remoulade_Ground,
+		EvolvedRecipe       =       Sandwich:2;Burger:2;Hotdog:2;Salad:2,
+		Spice   =   true,
+		FoodType = NoExplicit,
+    }
+
+/**********************************************************************/
+/******************************Seeds***************************************/
+/**********************************************************************/
+/**********************************************************************/
+/***************************Seed Packages************************************/
+/**********************************************************************/
+
+
+/**********************************************************************/
+/******************************Tools*****************************************/
+/**********************************************************************/
+
+    item HandShovel
+	{
+	    DisplayCategory = Gardening,
+	    MaxRange	=	0.9,
+        WeaponSprite	=	Trowel,
+        MinAngle	=	0.65,
+        Type	=	Weapon,
+        MinimumSwingTime	=	4,
+        KnockBackOnNoDeath	=	FALSE,
+        SwingAmountBeforeImpact	=	0.02,
+        Categories	=	SmallBlade,
+        ConditionLowerChanceOneIn	=	9,
+        Weight	=	1,
+        SplatNumber	=	2,
+        PushBackMod	=	0.3,
+        SubCategory	=	Stab,
+        CloseKillMove = Jaw_Stab,
+        ConditionMax	=	6,
+        MaxHitCount	=	2,
+        DoorDamage	=	5,
+        SwingAnim	=	Stab,
+        WeaponWeight	=	3,
+        DisplayName	=	Gardening Trowel,
+        MinRange	=	0.61,
+        SwingTime	=	4,
+        KnockdownMod	=	2,
+        SplatBloodOnNoDeath	=	FALSE,
+        Icon	=	TZ_GardenTrowel,
+        BreakSound = HandShovelBreak,
+        DropSound = HandShovelDrop,
+        HitFloorSound = HandShovelHit,
+        ImpactSound = HandShovelHit,
+        DoorHitSound = HandShovelHit,
+        HitSound = HandShovelHit,
+        SwingSound = HandShovelSwing,
+        AttachmentType = NotKnife,
+        TreeDamage  =   0,
+        CriticalChance	=	30,
+        CritDmgMultiplier = 10,
+        MinDamage	=	0.2,
+        MaxDamage	=	0.4,
+        WeaponLength = 0.2,
+		/*SurvivalGear = TRUE,*/
+        Tags = ClearAshes;DigPlow;TakeDirt;DigWorms;HasMetal,
+        DigType = Trowel,
+        ResearchableRecipes = Forge_Spade_Head;Forge_Gardening_Trowel;CarveWoodenSpade,
+	}
+
+    item GardeningSprayMilk
+  	{
+  	    DisplayCategory = Gardening,
+    	Type				=		Drainable,
+		DisplayName			=		Mildew Spray,
+		Icon				=		TZ_GardeningSprayCan,
+		Weight				=		1.0,
+    	UseDelta			=		0.1,
+    	ReplaceOnDeplete 	= 		GardeningSprayEmpty,
+	    UseWhileEquipped	=	    false,
+    	StaticModel = GardenSpray,
+    	WorldStaticModel = GardenSprayGround,
+  	}
+
+    item GardeningSprayAphids
+  	{
+  	    DisplayCategory = Gardening,
+    	Type				=		Drainable,
+		DisplayName			=		Aphids Spray,
+		Icon				=		TZ_GardeningSprayCan,
+		Weight				=		1.0,
+    	UseDelta			=		0.1,
+    	ReplaceOnDeplete 	= 		GardeningSprayEmpty,
+	    UseWhileEquipped	=	    false,
+    	StaticModel = GardenSpray,
+    	WorldStaticModel = GardenSprayGround,
+  	}
+
+    item GardeningSprayEmpty
+  	{
+  	    DisplayCategory = Gardening,
+   		Type 				= 		Normal,
+   		DisplayName 		= Empty Gardening Spray Can,
+   		Icon 				= 		TZ_GardeningSprayCan,
+   		Weight 				= 		0.3,
+		StaticModel = GardenSpray,
+		WorldStaticModel = GardenSprayGround,
+		SurvivalGear = TRUE,
+  	}
+
+    item GardeningSprayCigarettes
+ 	{
+ 	    DisplayCategory = Gardening,
+    	Type				=		Drainable,
+		DisplayName			=		Pest Flies Spray,
+		Icon				=		TZ_GardeningSprayCan,
+		Weight				=		1.0,
+    	UseDelta			=		0.1,
+    	ReplaceOnDeplete 	= 		GardeningSprayEmpty,
+    	UseWhileEquipped	=	    false,
+    	StaticModel = GardenSpray,
+    	WorldStaticModel = GardenSprayGround,
+  	}
+
+/* moved to recipes_farming.txt in the recipes directory*/
+/*************************~~~~~~~~~~~~~~~~~****************************/
+/******************************Recipes*************************************/
+/*************************~~~~~~~~~~~~~~~~~****************************/
+/* moved to recipes_farming.txt in the recipes directory*/
+}

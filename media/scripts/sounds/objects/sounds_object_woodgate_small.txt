@@ -1,0 +1,65 @@
+module Base
+{
+	sound WoodGateBlocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodGate/IsBlocked,
+		}
+	}
+
+	sound WoodGateBreak
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodGate/Break,
+		}
+	}
+
+	sound WoodGateClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodGate/Close,
+		}
+	}
+
+	sound WoodGateLock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodGate/Lock,
+		}
+	}
+
+	sound WoodGateLocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodGate/IsLocked,
+		}
+	}
+
+	sound WoodGateOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodGate/Open,
+		}
+	}
+
+	sound WoodGateUnlock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodGate/Unlock,
+		}
+	}
+}

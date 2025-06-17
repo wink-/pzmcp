@@ -1,0 +1,639 @@
+module Base
+{
+	craftRecipe SliceHead
+	{
+        timedAction = SliceMeat,
+		Time = 40,
+		OnCreate = Recipe.OnCreate.SliceAnimalHead,
+		category = Cooking,
+		Tags = InHandCraft;Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[AnimalHead] mappers[HeadSkullMapper] flags[AllowRottenItem],
+		}
+        outputs
+        {
+            item 1 mapper:HeadSkullMapper,
+        }
+        itemMapper HeadSkullMapper
+        {
+            Base.Cow_Skull = Base.Cow_Head_Angus,
+            Base.Bull_Skull = Base.Bull_Head_Angus,
+            Base.Calf_Skull = Base.Calf_Head_Angus,
+            Base.Cow_Skull = Base.Cow_Head_Simmental,
+            Base.Bull_Skull = Base.Bull_Head_Simmental,
+            Base.Calf_Skull = Base.Calf_Head_Simmental,
+            Base.Cow_Skull = Base.Cow_Head_Holstein,
+            Base.Bull_Skull = Base.Bull_Head_Holstein,
+            Base.Calf_Skull = Base.Calf_Head_Holstein,
+            Base.Sheep_Skull = Base.Sheep_Ewe_Head_White,
+            Base.Ram_Skull = Base.Sheep_Ram_Head_White,
+            Base.Lamb_Skull = Base.Sheep_Lamb_Head_White,
+            Base.Sheep_Skull = Base.Sheep_Ewe_Head_Black,
+            Base.Ram_Skull = Base.Sheep_Ram_Head_Black,
+            Base.Lamb_Skull = Base.Sheep_Lamb_Head_Black,
+            Base.Pig_Skull = Base.Pig_Sow_Head_Pink,
+            Base.Pig_Skull = Base.Pig_Boar_Head_Pink,
+            Base.Piglet_Skull = Base.Pig_Piglet_Head_Pink,
+            Base.Pig_Skull = Base.Pig_Sow_Head_Black,
+            Base.Calf_Skull = Base.Pig_Boar_Head_Black,
+            Base.Piglet_Skull = Base.Pig_Piglet_Head_Black,
+            Base.Chicken_Chick_Skull = Base.Chicken_Chick_Head,
+            Base.Chicken_Hen_Skull = Base.Chicken_Hen_Brown_Head,
+            Base.Chicken_Hen_Skull = Base.Chicken_Hen_White_Head,
+            Base.Chicken_Rooster_Skull = Base.Chicken_Rooster_Head_Brown,
+            Base.Chicken_Rooster_Skull = Base.Chicken_Rooster_Head_White,
+            Base.Turkey_Skull = Base.Turkey_Hen_Head,
+            Base.Turkey_Skull = Base.Turkey_Gobbler_Head,
+            Base.Turkey_PoultSkull = Base.Turkey_Poult_Head,
+            Base.Raccoon_Skull = Base.Raccoon_Sow_Head,
+            Base.Raccoon_Skull = Base.Raccoon_Boar_Head,
+            Base.Raccoon_Skull = Base.Raccoon_Kit_Head,
+            Base.Rabbit_Skull = Base.Rabbit_Head_Appalachian,
+            Base.Rabbit_KittenSkull = Base.Rabbit_Kitten_Head_Appalachian,
+            Base.Rabbit_Skull = Base.Rabbit_Head_CottonTail,
+            Base.Rabbit_KittenSkull = Base.Rabbit_Kitten_Head_CottonTail,
+            Base.Rabbit_Skull = Base.Rabbit_Head_Swamp,
+            Base.Rabbit_KittenSkull = Base.Rabbit_Kitten_Head_Swamp,
+            Base.DeerDoe_Skull = Base.Deer_Doe_Head,
+            Base.DeerStag_Skull = Base.Deer_Buck_Head,
+            Base.DeerFawn_Skull = Base.Deer_Fawn_Head,
+
+            default = Base.Cow_Skull,
+        }
+	}
+
+	craftRecipe CreateBrainTan
+	{
+        timedAction = MixingBowl,
+		Time = 40,
+		category = Cooking,
+		Tags = InHandCraft;Cooking,
+		inputs
+		{
+			item 1 tags[Bowl] mode:destroy flags[IsFull;ItemCount],
+			-fluid 0.3 [Water;TaintedWater],
+			item 1 tags[AnimalBrain],
+		}
+		outputs
+		{
+			item 1 Base.BrainTan,
+		}
+	}
+
+	craftRecipe SliceBread
+	{
+        timedAction = SliceBread_Surface,
+		Time = 40,
+		OnCreate = Recipe.OnCreate.Slice3,
+		ToolTip = Tooltip_Recipe_MustCookedSlice,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.BreadDough;Base.Bread] flags[InheritFoodAge;IsCookedFoodItem;ItemCount],
+		}
+		outputs
+		{
+			item 3 Base.BreadSlices,
+		}
+	}
+
+	craftRecipe MakeCakeBatter
+	{
+        timedAction = MixingBowl,
+		Time = 50,
+		NeedToBeLearn = True,
+		ToolTip = Tooltip_Recipe_RequireWholeEggs,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:7,
+		inputs
+		{
+			item 1 tags[MixingUtensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.Bowl;Base.ClayBowl] flags[ItemCount],
+			item 2 tags[Flour],
+			item 1 tags[BakingFat],
+			item 2 tags[Sugar],
+			item 2 tags[Egg] flags[IsUncookedFoodItem;InheritFoodAge;ItemCount],
+			item 1 [Base.Yeast],
+			item 1 [*],
+			-fluid 1.0 [CowMilk],
+		}
+		outputs
+		{
+			item 1 Base.CakeBatter,
+		}
+	}
+
+	craftRecipe PlaceCakeInBakingPan
+	{
+        timedAction = MixingBowl,
+		Time = 30,
+		category = Cooking,
+		Tags = InHandCraft;Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 [Base.BakingPan],
+			item 1 [Base.CakeBatter] flags[InheritFoodAge],
+		}
+		outputs
+		{
+			item 1 Base.CakePrep,
+			item 1 Base.Bowl,
+		}
+	}
+
+	craftRecipe MakePieDough
+	{
+        timedAction = MixingBowl,
+		Time = 50,
+		NeedToBeLearn = True,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:7,
+		inputs
+		{
+			item 1 tags[RollingPin] mode:keep flags[MayDegrade],
+			item 1 tags[MixingUtensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 10 tags[Flour],
+			item 1 [Base.Butter;Base.Lard;Base.Margarine],
+			item 2 [Base.Salt;Base.SeasoningSalt],
+			item 1 [*],
+			-fluid 2.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.PieDough,
+		}
+	}
+
+	craftRecipe MakeBreadDough
+	{
+        timedAction = MixingBowl,
+		Time = 50,
+		NeedToBeLearn = True,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:7,
+		inputs
+		{
+			item 1 tags[MixingUtensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 1 [Base.RollingPin] mode:keep flags[MayDegrade],
+			item 10 tags[Flour],
+			item 2 [Base.Salt;Base.SeasoningSalt],
+			item 1 [Base.Yeast],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.BreadDough,
+		}
+	}
+
+	craftRecipe MakeBaguetteDough
+	{
+        timedAction = MixingBowl,
+		Time = 50,
+		NeedToBeLearn = True,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:7,
+		inputs
+		{
+			item 1 tags[RollingPin] mode:keep flags[MayDegrade],
+			item 1 tags[MixingUtensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 10 tags[Flour],
+			item 2 [Base.Salt;Base.SeasoningSalt],
+			item 1 [Base.Yeast],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.BaguetteDough,
+		}
+	}
+
+	craftRecipe MakeBiscuits
+	{
+        timedAction = MixingBowl,
+		Time = 50,
+		NeedToBeLearn = True,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:3,
+		AutoLearnAny = Cooking:7,
+		inputs
+		{
+			item 1 tags[MixingUtensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 1 [Base.MuffinTray],
+			item 1 tags[Flour],
+			item 2 [Base.Salt;Base.SeasoningSalt],
+			item 1 [Base.BakingSoda],
+			item 1 tags[BakingFat],
+			item 1 [*],
+			-fluid 2.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.Muffintray_Biscuit,
+		}
+	}
+
+	craftRecipe Get6Biscuits
+	{
+        timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.GetBiscuit,
+		ToolTip = Tooltip_Recipe_MustCookedGet,
+		category = Cooking,
+		Tags = InHandCraft;Cooking,
+		inputs
+		{
+			item 1 [Base.Muffintray_Biscuit] flags[IsCookedFoodItem;InheritFoodAge;ItemCount],
+		}
+		outputs
+		{
+			item 6 Base.Biscuit,
+			item 1 Base.MuffinTray,
+		}
+	}
+
+	craftRecipe PlacePieInBakingPan
+	{
+        timedAction = MixingBowl,
+		Time = 30,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 [Base.BakingPan],
+			item 1 [Base.RollingPin] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.PieDough] flags[InheritFoodAge],
+		}
+		outputs
+		{
+			item 1 Base.PiePrep,
+		}
+	}
+
+	craftRecipe SliceCakeOrPie
+	{
+        timedAction = SliceFood_Surface,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.Slice5,
+		ToolTip = Tooltip_Recipe_MustCookedSlice,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:3,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.CakeRaw;Base.PieWholeRaw;Base.PieWholeRawSweet] mappers[foodType] flags[IsCookedFoodItem;InheritFoodAge;ItemCount],
+		}
+		outputs
+		{
+			item 5 mapper:foodType,
+			item 1 Base.BakingPan,
+		}
+		itemMapper foodType
+		{
+			Base.CakeSlice = Base.CakeRaw,
+			default = Base.Pie,
+		}
+	}
+
+	craftRecipe MakeChocolateCookieDough
+	{
+        timedAction = MixingBowl,
+		Time = 50,
+		NeedToBeLearn = True,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:3,
+		AutoLearnAny = Cooking:7,
+		inputs
+		{
+			item 1 tags[RollingPin] mode:keep flags[MayDegrade],
+			item 1 tags[MixingUtensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 1 [Base.BakingTray],
+			item 2 tags[BakingFat],
+			item 5 tags[Sugar],
+			item 2 tags[Egg] flags[IsUncookedFoodItem;InheritFoodAge;ItemCount],
+			item 1 [Base.BakingSoda],
+			item 10 [Base.CocoaPowder],
+			item 3 tags[Flour],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CookiesChocolateDough,
+		}
+	}
+
+	craftRecipe Get6Cookies
+	{
+        timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.GetCookies,
+		ToolTip = Tooltip_Recipe_MustCookedGet,
+		category = Cooking,
+		Tags = InHandCraft;Cooking,
+		inputs
+		{
+			item 1 [Base.CookiesChocolateDough;Base.CookieChocolateChipDough;Base.CookiesOatmealDough;Base.CookiesSugarDough;Base.CookiesShortbreadDough] mappers[cookieTypes] flags[IsCookedFoodItem;InheritFoodAge;ItemCount],
+		}
+		outputs
+		{
+			item 6 mapper:cookieTypes,
+			item 1 Base.BakingTray,
+		}
+        	itemMapper cookieTypes
+        	{
+			Base.CookiesChocolate = Base.CookiesChocolateDough,
+			Base.CookieChocolateChip = Base.CookieChocolateChipDough,
+			Base.CookiesOatmeal = Base.CookiesOatmealDough,
+			Base.CookiesSugar = Base.CookiesSugarDough,
+			Base.CookiesShortbread = Base.CookiesShortbreadDough,
+		}
+	}
+
+    /* recipe Make Chocolate Chip Cookie Dough
+    {
+	   keep [Recipe.GetItemTypes.RollingPin],
+	   keep [Recipe.GetItemTypes.MixingUtensil],
+	   keep Bowl,
+		destroy BakingTray,
+		keep RollingPin,
+		[Recipe.GetItemTypes.BakingFat];2,
+		[Recipe.GetItemTypes.Sugar];5,
+        [Recipe.GetItemTypes.Egg]=2,
+		BakingSoda=1,
+		ChocolateChips;6,
+	Fluid.Water=1.0,
+		Flour2;3,
+
+		Result:CookieChocolateChipDough,
+		NeedToBeLearn:true,
+		Category:Cooking,
+		Time:50,
+    } */
+
+	craftRecipe MakeChocolateChipCookieDough
+	{
+        timedAction = MixingBowl,
+		Time = 50,
+		NeedToBeLearn = True,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:3,
+		AutoLearnAny = Cooking:7,
+		inputs
+		{
+			item 1 tags[RollingPin] mode:keep flags[MayDegrade],
+			item 1 tags[MixingUtensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 1 [Base.BakingTray],
+			item 2 tags[BakingFat],
+			item 5 tags[Sugar],
+			item 2 tags[Egg] flags[IsUncookedFoodItem;InheritFoodAge;ItemCount],
+			item 1 [Base.BakingSoda],
+			item 6 [Base.ChocolateChips],
+			item 3 tags[Flour],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CookieChocolateChipDough,
+		}
+	}
+
+    /* recipe Make Oatmeal Cookie Dough
+    {
+	   keep [Recipe.GetItemTypes.MixingUtensil],
+	   keep Bowl,
+		destroy BakingTray,
+		keep RollingPin,
+		[Recipe.GetItemTypes.BakingFat];2,
+		[Recipe.GetItemTypes.Sugar];5,
+        [Recipe.GetItemTypes.Egg]=2,
+		BakingSoda=1,
+		OatsRaw;10,
+	Fluid.Water=1.0,
+		Flour2;3,
+
+		Result:CookiesOatmealDough,
+		NeedToBeLearn:true,
+		Category:Cooking,
+		Time:50,
+    } */
+
+	craftRecipe MakeOatmealCookieDough
+	{
+        timedAction = MixingBowl,
+		Time = 50,
+		NeedToBeLearn = True,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:3,
+		AutoLearnAny = Cooking:7,
+		inputs
+		{
+			item 1 tags[RollingPin] mode:keep flags[MayDegrade],
+			item 1 tags[MixingUtensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 1 [Base.BakingTray],
+			item 2 tags[BakingFat],
+			item 5 tags[Sugar],
+			item 2 tags[Egg] flags[IsUncookedFoodItem;InheritFoodAge;ItemCount],
+			item 1 [Base.BakingSoda],
+			item 10 [Base.OatsRaw],
+			item 3 tags[Flour],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CookiesOatmealDough,
+		}
+	}
+
+    /* recipe Make Sugar Cookie Dough
+    {
+	   keep [Recipe.GetItemTypes.RollingPin],
+	   keep [Recipe.GetItemTypes.MixingUtensil],
+	   keep Bowl,
+		destroy BakingTray,
+		keep RollingPin,
+		[Recipe.GetItemTypes.BakingFat];2,
+		[Recipe.GetItemTypes.Sugar];10,
+        [Recipe.GetItemTypes.Egg]=2,
+		BakingSoda=1,
+	Fluid.Water=1.0,
+		Flour2;3,
+
+		Result:CookiesSugarDough,
+		NeedToBeLearn:true,
+		Category:Cooking,
+		Time:50,
+    } */
+
+	craftRecipe MakeSugarCookieDough
+	{
+        timedAction = MixingBowl,
+		Time = 50,
+		NeedToBeLearn = True,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:3,
+		AutoLearnAny = Cooking:7,
+		inputs
+		{
+			item 1 tags[RollingPin] mode:keep flags[MayDegrade],
+			item 1 tags[MixingUtensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 1 [Base.BakingTray],
+			item 2 tags[BakingFat],
+			item 10 tags[Sugar],
+			item 2 tags[Egg] flags[IsUncookedFoodItem;InheritFoodAge;ItemCount],
+			item 1 [Base.BakingSoda],
+			item 3 tags[Flour],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CookiesSugarDough,
+		}
+	}
+
+    /* recipe Make Shortbread Cookie Dough
+    {
+	   keep [Recipe.GetItemTypes.RollingPin],
+	   keep [Recipe.GetItemTypes.MixingUtensil],
+	   keep Bowl,
+		destroy BakingTray,
+		keep RollingPin,
+		Butter;4,
+		[Recipe.GetItemTypes.Sugar];10,
+	Fluid.Water=1.0,
+		Flour2;3,
+
+		Result:CookiesShortbreadDough,
+		NeedToBeLearn:true,
+		Category:Cooking,
+		Time:50,
+    } */
+
+	craftRecipe MakeShortbreadCookieDough
+	{
+        timedAction = MixingBowl,
+		Time = 50,
+		NeedToBeLearn = True,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:3,
+		AutoLearnAny = Cooking:7,
+		inputs
+		{
+			item 1 tags[RollingPin] mode:keep flags[MayDegrade],
+			item 1 tags[MixingUtensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 1 [Base.BakingTray],
+			item 4 [Base.Butter],
+			item 10 tags[Sugar],
+			item 3 tags[Flour],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 Base.CookiesShortbreadDough,
+		}
+	}
+
+    /* recipe Prepare Muffins
+    {
+	   keep [Recipe.GetItemTypes.MixingUtensil],
+	   keep Bowl,
+        destroy MuffinTray,
+        [Recipe.GetItemTypes.Egg]=2,
+        [Recipe.GetItemTypes.BakingFat];2,
+        [Recipe.GetItemTypes.CowMilk];5,
+        [Recipe.GetItemTypes.Sugar];5,
+        [Recipe.GetItemTypes.Flour];6,
+
+        Result:BakingTray_Muffin,
+		NeedToBeLearn:true,
+        Category:Cooking,
+        Time:60,
+        OnTest:Recipe.OnTest.WholeEgg,
+		Tooltip:Tooltip_Recipe_RequireWholeEggs,
+    } */
+
+	craftRecipe PrepareMuffins
+	{
+        timedAction = MixingBowl,
+		Time = 60,
+		NeedToBeLearn = True,
+		ToolTip = Tooltip_Recipe_RequireWholeEggs,
+		category = Cooking,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:3,
+		AutoLearnAny = Cooking:7,
+		inputs
+		{
+			item 1 tags[MixingUtensil] mode:keep flags[MayDegradeVeryLight],
+			item 1 [Base.Bowl;Base.ClayBowl] mode:keep,
+			item 1 [Base.MuffinTray],
+			item 2 tags[Egg] flags[IsUncookedFoodItem;InheritFoodAge;ItemCount],
+			item 2 tags[BakingFat],
+			item 5 tags[Sugar],
+			item 6 tags[Flour],
+			item 1 [*],
+			-fluid 1.0 [CowMilk],
+		}
+		outputs
+		{
+			item 1 Base.BakingTray_Muffin,
+		}
+	}
+
+	craftRecipe Get6Muffins
+	{
+        timedAction = Making,
+		Time = 60,
+		OnCreate = Recipe.OnCreate.GetMuffin,
+		ToolTip = Tooltip_Recipe_MustCookedGet,
+		category = Cooking,
+		Tags = InHandCraft;Cooking,
+		inputs
+		{
+			item 1 [Base.BakingTray_Muffin_Recipe;Base.BakingTray_Muffin] flags[IsCookedFoodItem;InheritFoodAge;ItemCount],
+		}
+		outputs
+		{
+			item 6 Base.MuffinGeneric,
+			item 1 Base.MuffinTray,
+		}
+	}
+}

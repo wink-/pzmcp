@@ -1,0 +1,1489 @@
+module Base
+{
+	item LongJohns_Bottoms
+	{
+		DisplayName = Long Johns Bottoms,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersLongjohns,
+		BloodLocation = Trousers,
+		BodyLocation = Legs1,
+		ClothingItem = LongJohns_Bottoms,
+		FabricType = Cotton,
+		Insulation = 0.3,
+		WindResistance = 0.15,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewLongjohns;SewLongjohnsBottom,
+	}
+	
+	item Shorts_CamoGreenLong
+	{
+		DisplayName = Military Shorts - Green Camo,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersCamoGreen,
+		BloodLocation = Trousers,
+		BodyLocation = ShortPants,
+		ClothingItem = Shorts_CamoGreenLong,
+		FabricType = Cotton,
+		Insulation = 0.5,
+		WaterResistance = 0.3,
+		WindResistance = 0.3,
+		WorldStaticModel = LongShorts_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Shorts_CamoUrbanLong
+	{
+		DisplayName = Military Shorts - Urban Camo,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersCamoGrey,
+		BloodLocation = Trousers,
+		BodyLocation = ShortPants,
+		ClothingItem = Shorts_CamoUrbanLong,
+		FabricType = Cotton,
+		Insulation = 0.5,
+		WaterResistance = 0.3,
+		WindResistance = 0.3,
+		WorldStaticModel = LongShorts_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Shorts_OliveDrabLong
+	{
+		DisplayName = Military Shorts - Olive Drab,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = ShortsLong_CamoOlive,
+		BloodLocation = Trousers,
+		BodyLocation = ShortPants,
+		ClothingItem = Shorts_OliveDrabLong,
+		FabricType = Cotton,
+		Insulation = 0.5,
+		WaterResistance = 0.3,
+		WindResistance = 0.3,
+		WorldStaticModel = LongShorts_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Shorts_CamoDesertNewLong
+	{
+		DisplayName = Military Shorts - Desert Camo,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = ShortsLong_CamoDesert,
+		BloodLocation = Trousers,
+		BodyLocation = ShortPants,
+		ClothingItem = Shorts_CamoDesertNewLong,
+		FabricType = Cotton,
+		Insulation = 0.5,
+		WaterResistance = 0.3,
+		WindResistance = 0.3,
+		WorldStaticModel = LongShorts_Ground,
+		Tags = RipClothingCotton;IgnoreZombieDensity,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Shorts_CamoMiliusLong
+	{
+		DisplayName = Military Shorts - Foreign Camo,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = ShortsLong_CamoSpots,
+		BloodLocation = Trousers,
+		BodyLocation = ShortPants,
+		ClothingItem = Shorts_CamoMiliusLong,
+		FabricType = Cotton,
+		Insulation = 0.5,
+		WaterResistance = 0.3,
+		WindResistance = 0.3,
+		WorldStaticModel = LongShorts_Ground,
+		Tags = RipClothingCotton;IgnoreZombieDensity,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Shorts_CamoTigerStripeLong
+	{
+		DisplayName = Military Shorts - Tiger Stripe Camo,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = ShortsLong_CamoStripes,
+		BloodLocation = Trousers,
+		BodyLocation = ShortPants,
+		ClothingItem = Shorts_CamoTigerStripeLong,
+		FabricType = Cotton,
+		Insulation = 0.5,
+		WaterResistance = 0.3,
+		WindResistance = 0.3,
+		WorldStaticModel = LongShorts_Ground,
+		Tags = RipClothingCotton;IgnoreZombieDensity,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Shorts_LongDenim
+	{
+		DisplayName = Long Shorts - Denim,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = TrousersDenimBlue;TrousersDenimBlack;TrousersDenimLightBlue,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = ShortPants,
+		ClothingItem = Shorts_LongDenim,
+		FabricType = Denim,
+		Insulation = 0.45,
+		ScratchDefense = 20,
+		WindResistance = 0.45,
+		WorldStaticModel = LongShorts_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Shorts_LongDenim_Punk
+	{
+		DisplayName = Long Shorts - Denim with Patches,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = ShortsLongDenimBlack_Logo1;ShortsLongDenimBlack_Logo2,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = ShortPants,
+		ClothingItem = Shorts_LongDenim_Punk,
+		FabricType = Denim,
+		Insulation = 0.45,
+		ScratchDefense = 20,
+		WindResistance = 0.45,
+		WorldStaticModel = LongShorts_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Shorts_LongSport
+	{
+		DisplayName = Long Shorts - Sport,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = ShortsLongAthleticBlue;ShortsLongAthleticGreen;ShortsLongAthleticRed;ShortsLongAthleticYellow,
+		BloodLocation = Trousers,
+		BodyLocation = ShortPants,
+		ClothingItem = Shorts_LongSport,
+		FabricType = Cotton,
+		Insulation = 0.25,
+		WindResistance = 0.1,
+		WorldStaticModel = LongShorts_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Shorts_LongSport_Red
+	{
+		DisplayName = Long Shorts - Sport,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = ShortsLongAthleticRed,
+		BloodLocation = Trousers,
+		BodyLocation = ShortPants,
+		ClothingItem = Shorts_LongSport_Red,
+		FabricType = Cotton,
+		Insulation = 0.25,
+		WindResistance = 0.1,
+		WorldStaticModel = LongShorts_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Shorts_BoxingRed
+	{
+		DisplayName = Boxing Shorts,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = BoxingShorts_Red,
+		BloodLocation = ShortsShort,
+		BodyLocation = ShortsShort,
+		ClothingItem = Shorts_BoxingRed,
+		Insulation = 0.10,
+		WindResistance = 0.1,
+		WorldStaticModel = ShortShorts_Ground,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Shorts_BoxingBlue
+	{
+		DisplayName = Boxing Shorts,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = BoxingShorts_Blue,
+		BloodLocation = ShortsShort,
+		BodyLocation = ShortsShort,
+		ClothingItem = Shorts_BoxingBlue,
+		Insulation = 0.10,
+		WindResistance = 0.1,
+		WorldStaticModel = ShortShorts_Ground,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Shorts_ShortDenim
+	{
+		DisplayName = Shorts - Denim,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = ShortsDenimDark;ShortsDenimBlack;ShortsDenim,
+		BiteDefense = 10,
+		BloodLocation = ShortsShort,
+		BodyLocation = ShortsShort,
+		ClothingItem = Shorts_ShortDenim,
+		FabricType = Denim,
+		Insulation = 0.30,
+		ScratchDefense = 20,
+		WindResistance = 0.15,
+		WorldStaticModel = ShortShorts_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Shorts_ShortFormal
+	{
+		DisplayName = Shorts,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = ShortsWhite,
+		BloodLocation = ShortsShort,
+		BodyLocation = ShortsShort,
+		ClothingItem = Shorts_ShortFormal,
+		FabricType = Cotton,
+		Insulation = 0.15,
+		WindResistance = 0.10,
+		WorldStaticModel = ShortShorts_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Shorts_ShortSport
+	{
+		DisplayName = Shorts - Sport,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = ShortsAthleticBlue;ShortsAthleticGreen;ShortsAthleticRed;ShortsAthleticYellow,
+		BloodLocation = ShortsShort,
+		BodyLocation = ShortsShort,
+		ClothingItem = Shorts_ShortSport,
+		FabricType = Cotton,
+		Insulation = 0.15,
+		WindResistance = 0.05,
+		WorldStaticModel = ShortShorts_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Skirt_Knees
+	{
+		DisplayName = Skirt - Knee-length,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtGeneric,
+		BloodLocation = ShortsShort,
+		BodyLocation = Skirt,
+		ClothingItem = Skirt_Knees,
+		FabricType = Cotton,
+		Insulation = 0.1,
+		WindResistance = 0.01,
+		WorldStaticModel = Skirt_Short_Ground,
+		Tags = CanBeDyed;RipClothingCotton;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers,
+	}
+	
+	item Skirt_Mini
+	{
+		DisplayName = Skirt - Mini,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtGeneric,
+		BloodLocation = ShortsShort,
+		BodyLocation = Skirt,
+		ClothingItem = Skirt_Mini,
+		FabricType = Cotton,
+		Insulation = 0.1,
+		WindResistance = 0.01,
+		WorldStaticModel = Skirt_Short_Ground,
+		Tags = CanBeDyed;RipClothingCotton;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers,
+	}
+	
+	item Skirt_Long
+	{
+		DisplayName = Skirt - Long,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtLongWhite,
+		BloodLocation = Trousers,
+		BodyLocation = LongSkirt,
+		ClothingItem = Skirt_Long,
+		FabricType = Cotton,
+		Insulation = 0.3,
+		RunSpeedModifier = 0.93,
+		WindResistance = 0.2,
+		WorldStaticModel = Skirt_Long_Ground,
+		Tags = CanBeDyed;RipClothingCotton;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers,
+	}
+	
+	item Skirt_Normal
+	{
+		DisplayName = Skirt,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtGeneric,
+		BloodLocation = Trousers,
+		BodyLocation = LongSkirt,
+		ClothingItem = Skirt_Normal,
+		FabricType = Cotton,
+		Insulation = 0.25,
+		RunSpeedModifier = 0.93,
+		WindResistance = 0.1,
+		WorldStaticModel = Skirt_Mid_Ground,
+		Tags = CanBeDyed;RipClothingCotton;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers,
+	}
+	
+	item Skirt_Short
+	{
+		DisplayName = Skirt - Short,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = SkirtGeneric,
+		BloodLocation = ShortsShort,
+		BodyLocation = Skirt,
+		ClothingItem = Skirt_Short,
+		FabricType = Cotton,
+		Insulation = 0.05,
+		WorldStaticModel = Skirt_Short_Ground,
+		Tags = CanBeDyed;RipClothingCotton;NoRagdoll,
+        ResearchableRecipes = SewDressKnees;SewDressLong;SewSkirtKnees;SewSkirtLong;SewTrousers,
+	}
+	
+	item Ghillie_Trousers
+	{
+		DisplayName = Ghillie Suit - Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersCamoGreen,
+		Icon = TrousersGhillie,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Ghillie_Trousers,
+		Insulation = 0.70,
+		RunSpeedModifier = 0.85,
+		ScratchDefense = 20,
+		WaterResistance = 0.35,
+		WindResistance = 0.65,
+		WorldStaticModel = GhillieTrousers_Ground,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers
+	{
+		DisplayName = Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_White,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers,
+		FabricType = Cotton,
+		Insulation = 0.50,
+		WindResistance = 0.40,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item TrousersMesh_DenimLight
+	{
+		DisplayName = Jeans,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersDenimLightBlue,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants_Skinny,
+		ClothingItem = TrousersMesh_DenimLight,
+		FabricType = Denim,
+		Insulation = 0.65,
+		RunSpeedModifier = 0.98,
+		ScratchDefense = 20,
+		WindResistance = 0.60,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item TrousersMesh_Leather
+	{
+		DisplayName = Pants - Skinny Leather,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_Leather,
+		BiteDefense = 20,
+		BloodLocation = Trousers,
+		BodyLocation = Pants_Skinny,
+		ClothingItem = TrousersMesh_Leather,
+		FabricType = Leather,
+		Insulation = 0.65,
+		RunSpeedModifier = 0.98,
+		ScratchDefense = 40,
+		WindResistance = 0.60,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingLeather,
+        ResearchableRecipes = SewTrousers;SewHidePants;SewLeatherPants;SewSheepskinPants,
+	}
+	
+	item Trousers_LeatherBlack
+	{
+		DisplayName = Pants - Leather,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_Leather,
+		BiteDefense = 20,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_LeatherBlack,
+		FabricType = Leather,
+		Insulation = 0.65,
+		RunSpeedModifier = 0.98,
+		ScratchDefense = 40,
+		WindResistance = 0.60,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingLeather,
+        ResearchableRecipes = SewTrousers;SewHidePants;SewLeatherPants;SewSheepskinPants,
+	}
+	
+	item Trousers_CamoDesert
+	{
+		DisplayName = Military Pants - Desert Camo,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersCamoSand,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_CamoDesert,
+		FabricType = Cotton,
+		Insulation = 0.3,
+		ScratchDefense = 20,
+		WindResistance = 0.1,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Trousers_CamoDesertNew
+	{
+		DisplayName = Military Pants - Desert Camo,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_CamoDesert,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_CamoDesertNew,
+		FabricType = Cotton,
+		Insulation = 0.3,
+		ScratchDefense = 20,
+		WindResistance = 0.1,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton;IgnoreZombieDensity,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_CamoGreen
+	{
+		DisplayName = Military Pants - Green Camo,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersCamoGreen,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_CamoGreen,
+		FabricType = Cotton,
+		Insulation = 0.45,
+		ScratchDefense = 20,
+		WaterResistance = 0.45,
+		WindResistance = 0.3,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_CamoUrban
+	{
+		DisplayName = Military Pants - Urban Camo,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersCamoGrey,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_CamoUrban,
+		FabricType = Cotton,
+		Insulation = 0.60,
+		ScratchDefense = 20,
+		WaterResistance = 0.35,
+		WindResistance = 0.30,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Trousers_OliveDrab
+	{
+		DisplayName = Military Pants - Olive Drab,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_CamoOlive,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_OliveDrab,
+		FabricType = Cotton,
+		Insulation = 0.45,
+		ScratchDefense = 20,
+		WaterResistance = 0.45,
+		WindResistance = 0.3,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Trousers_CamoMilius
+	{
+		DisplayName = Military Pants - Foreign Camo,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_CamoSpots,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_CamoMilius,
+		FabricType = Cotton,
+		Insulation = 0.60,
+		ScratchDefense = 20,
+		WaterResistance = 0.35,
+		WindResistance = 0.30,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton;IgnoreZombieDensity,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Trousers_CamoTigerStripe
+	{
+		DisplayName = Military Pants - Tiger Stripe Camo,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_CamoStripes,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_CamoTigerStripe,
+		FabricType = Cotton,
+		Insulation = 0.60,
+		ScratchDefense = 20,
+		WaterResistance = 0.35,
+		WindResistance = 0.30,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton;IgnoreZombieDensity,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_Chef
+	{
+		DisplayName = Pants - Chef,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersChef,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Chef,
+		FabricType = Cotton,
+		Insulation = 0.4,
+		WindResistance = 0.1,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_DefaultTEXTURE
+	{
+		DisplayName = Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersDenimBlue,
+		BloodLocation = Trousers,
+		BodyLocation = Pants_Skinny,
+		ClothingItem = Trousers_DefaultTEXTURE,
+		FabricType = Cotton,
+		Insulation = 0.5,
+		WindResistance = 0.25,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_DefaultTEXTURE_HUE
+	{
+		DisplayName = Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersDenimBlack,
+		BloodLocation = Trousers,
+		BodyLocation = Pants_Skinny,
+		ClothingItem = Trousers_DefaultTEXTURE_HUE,
+		FabricType = Cotton,
+		Insulation = 0.5,
+		WindResistance = 0.25,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_DefaultTEXTURE_TINT
+	{
+		DisplayName = Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersDenimBlue,
+		BloodLocation = Trousers,
+		BodyLocation = Pants_Skinny,
+		ClothingItem = Trousers_DefaultTEXTURE_TINT,
+		FabricType = Cotton,
+		Insulation = 0.5,
+		WindResistance = 0.25,
+		WorldStaticModel = Trousers_Ground,
+		Tags = CanBeDyed;RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_Denim
+	{
+		DisplayName = Jeans,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = TrousersDenimBlue;TrousersDenimBlack;TrousersDenimLightBlue,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Denim,
+		FabricType = Denim,
+		Insulation = 0.7,
+		RunSpeedModifier = 0.98,
+		ScratchDefense = 20,
+		WindResistance = 0.55,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Trousers_Denim_Punk
+	{
+		DisplayName = Jeans - with Patches,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = TrousersDenimBlack_Logo2;TrousersDenimBlack_Logo1,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Denim_Punk,
+		FabricType = Denim,
+		Insulation = 0.7,
+		RunSpeedModifier = 0.98,
+		ScratchDefense = 20,
+		WindResistance = 0.55,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_Fireman
+	{
+		DisplayName = Pants - Firefighter,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 4,
+		Icon = TrousersFireman,
+		BiteDefense = 20,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Fireman,
+		Insulation = 0.85,
+		RunSpeedModifier = 0.82,
+		ScratchDefense = 30,
+		Tags = PickAramidThread,
+		WaterResistance = 0.8,
+		WindResistance = 0.85,
+		WorldStaticModel = Trousers_Ground,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_JeanBaggy
+	{
+		DisplayName = Jeans - Baggy,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = TrousersDenimBlue;TrousersDenimBlack;TrousersDenimLightBlue,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_JeanBaggy,
+		FabricType = Denim,
+		Insulation = 0.60,
+		RunSpeedModifier = 0.98,
+		ScratchDefense = 20,
+		WindResistance = 0.65,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Trousers_JeanBaggy_Punk
+	{
+		DisplayName = Jeans - Baggy with Patches,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = TrousersDenimBlack_Logo2;TrousersDenimBlack_Logo1,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_JeanBaggy_Punk,
+		FabricType = Denim,
+		Insulation = 0.60,
+		RunSpeedModifier = 0.98,
+		ScratchDefense = 20,
+		WindResistance = 0.65,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_Padded
+	{
+		DisplayName = Pants - Padded,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = PaddedTrousers_White,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Padded,
+		Insulation = 1.0,
+		RunSpeedModifier = 0.95,
+		ScratchDefense = 20,
+		WaterResistance = 0.6,
+		WindResistance = 1.0,
+		WorldStaticModel = Trousers_Ground,
+        ResearchableRecipes = SewSheepskinPants;SewTrousers,
+	}
+
+	item Trousers_Padded_HuntingCamo
+	{
+		DisplayName = Pants - Padded Hunting Camo,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = PaddedTrousers_CamoTree,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Padded_HuntingCamo,
+		Insulation = 1.0,
+		RunSpeedModifier = 0.95,
+		ScratchDefense = 20,
+		WaterResistance = 0.6,
+		WindResistance = 1.0,
+		WorldStaticModel = Trousers_Ground,
+        ResearchableRecipes = SewSheepskinPants;SewTrousers,
+	}
+	
+	item Trousers_Police
+	{
+		DisplayName = Pants - Police Deputy,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersPoliceBlue,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Police,
+		FabricType = Cotton,
+		Insulation = 0.6,
+		WindResistance = 0.3,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Trousers_Sheriff
+	{
+		DisplayName = Pants - Sheriff Deputy,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersSheriff,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Sheriff,
+		FabricType = Cotton,
+		Insulation = 0.6,
+		WindResistance = 0.3,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_PoliceGrey
+	{
+		DisplayName =  Pants - Police Trooper,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersPoliceGrey,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_PoliceGrey,
+		FabricType = Cotton,
+		Insulation = 0.55,
+		ScratchDefense = 10,
+		WindResistance = 0.4,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_PrisonGuard
+	{
+		DisplayName = Pants - Prison Guard,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersPrisonGuard,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_PrisonGuard,
+		FabricType = Cotton,
+		Insulation = 0.5,
+		ScratchDefense = 10,
+		WindResistance = 0.5,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_Ranger
+	{
+		DisplayName = Pants - Ranger,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersRanger,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Ranger,
+		FabricType = Cotton,
+		Insulation = 0.75,
+		ScratchDefense = 10,
+		WaterResistance = 0.35,
+		WindResistance = 0.75,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_Santa
+	{
+		DisplayName = Pants - Santa Suit,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersSantaRed,
+		BloodLocation = Trousers,
+		BodyLocation = Pants_Skinny,
+		ClothingItem = Trousers_Santa,
+		FabricType = Cotton,
+		Insulation = 0.9,
+		ScratchDefense = 10,
+		WindResistance = 0.6,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_SantaGreen
+	{
+		DisplayName = Pants - Green Santa Suit,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersSantaGreen,
+		BloodLocation = Trousers,
+		BodyLocation = Pants_Skinny,
+		ClothingItem = Trousers_SantaGreen,
+		FabricType = Cotton,
+		Insulation = 0.9,
+		ScratchDefense = 10,
+		WindResistance = 0.6,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_Scrubs
+	{
+		DisplayName = Pants - Medical,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = TrousersScrubsBlue;TrousersScrubsGreen,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Scrubs,
+		FabricType = Cotton,
+		Insulation = 0.2,
+		WindResistance = 0.1,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_Suit
+	{
+		DisplayName = Pants - Suit,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersSuitBlack,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Suit,
+		FabricType = Cotton,
+		Insulation = 0.4,
+		ScratchDefense = 10,
+		WindResistance = 0.2,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_SuitTEXTURE
+	{
+		DisplayName = Pants - Suit,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersSuitBlack,
+		BloodLocation = Trousers,
+		BodyLocation = Pants_Skinny,
+		ClothingItem = Trousers_SuitTEXTURE,
+		FabricType = Cotton,
+		Insulation = 0.4,
+		ScratchDefense = 10,
+		WindResistance = 0.3,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_SuitWhite
+	{
+		DisplayName = Pants - Suit,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersSuitWhite,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_SuitWhite,
+		FabricType = Cotton,
+		Insulation = 0.4,
+		ScratchDefense = 10,
+		WindResistance = 0.45,
+		WorldStaticModel = Trousers_Ground,
+		Tags = CanBeDyed;RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Trousers_SuitWhite_White
+	{
+		DisplayName = Pants - Suit,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersSuitWhite,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_SuitWhite_White,
+		FabricType = Cotton,
+		Insulation = 0.4,
+		ScratchDefense = 10,
+		WindResistance = 0.45,
+		WorldStaticModel = Trousers_Ground,
+		Tags = CanBeDyed;RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_WhiteTEXTURE
+	{
+		DisplayName = Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersGeneric,
+		BloodLocation = Trousers,
+		BodyLocation = Pants_Skinny,
+		ClothingItem = Trousers_WhiteTEXTURE,
+		FabricType = Cotton,
+		Insulation = 0.55,
+		ScratchDefense = 10,
+		WindResistance = 0.3,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_WhiteTINT
+	{
+		DisplayName = Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersGeneric,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_WhiteTINT,
+		FabricType = Cotton,
+		Insulation = 0.55,
+		ScratchDefense = 10,
+		WindResistance = 0.3,
+		WorldStaticModel = Trousers_Ground,
+		Tags = CanBeDyed;RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Dungarees
+	{
+		DisplayName = Overalls,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = OverallsDenim,
+		BiteDefense = 10,
+		BloodLocation = Trousers;ShirtNoSleeves,
+		BodyLocation = PantsExtra,
+		ClothingItem = Dungarees,
+		FabricType = Denim,
+		Insulation = 0.65,
+		RunSpeedModifier = 0.95,
+		ScratchDefense = 20,
+		WaterResistance = 0.20,
+		WindResistance = 0.5,
+		WorldStaticModel = Dungarees_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Dungarees_HuntingCamo
+	{
+		DisplayName = Overalls - Hunting Camo,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Overalls_CamoTree,
+		BiteDefense = 10,
+		BloodLocation = Trousers;ShirtNoSleeves,
+		BodyLocation = PantsExtra,
+		ClothingItem = Dungarees_HuntingCamo,
+		FabricType = Denim,
+		Insulation = 0.65,
+		RunSpeedModifier = 0.95,
+		ScratchDefense = 20,
+		WaterResistance = 0.20,
+		WindResistance = 0.5,
+		WorldStaticModel = Dungarees_Ground,
+		Tags = RipClothingDenim,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_ArmyService
+	{
+		DisplayName = Pants - Army,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrouserstArmyDress,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_ArmyService,
+		FabricType = Cotton,
+		Insulation = 0.7,
+		ScratchDefense = 10,
+		WindResistance = 0.45,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_Black
+	{
+		DisplayName = Pants - Black,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Black,
+		ColorBlue = 37,
+		ColorGreen = 37,
+		ColorRed = 37,
+		FabricType = Cotton,
+		Insulation = 0.5,
+		ScratchDefense = 10,
+		WindResistance = 0.5,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_NavyBlue
+	{
+		DisplayName = Pants - Navy Blue,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TrousersGeneric,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_NavyBlue,
+		ColorBlue = 70,
+		ColorGreen = 37,
+		ColorRed = 37,
+		FabricType = Cotton,
+		Insulation = 0.35,
+		ScratchDefense = 10,
+		WindResistance = 0.5,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_Shellsuit_Black
+	{
+		DisplayName = Pants - Shell Suit,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TracksuitPantsBlack,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Shellsuit_Black,
+		Insulation = 0.30,
+		ScratchDefense = 5,
+		WindResistance = 0.4,
+		WorldStaticModel = Trousers_Shellsuit_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_Shellsuit_Blue
+	{
+		DisplayName = Pants - Shell Suit,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TracksuitPantsBlue,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Shellsuit_Blue,
+		Insulation = 0.30,
+		ScratchDefense = 5,
+		WindResistance = 0.4,
+		WorldStaticModel = Trousers_Shellsuit_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_Shellsuit_Green
+	{
+		DisplayName = Pants - Shell Suit,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TracksuitPantsGreen,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Shellsuit_Green,
+		Insulation = 0.30,
+		ScratchDefense = 5,
+		WindResistance = 0.4,
+		WorldStaticModel = Trousers_Shellsuit_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_Shellsuit_Pink
+	{
+		DisplayName = Pants - Shell Suit,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TracksuitPantsPink,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Shellsuit_Pink,
+		Insulation = 0.30,
+		ScratchDefense = 5,
+		WindResistance = 0.4,
+		WorldStaticModel = Trousers_Shellsuit_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_Shellsuit_Teal
+	{
+		DisplayName = Pants - Shell Suit,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TracksuitPantsTeal,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Shellsuit_Teal,
+		Insulation = 0.30,
+		ScratchDefense = 5,
+		WindResistance = 0.4,
+		WorldStaticModel = Trousers_Shellsuit_Ground,
+		Tags = IsFireFuel;IsFireTinder,
+        ResearchableRecipes = SewTrousers,
+	}
+	
+	item Trousers_Shellsuit_TINT
+	{
+		DisplayName = Pants - Shell Suit,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = TracksuitPantsGeneric,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Shellsuit_White,
+		Insulation = 0.30,
+		ScratchDefense = 5,
+		WindResistance = 0.4,
+		WorldStaticModel = Trousers_Shellsuit_Ground,
+		Tags = CanBeDyed;IsFireFuel;IsFireTinder,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Trousers_Sport
+	{
+		DisplayName = Pants - Sport,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = Pants_Athletic_Blue;Pants_Athletic_Green;Pants_Athletic_Red;Pants_Athletic_Yellow,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_Sport,
+		Insulation = 0.30,
+		WindResistance = 0.15,
+		WorldStaticModel = Trousers_Ground,
+		FabricType = Cotton,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+
+    /* generic version */
+	item Shorts_FootballPants
+	{
+		DisplayName = Padded Football Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = FootballPants_Black;FootballPants_Gold;FootballPants_White,
+		BloodLocation = Trousers,
+		BodyLocation = ShortPants,
+		ClothingItem = Shorts_FootballPants,
+		CanHaveHoles = TRUE,
+		Insulation = 0.25,
+		WindResistance = 0.1,
+		WorldStaticModel = LongShorts_Ground,
+		DiscomfortModifier = 0.07,
+		BiteDefense = 20,
+		ScratchDefense = 40,
+		Tags = IgnoreZombieDensity,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Shorts_FootballPants_Black
+	{
+		DisplayName = Padded Football Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = FootballPants_Black,
+		BloodLocation = Trousers,
+		BodyLocation = ShortPants,
+		ClothingItem = Shorts_FootballPants_Black,
+		CanHaveHoles = TRUE,
+		Insulation = 0.25,
+		WindResistance = 0.1,
+		WorldStaticModel = LongShorts_Ground,
+		DiscomfortModifier = 0.07,
+		BiteDefense = 20,
+		ScratchDefense = 40,
+		Tags = IgnoreZombieDensity,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Shorts_FootballPants_Gold
+	{
+		DisplayName = Padded Football Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = FootballPants_Gold,
+		BloodLocation = Trousers,
+		BodyLocation = ShortPants,
+		ClothingItem = Shorts_FootballPants_Gold,
+		CanHaveHoles = TRUE,
+		Insulation = 0.25,
+		WindResistance = 0.1,
+		WorldStaticModel = LongShorts_Ground,
+		DiscomfortModifier = 0.07,
+		BiteDefense = 20,
+		ScratchDefense = 40,
+		Tags = IgnoreZombieDensity,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Shorts_FootballPants_White
+	{
+		DisplayName = Padded Football Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = FootballPants_White,
+		BloodLocation = Trousers,
+		BodyLocation = ShortPants,
+		ClothingItem = Shorts_FootballPants_White,
+		CanHaveHoles = TRUE,
+		Insulation = 0.25,
+		WindResistance = 0.1,
+		WorldStaticModel = LongShorts_Ground,
+		DiscomfortModifier = 0.07,
+		BiteDefense = 20,
+		ScratchDefense = 40,
+		Tags = IgnoreZombieDensity,
+        ResearchableRecipes = SewTrousers,
+	}
+
+    /* generic version */
+	item Shorts_HockeyPants
+	{
+		DisplayName = Padded Ice Hockey Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		IconsForTexture = HockeyShorts_Black;HockeyShorts_Red;HockeyShorts_Blue;HockeyShorts_White;HockeyShorts_White,
+		BloodLocation = Trousers,
+		BodyLocation = ShortsShort,
+		ClothingItem = Shorts_HockeyPants,
+		CanHaveHoles = TRUE,
+		FabricType = Cotton,
+		Insulation = 0.25,
+		WindResistance = 0.1,
+		WorldStaticModel = LongShorts_Ground,
+        DiscomfortModifier = 0.07,
+		BiteDefense = 30,
+		ScratchDefense = 50,
+		Tags = IgnoreZombieDensity,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Shorts_HockeyPants_Black
+	{
+		DisplayName = Padded Ice Hockey Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = HockeyShorts_Black,
+		BloodLocation = Trousers,
+		BodyLocation = ShortsShort,
+		ClothingItem = Shorts_HockeyPants_Black,
+		CanHaveHoles = TRUE,
+		FabricType = Cotton,
+		Insulation = 0.25,
+		WindResistance = 0.1,
+		WorldStaticModel = LongShorts_Ground,
+        DiscomfortModifier = 0.07,
+		BiteDefense = 30,
+		ScratchDefense = 50,
+		Tags = IgnoreZombieDensity,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Shorts_HockeyPants_Red
+	{
+		DisplayName = Padded Ice Hockey Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = HockeyShorts_Red,
+		BloodLocation = Trousers,
+		BodyLocation = ShortsShort,
+		ClothingItem = Shorts_HockeyPants_Red,
+		CanHaveHoles = TRUE,
+		FabricType = Cotton,
+		Insulation = 0.25,
+		WindResistance = 0.1,
+		WorldStaticModel = LongShorts_Ground,
+        DiscomfortModifier = 0.07,
+		BiteDefense = 30,
+		ScratchDefense = 50,
+		Tags = IgnoreZombieDensity,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Shorts_HockeyPants_UniBlue
+	{
+		DisplayName = Padded Ice Hockey Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = HockeyShorts_Blue,
+		BloodLocation = Trousers,
+		BodyLocation = ShortsShort,
+		ClothingItem = Shorts_HockeyPants_UniBlue,
+		CanHaveHoles = TRUE,
+		FabricType = Cotton,
+		Insulation = 0.25,
+		WindResistance = 0.1,
+		WorldStaticModel = LongShorts_Ground,
+		DiscomfortModifier = 0.07,
+		BiteDefense = 30,
+		ScratchDefense = 50,
+		Tags = IgnoreZombieDensity,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Shorts_HockeyPants_White
+	{
+		DisplayName = Padded Ice Hockey Pants,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = HockeyShorts_White,
+		BloodLocation = Trousers,
+		BodyLocation = ShortsShort,
+		ClothingItem = Shorts_HockeyPants_White,
+		CanHaveHoles = TRUE,
+		FabricType = Cotton,
+		Insulation = 0.25,
+		WindResistance = 0.1,
+		WorldStaticModel = LongShorts_Ground,
+		DiscomfortModifier = 0.07,
+		BiteDefense = 30,
+		ScratchDefense = 50,
+		Tags = IgnoreZombieDensity,
+        ResearchableRecipes = SewTrousers,
+	}
+
+	item Trousers_HuntingCamo
+	{
+		DisplayName = Pants - Hunting Camo,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Trousers_CamoTree,
+		BiteDefense = 10,
+		BloodLocation = Trousers,
+		BodyLocation = Pants,
+		ClothingItem = Trousers_HuntingCamo,
+		FabricType = Cotton,
+		Insulation = 0.45,
+		ScratchDefense = 20,
+		WaterResistance = 0.45,
+		WindResistance = 0.3,
+		WorldStaticModel = Trousers_Ground,
+		Tags = RipClothingCotton,
+        ResearchableRecipes = SewTrousers,
+	}
+
+}

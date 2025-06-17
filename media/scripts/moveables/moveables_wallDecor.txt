@@ -1,0 +1,52 @@
+module Base
+{
+	item Mov_CorkBoard
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Cork Noteboard,
+		WorldObjectSprite = location_business_office_generic_01_7,
+	}
+	
+	item Mov_HuntingTrophy
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+        Icon = Head_DeerMale,
+		Weight = 0.5,
+		DisplayName = Mounted Deer Trophy,
+		WorldObjectSprite = camping_01_18,
+	}
+	
+	item Mov_MapUSA
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Map of USA,
+		WorldObjectSprite = location_community_school_01_22,
+	}
+	
+	item Mov_WallClock
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Wall Clock,
+		WorldObjectSprite = location_community_school_01_32,
+	}
+
+	item Mov_SquareWallClock
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Square Wall Clock,
+		WorldObjectSprite = walls_decoration_01_105,
+	}
+}

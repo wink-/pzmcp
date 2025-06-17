@@ -1,0 +1,467 @@
+module Base
+{
+
+    	item SleepingBag_RedPlaid
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		Icon				=		Sleepingbag4_Open,
+		Weight		  	= 5.0,
+		DisplayName			= Sleeping Bag,
+		WorldObjectSprite	= camping_02_0,
+		StaticModel  = SleepingBag_Rolled_Red,
+		Tags = TentBed;IsFireFuel;IsFireTinder,
+		Tooltip = Tooltip_item_NeedsPackedSleepingBag,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_BluePlaid
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		Icon				=		Sleepingbag3_Open,
+		Weight		  	= 5.0,
+		DisplayName			= Sleeping Bag,
+		WorldObjectSprite	= camping_02_8,
+		StaticModel  = SleepingBag_Rolled_Green,
+		Tags = TentBed;IsFireFuel;IsFireTinder,
+		Tooltip = Tooltip_item_NeedsPackedSleepingBag,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_Green
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		Icon				=		Sleepingbag2_Open,
+		Weight		  	= 5.0,
+		DisplayName			= Sleeping Bag,
+		WorldObjectSprite	= camping_02_16,
+		StaticModel  = SleepingBag_Rolled_Green,
+		Tags = TentBed;IsFireFuel;IsFireTinder,
+		Tooltip = Tooltip_item_NeedsPackedSleepingBag,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_GreenPlaid
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		Icon				=		Sleepingbag1_Open,
+		Weight		  	= 5.0,
+		DisplayName			= Sleeping Bag,
+		WorldObjectSprite	= camping_02_24,
+		StaticModel  = SleepingBag_Rolled_Red,
+		Tags = TentBed;IsFireFuel;IsFireTinder,
+		Tooltip = Tooltip_item_NeedsPackedSleepingBag,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+    	item SleepingBag_Camo
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		Icon				=		Sleepingbag9_Open,
+		Weight		  	= 5.0,
+		DisplayName			= Sleeping Bag,
+		WorldObjectSprite	= camping_02_32,
+		StaticModel  = SleepingBag_Rolled_Camo,
+		Tags = TentBed;IsFireFuel;IsFireTinder,
+		Tooltip = Tooltip_item_NeedsPackedSleepingBag,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_Cheap_Green
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		Icon				=		Sleepingbag5_Open,
+		Weight		  	= 5.0,
+		DisplayName			= Sleeping Bag - Cheap,
+		WorldObjectSprite	= camping_02_40,
+		StaticModel  = SleepingBag_Rolled_Sty2_Green,
+		Tags = TentBed;IsFireFuel;IsFireTinder,
+		Tooltip = Tooltip_item_NeedsPackedSleepingBag,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_Cheap_Blue
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		Icon				=		Sleepingbag6_Open,
+		Weight		  	= 5.0,
+		DisplayName			= Sleeping Bag - Cheap,
+		WorldObjectSprite	= camping_02_48,
+		StaticModel  = SleepingBag_Rolled_Sty2_Blue,
+		Tags = TentBed;IsFireFuel;IsFireTinder,
+		Tooltip = Tooltip_item_NeedsPackedSleepingBag,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_Cheap_Green2
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		Icon				=		Sleepingbag7_Open,
+		Weight		  	= 5.0,
+		DisplayName			= Sleeping Bag - Cheap,
+		WorldObjectSprite	= camping_02_56,
+		StaticModel  = SleepingBag_Rolled_Sty2_Grey,
+		Tags = TentBed;IsFireFuel;IsFireTinder,
+		Tooltip = Tooltip_item_NeedsPackedSleepingBag,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_Spiffo
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		Icon				=		Sleepingbag8_Open,
+		Weight		  	= 5.0,
+		DisplayName			= Sleeping Bag - Spiffo,
+		WorldObjectSprite	= camping_02_64,
+		StaticModel  = SleepingBag_Rolled_GreenStripe,
+		Tags = TentBed;IsFireFuel;IsFireTinder;IgnoreZombieDensity;IsMemento,
+		Tooltip = Tooltip_item_NeedsPackedSleepingBag,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_HighQuality_Brown
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		Icon				=		Sleepingbag10_Open,
+		Weight		  	= 5.0,
+		DisplayName			= Sleeping Bag - High Quality,
+		WorldObjectSprite	= camping_02_72,
+		StaticModel  = SleepingBag_Rolled_Red,
+		Tags = TentBed;IsFireFuel;IsFireTinder,
+		Tooltip = Tooltip_item_NeedsPackedSleepingBag,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_RedPlaid_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		Sleepingbag4_Rolled,
+		Weight		  	= 3.0,
+		DisplayName			= Sleeping Bag (Packed),
+		WorldObjectSprite	= camping_02_0,
+		AttachmentType = Bedroll,
+		StaticModel  = SleepingBag_Rolled_Red,
+		WorldStaticModel  = SleepingBag_Rolled_Red,
+		Tooltip = Tooltip_item_NeedsUnpackedSleepingBag,
+		Tags = LightWhenAttached;IsFireFuel,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_BluePlaid_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		Sleepingbag3_Rolled,
+		Weight		  	= 3.0,
+		DisplayName			= Sleeping Bag (Packed),
+		WorldObjectSprite	= camping_02_8,
+		AttachmentType = Bedroll,
+		StaticModel  = SleepingBag_Rolled_Green,
+		WorldStaticModel  = SleepingBag_Rolled_Green,
+		Tooltip = Tooltip_item_NeedsUnpackedSleepingBag,
+		Tags = LightWhenAttached;IsFireFuel,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_Green_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		Sleepingbag2_Rolled,
+		Weight		  	= 3.0,
+		DisplayName			= Sleeping Bag (Packed),
+		WorldObjectSprite	= camping_02_8,
+		AttachmentType = Bedroll,
+		StaticModel  = SleepingBag_Rolled_Green,
+		WorldStaticModel  = SleepingBag_Rolled_Green,
+		Tooltip = Tooltip_item_NeedsUnpackedSleepingBag,
+		Tags = LightWhenAttached;IsFireFuel,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_GreenPlaid_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		Sleepingbag1_Rolled,
+		Weight		  	= 3.0,
+		DisplayName			= Sleeping Bag (Packed),
+		WorldObjectSprite	= camping_02_24,
+		AttachmentType = Bedroll,
+		StaticModel  = SleepingBag_Rolled_Red,
+		WorldStaticModel  = SleepingBag_Rolled_Red,
+		Tooltip = Tooltip_item_NeedsUnpackedSleepingBag,
+		Tags = LightWhenAttached;IsFireFuel,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_Camo_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		Sleepingbag9_Rolled,
+		Weight		  	= 3.0,
+		DisplayName			= Sleeping Bag (Packed),
+		WorldObjectSprite	= camping_02_32,
+		AttachmentType = Bedroll,
+		StaticModel  = SleepingBag_Rolled_Camo,
+		WorldStaticModel  = SleepingBag_Rolled_Camo,
+		Tooltip = Tooltip_item_NeedsUnpackedSleepingBag,
+		Tags = LightWhenAttached;IsFireFuel,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_Cheap_Green_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		Sleepingbag5_Rolled,
+		Weight		  	= 3.0,
+		DisplayName			= Sleeping Bag - Cheap (Packed),
+		WorldObjectSprite	= camping_02_40,
+		AttachmentType = Bedroll,
+		StaticModel  = SleepingBag_Rolled_Sty2_Green,
+		WorldStaticModel  = SleepingBag_Rolled_Sty2_Green,
+		Tooltip = Tooltip_item_NeedsUnpackedSleepingBag,
+		Tags = LightWhenAttached;IsFireFuel,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_Cheap_Blue_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		Sleepingbag6_Rolled,
+		Weight		  	= 3.0,
+		DisplayName			= Sleeping Bag - Cheap (Packed),
+		WorldObjectSprite	= camping_02_48,
+		AttachmentType = Bedroll,
+		StaticModel  = SleepingBag_Rolled_Sty2_Blue,
+		WorldStaticModel  = SleepingBag_Rolled_Sty2_Blue,
+		Tooltip = Tooltip_item_NeedsUnpackedSleepingBag,
+		Tags = LightWhenAttached;IsFireFuel,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_Cheap_Green2_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		Sleepingbag7_Rolled,
+		Weight		  	= 3.0,
+		DisplayName			= Sleeping Bag - Cheap (Packed),
+		WorldObjectSprite	= camping_02_56,
+		AttachmentType = Bedroll,
+		StaticModel  = SleepingBag_Rolled_Sty2_Grey,
+		WorldStaticModel  = SleepingBag_Rolled_Sty2_Grey,
+		Tooltip = Tooltip_item_NeedsUnpackedSleepingBag,
+		Tags = LightWhenAttached;IsFireFuel,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_Spiffo_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		Sleepingbag8_Rolled,
+		Weight		  	= 3.0,
+		DisplayName			= Sleeping Bag - Spiffo (Packed),
+		WorldObjectSprite	= camping_02_64,
+		AttachmentType = Bedroll,
+		StaticModel  = SleepingBag_Rolled_GreenStripe,
+		WorldStaticModel  = SleepingBag_Rolled_GreenStripe,
+		Tooltip = Tooltip_item_NeedsUnpackedSleepingBag,
+		Tags = LightWhenAttached;IsFireFuel;IgnoreZombieDensity;IsMemento,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_HighQuality_Brown_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		Sleepingbag10_Rolled,
+		Weight		  	= 3.0,
+		DisplayName			= Sleeping Bag - High Quality (Packed),
+		WorldObjectSprite	= camping_02_72,
+		AttachmentType = Bedroll,
+		StaticModel  = SleepingBag_Rolled_Red,
+		WorldStaticModel  = SleepingBag_Rolled_Red,
+		Tooltip = Tooltip_item_NeedsUnpackedSleepingBag,
+		Tags = LightWhenAttached;IsFireFuel,
+		FireFuelRatio = 0.25,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_Hide
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		Icon				=		SleepingbagCrafted_Open,
+		Weight		  	= 6.0,
+		DisplayName			= Sleeping Bag - Hide,
+		WorldObjectSprite	= camping_02_80,
+		StaticModel  = SleepingBag_Rolled_Red,
+		Tags = TentBed,
+		Tooltip = Tooltip_item_NeedsPackedSleepingBag,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    	item SleepingBag_Hide_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		SleepingbagCrafted_Rolled,
+		Weight		  	= 4.0,
+		DisplayName			= Sleeping Bag (Packed),
+		AttachmentType = Bedroll,
+		StaticModel  = SleepingBag_Rolled_Hide,
+		WorldStaticModel  = SleepingBag_Rolled_Hide,
+		Tooltip = Tooltip_item_NeedsUnpackedSleepingBag,
+		Tags = LightWhenAttached,
+        ResearchableRecipes = SewHideSleepingBag,
+	}
+
+    item TentYellow
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		Icon				=		Tent2_Open,
+		Weight		  	= 10.0,
+		DisplayName			=	 Tent,
+		WorldObjectSprite	= camping_04_0,
+		StaticModel  = YellowTent,
+		Tooltip = Tooltip_item_NeedsPackedTent,
+		Tags = IsFireTinder;IsFireFuel,
+		FireFuelRatio = 0.25,
+	}
+
+    item TentYellow_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		Tent2_Rolled,
+		Weight		  	= 5.0,
+		DisplayName			= Tent (Packed),
+		AttachmentType = Bedroll,
+		StaticModel  = YellowTent,
+		WorldStaticModel  = YellowTent,
+		Tooltip = Tooltip_item_NeedsUnpacked,
+		Tags = LightWhenAttached;IsFireFuel,
+		FireFuelRatio = 0.25,
+	}
+
+    item TentBlue
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		Icon				=		Tent1_Open,
+		Weight		  	= 10.0,
+		DisplayName			=	 Tent,
+		WorldObjectSprite	= camping_04_32,
+		StaticModel  = BlueTent,
+		Tooltip = Tooltip_item_NeedsPackedTent,
+		Tags = IsFireTinder;IsFireFuel,
+		FireFuelRatio = 0.25,
+	}
+
+    item TentBlue_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		Tent1_Rolled,
+		Weight		  	= 5.0,
+		DisplayName			= Tent (Packed),
+		AttachmentType = Bedroll,
+		StaticModel  = BlueTent,
+		WorldStaticModel  = BlueTent,
+		Tooltip = Tooltip_item_NeedsUnpacked,
+		Tags = LightWhenAttached;IsFireFuel,
+		FireFuelRatio = 0.25,
+	}
+
+    item TentBrown
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		Icon				=		Tent3_Open,
+		Weight		  	= 10.0,
+		DisplayName			=	 Tent,
+		WorldObjectSprite	= camping_04_64,
+		StaticModel  = RedTent,
+		Tooltip = Tooltip_item_NeedsPackedTent,
+		Tags = IsFireTinder;IsFireFuel,
+		FireFuelRatio = 0.25,
+	}
+
+    item TentBrown_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		Tent3_Rolled,
+		Weight		  	= 5.0,
+		DisplayName			= Tent (Packed),
+		AttachmentType = Bedroll,
+		StaticModel  = RedTent,
+		WorldStaticModel  = RedTent,
+		Tooltip = Tooltip_item_NeedsUnpacked,
+		Tags = LightWhenAttached;IsFireFuel,
+		FireFuelRatio = 0.25,
+	}
+
+    item TentGreen
+	{
+	    DisplayCategory = Camping,
+		Type			= Moveable,
+		Icon				=		Tent4_Open,
+		Weight		  	= 10.0,
+		DisplayName			=	 Tent,
+		WorldObjectSprite	= camping_04_96,
+		StaticModel  = GreenTent,
+		Tooltip = Tooltip_item_NeedsPackedTent,
+		Tags = IsFireTinder;IsFireFuel,
+		FireFuelRatio = 0.25,
+	}
+
+    item TentGreen_Packed
+	{
+	    DisplayCategory = Camping,
+		Type			= Normal,
+		Icon				=		Tent4_Rolled,
+		Weight		  	= 5.0,
+		DisplayName			= Tent (Packed),
+		AttachmentType = Bedroll,
+		StaticModel  = GreenTent,
+		WorldStaticModel  = GreenTent,
+		Tooltip = Tooltip_item_NeedsUnpacked,
+		Tags = LightWhenAttached;IsFireFuel,
+		FireFuelRatio = 0.25,
+	}
+}

@@ -1,0 +1,1212 @@
+module Base
+{
+	/******* SNACKS - CANDY *******/
+	
+	item Allsorts
+	{
+		DisplayName = Allsorts,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Allsorts,
+		EvolvedRecipe = ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -10,
+		Calories = 16.6,
+		Carbohydrates = 4.33,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = Allsorts,
+		UnhappyChange = -10,
+	}
+	
+	item Candycane
+	{
+		DisplayName = Candy Cane,
+		DisplayCategory = Food,
+		EatType = eatOffStick,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Candycane,
+		HungerChange = -10,
+		Calories = 16.6,
+		Carbohydrates = 4.33,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = CandyCane,
+		WorldStaticModel = CandyCane,
+		EvolvedRecipe = Cake:10;ConeIcecream:10;Muffin:10;HotDrink:10,
+		FoodType = Candy,
+		Spice = true,
+		UnhappyChange = -10,
+	}
+	
+	item CandyCorn
+	{
+		DisplayName = Candy Corn,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.2,
+		Icon = CandyCorn,
+		EvolvedRecipe = ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -10,
+		Calories = 32,
+		Carbohydrates = 14,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = CandyCorn_Ground,
+		UnhappyChange = -10,
+	}
+	
+	item CandyFruitSlices
+	{
+		DisplayName = Candied Fruit Slices,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = CandyFruitSlices,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 40,
+		Carbohydrates = 10,
+		Lipids = 0.5,
+		Proteins = 0,
+		WorldStaticModel = CandyFruitSlices_Ground,
+	}
+	
+	item CandyPackage
+	{
+		DisplayName = Candy Package,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.6,
+		Icon = CandyPackagei,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Calories = 500,
+		Carbohydrates = 125,
+		Lipids = 2.5,
+		Proteins = 0,
+		StaticModel = CandyPackage,
+		WorldStaticModel = CandyPackage,
+	}
+	
+	item Chocolate
+	{
+		DisplayName = Milk Chocolate Bar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Chocolate,
+		EvolvedRecipe = Cake:20;PieSweet:20;Muffin:10;Pancakes:10;Bread:10;ConeIcecream:5;Toast:5,
+		EvolvedRecipeName = Chocolate,
+		FoodType = NoExplicit,
+		Packaged = TRUE,
+		HungerChange = -20,
+		UnhappyChange = -10,
+		Calories = 850,
+		Carbohydrates = 110,
+		Lipids = 66,
+		Proteins = 10,
+		StaticModel = Chocolate,
+		WorldStaticModel = Chocolate,
+	}
+	
+	item ChocolateCoveredCoffeeBeans
+	{
+		DisplayName = Chocolate-Covered Coffee Beans,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = ChocolateCoveredCoffeeBeans,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = NoExplicit,
+		FatigueChange = -5,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 40,
+		Carbohydrates = 10,
+		Lipids = 0.5,
+		Proteins = 0,
+		WorldStaticModel = ChocolateCoveredCoffeeBeans_Ground,
+		EvolvedRecipeName = Chocolate-Covered Coffee Bean,
+	}
+
+	item Dip_NachoCheese
+	{
+		DisplayName = Nacho Cheese,
+		DisplayCategory = Food,
+		EatType = candrink,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Dip_NachoCheese,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = Pizza:4;Omelette:2;Sandwich:2;Burger:2;Rice:2;Pasta:2;Taco:2;Burrito:2;Stir fry:4,
+		Packaged = TRUE,
+		Spice = TRUE,
+		HungerChange = -16,
+		UnhappyChange = -10,
+		Calories = 630,
+		Carbohydrates = 56,
+		Lipids = 42,
+		Proteins = 14,
+		StaticModel = Dip_NachoCheese_Ground,
+		WorldStaticModel = Dip_NachoCheese_Ground,
+		FoodType = NoExplicit,
+	}
+
+	item Dip_Ranch
+	{
+		DisplayName = Ranch,
+		DisplayCategory = Food,
+		EatType = candrink,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Dip_Ranch,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = Pizza:4;Omelette:2;Sandwich:2;Burger:2;Rice:2;Pasta:2;Taco:2;Burrito:2;Stir fry:4,
+		Packaged = TRUE,
+		Spice = TRUE,
+		HungerChange = -16,
+		Calories = 867,
+		Carbohydrates = 29,
+		Lipids = 72,
+		Proteins = 14.5,
+		StaticModel = Dip_Ranch_Ground,
+		WorldStaticModel = Dip_Ranch_Ground,
+		FoodType = NoExplicit,
+	}
+
+	item Dip_Salsa
+	{
+		DisplayName = Salsa,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Dip_Salsa,
+		CantBeFrozen = TRUE,
+		EatType = candrink,
+		EvolvedRecipe = Pizza:4;Omelette:2;Sandwich:2;Burger:2;Rice:2;Pasta:2;Taco:2;Burrito:2;Stir fry:4,
+		Packaged = TRUE,
+		Spice = TRUE,
+		HungerChange = -16,
+		Calories = 140,
+		Carbohydrates = 28,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = Dip_Salsa_Ground,
+		WorldStaticModel = Dip_Salsa_Ground,
+		FoodType = NoExplicit,
+	}
+	
+	item Gum
+	{
+		DisplayName = Gum,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Gum,
+		HungerChange = -1,
+		UnhappyChange = -5,
+		Calories = 30,
+		Carbohydrates = 10,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = Gum_Ground,
+		WorldStaticModel = Gum_Ground,
+	}
+	
+	item GummyBears
+	{
+		DisplayName = Gummy Bears,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = GummyBears,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 40,
+		Carbohydrates = 10,
+		Lipids = 0.5,
+		Proteins = 0,
+		EvolvedRecipeName = Gummy Bear,
+		WorldStaticModel = GummyBears_Ground,
+	}
+	
+	item GummyWorms
+	{
+		DisplayName = Gummy Worms,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = GummyWorms,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 40,
+		Carbohydrates = 10,
+		Lipids = 0.5,
+		Proteins = 0,
+		EvolvedRecipeName = Gummy Worm,
+		StaticModel = GummyWorms_Ground,
+		WorldStaticModel = GummyWorms_Ground,
+	}
+	
+	item HardCandies
+	{
+		DisplayName = Hard Candies,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = HardCandies,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 40,
+		Carbohydrates = 10,
+		Lipids = 0.5,
+		Proteins = 0,
+		EvolvedRecipeName = Hard Candy,
+	}
+	
+	item JellyBeans
+	{
+		DisplayName = Jellybeans,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = JellyBeans,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 40,
+		Carbohydrates = 10,
+		Lipids = 0.5,
+		Proteins = 0,
+		EvolvedRecipeName = Jellybean,
+		WorldStaticModel = JellyBeans,
+	}
+	
+	item Jujubes
+	{
+		DisplayName = Jujubes,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Jujujubes,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 40,
+		Carbohydrates = 10,
+		Lipids = 0.5,
+		Proteins = 0,
+		EvolvedRecipeName = Jujube,
+		WorldStaticModel = Jujubes_Ground,
+	}
+	
+	item LicoriceBlack
+	{
+		DisplayName = Licorice,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = LicoriceBlack,
+		EvolvedRecipe = ConeIcecream:2,
+		FoodType = Candy,
+		HungerChange = -2,
+		Calories = 22,
+		Carbohydrates = 7,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = LicoriceBlack_Ground,
+		WorldStaticModel = LicoriceBlack_Ground,
+		UnhappyChange = -5,
+	}
+	
+	item LicoriceRed
+	{
+		DisplayName = Licorice,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = LicoriceRed,
+		EvolvedRecipe = ConeIcecream:2,
+		FoodType = Candy,
+		HungerChange = -2,
+		Calories = 22,
+		Carbohydrates = 7,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = LicoriceRed_Ground,
+		WorldStaticModel = LicoriceRed_Ground,
+		UnhappyChange = -5,
+	}
+	
+	item Lollipop
+	{
+		DisplayName = Lollipop,
+		DisplayCategory = Food,
+		EatType = eatOffStick,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Lollipop,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 40,
+		Carbohydrates = 10,
+		Lipids = 0.5,
+		Proteins = 0,
+		StaticModel = Lollipop,
+		WorldStaticModel = Lollipop,
+	}
+	
+	item MintCandy
+	{
+		DisplayName = Mint Candy,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = MintCandy,
+		HungerChange = -2,
+		UnhappyChange = -5,
+		Calories = 60,
+		Carbohydrates = 15,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = MintCandy,
+		WorldStaticModel = MintCandy,
+	}
+	
+	item Modjeska
+	{
+		DisplayName = Modjeska,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Modjeska,
+		HungerChange = -10,
+		Calories = 60,
+		Carbohydrates = 15,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = Modjeska,
+		WorldStaticModel = Modjeska,
+		UnhappyChange = -10,
+	}
+	
+	item Peppermint
+	{
+		DisplayName = Peppermint Candy,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Peppermint,
+		HungerChange = -2,
+		Calories = 16.6,
+		Carbohydrates = 4.33,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = Peppermint_Ground,
+		WorldStaticModel = Peppermint_Ground,
+		UnhappyChange = -5,
+	}
+	
+	item RockCandy
+	{
+		DisplayName = Rock Candy,
+		DisplayCategory = Food,
+		EatType = eatOffStick,
+		Type = Food,
+		Weight = 0.1,
+		Icon = RockCandy,
+		EvolvedRecipe = Cake:5;ConeIcecream:5,
+		FoodType = Candy,
+		HungerChange = -5,
+		UnhappyChange = -10,
+		Calories = 40,
+		Carbohydrates = 60,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = RockCandy_Ground,
+		WorldStaticModel = RockCandy_Ground,
+	}
+	
+	/******* SNACKS - CHIPS *******/
+	
+	item Crisps
+	{
+		DisplayName = Chips - Plain,
+		DisplayCategory = Food,
+		EatType = eatBox,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Crisps,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		HungerChange = -15,
+		Calories = 720,
+		Carbohydrates = 72,
+		Lipids = 45,
+		Proteins = 4.5,
+		CustomEatSound = EatingCrispy,
+		StaticModel = Chips,
+		WorldStaticModel = Chips,
+		UnhappyChange = -5,
+	}
+	
+	item Crisps2
+	{
+		DisplayName = Chips - Barbeque,
+		DisplayCategory = Food,
+		EatType = eatBox,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Crisps2,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		HungerChange = -15,
+		Calories = 720,
+		Carbohydrates = 72,
+		Lipids = 45,
+		Proteins = 4.5,
+		CustomEatSound = EatingCrispy,
+		StaticModel = Chips2,
+		WorldStaticModel = Chips2,
+		UnhappyChange = -5,
+	}
+	
+	item Crisps3
+	{
+		DisplayName = Chips - Salt & Vinegar,
+		DisplayCategory = Food,
+		EatType = eatBox,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Crisps3,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		HungerChange = -15,
+		Calories = 720,
+		Carbohydrates = 72,
+		Lipids = 45,
+		Proteins = 4.5,
+		CustomEatSound = EatingCrispy,
+		StaticModel = Chips3,
+		WorldStaticModel = Chips3,
+		UnhappyChange = -5,
+	}
+	
+	item Crisps4
+	{
+		DisplayName = Chips - Sour Cream & Onion,
+		DisplayCategory = Food,
+		EatType = eatBox,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Crisps4,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		HungerChange = -15,
+		Calories = 720,
+		Carbohydrates = 72,
+		Lipids = 45,
+		Proteins = 4.5,
+		CustomEatSound = EatingCrispy,
+		StaticModel = Chips4,
+		WorldStaticModel = Chips4,
+		UnhappyChange = -5,
+	}
+	
+	item TortillaChips
+	{
+		DisplayName = Tortilla Chips,
+		DisplayCategory = Food,
+		EatType = eatBox,
+		Type = Food,
+		Weight = 0.2,
+		Icon = CornChips,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		HungerChange = -15,
+		Calories = 420,
+		Carbohydrates = 42,
+		Lipids = 40,
+		Proteins = 2.5,
+		CustomEatSound = EatingCrispy,
+		WorldStaticModel = CornChips,
+	}
+	
+	/******* SNACKS - FROZEN *******/
+	
+	item ConeIcecream
+	{
+		DisplayName = Ice Cream Cone,
+		DisplayCategory = Food,
+		EatType = eatOffStick,
+		Type = Food,
+		Weight = 0.2,
+		Icon = ConeIcecream,
+		Packaged = FALSE,
+		ReplaceOnRotten = ConeIcecreamMelted,
+		DaysFresh = 1,
+		DaysTotallyRotten = 1,
+		HungerChange = -15,
+		UnhappyChange = -10,
+		Calories = 470,
+		Carbohydrates = 120,
+		Lipids = 44,
+		Proteins = 20,
+		StaticModel = ConeIcecream_Ground,
+		WorldStaticModel = ConeIcecream_Ground,
+		Tags = GoodFrozen,
+	}
+	
+	item ConeIcecreamMelted
+	{
+		DisplayName = Ice Cream Cone (Melted),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = ConeIcecream,
+		HungerChange = -15,
+		Calories = 470,
+		Carbohydrates = 120,
+		Lipids = 44,
+		Proteins = 20,
+		StaticModel = Cone_Ground,
+		WorldStaticModel = ConeIceCreamMelted_Ground,
+		DaysFresh = 2,
+		DaysTotallyRotten = 2,
+	}
+	
+	item ConeIcecreamToppings
+	{
+		DisplayName = Ice Cream Cone,
+		DisplayCategory = Food,
+		EatType = eatOffStick,
+		Type = Food,
+		Weight = 0.2,
+		Icon = ConeIceCreamTopped,
+		Packaged = FALSE,
+		ReplaceOnRotten = ConeIcecreamMelted,
+		DaysFresh = 1,
+		DaysTotallyRotten = 1,
+		HungerChange = -15,
+		UnhappyChange = -10,
+		Calories = 470,
+		Carbohydrates = 120,
+		Lipids = 44,
+		Proteins = 20,
+		StaticModel = ConeIceCreamToppings_Ground,
+		WorldStaticModel = ConeIceCreamToppings_Ground,
+		Tags = GoodFrozen,
+	}
+	
+	item Icecream
+	{
+		DisplayName = Ice Cream,
+		DisplayCategory = Food,
+		EatType = candrink,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Icecream,
+		Packaged = TRUE,
+		ReplaceOnRotten = IcecreamMelted,
+		DaysFresh = 1,
+		DaysTotallyRotten = 1,
+		HungerChange = -30,
+		UnhappyChange = -10,
+		Calories = 1680,
+		Carbohydrates = 180,
+		Lipids = 84,
+		Proteins = 26,
+		StaticModel = IceCream,
+		WorldStaticModel = IceCream,
+		Tags = GoodFrozen,
+	}
+	
+	item IcecreamMelted
+	{
+		DisplayName = Ice Cream (Melted),
+		DisplayCategory = Food,
+		EatType = candrink,
+		Type = Food,
+		Weight = 0.2,
+		Icon = IcecreamMelted,
+		Packaged = TRUE,
+		HungerChange = -30,
+		Calories = 1680,
+		Carbohydrates = 180,
+		Lipids = 84,
+		Proteins = 26,
+		StaticModel = IcecreamMelted,
+		WorldStaticModel = IcecreamMelted,
+		DaysFresh = 2,
+		DaysTotallyRotten = 2,
+	}
+
+	item Creamocle
+	{
+		DisplayName = Creamocle,
+		DisplayCategory = Food,
+		EatType = eatOffStick,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Creamocle,
+		Packaged = TRUE,
+		DaysFresh = 1,
+		DaysTotallyRotten = 1,
+		HungerChange = -15,
+		UnhappyChange = -10,
+		Calories = 100,
+		Carbohydrates = 19,
+		Lipids = 1.5,
+		Proteins = 1,
+		StaticModel = Creamocle,
+		WorldStaticModel = Creamocle,
+		Tags = GoodFrozen,
+		ReplaceOnRotten = Creamocle_Melted,
+	}
+
+	item FudgeePop
+	{
+		DisplayName = Fudgee Pop,
+		DisplayCategory = Food,
+		EatType = eatOffStick,
+		Type = Food,
+		Weight = 0.2,
+		Icon = FudgeePop,
+		Packaged = TRUE,
+		DaysFresh = 1,
+		DaysTotallyRotten = 1,
+		HungerChange = -15,
+		UnhappyChange = -10,
+		Calories = 100,
+		Carbohydrates = 18,
+		Lipids = 2.5,
+		Proteins = 2,
+		StaticModel = FudgeePop,
+		WorldStaticModel = FudgeePop,
+		Tags = GoodFrozen,
+		ReplaceOnRotten = FudgeePop_Melted,
+	}
+
+	item IcecreamSandwich
+	{
+		DisplayName = Ice Cream Sandwich,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = IcecreamSandwich,
+		Packaged = TRUE,
+		DaysFresh = 1,
+		DaysTotallyRotten = 1,
+		HungerChange = -15,
+		UnhappyChange = -10,
+		Calories = 140,
+		Carbohydrates = 26,
+		Lipids = 3,
+		Proteins = 2,
+		StaticModel = IcecreamSandwich,
+		WorldStaticModel = IcecreamSandwich,
+		Tags = GoodFrozen,
+		ReplaceOnRotten = IcecreamSandwich_Melted,
+	}
+
+	item Popsicle
+	{
+		DisplayName = Popsicle,
+		DisplayCategory = Food,
+		EatType = eatOffStick,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Popsicle,
+		Packaged = TRUE,
+		DaysFresh = 1,
+		DaysTotallyRotten = 1,
+		HungerChange = -15,
+		UnhappyChange = -10,
+		Calories = 80,
+		Carbohydrates = 22,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = Popsicle,
+		WorldStaticModel = Popsicle,
+		Tags = GoodFrozen,
+		ReplaceOnRotten = Popsicle_Melted,
+	}
+
+	item Creamocle_Melted
+	{
+		DisplayName = Creamocle (Melted),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Puddle_Generic,
+		Packaged = TRUE,
+		DaysFresh = 2,
+		DaysTotallyRotten = 2,
+		HungerChange = -15,
+		Calories = 100,
+		Carbohydrates = 19,
+		Lipids = 1.5,
+		Proteins = 1,
+		StaticModel = Creamocle,
+		WorldStaticModel = Creamocle_Melted,
+
+		ColorBlue = 28,
+		ColorGreen = 133,
+		ColorRed = 230,
+	}
+
+	item FudgeePop_Melted
+	{
+		DisplayName = Fudgee Pop (Melted),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Puddle_Generic,
+		Packaged = TRUE,
+		DaysFresh = 2,
+		DaysTotallyRotten = 2,
+		HungerChange = -15,
+		Calories = 100,
+		Carbohydrates = 18,
+		Lipids = 2.5,
+		Proteins = 2,
+		StaticModel = FudgeePop,
+		WorldStaticModel = FudgeePop_Melted,
+
+		ColorBlue = 73,
+		ColorGreen = 107,
+		ColorRed = 154,
+	}
+
+	item IcecreamSandwich_Melted
+	{
+		DisplayName = Ice Cream Sandwich (Melted),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Puddle_Generic,
+		Packaged = TRUE,
+		DaysFresh = 2,
+		DaysTotallyRotten = 2,
+		HungerChange = -15,
+		Calories = 140,
+		Carbohydrates = 26,
+		Lipids = 3,
+		Proteins = 2,
+		StaticModel = IcecreamSandwich,
+		WorldStaticModel = IcecreamSandwich_Melted,
+
+		ColorBlue = 73,
+		ColorGreen = 107,
+		ColorRed = 154,
+	}
+
+	item Popsicle_Melted
+	{
+		DisplayName = Popsicle (Melted),
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Puddle_Generic,
+		Packaged = TRUE,
+		DaysFresh = 2,
+		DaysTotallyRotten = 2,
+		HungerChange = -15,
+		Calories = 80,
+		Carbohydrates = 22,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = Popsicle,
+		WorldStaticModel = Popsicle_Melted,
+
+		ColorBlue = 76,
+		ColorGreen = 36,
+		ColorRed = 176,
+	}
+	
+	/******* SNACKS - MEAT *******/
+	
+	item BeefJerky
+	{
+		DisplayName = Beef Jerky,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = BeefJerky,
+		EvolvedRecipe = Stew:10;Pie:10;Stir fry:10;Sandwich:5;Salad:5;Rice:10;Pasta:10,
+		FoodType = Beef,
+		Packaged = TRUE,
+		HungerChange = -20,
+		Calories = 410,
+		Carbohydrates = 11,
+		Lipids = 26,
+		Proteins = 33,
+		StaticModel = BeefJerky_Hand,
+		WorldStaticModel = BeefJerky,
+	}
+	
+	item DehydratedMeatStick
+	{
+		DisplayName = Dehydrated Meat Stick,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = DehydratedMeatStick,
+		HungerChange = -10,
+		Calories = 100,
+		Carbohydrates = 5.3,
+		Lipids = 5.1,
+		Proteins = 21.63,
+		StaticModel = DehydratedMeatStick_Ground,
+		WorldStaticModel = DehydratedMeatStick_Ground,
+	}
+	
+	/******* SNACKS - SEEDS/NUTS *******/
+	
+	item Peanuts
+	{
+		DisplayName = Peanuts,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Peanut,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = Soup:8;Stir fry:8;Salad:4;Rice:8;ConeIcecream:4,
+		FoodType = Nut,
+		HungerChange = -8,
+		Calories = 161,
+		Carbohydrates = 4.57,
+		Lipids = 13.96,
+		Proteins = 7.31,
+		WorldStaticModel = Peanuts,
+		EvolvedRecipeName = Peanut,
+		AnimalFeedType = Nuts,
+	}
+	
+	item SunflowerSeeds
+	{
+		DisplayName = Sunflower Seeds,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = SunflowerSeeds,
+		EvolvedRecipe = Salad:1;Bread:5;Muffin:5,
+		Spice = true,
+		FoodType = Seed,
+		CantBeFrozen = TRUE,
+		/*Packaged = TRUE,*/
+		HungerChange = -5,
+		Calories = 155,
+		Carbohydrates = 14.12,
+		Lipids = 5.48,
+		Proteins = 4.34,
+		StaticModel = SunflowerSeeds,
+		WorldStaticModel = SunflowerSeeds,
+		EvolvedRecipeName = Sunflower Seed,
+		AnimalFeedType = Seeds,
+        Tags		= isSeed,
+	}
+	
+	/******* SNACKS - MISC. *******/
+
+	item Caviar
+	{
+		DisplayName = Tin of Caviar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Caviar,
+		/*CannedFood = TRUE,*/
+		EatType = glugFood,
+		EvolvedRecipe = Toast:2,
+		FoodType = Roe,
+		Packaged = TRUE,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -10,
+		UnhappyChange = -20,
+		Calories = 150,
+		Carbohydrates = 0,
+		Lipids = 11,
+		Proteins = 14,
+		StaticModel = Caviar_Eat,
+		WorldStaticModel = Caviar,
+		Tags = HasMetal,
+		EvolvedRecipeName = Caviar,
+	}
+	
+	item Crackers
+	{
+		DisplayName = Crackers,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Crackers,
+		EvolvedRecipe = Soup:5;Stew:5,
+		FoodType = NoExplicit,
+		HungerChange = -5,
+		Calories = 70,
+		Carbohydrates = 12,
+		Lipids = 6,
+		Proteins = 1,
+		CustomEatSound = EatingCrispy,
+		StaticModel = Crackers_Hand,
+		WorldStaticModel = Crackers_Ground,
+	}
+	
+	item ChocoCakes
+	{
+		DisplayName = Choco Cakes,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Snackcake_Chocakes,
+		HungerChange = -10,
+		UnhappyChange = -10,
+		Calories = 200,
+		Carbohydrates = 30,
+		Lipids = 8,
+		Proteins = 1.8,
+		StaticModel = Snackcake_Chocakes,
+		WorldStaticModel = Snackcake_Chocakes,
+	}
+	
+	item Cupcake
+	{
+		DisplayName = Cupcake,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Cupcake,
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		HungerChange = -20,
+		Calories = 305,
+		Carbohydrates = 67,
+		Lipids = 4,
+		Proteins = 4,
+		StaticModel = Cupcake,
+		WorldStaticModel = Cupcake,
+		UnhappyChange = -10,
+	}
+	
+	item GranolaBar
+	{
+		DisplayName = Granola Bar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = GranolaBar,
+		/*DaysFresh = 40,
+		DaysTotallyRotten = 80,*/
+		HungerChange = -15,
+		Calories = 270,
+		Carbohydrates = 120,
+		Lipids = 44,
+		Proteins = 20,
+		StaticModel = GranolaBar_Ground,
+		WorldStaticModel = GranolaBar_Ground,
+	}
+	
+	item HiHis
+	{
+		DisplayName = Hi His,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Snackcake_HiHis,
+		HungerChange = -10,
+		UnhappyChange = -10,
+		Calories = 200,
+		Carbohydrates = 30,
+		Lipids = 8,
+		Proteins = 1.8,
+		StaticModel = Snackcake_HiHis,
+		WorldStaticModel = Snackcake_HiHis,
+	}
+	
+	item Marshmallows
+	{
+		DisplayName = Marshmallows,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Marshmallows,
+		EvolvedRecipe = Cake:5;Pancakes:5;ConeIcecream:5;PieSweet:5,
+		FoodType = NoExplicit,
+		BadInMicrowave = true,
+		IsCookable = true,
+		MinutesToCook = 5,
+		MinutesToBurn = 10,
+		HungerChange = -5,
+		UnhappyChange = -5,
+		Calories = 30,
+		Carbohydrates = 8,
+		Lipids = 0,
+		Proteins = 0.5,
+		StaticModel = Marshmallows_Hand,
+		WorldStaticModel = Marshmallows_Ground,
+		Tags = Toastable;HideUncooked,
+		CookingSound = FryingFood,
+	}
+	
+	item Plonkies
+	{
+		DisplayName = Plonkies,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Snackcake_Plonkies,
+		HungerChange = -10,
+		UnhappyChange = -10,
+		Calories = 200,
+		Carbohydrates = 30,
+		Lipids = 8,
+		Proteins = 1.8,
+		StaticModel = Snackcake_Plonkies_Hand,
+		WorldStaticModel = Snackcake_Plonkies,
+		Tags = FitsToaster,
+	}
+	
+	item Popcorn
+	{
+		DisplayName = Instant Popcorn,
+		DisplayCategory = Food,
+		EatType = eatBox,
+		Type = Food,
+		Weight = 0.3,
+		Icon = Popcorn,
+		CantBeFrozen = TRUE,
+		IsCookable = TRUE,
+		Packaged = TRUE,
+		MinutesToCook = 5,
+		MinutesToBurn = 10,
+		HungerChange = -10,
+		ThirstChange = 10,
+		Calories = 120,
+		Carbohydrates = 20.41,
+		Lipids = 2.69,
+		Proteins = 3.57,
+		StaticModel = Popcorn,
+		WorldStaticModel = Popcorn,
+	}
+
+	item PorkRinds
+	{
+		DisplayName = Pork Rinds,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = PorkRinds,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		HungerChange = -5,
+		Calories = 240,
+		Carbohydrates = 24,
+		Lipids = 15,
+		Proteins = 1.5,
+		CustomEatSound = EatingCrispy,
+		WorldStaticModel = PorkRinds,
+		UnhappyChange = -2,
+	}
+	
+	item Pretzel
+	{
+		DisplayName = Pretzel,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Pretzel,
+		CantBeFrozen = TRUE,
+		Packaged = TRUE,
+		HungerChange = -5,
+		Calories = 80,
+		Carbohydrates = 11,
+		Lipids = 2,
+		Proteins = 1,
+		StaticModel = Pretzel_Hand,
+		WorldStaticModel = Pretzel_Ground,
+	}
+	
+	item SnoGlobes
+	{
+		DisplayName	= Sno Globes,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Snackcake_SnoSpheres,
+		HungerChange = -10,
+		UnhappyChange = -10,
+		Calories = 200,
+		Carbohydrates = 30,
+		Lipids = 8,
+		Proteins = 1.8,
+		StaticModel = Snackcake_SnoSpheres,
+		WorldStaticModel = Snackcake_SnoSpheres,
+	}
+	
+	item QuaggaCakes
+	{
+		DisplayName	= Quagga Cakes,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Snackcake_QuaggaCakes,
+		HungerChange = -10,
+		UnhappyChange = -10,
+		Calories = 200,
+		Carbohydrates = 30,
+		Lipids = 8,
+		Proteins = 1.8,
+		StaticModel = Snackcake_QuaggaCakes,
+		WorldStaticModel = Snackcake_QuaggaCakes,
+	}
+
+	item TortillaChipsBaked
+	{
+		DisplayName = Tortilla Chips,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.2,
+		Icon = TortillaChips,
+		BadInMicrowave = TRUE,
+		IsCookable = TRUE,
+		MinutesToCook = 5,
+		MinutesToBurn = 10,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		HungerChange = -15,
+		Calories = 120,
+		Carbohydrates = 0,
+		Lipids = 6,
+		Proteins = 6,
+		CustomEatSound = EatingCrispy,
+		WorldStaticModel = TortillaChips_Ground,
+		Tags = Toastable,
+	}
+}

@@ -1,0 +1,525 @@
+module Base
+{
+	/******* ELECTRICAL - APPLIANCES *******/
+	
+	item CordlessPhone
+	{
+		DisplayName = Cordless Phone,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 1,
+		Icon = CordlessPhone,
+		WorldStaticModel = CordlessPhone,
+		Tags = HasMetal;MiscElectronic,
+	}
+	
+	item Earbuds
+	{
+		DisplayName = Earbuds,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Earbuds,
+		WorldStaticModel = EarBuds,
+		Tags = HasMetal;MiscElectronic,
+	}
+	
+	item Headphones
+	{
+		DisplayName = Headphones,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Headphones,
+		WorldStaticModel = HeadPhones,
+		Tags = HasMetal;MiscElectronic,
+	}
+	
+	item HomeAlarm
+	{
+		DisplayName = Home Alarm,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 1,
+		Icon = HomeAlarm,
+		WorldStaticModel = HomeAlarm,
+	}
+
+	item Pager
+	{
+		DisplayName = Pager,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Pager,
+		WorldStaticModel = Pager,
+		Tags = HasMetal;MiscElectronic,
+	}
+	
+	item Remote
+	{
+		DisplayName = TV Remote,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Remote,
+		MetalValue = 8,
+		WorldStaticModel = Remote,
+		Tags = HasMetal;TVRemote,
+	}
+	
+	item Speaker
+	{
+		DisplayName = Speaker,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 1.5,
+		Icon = Speaker,
+		MetalValue = 20,
+		Tooltip = Tooltip_ItemTraps,
+		WorldStaticModel = Speaker,
+	}
+	
+	item VideoGame
+	{
+		DisplayName = Handheld Game Console,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = VideoGame,
+		MetalValue = 7,
+		WorldStaticModel = VideoGame,
+		Tags = HasMetal;MiscElectronic,
+	}
+	
+	/******* ELECTRICAL - COMPONENTS *******/
+	
+	item Amplifier
+	{
+		DisplayName = Amplifier,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Amplifier,
+		MetalValue = 8,
+		WorldStaticModel = Amplifier,
+	}
+	
+	item Battery
+	{
+		DisplayName = Battery,
+		DisplayCategory = Electronics,
+		Type = Drainable,
+		Weight = 0.1,
+		Icon = Battery,
+		MetalValue = 1,
+		UseDelta = 0.007,
+		UseWhileEquipped = FALSE,
+		cantBeConsolided = TRUE,
+		WorldStaticModel = Battery,
+        ResearchableRecipes = MakeImprovisedLighter,
+	}
+
+	item BatteryBox
+	{
+		DisplayName = Box of Batteries,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 1,
+		Icon = Parcel_Small_Food,
+		WorldStaticModel = Parcel_Food_Small,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+
+	item ElectricWire
+	{
+		DisplayName = Electrical Wire,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Wires_Multicolor,
+		/*ColorBlue = 96,
+		ColorGreen = 164,
+		ColorRed = 244,*/
+		WorldStaticModel = ElectricWireNew,
+		Tags = HasMetal,
+        ResearchableRecipes = MakeImprovisedLighter,
+	}
+	
+	item ElectronicsScrap
+	{
+		DisplayName = Scrap Electronics,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = ElectronicsScrap,
+		MetalValue = 5,
+		WorldStaticModel = ElectronicsScrap,
+	}
+	
+	item MotionSensor
+	{
+		DisplayName = Motion Sensor,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = MotionSensor,
+		MetalValue = 7,
+		Tooltip = Tooltip_MotionSensor,
+		WorldStaticModel = MotionSensor,
+	}
+
+	item RadioReceiver
+	{
+		DisplayName = Radio Receiver,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Receiver,
+		ColorBlue = 225,
+		ColorGreen = 105,
+		ColorRed = 65,
+		WorldStaticModel = RadioReceiver_Ground,
+	}
+
+	item RadioTransmitter
+	{
+		DisplayName = Radio Transmitter,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Receiver,
+		ColorBlue = 60,
+		ColorGreen = 20,
+		ColorRed = 220,
+		WorldStaticModel = RadioTransmitter_Ground,
+	}
+	
+	item Receiver
+	{
+		DisplayName = Receiver,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = Receiver,
+		MetalValue = 7,
+		Tooltip = Tooltip_Receiver,
+		WorldStaticModel = Receiver,
+	}
+	
+	item RemoteCraftedV1
+	{
+		DisplayName = V1 Remote Controller,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.4,
+		Icon = RemoteCrafted,
+		MetalValue = 15,
+		RemoteController = TRUE,
+		RemoteRange =	7,
+		Tooltip = Tooltip_RemoteController,
+		WorldStaticModel = RemoteController,
+	}
+
+	item RemoteCraftedV2
+	{
+		DisplayName = V2 Remote Controller,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.4,
+		Icon = RemoteCrafted,
+		MetalValue = 15,
+		RemoteController = TRUE,
+		RemoteRange =	11,
+		Tooltip = Tooltip_RemoteController,
+		WorldStaticModel = RemoteController,
+	}
+
+	item RemoteCraftedV3
+	{
+		DisplayName = V3 Remote Controller,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.4,
+		Icon = RemoteCrafted,
+		MetalValue = 15,
+		RemoteController = TRUE,
+		RemoteRange =	15,
+		Tooltip = Tooltip_RemoteController,
+		WorldStaticModel = RemoteController,
+	}
+	
+	item TimerCrafted
+	{
+		DisplayName = Timer - Crafted,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = TimerCrafted,
+		MetalValue = 10,
+		Tooltip = Tooltip_CraftedTimer,
+		WorldStaticModel = CraftedTimer,
+	}
+
+    item TriggerCrafted
+    {
+        DisplayCategory = Electronics,
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	Crafted Trigger,
+        Icon	=	TriggerCrafted,
+        MetalValue = 7,
+        WorldStaticModel = CraftedTrigger,
+    }
+
+	item ScannerModule
+	{
+		DisplayName = Scanner Module,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.1,
+		Icon = ScannerChip,
+	}
+	
+	/******* ELECTRICAL - LIGHTBULBS *******/
+	
+	item LightBulb
+	{
+		DisplayName = Light Bulb,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = LightBulb,
+		ConditionMax = 100,
+		WorldStaticModel = LightBulb,
+		Tags = ShowCondition,
+	}
+
+	item LightBulbBox
+	{
+		DisplayName = Box of Light Bulbs,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 1,
+		Icon = Parcel_ExtraSmall_Food,
+		WorldStaticModel = Parcel_Food_ExtraSmall,
+		Tags = HasMetal;IgnoreZombieDensity,
+	}
+	
+	item LightBulbBlue
+	{
+		DisplayName = Light Bulb - Blue,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = LightBulb,
+		ColorBlue = 255,
+		ColorGreen = 0,
+		ColorRed = 0,
+		WorldStaticModel = LightBulbBlue,
+	}
+	
+	item LightBulbCyan
+	{
+		DisplayName = Light Bulb - Cyan,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = LightBulb,
+		ColorBlue = 255,
+		ColorGreen = 255,
+		ColorRed = 0,
+		WorldStaticModel = LightBulbCyan,
+	}
+	
+	item LightBulbGreen
+	{
+		DisplayName = Light Bulb - Green,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = LightBulb,
+		ColorBlue = 0,
+		ColorGreen = 255,
+		ColorRed = 0,
+		WorldStaticModel = LightBulbGreen,
+	}
+	
+	item LightBulbMagenta
+	{
+		DisplayName = Light Bulb - Magenta,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = LightBulb,
+		ColorBlue = 255,
+		ColorGreen = 0,
+		ColorRed = 255,
+		WorldStaticModel = LightBulbMagenta,
+	}
+	
+	item LightBulbOrange
+	{
+		DisplayName = Light Bulb - Orange,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = LightBulb,
+		ColorBlue = 0,
+		ColorGreen = 128,
+		ColorRed = 255,
+		WorldStaticModel = LightBulbOrange,
+	}
+	
+	item LightBulbPink
+	{
+		DisplayName = Light Bulb - Pink,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = LightBulb,
+		ColorBlue = 147,
+		ColorGreen = 20,
+		ColorRed = 255,
+		WorldStaticModel = LightBulbPink,
+	}
+	
+	item LightBulbPurple
+	{
+		DisplayName = Light Bulb - Purple,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = LightBulb,
+		ColorBlue = 255,
+		ColorGreen = 0,
+		ColorRed = 128,
+		WorldStaticModel = LightBulbPurple,
+	}
+	
+	item LightBulbRed
+	{
+		DisplayName = Light Bulb - Red,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = LightBulb,
+		ColorBlue = 0,
+		ColorGreen = 0,
+		ColorRed = 255,
+		WorldStaticModel = LightBulbRed,
+	}
+	
+	item LightBulbYellow
+	{
+		DisplayName = Light Bulb - Yellow,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = LightBulb,
+		ColorBlue = 0,
+		ColorGreen = 255,
+		ColorRed = 255,
+		WorldStaticModel = LightBulbYellow,
+	}
+	
+	/******* ELECTRIC - MISC. *******/
+	
+	item Generator
+	{
+		DisplayName = Generator - Lectromax,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 40,
+		Icon = Generator,
+		ConditionMax = 100,
+		MetalValue = 500,
+		RequiresEquippedBothHands = TRUE,
+		Tooltip = Tooltip_Generator,
+		Tags = HeavyItem;Generator;HasMetal;IgnoreZombieDensity;ShowCondition,
+		WorldObjectSprite = appliances_misc_01_0,
+		ConditionLowerChanceOneIn = 30,
+		SoundRadius = 20,
+		SoundVolume = 1,
+	}
+
+	item Generator_Yellow
+	{
+		DisplayName = Generator - Premium Technologies,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 40,
+		Icon = Generator2,
+		ConditionMax = 100,
+		MetalValue = 500,
+		RequiresEquippedBothHands = TRUE,
+		Tooltip = Tooltip_Generator,
+		Tags = HeavyItem;Generator;HasMetal;IgnoreZombieDensity;ShowCondition,
+		WorldObjectSprite = appliances_misc_01_8,
+		ConditionLowerChanceOneIn = 36,
+		SoundRadius = 20,
+		SoundVolume = 1,
+	}
+
+    /* should be louder */
+	item Generator_Blue
+	{
+		DisplayName = Generator - ValuTech,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 30,
+		Icon = Generator3,
+		ConditionMax = 100,
+		MetalValue = 500,
+		RequiresEquippedBothHands = TRUE,
+		Tooltip = Tooltip_Generator,
+		Tags = HeavyItem;Generator;HasMetal;IgnoreZombieDensity;ShowCondition,
+		WorldObjectSprite = appliances_misc_01_12,
+		ConditionLowerChanceOneIn = 24,
+		SoundRadius = 23,
+		SoundVolume = 1,
+	}
+
+    /* should be extra loud - Mash */
+	item Generator_Old
+	{
+		DisplayName = Generator - Old,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 40,
+		Icon = Generator4,
+		ConditionMax = 100,
+		MetalValue = 500,
+		RequiresEquippedBothHands = TRUE,
+		Tooltip = Tooltip_Generator,
+		Tags = HeavyItem;Generator;HasMetal;IgnoreZombieDensity;ShowCondition,
+		WorldObjectSprite = appliances_misc_01_4,
+		ConditionLowerChanceOneIn = 25,
+		SoundRadius = 25,
+		SoundVolume = 1,
+	}
+
+	item Microphone
+	{
+		DisplayName = Microphone,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		MetalValue = 8,
+		Weight = 0.5,
+		Icon = Microphone,
+		WorldStaticModel = Microphone,
+		Tags = HasMetal;MiscElectronic,
+	}
+
+	item PowerBar
+	{
+		DisplayName = Power Bar,
+		DisplayCategory = Electronics,
+		Type = Normal,
+		Weight = 2,
+		Icon = PowerBar,
+		MetalValue = 8,
+		WorldStaticModel = PowerBar,
+		Tags = HasMetal,
+	}
+}

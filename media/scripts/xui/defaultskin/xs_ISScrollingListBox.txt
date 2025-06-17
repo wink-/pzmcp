@@ -1,0 +1,22 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISScrollingListBox
+        {
+            background          = false,
+            backgroundColor     = C_BgWindow,
+            borderColor         = C_Border,
+            altBgColor          = nil,
+            listHeaderColor     = C_TextListHeader,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+            drawBorder          = false,
+            font                = UIFont.Large,
+            itemPadY            = 7,
+            itemheight          = 30,
+        }
+    }
+}

@@ -1,0 +1,58 @@
+/******************************************/
+/** RJ: PLEASE DONT TOUCH WITHOUT ASKING **/
+/******************************************/
+
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_ChurnBucket
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Churn Bucket,
+            Icon                = Build_ButterChurn,
+        }
+    }
+
+    entity ChurnBucket
+    {
+
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_ChurnBucket,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes         = ChurnBucket,
+        }
+
+        component SpriteConfig
+        {
+		    isThumpable = false,
+            face S
+            {
+                layer
+                {
+                    row = crafted_05_72,
+                }
+            }
+        }
+
+        component CraftRecipe
+        {
+		    timedAction   = BuildWoodenStructureMedium,
+            time          = 50,
+            category      = Farming,
+            ToolTip       = Tooltip_craft_churnBucketDesc,
+            inputs
+            {
+		        item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 2 [Base.Plank],
+		        item 2 [Base.Nails],
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISPanelJoypad
+        {
+            background          = true,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+            moveWithMouse       = false,
+        }
+    }
+}

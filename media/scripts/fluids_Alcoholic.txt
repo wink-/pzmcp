@@ -1,0 +1,700 @@
+module Base
+{
+    fluid Beer
+    {
+        ColorReference  = Gold,
+        DisplayName     = Fluid_Name_Beer,
+
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            fatigueChange           = 0,
+            hungerChange            = -10,
+            stressChange            = 0,
+            thirstChange            = -20,
+            unhappyChange           = -10,
+            calories                = 500,
+            carbohydrates           = 36,
+            lipids                  = 0,
+            proteins                = 4,
+            alcohol                 = 0.05,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid Brandy
+    {
+        ColorReference  = Peru,
+        DisplayName     = Fluid_Name_Brandy,
+
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            fatigueChange           = 0,
+            hungerChange            = -20,
+            stressChange            = 0,
+            thirstChange            = -20,
+            unhappyChange           = -10,
+            calories                = 2000,
+            carbohydrates           = 0,
+            lipids                  = 0,
+            proteins                = 0,
+            alcohol                 = 0.4,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid Champagne
+    {
+        ColorReference  = PaleGoldenrod,
+        DisplayName     = Fluid_Name_Champagne,
+
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            fatigueChange           = 0,
+            hungerChange            = -20,
+            stressChange            = 0,
+            thirstChange            = -20,
+            unhappyChange           = -20,
+            calories                = 581,
+            carbohydrates           = 25,
+            lipids                  = 0,
+            proteins                = 0,
+            alcohol                 = 0.12,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid Cider
+    {
+        ColorReference  = PaleGoldenrod,
+        DisplayName     = Fluid_Name_Cider,
+
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            fatigueChange           = 0,
+            hungerChange            = -20,
+            stressChange            = 0,
+            thirstChange            = -20,
+            unhappyChange           = -20,
+            calories                = 190,
+            carbohydrates           = 8,
+            lipids                  = 0,
+            proteins                = 0,
+            alcohol                 = 0.04,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid CoffeeLiqueur
+    {
+        ColorReference  = Black,
+        DisplayName     = Fluid_Name_CoffeeLiqueur,
+
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            fatigueChange           = 0,
+            hungerChange            = -20,
+            stressChange            = 0,
+            thirstChange            = -20,
+            unhappyChange           = -10,
+            calories                = 3260,
+            carbohydrates           = 21,
+            lipids                  = 16,
+            proteins                = 2,
+            alcohol                 = 0.2,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid Curacao
+    {
+        ColorReference  = DeepSkyBlue,
+        DisplayName     = Fluid_Name_Curacao,
+
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            fatigueChange           = 0,
+            hungerChange            = -20,
+            stressChange            = 0,
+            thirstChange            = -20,
+            unhappyChange           = -10,
+            calories                = 2430,
+            carbohydrates           = 236,
+            lipids                  = 0,
+            proteins                = 4,
+            alcohol                 = 0.4,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid Gin
+    {
+        ColorReference  = White,
+        DisplayName     = Fluid_Name_Gin,
+
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            fatigueChange           = 0,
+            hungerChange            = -20,
+            stressChange            = 0,
+            thirstChange            = -20,
+            unhappyChange           = -10,
+            calories                = 2630,
+            carbohydrates           = 0,
+            lipids                  = 0,
+            proteins                = 0,
+            alcohol                 = 0.4,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid Grenadine
+    {
+        ColorReference  = Crimson,
+        DisplayName     = Fluid_Name_Grenadine,
+
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            fatigueChange           = 0,
+            hungerChange            = -20,
+            stressChange            = 0,
+            thirstChange            = -15,
+            unhappyChange           = -10,
+            calories                = 2780,
+            carbohydrates           = 670,
+            lipids                  = 0,
+            proteins                = 0,
+            alcohol                 = 0,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid Mead
+    {
+        ColorReference  = Tan,
+        DisplayName     = Fluid_Name_Mead,
+
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            calories                = 1220,
+            carbohydrates           = 0,
+            lipids                  = 0,
+            proteins                = 0,
+            alcohol                 = 0.06,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid Port
+    {
+        ColorReference  = Peru,
+        DisplayName     = Fluid_Name_Port,
+
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            fatigueChange           = 0,
+            hungerChange            = -20,
+            stressChange            = 0,
+            thirstChange            = -20,
+            unhappyChange           = -10,
+            calories                = 1570,
+            carbohydrates           = 129,
+            lipids                  = 0,
+            proteins                = 0,
+            alcohol                 = 0.16,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid Rum
+    {
+        ColorReference  = Peru,
+        DisplayName     = Fluid_Name_Rum,
+
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            fatigueChange           = 0,
+            hungerChange            = -20,
+            stressChange            = 0,
+            thirstChange            = -20,
+            unhappyChange           = -10,
+            calories                = 2310,
+            carbohydrates           = 0,
+            lipids                  = 0,
+            proteins                = 0,
+            alcohol                 = 0.4,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid Scotch
+    {
+        ColorReference  = Peru,
+        DisplayName     = Fluid_Name_Scotch,
+
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            fatigueChange           = 0,
+            hungerChange            = -20,
+            stressChange            = 0,
+            thirstChange            = -20,
+            unhappyChange           = -10,
+            calories                = 2270,
+            carbohydrates           = 0,
+            lipids                  = 0,
+            proteins                = 0,
+            alcohol                 = 0.4,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid Sherry
+    {
+        ColorReference  = FireBrick,
+        DisplayName     = Fluid_Name_Sherry,
+
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            fatigueChange           = 0,
+            hungerChange            = -20,
+            stressChange            = 0,
+            thirstChange            = -20,
+            unhappyChange           = -10,
+            calories                = 1520,
+            carbohydrates           = 69,
+            lipids                  = 0,
+            proteins                = 0,
+            alcohol                 = 0.15,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid Tequila
+    {
+        ColorReference  = White,
+        DisplayName     = Fluid_Name_Tequila,
+
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            fatigueChange           = 0,
+            hungerChange            = -20,
+            stressChange            = 0,
+            thirstChange            = -20,
+            unhappyChange           = -10,
+            calories                = 2100,
+            carbohydrates           = 0,
+            lipids                  = 0,
+            proteins                = 0,
+            alcohol                 = 0.4,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid Vermouth
+    {
+        ColorReference  = OldLace,
+        DisplayName     = Fluid_Name_Vermouth,
+
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            fatigueChange           = 0,
+            hungerChange            = -20,
+            stressChange            = 0,
+            thirstChange            = -20,
+            unhappyChange           = -10,
+            calories                = 1110,
+            carbohydrates           = 33,
+            lipids                  = 0,
+            proteins                = 0,
+            alcohol                 = 0.15,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid Vodka
+    {
+        ColorReference  = White,
+        DisplayName     = Fluid_Name_Vodka,
+
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            fatigueChange           = 0,
+            hungerChange            = -20,
+            stressChange            = 0,
+            thirstChange            = -20,
+            unhappyChange           = -10,
+            calories                = 2310,
+            carbohydrates           = 0,
+            lipids                  = 0,
+            proteins                = 0,
+            alcohol                 = 0.4,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid Whiskey
+    {
+        ColorReference  = Peru,
+        DisplayName     = Fluid_Name_Whiskey,
+
+        Categories
+        {
+            Beverage,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            fatigueChange           = 0,
+            hungerChange            = -20,
+            stressChange            = 0,
+            thirstChange            = -20,
+            unhappyChange           = -10,
+            calories                = 2500,
+            carbohydrates           = 0,
+            lipids                  = 0,
+            proteins                = 0,
+            alcohol                 = 0.4,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+
+    fluid Wine
+    {
+        ColorReference  = Maroon,
+        DisplayName     = Fluid_Name_Wine,
+
+        Categories
+        {
+            Beverage,
+            Colors,
+            Alcoholic,
+        }
+
+        Properties
+        {
+            fatigueChange           = 0,
+            hungerChange            = -20,
+            stressChange            = 0,
+            thirstChange            = -20,
+            unhappyChange           = -20,
+            calories                = 481,
+            carbohydrates           = 0,
+            lipids                  = 0,
+            proteins                = 0,
+            alcohol                 = 0.12,
+            fluReduction            = 0,
+            painReduction           = 0,
+            enduranceChange         = 0,
+            foodSicknessReduction   = 0,
+        }
+
+        BlendWhiteList
+        {
+            whitelist = true,
+            categories
+            {
+            	Beverage,
+            }
+        }
+    }
+}

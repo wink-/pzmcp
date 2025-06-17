@@ -1,0 +1,29 @@
+module Base
+{
+	sound PlayingDiceRollSingle
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Playing/Dice/Roll/Single,
+		}
+	}
+
+	sound PlayingDiceRollDouble
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Playing/Dice/Roll/Double,
+		}
+	}
+
+	sound PlayingCardsDraw
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Playing/Cards/Draw,
+		}
+	}
+}

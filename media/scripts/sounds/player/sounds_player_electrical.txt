@@ -1,0 +1,20 @@
+module Base
+{
+	sound Dismantle
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Electrical/Dismantle,
+		}
+	}
+
+	sound DismantleFailed
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Electrical/DismantleFailed,
+		}
+	}
+}

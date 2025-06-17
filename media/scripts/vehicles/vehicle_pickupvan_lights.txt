@@ -1,0 +1,17 @@
+module Base
+{
+	model Vehicles_PickUpVanLights
+	{
+		mesh = vehicles/Vehicles_PickUpVanLights,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	model Vehicles_PickUpVanLights_NoRandom
+	{
+		mesh = vehicles/Vehicles_PickUpVanLights,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+}

@@ -1,0 +1,85 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_DoubleWireGate
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Big Double Wire Gate,
+			Icon		= Build_DoubleWireGate,
+		}
+	}
+
+    entity DoubleWireGate
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_DoubleWireGate,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			skillBaseHealth = 300,
+			dontNeedFrame	= true,
+			breakSound      = BreakDoor,
+			
+            face W
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_65,
+                    row = fixtures_doors_fences_01_64,
+                    row = fixtures_doors_fences_01_73,
+                    row = fixtures_doors_fences_01_72,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = fixtures_doors_fences_01_66 fixtures_doors_fences_01_67 fixtures_doors_fences_01_74 fixtures_doors_fences_01_75,
+                }
+            }
+			/*face W_OPEN
+            {
+                layer
+                {
+					row = fixtures_doors_fences_01_76 fixtures_doors_fences_01_77 fixtures_doors_fences_01_68 fixtures_doors_fences_01_69,
+
+                }
+            }
+            face N_OPEN
+            {
+                layer
+                {
+					row = fixtures_doors_fences_01_79,
+					row = fixtures_doors_fences_01_78,
+					row = fixtures_doors_fences_01_71,
+					row = fixtures_doors_fences_01_70,
+                }
+            }*/
+        }
+		
+		component CraftRecipe
+        {
+            timedAction   = BuildWireFence,
+            time          = 200,
+            needToBeLearn = true,
+            category      = Welding,
+            SkillRequired = MetalWelding:5,
+            xpAward       = MetalWelding:50,
+            ToolTip       = Tooltip_craft_doubleWireGateDesc,
+            inputs
+            {
+                item 10 [Base.BlowTorch] flags[DontRecordInput],
+                item 8 [Base.MetalPipe],
+                item 4 [Base.Wire],
+                item 4 [Base.Hinge],
+                item 2 [Base.ScrapMetal],
+                item 10 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

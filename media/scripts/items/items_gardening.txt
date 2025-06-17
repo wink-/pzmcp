@@ -1,0 +1,41 @@
+module Base
+{
+	/******* GARDENING - ITEMS *******/
+	
+	item CompostBag
+	{
+		DisplayName = Compost Bag,
+		DisplayCategory = Gardening,
+		Type = Drainable,
+		Weight = 5.0,
+		Icon = Compost,
+		ConditionMax = 1,
+		/*ReplaceInPrimaryHand = Bag_Sandbag_RHand holdingbagright,
+		ReplaceInSecondHand = Bag_Sandbag_LHand holdingbagleft,*/
+		ReplaceOnDeplete = EmptySandbag,
+		SurvivalGear = TRUE,
+		Tooltip = Tooltip_Fertilizer,
+		UseDelta = 0.25,
+		UseWhileEquipped = FALSE,
+		StaticModel = CompostBag,
+		WorldStaticModel = CompostBag,
+		Tags = Compost,
+	}
+	
+	item Fertilizer
+	{
+		DisplayName = NPK Fertilizer,
+		DisplayCategory = Gardening,
+		Type = Drainable,
+		Weight = 5.0,
+		WeightEmpty = 0.1,
+		Icon = TZ_IndieStoneNPK,
+		Tooltip = Tooltip_Fertilizer,
+		UseDelta = 0.125,
+		UseWhileEquipped = FALSE,
+		StaticModel = Fertilizer_Ground,
+		WorldStaticModel = Fertilizer_Ground,
+		Tags = Fertilizer,
+	}
+
+}

@@ -1,0 +1,188 @@
+module Base
+{
+	sound VehicleEngineSportsCar
+	{
+		category = Vehicle,
+		master = VehicleEngine,
+		clip
+		{
+			event = Vehicle/Sport/Engine,
+		}
+	}
+
+	sound VehicleIgnitionFailSportsCar
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/IgnitionFail,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleHornSportsCar
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/Horn,
+		}
+	}
+
+	sound VehicleAlarmSportsCar
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/Alarm,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleDoorIsLockedSportsCar
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/Door/IsLocked,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleDoorOpenSportsCar
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/Door/Open,
+		}
+	}
+
+	sound VehicleDoorCloseSportsCar
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/Door/Close,
+		}
+	}
+
+	sound LockVehicleDoorSportsCar
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/Door/Lock,
+		}
+	}
+
+	sound UnlockVehicleDoorSportsCar
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/Door/UnLock,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleHoodOpenSportsCar
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/Hood/Open,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleHoodCloseSportsCar
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/Hood/Close,
+		}
+	}
+
+	sound VehicleHoodCloseSportsCarStart
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/Hood/Close/Start,
+		}
+	}
+
+	sound VehicleHoodCloseSportsCarEnd
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/Hood/Close/End,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleTrunkCloseSportsCar
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/Trunk/Close,
+		}
+	}
+
+	sound VehicleTrunkCloseSportsCarStart
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/Trunk/Close/Start,
+		}
+	}
+
+	sound VehicleTrunkCloseSportsCarEnd
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/Trunk/Close/End,
+		}
+	}
+
+/******************************************************************************/
+
+	sound VehicleTrunkOpenSportsCar
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/Trunk/Open,
+		}
+	}
+
+	sound VehicleTrunkLockSportsCar
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/Trunk/Lock,
+		}
+	}
+
+	sound VehicleTrunkUnlockSportsCar
+	{
+		category = Vehicle,
+		clip
+		{
+			event = Vehicle/Sport/Trunk/UnLock,
+		}
+	}
+}

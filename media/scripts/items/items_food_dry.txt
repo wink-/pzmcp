@@ -1,0 +1,792 @@
+module Base
+{
+	/******* DRY FOODS - BREAKFAST *******/
+	
+	item Cereal
+	{
+		DisplayName = Cereal,
+		DisplayCategory = Food,
+		EatType = eatBox,
+		Type = Food,
+		Weight = 0.2,
+		IconsForTexture = Cereal_SunBallz;Cereal_CornFlakes;Cereal_Muesli;Cereal_HappyCurios;Cereal_OatRings,
+		Packaged = TRUE,
+		HungerChange = -40,
+		Calories = 2360,
+		Carbohydrates = 572,
+		Lipids = 26,
+		Proteins = 52,
+		StaticModelsByIndex = Cereal;Cereal2;Cereal3;Cereal4;Cereal5,
+		WorldStaticModelsByIndex = Cereal;Cereal2;Cereal3;Cereal4;Cereal5,
+	}
+	
+	item CerealBowl
+	{
+		DisplayName = Bowl of Cereal,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = Oatmeal,
+		EatType = 2handbowl,
+		PourType = bowl,
+		ReplaceOnUse = Bowl,
+		DaysFresh = 4,
+		DaysTotallyRotten = 7,
+		HungerChange = -20,
+		ThirstChange = -15,
+		Calories = 295,
+		Carbohydrates = 71.5,
+		Lipids = 3.25,
+		Proteins = 6.5,
+		StaticModel = BowlRice_Ground,
+		WorldStaticModel = BowlRice_Ground,
+		SoundMap = DumpContents EmptyBowlFromFood,
+		Tags = DontInheritCondition,
+	}
+	
+	item Coffee2
+	{
+		DisplayName = Coffee,
+		DisplayCategory = Food,
+		EatType = candrink,
+		Type = Food,
+		Weight = 1,
+		Icon = InstantCoffee,
+		EvolvedRecipe = HotDrink:5,
+		FoodType = Coffee,
+		Packaged = TRUE,
+		FatigueChange = -50,
+		HungerChange = -30,
+		ThirstChange = 60,
+		UnhappyChange = 20,
+		Calories = 2,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 1,
+		StaticModel = Coffee,
+		WorldStaticModel = Coffee,
+	}
+	
+	item OatsRaw
+	{
+		DisplayName = Can of Oats,
+		DisplayCategory = Food,
+		EatType = candrink,
+		Type = Food,
+		Weight = 0.8,
+		Icon = OatsRaw,
+		Packaged = TRUE,
+		HungerChange = -50,
+		Calories = 1500,
+		Carbohydrates = 405,
+		Lipids = 45,
+		Proteins = 75,
+		StaticModel = CanOfOats,
+		WorldStaticModel = CanOfOats,
+	}
+	
+	item Teabag2
+	{
+		DisplayName = Tea Bag,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Teabag,
+		EvolvedRecipe = HotDrink:5,
+		EvolvedRecipeName = Tea,
+		FoodType = Tea,
+		FatigueChange = -15,
+		HungerChange = -5,
+		ThirstChange = 10,
+		UnhappyChange = 10,
+		StaticModel = TeaBag,
+		WorldStaticModel = TeaBag,
+	}
+	
+	/******* DRY FOODS - DINNER *******/
+	
+	item DriedBlackBeans
+	{
+		DisplayName = Dried Black Beans,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 2,
+		Icon = DriedBlackBeans,
+		EvolvedRecipe = Soup:10;Stew:10;Rice:10;Pasta:10,
+		FoodType = Bean,
+		Packaged = TRUE,
+		HungerChange = -60,
+		/*ThirstChange = 60,
+		UnhappyChange = 40,*/
+		Calories = 3084,
+		Carbohydrates = 580,
+		Lipids = 0,
+		Proteins = 199,
+		StaticModel = DriedBlackBeans_Ground,
+		WorldStaticModel = DriedBlackBeans_Ground,
+		Tags = DriedFood,
+		EvolvedRecipeName = Black Bean,
+		CantEat = TRUE,
+		ToolTip = Tooltip_item_MustAddRecipe,
+	}
+	
+	item DriedChickpeas
+	{
+		DisplayName = Dried Chick Peas,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 2,
+		Icon = DriedChickpeas,
+		EvolvedRecipe = Soup:10;Stew:10;Rice:10;Pasta:10,
+		FoodType = Bean,
+		Packaged = TRUE,
+		HungerChange = -60,
+		/*ThirstChange = 60,
+		UnhappyChange = 40,*/
+		Calories = 2851,
+		Carbohydrates = 544,
+		Lipids = 0,
+		Proteins = 181,
+		StaticModel = DriedChickpeas_Ground,
+		WorldStaticModel = DriedChickpeas_Ground,
+		Tags = DriedFood,
+		EvolvedRecipeName = Chick Pea,
+		CantEat = TRUE,
+		ToolTip = Tooltip_item_MustAddRecipe,
+	}
+	
+	item DriedKidneyBeans
+	{
+		DisplayName = Dried Kidney Beans,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 2,
+		Icon = DriedKidneyBeans,
+		EvolvedRecipe = Soup:10;Stew:10;Rice:10;Pasta:10,
+		FoodType = Bean,
+		Packaged = TRUE,
+		HungerChange = -60,
+		/*ThirstChange = 60,
+		UnhappyChange = 40,*/
+		Calories = 3265,
+		Carbohydrates = 508,
+		Lipids = 13,
+		Proteins = 272,
+		StaticModel = DriedKidneyBeans_Ground,
+		WorldStaticModel = DriedKidneyBeans_Ground,
+		Tags = DriedFood,
+		EvolvedRecipeName = Kidney Bean,
+		CantEat = TRUE,
+		ToolTip = Tooltip_item_MustAddRecipe,
+	}
+	
+	item DriedLentils
+	{
+		DisplayName = Dried Lentils,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 2,
+		Icon = DriedLentils,
+		EvolvedRecipe = Soup:10;Stew:10;Rice:10;Pasta:10,
+		FoodType = Vegetables,
+		Packaged = TRUE,
+		HungerChange = -60,
+		/*ThirstChange = 60,
+		UnhappyChange = 40,*/
+		Calories = 3000,
+		Carbohydrates = 540,
+		Lipids = 0,
+		Proteins = 220,
+		StaticModel = DriedLentils_Ground,
+		WorldStaticModel = DriedLentils_Ground,
+		Tags = DriedFood,
+		EvolvedRecipeName = Lentil,
+		CantEat = TRUE,
+		ToolTip = Tooltip_item_MustAddRecipe,
+	}
+	
+	item DriedSplitPeas
+	{
+		DisplayName = Dried Split Peas,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 2,
+		Icon = DriedSplitPeas,
+		EvolvedRecipe = Soup:10;Stew:10;Rice:10;Pasta:10,
+		FoodType = Vegetables,
+		Packaged = TRUE,
+		HungerChange = -60,
+		/*ThirstChange = 60,
+		UnhappyChange = 40,*/
+		Calories = 2217,
+		Carbohydrates = 544,
+		Lipids = 0,
+		Proteins = 221,
+		StaticModel = DriedSplitPeas_Ground,
+		WorldStaticModel = DriedSplitPeas_Ground,
+		Tags = DriedFood,
+		EvolvedRecipeName = Split Pea,
+		CantEat = TRUE,
+		ToolTip = Tooltip_item_MustAddRecipe,
+	}
+	
+	item DriedWhiteBeans
+	{
+		DisplayName = Dried White Beans,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 2,
+		Icon = DriedWhiteBeans,
+		EvolvedRecipe = Soup:10;Stew:10;Rice:10;Pasta:10,
+		FoodType = Bean,
+		Packaged = TRUE,
+		HungerChange = -60,
+		/*ThirstChange = 60,
+		UnhappyChange = 40,*/
+		Calories = 2823,
+		Carbohydrates = 527,
+		Lipids = 10,
+		Proteins = 188,
+		StaticModel = DriedWhiteBeans_Ground,
+		WorldStaticModel = DriedWhiteBeans_Ground,
+		Tags = DriedFood,
+		EvolvedRecipeName = White Bean,
+		CantEat = TRUE,
+		ToolTip = Tooltip_item_MustAddRecipe,
+	}
+
+	item Macandcheese
+	{
+		DisplayName = Mac and Cheese,
+		DisplayCategory = Food,
+		/*EatType = eatBox,*/
+		Type = Food,
+		Weight = 0.5,
+		Icon = Macandcheese,
+		Packaged = TRUE,
+		/*HungerChange = -30,*/
+		Calories = 690,
+		Carbohydrates = 126,
+		Lipids = 12,
+		Proteins = 21,
+		StaticModel = MacAndCheese,
+		WorldStaticModel = MacAndCheese,
+		CantEat = TRUE,
+	}
+
+	item Macandcheese_Box
+	{
+		DisplayName = Box of Mac and Cheese,
+		DisplayCategory = Food,
+		Type = Normal,
+		Weight = 2.5,
+        Icon	=	Parcel_Medium_Food,
+		WorldStaticModel = Parcel_Food_Medium,
+		Tags = IgnoreZombieDensity,
+	}
+
+	item Macaroni
+    	{
+    		DisplayName = Macaroni,
+    		DisplayCategory = Food,
+		EatType = EatSmall,
+    		Type = Food,
+    		Weight = 2,
+    		Icon = Macaroni,
+    		Packaged = TRUE,
+    		HungerChange = -60,
+    		ThirstChange = 60,
+    		UnhappyChange = 40,
+    		Calories = 3360,
+    		Carbohydrates = 656,
+    		Lipids = 16,
+    		Proteins = 112,
+    		CustomEatSound = EatingCrispy,
+    		WorldStaticModel = Macaroni,
+    		EvolvedRecipe = Soup:10;Stew:10,
+    		FoodType = Pasta,
+    		Tags = Pasta;DriedFood,
+    	}
+
+    	item MacandcheeseMacaroni
+    	{
+    		DisplayName = Macaroni,
+    		DisplayCategory = Food,
+		EatType = EatSmall,
+    		Type = Food,
+    		Weight = 0.4,
+    		Icon = Macaroni,
+    		Packaged = TRUE,
+    		HungerChange = -10,
+    		ThirstChange = 10,
+    		UnhappyChange = 7,
+    		Calories = 560,
+    		Carbohydrates = 109.3,
+    		Lipids = 2.7,
+    		Proteins = 112,
+    		CustomEatSound = EatingCrispy,
+    		WorldStaticModel = Macaroni,
+    		EvolvedRecipe = Soup:10;Stew:10,
+    		FoodType = Pasta,
+    		Tags = Pasta;DriedFood,
+    	}
+
+    	item MacandcheesePowder
+    	{
+    	    DisplayCategory = Food,
+    		DisplayName = Powdered Cheese,
+		    EatType = glugFood,
+    		Type = Food,
+    		Weight = 0.1,
+    		Icon = CheesePowdered,
+    		HungerChange = -14,
+    		ThirstChange = 14,
+    		UnhappyChange = 14,
+    		Calories = 130,
+    		Carbohydrates = 20.7,
+    		Lipids = 9.7,
+    		Proteins = 21,
+    		StaticModel = CheesePowdered,
+    		WorldStaticModel = CheesePowdered,
+    		FoodType = Cheese,
+    		EvolvedRecipeName = Cheese,
+    		EvolvedRecipe = Pasta:14;Rice:14;Soup:14,
+    	}
+	
+	item Pasta
+	{
+		DisplayName = Pasta,
+		DisplayCategory = Food,
+		EatType = eatOffStick,
+		Type = Food,
+		Weight = 2,
+		Icon = SpagettiRaw,
+		Packaged = TRUE,
+		HungerChange = -60,
+		ThirstChange = 60,
+		UnhappyChange = 40,
+		Calories = 3360,
+		Carbohydrates = 656,
+		Lipids = 16,
+		Proteins = 112,
+		CustomEatSound = EatingCrispy,
+		StaticModel = Pasta,
+		WorldStaticModel = Pasta,
+		EvolvedRecipe = Soup:10;Stew:10,
+		FoodType = Pasta,
+		Tags = Pasta;DriedFood,
+	}
+	
+	item Ramen
+	{
+		DisplayName = Dry Ramen Noodles,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Ramen,
+		EvolvedRecipe = Soup:10;Stir fry:10,
+		EvolvedRecipeName = Ramen,
+		FoodType = Pasta,
+		Packaged = TRUE,
+		HungerChange = -10,
+		ThirstChange = 40,
+		UnhappyChange = 20,
+		Calories = 52,
+		Carbohydrates = 0,
+		Lipids = 14,
+		Proteins = 10,
+		StaticModel = DryRamenNoodles,
+		WorldStaticModel = DryRamenNoodles,
+		Tags = DriedFood,
+	}
+	
+	item Rice
+	{
+		DisplayName = Rice,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 2,
+		Icon = RiceRaw,
+		Packaged = TRUE,
+		HungerChange = -60,
+		/*ThirstChange = 60,*/
+		/*UnhappyChange = 40,*/
+		Calories = 2880,
+		Carbohydrates = 648,
+		Lipids = 0,
+		Proteins = 72,
+		StaticModel = Rice,
+		WorldStaticModel = Rice,
+		CantEat = TRUE,
+		Tags = DriedFood,
+		ToolTip = Tooltip_item_MustAddRecipe,
+		FoodType = Rice,
+	}
+	
+	item TVDinner
+	{
+		DisplayName = TV Dinner,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.4,
+		Icon = TVDinner,
+		BadCold = true,
+		DangerousUncooked = TRUE,
+		EatType = plate,
+		GoodHot = true,
+		IsCookable = TRUE,
+		Packaged = TRUE,
+		MinutesToCook = 10,
+		MinutesToBurn = 15,
+		HungerChange = -23,
+		/* note that it's deliberate that they cause unhappyness as a gag; I personally enjoy TV dinners but I understand */
+		UnhappyChange = 20,
+		Calories = 670,
+		Carbohydrates = 81,
+		Lipids = 25,
+		Proteins = 30,
+		StaticModel = TVDinner,
+		WorldStaticModel = TVDinner_Ground,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+	}
+	
+	/******* DRY FOODS - INGREDIENTS *******/
+	
+	item BakingSoda
+	{
+		DisplayName = Baking Soda,
+		DisplayCategory = Cooking,
+		Type = Drainable,
+		Weight = 0.3,
+		Icon = BakingSoda,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = BakingSoda_Ground,
+	}
+	
+	item BouillonCube
+	{
+		DisplayName = Bouillon Cube,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = BouillionCube,
+		EvolvedRecipe = Soup:3;Stew:3;HotDrink:1,
+		Spice = true,
+		HungerChange = -3,
+		ThirstChange = 5,
+		Calories = 16,
+		Carbohydrates = 2.3,
+		Lipids = 0.5,
+		Proteins = 0.6,
+		WorldStaticModel = BouillionCube_Ground,
+		Tags = DriedFood;HerbalTea,
+		EvolvedRecipeName = Bouillon,
+		FoodType = Stock,
+	}
+	
+	item ChocolateChips
+	{
+		DisplayName = Chocolate Chips,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = ChocolateChips,
+		EvolvedRecipe = Muffin:3;ConeIcecream:3;Cake:6;Pancakes:3;PieSweet:6;Bread:6;ConeIcecream:3,
+		FoodType = Chocolate,
+		HungerChange = -6,
+		Calories = 50,
+		Carbohydrates = 17,
+		Lipids = 8,
+		Proteins = 1,
+		CustomEatSound = EatingCrispy,
+		WorldStaticModel = ChocolateChips_Ground,
+	}
+	
+	item CocoaPowder
+	{
+		DisplayName = Cocoa Powder,
+		DisplayCategory = Food,
+		EatType = candrink,
+		Type = Food,
+		Weight = 1,
+		Icon = CocoaPowder,
+		EvolvedRecipe = HotDrink:5;ConeIcecream:5;Pancakes:5,
+		FoodType = Cocoa,
+		Packaged = TRUE,
+		HungerChange = -30,
+		ThirstChange = 50,
+		UnhappyChange = -10,
+		Calories = 60,
+		Carbohydrates = 8,
+		Lipids = 5,
+		Proteins = 2,
+		StaticModel = CocoaPowder_Ground,
+		WorldStaticModel = CocoaPowder_Ground,
+		EvolvedRecipeName = Cocoa,
+	}
+	
+	item Cone
+	{
+		DisplayName = Cone,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Cone,
+		HungerChange = -5,
+		Calories = 15,
+		Carbohydrates = 10,
+		Lipids = 5,
+		Proteins = 2,
+		StaticModel = Cone_Ground,
+		WorldStaticModel = Cone_Ground,
+	}
+	
+	item Cornflour2
+	{
+		DisplayName = Cornflour,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 2,
+		Icon = Cornflour,
+		EvolvedRecipe = Soup:6;Stew:6,
+		FoodType = Thickener,
+		CantEat = TRUE,
+		Spice = TRUE,
+		ToolTip = Tooltip_item_MustAddRecipe,
+		HungerChange = -60,
+		WorldStaticModel = Cornflour,
+		Tags = Flour;MinorIngredient,
+	}
+	
+	item Cornmeal2
+	{
+		DisplayName = Cornmeal,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 2,
+		Icon = Cornmeal,
+		EvolvedRecipe = Soup:6;Stew:6,
+		FoodType = Thickener,
+		CantEat = TRUE,
+		Spice = TRUE,
+		ToolTip = Tooltip_item_MustAddRecipe,
+		HungerChange = -20,
+		WorldStaticModel = Cornmeal,
+		Tags = MinorIngredient,
+	}
+
+	item Flour2
+	{
+		DisplayName = Flour,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 2,
+		Icon = Flour,
+		CantEat = TRUE,
+		EvolvedRecipe = Soup:6;Stew:6,
+		FoodType = Thickener,
+		Spice = TRUE,
+		HungerChange = -60,
+		Calories = 50,
+		Carbohydrates = 21,
+		Lipids = 0,
+		Proteins = 5,
+		WorldStaticModel = Flour,
+		Tags = Flour;MinorIngredient,
+		ToolTip = Tooltip_item_MustAddRecipe,
+	}
+	
+	item GrahamCrackers
+	{
+		DisplayName = Graham Crackers,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = GrahamCrackers,
+		HungerChange = -5,
+		Calories = 70,
+		Carbohydrates = 12,
+		Lipids = 6,
+		Proteins = 1,
+		CustomEatSound = EatingCrispy,
+		StaticModel = CrackersGraham_Hand,
+		WorldStaticModel = CrackersGraham_Ground,
+		UnhappyChange = -3,
+	}
+	
+	item GravyMix
+	{
+		DisplayName = Gravy Mix,
+		DisplayCategory = Food,
+		Type = Drainable,
+		Weight = 0.1,
+		Icon = GravyMix,
+		UseDelta = 0.5,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = GravyMix_Ground,
+	}
+	
+	item PancakeMix
+	{
+		DisplayName = Pancake Mix,
+		DisplayCategory = Food,
+		Type = Drainable,
+		Weight = 0.1,
+		Icon = PancakeMix,
+		UseDelta = 0.25,
+		UseWhileEquipped = FALSE,
+		WorldStaticModel = PancakeMix_Ground,
+	}
+	
+	item RicePaper
+	{
+		DisplayName = Rice Paper,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = RicePaper,
+		CantBeFrozen = TRUE,
+		HungerChange = -4,
+		Calories = 10,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = RicePaper_Ground,
+		WorldStaticModel = RicePaper_Ground,
+	}
+	
+	item Seaweed
+	{
+		DisplayName = Seaweed,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Seaweed,
+		EvolvedRecipe = Soup:3,
+		Spice = true,
+		CantBeFrozen = TRUE,
+		HungerChange = -3,
+		Calories = 3,
+		Carbohydrates = 0,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = SeaWeed_Ground,
+		WorldStaticModel = SeaWeed_Ground,
+		FoodType = NoExplicit,
+	}
+	
+	item Sugar
+	{
+		DisplayName = Sugar,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.6,
+		WeightEmpty = 0.1,
+		Icon = Sugar,
+		EatType = candrink,
+		EvolvedRecipe = HotDrink:1;Toast:1;Oatmeal:1,
+		Spice = true,
+		UseDelta = 0.16,
+		UseWhileEquipped = FALSE,
+		HungerChange = -30,
+		Calories = 387,
+		Carbohydrates = 100,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = Sugar,
+		WorldStaticModel = Sugar,
+		Tags = Sugar,
+		FoodType = Sugar,
+	}
+	
+	item SugarBrown
+	{
+		DisplayName = Sugar - Brown,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.6,
+		WeightEmpty = 0.1,
+		Icon = SugarBrown,
+		EatType = candrink,
+		EvolvedRecipe = HotDrink:1;Toast:1;Oatmeal:1,
+		Spice = true,
+		UseWhileEquipped = FALSE,
+		HungerChange = -30,
+		Calories = 337,
+		Carbohydrates = 90,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = SugarBrown_Ground,
+		WorldStaticModel = SugarBrown_Ground,
+		Tags = Sugar,
+		FoodType = Sugar,
+	}
+
+	item SugarCubes
+	{
+		DisplayName = Sugar Cubes,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.02,
+		Icon = SugarCubes,
+		EvolvedRecipe = HotDrink:1;Toast:1;Oatmeal:1,
+		Packaged = TRUE,
+		Spice = true,
+		HungerChange = -4,
+		Calories = 44,
+		Carbohydrates = 12,
+		Lipids = 0,
+		Proteins = 0,
+		WorldStaticModel = SugarCubes,
+		Tags = Sugar,
+		EvolvedRecipeName = Sugar,
+		FoodType = Sugar,
+	}
+	
+	item SugarPacket
+	{
+		DisplayName = Sugar Packet,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.005,
+		Icon = SugarPacket,
+		EvolvedRecipe = HotDrink:1;Toast:1;Oatmeal:1,
+		Packaged = TRUE,
+		Spice = true,
+		HungerChange = -1,
+		Calories = 11,
+		Carbohydrates = 3,
+		Lipids = 0,
+		Proteins = 0,
+		StaticModel = SugarPacket_Ground,
+		WorldStaticModel = SugarPacket_Ground,
+		Tags = Sugar,
+		EvolvedRecipeName = Sugar,
+		FoodType = Sugar,
+	}
+	
+	item TacoShell
+	{
+		DisplayName = Taco Shell,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.1,
+		Icon = TacoShell,
+		DaysFresh = 15,
+		DaysTotallyRotten = 20,
+		HungerChange = -5,
+		Calories = 55,
+		Carbohydrates = 8.4,
+		Lipids = 3,
+		Proteins = 0.8,
+		EatType = 2handforced,
+		CustomEatSound = EatingCrispy,
+		StaticModel = TacoShell_Ground,
+		WorldStaticModel = TacoShell_Ground,
+	}
+}

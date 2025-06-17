@@ -1,0 +1,38 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISFluidSlotPanel
+        {
+            background          = false,
+            drawBorder          = true,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            textColor           = C_Text,
+            margin              = 24,
+            title               = "fluid",
+            minimumWidth        = 0,
+            minimumHeight       = 0,
+        }
+
+        ISFluidSlotPanel S_FluidSlotPanel_Inputs
+        {
+            title               = "input",
+        }
+
+        ISFluidSlotPanel S_FluidSlotPanel_Outputs
+        {
+            title               = "output",
+        }
+
+        ISFluidSlotPanel S_FluidSlotPanel_AnimalBlood
+        {
+            title               = "Blood",
+        }
+
+        ISFluidSlotPanel S_FluidSlotPanel_AnimalGrease
+        {
+            title               = "Grease",
+        }
+    }
+}

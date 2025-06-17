@@ -1,0 +1,72 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_SkullPolePig
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Pig Skull Pole,
+			Icon		= Build_Stake_SkullPig,
+		}
+	}
+
+    entity SkullPolePig
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_SkullPolePig,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 50,
+        	skillBaseHealth = 10,
+			
+            face W
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_86,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_85,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_87,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = constructedobjects_signs_01_84,
+                }
+            }
+        }
+		
+		component CraftRecipe
+        {
+		    timedAction   = BuildWallNoTool,
+            time          = 150,
+            category      = Miscellaneous,
+		    ToolTip       = Tooltip_craft_skullPoleDesc,
+
+            inputs
+            {
+                item 1 [Base.LongStick;Base.Sapling],
+                item 1 [Base.SheetRope],
+                item 1 [Base.Pig_Skull],
+            }
+        }
+    }
+}

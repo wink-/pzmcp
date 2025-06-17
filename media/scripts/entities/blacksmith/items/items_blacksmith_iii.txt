@@ -1,0 +1,168 @@
+module Base
+{
+
+	item CrudeBenchVise
+	{
+		DisplayName = Crude Bench Vise,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 5,
+		Icon = Clamp_Forged,
+		StaticModel = CrudeBenchVise,
+		WorldStaticModel = CrudeBenchVise,
+		Tags = HasMetal,
+	}
+
+	item CrudeBenchViseParts
+	{
+		DisplayName = Crude Bench Vise Parts,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 5,
+		Icon = ClampComponents_Forged,
+		StaticModel = CrudeBenchVise,
+		WorldStaticModel = CrudeBenchViseParts,
+		Tags = HasMetal,
+	}
+
+	item ClayCrudeBenchVisePartsMoldUnfired
+	{
+		DisplayName = Unfired Crude Bench Vise Parts Mold,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Ceramic_Clamp_Unfired,
+		StaticModel = ClayCrudeBenchVisePartsMoldUnfired,
+		WorldStaticModel = ClayCrudeBenchVisePartsMoldUnfired,
+		Tags = HasMetal,
+	}
+
+	item ClayCrudeBenchVisePartsMold
+	{
+		DisplayName = Crude Bench Vise Parts Mold,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = Ceramic_Clamp_Fired,
+		StaticModel = ClayCrudeBenchVisePartsMold,
+		WorldStaticModel = ClayCrudeBenchVisePartsMold,
+		Tags = HasMetal,
+	}
+
+	item WoodenCrudeBenchVisePartsMold
+	{
+		DisplayName = Wooden Crude Bench Vise Parts Mold,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 0.3,
+		Icon = WoodMold_ClampCast,
+		StaticModel = WoodenCrudeBenchVisePartsMold,
+		WorldStaticModel = WoodenCrudeBenchVisePartsMold,
+		Tags = HasMetal,
+	}
+
+	item BlowerFan
+	{
+		DisplayName = Blower Fan,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = BlowerFan,
+		StaticModel = BlowerFan,
+		WorldStaticModel = BlowerFan,
+		Tags = BlowerFan;HasMetal,
+	}
+
+	item HeavyChain
+	{
+		DisplayName = Heavy Chain,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 10,
+		Icon = HeavyChain,
+		StaticModel = HeavyChain,
+		WorldStaticModel = HeavyChain,
+		Tags = HasMetal,
+	}
+
+	item HeavyChainLink
+	{
+		DisplayName = Heavy Chain Link,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = ChainLink,
+		StaticModel = HeavyChainLink,
+		WorldStaticModel = HeavyChainLink,
+		Tags = HasMetal;SmeltableIronSmall,
+	}
+
+	item HeavyChain_Hook
+	{
+		DisplayName = Heavy Chain with Hook,
+		DisplayCategory = Tool,
+		Type = Normal,
+		Weight = 12.5,
+		Icon = HeavyChain_Hook,
+		StaticModel = HeavyChain_Hook,
+		WorldStaticModel = HeavyChain_Hook,
+		Tags = HasMetal,
+	}
+
+	item IronBarMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 6,
+		Type                = Normal,
+		DisplayName         = Iron Bar Mold,
+		Icon                = IronMold_Bar,
+		StaticModel         = IronBarMold,
+		WorldStaticModel    = IronBarMold,
+	}
+
+	item IronIngotMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 6,
+		Type                = Normal,
+		DisplayName         = Iron Ingot Mold,
+		Icon                = IronMold_Ingot,
+		StaticModel         = IronIngotMold,
+		WorldStaticModel    = IronIngotMold,
+	}
+
+	item SteelBarMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 6,
+		Type                = Normal,
+		DisplayName         = Steel Bar Mold,
+		Icon                = SteelMold_Bar,
+		StaticModel         = SteelBarMold,
+		WorldStaticModel    = SteelBarMold,
+	}
+
+	item SteelIngotMold
+	{
+	    DisplayCategory     = Material,
+		Weight              = 6,
+		Type                = Normal,
+		DisplayName         = Steel Ingot Mold,
+		Icon                = SteelMold_Ingot,
+		StaticModel         = SteelIngotMold,
+		WorldStaticModel    = SteelIngotMold,
+	}
+
+/*	item SmallArmorPlate
+	{
+		DisplayName = Small Armor Plate,
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = MetalSheetSmall,
+		MetalValue = 20,
+		WorldStaticModel = MetalSheetSmall,
+		Tags = IgnoreZombieDensity;HasMetal;SmeltableSteelMedium,
+	}*/
+
+}

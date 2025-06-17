@@ -1,0 +1,11 @@
+module Base
+{
+	sound RepairWithWrench
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Mechanics/RepairWithWrench,
+		}
+	}
+}

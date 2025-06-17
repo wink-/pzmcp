@@ -1,0 +1,32 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISTableLayout
+        {
+            /*
+            styleColumn         = nil,
+            styleRow            = nil,
+            styleCell           = nil,
+            */
+            background          = false,
+            drawGrid            = false,
+            gridColor           = C_Grid,
+            minimumWidth        = 0,
+            minimumHeight       = 0,
+            isAutoFill          = false,
+            isAutoFillX         = false,
+            isAutoFillY         = false,
+        }
+
+        ISTableLayout S_TableLayout_Main
+        {
+
+        }
+
+        ISTableLayout S_TableLayout_Middle
+        {
+
+        }
+    }
+}

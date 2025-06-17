@@ -1,0 +1,1417 @@
+module Base
+{
+	model LargemouthBass_Ground
+	{
+		mesh = WorldItems/Fish_Bass_Trout,
+		texture = WorldItems/Fish_Bass_LargeMouth,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model LargemouthBass_GroundCooked
+    {
+        mesh = WorldItems/Fish_Bass_Trout,
+        texture = WorldItems/Fish_MediumFishCooked,
+        scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model LargemouthBass_GroundBurnt
+    {
+        mesh = WorldItems/Fish_Bass_Trout,
+        texture = WorldItems/Fish_MediumFishBurnt,
+        scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model LargemouthBass_GroundRotten
+    {
+        mesh = WorldItems/Fish_Bass_Trout,
+        texture = WorldItems/Fish_MediumFishRotten,
+        scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model LargemouthBass_Hand_Little
+    {
+        mesh = Fish_Bass_Trout_Hand,
+        texture = WorldItems/Fish_Bass_LargeMouth,
+        scale = 0.25,
+    }
+	model LargemouthBass_Hand_Medium
+    {
+        mesh = Fish_Bass_Trout_Hand,
+        texture = WorldItems/Fish_Bass_LargeMouth,
+        scale = 0.5,
+    }
+	model LargemouthBass_Hand_Big
+    {
+        mesh = Fish_Bass_Trout_Hand,
+        texture = WorldItems/Fish_Bass_LargeMouth,
+        scale = 0.75,
+    }
+	model SmallmouthBass_Ground
+	{
+		mesh = WorldItems/Fish_Bass_Trout,
+		texture = WorldItems/Fish_Bass_SmallMouth,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model SmallmouthBass_GroundCooked
+    {
+        mesh = WorldItems/Fish_Bass_Trout,
+        texture = WorldItems/Fish_MediumFishCooked,
+        scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model SmallmouthBass_GroundBurnt
+    {
+        mesh = WorldItems/Fish_Bass_Trout,
+        texture = WorldItems/Fish_MediumFishBurnt,
+        scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model SmallmouthBass_GroundRotten
+    {
+        mesh = WorldItems/Fish_Bass_Trout,
+        texture = WorldItems/Fish_MediumFishRotten,
+        scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model SmallmouthBass_Hand_Little
+    {
+        mesh = Fish_Bass_Trout_Hand,
+        texture = WorldItems/Fish_Bass_SmallMouth,
+        scale = 0.25,
+    }
+	model SmallmouthBass_Hand_Medium
+    {
+        mesh = Fish_Bass_Trout_Hand,
+        texture = WorldItems/Fish_Bass_SmallMouth,
+        scale = 0.5,
+    }
+	model SmallmouthBass_Hand_Big
+    {
+        mesh = Fish_Bass_Trout_Hand,
+        texture = WorldItems/Fish_Bass_SmallMouth,
+        scale = 0.75,
+    }
+	model SpottedBass_Ground
+	{
+		mesh = WorldItems/Fish_Bass_Spotted_Stripped,
+		texture = WorldItems/Fish_Bass_Spotted,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model SpottedBass_GroundCooked
+    {
+        mesh = WorldItems/Fish_Bass_Spotted_Stripped,
+        texture = WorldItems/Fish_MediumFishCooked,
+        scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model SpottedBass_GroundBurnt
+    {
+        mesh = WorldItems/Fish_Bass_Spotted_Stripped,
+        texture = WorldItems/Fish_MediumFishBurnt,
+        scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model SpottedBass_GroundRotten
+    {
+        mesh = WorldItems/Fish_Bass_Spotted_Stripped,
+        texture = WorldItems/Fish_MediumFishRotten,
+        scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model SpottedBass_Hand_Little
+    {
+        mesh = Fish_Bass_Spotted_Stripped_Hand,
+        texture = WorldItems/Fish_Bass_Spotted,
+        scale = 0.25,
+    }
+	model SpottedBass_Hand_Medium
+    {
+        mesh = Fish_Bass_Spotted_Stripped_Hand,
+        texture = WorldItems/Fish_Bass_Spotted,
+        scale = 0.5,
+    }
+	model SpottedBass_Hand_Big
+    {
+        mesh = Fish_Bass_Spotted_Stripped_Hand,
+        texture = WorldItems/Fish_Bass_Spotted,
+        scale = 0.75,
+    }
+	model StripedBass_Ground
+	{
+		mesh = WorldItems/Fish_Bass_Spotted_Stripped,
+		texture = WorldItems/Fish_Bass_Striped,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model StripedBass_GroundCooked
+    {
+        mesh = WorldItems/Fish_Bass_Spotted_Stripped,
+        texture = WorldItems/Fish_MediumFishCooked,
+        scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model StripedBass_GroundBurnt
+    {
+        mesh = WorldItems/Fish_Bass_Spotted_Stripped,
+        texture = WorldItems/Fish_MediumFishBurnt,
+        scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model StripedBass_GroundRotten
+    {
+        mesh = WorldItems/Fish_Bass_Spotted_Stripped,
+        texture = WorldItems/Fish_MediumFishRotten,
+        scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model StripedBass_Hand_Little
+    {
+        mesh = Fish_Bass_Spotted_Stripped_Hand,
+        texture = WorldItems/Fish_Bass_Striped,
+        scale = 0.25,
+    }
+	model StripedBass_Hand_Medium
+    {
+        mesh = Fish_Bass_Spotted_Stripped_Hand,
+        texture = WorldItems/Fish_Bass_Striped,
+        scale = 0.5,
+    }
+	model StripedBass_Hand_Big
+    {
+        mesh = Fish_Bass_Spotted_Stripped_Hand,
+        texture = WorldItems/Fish_Bass_Striped,
+        scale = 0.75,
+    }
+	model Walleye_Ground
+	{
+		mesh = WorldItems/Fish_Sauger_Walleye,
+		texture = WorldItems/Fish_Walleye,
+		scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model Walleye_GroundCooked
+    {
+        mesh = WorldItems/Fish_Sauger_Walleye,
+        texture = WorldItems/Fish_MediumFishCooked,
+        scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model Walleye_GroundBurnt
+    {
+        mesh = WorldItems/Fish_Sauger_Walleye,
+        texture = WorldItems/Fish_MediumFishBurnt,
+        scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model Walleye_GroundRotten
+    {
+        mesh = WorldItems/Fish_Sauger_Walleye,
+        texture = WorldItems/Fish_MediumFishRotten,
+        scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model Walleye_Hand_Little
+    {
+        mesh = Fish_Sauger_Walleye_Hand,
+        texture = WorldItems/Fish_Walleye,
+        scale = 0.25,
+    }
+	model Walleye_Hand_Medium
+    {
+        mesh = Fish_Sauger_Walleye_Hand,
+        texture = WorldItems/Fish_Walleye,
+        scale = 0.5,
+    }
+	model Walleye_Hand_Big
+    {
+        mesh = Fish_Sauger_Walleye_Hand,
+        texture = WorldItems/Fish_Walleye,
+        scale = 0.75,
+    }
+	model Sauger_Ground
+	{
+		mesh = WorldItems/Fish_Sauger_Walleye,
+		texture = WorldItems/Fish_Sauger,
+		scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model Sauger_GroundCooked
+    {
+        mesh = WorldItems/Fish_Sauger_Walleye,
+        texture = WorldItems/Fish_MediumFishCooked,
+        scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model Sauger_GroundBurnt
+    {
+        mesh = WorldItems/Fish_Sauger_Walleye,
+        texture = WorldItems/Fish_MediumFishBurnt,
+        scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model Sauger_GroundRotten
+    {
+        mesh = WorldItems/Fish_Sauger_Walleye,
+        texture = WorldItems/Fish_MediumFishRotten,
+        scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model Sauger_Hand_Little
+    {
+        mesh = Fish_Sauger_Walleye_Hand,
+        texture = WorldItems/Fish_Sauger,
+        scale = 0.25,
+    }
+	model Sauger_Hand_Medium
+    {
+        mesh = Fish_Sauger_Walleye_Hand,
+        texture = WorldItems/Fish_Sauger,
+        scale = 0.5,
+    }
+	model Sauger_Hand_Big
+    {
+        mesh = Fish_Sauger_Walleye_Hand,
+        texture = WorldItems/Fish_Sauger,
+        scale = 0.75,
+    }
+	model BlackCrappie_Ground
+	{
+		mesh = WorldItems/Fish_Crappie_Perch,
+		texture = WorldItems/Fish_CrappieBlack,
+		scale = 0.23,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model BlackCrappie_GroundCooked
+    {
+        mesh = WorldItems/Fish_Crappie_Perch,
+        texture = WorldItems/Fish_SmallFishCooked,
+        scale = 0.23,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model BlackCrappie_GroundBurnt
+    {
+        mesh = WorldItems/Fish_Crappie_Perch,
+        texture = WorldItems/Fish_SmallFishBurnt,
+        scale = 0.23,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model BlackCrappie_GroundRotten
+    {
+        mesh = WorldItems/Fish_Crappie_Perch,
+        texture = WorldItems/Fish_SmallFishRotten,
+        scale = 0.23,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model BlackCrappie_Hand_Little
+    {
+        mesh = Fish_Crappie_Perch_Hand,
+        texture = WorldItems/Fish_CrappieBlack,
+        scale = 0.25,
+    }
+	model BlackCrappie_Hand_Medium
+    {
+        mesh = Fish_Crappie_Perch_Hand,
+        texture = WorldItems/Fish_CrappieBlack,
+        scale = 0.5,
+    }
+	model BlackCrappie_Hand_Big
+    {
+        mesh = Fish_Crappie_Perch_Hand,
+        texture = WorldItems/Fish_CrappieBlack,
+        scale = 0.75,
+    }
+	model WhiteCrappie_Ground
+	{
+		mesh = WorldItems/Fish_Crappie_Perch,
+		texture = WorldItems/Fish_CrappieWhite,
+		scale = 0.23,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model WhiteCrappie_GroundCooked
+    {
+        mesh = WorldItems/Fish_Crappie_Perch,
+        texture = WorldItems/Fish_SmallFishCooked,
+        scale = 0.23,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model WhiteCrappie_GroundBurnt
+    {
+        mesh = WorldItems/Fish_Crappie_Perch,
+        texture = WorldItems/Fish_SmallFishBurnt,
+        scale = 0.23,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model WhiteCrappie_GroundRotten
+    {
+        mesh = WorldItems/Fish_Crappie_Perch,
+        texture = WorldItems/Fish_SmallFishRotten,
+        scale = 0.23,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model WhiteCrappie_Hand_Little
+    {
+        mesh = Fish_Crappie_Perch_Hand,
+        texture = WorldItems/Fish_CrappieWhite,
+        scale = 0.25,
+    }
+	model WhiteCrappie_Hand_Medium
+    {
+        mesh = Fish_Crappie_Perch_Hand,
+        texture = WorldItems/Fish_CrappieWhite,
+        scale = 0.5,
+    }
+	model WhiteCrappie_Hand_Big
+    {
+        mesh = Fish_Crappie_Perch_Hand,
+        texture = WorldItems/Fish_CrappieWhite,
+        scale = 0.75,
+    }
+	model Bluegill_Ground
+	{
+		mesh = WorldItems/Fish_Bluegill_Sunfish,
+		texture = WorldItems/Fish_Bluegill,
+		scale = 0.195,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model Bluegill_GroundCooked
+    {
+        mesh = WorldItems/Fish_Bluegill_Sunfish,
+        texture = WorldItems/Fish_SmallFishCooked,
+        scale = 0.195,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model Bluegill_GroundBurnt
+    {
+        mesh = WorldItems/Fish_Bluegill_Sunfish,
+        texture = WorldItems/Fish_SmallFishBurnt,
+        scale = 0.195,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model Bluegill_GroundRotten
+    {
+        mesh = WorldItems/Fish_Bluegill_Sunfish,
+        texture = WorldItems/Fish_SmallFishRotten,
+        scale = 0.195,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model Bluegill_Hand_Little
+    {
+        mesh = Fish_Bluegill_Sunfish_Hand,
+        texture = WorldItems/Fish_Bluegill,
+        scale = 0.25,
+    }
+	model Bluegill_Hand_Medium
+    {
+        mesh = Fish_Bluegill_Sunfish_Hand,
+        texture = WorldItems/Fish_Bluegill,
+        scale = 0.5,
+    }
+	model Bluegill_Hand_Big
+    {
+        mesh = Fish_Bluegill_Sunfish_Hand,
+        texture = WorldItems/Fish_Bluegill,
+        scale = 0.75,
+    }
+	model RedearSunfish_Ground
+	{
+		mesh = WorldItems/Fish_Bluegill_Sunfish,
+		texture = WorldItems/Fish_SunfishRedear,
+		scale = 0.195,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model RedearSunfish_GroundCooked
+    {
+        mesh = WorldItems/Fish_Bluegill_Sunfish,
+        texture = WorldItems/Fish_SmallFishCooked,
+        scale = 0.195,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model RedearSunfish_GroundBurnt
+    {
+        mesh = WorldItems/Fish_Bluegill_Sunfish,
+        texture = WorldItems/Fish_SmallFishBurnt,
+        scale = 0.195,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model RedearSunfish_GroundRotten
+    {
+        mesh = WorldItems/Fish_Bluegill_Sunfish,
+        texture = WorldItems/Fish_SmallFishRotten,
+        scale = 0.195,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model RedearSunfish_Hand_Little
+    {
+        mesh = Fish_Bluegill_Sunfish_Hand,
+        texture = WorldItems/Fish_SunfishRedear,
+        scale = 0.25,
+    }
+	model RedearSunfish_Hand_Medium
+    {
+        mesh = Fish_Bluegill_Sunfish_Hand,
+        texture = WorldItems/Fish_SunfishRedear,
+        scale = 0.5,
+    }
+	model RedearSunfish_Hand_Big
+    {
+        mesh = Fish_Bluegill_Sunfish_Hand,
+        texture = WorldItems/Fish_SunfishRedear,
+        scale = 0.75,
+    }
+	model GreenSunfish_Ground
+	{
+		mesh = WorldItems/Fish_Bluegill_Sunfish,
+		texture = WorldItems/Fish_SunfishGreen,
+		scale = 0.195,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model GreenSunfish_GroundCooked
+    {
+        mesh = WorldItems/Fish_Bluegill_Sunfish,
+        texture = WorldItems/Fish_SmallFishCooked,
+        scale = 0.195,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model GreenSunfish_GroundBurnt
+    {
+        mesh = WorldItems/Fish_Bluegill_Sunfish,
+        texture = WorldItems/Fish_SmallFishBurnt,
+        scale = 0.195,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model GreenSunfish_GroundRotten
+    {
+        mesh = WorldItems/Fish_Bluegill_Sunfish,
+        texture = WorldItems/Fish_SmallFishRotten,
+        scale = 0.195,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model GreenSunfish_Hand_Little
+    {
+        mesh = Fish_Bluegill_Sunfish_Hand,
+        texture = WorldItems/Fish_SunfishGreen,
+        scale = 0.25,
+    }
+	model GreenSunfish_Hand_Medium
+    {
+        mesh = Fish_Bluegill_Sunfish_Hand,
+        texture = WorldItems/Fish_SunfishGreen,
+        scale = 0.5,
+    }
+	model GreenSunfish_Hand_Big
+    {
+        mesh = Fish_Bluegill_Sunfish_Hand,
+        texture = WorldItems/Fish_SunfishGreen,
+        scale = 0.75,
+    }
+	model BlueCatfish_Ground
+	{
+		mesh = WorldItems/Fish_CatFish,
+		texture = WorldItems/Fish_CatfishBlue,
+		scale = 0.11,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model BlueCatfish_GroundCooked
+    {
+        mesh = WorldItems/Fish_CatFish,
+        texture = WorldItems/Fish_CatfishCooked,
+        scale = 0.11,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model BlueCatfish_GroundBurnt
+    {
+        mesh = WorldItems/Fish_CatFish,
+        texture = WorldItems/Fish_CatfishBurnt,
+        scale = 0.11,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model BlueCatfish_GroundRotten
+    {
+        mesh = WorldItems/Fish_CatFish,
+        texture = WorldItems/Fish_CatfishRotten,
+        scale = 0.11,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model BlueCatfish_Hand_Little
+    {
+        mesh = Fish_Catfish_Hand,
+        texture = WorldItems/Fish_CatfishBlue,
+        scale = 0.25,
+    }
+	model BlueCatfish_Hand_Medium
+    {
+        mesh = Fish_Catfish_Hand,
+        texture = WorldItems/Fish_CatfishBlue,
+        scale = 0.5,
+    }
+	model BlueCatfish_Hand_Big
+    {
+        mesh = Fish_Catfish_Hand,
+        texture = WorldItems/Fish_CatfishBlue,
+        scale = 0.75,
+    }
+	model ChannelCatfish_Ground
+	{
+		mesh = WorldItems/Fish_CatFish,
+		texture = WorldItems/Fish_CatfishChannel,
+		scale = 0.11,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model ChannelCatfish_GroundCooked
+    {
+        mesh = WorldItems/Fish_CatFish,
+        texture = WorldItems/Fish_CatfishCooked,
+        scale = 0.11,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model ChannelCatfish_GroundBurnt
+    {
+        mesh = WorldItems/Fish_CatFish,
+        texture = WorldItems/Fish_CatfishBurnt,
+        scale = 0.11,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model ChannelCatfish_GroundRotten
+    {
+        mesh = WorldItems/Fish_CatFish,
+        texture = WorldItems/Fish_CatfishRotten,
+        scale = 0.11,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model ChannelCatfish_Hand_Little
+    {
+        mesh = Fish_Catfish_Hand,
+        texture = WorldItems/Fish_CatfishChannel,
+        scale = 0.25,
+    }
+	model ChannelCatfish_Hand_Medium
+    {
+        mesh = Fish_Catfish_Hand,
+        texture = WorldItems/Fish_CatfishChannel,
+        scale = 0.5,
+    }
+	model ChannelCatfish_Hand_Big
+    {
+        mesh = Fish_Catfish_Hand,
+        texture = WorldItems/Fish_CatfishChannel,
+        scale = 0.75,
+    }
+	model FlatheadCatfish_Ground
+	{
+		mesh = WorldItems/Fish_CatFish,
+		texture = WorldItems/Fish_Catfish_Flathead,
+		scale = 0.11,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model FlatheadCatfish_GroundCooked
+    {
+        mesh = WorldItems/Fish_CatFish,
+        texture = WorldItems/Fish_CatfishCooked,
+        scale = 0.11,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model FlatheadCatfish_GroundBurnt
+    {
+        mesh = WorldItems/Fish_CatFish,
+        texture = WorldItems/Fish_CatfishBurnt,
+        scale = 0.11,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model FlatheadCatfish_GroundRotten
+    {
+        mesh = WorldItems/Fish_CatFish,
+        texture = WorldItems/Fish_CatfishRotten,
+        scale = 0.11,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model FlatheadCatfish_Hand_Little
+    {
+        mesh = Fish_Catfish_Hand,
+        texture = WorldItems/Fish_Catfish_Flathead,
+        scale = 0.25,
+    }
+	model FlatheadCatfish_Hand_Medium
+    {
+        mesh = Fish_Catfish_Hand,
+        texture = WorldItems/Fish_Catfish_Flathead,
+        scale = 0.5,
+    }
+	model FlatheadCatfish_Hand_Big
+    {
+        mesh = Fish_Catfish_Hand,
+        texture = WorldItems/Fish_Catfish_Flathead,
+        scale = 0.75,
+    }
+	model Muskellunge_Ground
+	{
+		mesh = WorldItems/Fish_Muskellunge_Pike,
+		texture = WorldItems/Fish_Muskellunge,
+		scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model Muskellunge_GroundCooked
+    {
+        mesh = WorldItems/Fish_Muskellunge_Pike,
+        texture = WorldItems/Fish_PikeCooked,
+        scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model Muskellunge_GroundBurnt
+    {
+        mesh = WorldItems/Fish_Muskellunge_Pike,
+        texture = WorldItems/Fish_PikeBurnt,
+        scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model Muskellunge_GroundRotten
+    {
+        mesh = WorldItems/Fish_Muskellunge_Pike,
+        texture = WorldItems/Fish_PikeRotten,
+        scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model Muskellunge_Hand_Little
+    {
+        mesh = Fish_Muskellunge_Pike_Hand,
+        texture = WorldItems/Fish_Muskellunge,
+        scale = 0.25,
+    }
+	model Muskellunge_Hand_Medium
+    {
+        mesh = Fish_Muskellunge_Pike_Hand,
+        texture = WorldItems/Fish_Muskellunge,
+        scale = 0.5,
+    }
+	model Muskellunge_Hand_Big
+    {
+        mesh = Fish_Muskellunge_Pike_Hand,
+        texture = WorldItems/Fish_Muskellunge,
+        scale = 0.75,
+    }
+	model WhiteBass_Ground
+	{
+		mesh = WorldItems/Fish_Bass_White,
+		texture = WorldItems/Fish_Bass_White,
+		scale = 0.175,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model WhiteBass_GroundCooked
+    {
+        mesh = WorldItems/Fish_Bass_White,
+        texture = WorldItems/Fish_Bass_WhiteCooked,
+        scale = 0.175,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model WhiteBass_GroundBurnt
+    {
+        mesh = WorldItems/Fish_Bass_White,
+        texture = WorldItems/Fish_MediumFishBurnt,
+        scale = 0.175,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model WhiteBass_GroundRotten
+    {
+        mesh = WorldItems/Fish_Bass_White,
+        texture = WorldItems/Fish_Bass_WhiteRotten,
+        scale = 0.175,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model WhiteBass_Hand_Little
+    {
+        mesh = Fish_Bass_White_Hand,
+        texture = WorldItems/Fish_Bass_White,
+        scale = 0.25,
+    }
+	model WhiteBass_Hand_Medium
+    {
+        mesh = Fish_Bass_White_Hand,
+        texture = WorldItems/Fish_Bass_White,
+        scale = 0.5,
+    }
+	model WhiteBass_Hand_Big
+    {
+        mesh = Fish_Bass_White_Hand,
+        texture = WorldItems/Fish_Bass_White,
+        scale = 0.75,
+    }
+	model YellowPerch_Ground
+	{
+		mesh = WorldItems/Fish_Perch_Yellow,
+		texture = WorldItems/Fish_Perch_Yellow,
+		scale = 0.135,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model YellowPerch_GroundCooked
+    {
+        mesh = WorldItems/Fish_Perch_Yellow,
+        texture = WorldItems/Fish_MediumFishCooked,
+        scale = 0.135,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model YellowPerch_GroundBurnt
+    {
+        mesh = WorldItems/Fish_Perch_Yellow,
+        texture = WorldItems/Fish_MediumFishBurnt,
+        scale = 0.135,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model YellowPerch_GroundRotten
+    {
+        mesh = WorldItems/Fish_Perch_Yellow,
+        texture = WorldItems/Fish_MediumFishRotten,
+        scale = 0.135,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model YellowPerch_Hand_Little
+    {
+        mesh = Fish_Perch_Yellow_Hand,
+        texture = WorldItems/Fish_Perch_Yellow,
+        scale = 0.25,
+    }
+	model YellowPerch_Hand_Medium
+    {
+        mesh = Fish_Perch_Yellow_Hand,
+        texture = WorldItems/Fish_Perch_Yellow,
+        scale = 0.5,
+    }
+	model YellowPerch_Hand_Big
+    {
+        mesh = Fish_Perch_Yellow_Hand,
+        texture = WorldItems/Fish_Perch_Yellow,
+        scale = 0.75,
+    }
+	model FreshwaterDrum_Ground
+	{
+		mesh = WorldItems/Fish_FreshWaterDrum,
+		texture = WorldItems/Fish_FreshWaterDrum,
+		scale = 0.11,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model FreshwaterDrum_GroundCooked
+    {
+        mesh = WorldItems/Fish_FreshWaterDrum,
+        texture = WorldItems/Fish_FreshWaterDrumCooked,
+        scale = 0.11,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model FreshwaterDrum_GroundBurnt
+    {
+        mesh = WorldItems/Fish_FreshWaterDrum,
+        texture = WorldItems/Fish_FreshWaterDrumBurnt,
+        scale = 0.11,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model FreshwaterDrum_GroundRotten
+    {
+        mesh = WorldItems/Fish_FreshWaterDrum,
+        texture = WorldItems/Fish_FreshWaterDrumRotten,
+        scale = 0.11,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model FreshwaterDrum_Hand_Little
+    {
+        mesh = Fish_FreshWaterDrum_Hand,
+        texture = WorldItems/Fish_FreshWaterDrum,
+        scale = 0.25,
+    }
+	model FreshwaterDrum_Hand_Medium
+    {
+        mesh = Fish_FreshWaterDrum_Hand,
+        texture = WorldItems/Fish_FreshWaterDrum,
+        scale = 0.5,
+    }
+	model FreshwaterDrum_Hand_Big
+    {
+        mesh = Fish_FreshWaterDrum_Hand,
+        texture = WorldItems/Fish_FreshWaterDrum,
+        scale = 0.75,
+    }
+	model AligatorGar_Ground
+	{
+		mesh = WorldItems/Fish_AlligatorGar,
+		texture = WorldItems/Fish_AlligatorGar,
+		scale = 0.07,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model AligatorGar_GroundCooked
+    {
+        mesh = WorldItems/Fish_AlligatorGar,
+        texture = WorldItems/Fish_AlligatorGarCooked,
+        scale = 0.07,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model AligatorGar_GroundBurnt
+    {
+        mesh = WorldItems/Fish_AlligatorGar,
+        texture = WorldItems/Fish_AlligatorGarBurnt,
+        scale = 0.07,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model AligatorGar_GroundRotten
+    {
+        mesh = WorldItems/Fish_AlligatorGar,
+        texture = WorldItems/Fish_AlligatorGarRotten,
+        scale = 0.07,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model AligatorGar_Hand_Little
+    {
+        mesh = Fish_AlligatorGar_Hand,
+        texture = WorldItems/Fish_AlligatorGar,
+        scale = 0.25,
+    }
+	model AligatorGar_Hand_Medium
+    {
+        mesh = Fish_AlligatorGar_Hand,
+        texture = WorldItems/Fish_AlligatorGar,
+        scale = 0.5,
+    }
+	model AligatorGar_Hand_Big
+    {
+        mesh = Fish_AlligatorGar_Hand,
+        texture = WorldItems/Fish_AlligatorGar,
+        scale = 0.75,
+    }
+	model Paddlefish_Ground
+	{
+		mesh = WorldItems/Fish_PaddleFish,
+		texture = WorldItems/Fish_PaddleFish,
+		scale = 0.07,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+	}
+	model Paddlefish_GroundCooked
+    {
+        mesh = WorldItems/Fish_PaddleFish,
+        texture = WorldItems/Fish_PaddleFishCooked,
+        scale = 0.07,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model Paddlefish_GroundBurnt
+    {
+        mesh = WorldItems/Fish_PaddleFish,
+        texture = WorldItems/Fish_PaddleFishBurnt,
+        scale = 0.07,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model Paddlefish_GroundRotten
+    {
+        mesh = WorldItems/Fish_PaddleFish,
+        texture = WorldItems/Fish_PaddleFishRotten,
+        scale = 0.07,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0302 0.0671 0.0232,
+			rotate = 46.6017 -51.1070 -143.5337,
+			scale = 0.5358,
+		}
+    }
+	model Paddlefish_Hand_Little
+    {
+        mesh = Fish_PaddleFish_Hand,
+        texture = WorldItems/Fish_PaddleFish,
+        scale = 0.25,
+    }
+	model Paddlefish_Hand_Medium
+    {
+        mesh = Fish_PaddleFish_Hand,
+        texture = WorldItems/Fish_PaddleFish,
+        scale = 0.5,
+    }
+	model Paddlefish_Hand_Big
+    {
+        mesh = Fish_PaddleFish_Hand,
+        texture = WorldItems/Fish_PaddleFish,
+        scale = 0.75,
+    }
+	
+	model FishGuts
+	{
+		mesh = WorldItems/FishGuts,
+		texture = WorldItems/FishGuts,
+		scale = 0.125,
+	}
+	
+	model FishEggSac
+	{
+		mesh = WorldItems/FishEggSac,
+		texture = WorldItems/FishEggSac,
+		scale = 0.125,
+	}
+}

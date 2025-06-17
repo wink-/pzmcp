@@ -1,0 +1,54 @@
+module Base
+{
+    entity Pottery_Wheel
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Pottery_Wheel,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes         = PotteryWheel,
+        }
+
+        component SpriteConfig
+        {
+            health          = 100,
+            skillBaseHealth = 20,
+
+            face S
+            {
+                layer
+                {
+                    row = crafted_01_65,
+                    row = crafted_01_64,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_01_66 crafted_01_67,
+                }
+            }
+        }
+                
+        component CraftRecipe
+        {
+            timedAction   = BuildWallHammer,
+            time          = 50,
+            category      = Pottery,
+            ToolTip       = Tooltip_craft_potteryWheelDesc,
+
+            inputs
+            {
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+	}
+}

@@ -1,0 +1,92 @@
+module Base
+{
+	item Mov_PosterDroids
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Dr. Oids Painting,
+		WorldObjectSprite = walls_decoration_01_33,
+	}
+	
+	item Mov_PosterElement
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = The Forgotten Element Poster,
+		WorldObjectSprite = location_entertainment_theatre_01_84,
+	}
+	
+	item Mov_PosterMedical
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Organs Poster,
+		WorldObjectSprite = location_community_medical_01_11,
+	}
+	
+	item Mov_PosterOmega
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Omega Department Painting,
+		WorldObjectSprite = walls_decoration_01_50,
+	}
+	
+	item Mov_PosterPaws
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = PAWS Poster,
+		WorldObjectSprite = location_entertainment_theatre_01_83,
+	}
+	
+	item Mov_PosterPieBlue
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Blue Pie Poster,
+		WorldObjectSprite = location_restaurant_pie_01_57,
+	}
+	
+	item Mov_PosterPieGreen
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Green Pie Poster,
+		WorldObjectSprite = location_restaurant_pie_01_58,
+	}
+	
+	item Mov_PosterPiePink
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Pink Pie Poster,
+		WorldObjectSprite = location_restaurant_pie_01_59,
+	}
+	
+	item Mov_PosterPieRed
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Red Pie Poster,
+		WorldObjectSprite = location_restaurant_pie_01_56,
+	}
+}

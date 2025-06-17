@@ -1,0 +1,62 @@
+module Base
+{
+	item Mov_WindowWooden
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Wooden Window,
+		WorldObjectSprite = fixtures_windows_01_1,
+	}
+	
+	item Mov_WindowWhiteTiled
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = White Tiled Window,
+		WorldObjectSprite = fixtures_windows_01_9,
+	}
+	
+	item Mov_WindowTiled
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Tiled Window,
+		WorldObjectSprite = fixtures_windows_01_17,
+	}
+	
+	item Mov_WindowWhite
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = White Window,
+		WorldObjectSprite = fixtures_windows_01_25,
+	}
+	
+	item Mov_WindowChrome
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Chrome Window,
+		WorldObjectSprite = fixtures_windows_01_33,
+	}
+	
+	item Mov_WindowSlider
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Slider Window,
+		WorldObjectSprite = fixtures_windows_01_57,
+	}
+}

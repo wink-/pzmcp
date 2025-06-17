@@ -1,0 +1,64 @@
+/*module Base
+{
+    entity Grindstone
+    {
+
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Grindstone,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+               Recipes         = Grindstone,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 120,
+        	skillBaseHealth = 20,
+
+            face S
+            {
+                layer
+                {
+                    row = crafted_01_120,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_01_121,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = crafted_01_122,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = crafted_01_123,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = Test,
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 1 [Base.StoneWheel],
+            }
+        }
+    }
+}*/

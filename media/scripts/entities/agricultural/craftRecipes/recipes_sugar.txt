@@ -1,0 +1,59 @@
+module Base
+{
+/*    craftRecipe PulpSugarBeets
+     {
+        time        = 300,
+	    timedAction = Making,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:3,
+        category = Farming,
+         inputs
+         {
+            item 9 [Base.SugarBeet] mode:destroy,
+			item 1 tags[SharpKnife;Grater] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 [*],
+			-fluid 1.0 [Water],
+         }
+         outputs
+         {
+             item 1 Base.SugarBeetPulpPot,
+         }
+     }
+
+    craftRecipe StrainCookedSugarBeetPulp
+     {
+        time        = 300,
+	    timedAction = Making,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:3,
+        category = Farming,
+         inputs
+         {
+			item 1 [Base.SugarBeetPulpPot] mode:destroy flags[IsCookedFoodItem],
+			item 1 tags[Sugar],
+			item 1 [Base.CheeseCloth] mode:keep,
+         }
+         outputs
+         {
+             item 1 Base.SugarBeetSyrupPot,
+         }
+     }
+
+    craftRecipe CollectSugarBeetSugar
+     {
+        time        = 300,
+	    timedAction = Making,
+		Tags = AnySurfaceCraft;Cooking,
+		xpAward = Cooking:3,
+        category = Farming,
+         inputs
+         {
+			item 1 [Base.SugarBeetSugarPot],
+         }
+         outputs
+         {
+             item 1 Base.Sugar,
+         }
+     }*/
+
+}

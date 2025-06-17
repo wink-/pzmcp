@@ -1,0 +1,60 @@
+/*module Base
+{
+    xuiSkin default
+    {
+        entity ES_Key_Duplicator
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Key Duplicator,
+            Icon                = Item_Key_Blank,
+        }
+    }
+
+    entity Key_Duplicator
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Key_Duplicator,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes         = KeyDuplicator,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = industry_04_16,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = industry_04_18,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = industry_04_17,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = industry_04_19,
+                }
+            }
+        }
+    }
+
+}*/

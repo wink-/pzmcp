@@ -1,0 +1,112 @@
+module Base
+{
+	item Mov_BonsaiTree
+	{
+		DisplayCategory = Gardening,
+		Type = Moveable,
+		Icon = default,
+		Weight = 5,
+		DisplayName = Bonsai Tree,
+		WorldObjectSprite = vegetation_indoor_01_1,
+	}
+	
+	item Mov_BrickPlanter
+	{
+		DisplayCategory = Gardening,
+		Type = Moveable,
+		Icon = default,
+		Weight = 5,
+		DisplayName = Brick Planter,
+		WorldObjectSprite = location_shop_mall_01_47,
+	}
+	
+	item Mov_Cactus
+	{
+		DisplayCategory = Gardening,
+		Type = Moveable,
+		Icon = default,
+		Weight = 5,
+		DisplayName = Cactus,
+		WorldObjectSprite = vegetation_indoor_01_3,
+	}
+	
+	item Mov_CastIronPlant
+	{
+		DisplayCategory = Gardening,
+		Type = Moveable,
+		Icon = default,
+		Weight = 5,
+		DisplayName = Cast Iron Plant,
+		WorldObjectSprite = vegetation_indoor_01_11,
+	}
+	
+	item Mov_ChineseEvergreen
+	{
+		DisplayCategory = Gardening,
+		Type = Moveable,
+		Icon = default,
+		Weight = 5,
+		DisplayName = Chinese Evergreen,
+		WorldObjectSprite = vegetation_indoor_01_7,
+	}
+	
+	item Mov_DragonTree
+	{
+		DisplayCategory = Gardening,
+		Type = Moveable,
+		Icon = default,
+		Weight = 5,
+		DisplayName = Dragon Tree,
+		WorldObjectSprite = vegetation_indoor_01_9,
+	}
+	
+	item Mov_Fern
+	{
+		DisplayCategory = Gardening,
+		Type = Moveable,
+		Icon = default,
+		Weight = 5,
+		DisplayName = Fern,
+		WorldObjectSprite = vegetation_indoor_01_8,
+	}
+	
+	item Mov_Ficus
+	{
+		DisplayCategory = Gardening,
+		Type = Moveable,
+		Icon = default,
+		Weight = 5,
+		DisplayName = Ficus,
+		WorldObjectSprite = vegetation_indoor_01_12,
+	}
+	
+	item Mov_RaisedPlantbed
+	{
+		DisplayCategory = Gardening,
+		Type = Moveable,
+		Icon = default,
+		Weight = 5,
+		DisplayName = Raised Plantbed,
+		WorldObjectSprite = vegetation_indoor_01_8,
+	}
+	
+	item Mov_SnakePlant
+	{
+		DisplayCategory = Gardening,
+		Type = Moveable,
+		Icon = default,
+		Weight = 5,
+		DisplayName = Snake Plant,
+		WorldObjectSprite = vegetation_indoor_01_10,
+	}
+	
+	item Mov_VioletFlowers
+	{
+		DisplayCategory = Gardening,
+		Type = Moveable,
+		Icon = default,
+		Weight = 5,
+		DisplayName = Violets,
+		WorldObjectSprite = vegetation_indoor_01_2,
+	}
+}

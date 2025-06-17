@@ -1,0 +1,33 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISComponentsTabPanel
+        {
+            background          = true,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            padding             = 0,
+            margin              = 5,
+            minimumPanelWidth   = 0,
+            doIcons             = true,
+            doText              = true,
+            disableHeaders      = false,
+            selectedColor       = C_ProgressYellow,
+        }
+
+        ISComponentsTabPanel S_ComponentsTabPanel_Std
+        {
+            background          = true,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            padding             = 0,
+            margin              = 5,
+            minimumPanelWidth   = 400,
+            doIcons             = true,
+            doText              = true,
+            disableHeaders      = true,
+            selectedColor       = C_ProgressYellow,
+        }
+    }
+}

@@ -1,0 +1,63 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_StoneDoorFrame
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Stone Door Frame,
+			Icon		= Build_DoorframeStone,
+		}
+	}
+
+    entity StoneDoorFrame
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_StoneDoorFrame,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			skillBaseHealth = 300,
+			isThumpable     = false,
+			
+			OnIsValid = BuildRecipeCode.doorFrame.OnIsValid,
+			
+            face W
+            {
+                layer
+                {
+                    row = walls_logs_106,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = walls_logs_107,
+                }
+            }
+			
+			corner = walls_logs_99,
+        }
+		
+		component CraftRecipe
+        {
+            timedAction   = BuildWallNoTool,
+            time          = 200,
+            category      = Masonry,
+            SkillRequired = Masonry:2,
+            xpAward       = Masonry:20,
+            ToolTip       = Tooltip_craft_doorFrameDesc,
+            inputs
+            {
+                item 1 tags[MasonsTrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 2 tags[Concrete] flags[DontRecordInput],
+                item 4 [Base.Stone2],
+            }
+        }
+    }
+}

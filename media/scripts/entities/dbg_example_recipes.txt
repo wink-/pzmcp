@@ -1,0 +1,205 @@
+/*
+module Base
+{
+    /*
+        TEMPORARY FILE FOR DEBUG TESTING
+    */
+
+    /*
+    ********************************************
+        EXAMPLE RECIPES
+    ********************************************
+    */
+
+    /*
+        Examples of add (+) and subtract (-) input/output lines.
+        Add and subtract lines can be used to manipulate uses/fluid/energy of input or output items.
+        They have a few rules:
+            - they are applied to the input/output line above.
+            - the line above must be of ResourceType: Item.
+            - they can only be uses/fluid/energy.
+            - output lines can only have add lines, while inputs can have but add and subtract.
+
+        In all examples in this file Fluids will be used but the same in theory applies to energy and uses.
+    */
+
+    /*
+        This example requires a Bucket and attemps to add 0.75 Acid to it.
+        Note that in this case the Bucket may already contain fluids.
+        Also by default this recipe will pass as long as any amount of Acid fits in the Bucket
+        and adds up to a maximum of 0.75 to it.
+    */
+    craftRecipe Example_Fluid_Add_A
+    {
+        time            = 30,
+        tags            = ExamplesHandcraft,
+        inputs
+        {
+            item 1 [Base.Bucket] mode:keep,
+            +fluid 0.75 Acid,
+        }
+    }
+
+    /*
+        The following example is similar to above but has some flags added.
+    */
+    craftRecipe Example_Fluid_Add_B
+    {
+        time            = 30,
+        tags            = ExamplesHandcraft,
+        inputs
+        {
+            /* ItemIsFluid defines we want to check for a fluidcontainer */
+            /* ItemIsFluid/ItemIsUses/ItemIsEnergy is required in combination with 'IsEmpty' or 'IsFull' to know what to check for */
+            /* IsEmpty flag makes sure only empty Bucket's validate */
+
+            item 1 [Base.Bucket] mode:keep flags[ItemIsFluid;IsEmpty],
+
+            /* RespectCapacity flag makes sure the Bucket must have enough free capacity to fit the entire 0.75 amount */
+
+            +fluid 0.75 Acid flags[RespectCapacity],
+        }
+    }
+
+    /*
+        A different way to accomplish the same result as above recipe.
+        In this case an empty Bucket is required and is consumed.
+        A new Bucket is created as output, forced empty and has the Acid added to it.
+        Note: this recipe is set AutomationCompatible
+    */
+    craftRecipe Example_Fluid_Add_C
+    {
+        time            = 30,
+        tags            = ExamplesHandcraft;AutomationCompatible,
+        inputs
+        {
+            item 1 [Base.Bucket] flags[ItemIsFluid;IsEmpty],
+        }
+        outputs
+        {
+            item 1 Base.Bucket,
+            +fluid 0.75 Acid flags[ForceEmpty],
+        }
+    }
+
+    /*
+        Example with wildcard input and AlwaysFill
+    */
+    craftRecipe Example_Fluid_Add_D
+    {
+        time            = 30,
+        tags            = ExamplesHandcraft;AutomationCompatible,
+        inputs
+        {
+            /*
+                the wildcard makes sure that any item passes,
+                the flags filter them down to fluid container items that are full, try it with full can of pop or such
+            */
+            item 1 [*] flags[ItemIsFluid;IsFull],
+        }
+        outputs
+        {
+            item 1 Base.Bucket,
+            /* AlwaysFill will try to fill up the fluid container if the available capacity exceeds the create fluid amount */
+            +fluid 0.05 Acid flags[ForceEmpty;AlwaysFill],
+        }
+    }
+
+    /*
+        The examples above have dealt with 'add' and 'substract' lines which allow
+        taking or adding from items.
+        Regular fluid and energy lines now only apply to a stations fluid and energy resources.
+    */
+    craftRecipe Example_Fluid_Add_E
+    {
+        time            = 30,
+        tags            = ExamplesAutomation,
+        inputs
+        {
+            /* requires the station to have a input fluid resource that is full, will take 0.25 Water */
+            fluid 0.25 [Water] flags[IsFull],
+        }
+        outputs
+        {
+            /*
+                requires the station to have a output fluid resource that is empty, will fill it with Acid
+                in this specific case the 0.5 amount becomes irrelevant.
+            */
+            fluid 0.5 Acid flags[IsEmpty;AlwaysFill],
+        }
+    }
+
+    /*
+        Using AutomationOnly and HandcraftOnly a recipe can be set up to handle taking fluids differently
+        for both cases.
+        For example a recipe that takes 1.0 Water and 1 Plantain to create a bottle of beer.
+    */
+    craftRecipe Example_Fluid_Add_F
+    {
+        time            = 30,
+        tags            = ExamplesAutomation;ExamplesHandcraft,
+        inputs
+        {
+            /* if recipe is handled as automation craft the station requires a fluid resource with 1.0 Water */
+            fluid 1.0 [Water] flags[AutomationOnly],
+
+            /* when handled as handcraft it requires a fluid item with 1.0 Water */
+            item 1 [*] mode:keep flags[ItemIsFluid;HandcraftOnly],
+            -fluid 1.0 [Water],
+
+            item 1 [Base.Plantain],
+        }
+        outputs
+        {
+            item 1 Base.BeerBottle,
+        }
+    }
+
+    /*
+        Input and Output flags.
+
+        Can be applied to any input or output line:
+        - HandcraftOnly
+        - AutomationOnly
+
+        Can be applied to input item lines only:
+        - Prop1         (left hand)
+        - Prop2         (right hand)
+        - ToolRight
+        - ToolLeft
+        - ItemIsUses    (can be combined with IsEmpty or IsFull)
+        - ItemIsFluid   (can be combined with IsEmpty or IsFull)
+        - ItemIsEnergy  (can be combined with IsEmpty or IsFull)
+
+        Can be applied to any Uses/Fluid/Energy input (consuming) lines:
+        - IsFull
+
+        Can be applied to any Uses/Fluid/Energy output (creating) lines:
+        - ForceEmpty
+        - IsEmpty
+        - AlwaysFill
+        - RespectCapacity
+    */
+
+    craftRecipe Example_Flags
+    {
+        time            = 30,
+        tags            = ExamplesHandcraft;AutomationCompatible,
+        inputs
+        {
+            item 1 [Base.Saw] mode:keep flags[Prop1;HandcraftOnly],
+            item 1 [Base.Battery] flags[AutomationOnly],
+            item 1 [Base.Log] flags[Prop2],
+            item 1 [*] flags[ItemIsFluid;IsEmpty],
+            +fluid 1.0 Water flags[RespectCapacity],
+        }
+        outputs
+        {
+            item 1 Base.Bucket,
+            +fluid 0.05 Acid flags[ForceEmpty;AlwaysFill],
+            item 1 Base.Aluminum flags[AutomationOnly],
+        }
+    }
+
+}
+*/

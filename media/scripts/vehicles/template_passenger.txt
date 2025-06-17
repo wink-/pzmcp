@@ -1,0 +1,459 @@
+module Base
+{
+	template vehicle PassengerPosition2
+	{
+		passenger FrontLeft
+		{
+			position inside
+			{
+				offset = 0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = 0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+		passenger FrontRight
+		{
+			position inside
+			{
+				offset = -0.2 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = -0.6 0.0 0.4,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+	}
+
+	template vehicle PassengerPosition4
+	{
+		template! = PassengerPosition2,
+
+		passenger RearLeft
+		{
+			position inside
+			{
+				offset = 0.2 0.0 -0.3,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = 0.6 0.0 -0.3,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+		passenger RearRight
+		{
+			position inside
+			{
+				offset = -0.2 0.0 -0.3,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = -0.6 0.0 -0.3,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+	}
+
+	template vehicle PassengerPosition6
+	{
+		template! = PassengerPosition2,
+
+		passenger MiddleLeft
+		{
+			position inside
+			{
+				offset = 0.2 0.0 -0.0651,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = 0.6 0.0 -0.0651,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+		passenger MiddleRight
+		{
+			position inside
+			{
+				offset = -0.2 0.0 -0.0651,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = -0.6 0.0 -0.0651,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+		passenger RearLeft
+		{
+			position inside
+			{
+				offset = 0.2 0.0 -0.7,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = 0.6 0.0 -0.7,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+
+		passenger RearRight
+		{
+			position inside
+			{
+				offset = -0.2 0.0 -0.7,
+				rotate = 0.0 0.0 0.0,
+			}
+			position outside
+			{
+				offset = -0.6 0.0 -0.7,
+				rotate = 0.0 0.0 0.0,
+			}
+		}
+	}
+
+	template vehicle PassengerCommon
+	{
+		passenger *
+		{
+			hasRoof = true, /* Set to true if this passenger is protected from rain. */
+
+			anim enter
+			{
+				anim = Climb_WindowA,
+				rate = 0.33,
+			}
+
+			anim idle
+			{
+				anim = Idle,
+				rate = 1.0,
+			}
+
+			anim exit
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+			}
+
+			anim openDoor
+			{
+				anim = WindowOpenSuccess,
+				rate = 0.3,
+			}
+
+			anim closeDoor
+			{
+				anim = Attack_Shove,
+				rate = 0.3,
+			}
+		}
+	}
+	
+	template vehicle PassengerSeat2
+	{
+		template = PassengerPosition2,
+
+        /* The first passenger is always the driver. */
+		passenger FrontLeft
+		{
+			door = DoorFrontLeft,
+			area = SeatFrontLeft, /* Used for zombie attacks */
+			
+			switchSeat FrontRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+		}
+
+		passenger FrontRight
+		{
+			door = DoorFrontRight,
+			area = SeatFrontRight,
+			
+			switchSeat FrontLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+		}
+
+		template! = PassengerCommon,
+	}
+
+	template vehicle PassengerSeat4
+	{
+		template = PassengerPosition4,
+		template = PassengerSeat2,
+		
+		passenger FrontLeft
+		{
+			switchSeat RearLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+			
+			switchSeat RearRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+		}
+
+		passenger FrontRight
+		{
+			switchSeat RearLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+			
+			switchSeat RearRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+		}
+
+		passenger RearLeft
+		{
+			door = DoorRearLeft,
+			area = SeatRearLeft,
+			
+			switchSeat FrontLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+			
+			switchSeat FrontRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+			
+			switchSeat RearRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+		}
+
+		passenger RearRight
+		{
+			door = DoorRearRight,
+			area = SeatRearRight,
+			
+			switchSeat FrontLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+			
+			switchSeat FrontRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+			
+			switchSeat RearLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+		}
+
+		template! = PassengerCommon,
+	}
+
+	template vehicle PassengerSeat6
+	{
+		template = PassengerSeat4/passenger/FrontLeft,
+		template = PassengerSeat4/passenger/FrontRight,
+		
+		passenger FrontLeft
+		{
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+		}
+
+		passenger FrontRight
+		{
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+		}
+
+		passenger MiddleLeft
+		{
+			door = DoorMiddleLeft,
+			area = SeatMiddleLeft,
+			
+			switchSeat FrontLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+			
+			switchSeat FrontRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+			
+			switchSeat RearLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+			
+			switchSeat RearRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+		}
+
+		passenger MiddleRight
+		{
+			door = DoorMiddleRight,
+			area = SeatMiddleRight,
+			
+			switchSeat FrontLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+			
+			switchSeat FrontRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+			
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+
+			switchSeat RearLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+			
+			switchSeat RearRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+		}
+
+		template = PassengerSeat4/passenger/RearLeft,
+		template = PassengerSeat4/passenger/RearRight,
+
+		passenger RearLeft
+		{
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+		}
+
+		passenger RearRight
+		{
+			switchSeat MiddleLeft
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+			
+			switchSeat MiddleRight
+			{
+				anim = Climb_WindowB,
+				rate = 0.23,
+				sound = VehicleChangeSeat,
+			}
+		}
+		
+		template! = PassengerPosition6,
+
+		template! = PassengerCommon,
+	}
+}
+

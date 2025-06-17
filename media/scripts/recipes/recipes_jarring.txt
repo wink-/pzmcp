@@ -1,0 +1,71 @@
+module Base
+{
+	craftRecipe OpenJarOfFood
+	{
+        timedAction = Making,
+		Time = 30,
+		OnCreate = Recipe.OnCreate.OpenCannedFood,
+		Tags = InHandCraft;Cooking;CanBeDoneInDark,
+        category = Cooking,
+		inputs
+		{
+			item 1 [Base.CannedBellPepper;Base.CannedBroccoli;Base.CannedCabbage;Base.CannedCarrots;Base.CannedEggplant;Base.CannedLeek;Base.CannedPotato;Base.CannedRedRadish;Base.CannedTomato] flags[AllowRottenItem;InheritFoodAge;ItemCount] mappers[foodType],
+		}
+		outputs
+		{
+			item 1 mapper:foodType,
+		}
+		itemMapper foodType
+		{
+			Base.CannedBellPepper_Open = Base.CannedBellPepper,
+			Base.CannedBroccoli_Open =  Base.CannedBroccoli,
+			Base.CannedCabbage_Open = Base.CannedCabbage,
+			Base.CannedCarrots_Open = Base.CannedCarrots,
+			Base.CannedEggplant_Open = Base.CannedEggplant,
+			Base.CannedLeek_Open = Base.CannedLeek,
+			Base.CannedPotato_Open = Base.CannedPotato,
+			Base.CannedRedRadish_Open = Base.CannedRedRadish,
+			Base.CannedTomato_Open = Base.CannedTomato,
+		}
+	}
+
+	craftRecipe MakeJar
+	{
+        timedAction = MixingBowl,
+		Time = 100,
+		NeedToBeLearn = True,
+		OnCreate = Recipe.OnCreate.CannedFood,
+		Tags = InHandCraft;Cooking,
+        category = Cooking,
+		xpAward = Cooking:10,
+		AutoLearnAny = Cooking:8,
+		inputs
+		{
+			item 1 tags[DullKnife;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.EmptyJar] mode:destroy flags[ItemCount],
+			item 1 [Base.JarLid],
+			item 1 [6:Base.BellPepper;5:Base.Broccoli;2:Base.Cabbage;5:Base.Carrots;3:Base.Eggplant;4:Base.Leek;3:Base.Potato;15:Base.RedRadish;4:Base.Tomato] mappers[veggieType] flags[InheritFoodAge;ItemCount] mode:destroy,
+			item 2.0 tags[Vinegar],
+			item 1.0 [Base.Salt;Base.SeasoningSalt],
+			item 1 [*],
+			-fluid 1.0 [Water],
+		}
+		outputs
+		{
+			item 1 mapper:veggieType,
+		}
+		itemMapper veggieType
+		{
+			Base.CannedBellPepper = Base.BellPepper,
+			Base.CannedBroccoli = Base.Broccoli,
+			Base.CannedCabbage = Base.Cabbage,
+			Base.CannedCarrots = Base.Carrots,
+			Base.CannedEggplant = Base.Eggplant,
+			Base.CannedLeek = Base.Leek,
+			Base.CannedPotato = Base.Potato,
+			Base.CannedRedRadish = Base.RedRadish,
+			Base.CannedTomato = Base.Tomato,
+		}
+	}
+
+}

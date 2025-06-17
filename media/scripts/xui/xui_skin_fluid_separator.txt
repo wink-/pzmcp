@@ -1,0 +1,135 @@
+module Base
+{
+    xuiSkin fluid_separator
+    {
+        imports
+        {
+            default,
+        }
+
+        colors
+        {
+            C_UiDefault         = 0.00 : 0.90 : 0.00 : 1.00,
+            C_Background        = 0.00 : 0.00 : 0.00 : 0.50,
+            C_BgWindow          = 0.00 : 0.00 : 0.00 : 0.80,
+            C_BgMouseOver       = 0.00 : 0.30 : 0.00 : 1.00,
+            C_Border            = 0.00 : 0.40 : 0.00 : 1.00,
+            C_BorderLocked      = 0.18 : 0.31 : 0.31 : 1.00,
+            C_BorderLight       = 0.00 : 0.70 : 0.00 : 1.00,
+            C_BgSlot            = 0.00 : 0.10 : 0.00 : 1.00,
+            C_BgSlotBgHover     = 0.00 : 0.25 : 0.00 : 1.00,
+            C_Grid              = 0.00 : 0.20 : 0.00 : 1.00,
+
+            C_Text              = 0.40 : 0.70 : 0.40 : 1.00,
+            C_TextPointNine     = 0.00 : 0.90 : 0.00 : 0.90,
+            C_TextEntityHeader  = 0.55 : 0.95 : 0.55 : 1.00,
+            C_TextCompHeader    = 0.50 : 0.90 : 0.50 : 1.00,
+            C_TextListHeader    = 0.00 : 0.40 : 0.00 : 0.30,
+        }
+
+        ISEntityWindow
+        {
+            backgroundColor     = C_Black,
+            borderColor         = 0.40 : 0.40 : 0.40 : 1.00,
+        }
+
+        ISButton S_Button_Craft
+        {
+            title               = "Separate",
+            textColor           = Lime,
+            height              = 48,
+        }
+
+        ISProgressBar S_ProgressBar_Craft
+        {
+            progressColor       = Crimson,
+        }
+
+        ISLabel S_Label_ComponentHeaderTitle
+        {
+            font                = UIFont.Medium,
+        }
+
+        ISWidgetComponentHeader
+        {
+            backgroundColor     = 0.00 : 0.20 : 0.00 : 0.50,
+            /*borderColor         = Crimson,*/
+        }
+
+        ISImage
+        {
+            backgroundColor     = 0.00 : 1.00 : 0.00 : 1.00,
+        }
+
+        ISButton
+        {
+            textureColor                = 0.00 : 1.00 : 0.00 : 1.00,
+        }
+
+        ISItemSlot S_ItemSlot_Output
+        {
+            borderColor         = PaleGreen,
+            locked              = false,
+            countColor          = 0.90 : 0.90 : 0.90 : 1.00,
+            width               = 64,
+            height              = 64,
+        }
+
+        ISImage S_Image_EntityHeaderIcon
+        {
+            backgroundColor     = 0.90 : 1.00 : 0.90 : 1.00,
+        }
+
+        ISImage S_Image_ComponentHeaderIcon
+        {
+            backgroundColor     = 0.90 : 1.00 : 0.90 : 1.00,
+        }
+
+        ISEnergySlotPanel S_EnergySlotPanel_Inputs
+        {
+            title               = "power",
+            isVertical          = true,
+        }
+
+        ISFluidSlotPanel S_FluidSlotPanel_Inputs
+        {
+            title               = "sample",
+            borderColor         = Lime,
+            textColor           = Lime,
+        }
+
+        ISItemSlotPanel S_ItemSlotPanel_Outputs
+        {
+            title               = "solids",
+            /*
+            borderColor         = C_Output,
+            textColor           = C_Output,
+            */
+        }
+
+        ISFluidSlotPanel S_FluidSlotPanel_Outputs
+        {
+            title               = "liquids",
+            /*
+            borderColor         = C_Output,
+            textColor           = C_Output,
+            */
+        }
+
+        ISFluidSlot
+        {
+            minimumBarSize      = 200,
+        }
+
+        ISFluidBar
+        {
+            width               = 40,
+        }
+
+        ISEnergyBar S_EnergyBar_Vertical
+        {
+            isVertical          = true,
+            width               = 40,
+        }
+    }
+}

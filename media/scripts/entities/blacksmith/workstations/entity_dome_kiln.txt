@@ -1,0 +1,71 @@
+module Base
+{
+
+
+    craftRecipe MakeCoke
+    {
+        /* time        = 3000,*/
+        time        = 20,
+        tags = DomeKiln,
+
+        inputs
+        {
+            item 8 [Base.CharcoalCrafted;Base.Charcoal],
+        }
+        outputs
+        {
+            item 4 Base.Coke,
+        }
+    }
+
+
+    entity Dome_Kiln
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Dome_Kiln,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+           Recipes         = DomeKiln;WoodCharcoal,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 200,
+        	skillBaseHealth = 50,
+
+            face S
+            {
+                layer
+                {
+                    row = crafted_01_81 crafted_01_83,
+                    row = crafted_01_80 crafted_01_82,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_01_98 crafted_01_99,
+                    row = crafted_01_96 crafted_01_97,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            category      = Blacksmithing,
+            inputs
+            {
+                item 40 [Base.StoneBlock],
+                item 1 tags[Concrete] flags[DontRecordInput],
+                item 1 [Base.MasonsTrowel] mode:keep flags[Prop1;MayDegradeLight],
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+module Base
+{
+	sound WoodLogGateBlocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodLogGate/IsBlocked,
+		}
+	}
+
+	sound WoodLogGateBreak
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodLogGate/Break,
+		}
+	}
+
+	sound WoodLogGateClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodLogGate/Close,
+		}
+	}
+
+	sound WoodLogGateLock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodLogGate/Lock,
+		}
+	}
+
+	sound WoodLogGateLocked
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodLogGate/IsLocked,
+		}
+	}
+
+	sound WoodLogGateOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodLogGate/Open,
+		}
+	}
+
+	sound WoodLogGateUnlock
+	{
+		category = Object,
+		clip
+		{
+			event = Object/WoodLogGate/Unlock,
+		}
+	}
+}

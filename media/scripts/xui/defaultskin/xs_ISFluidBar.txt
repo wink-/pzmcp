@@ -1,0 +1,25 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISFluidBar
+        {
+            background          = false,
+            backgroundColor     = C_BlackNoAlpha,
+            borderColor         = C_BorderLight,
+            detailInnerColor    = C_Black,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+            gradientTex         = media/ui/Fluids/fluid_gradient.png,
+            bubblesTex          = media/ui/Fluids/bubbles_seamless.png,
+            bubblesAlpha        = 0.2,
+            gradientAlpha       = 0.15,
+            triangleWidth       = 4,
+            drawMeasures        = true,
+            doToolTip           = true,
+            differenceAlpha     = 0.5,
+        }
+    }
+}

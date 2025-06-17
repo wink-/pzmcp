@@ -1,0 +1,38 @@
+module Base
+{
+	sound BreakFurniture
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Furniture/Default/Break,
+		}
+	}
+
+	sound BreakPlant
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Plant/Break,
+		}
+	}
+
+	sound BreakFurnitureMetal
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Furniture/Metal/Break,
+		}
+	}
+
+	sound BreakFurnitureCeramic
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Furniture/Ceramic/Break,
+		}
+	}
+}

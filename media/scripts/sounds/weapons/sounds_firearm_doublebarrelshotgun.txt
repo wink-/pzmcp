@@ -1,0 +1,139 @@
+module Base
+{
+	sound DoubleBarrelShotgunShoot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
+		{
+			event = Weapon/Firearm/DoubleBarrelShotgun/Shoot,
+		}
+	}
+
+	sound DoubleBarrelShotgunInsertAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/DoubleBarrelShotgun/InsertAmmo,
+		}
+	}
+
+	sound DoubleBarrelShotgunEjectAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/DoubleBarrelShotgun/EjectAmmo,
+		}
+	}
+
+	sound DoubleBarrelShotgunInsertAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/DoubleBarrelShotgun/InsertAmmoStart,
+		}
+	}
+
+	sound DoubleBarrelShotgunInsertAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/DoubleBarrelShotgun/InsertAmmoStop,
+		}
+	}
+
+	sound DoubleBarrelShotgunEjectAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/DoubleBarrelShotgun/EjectAmmoStart,
+		}
+	}
+
+	sound DoubleBarrelShotgunEjectAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/DoubleBarrelShotgun/EjectAmmoStop,
+		}
+	}
+
+	sound DoubleBarrelShotgunJam
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/DoubleBarrelShotgun/Jam,
+		}
+	}
+    
+	sound DoubleBarrelShotgunBringToBear
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/DoubleBarrelShotgun/BringToBear,
+		}
+	}
+	
+	sound DoubleBarrelShotgunAimRelease
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/DoubleBarrelShotgun/AimRelease,
+		}
+	}
+
+	sound DoubleBarrelShotgunEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/DoubleBarrelShotgun/Equip,
+		}
+	}
+        
+	sound DoubleBarrelShotgunUnEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/DoubleBarrelShotgun/UnEquip,
+		}
+	}
+
+            
+	sound DoubleBarrelShotgunBreak
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/DoubleBarrelShotgun/Break,
+		}
+	}
+
+	sound DoubleBarrelShotgunDrop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/DoubleBarrelShotgun/Drop,
+		}
+	}
+
+	sound DoubleBarrelShotgunCartridgeFall
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/DoubleBarrelShotgun/CartridgeFall,
+		}
+	}
+}

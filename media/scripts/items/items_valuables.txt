@@ -1,0 +1,62 @@
+module Base
+{
+	/*ACCESSORIES*/
+	/*Note: changed the capacity of this to 1*/
+	
+	/*JEWELS*/
+	
+	item Diamond
+	{
+		DisplayName = Diamond,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.001,
+		Icon = Diamond,
+		WorldStaticModel = Diamond,
+		Tags = IgnoreZombieDensity;IsMemento,
+	}
+	
+	item Emerald
+	{
+		DisplayName = Emerald,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.001,
+		Icon = Emerald,
+		WorldStaticModel = Emerald,
+		Tags = IgnoreZombieDensity;IsMemento,
+	}
+	
+	item Ruby
+	{
+		DisplayName = Ruby,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.001,
+		Icon = Ruby,
+		WorldStaticModel = Ruby,
+		Tags = IgnoreZombieDensity;IsMemento,
+	}
+	
+	item Sapphire
+	{
+		DisplayName = Sapphire,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.001,
+		Icon = Sapphire,
+		WorldStaticModel = Sapphire,
+		Tags = IgnoreZombieDensity;IsMemento,
+	}
+
+	item Amethyst
+	{
+		DisplayName = Amethyst,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.001,
+		Icon = Amethyst,
+		WorldStaticModel = Amethyst,
+		Tags = IgnoreZombieDensity;IsMemento,
+	}
+}

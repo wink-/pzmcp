@@ -1,0 +1,1086 @@
+module Base
+{
+	item Fleshing_Tool
+	{
+		DisplayName     = Fleshing Tool,
+		DisplayCategory = Tool,
+		Type            = Normal,
+		Weight          = 1,
+		MetalValue      = 20,
+		Icon            = FleshingTool,
+		StaticModel     = FleshingTool,
+		WorldStaticModel = FleshingTool,
+		Tags            = FleshingTool;SmeltableIronMedium,
+		Tooltip         = Tooltip_item_FleshingTool,
+   		ConditionLowerChanceOneIn = 10,
+   		ConditionMax = 10,
+   		ResearchableRecipes = Forge_Fleshing_Tool;Forge_Straight_Razor;CarveFleshingTool,
+	}
+
+	item Fleshing_Tool_Bone
+	{
+		DisplayName     = Bone Fleshing Tool,
+		DisplayCategory = Tool,
+		Type            = Normal,
+		Weight          = 1,
+		Icon            = Bone_FleshingTool,
+		StaticModel     = Fleshing_Tool_Bone,
+		WorldStaticModel = Fleshing_Tool_Bone,
+		Tags            = FleshingTool,
+		Tooltip         = Tooltip_item_FleshingTool,
+   		ConditionLowerChanceOneIn = 5,
+   		ConditionMax = 5,
+   		ResearchableRecipes = Forge_Fleshing_Tool;CarveFleshingTool;SharpenBone,
+	}
+
+    /****************/
+    /*** GENERIC ***/
+    /****************/
+
+    /** Large **/
+
+	item Leather_Crude_Large
+	{
+		DisplayName = Large Leather (Crude),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = LeatherHide_Crude,
+		WorldStaticModel = Leather_Crude,
+		Tags = LeatherCrudeLarge,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item Leather_Crude_Large_Tan_Wet
+	{
+		DisplayName = Large Leather (Tanned; Crude; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = LeatherHide_CrudeTainted,
+		WorldStaticModel = Leather_CrudeTainted,
+		Tags = LeatherCrudeWetLarge,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+    item Leather_Crude_Large_Tan
+    {
+        DisplayName = Large Leather (Tanned; Crude),
+        DisplayCategory = Material,
+        Type = Normal,
+        Weight = 5,
+        Icon = LeatherHide_CrudeTainted,
+        WorldStaticModel = Leather_CrudeTainted,
+        Tags = LeatherCrudeTannedLarge,
+    }
+
+    /** Medium **/
+
+	item Leather_Crude_Medium
+	{
+		DisplayName = Medium Leather (Crude),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = LeatherHide_Crude,
+		WorldStaticModel = Leather_Crude_Medium,
+		Tags = LeatherCrudeMedium,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item Leather_Crude_Medium_Tan_Wet
+	{
+		DisplayName = Medium Leather (Tanned; Crude; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = LeatherHide_CrudeTainted,
+		WorldStaticModel = Leather_CrudeTainted_Medium,
+		Tags = LeatherCrudeWetMedium,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+    item Leather_Crude_Medium_Tan
+    {
+        DisplayName = Medium Leather (Tanned; Crude),
+        DisplayCategory = Material,
+        Type = Normal,
+        Weight = 5,
+        Icon = LeatherHide_CrudeTainted,
+        WorldStaticModel = Leather_CrudeTainted_Medium,
+        Tags = LeatherCrudeTannedMedium,
+    }
+
+    /** Small **/
+
+	item Leather_Crude_Small
+	{
+		DisplayName = Small Leather (Crude),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = LeatherHide_Crude,
+		WorldStaticModel = Leather_Crude_Small,
+		Tags = LeatherCrudeSmall,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item Leather_Crude_Small_Tan_Wet
+	{
+		DisplayName = Small Leather (Tanned; Crude; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = LeatherHide_CrudeTainted,
+		WorldStaticModel = Leather_CrudeTainted_Small,
+		Tags = LeatherCrudeWetSmall,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+    item Leather_Crude_Small_Tan
+    {
+        DisplayName = Small Leather (Tanned; Crude),
+        DisplayCategory = Material,
+        Type = Normal,
+        Weight = 5,
+        Icon = LeatherHide_CrudeTainted,
+        WorldStaticModel = Leather_CrudeTainted_Small,
+        Tags = LeatherCrudeTannedSmall,
+    }
+
+    /****************/
+    /***** COWS *****/
+    /****************/
+
+    /** Cow leather can have or not fur on it */
+	item CowLeather_Angus_Full
+	{
+		DisplayName = Angus Leather (Unprocessed),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black,
+		Tags = LeatherFullLarge,
+		Tooltip = Tooltip_Leather_SofteningBeam,
+	}
+
+	item CowLeather_Angus_Fur
+	{
+		DisplayName = Angus Leather (Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black,
+		Tags = LeatherFurLarge,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item CowLeather_Angus_Fur_Tan_Wet
+	{
+		DisplayName = Angus Leather (Tanned; Furred; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black,
+		Tags = LeatherFurWetLarge,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+	item CowLeather_Angus_Fur_Tan
+	{
+		DisplayName = Angus Leather (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black,
+		Tags = LeatherFurTannedLarge,
+	}
+
+	item CowLeather_Angus_Fur_Tan_Medium
+	{
+		DisplayName = Angus Leather Half (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 3,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black_Medium,
+		Tags = LeatherFurTannedMedium,
+	}
+
+	item CowLeather_Angus_Fur_Tan_Small
+	{
+		DisplayName = Angus Leather Quarter (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black_Small,
+		Tags = LeatherFurTannedSmall,
+	}
+
+	item CowLeather_Holstein_Full
+	{
+		DisplayName = Holstein Leather (Unprocessed),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = LeatherHide_CowWhitePatch,
+		WorldStaticModel = Leather_WhitePatches,
+		Tags = LeatherFullLarge,
+		Tooltip = Tooltip_Leather_SofteningBeam,
+	}
+
+	item CowLeather_Holstein_Fur
+	{
+		DisplayName = Holstein Leather (Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = LeatherHide_CowWhitePatch,
+		WorldStaticModel = Leather_WhitePatches,
+		Tags = LeatherFurLarge,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item CowLeather_Holstein_Fur_Tan_Wet
+	{
+		DisplayName = Holstein Leather (Tanned; Furred; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = LeatherHide_CowWhitePatch,
+		WorldStaticModel = Leather_WhitePatches,
+		Tags = LeatherFurWetLarge,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+	item CowLeather_Holstein_Fur_Tan
+	{
+		DisplayName = Holstein Leather (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = LeatherHide_CowWhitePatch,
+		WorldStaticModel = Leather_WhitePatches,
+		Tags = LeatherFurTannedLarge,
+	}
+
+	item CowLeather_Holstein_Fur_Tan_Medium
+	{
+		DisplayName = Holstein Leather Half (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 3,
+		Icon = LeatherHide_CowWhitePatch,
+		WorldStaticModel = Leather_WhitePatches_Medium,
+		Tags = LeatherFurTannedMedium,
+	}
+
+	item CowLeather_Holstein_Fur_Tan_Small
+	{
+		DisplayName = Holstein Leather Quarter (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowWhitePatch,
+		WorldStaticModel = Leather_WhitePatches_Small,
+		Tags = LeatherFurTannedSmall,
+	}
+
+	item CowLeather_Simmental_Full
+	{
+		DisplayName = Simmental Leather (Unprocessed),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = LeatherHide_CowBrownPatch,
+		WorldStaticModel = Leather_BrownPatches,
+		Tags = LeatherFullLarge,
+		Tooltip = Tooltip_Leather_SofteningBeam,
+	}
+
+	item CowLeather_Simmental_Fur
+	{
+		DisplayName = Simmental Leather (Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = LeatherHide_CowBrownPatch,
+		WorldStaticModel = Leather_BrownPatches,
+		Tags = LeatherFurLarge,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item CowLeather_Simmental_Fur_Tan_Wet
+	{
+		DisplayName = Simmental Leather (Tanned; Furred; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 5,
+		Icon = LeatherHide_CowBrownPatch,
+		WorldStaticModel = Leather_BrownPatches,
+		Tags = LeatherFurWetLarge,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+	item CowLeather_Simmental_Fur_Tan
+	{
+		DisplayName = Simmental Leather (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Moveable,
+		WorldObjectSprite = rugs_animals_40,
+		Weight = 5,
+		Icon = LeatherHide_CowBrownPatch,
+		WorldStaticModel = Leather_BrownPatches,
+		Tags = LeatherFurTannedLarge,
+	}
+
+	item CowLeather_Simmental_Fur_Tan_Medium
+	{
+		DisplayName = Simmental Leather Half (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Moveable,
+		Weight = 3,
+		Icon = LeatherHide_CowBrownPatch,
+		WorldStaticModel = Leather_BrownPatches_Medium,
+		Tags = LeatherFurTannedMedium,
+	}
+
+	item CowLeather_Simmental_Fur_Tan_Small
+	{
+		DisplayName = Simmental Leather Quarter (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Moveable,
+		Weight = 1,
+		Icon = LeatherHide_CowBrownPatch,
+		WorldStaticModel = Leather_BrownPatches_Small,
+		Tags = LeatherFurTannedSmall,
+	}
+
+    item CalfLeather_Angus_Full
+	{
+		DisplayName = Angus Calf Leather (Unprocessed),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black_Small,
+		Tags = LeatherFullSmall,
+		Tooltip = Tooltip_Leather_SofteningBeam,
+	}
+
+	item CalfLeather_Angus_Fur
+	{
+		DisplayName = Angus Calf Leather (Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black_Small,
+		Tags = LeatherFurSmall,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item CalfLeather_Angus_Fur_Tan_Wet
+	{
+		DisplayName = Angus Calf Leather (Tanned; Furred; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black_Small,
+		Tags = LeatherFurWetSmall,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+	item CalfLeather_Angus_Fur_Tan
+	{
+		DisplayName = Angus Calf Leather (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black_Small,
+		Tags = LeatherFurTannedSmall,
+	}
+
+	item CalfLeather_Holstein_Full
+	{
+		DisplayName = Holstein Calf Leather (Unprocessed),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowWhitePatch,
+		WorldStaticModel = Leather_WhitePatches_Small,
+		Tags = LeatherFullSmall,
+		Tooltip = Tooltip_Leather_SofteningBeam,
+	}
+
+	item CalfLeather_Holstein_Fur
+	{
+		DisplayName = Holstein Calf Leather (Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowWhitePatch,
+		WorldStaticModel = Leather_WhitePatches_Small,
+		Tags = LeatherFurSmall,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item CalfLeather_Holstein_Fur_Tan_Wet
+	{
+		DisplayName = Holstein Calf Leather (Tanned; Furred; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowWhitePatch,
+		WorldStaticModel = Leather_WhitePatches_Small,
+		Tags = LeatherFurWetSmall,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+	item CalfLeather_Holstein_Fur_Tan
+	{
+		DisplayName = Holstein Calf Leather (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowWhitePatch,
+		WorldStaticModel = Leather_WhitePatches_Small,
+		Tags = LeatherFurTannedSmall,
+	}
+
+	item CalfLeather_Simmental_Full
+	{
+		DisplayName = Simmental Calf Leather (Unprocessed),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBrownPatch,
+		WorldStaticModel = Leather_BrownPatches_Small,
+		Tags = LeatherFullSmall,
+		Tooltip = Tooltip_Leather_SofteningBeam,
+	}
+
+	item CalfLeather_Simmental_Fur
+	{
+		DisplayName = Simmental Calf Leather (Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBrownPatch,
+		WorldStaticModel = Leather_BrownPatches_Small,
+		Tags = LeatherFurSmall,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item CalfLeather_Simmental_Fur_Tan_Wet
+	{
+		DisplayName = Simmental Calf Leather (Tanned; Furred; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBrownPatch,
+		WorldStaticModel = Leather_BrownPatches_Small,
+		Tags = LeatherFurWetSmall,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+	item CalfLeather_Simmental_Fur_Tan
+	{
+		DisplayName = Simmental Calf Leather (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBrownPatch,
+		WorldStaticModel = Leather_BrownPatches_Small,
+		Tags = LeatherFurTannedSmall,
+	}
+
+    /*****************/
+    /***** SHEEP *****/
+    /*****************/
+
+ 	item SheepLeather_Full
+ 	{
+ 		DisplayName = Sheep Leather (Unprocessed),
+ 		DisplayCategory = Material,
+ 		Type = Normal,
+ 		Weight = 3,
+ 		Icon = LeatherHide_SheepWhite,
+ 		WorldStaticModel = Leather_White_Medium,
+ 		Tags = LeatherFullMedium,
+ 		Tooltip = Tooltip_Leather_SofteningBeam,
+ 	}
+
+ 	item SheepLeather_Fur
+ 	{
+ 		DisplayName = Sheep Leather (Furred),
+ 		DisplayCategory = Material,
+ 		Type = Normal,
+ 		Weight = 3,
+ 		Icon = LeatherHide_SheepWhite,
+ 		WorldStaticModel = Leather_White_Medium,
+ 		Tags = LeatherFurMedium,
+ 		Tooltip = Tooltip_Leather_TanninBarrel,
+ 	}
+
+ 	item SheepLeather_Fur_Tan_Wet
+ 	{
+ 		DisplayName = Sheep Leather (Tanned; Furred; Wet),
+ 		DisplayCategory = Material,
+ 		Type = Normal,
+ 		Weight = 3,
+ 		Icon = LeatherHide_SheepWhite,
+ 		WorldStaticModel = Leather_White_Medium,
+ 		Tags = LeatherFurWetMedium,
+ 		Tooltip = Tooltip_Leather_DryingRack,
+ 	}
+
+ 	item SheepLeather_Fur_Tan
+ 	{
+ 		DisplayName = Sheep Leather (Tanned; Furred),
+ 		DisplayCategory = Material,
+ 		Type = Normal,
+ 		Weight = 3,
+ 		Icon = LeatherHide_SheepWhite,
+ 		WorldStaticModel = Leather_White_Medium,
+ 		Tags = LeatherFurTannedMedium,
+ 	}
+
+ 	item SheepLeather_Fur_Tan_Small
+ 	{
+ 		DisplayName = Sheep Leather Half (Tanned; Furred),
+ 		DisplayCategory = Material,
+ 		Type = Normal,
+ 		Weight = 1,
+ 		Icon = LeatherHide_SheepWhite,
+ 		WorldStaticModel = Leather_White_Small,
+ 		Tags = LeatherFurTannedSmall,
+ 	}
+
+ 	item LambLeather_Full
+ 	{
+ 		DisplayName = Lamb Leather (Unprocessed),
+ 		DisplayCategory = Material,
+ 		Type = Normal,
+ 		Weight = 1,
+ 		Icon = LeatherHide_SheepWhite,
+ 		WorldStaticModel = Leather_White_Small,
+ 		Tags = LeatherFullSmall,
+ 		Tooltip = Tooltip_Leather_SofteningBeam,
+ 	}
+
+ 	item LambLeather_Fur
+ 	{
+ 		DisplayName = Lamb Leather (Furred),
+ 		DisplayCategory = Material,
+ 		Type = Normal,
+ 		Weight = 1,
+ 		Icon = LeatherHide_SheepWhite,
+ 		WorldStaticModel = Leather_White_Small,
+ 		Tags = LeatherFurSmall,
+ 		Tooltip = Tooltip_Leather_TanninBarrel,
+ 	}
+
+ 	item LambLeather_Fur_Tan_Wet
+ 	{
+ 		DisplayName = Lamb Leather (Tanned; Furred; Wet),
+ 		DisplayCategory = Material,
+ 		Type = Normal,
+ 		Weight = 1,
+ 		Icon = LeatherHide_SheepWhite,
+ 		WorldStaticModel = Leather_White_Small,
+ 		Tags = LeatherFurWetSmall,
+ 		Tooltip = Tooltip_Leather_DryingRack,
+ 	}
+
+ 	item LambLeather_Fur_Tan
+ 	{
+ 		DisplayName = Lamb Leather (Tanned; Furred),
+ 		DisplayCategory = Material,
+ 		Type = Normal,
+ 		Weight = 1,
+ 		Icon = LeatherHide_SheepWhite,
+ 		WorldStaticModel = Leather_White_Small,
+ 		Tags = LeatherFurTannedSmall,
+ 	}
+
+    /***************/
+    /***** PIG *****/
+    /***************/
+
+	item PigLeather_Landrace_Full
+	{
+		DisplayName = Landrace Pig Leather (Unprocessed),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 3,
+		Icon = LeatherHide_PigPink,
+		WorldStaticModel = Leather_Pink_Medium,
+		Tags = LeatherFullMedium,
+		Tooltip = Tooltip_Leather_SofteningBeam,
+	}
+
+	item PigLeather_Landrace_Fur
+	{
+		DisplayName = Landrace Pig Leather (Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 3,
+		Icon = LeatherHide_PigPink,
+		WorldStaticModel = Leather_Pink_Medium,
+		Tags = LeatherFurMedium,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item PigLeather_Landrace_Fur_Tan_Wet
+	{
+		DisplayName = Landrace Pig Leather (Tanned; Furred; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 3,
+		Icon = LeatherHide_PigPink,
+		WorldStaticModel = Leather_Pink_Medium,
+		Tags = LeatherFurWetMedium,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+	item PigLeather_Landrace_Fur_Tan
+	{
+		DisplayName = Landrace Pig Leather (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 3,
+		Icon = LeatherHide_PigPink,
+		WorldStaticModel = Leather_Pink_Medium,
+		Tags = LeatherFurTannedMedium,
+	}
+
+	item PigLeather_Landrace_Fur_Tan_Small
+	{
+		DisplayName = Landrace Pig Leather Half (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_PigPink,
+		WorldStaticModel = Leather_Pink_Small,
+		Tags = LeatherFurTannedSmall,
+	}
+
+	item PigLeather_Black_Full
+	{
+		DisplayName = Black Pig Leather (Unprocessed),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 3,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black_Medium,
+		Tags = LeatherFullMedium,
+		Tooltip = Tooltip_Leather_SofteningBeam,
+	}
+
+	item PigLeather_Black_Fur
+	{
+		DisplayName = Black Pig Leather (Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 3,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black_Medium,
+		Tags = LeatherFurMedium,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item PigLeather_Black_Fur_Tan_Wet
+	{
+		DisplayName = Black Pig Leather (Tanned; Furred; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 3,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black_Medium,
+		Tags = LeatherFurWetMedium,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+	item PigLeather_Black_Fur_Tan
+	{
+		DisplayName = Black Pig Leather (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 3,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black_Medium,
+		Tags = LeatherFurTannedMedium,
+	}
+
+	item PigLeather_Black_Fur_Tan_Small
+	{
+		DisplayName = Black Pig Leather Half (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 3,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black_Small,
+		Tags = LeatherFurTannedMedium,
+	}
+
+    item PigletLeather_Landrace_Full
+	{
+		DisplayName = Landrace Piglet Leather (Unprocessed),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_PigPink,
+		WorldStaticModel = Leather_Pink_Small,
+		Tags = LeatherFullSmall,
+		Tooltip = Tooltip_Leather_SofteningBeam,
+	}
+
+	item PigletLeather_Landrace_Fur
+	{
+		DisplayName = Landrace Piglet Leather (Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_PigPink,
+		WorldStaticModel = Leather_Pink_Small,
+		Tags = LeatherFurSmall,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item PigletLeather_Landrace_Fur_Tan_Wet
+	{
+		DisplayName = Landrace Piglet Leather (Tanned; Furred; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_PigPink,
+		WorldStaticModel = Leather_Pink_Small,
+		Tags = LeatherFurWetSmall,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+	item PigletLeather_Landrace_Fur_Tan
+	{
+		DisplayName = Landrace Piglet Leather (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_PigPink,
+		WorldStaticModel = Leather_Pink_Small,
+		Tags = LeatherFurTannedSmall,
+	}
+
+	item PigletLeather_Black_Full
+	{
+		DisplayName = Black Piglet Leather (Unprocessed),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black_Small,
+		Tags = LeatherFullSmall,
+		Tooltip = Tooltip_Leather_SofteningBeam,
+	}
+
+	item PigletLeather_Black_Fur
+	{
+		DisplayName = Black Piglet Leather (Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black_Small,
+		Tags = LeatherFurSmall,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item PigletLeather_Black_Fur_Tan_Wet
+	{
+		DisplayName = Black Piglet Leather (Tanned; Furred; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black_Small,
+		Tags = LeatherFurWetSmall,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+	item PigletLeather_Black_Fur_Tan
+	{
+		DisplayName = Black Piglet Leather (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBlack,
+		WorldStaticModel = Leather_Black_Small,
+		Tags = LeatherFurTannedSmall,
+	}
+
+    /****************/
+    /***** DEER *****/
+    /****************/
+
+	item DeerLeather_Full
+	{
+		DisplayName = Deer Leather (Unprocessed),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 3,
+		Icon = LeatherHide_CowBrown,
+		WorldStaticModel = Leather_Brown_Medium,
+		Tags = LeatherFullMedium,
+		Tooltip = Tooltip_Leather_SofteningBeam,
+	}
+
+	item DeerLeather_Fur
+	{
+		DisplayName = Deer Leather (Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 3,
+		Icon = LeatherHide_CowBrown,
+		WorldStaticModel = Leather_Brown_Medium,
+		Tags = LeatherFurMedium,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item DeerLeather_Fur_Tan_Wet
+	{
+		DisplayName = Deer Leather (Tanned; Furred; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 3,
+		Icon = LeatherHide_CowBrown,
+		WorldStaticModel = Leather_Brown_Medium,
+		Tags = LeatherFurWetMedium,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+	item DeerLeather_Fur_Tan
+	{
+		DisplayName = Deer Leather (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Moveable,
+		WorldObjectSprite = rugs_animals_2,
+		Weight = 3,
+		Icon = LeatherHide_CowBrown,
+		WorldStaticModel = Leather_Brown_Medium,
+		Tags = LeatherFurTannedMedium,
+	}
+
+	item DeerLeather_Fur_Tan_Small
+	{
+		DisplayName = Deer Leather Half (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Moveable,
+		Weight = 1,
+		Icon = LeatherHide_CowBrown,
+		WorldStaticModel = Leather_Brown_Small,
+		Tags = LeatherFurTannedSmall,
+	}
+
+	item FawnLeather_Full
+	{
+		DisplayName = Fawn Leather (Unprocessed),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBrown,
+		WorldStaticModel = Leather_Brown_Small,
+		Tags = LeatherFullSmall,
+		Tooltip = Tooltip_Leather_SofteningBeam,
+	}
+
+	item FawnLeather_Fur
+	{
+		DisplayName = Fawn Leather (Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBrown,
+		WorldStaticModel = Leather_Brown_Small,
+		Tags = LeatherFurSmall,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item FawnLeather_Fur_Tan_Wet
+	{
+		DisplayName = Fawn Leather (Tanned; Furred; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBrown,
+		WorldStaticModel = Leather_Brown_Small,
+		Tags = LeatherFurWetSmall,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+	item FawnLeather_Fur_Tan
+	{
+		DisplayName = Fawn Leather (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBrown,
+		WorldStaticModel = Leather_Brown_Small,
+		Tags = LeatherFurTannedSmall,
+	}
+
+    /****************/
+    /**** RABBIT ****/
+    /****************/
+
+	item RabbitLeather_Full
+	{
+		DisplayName = Rabbit Leather (Unprocessed),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBrown,
+		WorldStaticModel = Leather_Brown_Small,
+		Tags = LeatherFullSmall,
+		Tooltip = Tooltip_Leather_SofteningBeam,
+	}
+
+	item RabbitLeather_Fur
+	{
+		DisplayName = Rabbit Leather (Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBrown,
+		WorldStaticModel = Leather_Brown_Small,
+		Tags = LeatherFurSmall,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item RabbitLeather_Fur_Tan_Wet
+	{
+		DisplayName = Rabbit Leather (Tanned; Furred; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBrown,
+		WorldStaticModel = Leather_Brown_Small,
+		Tags = LeatherFurWetSmall,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+	item RabbitLeather_Fur_Tan
+	{
+		DisplayName = Rabbit Leather (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = LeatherHide_CowBrown,
+		WorldStaticModel = Leather_Brown_Small,
+		Tags = LeatherFurTannedSmall,
+	}
+
+	item RabbitLeather_Grey_Full
+	{
+		DisplayName = Rabbit Leather (Unprocessed),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = AnimalPelt_Grey,
+		WorldStaticModel = Leather_Grey_Small,
+		Tags = LeatherFullSmall,
+		Tooltip = Tooltip_Leather_SofteningBeam,
+	}
+
+	item RabbitLeather_Grey_Fur
+	{
+		DisplayName = Rabbit Leather (Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = AnimalPelt_Grey,
+		WorldStaticModel = Leather_Grey_Small,
+		Tags = LeatherFurSmall,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item RabbitLeather_Grey_Fur_Tan_Wet
+	{
+		DisplayName = Rabbit Leather (Tanned; Furred; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = AnimalPelt_Grey,
+		WorldStaticModel = Leather_Grey_Small,
+		Tags = LeatherFurWetSmall,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+	item RabbitLeather_Grey_Fur_Tan
+	{
+		DisplayName = Rabbit Leather (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = AnimalPelt_Grey,
+		WorldStaticModel = Leather_Grey_Small,
+		Tags = LeatherFurTannedSmall,
+	}
+
+    /*****************/
+    /**** RACCOON ****/
+    /*****************/
+
+    item RaccoonLeather_Grey_Full
+	{
+		DisplayName = Raccoon Leather (Unprocessed),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = AnimalPelt_Grey,
+		WorldStaticModel = Leather_Grey_Small,
+		Tags = LeatherFullSmall,
+		Tooltip = Tooltip_Leather_SofteningBeam,
+	}
+
+	item RaccoonLeather_Grey_Fur
+	{
+		DisplayName = Raccoon Leather (Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = AnimalPelt_Grey,
+		WorldStaticModel = Leather_Grey_Small,
+		Tags = LeatherFurSmall,
+		Tooltip = Tooltip_Leather_TanninBarrel,
+	}
+
+	item RaccoonLeather_Grey_Fur_Tan_Wet
+	{
+		DisplayName = Raccoon Leather (Tanned; Furred; Wet),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = AnimalPelt_Grey,
+		WorldStaticModel = Leather_Grey_Small,
+		Tags = LeatherFurWetSmall,
+		Tooltip = Tooltip_Leather_DryingRack,
+	}
+
+	item RaccoonLeather_Grey_Fur_Tan
+	{
+		DisplayName = Raccoon Leather (Tanned; Furred),
+		DisplayCategory = Material,
+		Type = Normal,
+		Weight = 1,
+		Icon = AnimalPelt_Grey,
+		WorldStaticModel = Leather_Grey_Small,
+		Tags = LeatherFurTannedSmall,
+	}
+}

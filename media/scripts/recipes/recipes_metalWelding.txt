@@ -1,0 +1,254 @@
+module Base
+{
+	craftRecipe MakeBarbedWire
+	{
+		timedAction = CutWire,
+		Time = 250,
+		NeedToBeLearn = True,
+        tags = AnySurfaceCraft,
+        category = Metalworking,
+		AutoLearnAny = MetalWelding:4,
+		ResearchSkillLevel = 1,
+		ResearchAny = Blacksmith;Maintenance;MetalWelding,
+		inputs
+		{
+			item 1 tags[Pliers] mode:keep flags[MayDegradeLight],
+			item 1 [Base.Wire] mode:destroy flags[InheritUses],
+		}
+		outputs
+		{
+			item 1 Base.BarbedWire,
+		}
+	}
+
+	craftRecipe MakeWireFromBarbedWire
+	{
+		timedAction = CutWire,
+		Time = 250,
+        tags = AnySurfaceCraft,
+        category = Metalworking,
+		inputs
+		{
+			item 1 tags[Pliers] mode:keep flags[MayDegradeLight],
+			item 1 [Base.BarbedWire] mode:destroy flags[InheritUses],
+		}
+		outputs
+		{
+			item 1 Base.Wire,
+		}
+	}
+
+    /************************ Metal Welding ************************/
+
+    /* recipe Make Metal Sheet
+    {
+       SmallSheetMetal=4,
+       BlowTorch=2,
+       keep [Recipe.GetItemTypes.WeldingMask],
+
+       Result:SheetMetal,
+       Time:250.0,
+       Category:Welding,
+       SkillRequired:MetalWelding=4,
+       OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+       NeedToBeLearn:true,
+    } */
+
+	craftRecipe MakeMetalSheet
+	{
+		timedAction = Welding,
+		Time = 250,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = MetalWelding:6,
+		inputs
+		{
+			item 4 [Base.SmallSheetMetal],
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+		}
+		outputs
+		{
+			item 1 Base.SheetMetal,
+		}
+	}
+
+    /* recipe Make Small Metal Sheet
+    {
+       SheetMetal,
+
+       BlowTorch=2,
+       keep [Recipe.GetItemTypes.WeldingMask],
+
+       Result:SmallSheetMetal=4,
+       Time:250.0,
+       Category:Welding,
+       SkillRequired:MetalWelding=4,
+       OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+       NeedToBeLearn:true,
+    } */
+
+	craftRecipe MakeSmallMetalSheet
+	{
+		timedAction = Welding,
+		Time = 250,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = MetalWelding:6,
+		inputs
+		{
+			item 1 [Base.SheetMetal],
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+		}
+		outputs
+		{
+			item 4 Base.SmallSheetMetal,
+		}
+	}
+
+    /* recipe Cut Small Metal Sheet
+    {
+       SheetMetal,
+
+       keep [Recipe.GetItemTypes.SheetMetalSnips],
+
+       Result:SmallSheetMetal=4,
+       Time:250.0,
+       Category:Welding,
+    } */
+
+	craftRecipe CutSmallMetalSheet
+	{
+		timedAction = Welding,
+		Time = 250,
+		Tags = AnySurfaceCraft,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.SheetMetal],
+			item 1 tags[SheetMetalSnips] mode:keep flags[MayDegradeLight],
+		}
+		outputs
+		{
+			item 4 Base.SmallSheetMetal,
+		}
+	}
+
+    /* recipe Refill Blow Torch
+    {
+       destroy BlowTorch=1,
+       keep RubberHose,
+       PropaneTank,
+       [Recipe.GetItemTypes.OxygenTank],
+
+       Result:BlowTorch,
+       Time:50.0,
+       Category:Welding,
+       OnTest:Recipe.OnTest.RefillBlowTorch,
+       OnCreate:Recipe.OnCreate.RefillBlowTorch,
+    } */
+
+	craftRecipe RefillBlowTorch
+	{
+		timedAction = Welding,
+		Time = 50,
+		OnCreate = Recipe.OnCreate.RefillBlowTorch,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		inputs
+		{
+			item 1 [Base.BlowTorch] mode:destroy flags[NotFull;ItemCount],
+			/*item 1 [Base.RubberHose] mode:keep,*/
+			item 1 [Base.PropaneTank] flags[NotEmpty;ItemCount] mode:keep,
+			/*item 1 tags[OxygenTank] flags[NotEmpty],*/
+		}
+		outputs
+		{
+			item 1 Base.BlowTorch,
+		}
+	}
+
+	craftRecipe CutCircularSawblade
+	{
+		timedAction = Welding,
+		Time = 250,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = MetalWelding:6,
+		inputs
+		{
+            item 1 [Base.CircularSawblade] flags[AllowDestroyedItem],
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+		}
+		outputs
+		{
+            item 2 Base.CircularSawblade_Half,
+		}
+	}
+	craftRecipe CutIronBand
+	{
+		timedAction = Welding,
+		Time = 250,
+		NeedToBeLearn = True,
+		SkillRequired = MetalWelding:4,
+		Tags = InHandCraft;Welding,
+        category = Metalworking,
+		xpAward = MetalWelding:25,
+		AutoLearnAny = MetalWelding:6,
+		inputs
+		{
+            item 1 [Base.IronBand] flags[AllowDestroyedItem],
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+		}
+		outputs
+		{
+            item 4 Base.IronBandSmall,
+		}
+	}
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe SawCircularSawblade
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+            item 1 [Base.CircularSawblade] flags[AllowDestroyedItem],
+			item 1 tags[MetalSaw] mode:keep flags[Prop1;MayDegrade],
+		}
+		outputs
+		{
+            item 2 Base.CircularSawblade_Half,
+		}
+	}
+	craftRecipe SawIronBand
+	{
+		Time = 230,
+		Tags = AnySurfaceCraft,
+        timedAction = SawSmallItemMetal,
+        category = Metalworking,
+		inputs
+		{
+            item 1 [Base.IronBand] flags[AllowDestroyedItem],
+			item 1 tags[MetalSaw] mode:keep flags[Prop1;MayDegrade],
+		}
+		outputs
+		{
+            item 4 Base.IronBandSmall,
+		}
+	}
+}

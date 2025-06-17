@@ -1,0 +1,29 @@
+module Base
+{
+	sound ClothesRipping
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Crafting/Tailoring/RipCloth,
+		}
+	}
+
+	sound Sewing
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Crafting/Tailoring/Sewing,
+		}
+	}
+
+	sound Knitting
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Crafting/Tailoring/Knitting,
+		}
+	}
+}

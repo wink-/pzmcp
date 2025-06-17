@@ -1,0 +1,122 @@
+module Base
+{
+	item Mov_FancyOutdoorLamp
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Fancy Outdoor Lamp,
+		WorldObjectSprite = lighting_outdoor_01_34,
+	}
+	
+	item Mov_Lamp1
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Striped Lamp,
+		WorldObjectSprite = lighting_indoor_01_8,
+	}
+	
+	item Mov_Lamp2
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Black Lamp,
+		WorldObjectSprite = lighting_indoor_01_9,
+	}
+	
+	item Mov_Lamp3
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Red Lamp,
+		WorldObjectSprite = lighting_indoor_01_10,
+	}
+	
+	item Mov_Lamp4
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Grey Lamp,
+		WorldObjectSprite = lighting_indoor_01_11,
+	}
+	
+	item Mov_Lamp5
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Blue Lamp,
+		WorldObjectSprite = lighting_indoor_01_12,
+	}
+	
+	item Mov_Lamp6
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = White Lamp,
+		WorldObjectSprite = lighting_indoor_01_13,
+	}
+	
+	item Mov_LightConstruction
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Flood Lights,
+		WorldObjectSprite = lighting_outdoor_01_49,
+	}
+	
+	item Mov_ModernOutdoorLamp
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Modern Outdoor Lamp,
+		WorldObjectSprite = lighting_outdoor_01_32,
+	}
+	
+	item Mov_NeonOpenSign
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Neon Open Sign,
+		WorldObjectSprite = lighting_outdoor_01_42,
+	}
+	
+	item Mov_OvalOutdoorLamp
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Oval Outdoor Lamp,
+		WorldObjectSprite = lighting_outdoor_01_40,
+	}
+	
+	item Mov_RoundOutdoorLamp
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Round Outdoor Lamp,
+		WorldObjectSprite = lighting_outdoor_01_24,
+	}
+}

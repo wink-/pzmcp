@@ -1,0 +1,76 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_Shelves_Lvl1
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Metal Shelves (Shoddy),
+			Icon		= Build_ShelvesMetal,
+		}
+	}
+
+    entity Metal_Shelves_Lvl1
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Shelves_Lvl1,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+            needToBeAgainstWall = true,
+            face W
+            {
+                layer
+                {
+                    row = crafted_05_34,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = crafted_05_35,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_05_33,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = crafted_05_32,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            OnAddToMenu   = metalLockedSmallLvl1Test,
+            timedAction   = BuildMetalStructureSmall,
+            time          = 50,
+            needToBeLearn = true,
+            SkillRequired = MetalWelding:3,
+            xpAward       = MetalWelding:30,
+            category      = Furniture,
+            tags          = Welding;Furniture,
+            ToolTip       = Tooltip_craft_NeedsWallDesc,
+            inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 1 [Base.SmallSheetMetal],
+                item 2 [Base.MetalPipe],
+                item 1 [Base.ScrapMetal],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

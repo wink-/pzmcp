@@ -1,0 +1,116 @@
+module Base
+{
+
+
+	craftRecipe PackSleepingBag
+	{
+		timedAction = PutInBag,
+		Time = 50,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.SleepingBag_BluePlaid;Base.SleepingBag_Camo;Base.SleepingBag_Cheap_Blue;Base.SleepingBag_Cheap_Green;Base.SleepingBag_Cheap_Green2;Base.SleepingBag_Green;Base.SleepingBag_GreenPlaid;Base.SleepingBag_Hide;Base.SleepingBag_HighQuality_Brown;Base.SleepingBag_RedPlaid;Base.SleepingBag_Spiffo] mappers[bagTypes],
+		}
+		outputs
+		{
+			item 1 mapper:bagTypes,
+		}
+		itemMapper bagTypes
+		{
+			Base.SleepingBag_BluePlaid_Packed = Base.SleepingBag_BluePlaid,
+			Base.SleepingBag_Camo_Packed = Base.SleepingBag_Camo,
+			Base.SleepingBag_Cheap_Blue_Packed = Base.SleepingBag_Cheap_Blue,
+			Base.SleepingBag_Cheap_Green_Packed = Base.SleepingBag_Cheap_Green,
+			Base.SleepingBag_Cheap_Green2_Packed = Base.SleepingBag_Cheap_Green2,
+			Base.SleepingBag_Green_Packed = Base.SleepingBag_Green,
+			Base.SleepingBag_GreenPlaid_Packed = Base.SleepingBag_GreenPlaid,
+			Base.SleepingBag_Hide_Packed = Base.SleepingBag_Hide,
+			Base.SleepingBag_HighQuality_Brown_Packed = Base.SleepingBag_HighQuality_Brown,
+			Base.SleepingBag_RedPlaid_Packed = Base.SleepingBag_RedPlaid,
+			Base.SleepingBag_Spiffo_Packed = Base.SleepingBag_Spiffo,
+		}
+	}
+
+	craftRecipe UnpackSleepingBag
+	{
+		timedAction = PutInBag,
+		Time = 25,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.SleepingBag_BluePlaid_Packed;Base.SleepingBag_Camo_Packed;Base.SleepingBag_Cheap_Blue_Packed;Base.SleepingBag_Cheap_Green_Packed;Base.SleepingBag_Cheap_Green2_Packed;Base.SleepingBag_Green_Packed;Base.SleepingBag_GreenPlaid_Packed;Base.SleepingBag_Hide_Packed;Base.SleepingBag_HighQuality_Brown_Packed;Base.SleepingBag_RedPlaid_Packed;Base.SleepingBag_Spiffo_Packed] mappers[bagTypes],
+		}
+		outputs
+		{
+			item 1 mapper:bagTypes,
+		}
+		itemMapper bagTypes
+		{
+			Base.SleepingBag_BluePlaid = Base.SleepingBag_BluePlaid_Packed,
+			Base.SleepingBag_Camo = Base.SleepingBag_Camo_Packed,
+			Base.SleepingBag_Cheap_Blue = Base.SleepingBag_Cheap_Blue_Packed,
+			Base.SleepingBag_Cheap_Green = Base.SleepingBag_Cheap_Green_Packed,
+			Base.SleepingBag_Cheap_Green2 = Base.SleepingBag_Cheap_Green2_Packed,
+			Base.SleepingBag_Green = Base.SleepingBag_Green_Packed,
+			Base.SleepingBag_GreenPlaid = Base.SleepingBag_GreenPlaid_Packed,
+			Base.SleepingBag_Hide = Base.SleepingBag_Hide_Packed,
+			Base.SleepingBag_HighQuality_Brown = Base.SleepingBag_HighQuality_Brown_Packed,
+			Base.SleepingBag_RedPlaid = Base.SleepingBag_RedPlaid_Packed,
+			Base.SleepingBag_Spiffo = Base.SleepingBag_Spiffo_Packed,
+		}
+	}
+
+	craftRecipe PackTent
+	{
+		timedAction = PutInBag,
+		Time = 100,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.TentBlue;Base.TentBrown;Base.TentGreen;Base.HideTent;Base.TentYellow;Base.CampingTentKit2;Base.ImprovisedTentKit] mappers[tentType],
+		}
+		outputs
+		{
+			item 1 mapper:tentType,
+		}
+		itemMapper tentType
+		{
+			Base.TentBlue_Packed = Base.TentBlue,
+			Base.TentBrown_Packed = Base.TentBrown,
+			Base.TentGreen_Packed = Base.TentGreen,
+			Base.HideTent_Packed = Base.HideTent,
+			Base.TentYellow_Packed = Base.TentYellow,
+			Base.CampingTentKit2_Packed = Base.CampingTentKit2,
+			Base.ImprovisedTentKit_Packed = Base.ImprovisedTentKit,
+		}
+	}
+
+	craftRecipe UnpackTent
+	{
+		timedAction = PutInBag,
+		Time = 50,
+		Tags = InHandCraft;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+		inputs
+		{
+			item 1 [Base.TentBlue_Packed;Base.TentBrown_Packed;Base.TentGreen_Packed;Base.HideTent_Packed;Base.TentYellow_Packed;Base.CampingTentKit2_Packed;Base.ImprovisedTentKit_Packed] mappers[tentType],
+		}
+		outputs
+		{
+			item 1 mapper:tentType,
+		}
+		itemMapper tentType
+		{
+			Base.TentBlue = Base.TentBlue_Packed,
+			Base.TentBrown = Base.TentBrown_Packed,
+			Base.TentGreen = Base.TentGreen_Packed,
+			Base.HideTent = Base.HideTent_Packed,
+			Base.TentYellow = Base.TentYellow_Packed,
+			Base.CampingTentKit2 = Base.CampingTentKit2_Packed,
+			Base.ImprovisedTentKit = Base.ImprovisedTentKit_Packed,
+		}
+	}
+}

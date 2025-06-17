@@ -1,0 +1,38 @@
+module Base
+{
+    /* this is a recipe for cutting leather pieces into smaller leather pieces for crafting */
+    craftRecipe CutLeatherInHalf
+    {
+        time            = 300,
+        tags            = AnySurfaceCraft,
+        timedAction = Making,
+        inputs
+        {
+            item 1 [Leather_Crude_Large;Leather_Crude_Medium;Leather_Crude_Large_Tan;Leather_Crude_Medium_Tan;CowLeather_Angus_Fur_Tan;CowLeather_Angus_Fur_Tan_Medium;CowLeather_Holstein_Fur_Tan;CowLeather_Holstein_Fur_Tan_Medium;CowLeather_Simmental_Fur_Tan;CowLeather_Simmental_Fur_Tan_Medium;SheepLeather_Fur_Tan;PigLeather_Landrace_Fur_Tan;PigLeather_Black_Fur_Tan;DeerLeather_Fur_Tan] mappers[leatherMapper],
+            item 1 tags[SharpKnife;Scissors] mode:keep flags[IsNotDull;MayDegradeLight],
+        }
+        outputs
+        {
+            item 2 mapper:leatherMapper,
+        }
+        itemMapper leatherMapper
+        {
+            Base.Leather_Crude_Medium = Base.Leather_Crude_Large,
+            Base.Leather_Crude_Small = Base.Leather_Crude_Medium,
+            Base.Leather_Crude_Medium_Tan = Base.Leather_Crude_Large_Tan,
+            Base.Leather_Crude_Small_Tan = Base.Leather_Crude_Medium_Tan,
+
+            Base.CowLeather_Angus_Fur_Tan_Medium = Base.CowLeather_Angus_Fur_Tan,
+            Base.CowLeather_Angus_Fur_Tan_Small = Base.CowLeather_Angus_Fur_Tan_Medium,
+            Base.CowLeather_Holstein_Fur_Tan_Medium = Base.CowLeather_Holstein_Fur_Tan,
+            Base.CowLeather_Holstein_Fur_Tan_Small = Base.CowLeather_Holstein_Fur_Tan_Medium,
+            Base.CowLeather_Simmental_Fur_Tan_Medium = Base.CowLeather_Simmental_Fur_Tan,
+            Base.CowLeather_Simmental_Fur_Tan_Small = Base.CowLeather_Simmental_Fur_Tan_Medium,
+            Base.SheepLeather_Fur_Tan_Small = Base.SheepLeather_Fur_Tan,
+            Base.PigLeather_Landrace_Fur_Tan_Small = Base.PigLeather_Landrace_Fur_Tan,
+            Base.PigLeather_Black_Fur_Tan_Small = Base.PigLeather_Black_Fur_Tan,
+            Base.DeerLeather_Fur_Tan_Small = Base.DeerLeather_Fur_Tan,
+        }
+    }
+
+}

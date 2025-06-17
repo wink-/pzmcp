@@ -1,0 +1,76 @@
+module Base
+{
+	xuiSkin default
+	{
+        entity ES_LeanTo_Shelter
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Lean-To Shelter,
+            Icon                = Build_LeanToShelterSticks,
+        }
+	}
+
+    entity LeanTo_Shelter
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_LeanTo_Shelter,
+            uiEnabled       = false,
+        }
+
+
+        component SpriteConfig
+        {
+            isProp      = true,
+            
+            face S
+            {
+                layer
+                {
+                    row = camping_03_2 camping_03_3,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = camping_03_5,
+                    row = camping_03_4,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = camping_03_0 camping_03_1,
+                }
+            }
+            face W
+            {
+                layer
+                {
+                    row = camping_03_7,
+                    row = camping_03_6,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = BuildLowNoTool,
+            time          = 50,
+            category      = Outdoors,
+            ToolTip       = Tooltip_craft_shelterDesc,
+
+            inputs
+            {
+                item 20  [Base.TreeBranch2;Base.WoodenStick2],
+                item 4 [Base.Stone2],
+                item 4 [Base.Log],
+                item 5 [Base.LongStick;Base.Sapling],
+		        item 2 [Base.RippedSheets;Base.RippedSheetsDirty;Base.Twine;Base.Rope;Base.SheetRope] flags[DontReplace],
+            }
+        }
+    }
+}

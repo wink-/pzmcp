@@ -1,0 +1,23 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISLedLight
+        {
+            background          = false,
+            backgroundColor     = C_White,
+            borderColor         = C_Border,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+            ledBackTexture      = Radio_ledBackground,
+            ledTexture          = Radio_ledLight,
+            ledCol              = C_LedOn,
+            ledColOff           = C_LedOff,
+            doLedBlink          = false,
+            ledIsOn             = false,
+            ledBlinkSpeed       = 10,
+        }
+    }
+}

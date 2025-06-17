@@ -1,0 +1,21 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Kiln_Small
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Small Kiln,
+            Icon                = Build_KilnSmall,
+        }
+
+        entity ES_Kiln_Large
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Large Kiln,
+            Icon                = Build_KilnLarge,
+
+        }
+
+    }
+}

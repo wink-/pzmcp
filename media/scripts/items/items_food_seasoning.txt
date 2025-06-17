@@ -1,0 +1,308 @@
+module Base
+{
+	item BalsamicVinegar
+	{
+		DisplayName = Balsamic Vinegar,
+		DisplayCategory = Food,
+		EatType = glugFood,
+		Type = Food,
+		Weight = 0.2,
+		Icon = BalsamicVinegar,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = Sandwich:2;Burger:2;Rice:2;Pasta:2;Stir fry:2;Salad:2;Taco:2;Burrito:2,
+		Packaged = TRUE,
+		Spice = TRUE,
+		HungerChange = -20,
+		UnhappyChange = 50,
+		Calories = 1250,
+		Carbohydrates = 300,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottleGlass,
+		StaticModel = BalsamicVinegar,
+		WorldStaticModel = BalsamicVinegar,
+		FoodType = NoExplicit,
+	}
+
+	item BBQSauce
+	{
+		DisplayName = Barbecue Sauce,
+		DisplayCategory = Food,
+		EatType = glugFood,
+		Type = Food,
+		Weight = 0.2,
+		Icon = BBQSauce,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = Sandwich:2;Burger:2;Rice:2;Pasta:2;Taco:2;Burrito:2,
+		Packaged = TRUE,
+		Spice = TRUE,
+		HungerChange = -20,
+		UnhappyChange = 30,
+		Calories = 980,
+		Carbohydrates = 252,
+		Lipids = 0,
+		Proteins = 0,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottleGlass,
+		StaticModel = BBQSauce,
+		WorldStaticModel = BBQSauce,
+		FoodType = NoExplicit,
+	}
+
+    item Seasoning_Basil
+    {
+        DisplayName = Basil (Dried),
+        DisplayCategory = Food,
+        Type = Food,
+        Weight = 0.2,
+        Icon = Seasoning_Basil,
+        EvolvedRecipe = Stir fry:1;Pizza:1;Omelette:1;Pasta:1;RicePan:1;Rice:1;Sandwich:1;Salad:1;Soup:1;Stew:1;Bread:1;Burger:1,
+        Spice = true,
+        HungerChange = -20,
+		UnhappyChange = 10,
+        Calories = 0.4,
+        Carbohydrates = 0,
+        Lipids = 0,
+        Proteins = 0,
+        WorldStaticModel = Seasoning_Basil,
+        FoodType = Herb,
+        EvolvedRecipeName = Basil,
+        Tags = DriedFood,
+    }
+
+    item Seasoning_Chives
+    {
+        DisplayName = Chives (Dried),
+        DisplayCategory = Food,
+        Type = Food,
+        Weight = 0.2,
+        Icon = Seasoning_Chives,
+        EvolvedRecipe = Stir fry:1;Pizza:1;Omelette:1;Pasta:1;Salad:1;Sandwich:1;Soup:1;Stew:1;Bread:1;Toast:1;Burger:1,
+        Spice = true,
+        HungerChange = -20,
+		UnhappyChange = 10,
+        Calories = 0.4,
+        Carbohydrates = 0,
+        Lipids = 0,
+        Proteins = 0,
+        WorldStaticModel = Seasoning_Chives,
+        FoodType = Herb,
+        EvolvedRecipeName = Chives,
+        Tags = DriedFood,
+    }
+
+    item Seasoning_Cilantro
+    {
+        DisplayName = Cilantro (Dried),
+        DisplayCategory = Food,
+        Type = Food,
+        Weight = 0.2,
+        Icon = Seasoning_Cilantro,
+        EvolvedRecipe = Stir fry:1;Pizza:1;Omelette:1;Burrito:1;Salad:1;Sandwich:1;Soup:1;Stew:1;Taco:1;Burrito:1;Burger:1,
+        Spice = TRUE,
+        HungerChange = -20,
+		UnhappyChange = 10,
+        Calories = 0.4,
+        Carbohydrates = 0,
+        Lipids = 0,
+        Proteins = 0,
+        WorldStaticModel = Seasoning_Cilantro,
+        FoodType = Herb,
+        EvolvedRecipeName = Cilantro,
+        Tags = DriedFood,
+    }
+
+    item Seasoning_Oregano
+    {
+        DisplayName = Oregano (Dried),
+        DisplayCategory = Food,
+        Type = Food,
+        Weight = 0.2,
+        Icon = Seasoning_Oregano,
+        EvolvedRecipe = Stir fry:1;Pizza:1;Omelette:1;Pasta:1;Salad:1;Soup:1;Stew:1;Bread:1;Toast:1;Burger:1;Burrito:1;Taco:1,
+        Spice = true,
+        HungerChange = -20,
+		UnhappyChange = 10,
+        Calories = 0.4,
+        Carbohydrates = 0,
+        Lipids = 0,
+        Proteins = 0,
+        WorldStaticModel = Seasoning_Oregano,
+        FoodType = Herb,
+        EvolvedRecipeName = Oregano,
+        Tags = DriedFood,
+    }
+
+
+    item Seasoning_Parsley
+    {
+        DisplayName = Parsley (Dried),
+        DisplayCategory = Food,
+        Type = Food,
+        Weight = 0.2,
+        Icon = Seasoning_Parsley,
+        EvolvedRecipe = Stir fry:1;Pizza:1;Omelette:1;Pasta:1;Rice:1;Salad:1;Sandwich:1;Stew:1;Soup:1;Bread:1;Toast:1;Burger:1;Burrito:1;Taco:1,
+        Spice = true,
+        HungerChange = -20,
+		UnhappyChange = 10,
+        Calories = 0.4,
+        Carbohydrates = 0,
+        Lipids = 0,
+        Proteins = 0,
+        WorldStaticModel = Seasoning_Parsley,
+        FoodType = Herb,
+        EvolvedRecipeName = Parsley,
+        Tags = DriedFood,
+    }
+
+
+    item Seasoning_Rosemary
+    {
+        DisplayName = Rosemary (Dried),
+        DisplayCategory = Food,
+        Type = Food,
+        Weight = 0.2,
+        Icon = Seasoning_Rosemary,
+        EvolvedRecipe = Omelette:1;Stir fry:1;Soup:1;Stew:1;Bread:1;Toast:1;Burger:1;Sandwich:1;Pasta:1,
+        Spice = true,
+        HungerChange = -20,
+		UnhappyChange = 10,
+        Calories = 0.4,
+        Carbohydrates = 0,
+        Lipids = 0,
+        Proteins = 0,
+        WorldStaticModel = Seasoning_Rosemary,
+        FoodType = Herb,
+        EvolvedRecipeName = Rosemary,
+        Tags = DriedFood,
+    }
+
+    item Seasoning_Sage
+    {
+        DisplayName = Sage (Dried),
+        DisplayCategory = Food,
+        Type = Food,
+        Weight = 0.2,
+        Icon = Seasoning_Sage,
+        EvolvedRecipe = Omelette:1;Stir fry:1;Soup:1;Stew:1;Bread:1;Toast:1;Burger:1;Sandwich:1;Pasta:1,
+        Spice = true,
+        HungerChange = -20,
+		UnhappyChange = 10,
+        Calories = 0.4,
+        Carbohydrates = 0,
+        Lipids = 0,
+        Proteins = 0,
+        WorldStaticModel = Seasoning_Sage,
+        FoodType = Herb,
+        EvolvedRecipeName = Sage,
+        Tags = DriedFood,
+    }
+
+    item Seasoning_Thyme
+    {
+        DisplayName = Thyme (Dried),
+        DisplayCategory = Food,
+        Type = Food,
+        Weight = 0.2,
+        Icon = Seasoning_Thyme,
+        EvolvedRecipe = Omelette:1;Stir fry:1;Soup:1;Stew:1;Bread:1;Toast:1;Burger:1;Sandwich:1;Pasta:1,
+        Spice = true,
+        HungerChange = -20,
+		UnhappyChange = 10,
+        Calories = 0.4,
+        Carbohydrates = 0,
+        Lipids = 0,
+        Proteins = 0,
+        WorldStaticModel = Seasoning_Thyme,
+        FoodType = Herb,
+        EvolvedRecipeName = Thyme,
+        Tags = DriedFood,
+    }
+
+	item PowderedGarlic
+	{
+		DisplayName = Powdered Garlic,
+		DisplayCategory = Food,
+		EatType = glugFood,
+		Type = Food,
+		Weight = 0.2,
+		Icon = PowderedGarlic,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = Pizza:1;Soup:1;Stew:1;Pie:1;Stir fry:1;Burger:1;Salad:1;Rice:1;Pasta:1;Sandwich:1;Taco:1;Burrito:1,
+		Spice = TRUE,
+		HungerChange = -10,
+		ThirstChange = 20,
+		UnhappyChange = 20,
+		StaticModel = PowderedGarlic,
+		WorldStaticModel = PowderedGarlic,
+		FoodType = NoExplicit,
+		Tags = MinorIngredient;DriedFood,
+        EvolvedRecipeName = Garlic,
+	}
+
+	item PowderedOnion
+	{
+		DisplayName = Powdered Onion,
+		DisplayCategory = Food,
+		EatType = glugFood,
+		Type = Food,
+		Weight = 0.2,
+		Icon = PowderedOnion,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = Pizza:1;Soup:1;Stew:1;Pie:1;Stir fry:1;Burger:1;Salad:1;Rice:1;Pasta:1;Sandwich:1;Taco:1;Burrito:1,
+		Spice = TRUE,
+		HungerChange = -10,
+		ThirstChange = 20,
+		UnhappyChange = 20,
+		StaticModel = PowderedOnion,
+		WorldStaticModel = PowderedOnion,
+		FoodType = NoExplicit,
+		Tags = MinorIngredient;DriedFood,
+        EvolvedRecipeName = Onion,
+	}
+
+	item SeasoningSalt
+	{
+		DisplayName = Seasoning Salt,
+		DisplayCategory = Food,
+		EatType = glugFood,
+		Type = Food,
+		Weight = 0.2,
+		Icon = SeasoningSalt,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = Pizza:1;Soup:1;Stew:1;Pie:1;Stir fry:1;Burger:1;Salad:1;Rice:1;Pasta:1;Sandwich:1;Taco:1;Burrito:1,
+		Spice = TRUE,
+		HungerChange = -10,
+		ThirstChange = 20,
+		UnhappyChange = 20,
+		StaticModel = SeasoningSalt,
+		WorldStaticModel = SeasoningSalt,
+		FoodType = NoExplicit,
+		Tags = MinorIngredient;DriedFood,
+	}
+
+	item SesameOil
+	{
+		DisplayName = Sesame Oil,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = SesameOil,
+		CantBeFrozen = TRUE,
+		EvolvedRecipe = Sandwich:2;Burger:2;Rice:2;Pasta:2;Stir fry:2;Salad:2,
+		Packaged = TRUE,
+		Spice = TRUE,
+		HungerChange = -10,
+		ThirstChange = 40,
+		UnhappyChange = 50,
+		Calories = 120,
+		Carbohydrates = 0,
+		Lipids = 14,
+		Proteins = 0,
+		StaticModel = SesameOil,
+		WorldStaticModel = SesameOil,
+		Tags = MinorIngredient;DriedFood,
+	}
+
+}

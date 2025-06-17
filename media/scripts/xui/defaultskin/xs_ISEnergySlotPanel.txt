@@ -1,0 +1,31 @@
+module Base
+{
+    xuiSkin default
+    {
+        ISEnergySlotPanel
+        {
+            background          = false,
+            drawBorder          = true,
+            backgroundColor     = C_Background,
+            borderColor         = C_Border,
+            textColor           = C_Text,
+            margin              = 24,
+            title               = "energy",
+            minimumWidth        = 0,
+            minimumHeight       = 0,
+            isVertical          = true,
+        }
+
+        ISEnergySlotPanel S_EnergySlotPanel_Inputs
+        {
+            title               = "input",
+            isVertical          = true,
+        }
+
+        ISEnergySlotPanel S_EnergySlotPanel_Outputs
+        {
+            title               = "output",
+            isVertical          = true,
+        }
+    }
+}

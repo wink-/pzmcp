@@ -1,0 +1,57 @@
+module Base
+{
+	item CatTreats
+	{
+		DisplayName = Cat Treats,
+		DisplayCategory = Food,
+		EatType = EatSmall,
+		Type = Food,
+		Weight = 0.1,
+		Icon = CatTreats,
+		FoodType = NoExplicit,
+		HungerChange = -5,
+		UnhappyChange = 20,
+		Calories = 70,
+		Carbohydrates = 12,
+		Lipids = 6,
+		Proteins = 1,
+		WorldStaticModel = CatTreats,
+	}
+
+	item CatFoodBag
+	{
+		DisplayName = Dry Cat Food,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 2,
+		Icon = CatFood,
+		CantEat = TRUE,
+		ToolTip = Tooltip_item_MustAddRecipe,
+		FoodType = CatFood,
+		EvolvedRecipeName = Cat Food,
+		EvolvedRecipe = Stew:15,
+        HungerChange = -60,
+		UnhappyChange = 20,
+		Tags = DriedFood,
+		WorldStaticModel = CatFoodBag,
+	}
+
+	item DogFoodBag
+	{
+		DisplayName = Dry Dog Food,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 2,
+		Icon = DogFoodBag,
+		CantEat = TRUE,
+		ToolTip = Tooltip_item_MustAddRecipe,
+		FoodType = DogFood,
+		EvolvedRecipeName = Dog Food,
+		EvolvedRecipe = Stew:15,
+        HungerChange = -60,
+		UnhappyChange = 20,
+		Tags = DriedFood,
+		WorldStaticModel = DogFoodBag,
+	}
+
+}

@@ -1,0 +1,138 @@
+module Base
+{
+	sound M36Shoot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
+		{
+			event = Weapon/Firearm/M36/Shoot,
+		}
+	}
+
+	sound M36InsertAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M36/InsertAmmo,
+		}
+	}
+
+	sound M36EjectAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M36/EjectAmmo,
+		}
+	}
+
+	sound M36InsertAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M36/InsertAmmoStart,
+		}
+	}
+
+	sound M36InsertAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M36/InsertAmmoStop,
+		}
+	}
+
+	sound M36EjectAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M36/EjectAmmoStart,
+		}
+	}
+
+	sound M36EjectAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M36/EjectAmmoStop,
+		}
+	}
+
+	sound M36Jam
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M36/Jam,
+		}
+	}
+    
+	sound M36BringToBear
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M36/BringToBear,
+		}
+	}
+    
+	sound M36AimRelease
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M36/AimRelease,
+		}
+	}
+
+	sound M36Equip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M36/Equip,
+		}
+	}
+        
+	sound M36UnEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M36/UnEquip,
+		}
+	}
+
+	sound M36Break
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M36/Break,
+		}
+	}
+
+	sound M36Drop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M36/Drop,
+		}
+	}
+	
+	sound M36CartridgeFall
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M36/CartridgeFall,
+		}
+	}
+}

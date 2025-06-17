@@ -1,0 +1,17 @@
+module Base
+{
+	model Vehicles_CarLights
+	{
+		mesh = vehicles/Vehicles_CarNormalLights,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	model Vehicles_CarLights_NoRandom
+	{
+		mesh = vehicles/Vehicles_CarNormalLights,
+		shader = vehicle_norandom_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+}

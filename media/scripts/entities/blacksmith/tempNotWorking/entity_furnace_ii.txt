@@ -1,0 +1,213 @@
+/*module Base
+{
+    craftRecipe CastBlockAnvil
+     {
+        time        = 10,
+        tags = SmeltingFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            item 1 [Base.ClayBlockAnvilMold],
+            item 8 tags[Charcoal],
+            item 6 tags[IronSource],
+         }
+         outputs
+         {
+             item 1 Base.BlockAnvilUntreated,
+         }
+     }
+
+    craftRecipe CastBlockAnvilFromIngots
+     {
+        time        = 10,
+        tags = SmeltingFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            item 1 [Base.ClayBlockAnvilMold],
+            item 8 tags[Charcoal],
+            item 6 tags[Ingot],
+         }
+         outputs
+         {
+             item 1 Base.BlockAnvilUntreated,
+         }
+     }
+
+    craftRecipe CastIronIngot
+     {
+        time        = 10,
+        tags = SmeltingFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            item 1 [Base.ClayIngotMold],
+            item 8 tags[Charcoal],
+            item 1 tags[IronSource],
+         }
+         outputs
+         {
+             item 1 Base.IronIngot,
+         }
+     }
+
+    craftRecipe CastIronIngotFromWorkableIron
+     {
+        time        = 10,
+        tags = SmeltingFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            item 1 [Base.ClayIngotMold],
+            item 8 tags[Charcoal],
+            item 12 [Base.WorkableIron],
+         }
+         outputs
+         {
+             item 1 Base.IronIngot,
+         }
+     }
+
+    craftRecipe CastIronBar
+     {
+        time        = 10,
+        tags = SmeltingFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            item 3 [Base.ClayBarMold],
+            item 8 tags[Charcoal],
+            item 1 tags[IronSource],
+         }
+         outputs
+         {
+             item 3 Base.IronBar,
+         }
+     }
+
+    craftRecipe CastIronBarFromWorkableIron
+     {
+        time        = 10,
+        tags = SmeltingFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            item 1 [Base.ClayBarMold],
+            item 8 tags[Charcoal],
+            item 4 [Base.WorkableIron],
+         }
+         outputs
+         {
+             item 1 Base.IronBar,
+         }
+     }
+
+    craftRecipe CastIronBarFromIronIngot
+     {
+        time        = 10,
+        tags = SmeltingFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            item 3 [Base.ClayBarMold],
+            item 8 tags[Charcoal],
+            item 1 [Base.IronIngot],
+         }
+         outputs
+         {
+             item 3 Base.IronBar,
+         }
+     }
+
+
+    entity Smelting_Furnace
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Furnace_II,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group furnace_fuel_inputs
+            {
+                Item@Input@5,
+            }
+            group furnace_fuel_outputs
+            {
+                Item@Output@10,
+            }
+            group craft_inputs
+            {
+                Item@Input@12,
+                Item@Input@12,
+                Item@Input@12,
+                Item@Input@12,
+                Item@Input@12,
+            }
+            group craft_outputs
+            {
+                Item@Output@2,
+                Item@Output@2,
+            }
+        }
+
+        component FurnaceLogic
+        {
+            fuelRecipes     = BurnWood,
+            fuelInputGroup  = furnace_fuel_inputs,
+            fuelOutputGroup = furnace_fuel_outputs,
+            furnaceRecipes  = SmeltingFurnace,
+            StartMode       = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_01_16,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_01_33,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = Test,
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 1 [Base.MasonsTrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 40 [Base.StoneBlock],
+                item 1 tags[Concrete] flags[DontRecordInput],
+            }
+        }
+    }
+}*/

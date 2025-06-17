@@ -1,0 +1,142 @@
+module Base
+{
+    craftRecipe Drill_Steel_Ingot
+    {
+        time        = 100,
+        SkillRequired = MetalWelding:4,
+        timedAction = Welding,
+        Tags = StandingDrillPress,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.SteelIngot],
+        }
+        outputs
+        {
+            item 1 Base.PiercedSteelIngot,
+        }
+    }
+
+    craftRecipe Drill_Iron_Ingot
+    {
+        time        = 100,
+        SkillRequired = MetalWelding:3,
+        timedAction = Welding,
+        Tags = StandingDrillPress,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.IronIngot],
+        }
+        outputs
+        {
+            item 1 Base.PiercedIronIngot,
+        }
+    }
+
+    craftRecipe Drill_Steel_Block
+    {
+        time        = 50,
+        SkillRequired = MetalWelding:3,
+        timedAction = Welding,
+        Tags = StandingDrillPress,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.SteelBlock],
+        }
+        outputs
+        {
+            item 1 Base.PiercedSteelBlock,
+        }
+    }
+
+    craftRecipe Drill_Iron_Block
+    {
+        time        = 50,
+        SkillRequired = MetalWelding:2,
+        timedAction = Welding,
+        Tags = StandingDrillPress,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.IronBlock],
+        }
+        outputs
+        {
+            item 1 Base.PiercedIronBlock,
+        }
+    }
+
+    craftRecipe Drill_Steel_Chunk
+    {
+        time        = 10,
+        SkillRequired = MetalWelding:2,
+        timedAction = Welding,
+        Tags = StandingDrillPress,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.SteelChunk],
+        }
+        outputs
+        {
+            item 1 Base.PiercedSteelChunk,
+        }
+    }
+
+    craftRecipe Drill_Iron_Chunk
+    {
+        time        = 10,
+        SkillRequired = MetalWelding:1,
+        timedAction = Welding,
+        Tags = StandingDrillPress,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.IronChunk],
+        }
+        outputs
+        {
+            item 1 Base.PiercedIronChunk,
+        }
+    }
+
+    craftRecipe Drill_Draw_Plate
+    {
+        time        = 50,
+        tags = StandingDrillPress,
+        SkillRequired = MetalWelding:3,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = MetalWelding:10,
+        category = Metalworking,
+        inputs
+        {
+            item 1 [Base.SteelBarQuarter],
+        }
+        outputs
+        {
+            item 1 Base.DrawPlate,
+        }
+    }
+
+    craftRecipe Drill_Heading_Tool
+    {
+        time        = 50,
+        tags = StandingDrillPress,
+        SkillRequired = MetalWelding:3,
+        needTobeLearn = true,
+        timedAction = Making,
+        xpAward = MetalWelding:10,
+        category = Metalworking,
+        inputs
+        {
+            item 1 tags[BarStockQuarter],
+        }
+        outputs
+        {
+            item 1 Base.HeadingTool,
+        }
+    }
+}

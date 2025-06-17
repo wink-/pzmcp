@@ -1,0 +1,74 @@
+module Base
+{
+    sound AnimalVoiceRaccoonIdle
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Raccoon/Voice/Idle,
+        }
+    }
+
+    sound AnimalVoiceRaccoonDeath
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Raccoon/Voice/Death,
+        }
+    }
+
+    sound AnimalVoiceRaccoonStressed
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Raccoon/Voice/Stressed,
+        }
+    }
+
+    sound AnimalVoiceRaccoonPain
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Raccoon/Voice/Pain,
+        }
+    }
+
+    sound AnimalFootstepsRaccoonWalkFront
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Raccoon/Footsteps/Walk/Front,
+        }
+    }
+
+    sound AnimalFootstepsRaccoonWalkBack
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Raccoon/Footsteps/Walk/Back,
+        }
+    }
+
+    sound AnimalFootstepsRaccoonRun
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Raccoon/Footsteps/Run,
+        }
+    }
+
+    sound AnimalFoleyRaccoonBodyfall
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Raccoon/Foley/Bodyfall,
+        }
+    }
+} 

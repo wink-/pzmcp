@@ -1,0 +1,63 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_MetalSmallPoleFence
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Small Metal Pole Fence (Poor),
+			Icon		= Build_FenceMetalPosts,
+		}
+	}
+
+    entity MetalSmallPoleFence
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_MetalSmallPoleFence,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			LogicClass      = WoodenWall,
+			health          = 350,
+			skillBaseHealth = 20,
+			
+            face W
+            {
+                layer
+                {
+                    row = constructedobjects_01_62,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = constructedobjects_01_61,
+                }
+            }
+			
+            corner = constructedobjects_01_60,
+        }
+		
+        component CraftRecipe
+        {
+            timedAction   = BuildPoleFenceSmall,
+            time          = 200,
+            needToBeLearn = true,
+            category      = Welding,
+            SkillRequired = MetalWelding:3,
+            xpAward       = MetalWelding:30,
+            ToolTip       = Tooltip_craft_MetalPoleFenceDesc,
+            inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 3 [Base.MetalPipe],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

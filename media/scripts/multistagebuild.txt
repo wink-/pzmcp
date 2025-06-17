@@ -1,0 +1,377 @@
+module Base
+{
+    /************************ Wooden Walls ************************/
+    multistagebuild CreateWoodenWall_1
+    {
+        PreviousStage:WoodenWallFrame;MetalWallFrame,
+        Name:WoodenWallLvl1,
+        TimeNeeded:250,
+        BonusHealth:400,
+        SkillRequired:Woodwork=2,
+        ItemsRequired:Base.Plank=2;Base.Nails=4,
+        ItemsToKeep:Base.Hammer,
+        Sprite:walls_exterior_wooden_01_44,
+        NorthSprite:walls_exterior_wooden_01_45,
+        CraftingSound:Hammering,
+        ID:Create Wooden Wall Lvl 1,
+        XP:Woodwork=20,
+    }
+
+    multistagebuild UpgradeWoodenWall_1To2
+    {
+        PreviousStage:WoodenWallLvl1,
+        Name:WoodenWallLvl2,
+        TimeNeeded:200,
+        BonusHealth:100,
+        BonusSkill:FALSE,
+        SkillRequired:Woodwork=4,
+        ItemsRequired:Base.Plank=1;Base.Nails=4,
+        ItemsToKeep:Base.Hammer,
+        Sprite:walls_exterior_wooden_01_40,
+        NorthSprite:walls_exterior_wooden_01_41,
+        CraftingSound:Hammering,
+        ID:Upgrade to Wooden Wall Lvl 2,
+        XP:Woodwork=20,
+    }
+
+    multistagebuild CreateWoodenWall_2
+    {
+        PreviousStage:WoodenWallFrame;MetalWallFrame,
+        Name:WoodenWallLvl2,
+        TimeNeeded:250,
+        BonusHealth:500,
+        SkillRequired:Woodwork=4,
+        ItemsRequired:Base.Plank=2;Base.Nails=4,
+        ItemsToKeep:Base.Hammer,
+        Sprite:walls_exterior_wooden_01_40,
+        NorthSprite:walls_exterior_wooden_01_41,
+        CraftingSound:Hammering,
+        ID:Create Wooden Wall Lvl 2,
+        XP:Woodwork=40,
+    }
+
+    multistagebuild UpgradeWoodenWall_1To3
+    {
+        PreviousStage:WoodenWallLvl1,
+        Name:WoodenWallLvl3,
+        TimeNeeded:220,
+        BonusHealth:200,
+        BonusSkill:FALSE,
+        SkillRequired:Woodwork=7,
+        ItemsRequired:Base.Plank=2;Base.Nails=8,
+        ItemsToKeep:Base.Hammer,
+        Sprite:walls_exterior_wooden_01_24,
+        NorthSprite:walls_exterior_wooden_01_25,
+        CanBePlastered:true,
+        WallType:wall,
+        CraftingSound:Hammering,
+        ID:Upgrade to Wooden Wall Lvl 3,
+        XP:Woodwork=40,
+    }
+
+    multistagebuild UpgradeWoodenWall_2To3
+    {
+        PreviousStage:WoodenWallLvl2,
+        Name:WoodenWallLvl3,
+        TimeNeeded:200,
+        BonusHealth:100,
+        BonusSkill:FALSE,
+        SkillRequired:Woodwork=7,
+        ItemsRequired:Base.Plank=1;Base.Nails=4,
+        ItemsToKeep:Base.Hammer,
+        Sprite:walls_exterior_wooden_01_24,
+        NorthSprite:walls_exterior_wooden_01_25,
+        CanBePlastered:true,
+        WallType:wall,
+        CraftingSound:Hammering,
+        ID:Upgrade to Wooden Wall Lvl 32,
+        XP:Woodwork=20,
+    }
+
+    multistagebuild CreateWoodenWall_3
+    {
+        PreviousStage:WoodenWallFrame;MetalWallFrame,
+        Name:WoodenWallLvl3,
+        TimeNeeded:250,
+        BonusHealth:600,
+        SkillRequired:Woodwork=7,
+        ItemsRequired:Base.Plank=2;Base.Nails=4,
+        ItemsToKeep:Base.Hammer,
+        Sprite:walls_exterior_wooden_01_24,
+        NorthSprite:walls_exterior_wooden_01_25,
+        CanBePlastered:true,
+        WallType:wall,
+        CraftingSound:Hammering,
+        ID:Create Wooden Wall Lvl 3,
+        XP:Woodwork=60,
+    }
+
+    /************************ Wooden Door Frame ************************/
+    multistagebuild UpgradeWoodenDoorFrame_1To2
+    {
+        PreviousStage:WoodenDoorFrameLvl1,
+        Name:WoodenDoorFrameLvl2,
+        TimeNeeded:200,
+        BonusHealth:200,
+        SkillRequired:Woodwork=4,
+        ItemsRequired:Base.Plank=1;Base.Nails=4,
+        ItemsToKeep:Base.Hammer,
+        WallType:doorframe,
+        Sprite:walls_exterior_wooden_01_50,
+        NorthSprite:walls_exterior_wooden_01_51,
+        CraftingSound:Hammering,
+        ID:Upgrade to Wooden Door Frame Lvl 2,
+        XP:Woodwork=10,
+    }
+
+    multistagebuild UpgradeWoodenDoorFrame_2To3
+    {
+        PreviousStage:WoodenDoorFrameLvl2,
+        Name:WoodenDoorFrameLvl3,
+        TimeNeeded:200,
+        BonusHealth:100,
+        SkillRequired:Woodwork=7,
+        ItemsRequired:Base.Plank=1;Base.Nails=4,
+        ItemsToKeep:Base.Hammer,
+        CanBePlastered:true,
+        WallType:doorframe,
+        Sprite:walls_exterior_wooden_01_34,
+        NorthSprite:walls_exterior_wooden_01_35,
+        CraftingSound:Hammering,
+        ID:Upgrade to Wooden Door Frame Lvl 3,
+        XP:Woodwork=10,
+    }
+
+    /************************ Wooden Windows ************************/
+    multistagebuild CreateWoodenWindow_1
+    {
+        PreviousStage:WoodenWallFrame;MetalWallFrame,
+        Name:WoodenWindowLvl1,
+        TimeNeeded:250,
+        BonusHealth:400,
+        SkillRequired:Woodwork=2,
+        ItemsRequired:Base.Plank=2;Base.Nails=4,
+        ItemsToKeep:Base.Hammer,
+        Sprite:walls_exterior_wooden_01_52,
+        NorthSprite:walls_exterior_wooden_01_53,
+        CraftingSound:Hammering,
+        ID:Create Wooden Window Lvl 1,
+        XP:Woodwork=20,
+        CanBarricade:true,
+    }
+
+    multistagebuild UpgradeWoodenWindow_1To2
+    {
+        PreviousStage:WoodenWindowLvl1,
+        Name:WoodenWindowLvl2,
+        TimeNeeded:200,
+        BonusHealth:100,
+        BonusSkill:FALSE,
+        SkillRequired:Woodwork=4,
+        ItemsRequired:Base.Plank=1;Base.Nails=4,
+        ItemsToKeep:Base.Hammer,
+        Sprite:walls_exterior_wooden_01_48,
+        NorthSprite:walls_exterior_wooden_01_49,
+        CraftingSound:Hammering,
+        ID:Upgrade to Wooden Window Lvl 2,
+        XP:Woodwork=20,
+        CanBarricade:true,
+    }
+
+    multistagebuild CreateWoodenWindow_2
+    {
+        PreviousStage:WoodenWallFrame;MetalWallFrame,
+        Name:WoodenWindowLvl2,
+        TimeNeeded:250,
+        BonusHealth:500,
+        SkillRequired:Woodwork=4,
+        ItemsRequired:Base.Plank=2;Base.Nails=4,
+        ItemsToKeep:Base.Hammer,
+        Sprite:walls_exterior_wooden_01_48,
+        NorthSprite:walls_exterior_wooden_01_49,
+        CraftingSound:Hammering,
+        ID:Create Wooden Window Lvl 2,
+        XP:Woodwork=40,
+        CanBarricade:true,
+    }
+
+    multistagebuild UpgradeWoodenWindow_1To3
+    {
+        PreviousStage:WoodenWindowLvl1,
+        Name:WoodenWindowLvl3,
+        TimeNeeded:220,
+        BonusHealth:200,
+        BonusSkill:FALSE,
+        SkillRequired:Woodwork=7,
+        ItemsRequired:Base.Plank=2;Base.Nails=8,
+        ItemsToKeep:Base.Hammer,
+        Sprite:walls_exterior_wooden_01_32,
+        NorthSprite:walls_exterior_wooden_01_33,
+        CanBePlastered:true,
+        WallType:windowsframe,
+        CraftingSound:Hammering,
+        ID:Upgrade to Wooden Window Lvl 3,
+        XP:Woodwork=40,
+        CanBarricade:true,
+    }
+
+    multistagebuild UpgradeWoodenWindow_2To3
+    {
+        PreviousStage:WoodenWindowLvl2,
+        Name:WoodenWindowLvl3,
+        TimeNeeded:200,
+        BonusHealth:100,
+        BonusSkill:FALSE,
+        SkillRequired:Woodwork=7,
+        ItemsRequired:Base.Plank=1;Base.Nails=4,
+        ItemsToKeep:Base.Hammer,
+        Sprite:walls_exterior_wooden_01_32,
+        NorthSprite:walls_exterior_wooden_01_33,
+        CanBePlastered:true,
+        WallType:windowsframe,
+        CraftingSound:Hammering,
+        ID:Upgrade to Wooden Window Lvl 32,
+        XP:Woodwork=20,
+        CanBarricade:true,
+    }
+
+    multistagebuild CreateWoodenWindow_3
+    {
+        PreviousStage:WoodenWallFrame;MetalWallFrame,
+        Name:WoodenWindowLvl3,
+        TimeNeeded:250,
+        BonusHealth:600,
+        SkillRequired:Woodwork=7,
+        ItemsRequired:Base.Plank=2;Base.Nails=4,
+        ItemsToKeep:Base.Hammer,
+        Sprite:walls_exterior_wooden_01_32,
+        NorthSprite:walls_exterior_wooden_01_33,
+        CanBePlastered:true,
+        WallType:windowsframe,
+        CraftingSound:Hammering,
+        ID:Create Wooden Window Lvl 3,
+        XP:Woodwork=60,
+        CanBarricade:true,
+    }
+
+    /************************ Metal Walls ************************/
+    multistagebuild CreateMetalWall_1
+    {
+        PreviousStage:WoodenWallFrame;MetalWallFrame,
+        Name:MetalWallLvl1,
+        TimeNeeded:250,
+        BonusHealth:650,
+        SkillRequired:MetalWelding=2,
+        ItemsRequired:Base.SheetMetal=3;Base.BlowTorch=7,
+        ItemsToKeep:Base.BlowTorch,
+        Sprite:constructedobjects_01_64,
+        NorthSprite:constructedobjects_01_65,
+        KnownRecipe:Make Metal Walls,
+        ThumpSound:ZombieThumpMetal,
+        CraftingSound:BlowTorch,
+        CompletionSound:BuildMetalStructureMedium,
+        ID:Create Metal Wall Lvl 1,
+        XP:MetalWelding=30,
+    }
+
+    multistagebuild UpgradeMetalWall_1To2
+    {
+        PreviousStage:MetalWallLvl1,
+        Name:MetalWallLvl2,
+        TimeNeeded:200,
+        BonusHealth:100,
+        BonusSkill:FALSE,
+        SkillRequired:MetalWelding=8,
+        ItemsRequired:Base.SheetMetal=1;Base.BlowTorch=3,
+        ItemsToKeep:Base.BlowTorch,
+        Sprite:constructedobjects_01_48,
+        NorthSprite:constructedobjects_01_49,
+        KnownRecipe:Make Metal Walls,
+        ThumpSound:ZombieThumpMetal,
+        CraftingSound:BlowTorch,
+        CompletionSound:BuildMetalStructureMedium,
+        ID:Upgrade to Metal Wall Lvl 2,
+        XP:MetalWelding=30,
+    }
+
+    multistagebuild CreateMetalWall_2
+    {
+        PreviousStage:WoodenWallFrame;MetalWallFrame,
+        Name:MetalWallLvl2,
+        TimeNeeded:250,
+        BonusHealth:750,
+        SkillRequired:MetalWelding=8,
+        ItemsRequired:Base.SheetMetal=4;Base.BlowTorch=10,
+        ItemsToKeep:Base.BlowTorch,
+        Sprite:constructedobjects_01_48,
+        NorthSprite:constructedobjects_01_49,
+        KnownRecipe:Make Metal Walls,
+        ThumpSound:ZombieThumpMetal,
+        CraftingSound:BlowTorch,
+        CompletionSound:BuildMetalStructureMedium,
+        ID:Create Metal Wall Lvl 2,
+        XP:MetalWelding=60,
+    }
+
+    /************************ Metal Windows ************************/
+    multistagebuild CreateMetalWindow_1
+    {
+        PreviousStage:WoodenWallFrame;MetalWallFrame,
+        Name:MetalWindowLvl1,
+        TimeNeeded:250,
+        BonusHealth:650,
+        SkillRequired:MetalWelding=5,
+        ItemsRequired:Base.SheetMetal=3;Base.BlowTorch=7,
+        ItemsToKeep:Base.BlowTorch,
+        Sprite:constructedobjects_01_72,
+        NorthSprite:constructedobjects_01_73,
+        KnownRecipe:Make Metal Walls,
+        ThumpSound:ZombieThumpMetal,
+        CraftingSound:BlowTorch,
+        CompletionSound:BuildMetalStructureMedium,
+        ID:Create Metal Window Lvl 1,
+        XP:MetalWelding=30,
+        CanBarricade:true,
+    }
+
+    multistagebuild UpgradeMetalWindow_1To2
+    {
+        PreviousStage:MetalWindowLvl1,
+        Name:MetalWindowLvl2,
+        TimeNeeded:200,
+        BonusHealth:100,
+        BonusSkill:FALSE,
+        SkillRequired:MetalWelding=8,
+        ItemsRequired:Base.SheetMetal=1;Base.BlowTorch=3,
+        ItemsToKeep:Base.BlowTorch,
+        Sprite:constructedobjects_01_56,
+        NorthSprite:constructedobjects_01_57,
+        KnownRecipe:Make Metal Walls,
+        ThumpSound:ZombieThumpMetal,
+        CraftingSound:BlowTorch,
+        CompletionSound:BuildMetalStructureMedium,
+        ID:Upgrade to Metal Window Lvl 2,
+        XP:MetalWelding=30,
+        CanBarricade:true,
+    }
+
+    multistagebuild CreateMetalWindow_2
+    {
+        PreviousStage:WoodenWallFrame;MetalWallFrame,
+        Name:MetalWindowLvl2,
+        TimeNeeded:250,
+        BonusHealth:750,
+        SkillRequired:MetalWelding=8,
+        ItemsRequired:Base.SheetMetal=4;Base.BlowTorch=10,
+        ItemsToKeep:Base.BlowTorch,
+        Sprite:constructedobjects_01_56,
+        NorthSprite:constructedobjects_01_57,
+        KnownRecipe:Make Metal Walls,
+        ThumpSound:ZombieThumpMetal,
+        CraftingSound:BlowTorch,
+        CompletionSound:BuildMetalStructureMedium,
+        ID:Create Metal Window Lvl 2,
+        XP:MetalWelding=60,
+        CanBarricade:true,
+    }
+}

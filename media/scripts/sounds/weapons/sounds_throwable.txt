@@ -1,0 +1,243 @@
+module Base
+{
+	sound MolotovCocktailExplode
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/MolotovCocktail/Explode,
+		}
+	}
+
+	sound MolotovCocktailThrow
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/MolotovCocktail/Throw,
+		}
+	}
+
+	sound MolotovCocktailEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/MolotovCocktail/Equip,
+		}
+	}
+
+/******************************************************************************/
+
+	sound AerosolBombExplode
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/AerosolBomb/Explode,
+		}
+	}
+
+	sound AerosolBombEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/AerosolBomb/Equip,
+		}
+	}
+	
+	sound AerosolBombThrow
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/AerosolBomb/Throw,
+		}
+	}
+
+/******************************************************************************/
+
+	sound FlameTrapExplode
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/FlameTrap/Explode,
+		}
+	}
+
+	sound FlameTrapThrow
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/FlameTrap/Throw,
+		}
+	}
+
+	sound FlameTrapEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/FlameTrap/Equip,
+		}
+	}
+
+/******************************************************************************/
+
+	sound PipeBombThrow
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/PipeBomb/Throw,
+		}
+	}
+
+	sound PipeBombExplode
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/PipeBomb/Explode,
+		}
+	}
+
+	sound PipeBombEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/PipeBomb/Equip,
+		}
+	}
+	
+/******************************************************************************/
+
+	sound SmokeBombThrow
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/SmokeBomb/Throw,
+		}
+	}
+
+	sound SmokeBombExplode
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/SmokeBomb/Explode,
+		}
+	}
+
+	sound SmokeBombEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/SmokeBomb/Equip,
+		}
+	}
+
+	sound SmokeBombLoop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/SmokeBomb/Smoke,
+		}
+	}
+
+/******************************************************************************/
+
+	sound NoiseMakerThrow
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/NoiseMaker/Throw,
+		}
+	}
+	
+	sound NoiseMakerActivate
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/NoiseMaker/Activate,
+		}
+	}
+		
+	sound NoiseMakerEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/NoiseMaker/Equip,
+		}
+	}
+
+/******************************************************************************/
+
+	sound FireCrackerThrow
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/FireCracker/Throw,
+		}
+	}
+	
+	sound FireCrackerExplode
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/FireCracker/Explode,
+		}
+	}
+		
+	sound FireCrackerEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/FireCracker/Equip,
+		}
+	}
+
+/******************************************************************************/
+
+	sound NoiseGeneratorActivate
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/NoiseGenerator/Activate,
+		}
+	}
+	
+/******************************************************************************/
+
+	sound TrapTimerExpired
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/Timer/Expired,
+		}
+	}
+
+	sound TrapTimerLoop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Throwable/Timer/Beep,
+		}
+	}
+}

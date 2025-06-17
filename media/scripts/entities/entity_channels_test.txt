@@ -1,0 +1,62 @@
+/*
+module Base
+{
+    stringList Recipes_Channels_Test
+    {
+        SimpleTest,
+    }
+
+    entity Channels_Test
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Channels_Test,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group craft_inputs
+            {
+                input_0 = Item@Input@10@null@Channel_Purple@null,
+                input_1 = Item@Input@10@null@Channel_Yellow@null,
+                input_2 = Item@Input@10@null@Channel_Green@null,
+                f_input_0 = Fluid@Input@10@null@Channel_Blue@null,
+                e_input_0 = Energy@Input@10@Electric@Channel_Cyan@null,
+            }
+            group craft_outputs
+            {
+                output_0 = Item@Output@10@null@Channel_Orange@null,
+                output_1 = Item@Output@10@null@Channel_Magenta@null,
+                f_output_0 = Fluid@Output@10@null@Channel_Green@null,
+            }
+        }
+
+        component CraftLogic
+        {
+            Recipes         = Recipes_Channels_Test,
+            StartMode       = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+
+        component SpriteConfig
+        {
+            face single
+            {
+                layer
+                {
+                    row = crafted_01_28,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            time          = 50,
+            category      = Demo,
+        }
+    }
+}
+*/

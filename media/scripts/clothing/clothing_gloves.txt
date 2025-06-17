@@ -1,0 +1,407 @@
+module Base
+{
+
+	item Gloves_FingerlessGloves
+	{
+		DisplayName = Gloves - Fingerless,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = GlovesFingerlessWhite,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_FingerlessGloves,
+		Insulation = 0.25,
+		ScratchDefense = 15,
+		WindResistance = 0.3,
+		WorldStaticModel = Gloves_Ground,
+        ResearchableRecipes = SewLeatherGloves,
+	}
+
+	item Gloves_FingerlessLeatherGloves
+	{
+		DisplayName = Gloves - Fingerless Leather,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		IconsForTexture = GlovesFingerless_Black;GlovesFingerless_Brown,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_FingerlessLeatherGloves,
+		Insulation = 0.25,
+		ScratchDefense = 15,
+		WindResistance = 0.3,
+		WorldStaticModel = Gloves_Ground,
+		ColorBlue = 228,
+		ColorGreen = 228,
+		ColorRed = 228,
+        ResearchableRecipes = SewLeatherGloves,
+	}
+
+	item Gloves_FingerlessLeatherGloves_Black
+	{
+		DisplayName = Gloves - Fingerless Leather,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = GlovesFingerless_Black,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_FingerlessLeatherGloves_Black,
+		Insulation = 0.25,
+		ScratchDefense = 15,
+		WindResistance = 0.3,
+		WorldStaticModel = Gloves_Ground,
+		ColorBlue = 228,
+		ColorGreen = 228,
+		ColorRed = 228,
+        ResearchableRecipes = SewLeatherGloves,
+	}
+
+	item Gloves_FingerlessLeatherGloves_Brown
+	{
+		DisplayName = Gloves - Fingerless Leather,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = GlovesFingerless_Brown,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_FingerlessLeatherGloves_Brown,
+		Insulation = 0.25,
+		ScratchDefense = 15,
+		WindResistance = 0.3,
+		WorldStaticModel = Gloves_Ground,
+		ColorBlue = 228,
+		ColorGreen = 228,
+		ColorRed = 228,
+        ResearchableRecipes = SewLeatherGloves,
+	}
+
+	item Gloves_LeatherGloves
+	{
+		DisplayName = Gloves - Leather,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		IconsForTexture = GlovesLeatherBlackpng;GlovesLeatherBrown,
+		BiteDefense = 15,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_LeatherGloves,
+		FabricType = Leather,
+		Insulation = 0.75,
+		ScratchDefense = 30,
+		WindResistance = 0.75,
+		WorldStaticModel = Gloves_Ground,
+        ResearchableRecipes = SewLeatherGloves,
+	}
+
+	item Gloves_LeatherGlovesBlack
+	{
+		DisplayName = Gloves - Leather,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = GlovesLeatherBlackpng,
+		BiteDefense = 15,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_LeatherGlovesBlack,
+		FabricType = Leather,
+		Insulation = 0.75,
+		ScratchDefense = 30,
+		WindResistance = 0.75,
+		WorldStaticModel = Gloves_Ground,
+        ResearchableRecipes = SewLeatherGloves,
+	}
+
+	item Gloves_LeatherGlovesBrown
+	{
+		DisplayName = Gloves - Leather,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = GlovesLeatherBrown,
+		BiteDefense = 15,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_LeatherGlovesBrown,
+		FabricType = Leather,
+		Insulation = 0.75,
+		ScratchDefense = 30,
+		WindResistance = 0.75,
+		WorldStaticModel = Gloves_Ground,
+        ResearchableRecipes = SewLeatherGloves,
+	}
+
+	item Gloves_LongWomenGloves
+	{
+		DisplayName = Gloves - Long,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = GlovesLongBlack,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_LongWomenGloves,
+		FabricType = Cotton,
+		Insulation = 0.5,
+		WindResistance = 0.5,
+		WorldStaticModel = GlovesLong_Ground,
+        ResearchableRecipes = SewLeatherGloves,
+	}
+
+	item Gloves_WhiteTINT
+	{
+		DisplayName = Gloves,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = GlovesWoolyWhite,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_WhiteTINT,
+		FabricType = Cotton,
+		Insulation = 1.0,
+		ScratchDefense = 5,
+		WindResistance = 1.0,
+		WorldStaticModel = Gloves_Ground,
+        ResearchableRecipes = SewLeatherGloves,
+	}
+
+	item Gloves_Dish
+	{
+		DisplayName = Rubber Gloves,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = DishwashingGloves,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_Dish,
+		Insulation = 0.25,
+		ScratchDefense = 5,
+		WindResistance = 0.3,
+		WorldStaticModel = Gloves_Ground,
+		ColorBlue = 38,
+		ColorGreen = 220,
+		ColorRed = 220,
+	}
+
+	item Gloves_Surgical
+	{
+		DisplayName = Gloves - Surgical,
+		DisplayCategory = FirstAid,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = GlovesSurgical,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_Surgical,
+		Insulation = 0.25,
+		ScratchDefense = 5,
+		WindResistance = 0.3,
+		WorldStaticModel = Gloves_Ground,
+		Tags = FitsWallet,
+	}
+
+	item Gloves_BoxingRed
+	{
+		DisplayName = Boxing Gloves,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = BoxingGloves_Red,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_BoxingRed,
+		ScratchDefense = 30,
+		Insulation = 0.25,
+		WindResistance = 0.3,
+		WorldStaticModel = BoxingGlovesRed_Ground,
+		Tags = AwkwardGloves,
+		Tooltip = Tooltip_item_AwkwardGloves,
+	}
+
+	item Gloves_BoxingBlue
+	{
+		DisplayName = Boxing Gloves,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = BoxingGloves_Blue,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_BoxingBlue,
+		ScratchDefense = 30,
+		Insulation = 0.25,
+		WindResistance = 0.3,
+		WorldStaticModel = BoxingGlovesBlue_Ground,
+		Tags = AwkwardGloves,
+		Tooltip = Tooltip_item_AwkwardGloves,
+	}
+
+	item Chainmail_Hand_L
+    {
+        DisplayName = Chainmail Glove - Left,
+        DisplayCategory = ProtectiveGear,
+        Type = Clothing,
+        Icon = Chainmail_Glove,
+        BloodLocation = Hand_L,
+        BodyLocation = HandsLeft,
+        ClothingItem = Chainmail_Hand_L,
+        CanHaveHoles = TRUE,
+        WorldStaticModel = Chainmail_Sleeve_L,
+        BiteDefense = 80,
+        ScratchDefense = 100,
+        CombatSpeedModifier = 0.99,
+        DamagedSound = ArmourBreakChainmail,
+		BulletHitArmourSound = ArmourFirearmHitChainmail,
+		WeaponHitArmourSound = ArmourMeleeHitChainmail,
+        Weight = 0.3,
+        DiscomfortModifier = 0.07,
+        Tags = IgnoreZombieDensity;HasMetal,
+    }
+
+	item Chainmail_Hand_R
+    {
+        DisplayName = Chainmail Glove - Right,
+        DisplayCategory = ProtectiveGear,
+        Type = Clothing,
+        Icon = Chainmail_Glove,
+        BloodLocation = Hand_R,
+        BodyLocation = HandsRight,
+        ClothingItem = Chainmail_Hand_R,
+        CanHaveHoles = TRUE,
+        WorldStaticModel = Chainmail_Sleeve_R,
+        BiteDefense = 80,
+        ScratchDefense = 100,
+        CombatSpeedModifier = 0.98,
+        DamagedSound = ArmourBreakChainmail,
+		BulletHitArmourSound = ArmourFirearmHitChainmail,
+		WeaponHitArmourSound = ArmourMeleeHitChainmail,
+        Weight = 0.3,
+        DiscomfortModifier = 0.07,
+        Tags = IgnoreZombieDensity;HasMetal,
+    }
+
+	item Gloves_IceHockeyGloves
+	{
+		DisplayName = Ice Hockey Gloves,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 1,
+		IconsForTexture = HockeyGloves_Black;HockeyGloves_Blue;HockeyGloves_White,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_IceHockeyGloves,
+        CanHaveHoles = TRUE,
+		BiteDefense = 80,
+		ScratchDefense = 100,
+		Insulation = 0.25,
+		WindResistance = 0.3,
+		WorldStaticModel = Gloves_IceHockeyGloves,
+		DiscomfortModifier = 0.05,
+		CombatSpeedModifier = 0.9,
+		DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+		Tags = IgnoreZombieDensity;AwkwardGloves,
+		Tooltip = Tooltip_item_AwkwardGloves,
+	}
+
+	item Gloves_IceHockeyGloves_Black
+	{
+		DisplayName = Ice Hockey Gloves,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 1,
+		Icon = HockeyGloves_Black,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_IceHockeyGloves_Black,
+        CanHaveHoles = TRUE,
+		BiteDefense = 80,
+		ScratchDefense = 100,
+		Insulation = 0.25,
+		WindResistance = 0.3,
+		WorldStaticModel = Gloves_IceHockeyGloves,
+		DiscomfortModifier = 0.05,
+		CombatSpeedModifier = 0.9,
+		DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+		Tags = IgnoreZombieDensity;AwkwardGloves,
+		Tooltip = Tooltip_item_AwkwardGloves,
+	}
+
+	item Gloves_IceHockeyGloves_Blue
+	{
+		DisplayName = Ice Hockey Gloves,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 1,
+		Icon = HockeyGloves_Blue,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_IceHockeyGloves_Blue,
+        CanHaveHoles = TRUE,
+		BiteDefense = 80,
+		ScratchDefense = 100,
+		Insulation = 0.25,
+		WindResistance = 0.3,
+		WorldStaticModel = Gloves_IceHockeyGloves,
+		DiscomfortModifier = 0.05,
+		CombatSpeedModifier = 0.9,
+		DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+		Tags = IgnoreZombieDensity;AwkwardGloves,
+		Tooltip = Tooltip_item_AwkwardGloves,
+	}
+
+	item Gloves_IceHockeyGloves_White
+	{
+		DisplayName = Ice Hockey Gloves,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Weight = 1,
+		Icon = HockeyGloves_White,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_IceHockeyGloves_White,
+        CanHaveHoles = TRUE,
+		BiteDefense = 80,
+		ScratchDefense = 100,
+		Insulation = 0.25,
+		WindResistance = 0.3,
+		WorldStaticModel = Gloves_IceHockeyGloves,
+		DiscomfortModifier = 0.05,
+		CombatSpeedModifier = 0.9,
+		DamagedSound = ArmourBreakSportsPadding,
+		BulletHitArmourSound = ArmourFirearmHitSportsPadding,
+		WeaponHitArmourSound = ArmourMeleeHitSportsPadding,
+		Tags = IgnoreZombieDensity;AwkwardGloves,
+		Tooltip = Tooltip_item_AwkwardGloves,
+	}
+
+	item Gloves_HuntingCamo
+	{
+		DisplayName = Gloves - Hunting Camo,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Gloves_CamoTree,
+		BloodLocation = Hands,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_HuntingCamo,
+		FabricType = Cotton,
+		Insulation = 1.0,
+		ScratchDefense = 5,
+		WindResistance = 1.0,
+		WorldStaticModel = Gloves_Ground,
+        ResearchableRecipes = SewLeatherGloves,
+	}
+
+}

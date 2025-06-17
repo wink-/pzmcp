@@ -1,0 +1,261 @@
+module Base
+{
+	craftRecipe FixWithDuctTape
+	{
+		Time = 180,
+		AllowBatchCraft = False,
+        tags = AnySurfaceCraft,
+        category = Repair,
+        timedAction = CraftWeapon1H,
+		xpAward = Maintenance:10,
+        OnCreate = CraftRecipeCode.GenericBetterFixing.OnCreate,
+		ToolTip = Tooltip_Recipe_CanFailAndDamage,
+		inputs
+		{
+			item 1 tags[RepairWithTape] mode:keep flags[Prop2;IsDamaged],
+			item 2 [Base.DuctTape] flags[Prop1],
+		}
+		outputs
+		{
+		}
+	}
+	craftRecipe FixWithAdhesiveTape
+	{
+		Time = 180,
+		AllowBatchCraft = False,
+		Tags = InHandCraft,
+        category = Repair,
+        timedAction = CraftWeapon1H,
+		xpAward = Maintenance:5,
+        OnCreate = CraftRecipeCode.GenericFixing.OnCreate,
+		ToolTip = Tooltip_Recipe_CanFailAndDamage,
+		inputs
+		{
+			item 1 tags[RepairWithTape] mode:keep flags[Prop2;IsDamaged],
+			item 3 [Base.Scotchtape] flags[Prop1],
+		}
+		outputs
+		{
+		}
+	}
+	craftRecipe FixWithZipties
+	{
+		Time = 180,
+		AllowBatchCraft = False,
+		Tags = InHandCraft,
+        category = Repair,
+        timedAction = CraftWeapon1H,
+		xpAward = Maintenance:5,
+        SkillRequired = Maintenance:1,
+        OnCreate = CraftRecipeCode.GenericFixing.OnCreate,
+		ToolTip = Tooltip_Recipe_CanFailAndDamage,
+		inputs
+		{
+			item 1 tags[RepairWithTape] mode:keep flags[Prop2;IsDamaged],
+			item 1 [Base.Zipties] flags[Prop1],
+		}
+		outputs
+		{
+		}
+	}
+	craftRecipe FixWithGlue
+	{
+		Time = 180,
+		AllowBatchCraft = False,
+        tags = AnySurfaceCraft,
+        category = Repair,
+        timedAction = CraftWeapon1H,
+		xpAward = Maintenance:5,
+        OnCreate = CraftRecipeCode.GenericFixing.OnCreate,
+		ToolTip = Tooltip_Recipe_CanFailAndDamage,
+		inputs
+		{
+			item 1 tags[RepairWithGlue] mode:keep flags[Prop2;IsDamaged],
+			item 2 [Base.Glue] flags[Prop1],
+		}
+		outputs
+		{
+		}
+	}
+	craftRecipe FixWithWoodGlue
+	{
+		Time = 180,
+		AllowBatchCraft = False,
+        tags = AnySurfaceCraft,
+        category = Repair,
+        timedAction = CraftWeapon1H,
+		xpAward = Woodwork:5;Maintenance:5,
+        SkillRequired = Woodwork:2,
+        OnCreate = CraftRecipeCode.GenericBetterFixing.OnCreate,
+		ToolTip = Tooltip_Recipe_CanFailAndDamage,
+		inputs
+		{
+			item 1 tags[RepairWithGlue] mode:keep flags[Prop2;IsDamaged],
+			item 2 [Base.Woodglue] flags[Prop1],
+		}
+		outputs
+		{
+		}
+	}
+	craftRecipe FixWithEpoxy
+	{
+		Time = 180,
+		AllowBatchCraft = False,
+        tags = AnySurfaceCraft,
+        category = Repair,
+        timedAction = CraftWeapon1H,
+		xpAward = Maintenance:15,
+        SkillRequired = Maintenance:3,
+        OnCreate = CraftRecipeCode.GenericEvenBetterFixing.OnCreate,
+		ToolTip = Tooltip_Recipe_CanFailAndDamage,
+		inputs
+		{
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[IsNotDull],
+			item 1 tags[RepairWithTape;RepairWithEpoxy] mode:keep flags[Prop2;IsDamaged],
+			item 1 tags[Epoxy] flags[Prop1],
+			item 1 tags[FiberglassTape],
+		}
+		outputs
+		{
+		}
+	}
+	craftRecipe FixWithEpoxyAndRags
+	{
+		Time = 180,
+		AllowBatchCraft = False,
+        tags = AnySurfaceCraft,
+        category = Repair,
+        timedAction = CraftWeapon1H,
+		xpAward = Maintenance:1,
+        SkillRequired = Maintenance:4,
+        OnCreate = CraftRecipeCode.GenericFixing.OnCreate,
+		ToolTip = Tooltip_Recipe_CanFailAndDamage,
+		inputs
+		{
+			item 1 tags[RepairWithTape;RepairWithEpoxy] mode:keep flags[Prop2;IsDamaged],
+			item 1 tags[Epoxy] flags[Prop1],
+			item 2 [Base.RippedSheets;Base.DenimStrips] mode:destroy,
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe SharpenBlade
+	{
+		Time = 300,
+        timedAction = SharpenBlade,
+		xpAward = Maintenance:5,
+		AllowBatchCraft = False,
+		ToolTip = Tooltip_Recipe_CanFailAndDamage,
+		Tags = InHandCraft,
+        category = Repair,
+		OnCreate = Recipe.OnCreate.SharpenBlade,
+		inputs
+		{
+			item 1 tags[Sharpenable] mode:keep flags[IsSharpenable],
+			item 1 tags[Whetstone] mode:keep flags[Prop1;MayDegradeLight],
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe SharpenBladePoorlyWithFile
+	{
+		Time = 180,
+        timedAction = SharpenBlade,
+		xpAward = Maintenance:5,
+		AllowBatchCraft = False,
+		ToolTip = Tooltip_Recipe_CanFailAndDamageHigh,
+		Tags = InHandCraft,
+        category = Repair,
+		OnCreate = Recipe.OnCreate.SharpenBladePoor,
+		inputs
+		{
+			item 1 tags[Sharpenable] mode:keep flags[Prop2;IsSharpenable],
+			item 1 tags[File] mode:keep flags[Prop1;MayDegradeLight],
+		}
+		outputs
+		{
+		}
+	}
+
+    craftRecipe SharpenBladeWithGrindstone
+    {
+        time        = 130,
+        timedAction = UseGrindingStone,
+		xpAward = Maintenance:5,
+		AllowBatchCraft = False,
+		ToolTip = Tooltip_Recipe_CanFailAndDamage,
+        tags = Grindstone,
+        category = Repair,
+        OnCreate = Recipe.OnCreate.SharpenBladeWithGrindstone,
+        inputs
+        {
+			item 1 tags[Sharpenable] mode:keep flags[IsSharpenable],
+        }
+    }
+
+/*** RJ: Not sure we should allow to repair a blade with a grindstone, but mainly this only test for sharpness and not condition anyway?
+    craftRecipe RepairBladeWithGrindstone
+    {
+        time        = 130,
+        timedAction = UseGrindingStone,
+		xpAward = Maintenance:1,
+        SkillRequired = Maintenance:2,
+		AllowBatchCraft = False,
+		ToolTip = Tooltip_Recipe_CanFailAndDamage,
+        tags = Grindstone,
+        category = Repair,
+        OnCreate = Recipe.OnCreate.RepairBladeWithGrindstone,
+        inputs
+        {
+			item 1 tags[Sharpenable] mode:keep flags[IsSharpenable],
+        }
+    }
+    */
+
+	craftRecipe MakeCrudeWhetstone
+	{
+		Time = 230,
+		NeedToBeLearn = true,
+        SkillRequired = Maintenance:1,
+		xpAward = Maintenance:5,
+        tags = AnySurfaceCraft,
+        category = Repair,
+        timedAction = Making,
+        AutoLearnAny = Maintenance:2,
+		inputs
+		{
+			item 2 [Base.Stone2] flags[Prop2;Prop1],
+			/*item 1 [Base.Stone2] mode:keep flags[Prop1;MayDegradeHeavy],*/
+		}
+		outputs
+		{
+			item 1 Base.CrudeWhetstone,
+		}
+	}
+
+	craftRecipe FixSaw
+	{
+		Time = 300,
+        timedAction = SharpenBlade,
+        SkillRequired = Maintenance:2,
+		xpAward = Maintenance:20,
+		AllowBatchCraft = False,
+		ToolTip = Tooltip_Recipe_CanFailAndDamage,
+		Tags = InHandCraft,
+        category = Repair,
+		OnCreate = Recipe.OnCreate.SharpenBlade,
+		inputs
+		{
+			item 1 tags[Saw;MetalSaw;SmallSaw;RepairableSawblade] mode:keep flags[Prop2;IsDamaged],
+			item 1 tags[File] mode:keep flags[Prop1;MayDegradeLight],
+		}
+		outputs
+		{
+		}
+	}
+
+}

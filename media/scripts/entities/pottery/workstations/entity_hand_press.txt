@@ -1,0 +1,53 @@
+module Base
+{
+    entity Hand_Press
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Hand_Press,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes         = HandPress,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 100,
+        	skillBaseHealth = 20,
+
+            face S
+            {
+                layer
+                {
+                    row = crafted_01_72,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_01_73,
+                }
+            }
+        }
+                
+        component CraftRecipe
+        {
+            timedAction   = BuildWallHammer,
+            time          = 50,
+            category      = Pottery,
+            ToolTip       = Tooltip_craft_handpressDesc,
+
+            inputs
+            {
+                item 1 tags[Hammer] mode:keep flags[Prop1;MayDegradeVeryLight],
+                item 4 [Base.Plank],
+                item 4 [Base.Nails],
+            }
+        }
+    }
+}

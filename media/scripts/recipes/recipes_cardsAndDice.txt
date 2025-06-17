@@ -1,0 +1,298 @@
+module Base
+{
+	craftRecipe DrawRandomCard
+	{
+		timedAction = DrawCard,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.DrawRandomCard,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;RightClickOnly,
+		category = Miscellaneous,
+		inputs
+		{
+			item 1 [Base.CardDeck] mode:keep,
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe RollDice
+	{
+		timedAction = RollTwoDice,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.RollDice,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;RightClickOnly,
+		category = Miscellaneous,
+		inputs
+		{
+			item 1 [Base.Dice] mode:keep,
+		}
+		outputs
+		{
+		}
+	}
+	
+	craftRecipe RollOneDice
+	{
+		timedAction = RollDice,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.RollOneDice,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;RightClickOnly,
+		category = Miscellaneous,
+		inputs
+		{
+			item 1 [Base.Dice] mode:keep,
+		}
+		outputs
+		{
+		}
+	}
+	
+	craftRecipe Roll4SidedDice
+	{
+		timedAction = RollDice,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.RollDice,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;RightClickOnly,
+		category = Miscellaneous,
+		inputs
+		{
+			item 1 tags[d4] mode:keep,
+		}
+		outputs
+		{
+		}
+	}
+	
+	craftRecipe Roll6SidedDice
+	{
+		timedAction = RollDice,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.RollDice,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;RightClickOnly,
+		category = Miscellaneous,
+		inputs
+		{
+			item 1 tags[d6] mode:keep,
+		}
+		outputs
+		{
+		}
+	}
+	
+	craftRecipe Roll8SidedDice
+	{
+		timedAction = RollDice,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.RollDice,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;RightClickOnly,
+		category = Miscellaneous,
+		inputs
+		{
+			item 1 tags[d8] mode:keep,
+		}
+		outputs
+		{
+		}
+	}
+	
+	craftRecipe Roll10SidedDice
+	{
+		timedAction = RollDice,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.RollDice,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;RightClickOnly,
+		category = Miscellaneous,
+		inputs
+		{
+			item 1 tags[d10] mode:keep,
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe Roll10SidedDice2
+	{
+		timedAction = RollDiceDouble,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.RollDice,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;RightClickOnly,
+		category = Miscellaneous,
+		inputs
+		{
+			item 1 tags[d00] mode:keep,
+		}
+		outputs
+		{
+		}
+	}
+
+	craftRecipe Roll12SidedDice
+	{
+		timedAction = RollDice,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.RollDice,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;RightClickOnly,
+		category = Miscellaneous,
+		inputs
+		{
+			item 1 tags[d12] mode:keep,
+		}
+		outputs
+		{
+		}
+	}
+	
+	craftRecipe Roll20SidedDice
+	{
+		timedAction = RollDice,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.RollDice,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;RightClickOnly,
+		category = Miscellaneous,
+		inputs
+		{
+			item 1 tags[d20] mode:keep,
+		}
+		outputs
+		{
+		}
+	}
+	
+    /* recipe Roll 3d6
+    {
+        keep [Recipe.GetItemTypes.d6]=3,
+
+        Result:Dice_6,
+        RemoveResultItem:true,
+        Sound:ChatRollDice,
+        Time:20.0,
+        OnCreate:Recipe.OnCreate.Roll3d6,
+        AllowOnlyOne:true,
+    } */
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe Roll3d6
+	{
+		timedAction = RollDiceDouble,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.Roll3d6,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;RightClickOnly,
+		category = Miscellaneous,
+		inputs
+		{
+			item 3 tags[d6] mode:keep,
+		}
+		outputs
+		{
+		}
+	}
+	
+    /* recipe Roll 3d6_2
+    {
+        keep [Recipe.GetItemTypes.d6],
+		keep Dice,
+
+        Result:Dice_6,
+        RemoveResultItem:true,
+        Sound:ChatRollDice,
+        Time:20.0,
+        OnCreate:Recipe.OnCreate.Roll3d6,
+        AllowOnlyOne:true,
+    } */
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe Roll3d62
+	{
+		timedAction = RollDiceDouble,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.Roll3d6,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;RightClickOnly,
+		category = Miscellaneous,
+		inputs
+		{
+			item 1 tags[d6] mode:keep,
+			item 1 [Base.Dice] mode:keep,
+		}
+		outputs
+		{
+		}
+	}
+	
+    /* recipe Roll 3d6_3
+    {
+        keep Dice=2,
+
+        Result:Dice,
+        RemoveResultItem:true,
+        Sound:ChatRollDice,
+        Time:20.0,
+        OnCreate:Recipe.OnCreate.Roll3d6,
+        AllowOnlyOne:true,
+    } */
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe Roll3d63
+	{
+		timedAction = RollDiceDouble,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.Roll3d6,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;RightClickOnly,
+		category = Miscellaneous,
+		inputs
+		{
+			item 2 [Base.Dice] mode:keep,
+		}
+		outputs
+		{
+		}
+	}
+	
+    /* recipe Roll Percentile Die
+    {
+        keep [Recipe.GetItemTypes.d00],
+        keep [Recipe.GetItemTypes.d10],
+
+        Result:Dice_00,
+        RemoveResultItem:true,
+        Sound:ChatRollDice,
+        Time:20.0,
+        OnCreate:Recipe.OnCreate.Rolld100,
+        AllowOnlyOne:true,
+    } */
+
+	/* NOTES: FIX_ACTION */
+	craftRecipe RollPercentileDie
+	{
+		timedAction = RollDiceDouble,
+		Time = 20,
+		OnCreate = Recipe.OnCreate.Rolld100,
+		AllowBatchCraft = False,
+		Tags = InHandCraft;RightClickOnly,
+		category = Miscellaneous,
+		inputs
+		{
+			item 1 tags[d00] mode:keep,
+			item 1 tags[d10] mode:keep,
+		}
+		outputs
+		{
+		}
+	}
+
+   
+}

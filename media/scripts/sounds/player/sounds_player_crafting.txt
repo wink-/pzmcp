@@ -1,0 +1,39 @@
+module Base
+{
+	sound CraftSheetSlingBag
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Crafting/CraftSheetSlingBag,
+		}
+	}
+
+
+	sound SharpenBladeWhetstone
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Crafting/Repair/SharpenBladeWhetstone,
+		}
+	}
+
+	sound SharpenBladeGrindstone
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Crafting/Repair/SharpenBladeGrindstone,
+		}
+	}
+
+	sound SmashWatermelon
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Crafting/SmashWatermelon,
+		}
+	}
+}

@@ -1,0 +1,298 @@
+module Base
+{
+
+    craftRecipe MakeScrapMetalMask
+    {
+        time            = 600,
+        tags            = AnySurfaceCraft,
+        SkillRequired = MetalWelding:4;Tailoring:1,
+        timedAction = Welding_Surface,
+		xpAward = MetalWelding:10;Tailoring:5,
+        category = Metalworking, /*category =  Armor,*/
+        inputs
+        {
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+            item 1 [Base.SmallSheetMetal],
+            item 1 [Base.LeatherStrips] mode:destroy,
+            item 1 [Base.NutsBolts],
+            item 1 tags[Wrench] mode:keep flags[MayDegradeLight],
+			item 1 tags[SheetMetalSnips;MetalSaw] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPunch;DrillMetal] mode:keep flags[MayDegradeLight],
+            item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Thread],
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.Hat_HockeyMask_MetalScrap,
+        }
+    }
+
+    craftRecipe MakeScrapMetalForearmArmor
+    {
+        time            = 600,
+        tags            = AnySurfaceCraft,
+        SkillRequired = MetalWelding:5;Tailoring:1,
+        timedAction = Welding_Surface,
+		xpAward = MetalWelding:10;Tailoring:5,
+        category = Metalworking, /*category =  Armor,*/
+        inputs
+        {
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+            item 1 [Base.SmallSheetMetal],
+            item 2 [Base.LeatherStrips] mode:destroy,
+            item 1 [Base.NutsBolts],
+            item 1 tags[Wrench] mode:keep flags[MayDegradeLight],
+			item 1 tags[SheetMetalSnips;MetalSaw] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPunch;DrillMetal] mode:keep flags[MayDegradeLight],
+            item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Thread],
+			item 2 [Base.Buckle],
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.VambraceScrap_Left,
+        }
+    }
+
+    craftRecipe MakeScrapMetalShinArmor
+    {
+        time            = 600,
+        tags            = AnySurfaceCraft,
+        SkillRequired = MetalWelding:5;Tailoring:1,
+        timedAction = Welding_Surface,
+		xpAward = MetalWelding:10;Tailoring:5,
+        category = Metalworking, /*category =  Armor,*/
+        inputs
+        {
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+            item 1 [Base.SmallSheetMetal],
+            item 1 [Base.LeatherStrips] mode:destroy,
+            item 1 [Base.NutsBolts],
+            item 1 tags[Wrench] mode:keep flags[MayDegradeLight],
+			item 1 tags[SheetMetalSnips;MetalSaw] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPunch;DrillMetal] mode:keep flags[MayDegradeLight],
+            item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Thread],
+			item 2 [Base.Buckle],
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.GreaveScrap_Left,
+        }
+    }
+
+    craftRecipe MakeScrapMetalGloves
+    {
+        time            = 600,
+        tags            = AnySurfaceCraft,
+        SkillRequired = MetalWelding:4;Tailoring:1,
+        timedAction = Welding_Surface,
+		xpAward = MetalWelding:10;Tailoring:5,
+        category = Metalworking, /*category =  Armor,*/
+        inputs
+        {
+			item 1 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+            item 1 [Base.Gloves_FingerlessGloves;Base.Gloves_FingerlessLeatherGloves;Base.Gloves_FingerlessLeatherGloves_Black;Base.Gloves_LeatherGloves;Base.Gloves_LeatherGlovesBlack;Base.Gloves_LeatherGlovesBrown],
+            item 1 [Base.LeatherStrips] mode:destroy,
+			item 1 tags[SheetMetalSnips;MetalSaw] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPunch;DrillMetal] mode:keep flags[MayDegradeLight],
+            item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+        }
+        outputs
+        {
+            item 1 Base.Gloves_MetalScrapArmour,
+        }
+    }
+
+    craftRecipe MakeScrapMetalHelmet
+    {
+        time            = 600,
+        tags            = AnySurfaceCraft,
+        needTobeLearn = true,
+        SkillRequired = MetalWelding:5;Tailoring:1,
+        AutoLearnAny = MetalWelding:7,
+        timedAction = Welding_Surface,
+		xpAward = MetalWelding:10;Tailoring:5,
+        category = Metalworking, /*category =  Armor,*/
+        inputs
+        {
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+            item 2 [Base.SheetMetal],
+            item 1 [Base.NutsBolts],
+            item 1 tags[Wrench] mode:keep flags[MayDegradeLight],
+			item 1 tags[SheetMetalSnips;MetalSaw] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPunch;DrillMetal] mode:keep flags[MayDegradeLight],
+            item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+        }
+        outputs
+        {
+            item 1 Base.Hat_MetalScrapHelmet,
+        }
+    }
+
+    craftRecipe MakeScrapMetalShoulderArmor
+    {
+        time            = 600,
+        tags            = AnySurfaceCraft,
+        needTobeLearn = true,
+        SkillRequired = MetalWelding:5;Tailoring:1,
+        AutoLearnAny = MetalWelding:7,
+        timedAction = Welding_Surface,
+		xpAward = MetalWelding:10;Tailoring:5,
+        category = Metalworking, /*category =  Armor,*/
+        inputs
+        {
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+            item 1 [Base.SmallSheetMetal],
+            item 1 [Base.LeatherStrips] mode:destroy,
+            item 1 [Base.NutsBolts],
+            item 1 tags[Wrench] mode:keep flags[MayDegradeLight],
+			item 1 tags[SheetMetalSnips;MetalSaw] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPunch;DrillMetal] mode:keep flags[MayDegradeLight],
+            item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Thread],
+			item 1 [Base.Buckle],
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.Shoulderpad_MetalScrap_L,
+        }
+    }
+
+    craftRecipe MakeScrapMetalThighArmor
+    {
+        time            = 600,
+        tags            = AnySurfaceCraft,
+        needTobeLearn = true,
+        SkillRequired = MetalWelding:5;Tailoring:1,
+        AutoLearnAny = MetalWelding:7,
+        timedAction = Welding_Surface,
+		xpAward = MetalWelding:10;Tailoring:5,
+        category = Metalworking, /*category =  Armor,*/
+        inputs
+        {
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+            item 1 [Base.SmallSheetMetal],
+            item 1 [Base.LeatherStrips] mode:destroy,
+            item 1 [Base.NutsBolts],
+            item 1 tags[Wrench] mode:keep flags[MayDegradeLight],
+			item 1 tags[SheetMetalSnips;MetalSaw] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPunch;DrillMetal] mode:keep flags[MayDegradeLight],
+            item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 1 tags[Thread],
+			item 2 [Base.Buckle],
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.ThighScrapMetal_L,
+        }
+    }
+
+    craftRecipe MakeScrapMetalBodyArmor
+    {
+        time            = 600,
+        tags            = AnySurfaceCraft,
+        needTobeLearn = true,
+        SkillRequired = MetalWelding:6;Tailoring:1,
+        AutoLearnAny = MetalWelding:8,
+        timedAction = Welding_Surface,
+		xpAward = MetalWelding:10;Tailoring:5,
+        category = Metalworking, /*category =  Armor,*/
+        inputs
+        {
+			item 4 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+            item 4 [Base.SheetMetal],
+            item 6 [Base.LeatherStrips] mode:destroy,
+            item 1 [Base.NutsBolts],
+            item 1 tags[Wrench] mode:keep flags[MayDegradeLight],
+			item 1 tags[SheetMetalSnips;MetalSaw] mode:keep flags[MayDegradeLight],
+            item 1 tags[MetalworkingPunch;DrillMetal] mode:keep flags[MayDegradeLight],
+            item 1 tags[Hammer] mode:keep flags[MayDegradeVeryLight],
+			item 2 tags[Thread],
+			item 4 [Base.Buckle],
+			item 1 tags[Scissors;SharpKnife] mode:keep flags[MayDegradeLight],
+			item 1 tags[SewingNeedle] mode:keep flags[MayDegradeLight],
+			item 1 tags[Awl] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 1 Base.Cuirass_MetalScrap,
+        }
+    }
+
+    craftRecipe SpikeArmorWelding
+    {
+        Time = 300,
+        tags = AnySurfaceCraft,
+        timedAction = Welding_Surface,
+        needTobeLearn = true,
+        AutoLearnAny = MetalWelding:8,
+        SkillRequired = MetalWelding:5,
+		xpAward = MetalWelding:10,
+        category = Metalworking, /*category =  Armor,*/
+        inputs
+        {
+            item 1 [ThighScrapMetal_L;ThighScrapMetal_R;GreaveScrap_Left;GreaveScrap_Right;VambraceScrap_Left;VambraceScrap_Right;Shoulderpad_MetalScrap_L;Shoulderpad_MetalScrap_R;ThighMetal_L;ThighMetal_R;Greave_Left;Greave_Right;Vambrace_Left;Vambrace_Right;Shoulderpad_Metal_L;Shoulderpad_Metal_R;Shoulderpad_Articulated_L_Metal;Shoulderpad_Articulated_R_Metal;ShinKneeGuard_L_Metal;ShinKneeGuard_R_Metal] mappers[armorMapper] flags[Prop2;CopyClothing],
+			item 2 [Base.BlowTorch],
+			item 1 tags[WeldingMask] mode:keep,
+            item 3 [Base.Nails],
+        }
+        outputs
+        {
+            item 1 mapper:armorMapper,
+        }
+        itemMapper armorMapper
+        {
+            Base.ThighScrapMetalSpike_L = Base.ThighScrapMetal_L,
+            Base.GreaveSpikeScrap_Left = Base.GreaveScrap_Left,
+            Base.VambraceSpikeScrap_Left = Base.VambraceScrap_Left,
+            Base.Shoulderpad_MetalSpikeScrap_L =  Base.Shoulderpad_MetalScrap_L,
+
+            Base.ThighScrapMetalSpike_R = Base.ThighScrapMetal_R,
+            Base.GreaveSpikeScrap_Right = Base.GreaveScrap_Right,
+            Base.VambraceSpikeScrap_Right = Base.VambraceScrap_Right,
+            Base.Shoulderpad_MetalSpikeScrap_R =  Base.Shoulderpad_MetalScrap_R,
+
+            Base.ThighMetalSpike_L = Base.ThighMetal_L,
+            Base.GreaveSpike_Left = Base.Greave_Left,
+            Base.VambraceSpike_Left = Base.Vambrace_Left,
+            Base.Shoulderpad_MetalSpike_L =  Base.Shoulderpad_Metal_L,
+
+            Base.ThighMetalSpike_R = Base.ThighMetal_R,
+            Base.GreaveSpike_Right = Base.Greave_Right,
+            Base.VambraceSpike_Right = Base.Vambrace_Right,
+            Base.Shoulderpad_MetalSpike_R =  Base.Shoulderpad_Metal_R,
+
+            Base.Shoulderpad_ArticulatedSpike_L = Base.Shoulderpad_Articulated_L_Metal,
+            Base.ShinKneeGuardSpike_L_Metal = Base.ShinKneeGuard_L_Metal,
+
+            Base.Shoulderpad_ArticulatedSpike_R = Base.Shoulderpad_Articulated_R_Metal,
+            Base.ShinKneeGuardSpike_R_Metal = Base.ShinKneeGuard_R_Metal,
+
+            default = Base.GreaveSpikeScrap_Left,
+        }
+    }
+}

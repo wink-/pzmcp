@@ -1,0 +1,81 @@
+/*module Base
+{
+
+
+
+    entity Makeshift_Electric_Blower_Forge_II
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Makeshift_Electric_Blower_Forge_II,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = Recipes_Advanced_Forge,
+        }
+
+        component SpriteConfig
+        {
+            face S
+            {
+                layer
+                {
+                    row = crafted_03_88 crafted_03_80 crafted_03_95,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = crafted_03_103 crafted_03_82 crafted_03_96,
+                }
+            }
+              face E
+            {
+                layer
+                {
+                    row = crafted_03_104,
+                    row = crafted_03_84,
+                    row = crafted_03_111,
+                }
+            }
+              face W
+            {
+                layer
+                {
+                    row = crafted_03_119,
+                    row = crafted_03_85,
+                    row = crafted_03_112,
+                }
+            }
+        }
+                                
+        component CraftRecipe
+        {
+            timedAction   = Test,
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 1 [Base.BlacksmithAnvil],
+                item 1 [Base.Log],
+                item 1 [Base.HairDryer],
+                item 1 [Base.ElectricWire],
+                item 1 tags[Concrete] flags[DontRecordInput],
+                item 3 [Base.BlowTorch] flags[DontRecordInput],
+                item 5 [Base.WeldingRods] flags[DontRecordInput],
+                item 1 [Base.ElectronicsScrap],
+                item 1 [Base.MetalDrum],
+                /* item 9 [Base.ClayBrick], */
+                item 1 [Base.SheetMetal],
+                item 1 [Base.SmallSheetMetal],
+                item 4 [Base.MetalBar],
+                item 4 [Base.RailroadSpike],
+                item 1 [Base.WeldingMask] mode:keep,
+            }
+        }
+    }
+}*/

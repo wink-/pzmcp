@@ -1,0 +1,26 @@
+module Base
+{
+    xuiSkin default
+    {
+        /* note: abstract class - for reference */
+        ISBaseEntityWindow
+        {
+            /*backgroundColor     = 0.4:0.4:0.4:0.8,*/
+            /*borderColor         = 0.4:0.4:0.4:1.0,*/
+            enableHeader        = false,
+            backgroundColor     = C_BgWindow,
+            borderColor         = C_Border,
+            anchorLeft          = true,
+            anchorRight         = false,
+            anchorTop           = true,
+            anchorBottom        = false,
+            resizable           = true,
+            pin                 = true,
+            minimumWidth        = 0,
+            minimumHeight       = 0,
+            maximumWidth        = 0,
+            maximumHeight       = 0,
+            maximumHeightPercent = -1,
+        }
+    }
+}

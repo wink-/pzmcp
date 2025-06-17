@@ -1,0 +1,175 @@
+module Base
+{
+	model Vehicles_CarSmall02SmashedRear
+	{
+		mesh = vehicles/Vehicles_SmallCar02SMASH_Rear,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle CarSmall02SmashedRear
+	{
+		template! = SmallCar02,
+
+		model
+		{
+			file = Vehicles_CarSmall02SmashedRear,
+			scale = 1.8200,
+			offset = 0.0000 0.3022 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/vehicle_SmallCar2shell,
+		}
+
+		extents = 0.8791 0.6484 2.2088,
+		physicsChassisShape = 0.8791 0.6484 2.2088,
+		centerOfMassOffset = 0.0000 0.3077 0.0000,
+		shadowExtents = 0.8791 2.2088,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.0989,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.1319,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+	model Vehicles_CarSmall02SmashedFront
+	{
+		mesh = vehicles/Vehicles_SmallCar02CRASH_Front,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle CarSmall02SmashedFront
+	{
+		template! = SmallCar02,
+
+		model
+		{
+			file = Vehicles_CarSmall02SmashedFront,
+			scale = 1.8200,
+			offset = 0.0000 0.3022 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/vehicle_SmallCar2shell,
+		}
+
+		extents = 0.8791 0.6484 2.2088,
+		physicsChassisShape = 0.8791 0.6484 2.2088,
+		centerOfMassOffset = 0.0000 0.3077 0.0000,
+		shadowExtents = 0.8791 2.2088,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.0989,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.1319,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+	model Vehicles_CarSmall02SmashedRight
+	{
+		mesh = vehicles/Vehicles_SmallCar02CRASH_Right,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle CarSmall02SmashedRight
+	{
+		template! = SmallCar02,
+
+		model
+		{
+			file = Vehicles_CarSmall02SmashedRight,
+			scale = 1.8200,
+			offset = 0.0000 0.3022 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/vehicle_SmallCar2shell,
+		}
+
+		extents = 0.8791 0.6484 2.2088,
+		physicsChassisShape = 0.8791 0.6484 2.2088,
+		centerOfMassOffset = 0.0000 0.3077 0.0000,
+		shadowExtents = 0.8791 2.2088,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.0989,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.1319,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+	model Vehicles_CarSmall02SmashedLeft
+	{
+		mesh = vehicles/Vehicles_SmallCar02CRASH_Left,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle CarSmall02SmashedLeft
+	{
+		template! = SmallCar02,
+
+		model
+		{
+			file = Vehicles_CarSmall02SmashedLeft,
+			scale = 1.8200,
+			offset = 0.0000 0.3022 0.0000,
+		}
+
+		skin
+		{
+			texture = Vehicles/vehicle_SmallCar2shell,
+		}
+
+		extents = 0.8791 0.6484 2.2088,
+		physicsChassisShape = 0.8791 0.6484 2.2088,
+		centerOfMassOffset = 0.0000 0.3077 0.0000,
+		shadowExtents = 0.8791 2.2088,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.0989,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.1319,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1,
+		}
+	}
+}

@@ -1,0 +1,152 @@
+module Base
+{
+	item Mov_BeigeCurtain
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Beige Curtain,
+		WorldObjectSprite = fixtures_windows_curtains_01_59,
+	}
+	
+	item Mov_BlackCurtain
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Black Curtain,
+		WorldObjectSprite = fixtures_windows_curtains_01_75,
+	}
+	
+	item Mov_BlueCurtain
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Blue Curtain,
+		WorldObjectSprite = fixtures_windows_curtains_01_26,
+	}
+	
+	item Mov_BrownCurtain
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Brown Curtain,
+		WorldObjectSprite = fixtures_windows_curtains_01_43,
+	}
+	
+	item Mov_GrayCurtain
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Gray Curtain,
+		WorldObjectSprite = fixtures_windows_curtains_01_83,
+	}
+	
+	item Mov_GrayLongCurtain
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Gray Long Curtain,
+		WorldObjectSprite = fixtures_windows_curtains_01_91,
+	}
+	
+	item Mov_GreenCurtain
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Green Curtain,
+		WorldObjectSprite = fixtures_windows_curtains_01_67,
+	}
+	
+	item Mov_LongBeigeCurtain
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Long Beige Curtain,
+		WorldObjectSprite = fixtures_windows_curtains_01_2,
+	}
+	
+	item Mov_LongWhiteCurtain
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Long White Curtain,
+		WorldObjectSprite = fixtures_windows_curtains_01_10,
+	}
+	
+	item Mov_PinkCurtain
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Pink Curtain,
+		WorldObjectSprite = fixtures_windows_curtains_01_34,
+	}
+	
+	item Mov_SmallBordeauxCurtain
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Small Bordeaux Curtain,
+		WorldObjectSprite = fixtures_windows_curtains_02_19,
+	}
+	
+	item Mov_SmallGreenCurtain
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Small Green Curtain,
+		WorldObjectSprite = fixtures_windows_curtains_02_11,
+	}
+	
+	item Mov_SmallPearlCurtain
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Small Pearl Curtain,
+		WorldObjectSprite = fixtures_windows_curtains_02_27,
+	}
+	
+	item Mov_SmallWhiteCurtain
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Small White Curtain,
+		WorldObjectSprite = fixtures_windows_curtains_02_3,
+	}
+	
+	item Mov_WhiteCurtain
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = White Curtain,
+		WorldObjectSprite = fixtures_windows_curtains_01_51,
+	}
+}

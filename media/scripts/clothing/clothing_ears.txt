@@ -1,0 +1,50 @@
+module Base
+{
+	item Hat_BunnyEarsBlack
+	{
+		DisplayName = Bunny Ears,
+		DisplayCategory = Ears,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = RabbitearsBlack,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_BunnyEarsBlack,
+		WorldStaticModel = BunnyEarsBlack_Ground,
+		Tags = IsFireFuel;IsFireTinder;IsMemento;IgnoreZombieDensity,
+	}
+	
+	item Hat_BunnyEarsWhite
+	{
+		DisplayName = Bunny Ears,
+		DisplayCategory = Ears,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = RabbitearsWhite,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_BunnyEarsWhite,
+		WorldStaticModel = BunnyEarsWhite_Ground,
+		Tags = IsFireFuel;IsFireTinder;IsMemento;IgnoreZombieDensity,
+	}
+	
+	item Hat_FurryEars
+	{
+		DisplayName = Furry Ears,
+		DisplayCategory = Ears,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Headband_Cat,
+		BloodLocation = Head,
+		BodyLocation = Hat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 10,
+		ClothingItem = Hat_FurryEars,
+		WorldStaticModel = FurryEars_Ground,
+		Tags = IsFireFuel;IsFireTinder;IsMemento;IgnoreZombieDensity,
+	}
+}

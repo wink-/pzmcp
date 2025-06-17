@@ -1,0 +1,53 @@
+module Base
+{
+    item BottleCrafted
+    {
+        DisplayCategory  = WaterContainer,
+        Weight	         = 0.1,
+        Type	         = Normal,
+        DisplayName	 = Bottle,
+        Icon	         = GlassBottle,
+        IconFluidMask	 = GlassBottle_Mask,
+        WorldStaticModel = BottleCrafted_Ground,
+		FillFromDispenserSound = GetWaterFromDispenserGlass,
+		FillFromLakeSound = GetWaterFromLakeBottle,
+		FillFromTapSound = GetWaterFromTapGlass,
+		FillFromToiletSound = GetWaterFromToilet,
+		Tags = Glass;GlassBottle,
+
+        component FluidContainer
+        {
+            ContainerName   = Bottle,
+            capacity        = 1.0,
+            CustomDrinkSound = DrinkingFromBottleGlass,
+        }
+    }
+
+	item CeramicCrucibleWithGlass
+	{
+	    DisplayCategory     = Material,
+		Weight              = 6.0,
+		Type                = Drainable,
+		UseDelta	        = 0.25,
+		UseWhileEquipped = FALSE,
+		ReplaceOnDeplete = CeramicCrucibleSmall,
+		DisplayName         = Ceramic Crucible with Molten Glass,
+		Icon                = Ceramic_Crucible_Fired_Molten,
+		StaticModel         = CeramicCrucibleGlass,
+		WorldStaticModel    = CeramicCrucibleGlass,
+		Tooltip             = Tooltip_item_CeramicCrucibleWithGlass,
+	}
+
+	item GlassPanel
+	{
+		DisplayName = Glass Panel,
+		DisplayCategory = Material,
+		Type    = Normal,
+		Weight  = 0.2,
+		Icon    = GlassPane,
+		WorldStaticModel = GlassPanel,
+		StaticModel = GlassPanel,
+		Tags    = Glass,
+		Tooltip = Tooltip_item_GlassPanel,
+	}
+}

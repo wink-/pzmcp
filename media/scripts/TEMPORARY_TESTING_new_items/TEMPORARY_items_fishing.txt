@@ -1,0 +1,84 @@
+module Base
+{
+    item FishGuts
+    {
+		DisplayName = Fish Guts,
+		DisplayCategory = Fishing,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Fish_Guts,
+		IsCookable = false,
+		EvolvedRecipe = AddBaitToChum:5,
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		HungerChange = -5,
+		UnhappyChange = 20,
+        DangerousUncooked = TRUE,
+		StaticModel = FishGuts,
+		WorldStaticModel = FishGuts,
+    }
+	
+    item FishRoeSac
+    {
+		DisplayName = Fish Roe Sac,
+		DisplayCategory = Fishing,
+		Type = Food,
+		Weight = 0.1,
+		Icon = Fish_EggSack,
+		IsCookable = false,
+		DaysFresh = 4,
+		DaysTotallyRotten = 8,
+		HungerChange = -5,
+        Carbohydrates = 14,
+        Proteins = 5.2,
+        Lipids = 0.8,
+        Calories = 56,
+		UnhappyChange = 20,
+        DangerousUncooked = TRUE,
+		StaticModel = FishEggSac,
+		WorldStaticModel = FishEggSac,
+    }
+	
+	item CannedRoe
+	{
+		DisplayName = Jar of Fish Roe,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarBrown,
+		DaysFresh = 365,
+		DaysTotallyRotten = 730,
+		WorldStaticModel = JarFoodTomatoes_Ground,
+		CantEat = TRUE,
+		HungerChange = -48,
+        Carbohydrates = 14,
+        Proteins = 5.2,
+        Lipids = 0.8,
+        Calories = 56,
+		Tags = HasMetal;HideHungerChange,
+	}
+	
+	item CannedRoe_Open
+	{
+		DisplayName = Opened Jar of Fish Roe,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.8,
+		Icon = JarBrown,
+		DaysFresh = 3,
+		DaysTotallyRotten = 5,
+		StaticModel = JarFoodRed_Open,
+		WorldStaticModel = JarFoodRed_Open,
+		ReplaceOnUse = EmptyJar,
+		FoodType = Roe,
+		EvolvedRecipe = Salad:2;Sandwich:2;Soup:2;Toast:2,
+		HungerChange = -10,
+		UnhappyChange = -20,
+		Calories = 150,
+		Carbohydrates = 0,
+		Lipids = 11,
+		Proteins = 14,
+		Tags = HasMetal,
+		EatType = candrink,
+	}
+}

@@ -1,0 +1,207 @@
+module Base
+{
+
+	item Shoes_BurlapWrap
+	{
+		DisplayName = Burlap Footwraps,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Footwrap_Burlap,
+		BloodLocation = Shoes;LowerLeg_L;LowerLeg_R,
+		BodyLocation = Shoes,
+		ClothingItem = Shoes_BurlapWrap,
+		ConditionLowerChanceOneIn = 3,
+		ConditionMax = 3,
+		Insulation = 0.35,
+		RemoveOnBroken = FALSE,
+		ScratchDefense = 10,
+		WindResistance = 0.3,
+		WorldStaticModel = Socks_Long_Ground,
+		Tags = noRope,
+        ResearchableRecipes = SewHideBoots;WeaveTwineShoes;SewSandals,
+	}
+
+	item Shoes_CrudeLeatherFootwear
+	{
+		DisplayName = Crude Leather Footwear,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = ShoesCrafted,
+		BiteDefense = 10,
+		BloodLocation = Shoes,
+		BodyLocation = Shoes,
+		ClothingItem = Shoes_CrudeLeatherFootwear,
+		ConditionLowerChanceOneIn = 12,
+		ConditionMax = 24,
+		Insulation = 0.25,
+		RemoveOnBroken = FALSE,
+		RunSpeedModifier = 0.95,
+		ScratchDefense = 20,
+		StompPower = 2.1,
+		WaterResistance = 0.25,
+		WindResistance = 0.25,
+		WorldStaticModel = Shoes_Ground,
+        ResearchableRecipes = SewHideBoots;WeaveTwineShoes;SewSandals,
+	}
+
+	item Shoes_DenimWrap
+	{
+		DisplayName = Denim Footwraps,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Footwrap_Denim,
+		BloodLocation = Shoes;LowerLeg_L;LowerLeg_R,
+		BodyLocation = Shoes,
+		ClothingItem = Shoes_DenimWrap,
+		ConditionLowerChanceOneIn = 4,
+		ConditionMax = 4,
+		FabricType = Denim,
+		Insulation = 0.55,
+		RemoveOnBroken = FALSE,
+		ScratchDefense = 20,
+		WindResistance = 0.65,
+		WorldStaticModel = Socks_Long_Ground,
+		Tags = noRope;RipClothingDenim,
+        ResearchableRecipes = SewHideBoots;WeaveTwineShoes;SewSandals,
+	}
+
+	item Shoes_HideBoots
+	{
+		DisplayName = Hide Boots,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Boots_Hide,
+		BiteDefense = 40,
+		BloodLocation = Shoes,
+		BodyLocation = Shoes,
+		ClothingItem = Shoes_HideBoots,
+		ConditionLowerChanceOneIn = 20,
+		ConditionMax = 30,
+		Insulation = 0.5,
+		RemoveOnBroken = FALSE,
+		RunSpeedModifier = 0.95,
+		ScratchDefense = 80,
+		StompPower = 2.1,
+		WaterResistance = 0.5,
+		WindResistance = 0.60,
+		WorldStaticModel = Boots_Ground,
+        ResearchableRecipes = SewHideBoots;WeaveTwineShoes;SewLeatherGaiter,
+	}
+
+	item Shoes_LeatherWrap
+	{
+		DisplayName = Leather Strip Footwraps,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Footwrap_Leather,
+		BiteDefense = 10,
+		BloodLocation = Shoes;LowerLeg_L;LowerLeg_R,
+		BodyLocation = Shoes,
+		ClothingItem = Shoes_LeatherWrap,
+		ConditionLowerChanceOneIn = 4,
+		ConditionMax = 4,
+		FabricType = Leather,
+		Insulation = 0.55,
+		RemoveOnBroken = FALSE,
+		ScratchDefense = 20,
+		WindResistance = 0.65,
+		WorldStaticModel = Socks_Long_Ground,
+		Tags = noRope,
+        ResearchableRecipes = SewHideBoots;WeaveTwineShoes;SewSandals,
+	}
+
+	item Shoes_RagWrap
+	{
+		DisplayName = Rag Footwraps,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Footwrap_Rag,
+		BloodLocation = Shoes;LowerLeg_L;LowerLeg_R,
+		BodyLocation = Shoes,
+		ClothingItem = Shoes_RagWrap,
+		ConditionLowerChanceOneIn = 2,
+		ConditionMax = 2,
+		FabricType = Cotton,
+		Insulation = 0.35,
+		RemoveOnBroken = FALSE,
+		ScratchDefense = 5,
+		WindResistance = 0.3,
+		WorldStaticModel = Socks_Long_Ground,
+		Tags = noRope;RipClothingCotton,
+        ResearchableRecipes = SewHideBoots;WeaveTwineShoes;SewSandals,
+	}
+
+	item Shoes_TarpWrap
+	{
+		DisplayName = Tarp Footwraps,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Footwrap_Tarp,
+		BloodLocation = Shoes;LowerLeg_L;LowerLeg_R,
+		BodyLocation = Shoes,
+		ClothingItem = Shoes_TarpWrap,
+		ConditionLowerChanceOneIn = 3,
+		ConditionMax = 3,
+		FabricType = Denim,
+		Insulation = 0.55,
+		RemoveOnBroken = FALSE,
+		ScratchDefense = 20,
+		WaterResistance = 1.0,
+		WindResistance = 0.65,
+		WorldStaticModel = Socks_Long_Ground,
+		Tags = noRope;RipClothingDenim,
+        ResearchableRecipes = SewHideBoots;WeaveTwineShoes;SewSandals,
+	}
+
+	item Shoes_TireSandals
+	{
+		DisplayName = Tire Sandals,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Tire_Sandals,
+		BiteDefense = 10,
+		BloodLocation = Shoes,
+		BodyLocation = Shoes,
+		ClothingItem = Shoes_TireSandals,
+		ConditionLowerChanceOneIn = 12,
+		ConditionMax = 24,
+		Insulation = 0.25,
+		RemoveOnBroken = FALSE,
+		RunSpeedModifier = 0.95,
+		ScratchDefense = 20,
+		StompPower = 2.1,
+		WaterResistance = 0.25,
+		WindResistance = 0.25,
+		WorldStaticModel = Shoes_Ground,
+        ResearchableRecipes = MakeTireForearmArmor;MakeTireShinArmor;WeaveTwineShoes;SewSandals,
+	}
+
+	item Shoes_Twine
+	{
+		DisplayName = Twine Footwear,
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		Icon = Shoes_Twine,
+		BiteDefense = 10,
+		BloodLocation = Shoes,
+		BodyLocation = Shoes,
+		ClothingItem = Shoes_Twine,
+		ConditionLowerChanceOneIn = 6,
+		ConditionMax = 12,
+		Insulation = 0.25,
+		RemoveOnBroken = FALSE,
+		RunSpeedModifier = 0.95,
+		ScratchDefense = 20,
+		StompPower = 2.1,
+		WaterResistance = 0.25,
+		WindResistance = 0.25,
+		WorldStaticModel = Shoes_Ground,
+        ResearchableRecipes = SewHideBoots;SewSandals,
+	}
+
+}

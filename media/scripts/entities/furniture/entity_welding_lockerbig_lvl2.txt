@@ -1,0 +1,75 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_LockerBig_Lvl2
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Big Metal Locker,
+			Icon		= Build_CabinetMetal,
+		}
+	}
+
+    entity Metal_LockerBig_Lvl2
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_LockerBig_Lvl2,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+            canBePadlocked = true,
+            face W
+            {
+                layer
+                {
+                    row = furniture_storage_02_3,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = furniture_storage_02_2,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = furniture_storage_02_1,
+                }
+            }
+            face S
+            {
+                layer
+                {
+                    row = furniture_storage_02_0,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            OnAddToMenu   = metalLockedBigLvl2Test,
+            timedAction   = BuildMetalStructureMedium,
+            time          = 50,
+            needToBeLearn = true,
+            SkillRequired = MetalWelding:10,
+            xpAward       = MetalWelding:100,
+            category      = Furniture,
+            ToolTip       = Tooltip_craft_lockerDesc,
+            inputs
+            {
+                item 4 [Base.BlowTorch] flags[DontRecordInput],
+                item 4 [Base.SmallSheetMetal],
+                item 8 [Base.MetalPipe],
+                item 2 [Base.Hinge],
+                item 4 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

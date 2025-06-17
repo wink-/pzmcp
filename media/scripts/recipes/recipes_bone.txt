@@ -1,0 +1,767 @@
+module Base
+{
+	craftRecipe MakeBoneClub
+	{
+        time = 200,
+        tags = AnySurfaceCraft;Survivalist,
+        category = Weaponry,
+		xpAward = Maintenance:10,
+        SkillRequired = Maintenance:1,
+        needTobeLearn = true,
+        timedAction = CraftWeapon1H,
+        AutoLearnAll = Maintenance:3;SmallBlunt:1,
+		inputs
+		{
+			item 1 [Base.AnimalBone;Base.LargeAnimalBone]  mappers[ClubMapper] flags[Prop2;InheritCondition],
+			item 2 [Base.LeatherStrips],
+		}
+        outputs
+        {
+            item 1 mapper:ClubMapper,
+        }
+        itemMapper ClubMapper
+        {
+            Base.BoneClub = Base.AnimalBone,
+            Base.LargeBoneClub = Base.LargeAnimalBone,
+
+            default = Base.LargeBoneClub,
+        }
+	}
+
+	craftRecipe MakeBoneHatchet
+	{
+        time = 200,
+        tags = AnySurfaceCraft;Survivalist,
+        category = Weaponry,
+		xpAward = Maintenance:10,
+        SkillRequired = Maintenance:1,
+        timedAction = CraftWeapon1H,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 [Base.HatchetHead_Bone] flags[Prop1;IsHeadPart],
+			item 1 [Base.TreeBranch2] flags[Prop2;InheritCondition],
+			item 2 [Base.LeatherStrips],
+		}
+        outputs
+        {
+            item 1 Base.Hatchet_Bone,
+        }
+	}
+
+	craftRecipe MakeBoneHatchetHead
+	{
+        time = 600,
+        tags = AnySurfaceCraft;Survivalist,
+        category = Carving,
+		xpAward = Carving:30,
+        SkillRequired = Carving:3,
+        needTobeLearn = true,
+        timedAction = MakingHammer_Surface,
+        AutoLearnAll = Carving:6;Axe:1,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+		inputs
+		{
+            item 1 tags[Saw;SmallSaw;CrudeSaw;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.JawboneBovide;Base.LargeAnimalBone] flags[Prop2],
+			item 1 tags[Whetstone;File] mode:keep flags[MayDegradeLight],
+		}
+        outputs
+        {
+            item 1 Base.HatchetHead_Bone,
+        }
+	}
+
+	craftRecipe MakeJawboneAxe
+	{
+        time = 200,
+        tags = AnySurfaceCraft;Survivalist,
+        category = Weaponry,
+		xpAward = Maintenance:30,
+        SkillRequired = Maintenance:3,
+        needTobeLearn = true,
+        timedAction = CraftWeapon2H,
+        AutoLearnAll = Maintenance:6;Axe:1,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[IsNotDull;MayDegradeLight],
+			item 1 [Base.JawboneBovide] flags[Prop1;IsHeadPart],
+			item 1 [Base.TreeBranch2] flags[Prop2;InheritCondition],
+			item 2 [Base.LeatherStrips],
+		}
+        outputs
+        {
+            item 1 Base.JawboneBovide_Axe,
+        }
+	}
+
+	craftRecipe MakeJawboneClub
+	{
+        time = 200,
+        tags = AnySurfaceCraft;Survivalist,
+        category = Weaponry,
+		xpAward = Maintenance:20,
+        SkillRequired = Maintenance:2,
+        needTobeLearn = true,
+        timedAction = CraftWeapon1H,
+        AutoLearnAll = Maintenance:5;SmallBlunt:1,
+		inputs
+		{
+			item 1 [Base.JawboneBovide] flags[Prop2;IsHeadPart],
+			item 1 [Base.Handle] flags[Prop1;InheritCondition],
+			item 2 [Base.LeatherStrips],
+		}
+        outputs
+        {
+            item 1 Base.JawboneBovide_Club,
+        }
+	}
+
+	craftRecipe SharpenBone
+	{
+        time = 200,
+        tags = AnySurfaceCraft;Survivalist,
+        category = Carving,
+		xpAward = Carving:10,
+        SkillRequired = Carving:1,
+        AutoLearnAny = Carving:2,
+        needTobeLearn = true,
+        timedAction = SharpenStake,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+		inputs
+		{
+			item 1 tags[Whetstone;File] mode:keep flags[MayDegradeLight],
+            item 1 tags[Saw;SmallSaw;CrudeSaw;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.BoneBead_Large;Base.HatchetHead_Bone;Base.SharpBone_Long;Base.SmallAnimalBone] mappers[BoneMapper] flags[Prop2;AllowDestroyedItem],
+		}
+        outputs
+        {
+            item 1 Base.SharpBoneFragment,
+        }
+	}
+
+	craftRecipe SharpenLongBone
+	{
+        time = 300,
+        tags = AnySurfaceCraft;Survivalist,
+        category = Carving,
+		xpAward = Carving:20,
+        SkillRequired = Carving:2,
+        AutoLearnAny = Carving:4,
+        needTobeLearn = true,
+        timedAction = SharpenStake,
+        MetaRecipe = SharpenBone,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+		inputs
+		{
+			item 1 tags[Whetstone;File] mode:keep flags[MayDegradeLight],
+            item 1 tags[Saw;SmallSaw;CrudeSaw;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.AnimalBone;Base.LargeAnimalBone] mappers[BoneMapper] flags[Prop2;AllowDestroyedItem],
+		}
+        outputs
+        {
+            item 1 Base.SharpBone_Long,
+        }
+	}
+
+	craftRecipe SharpenJawbone
+	{
+        time = 300,
+        tags = AnySurfaceCraft;Survivalist,
+        category = Carving,
+		xpAward = Carving:20,
+        SkillRequired = Carving:2,
+        AutoLearnAny = Carving:5,
+        needTobeLearn = true,
+        timedAction = SharpenStake,
+        MetaRecipe = SharpenBone,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+		inputs
+		{
+			item 1 tags[Whetstone;File] mode:keep flags[MayDegradeLight],
+            item 1 tags[Saw;SmallSaw;CrudeSaw;SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight],
+			item 1 [Base.JawboneBovide]  flags[Prop2],
+		}
+        outputs
+        {
+            item 1 Base.SharpBone_Long,
+            item 1 Base.HerbivoreTeeth,
+        }
+	}
+
+	craftRecipe MakeDullBoneKnife
+	{
+        time = 200,
+        tags = InHandCraft,
+        category = Carving,
+		xpAward = Carving:10,
+        SkillRequired = Carving:1,
+        needTobeLearn = false,
+        timedAction = SharpenStake,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+		inputs
+		{
+            item 1 tags[Whetstone;File] mode:keep flags[MayDegradeLight],
+            item 1 tags[SharpKnife] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.SharpBoneFragment] flags[Prop2],
+		}
+        outputs
+        {
+            item 1 Base.DullBoneKnife,
+        }
+	}
+
+	craftRecipe MakeBoneSpoon
+	{
+        time = 200,
+        tags = InHandCraft,
+        category = Carving,
+		xpAward = Carving:20,
+        SkillRequired = Carving:2,
+        needTobeLearn = false,
+        timedAction = SharpenStake,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+		inputs
+		{
+            item 1 tags[Whetstone;File] mode:keep flags[MayDegradeLight],
+            item 1 tags[SharpKnife] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.SharpBoneFragment] flags[Prop2],
+		}
+        outputs
+        {
+            item 1 Base.Spoon_Bone,
+        }
+	}
+
+	craftRecipe MakeBoneFork
+	{
+        time = 300,
+        tags = InHandCraft,
+        category = Carving,
+		xpAward = Carving:30,
+        SkillRequired = Carving:3,
+        needTobeLearn = false,
+        timedAction = SharpenStake,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+        needTobeLearn = true,
+		AutoLearnAny = Carving:5,
+		inputs
+		{
+            item 1 tags[Whetstone;File] mode:keep flags[MayDegradeLight],
+            item 1 tags[SharpKnife] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.SharpBoneFragment;Base.Spoon_Bone] flags[Prop2;InheritCondition],
+		}
+        outputs
+        {
+            item 1 Base.Fork_Bone,
+        }
+	}
+
+	craftRecipe MakeBoneSewingNeedle
+	{
+        time = 300,
+        tags = AnySurfaceCraft;Survivalist,
+        category = Carving,
+		xpAward = Carving:40,
+        SkillRequired = Carving:4,
+        needTobeLearn = true,
+        timedAction = SharpenStake,
+        AutoLearnAll = Carving:6,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+		inputs
+		{
+            item 1 tags[Whetstone;File] mode:keep flags[MayDegradeLight],
+            item 1 tags[SharpKnife] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.SharpBoneFragment] flags[Prop2],
+		}
+        outputs
+        {
+            item 1 Base.Needle_Bone,
+        }
+	}
+
+	craftRecipe MakeBoneFishingHook
+	{
+        time = 400,
+        tags = InHandCraft,
+        category = Carving,
+		xpAward = Carving:50,
+        SkillRequired = Carving:5,
+        needTobeLearn = true,
+        timedAction = SharpenStake,
+        AutoLearnAll = Carving:7,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+		inputs
+		{
+			item 1 tags[Whetstone;File] mode:keep flags[MayDegradeLight],
+            item 1 tags[SharpKnife] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.SharpBoneFragment] flags[Prop2],
+		}
+        outputs
+        {
+            item 1 Base.FishingHook_Bone,
+        }
+	}
+
+
+    craftRecipe BoneSpikeWeapon
+    {
+        time            = 600,
+        tags            = AnySurfaceCraft,
+        category = Weaponry,
+        needTobeLearn = true,
+        SkillRequired = Carving:3,
+        timedAction = CraftWeapon1H,
+		xpAward = Carving:30,
+        AutoLearnAny = Maintenance:6;Blunt:6,
+        inputs
+        {
+            item 1 tags[ChopTree;Saw;SmallSaw;CrudeSaw;SharpKnife] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+            item 1 [Base.LargeBranch;Base.TreeBranch2] mappers[HandleMapper] flags[Prop2;InheritCondition],
+            item 2 [Base.SharpBone_Long],
+            item 2 [Base.SharpBoneFragment],
+            item 2 [Base.LeatherStrips;Base.LeatherStripsDirty],
+        }
+        outputs
+        {
+            item 1 mapper:HandleMapper,
+        }
+        itemMapper HandleMapper
+        {
+            Base.Cudgel_Bone = Base.LargeBranch,
+            Base.TreeBranch_Bone = Base.TreeBranch2,
+
+            default = Base.TreeBranch_Bone,
+        }
+    }
+
+	craftRecipe SmashBone
+	{
+        time = 300,
+        tags = AnySurfaceCraft;Survivalist;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+        needTobeLearn = false,
+        timedAction = MakingHammer_Surface,
+         SkillRequired = Strength:4,
+		inputs
+		{
+			item 1 tags[Hammer;Sledgehammer;ClubHammer;HammerStone] mode:keep flags[Prop1;MayDegradeLight],
+			item 1 [Base.AnimalBone;Base.LargeAnimalBone]  flags[Prop2;AllowDestroyedItem],
+		}
+        outputs
+        {
+            item 2 Base.SmallAnimalBone,
+        }
+	}
+
+	craftRecipe SmashJawbone
+	{
+        time = 300,
+        tags = AnySurfaceCraft;Survivalist;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+        needTobeLearn = false,
+        timedAction = MakingHammer_Surface,
+        SkillRequired = Strength:4,
+		inputs
+		{
+			item 1 tags[Hammer;Sledgehammer;ClubHammer;HammerStone] mode:keep flags[Prop1;MayDegradeLight],
+			item 1 [Base.JawboneBovide]  flags[Prop2;AllowDestroyedItem],
+		}
+        outputs
+        {
+            item 2 Base.SmallAnimalBone,
+            item 1 Base.HerbivoreTeeth,
+        }
+	}
+
+	craftRecipe SmashCowSkull
+	{
+        time = 300,
+        tags = AnySurfaceCraft;Survivalist;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+        needTobeLearn = false,
+        timedAction = MakingHammer_Surface,
+        SkillRequired = Strength:3,
+		inputs
+		{
+			item 1 tags[Hammer;Sledgehammer;ClubHammer;HammerStone] mode:keep flags[Prop1;MayDegradeLight],
+			item 1 [Base.Bull_Skull;Base.Cow_Skull] flags[Prop2],
+		}
+        outputs
+        {
+            item 2 Base.SmallAnimalBone,
+            item 2 Base.JawboneBovide,
+            item 2 Base.HerbivoreTeeth,
+        }
+	}
+
+	craftRecipe SmashHerbivoreSkull
+	{
+        time = 300,
+        tags = AnySurfaceCraft;Survivalist;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+        needTobeLearn = false,
+        timedAction = MakingHammer_Surface,
+        SkillRequired = Strength:2,
+		inputs
+		{
+			item 1 tags[Hammer;Sledgehammer;ClubHammer;HammerStone] mode:keep flags[Prop1;MayDegradeLight],
+			item 1 [Base.Calf_Skull;Base.Sheep_Skull;Base.Ram_Skull;Base.DeerDoe_Skull] flags[Prop2],
+		}
+        outputs
+        {
+            item 2 Base.SmallAnimalBone,
+            item 2 Base.HerbivoreTeeth,
+        }
+	}
+
+	craftRecipe SmashStagSkull
+	{
+        time = 300,
+        tags = AnySurfaceCraft;Survivalist;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+        needTobeLearn = false,
+        timedAction = MakingHammer_Surface,
+        SkillRequired = Strength:2,
+		inputs
+		{
+			item 1 tags[Hammer;Sledgehammer;ClubHammer;HammerStone] mode:keep flags[Prop1;MayDegradeLight],
+			item 1 [Base.DeerStag_Skull] flags[Prop2],
+		}
+        outputs
+        {
+            item 2 Base.SmallAnimalBone,
+            item 2 Base.HerbivoreTeeth,
+            item 1 Base.Antlers_Wall,
+        }
+	}
+
+	craftRecipe SmashPigSkull
+	{
+        time = 300,
+        tags = AnySurfaceCraft;Survivalist;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+        needTobeLearn = false,
+        timedAction = MakingHammer_Surface,
+         SkillRequired = Strength:2,
+		inputs
+		{
+			item 1 tags[Hammer;Sledgehammer;ClubHammer;HammerStone] mode:keep flags[Prop1;MayDegradeLight],
+			item 1 [Base.Pig_Skull] flags[Prop2],
+		}
+        outputs
+        {
+            item 2 Base.SmallAnimalBone,
+            item 2 Base.HerbivoreTeeth,
+            item 2 Base.PigTusk,
+        }
+	}
+
+	craftRecipe SmashSmallHerbivoreSkull
+	{
+        time = 300,
+        tags = AnySurfaceCraft;Survivalist;CanBeDoneInDark,
+        category = Miscellaneous, /*category = Survival,*/
+        needTobeLearn = false,
+        timedAction = MakingHammer_Surface,
+         SkillRequired = Strength:1,
+		inputs
+		{
+			item 1 tags[Hammer;Sledgehammer;ClubHammer;HammerStone] mode:keep flags[Prop1;MayDegradeLight],
+			item 1 [Base.Lamb_Skull;Base.Piglet_Skull;Base.DeerFawn_Skull] flags[Prop2],
+		}
+        outputs
+        {
+            item 1 Base.SmallAnimalBone,
+            item 1 Base.HerbivoreTeeth,
+        }
+	}
+
+	craftRecipe MakeBoneAwl
+	{
+        time = 200,
+        tags = AnySurfaceCraft,
+        category = Carving,
+		xpAward = Carving:10,
+        SkillRequired = Carving:1,
+        needTobeLearn = true,
+        timedAction = SharpenStake,
+        AutoLearnAny = Carving:3,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+		inputs
+		{
+            item 1 tags[Whetstone;File] mode:keep flags[MayDegradeLight],
+            item 1 tags[Saw;CrudeSaw;SmallSaw;SharpKnife] mode:keep flags[Prop1;IsNotDull;MayDegradeLight],
+			item 1 [Base.SharpBoneFragment] flags[Prop2],
+		}
+        outputs
+        {
+            item 1 Base.Awl_Bone,
+        }
+	}
+
+	craftRecipe MakeAnimalSkullNecklace
+	{
+		Time = 100,
+        timedAction = Making,
+        tags = AnySurfaceCraft,
+        xpAward = Tailoring:5,
+        SkillRequired = Tailoring:1,
+        category = Tailoring,
+		inputs
+		{
+			item 1 [Base.Rabbit_KittenSkull;Base.Rabbit_Skull] flags[Prop2],
+			item 1 [Base.Twine;Base.Thread_Sinew] flags[Prop1],
+		}
+		outputs
+		{
+			item 1 Base.Necklace_SkullMammal,
+		}
+	}
+
+	craftRecipe MakeAnimalSkullsNecklace
+	{
+		Time = 150,
+        timedAction = Making,
+        tags = AnySurfaceCraft,
+        xpAward = Tailoring:5,
+        SkillRequired = Tailoring:1,
+        category = Tailoring,
+		inputs
+		{
+			item 3 [Base.Rabbit_KittenSkull;Base.Rabbit_Skull] flags[Prop2],
+			item 1 [Base.Twine;Base.Thread_Sinew] flags[Prop1],
+		}
+		outputs
+		{
+			item 1 Base.Necklace_SkullMammal_Multi,
+		}
+	}
+
+	craftRecipe MakeLongAnimalSkullNecklace
+	{
+		Time = 100,
+        timedAction = Making,
+        tags = AnySurfaceCraft,
+        xpAward = Tailoring:5,
+        SkillRequired = Tailoring:1,
+        category = Tailoring,
+		inputs
+		{
+			item 1 [Base.Rabbit_KittenSkull;Base.Rabbit_Skull] flags[Prop2],
+			item 1 [Base.Twine;Base.Thread_Sinew] flags[Prop1],
+		}
+		outputs
+		{
+			item 1 Base.NecklaceLong_SkullMammal,
+		}
+	}
+
+	craftRecipe MakeLongAnimalSkullsNecklace
+	{
+		Time = 150,
+        timedAction = Making,
+        tags = AnySurfaceCraft,
+        xpAward = Tailoring:5,
+        SkillRequired = Tailoring:1,
+        category = Tailoring,
+		inputs
+		{
+			item 3 [Base.Rabbit_KittenSkull;Base.Rabbit_Skull] flags[Prop2],
+			item 1 [Base.Twine;Base.Thread_Sinew] flags[Prop1],
+		}
+		outputs
+		{
+			item 1 Base.NecklaceLong_SkullMammal_Multi,
+		}
+	}
+
+	craftRecipe MakeBirdSkullEarrings
+	{
+		Time = 200,
+        timedAction = Making,
+        tags = AnySurfaceCraft,
+        xpAward = Tailoring:5,
+        SkillRequired = Tailoring:1,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[Pliers] mode:keep flags[Prop1],
+			item 2 tags[BirdSkull] flags[Prop2],
+			item 1 [Base.Wire],
+		}
+		outputs
+		{
+			item 1 Base.Earring_BirdSkull,
+		}
+	}
+
+	craftRecipe MakeBirdSkullNecklace
+	{
+		Time = 100,
+        timedAction = Making,
+        tags = AnySurfaceCraft,
+        xpAward = Tailoring:5,
+        SkillRequired = Tailoring:1,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[BirdSkull] flags[Prop2],
+			item 1 [Base.Twine;Base.Thread_Sinew] flags[Prop1],
+		}
+		outputs
+		{
+			item 1 Base.Necklace_SkullSmall,
+		}
+	}
+
+	craftRecipe MakeBirdSkullsNecklace
+	{
+		Time = 150,
+        timedAction = Making,
+        tags = AnySurfaceCraft,
+        xpAward = Tailoring:5,
+        SkillRequired = Tailoring:1,
+        category = Tailoring,
+		inputs
+		{
+			item 3 tags[BirdSkull] flags[Prop2],
+			item 1 [Base.Twine;Base.Thread_Sinew] flags[Prop1],
+		}
+		outputs
+		{
+			item 1 Base.Necklace_SkullSmall_Multi,
+		}
+	}
+
+	craftRecipe MakeLongBirdSkullNecklace
+	{
+		Time = 100,
+        timedAction = Making,
+        tags = AnySurfaceCraft,
+        xpAward = Tailoring:5,
+        SkillRequired = Tailoring:1,
+        category = Tailoring,
+		inputs
+		{
+			item 1 tags[BirdSkull] flags[Prop2],
+			item 1 [Base.Twine;Base.Thread_Sinew] flags[Prop1],
+		}
+		outputs
+		{
+			item 1 Base.NecklaceLong_SkullSmall,
+		}
+	}
+
+	craftRecipe MakeLongBirdSkullsNecklace
+	{
+		Time = 150,
+        timedAction = Making,
+        tags = AnySurfaceCraft,
+        xpAward = Tailoring:5,
+        SkillRequired = Tailoring:1,
+        category = Tailoring,
+		inputs
+		{
+			item 3 tags[BirdSkull] flags[Prop2],
+			item 1 [Base.Twine;Base.Thread_Sinew] flags[Prop1],
+		}
+		outputs
+		{
+			item 1 Base.NecklaceLong_SkullSmall_Multi,
+		}
+	}
+
+    craftRecipe MakeLargeBoneBead
+    {
+        time        = 200,
+        tags            = AnySurfaceCraft,
+        needTobeLearn = true,
+        timedAction = Making,
+        AutoLearnAny = Carving:3,
+        xpAward = Carving:10,
+        SkillRequired = Carving:1,
+        MetaRecipe = MakeBoneArmor,
+        category = Carving,
+        inputs
+        {
+            item 1 tags[DrillWood;DrillMetal;DrillWoodPoor] mode:keep flags[MayDegradeLight],
+            item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight;IsNotDull],
+            item 1 [Base.SmallAnimalBone;Base.SharpBone_Long] flags[AllowDestroyedItem],
+        }
+        outputs
+        {
+            item 1 Base.BoneBead_Large,
+        }
+    }
+
+    craftRecipe MakeLargeBoneBeads
+    {
+        time        = 300,
+        tags            = AnySurfaceCraft,
+        needTobeLearn = true,
+        timedAction = Making,
+        AutoLearnAny = Carving:3,
+        xpAward = Carving:40,
+        SkillRequired = Carving:1,
+        MetaRecipe = MakeLargeBoneBead,
+        MetaRecipe = MakeBoneArmor,
+        category = Carving,
+        inputs
+        {
+            item 1 tags[SharpKnife;MeatCleaver] mode:keep flags[MayDegradeLight;IsNotDull],
+		    item 1 tags[Whetstone;File] mode:keep flags[MayDegradeLight],
+            item 1 [Base.AnimalBone;Base.LargeAnimalBone;Base.JawboneBovide] flags[AllowDestroyedItem],
+            item 1 tags[DrillWood;DrillMetal;DrillWoodPoor] mode:keep flags[MayDegradeLight],
+        }
+        outputs
+        {
+            item 4 Base.BoneBead_Large,
+        }
+    }
+
+	craftRecipe CarveFleshingTool
+	{
+        timedAction = SharpenStake,
+		Time = 300,
+		OnCreate = Recipe.OnCreate.MinorCarving,
+		Tags = InHandCraft;Survivalist,
+		xpAward = Carving:20,
+        SkillRequired = Carving:2,
+        category = Carving,
+        needTobeLearn = true,
+		AutoLearnAny = Carving:4,
+		inputs
+		{
+			item 1 tags[SharpKnife;MeatCleaver;Saw;SmallSaw;CrudeSaw] mode:keep flags[MayDegrade;IsNotDull],
+			item 1 [Base.AnimalBone;Base.LargeAnimalBone] flags[InheritCondition],
+		}
+		outputs
+		{
+			item 1 Base.Fleshing_Tool_Bone,
+		}
+	}
+
+	craftRecipe CarveWhistle
+	{
+        time = 200,
+        tags = AnySurfaceCraft;Survivalist,
+        category = Carving,
+		xpAward = Carving:60,
+        SkillRequired = Carving:6,
+        needTobeLearn = true,
+		AutoLearnAny = Carving:8,
+        timedAction = SharpenStake,
+		inputs
+		{
+            item 1 tags[DrillWood;DrillMetal;DrillWoodPoor] mode:keep flags[MayDegradeLight],
+            item 1 tags[SharpKnife] mode:keep flags[MayDegradeLight],
+			item 1 [Base.SmallAnimalBone] flags[Prop2;AllowDestroyedItem],
+		}
+        outputs
+        {
+            item 1 Base.Whistle_Bone,
+        }
+	}
+
+}

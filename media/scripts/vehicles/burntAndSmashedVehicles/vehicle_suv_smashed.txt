@@ -1,0 +1,155 @@
+module Base
+{
+	model Vehicles_SUVSmashedRear
+	{
+		mesh = vehicles/Vehicles_SUVCRASH_Rear,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle SUVSmashedRear
+	{
+		template! = SUV,
+
+		model
+		{
+			file = Vehicles_SUVSmashedRear,
+			scale = 1.8200,
+			offset = 0.0000 0.3022 0.0000,
+		}
+
+		extents = 0.9451 0.6374 2.0989,
+		physicsChassisShape = 0.9451 0.6374 2.0989,
+		centerOfMassOffset = 0.0000 0.3187 0.0000,
+		shadowExtents = 0.9451 2.0989,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.0714,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.0769,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+	model Vehicles_SUVSmashedRight
+	{
+		mesh = vehicles/Vehicles_SUVCRASH_Right,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle SUVSmashedRight
+	{
+		template! = SUV,
+
+		model
+		{
+			file = Vehicles_SUVSmashedRight,
+			scale = 1.8200,
+			offset = 0.0000 0.3022 0.0000,
+		}
+
+		extents = 0.9451 0.6374 2.0989,
+		physicsChassisShape = 0.9451 0.6374 2.0989,
+		centerOfMassOffset = 0.0000 0.3187 0.0000,
+		shadowExtents = 0.9451 2.0989,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.0714,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.0769,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+	model Vehicles_SUVSmashedLeft
+	{
+		mesh = vehicles/Vehicles_SUVCRASH_Left,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle SUVSmashedLeft
+	{
+		template! = SUV,
+
+		model
+		{
+			file = Vehicles_SUVSmashedLeft,
+			scale = 1.8200,
+			offset = 0.0000 0.3022 0.0000,
+		}
+
+		extents = 0.9451 0.6374 2.0989,
+		physicsChassisShape = 0.9451 0.6374 2.0989,
+		centerOfMassOffset = 0.0000 0.3187 0.0000,
+		shadowExtents = 0.9451 2.0989,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.0714,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.0769,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+	model Vehicles_SUVSmashedFront
+	{
+		mesh = vehicles/Vehicles_SUVCRASH_Front,
+		shader = vehicle_multiuv,
+		invertX = FALSE,
+		scale = 0.008,
+	}
+	vehicle SUVSmashedFront
+	{
+		template! = SUV,
+
+		model
+		{
+			file = Vehicles_SUVSmashedFront,
+			scale = 1.8200,
+			offset = 0.0000 0.3022 0.0000,
+		}
+
+		extents = 0.9451 0.6374 2.0989,
+		physicsChassisShape = 0.9451 0.6374 2.0989,
+		centerOfMassOffset = 0.0000 0.3187 0.0000,
+		shadowExtents = 0.9451 2.0989,
+		shadowOffset = 0.0000 0.0000,
+
+		attachment trailer
+		{
+			offset = 0.0000 -0.2747 -1.0714,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = -1.0000,
+		}
+
+		attachment trailerfront
+		{
+			offset = 0.0000 -0.2747 1.0769,
+			rotate = 0.0000 0.0000 0.0000,
+			zoffset = 1.0000,
+		}
+	}
+}

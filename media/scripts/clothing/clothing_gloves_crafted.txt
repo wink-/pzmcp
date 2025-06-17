@@ -1,0 +1,96 @@
+module Base
+{
+
+	item Gloves_BurlapWrap
+	{
+		DisplayName = Burlap Handwraps,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Armwrap_Burlap,
+		BloodLocation = Hands;ForeArm_L;ForeArm_R,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_BurlapWrap,
+		FabricType = Cotton,
+		Insulation = 0.5,
+		ScratchDefense = 10,
+		WindResistance = 0.5,
+		WorldStaticModel = GlovesLong_Ground,
+        ResearchableRecipes = SewLeatherGloves,
+	}
+
+	item Gloves_DenimWrap
+	{
+		DisplayName = Denim Handwraps,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Armwrap_Denim,
+		BloodLocation = Hands;ForeArm_L;ForeArm_R,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_DenimWrap,
+		FabricType = Denim,
+		Insulation = 0.5,
+		ScratchDefense = 20,
+		WindResistance = 0.5,
+		WorldStaticModel = GlovesLong_Ground,
+        ResearchableRecipes = SewLeatherGloves,
+	}
+
+	item Gloves_LeatherWrap
+	{
+		DisplayName = Leather Strip Handwraps,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Armwrap_Leather,
+		BiteDefense = 10,
+		BloodLocation = Hands;ForeArm_L;ForeArm_R,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_LeatherWrap,
+		FabricType = Leather,
+		Insulation = 0.5,
+		ScratchDefense = 20,
+		WindResistance = 0.5,
+		WorldStaticModel = GlovesLong_Ground,
+        ResearchableRecipes = SewLeatherGloves,
+	}
+
+	item Gloves_RagWrap
+	{
+		DisplayName = Rag Handwraps,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Armwrap_Rag,
+		BloodLocation = Hands;ForeArm_L;ForeArm_R,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_RagWrap,
+		FabricType = Cotton,
+		Insulation = 0.5,
+		ScratchDefense = 5,
+		WindResistance = 0.5,
+		WorldStaticModel = GlovesLong_Ground,
+        ResearchableRecipes = SewLeatherGloves,
+	}
+
+	item Gloves_TarpWrap
+	{
+		DisplayName = Tarp Handwraps,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.2,
+		Icon = Armwrap_Tarp,
+		BloodLocation = Hands;ForeArm_L;ForeArm_R,
+		BodyLocation = Hands,
+		ClothingItem = Gloves_TarpWrap,
+		FabricType = Denim,
+		Insulation = 0.5,
+		ScratchDefense = 20,
+		WaterResistance = 1.0,
+		WindResistance = 0.5,
+		WorldStaticModel = GlovesLong_Ground,
+        ResearchableRecipes = SewLeatherGloves,
+	}
+
+}

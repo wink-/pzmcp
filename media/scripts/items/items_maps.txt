@@ -1,0 +1,203 @@
+module Base
+{
+	/******* MAPS - LOCATION *******/
+	
+	item LouisvilleMap1
+	{
+		DisplayName = Map - Louisville Northwest,
+		DisplayCategory = Cartography,
+		Type = Map,
+		Weight = 0.2,
+		Icon = Map,
+		Map = LouisvilleMap1,
+		StaticModel = MapInHand,
+		WorldStaticModel = Map,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item LouisvilleMap2
+	{
+		DisplayName = Map - Louisville North,
+		DisplayCategory = Cartography,
+		Type = Map,
+		Weight = 0.2,
+		Icon = Map,
+		Map = LouisvilleMap2,
+		StaticModel = MapInHand,
+		WorldStaticModel = Map,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item LouisvilleMap3
+	{
+		DisplayName = Map - Louisville Northeast,
+		DisplayCategory = Cartography,
+		Type = Map,
+		Weight = 0.2,
+		Icon = Map,
+		Map = LouisvilleMap3,
+		StaticModel = MapInHand,
+		WorldStaticModel = Map,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item LouisvilleMap4
+	{
+		DisplayName = Map - Louisville West,
+		DisplayCategory = Cartography,
+		Type = Map,
+		Weight = 0.2,
+		Icon = Map,
+		Map = LouisvilleMap4,
+		StaticModel = MapInHand,
+		WorldStaticModel = Map,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item LouisvilleMap5
+	{
+		DisplayName = Map - Louisville Central,
+		DisplayCategory = Cartography,
+		Type = Map,
+		Weight = 0.2,
+		Icon = Map,
+		Map = LouisvilleMap5,
+		StaticModel = MapInHand,
+		WorldStaticModel = Map,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item LouisvilleMap6
+	{
+		DisplayName = Map - Louisville East,
+		DisplayCategory = Cartography,
+		Type = Map,
+		Weight = 0.2,
+		Icon = Map,
+		Map = LouisvilleMap6,
+		StaticModel = MapInHand,
+		WorldStaticModel = Map,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item LouisvilleMap7
+	{
+		DisplayName = Map - Louisville Southwest,
+		DisplayCategory = Cartography,
+		Type = Map,
+		Weight = 0.2,
+		Icon = Map,
+		Map = LouisvilleMap7,
+		StaticModel = MapInHand,
+		WorldStaticModel = Map,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item LouisvilleMap8
+	{
+		DisplayName = Map - Louisville South,
+		DisplayCategory = Cartography,
+		Type = Map,
+		Weight = 0.2,
+		Icon = Map,
+		Map = LouisvilleMap8,
+		StaticModel = MapInHand,
+		WorldStaticModel = Map,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item LouisvilleMap9
+	{
+		DisplayName = Map - Louisville Southeast,
+		DisplayCategory = Cartography,
+		Type = Map,
+		Weight = 0.2,
+		Icon = Map,
+		Map = LouisvilleMap9,
+		StaticModel = MapInHand,
+		WorldStaticModel = Map,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item MarchRidgeMap
+	{
+		DisplayName = Map - March Ridge,
+		DisplayCategory = Cartography,
+		Type = Map,
+		Weight = 0.2,
+		Icon = Map,
+		Map = MarchRidgeMap,
+		StaticModel = MapInHand,
+		WorldStaticModel = Map,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item MuldraughMap
+	{
+		DisplayName = Map - Muldraugh,
+		DisplayCategory = Cartography,
+		Type = Map,
+		Weight = 0.2,
+		Icon = Map,
+		Map = MuldraughMap,
+		SurvivalGear = TRUE,
+		StaticModel = MapInHand,
+		WorldStaticModel = Map,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item RiversideMap
+	{
+		DisplayCategory = Cartography,
+		Type = Map,
+		DisplayName = Map - Riverside,
+		Icon = Map,
+		Weight = 0.2,
+		Map = RiversideMap,
+		SurvivalGear = TRUE,
+		StaticModel = MapInHand,
+		WorldStaticModel = Map,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item RosewoodMap
+	{
+		DisplayName = Map - Rosewood,
+		DisplayCategory = Cartography,
+		Type = Map,
+		Weight = 0.2,
+		Icon = Map,
+		Map = RosewoodMap,
+		SurvivalGear = TRUE,
+		StaticModel = MapInHand,
+		WorldStaticModel = Map,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item WestpointMap
+	{
+		DisplayName = Map - West Point,
+		DisplayCategory = Cartography,
+		Type = Map,
+		Weight = 0.2,
+		Icon = Map,
+		Map = WestpointMap,
+		SurvivalGear = TRUE,
+		StaticModel = MapInHand,
+		WorldStaticModel = Map,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	/******* MAPS - MISC. *******/
+	
+	item Map
+	{
+		DisplayName = Map,
+		DisplayCategory = Cartography,
+		Type = Map,
+		Weight = 0.2,
+		Icon = Map,
+		StaticModel = MapInHand,
+		WorldStaticModel = Map,
+	}
+}

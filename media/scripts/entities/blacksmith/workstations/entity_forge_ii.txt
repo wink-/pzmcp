@@ -1,0 +1,68 @@
+module Base
+{
+    xuiSkin default
+    {
+        entity ES_Forge_II
+        {
+            LuaWindowClass      = ISEntityWindow,
+            DisplayName         = Forge,
+            Icon                = Build_SmeltingFurnace,
+        }
+    }
+
+    entity Forge
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Forge_II,
+            uiEnabled       = true,
+        }
+
+        component CraftBench
+        {
+            Recipes             = PrimitiveForge;Forge,
+        }
+
+        component SpriteConfig
+        {
+        	health          = 150,
+        	skillBaseHealth = 50,
+
+            face S
+            {
+                layer
+                {
+                    row = crafted_01_42 crafted_01_116 crafted_01_38,
+                }
+            }
+            face E
+            {
+                layer
+                {
+                    row = crafted_01_54,
+                    row = crafted_01_19,
+                    row = crafted_01_36,
+                }
+            }
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = Test,
+            time          = 50,
+            category      = Blacksmithing,
+            ToolTip       = Tooltip_craft_forgeIIDesc,
+            inputs
+            {
+                item 1  tags[MasonsTrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 30 [Base.StoneBlock],
+                item 1 tags[Concrete] flags[DontRecordInput],
+                item 1 [Base.BlacksmithAnvil],
+                item 1 [Base.BucketLargeWood],
+                item 1 [Base.Log],
+            }
+        }
+    }
+
+}

@@ -1,0 +1,104 @@
+module Base
+{
+	template vehicle Trunk
+	{
+		/* FIXME: This should be "Trunk" */
+		part TruckBed
+		{
+			area = TruckBed,
+			category = bodywork,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = true,
+			repairMechanic = true,
+			durability = 5,
+			container
+			{
+				conditionAffectsCapacity = true,
+				/* FIXME: This should be "ContainerAccess.Trunk" */
+				test = Vehicles.ContainerAccess.TruckBed,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		/* FIXME: This should be "TruckBed" */
+		part TruckBedOpen
+		{
+			area = TruckBed,
+			category = bodywork,
+			itemType = Base.NormalTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			durability = 5,
+			container
+			{
+				conditionAffectsCapacity = true,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBedOpen,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part TrailerTrunk
+		{
+			area = TruckBed,
+			category = bodywork,
+			itemType = Base.TrailerTrunk,
+			mechanicRequireKey = false,
+			repairMechanic = true,
+			durability = 5,
+			container
+			{
+			    capacity = 100,
+				conditionAffectsCapacity = false,
+				/* FIXME: This should be "ContainerAccess.TruckBed" */
+				test = Vehicles.ContainerAccess.TruckBedOpen,
+			}
+			lua
+			{
+				create = Vehicles.Create.Default,
+			}
+		}
+
+		part TrailerAnimalFood
+        {
+            area = TrailerAnimalFood,
+            category = bodywork,
+            itemType = Base.TrailerTrunk,
+            container
+            {
+                capacity = 20,
+                conditionAffectsCapacity = false,
+                test = Vehicles.ContainerAccess.TruckBed,
+            }
+            lua
+            {
+                create = Vehicles.Create.Default,
+                update = Vehicles.Update.TrailerAnimalFood, /* this should probably not be there, i'm gonna use this to update animals inside trailer, need like an "invisible" part for this */
+            }
+        }
+
+		part TrailerAnimalEggs
+        {
+            area = TrailerAnimalFood,
+            category = bodywork,
+            itemType = Base.TrailerTrunk,
+            container
+            {
+                capacity = 10,
+                conditionAffectsCapacity = false,
+                test = Vehicles.ContainerAccess.TruckBed,
+            }
+            lua
+            {
+                create = Vehicles.Create.Default,
+            }
+        }
+	}
+}
+

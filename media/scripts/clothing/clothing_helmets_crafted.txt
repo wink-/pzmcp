@@ -1,0 +1,48 @@
+module Base
+{
+
+	item Hat_CrashHelmetFULL_Spiked
+	{
+		DisplayName = Spiked Helmet - Motorcycle,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		IconsForTexture = HelmetMotorcycleFullBlue_Spiked;HelmetMotorcycleFullBlack_Spiked;HelmetMotorcycleFullRed_Spiked,
+		BloodLocation = FullHelmet,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_CrashHelmetFULL_Spiked,
+		CombatSpeedModifier = 0.95,
+		Insulation = 1.0,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		WindResistance = 1.0,
+		VisionModifier = 0.5,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.35,
+		Tags = IgnoreZombieDensity;HasMetal;Spiked,
+	}
+
+	item Hat_CrashHelmetFULL_Black_Spiked
+	{
+		DisplayName = Spiked Helmet - Motorcycle,
+		DisplayCategory = ProtectiveGear,
+		Type = Clothing,
+		Icon = HelmetMotorcycleFullBlack_Spiked,
+		BloodLocation = FullHelmet,
+		BodyLocation = FullHat,
+		CanHaveHoles = FALSE,
+		ChanceToFall = 0,
+		ClothingItem = Hat_CrashHelmetFULL_Black_Spiked,
+		CombatSpeedModifier = 0.95,
+		Insulation = 1.0,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		WindResistance = 1.0,
+		VisionModifier = 0.5,
+		HearingModifier = 0.75,
+		DiscomfortModifier = 0.35,
+		Tags = IgnoreZombieDensity;HasMetal;Spiked,
+	}
+
+}

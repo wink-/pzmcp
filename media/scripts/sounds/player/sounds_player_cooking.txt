@@ -1,0 +1,255 @@
+module Base
+{
+	sound OpenCannedFood
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/OpenCannedFood,
+		}
+	}
+
+	sound OpenCannedFoodWithCanOpener
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/CannedFood/Open/WithCanOpener,
+		}
+	}
+
+	sound OpenCannedFoodWithKnife
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/CannedFood/Open/WithKnife,
+		}
+	}
+	
+	sound OpenCannedFoodWithTab
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/CannedFood/Open/WithTab,
+		}
+	}
+	
+	sound ScrapeCannedFood 
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/CannedFood/Scrape,
+		}
+	}
+	
+	sound SliceBread
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/SliceBread,
+		}
+	}
+
+	sound Chop
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/Chop,
+		}
+	}
+
+	sound SliceMeat
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/SliceMeat,
+		}
+	}
+
+	sound CorkPopChampagne 
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/CorkPop/Champagne,
+		}
+	}
+
+	sound CorkPopWine 
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/CorkPop/Wine,
+		}
+	}
+
+	sound AddItemInRecipe
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/AddItemInRecipe,
+		}
+	}
+
+	sound AddItemInBeverage
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/AddItemInBeverage,
+		}
+	}
+
+	sound AddDryItemInBeverage
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/AddDryItemInBeverage,
+		}
+	}
+
+	sound AddWetItemInBeverage
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/AddWetItemInBeverage,
+		}
+	}
+
+	sound MakeCoffee
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/MakeCoffee,
+		}
+	}
+
+	sound BoilingFood
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/BoilingFood,
+		}
+	}
+
+	sound FryingFood
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/FryingFood,
+		}
+	}
+
+	sound EmptyPan
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/EmptyPan,
+		}
+	}
+
+	sound EmptyPot
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/EmptyPot,
+		}
+	}
+
+	sound EmptyPotFromWater
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/EmptyPotFromWater,
+		}
+	}
+
+	sound EmptyBowlFromFood
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/EmptyBowlFromFood,
+		}
+	}
+
+	sound EmptyBowlFromSoup
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/EmptyBowlFromSoup,
+		}
+	}
+
+	sound EmptyBowlFromWater
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/EmptyBowlFromWater,
+		}
+	}
+
+	sound EmptyMayonnaise
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/EmptyMayonaisse,
+		}
+	}
+
+	sound OpenWine
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/Drinks/OpenWine,
+		}
+	}
+
+	sound OpenBeerBottle
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/Drinks/OpenBeerBottle,
+		}
+	}
+
+	sound OpenBottle
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/Drinks/OpenBottle,
+		}
+	}
+
+	sound OpenCan
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Cooking/Drinks/OpenCan,
+		}
+	}
+
+}

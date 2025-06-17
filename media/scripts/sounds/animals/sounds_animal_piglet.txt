@@ -1,0 +1,74 @@
+module Base
+{
+    sound AnimalVoicePigletIdle
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Piglet/Voice/Idle,
+        }
+    }
+
+    sound AnimalVoicePigletDeath
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Piglet/Voice/Death,
+        }
+    }
+
+    sound AnimalVoicePigletStressed
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Piglet/Voice/Stressed,
+        }
+    }
+
+    sound AnimalVoicePigletPain
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Piglet/Voice/Pain,
+        }
+    }
+
+    sound AnimalFootstepsPigletWalkFront
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Piglet/Footsteps/Walk/Front,
+        }
+    }
+
+    sound AnimalFootstepsPigletWalkBack
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Piglet/Footsteps/Walk/Back,
+        }
+    }
+
+    sound AnimalFootstepsPigletRun
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Piglet/Footsteps/Run,
+        }
+    }
+
+    sound AnimalFoleyPigletBodyfall
+    {
+        category = Animals,
+        clip
+        {
+            event = Animal/Piglet/Foley/Bodyfall,
+        }
+    }
+}

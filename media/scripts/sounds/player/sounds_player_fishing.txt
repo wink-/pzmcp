@@ -1,0 +1,173 @@
+module Base
+{
+	sound StrikeWithFishingSpear
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Spear/Strike,
+		}
+	}
+
+	sound LureHitWater
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Lure/HitWater,
+		}
+	}
+
+	sound CatchFish
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Catch/Fish,
+		}
+	}
+
+	sound CatchFishBig
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Catch/FishBig,
+		}
+	}
+
+	sound CatchFishSmall
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Catch/FishSmall,
+		}
+	}
+
+	sound CatchTrashWithRod
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Catch/Trash,
+		}
+	}
+
+	sound CheckFishingNet
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Net/Check,
+		}
+	}
+
+	sound PlaceFishingNet
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Net/Check,
+		}
+	}
+
+	sound RemoveFishingNet
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Net/Check,
+		}
+	}
+
+	sound CastFishingLine
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Line/Cast,
+		}
+	}
+
+	sound BreakFishingLine
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Line/Break,
+		}
+	}
+
+	sound RemoveBaitToFishingLine
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Line/RemoveBait,
+		}
+	}
+
+	sound AddBaitToFishingLine
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Line/AddBait,
+		}
+	}
+
+	sound RemoveBaitFromFishingLine
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Line/RemoveBait,
+		}
+	}
+
+	sound ReelFishingLineFast
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Line/Reel/Fast,
+		}
+	}
+
+	sound ReelFishingLineMedium
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Line/Reel/Medium,
+		}
+	}
+
+	sound ReelFishingLineSlow
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Line/Reel/Slow,
+		}
+	}
+
+	sound PickUpFish
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/Fish/PickUp,
+		}
+	}
+
+	sound MakeChumBase
+	{
+		category = Player,
+		clip
+		{
+			event = Character/Survival/Fishing/MakeChumBase,
+		}
+	}
+}

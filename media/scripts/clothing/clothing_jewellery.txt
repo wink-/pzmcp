@@ -1,0 +1,1518 @@
+module Base
+{
+	item Locket
+	{
+		DisplayName = Locket,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Locket,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_Locket,
+		Cosmetic = TRUE,
+		MetalValue = 10,
+		WorldStaticModel = Locket,
+		Tags = HasMetal,
+		OnCreate = SpecialLootSpawns.OnCreateLocket,
+		Tags = HasMetal;IsMemento,
+	}
+
+	item Necklace_DogTag
+	{
+		DisplayName = Dog Tags,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_Dogtags,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_DogTag,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_Dogtags_Ground,
+		OnCreate = SpecialLootSpawns.OnCreateDogTag,
+		Tags = HasMetal;DogTag;FitsKeyRing;ApplyOwnerName,
+	}
+
+	item Necklace_DogTag_Female
+	{
+		DisplayName = Dog Tags,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_Dogtags,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_DogTag_Female,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_Dogtags_Ground,
+		OnCreate = SpecialLootSpawns.OnCreateDogTag_Female,
+		Tags = HasMetal;DogTag;FitsKeyRing;ApplyOwnerName,
+	}
+
+	item Necklace_DogTag_Male
+	{
+		DisplayName = Dog Tags,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_Dogtags,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_DogTag_Male,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_Dogtags_Ground,
+		OnCreate = SpecialLootSpawns.OnCreateDogTag_Male,
+		Tags = HasMetal;DogTag;FitsKeyRing;ApplyOwnerName,
+	}
+	
+	item Necklace_Gold
+	{
+		DisplayName = Necklace - Gold,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_Gold,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_Gold,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_Gold_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item Necklace_GoldRuby
+	{
+		DisplayName = Necklace - Gold with Ruby Stone,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_GoldRuby,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_GoldRuby,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_GoldRuby_Ground,
+		Tags = HasMetal;TinyGoldScrap;RubyJewellery,
+	}
+	
+	item Necklace_GoldDiamond
+	{
+		DisplayName = Necklace - Gold with Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_GoldDiamond,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_GoldDiamond,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_GoldDiamond_Ground,
+		Tags = HasMetal;TinyGoldScrap;DiamondJewellery,
+	}
+	
+	item Necklace_Silver
+	{
+		DisplayName = Necklace - Silver,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_Silver,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_Silver,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_Silver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item Necklace_SilverSapphire
+	{
+		DisplayName = Necklace - Silver with Sapphire Stone,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_SilverSapphire,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_SilverSapphire,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_SilverSapphire_Ground,
+		Tags = HasMetal;SapphireJewellery;TinySilverScrap;SapphireJewellery,
+	}
+	
+	item Necklace_SilverCrucifix
+	{
+		DisplayName = Necklace - Silver with Crucifix,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_SilverCrucifix,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_SilverCrucifix,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_SilverCrucifix_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item Necklace_SilverDiamond
+	{
+		DisplayName = Necklace - Silver with Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_SilverDiamond,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_SilverDiamond,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_SilverDiamond_Ground,
+		Tags = HasMetal;TinySilverScrap;DiamondJewellery,
+	}
+	
+	item Necklace_Crucifix
+	{
+		DisplayName = Necklace - Crucifix,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_Crucifix,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_Crucifix,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_Crucifix_Ground,
+		Tags = HasMetal,
+	}
+	
+	item Necklace_YingYang
+	{
+		DisplayName = Necklace - Yin and Yang Symbol,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_YinYang,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_YingYang,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_YingYang_Ground,
+	}
+	
+	item Necklace_Pearl
+	{
+		DisplayName = Necklace - Pearl,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklacepearl,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_Pearl,
+		Cosmetic = TRUE,
+		WorldStaticModel = Necklace_Pearl_Ground,
+	}
+	
+	item NecklaceLong_Gold
+	{
+		DisplayName = Long Necklace - Gold,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NecklaceLong_Gold,
+		BodyLocation = Necklace_Long,
+		ClothingItem = NecklaceLong_Gold,
+		Cosmetic = TRUE,
+		WorldStaticModel = NecklaceLong_Gold_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item NecklaceLong_GoldDiamond
+	{
+		DisplayName = Long Necklace - Gold with Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NecklaceLong_GoldDiamond,
+		BodyLocation = Necklace_Long,
+		ClothingItem = NecklaceLong_GoldDiamond,
+		Cosmetic = TRUE,
+		WorldStaticModel = NecklaceLong_GoldDiamond_Ground,
+		Tags = HasMetal;TinyGoldScrap;DiamondJewellery,
+	}
+	
+	item NecklaceLong_Silver
+	{
+		DisplayName = Long Necklace - Silver,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NecklaceLong_Silver,
+		BodyLocation = Necklace_Long,
+		ClothingItem = NecklaceLong_Silver,
+		Cosmetic = TRUE,
+		WorldStaticModel = NecklaceLong_Silver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item NecklaceLong_SilverEmerald
+	{
+		DisplayName = Long Necklace - Silver with Emerald,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NecklaceLong_SilverEmerald,
+		BodyLocation = Necklace_Long,
+		ClothingItem = NecklaceLong_SilverEmerald,
+		Cosmetic = TRUE,
+		WorldStaticModel = NecklaceLong_SilverEmerald_Ground,
+		Tags = HasMetal;TinySilverScrap;EmeraldJewellery,
+	}
+	
+	item NecklaceLong_SilverSapphire
+	{
+		DisplayName = Long Necklace - Silver with Sapphire Stone,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NecklaceLong_SilverSapphire,
+		BodyLocation = Necklace_Long,
+		ClothingItem = NecklaceLong_SilverSapphire,
+		Cosmetic = TRUE,
+		WorldStaticModel = NecklaceLongSilverSapphire_Ground,
+		Tags = HasMetal;TinySilverScrap;SapphireJewellery,
+	}
+	
+	item NecklaceLong_SilverDiamond
+	{
+		DisplayName = Long Necklace - Silver with Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NecklaceLong_SilverDiamond,
+		BodyLocation = Necklace_Long,
+		ClothingItem = NecklaceLong_SilverDiamond,
+		Cosmetic = TRUE,
+		WorldStaticModel = NecklaceLongSilverDiamond_Ground,
+		Tags = HasMetal;TinySilverScrap;DiamondScrap,
+	}
+	
+	item NecklaceLong_Amber
+	{
+		DisplayName = Long Necklace - Amber Stone,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NecklaceLong_Amber,
+		BodyLocation = Necklace_Long,
+		ClothingItem = NecklaceLong_Amber,
+		Cosmetic = TRUE,
+		WorldStaticModel = NecklaceLong_Amber_Ground,
+	}
+	
+	item Necklace_Choker
+	{
+		DisplayName = Choker,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_Choker,
+		BodyLocation = Neck,
+		ClothingItem = Necklace_Choker,
+		Cosmetic = TRUE,
+		WorldStaticModel = Choker_Ground,
+	}
+	
+	item Necklace_Choker_Sapphire
+	{
+		DisplayName = Choker - Sapphire Stone,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_Choker_Sapphire,
+		BodyLocation = Neck,
+		ClothingItem = Necklace_Choker_Sapphire,
+		Cosmetic = TRUE,
+		WorldStaticModel = Choker_Sapphire_Ground,
+		Tags = SapphireJewellery,
+	}
+	
+	item Necklace_Choker_Amber
+	{
+		DisplayName = Choker - Amber Stone,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_Choker_Amber,
+		BodyLocation = Neck,
+		ClothingItem = Necklace_Choker_Amber,
+		Cosmetic = TRUE,
+		WorldStaticModel = Choker_Amber_Ground,
+	}
+	
+	item Necklace_Choker_Diamond
+	{
+		DisplayName = Choker - Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Necklace_Choker_Diamond,
+		BodyLocation = Neck,
+		ClothingItem = Necklace_Choker_Diamond,
+		Cosmetic = TRUE,
+		WorldStaticModel = Choker_Diamond_Ground,
+		Tags = DiamondJewellery,
+	}
+	
+	item NoseRing_Gold
+	{
+		DisplayName = Nose Ring - Gold,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NoseRing_Gold,
+		BodyLocation = Nose,
+		ClothingItem = NoseRing_Gold,
+		Cosmetic = TRUE,
+		WorldStaticModel = Nosering_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item NoseRing_Silver
+	{
+		DisplayName = Nose Ring - Silver,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NoseRing_Silver,
+		BodyLocation = Nose,
+		ClothingItem = NoseRing_Silver,
+		Cosmetic = TRUE,
+		WorldStaticModel = NoseringSilver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item NoseStud_Gold
+	{
+		DisplayName = Nose Stud - Gold,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NoseStud_Gold,
+		BodyLocation = Nose,
+		ClothingItem = NoseStud_Gold,
+		Cosmetic = TRUE,
+		WorldStaticModel = NoseStud_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item NoseStud_Silver
+	{
+		DisplayName = Nose Stud - Silver,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NoseStud_Silver,
+		BodyLocation = Nose,
+		ClothingItem = NoseStud_Silver,
+		Cosmetic = TRUE,
+		WorldStaticModel = NoseStudSilver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item Earring_LoopLrg_Gold
+	{
+		DisplayName = Earrings - Large Gold Looped,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_LoopLrg_Gold,
+		BodyLocation = Ears,
+		ClothingItem = Earring_LoopLrg_Gold_Both,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopLrg_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item Earring_LoopLrg_Silver
+	{
+		DisplayName = Earrings - Large Silver Looped,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_LoopLrg_Silver,
+		BodyLocation = Ears,
+		ClothingItem = Earring_LoopLrg_Silver_Both,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopLrgSilver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item Earring_LoopMed_Silver
+	{
+		DisplayName = Earrings - Medium Silver Looped,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_LoopMed_Silver,
+		BodyLocation = Ears,
+		ClothingItem = Earring_LoopMed_Silver_Both,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopMedSilver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item Earring_LoopMed_Gold
+	{
+		DisplayName = Earrings - Medium Gold Looped,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_LoopMed_Gold,
+		BodyLocation = Ears,
+		ClothingItem = Earring_LoopMed_Gold_Both,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopMed_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item Earring_LoopSmall_Silver_Both
+	{
+		DisplayName = Earrings - Small Silver Looped,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_LoopSmall_Silver,
+		BodyLocation = Ears,
+		ClothingItem = Earring_LoopSmall_Silver_Both,
+		ClothingItemExtra = Earring_LoopSmall_Silver_Top,
+		ClothingItemExtraOption = PutOnEartop,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmallSilver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item Earring_LoopSmall_Gold_Both
+	{
+		DisplayName = Earrings - Small Gold Looped,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_LoopSmall_Gold,
+		BodyLocation = Ears,
+		ClothingItem = Earring_LoopSmall_Gold_Both,
+		ClothingItemExtra = Earring_LoopSmall_Gold_Top,
+		ClothingItemExtraOption = PutOnEartop,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmall_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item Earring_LoopSmall_Gold_Top
+	{
+		DisplayName = Earrings - Small Gold Looped - Top,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_LoopSmall_Gold,
+		BodyLocation = EarTop,
+		ClothingItem = Earring_LoopSmall_Gold_Top,
+		ClothingItemExtra = Earring_LoopSmall_Gold_Both,
+		ClothingItemExtraOption = PutOnEarlobe,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmall_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item Earring_LoopSmall_Silver_Top
+	{
+		DisplayName = Earrings - Small Silver Looped - Top,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_LoopSmall_Silver,
+		BodyLocation = EarTop,
+		ClothingItem = Earring_LoopSmall_Silver_Top,
+		ClothingItemExtra = Earring_LoopSmall_Silver_Both,
+		ClothingItemExtraOption = PutOnEarlobe,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmallSilver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item Earring_Stud_Gold
+	{
+		DisplayName = Earrings - Gold Stud,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_Stud_Gold,
+		BodyLocation = Ears,
+		ClothingItem = Earring_Stud_Gold_Both,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmall_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item Earring_Stud_Silver
+	{
+		DisplayName = Earrings - Silver Stud,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_Stud_Silver,
+		BodyLocation = Ears,
+		ClothingItem = Earring_Stud_Silver_Both,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmallSilver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item Earring_Stone_Sapphire
+	{
+		DisplayName = Earrings - Sapphire Stone,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_Stone_Sapphire,
+		BodyLocation = Ears,
+		ClothingItem = Earring_Stone_Sapphire_Both,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmallSilver_Ground,
+		Tags = HasMetal;2SapphireJewellery,
+	}
+	
+	item Earring_Stone_Emerald
+	{
+		DisplayName = Earrings - Emerald,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_Stone_Emerald,
+		BodyLocation = Ears,
+		ClothingItem = Earring_Stone_Emerald_Both,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmallSilver_Ground,
+		Tags = HasMetal;2EmeraldJewellery,
+	}
+	
+	item Earring_Stone_Ruby
+	{
+		DisplayName = Earrings - Ruby,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_Stone_Ruby,
+		BodyLocation = Ears,
+		ClothingItem = Earring_Stone_Ruby_Both,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmallSilver_Ground,
+		Tags = HasMetal;2RubyJewellery,
+	}
+	
+	item Earring_Pearl
+	{
+		DisplayName = Earrings - Pearl,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_Stud_Pearl,
+		BodyLocation = Ears,
+		ClothingItem = Earring_Pearl_Both,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmallSilver_Ground,
+		Tags = HasMetal,
+	}
+	
+	item Earring_Dangly_Sapphire
+	{
+		DisplayName = Dangly Earrings - Sapphire Stone,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_Dangly_Sapphire,
+		BodyLocation = Ears,
+		ClothingItem = Earring_Dangly_Sapphire_Both,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmallSilver_Ground,
+		Tags = HasMetal;2SapphireJewellery,
+	}
+	
+	item Earring_Dangly_Emerald
+	{
+		DisplayName = Dangly Earrings - Emerald,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_Dangly_Emerald,
+		BodyLocation = Ears,
+		ClothingItem = Earring_Dangly_Emerald_Both,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmallSilver_Ground,
+		Tags = HasMetal;2EmeraldJewellery,
+	}
+	
+	item Earring_Dangly_Ruby
+	{
+		DisplayName = Dangly Earrings - Ruby,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_Dangly_Ruby,
+		BodyLocation = Ears,
+		ClothingItem = Earring_Dangly_Ruby_Both,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmallSilver_Ground,
+		Tags = HasMetal;2RubyJewellery,
+	}
+	
+	item Earring_Dangly_Diamond
+	{
+		DisplayName = Dangly Earrings - Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_Dangly_Diamond,
+		BodyLocation = Ears,
+		ClothingItem = Earring_Dangly_Diamond_Both,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmallSilver_Ground,
+		Tags = HasMetal;2DiamondJewellery,
+	}
+	
+	item Earring_Dangly_Pearl
+	{
+		DisplayName = Dangly Earrings - Pearl,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Earring_Dangly_Pearl,
+		BodyLocation = Ears,
+		ClothingItem = Earring_Dangly_Pearl_Both,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmallSilver_Ground,
+		Tags = HasMetal,
+	}
+	
+	item Ring_Right_MiddleFinger_Gold
+	{
+		DisplayName = Ring - Gold,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_Gold,
+		BodyLocation = Right_MiddleFinger,
+		ClothingExtraSubmenu = RightMiddleFinger,
+		ClothingItem = Ring_Right_MiddleFinger_Gold,
+		ClothingItemExtra = Ring_Left_MiddleFinger_Gold;Ring_Left_RingFinger_Gold;Ring_Right_RingFinger_Gold,
+		ClothingItemExtraOption = LeftMiddleFinger;LeftRingFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Gold_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item Ring_Left_MiddleFinger_Gold
+	{
+		DisplayName = Ring - Gold,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_Gold,
+		BodyLocation = Left_MiddleFinger,
+		ClothingExtraSubmenu = LeftMiddleFinger,
+		ClothingItem = Ring_Left_MiddleFinger_Gold,
+		ClothingItemExtra = Ring_Right_MiddleFinger_Gold;Ring_Left_RingFinger_Gold;Ring_Right_RingFinger_Gold,
+		ClothingItemExtraOption = RightMiddleFinger;LeftRingFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Gold_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item Ring_Right_RingFinger_Gold
+	{
+		DisplayName = Ring - Gold,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_Gold,
+		BodyLocation = Right_RingFinger,
+		ClothingExtraSubmenu = RightRingFinger,
+		ClothingItem = Ring_Right_RingFinger_Gold,
+		ClothingItemExtra = Ring_Left_MiddleFinger_Gold;Ring_Right_MiddleFinger_Gold;Ring_Left_RingFinger_Gold,
+		ClothingItemExtraOption = LeftMiddleFinger;RightMiddleFinger;LeftRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Gold_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item Ring_Left_RingFinger_Gold
+	{
+		DisplayName = Ring - Gold,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_Gold,
+		BodyLocation = Left_RingFinger,
+		ClothingExtraSubmenu = LeftRingFinger,
+		ClothingItem = Ring_Left_RingFinger_Gold,
+		ClothingItemExtra = Ring_Left_MiddleFinger_Gold;Ring_Right_MiddleFinger_Gold;Ring_Right_RingFinger_Gold,
+		ClothingItemExtraOption = LeftMiddleFinger;RightMiddleFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Gold_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item Ring_Right_MiddleFinger_Silver
+	{
+		DisplayName = Ring - Silver,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_Silver,
+		BodyLocation = Right_MiddleFinger,
+		ClothingExtraSubmenu = RightMiddleFinger,
+		ClothingItem = Ring_Right_MiddleFinger_Silver,
+		ClothingItemExtra = Ring_Left_MiddleFinger_Silver;Ring_Left_RingFinger_Silver;Ring_Right_RingFinger_Silver,
+		ClothingItemExtraOption = LeftMiddleFinger;LeftRingFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Silver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item Ring_Left_MiddleFinger_Silver
+	{
+		DisplayName = Ring - Silver,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_Silver,
+		BodyLocation = Left_MiddleFinger,
+		ClothingExtraSubmenu = LeftMiddleFinger,
+		ClothingItem = Ring_Left_MiddleFinger_Silver,
+		ClothingItemExtra = Ring_Right_MiddleFinger_Silver;Ring_Left_RingFinger_Silver;Ring_Right_RingFinger_Silver,
+		ClothingItemExtraOption = RightMiddleFinger;LeftRingFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Silver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item Ring_Right_RingFinger_Silver
+	{
+		DisplayName = Ring - Silver,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_Silver,
+		BodyLocation = Right_RingFinger,
+		ClothingExtraSubmenu = RightRingFinger,
+		ClothingItem = Ring_Right_RingFinger_Silver,
+		ClothingItemExtra = Ring_Left_MiddleFinger_Silver;Ring_Right_MiddleFinger_Silver;Ring_Left_RingFinger_Silver,
+		ClothingItemExtraOption = LeftMiddleFinger;RightMiddleFinger;LeftRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Silver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item Ring_Left_RingFinger_Silver
+	{
+		DisplayName = Ring - Silver,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_Silver,
+		BodyLocation = Left_RingFinger,
+		ClothingExtraSubmenu = LeftRingFinger,
+		ClothingItem = Ring_Left_RingFinger_Silver,
+		ClothingItemExtra = Ring_Left_MiddleFinger_Silver;Ring_Right_MiddleFinger_Silver;Ring_Right_RingFinger_Silver,
+		ClothingItemExtraOption = LeftMiddleFinger;RightMiddleFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Silver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item Ring_Right_MiddleFinger_SilverDiamond
+	{
+		DisplayName = Ring - Silver with Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_SilverDiamond,
+		BodyLocation = Right_MiddleFinger,
+		ClothingExtraSubmenu = RightMiddleFinger,
+		ClothingItem = Ring_Right_MiddleFinger_SilverDiamond,
+		ClothingItemExtra = Ring_Left_MiddleFinger_SilverDiamond;Ring_Left_RingFinger_SilverDiamond;Ring_Right_RingFinger_SilverDiamond,
+		ClothingItemExtraOption = LeftMiddleFinger;LeftRingFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Silver_Ground,
+		Tags = HasMetal;TinySilverScrap;DiamondScrap,
+	}
+	
+	item Ring_Left_MiddleFinger_SilverDiamond
+	{
+		DisplayName = Ring - Silver with Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_SilverDiamond,
+		BodyLocation = Left_MiddleFinger,
+		ClothingExtraSubmenu = LeftMiddleFinger,
+		ClothingItem = Ring_Left_MiddleFinger_SilverDiamond,
+		ClothingItemExtra = Ring_Right_MiddleFinger_SilverDiamond;Ring_Left_RingFinger_SilverDiamond;Ring_Right_RingFinger_SilverDiamond,
+		ClothingItemExtraOption = RightMiddleFinger;LeftRingFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Silver_Ground,
+		Tags = HasMetal;TinySilverScrap;DiamondScrap,
+	}
+	
+	item Ring_Right_RingFinger_SilverDiamond
+	{
+		DisplayName = Ring - Silver with Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_SilverDiamond,
+		BodyLocation = Right_RingFinger,
+		ClothingExtraSubmenu = RightRingFinger,
+		ClothingItem = Ring_Right_RingFinger_SilverDiamond,
+		ClothingItemExtra = Ring_Left_MiddleFinger_SilverDiamond;Ring_Right_MiddleFinger_SilverDiamond;Ring_Left_RingFinger_SilverDiamond,
+		ClothingItemExtraOption = LeftMiddleFinger;RightMiddleFinger;LeftRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Silver_Ground,
+		Tags = HasMetal;TinySilverScrap;DiamondScrap,
+	}
+	
+	item Ring_Left_RingFinger_SilverDiamond
+	{
+		DisplayName = Ring - Silver with Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_SilverDiamond,
+		BodyLocation = Left_RingFinger,
+		ClothingExtraSubmenu = LeftRingFinger,
+		ClothingItem = Ring_Left_RingFinger_SilverDiamond,
+		ClothingItemExtra = Ring_Left_MiddleFinger_SilverDiamond;Ring_Right_MiddleFinger_SilverDiamond;Ring_Right_RingFinger_SilverDiamond,
+		ClothingItemExtraOption = LeftMiddleFinger;RightMiddleFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Silver_Ground,
+		Tags = HasMetal;TinySilverScrap;DiamondScrap,
+	}
+	
+	item Ring_Right_MiddleFinger_GoldRuby
+	{
+		DisplayName = Ring - Gold with Ruby,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_GoldRuby,
+		BodyLocation = Right_MiddleFinger,
+		ClothingExtraSubmenu = RightMiddleFinger,
+		ClothingItem = Ring_Right_MiddleFinger_GoldRuby,
+		ClothingItemExtra = Ring_Left_MiddleFinger_GoldRuby;Ring_Left_RingFinger_GoldRuby;Ring_Right_RingFinger_GoldRuby,
+		ClothingItemExtraOption = LeftMiddleFinger;LeftRingFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Gold_Ground,
+		Tags = HasMetal;TinyGoldScrap;RubyJewellery,
+	}
+	
+	item Ring_Left_MiddleFinger_GoldRuby
+	{
+		DisplayName = Ring - Gold with Ruby,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_GoldRuby,
+		BodyLocation = Left_MiddleFinger,
+		ClothingExtraSubmenu = LeftMiddleFinger,
+		ClothingItem = Ring_Left_MiddleFinger_GoldRuby,
+		ClothingItemExtra = Ring_Right_MiddleFinger_GoldRuby;Ring_Left_RingFinger_GoldRuby;Ring_Right_RingFinger_GoldRuby,
+		ClothingItemExtraOption = RightMiddleFinger;LeftRingFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Gold_Ground,
+		Tags = HasMetal;TinyGoldScrap;RubyJewellery,
+	}
+	
+	item Ring_Right_RingFinger_GoldRuby
+	{
+		DisplayName = Ring - Gold with Ruby,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_GoldRuby,
+		BodyLocation = Right_RingFinger,
+		ClothingExtraSubmenu = RightRingFinger,
+		ClothingItem = Ring_Right_RingFinger_GoldRuby,
+		ClothingItemExtra = Ring_Left_MiddleFinger_GoldRuby;Ring_Right_MiddleFinger_GoldRuby;Ring_Left_RingFinger_GoldRuby,
+		ClothingItemExtraOption = LeftMiddleFinger;RightMiddleFinger;LeftRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Gold_Ground,
+		Tags = HasMetal;TinyGoldScrap;RubyJewellery,
+	}
+	
+	item Ring_Left_RingFinger_GoldRuby
+	{
+		DisplayName = Ring - Gold with Ruby,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_GoldRuby,
+		BodyLocation = Left_RingFinger,
+		ClothingExtraSubmenu = LeftRingFinger,
+		ClothingItem = Ring_Left_RingFinger_GoldRuby,
+		ClothingItemExtra = Ring_Left_MiddleFinger_GoldRuby;Ring_Right_MiddleFinger_GoldRuby;Ring_Right_RingFinger_GoldRuby,
+		ClothingItemExtraOption = LeftMiddleFinger;RightMiddleFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Gold_Ground,
+		Tags = HasMetal;TinyGoldScrap;RubyJewellery,
+	}
+	
+	item Ring_Right_MiddleFinger_GoldDiamond
+	{
+		DisplayName = Ring - Gold with Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_GoldDiamond,
+		BodyLocation = Right_MiddleFinger,
+		ClothingExtraSubmenu = RightMiddleFinger,
+		ClothingItem = Ring_Right_MiddleFinger_GoldDiamond,
+		ClothingItemExtra = Ring_Left_MiddleFinger_GoldDiamond;Ring_Left_RingFinger_GoldDiamond;Ring_Right_RingFinger_GoldDiamond,
+		ClothingItemExtraOption = LeftMiddleFinger;LeftRingFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Gold_Ground,
+		Tags = HasMetal;TinyGoldScrap;DiamondJewellery,
+	}
+	
+	item Ring_Left_MiddleFinger_GoldDiamond
+	{
+		DisplayName = Ring - Gold with Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_GoldDiamond,
+		BodyLocation = Left_MiddleFinger,
+		ClothingExtraSubmenu = LeftMiddleFinger,
+		ClothingItem = Ring_Left_MiddleFinger_GoldDiamond,
+		ClothingItemExtra = Ring_Right_MiddleFinger_GoldDiamond;Ring_Left_RingFinger_GoldDiamond;Ring_Right_RingFinger_GoldDiamond,
+		ClothingItemExtraOption = RightMiddleFinger;LeftRingFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Gold_Ground,
+		Tags = HasMetal;TinyGoldScrap;DiamondJewellery,
+	}
+	
+	item Ring_Right_RingFinger_GoldDiamond
+	{
+		DisplayName = Ring - Gold with Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_GoldDiamond,
+		BodyLocation = Right_RingFinger,
+		ClothingExtraSubmenu = RightRingFinger,
+		ClothingItem = Ring_Right_RingFinger_GoldDiamond,
+		ClothingItemExtra = Ring_Left_MiddleFinger_GoldDiamond;Ring_Right_MiddleFinger_GoldDiamond;Ring_Left_RingFinger_GoldDiamond,
+		ClothingItemExtraOption = LeftMiddleFinger;RightMiddleFinger;LeftRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Gold_Ground,
+		Tags = HasMetal;TinyGoldScrap;DiamondJewellery,
+	}
+	
+	item Ring_Left_RingFinger_GoldDiamond
+	{
+		DisplayName = Ring - Gold with Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_GoldDiamond,
+		BodyLocation = Left_RingFinger,
+		ClothingExtraSubmenu = LeftRingFinger,
+		ClothingItem = Ring_Left_RingFinger_GoldDiamond,
+		ClothingItemExtra = Ring_Left_MiddleFinger_GoldDiamond;Ring_Right_MiddleFinger_GoldDiamond;Ring_Right_RingFinger_GoldDiamond,
+		ClothingItemExtraOption = LeftMiddleFinger;RightMiddleFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Gold_Ground,
+		Tags = HasMetal;TinyGoldScrap;DiamondJewellery,
+	}
+	
+	item Bracelet_BangleRightGold
+	{
+		DisplayName = Bangle - Gold,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bracelet_Bangle,
+		BodyLocation = RightWrist,
+		ClothingExtraSubmenu = RightWrist,
+		ClothingItem = Bracelet_BangleRightGold,
+		ClothingItemExtra = Bracelet_BangleLeftGold,
+		ClothingItemExtraOption = LeftWrist,
+		Cosmetic = TRUE,
+		WorldStaticModel = Bracelet_Bangle_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item Bracelet_BangleLeftGold
+	{
+		DisplayName = Bangle - Gold,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bracelet_Bangle,
+		BodyLocation = LeftWrist,
+		ClothingExtraSubmenu = LeftWrist,
+		ClothingItem = Bracelet_BangleLeftGold,
+		ClothingItemExtra = Bracelet_BangleRightGold,
+		ClothingItemExtraOption = RightWrist,
+		Cosmetic = TRUE,
+		WorldStaticModel = Bracelet_Bangle_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item Bracelet_ChainRightGold
+	{
+		DisplayName = Chain Bracelet - Gold,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bracelet_Chain,
+		BodyLocation = RightWrist,
+		ClothingExtraSubmenu = RightWrist,
+		ClothingItem = Bracelet_ChainRightGold,
+		ClothingItemExtra = Bracelet_ChainLeftGold,
+		ClothingItemExtraOption = LeftWrist,
+		Cosmetic = TRUE,
+		WorldStaticModel = Bracelet_Chain_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item Bracelet_ChainLeftGold
+	{
+		DisplayName = Chain Bracelet - Gold,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bracelet_Chain,
+		BodyLocation = LeftWrist,
+		ClothingExtraSubmenu = LeftWrist,
+		ClothingItem = Bracelet_ChainLeftGold,
+		ClothingItemExtra = Bracelet_ChainRightGold,
+		ClothingItemExtraOption = RightWrist,
+		Cosmetic = TRUE,
+		WorldStaticModel = Bracelet_Chain_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item Bracelet_BangleRightSilver
+	{
+		DisplayName = Bangle - Silver,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bracelet_BangleSilver,
+		BodyLocation = RightWrist,
+		ClothingExtraSubmenu = RightWrist,
+		ClothingItem = Bracelet_BangleRightSilver,
+		ClothingItemExtra = Bracelet_BangleLeftSilver,
+		ClothingItemExtraOption = LeftWrist,
+		Cosmetic = TRUE,
+		WorldStaticModel = Bracelet_BangleSilver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item Bracelet_BangleLeftSilver
+	{
+		DisplayName = Bangle - Silver,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bracelet_BangleSilver,
+		BodyLocation = LeftWrist,
+		ClothingExtraSubmenu = LeftWrist,
+		ClothingItem = Bracelet_BangleLeftSilver,
+		ClothingItemExtra = Bracelet_BangleRightSilver,
+		ClothingItemExtraOption = RightWrist,
+		Cosmetic = TRUE,
+		WorldStaticModel = Bracelet_BangleSilver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item Bracelet_ChainRightSilver
+	{
+		DisplayName = Chain Bracelet - Silver,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bracelet_ChainSilver,
+		BodyLocation = RightWrist,
+		ClothingExtraSubmenu = RightWrist,
+		ClothingItem = Bracelet_ChainRightSilver,
+		ClothingItemExtra = Bracelet_ChainLeftSilver,
+		ClothingItemExtraOption = LeftWrist,
+		Cosmetic = TRUE,
+		WorldStaticModel = Bracelet_ChainSilver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item Bracelet_ChainLeftSilver
+	{
+		DisplayName = Chain Bracelet - Silver,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bracelet_ChainSilver,
+		BodyLocation = LeftWrist,
+		ClothingExtraSubmenu = LeftWrist,
+		ClothingItem = Bracelet_ChainLeftSilver,
+		ClothingItemExtra = Bracelet_ChainRightSilver,
+		ClothingItemExtraOption = RightWrist,
+		Cosmetic = TRUE,
+		WorldStaticModel = Bracelet_ChainSilver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item Bracelet_RightFriendshipTINT
+	{
+		DisplayName = Friendship Bracelet,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bracelet_Friendship,
+		BodyLocation = RightWrist,
+		ClothingExtraSubmenu = RightWrist,
+		ClothingItem = Bracelet_RightFriendshipTINT,
+		ClothingItemExtra = Bracelet_LeftFriendshipTINT,
+		ClothingItemExtraOption = LeftWrist,
+		Cosmetic = TRUE,
+		WorldStaticModel = Bracelet_Friendship_Ground,
+		Tags = IsMemento,
+	}
+	
+	item Bracelet_LeftFriendshipTINT
+	{
+		DisplayName = Friendship Bracelet,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bracelet_Friendship,
+		BodyLocation = LeftWrist,
+		ClothingExtraSubmenu = LeftWrist,
+		ClothingItem = Bracelet_LeftFriendshipTINT,
+		ClothingItemExtra = Bracelet_RightFriendshipTINT,
+		ClothingItemExtraOption = RightWrist,
+		Cosmetic = TRUE,
+		WorldStaticModel = Bracelet_Friendship_Ground,
+		Tags = IsMemento,
+	}
+	
+	item BellyButton_DangleGold
+	{
+		DisplayName = Belly Button Dangle - Gold,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bellybutton_DangleGold,
+		BodyLocation = BellyButton,
+		ClothingItem = BellyButton_DangleGold,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmallSilver_Ground,
+		Tags = HasMetal;TinyGoldScrap,
+	}
+	
+	item BellyButton_DangleGoldRuby
+	{
+		DisplayName = Belly Button Dangle - Gold with Ruby,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bellybutton_DangleGold,
+		BodyLocation = BellyButton,
+		ClothingItem = BellyButton_DangleGoldRuby,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmallSilver_Ground,
+		Tags = HasMetal;TinyGoldScrap;RubyJewellery,
+	}
+	
+	item BellyButton_DangleSilver
+	{
+		DisplayName = Belly Button Dangle - Silver,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bellybutton_DangleSilver,
+		BodyLocation = BellyButton,
+		ClothingItem = BellyButton_DangleSilver,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmallSilver_Ground,
+		Tags = HasMetal;TinySilverScrap,
+	}
+	
+	item BellyButton_DangleSilverDiamond
+	{
+		DisplayName = Belly Button Dangle - Silver with Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bellybutton_DangleSilver,
+		BodyLocation = BellyButton,
+		ClothingItem = BellyButton_DangleSilverDiamond,
+		Cosmetic = TRUE,
+		WorldStaticModel = Earring_LoopSmallSilver_Ground,
+		Tags = HasMetal;TinySilverScrap;DiamondJewellery,
+	}
+	
+	item BellyButton_RingGold
+	{
+		DisplayName = Belly Button Ring - Gold,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NoseRing_Gold,
+		BodyLocation = BellyButton,
+		ClothingItem = BellyButton_RingGold,
+		Cosmetic = TRUE,
+		Tags = HasMetal;TinyGoldScrap,
+		WorldStaticModel = Ring_Gold_Ground,
+	}
+	
+	item BellyButton_RingGoldDiamond
+	{
+		DisplayName = Belly Button Ring - Gold with Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NoseRing_Gold,
+		BodyLocation = BellyButton,
+		ClothingItem = BellyButton_RingGoldDiamond,
+		Cosmetic = TRUE,
+		Tags = HasMetal;TinyGoldScrap;DiamondJewellery,
+		WorldStaticModel = Ring_Gold_Ground,
+	}
+	
+	item BellyButton_RingGoldRuby
+	{
+		DisplayName = Belly Button Ring - Gold with Ruby,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NoseRing_Gold,
+		BodyLocation = BellyButton,
+		ClothingItem = BellyButton_RingGoldRuby,
+		Cosmetic = TRUE,
+		Tags = HasMetal;TinyGoldScrap;RubyJewellery,
+		WorldStaticModel = Ring_Gold_Ground,
+	}
+	
+	item BellyButton_RingSilver
+	{
+		DisplayName = Belly Button Ring - Silver,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NoseRing_Silver,
+		BodyLocation = BellyButton,
+		ClothingItem = BellyButton_RingSilver,
+		Cosmetic = TRUE,
+		Tags = HasMetal;TinySilverScrap,
+		WorldStaticModel = Ring_Silver_Ground,
+	}
+	
+	item BellyButton_RingSilverAmethyst
+	{
+		DisplayName = Belly Button Ring - Silver with Amethyst,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NoseRing_Silver,
+		BodyLocation = BellyButton,
+		ClothingItem = BellyButton_RingSilverAmethyst,
+		Cosmetic = TRUE,
+		Tags = HasMetal;TinySilverScrap;AmethystJewellery,
+		WorldStaticModel = Ring_Silver_Ground,
+	}
+	
+	item BellyButton_RingSilverDiamond
+	{
+		DisplayName = Belly Button Ring - Silver with Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NoseRing_Silver,
+		BodyLocation = BellyButton,
+		ClothingItem = BellyButton_RingSilverDiamond,
+		Cosmetic = TRUE,
+		Tags = HasMetal;TinySilverScrap;DiamondJewellery,
+		WorldStaticModel = Ring_Silver_Ground,
+	}
+	
+	item BellyButton_RingSilverRuby
+	{
+		DisplayName = Belly Button Ring - Silver with Ruby,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = NoseRing_Silver,
+		BodyLocation = BellyButton,
+		ClothingItem = BellyButton_RingSilverRuby,
+		Cosmetic = TRUE,
+		Tags = HasMetal;TinySilverScrap;RubyJewellery,
+		WorldStaticModel = Ring_Silver_Ground,
+	}
+	
+	item BellyButton_StudGold
+	{
+		DisplayName = Belly Button Stud - Gold,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bellybutton_StudGold,
+		BodyLocation = BellyButton,
+		ClothingItem = BellyButton_StudGold,
+		Cosmetic = TRUE,
+		Tags = HasMetal;TinyGoldScrap,
+		WorldStaticModel = NoseStud_Ground,
+	}
+	
+	item BellyButton_StudGoldDiamond
+	{
+		DisplayName = Belly Button Stud - Gold with Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bellybutton_StudGold,
+		BodyLocation = BellyButton,
+		ClothingItem = BellyButton_StudGoldDiamond,
+		Cosmetic = TRUE,
+		Tags = HasMetal;TinyGoldScrap;DiamondJewellery,
+		WorldStaticModel = NoseStud_Ground,
+	}
+	
+	item BellyButton_StudSilver
+	{
+		DisplayName = Belly Button Stud - Silver,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bellybutton_StudSilver,
+		BodyLocation = BellyButton,
+		ClothingItem = BellyButton_StudSilver,
+		Cosmetic = TRUE,
+		Tags = HasMetal;TinySilverScrap,
+		WorldStaticModel = NoseStudSilver_Ground,
+	}
+	
+	item BellyButton_StudSilverDiamond
+	{
+		DisplayName = Belly Button Stud - Silver with Diamond,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Bellybutton_StudSilver,
+		BodyLocation = BellyButton,
+		ClothingItem = BellyButton_StudSilverDiamond,
+		Cosmetic = TRUE,
+		Tags = HasMetal;TinySilverScrap;DiamondJewellery,
+		WorldStaticModel = NoseStudSilver_Ground,
+	}
+
+	item Medal_Gold
+	{
+		DisplayName = Gold Sports Medal,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Medal_Gold,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_Medal_Gold,
+		Cosmetic = TRUE,
+		WorldStaticModel = Medal_Gold,
+		Tags = IgnoreZombieDensity;HasMetal;IsMemento,
+	}
+
+	item Medal_Silver
+	{
+		DisplayName = Silver Sports Medal,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Medal_Silver,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_Medal_Silver,
+		Cosmetic = TRUE,
+		WorldStaticModel = Medal_Silver,
+		Tags = IgnoreZombieDensity;HasMetal;IsMemento,
+	}
+
+	item Medal_Bronze
+	{
+		DisplayName = Bronze Sports Medal,
+		DisplayCategory = Memento,
+		Type = Clothing,
+		Weight = 0.3,
+		Icon = Medal_Bronze,
+		BodyLocation = Necklace,
+		ClothingItem = Necklace_Medal_Bronze,
+		Cosmetic = TRUE,
+		WorldStaticModel = Medal_Bronze,
+		Tags = IgnoreZombieDensity;HasMetal;IsMemento,
+	}
+
+	item Ring_Right_MiddleFinger_Signet
+	{
+		DisplayName = Signet Ring,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_Gold_Signet,
+		BodyLocation = Right_MiddleFinger,
+		ClothingExtraSubmenu = RightMiddleFinger,
+		ClothingItem = Ring_Right_MiddleFinger_Signet,
+		ClothingItemExtra = Ring_Left_MiddleFinger_Signet;Ring_Left_RingFinger_Signet;Ring_Right_RingFinger_Signet,
+		ClothingItemExtraOption = LeftMiddleFinger;LeftRingFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Signet_Ground,
+		Tags = HasMetal;MonogramOwnerName,
+		OnCreate = SpecialLootSpawns.OnCreateMonogram,
+	}
+
+	item Ring_Left_MiddleFinger_Signet
+	{
+		DisplayName = Signet Ring,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_Gold_Signet,
+		BodyLocation = Left_MiddleFinger,
+		ClothingExtraSubmenu = LeftMiddleFinger,
+		ClothingItem = Ring_Left_MiddleFinger_Signet,
+		ClothingItemExtra = Ring_Right_MiddleFinger_Signet;Ring_Left_RingFinger_Signet;Ring_Right_RingFinger_Signet,
+		ClothingItemExtraOption = RightMiddleFinger;LeftRingFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Signet_Ground,
+		Tags = HasMetal;MonogramOwnerName,
+		OnCreate = SpecialLootSpawns.OnCreateMonogram,
+	}
+
+	item Ring_Right_RingFinger_Signet
+	{
+		DisplayName = Signet Ring,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_Gold_Signet,
+		BodyLocation = Right_RingFinger,
+		ClothingExtraSubmenu = RightRingFinger,
+		ClothingItem = Ring_Right_RingFinger_Signet,
+		ClothingItemExtra = Ring_Left_MiddleFinger_Signet;Ring_Right_MiddleFinger_Signet;Ring_Left_RingFinger_Signet,
+		ClothingItemExtraOption = LeftMiddleFinger;RightMiddleFinger;LeftRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Signet_Ground,
+		Tags = HasMetal;MonogramOwnerName,
+		OnCreate = SpecialLootSpawns.OnCreateMonogram,
+	}
+
+	item Ring_Left_RingFinger_Signet
+	{
+		DisplayName = Signet Ring,
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		Weight = 0.1,
+		Icon = Ring_Gold_Signet,
+		BodyLocation = Left_RingFinger,
+		ClothingExtraSubmenu = LeftRingFinger,
+		ClothingItem = Ring_Left_RingFinger_Signet,
+		ClothingItemExtra = Ring_Left_MiddleFinger_Signet;Ring_Right_MiddleFinger_Signet;Ring_Right_RingFinger_Signet,
+		ClothingItemExtraOption = LeftMiddleFinger;RightMiddleFinger;RightRingFinger,
+		Cosmetic = TRUE,
+		WorldStaticModel = Ring_Signet_Ground,
+		Tags = HasMetal;MonogramOwnerName,
+		OnCreate = SpecialLootSpawns.OnCreateMonogram,
+	}
+
+}

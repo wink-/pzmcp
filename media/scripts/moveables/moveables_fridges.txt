@@ -1,0 +1,122 @@
+module Base
+{
+	item Mov_BlueFridge
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Blue Fridge,
+		WorldObjectSprite = appliances_refrigeration_01_4,
+	}
+	
+	item Mov_FridgeMini
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Mini Fridge,
+		WorldObjectSprite = appliances_refrigeration_01_25,
+	}
+	
+	item Mov_GreenFridge
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Green Fridge,
+		WorldObjectSprite = appliances_refrigeration_01_12,
+	}
+	
+	item Mov_IndustrialFridge
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Industrial Fridge,
+		WorldObjectSprite = appliances_refrigeration_01_22,
+	}
+	
+	item Mov_PlainFridge
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Plain Fridge,
+		WorldObjectSprite = appliances_refrigeration_01_28,
+	}
+	
+	item Mov_RedFridge
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Red Fridge,
+		WorldObjectSprite = appliances_refrigeration_01_32,
+	}
+	
+	item Mov_SteelFridge
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Steel Fridge,
+		WorldObjectSprite = appliances_refrigeration_01_8,
+	}
+	
+	item Mov_TrailerFridge
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Built-in Trailer Fridge,
+		WorldObjectSprite = location_trailer_02_26,
+	}
+	
+	item Mov_WhiteFridge
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = White Fridge,
+		WorldObjectSprite = appliances_refrigeration_01_0,
+	}
+	
+	item Mov_WhiteIndustrialFridge
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = White Industrial Fridge,
+		WorldObjectSprite = appliances_refrigeration_01_40,
+	}
+
+	item Mov_ChestFreezer
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Chest Freezer,
+		WorldObjectSprite = appliances_refrigeration_01_48,
+	}
+
+	item Mov_PopsicleFreezer
+	{
+		DisplayCategory = Furniture,
+		Type = Moveable,
+		Icon = default,
+		Weight = 0.5,
+		DisplayName = Popsicle Freezer,
+		WorldObjectSprite = appliances_refrigeration_01_20,
+	}
+}

@@ -1,0 +1,349 @@
+/*module Base
+{
+    stringList Recipes_Blast_Furnace
+    {
+        /*Cast Iron Bar,*/
+        Cast Bench Anvil,
+        Cast Bench Anvil From Ingots,
+        Cast Blacksmith Anvil,
+        Cast Blacksmith Anvil From Ingots,
+        Cast Block Anvil,
+        Cast Block Anvil From Ingots,
+        Cast Iron Bar,
+        Cast Iron Bar From Iron Ingot,
+        Cast Iron Bar From Workable Iron,
+        Cast Iron Ingot,
+        Cast Iron Ingot From Workable Iron,
+        Cast Pig Iron Ingot,
+        Cast Steel Bar,
+        Cast Steel Bar From Steel Ingots,
+      /*  Cast Steel Ingot From Steel Fragments,*/
+        Cast Steel Ingots,
+        Cast Steel Ingots From Workable Iron,
+        Cast Steel Ingots From Steel Bar,
+        Extract Iron Bloom,
+    }
+
+    craftRecipe CastBenchAnvil
+     {
+        time        = 10,
+	    tags = BlastFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            item 1 [Base.ClayBlacksmithAnvilMold],
+            item 8 [Base.Coke],
+            item 2 [Base.PigIronIngot],
+            item 2 [Base.IronIngot],
+         }
+         outputs
+         {
+             item 1 Base.BlacksmithAnvilUntreated,
+         }
+     }
+
+    craftRecipe CastBenchAnvilFromIngots
+     {
+        time        = 10,
+	tags = BlastFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            item 1 [Base.ClayBlacksmithAnvilMold],
+            item 8 [Base.Coke],
+            item 4 [Base.SteelIngot],
+         }
+         outputs
+         {
+             item 1 Base.BlacksmithAnvilUntreated,
+         }
+     }
+
+    craftRecipe CastBlacksmithAnvil
+     {
+        time        = 10,
+	tags = BlastFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            item 1 [Base.ClayBlacksmithAnvilMold],
+            item 8 [Base.Coke],
+            item 4 [Base.PigIronIngot],
+            item 4 [Base.IronIngot],
+         }
+         outputs
+         {
+             item 1 Base.BlacksmithAnvilUntreated,
+         }
+     }
+
+    craftRecipe CastBlacksmithAnvilFromIngots
+     {
+        time        = 10,
+	tags = BlastFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 tags[Tongs] mode:keep flags[MayDegradeLight],
+            item 1 [Base.ClayBlacksmithAnvilMold],
+            item 8 [Base.Coke],
+            item 8 [Base.SteelIngot],
+         }
+         outputs
+         {
+             item 1 Base.BlacksmithAnvilUntreated,
+         }
+     }
+
+    craftRecipe CastPigIronIngot
+     {
+        time        = 10,
+	tags = BlastFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 [Base.Tongs] mode:keep flags[MayDegradeLight],
+            item 1 [Base.ClayIngotMold],
+            item 4 [Base.Coke],
+            item 1 tags[IronSource],
+            item 4 [Base.CrushedLimestone],
+         }
+         outputs
+         {
+             item 1 Base.PigIronIngot,
+         }
+     }
+
+    craftRecipe CastSteelBar
+     {
+        time        = 10,
+	tags = BlastFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 [Base.Tongs] mode:keep flags[MayDegradeLight],
+            item 6 [Base.ClayBarMold],
+            item 8 [Base.Coke],
+            item 1 [Base.PigIronIngot],
+            item 1 [Base.IronIngot],
+            item 8 [Base.CrushedLimestone],
+         }
+         outputs
+         {
+             item 6 Base.SteelBar,
+         }
+     }
+
+    craftRecipe CastSteelBarFromSteelIngots
+     {
+        time        = 10,
+	tags = BlastFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 [Base.Tongs] mode:keep flags[MayDegradeLight],
+            item 3 [Base.ClayBarMold],
+            item 8 [Base.Coke],
+            item 1 [Base.SteelIngot],
+         }
+         outputs
+         {
+             item 3 Base.SteelBar,
+         }
+     }
+
+    craftRecipe CastSteelIngots
+     {
+        time        = 10,
+	    tags = BlastFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 [Base.Tongs] mode:keep flags[MayDegradeLight],
+            item 2 [Base.ClayIngotMold],
+            item 8 [Base.Coke],
+            item 1 [Base.PigIronIngot],
+            item 1 [Base.IronIngot],
+            item 8 [Base.CrushedLimestone],
+         }
+         outputs
+         {
+             item 2 Base.SteelIngot,
+         }
+     }
+
+    craftRecipe CastSteelIngotsFromWorkableIron
+     {
+        time        = 10,
+	tags = BlastFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 [Base.Tongs] mode:keep flags[MayDegradeLight],
+            item 2 [Base.ClayIngotMold],
+            item 8 [Base.Coke],
+            item 1 [Base.PigIronIngot],
+            item 12 [Base.WorkableIron],
+            item 8 [Base.CrushedLimestone],
+         }
+         outputs
+         {
+             item 2 Base.SteelIngot,
+         }
+     }
+/*
+    craftRecipe CastSteelIngotFromSteelFragments
+     {
+        time        = 10,
+	tags = BlastFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 [Base.Tongs] mode:keep flags[MayDegradeLight],
+            item 1 [Base.ClayIngotMold],
+            item 4 [Base.Coke],
+            item 1 [WorkableSteel],
+         }
+         outputs
+         {
+             item 1 Base.SteelIngot,
+         }
+     }*/
+
+    craftRecipe CastSteelIngotsFromWorkableIron
+     {
+        time        = 10,
+	tags = BlastFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 [Base.Tongs] mode:keep flags[MayDegradeLight],
+            item 2 [Base.ClayIngotMold],
+            item 8 [Base.Coke],
+            item 1 [Base.PigIronIngot],
+            item 12 [Base.WorkableIron],
+            item 8 [Base.CrushedLimestone],
+         }
+         outputs
+         {
+             item 2 Base.SteelIngot,
+         }
+     }
+
+    craftRecipe CastSteelIngotsFromSteelBar
+     {
+        time        = 10,
+	tags = BlastFurnace,
+
+         inputs
+         {
+            item 1 [Base.CeramicCrucible] mode:keep flags[IsEmpty],
+            item 1 [Base.Tongs] mode:keep flags[MayDegradeLight],
+            item 5 [Base.ClayIngotMold],
+            item 8 [Base.Coke],
+            item 5 [Base.SteelBar],
+         }
+         outputs
+         {
+             item 2 Base.SteelIngot,
+         }
+     }
+
+    entity Blast_Furnace
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_Furnace_III,
+            uiEnabled       = true,
+        }
+
+        component Resources
+        {
+            group furnace_fuel_inputs
+            {
+                Item@Input@5,
+            }
+            group furnace_fuel_outputs
+            {
+                Item@Output@10,
+            }
+            group craft_inputs
+            {
+                Item@Input@12,
+                Item@Input@12,
+                Item@Input@12,
+                Item@Input@12,
+                Item@Input@12,
+                Item@Input@12,
+                Item@Input@12,
+            }
+            group craft_outputs
+            {
+                Item@Output@5,
+                Item@Output@5,
+            }
+        }
+
+        component FurnaceLogic
+        {
+            fuelRecipes     = BurnWood,
+            fuelInputGroup  = furnace_fuel_inputs,
+            fuelOutputGroup = furnace_fuel_outputs,
+            furnaceRecipes  = BlastFurnace;SmeltingFurnace,
+            StartMode       = Manual,
+            inputGroup      = craft_inputs,
+            outputGroup     = craft_outputs,
+        }
+        component SpriteConfig
+        {
+            face single
+            {
+                layer
+                {
+                    row = crafted_02_11 crafted_02_9,
+                   /* row = crafted_02_8 crafted_02_10,
+                    row = crafted_02_16 crafted_02_19,*/
+
+                    row = crafted_03_8 crafted_03_10,
+                    row = crafted_02_17 crafted_02_18,
+                }
+            }
+          /*  face E
+            {
+                layer
+                {
+                    row = crafted_01_34,
+                }
+            }*/
+        }
+        
+        component CraftRecipe
+        {
+            timedAction   = Test,
+            time          = 50,
+            tags          = Blacksmithing,
+            inputs
+            {
+                item 1 [Base.MasonsTrowel] mode:keep flags[Prop1;MayDegradeLight],
+                item 40 [Base.StoneBlock],
+                item 1 tags[Concrete] flags[DontRecordInput],
+                item 1 [Base.LargeBellows],
+            }
+        }
+    }
+}*/

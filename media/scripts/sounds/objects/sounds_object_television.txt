@@ -1,0 +1,65 @@
+module Base
+{
+	sound TelevisionTestBeep
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Television/TestTone,
+		}
+	}
+
+	sound TelevisionZap
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Television/Zap,
+		}
+	}
+
+	sound TelevisionOn
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Television/On,
+		}
+	}
+
+	sound TelevisionOff
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Television/Off,
+		}
+	}
+
+	sound TelevisionMute
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Television/Mute,
+		}
+	}
+
+	sound TelevisionUnMute
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Television/UnMute,
+		}
+	}
+
+	sound TelevisionStatic
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Television/Static,
+		}
+	}
+}

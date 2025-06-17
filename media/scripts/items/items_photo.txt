@@ -1,0 +1,47 @@
+module Base
+{
+	/******* PHOTO - ITEMS *******/
+	
+	item Camera
+	{
+		DisplayName = Camera,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = Camera,
+		WorldStaticModel = Camera_Ground,
+		Tags = Camera;HasMetal,
+	}
+
+	item CameraDisposable
+	{
+		DisplayName = Camera - Disposable,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = CameraDisposable,
+		WorldStaticModel = CameraDisposable_Ground,
+		Tags = Camera,
+	}
+
+	item CameraExpensive
+	{
+		DisplayName = Camera - High-end,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.8,
+		Icon = CameraExpensive,
+		WorldStaticModel = CameraExpensive_Ground,
+		Tags = Camera;HasMetal;IsMemento;IgnoreZombieDensity,
+	}
+
+	item CameraFilm
+	{
+		DisplayName = Camera Film,
+		DisplayCategory = Junk,
+		Type = Normal,
+		Weight = 0.2,
+		Icon = CameraFilm,
+		WorldStaticModel = CameraFilm_Ground,
+	}
+}

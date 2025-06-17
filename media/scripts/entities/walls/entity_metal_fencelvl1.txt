@@ -1,0 +1,63 @@
+module Base
+{
+	xuiSkin default
+	{
+		entity ES_MetalFenceLvl1
+		{
+			LuaWindowClass	= ISEntityWindow,
+			DisplayName	= Metal Fence (Shoddy),
+			Icon		= Build_FenceMetal,
+		}
+	}
+
+    entity MetalFenceLvl1
+    {
+        component UiConfig
+        {
+            xuiSkin         = default,
+            entityStyle     = ES_MetalFenceLvl1,
+            uiEnabled       = false,
+        }
+
+        component SpriteConfig
+        {
+			health          = 250,
+			skillBaseHealth = 20,
+			
+            face W
+            {
+                layer
+                {
+                    row = constructedobjects_01_82,
+                }
+            }
+            face N
+            {
+                layer
+                {
+                    row = constructedobjects_01_81,
+                }
+            }
+			
+			corner = constructedobjects_01_85,
+        }
+		
+		component CraftRecipe
+        {
+            OnAddToMenu   = metalWallLvl1Test,
+            timedAction   = BuildMetalStructureScrap,
+            time          = 200,
+            needToBeLearn = true,
+            category      = Welding,
+            SkillRequired = MetalWelding:3,
+            xpAward       = MetalWelding:30,
+            ToolTip       = Tooltip_craft_metalFenceDesc,
+            inputs
+            {
+                item 2 [Base.BlowTorch] flags[DontRecordInput],
+                item 2 [Base.MetalBar],
+                item 2 [Base.WeldingRods] flags[DontRecordInput],
+            }
+        }
+    }
+}

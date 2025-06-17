@@ -1,0 +1,9024 @@
+module Base
+{
+	model Burger
+	{
+		mesh = Burger,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0142 0.0401 0.0000,
+			rotate = -23.3606 21.2788 37.5386,
+			scale = 0.8280,
+		}
+	}
+	model CanOpenBolognese
+	{
+		mesh = CanOpen,
+		texture = WorldItems/TinnedBolognese,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+	}
+	model CanClosedBolognese
+    {
+        mesh = CanClosed,
+        texture = WorldItems/TinnedBolognese,
+    }
+	model CanOpenCornerBeef
+	{
+		mesh = CanOpen,
+		texture = WorldItems/TinnedCornedBeef,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+	}
+	model CanClosedCornerBeef
+    {
+        mesh = CanClosed,
+        texture = WorldItems/TinnedCornedBeef,
+    }
+	model CanOpenChilli
+	{
+		mesh = CanOpen,
+		texture = WorldItems/TinnedChilli,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+	}
+	model CanClosedChilli
+    {
+        mesh = CanClosed,
+        texture = WorldItems/TinnedChilli,
+    }
+	model CanOpenCarrots
+	{
+		mesh = CanOpen,
+		texture = WorldItems/TinnedCarrots,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+	}
+	model CanClosedCarrots
+    {
+        mesh = CanClosed,
+        texture = WorldItems/TinnedCarrots,
+    }
+	model CanOpenCorn
+	{
+		mesh = CanOpen,
+		texture = WorldItems/TinnedCorn,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+	}
+	model CanClosedCorn
+    {
+        mesh = CanClosed,
+        texture = WorldItems/TinnedCorn,
+    }
+	model CanOpenMushroom
+	{
+		mesh = CanOpen,
+		texture = WorldItems/TinnedMushroom,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+	}
+	model CanClosedMushroom
+    {
+        mesh = CanClosed,
+        texture = WorldItems/TinnedMushroom,
+    }
+	model CanOpenPeas
+	{
+		mesh = CanOpen,
+		texture = WorldItems/TinnedPeas,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+	}
+	model CanClosedPeas
+    {
+        mesh = CanClosed,
+        texture = WorldItems/TinnedPeas,
+    }
+	model CanOpenPotatoes
+	{
+		mesh = CanOpen,
+		texture = WorldItems/TinnedPotatoes,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+	}
+	model CanClosedPotatoes
+    {
+        mesh = CanClosed,
+        texture = WorldItems/TinnedPotatoes,
+    }
+	model CanOpenTomatoes
+	{
+		mesh = CanOpen,
+		texture = WorldItems/TinnedTomatoes,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+	}
+	model CanClosedTomatoes
+    {
+        mesh = CanClosed,
+        texture = WorldItems/TinnedTomatoes,
+    }
+	model CanOpenDogFood
+	{
+		mesh = CanOpen,
+		texture = WorldItems/TinnedDogFood,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+	}
+	model CanClosedDogFood
+    {
+        mesh = CanClosed,
+        texture = WorldItems/TinnedDogFood,
+    }
+	model CanOpenSoup
+	{
+		mesh = CanOpen,
+		texture = WorldItems/TinnedSoup,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+	}
+	model CanClosedSoup
+    {
+        mesh = CanClosed,
+        texture = WorldItems/TinnedSoup,
+    }
+	model Corndog
+	{
+		mesh = Corndog,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0077 -0.0128 0.0063,
+			rotate = 172.0598 57.2769 -168.1145,
+			scale = 0.7499,
+		}
+	}
+	model FriedChicken
+	{
+		mesh = FriedChicken,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0367 -0.0043 -0.0109,
+			rotate = 7.7207 25.8141 -12.5318,
+			scale = 0.6950,
+		}
+	}
+	model HotDog
+	{
+		mesh = HotDog,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0266 -0.0173 -0.0248,
+			rotate = 5.6455 24.4357 -2.8041,
+			scale = 0.6850,
+		}
+	}
+	model MelonSlice
+	{
+		mesh = MelonSlice,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0242 0.0042 -0.0151,
+			rotate = -2.8745 40.3273 1.7890,
+			scale = 0.6787,
+		}
+	}
+	model MilkCarton
+	{
+		mesh = MilkCarton,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0032 -0.0227 0.0177,
+			rotate = 154.8439 81.0705 -157.1680,
+			scale = 0.8483,
+		}
+	}
+	model PopBottle
+	{
+		mesh = PopBottle,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0107 0.0108 -0.0033,
+			rotate = 1.2870 -0.7958 1.1989,
+		}
+	}
+	model PopCanDiet
+	{
+		mesh = PopCanDiet,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0177 0.0017 0.0047,
+			rotate = 0.0000 -30.9663 0.0000,
+		}
+	}
+	model PopCanRed
+	{
+		mesh = PopCanRed,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0177 0.0017 0.0047,
+			rotate = 0.0000 -30.9663 0.0000,
+		}
+	}
+	model PopCanFizz
+	{
+		mesh = PopCanRed,
+		texture = WorldItems/PopCanFizz,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0177 0.0017 0.0047,
+			rotate = 0.0000 -30.9663 0.0000,
+		}
+	}
+	model PopCanGeneric
+	{
+		mesh = PopCanDiet,
+		texture = WorldItems/PopCan_Generic,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0177 0.0017 0.0047,
+			rotate = 0.0000 -30.9663 0.0000,
+		}
+	}
+	model RedWineBottle
+	{
+		mesh = RedWineBottle,
+		scale = 0.8000,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0121 0.0029 -0.0165,
+			rotate = 0.5321 -2.3902 5.7345,
+
+		}
+	}
+	model BeerCan
+	{
+		mesh = PopCanDiet,
+		texture = BeerCan,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0177 0.0017 0.0047,
+			rotate = 0.0000 -30.9663 0.0000,
+			scale = 1.0087,
+		}
+	}
+	model BeerBottle
+	{
+		mesh = BeerBottle,
+		texture = BeerBottle,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0057 0.0051 0.0246,
+			rotate = 172.7064 35.0347 178.1460,
+			scale = 0.7666,
+		}
+
+		attachment world
+		{
+			offset = -0.0000 -0.0340 0.0000,
+			rotate = 0.0000 -0.0000 0.0000,
+		}
+	}
+	model BeerBottleImported
+	{
+		mesh = BeerBottle,
+		texture = WorldItems/BeerImported_Full,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0057 0.0051 0.0246,
+			rotate = 172.7064 35.0347 178.1460,
+			scale = 0.7666,
+		}
+	}
+	model Sandwich
+	{
+		mesh = Sandwich,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0364 0.0007 -0.0137,
+			rotate = 7.7470 20.4516 -15.1706,
+			scale = 0.7500,
+		}
+	}
+	model SandwichCooked
+	{
+		mesh = Sandwich,
+		texture = SandwichGrilled,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0364 0.0007 -0.0137,
+			rotate = 7.7470 20.4516 -15.1706,
+			scale = 0.7500,
+		}
+	}
+	model WhiskeyBottle
+	{
+		mesh = WhiskeyBottle,
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 180.0000 27.0000 -89.0000,
+		}
+	}
+	model WhiteWineBottle
+	{
+		mesh = WhiteWineBottle,
+		scale = 0.8000,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0086 0.0375 -0.0163,
+			rotate = 0.5321 -2.3902 5.7345,
+		}
+	}
+	model RoundFood_Green
+    {
+        mesh = RoundFood,
+        texture = RoundFood_AppleGreen,
+    }
+	model RoundFood_Orange
+	{
+		mesh = RoundFood,
+		texture = RoundFood_Orange,
+
+		attachment eat_left
+		{
+			offset = 0.0780 -0.0750 0.0430,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model RoundFood_Yellow
+    {
+        mesh = RoundFood,
+        texture = RoundFood_Lemon,
+    }
+	model RoundFood_Red
+    {
+        mesh = RoundFood,
+        texture = RoundFood_AppleRed,
+    }
+	model RoundFood_Peach
+    {
+        mesh = RoundFood,
+        texture = RoundFood_Peach,
+    }
+	model CylinderFood_Yellow
+    {
+        mesh = CylinderFood,
+        texture = CylinderFood_Bannana,
+        scale = 1.5,
+    }
+	model CylinderFood_Green
+    {
+        mesh = CylinderFood,
+        texture = CylinderFood_Pickle,
+        scale = 1.5,
+    }
+	model CylinderFood_Orange
+    {
+        mesh = CylinderFood,
+        texture = RoundFood_Orange,
+        scale = 1.5,
+    }
+	model CylinderFood_Purple
+    {
+        mesh = CylinderFood,
+        texture = RoundFood_Purple,
+        scale = 1.5,
+    }
+	model TVDinner
+    {
+        mesh = TVDinner,
+    }
+	model PieSlice
+	{
+		mesh = PieSlice,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0391 0.0096 -0.0118,
+			rotate = 8.4695 35.4861 -21.5229,
+			scale = 0.7550,
+		}
+	}
+	model MayoJar
+	{
+		mesh = Jar,
+		texture = Jar_Mayo,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0011 0.0204 0.0014,
+			rotate = 1.0925 -0.0455 -2.3859,
+			scale = 0.9020,
+		}
+	}
+	model RemouladeJar
+    {
+        mesh = Jar,
+        texture = Jar_Romoulade,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0011 0.0204 0.0014,
+			rotate = 1.0925 -0.0455 -2.3859,
+			scale = 0.9020,
+		}
+    }
+	model BeefJerky
+	{
+		mesh = WorldItems/BeefJerky,
+		texture = WorldItems/BeefJerky,
+		scale = 0.6,
+	}
+	model BeefJerky_Hand
+	{
+		mesh = WorldItems/BeefJerky_Hand,
+		texture = WorldItems/BeefJerky,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0124 0.0253 -0.0060,
+			rotate = -101.0951 6.8193 56.6304,
+			scale = 0.1307,
+		}
+	}
+	model BerryBlack
+	{
+		mesh = WorldItems/BerryGeneric,
+		texture = WorldItems/Berries,
+		scale = 0.01,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0149 0.0671 -0.0012,
+			rotate = -82.4567 -7.6586 -40.2686,
+			scale = 0.3862,
+		}
+	}
+	model BerryBlackRotten
+	{
+		mesh = WorldItems/BerryGeneric,
+		texture = WorldItems/BerriesRotten,
+		scale = 0.01,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0149 0.0671 -0.0012,
+			rotate = -82.4567 -7.6586 -40.2686,
+			scale = 0.3862,
+		}
+	}
+	model BerryBlue
+	{
+		mesh = WorldItems/BerryGeneric,
+		texture = WorldItems/BerriesGeneric2,
+		scale = 0.01,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0149 0.0671 -0.0012,
+			rotate = -82.4567 -7.6586 -40.2686,
+			scale = 0.3862,
+		}
+	}
+	model BerryBlueRotten
+	{
+		mesh = WorldItems/BerryGeneric,
+		texture = WorldItems/BerriesGeneric2Rotten,
+		scale = 0.01,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0149 0.0671 -0.0012,
+			rotate = -82.4567 -7.6586 -40.2686,
+			scale = 0.3862,
+		}
+	}
+	model BerryGeneric1
+	{
+		mesh = WorldItems/BerryGeneric,
+		texture = WorldItems/BerriesGeneric1,
+		scale = 0.01,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0149 0.0671 -0.0012,
+			rotate = -82.4567 -7.6586 -40.2686,
+			scale = 0.3862,
+		}
+	}
+	model BerryGeneric1Rotten
+	{
+		mesh = WorldItems/BerryGeneric,
+		texture = WorldItems/BerriesGeneric1Rotten,
+		scale = 0.01,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0149 0.0671 -0.0012,
+			rotate = -82.4567 -7.6586 -40.2686,
+			scale = 0.3862,
+		}
+	}
+	model BerryGeneric2
+	{
+		mesh = WorldItems/BerryGeneric,
+		texture = WorldItems/BerriesGeneric2,
+		scale = 0.01,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0149 0.0671 -0.0012,
+			rotate = -82.4567 -7.6586 -40.2686,
+			scale = 0.3862,
+		}
+	}
+	model BerryGeneric2Rotten
+	{
+		mesh = WorldItems/BerryGeneric,
+		texture = WorldItems/BerriesGeneric2Rotten,
+		scale = 0.01,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0149 0.0671 -0.0012,
+			rotate = -82.4567 -7.6586 -40.2686,
+			scale = 0.3862,
+		}
+	}
+	model BerryGeneric3
+	{
+		mesh = WorldItems/BerryGeneric,
+		texture = WorldItems/BerriesGeneric3,
+		scale = 0.01,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0149 0.0671 -0.0012,
+			rotate = -82.4567 -7.6586 -40.2686,
+			scale = 0.3862,
+		}
+	}
+	model BerryGeneric3Rotten
+	{
+		mesh = WorldItems/BerryGeneric,
+		texture = WorldItems/BerriesGeneric3Rotten,
+		scale = 0.01,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0149 0.0671 -0.0012,
+			rotate = -82.4567 -7.6586 -40.2686,
+			scale = 0.3862,
+		}
+	}
+	model BerryGeneric4
+	{
+		mesh = WorldItems/BerryGeneric,
+		texture = WorldItems/BerriesGeneric4,
+		scale = 0.01,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0149 0.0671 -0.0012,
+			rotate = -82.4567 -7.6586 -40.2686,
+			scale = 0.3862,
+		}
+	}
+	model BerryGeneric4Rotten
+	{
+		mesh = WorldItems/BerryGeneric,
+		texture = WorldItems/BerriesGeneric4Rotten,
+		scale = 0.01,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0149 0.0671 -0.0012,
+			rotate = -82.4567 -7.6586 -40.2686,
+			scale = 0.3862,
+		}
+	}
+	model BerryGeneric5
+	{
+		mesh = WorldItems/BerryGeneric,
+		texture = WorldItems/BerriesGeneric5,
+		scale = 0.01,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0149 0.0671 -0.0012,
+			rotate = -82.4567 -7.6586 -40.2686,
+			scale = 0.3862,
+		}
+	}
+	model BerryGeneric5Rotten
+	{
+		mesh = WorldItems/BerryGeneric,
+		texture = WorldItems/BerriesGeneric5Rotten,
+		scale = 0.01,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0149 0.0671 -0.0012,
+			rotate = -82.4567 -7.6586 -40.2686,
+			scale = 0.3862,
+		}
+	}
+	model BerryWhite
+	{
+		mesh = WorldItems/BerryGeneric,
+		texture = WorldItems/BerriesWhite,
+		scale = 0.01,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0149 0.0671 -0.0012,
+			rotate = -82.4567 -7.6586 -40.2686,
+			scale = 0.3862,
+		}
+	}
+	model BlackSage
+	{
+		mesh = WorldItems/BlackSage,
+		texture = WorldItems/BlackSage,
+		scale = 0.125,
+	}
+	model Bread
+	{
+		mesh = WorldItems/Bread,
+		texture = WorldItems/Bread,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0407 -0.0066 -0.0249,
+			rotate = 155.6451 58.3098 -151.3713,
+			scale = 0.7500,
+		}
+	}
+	model BreadRotten
+	{
+		mesh = WorldItems/Bread,
+		texture = WorldItems/BreadRotten,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0407 -0.0066 -0.0249,
+			rotate = 155.6451 58.3098 -151.3713,
+			scale = 0.7500,
+		}
+	}
+	model BreadDough
+	{
+		mesh = WorldItems/BreadDough,
+		texture = WorldItems/dough,
+		scale = 0.01,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0019 0.0496 -0.0125,
+			rotate = -17.8243 46.6440 32.5015,
+			scale = 0.7500,
+		}
+	}
+	model BreadDoughCooked
+	{
+		mesh = WorldItems/BreadDough,
+		texture = WorldItems/Bread_HomeMade_Baked,
+		scale = 0.01,
+		
+		attachment Bip01_Prop2
+		{
+			offset = -0.0019 0.0496 -0.0125,
+			rotate = -17.8243 46.6440 32.5015,
+			scale = 0.7500,
+		}
+	}
+	model BreadSlices
+	{
+		mesh = WorldItems/BreadSlices,
+		texture = WorldItems/CheeseSandwich_PeanutButterSandwich_BreadSlices,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0348 0.0252 -0.0166,
+			rotate = -90.6753 -6.8314 -174.0110,
+			scale = 0.7500,
+		}
+	}
+	model BreadSlicesRotten
+	{
+		mesh = WorldItems/BreadSlices,
+		texture = WorldItems/CheeseSandwich_PeanutButterSandwich_BreadSlicesRotten,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0348 0.0252 -0.0166,
+			rotate = -90.6753 -6.8314 -174.0110,
+			scale = 0.7500,
+		}
+	}
+	model Butter
+	{
+		mesh = WorldItems/Butter,
+		texture = WorldItems/Butter,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0224 0.0252 0.0022,
+			rotate = 171.5600 50.2826 107.1880,
+			scale = 0.5000,
+		}
+	}
+	model Cake
+	{
+		mesh = WorldItems/Cake,
+		texture = WorldItems/Cake,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0030 0.0690 0.0060,
+			rotate = -45.8606 -76.2410 -139.6060,
+			scale = 0.7500,
+		}
+	}
+	model CakeRotten
+	{
+		mesh = WorldItems/Cake,
+		texture = WorldItems/CakeRotten,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0030 0.0690 0.0060,
+			rotate = -45.8606 -76.2410 -139.6060,
+			scale = 0.7500,
+		}
+	}
+	model CakeBatter
+	{
+		mesh = WorldItems/CakeBatter,
+		texture = WorldItems/CakeBatter,
+		scale = 0.4,
+	}
+	model CakePreparation
+	{
+		mesh = WorldItems/CakePreparation,
+		texture = WorldItems/CakePreparation,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0000 0.0710 -0.0030,
+			rotate = 91.2864 0.0000 0.0000,
+			scale = 0.7500,
+		}
+	}
+	model CandyCane
+	{
+		mesh = WorldItems/CandyCane,
+		texture = WorldItems/CandyCane,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0067 0.0742 0.0037,
+			rotate = 161.6665 44.5884 -75.5561,
+			scale = 0.7500,
+		}
+	}
+	model CandyPackage
+	{
+		mesh = WorldItems/CandyPackage,
+		texture = WorldItems/CandyPackage,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0260 0.0020 -0.0180,
+			rotate = 162.5047 68.1168 -71.2381,
+			scale = 0.7500,
+		}
+	}
+	model CraftingSmallBag_OPEN
+	{
+		mesh = CraftingSmallBag_OPEN,
+		texture = WorldItems/CandyPackage,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0 0.0 0.0,
+			rotate = 0.0 0.0 0.0,
+		}
+	}
+	model CanOfOats
+	{
+		mesh = WorldItems/CanOfOats,
+		texture = WorldItems/CanOfOats,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0018 0.0238 0.0029,
+			rotate = 5.4241 -64.0437 3.1299,
+			scale = 0.4731,
+		}
+	}
+	model Cereal
+	{
+		mesh = WorldItems/Cereal,
+		texture = WorldItems/Cereal_SunBallz,
+		scale = 0.1375,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0284 -0.0121 -0.0080,
+			rotate = 7.2910 18.6397 -2.3417,
+			scale = 0.5989,
+		}
+	}
+	model Cereal2
+	{
+		mesh = WorldItems/Cereal,
+		texture = WorldItems/Cereal_CornFlakes,
+		scale = 0.1375,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0284 -0.0121 -0.0080,
+			rotate = 7.2910 18.6397 -2.3417,
+			scale = 0.5989,
+		}
+	}
+	model Cereal3
+	{
+		mesh = WorldItems/Cereal,
+		texture = WorldItems/Cereal_FruitMuesli,
+		scale = 0.1375,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0284 -0.0121 -0.0080,
+			rotate = 7.2910 18.6397 -2.3417,
+			scale = 0.5989,
+		}
+	}
+	model Cereal4
+	{
+		mesh = WorldItems/Cereal,
+		texture = WorldItems/Cereal_HappyCurios,
+		scale = 0.1375,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0284 -0.0121 -0.0080,
+			rotate = 7.2910 18.6397 -2.3417,
+			scale = 0.5989,
+		}
+	}
+	model Cereal5
+	{
+		mesh = WorldItems/Cereal,
+		texture = WorldItems/Cereal_OatRings,
+		scale = 0.1375,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0284 -0.0121 -0.0080,
+			rotate = 7.2910 18.6397 -2.3417,
+			scale = 0.5989,
+		}
+	}
+	model Cheese
+	{
+		mesh = WorldItems/Cheese,
+		texture = WorldItems/Cheese,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0076 0.0306 -0.0238,
+			rotate = 88.7491 -18.9368 67.6286,
+			scale = 0.7500,
+		}
+	}
+	model CheeseRotten
+	{
+		mesh = WorldItems/Cheese,
+		texture = WorldItems/CheeseRotten,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0076 0.0306 -0.0238,
+			rotate = 88.7491 -18.9368 67.6286,
+			scale = 0.7500,
+		}
+	}
+	model CheeseSandwich
+	{
+		mesh = WorldItems/CheeseSandwich,
+		texture = WorldItems/CheeseSandwich_PeanutButterSandwich_BreadSlices,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0240 0.0300 -0.0210,
+			rotate = -81.8965 0.0000 -158.0519,
+			scale = 0.7500,
+		}
+	}
+	model CheeseSandwichRotten
+	{
+		mesh = WorldItems/CheeseSandwich,
+		texture = WorldItems/CheeseSandwich_PeanutButterSandwich_BreadSlicesRotten,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0240 0.0300 -0.0210,
+			rotate = -81.8965 0.0000 -158.0519,
+			scale = 0.7500,
+		}
+	}
+	model Cherry_Ground
+	{
+		mesh = WorldItems/Cherry,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0183 0.0337 0.0111,
+			rotate = -90.0000 -9.0000 27.0000,
+			scale = 0.6450,
+		}
+	}
+	model Cherry_GroundRotten
+	{
+		mesh = WorldItems/Cherry,
+		texture = WorldItems/CherryRotten,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0010 0.0210 0.0150,
+			rotate = -90.0000 -9.0000 27.0000,
+		}
+	}
+	model Chips
+	{
+		mesh = WorldItems/Chips,
+		texture = WorldItems/Chips,
+		scale = 0.28,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0266 0.0516 -0.0123,
+			rotate = 164.0710 64.3810 -60.7310,
+			scale = 0.9525,
+		}
+	}
+	model Chips2
+	{
+		mesh = WorldItems/Chips2,
+		texture = WorldItems/Chips2,
+		scale = 0.008,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0266 0.0516 -0.0123,
+			rotate = 164.0710 64.3810 -60.7310,
+			scale = 0.9525,
+		}
+	}
+	model Chips3
+	{
+		mesh = WorldItems/Chips3,
+		texture = WorldItems/Chips3,
+		scale = 0.008,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0266 0.0516 -0.0123,
+			rotate = 164.0710 64.3810 -60.7310,
+			scale = 0.9525,
+		}
+	}
+	model Chips4
+	{
+		mesh = WorldItems/Chips4,
+		texture = WorldItems/Chips4,
+		scale = 0.008,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0266 0.0516 -0.0123,
+			rotate = 164.0710 64.3810 -60.7310,
+			scale = 0.9525,
+		}
+	}
+	model Chocolate
+	{
+		mesh = WorldItems/Chocolate,
+		texture = WorldItems/Chocolate,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0306 0.0256 -0.0068,
+			rotate = -84.9184 17.5695 29.8168,
+			scale = 0.5000,
+		}
+	}
+	model Coffee
+	{
+		mesh = WorldItems/Coffee,
+		texture = WorldItems/Coffee,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0000 -0.0076 0.0000,
+			rotate = 2.2574 -41.5592 0.0265,
+			scale = 0.6600,
+		}
+	}
+	model Cookie
+	{
+		mesh = WorldItems/Cookie,
+		texture = WorldItems/Cookie,
+		scale = 0.5,
+	}
+	model Cookie_Hand
+	{
+		mesh = WorldItems/Cookie_Hand,
+		texture = WorldItems/Cookie,
+		scale = 0.5,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0155 0.0382 -0.0037,
+			rotate = 172.0491 65.4061 -85.4831,
+			scale = 0.2514,
+		}
+	}
+	model CookieJelly
+	{
+		mesh = WorldItems/CookieJelly,
+		texture = WorldItems/RaspberryShortbread,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0299 0.0474 -0.0113,
+			rotate = -95.3726 -7.4526 -143.4695,
+			scale = 0.6112,
+		}
+	}
+	model Cupcake
+	{
+		mesh = WorldItems/Cupcake,
+		texture = WorldItems/Cupcake,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0305 0.0229 -0.0116,
+			rotate = 2.2959 -1.0116 -9.3080,
+			scale = 0.5460,
+		}
+	}
+	model Dough
+	{
+		mesh = WorldItems/Dough,
+		texture = WorldItems/DoughRolledDough,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0410 0.0240 -0.0200,
+			rotate = -87.1092 -1.5868 -146.6568,
+			scale = 0.5443,
+		}
+	}
+	model DoughRotten
+	{
+		mesh = WorldItems/Dough,
+		texture = WorldItems/DoughRolledDoughRotten,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0410 0.0240 -0.0200,
+			rotate = -87.1092 -1.5868 -146.6568,
+			scale = 0.5443,
+		}
+	}
+	model DryRamenNoodles
+	{
+		mesh = WorldItems/DryRamenNoodles,
+		texture = WorldItems/DryRamenNoodles,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0290 0.0350 -0.0290,
+			rotate = -79.8192 -0.0000 -159.6117,
+			scale = 0.7500,
+		}
+	}
+	model Egg
+	{
+		mesh = WorldItems/Egg,
+		texture = WorldItems/Egg,
+		scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0276 0.0541 -0.0264,
+			rotate = -80.4333 15.0056 -170.6794,
+			scale = 0.8700,
+		}
+	}
+	model Egg_Turkey
+    {
+        mesh = WorldItems/Egg,
+        texture = WorldItems/Egg_Turkey,
+        scale = 0.1,
+
+        attachment Bip01_Prop2
+        {
+            offset = -0.0276 0.0541 -0.0264,
+            rotate = -80.4333 15.0056 -170.6794,
+            scale = 0.8700,
+        }
+    }
+	model EggCarton
+	{
+		mesh = WorldItems/EggCarton,
+		texture = WorldItems/EggCarton,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0000 0.0049 -0.0089,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.5650,
+		}
+	}
+	model PopBottleWorld
+	{
+		mesh = WorldItems/EmptyPopBottle,
+		texture = WorldItems/PopBottle_Generic,
+		scale = 0.017,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0013 -0.0241 -0.0232,
+			rotate = 1.6573 -28.7839 -3.1504,
+			scale = 0.8253,
+		}
+	}
+	model PopCanDietWorld
+	{
+		mesh = WorldItems/EmptyPopCan,
+		texture = WorldItems/PopCanDiet,
+		scale = 0.011,
+
+		attachment world
+		{
+			offset = 0.0000 -0.0500 -0.0300,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model PopCanFizzWorld
+	{
+		mesh = WorldItems/EmptyPopCan,
+		texture = WorldItems/PopCanFizz,
+		scale = 0.011,
+
+		attachment world
+		{
+			offset = 0.0000 -0.0500 -0.0300,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+	}
+	model PopCanRedWorld
+	{
+		mesh = WorldItems/EmptyPopCan,
+		texture = WorldItems/PopCanRed,
+		scale = 0.011,
+
+		attachment world
+		{
+			offset = 0.0000 -0.0500 -0.0300,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+	}
+	model FishFillet
+	{
+		mesh = WorldItems/FishFillet,
+		texture = WorldItems/FishFillet,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0250 0.0334 -0.0110,
+			rotate = -24.1143 -66.4840 -113.3257,
+			scale = 0.3050,
+		}
+	}
+	model FishFilletBurnt
+	{
+		mesh = WorldItems/FishFillet,
+		texture = WorldItems/FishFilletBurnt,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0250 0.0334 -0.0110,
+			rotate = -24.1143 -66.4840 -113.3257,
+			scale = 0.3050,
+		}
+	}
+	model FishFilletCooked
+	{
+		mesh = WorldItems/FishFillet,
+		texture = WorldItems/FishFilletCooked,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0250 0.0334 -0.0110,
+			rotate = -24.1143 -66.4840 -113.3257,
+			scale = 0.3050,
+		}
+	}
+	model FishFilletRotten
+	{
+		mesh = WorldItems/FishFillet,
+		texture = WorldItems/FishFilletRotten,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0250 0.0334 -0.0110,
+			rotate = -24.1143 -66.4840 -113.3257,
+			scale = 0.3050,
+		}
+	}
+	model FriesRotten
+	{
+		mesh = WorldItems/Fries,
+		texture = WorldItems/FriesRotten,
+		scale = 0.5,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0295 -0.0121 -0.0156,
+			rotate = 0.0000 21.3904 -2.8636,
+			scale = 0.6000,
+		}
+	}
+	model Ginseng
+	{
+		mesh = WorldItems/Ginseng,
+		texture = WorldItems/Ginseng,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0004 -0.0050 0.0005,
+			rotate = -95.6799 4.2923 -19.8432,
+			scale = 0.6400,
+		}
+	}
+	model GrapeLeaves
+	{
+		mesh = WorldItems/GrapeLeaves,
+		texture = WorldItems/CommonMallowGrapeLeaves,
+		scale = 0.4,
+	}
+	model Grapes_Ground
+	{
+		mesh = WorldItems/Grapes,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0199 0.0449 0.0057,
+			rotate = 37.0813 -43.1378 84.3572,
+			scale = 0.7900,
+		}
+	}
+	model Grapes_GroundRotten
+	{
+		mesh = WorldItems/Grapes,
+		texture = WorldItems/GrapesRotten,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0110 0.0360 0.0170,
+			rotate = 3.0000 -35.0000 79.0000,
+		}
+	}
+	model GrilledCheese
+	{
+		mesh = WorldItems/GrilledCheese,
+		texture = WorldItems/CheeseSandwich_PeanutButterSandwich_BreadSlices,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0200 0.0300 -0.0180,
+			rotate = -92.5493 3.8809 -149.4122,
+			scale = 0.7500,
+		}
+	}
+	model GrilledCheeseRotten
+	{
+		mesh = WorldItems/GrilledCheese,
+		texture = WorldItems/CheeseSandwich_PeanutButterSandwich_BreadSlicesRotten,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0200 0.0300 -0.0180,
+			rotate = -92.5493 3.8809 -149.4122,
+			scale = 0.7500,
+		}
+	}
+	model Ham
+	{
+		mesh = WorldItems/Ham,
+		texture = WorldItems/Ham,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0090 0.0492 -0.0274,
+			rotate = -155.9665 37.3825 169.0512,
+			scale = 0.5040,
+		}
+	}
+	model HamSlice
+	{
+		mesh = WorldItems/HamSlice,
+		texture = WorldItems/Ham_HamSlice,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0325 0.0342 -0.0141,
+			rotate = -88.7064 0.7909 176.7609,
+			scale = 0.6525,
+		}
+	}
+	model Honey
+	{
+		mesh = WorldItems/Honey,
+		texture = WorldItems/Honey,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0025 -0.0091 0.0069,
+			rotate = -1.7163 10.7833 10.3276,
+			scale = 0.7350,
+		}
+	}
+	model IceCream
+	{
+		mesh = WorldItems/IceCream,
+		texture = WorldItems/IceCream,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0087 0.0177 0.0011,
+			rotate = -171.6019 -24.7822 -166.7095,
+			scale = 0.6938,
+		}
+	}
+	model IcecreamMelted
+	{
+		mesh = WorldItems/IcecreamMelted,
+		texture = WorldItems/IceCream,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0087 0.0177 0.0011,
+			rotate = -171.6019 -24.7822 -166.7095,
+			scale = 0.6938,
+		}
+	}
+	model JarFoodGreen
+	{
+		mesh = WorldItems/JarFood,
+		texture = WorldItems/JarFoodGreen,
+		scale = 0.6,
+	}
+	model JarFoodBrown
+	{
+		mesh = WorldItems/JarFood,
+		texture = WorldItems/JarFoodBrown,
+		scale = 0.6,
+	}
+	model JarFoodRed
+	{
+		mesh = WorldItems/JarFood,
+		texture = WorldItems/JarFoodRed,
+		scale = 0.6,
+	}
+	model JuiceBox_Apple
+	{
+		mesh = WorldItems/JuiceBox,
+		texture = WorldItems/JuiceBox_Apple,
+		scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.000,
+			rotate = 0.00 0.00 0.000,
+			scale = 1.00,
+		}
+
+	}
+	model JuiceBox_FruitPunch
+	{
+		mesh = WorldItems/JuiceBox,
+		texture = WorldItems/JuiceBox_FruitPunch,
+		scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.000,
+			rotate = 0.00 0.00 0.000,
+			scale = 1.00,
+		}
+
+	}
+	model JuiceBox_Grape
+	{
+		mesh = WorldItems/JuiceBox,
+		texture = WorldItems/JuiceBox_Grape,
+		scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.000,
+			rotate = 0.00 0.00 0.000,
+			scale = 1.00,
+		}
+
+	}
+	model JuiceBox_Orange
+	{
+		mesh = WorldItems/JuiceBox,
+		texture = WorldItems/JuiceBox_Orange,
+		scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.000,
+			rotate = 0.00 0.00 0.000,
+			scale = 1.00,
+		}
+
+	}
+	model Ketchup
+	{
+		mesh = WorldItems/Ketchup,
+		texture = WorldItems/Ketchup,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0076 -0.0232 0.0141,
+			rotate = -2.1166 -1.3650 2.2727,
+			scale = 0.6660,
+		}
+	}
+	model LemonGrass
+	{
+		mesh = WorldItems/LemonGrass,
+		texture = WorldItems/LemonGrass,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0257 0.0256 -0.0019,
+			rotate = -89.2358 -3.7556 23.9430,
+			scale = 0.4350,
+		}
+	}
+	model LittleBaitFish
+	{
+		mesh = WorldItems/LittleBaitFish,
+		texture = WorldItems/Bass_BaitFish,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0276 0.0274 -0.0067,
+			rotate = -97.1189 2.8261 -137.9369,
+			scale = 0.3526,
+		}
+	}
+	model LittleBaitFishCooked
+	{
+		mesh = WorldItems/LittleBaitFish,
+		texture = WorldItems/BassCooked,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0276 0.0274 -0.0067,
+			rotate = -97.1189 2.8261 -137.9369,
+			scale = 0.3526,
+		}
+	}
+	model LittleBaitFishBurnt
+	{
+		mesh = WorldItems/LittleBaitFish,
+		texture = WorldItems/Bass_BaitFishBurnt,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0276 0.0274 -0.0067,
+			rotate = -97.1189 2.8261 -137.9369,
+			scale = 0.3526,
+		}
+	}
+	model Lollipop
+	{
+		mesh = WorldItems/Lollipop,
+		texture = WorldItems/Lollipop,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0144 0.0807 0.0056,
+			rotate = 0.1636 2.7791 75.7159,
+			scale = 0.5950,
+		}
+	}
+	model MacAndCheese
+	{
+		mesh = WorldItems/MacAndCheese,
+		texture = WorldItems/MacAndCheese,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0376 -0.0085 -0.0255,
+			rotate = 11.0855 30.4801 3.9511,
+			scale = 0.7912,
+		}
+	}
+	model Marinara
+	{
+		mesh = WorldItems/Marinara,
+		texture = WorldItems/Marinara,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 3.3097 0.0000 0.0000,
+			scale = 0.7600,
+		}
+	}
+	model MeatPatty
+	{
+		mesh = WorldItems/MeatPatty,
+		texture = WorldItems/MeatPatty,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0294 0.0356 -0.0145,
+			rotate = 85.7450 -14.0370 -20.8723,
+			scale = 0.7500,
+		}
+	}
+	model MeatPattyBurnt
+	{
+		mesh = WorldItems/MeatPatty,
+		texture = WorldItems/MeatPattyBurnt,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0294 0.0356 -0.0145,
+			rotate = 85.7450 -14.0370 -20.8723,
+			scale = 0.7500,
+		}
+	}
+	model MeatPattyCooked
+	{
+		mesh = WorldItems/MeatPatty,
+		texture = WorldItems/MeatPattyCooked,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0294 0.0356 -0.0145,
+			rotate = 85.7450 -14.0370 -20.8723,
+			scale = 0.7500,
+		}
+	}
+	model MeatPattyRotten
+	{
+		mesh = WorldItems/MeatPatty,
+		texture = WorldItems/MeatPattyRotten,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0294 0.0356 -0.0145,
+			rotate = 85.7450 -14.0370 -20.8723,
+			scale = 0.7500,
+		}
+	}
+	model MeltedIceCream
+	{
+		mesh = WorldItems/MeltedIceCream,
+		texture = WorldItems/MeltedIceCream,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+	}
+	model MintCandy
+	{
+		mesh = WorldItems/MintCandy,
+		texture = WorldItems/MintCandy,
+		scale = 0.5,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0203 0.0511 -0.0075,
+			rotate = 117.3438 27.3060 -44.9310,
+			scale = 0.7500,
+		}
+	}
+	model Modjeska
+	{
+		mesh = WorldItems/Modjeska,
+		texture = WorldItems/Modjeska,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0282 0.0368 -0.0115,
+			rotate = -104.7857 19.4081 -144.0185,
+			scale = 0.6388,
+		}
+	}
+	model Mushroom
+	{
+		mesh = WorldItems/Mushroom,
+		texture = WorldItems/Mushroom,
+		scale = 0.6,
+	}
+	model MushroomRotten
+	{
+		mesh = WorldItems/Mushroom,
+		texture = WorldItems/MushroomRotten,
+		scale = 0.6,
+	}
+	model MushroomGeneric1
+	{
+		mesh = WorldItems/MushroomGeneric_1_2,
+		texture = WorldItems/Mushroom_Generic_1,
+		scale = 0.3,
+	}
+	model MushroomGeneric1Rotten
+	{
+		mesh = WorldItems/MushroomGeneric1,
+		texture = WorldItems/MushroomRotten,
+		scale = 0.3,
+	}
+	model MushroomGeneric1_Hand
+	{
+		mesh = WorldItems/MushroomGeneric1_Hand,
+		texture = WorldItems/Mushroom_Generic_1,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0006 0.0143 -0.0003,
+			rotate = -10.5188 7.7976 -2.6369,
+			scale = 0.3400,
+		}
+	}
+	model MushroomGeneric1_HandRotten
+	{
+		mesh = WorldItems/MushroomGeneric1_Hand,
+		texture = WorldItems/MushroomRotten,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0006 0.0143 -0.0003,
+			rotate = -10.5188 7.7976 -2.6369,
+			scale = 0.3400,
+		}
+	}
+	model MushroomGeneric2
+	{
+		mesh = WorldItems/MushroomGeneric_1_2,
+		texture = WorldItems/MushroomGeneric_2,
+		scale = 0.4,
+	}
+	model MushroomGeneric2_Hand
+	{
+		mesh = WorldItems/MushroomGeneric1_Hand,
+		texture = WorldItems/MushroomGeneric_2,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0006 0.0143 -0.0003,
+			rotate = -10.5188 7.7976 -2.6369,
+			scale = 0.3400,
+		}
+	}
+	model MushroomGeneric3
+	{
+		mesh = WorldItems/MushroomGeneric3,
+		texture = WorldItems/MushroomGeneric3,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0070 0.0035 0.0039,
+			rotate = -18.9174 48.9270 5.2681,
+			scale = 0.6787,
+		}
+	}
+	model MushroomGeneric4
+	{
+		mesh = WorldItems/MushroomGeneric_4_5,
+		texture = WorldItems/MushroomGeneric4,
+		scale = 0.3,
+	}
+	model MushroomGeneric4_Hand
+	{
+		mesh = WorldItems/MushroomGeneric_4_5_Hand,
+		texture = WorldItems/MushroomGeneric4,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0050 -0.0003 -0.0045,
+			rotate = -5.8072 2.5219 1.0582,
+			scale = 0.3474,
+		}
+	}
+	model MushroomGeneric5
+	{
+		mesh = WorldItems/MushroomGeneric_4_5,
+		texture = WorldItems/MushroomGeneric5,
+		scale = 0.4,
+	}
+	model MushroomGeneric5_Hand
+	{
+		mesh = WorldItems/MushroomGeneric_4_5_Hand,
+		texture = WorldItems/MushroomGeneric5,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0050 -0.0003 -0.0045,
+			rotate = -5.8072 2.5219 1.0582,
+			scale = 0.3474,
+		}
+	}
+	model MushroomGeneric6
+	{
+		mesh = WorldItems/MushroomGeneric_6_7,
+		texture = WorldItems/MushroomGeneric6,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0208 0.0112 -0.0033,
+			rotate = 28.6543 79.7757 -38.2039,
+			scale = 1.0246,
+		}
+	}
+	model MushroomGeneric7
+	{
+		mesh = WorldItems/MushroomGeneric_6_7,
+		texture = WorldItems/MushroomGeneric7,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0208 0.0112 -0.0033,
+			rotate = 28.6543 79.7757 -38.2039,
+			scale = 1.0246,
+		}
+	}
+	model Mustard
+	{
+		mesh = WorldItems/Mustard,
+		texture = WorldItems/Mustard,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0025 -0.0151 0.0054,
+			rotate = 179.3164 1.8670 170.7420,
+			scale = 0.6800,
+		}
+	}
+	model MuttonChop
+	{
+		mesh = WorldItems/MuttonChop,
+		texture = WorldItems/MuttonChop,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0163 0.0156 -0.0057,
+			rotate = 104.3701 20.0407 141.8893,
+			scale = 0.5350,
+		}
+	}
+	model MuttonChopBurnt
+	{
+		mesh = WorldItems/MuttonChop,
+		texture = WorldItems/MuttonChopBurnt,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0163 0.0156 -0.0057,
+			rotate = 104.3701 20.0407 141.8893,
+			scale = 0.5350,
+		}
+	}
+	model MuttonChopCooked
+	{
+		mesh = WorldItems/MuttonChop,
+		texture = WorldItems/MuttonChopCooked,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0163 0.0156 -0.0057,
+			rotate = 104.3701 20.0407 141.8893,
+			scale = 0.5350,
+		}
+	}
+	model MuttonChopRotten
+	{
+		mesh = WorldItems/MuttonChop,
+		texture = WorldItems/MuttonChop,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0163 0.0156 -0.0057,
+			rotate = 104.3701 20.0407 141.8893,
+			scale = 0.5350,
+		}
+	}
+	model Pancakes
+	{
+		mesh = WorldItems/Pancakes,
+		texture = WorldItems/Pancakes,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0258 0.0269 -0.0124,
+			rotate = -100.6383 42.9643 -163.6040,
+			scale = 0.6000,
+		}
+	}
+	model Pasta
+	{
+		mesh = WorldItems/Pasta,
+		texture = WorldItems/Pasta,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0025 0.0458 -0.0046,
+			rotate = -89.9057 2.6987 -153.1771,
+			scale = 0.7500,
+		}
+	}
+	model PeanutButter
+	{
+		mesh = WorldItems/PeanutButter,
+		texture = WorldItems/PeanutButter,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0004 0.0090 0.0062,
+			rotate = 0.3288 -1.6670 -1.0654,
+			scale = 0.6862,
+		}
+	}
+	model PeanutButterSandwich
+	{
+		mesh = WorldItems/PeanutButterSandwich,
+		texture = WorldItems/CheeseSandwich_PeanutButterSandwich_BreadSlices,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0220 0.0300 -0.0190,
+			rotate = -85.0534 0.0000 -160.8867,
+		}
+	}
+	model PeanutButterSandwichRotten
+	{
+		mesh = WorldItems/PeanutButterSandwich,
+		texture = WorldItems/CheeseSandwich_PeanutButterSandwich_BreadSlicesRotten,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0220 0.0300 -0.0190,
+			rotate = -85.0534 0.0000 -160.8867,
+		}
+	}
+	model Peanuts
+	{
+		mesh = WorldItems/Peanuts,
+		texture = WorldItems/Peanuts,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0286 0.0382 -0.0081,
+			rotate = 77.0305 -39.0642 -20.5757,
+			scale = 0.7500,
+		}
+	}
+	model Peas
+	{
+		mesh = WorldItems/Peas,
+		texture = WorldItems/Peas,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0435 0.0746 0.0210,
+			rotate = 170.6669 56.8015 113.7593,
+			scale = 0.8100,
+		}
+	}
+	model Pepper
+	{
+		mesh = WorldItems/Pepper,
+		texture = WorldItems/SaltPepper,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0001 0.0295 0.0125,
+			rotate = -7.2466 -0.7840 6.1420,
+			scale = 0.5400,
+		}
+	}
+	model Pickles
+	{
+		mesh = WorldItems/Pickles,
+		texture = WorldItems/Pickles,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0365 0.0421 -0.0100,
+			rotate = -95.5353 9.4202 -142.2091,
+			scale = 0.6000,
+		}
+	}
+	model Pie
+	{
+		mesh = WorldItems/PiePumpkin,
+		texture = WorldItems/Pie,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0300 0.0232 -0.0288,
+			rotate = 90.5281 -8.3492 4.6685,
+			scale = 0.6488,
+		}
+	}
+	model PieRotten
+	{
+		mesh = WorldItems/PiePumpkin,
+		texture = WorldItems/PieRotten,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0300 0.0232 -0.0288,
+			rotate = 90.5281 -8.3492 4.6685,
+			scale = 0.6488,
+		}
+	}
+	model PiePreparation
+	{
+		mesh = WorldItems/PiePreparation,
+		texture = WorldItems/PiePreparation,
+		scale = 0.45,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0045 0.0829 -0.0005,
+			rotate = 93.8758 0.4856 2.7121,
+			scale = 0.7500,
+		}
+	}
+	model PiePreparationCooked
+	{
+		mesh = WorldItems/PiePreparation,
+		texture = WorldItems/PieCooked,
+		scale = 0.45,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0050 0.0820 0.0070,
+			rotate = 101.4810 -0.0000 -18.7694,
+			scale = 0.7500,
+		}
+	}
+	model CakeSlice
+	{
+		mesh = WorldItems/PiePumpkin,
+		texture = WorldItems/CakeSlice,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0300 0.0232 -0.0288,
+			rotate = 90.5281 -8.3492 4.6685,
+			scale = 0.6488,
+		}
+	}
+	model PiePumpkin
+	{
+		mesh = WorldItems/PiePumpkin,
+		texture = WorldItems/PumpkinPieSlice,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0300 0.0232 -0.0288,
+			rotate = 90.5281 -8.3492 4.6685,
+			scale = 0.6488,
+		}
+	}
+	model PiePumpkinRotten
+	{
+		mesh = WorldItems/PiePumpkin,
+		texture = WorldItems/PumpkinPieSliceRotten,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0300 0.0232 -0.0288,
+			rotate = 90.5281 -8.3492 4.6685,
+			scale = 0.6488,
+		}
+	}
+	model Pineapple_Ground
+	{
+		mesh = WorldItems/Pineapple,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0478 0.0708 0.0404,
+			rotate = -58.1910 -1.0259 -4.2466,
+			scale = 0.9300,
+		}
+	}
+	model Pineapple_GroundRotten
+	{
+		mesh = WorldItems/Pineapple,
+		texture = WorldItems/PineappleRotten,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0410 0.0530 0.0430,
+			rotate = -62.0000 -4.0000 -3.0000,
+		}
+	}
+	model Pizza
+	{
+		mesh = WorldItems/Pizza,
+		texture = WorldItems/PizzaPizzaSlice,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0019 -0.0017 -0.0006,
+			rotate = -90.9501 82.5645 -176.3386,
+			scale = 0.7383,
+		}
+	}
+	model PizzaRecipe
+	{
+		mesh = WorldItems/Pizza,
+		texture = WorldItems/PizzaRecipe,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0019 -0.0017 -0.0006,
+			rotate = -90.9501 82.5645 -176.3386,
+			scale = 0.7383,
+		}
+	}
+	model PizzaRecipeCooked
+	{
+		mesh = WorldItems/Pizza,
+		texture = WorldItems/PizzaRecipeCooked,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0019 -0.0017 -0.0006,
+			rotate = -90.9501 82.5645 -176.3386,
+			scale = 0.7383,
+		}
+	}
+	model PizzaRecipeRotten
+	{
+		mesh = WorldItems/Pizza,
+		texture = WorldItems/PizzaRecipeRotten,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0019 -0.0017 -0.0006,
+			rotate = -90.9501 82.5645 -176.3386,
+			scale = 0.7383,
+		}
+	}
+	model PizzaRotten
+	{
+		mesh = WorldItems/Pizza,
+		texture = WorldItems/PizzaPizzaSliceRotten,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0019 -0.0017 -0.0006,
+			rotate = -90.9501 82.5645 -176.3386,
+			scale = 0.7383,
+		}
+	}
+	model Popcorn
+	{
+		mesh = WorldItems/Popcorn,
+		texture = WorldItems/InstantPopcorn,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0178 0.0524 -0.0149,
+			rotate = 150.1806 58.8976 -69.4907,
+			scale = 0.7518,
+		}
+	}
+	model PorkChop
+	{
+		mesh = WorldItems/PorkChop,
+		texture = WorldItems/PorkChop,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0320 0.0340 -0.0040,
+			rotate = 96.0000 7.0000 -32.0000,
+		}
+	}
+	model PorkChopBurnt
+	{
+		mesh = WorldItems/PorkChop,
+		texture = WorldItems/PorkChopBurnt,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0320 0.0340 -0.0040,
+			rotate = 96.0000 7.0000 -32.0000,
+		}
+	}
+	model PorkChopCooked
+	{
+		mesh = WorldItems/PorkChop,
+		texture = WorldItems/PorkChopCooked,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0320 0.0340 -0.0040,
+			rotate = 96.0000 7.0000 -32.0000,
+		}
+	}
+	model PorkChopRotten
+	{
+		mesh = WorldItems/PorkChop,
+		texture = WorldItems/PorkChopRotten,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0320 0.0340 -0.0040,
+			rotate = 96.0000 7.0000 -32.0000,
+		}
+	}
+	model ProcessedCheese
+	{
+		mesh = WorldItems/ProcessedCheese,
+		texture = WorldItems/ProcessedCheese,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0210 0.0340 -0.0080,
+			rotate = -85.4706 -3.2231 -159.6632,
+			scale = 0.4999,
+		}
+	}
+	model ProcessedCheeseRotten
+	{
+		mesh = WorldItems/ProcessedCheese,
+		texture = WorldItems/ProcessedCheeseRotten,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0210 0.0340 -0.0080,
+			rotate = -85.4706 -3.2231 -159.6632,
+			scale = 0.4999,
+		}
+	}
+	model PumpkinPieSlice
+	{
+		mesh = WorldItems/PumpkinPieSlice,
+		texture = WorldItems/PumpkinPieSlice,
+		scale = 0.4,
+	}
+	model PumpkinPieSliceRotten
+	{
+		mesh = WorldItems/PumpkinPieSlice,
+		texture = WorldItems/PumpkinPieSliceRotten,
+		scale = 0.4,
+	}
+	model RabbitMeat
+	{
+		mesh = WorldItems/RabbitMeat,
+		texture = WorldItems/RabbitMeat,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0370 0.0156 -0.0152,
+			rotate = 115.4288 70.8674 -25.2620,
+			scale = 0.5800,
+		}
+	}
+	model RabbitMeatBurnt
+	{
+		mesh = WorldItems/RabbitMeat,
+		texture = WorldItems/RabbitMeatBurnt,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0370 0.0156 -0.0152,
+			rotate = 115.4288 70.8674 -25.2620,
+			scale = 0.5800,
+		}
+	}
+	model RabbitMeatCooked
+	{
+		mesh = WorldItems/RabbitMeat,
+		texture = WorldItems/RabbitMeatCooked,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0370 0.0156 -0.0152,
+			rotate = 115.4288 70.8674 -25.2620,
+			scale = 0.5800,
+		}
+	}
+	model Ramen
+	{
+		mesh = WorldItems/Ramen,
+		texture = WorldItems/Ramen,
+		scale = 0.6,
+	}
+	model RaspberryShortbread
+	{
+		mesh = WorldItems/RaspberryShortbread,
+		texture = WorldItems/RaspberryShortbread,
+		scale = 0.6,
+	}
+	model Rice
+	{
+		mesh = WorldItems/Rice,
+		texture = WorldItems/Rice,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0280 0.0040 -0.0300,
+			rotate = 153.8623 73.7980 -60.5866,
+			scale = 0.7500,
+		}
+	}
+	model RolledDough
+	{
+		mesh = WorldItems/RolledDough,
+		texture = WorldItems/DoughRolledDough,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0250 0.0210 -0.0070,
+			rotate = -86.2100 -2.1231 -161.6449,
+			scale = 0.6022,
+		}
+	}
+	model RolledDoughRotten
+	{
+		mesh = WorldItems/RolledDough,
+		texture = WorldItems/DoughRolledDoughRotten,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0250 0.0210 -0.0070,
+			rotate = -86.2100 -2.1231 -161.6449,
+			scale = 0.6022,
+		}
+	}
+	model RoseHips
+	{
+		mesh = WorldItems/RoseHips,
+		texture = WorldItems/RoseHips,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0226 0.0432 0.0026,
+			rotate = 67.9315 -59.9350 157.5879,
+			scale = 0.4350,
+		}
+	}
+	model SaucePanPasta
+	{
+		mesh = WorldItems/SaucePanPasta,
+		texture = WorldItems/SaucePanPastaRice,
+		scale = 0.35,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0012 0.1122 -0.0577,
+			rotate = -180.0 -90.0 90.0,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0056 0.0410 -0.0552,
+			rotate = 89.0198 -70.9546 -1.5380,
+			scale = 0.9993,
+		}
+	}
+	model SaucePanPastaRotten
+	{
+		mesh = WorldItems/SaucePanPasta,
+		texture = WorldItems/SaucePanPastaRiceRotten,
+		scale = 0.35,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0012 0.1122 -0.0577,
+			rotate = -180.0 -90.0 90.0,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0056 0.0410 -0.0552,
+			rotate = 89.0198 -70.9546 -1.5380,
+			scale = 0.9993,
+		}
+	}
+	model WaterSaucepanPasta
+	{
+		mesh = WorldItems/WaterSaucepanPasta,
+		texture = WorldItems/SaucePanPastaRice,
+		scale = 0.35,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0012 0.1122 -0.0577,
+			rotate = -180.0 -90.0 90.0,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0056 0.0410 -0.0552,
+			rotate = 89.0198 -70.9546 -1.5380,
+			scale = 0.9993,
+		}
+	}
+	model WaterSaucepanPastaRotten
+	{
+		mesh = WorldItems/WaterSaucepanPasta,
+		texture = WorldItems/SaucePanPastaRiceRotten,
+		scale = 0.35,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0012 0.1122 -0.0577,
+			rotate = -180.0 -90.0 90.0,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0056 0.0410 -0.0552,
+			rotate = 89.0198 -70.9546 -1.5380,
+			scale = 0.9993,
+		}
+	}
+	model SaucePanRice
+	{
+		mesh = WorldItems/SaucePanRice,
+		texture = WorldItems/SaucePanPastaRice,
+		scale = 0.35,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0012 0.1122 -0.0577,
+			rotate = -180.0 -90.0 90.0,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0056 0.0410 -0.0552,
+			rotate = 89.0198 -70.9546 -1.5380,
+			scale = 0.9993,
+		}
+	}
+	model SaucePanRiceRotten
+	{
+		mesh = WorldItems/SaucePanRice,
+		texture = WorldItems/SaucePanPastaRiceRotten,
+		scale = 0.35,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0012 0.1122 -0.0577,
+			rotate = -180.0 -90.0 90.0,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0056 0.0410 -0.0552,
+			rotate = 89.0198 -70.9546 -1.5380,
+			scale = 0.9993,
+		}
+	}
+	model WaterSaucepanRice
+	{
+		mesh = WorldItems/SaucePanRice,
+		texture = WorldItems/SaucePanPastaRice,
+		scale = 0.35,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0012 0.1122 -0.0577,
+			rotate = -180.0 -90.0 90.0,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0056 0.0410 -0.0552,
+			rotate = 89.0198 -70.9546 -1.5380,
+			scale = 0.9993,
+		}
+	}
+	model WaterSaucepanRiceRotten
+	{
+		mesh = WorldItems/SaucePanRice,
+		texture = WorldItems/SaucePanPastaRiceRotten,
+		scale = 0.35,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0012 0.1122 -0.0577,
+			rotate = -180.0 -90.0 90.0,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0056 0.0410 -0.0552,
+			rotate = 89.0198 -70.9546 -1.5380,
+			scale = 0.9993,
+		}
+	}
+	model Steak
+	{
+		mesh = WorldItems/Steak,
+		texture = WorldItems/Steak,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0324 0.0142 -0.0156,
+			rotate = -97.9031 -19.3314 -173.2481,
+			scale = 0.8650,
+		}
+	}
+	model SteakCooked
+	{
+		mesh = WorldItems/Steak,
+		texture = WorldItems/SteakCooked,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0324 0.0142 -0.0156,
+			rotate = -97.9031 -19.3314 -173.2481,
+			scale = 0.8650,
+		}
+	}
+	model SteakBurnt
+	{
+		mesh = WorldItems/Steak,
+		texture = WorldItems/SteakBurnt,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0324 0.0142 -0.0156,
+			rotate = -97.9031 -19.3314 -173.2481,
+			scale = 0.8650,
+		}
+	}
+	model SteakRotten
+	{
+		mesh = WorldItems/Steak,
+		texture = WorldItems/SteakRotten,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0324 0.0142 -0.0156,
+			rotate = -97.9031 -19.3314 -173.2481,
+			scale = 0.8650,
+		}
+	}
+	model Sugar
+	{
+		mesh = WorldItems/Sugar,
+		texture = WorldItems/Sugar,
+		scale = 0.5,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0022 0.0106 0.0038,
+			rotate = -0.1541 21.4447 4.4688,
+			scale = 0.4850,
+		}
+	}
+	model SunflowerSeeds
+	{
+		mesh = WorldItems/SunflowerSeeds,
+		texture = WorldItems/SunflowerSeeds,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0110 0.0420 -0.0030,
+			rotate = -141.0442 14.2529 -96.3615,
+			scale = 0.5000,
+		}
+	}
+	model TeaBag
+	{
+		mesh = WorldItems/TeaBag,
+		texture = WorldItems/TeaBag,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0285 0.0124 -0.0099,
+			rotate = 0.0000 0.0000 -9.6795,
+			scale = 0.6150,
+		}
+	}
+	model Tofu
+	{
+		mesh = WorldItems/Tofu,
+		texture = WorldItems/Tofu,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0340 0.0380 -0.0290,
+			rotate = -87.0000 0.0000 -152.0000,
+		}
+	}
+	model Vinegar
+	{
+		mesh = WorldItems/Vinegar,
+		texture = WorldItems/Vinegar,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0018 -0.0115 0.0052,
+			rotate = 81.9837 -78.5163 81.0189,
+			scale = 0.6050,
+		}
+	}
+	model Violets
+	{
+		mesh = WorldItems/Violets,
+		texture = WorldItems/Violets,
+		scale = 0.6,
+	}
+	model WafflesRotten
+	{
+		mesh = WorldItems/Waffles,
+		texture = WorldItems/WafflesRotten,
+		scale = 0.3,
+	}
+	model WafflesRotten_Hand
+	{
+		mesh = WorldItems/Waffle_Hand,
+		texture = WorldItems/WafflesRotten,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0229 0.0349 -0.0095,
+			rotate = -126.8403 53.7664 -140.5557,
+			scale = 0.1900,
+		}
+	}
+	model Watermelon_Ground
+	{
+		mesh = WorldItems/Watermelon,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0190 0.1808 0.0172,
+			rotate = 6.0000 -55.0000 92.0000,
+		}
+	}
+	model Watermelon_GroundRotten
+	{
+		mesh = WorldItems/Watermelon,
+		texture = WorldItems/WatermelonRotten,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0190 0.1808 0.0172,
+			rotate = 6.0000 -55.0000 92.0000,
+		}
+	}
+	model WildEggs
+	{
+		mesh = WorldItems/WildEggs,
+		texture = WorldItems/WildEggs,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0419 0.0430 -0.0134,
+			rotate = -54.7040 -26.2428 -127.5632,
+			scale = 0.7500,
+		}
+	}
+	model Yogurt
+	{
+		mesh = WorldItems/Yogurt,
+		texture = WorldItems/Yogurt,
+		scale = 0.6,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0074 0.0366 0.0139,
+			rotate = -8.9633 -12.9480 -9.3437,
+			scale = 0.5025,
+		}
+	}
+	model BellPepper_Ground
+	{
+		mesh = WorldItems/BellPepper,
+		texture = WorldItems/BellPepper,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0437 0.0385 -0.0284,
+			rotate = 21.7097 -16.4287 -45.4748,
+			scale = 0.7400,
+		}
+	}
+	model BellPepper_GroundRotten
+    {
+        mesh = WorldItems/BellPepper,
+        texture = WorldItems/BellPepperRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0437 0.0385 -0.0284,
+			rotate = 21.7097 -16.4287 -45.4748,
+			scale = 0.7400,
+		}
+    }
+	model Broccoli_Ground
+	{
+		mesh = WorldItems/Broccoli,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0455 0.0392 -0.0053,
+			rotate = 0.0000 0.0000 -69.0000,
+			scale = 0.6150,
+		}
+	}
+	model Broccoli_GroundRotten
+    {
+        mesh = WorldItems/Broccoli,
+        texture = WorldItems/BroccoliRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0455 0.0392 -0.0053,
+			rotate = 0.0000 0.0000 -69.0000,
+			scale = 0.6150,
+		}
+    }
+	model Chicken
+	{
+		mesh = WorldItems/Chicken,
+		texture = WorldItems/ChickenRaw,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0393 0.0470 -0.0157,
+			rotate = -104.6665 54.0626 -155.2178,
+			scale = 0.9100,
+		}
+	}
+	model ChickenBurnt
+    {
+        mesh = WorldItems/Chicken,
+        texture = WorldItems/ChickenBurnt,
+        scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0393 0.0470 -0.0157,
+			rotate = -104.6665 54.0626 -155.2178,
+			scale = 0.9100,
+		}
+    }
+	model ChickenCooked
+    {
+        mesh = WorldItems/Chicken,
+        texture = WorldItems/ChickenCooked,
+        scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0393 0.0470 -0.0157,
+			rotate = -104.6665 54.0626 -155.2178,
+			scale = 0.9100,
+		}
+    }
+	model ChickenRotten
+    {
+        mesh = WorldItems/Chicken,
+        texture = WorldItems/ChickenRawRotten,
+        scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0393 0.0470 -0.0157,
+			rotate = -104.6665 54.0626 -155.2178,
+			scale = 0.9100,
+		}
+    }
+	model EggPlant_Ground
+	{
+		mesh = WorldItems/EggPlant,
+		texture = WorldItems/EggPlant,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0390 -0.0122 -0.0183,
+			rotate = 7.9555 -0.8670 -1.5806,
+		}
+	}
+	model EggPlant_GroundRotten
+    {
+        mesh = WorldItems/EggPlant,
+        texture = WorldItems/EggPlantRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0390 -0.0110 -0.0020,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }
+	model Leek_Ground
+	{
+		mesh = WorldItems/Leek,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0338 -0.0209 0.0043,
+			rotate = -92.7486 13.9964 26.1197,
+			scale = 0.6057,
+		}
+	}
+	model Leek_GroundRotten
+    {
+        mesh = WorldItems/Leek,
+        texture = WorldItems/LeekRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0338 -0.0209 0.0043,
+			rotate = -92.7486 13.9964 26.1197,
+			scale = 0.6057,
+		}
+    }
+	model Lemon_Ground
+	{
+		mesh = WorldItems/Lemon,
+		texture = WorldItems/Lemon,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0163 0.0419 0.0061,
+			rotate = -81.7970 24.9331 30.4825,
+			scale = 0.7750,
+		}
+	}
+	model Lemon_GroundRotten
+    {
+        mesh = WorldItems/Lemon,
+        texture = WorldItems/LemonRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0163 0.0419 0.0061,
+			rotate = -81.7970 24.9331 30.4825,
+			scale = 0.7750,
+		}
+    }
+	model Lettuce_Ground
+	{
+		mesh = WorldItems/Lettuce,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0080 0.0150 0.0020,
+			rotate = -26.0000 21.0000 26.0000,
+		}
+	}
+	model Lettuce_GroundRotten
+    {
+        mesh = WorldItems/Lettuce,
+        texture = WorldItems/LettuceRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0080 0.0150 0.0020,
+			rotate = -26.0000 21.0000 26.0000,
+		}
+    }
+	model Salmon
+	{
+		mesh = WorldItems/Salmon,
+		texture = WorldItems/Salmon,
+		scale = 0.25,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0276 0.0231 -0.0079,
+			rotate = 165.9079 77.2167 -81.0486,
+			scale = 0.7300,
+		}
+	}
+	model SalmonBurnt
+    {
+        mesh = WorldItems/Salmon,
+        texture = WorldItems/SalmonBurnt,
+        scale = 0.25,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0276 0.0231 -0.0079,
+			rotate = 165.9079 77.2167 -81.0486,
+			scale = 0.7300,
+		}
+    }
+	model SalmonCooked
+    {
+        mesh = WorldItems/Salmon,
+        texture = WorldItems/SalmonCooked,
+        scale = 0.25,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0276 0.0231 -0.0079,
+			rotate = 165.9079 77.2167 -81.0486,
+			scale = 0.7300,
+		}
+    }
+	model SalmonRotten
+    {
+        mesh = WorldItems/Salmon,
+        texture = WorldItems/SalmonRotten,
+        scale = 0.25,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0276 0.0231 -0.0079,
+			rotate = 165.9079 77.2167 -81.0486,
+			scale = 0.7300,
+		}
+    }
+	model BeerBottleGround
+    {
+        mesh = WorldItems/BeerBottle,
+        texture = BeerBottle,
+        scale = 0.4,
+    }
+	model WhiskeyBottleGround
+    {
+        mesh = WorldItems/WhiskeyBottle,
+        texture = WhiskeyBottle,
+        scale = 0.4,
+    }
+	model WineRedGround
+    {
+        mesh = WorldItems/Wine,
+        texture = RedWineBottle,
+        scale = 0.4,
+    }
+	model WineWhiteGround
+    {
+        mesh = WorldItems/Wine,
+        texture = WhiteWineBottle,
+        scale = 0.4,
+    }
+	model Milk_Ground
+    {
+        mesh = WorldItems/Milk,
+        texture = WorldItems/MilkCarton,
+        scale = 0.35,
+    }
+	model Burger_Ground
+    {
+        mesh = WorldItems/Burger,
+        scale = 0.4,
+    }
+	model Burger_GroundRotten
+    {
+        mesh = WorldItems/Burger,
+        texture = WorldItems/BurgerRotten,
+        scale = 0.4,
+    }
+	model CannedSardines_Open_Ground
+	{
+		mesh = WorldItems/CannedSardinesOpen,
+		texture = WorldItems/CannedSardines,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0214 0.0472 0.0010,
+			rotate = -176.0108 -0.1151 -119.3287,
+		}
+	}
+	model CannedSardines_Open_GroundRotten
+    {
+        mesh = WorldItems/CannedSardinesOpen,
+        texture = WorldItems/CannedSardinesRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0330 0.0150 0.0050,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }
+	model CannedSardines_Ground
+    {
+        mesh = WorldItems/CannedSardines,
+        scale = 0.4,
+    }
+	model ChickenFried_Ground
+    {
+        mesh = WorldItems/ChickenFried,
+        texture = WorldItems/ChickenCooked,
+        scale = 0.4,
+    }
+	model Corndog_Ground
+    {
+        mesh = WorldItems/Corndog,
+        texture = WorldItems/CornDog,
+        scale = 0.4,
+    }
+	model GriddlePanFriedVegetables_Ground
+	{
+		mesh = WorldItems/GriddlePanFriedVegetables,
+		texture = WorldItems/GriddlePanFriedVegetables,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0170 0.0580 -0.0060,
+			rotate = -50.5036 -80.0644 -141.2879,
+			scale = 0.8000,
+		}
+	}
+	model GriddlePanFriedVegetables_GroundRotten
+    {
+        mesh = WorldItems/GriddlePanFriedVegetables,
+        texture = WorldItems/GriddlePanFriedVegetablesRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0170 0.0580 -0.0060,
+			rotate = -50.5036 -80.0644 -141.2879,
+			scale = 0.8000,
+		}
+    }
+	model PanFriedVegetables_Ground
+	{
+		mesh = WorldItems/PanFriedVegetables,
+		texture = WorldItems/GriddlePanFriedVegetables,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0240 0.0350 -0.0020,
+			rotate = -95.1907 -88.2863 -179.9999,
+		}
+	}
+	model PanFriedVegetables_GroundRotten
+    {
+        mesh = WorldItems/PanFriedVegetables,
+        texture = WorldItems/GriddlePanFriedVegetablesRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0240 0.0350 -0.0020,
+			rotate = -95.1907 -88.2863 -179.9999,
+		}
+    }
+	model RoastingPanFriedVegetables
+	{
+		mesh = WorldItems/RoastedVegtables,
+		texture = WorldItems/RoastedVegtables,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0010 0.0940 -0.0170,
+			rotate = 86.1354 0.0000 0.0000,
+			scale = 0.7000,
+		}
+	}
+	model RoastingPanFriedVegetablesRotten
+	{
+		mesh = WorldItems/RoastedVegtables,
+		texture = WorldItems/RoastedVegtablesRotten,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0010 0.0940 -0.0170,
+			rotate = 86.1354 0.0000 0.0000,
+			scale = 0.7000,
+		}
+	}
+	model SmallAnimalMeat_Ground
+	{
+		mesh = WorldItems/SmallAnimalMeat,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0340 0.0270 -0.0180,
+			rotate = -162.0000 68.0000 -90.0000,
+		}
+	}
+	model SmallAnimalMeat_GroundBurnt
+    {
+        mesh = WorldItems/SmallAnimalMeat,
+        texture = WorldItems/SmallAnimalMeatBurnt,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0340 0.0270 -0.0180,
+			rotate = -162.0000 68.0000 -90.0000,
+		}
+    }
+	model SmallAnimalMeat_GroundCooked
+    {
+        mesh = WorldItems/SmallAnimalMeat,
+        texture = WorldItems/SmallAnimalMeatCooked,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0340 0.0270 -0.0180,
+			rotate = -162.0000 68.0000 -90.0000,
+		}
+    }
+	model SmallAnimalMeat_GroundRotten
+    {
+        mesh = WorldItems/SmallAnimalMeat,
+        texture = WorldItems/SmallAnimalMeatRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0340 0.0270 -0.0180,
+			rotate = -162.0000 68.0000 -90.0000,
+		}
+    }
+	model SmallBirdMeat_Ground
+	{
+		mesh = WorldItems/SmallBirdMeat,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0370 0.0310 -0.0010,
+			rotate = -148.0000 41.0000 -112.0000,
+		}
+	}
+	model SmallBirdMeat_GroundBurnt
+    {
+        mesh = WorldItems/SmallBirdMeat,
+        texture = WorldItems/SmallBirdMeatBurnt,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0370 0.0310 -0.0010,
+			rotate = -148.0000 41.0000 -112.0000,
+		}
+    }
+	model SmallBirdMeat_GroundCooked
+    {
+        mesh = WorldItems/SmallBirdMeat,
+        texture = WorldItems/SmallBirdMeatCooked,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0370 0.0310 -0.0010,
+			rotate = -148.0000 41.0000 -112.0000,
+		}
+    }
+	model SmallBirdMeat_GroundRotten
+    {
+        mesh = WorldItems/SmallBirdMeat,
+        texture = WorldItems/SmallBirdMeatRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0370 0.0310 -0.0010,
+			rotate = -148.0000 41.0000 -112.0000,
+		}
+    }
+	model TinnedTuna_Ground
+    {
+        mesh = WorldItems/TinnedTuna,
+        scale = 0.4,
+    }
+	model TinnedTuna_Open_Ground
+	{
+		mesh = WorldItems/TinnedTunaOpen,
+		texture = WorldItems/TinnedTuna,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0134 0.0662 0.0257,
+			rotate = 158.1704 27.9503 -143.7449,
+			scale = 0.8992,
+		}
+	}
+	model TinnedTuna_Open_GroundRotten
+    {
+        mesh = WorldItems/TinnedTunaOpen,
+        texture = WorldItems/TinnedTunaRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0341 0.0435 -0.0035,
+			rotate = 155.4908 57.7754 -155.7312,
+			scale = 0.8250,
+		}
+    }
+	model TVDinner_Ground
+    {
+        mesh = WorldItems/TVDinner,
+        scale = 0.4,
+    }
+	model Apple_Ground
+	{
+		mesh = WorldItems/Apple,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0000 0.0379 -0.0303,
+			rotate = 55.3538 -9.1287 29.5304,
+			scale = 0.9000,
+		}
+	}
+	model Apple_GroundRotten
+    {
+        mesh = WorldItems/Apple,
+        texture = WorldItems/AppleRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0000 0.0379 -0.0303,
+			rotate = 55.3538 -9.1287 29.5304,
+			scale = 0.9000,
+		}
+    }
+	model Avocado_Ground
+	{
+		mesh = WorldItems/Avocado,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0180 0.0250 0.0230,
+			rotate = -87.0000 8.0000 37.0000,
+		}
+	}
+	model Avocado_GroundRotten
+    {
+        mesh = WorldItems/Avocado,
+        texture = WorldItems/AvocadoRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0180 0.0250 0.0230,
+			rotate = -87.0000 8.0000 37.0000,
+		}
+    }
+	model Carrots_Ground
+	{
+		mesh = WorldItems/Carrots,
+		scale = 0.4,
+	}
+	model Carrots_GroundRotten
+    	{
+        mesh = WorldItems/Carrots,
+        texture = WorldItems/CarrotsRotten,
+        scale = 0.4,
+	}
+	model Carrots_Hand
+	{
+		mesh = WorldItems/Carrots_Hand,
+        texture = WorldItems/Carrots,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0140 0.0069 0.0076,
+			rotate = 70.4062 -10.8250 119.8001,
+			scale = 0.2415,
+		}
+	}
+	model CraftingCarrot
+	{
+		mesh = WorldItems/Carrots_Hand,
+		texture = WorldItems/Carrots,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0260 0.0283 -0.0120,
+			rotate = 91.6030 -3.4957 -8.0916,
+			scale = 0.7921,
+		}
+	}
+	model Carrots_HandRotten
+    {
+        mesh = WorldItems/Carrots_Hand,
+        texture = WorldItems/CarrotsRotten,
+        scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0140 0.0069 0.0076,
+			rotate = 70.4062 -10.8250 119.8001,
+			scale = 0.2415,
+		}
+    }
+	model Corn_Ground
+	{
+		mesh = WorldItems/Corn,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0332 0.0720 0.0122,
+			rotate = 98.6659 1.2299 -118.0555,
+		}
+	}
+	model Corn_GroundRotten
+    {
+        mesh = WorldItems/Corn,
+        texture = WorldItems/CornRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0600 0.0220 -0.0030,
+			rotate = 95.0000 9.0000 -115.0000,
+		}
+    }
+	model Onion_Ground
+	{
+		mesh = WorldItems/Onion,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0066 0.0414 -0.0071,
+			rotate = -68.2906 -4.9969 80.8144,
+			scale = 0.7950,
+		}
+	}
+	model Onion_GroundRotten
+    {
+        mesh = WorldItems/Onion,
+        texture = WorldItems/OnionRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0066 0.0414 -0.0071,
+			rotate = -68.2906 -4.9969 80.8144,
+			scale = 0.7950,
+		}
+    }
+	model Orange_Ground
+	{
+		mesh = WorldItems/Orange,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0331 0.0262 -0.0122,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model Orange_GroundRotten
+    {
+        mesh = WorldItems/Orange,
+        texture = WorldItems/OrangeRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0331 0.0262 -0.0122,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }
+	model Peach_Ground
+	{
+		mesh = WorldItems/Peach,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0369 0.0218 -0.0147,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.9550,
+		}
+	}
+	model Peach_GroundRotten
+    {
+        mesh = WorldItems/Peach,
+        texture = WorldItems/PeachRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0369 0.0218 -0.0147,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.9550,
+		}
+    }
+	model Zucchini_Ground
+	{
+		mesh = WorldItems/Zucchini,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0278 0.0079 -0.0299,
+			rotate = -94.9140 -0.9979 172.6673,
+			scale = 0.8400,
+		}
+	}
+	model Zucchini_GroundRotten
+    {
+        mesh = WorldItems/Zucchini,
+        texture = WorldItems/ZucchiniRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0278 0.0079 -0.0299,
+			rotate = -94.9140 -0.9979 172.6673,
+			scale = 0.8400,
+		}
+    }
+	model Banana_Ground
+	{
+		mesh = WorldItems/Banana,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0254 0.0144 -0.0265,
+			rotate = -78.9187 -2.2364 -163.6844,
+			scale = 0.7783,
+		}
+	}
+	model Banana_GroundRotten
+    {
+        mesh = WorldItems/Banana,
+        texture = WorldItems/BananaRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0254 0.0144 -0.0265,
+			rotate = -78.9187 -2.2364 -163.6844,
+			scale = 0.7783,
+		}
+    }
+	model Cockroach_Ground
+	{
+		mesh = WorldItems/Cockroach,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0241 0.0436 -0.0109,
+			rotate = -84.6908 -6.7555 -133.1379,
+		}
+	}
+	model Cricket_Ground
+	{
+		mesh = WorldItems/Cricket,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0245 0.0463 -0.0130,
+			rotate = -95.9787 0.5194 -141.7839,
+		}
+	}
+	model FrogMeat_Ground
+	{
+		mesh = WorldItems/FrogMeat,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0353 0.0228 -0.0151,
+			rotate = -75.9439 -19.7866 -150.4808,
+		}
+	}
+	model FrogMeat_GroundBurnt
+    {
+        mesh = WorldItems/FrogMeat,
+        texture = WorldItems/FrogMeatBurnt,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0353 0.0228 -0.0151,
+			rotate = -75.9439 -19.7866 -150.4808,
+		}
+    }
+	model FrogMeat_GroundCooked
+    {
+        mesh = WorldItems/FrogMeat,
+        texture = WorldItems/FrogMeatCooked,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0353 0.0228 -0.0151,
+			rotate = -75.9439 -19.7866 -150.4808,
+		}
+    }
+	model FrogMeat_GroundRotten
+    {
+        mesh = WorldItems/FrogMeat,
+        texture = WorldItems/FrogMeatRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0353 0.0228 -0.0151,
+			rotate = -75.9439 -19.7866 -150.4808,
+		}
+    }
+	model Grasshopper_Ground
+	{
+		mesh = WorldItems/Grasshopper,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0130 0.0350 -0.0130,
+			rotate = -91.6234 0.6355 -143.7493,
+		}
+	}
+	model Worm_Ground
+	{
+		mesh = WorldItems/Worm,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0130 0.0350 -0.0080,
+			rotate = -94.4896 0.7667 -150.2507,
+		}
+	}
+	model Bacon_Ground
+	{
+		mesh = WorldItems/Bacon,
+		texture = WorldItems/BaconBaconBits,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0160 0.0330 -0.0060,
+			rotate = 163.9299 68.4918 -72.6889,
+			scale = 0.7500,
+		}
+	}
+	model Bacon_GroundCooked
+    {
+        mesh = WorldItems/Bacon,
+        texture = WorldItems/BaconBaconBitsCooked,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0160 0.0330 -0.0060,
+			rotate = 163.9299 68.4918 -72.6889,
+			scale = 0.7500,
+		}
+    }
+	model Bacon_GroundRotten
+    {
+        mesh = WorldItems/Bacon,
+        texture = WorldItems/BaconBaconBitsRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0160 0.0330 -0.0060,
+			rotate = 163.9299 68.4918 -72.6889,
+			scale = 0.7500,
+		}
+    }
+	model BaconStrip_Hand
+	{
+		mesh = WorldItems/BaconStrip_Hand,
+		texture = WorldItems/BaconBaconBits,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0106 0.0143 -0.0044,
+			rotate = 166.2460 52.3307 -82.1295,
+			scale = 0.3225,
+		}
+	}
+	model BaconStrip_HandCooked
+    {
+        mesh = WorldItems/BaconStrip_Hand,
+        texture = WorldItems/BaconBaconBitsCooked,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0106 0.0143 -0.0044,
+			rotate = 166.2460 52.3307 -82.1295,
+			scale = 0.3225,
+		}
+    }
+	model BaconStrip_HandRotten
+    {
+        mesh = WorldItems/BaconStrip_Hand,
+        texture = WorldItems/BaconBaconBitsRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0106 0.0143 -0.0044,
+			rotate = 166.2460 52.3307 -82.1295,
+			scale = 0.3225,
+		}
+    }
+	model BaconBits_Ground
+	{
+		mesh = WorldItems/BaconBits,
+		texture = WorldItems/BaconBaconBits,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0420 0.0393 0.0078,
+			rotate = -58.1775 -34.1478 23.5325,
+		}
+	}
+	model BaconBits_GroundCooked
+    {
+        mesh = WorldItems/BaconBits,
+        texture = WorldItems/BaconBaconBitsCooked,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0180 0.0430 -0.0180,
+			rotate = 58.9349 -33.1855 -59.5471,
+		}
+    }
+	model BaconBits_GroundRotten
+    {
+        mesh = WorldItems/BaconBits,
+        texture = WorldItems/BaconBaconBitsRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0180 0.0430 -0.0180,
+			rotate = 58.9349 -33.1855 -59.5471,
+		}
+    }
+	model PizzaSlice_Ground
+	{
+		mesh = WorldItems/PizzaSlice,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0216 0.0302 -0.0168,
+			rotate = 91.5551 -9.4537 -13.2658,
+			scale = 0.6450,
+		}
+	}
+	model PizzaSlice_GroundRotten
+    {
+        mesh = WorldItems/PizzaSlice,
+        texture = WorldItems/PizzaSliceRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0216 0.0302 -0.0168,
+			rotate = 91.5551 -9.4537 -13.2658,
+			scale = 0.6450,
+		}
+    }
+	model HotDog_Ground
+    {
+        mesh = WorldItems/HotDog,
+        texture = HotDog,
+        scale = 0.4,
+    }
+	model BloomingBroccoli_Ground
+    {
+        mesh = WorldItems/BloomingBroccoli,
+        scale = 0.4,
+    }
+	model BloomingBroccoli_GroundRotten
+    {
+        mesh = WorldItems/BloomingBroccoli,
+        texture = WorldItems/BloomingBroccoliRotten,
+        scale = 0.4,
+    }
+	model MayoJar_Ground
+    {
+        mesh = WorldItems/JarLid,
+        texture = WorldItems/Jar_Mayo,
+        scale = 0.4,
+    }
+	model Remoulade_Ground
+	{
+		mesh = WorldItems/JarLid,
+		texture = WorldItems/Jar_Romoulade,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0080 0.0132 0.0009,
+			rotate = 4.6292 -13.1782 -3.6872,
+			scale = 0.7788,
+		}
+	}
+	model Cabbage_Ground
+	{
+		mesh = WorldItems/Cabbage,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0630 0.0376 -0.0595,
+			rotate = -3.4314 -63.1398 -93.8452,
+			scale = 0.7500,
+		}
+	}
+	model Cabbage_GroundRotten
+    {
+        mesh = WorldItems/Cabbage,
+        texture = WorldItems/CabbageRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0510 0.0310 -0.0610,
+			rotate = -3.4314 -63.1398 -93.8452,
+			scale = 0.7500,
+		}
+    }
+	model Potato_Ground
+	{
+		mesh = WorldItems/Potato,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0370 0.0370 -0.0290,
+			rotate = -82.0198 0.0000 -145.6155,
+			scale = 0.7500,
+		}
+	}
+	model Potato_GroundRotten
+    {
+        mesh = WorldItems/Potato,
+        texture = WorldItems/PotatoRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0370 0.0370 -0.0290,
+			rotate = -82.0198 0.0000 -145.6155,
+			scale = 0.7500,
+		}
+    }
+	model RedRadish_Ground
+	{
+		mesh = WorldItems/RedRadish,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0216 0.0524 -0.0315,
+			rotate = 128.6825 12.3114 -9.3714,
+			scale = 0.9100,
+		}
+	}
+	model RedRadish_GroundRotten
+    {
+        mesh = WorldItems/RedRadish,
+        texture = WorldItems/RedRadishRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0216 0.0524 -0.0315,
+			rotate = 128.6825 12.3114 -9.3714,
+			scale = 0.9100,
+		}
+    }
+	model Salad_Ground
+    {
+        mesh = WorldItems/Salad,
+        scale = 0.35,
+    }
+	model Salad_GroundRotten
+    {
+        mesh = WorldItems/Salad,
+        texture = WorldItems/SaladRotten,
+        scale = 0.35,
+    }
+	model Strawberry_Ground
+	{
+		mesh = WorldItems/Strawberry,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0318 0.0549 -0.0176,
+			rotate = 68.6343 -40.9539 -37.5697,
+		}
+	}
+	model Strawberry_GroundRotten
+    {
+        mesh = WorldItems/Strawberry,
+        texture = WorldItems/StrawberryRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0318 0.0549 -0.0176,
+			rotate = 68.6343 -40.9539 -37.5697,
+		}
+    }
+	model Tomato_Ground
+	{
+		mesh = WorldItems/Tomato,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0337 0.0472 -0.0375,
+			rotate = 118.6983 65.7139 -36.3305,
+			scale = 0.9000,
+		}
+	}
+	model Tomato_GroundRotten
+    {
+        mesh = WorldItems/Tomato,
+        texture = WorldItems/TomatoRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0337 0.0472 -0.0375,
+			rotate = 118.6983 65.7139 -36.3305,
+			scale = 0.9000,
+		}
+    }
+	model BeerCan_Ground
+    {
+        mesh = PopCanRed,
+        texture = BeerCan,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0295 0.0029 -0.0065,
+			rotate = 1.6430 -30.8036 -10.4295,
+			scale = 1.0087,
+		}
+    }
+	model BowlRamen_Ground
+	{
+		mesh = WorldItems/BowlRamen,
+		texture = WorldItems/BowlRamen,
+		scale = 0.4,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0000 0.0542 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+	}
+	model BowlRamen_GroundRotten
+    {
+        mesh = WorldItems/BowlRamen,
+        texture = WorldItems/BowlRamenRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0000 0.0542 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+    }
+	model BowlSalad_Ground
+    {
+        mesh = WorldItems/BowlRamen,
+        texture = WorldItems/BowlSalad,
+        scale = 0.4,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0000 0.0542 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+    }
+	model BowlSoup_Ground
+	{
+		mesh = WorldItems/BowlSoup,
+		texture = WorldItems/BowlSoup,
+		scale = 0.4,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0000 0.0542 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+	}
+	model BowlSoup_GroundRotten
+    {
+        mesh = WorldItems/BowlSoup,
+        texture = WorldItems/BowlSoupRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0000 0.0542 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+    }
+	model BowlRice_Ground
+	{
+		mesh = WorldItems/BowlRamen,
+		texture = WorldItems/BowlRice,
+		scale = 0.4,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0000 0.0542 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+	}
+	model BowlPasta_Ground
+    {
+        mesh = WorldItems/BowlRamen,
+        texture = WorldItems/BowlPasta,
+        scale = 0.4,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0000 0.0542 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+    }
+	model CookingPotSoup_Ground
+    {
+        mesh = WorldItems/CookingPotFull,
+        texture = WorldItems/CookingPotSoup,
+        scale = 0.4,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0355 0.1534 -0.1613,
+			rotate = 90.8060 0.2262 -0.1529,
+			scale = 0.8900,
+		}
+    }
+	model CookingPotRice_Ground
+    {
+        mesh = WorldItems/CookingPotFull,
+        texture = WorldItems/CookingPotRice,
+        scale = 0.4,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0355 0.1534 -0.1613,
+			rotate = 90.8060 0.2262 -0.1529,
+			scale = 0.8900,
+		}
+    }
+	model CookingPotPasta_Ground
+	{
+		mesh = WorldItems/CookingPotFull,
+		texture = WorldItems/CookingPotPasta,
+		scale = 0.4,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0355 0.1534 -0.1613,
+			rotate = 90.8060 0.2262 -0.1529,
+			scale = 0.8900,
+		}
+	}
+	model JarFoodBellPeppers_Ground
+    {
+		mesh = WorldItems/JarFood,
+		texture = WorldItems/JarFoodBellPeppers,
+		scale = 0.38,
+    }
+	model JarFoodBroccoli_Ground
+    {
+		mesh = WorldItems/JarFood,
+		texture = WorldItems/JarFoodBroccoli,
+		scale = 0.38,
+    }
+	model JarFoodCabbage_Ground
+    {
+		mesh = WorldItems/JarFood,
+		texture = WorldItems/JarFoodCabbage,
+		scale = 0.38,
+    }
+	model JarFoodCarrots_Ground
+    {
+		mesh = WorldItems/JarFood,
+		
+		texture = WorldItems/JarFoodOrange,
+		scale = 0.38,
+    }
+	model JarFoodEggplants_Ground
+    {
+		mesh = WorldItems/JarFood,
+		
+		texture = WorldItems/JarFoodPurple,
+		scale = 0.38,
+    }
+	model JarFoodLeeks_Ground
+    {
+		mesh = WorldItems/JarFood,
+		texture = WorldItems/JarFoodLeeks,
+		scale = 0.38,
+    }
+	model JarFoodPotatoes_Ground
+    {
+		mesh = WorldItems/JarFood,
+		texture = WorldItems/JarFoodPotatoes,
+		scale = 0.38,
+    }
+	model JarFoodRadish_Ground
+    {
+		mesh = WorldItems/JarFood,
+		texture = WorldItems/JarFoodRadish,
+		scale = 0.38,
+    }
+	model JarFoodTomatoes_Ground
+    {
+		mesh = WorldItems/JarFood,
+		texture = WorldItems/JarFoodTomatoes,
+		scale = 0.38,
+    }
+	model WaterMelonSlice_Ground
+	{
+		mesh = WorldItems/WaterMelonSlice,
+		texture = WorldItems/WaterMelonSliceChunks,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0340 0.0130 -0.0280,
+			rotate = 93.0000 -9.0000 -33.0000,
+		}
+	}
+	model WaterMelonChunks_Ground
+    {
+		mesh = WorldItems/WaterMelonChunks,
+		texture = WorldItems/WaterMelonSliceChunks,
+		scale = 0.4,
+    }
+	model WaterMelonSlice_GroundRotten
+    {
+		mesh = WorldItems/WaterMelonSlice,
+		texture = WorldItems/WaterMelonSliceChunksRotten,
+		scale = 0.4,
+    }
+	model Bagel_Ground
+	{
+		mesh = WorldItems/Bagel,
+		texture = WorldItems/Bagel,
+		scale = 0.35,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0300 0.0420 -0.0200,
+			rotate = -86.3253 -2.7707 -159.7850,
+		}
+	}
+	model BagelPoppy_Ground
+   {
+     mesh = WorldItems/Bagel,
+     texture = WorldItems/BagelPoppySeeds,
+     scale = 0.35,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0300 0.0420 -0.0200,
+			rotate = -86.3253 -2.7707 -159.7850,
+		}
+   }
+	model BagelSesame_Ground
+   {
+     mesh = WorldItems/Bagel,
+     texture = WorldItems/BagelSesameSeeds,
+     scale = 0.35,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0300 0.0420 -0.0200,
+			rotate = -86.3253 -2.7707 -159.7850,
+		}
+   }
+	model CarrotCake_Ground
+	{
+		mesh = WorldItems/CakeSlice,
+		texture = WorldItems/CakeCarrotCake,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0364 0.0473 -0.0230,
+			rotate = 92.3759 -21.9917 -39.5495,
+			scale = 0.8031,
+		}
+	}
+	model CheeseCake_Ground
+	{
+		mesh = WorldItems/CakeSlice,
+		texture = WorldItems/CakeCheeseCake,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0449 0.0376 -0.0267,
+			rotate = 91.7086 -17.1009 -48.5507,
+			scale = 0.9049,
+		}
+	}
+	model ChocolateCake_Ground
+	{
+		mesh = WorldItems/CakeSlice,
+		texture = WorldItems/CakeChocolate,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0440 0.0413 -0.0299,
+			rotate = 96.9645 -16.5985 -38.0309,
+			scale = 0.9334,
+		}
+	}
+	model RedVelvetCake_Ground
+	{
+		mesh = WorldItems/CakeSlice,
+		texture = WorldItems/CakeRedVelvet,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0384 0.0400 -0.0233,
+			rotate = 81.8044 -6.0960 -33.6455,
+			scale = 0.7493,
+		}
+	}
+	model BlackForestCake_Ground
+	{
+		mesh = WorldItems/CakeSlice_BlackForest,
+		texture = WorldItems/CakeBlackforest,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0431 0.0390 -0.0273,
+			rotate = 78.6791 -14.5071 -33.3382,
+			scale = 0.8604,
+		}
+	}
+	model StrawberryShortcake_Ground
+	{
+		mesh = WorldItems/CakeSlice_StrawberryShortcake,
+		texture = WorldItems/CakeStrawberryShortcake,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0461 0.0367 -0.0294,
+			rotate = 85.2121 -4.8482 -39.9733,
+			scale = 0.8699,
+		}
+	}
+	model Doughnut_Ground
+	{
+		mesh = WorldItems/Doughnut,
+		texture = WorldItems/Doughnut_Plain,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0377 0.0446 -0.0225,
+			rotate = -82.9066 -6.0866 -163.9222,
+			scale = 0.7500,
+		}
+	}
+	model Doughnut_Chocolate_Ground
+	{
+		mesh = WorldItems/Doughnut,
+		texture = WorldItems/Doughnut_Chocolate,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0377 0.0446 -0.0225,
+			rotate = -82.9066 -6.0866 -163.9222,
+			scale = 0.7500,
+		}
+	}
+	model Doughnut_Frosted_Ground
+   {
+        mesh = WorldItems/Doughnut,
+        texture = WorldItems/Doughnut_Frosted,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0377 0.0446 -0.0225,
+			rotate = -82.9066 -6.0866 -163.9222,
+			scale = 0.7500,
+		}
+   }
+	model Doughnut_Jelly_Ground
+   {
+        mesh = WorldItems/Doughnut,
+        texture = WorldItems/Doughnut_Jelly,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0377 0.0446 -0.0225,
+			rotate = -82.9066 -6.0866 -163.9222,
+			scale = 0.7500,
+		}
+   }
+	model Cookie_Ground
+    {
+        mesh = WorldItems/Cookie_Hand,
+        texture = WorldItems/CookiesSugar,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0155 0.0382 -0.0037,
+			rotate = 172.0491 65.4061 -85.4831,
+			scale = 0.3191,
+		}
+    }
+	model Cookie_Chocolate_Ground
+	{
+		mesh = WorldItems/Cookies,
+		texture = WorldItems/CookiesChocolate,
+		scale = 0.4,
+	}
+	model Cookie_Chocolate_Hand
+	{
+		mesh = WorldItems/Cookie_Hand,
+		texture = WorldItems/CookiesChocolate,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0155 0.0382 -0.0037,
+			rotate = 172.0491 65.4061 -85.4831,
+			scale = 0.3191,
+		}
+	}
+	model Cookie_Oatmeal_Ground
+    {
+        mesh = WorldItems/Cookies,
+        texture = WorldItems/CookiesOatmeal,
+        scale = 0.4,
+    }
+	model Cookie_Oatmeal_Hand
+    {
+        mesh = WorldItems/Cookie_Hand,
+        texture = WorldItems/CookiesOatmeal,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0155 0.0382 -0.0037,
+			rotate = 172.0491 65.4061 -85.4831,
+			scale = 0.3191,
+		}
+    }
+	model Cookie_Shortbread_Ground
+	{
+		mesh = WorldItems/Cookies_Shortbread,
+		texture = WorldItems/CookiesShortbread,
+		scale = 0.4,
+	}
+	model Cookie_Shortbread_Hand
+	{
+		mesh = WorldItems/Cookies_Shortbread_Hand,
+		texture = WorldItems/CookiesShortbread,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0117 0.0366 -0.0101,
+			rotate = -102.4301 4.8423 -145.2589,
+			scale = 0.3207,
+		}
+	}
+	model JamFruit_Ground
+	{
+		mesh = WorldItems/JarLid,
+		texture = WorldItems/JamFruit,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0048 0.0250 0.0066,
+			rotate = -0.9734 -3.4842 -0.7977,
+			scale = 0.6862,
+		}
+	}
+	model JamMarmalade_Ground
+	{
+		mesh = WorldItems/JarLid,
+		texture = WorldItems/JamMarmalade,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0066 0.0263 0.0081,
+			rotate = 1.3258 30.4522 -8.7701,
+			scale = 0.6862,
+		}
+	}
+	model MincedMeat_Ground
+	{
+		mesh = WorldItems/MincedMeat,
+		texture = WorldItems/MincedMeatRaw,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0048 0.0541 -0.0126,
+			rotate = -3.1960 27.5666 23.8410,
+			scale = 0.7500,
+		}
+	}
+	model MincedMeat_GroundCooked
+    {
+        mesh = WorldItems/MincedMeat,
+        texture = WorldItems/MincedMeatCooked,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0048 0.0541 -0.0126,
+			rotate = -3.1960 27.5666 23.8410,
+			scale = 0.7500,
+		}
+    }
+	model MincedMeat_GroundBurnt
+    {
+        mesh = WorldItems/MincedMeat,
+        texture = WorldItems/MincedMeatBurnt,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0048 0.0541 -0.0126,
+			rotate = -3.1960 27.5666 23.8410,
+			scale = 0.7500,
+		}
+    }
+	model MincedMeat_GroundRotten
+    {
+        mesh = WorldItems/MincedMeat,
+        texture = WorldItems/MincedMeatRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0048 0.0541 -0.0126,
+			rotate = -3.1960 27.5666 23.8410,
+			scale = 0.7500,
+		}
+    }
+	model Baguette_Ground
+	{
+		mesh = WorldItems/Baguette,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0050 0.0477 -0.0131,
+			rotate = 176.7863 65.3392 -84.8381,
+			scale = 0.6375,
+		}
+	}
+	model BaguetteSandwich
+	{
+		mesh = WorldItems/BaguetteSandwich,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0050 0.0477 -0.0131,
+			rotate = 176.7863 65.3392 -84.8381,
+			scale = 0.6375,
+		}
+	}
+	model Baloney_Ground
+	{
+		mesh = WorldItems/Baloney,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0400 0.0230 -0.0250,
+			rotate = 88.8427 -12.2591 -28.9435,
+			scale = 0.7500,
+		}
+	}
+	model Blackbeans_Ground
+	{
+		mesh = WorldItems/Blackbeans,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0300 0.0420 -0.0060,
+			rotate = 133.2489 42.5394 -47.9884,
+		}
+	}
+	model Burrito_Ground
+	{
+		mesh = WorldItems/Burrito,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0350 0.0120 -0.0150,
+			rotate = 174.1103 49.6298 -86.2614,
+			scale = 0.7500,
+		}
+	}
+	model Crackers_Ground
+    {
+        mesh = WorldItems/Crackers,
+        scale = 0.4,
+    }
+	model Crackers_Hand
+	{
+		mesh = WorldItems/Cracker_Hand,
+		texture = WorldItems/Crackers,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0134 0.0375 -0.0076,
+			rotate = 93.2718 -8.5786 -43.8135,
+			scale = 0.3251,
+		}
+	}
+	model Croissant_Ground
+	{
+		mesh = WorldItems/Croissant,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0212 0.0324 -0.0043,
+			rotate = 11.5272 -53.1386 87.3588,
+			scale = 0.6000,
+		}
+	}
+	model Biscuit_Ground
+	{
+		mesh = WorldItems/Biscuit,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0323 0.0489 -0.0208,
+			rotate = -89.1832 16.7268 -156.0575,
+			scale = 0.7500,
+		}
+	}
+	model ChickenFoot_Ground
+	{
+		mesh = WorldItems/ChickenFoot,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0204 0.0372 -0.0120,
+			rotate = -1.7144 -53.1959 -92.5927,
+			scale = 0.6000,
+		}
+	}
+	model CocoaPowder_Ground
+	{
+		mesh = WorldItems/CocoaPowder,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 3.6741 -0.0853 -3.1625,
+			scale = 0.8250,
+		}
+	}
+	model ChocolateChips_Ground
+	{
+		mesh = WorldItems/ChoccolateChips,
+		scale = 0.8,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0287 0.0342 -0.0086,
+			rotate = -131.3832 42.7972 -137.9771,
+		}
+	}
+	model Cornbread_Ground
+	{
+		mesh = WorldItems/Cornbread,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0339 0.0398 -0.0241,
+			rotate = -54.2343 -36.4119 -137.8572,
+			scale = 0.7500,
+		}
+	}
+	model Daikon_Ground
+	{
+		mesh = WorldItems/Daikon,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0220 0.0270 -0.0220,
+			rotate = 103.6026 8.5230 -41.5480,
+			scale = 0.7500,
+		}
+	}
+	model Daikon_GroundRotten
+    {
+        mesh = WorldItems/Daikon,
+        texture = WorldItems/DaikonRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0220 0.0270 -0.0220,
+			rotate = 103.6026 8.5230 -41.5480,
+			scale = 0.7500,
+		}
+    }
+	model EggBoiled_Ground
+	{
+		mesh = WorldItems/EggBoiled,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0424 0.0372 -0.0029,
+			rotate = -160.5661 47.2683 -116.0889,
+			scale = 0.6750,
+		}
+	}
+	model EggOmlette_Ground
+	{
+		mesh = WorldItems/EggOmlette,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0204 0.0174 -0.0163,
+			rotate = 3.4292 -50.4615 -87.2261,
+			scale = 0.7500,
+		}
+	}
+	model Taco_Ground
+	{
+		mesh = WorldItems/Taco,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0048 0.0411 -0.0112,
+			rotate = 174.5368 -27.3461 170.7769,
+			scale = 0.5700,
+		}
+	}
+	model Grapefruit_Ground
+	{
+		mesh = WorldItems/Grapefruit,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0020 0.0200 0.0000,
+			rotate = -10.0970 55.6158 -8.7432,
+			scale = 0.7500,
+		}
+	}
+	model Grapefruit_GroundRotten
+    {
+        mesh = WorldItems/Grapefruit,
+        texture = WorldItems/GrapefruitRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0020 0.0200 0.0000,
+			rotate = -10.0970 55.6158 -8.7432,
+			scale = 0.7500,
+		}
+    }
+	model Grapefruit_Eat
+	{
+		mesh = WorldItems/Grapefruit_Eat,
+		texture = WorldItems/Grapefruit,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0398 0.0279 -0.0122,
+			rotate = -10.0970 55.6158 -8.7432,
+			scale = 0.7500,
+		}
+	}
+	model Lime_Ground
+	{
+		mesh = WorldItems/Lime,
+		scale = 0.4,
+	}
+	model Lime_Hand
+	{
+		mesh = WorldItems/LimeHalf_Hand,
+		texture = WorldItems/Lime,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0097 0.0295 -0.0029,
+			rotate = 157.9516 32.4736 158.6247,
+			scale = 0.3607,
+		}
+	}
+	model Lime_GroundRotten
+    	{
+        mesh = WorldItems/Lime,
+        texture = WorldItems/LimeRotten,
+        scale = 0.4,
+    	}
+	model Lime_HandRotten
+    	{
+        mesh = WorldItems/LimeHalf_Hand,
+        texture = WorldItems/LimeRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0097 0.0295 -0.0029,
+			rotate = 157.9516 32.4736 158.6247,
+			scale = 0.3607,
+		}
+    	}
+	model FishFried_Ground
+	{
+		mesh = WorldItems/FishFillet,
+		texture = WorldItems/FishFried,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0173 0.0146 -0.0077,
+			rotate = -24.8727 -48.6550 -109.0403,
+			scale = 0.3904,
+		}
+	}
+	model FishFried_GroundRotten
+    {
+        mesh = WorldItems/FishFillet,
+        texture = WorldItems/FishFriedRotten,
+        scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0173 0.0146 -0.0077,
+			rotate = -24.8727 -48.6550 -109.0403,
+			scale = 0.3904,
+		}
+    }
+	model SugarBrown_Ground
+	{
+		mesh = WorldItems/Sugar,
+		texture = WorldItems/SugarBrown,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0022 0.0106 0.0038,
+			rotate = -0.6578 38.1972 1.6260,
+			scale = 0.6135,
+		}
+	}
+	model CrackersGraham_Ground
+	{
+		mesh = WorldItems/Crackers,
+		texture = WorldItems/CrackersGraham,
+		scale = 0.4,
+	}
+	model CrackersGraham_Hand
+	{
+		mesh = WorldItems/Cracker_Hand,
+		texture = WorldItems/CrackersGraham,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0140 0.0341 -0.0113,
+			rotate = 89.2863 -0.3555 -34.1500,
+			scale = 0.3546,
+		}
+	}
+	model MuffinFruit_Ground
+    {
+        mesh = WorldItems/Muffin,
+        texture = WorldItems/MuffinFruit,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0200 0.0170 -0.0110,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.7500,
+		}
+    }
+	model MuffinGeneric_Ground
+	{
+		mesh = WorldItems/Muffin,
+		texture = WorldItems/MuffinGeneric,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0200 0.0170 -0.0110,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.7500,
+		}
+	}
+	model RefriedBeans_Ground
+	{
+		mesh = WorldItems/RefriedBeans,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0260 0.0350 -0.0160,
+			rotate = -100.9223 24.1302 -152.9655,
+			scale = 0.7500,
+		}
+	}
+	model TacoShell_Ground
+    {
+        mesh = WorldItems/TacoShell,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0048 0.0411 -0.0112,
+			rotate = 174.5368 -27.3461 170.7769,
+			scale = 0.5700,
+		}
+    }
+	model Tortilla_Ground
+	{
+		mesh = WorldItems/Tortilla,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0150 0.0270 -0.0110,
+			rotate = -81.3028 -0.0000 -156.1852,
+			scale = 0.5000,
+		}
+	}
+	model TortillaChips_Ground
+    {
+        mesh = WorldItems/TortillaChips,
+        scale = 0.4,
+    }
+	model Maki_Ground
+	{
+		mesh = WorldItems/Maki,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0216 0.0378 0.0020,
+			rotate = 48.5301 -50.0297 136.2238,
+			scale = 0.8150,
+		}
+	}
+	model MeatDumplings_Ground
+	{
+		mesh = WorldItems/MeatDumplings,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0276 0.0358 0.0062,
+			rotate = -74.4277 -19.0793 37.9836,
+			scale = 0.7500,
+		}
+	}
+	model MeatSteamBun_Ground
+	{
+		mesh = WorldItems/MeatSteamBun,
+		scale = 0.4,
+	}
+	model MeatSteamBun_Hand
+	{
+		mesh = WorldItems/MeatSteamBun_Hand,
+		texture = WorldItems/MeatSteamBun,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0212 0.0495 -0.0170,
+			rotate = -149.6425 45.1019 -107.2075,
+			scale = 0.2069,
+		}
+	}
+	model Soysauce_Ground
+	{
+		mesh = WorldItems/Soysauce,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0007 0.0043 0.0185,
+			rotate = -5.3020 1.7073 10.1982,
+			scale = 0.7117,
+		}
+	}
+	model Lobster_Ground
+	{
+		mesh = WorldItems/Lobster,
+		texture = WorldItems/LobsterRaw,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0007 0.0765 -0.0092,
+			rotate = -178.8978 -29.7390 -25.5686,
+			scale = 0.6700,
+		}
+	}
+	model Lobster_GroundCooked
+    {
+        mesh = WorldItems/Lobster,
+        texture = WorldItems/LobsterCooked,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0007 0.0765 -0.0092,
+			rotate = -178.8978 -29.7390 -25.5686,
+			scale = 0.6700,
+		}
+    }
+	model Lobster_GroundRotten
+    {
+        mesh = WorldItems/Lobster,
+        texture = WorldItems/LobsterRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0007 0.0765 -0.0092,
+			rotate = -178.8978 -29.7390 -25.5686,
+			scale = 0.6700,
+		}
+    }
+	model Lobster_GroundBurnt
+    {
+        mesh = WorldItems/Lobster,
+        texture = WorldItems/LobsterBurnt,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0007 0.0765 -0.0092,
+			rotate = -178.8978 -29.7390 -25.5686,
+			scale = 0.6700,
+		}
+    }
+	model Sausage_Ground
+	{
+		mesh = WorldItems/Sausage,
+		texture = WorldItems/SausageRaw,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0274 0.0221 -0.0206,
+			rotate = 178.7112 67.2918 -88.6029,
+			scale = 0.7500,
+		}
+	}
+	model Sausage_GroundCooked
+    {
+        mesh = WorldItems/Sausage,
+        texture = WorldItems/SausageCooked,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0274 0.0221 -0.0206,
+			rotate = 178.7112 67.2918 -88.6029,
+			scale = 0.7500,
+		}
+    }
+	model Sausage_GroundBurnt
+    {
+        mesh = WorldItems/Sausage,
+        texture = WorldItems/SausageBurnt,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0274 0.0221 -0.0206,
+			rotate = 178.7112 67.2918 -88.6029,
+			scale = 0.7500,
+		}
+    }
+	model CanOpenFruitCocktail_Ground
+	{
+		mesh = CanOpen,
+		texture = WorldItems/TinnedFruitCocktail,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+	}
+	model CanClosedPineapple_Ground
+    {
+        mesh = CanClosed,
+        texture = WorldItems/TinnedPinapple,
+    }
+	model CanOpenPineapple_Ground
+    {
+        mesh = CanOpen,
+        texture = WorldItems/TinnedPinapple,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+    }
+	model CanClosedFruitCocktail_Ground
+    {
+        mesh = CanClosed,
+        texture = WorldItems/TinnedFruitCocktail,
+    }
+	model CanOpenPeaches_Ground
+	{
+		mesh = CanOpen,
+		texture = WorldItems/TinnedPeaches,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+	}
+	model CanClosedPeaches_Ground
+    {
+        mesh = CanClosed,
+        texture = WorldItems/TinnedPeaches,
+    }
+	model PancakeMix_Ground
+    {
+        mesh = WorldItems/PancakeMix,
+        scale = 0.4,
+    }
+	model PancakesFruit_Ground
+    {
+        mesh = WorldItems/Pancakes,
+        texture = WorldItems/PancakesFruit,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0258 0.0269 -0.0124,
+			rotate = -100.6383 42.9643 -163.6040,
+			scale = 0.6000,
+		}
+    }
+	model Pepperoni_Ground
+	{
+		mesh = WorldItems/Pepperoni,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0219 0.0332 -0.0048,
+			rotate = -95.3494 -15.5112 -170.1274,
+			scale = 0.7500,
+		}
+	}
+	model Salami_Ground
+	{
+		mesh = WorldItems/Salami,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0426 0.0187 -0.0168,
+			rotate = 79.2444 -4.1516 -49.1906,
+			scale = 0.8200,
+		}
+	}
+	model Springroll_Ground
+	{
+		mesh = WorldItems/Springroll,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0450 0.0375 -0.0096,
+			rotate = -102.9889 18.1184 -158.5971,
+			scale = 0.7500,
+		}
+	}
+	model NoodleSoup_Ground
+	{
+		mesh = WorldItems/BowlSoup,
+		texture = WorldItems/NoodleSoup,
+		scale = 0.4,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0000 0.0542 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+	}
+	model NoodleSoup_GroundRotten
+    {
+        mesh = WorldItems/BowlSoup,
+        texture = WorldItems/NoodleSoupRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0000 0.0542 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8424,
+		}
+    }
+	model ChickenNuggets_Ground
+	{
+		mesh = WorldItems/ChickenNuggets,
+		texture = WorldItems/ChickenNuggets,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0347 0.0468 -0.0051,
+			rotate = 101.0176 13.1283 -43.4274,
+			scale = 0.4688,
+		}
+	}
+	model FishFingers_Ground
+    {
+        mesh = WorldItems/FishFingers,
+        texture = WorldItems/FishFingers,
+        scale = 0.4,
+    }
+	model Jackolantern_Ground
+	{
+		mesh = WorldItems/Pumpkin,
+		texture = WorldItems/Jackolantern,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0130 0.0380 -0.0180,
+			rotate = 180.0000 -48.7920 158.2856,
+			scale = 0.6000,
+		}
+	}
+	model Pumpkin_Ground
+	{
+		mesh = WorldItems/Pumpkin,
+		texture = WorldItems/Pumpkin,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0098 0.1903 -0.0648,
+			rotate = -76.9183 -45.4673 -162.9584,
+			scale = 0.6000,
+		}
+	}
+	model Pumpkin_GroundRotten
+    {
+        mesh = WorldItems/Pumpkin,
+        texture = WorldItems/PumpkinRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0098 0.1903 -0.0648,
+			rotate = -76.9183 -45.4673 -162.9584,
+			scale = 0.6000,
+		}
+    }
+	model Shrimp_Ground
+	{
+		mesh = WorldItems/Shrimp_Raw_Rotten,
+		texture = WorldItems/ShrimpRaw,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0253 0.0501 -0.0063,
+			rotate = 115.2005 62.3146 -44.2136,
+		}
+	}
+	model Shrimp_GroundBurnt
+	{
+		mesh = WorldItems/Shrimp_Cooked_Fried_Burnt,
+		texture = WorldItems/ShrimpBurnt,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0253 0.0501 -0.0063,
+			rotate = 115.2005 62.3146 -44.2136,
+		}
+	}
+	model Shrimp_GroundCooked
+    {
+        mesh = WorldItems/Shrimp_Cooked_Fried_Burnt,
+        texture = WorldItems/ShrimpCooked,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0253 0.0501 -0.0063,
+			rotate = 115.2005 62.3146 -44.2136,
+		}
+    }
+	model Shrimp_GroundRotten
+    {
+        mesh = WorldItems/Shrimp_Raw_Rotten,
+        texture = WorldItems/ShrimpRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0253 0.0501 -0.0063,
+			rotate = 115.2005 62.3146 -44.2136,
+		}
+    }
+	model Crayfish_Ground
+	{
+		mesh = WorldItems/Crayfish,
+		texture = WorldItems/LobsterRaw,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0137 0.0370 -0.0095,
+			rotate = 166.7928 67.7992 -46.3719,
+		}
+	}
+	model ShrimpFried_Ground
+    {
+        mesh = WorldItems/Shrimp_Cooked_Fried_Burnt,
+        texture = WorldItems/ShrimpFried,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0120 0.0510 -0.0060,
+			rotate = 160.9310 45.2982 -76.3421,
+		}
+    }
+	model DehydratedMeatStick_Ground
+	{
+		mesh = WorldItems/DehydratedMeatStick,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0080 0.0130 -0.0010,
+			rotate = -6.3609 47.6570 77.1920,
+			scale = 0.5700,
+		}
+	}
+	model Edamame_Ground
+	{
+		mesh = WorldItems/Edamame,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0292 0.0454 -0.0059,
+			rotate = 149.5047 79.3777 -51.9083,
+			scale = 0.7500,
+		}
+	}
+	model FishRoe_Ground
+	{
+		mesh = WorldItems/FishRoe,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0277 0.0488 -0.0112,
+			rotate = -63.0752 -26.6664 -134.1571,
+		}
+	}
+	model GranolaBar_Ground
+	{
+		mesh = WorldItems/GranolaBar,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0296 0.0250 -0.0197,
+			rotate = 174.9855 57.2405 -82.3148,
+			scale = 0.7500,
+		}
+	}
+	model Gum_Ground
+	{
+		mesh = WorldItems/Gum,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0180 0.0360 -0.0160,
+			rotate = -12.7813 -57.5047 -105.0541,
+			scale = 0.7500,
+		}
+	}
+	model Icing_Ground
+	{
+		mesh = WorldItems/Icing,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0172 0.0287 -0.0092,
+			rotate = -8.2490 15.7536 -12.1530,
+			scale = 0.6750,
+		}
+	}
+	model Mango_Ground
+	{
+		mesh = WorldItems/Mango,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0570 0.0360 -0.0220,
+			rotate = -177.0000 29.0000 -111.0000,
+		}
+	}
+	model Mango_GroundRotten
+    {
+        mesh = WorldItems/Mango,
+        texture = WorldItems/MangoRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0570 0.0360 -0.0220,
+			rotate = -177.0000 29.0000 -111.0000,
+		}
+    }
+	model CinnamonRoll_Ground
+	{
+		mesh = WorldItems/CinnamonRoll,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0349 0.0484 -0.0213,
+			rotate = -85.1964 16.0155 -147.3195,
+			scale = 0.8450,
+		}
+	}
+	model Cone_Ground
+	{
+		mesh = WorldItems/Cone,
+		texture = WorldItems/Cone_ConeIceCream,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0218 0.0260 -0.0126,
+			rotate = 148.0333 57.0774 -86.6313,
+			scale = 0.7806,
+		}
+	}
+	model ConeIcecream_Ground
+	{
+		mesh = WorldItems/ConeIceCream,
+		texture = WorldItems/Cone_ConeIceCream,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0061 0.0777 -0.0113,
+			rotate = 176.4454 60.3408 -93.8605,
+			scale = 0.7773,
+		}
+	}
+	model ConeIceCreamToppings_Ground
+	{
+		mesh = WorldItems/ConeIceCream,
+		texture = WorldItems/ConeIceCreamToppings,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0061 0.0777 -0.0113,
+			rotate = 176.4454 60.3408 -93.8605,
+			scale = 0.7773,
+		}
+	}
+	model ConeIceCreamMelted_Ground
+    {
+        mesh = WorldItems/ConeIceCream_Melted,
+        texture = WorldItems/Cone_ConeIceCream,
+        scale = 0.4,
+    }
+	model Guacamole_Ground
+	{
+		mesh = WorldItems/Guacamole,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0069 0.0610 -0.0075,
+			rotate = -17.2032 45.5716 34.2912,
+		}
+	}
+	model MapleSyrup_Ground
+	{
+		mesh = WorldItems/MapleSyrup,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0047 -0.0184 -0.0034,
+			rotate = 5.3381 -0.4884 4.5873,
+			scale = 0.7450,
+		}
+	}
+	model Onigiri_Ground
+	{
+		mesh = WorldItems/Onigiri,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0100 0.0580 -0.0060,
+			rotate = 10.0000 -9.0000 177.0000,
+			scale = 0.7500,
+		}
+	}
+	model RiceVinegar_Ground
+	{
+		mesh = WorldItems/RiceVinegar,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0040 -0.0069 0.0069,
+			rotate = 19.1514 -59.1245 22.3008,
+			scale = 0.5300,
+		}
+	}
+	model LicoriceBlack_Ground
+	{
+		mesh = WorldItems/Licorice,
+		texture = WorldItems/LicoriceBlack,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0216 0.0337 -0.0107,
+			rotate = -32.6731 -73.3707 -121.6867,
+			scale = 0.6200,
+		}
+	}
+	model LicoriceRed_Ground
+	{
+		mesh = WorldItems/Licorice,
+		texture = WorldItems/LicoriceRed,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0216 0.0337 -0.0107,
+			rotate = -32.6731 -73.3707 -121.6867,
+			scale = 0.6200,
+		}
+	}
+	model Marshmallows_Ground
+	{
+		mesh = WorldItems/Marshmallows,
+		scale = 0.4,
+	}
+	model Marshmallows_GroundCooked
+    	{
+        mesh = WorldItems/Marshmallows,
+        texture = WorldItems/MarshmallowsToasted,
+        scale = 0.4,
+    	}
+	model Marshmallows_GroundBurnt
+    	{
+        mesh = WorldItems/Marshmallows,
+        texture = WorldItems/MarshmallowsBurnt,
+        scale = 0.4
+    }
+	model Marshmallows_Hand
+	{
+		mesh = WorldItems/Marshmallows_Hand,
+		texture = WorldItems/Marshmallows,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0031 0.0466 0.0027,
+			rotate = -59.0967 -1.2126 52.8089,
+			scale = 0.3697,
+		}
+	}
+	model Marshmallows_HandCooked
+    	{
+		mesh = WorldItems/Marshmallows_Hand,
+        	texture = WorldItems/MarshmallowsToasted,
+        	scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0031 0.0466 0.0027,
+			rotate = -59.0967 -1.2126 52.8089,
+			scale = 0.3697,
+		}
+    	}
+	model Marshmallows_HandBurnt
+    {
+		mesh = WorldItems/Marshmallows_Hand,
+        	texture = WorldItems/MarshmallowsBurnt,
+        	scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0031 0.0466 0.0027,
+			rotate = -59.0967 -1.2126 52.8089,
+			scale = 0.3697,
+		}
+    }
+	model OilOlive_Ground
+	{
+		mesh = WorldItems/OilOlive,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0093 -0.0388 0.0040,
+			rotate = -177.7629 -2.7221 168.8407,
+			scale = 0.5316,
+		}
+	}
+	model OnionRings_Ground
+	{
+		mesh = WorldItems/OnionRings,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0360 0.0418 0.0070,
+			rotate = -148.6475 51.1007 61.7043,
+			scale = 0.7500,
+		}
+	}
+	model Painauchocolat_Ground
+	{
+		mesh = WorldItems/Painauchocolat,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0346 0.0361 -0.0194,
+			rotate = -179.0000 46.0000 -87.0000,
+			scale = 0.7200,
+		}
+	}
+	model Pear_Ground
+	{
+		mesh = WorldItems/Pear,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0396 0.0101 -0.0249,
+			rotate = 19.9273 -4.9910 -10.7247,
+		}
+	}
+	model Pear_GroundRotten
+    {
+        mesh = WorldItems/Pear,
+        texture = WorldItems/PearRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0396 0.0101 -0.0249,
+			rotate = 19.9273 -4.9910 -10.7247,
+		}
+    }
+	model CalamariRings_Ground
+    {
+        mesh = WorldItems/CalamariRings,
+        scale = 0.4,
+    }
+	model OilVegetable_Ground
+	{
+		mesh = WorldItems/OilVegetable,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0038 -0.0437 0.0155,
+			rotate = 175.5963 0.9417 171.4489,
+			scale = 0.6900,
+		}
+	}
+	model OysterFried_Ground
+	{
+		mesh = WorldItems/OysterFried,
+		texture = WorldItems/OystersFried,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0029 0.0706 0.0070,
+			rotate = -113.6252 68.6635 -52.8791,
+			scale = 0.7500,
+		}
+	}
+	model Oysters_Ground
+	{
+		mesh = WorldItems/Oysters,
+		texture = WorldItems/OystersRaw,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0038 0.0572 -0.0023,
+			rotate = -148.6079 33.4068 146.2586,
+			scale = 0.7500,
+		}
+	}
+	model Oysters_GroundCooked
+    {
+        mesh = WorldItems/Oysters,
+        texture = WorldItems/OystersCooked,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0038 0.0572 -0.0023,
+			rotate = -148.6079 33.4068 146.2586,
+			scale = 0.7500,
+		}
+    }
+	model OysterFried_GroundRotten
+    {
+        mesh = WorldItems/OysterFried,
+        texture = WorldItems/OystersRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0029 0.0706 0.0070,
+			rotate = -113.6252 68.6635 -52.8791,
+			scale = 0.7500,
+		}
+    }
+	model PepperHabanero_Ground
+	{
+		mesh = WorldItems/PepperHabanero,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0192 0.0689 -0.0080,
+			rotate = -175.1358 -34.1731 2.7367,
+		}
+	}
+	model PepperJalapeno_Ground
+	{
+		mesh = WorldItems/PepperJalapeno,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0211 0.0380 -0.0047,
+			rotate = -6.5886 -49.8828 -90.6613,
+		}
+	}
+	model Peppermint_Ground
+	{
+		mesh = WorldItems/Peppermint,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0130 0.0490 -0.0070,
+			rotate = 32.0000 -25.0000 -75.0000,
+		}
+	}
+	model Perogies_Ground
+	{
+		mesh = WorldItems/Perogies,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0248 0.0413 -0.0146,
+			rotate = 134.1152 63.9879 -44.5809,
+			scale = 0.7500,
+		}
+	}
+	model PotatoPancakes_Ground
+	{
+		mesh = WorldItems/PotatoPancakes,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0315 0.0344 -0.0016,
+			rotate = -99.6488 34.1225 9.3178,
+			scale = 0.6500,
+		}
+	}
+	model RicePaper_Ground
+	{
+		mesh = WorldItems/RicePaper,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0261 0.0381 -0.0089,
+			rotate = -88.1039 23.6918 -176.8542,
+			scale = 0.8000,
+		}
+	}
+	model Pretzel_Ground
+	{
+		mesh = WorldItems/Pretzel,
+		scale = 0.4,
+	}
+	model Pretzel_Hand
+	{
+		mesh = WorldItems/Pretzel_Hand,
+		texture = WorldItems/Pretzel,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0236 0.0376 -0.0122,
+			rotate = 146.4735 55.4404 -66.6463,
+			scale = 0.3400,
+		}
+	}
+	model SeaWeed_Ground
+	{
+		mesh = WorldItems/SeaWeed,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0224 0.0397 -0.0081,
+			rotate = -105.8308 15.8761 -158.9701,
+			scale = 0.4425,
+		}
+	}
+	model SourCream_Ground
+    {
+        mesh = WorldItems/SourCream,
+        scale = 0.4,
+    }
+	model SquidCalimari_Ground
+	{
+		mesh = WorldItems/SquidCalimari,
+		texture = WorldItems/SquidCalimariRaw,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0365 0.0326 -0.0088,
+			rotate = -85.8004 15.6748 -171.4210,
+			scale = 0.6263,
+		}
+	}
+	model SquidCalimari_GroundCooked
+    {
+        mesh = WorldItems/SquidCalimari,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0365 0.0326 -0.0088,
+			rotate = -85.8004 15.6748 -171.4210,
+			scale = 0.6263,
+		}
+    }
+	model SushEgg_Ground
+	{
+		mesh = WorldItems/SushEgg,
+		texture = WorldItems/SushiEgg,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0339 0.0390 -0.0140,
+			rotate = 158.8665 41.2912 -75.2288,
+		}
+	}
+	model TofuFried_Ground
+	{
+		mesh = WorldItems/TofuFried,
+		scale = 0.4,
+	}
+	model TofuFried_Hand
+	{
+		mesh = WorldItems/TofuFried_Hand,
+		texture = WorldItems/TofuFried,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0194 0.0380 -0.0221,
+			rotate = 168.9961 55.7239 -88.9535,
+			scale = 0.3591,
+		}
+	}
+	model Waffles_Ground
+	{
+		mesh = WorldItems/Waffles,
+		scale = 0.4,
+	}
+	model WafflesFruit_Ground
+    {
+        mesh = WorldItems/Waffles,
+        texture = WorldItems/WafflesFruit,
+        scale = 0.4,
+    }
+	model Waffles_Hand
+	{
+		mesh = WorldItems/Waffle_Hand,
+		texture = WorldItems/Waffles,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0229 0.0349 -0.0095,
+			rotate = -126.8403 53.7664 -140.5557,
+			scale = 0.1900,
+		}
+	}
+	model WafflesFruit_Hand
+    {
+        mesh = WorldItems/Waffle_Hand,
+        texture = WorldItems/WafflesFruit,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0229 0.0349 -0.0095,
+			rotate = -126.8403 53.7664 -140.5557,
+			scale = 0.1900,
+		}
+    }
+	model RockCandy_Ground
+	{
+		mesh = WorldItems/RockCandy,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0041 0.0662 -0.0012,
+			rotate = 167.3061 67.4226 -78.9646,
+			scale = 0.9818,
+		}
+	}
+	model Smore_Ground
+	{
+		mesh = WorldItems/Smore,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0230 0.0450 0.0012,
+			rotate = 99.3450 -1.6234 144.6074,
+			scale = 0.7500,
+		}
+	}
+	model Squid_Ground
+	{
+		mesh = WorldItems/Squid,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0377 0.0049 -0.0154,
+			rotate = 177.5952 52.0575 -75.1167,
+			scale = 0.7100,
+		}
+	}
+	model Cauliflower_Ground
+	{
+		mesh = WorldItems/Cauliflower,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0326 0.0355 -0.0350,
+			rotate = 159.6788 52.1023 -105.5966,
+			scale = 0.6050,
+		}
+	}
+	model Pie_Keylime_Ground
+	{
+		mesh = WorldItems/Pie_Keylime,
+		texture = WorldItems/PieKeylime,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0345 0.0414 -0.0289,
+			rotate = 91.0000 -14.0000 -33.0000,
+		}
+	}
+	model PieApple_Ground
+	{
+		mesh = WorldItems/Pie_Slice,
+		texture = WorldItems/PieApple,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0373 0.0328 -0.0285,
+			rotate = 86.1740 -6.2555 -25.8618,
+		}
+	}
+	model PieBlueberry_Ground
+    {
+        mesh = WorldItems/Pie_Slice,
+        texture = WorldItems/PieBlueberry,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0373 0.0328 -0.0285,
+			rotate = 86.1740 -6.2555 -25.8618,
+		}
+    }
+	model PieLemonmeringue_Ground
+    {
+        mesh = WorldItems/Pie_Slice,
+        texture = WorldItems/PieLemonmeringue,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0373 0.0328 -0.0285,
+			rotate = 86.1740 -6.2555 -25.8618,
+		}
+    }
+	model CheeseSoft_Ground
+    {
+        mesh = WorldItems/CheeseSoft,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0076 0.0306 -0.0238,
+			rotate = 88.7491 -18.9368 67.6286,
+			scale = 0.7500,
+		}
+    }
+	model CheeseSoft_GroundRotten
+    {
+        mesh = WorldItems/CheeseSoft,
+        texture = WorldItems/CheeseSoft_Rotten,
+        scale = 0.4,
+    }
+	model Margerine_Ground
+    {
+        mesh = WorldItems/Margerine,
+        scale = 0.5,
+    }
+	model SweetPotato_Ground
+	{
+		mesh = WorldItems/SweetPotato,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0233 0.0100 0.0003,
+			rotate = -10.3747 -42.2961 77.6891,
+			scale = 0.7550,
+		}
+	}
+	model SweetPotato_GroundRotten
+    {
+        mesh = WorldItems/SweetPotato,
+        texture = WorldItems/SweetPotatoRotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0233 0.0100 0.0003,
+			rotate = -10.3747 -42.2961 77.6891,
+			scale = 0.7550,
+		}
+    }
+	model Acorn_Ground
+	{
+		mesh = WorldItems/Acorn,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0050 0.0540 -0.0100,
+			rotate = 0.0000 0.0000 80.0000,
+		}
+	}
+	model Lard_Ground
+	{
+		mesh = WorldItems/Lard,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0298 0.0217 0.0046,
+			rotate = 155.9346 57.0961 109.5690,
+			scale = 0.4934,
+		}
+	}
+	model BouillionCube_Ground
+    {
+        mesh = WorldItems/BouillionCube,
+        scale = 0.4,
+    }
+	model Dip_NachoCheese_Ground
+	{
+		mesh = WorldItems/DipJar,
+		texture = WorldItems/Dip_NachoCheese,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0018 0.0505 0.0042,
+			rotate = 175.5986 32.5321 -168.9591,
+			scale = 0.6712,
+		}
+	}
+	model Dip_Salsa_Ground
+	{
+		mesh = WorldItems/DipJar,
+		texture = WorldItems/Dip_Salsa,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0054 0.0460 -0.0004,
+			rotate = -92.8306 -71.1310 -97.2370,
+			scale = 0.7500,
+		}
+	}
+	model Dip_Ranch_Ground
+	{
+		mesh = WorldItems/DipJar,
+		texture = WorldItems/Dip_Ranch,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0054 0.0460 -0.0004,
+			rotate = -92.8306 -71.1310 -97.2370,
+			scale = 0.7500,
+		}
+	}
+	model DriedBlackBeans_Ground
+    {
+        mesh = WorldItems/DriedPulses_Bag,
+        texture = WorldItems/DriedBlackBeans,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0340 0.0330 -0.0080,
+			rotate = -124.0000 63.0000 -115.0000,
+			scale = 0.7500,
+		}
+    }
+	model DriedChickpeas_Ground
+    {
+        mesh = WorldItems/DriedPulses_Bag,
+        texture = WorldItems/DriedChickpeas,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0340 0.0330 -0.0080,
+			rotate = -124.0000 63.0000 -115.0000,
+			scale = 0.7500,
+		}
+    }
+	model DriedKidneyBeans_Ground
+    {
+        mesh = WorldItems/DriedPulses_Bag,
+        texture = WorldItems/DriedKidneyBeans,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0340 0.0330 -0.0080,
+			rotate = -124.0000 63.0000 -115.0000,
+			scale = 0.7500,
+		}
+    }
+	model DriedLentils_Ground
+    {
+        mesh = WorldItems/DriedPulses_Bag,
+        texture = WorldItems/DriedLentils,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0340 0.0330 -0.0080,
+			rotate = -124.0000 63.0000 -115.0000,
+			scale = 0.7500,
+		}
+    }
+	model DriedWhiteBeans_Ground
+	{
+		mesh = WorldItems/DriedPulses_Bag,
+		texture = WorldItems/DriedWhiteBeans,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0340 0.0330 -0.0080,
+			rotate = -124.0000 63.0000 -115.0000,
+			scale = 0.7500,
+		}
+	}
+	model DriedSplitPeas_Ground
+    {
+        mesh = WorldItems/DriedPulses_Bag,
+        texture = WorldItems/DriedSplitPeas,
+        scale = 0.4,
+    }
+	model HoneyComb_Ground
+    {
+        mesh = WorldItems/HoneyComb,
+        scale = 0.4,
+    }
+	model Juice_FruitPunch_Ground
+    {
+        mesh = WorldItems/Juice_Bottle,
+        texture = WorldItems/Juice_FruitPunch,
+        scale = 0.4,
+    }
+	model Juice_GrapeJuice_Ground
+    {
+        mesh = WorldItems/Juice_Bottle,
+        texture = WorldItems/Juice_GrapeJuice,
+        scale = 0.4,
+    }
+	model Juice_Lemonade_Ground
+    {
+        mesh = WorldItems/Juice_Bottle,
+        texture = WorldItems/Juice_Lemonade,
+        scale = 0.4,
+    }
+	model Juice_OrangeJuice_Ground
+    {
+        mesh = WorldItems/Juice_Bottle,
+        texture = WorldItems/Juice_OrangeJuice,
+        scale = 0.4,
+    }
+	model MilkPersonalsized_Ground
+    {
+        mesh = WorldItems/MilkPersonalsized,
+        scale = 0.4,
+    }
+	model PineNuts_Ground
+    {
+        mesh = WorldItems/PineNuts,
+        scale = 0.4,
+    }
+	model RiceRaw_Brown_Grouund
+	{
+		mesh = WorldItems/Rice,
+		texture = WorldItems/RiceRaw_Brown,
+		scale = 0.4,
+	}
+	model AmericanLadyCaterpillar_Ground
+	{
+		mesh = WorldItems/Insect_Caterpillar,
+		texture = WorldItems/Insect_AmericanLadyCaterpillar,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0241 0.0430 -0.0122,
+			rotate = 76.9479 -3.6181 -36.7560,
+			scale = 0.8250,
+		}
+	}
+	model MonarchrCaterpillar_Ground
+    {
+        mesh = WorldItems/Insect_Caterpillar,
+        texture = WorldItems/Insect_MonarchrCaterpillar,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0241 0.0430 -0.0122,
+			rotate = 76.9479 -3.6181 -36.7560,
+			scale = 0.8250,
+		}
+    }
+	model SilkMothCaterpillar_Ground
+    {
+        mesh = WorldItems/Insect_Caterpillar,
+        texture = WorldItems/Insect_SilkMothCaterpillar,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0241 0.0430 -0.0122,
+			rotate = 76.9479 -3.6181 -36.7560,
+			scale = 0.8250,
+		}
+    }
+	model SawflyLarva_Ground
+    {
+        mesh = WorldItems/Insect_Caterpillar,
+        texture = WorldItems/Insect_SawflyLarva,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0241 0.0430 -0.0122,
+			rotate = 76.9479 -3.6181 -36.7560,
+			scale = 0.8250,
+		}
+    }
+	model SwallowtailCaterpillar_Ground
+    {
+        mesh = WorldItems/Insect_Caterpillar,
+        texture = WorldItems/Insect_SwallowtailCaterpillar,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0241 0.0430 -0.0122,
+			rotate = 76.9479 -3.6181 -36.7560,
+			scale = 0.8250,
+		}
+    }
+	model BandedWoolyBearCaterpillar_Ground
+	{
+		mesh = WorldItems/Insect_BandedWoolyBearCaterpillar,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0262 0.0419 -0.0162,
+			rotate = -96.9027 -0.6354 -141.2679,
+		}
+	}
+	model Basil_Ground
+    {
+        mesh = WorldItems/HerbBasil,
+        texture = WorldItems/Basil,
+        scale = 0.4,
+    }
+	model BeautyBerries_Ground
+	{
+		mesh = WorldItems/BeautyBerries,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0066 0.0459 -0.0022,
+			rotate = -90.6406 38.3454 53.6627,
+			scale = 0.7650,
+		}
+	}
+	model ChocolateCoveredCoffeeBeans_Ground
+	{
+		mesh = WorldItems/ChocolateCoveredCoffeeBeans,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0338 0.0556 -0.0094,
+			rotate = 92.6389 -67.2823 -78.7504,
+		}
+	}
+	model Dandelion_Ground
+	{
+		mesh = WorldItems/Dandelion,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0320 0.0250 0.0230,
+			rotate = -179.0000 -25.0000 -177.0000,
+			scale = 0.7500,
+		}
+	}
+	model Ginger_Ground
+	{
+		mesh = WorldItems/Ginger,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0211 0.0365 0.0004,
+			rotate = -100.2967 8.8659 49.6387,
+			scale = 0.7500,
+		}
+	}
+	model HerbChives_Ground
+    {
+        mesh = WorldItems/HerbChives,
+        scale = 0.4,
+    }
+	model HerbCilantro_Ground
+    {
+        mesh = WorldItems/HerbCilantro_HerbParsley,
+        texture = WorldItems/HerbCilantro,
+        scale = 0.4,
+    }
+	model HerbParsley_Ground
+    {
+        mesh = WorldItems/HerbCilantro_HerbParsley,
+        texture = WorldItems/HerbParsley,
+        scale = 0.4,
+    }
+	model HerbOregano_Ground
+    {
+        mesh = WorldItems/HerbOregano,
+        scale = 0.4,
+    }
+	model HerbRosemary_Ground
+    {
+        mesh = WorldItems/HerbRosemary,
+        scale = 0.4,
+    }
+	model HerbSage_Ground
+    {
+        mesh = WorldItems/HerbSage,
+        scale = 0.4,
+    }
+	model HerbThyme_Ground
+    {
+        mesh = WorldItems/HerbThyme,
+        scale = 0.4,
+    }
+	model Maggots_Ground
+	{
+		mesh = WorldItems/Insect_Maggots,
+		scale = 0.4,
+	}
+	model Slug1_Ground
+	{
+		mesh = WorldItems/Slug,
+		texture = WorldItems/Slug1,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0270 0.0340 -0.0125,
+			rotate = 84.7159 7.3905 -35.3340,
+			scale = 0.8350,
+		}
+	}
+	model Slug2_Ground
+    {
+        mesh = WorldItems/Slug,
+        texture = WorldItems/Slug2,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0270 0.0340 -0.0125,
+			rotate = 84.7159 7.3905 -35.3340,
+			scale = 0.8350,
+		}
+    }
+	model Snail_Ground
+	{
+		mesh = WorldItems/Snail,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0351 0.0465 0.0026,
+			rotate = -1.0000 32.0000 -103.5965,
+		}
+	}
+	model Thistle_Ground
+	{
+		mesh = WorldItems/Thistle,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0240 0.0329 -0.0019,
+			rotate = 0.0000 -14.4983 0.0000,
+			scale = 0.6400,
+		}
+	}
+	model TomatoPaste_Ground
+	{
+		mesh = WorldItems/TomatoPaste,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0116 0.0350 0.0324,
+			rotate = -97.9002 -7.0087 -3.0091,
+			scale = 0.7712,
+		}
+	}
+	model WinterBerries_Ground
+	{
+		mesh = WorldItems/WinterBerries,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0150 0.0300 -0.0080,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model Insect_Centipede_Ground
+	{
+		mesh = WorldItems/Insect_Centipede,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0241 0.0250 -0.0061,
+			rotate = -79.9050 -9.0935 -117.7286,
+			scale = 0.9200,
+		}
+	}
+	model Insect_Centipede2_Ground
+    {
+        mesh = WorldItems/Insect_Centipede,
+        texture = WorldItems/Insect_Centipede2,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0241 0.0250 -0.0061,
+			rotate = -79.9050 -9.0935 -117.7286,
+			scale = 0.9200,
+		}
+    }
+	model Insect_Honeybee_Ground
+    {
+        mesh = WorldItems/Insect_Honeybee,
+        scale = 0.4,
+    }
+	model Insect_Maggots_Ground
+    {
+        mesh = WorldItems/Insect_Maggots,
+        scale = 0.4,
+    }
+	model Insect_Millipede_Ground
+	{
+		mesh = WorldItems/Insect_Millipede,
+		texture = WorldItems/Insect_Millipede1,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0265 0.0339 -0.0140,
+			rotate = -93.1493 -3.0403 -155.7984,
+		}
+	}
+	model Insect_Millipede2_Ground
+    {
+        mesh = WorldItems/Insect_Millipede,
+        texture = WorldItems/Insect_Millipede2,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0265 0.0339 -0.0140,
+			rotate = -93.1493 -3.0403 -155.7984,
+		}
+    }
+	model Insect_Pillbug_Ground
+	{
+		mesh = WorldItems/Insect_Pillbug,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0221 0.0527 -0.0020,
+			rotate = 99.0000 0.0000 -18.0000,
+		}
+	}
+	model Insect_Termite_Ground
+	{
+		mesh = WorldItems/Insect_Termite,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0267 0.0505 -0.0112,
+			rotate = 77.9481 0.7627 -48.5627,
+		}
+	}
+	model Insect_Wasp_Ground
+    {
+        mesh = WorldItems/Insect_Wasp,
+        scale = 0.4,
+    }
+	model BaloneySlice
+	{
+		mesh = WorldItems/BaloneySlice,
+		texture = WorldItems/Baloney,
+		scale = 0.4,
+	}
+	model BaloneySlice_Hand
+	{
+		mesh = WorldItems/BalonySlice_Hand,
+		texture = WorldItems/Baloney,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0147 0.0331 -0.0106,
+			rotate = -122.5465 47.7505 -139.9762,
+			scale = 0.3792,
+		}
+	}
+	model SalamiSlice
+	{
+		mesh = WorldItems/SalamiSlice,
+		texture = WorldItems/Salami,
+		scale = 0.4,
+	}
+	model SalamiSlice_Hand
+	{
+		mesh = WorldItems/SalamiSlice_Hand,
+		texture = WorldItems/Salami,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0147 0.0450 -0.0093,
+			rotate = 72.3247 -25.2001 -28.9395,
+			scale = 0.3686,
+		}
+	}
+	model BaguetteDough
+	{
+		mesh = WorldItems/Baguette,
+		texture = WorldItems/dough,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0050 0.0477 -0.0131,
+			rotate = 176.7863 65.3392 -84.8381,
+			scale = 0.6375,
+		}
+	}
+	model BakingTray_Cookies
+	{
+		mesh = WorldItems/BakingTray_Cookies,
+		texture = WorldItems/BakingTray_Cookies,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0173 0.0598 -0.0047,
+			rotate = 12.2198 54.0177 12.1139,
+			scale = 0.5424,
+		}
+	}
+	model MuffinTray_Batter
+	{
+        mesh = WorldItems/MuffinTray_Batter,
+		texture = WorldItems/MuffinTray,
+        scale = 0.4,	
+	}
+	model MuffinTray_BatterCooked
+	{
+        mesh = WorldItems/MuffinTrayCooked,
+		texture = WorldItems/MuffinTray,
+        scale = 0.4,	
+	}
+	model BreadSlices_Toast
+	{
+		mesh = WorldItems/BreadSlices,
+		texture = WorldItems/BreadSlices_Toast,
+        scale = 0.3,	
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0348 0.0252 -0.0166,
+			rotate = -90.6753 -6.8314 -174.0110,
+			scale = 0.7500,
+		}
+	}
+	model BreadSlices_ToastRotten
+	{
+		mesh = WorldItems/BreadSlices,
+		texture = WorldItems/BreadSlices_Toast_Rotten,
+        scale = 0.3,	
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0348 0.0252 -0.0166,
+			rotate = -90.6753 -6.8314 -174.0110,
+			scale = 0.7500,
+		}
+	}
+	model CanOpenMilk
+    {
+        mesh = CanOpen,
+        texture = WorldItems/TinnedCondensedMilk,
+    }
+	model CanClosedMilk
+    {
+        mesh = CanClosed,
+        texture = WorldItems/TinnedCondensedMilk,
+    }
+	model GravyBoat_Full
+	{
+		mesh = WorldItems/GravyBoat_Full,
+		texture = WorldItems/GravyBoat,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0082 0.0000 0.0084,
+			rotate = -4.5856 6.2730 -0.4494,
+			scale = 0.8750,
+		}
+	}
+	model Snackcake_Chocakes
+	{
+		mesh = WorldItems/Snackcake_Chocakes,
+		texture = WorldItems/Snackcake_Chocakes,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0348 0.0345 -0.0180,
+			rotate = -129.5955 51.3504 -137.6820,
+			scale = 0.6615,
+		}
+	}
+	model Snackcake_HiHis
+	{
+		mesh = WorldItems/Snackcake_HiHis,
+		texture = WorldItems/Snackcake_HiHis,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0293 0.0406 -0.0179,
+			rotate = 161.1275 66.9402 -72.7601,
+			scale = 0.5750,
+		}
+	}
+	model Snackcake_Plonkies
+	{
+		mesh = WorldItems/Snackcake_Plonkies,
+		texture = WorldItems/Snackcake_Plonkies,
+		scale = 0.4,
+	}
+	model Snackcake_Plonkies_Hand
+	{
+		mesh = WorldItems/Snackcake_Plonkies_Hand,
+		texture = WorldItems/Snackcake_Plonkies,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0225 0.0335 -0.0162,
+			rotate = -99.0375 14.0202 -139.3120,
+			scale = 0.2584,
+		}
+	}
+	model Snackcake_QuaggaCakes
+	{
+		mesh = WorldItems/Snackcake_QuaggaCakes,
+		texture = WorldItems/Snackcake_QuaggaCakes,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0406 0.0314 -0.0123,
+			rotate = -73.1637 -23.7942 -139.3481,
+			scale = 0.6670,
+		}
+	}
+	model Snackcake_SnoSpheres
+	{
+		mesh = WorldItems/Snackcake_SnoSpheres,
+		texture = WorldItems/Snackcake_SnoSpheres,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0265 0.0307 -0.0138,
+			rotate = 67.2455 -20.7792 -40.1580,
+			scale = 0.5850,
+		}
+	}
+	model GravyMix_Ground
+	{
+		mesh = WorldItems/GravyMix,
+		texture = WorldItems/GravyMix,
+        scale = 0.4,
+	}
+	model CanClosedFruitBeverage_Ground
+    {
+        mesh = CanClosed,
+        texture = WorldItems/CannedJuice,
+    }
+	model CanOpenFruitBeverage_Ground
+	{
+		mesh = CanOpen,
+		texture = WorldItems/CannedJuice_Open,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.00 0.00 0.00,
+			rotate = 0.00 0.00 0.00,
+		}
+	}
+	model HotSauce
+	{
+		mesh = WorldItems/HotSauce,
+		texture = WorldItems/HotSauce,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0115 -0.0227 0.0125,
+			rotate = -1.5304 -2.7426 12.8197,
+			scale = 0.9627,
+		}
+	}
+	model CandyCorn_Ground
+	{
+		mesh = WorldItems/CandyCorn,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0342 0.0371 -0.0096,
+			rotate = 83.1208 -6.9696 -41.2972,
+			scale = 0.8300,
+		}
+	}
+	model CandyFruitSlices_Ground
+    {
+        mesh = WorldItems/CandyFruitSlices,
+        scale = 0.4,
+    }
+	model CookiesSugar_Ground
+    {
+        mesh = WorldItems/Cookies,
+        texture = WorldItems/CookiesSugar,
+        scale = 0.4,
+    }
+	model CookiesSugar_Hand
+    {
+        mesh = WorldItems/Cookie_Hand,
+        texture = WorldItems/CookiesSugar,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0155 0.0382 -0.0037,
+			rotate = 172.0491 65.4061 -85.4831,
+			scale = 0.3191,
+		}
+    }
+	model EggScrambled_Ground
+    {
+        mesh = WorldItems/EggScrambled,
+        scale = 0.4,
+    }
+	model EggPoached_Ground
+    {
+        mesh = WorldItems/EggPoached,
+        scale = 0.4,
+    }
+	model CornFrozen_Ground
+	{
+		mesh = WorldItems/FrozenFoodBag,
+		texture = WorldItems/FrozenCorn,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0283 0.0375 -0.0215,
+			rotate = 3.5376 -59.0793 -101.2406,
+			scale = 0.8250,
+		}
+	}
+	model VegetableFrozen_Ground
+    {
+        mesh = WorldItems/FrozenFoodBag,
+        texture = WorldItems/FrozenMixedVegetables,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0283 0.0375 -0.0215,
+			rotate = 3.5376 -59.0793 -101.2406,
+			scale = 0.8250,
+		}
+    }
+	model GingerPickled_Ground
+	{
+		mesh = WorldItems/GingerPickled,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0304 0.0500 -0.0125,
+			rotate = 122.4511 48.7311 -48.0260,
+			scale = 0.8350,
+		}
+	}
+	model GummyBears_Ground
+    {
+        mesh = WorldItems/GummyBears,
+        scale = 0.4,
+    }
+	model GummyWorms_Ground
+	{
+		mesh = WorldItems/GummyWorms,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0112 0.0406 -0.0071,
+			rotate = -80.4916 -7.4577 30.0875,
+		}
+	}
+	model Jujubes_Ground
+    {
+        mesh = WorldItems/JujuJubes,
+        texture = WorldItems/JujuJubes_JellyBeans,
+        scale = 0.4,
+    }
+	model JellyBeans
+    {
+        mesh = WorldItems/JellyBeans,
+        texture = WorldItems/JujuJubes_JellyBeans,
+        scale = 0.4,
+    }
+	model Nettles_Ground
+	{
+		mesh = WorldItems/Nettle,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0308 0.0384 0.0009,
+			rotate = -70.5782 -29.4973 -119.9942,
+			scale = 0.6750,
+		}
+	}
+	model ShrimpDumpling_Ground
+	{
+		mesh = WorldItems/ShrimpDumpling,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0210 0.0262 0.0012,
+			rotate = -66.3541 -18.2211 40.0215,
+			scale = 0.8800,
+		}
+	}
+	model SushiFish_Ground
+    {
+        mesh = WorldItems/SushiFish,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0330 0.0360 -0.0120,
+			rotate = 158.8665 41.2912 -75.2288,
+		}
+    }
+	model Soybeans
+    {
+        mesh = WorldItems/Soybeans,
+        scale = 0.4,
+    }
+	model SoybeansRotten
+    {
+        mesh = WorldItems/Soybeans,
+        texture = WorldItems/SoybeansRotten,
+        scale = 0.4,
+    }
+	model Kale
+	{
+		mesh = WorldItems/Kale,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0252 0.0286 0.0030,
+			rotate = -86.2904 -19.5720 23.0307,
+			scale = 0.4900,
+		}
+	}
+	model KaleRotten
+    {
+        mesh = WorldItems/Kale,
+        texture = WorldItems/Kale_Rotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0252 0.0286 0.0030,
+			rotate = -86.2904 -19.5720 23.0307,
+			scale = 0.4900,
+		}
+    }
+	model SweetPotato
+    {
+        mesh = WorldItems/SweetPotato,
+        scale = 0.4,
+    }
+	model SweetPotatoRotten
+    {
+        mesh = WorldItems/SweetPotato,
+        texture = WorldItems/SweetPotatoRotten,
+        scale = 0.4,
+    }
+	model Greenpeas
+	{
+		mesh = WorldItems/Greenpeas,
+		scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0361 0.0371 -0.0005,
+			rotate = 24.7054 -65.2704 117.3942,
+		}
+	}
+	model GreenpeasRotten
+    {
+        mesh = WorldItems/Greenpeas,
+        texture = WorldItems/Greenpeas_Rotten,
+        scale = 0.4,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0361 0.0371 -0.0005,
+			rotate = 24.7054 -65.2704 117.3942,
+		}
+    }
+	model BrusselSprouts
+	{
+		mesh = WorldItems/BrusselSprouts,
+		texture = WorldItems/BrusselSprouts,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0108 0.0366 0.0041,
+			rotate = -60.6559 -15.6394 66.9037,
+			scale = 0.6240,
+		}
+	}
+	model BrusselSproutsRotten
+	{
+		mesh = WorldItems/BrusselSprouts,
+		texture = WorldItems/BrusselSprouts_Rotten,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0108 0.0366 0.0041,
+			rotate = -60.6559 -15.6394 66.9037,
+			scale = 0.6240,
+		}
+	}
+	model Caviar
+	{
+		mesh = WorldItems/Caviar,
+		texture = WorldItems/Caviar,
+		scale = 0.175,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0231 0.0698 0.0045,
+			rotate = 2.9046 -3.9576 -20.0093,
+			scale = 0.6854,
+		}
+	}
+	model Caviar_Eat
+	{
+		mesh = WorldItems/Caviar_Eat,
+		texture = WorldItems/Caviar,
+		scale = 0.175,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0206 0.0660 0.0066,
+			rotate = -6.6770 -27.7625 -22.6912,
+			scale = 2.3249,
+		}
+	}
+	model Gingerbreadman
+	{
+		mesh = WorldItems/Gingerbreadman,
+		texture = WorldItems/Gingerbreadman,
+		scale = 0.15,
+	}
+	model Champagne
+	{
+		mesh = WorldItems/Champagne,
+		texture = WorldItems/Champagne,
+		scale = 0.08,
+	}
+	model CraftingChampagne
+	{
+		mesh = WorldItems/Champagne,
+		texture = WorldItems/Champagne,
+		scale = 0.08,
+
+		attachment Bip01_Prop1
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 1.5604,
+		}
+	}
+	model Squash
+	{
+		mesh = WorldItems/Squash,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0620 0.0503 0.0066,
+			rotate = -14.7764 2.1392 -62.4618,
+		}
+	}
+	model SquashRotten
+    {
+        mesh = WorldItems/Squash,
+        texture = WorldItems/Squash_Rotten,
+        scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0620 0.0503 0.0066,
+			rotate = -14.7764 2.1392 -62.4618,
+		}
+    }
+	model Buns_Hamburger
+	{
+		mesh = WorldItems/Buns_Hamburger,
+		texture = WorldItems/BunsHamburger,
+		scale = 0.125,
+	}
+	model Buns_Hamburger_Single
+	{
+		mesh = WorldItems/Buns_Hamburger_Single,
+		texture = WorldItems/BunsHamburger,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0178 0.0408 0.0072,
+			rotate = 85.7450 -14.0370 151.6909,
+			scale = 0.7500,
+		}
+	}
+	model Buns_Hotdog
+	{
+		mesh = WorldItems/Buns_Hotdog,
+		texture = WorldItems/BunsHotdog,
+		scale = 0.125,
+	}
+	model Buns_Hotdog_Single
+	{
+		mesh = WorldItems/Buns_Hotdog_Single,
+		texture = WorldItems/BunsHotdog,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0093 0.0136 0.0101,
+			rotate = 153.3421 34.2313 117.0267,
+			scale = 0.6850,
+		}
+	}
+	model Cucumber
+	{
+		mesh = WorldItems/Cucumber,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0120 0.0050 0.0119,
+			rotate = -105.4432 14.9959 51.5160,
+			scale = 0.5557,
+		}
+	}
+	model CucumberRotten
+    {
+        mesh = WorldItems/Cucumber,
+        texture = WorldItems/Cucumber_Rotten,
+        scale = 0.125,
+    }
+	model CandiedApple
+	{
+		mesh = WorldItems/CandiedApple,
+		scale = 0.1375,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0097 0.1335 0.0162,
+			rotate = -178.8957 -17.9690 -0.1913,
+		}
+	}
+	model CrispyRiceSquare
+	{
+		mesh = WorldItems/CrispyRiceSquare,
+		scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0079 0.0433 -0.0049,
+			rotate = -108.7345 13.2357 50.0635,
+			scale = 0.8050,
+		}
+	}
+	model  Chocolate_Butterchunkers
+	{
+		mesh = WorldItems/Chocolate_Butterchunkers,
+		scale = 0.15,
+	}
+	model Chocolate_Crackle
+	{
+		mesh = WorldItems/Chocolate_Crackle,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0058 0.0223 -0.0003,
+			rotate = -104.4440 6.7113 51.6529,
+			scale = 0.5300,
+		}
+	}
+	model Chocolate_Deux
+	{
+		mesh = WorldItems/Chocolate_Deux,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0101 0.0159 0.0032,
+			rotate = 77.9196 -2.7111 139.9151,
+			scale = 0.6300,
+		}
+	}
+	model Chocolate_GalacticDairy
+	{
+		mesh = WorldItems/Chocolate_GalacticDairy,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0034 0.0222 -0.0001,
+			rotate = 76.8791 -1.8266 129.3109,
+			scale = 0.6100,
+		}
+	}
+	model Chocolate_RoysPBPucks
+	{
+		mesh = WorldItems/Chocolate_RoysPBPucks,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0154 0.0268 0.0274,
+			rotate = -100.5396 4.7970 59.4766,
+			scale = 0.6200,
+		}
+	}
+	model Chocolate_Smirkers
+	{
+		mesh = WorldItems/Chocolate_Smirkers,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0023 0.0159 -0.0000,
+			rotate = -99.3509 5.4657 55.9753,
+			scale = 0.6100,
+		}
+	}
+	model Chocolate_SnikSnak
+	{
+		mesh = WorldItems/Chocolate_SnikSnak,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0026 0.0220 -0.0107,
+			rotate = -96.7225 6.0813 44.6026,
+			scale = 0.6080,
+		}
+	}
+	model  Ladybug
+	{
+		mesh = WorldItems/Ladybird,
+		scale = 0.125,
+	}
+	model  CandyCaramels
+	{
+		mesh = WorldItems/Candy_Novapops,
+		texture = WorldItems/CandyCaramels,
+		scale = 0.1,
+	}
+	model CandyGummyfish
+	{
+		mesh = WorldItems/Candy_GummyFish,
+		scale = 0.15,
+	}
+	model  CandyMolasses
+	{
+		mesh = WorldItems/Candy_Molasses,
+		texture = WorldItems/CandyMolasses,
+		scale = 0.15,
+	}
+	model  CandyNovapops
+	{
+		mesh = WorldItems/Candy_Novapops,
+		scale = 0.1,
+	}
+	model  Chocolate_Candy
+	{
+		mesh = WorldItems/Chocolate_Candy,
+		scale = 0.15,
+	}
+	model  	Seasoning_Basil
+	{
+		mesh = WorldItems/Seasoning,
+		texture = WorldItems/Seasoning_Basil,
+		scale = 0.15,
+	}
+	model  	Seasoning_Chives
+	{
+		mesh = WorldItems/Seasoning,
+		texture = WorldItems/Seasoning_Chives,
+		scale = 0.15,
+	}
+	model  	Seasoning_Cilantro
+	{
+		mesh = WorldItems/Seasoning,
+		texture = WorldItems/Seasoning_Cilantro,
+		scale = 0.15,
+	}
+	model  	Seasoning_Oregano
+	{
+		mesh = WorldItems/Seasoning,
+		texture = WorldItems/Seasoning_Oregano,
+		scale = 0.15,
+	}
+	model  	Seasoning_Parsley
+	{
+		mesh = WorldItems/Seasoning,
+		texture = WorldItems/Seasoning_Parsley,
+		scale = 0.15,
+	}
+	model  	Seasoning_Rosemary
+	{
+		mesh = WorldItems/Seasoning,
+		texture = WorldItems/Seasoning_Rosemary,
+		scale = 0.15,
+	}
+	model  	Seasoning_Sage
+	{
+		mesh = WorldItems/Seasoning,
+		texture = WorldItems/Seasoning_Sage,
+		scale = 0.15,
+	}
+	model  	Seasoning_Thyme
+	{
+		mesh = WorldItems/Seasoning,
+		texture = WorldItems/Seasoning_Thyme,
+		scale = 0.15,
+	}
+	model Leech
+    {
+        mesh = WorldItems/Leech,
+        texture = WorldItems/Leech,
+        scale = 0.15,
+    }
+	model Tadpole
+    {
+        mesh = WorldItems/Tadpole,
+        texture = WorldItems/Tadpole,
+        scale = 0.2,
+    }
+	model Mussels
+    {
+        mesh = WorldItems/Mussels_Raw,
+        texture = WorldItems/Mussels,
+        scale = 0.3,
+    }
+	model MusselsBurnt
+    {
+        mesh = WorldItems/Mussels_Cooked,
+        texture = WorldItems/Mussels,
+        scale = 0.3,
+    }
+	model MusselsCooked
+    {
+        mesh = WorldItems/Mussels_Cooked,
+        texture = WorldItems/Mussels,
+        scale = 0.3,
+    }
+	model BalsamicVinegar
+	{
+		mesh = WorldItems/BalsamicVinegar,
+		texture = WorldItems/Balsamic_Vinegar,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0002 -0.0311 0.0112,
+			rotate = -1.7822 0.0000 6.5445,
+			scale = 0.5600,
+		}
+	}
+	model BBQSauce
+	{
+		mesh = WorldItems/BBQ_Sauce,
+		texture = WorldItems/BBQSauce,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0002 -0.0229 0.0115,
+			rotate = 79.9433 -84.7348 80.6114,
+			scale = 0.6450,
+		}
+	}
+	model Cinnamon
+	{
+		mesh = WorldItems/Cinnamon,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0164 0.0337 -0.0060,
+			rotate = 81.5006 -17.7851 -39.0954,
+			scale = 0.7038,
+		}
+	}
+	model Cornflour
+	{
+		mesh = WorldItems/Cornflour,
+		scale = 0.15,
+	}
+	model Cornmeal
+	{
+		mesh = WorldItems/Cornmeal,
+		texture = WorldItems/CornMeal,
+		scale = 0.125,
+	}
+	model Danish
+	{
+		mesh = WorldItems/Danish,
+		scale = 0.375,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0191 0.0306 -0.0085,
+			rotate = 84.1520 1.3487 -34.7036,
+			scale = 0.7515,
+		}
+	}
+	model DriedApricots
+	{
+		mesh = WorldItems/DriedApricots,
+		texture = WorldItems/DriedApricot,
+		scale = 0.2,
+	}
+	model DriedApricotsRotten
+	{
+		mesh = WorldItems/DriedApricots,
+		texture = WorldItems/DriedApricot_Rotten,
+		scale = 0.125,
+	}
+	model DriedApricot_Hand
+	{
+		mesh = WorldItems/DriedApricot_Hand,
+		texture = WorldItems/DriedApricot,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0087 0.0444 -0.0074,
+			rotate = -99.4045 12.3074 -76.1136,
+		}
+	}
+	model FourLeafClover
+	{
+		mesh = WorldItems/FourLeafClover,
+		scale = 0.25,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0125 0.0459 -0.0069,
+			rotate = -73.1515 -7.6462 -112.6554,
+			scale = 0.5896,
+		}
+	}
+	model JellyRoll
+	{
+		mesh = WorldItems/JellyRoll,
+		scale = 0.25,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0000 0.0374 0.0023,
+			rotate = -106.1080 11.2695 61.9767,
+			scale = 0.6808,
+		}
+	}
+	model PowderedGarlic
+	{
+		mesh = WorldItems/PowderedJar,
+		texture = WorldItems/PowderedGarlic,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0000 0.0189 0.0082,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.7306,
+		}
+	}
+	model PowderedOnion
+	{
+		mesh = WorldItems/PowderedJar,
+		texture = WorldItems/PowderedOnion,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0000 0.0189 0.0082,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.7306,
+		}
+	}
+	model SeasoningSalt
+	{
+		mesh = WorldItems/Seasoning_Salt,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0000 0.0189 0.0082,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.7306,
+		}
+	}
+	model LemonBar
+	{
+		mesh = WorldItems/LemonBar,
+		scale = 0.35,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0238 0.0327 -0.0135,
+			rotate = 172.4881 32.7364 -78.6994,
+			scale = 0.9100,
+		}
+	}
+	model Garlic
+	{
+		mesh = WorldItems/Garlic,
+		texture = WorldItems/Garlic,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0264 0.0281 -0.0135,
+			rotate = 58.1663 24.4667 -46.8259,
+			scale = 0.7950,
+		}
+	}
+	model GarlicBurnt
+	{
+		mesh = WorldItems/Garlic,
+		texture = WorldItems/Garlic_Burnt,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0264 0.0281 -0.0135,
+			rotate = 58.1663 24.4667 -46.8259,
+			scale = 0.7950,
+		}
+	}
+	model GarlicCooked
+	{
+		mesh = WorldItems/Garlic,
+		texture = WorldItems/Garlic_Cooked,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0264 0.0281 -0.0135,
+			rotate = 58.1663 24.4667 -46.8259,
+			scale = 0.7950,
+		}
+	}
+	model GarlicRotten
+	{
+		mesh = WorldItems/Garlic,
+		texture = WorldItems/Garlic_Rotten,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0264 0.0281 -0.0135,
+			rotate = 58.1663 24.4667 -46.8259,
+			scale = 0.7950,
+		}
+	}
+	model Milk_Personalsized
+	{
+		mesh = WorldItems/MilkPersonalsized,
+		scale = 0.25,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0022 0.0220 0.0080,
+			rotate = 0.0000 -24.8489 0.0000,
+		}
+	}
+	model Frozen_ChickenNuggets
+	{
+		mesh = WorldItems/FrozenFoodBag,
+		texture = WorldItems/FrozenChickenNuggets,
+		scale = 0.375,
+	}
+	model Frozen_FishFingers
+	{
+		mesh = WorldItems/FrozenFoodBag,
+		texture = WorldItems/FrozenFishFingers,
+		scale = 0.375,
+	}
+	model Frozen_FrenchFries
+	{
+		mesh = WorldItems/FrozenFoodBag,
+		texture = WorldItems/FrozenFrenchFries,
+		scale = 0.375,
+	}
+	model Frozen_TatoDots
+	{
+		mesh = WorldItems/FrozenFoodBag,
+		texture = WorldItems/FrozenTatoDots,
+		scale = 0.375,
+	}
+	model FishFingers
+	{
+		mesh = WorldItems/FishFingers,
+		texture = WorldItems/FishFingers,
+		scale = 0.125,
+	}
+	model FishFingersBurnt
+	{
+		mesh = WorldItems/FishFingers,
+		texture = WorldItems/FishFingers_Burnt,
+		scale = 0.125,
+	}
+	model FishFingersRotten
+	{
+		mesh = WorldItems/FishFingers,
+		texture = WorldItems/FishFingers_Rotten,
+		scale = 0.125,
+	}
+	model FishFinger_Hand
+	{
+		mesh = WorldItems/FishFinger_Hand,
+		texture = WorldItems/FishFingers,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0014 0.0372 0.0023,
+			rotate = -108.4532 2.6456 66.5080,
+			scale = 0.6600,
+		}
+	}
+	model FishFingers_HandBurnt
+	{
+		mesh = WorldItems/FishFinger_Hand,
+		texture = WorldItems/FishFingers_Burnt,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0014 0.0372 0.0023,
+			rotate = -108.4532 2.6456 66.5080,
+			scale = 0.6600,
+		}
+	}
+	model FishFingers_HandRotten
+	{
+		mesh = WorldItems/FishFinger_Hand,
+		texture = WorldItems/FishFingers_Rotten,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0014 0.0372 0.0023,
+			rotate = -108.4532 2.6456 66.5080,
+			scale = 0.6600,
+		}
+	}
+	model FrenchFries
+	{
+		mesh = WorldItems/FrenchFries,
+		texture = WorldItems/FrenceFries,
+		scale = 0.2,
+	}
+	model FrenchFriesBurnt
+	{
+		mesh = WorldItems/FrenchFries,
+		texture = WorldItems/FrenceFries_Burnt,
+		scale = 0.2,
+	}
+	model FrenchFriesRotten
+	{
+		mesh = WorldItems/FrenchFries,
+		texture = WorldItems/FrenceFries_Rotten,
+		scale = 0.2,
+	}
+	model FrenchFries_Hand
+	{
+		mesh = WorldItems/FrenchFries_Hand,
+		texture = WorldItems/FrenceFries,
+		scale = 0.2,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0131 0.0292 -0.0026,
+			rotate = -105.3523 5.2704 59.4116,
+			scale = 0.7750,
+		}
+	}
+	model FrenchFries_HandBurnt
+	{
+		mesh = WorldItems/FrenchFries_Hand,
+		texture = WorldItems/FrenceFries_Burnt,
+		scale = 0.2,
+	}
+	model FrenchFries_HandRotten
+	{
+		mesh = WorldItems/FrenchFries_Hand,
+		texture = WorldItems/FrenceFries_Rotten,
+		scale = 0.2,
+	}
+	model TatoDots
+	{
+		mesh = WorldItems/TatoDots,
+		texture = WorldItems/TatoDots,
+		scale = 0.2,
+	}
+	model TatoDotsBurnt
+	{
+		mesh = WorldItems/TatoDots,
+		texture = WorldItems/TatoDots_Burnt,
+		scale = 0.2,
+	}
+	model TatoDots_Hand
+	{
+		mesh = WorldItems/TatoDots_Hand,
+		texture = WorldItems/TatoDots,
+		scale = 0.2,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0069 0.0493 0.0019,
+			rotate = 160.3024 25.5278 101.3825,
+			scale = 0.8300,
+		}
+	}
+	model TatoDots_HandBurnt
+	{
+		mesh = WorldItems/TatoDots_Hand,
+		texture = WorldItems/TatoDots_Burnt,
+		scale = 0.2,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0069 0.0493 0.0019,
+			rotate = 160.3024 25.5278 101.3825,
+			scale = 0.8300,
+		}
+	}
+	model Creamocle
+	{
+		mesh = WorldItems/IceOcle,
+		texture = WorldItems/Creamocle,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0266 0.0794 0.0542,
+			rotate = -4.0612 -61.7170 85.5873,
+			scale = 0.6576,
+		}
+	}
+	model Creamocle_Melted
+	{
+		mesh = WorldItems/IceOcle_Melted,
+		texture = WorldItems/Creamocle,
+		scale = 0.125,
+	}
+	model FudgeePop
+	{
+		mesh = WorldItems/IceOcle,
+		texture = WorldItems/Fudgocle,
+		scale = 0.125,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0303 0.0773 0.0585,
+			rotate = 2.5405 -62.0882 89.1362,
+			scale = 0.6872,
+		}
+	}
+	model FudgeePop_Melted
+	{
+		mesh = WorldItems/IceOcle_Melted,
+		texture = WorldItems/Fudgocle,
+		scale = 0.125,
+	}
+	model IcecreamSandwich
+	{
+		mesh = WorldItems/IcecreamSandwich,
+		texture = WorldItems/IcecreamSandwich,
+		scale = 0.375,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0031 0.0306 -0.0037,
+			rotate = -11.4938 -31.7330 82.9097,
+			scale = 0.5900,
+		}
+	}
+	model IcecreamSandwich_Melted
+	{
+		mesh = WorldItems/IcecreamSandwich_Melted,
+		texture = WorldItems/IcecreamSandwich,
+		scale = 0.125,
+	}
+	model Popsicle
+	{
+		mesh = WorldItems/Popsicle,
+		texture = WorldItems/Popsicle,
+		scale = 0.375,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0052 0.0795 0.0083,
+			rotate = 1.9024 -49.7349 86.5962,
+			scale = 0.6650,
+		}
+	}
+	model Popsicle_Melted
+	{
+		mesh = WorldItems/Popsicle_Melted,
+		texture = WorldItems/Popsicle,
+		scale = 0.125,
+	}
+	model SesameOil
+	{
+		mesh = WorldItems/SesameOil,
+		scale = 0.1,
+	}
+	model SourCream
+	{
+		mesh = WorldItems/SourCream,
+		scale = 0.4,
+	}
+	model SugarCubes
+	{
+		mesh = WorldItems/SugarCubes,
+		texture = WorldItems/SugarCube,
+		scale = 0.1,
+	}
+	model MilkChocolate_Personalsized
+	{
+		mesh = WorldItems/MilkPersonalsized,
+		texture = WorldItems/MilkChocolatePersonalsized,
+		scale = 0.25,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0022 0.0220 0.0080,
+			rotate = 0.0000 -24.8489 0.0000,
+		}
+	}
+	model GreenOnions
+	{
+		mesh = WorldItems/GreenOnion,
+		texture = WorldItems/GreenOnions,
+		scale = 0.15,
+	}
+	model GreenOnionsRotten
+	{
+		mesh = WorldItems/GreenOnions,
+		texture = WorldItems/GreenOnionsRotten,
+		scale = 0.15,
+	}
+	model CabbageRoll
+	{
+		mesh = WorldItems/CabbageRoll,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0200 0.0232 -0.0092,
+			rotate = -10.5922 -26.1897 -101.2874,
+			scale = 0.9200,
+		}
+	}
+	model CabbageRollCooked
+	{
+		mesh = WorldItems/CabbageRoll,
+		texture = WorldItems/CabbageRoll_cooked,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0200 0.0232 -0.0092,
+			rotate = -10.5922 -26.1897 -101.2874,
+			scale = 0.9200,
+		}
+	}
+	model CabbageRollBurnt
+	{
+		mesh = WorldItems/CabbageRoll,
+		texture = WorldItems/CabbageRoll_burnt,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0200 0.0232 -0.0092,
+			rotate = -10.5922 -26.1897 -101.2874,
+			scale = 0.9200,
+		}
+	}
+	model CabbageRollRotten
+	{
+		mesh = WorldItems/CabbageRoll,
+		texture = WorldItems/CabbageRoll_rotten,
+		scale = 0.3,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0200 0.0232 -0.0092,
+			rotate = -10.5922 -26.1897 -101.2874,
+			scale = 0.9200,
+		}
+	}
+	model CornChips
+	{
+		mesh = WorldItems/Chips,
+		texture = WorldItems/CornChips,
+		scale = 0.28,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0266 0.0516 -0.0123,
+			rotate = 164.0710 64.3810 -60.7310,
+			scale = 0.9525,
+		}
+	}
+	model Olives
+	{
+		mesh = WorldItems/Olives,
+		scale = 0.1,
+	}
+	model MushroomsButton
+	{
+		mesh = WorldItems/Mushroom_Button,
+		scale = 0.15,
+	}
+	model MushroomsButton_Hand
+	{
+		mesh = WorldItems/Mushroom_Button_Hand,
+		texture = WorldItems/Mushroom_Button,
+		scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0119 0.0299 -0.0079,
+			rotate = 1.5378 -0.9971 -2.9240,
+		}
+	}
+	model ChocolateHeartbox_Ground
+    {
+        mesh = WorldItems/ChocolateHeartbox,
+        scale = 0.1,
+    }
+	model ChocolateHeartbox_Hand
+	{
+		mesh = WorldItems/ChocolateHeartbox_Open,
+		texture = WorldItems/ChocolateHeartbox,
+		scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0328 0.0323 -0.0328,
+			rotate = -10.7786 50.4327 22.6755,
+			scale = 0.8500,
+		}
+	}
+	model JarFoodBrown_Open
+    {
+		mesh = WorldItems/JarFood_Open,
+		texture = WorldItems/JarFoodBrown_Open,
+		scale = 0.12,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0010 0.0028 0.0016,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }
+	model JarFoodGreen_Open
+	{
+		mesh = WorldItems/JarFood_Open,
+		texture = WorldItems/JarFoodGreen_Open,
+		scale = 0.12,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0010 0.0028 0.0016,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model JarFoodRed_Open
+    {
+		mesh = WorldItems/JarFood_Open,
+		texture = WorldItems/JarFoodRed_Open,
+		scale = 0.12,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0010 0.0028 0.0016,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }
+	model JarFoodPurple_Open
+    {
+		mesh = WorldItems/JarFood_Open,
+		texture = WorldItems/JarFoodPurple_Open,
+		scale = 0.12,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0010 0.0028 0.0016,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }
+	model JarFoodOrange_Open
+    {
+		mesh = WorldItems/JarFood_Open,
+		texture = WorldItems/JarFoodOrange_Open,
+		scale = 0.12,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0010 0.0028 0.0016,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }
+	model Bag_Gunny_Ground
+    {
+        mesh = WorldItems/Clothing/SackNew,
+        texture = clothes/bag/Sack_Gunny,
+        scale = 0.1,
+    }
+	model CraftingSack_OPEN
+    {
+        mesh = CraftingSack_OPEN,
+        texture = clothes/bag/Sack_Gunny,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0010 0.0028 0.0016,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }
+	model DriedCorn
+    {
+        mesh = WorldItems/Dried_Peas_Soybeans,
+		texture = WorldItems/DriedSoyBeans,
+        scale = 0.05,
+    }
+	model DriedPeas
+    {
+        mesh = WorldItems/Dried_Peas_Soybeans,
+		texture = WorldItems/Dried_Peas,
+        scale = 0.05,
+    }
+	model DriedSoyBeans
+    {
+        mesh = WorldItems/Dried_Peas_Soybeans,
+		texture = WorldItems/DriedSoyBeans,
+        scale = 0.05,
+    }
+	model PanFriedVegetablesForged
+	{
+		mesh = WorldItems/FryingPan_Forged_Food,
+		texture = WorldItems/FryingPan_Forged_StirFry,
+		scale = 0.135,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0240 0.0350 -0.0020,
+			rotate = -95.1907 -88.2863 -179.9999,
+		}
+	}
+	model PanFriedVegetablesForgedBurnt
+	{
+		mesh = WorldItems/FryingPan_Forged_Food,
+		texture = WorldItems/FryingPan_Forged_StirFryBurnt,
+		scale = 0.135,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0240 0.0350 -0.0020,
+			rotate = -95.1907 -88.2863 -179.9999,
+		}
+	}
+	model PanFriedVegetablesForgedRotten
+	{
+		mesh = WorldItems/FryingPan_Forged_Food,
+		texture = WorldItems/FryingPan_Forged_StirFryRotten,
+		scale = 0.135,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0240 0.0350 -0.0020,
+			rotate = -95.1907 -88.2863 -179.9999,
+		}
+	}
+	model EggOmletteForged
+	{
+		mesh = WorldItems/FryingPan_Forged_Food,
+		texture = WorldItems/FryingPan_Forged_OmletteRaw,
+		scale = 0.135,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0240 0.0350 -0.0020,
+			rotate = -95.1907 -88.2863 -179.9999,
+		}
+	}
+	model EggOmletteForgedCooked
+	{
+		mesh = WorldItems/FryingPan_Forged_Food,
+		texture = WorldItems/FryingPan_Forged_Omlette,
+		scale = 0.135,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0240 0.0350 -0.0020,
+			rotate = -95.1907 -88.2863 -179.9999,
+		}
+	}
+	model EggOmletteForgedBurnt
+	{
+		mesh = WorldItems/FryingPan_Forged_Food,
+		texture = WorldItems/FryingPan_Forged_OmletteBurnt,
+		scale = 0.135,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0240 0.0350 -0.0020,
+			rotate = -95.1907 -88.2863 -179.9999,
+		}
+	}
+	model EggOmletteForgedRotten
+	{
+		mesh = WorldItems/FryingPan_Forged_Food,
+		texture = WorldItems/FryingPan_Forged_OmletteRotten,
+		scale = 0.135,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0240 0.0350 -0.0020,
+			rotate = -95.1907 -88.2863 -179.9999,
+		}
+	}
+	model RoastTurkeyCooked
+    {
+        mesh = WorldItems/Turkey_Roast,
+        scale = 0.05,
+    }
+	model ScoutCookies
+    {
+        mesh = WorldItems/Scout_Cookies,
+        scale = 0.1,
+    }
+	model CheesePowdered
+	{
+		mesh = WorldItems/CheesePowdered,
+		scale = 0.15,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0139 0.0446 0.0114,
+			rotate = -98.0623 -4.9977 20.9099,
+			scale = 0.7200,
+		}
+	}
+	model Macaroni
+	{
+		mesh = WorldItems/Macaroni,
+		scale = 0.15,
+	}
+	model Hotdog_Single
+	{
+		mesh = WorldItems/Hotdog_Single,
+		scale = 0.125,
+	}
+	model Hotdog_Pack
+	{
+		mesh = WorldItems/Hotdogs_Pack,
+        texture = WorldItems/HotdogPack,
+		scale = 0.125,
+	}
+	model Spinach
+	{
+		mesh = WorldItems/Spinach,
+		scale = 0.14,
+	}
+	model PumpkinSeed
+	{
+		mesh = WorldItems/PumpkinSeeds,
+		texture= WorldItems/PumpkinSeeds,
+		scale = 0.1,
+	}
+	model PumpkinSeedBurnt
+	{
+		mesh = WorldItems/PumpkinSeeds,
+		texture= WorldItems/PumpkinSeeds_Burnt,
+		scale = 0.1,
+	}
+	model PumpkinSeedCooked
+	{
+		mesh = WorldItems/PumpkinSeeds,
+		texture= WorldItems/PumpkinSeeds_Roasted,
+		scale = 0.1,
+	}
+	model SugarBeet_Ground
+	{
+		mesh = WorldItems/SugarBeet,
+		scale = 0.1,
+	}
+	model SaucepanCopperPasta
+	{
+		mesh = WorldItems/SaucePan_Copper_Pasta,
+		texture = WorldItems/SaucePan_Copper,
+		scale = 0.075,
+	}
+	model SaucepanCopperPastaRotten
+	{
+		mesh = WorldItems/SaucePan_Copper_Pasta,
+		texture = WorldItems/SaucePan_Copper_Rotten,
+		scale = 0.075,
+	}
+	model SaucepanCopperRice
+	{
+		mesh = WorldItems/SaucePan_Copper_Rice,
+		texture = WorldItems/SaucePan_Copper,
+		scale = 0.075,
+	}
+	model SaucepanCopperRiceRotten
+	{
+		mesh = WorldItems/SaucePan_Copper_Rice,
+		texture = WorldItems/SaucePan_Copper_Rotten,
+		scale = 0.075,
+	}
+	model Turnip
+	{
+		mesh = WorldItems/Turnip,
+		scale = 0.2,
+	}
+	model TurnipRotten
+	{
+		mesh = WorldItems/Turnip,
+		texture = WorldItems/Turnip_Rotten,
+		scale = 0.2,
+	}
+	model MintHerb
+	{
+		mesh = WorldItems/Mint,
+		texture = WorldItems/Mint_Fresh,
+		scale = 0.1,
+	}
+	model MintHerb_Rotten
+	{
+		mesh = WorldItems/Mint,
+		texture = WorldItems/Mint_Rotten,
+		scale = 0.1,
+	}
+	model HabaneroDried
+    {
+        mesh = WorldItems/PepperHabanero_Dried,
+        scale = 0.2,
+    }
+	model JalapenoDried
+    {
+        mesh = WorldItems/PepperJalapeno_Dried,
+        scale = 0.2,
+    }
+	model BrandyBottle
+	{
+		mesh = WhiskeyBottle,
+		texture = WorldItems/Bottle_Brandy,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = 180.0000 -90.0 -180.0000,
+		}
+	}
+	model CoffeeLiquerBottle
+	{
+		mesh = WhiskeyBottle,
+		texture = WorldItems/Bottle_CoffeeLiquer,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = 180.0000 -90.0 -180.0000,
+		}
+	}
+	model CuracaoBottle
+	{
+		mesh = WhiskeyBottle,
+		texture = WorldItems/Bottle_Curacao,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = 180.0000 -90.0 -180.0000,
+		}
+
+	}
+	model RumBottle
+	{
+		mesh = WhiskeyBottle,
+		texture = WorldItems/Bottle_Rum,
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = 180.0000 -90.0 -180.0000,
+		}
+	}
+	model CiderBottle
+	{
+		mesh = WorldItems/Bottle_Generic,
+		texture = WorldItems/Bottle_Cider,
+		Scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0196 -0.0197 -0.0207,
+			rotate = -3.4086 58.2555 6.9726,
+			scale = 0.8925,
+		}
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = 180.0000 27.0000 179.6241,
+		}
+
+	}
+	model GinBottle
+	{
+		mesh = WorldItems/Bottle_Generic,
+		texture = WorldItems/Bottle_Gin,
+		Scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0196 -0.0197 -0.0207,
+			rotate = -3.4086 58.2555 6.9726,
+			scale = 0.8925,
+		}
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = 180.0000 27.0000 179.6241,
+		}
+
+	}
+	model GrenadineBottle
+	{
+		mesh = WorldItems/Bottle_Generic,
+		texture = WorldItems/Bottle_Grenadine,
+		Scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0196 -0.0197 -0.0207,
+			rotate = -3.4086 58.2555 6.9726,
+			scale = 0.8925,
+		}
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = 180.0000 27.0000 179.6241,
+		}
+
+	}
+	model PortBottle
+	{
+		mesh = WorldItems/Bottle_Generic,
+		texture = WorldItems/Bottle_Port,
+		Scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0196 -0.0197 -0.0207,
+			rotate = -3.4086 58.2555 6.9726,
+			scale = 0.8925,
+		}
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = 180.0000 27.0000 179.6241,
+		}
+
+	}
+	model ScotchBottle
+	{
+		mesh = WorldItems/Bottle_Generic,
+		texture = WorldItems/Bottle_Scotch,
+		Scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0196 -0.0197 -0.0207,
+			rotate = -3.4086 58.2555 6.9726,
+			scale = 0.8925,
+		}
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = 180.0000 27.0000 179.6241,
+		}
+
+	}
+	model SherryBottle
+	{
+		mesh = WorldItems/Bottle_Generic,
+		texture = WorldItems/Bottle_Sherry,
+		Scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0196 -0.0197 -0.0207,
+			rotate = -3.4086 58.2555 6.9726,
+			scale = 0.8925,
+		}
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = 180.0000 27.0000 179.6241,
+		}
+
+	}
+	model TequilaBottle
+	{
+		mesh = WorldItems/Bottle_Generic,
+		texture = WorldItems/Bottle_Tequila,
+		Scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0196 -0.0197 -0.0207,
+			rotate = -3.4086 58.2555 6.9726,
+			scale = 0.8925,
+		}
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = 180.0000 27.0000 179.6241,
+		}
+
+	}
+	model VermouthBottle
+	{
+		mesh = WorldItems/Bottle_Generic,
+		texture = WorldItems/Bottle_Vermouth,
+		Scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0196 -0.0197 -0.0207,
+			rotate = -3.4086 58.2555 6.9726,
+			scale = 0.8925,
+		}
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = 180.0000 27.0000 179.6241,
+		}
+
+	}
+	model VodkaBottle
+	{
+		mesh = WorldItems/Bottle_Generic,
+		texture = WorldItems/Bottle_Vodka,
+		Scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = 0.0196 -0.0197 -0.0207,
+			rotate = -3.4086 58.2555 6.9726,
+			scale = 0.8925,
+		}
+
+		attachment world
+		{
+			offset = -0.0000 -0.0000 -0.0000,
+			rotate = 180.0000 27.0000 179.6241,
+		}
+	}
+	model JuiceBottle_Cranberry
+	{
+		mesh = WorldItems/Juice_Bottle,
+		texture = WorldItems/Bottle_CranberryJuice,
+		Scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0000 -0.0227 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8800,
+		}
+
+		attachment world
+		{
+			offset = -0.0000 0.0000 -0.0000,
+			rotate = 0.0000 -0.0000 0.0000,
+		}
+	}
+	model JuiceBottle_FruitPunch
+	{
+		mesh = WorldItems/Juice_Bottle,
+		texture = WorldItems/Juice_FruitPunch,
+		Scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0000 -0.0227 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8800,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate =  0.0000 -0.0000 0.0,
+		}
+	}
+	model JuiceBottle_GrapeJuice
+	{
+		mesh = WorldItems/Juice_Bottle,
+		texture = WorldItems/Juice_GrapeJuice,
+		Scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0000 -0.0227 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8800,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 -0.0000 0.0,
+		}
+	}
+	model JuiceBottle_Lemonade
+	{
+		mesh = WorldItems/Juice_Bottle,
+		texture = WorldItems/Juice_Lemonade,
+		Scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0000 -0.0227 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8800,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 -0.0000 0.0,
+		}
+	}
+	model JuiceBottle_OrangeJuice
+	{
+		mesh = WorldItems/Juice_Bottle,
+		texture = WorldItems/Juice_OrangeJuice,
+		Scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0000 -0.0227 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8800,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 -0.0000 0.0,
+		}
+	}
+	model JuiceBottle_Tomato
+	{
+		mesh = WorldItems/Juice_Bottle,
+		texture = WorldItems/Juice_Tomato,
+		Scale = 0.1,
+
+		attachment Bip01_Prop2
+		{
+			offset = -0.0000 -0.0227 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+			scale = 0.8800,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.0000 0.0000,
+			rotate = 0.0000 -0.0000 0.0,
+		}
+	}
+	model Wasabi
+    {
+        mesh = WorldItems/Wasabi,
+        scale = 0.5,
+    }
+	model PumpkinSmashed
+    {
+        mesh = WorldItems/Pumpkin_Smashed,
+        texture = WorldItems/PumpkinSlice,
+        scale = 0.1,
+    }
+	model PumpkinSmashedRotten
+     {
+         mesh = WorldItems/Pumpkin_Smashed,
+         texture = WorldItems/PumpkinSlice_Rotten,
+         scale = 0.1,
+     }
+	model PumpkinSlice
+    {
+        mesh = WorldItems/Pumpkin_Slice,
+        texture = WorldItems/PumpkinSlice,
+        scale = 0.1,
+    }
+	model PumpkinSliceRotten
+    {
+        mesh = WorldItems/Pumpkin_Slice,
+        texture = WorldItems/PumpkinSlice_Rotten,
+        scale = 0.1,
+    }
+	model ChickenWhole
+    {
+        mesh = WorldItems/ChickenWhole,
+		texture = WorldItems/PoultryWhole_Raw,
+        scale = 0.1,
+    }
+	model ChickenWholeCooked
+    {
+        mesh = WorldItems/ChickenWhole,
+		texture = WorldItems/PoultryWhole_Cooked,
+        scale = 0.1,
+    }
+	model ChickenWholeBurnt
+    {
+        mesh = WorldItems/ChickenWhole,
+		texture = WorldItems/PoultryWhole_OverDone,
+        scale = 0.1,
+    }
+	model ChickenWholeRotten
+    {
+        mesh = WorldItems/ChickenWhole,
+		texture = WorldItems/PoultryWhole_Raw_Rotten,
+        scale = 0.1,
+    }
+	model TurkeyWhole
+    {
+        mesh = WorldItems/TurkeyWhole,
+		texture = WorldItems/PoultryWhole_Raw,
+        scale = 0.1,
+    }
+	model TurkeyWholeCooked
+    {
+        mesh = WorldItems/TurkeyWhole,
+		texture = WorldItems/PoultryWhole_Cooked,
+        scale = 0.1,
+    }
+	model TurkeyWholeBurnt
+    {
+        mesh = WorldItems/TurkeyWhole,
+		texture = WorldItems/PoultryWhole_OverDone,
+        scale = 0.1,
+    }
+	model TurkeyWholeRotten
+    {
+        mesh = WorldItems/TurkeyWhole,
+		texture = WorldItems/PoultryWhole_Raw_Rotten,
+        scale = 0.1,
+    }
+	model Pork
+    {
+        mesh = WorldItems/Pork,
+        texture = WorldItems/Pork_Raw,
+        scale = 0.1,
+    }
+	model PorkCooked
+    {
+        mesh = WorldItems/Pork,
+        texture = WorldItems/Pork_Cooked,
+        scale = 0.1,
+    }
+	model PorkBurnt
+    {
+        mesh = WorldItems/Pork,
+        texture = WorldItems/Pork_OverDone,
+        scale = 0.1,
+    }
+	model PorkRotten
+    {
+        mesh = WorldItems/Pork,
+        texture = WorldItems/PorkRaw_Rotten,
+        scale = 0.1,
+    }
+	model PoultryFillet
+    {
+        mesh = WorldItems/PoultryFillet,
+        texture = WorldItems/PoultryFillet_Raw,
+        scale = 0.1,
+    }
+	model PoultryFilletCooked
+    {
+        mesh = WorldItems/PoultryFillet,
+        texture = WorldItems/PoultryFillet_Cooked,
+        scale = 0.1,
+    }
+	model PoultryFilletBurnt
+    {
+        mesh = WorldItems/PoultryFillet,
+        texture = WorldItems/PoultryFillet_OverDone,
+        scale = 0.1,
+    }
+	model PoultryFilletRotten
+    {
+        mesh = WorldItems/PoultryFillet,
+        texture = WorldItems/PoultryFilletRaw_Rotten,
+        scale = 0.1,
+    }
+	model PoultryWing
+    {
+        mesh = WorldItems/PoultryWing,
+        texture = WorldItems/PoultryWing_Raw,
+        scale = 0.1,
+    }
+	model PoultryWingCooked
+    {
+        mesh = WorldItems/PoultryWing,
+        texture = WorldItems/PoultryWing_Cooked,
+        scale = 0.1,
+    }
+	model PoultryWingBurnt
+    {
+        mesh = WorldItems/PoultryWing,
+        texture = WorldItems/PoultryWing_OverDone,
+        scale = 0.1,
+    }
+	model PoultryWingRotten
+    {
+        mesh = WorldItems/PoultryWing,
+        texture = WorldItems/PoultryWingRaw_Rotten,
+        scale = 0.1,
+    }
+	model Venison
+    {
+        mesh = Venison,
+        texture = WorldItems/Venison_Raw,
+        scale = 0.08,
+    }
+	model VenisonCooked
+    {
+        mesh = Venison,
+        texture = WorldItems/Venison_Cooked,
+        scale = 0.08,
+    }
+	model VenisonBurnt
+    {
+        mesh = Venison,
+        texture = WorldItems/Venison_Burnt,
+        scale = 0.08,
+    }
+	model VenisonRotten
+    {
+        mesh = Venison,
+        texture = WorldItems/Venison_Rotten,
+        scale = 0.08,
+    }
+	model Beef
+    {
+        mesh = WorldItems/Beef,
+        texture = WorldItems/Beef_Raw,
+        scale = 0.1,
+    }
+	model BeefCooked
+    {
+        mesh = WorldItems/Beef,
+        texture = WorldItems/Beef_Cooked,
+        scale = 0.1,
+    }
+	model BeefBurnt
+    {
+        mesh = WorldItems/Beef,
+        texture = WorldItems/Beef_OverDone,
+        scale = 0.1,
+    }
+	model BeefRotten
+    {
+        mesh = WorldItems/Beef,
+        texture = WorldItems/BeefRaw_Rotten,
+        scale = 0.1,
+    }
+	model Roses
+    {
+        mesh = WorldItems/Roses_Fresh,
+        texture = WorldItems/Roses_Fresh,
+        scale = 0.2,
+    }
+	model Poppies
+    {
+        mesh = WorldItems/Poppies_Fresh,
+        texture = WorldItems/Poppies_Fresh,
+        scale = 0.2,
+    }
+	model Lavender
+    {
+        mesh = WorldItems/Lavender_Fresh,
+        texture = WorldItems/Lavender_Fresh,
+        scale = 0.2,
+    }
+	model RosePetals
+    {
+        mesh = WorldItems/RosePetals_Dried,
+        texture = WorldItems/RosePetals_Dried,
+        scale = 0.15,
+    }
+	model PoppyPods
+    {
+        mesh = WorldItems/PoppySeed_Pods,
+        texture = WorldItems/PoppySeed_Pods,
+        scale = 0.15,
+    }
+	model LavenderPetals
+    {
+        mesh = WorldItems/PoppySeeds_Lavender_Dried,
+        texture = WorldItems/LavenderPetals_Dried,
+        scale = 0.1,
+    }
+	model PoppySeed
+    {
+        mesh = WorldItems/PoppySeeds_Lavender_Dried,
+        texture = WorldItems/Poppy_Seeds,
+        scale = 0.1,
+    }
+	model WineScrewtop
+    {
+        mesh = WorldItems/Wine_Aged_Screwtop,
+        texture = WorldItems/Wine_Screwtop,
+        scale = 0.15,
+    }
+	model CookingPotForged_Pasta
+    {
+        mesh = WorldItems/CookingPot_Forged_Handle_Food,
+        texture = WorldItems/CookingPot_Forged_Pasta,
+        scale = 0.1375,
+    }
+	model CookingPotForged_PastaGround
+    {
+        mesh = WorldItems/CookingPot_Forged_Food,
+        texture = WorldItems/CookingPot_Forged_Pasta,
+        scale = 0.1375,
+    }
+	model CookingPotForged_Rice
+    {
+        mesh = WorldItems/CookingPot_Forged_Handle_Food,
+        texture = WorldItems/CookingPot_Forged_Rice,
+        scale = 0.1375,
+    }
+	model CookingPotForged_RiceGround
+    {
+        mesh = WorldItems/CookingPot_Forged_Food,
+        texture = WorldItems/CookingPot_Forged_Rice,
+        scale = 0.1375,
+    }
+	model CookingPotForged_Soup
+    {
+        mesh = WorldItems/CookingPot_Forged_Handle_Food,
+        texture = WorldItems/CookingPot_Forged_Soup,
+        scale = 0.1375,
+    }
+	model CookingPotForged_SoupGround
+    {
+        mesh = WorldItems/CookingPot_Forged_Food,
+        texture = WorldItems/CookingPot_Forged_Soup,
+        scale = 0.1375,
+    }
+	model CookingPotForged_Stew
+    {
+        mesh = WorldItems/CookingPot_Forged_Handle_Food,
+        texture = WorldItems/CookingPot_Forged_Stew,
+        scale = 0.1375,
+    }
+	model CookingPotForged_StewGround
+    {
+        mesh = WorldItems/CookingPot_Forged_Food,
+        texture = WorldItems/CookingPot_Forged_Stew,
+        scale = 0.1375,
+    }
+}

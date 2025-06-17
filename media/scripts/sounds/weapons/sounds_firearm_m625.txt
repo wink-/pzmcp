@@ -1,0 +1,138 @@
+module Base
+{
+	sound M625Shoot
+	{
+		category = Item,
+		maxInstancesPerEmitter = 2,
+		clip
+		{
+			event = Weapon/Firearm/M625/Shoot,
+		}
+	}
+
+	sound M625InsertAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M625/InsertAmmo,
+		}
+	}
+
+	sound M625EjectAmmo
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M625/EjectAmmo,
+		}
+	}
+
+	sound M625InsertAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M625/InsertAmmoStart,
+		}
+	}
+
+	sound M625InsertAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M625/InsertAmmoStop,
+		}
+	}
+
+	sound M625EjectAmmoStart
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M625/EjectAmmoStart,
+		}
+	}
+
+	sound M625EjectAmmoStop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M625/EjectAmmoStop,
+		}
+	}
+
+	sound M625Jam
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M625/Jam,
+		}
+	}
+    
+	sound M625BringToBear
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M625/BringToBear,
+		}
+	}
+    
+	sound M625AimRelease
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M625/AimRelease,
+		}
+	}
+
+	sound M625Equip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M625/Equip,
+		}
+	}
+        
+	sound M625UnEquip
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M625/UnEquip,
+		}
+	}
+            
+	sound M625Break
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M625/Break,
+		}
+	}
+
+	sound M625Drop
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M625/Drop,
+		}
+	}
+
+	sound M625CartridgeFall
+	{
+		category = Item,
+		clip
+		{
+			event = Weapon/Firearm/M625/CartridgeFall,
+		}
+	}
+}

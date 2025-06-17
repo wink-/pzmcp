@@ -1,0 +1,92 @@
+module Base
+{
+	sound CurtainLongOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Curtain/Open,
+		}
+	}
+
+	sound CurtainLongClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Curtain/Close,
+		}
+	}
+
+	sound CurtainShortClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Curtain/Close,
+		}
+	}
+
+	sound CurtainShortOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Curtain/Open,
+		}
+	}
+
+	sound CurtainShadeClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Curtain/Close,
+		}
+	}
+
+	sound CurtainShadeOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Curtain/Open,
+		}
+	}
+
+	sound CurtainSheetClose
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Curtain/Close,
+		}
+	}
+
+	sound CurtainSheetOpen
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Curtain/Open,
+		}
+	}
+
+	sound CurtainSheetAdd
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Curtain/Add,
+		}
+	}
+
+	sound CurtainSheetRemove
+	{
+		category = Object,
+		clip
+		{
+			event = Object/Curtain/Remove,
+		}
+	}
+}

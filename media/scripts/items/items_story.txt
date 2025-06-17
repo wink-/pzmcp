@@ -1,0 +1,136 @@
+module Base
+{
+	/******* STORY ITEMS *******/
+	
+	item BobPic
+	{
+		DisplayName = Picture of Bob,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Frame,
+		WorldStaticModel = BobPic,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item CaseyPic
+	{
+		DisplayName = Picture of Casey-Jo,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Frame,
+		WorldStaticModel = CaseyPic,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item ChrisPic
+	{
+		DisplayName = Picture of Chris Bailey,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Frame,
+		WorldStaticModel = ChrisPic,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item CortmanPic
+	{
+		DisplayName = Picture of Dr. Cortman,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Frame,
+		WorldStaticModel = CortmanPic,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item HankPic
+	{
+		DisplayName = Picture of Hank,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Frame,
+		WorldStaticModel = HankPic,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item JamesPic
+	{
+		DisplayName = Picture of James Garcia,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Frame,
+		WorldStaticModel = JamesPic,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item KatePic
+	{
+		DisplayName = Picture of Kate,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = PictureKate,
+		WorldStaticModel = KatePic,
+		Tags = IgnoreZombieDensity,
+	}
+	
+	item MariannePic
+	{
+		DisplayName = Picture of Marianne Brown,
+		DisplayCategory = Memento,
+		Type = Normal,
+		Weight = 0.5,
+		Icon = Frame,
+		WorldStaticModel = MariannePic,
+		Tags = IgnoreZombieDensity,
+	}
+
+    item Photo_Hass
+    {
+        DisplayCategory = Memento,
+        Weight	=	0.1,
+        Type	=	Literature,
+		DisplayName = Photograph of Judge Matt Hass (Autographed),
+        Icon	=	Photo_JudgeHass,
+        BoredomChange	=	-5,
+		ReadType = photo,
+        StaticModel =  Photo_Hass,
+        WorldStaticModel =  Photo_Hass,
+		/*OnCreate = SpecialLootSpawns.OnCreatePhoto,*/
+		Tags = IgnoreZombieDensity;Picture;IsMemento;FastRead,
+    }
+
+	item RatKing
+	{
+		DisplayName = Rat King (Dead),
+		DisplayCategory = Memento,
+		Type = Food,
+		Weight = 1.0,
+		Icon = RatKing,
+		BadInMicrowave = TRUE,
+		CustomEatSound = EatingDeadAnimal,
+		DangerousUncooked = TRUE,
+		IsCookable = TRUE,
+		CookingSound = FryingFood,
+		MinutesToCook = 20,
+		MinutesToBurn = 60,
+		/*DaysFresh = 6,
+		DaysTotallyRotten = 10,*/
+		DaysFresh = 0,
+        DaysTotallyRotten = 0,
+		HungerChange = -110,
+		UnhappyChange = 150,
+		Calories = 1620,
+		Carbohydrates = 0,
+		Lipids = 96,
+		Proteins = 240,
+		StaticModel = RatKing,
+		WorldStaticModel = RatKing,
+		Tags = Vermin;IsMemento,
+	}
+}

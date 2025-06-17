@@ -1,0 +1,35 @@
+module Base
+{
+    template vehicle CarSmallCollision
+    {
+        useChassisPhysicsCollision = false,
+
+		physics box
+		{
+			offset = 0.0000 0.2149 0.0000,
+			extents = 0.7582 0.3077 1.7473,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = 0.0000 0.4176 0.2208,
+			extents = 0.6703 0.1538 0.4945,
+			rotate = 30.0000 0.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = 0.0000 0.4341 -0.6941,
+			extents = 0.6703 0.3516 0.1538,
+			rotate = 48.0000 0.0000 0.0000,
+		}
+
+		physics box
+		{
+			offset = 0.0000 0.4890 -0.2827,
+			extents = 0.6703 0.2418 0.6593,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+    }
+}
