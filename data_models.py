@@ -1,4 +1,7 @@
 from typing import List, Dict, Any, Optional, Union
+import logging # Added logging
+
+logger = logging.getLogger(__name__) # Setup logger
 
 class ModelComponent: # Generic component for items
     def __init__(self, **kwargs):
@@ -183,7 +186,7 @@ class VehicleDefinition: # Common base for Vehicle, VehicleModel, VehicleTemplat
                     if isinstance(value, dict): # Parsed data for the singleton block
                         setattr(self, key, config["class"](**value))
                     else: # Should not happen if parser is correct
-                        print(f"Warning: Expected dict for singleton block {key}, got {type(value)}")
+                        logger.warning(f"Expected dict for singleton block {key}, got {type(value)}")
                 else: # It's a list of blocks
                     if isinstance(value, list): # Parsed list of dicts
                         obj_list = []

@@ -127,22 +127,25 @@ def main():
         print_vehicle_details(vehicle) # Uses basic repr for now
     elif args.command == "listitems":
         print("\nAll Item Names:")
-        if repo.get_all_items():
-            for item in repo.get_all_items():
+        all_items = repo.get_all_items()
+        if all_items:
+            for item in all_items:
                 print(item.itemName)
         else:
             print("No items loaded.")
     elif args.command == "listrecipes":
         print("\nAll Recipe Names:")
-        if repo.get_all_recipes():
-            for recipe in repo.get_all_recipes():
+        all_recipes = repo.get_all_recipes()
+        if all_recipes:
+            for recipe in all_recipes:
                 print(recipe.recipeName)
         else:
             print("No recipes loaded.")
     elif args.command == "listvehicles":
         print("\nAll Vehicle Names:")
-        if repo.get_all_vehicles():
-            for vehicle in repo.get_all_vehicles():
+        all_vehicles = repo.get_all_vehicles()
+        if all_vehicles:
+            for vehicle in all_vehicles:
                 print(vehicle.vehicleName)
         else:
             print("No vehicles loaded.")
