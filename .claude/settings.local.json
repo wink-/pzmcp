@@ -11,7 +11,10 @@
       "Bash(grep:*)",
       "Bash(sqlite3:*)",
       "mcp__MCP_DOCKER__read-query",
-      "mcp__MCP_DOCKER__list-tables"
+      "mcp__MCP_DOCKER__list-tables",
+      "Bash(export PATH=\"$HOME/.local/bin:$PATH\")",
+      "Bash(uv:*)",
+      "Bash(mv:*)"
     ],
     "deny": []
   }

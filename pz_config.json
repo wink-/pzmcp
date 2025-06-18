@@ -1,0 +1,45 @@
+{
+  "project_zomboid": {
+    "script_paths": [
+      {
+        "name": "steam_common_x86",
+        "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\ProjectZomboid\\media\\scripts",
+        "priority": 1,
+        "description": "Steam installation (Program Files x86)"
+      },
+      {
+        "name": "steam_common",
+        "path": "C:\\Program Files\\Steam\\steamapps\\common\\ProjectZomboid\\media\\scripts", 
+        "priority": 2,
+        "description": "Steam installation (Program Files)"
+      },
+      {
+        "name": "epic_games",
+        "path": "C:\\Program Files\\Epic Games\\ProjectZomboid\\media\\scripts",
+        "priority": 3,
+        "description": "Epic Games installation"
+      },
+      {
+        "name": "gog",
+        "path": "C:\\GOG Games\\Project Zomboid\\media\\scripts",
+        "priority": 4,
+        "description": "GOG installation"
+      },
+      {
+        "name": "local_copy",
+        "path": "./media/scripts",
+        "priority": 99,
+        "description": "Local copied scripts (fallback)"
+      }
+    ],
+    "custom_paths": [],
+    "cache_enabled": true,
+    "auto_refresh": true,
+    "check_interval_hours": 24
+  },
+  "mcp_server": {
+    "database_path": "./mcp_data.db",
+    "log_level": "INFO",
+    "extract_on_startup": false
+  }
+}

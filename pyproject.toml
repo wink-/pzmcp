@@ -1,25 +1,73 @@
-[tool.poetry]
+[project]
 name = "pzmcp"
 version = "0.1.0"
-description = "Project Zomboid MCP Server"
-authors = ["Your Name <you@example.com>"]
+description = "Project Zomboid MCP Server - Intelligent script validation and generation for PZ mod development"
 readme = "README.md"
-packages = [{include = "mcp_server"}]
+license = { text = "MIT" }
+authors = [
+    { name = "Your Name", email = "you@example.com" }
+]
+keywords = ["project-zomboid", "mcp", "modding", "game-development"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Games/Entertainment",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
 
-[tool.poetry.dependencies]
-python = "^3.11"
-mcp = "^1.0.0"
-pydantic = "^2.0.0"
-sqlalchemy = "^2.0.0"
-rich = "^13.0.0"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0.0",
+    "sqlalchemy>=2.0.0", 
+    "rich>=13.0.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.20.0",
+]
 
-[tool.poetry.group.dev.dependencies]
-pytest = "^7.0.0"
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
 
-[tool.poetry.scripts]
+[project.scripts]
 pzmcp-server = "mcp_server.mcp_server:main"
 pzmcp-cli = "mcp_server_cli:main"
+pzmcp-extract = "mcp_server.core.enhanced_data_extractor:main"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["mcp_server"]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0", 
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
