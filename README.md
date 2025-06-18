@@ -44,84 +44,49 @@ Transform your modding experience:
 
 ## 🚀 Quick Start
 
-### For Windows Users (Recommended)
-
-1. **Install WSL** (if not already installed):
-   ```powershell
-   wsl --install
-   ```
-
-2. **Clone and setup**:
-   ```bash
-   git clone https://github.com/your-username/pzmcp.git
-   cd pzmcp
-   
-   # Install uv (fast Python package manager)
-   curl -LsSf https://astral.sh/uv/install.sh | sh
-   source ~/.bashrc
-   
-   # Install dependencies and extract game data
-   uv sync
-   uv run python -c "
-   from mcp_server.core.enhanced_data_extractor import extract_with_path_manager
-   extract_with_path_manager(comprehensive=True)
-   "
-   ```
-
-3. **Configure Claude Desktop** - See [CLAUDE_DESKTOP_INTEGRATION.md](CLAUDE_DESKTOP_INTEGRATION.md)
-
-4. **Start modding with AI assistance!** 🎉
-
-> **📖 Need detailed setup instructions?** See [WINDOWS_SETUP.md](WINDOWS_SETUP.md) for complete step-by-step guidance.
-
-### For Linux/macOS Users
+### Windows Users (WSL Recommended)
 
 ```bash
+# Install WSL (PowerShell as admin)
+wsl --install
+
+# Clone and setup (in WSL Ubuntu terminal)
 git clone https://github.com/your-username/pzmcp.git
 cd pzmcp
+curl -LsSf https://astral.sh/uv/install.sh | sh && source ~/.bashrc
+uv sync && uv run python -c "from mcp_server.core.enhanced_data_extractor import extract_with_path_manager; extract_with_path_manager(comprehensive=True)"
+```
 
-# Install uv
+> **📖 Complete setup guide:** [WINDOWS_SETUP.md](WINDOWS_SETUP.md) | **🤖 Claude integration:** [CLAUDE_DESKTOP_INTEGRATION.md](CLAUDE_DESKTOP_INTEGRATION.md)
+
+### Linux/macOS Users
+
+```bash
+git clone https://github.com/your-username/pzmcp.git && cd pzmcp
 curl -LsSf https://astral.sh/uv/install.sh | sh
-
-# Setup and extract data  
-uv sync
-uv run python -c "
-from mcp_server.core.enhanced_data_extractor import extract_with_path_manager
-extract_with_path_manager(comprehensive=True)
-"
+uv sync && uv run python -c "from mcp_server.core.enhanced_data_extractor import extract_with_path_manager; extract_with_path_manager(comprehensive=True)"
 ```
 
 ## 🔧 Usage Examples
 
-### Search and Discovery
-
-```bash
-# Find specific items
-uv run python -c "
-import sqlite3
-conn = sqlite3.connect('mcp_data.db')
-cursor = conn.cursor()
-cursor.execute('SELECT item_name, display_name FROM items_fts WHERE display_name MATCH \"baseball bat\"')
-for item in cursor.fetchall(): print(f'{item[0]}: {item[1]}')
-"
-```
-
-### Script Generation
-
-Create a custom item script:
-
-```python
-# Generate a tactical knife
-from mcp_server.core.enhanced_data_extractor import EnhancedDataExtractor
-# Use via Claude Desktop for natural language generation
-```
-
-### With Claude Desktop
+### With Claude Desktop (Recommended)
 
 Once configured, simply chat with Claude:
 
 ```
-"Use the Project Zomboid MCP to help me create a survival mod with custom weapons"
+"Use the Project Zomboid MCP to find me a crowbar"
+"Create a steel katana with 2.5 damage and high durability"  
+"Validate this Project Zomboid script for syntax errors"
+```
+
+### Command Line Interface
+
+```bash
+# Search items directly
+uv run python -c "import sqlite3; conn = sqlite3.connect('mcp_data.db'); cursor = conn.cursor(); cursor.execute('SELECT item_name, display_name FROM items_fts WHERE display_name MATCH \"baseball bat\"'); [print(f'{item[0]}: {item[1]}') for item in cursor.fetchall()]"
+
+# Run MCP server for testing
+uv run python run_server.py
 ```
 
 ## 🏗️ Architecture

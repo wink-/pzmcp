@@ -14,7 +14,8 @@
       "mcp__MCP_DOCKER__list-tables",
       "Bash(export PATH=\"$HOME/.local/bin:$PATH\")",
       "Bash(uv:*)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "Bash(rm:*)"
     ],
     "deny": []
   }

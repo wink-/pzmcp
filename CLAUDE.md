@@ -8,41 +8,32 @@ This is a Project Zomboid MCP (Model Context Protocol) Server - a Python-based a
 
 ## Development Commands
 
-**Using uv (Recommended - Cross-platform):**
+**Primary Commands (using uv):**
 ```bash
-# Install dependencies (run from project root)
+# Setup and install dependencies
 uv sync
+
+# Extract Project Zomboid data (first time setup)
+uv run python -c "from mcp_server.core.enhanced_data_extractor import extract_with_path_manager; extract_with_path_manager(comprehensive=True)"
+
+# Run MCP server (for Claude Desktop integration)
+uv run python run_server.py
 
 # Run tests
 uv run pytest
-
-# Run MCP server (Model Context Protocol)
-uv run python run_server.py
-
-# Run legacy FastAPI server (for testing)  
-uv run uvicorn mcp_server.main:app --reload
-
-# CLI usage
-uv run python mcp_server_cli.py ./media/scripts listitems
-uv run python mcp_server_cli.py ./media/scripts getitem Base.Apple
-
-# Extract and populate database with Project Zomboid data
-uv run python -c "from mcp_server.core.enhanced_data_extractor import extract_with_path_manager; extract_with_path_manager(comprehensive=True)"
 ```
 
-**Alternative - Using Python directly:**
+**Legacy/Alternative Commands:**
 ```bash
-# Install dependencies
-python install_dependencies.py
-
-# Test the server
-python simple_test.py
-
-# Run MCP server
+# Direct Python (if uv not available)
 python run_server.py
 
-# Windows batch file
-run_server.bat
+# FastAPI server (for testing/development)
+uv run uvicorn mcp_server.main:app --reload
+
+# CLI tools
+uv run python mcp_server_cli.py ./media/scripts listitems
+uv run python mcp_server_cli.py ./media/scripts getitem Base.Apple
 ```
 
 **MCP Server Tools:**
@@ -52,8 +43,9 @@ run_server.bat
 - `check_references` - Validate item/sound/sprite references
 - `analyze_mod` - Analyze mod directory structure
 
-**Legacy FastAPI endpoints:**
+**Testing/Development endpoints:**
 ```bash
+# FastAPI server endpoints (when running uvicorn server)
 curl http://localhost:8000/extract-vanilla-data
 curl "http://localhost:8000/search/items?q=apple"
 ```
