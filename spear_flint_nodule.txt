@@ -1,0 +1,73 @@
+module Base
+{
+    item SpearFlintNodule
+    {
+        DisplayName         = Flint Nodule Spear,
+        DisplayCategory     = WeaponCrafted,
+        Type                = Weapon,
+        Weight              = 2.5,
+        Icon                = SpearStone,
+        AttachmentType      = Shovel,
+        BreakSound          = SpearCraftedBreak,
+        Categories          = Improvised;Spear,
+        ConditionLowerChanceOneIn = 3,
+        ConditionMax        = 6,
+        CritDmgMultiplier   = 4,
+        CriticalChance      = 15,
+        DamageCategory      = Slash,
+        DamageMakeHole      = true,
+        DoorDamage          = 6,
+        DoorHitSound        = SpearCraftedHit,
+        HitFloorSound       = SpearCraftedHit,
+        HitSound            = SpearCraftedHit,
+        IdleAnim            = Idle_Weapon2,
+        ImpactSound         = SpearCraftedHit,
+        KnockBackOnNoDeath  = false,
+        KnockdownMod        = 0,
+        MaxDamage           = 1.6,
+        MaxHitCount         = 2,
+        MaxRange            = 1.4,
+        MinAngle            = 0.8,
+        MinDamage           = 1.2,
+        MinRange            = 0.98,
+        MinimumSwingTime    = 2,
+        PushBackMod         = 0.3,
+        RunAnim             = Run_Weapon2,
+        SoundMap            = SpearStab SpearCraftedStab,
+        SplatBloodOnNoDeath = false,
+        SplatNumber         = 1,
+        SubCategory         = Spear,
+        SwingAmountBeforeImpact = 0.02,
+        SwingAnim           = Spear,
+        SwingSound          = SpearCraftedSwing,
+        SwingTime           = 2,
+        TreeDamage          = 0,
+        TwoHandWeapon       = true,
+        WeaponSprite        = SpearStone,
+        Tags                = FishingSpear;RepairWithGlue;RepairWithTape,
+        OnBreak             = OnBreak.SpearFlintNodule,
+    }
+
+    craftRecipe BindFlintNoduleSpear
+    {
+        time            = 250,
+        Tags            = InHandCraft;Survivalist,
+        category        = Weaponry,
+        needTobeLearn   = true,
+        timedAction     = CraftKnifeSpear,
+        xpAward         = Maintenance:8,
+        SkillRequired   = Maintenance:1,
+        AutoLearnAll    = Maintenance:2;Spear:1,
+        OnCreate        = Recipe.OnCreate.SlightlyMoreDurable,
+        inputs
+        {
+            item 1 [Base.FlintNodule] flags[Prop1;IsHeadPart],
+            item 1 [Base.LongStick;Base.Sapling] flags[Prop2;InheritCondition],
+            item 2 [Base.Zipties;Base.LeatherStrips;Base.Twine] flags[DontReplace],
+        }
+        outputs
+        {
+            item 1 Base.SpearFlintNodule,
+        }
+    }
+}

@@ -1,18 +1,24 @@
 [tool.poetry]
-name = "mcp-server"
+name = "pzmcp"
 version = "0.1.0"
 description = "Project Zomboid MCP Server"
-authors = ["Your Name <you@example.com>"] # Replace with actual author info if available
-readme = "README.md" # Assuming a README will be added later
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "mcp_server"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 mcp = "^1.0.0"
 pydantic = "^2.0.0"
 sqlalchemy = "^2.0.0"
+rich = "^13.0.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.0.0"
+
+[tool.poetry.scripts]
+pzmcp-server = "mcp_server.mcp_server:main"
+pzmcp-cli = "mcp_server_cli:main"
 
 [build-system]
 requires = ["poetry-core"]

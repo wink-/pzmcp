@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "project-zomboid": {
+      "command": "C:\\Users\\winkk\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "args": ["C:\\Users\\winkk\\code\\pzmcp\\debug_server.py"],
+      "cwd": "C:\\Users\\winkk\\code\\pzmcp"
+    }
+  }
+}

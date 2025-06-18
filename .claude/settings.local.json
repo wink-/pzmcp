@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "Bash(poetry install:*)",
+      "Bash(poetry run:*)",
+      "Bash(python:*)",
+      "Bash(timeout:*)",
+      "Bash(pip install:*)",
+      "Bash(grep:*)",
+      "Bash(sqlite3:*)",
+      "mcp__MCP_DOCKER__read-query",
+      "mcp__MCP_DOCKER__list-tables"
+    ],
+    "deny": []
+  }
+}
