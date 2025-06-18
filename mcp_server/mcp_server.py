@@ -25,6 +25,7 @@ from mcp_server.core.data_extractor import DataExtractor
 from mcp_server.core.script_generator import ScriptGenerator
 from mcp_server.core.search_service import SearchService
 from mcp_server.core.models import ItemTemplateParams, RecipeTemplateParams
+from mcp_server.core.mod_checker import ModChecker
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -36,6 +37,7 @@ server = Server("project-zomboid")
 # Initialize services
 script_generator = ScriptGenerator()
 search_service = None  # Will be initialized after database setup
+mod_checker = None  # Will be initialized after database setup
 
 class ScriptValidationParams(BaseModel):
     content: str
@@ -57,6 +59,10 @@ class ReferenceCheckParams(BaseModel):
 
 class ModAnalysisParams(BaseModel):
     mod_path: str
+
+class ModCheckParams(BaseModel):
+    mod_path: str
+    report_format: Optional[str] = "text"
 
 @server.list_resources()
 async def list_resources() -> List[Resource]:
@@ -213,6 +219,18 @@ async def list_tools() -> List[Tool]:
                 },
                 "required": ["mod_path"]
             }
+        ),
+        Tool(
+            name="check_mod",
+            description="Comprehensive mod validation with detailed issue detection and auto-fix suggestions",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "mod_path": {"type": "string", "description": "Path to mod directory to validate"},
+                    "report_format": {"type": "string", "enum": ["text", "json"], "description": "Output format for the report", "default": "text"}
+                },
+                "required": ["mod_path"]
+            }
         )
     ]
     return tools
@@ -244,6 +262,11 @@ async def call_tool(name: str, arguments: Dict[str, Any]) -> List[TextContent]:
     elif name == "analyze_mod":
         params = ModAnalysisParams(**arguments)
         result = await analyze_mod_tool(params.mod_path)
+        return [TextContent(type="text", text=result)]
+    
+    elif name == "check_mod":
+        params = ModCheckParams(**arguments)
+        result = await check_mod_tool(params.mod_path, params.report_format)
         return [TextContent(type="text", text=result)]
     
     else:
@@ -383,9 +406,38 @@ async def analyze_mod_tool(mod_path: str) -> str:
     except Exception as e:
         return f"Error analyzing mod: {str(e)}"
 
+async def check_mod_tool(mod_path: str, report_format: str = "text") -> str:
+    """Comprehensive mod validation using the ModChecker."""
+    try:
+        logger.info(f"Starting comprehensive mod check for: {mod_path}")
+        
+        # Run comprehensive mod check
+        result = mod_checker.check_mod(mod_path)
+        
+        # Generate report in requested format
+        report = mod_checker.generate_report(result, format=report_format)
+        
+        # Add auto-fix suggestions if available
+        auto_fixes = mod_checker.get_auto_fix_suggestions(result.issues)
+        if auto_fixes and report_format == "text":
+            report += "\n\n=== Auto-Fix Suggestions ===\n"
+            for i, fix in enumerate(auto_fixes, 1):
+                report += f"{i}. {fix['issue_title']}\n"
+                report += f"   Fix: {fix['fix_description']}\n"
+                if fix['file_path']:
+                    report += f"   File: {fix['file_path']}\n"
+                report += "\n"
+        
+        logger.info(f"Mod check completed. Overall score: {result.overall_score:.1f}/10.0")
+        return report
+        
+    except Exception as e:
+        logger.error(f"Error during mod check: {e}")
+        return f"Error checking mod: {str(e)}"
+
 async def initialize_services():
     """Initialize database and services."""
-    global search_service
+    global search_service, mod_checker
     
     logger.info("Initializing database...")
     create_db_and_tables()
@@ -394,11 +446,16 @@ async def initialize_services():
     try:
         from mcp_server.core.database import engine
         search_service = SearchService(engine=engine)
+        
+        # Initialize mod checker with database path
+        mod_checker = ModChecker(vanilla_db_path="mcp_data.db")
+        
         logger.info("Services initialized successfully")
     except ImportError as e:
         logger.error(f"Failed to import required modules: {e}")
         # Create a basic search service fallback
         search_service = None
+        mod_checker = None
 
 async def main():
     """Main entry point."""
