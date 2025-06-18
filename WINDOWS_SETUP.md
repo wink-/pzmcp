@@ -88,7 +88,7 @@ cd pzmcp
 uv sync
 
 # Verify installation
-uv run python -c "print('✓ Setup successful!')"
+uv run python -c "print('✓ Setup successful')"
 ```
 
 ## Step 4: Configure Project Zomboid Paths
