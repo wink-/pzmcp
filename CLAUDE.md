@@ -8,26 +8,29 @@ This is a Project Zomboid MCP (Model Context Protocol) Server - a Python-based a
 
 ## Development Commands
 
-**Using Poetry (Linux/WSL):**
+**Using uv (Recommended - Cross-platform):**
 ```bash
 # Install dependencies (run from project root)
-poetry install
+uv sync
 
 # Run tests
-poetry run pytest
+uv run pytest
 
 # Run MCP server (Model Context Protocol)
-poetry run python -m mcp_server.mcp_server
+uv run python run_server.py
 
 # Run legacy FastAPI server (for testing)  
-poetry run uvicorn mcp_server.main:app --reload
+uv run uvicorn mcp_server.main:app --reload
 
 # CLI usage
-poetry run python mcp_server_cli.py ./media/scripts listitems
-poetry run python mcp_server_cli.py ./media/scripts getitem Base.Apple
+uv run python mcp_server_cli.py ./media/scripts listitems
+uv run python mcp_server_cli.py ./media/scripts getitem Base.Apple
+
+# Extract and populate database with Project Zomboid data
+uv run python -c "from mcp_server.core.enhanced_data_extractor import extract_with_path_manager; extract_with_path_manager(comprehensive=True)"
 ```
 
-**Using Python directly (Windows/Recommended):**
+**Alternative - Using Python directly:**
 ```bash
 # Install dependencies
 python install_dependencies.py
@@ -99,4 +102,4 @@ The parser handles PZ-specific syntax including:
 
 ## Testing
 
-Comprehensive test suite covers parser functionality, data transformation, and API endpoints. Run with `poetry run pytest` for full test execution.
+Comprehensive test suite covers parser functionality, data transformation, and API endpoints. Run with `uv run pytest` for full test execution.

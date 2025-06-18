@@ -6,10 +6,7 @@ from mcp_server.parsers import ItemParser, RecipeParser, VehicleParser
 from .models import ItemModuleData, RecipeModuleData, VehicleModuleData
 from .database import engine, insert_item_module_data, insert_recipe_module_data, insert_vehicle_module_data
 
-# Import the path manager from project root
-import sys
-sys.path.append(str(Path(__file__).parent.parent.parent))
-from pz_path_manager import PZPathManager
+# Simple path resolution without external dependencies
 
 logger = logging.getLogger(__name__)
 
@@ -19,18 +16,27 @@ class EnhancedDataExtractor:
     def __init__(self, scripts_directory=None, use_path_manager=True):
         self.use_path_manager = use_path_manager
         
-        if use_path_manager and scripts_directory is None:
-            # Use path manager to find best scripts directory
-            try:
-                self.path_manager = PZPathManager()
-                self.scripts_directory = self.path_manager.get_scripts_directory()
-                logger.info(f"Using scripts directory from path manager: {self.scripts_directory}")
-            except Exception as e:
-                logger.error(f"Path manager failed: {e}")
-                self.scripts_directory = "./media/scripts"  # fallback
+        if scripts_directory is None:
+            # Try to find scripts directory automatically
+            possible_paths = [
+                "./media/scripts",
+                "media/scripts", 
+                "../media/scripts",
+                "../../media/scripts"
+            ]
+            
+            for path in possible_paths:
+                if os.path.exists(path):
+                    self.scripts_directory = path
+                    logger.info(f"Found scripts directory: {self.scripts_directory}")
+                    break
+            else:
+                self.scripts_directory = "./media/scripts"
+                logger.warning(f"No scripts directory found, using default: {self.scripts_directory}")
         else:
-            self.scripts_directory = scripts_directory or "./media/scripts"
-            self.path_manager = None
+            self.scripts_directory = scripts_directory
+            
+        self.path_manager = None
         
         # Map parser keys to a tuple of (ParserClass, PydanticModelClass)
         self.parser_model_mapping = {
@@ -215,14 +221,6 @@ class EnhancedDataExtractor:
             "using_path_manager": self.use_path_manager,
             "exists": os.path.exists(self.scripts_directory)
         }
-        
-        if self.path_manager:
-            path, source = self.path_manager.find_pz_scripts_directory()
-            info.update({
-                "detected_path": path,
-                "source": source,
-                "available_paths": self.path_manager.list_available_paths()
-            })
         
         return info
 
