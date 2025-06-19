@@ -8,20 +8,73 @@ This is a Project Zomboid MCP (Model Context Protocol) Server - a Python-based a
 
 ## Development Commands
 
-**Primary Commands (using uv):**
+**Setup Commands:**
 ```bash
 # Setup and install dependencies
 uv sync
 
-# Extract Project Zomboid data (first time setup)
-uv run python -c "from mcp_server.core.enhanced_data_extractor import extract_with_path_manager; extract_with_path_manager(comprehensive=True)"
-
-# Run MCP server (for Claude Desktop integration)
-uv run python run_server.py
+# Extract Project Zomboid data from repository scripts (first time setup or after updating scripts)
+uv run python -c "from mcp_server.core.enhanced_data_extractor import extract_vanilla_data; extract_vanilla_data(comprehensive=True)"
 
 # Run tests
 uv run pytest
+
+# Run tests with coverage
+uv run coverage run -m pytest && uv run coverage report
+
+# Test the modern server specifically
+uv run pytest tests/test_modern_server.py -v
+
+# Test with MCP development tools
+mcp dev mcp_server/modern_server.py
 ```
+
+**Running the Server (Multiple Options):**
+
+### Option 1: Modern FastMCP Server (Recommended)
+```bash
+# Modern server with FastMCP
+uv run python run_modern_server.py
+
+# Or using mcp CLI tools
+mcp dev mcp_server/modern_server.py
+mcp install mcp_server/modern_server.py
+```
+**Claude Desktop Config:** Use `claude_desktop_config_modern.json`
+
+### Option 2: WSL-based MCP Server (Legacy)
+```bash
+# In WSL
+uv run python run_server.py
+```
+**Claude Desktop Config:** Use `claude_desktop_config_wsl.json`
+
+### Option 3: Native Windows MCP Server (Legacy)
+```cmd
+# Windows Command Prompt/PowerShell
+.\start_mcp_native.bat
+```
+**Claude Desktop Config:** Use `claude_desktop_config_native_windows.json`
+
+### Option 4: FastAPI HTTP Server (For broader compatibility)
+```cmd
+# Windows - HTTP API on localhost:8000
+.\start_http_server.bat
+
+# Or direct command
+uv run uvicorn mcp_server.main:app --reload --host 0.0.0.0 --port 8000
+```
+**Access:** http://localhost:8000 (API docs: http://localhost:8000/docs)
+
+### Option 5: Docker HTTP Server (Containerized)
+```cmd
+# Windows - Docker container with HTTP API
+.\start_mcp_server.bat
+
+# Or direct docker-compose
+docker-compose up --build
+```
+**Access:** http://localhost:8000 (API docs: http://localhost:8000/docs)
 
 **Legacy/Alternative Commands:**
 ```bash
@@ -37,11 +90,19 @@ uv run python mcp_server_cli.py ./media/scripts getitem Base.Apple
 ```
 
 **MCP Server Tools:**
-- `validate_script` - Validate Project Zomboid script syntax
-- `generate_script` - Generate scripts from templates
-- `search_vanilla` - Search vanilla game data
-- `check_references` - Validate item/sound/sprite references
-- `analyze_mod` - Analyze mod directory structure
+- `validate_script` - Validate Project Zomboid script syntax with intelligent error detection
+- `generate_script` - Generate scripts from templates with parameter validation
+- `search_vanilla` - Search vanilla game data with fuzzy matching and auto-completion
+- `check_references` - Validate item/sound/sprite references against database
+- `analyze_mod` - Comprehensive mod analysis with performance recommendations
+
+**Modern Server Features (FastMCP):**
+- **Resources**: Live game data access, property references, best practices
+- **Prompts**: Guided workflows for item creation, script fixing, mod optimization
+- **Auto-completion**: Intelligent suggestions for item names, script types, properties
+- **Progress tracking**: Real-time feedback during long operations
+- **Error handling**: Comprehensive validation with helpful suggestions
+- **Lifespan management**: Automatic database initialization and cleanup
 
 **Testing/Development endpoints:**
 ```bash
@@ -95,3 +156,122 @@ The parser handles PZ-specific syntax including:
 ## Testing
 
 Comprehensive test suite covers parser functionality, data transformation, and API endpoints. Run with `uv run pytest` for full test execution.
+
+# Development Guidelines
+
+This document contains critical information about working with this codebase. Follow these guidelines precisely.
+
+## Core Development Rules
+
+1. Package Management
+   - ONLY use uv, NEVER pip
+   - Installation: `uv add package`
+   - Running tools: `uv run tool`
+   - Upgrading: `uv add --dev package --upgrade-package package`
+   - FORBIDDEN: `uv pip install`, `@latest` syntax
+
+2. Code Quality
+   - Type hints required for all code
+   - Public APIs must have docstrings
+   - Functions must be focused and small
+   - Follow existing patterns exactly
+   - Line length: 88 chars maximum
+
+3. Testing Requirements
+   - Framework: `uv run --frozen pytest`
+   - Async testing: use anyio, not asyncio
+   - Coverage: test edge cases and errors
+   - New features require tests
+   - Bug fixes require regression tests
+
+- For commits fixing bugs or adding features based on user reports add:
+  ```bash
+  git commit --trailer "Reported-by:<name>"
+  ```
+  Where `<name>` is the name of the user.
+
+- For commits related to a Github issue, add
+  ```bash
+  git commit --trailer "Github-Issue:#<number>"
+  ```
+- NEVER ever mention a `co-authored-by` or similar aspects. In particular, never
+  mention the tool used to create the commit message or PR.
+
+## Pull Requests
+
+- Create a detailed message of what changed. Focus on the high level description of
+  the problem it tries to solve, and how it is solved. Don't go into the specifics of the
+  code unless it adds clarity.
+
+- Always add `jerome3o-anthropic` and `jspahrsummers` as reviewer.
+
+- NEVER ever mention a `co-authored-by` or similar aspects. In particular, never
+  mention the tool used to create the commit message or PR.
+
+## Python Tools
+
+## Code Formatting
+
+1. Ruff
+   - Format: `uv run --frozen ruff format .`
+   - Check: `uv run --frozen ruff check .`
+   - Fix: `uv run --frozen ruff check . --fix`
+   - Critical issues:
+     - Line length (88 chars)
+     - Import sorting (I001)
+     - Unused imports
+   - Line wrapping:
+     - Strings: use parentheses
+     - Function calls: multi-line with proper indent
+     - Imports: split into multiple lines
+
+2. Type Checking
+   - Tool: `uv run --frozen pyright`
+   - Requirements:
+     - Explicit None checks for Optional
+     - Type narrowing for strings
+     - Version warnings can be ignored if checks pass
+
+3. Pre-commit
+   - Config: `.pre-commit-config.yaml`
+   - Runs: on git commit
+   - Tools: Prettier (YAML/JSON), Ruff (Python)
+   - Ruff updates:
+     - Check PyPI versions
+     - Update config rev
+     - Commit config first
+
+## Error Resolution
+
+1. CI Failures
+   - Fix order:
+     1. Formatting
+     2. Type errors
+     3. Linting
+   - Type errors:
+     - Get full line context
+     - Check Optional types
+     - Add type narrowing
+     - Verify function signatures
+
+2. Common Issues
+   - Line length:
+     - Break strings with parentheses
+     - Multi-line function calls
+     - Split imports
+   - Types:
+     - Add None checks
+     - Narrow string types
+     - Match existing patterns
+   - Pytest:
+     - If the tests aren't finding the anyio pytest mark, try adding PYTEST_DISABLE_PLUGIN_AUTOLOAD=""
+       to the start of the pytest run command eg:
+       `PYTEST_DISABLE_PLUGIN_AUTOLOAD="" uv run --frozen pytest`
+
+3. Best Practices
+   - Check git status before commits
+   - Run formatters before type checks
+   - Keep changes minimal
+   - Follow existing patterns
+   - Document public APIs
+   - Test thoroughly

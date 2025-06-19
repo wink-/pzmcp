@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "project-zomboid": {
+      "command": "uv",
+      "args": ["run", "python", "run_modern_server.py"],
+      "cwd": "C:\\Users\\winkk\\code\\pzmcp"
+    }
+  }
+}
